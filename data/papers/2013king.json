@@ -1,0 +1,921 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013king",
+ "doi": "10.1016/j.ultrasmedbio.2012.09.009",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 33,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Electromyography (EMG) of the triceps muscle to detect ultrasound-evoked limb twitches",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Continuous-wave and pulsed transcranial ultrasound elicited short-latency limb muscle twitches (EMG-detected) in an all-or-nothing fashion, with success rate increasing with intensity, duration, and PRF.",
+ "adverse_events": "none_observed",
+ "safety_notes": "In all respects (eating, drinking, locomotion), the animals appeared normal after recovering from anesthesia.",
+ "exposures": [
+  {
+   "label": "Continuous-wave and pulsed transcranial ultrasound stimulation of mouse motor cortex/basal ganglia at 500 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     30,
+     1110
+    ],
+    "isppa_w_cm2": [
+     0.01,
+     79.02
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     11,
+     3000
+    ],
+    "duty_cycle_pct": [
+     2,
+     30,
+     60
+    ],
+    "sonication_duration_s": [
+     0.02,
+     0.04,
+     0.08,
+     0.16,
+     0.24,
+     0.32,
+     0.48
+    ],
+    "protocol_description": "All experiments were conducted using continuous-wave ultrasound sonications at the center frequency of the transducer (500 kHz), unless otherwise noted; sonication durations varied from 20 to 480 ms, and intensities ranged from 0.01 to 79.02 W/cm2 (0.03 to 1.11 MPa). For pulsed ultrasound, the pulse repetition frequency was held constant at 1.5 kHz with 100 cycles per pulse (30% duty cycle) in the CW-vs-pulsed comparison, and separately varied between 11 and 3000 Hz (100 cycles per pulse, 120 pulses per train) in the PRF experiment. The specified sonication conditions were generated in a pseudo-random sequence, with a minimum interval between sonications of 5 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 250 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.16,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 300 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1333,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 350 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1143,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 400 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 450 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 450,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0889,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 550 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0727,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Frequency-response characterization at 600 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "basal_ganglia"
+    ],
+    "label": "the basal ganglia and the motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 600,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0667,
+    "protocol_description": "Continuous-wave sonications of 40,000 cycles were delivered at this frequency using 3 driving voltages (75, 150 and 300 mVpp) in blocks, to test how success rate depended on carrier frequency; the resulting acoustic intensities are shown only in Figure 10, not stated numerically in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 33 CBL-7 mice were employed in this study.",
+   "safety_notes": "In all respects (eating, drinking, locomotion), the animals appeared normal after recovering from anesthesia.",
+   "exposures[0].target.label": "The field would encompass the basal ganglia and the motor cortex in the mouse brain.",
+   "exposures[0].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[0].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[0].free_field.pressure_kpa": "In our experiments, ultrasound intensities ranged from 0.01 to 79.02 W/cm<sup>2</sup> (0.03 to 1.11 MPa).",
+   "exposures[0].free_field.isppa_w_cm2": "In our experiments, ultrasound intensities ranged from 0.01 to 79.02 W/cm<sup>2</sup> (0.03 to 1.11 MPa).",
+   "exposures[0].timing.pulse_duration_ms": "Each pulse consisted of 100 cycles, representing a duty cycle of 30%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each pulse was kept at 100 cycles of 500 kHz, with 120 pulses in the pulse train, but we varied the pulse repetition frequency over a range between 11 and 3000 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "There was little response at PRFs less than about 100 Hz, which corresponded to a duty cycle of 2%. Above that point, the success rate increased with the pulse repetition rate, up to 3000 Hz, the maximum repetition rate tested, which represented a 60% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "For each animal, the sonication intensities were 0, 0.26, 1.1, 2.4, 4.2, 9.4, 12.8, and 16.8 W/cm<sup>2</sup>, and the sonication durations were 0, 20, 40, 80, 160, 240, 320, and 480 ms.",
+   "exposures[1].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[2].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[3].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[4].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[5].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[6].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[7].fundamental_frequency_khz": "The transducer was driven at several frequencies within its bandwidth: 250, 300, 350, 400, 450, 500, 550, and 600 kHz.",
+   "exposures[1].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[1].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[2].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[2].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[3].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[3].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[4].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[4].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[5].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[5].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[6].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[6].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[7].device.manufacturer": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[7].device.model": "Ultrasound stimuli were generated by a singleelement planar transducer (V301; Olympus, Waltham, MA, USA) with a diameter of 25.4 mm, a center frequency of 500 kHz, and a bandwidth of 340 to 650 kHz at 26dB.",
+   "exposures[1].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[2].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[3].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[4].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[5].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[6].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency.",
+   "exposures[7].timing.sonication_duration_s": "Using 40,000 cycles, sonications were applied at the same 3 driving voltages for each frequency."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration (0.2 ms) computed from stated cycles per pulse (100) divided by fundamental frequency (500 kHz); an explicitly permitted unit conversion, but applies only to the pulsed sub-experiments within this exposure, not the continuous-wave sub-experiments also included here."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "This exposure mixes continuous-wave (duty cycle effectively 100 percent, but not stated as a number in text) and pulsed sub-experiments; only the explicitly stated pulsed duty-cycle values are listed."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The text does not specify whether the 0.01-79.02 W/cm2 range is spatial-peak pulse-average or spatial-peak temporal-average intensity; for the CW portion these are equal, but the exposure also includes pulsed sub-experiments where they would differ."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.12 MPa is from a separate ex vivo mouse-skull hydrophone calibration scan used to justify ignoring skull effects, not necessarily the peak pressure delivered during any specific behavioural trial; domain correspondence to the free-field range is uncertain."
+   },
+   {
+    "field": "exposures[1-7]",
+    "reason": "Acoustic intensities for the 250-450, 550 and 600 kHz frequency-response experiment are shown only in Figure 10, not given as numbers in the main text, so are recorded as not_reported."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper's coupling/uncoupling control tests for an airborne-sound confound but does not match any listed auditory_control category precisely; categorized as other."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not stated as a single value; anesthesia-level and other sub-experiments describe blocks/visits per animal but no consistent session count is given."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree",
+   "exposures[4].fundamental_frequency_khz": "agree",
+   "exposures[4].free_field.pressure_kpa": "agree",
+   "exposures[4].free_field.isppa_w_cm2": "agree",
+   "exposures[4].free_field.ispta_w_cm2": "agree",
+   "exposures[4].in_situ.pressure_kpa": "agree",
+   "exposures[4].in_situ.isppa_w_cm2": "agree",
+   "exposures[4].in_situ.ispta_w_cm2": "agree",
+   "exposures[4].unspecified_domain.pressure_kpa": "agree",
+   "exposures[4].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[4].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[4].timing.pulse_duration_ms": "agree",
+   "exposures[4].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[4].timing.duty_cycle_pct": "agree",
+   "exposures[4].timing.sonication_duration_s": "agree",
+   "exposures[5].fundamental_frequency_khz": "agree",
+   "exposures[5].free_field.pressure_kpa": "agree",
+   "exposures[5].free_field.isppa_w_cm2": "agree",
+   "exposures[5].free_field.ispta_w_cm2": "agree",
+   "exposures[5].in_situ.pressure_kpa": "agree",
+   "exposures[5].in_situ.isppa_w_cm2": "agree",
+   "exposures[5].in_situ.ispta_w_cm2": "agree",
+   "exposures[5].unspecified_domain.pressure_kpa": "agree",
+   "exposures[5].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[5].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[5].timing.pulse_duration_ms": "agree",
+   "exposures[5].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[5].timing.duty_cycle_pct": "agree",
+   "exposures[5].timing.sonication_duration_s": "agree",
+   "exposures[6].fundamental_frequency_khz": "agree",
+   "exposures[6].free_field.pressure_kpa": "agree",
+   "exposures[6].free_field.isppa_w_cm2": "agree",
+   "exposures[6].free_field.ispta_w_cm2": "agree",
+   "exposures[6].in_situ.pressure_kpa": "agree",
+   "exposures[6].in_situ.isppa_w_cm2": "agree",
+   "exposures[6].in_situ.ispta_w_cm2": "agree",
+   "exposures[6].unspecified_domain.pressure_kpa": "agree",
+   "exposures[6].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[6].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[6].timing.pulse_duration_ms": "agree",
+   "exposures[6].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[6].timing.duty_cycle_pct": "agree",
+   "exposures[6].timing.sonication_duration_s": "agree",
+   "exposures[7].fundamental_frequency_khz": "agree",
+   "exposures[7].free_field.pressure_kpa": "agree",
+   "exposures[7].free_field.isppa_w_cm2": "agree",
+   "exposures[7].free_field.ispta_w_cm2": "agree",
+   "exposures[7].in_situ.pressure_kpa": "agree",
+   "exposures[7].in_situ.isppa_w_cm2": "agree",
+   "exposures[7].in_situ.ispta_w_cm2": "agree",
+   "exposures[7].unspecified_domain.pressure_kpa": "agree",
+   "exposures[7].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[7].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[7].timing.pulse_duration_ms": "agree",
+   "exposures[7].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[7].timing.duty_cycle_pct": "agree",
+   "exposures[7].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.sonication_duration_s": "first",
+   "exposures[1].timing.sonication_duration_s": "second",
+   "exposures[2].timing.sonication_duration_s": "second",
+   "exposures[3].timing.sonication_duration_s": "second",
+   "exposures[4].timing.sonication_duration_s": "second",
+   "exposures[5].timing.sonication_duration_s": "second",
+   "exposures[6].timing.sonication_duration_s": "second",
+   "exposures[7].timing.sonication_duration_s": "second"
+  }
+ }
+}

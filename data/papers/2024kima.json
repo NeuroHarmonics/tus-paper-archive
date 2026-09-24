@@ -1,0 +1,211 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024kima",
+ "doi": "10.1016/j.neuroimage.2024.120768",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "Functional ultrasound (fUS) power-Doppler imaging of cerebral blood volume (CBV); displacement imaging (acoustic radiation force imaging); thermocouple temperature measurement",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS evoked an ipsilateral increase in cerebral blood volume (CBV) in cortex and subcortex that increased monotonically with peak negative pressure, sonication duration, and pulse duration.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining after 21 sonications at the maximum parameter set (PNP = 3.39 MPa, SD = 10 s, PD = 300 ms) showed no direct tissue damage or red blood cell extravasation; peak thermocouple-measured temperature rise was 4.6 C at end of sonication.",
+ "exposures": [
+  {
+   "label": "FUS to left/center/right sonication sites at Bregma -0.5 mm (craniotomized cortex-to-subcortex)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex",
+     "primary_motor_cortex",
+     "striatum",
+     "globus_pallidus",
+     "thalamus"
+    ],
+    "label": "left (ML: -1.5 mm), center (ML: 0 mm), and right (ML: 1.5 mm) sonication with the same depth of FUS focus (DV: 3 mm) at Bregma -0.5 mm"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-215"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     850,
+     3390
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     150,
+     300
+    ],
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     1,
+     10
+    ],
+    "protocol_description": "During a session, mice were sonicated 7 times with 25-34 s interval using the 4 MHz FUS. Three FUS parameters (peak negative pressure PNP, sonication duration SD, pulse duration PD) were explored over 13 sessions repeated per target: PNP ranged 0.85-3.39 MPa (SD=10 s, PD=300 ms fixed), SD ranged 1-10 s (PNP=3.39 MPa, PD=300 ms fixed), and PD ranged 150-300 ms (PNP=3.39 MPa, SD=10 s fixed). An amplitude-modulated pulsing regime at 1 kHz AM frequency was used to minimize auditory confounding."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In the study, a total of nine wild-type mice ( n = 4: fUS imaging with FUS, n = 2: histological evaluation, n = 2: temperature measurement, n = 1: auditory control with audible tone) were used.",
+   "exposures[0].target.label": "To demonstrate the spatial resolution of FUS neuromodulation with 4 MHz FUS used in this study, three targets were explored by positioning the transducers laterally; left (ML: − 1.5 mm), center (ML: 0 mm), and right (ML: 1.5 mm) sonication with the same depth of FUS focus (DV: 3 mm) at Bregma − 0.5 mm.",
+   "exposures[0].device.model": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was employed to generate FUS for displacement and neuromodulation.",
+   "exposures[0].fundamental_frequency_khz": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was employed to generate FUS for displacement and neuromodulation.",
+   "exposures[0].in_situ.pressure_kpa": "PNP ranges from 0.85 to 3.39 MPa while other parameters were fixed (SD = 10 s, PD = 300 ms).",
+   "exposures[0].timing.pulse_duration_ms": "In the same manner, SD ranges from 1 to 10 s (PNP = 3.39 MPa, PD = 300 ms) and PD ranges from 150 to 300 ms (PNP = 3.39 MPa, SD = 10 ms).",
+   "exposures[0].timing.sonication_duration_s": "In the same manner, SD ranges from 1 to 10 s (PNP = 3.39 MPa, PD = 300 ms) and PD ranges from 150 to 300 ms (PNP = 3.39 MPa, SD = 10 ms).",
+   "exposures[0].timing.protocol_description": "After displacement targeting, fUS imaging with FUS neuromodulation was performed. During a session of the fUS-FUS experiment, mice were sonicated 7 times with 25 ~ 34 s interval using the 4 MHz FUS (Fig. 1D top and left bottom). Three FUS parameters (PNP: Peak negative pressure, SD: Sonication duration, PD: Pulse duration) were explored over 13 sessions and this set of sessions was repeated per target (Fig. 1D right bottom).",
+   "safety_notes": "To assess the safety of FUS protocol used in this study, we sonicated the left hemisphere of two craniotomized mice with consecutive 3 sessions of fUS-FUS with the parameter set (a total of 21 sonications with PNP = 3.39 MPa, SD = 10 s, and PD = 300 ms) that can induce maximum ultrasonic dose among the parameter sets we used in the study and performed H&E staining.",
+   "exposures[0].device.manufacturer": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was employed to generate FUS for displacement and neuromodulation."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "FUS was targeted by spatial coordinate (ML/DV at Bregma) rather than a single named nucleus; activated structures spanning cortex and subcortex (S1, M1, caudate putamen, globus pallidus, reticular thalamic nucleus, thalamus) are listed based on the paper's activation-map description, not a single stated anatomical target."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Values are derated peak negative pressures ('all peak negative pressure values reported in this study was derated to account for attenuation in brain tissue'), i.e. an in-situ estimate via a derating equation, not a measured or simulated in-brain value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states the PD=150-300 ms range test used 'SD = 10 ms' which is very likely a typo for 10 s (consistent with the SD sweep description elsewhere); recorded as stated in the text."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper does not state a numeric duty cycle for the 1 kHz amplitude-modulation pulsing scheme."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states 13 parameter-combination sessions were repeated per target (3 targets) for the n=4 fUS-imaging cohort, but does not give a single explicit total sessions-per-animal count usable as one number."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "An audible-tone control (10 kHz, 90 dB) was used to test for auditory confounds in one mouse; this does not match a listed vocabulary term exactly so 'other' is used."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

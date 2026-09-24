@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017zhou",
+ "doi": "10.1039/c7lc00163k",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The straight IDTs generated an a plane wave with a wavelength of 160 μm and the resonant frequency of the IDTs was approximately 28.11 MHz, measured by a network analyzer (ZVA40, Rohde and Schwarz, Germany).",
+   "exposures[0].timing.sonication_duration_s": "As shown in Fig. 2(a), the worms initiated backward locomotion and reversal immediately when stimulated with a single radio frequency (RF) ultrasound pulse (28.11 MHz frequency, 6.40 ms pulse duration, and 5 W electric input power).",
+   "n_subjects": "The proportion of the reversal behaviour of response to an acoustic stimulus on the head $( n = 2 5 )$ , head plus middle $( n = 2 3 )$ , and whole body $( n = 3 4 )$ is $56 \\% \\pm 1 0 . 1 3 \\%$ $8 6 . 9 6 \\% \\pm 7 . 1 8 \\%$ and $8 5 . 2 9 \\% \\pm 6 . 1 7 \\%$ respectively.",
+   "n_sessions_per_subject": "To avoid their adaptation to the ultrasound, each worm was subjected to a single stimulus."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports several different group sizes for distinct sub-experiments (e.g., n=34 for the main reversal assay, n=25/23/34 for stimulation-position tests, n=17 for ASH calcium imaging, n=13 for AFD imaging, n=25 for tax-4 mutants) but never a single total number of worms used; recorded as not_reported rather than summed or listed inconsistently."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "6.40 ms and 2.13 ms pulse durations are explicitly stated in the main text; additional intermediate durations are shown only in Fig. 2(c) and are not extracted since figures alone do not count."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The paper reports only electric input power to the transducer (~5 W) rather than an acoustic intensity or pressure at the worm; no ISPPA/ISPTA/pressure value could be extracted."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "No anaesthetic protocol is described for C. elegans; 'awake' is inferred from the description of freely moving, behaviourally responsive worms rather than an explicit statement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "second"
+  }
+ },
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "Caenorhabditis elegans",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  25,
+  23,
+  34,
+  17,
+  13,
+  25
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging"
+ ],
+ "readout_other": "Reversal/avoidance locomotor behavioural assay (recorded by high-speed CCD camera); GCaMP5.0 calcium imaging in ASH (mechanosensory) and AFD (thermosensory) neurons",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Single-pulse surface-acoustic-wave ultrasound stimulation triggered reversal/avoidance behaviour in 85.29% +/- 6.17% of worms and evoked Ca2+ transients in ASH sensory neurons; AFD thermosensory neurons were not activated by the same stimulus despite a small temperature rise, indicating a mechanical rather than thermal mechanism.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Repeated ultrasound stimulation caused a transient agar surface temperature elevation of less than 0.5 degrees C; stimulated worms had a normal lifespan (~18 days) and reproductive capacity similar to unexposed worms, with no significant change in movement velocity or pattern.",
+ "exposures": [
+  {
+   "label": "SAW ultrasound stimulation of C. elegans on neuro-modulation chip",
+   "target": {
+    "terms": [
+     "c_elegans_neurons"
+    ],
+    "label": "whole worm body / ASH and AFD sensory neurons of C. elegans on an agar surface"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 28110,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.0064,
+     0.00213
+    ],
+    "protocol_description": "Worms on an agar surface mounted on interdigital transducers (IDTs) were stimulated with a single-shot radio-frequency ultrasound pulse (surface acoustic wave) of 6.40 ms duration and 5 W electric input power to elicit reversal behaviour and neuronal calcium responses; each worm received only a single stimulus for the main behavioural assay to avoid adaptation. In separate adaptation experiments, worms received repeated stimuli (up to 16 applications) at 10 s or 15 s intervals, with pulse duration reduced to as little as 2.13 ms; adaptation (declining response) was greater at the shorter pulse duration."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ]
+}

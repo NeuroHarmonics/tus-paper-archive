@@ -1,0 +1,404 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022vionbailly",
+ "doi": "10.1002/mp.15358",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "Lumbricus terrestris (common earthworm)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  4,
+  6,
+  1,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "extracellular electrode recording of compound action potentials from the giant fibers (MGF/LGF) of the earthworm ventral nerve cord",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS bursts triggered action potentials in the giant fibers; neurostimulation success rate (NSR) increased with pulse intensity (Isapa), pulse duration (PD), PRF, and number of pulses per burst, reaching close to 100% NSR at 1.1 MHz and up to 60% at 3.3 MHz.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Simulated focal temperature elevations ranged from 0.04-0.45 degrees C across FUS parameter combinations at 1.1 MHz and from 0.68-6.5 degrees C at 3.3 MHz; large NSR changes (e.g. with PRF or pulse number) occurred with negligible accompanying temperature differences, arguing against a thermal mechanism.",
+ "exposures": [
+  {
+   "label": "Posterior end of earthworm (giant fibers), fundamental frequency 1.1 MHz, repetitive-pulse FUS with varying intensity/PD/PRF/pulse count",
+   "target": {
+    "terms": [
+     "earthworm_neurons"
+    ],
+    "label": "posterior end of ventral nerve cord / giant fibers (MGF/LGF) of Lumbricus terrestris"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Ferroperm",
+    "model": "PZ28"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": [
+     1800,
+     5200
+    ],
+    "isppa_w_cm2": [
+     70,
+     260,
+     560,
+     930,
+     1260,
+     1520,
+     1750,
+     1860
+    ],
+    "ispta_w_cm2": [
+     2.5,
+     33
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.02,
+     0.04,
+     0.08,
+     0.16,
+     0.32,
+     0.48,
+     0.64,
+     0.8,
+     0.96
+    ],
+    "pulse_repetition_frequency_hz": [
+     25,
+     125
+    ],
+    "duty_cycle_pct": [
+     0.25,
+     12
+    ],
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "A single ultrasound burst was composed of several pulses repeated at a fixed pulse repetition frequency (PRF); the burst of reference was f=f0 (1.1 MHz), PD=160 microseconds, Isapa=0.93 kW/cm2, PRF=125 Hz, Npulses=20. Pulse duration (PD) was swept over 20-960 microseconds at fixed Isapa values in n=4 animals; PRF was compared at 125 Hz vs 25 Hz (n=6 animals) with PD=160 microseconds, Isapa=0.56 kW/cm2, Npulses=20 fixed; the number of pulses per burst (Npulses) was varied among 1, 2, 3, 5, 20 and 200 in a single animal (n=1) with PD=480 microseconds, Isapa=0.26 kW/cm2, PRF=125 Hz fixed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Posterior end of earthworm (giant fibers), third-harmonic frequency 3.3 MHz, repetitive-pulse FUS with varying intensity/PD",
+   "target": {
+    "terms": [
+     "earthworm_neurons"
+    ],
+    "label": "posterior end of ventral nerve cord / giant fibers (MGF/LGF) of Lumbricus terrestris"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Ferroperm",
+    "model": "PZ28"
+   },
+   "fundamental_frequency_khz": 3300,
+   "free_field": {
+    "pressure_kpa": [
+     1800,
+     5200
+    ],
+    "isppa_w_cm2": [
+     140,
+     430,
+     770,
+     1040,
+     1190
+    ],
+    "ispta_w_cm2": [
+     8.4,
+     83.2
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.48,
+     0.64,
+     0.8,
+     0.96
+    ],
+    "pulse_repetition_frequency_hz": [
+     125
+    ],
+    "duty_cycle_pct": [
+     6,
+     12
+    ],
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Using the same transducer driven at its third harmonic (f3 ~ 3*f0 = 3.3 MHz), bursts were built from different combinations of Isapa and PD (PD=480-960 microseconds; Isapa=0.14-1.19 kW/cm2) with PRF=125 Hz and Npulses=20 fixed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The respective influences of FUS PD and $I _ { s a p a }$ on the NSR were studied over the course of the same experiments. During each experiment, animals $( n = 4 )$ were exposed to random sequences of different types of ultrasound bursts. The different types of bursts were built from different combinations of $I _ { s a p a }$ and PD, while all other acoustic parameters remained identical $( f = f _ { O } = 1 . 1 \\mathsf { M H z } , P R F = 1 2 5 \\mathsf { H z } , N _ { p u I s e s } = 2 0 )$ . | To study the effect of the PRF on the NSR, several trials were performed wherein animals $( n = 6 )$ were exposed to two types of FUS sequences, randomly. The two types of FUS sequences were respectively built with PRFs of 125 and 25 Hz, while keeping all other acoustic parameters identical $( f = f _ { O } = 1 . 1 \\ \\mathsf { M H z } , P D = 1 6 0$ $\\mu { \\bf S } , \\ I _ { s a p a } = 0 . 5 6 \\ \\mathrm { k W } / \\mathrm { c m } ^ { 2 } , \\ N _ { p u l s e s } = 2 0 , \\ I _ { s p t a } = 1 1 . 2$ $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ at PRF of 125 Hz and $I _ { s p t a } = 2 . 2 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ at PRF of 25 Hz). | To study the effect of the number of repetitive FUS pulses per burst $( N _ { p u l s e s } )$ on the NSR, experiments were performed by exposing a single animal $( n = 1 )$ to random FUS sequences containing different $N _ { p u l s e s } .$ The different values of $N _ { p u l s e s }$ were compared in pairs (FUS Burst Types 1 and 2), which were included in five FUS sequences, as detailed in Table 2. | Two animals were included in this specific study $( n = 2 )$ .",
+   "exposures[0].fundamental_frequency_khz": "A single-element spherically focused piezoelectric transducer (PZ28, Ferroperm), with a radius of curvature of 50 mm (Ø = 50 mm) and diameter of 50 mm, was used (f-number of 1). The fundamental frequency of the transducer was $f _ { 0 } = 1 . 1 ~ \\mathsf { M H z }$ .",
+   "exposures[0].free_field.pressure_kpa": "The levels of pressure amplitudes applied with FUS exposures ranged from 1.8 to 5.2 MPa root-mean-square pressure $( p _ { R M S } )$ corresponding to a range of mechanical indices between 2.4 and 7.",
+   "exposures[0].free_field.isppa_w_cm2": "Nine PD values $( P D = 2 0 , 4 0 , 8 0 , 1 6 0 , 3 2 0 , 4 \\dot { 8 } 0 , 6 4 0 , 8 0 0$ ,and 960 $\\mu \\mathsf { s } ,$ corresponding to duty cycles ranging from 0.0025 to 0.12) and eight pulse intensity values $( I _ { s a p a } = 0 . 0 7$ $0 . 2 6 , 0 . 5 6 , 0 . 9 3 , 1 . 2 6 , 1 . 5 2 , 1 . 7 5$ ,and $1 . 8 6 \\mathsf { k W } / \\mathsf { c m } ^ { 2 } )$ were applied.When applied at a PRF of 125,the spatial-peak, temporal-average intensities $( I _ { s p t a } )$ applied at 1.1 MHz across this study ranged between 2.5 and 33 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[0].free_field.ispta_w_cm2": "Nine PD values $( P D = 2 0 , 4 0 , 8 0 , 1 6 0 , 3 2 0 , 4 \\dot { 8 } 0 , 6 4 0 , 8 0 0$ ,and 960 $\\mu \\mathsf { s } ,$ corresponding to duty cycles ranging from 0.0025 to 0.12) and eight pulse intensity values $( I _ { s a p a } = 0 . 0 7$ $0 . 2 6 , 0 . 5 6 , 0 . 9 3 , 1 . 2 6 , 1 . 5 2 , 1 . 7 5$ ,and $1 . 8 6 \\mathsf { k W } / \\mathsf { c m } ^ { 2 } )$ were applied.When applied at a PRF of 125,the spatial-peak, temporal-average intensities $( I _ { s p t a } )$ applied at 1.1 MHz across this study ranged between 2.5 and 33 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[0].timing.pulse_duration_ms": "Nine PD values $( P D = 2 0 , 4 0 , 8 0 , 1 6 0 , 3 2 0 , 4 \\dot { 8 } 0 , 6 4 0 , 8 0 0$ ,and 960 $\\mu \\mathsf { s } ,$ corresponding to duty cycles ranging from 0.0025 to 0.12) and eight pulse intensity values $( I _ { s a p a } = 0 . 0 7$ $0 . 2 6 , 0 . 5 6 , 0 . 9 3 , 1 . 2 6 , 1 . 5 2 , 1 . 7 5$ ,and $1 . 8 6 \\mathsf { k W } / \\mathsf { c m } ^ { 2 } )$ were applied.When applied at a PRF of 125,the spatial-peak, temporal-average intensities $( I _ { s p t a } )$ applied at 1.1 MHz across this study ranged between 2.5 and 33 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To study the effect of the PRF on the NSR, several trials were performed wherein animals $( n = 6 )$ were exposed to two types of FUS sequences, randomly. The two types of FUS sequences were respectively built with PRFs of 125 and 25 Hz, while keeping all other acoustic parameters identical $( f = f _ { O } = 1 . 1 \\ \\mathsf { M H z } , P D = 1 6 0$ $\\mu { \\bf S } , \\ I _ { s a p a } = 0 . 5 6 \\ \\mathrm { k W } / \\mathrm { c m } ^ { 2 } , \\ N _ { p u l s e s } = 2 0 , \\ I _ { s p t a } = 1 1 . 2$ $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ at PRF of 125 Hz and $I _ { s p t a } = 2 . 2 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ at PRF of 25 Hz).",
+   "exposures[0].timing.duty_cycle_pct": "Nine PD values $( P D = 2 0 , 4 0 , 8 0 , 1 6 0 , 3 2 0 , 4 \\dot { 8 } 0 , 6 4 0 , 8 0 0$ ,and 960 $\\mu \\mathsf { s } ,$ corresponding to duty cycles ranging from 0.0025 to 0.12) and eight pulse intensity values $( I _ { s a p a } = 0 . 0 7$ $0 . 2 6 , 0 . 5 6 , 0 . 9 3 , 1 . 2 6 , 1 . 5 2 , 1 . 7 5$ ,and $1 . 8 6 \\mathsf { k W } / \\mathsf { c m } ^ { 2 } )$ were applied.When applied at a PRF of 125,the spatial-peak, temporal-average intensities $( I _ { s p t a } )$ applied at 1.1 MHz across this study ranged between 2.5 and 33 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[1].fundamental_frequency_khz": "Every experiment of ultrasound neurostimulation reported so far involved a harmonic frequency of 1.1 MHz (fundamental frequency of the transducer). However, the feasibility of using a harmonic frequency three times greater $( f _ { 3 } = 3 { \\cdot } f _ { 0 } = 3 . 3$ MHz) to induce neural responses was also demonstrated.",
+   "exposures[1].free_field.pressure_kpa": "The levels of pressure amplitudes applied with FUS exposures ranged from 1.8 to 5.2 MPa root-mean-square pressure $( p _ { R M S } )$ corresponding to a range of mechanical indices between 2.4 and 7.",
+   "exposures[1].free_field.isppa_w_cm2": "The different types of bursts were built from different combinations of $I _ { s a p a }$ and PD while all other acoustic parameters remained identical $( f = 3 \\cdot { } f _ { O } = 3 . 3 \\mathsf { M H z } , P R F = 1 2 5 \\mathsf { H z } , N _ { p u I s e s } = 2 0 )$ .Four PD values $( P D = 4 8 0 , 6 4 0 , 8 0 0$ ,and 960 μs,corresponding to duty cycles ranging from 0.6 to 0.12) and five $I _ { s a p a }$ values $( I _ { s a p a } = 0 . 1 4 , 0 . 4 3 , 0 . 7 7 , 1 . 0 4$ , and 1.19 kW/cm<sup>2</sup>) were applied. When applied at a PRF of 125, the spatial-peak,temporal-average intensities $( I _ { s p t a } )$ applied at 3.3 MHz across this study ranged between 8.4 and $8 3 . 2 \\mathrm { ~ W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[1].free_field.ispta_w_cm2": "The different types of bursts were built from different combinations of $I _ { s a p a }$ and PD while all other acoustic parameters remained identical $( f = 3 \\cdot { } f _ { O } = 3 . 3 \\mathsf { M H z } , P R F = 1 2 5 \\mathsf { H z } , N _ { p u I s e s } = 2 0 )$ .Four PD values $( P D = 4 8 0 , 6 4 0 , 8 0 0$ ,and 960 μs,corresponding to duty cycles ranging from 0.6 to 0.12) and five $I _ { s a p a }$ values $( I _ { s a p a } = 0 . 1 4 , 0 . 4 3 , 0 . 7 7 , 1 . 0 4$ , and 1.19 kW/cm<sup>2</sup>) were applied. When applied at a PRF of 125, the spatial-peak,temporal-average intensities $( I _ { s p t a } )$ applied at 3.3 MHz across this study ranged between 8.4 and $8 3 . 2 \\mathrm { ~ W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[1].timing.pulse_duration_ms": "The different types of bursts were built from different combinations of $I _ { s a p a }$ and PD while all other acoustic parameters remained identical $( f = 3 \\cdot { } f _ { O } = 3 . 3 \\mathsf { M H z } , P R F = 1 2 5 \\mathsf { H z } , N _ { p u I s e s } = 2 0 )$ .Four PD values $( P D = 4 8 0 , 6 4 0 , 8 0 0$ ,and 960 μs,corresponding to duty cycles ranging from 0.6 to 0.12) and five $I _ { s a p a }$ values $( I _ { s a p a } = 0 . 1 4 , 0 . 4 3 , 0 . 7 7 , 1 . 0 4$ , and 1.19 kW/cm<sup>2</sup>) were applied. When applied at a PRF of 125, the spatial-peak,temporal-average intensities $( I _ { s p t a } )$ applied at 3.3 MHz across this study ranged between 8.4 and $8 3 . 2 \\mathrm { ~ W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The different types of bursts were built from different combinations of $I _ { s a p a }$ and PD while all other acoustic parameters remained identical $( f = 3 \\cdot { } f _ { O } = 3 . 3 \\mathsf { M H z } , P R F = 1 2 5 \\mathsf { H z } , N _ { p u I s e s } = 2 0 )$ .Four PD values $( P D = 4 8 0 , 6 4 0 , 8 0 0$ ,and 960 μs,corresponding to duty cycles ranging from 0.6 to 0.12) and five $I _ { s a p a }$ values $( I _ { s a p a } = 0 . 1 4 , 0 . 4 3 , 0 . 7 7 , 1 . 0 4$ , and 1.19 kW/cm<sup>2</sup>) were applied. When applied at a PRF of 125, the spatial-peak,temporal-average intensities $( I _ { s p t a } )$ applied at 3.3 MHz across this study ranged between 8.4 and $8 3 . 2 \\mathrm { ~ W } / \\mathsf { c m } ^ { 2 }$",
+   "exposures[1].timing.duty_cycle_pct": "Four PD values $( P D = 4 8 0 , 6 4 0 , 8 0 0$ ,and 960 μs,corresponding to duty cycles ranging from 0.6 to 0.12) and five $I _ { s a p a }$ values $( I _ { s a p a } = 0 . 1 4 , 0 . 4 3 , 0 . 7 7 , 1 . 0 4$ , and 1.19 kW/cm<sup>2</sup>) were applied.",
+   "exposures[0].device.manufacturer": "A single-element spherically focused piezoelectric transducer (PZ28, Ferroperm), with a radius of curvature of 50 mm (Ø = 50 mm) and diameter of 50 mm, was used (f-number of 1).",
+   "exposures[0].device.model": "A single-element spherically focused piezoelectric transducer (PZ28, Ferroperm), with a radius of curvature of 50 mm (Ø = 50 mm) and diameter of 50 mm, was used (f-number of 1).",
+   "exposures[1].device.manufacturer": "A single-element spherically focused piezoelectric transducer (PZ28, Ferroperm), with a radius of curvature of 50 mm (Ø = 50 mm) and diameter of 50 mm, was used (f-number of 1).",
+   "exposures[1].device.model": "A single-element spherically focused piezoelectric transducer (PZ28, Ferroperm), with a radius of curvature of 50 mm (Ø = 50 mm) and diameter of 50 mm, was used (f-number of 1)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Different sub-experiments used separate cohorts of earthworms (n=4 for PD/intensity, n=6 for PRF, n=1 for pulse-count, n=2 for cavitation); the 3.3 MHz frequency study does not state an n. Recorded as a list of the stated group sizes; total unique animals unclear due to possible overlap between sub-studies."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation refers to the random ordering of FUS burst types within each stimulation sequence (to avoid order/fatigue bias), not allocation to independent treatment arms; there is no sham/control group."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper reports Isapa (spatial-average pulse-average intensity), not Isppa (spatial-peak pulse-average); recorded here as the closest available pulse-average intensity metric."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "Paper reports Isapa (spatial-average pulse-average intensity), not Isppa (spatial-peak pulse-average); recorded here as the closest available pulse-average intensity metric."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The 1.8-5.2 MPa RMS pressure range is stated once for the overall FUS exposures used in the study; it is not explicitly broken down by the 1.1 MHz vs 3.3 MHz conditions, so the same range is assigned to both exposures."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Paper states duty cycles 'ranging from 0.6 to 0.12' for the 3.3 MHz PD sweep (480-960 microseconds at PRF=125 Hz); this ordering (max before min) and the value 0.6 (60%) appear inconsistent with PD*PRF arithmetic (which gives ~6-12%), suggesting a possible typo (0.06 instead of 0.6) in the source text. Recorded as stated (60, 12)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The paper gives the number of pulses per burst (Npulses) and PRF but does not explicitly state a total burst/train duration in seconds; not computed here per protocol."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "As for exposure 0, total burst duration is not explicitly stated (only Npulses=20 and PRF=125 Hz); not computed here."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "disagree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].free_field.pressure_kpa": "both_defensible",
+   "exposures[1].timing.duty_cycle_pct": "neither"
+  }
+ }
+}

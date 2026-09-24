@@ -1,0 +1,253 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022magaram",
+ "doi": "10.1371/journal.pone.0267698",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "An immersible 2.25 MHz central frequency point focused transducer (V305-SU-F1.00IN-PTF, Olympus NDT, Waltham, MA) was positioned in a water bath below a 60 mm 2% agar-filled petri dish, and connected via waterproof connector cable (BCU-58-6W, Olympus).",
+   "exposures[0].timing.sonication_duration_s": "A single 10ms pulse was generated using a TTL pulse to trigger a multi-channel function generator (MFG-2230M, GWINSTEK, New Taipei City, Taiwan); the amplitude of the signal was adjusted through a 300-W amplifier (VTC2057574, Vox Technologies, Richardson, TX) to achieve desired pressures.",
+   "exposures[1].fundamental_frequency_khz": "For 10 MHz experiments, the 2.25 MHz transducer was replaced with a 10 MHz line-focused transducer (A327S-SU-CF1.00IN-PTF, Olympus) coupled via plastic 20 mL syringe and degassed water as previously described [22].",
+   "n_sessions_per_subject": "The agar plate was moved around using the motorized stage to place the worm into the focal zone of the transducer where it was stimulated with a single ultrasound pulse of appropriate amplitude.",
+   "exposures[0].free_field.pressure_kpa": "However, at lower pressures (0.79 MPa) TRP-4 expression in AWC chemosensory neurons was able to partially rescue large reversals in both trp-4(ok1605) and mec-4(u253) mutants (Fig 3A).",
+   "exposures[1].free_field.pressure_kpa": "(B) Hydrophone measurements at different perpendicular positions relative to the transducer line focus, with peak negative pressures reaching 1 MPa at highest amplifier settings."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Domain uncertain: pressures were measured with a hydrophone through the 2% agar plate covering the worm (no skull/bone path); classified as in_situ by analogy to a measured-through-tissue value since the paper does not use the free-field/in-situ vocabulary."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "List gives two of several pressures explicitly tested (0.79 and 0.99 MPa); the paper also reports a general threshold ('>0.75 MPa') and mutant-specific thresholds ('>0.92 MPa') that are inequalities rather than discrete stated test values and were not included in the list."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "Value is stated only in the S3 Fig legend text ('peak negative pressures reaching 1 MPa at highest amplifier settings'), not in the main body text for the 10 MHz experiment."
+   },
+   {
+    "field": "exposures[1].timing",
+    "reason": "The Methods section does not restate pulse duration/PRF/waveform for the 10 MHz experiments after describing the transducer swap; it is unclear whether the single-10-ms-pulse protocol used for the 2.25 MHz experiments also applied here, so these fields are left not_reported rather than assumed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Sample sizes vary by condition and genotype across figures (e.g., n=90-135, n=45, n=224); the paper never states a single total number of animals exposed to ultrasound."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ },
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "Caenorhabditis elegans",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Large reversals, small reversals and omega bends scored from video tracking of head position after a single ultrasound pulse",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "A single ultrasound pulse evoked large-reversal behaviour in wild-type C. elegans in a pressure-dependent manner; trp-4, mec-4 and trp-4;mec-4 double mutants showed reduced reversal responses (double mutant more defective than either single mutant), and ectopic TRP-4 expression in AWC (low pressure) or ASH (high pressure) chemosensory neurons partially rescued the deficit.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "2.25 MHz single ultrasound pulse",
+   "target": {
+    "terms": [
+     "c_elegans_neurons"
+    ],
+    "label": "the head of the animal"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V305-SU-F1.00IN-PTF"
+   },
+   "fundamental_frequency_khz": 2250,
+   "free_field": {
+    "pressure_kpa": [
+     790,
+     990
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.01,
+    "protocol_description": "A single 10 ms pulse was generated using a TTL pulse to trigger a multi-channel function generator; amplifier gain was adjusted to achieve desired peak-negative pressures. Worms were stimulated with a single ultrasound pulse while corralled on an agar plate, with and without polydisperse gas-filled microbubbles."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "10 MHz single ultrasound pulse",
+   "target": {
+    "terms": [
+     "c_elegans_neurons"
+    ],
+    "label": "the head of the animal"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "A327S-SU-CF1.00IN-PTF"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "For 10 MHz experiments the 2.25 MHz transducer was replaced with a 10 MHz line-focused transducer coupled via a plastic syringe and degassed water; C. elegans exhibited minimal behavioural responses to 10 MHz stimulation, significantly enhanced in the presence of microbubbles."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

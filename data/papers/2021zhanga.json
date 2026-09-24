@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhanga",
+ "doi": "10.1016/j.isci.2021.103429",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 24,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "Single-pulse TMS-evoked motor evoked potential (MEP) amplitude/latency; Stop-signal task (SSRT, GoRT, SSD, trial accuracy)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Active-rTUS potentiated MEP amplitude for at least 30 min post-intervention and significantly reduced stop-signal reaction time (improved motor inhibitory control) compared with baseline, whereas sham-rTUS produced no significant change in either measure.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No participants reported side effects (headache, neck pain, scalp pain, itch, burning, mood changes) after either active- or sham-rTUS; simulated/measured intensities and MI were below FDA diagnostic ultrasound limits and simulated temperature increases were <0.2 degrees C.",
+ "exposures": [
+  {
+   "label": "rTUS to left primary motor cortex (l-M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (l-M1)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V391-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 8.053,
+    "ispta_w_cm2": 0.403
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.846,
+    "ispta_w_cm2": 0.142
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 419,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "A 15-minute rTUS session (or sham) was delivered to l-M1 with inter-stimulus interval ISI=8 s and 50 tone-bursts (NTB) per sonication train of 500 ms; total on-state duration of ultrasound across the 15-min session was 2.647-2.657 s. In the sham condition the output of the TUS system was turned off. Sessions (active/sham) were delivered in a crossover design with >7 days washout."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 24 male healthy subjects (age 31.88±9.63 years) were recruited and randomly assigned (with computer-generated number sequence) into sham- or active-rTUS in their two visits.",
+   "randomised": "A total of 24 male healthy subjects (age 31.88±9.63 years) were recruited and randomly assigned (with computer-generated number sequence) into sham- or active-rTUS in their two visits.",
+   "blinding": "This study was a single-blind cross-over design (Register No.: ChiCTR2000039290; Register date: October 22, 2020).",
+   "exposures[0].fundamental_frequency_khz": "In the experiment, we used a custom-made TUS system with an immersion-type focused ultrasound transducer (V391-SU, Olympus NDT, Waltham, USA) operating at 0.5 MHz.",
+   "exposures[0].device.manufacturer": "In the experiment, we used a custom-made TUS system with an immersion-type focused ultrasound transducer (V391-SU, Olympus NDT, Waltham, USA) operating at 0.5 MHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In the experiment, we used a novel rTUS protocol (duty cycle: DC=5%; tone-burst-duration: TBD=500 ms; sonication duration: SD=500 ms; the number of tone-bursts: NTB=50; the pulse repetition frequency: PRF=100 Hz; inter-stimulus interval: $1 \\mathsf { S } \\mathsf { l } { = } 8 \\mathsf { s } ; \\mathsf { l } _ { \\mathsf { S P P A } } { = } 8 . 0 5 3 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ the stimulate duration was 15 min in total) (Figure 1C).",
+   "exposures[0].timing.duty_cycle_pct": "In the experiment, we used a novel rTUS protocol (duty cycle: DC=5%; tone-burst-duration: TBD=500 ms; sonication duration: SD=500 ms; the number of tone-bursts: NTB=50; the pulse repetition frequency: PRF=100 Hz; inter-stimulus interval: $1 \\mathsf { S } \\mathsf { l } { = } 8 \\mathsf { s } ; \\mathsf { l } _ { \\mathsf { S P P A } } { = } 8 . 0 5 3 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ the stimulate duration was 15 min in total) (Figure 1C).",
+   "exposures[0].timing.sonication_duration_s": "In the experiment, we used a novel rTUS protocol (duty cycle: DC=5%; tone-burst-duration: TBD=500 ms; sonication duration: SD=500 ms; the number of tone-bursts: NTB=50; the pulse repetition frequency: PRF=100 Hz; inter-stimulus interval: $1 \\mathsf { S } \\mathsf { l } { = } 8 \\mathsf { s } ; \\mathsf { l } _ { \\mathsf { S P P A } } { = } 8 . 0 5 3 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ the stimulate duration was 15 min in total) (Figure 1C).",
+   "exposures[0].free_field.isppa_w_cm2": "Under the set parameters, the spatial-peak temporal-average intensity measured in water by hydrophone (NH1000 Needele Hydrophone-1.0mm, Precision Acoustics, UK) was $\\mathsf { I } _ { \\mathsf { S P T A } } = 0 . 4 0 3 ~ \\mathsf { W / c m } ^ { 2 }$ , the spatialpeak pulse average intensity was $\\mathsf { l } _ { \\mathsf { S P P A } } = 8 . 0 5 3 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ,$ and mechanical index (MI) was 0.696.",
+   "exposures[0].free_field.ispta_w_cm2": "Under the set parameters, the spatial-peak temporal-average intensity measured in water by hydrophone (NH1000 Needele Hydrophone-1.0mm, Precision Acoustics, UK) was $\\mathsf { I } _ { \\mathsf { S P T A } } = 0 . 4 0 3 ~ \\mathsf { W / c m } ^ { 2 }$ , the spatialpeak pulse average intensity was $\\mathsf { l } _ { \\mathsf { S P P A } } = 8 . 0 5 3 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ,$ and mechanical index (MI) was 0.696.",
+   "exposures[0].in_situ.isppa_w_cm2": "the intracranial ultrasound in simulation was $\\mathsf { l } _ { \\mathsf { S P T A } } = 0 . 1 4 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 } , \\mathsf { l } _ { \\mathsf { S P P A } } = 2 . 8 4 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 } , \\mathsf { M } \\mathsf { l } = 0 . 4 2 0$",
+   "exposures[0].in_situ.ispta_w_cm2": "the intracranial ultrasound in simulation was $\\mathsf { l } _ { \\mathsf { S P T A } } = 0 . 1 4 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 } , \\mathsf { l } _ { \\mathsf { S P P A } } = 2 . 8 4 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 } , \\mathsf { M } \\mathsf { l } = 0 . 4 2 0$",
+   "exposures[0].unspecified_domain.pressure_kpa": "In the simulation, the acoustic source was defined to be a focused transducer driven by a sinusoid wave at 500 kHz with a target pressure of 419 kPa.",
+   "adverse_events": "No participants reported any kinds of side effects, including headache, neck pain, scalp pain, itch, feeling of burning, and mood changes.",
+   "n_sessions_per_subject": "These data confirm that one session of 15 min rTUS intervention over the left motor cortex can have considerable potentiation effects on both physiology and behavior in humans.",
+   "exposures[0].device.model": "In the experiment, we used a custom-made TUS system with an immersion-type focused ultrasound transducer (V391-SU, Olympus NDT, Waltham, USA) operating at 0.5 MHz."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states tone-burst-duration (TBD)=500 ms, identical to the stated sonication duration (SD)=500 ms; duty cycle (5%) divided by PRF (100 Hz) implies an individual burst duration of 0.5 ms, suggesting TBD may be a units typo (500 microseconds). Recorded as stated (500) per the burst rule."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "419 kPa is given as the simulation source/target driving pressure; unclear whether this corresponds to a free-field or in-situ (at-target) domain, so placed in unspecified_domain."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No masking sound was used; authors instead selected a transducer/coupler reported to produce no perceivable vibration or sound and had subjects wear earplugs, and argue auditory confound is unlikely; does not map cleanly onto the closed vocabulary."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "first",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

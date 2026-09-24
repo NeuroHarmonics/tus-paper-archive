@@ -1,0 +1,323 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024fan",
+ "doi": "10.1016/j.brs.2024.08.006",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "behaviour",
+  "fmri"
+ ],
+ "readout_other": "6-item Hamilton Depression Rating Scale (HAMD-6); visual analog scale (VAS) of depression; resting-state fMRI default mode network (DMN) connectivity",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "ANT TUS reduced VAS-depression scores over time relative to the unfocused control condition and reduced default mode network (DMN) connectivity compared to the hyperconnected baseline; VC/BNST stimulation did not significantly reduce symptom scores.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The intermittent TUS protocol was well tolerated by the participant without any adverse effects. A post-stimulation MRI scan did not reveal any structural changes, including edema or hemorrhage.",
+ "exposures": [
+  {
+   "label": "VC/BNST dynamically-steered TUS",
+   "target": {
+    "terms": [
+     "internal_capsule",
+     "other"
+    ],
+    "label": "ventral capsule (VC) / bed nucleus of stria terminalis (BNST)"
+   },
+   "device": {
+    "family": "attune",
+    "manufacturer": "Attune Neurosciences, Inc.",
+    "model": "ATTN201"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     42.2,
+     50.2
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 25,
+    "duty_cycle_pct": 13,
+    "sonication_duration_s": 300,
+    "protocol_description": "Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. Eight total pulse trains (four left and four right) were performed to complete a full session; each followed by a 24-hr washout period."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 5.2
+   }
+  },
+  {
+   "label": "ANT dynamically-steered TUS",
+   "target": {
+    "terms": [
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "anterior nucleus of the thalamus (ANT)"
+   },
+   "device": {
+    "family": "attune",
+    "manufacturer": "Attune Neurosciences, Inc.",
+    "model": "ATTN201"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     42.2,
+     50.2
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 25,
+    "duty_cycle_pct": 13,
+    "sonication_duration_s": 300,
+    "protocol_description": "Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. Eight total pulse trains (four left and four right) were performed to complete a full session; each followed by a 24-hr washout period."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 5.2
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A 46-year-old man with treatment-resistant depression underwent TUS interventions aimed to 1) assess the therapeutic potential of candidate brain regions based on self-report and 2) objectively investigate the effects of a top candidate target using neuroimaging. His major depression began ten years prior, characterized by anhedonia, lethargy, poor concentration, and hopelessness (baseline 6-item Hamilton Depression Rating Scale (HAMD-6) rating of 11). He had failed over 10 different oral agents and psychotherapy. He had transient positive effects from both electroconvulsive therapy and TMS, but discontinued treatment due to rapid relapses, cognitive decline, and other side effects, e.g. headache.",
+   "exposures[0].fundamental_frequency_khz": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[0].in_situ.isppa_w_cm2": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[0].timing.duty_cycle_pct": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[0].timing.sonication_duration_s": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[1].fundamental_frequency_khz": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[1].in_situ.isppa_w_cm2": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[1].timing.duty_cycle_pct": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "exposures[1].timing.sonication_duration_s": "The subject underwent a three-phase assessment: an exploratory phase, candidate brain region testing phase, and top-candidate testing with neuroimaging phase. Following an exploratory phase (Supplementary Methods), three regions were targeted for serial testing: ventral capsule (VC), bed nucleus of stria terminalis (BNST), and anterior nucleus of the thalamus (ANT). The top candidate region was then compared to an unfocused control, and resting-state fMRI was collected post-stimulation. Behavioral outcomes were collected using visualanalog scales (VAS) of depression and the HAMD-6. TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA). Stimulation parameters were consistent across all candidate regions: 500 kHz fundamental frequency, 25 Hz pulse repetition frequency, 13 % duty cycle, and 300s (5 min) pulse train duration. Stimulation was bilateral, alternating between left and right lateralized regions every 15 minutes, i.e. 10 min inter pulse train interval. The unfocused control stimulation constituted the same acoustic energy at the array surface but without a deep brain focal pattern, to approximate the same acoustic and peripheral experience as focal stimulation. Eight total pulse trains (four left and four right) were performed to complete a full session (Supplementary Methods); each followed by a 24-hr washout period. Fig. 1B shows the simulated crossbeam ultrasound intensities for right lateralized regions overlaid on T1-weighted MR images. Simulated spatial peak pulse average intensity (I ) ranged from 42.2 to 50.2 W/cm<sup>2</sup> at the target for active conditions and ${ < } 2 \\mathrm { W / c m } ^ { 2 }$ at any given target for the unfocused control. This study was approved by the Advarra Institutional Review Board, and the subject provided written informed consent to complete this study.",
+   "blinding": "We subsequently evaluated the effects of stimulation on functional connectivity within the default mode network (DMN), a network of brain regions implicated in self-reflection and rumination [7]. At baseline, resting-state DMN connectivity was hyperconnected in this subject as compared to that of aged-matched healthy individuals (Fig. 1H; n = 84; age, mean = 43.96 y, SD = 18.3 y; sex, 41 F). Resting-state fMRI following double-blinded ANT stimulation showed a reduction in DMN connectivity when compared to the atypically high levels seen in the baseline condition; smaller reductions in DMN connectivity compared to baseline were also seen following the unfocused condition (Fig. 1G and H; see Fig. 1S for additional axial cuts). Notably, subjective sleepiness was not affected by stimulation, rated as a 4 on the Stanford Sleepiness Scale across the ANT and unfocused conditions, and is therefore unlikely to explain the changes in DMN connectivity.",
+   "safety_notes": "The intermittent TUS protocol was well tolerated by the participant without any adverse effects. A post-stimulation MRI scan did not reveal any structural changes, including edema or hemorrhage. Over serial stimulations, a reduction in VAS-depression and HAMD-6 was observed across all stimulation conditions (Fig. 1C–F). When compared to the unfocused control condition, ANT stimulation further reduced VAS-D scores over time (t(2) = -8.87, p = 0.013, one sample t-test; Fig. 1D), in contrast to VC/BNST stimulation (t(2) = -2.6, p = 0.152). Similar trends were observed in the HAMD-6 scores but without significance. An example spontaneous verbal report following an exploratory ANT stimulation day included: “I think I’m having less obsessive-compulsive thoughts … when I start getting on myself for something it’s just hard to get off, but I feel like I’ve been moving through my thoughts a little bit better,\" suggesting a reduction in ruminative thinking.",
+   "exposures[0].device.manufacturer": "TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA).",
+   "exposures[0].device.model": "TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA).",
+   "exposures[1].device.manufacturer": "TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA).",
+   "exposures[1].device.model": "TUS was delivered using an ATTN201 wearable device, equipped with dynamic steering (Supplementary Methods; 128 transducer elements; Attune Neurosciences, Inc., San Francisco, CA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Single-subject case report."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Unfocused control delivers the same acoustic energy at the array surface without a deep-brain focal pattern; does not clearly match inactive_transducer, active_control_site or sound_only, so classified as other."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "VC and BNST were reported together as a combined 'VC/BNST' condition in the results and figures; treated as one exposure. VC mapped to internal_capsule (ventral capsule/ALIC synonym) and BNST has no matching target id, mapped to other."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The 42.2-50.2 W/cm2 range is reported for 'active conditions' generally (right-lateralized regions) rather than separately for each of VC/BNST vs ANT; applied to both exposures as the paper does not give per-target values."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper describes an exploratory phase, serial testing of three regions over multiple days, and top-candidate vs unfocused comparison, but does not state a single total number of sessions per condition."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper states resting-state fMRI was collected following 'double-blinded ANT stimulation' but does not otherwise describe the blinding scheme for the full study."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

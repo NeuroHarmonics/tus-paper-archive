@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025riis",
+ "doi": "10.1016/j.biopsych.2024.09.029",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 21,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "PANAS-X Sadness subscale; 6-item Hamilton Depression Rating Scale (HDRS-6); General Assessment of Side Effects scale; Young Mania Rating Scale; Columbia-Suicide Severity Rating Scale; Inventory of Depressive Symptomatology; 7-item Generalized Anxiety Disorder scale",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "At the group level, sonication produced target-specific SCC deactivation (beta weights significantly less than zero); however, 2 of 16 individually-analysed participants showed significant SCC activation instead, indicating substantial inter-individual variability in response polarity.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events occurred; two participants experienced a severe psychiatric adverse event (acute depression/suicidal ideation) with delayed onset (24-72 hours) after real stimulation, both resolving over the following two weeks.",
+ "exposures": [
+  {
+   "label": "Bilateral SCC ultrasonic stimulation (real stimulation arm)",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "subcallosal cingulate cortex (SCC), bilateral"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": 31.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     60,
+     180
+    ],
+    "protocol_description": "During concurrent BOLD fMRI, ultrasound was delivered as a 30-ms burst duration containing pulses of 5 ms on and 5 ms off, separated by 1.4-second burst intervals, for 60 seconds, in a 10-minute block design of five 1-minute active-sonication epochs interleaved with five 1-minute rest epochs. In the subsequent 1-hour treatment session outside the scanner, three adjacent SCC targets were stimulated sequentially using the same 30-ms burst (5 ms on/5 ms off pulses) with burst intervals of 1.4 s (Blocks A and B) or 0.7 s (Block C): Block A used three to five 1-minute sonications per target, and Blocks B and C used six 3-minute sonications per target, for 39 to 41 minutes cumulative real or sham sonication across the session. The two-level burst structure (5-ms sub-pulses within a 30-ms burst, bursts repeated every 1.4 or 0.7 s) means the intended 'pulse duration'/'PRF'/'duty cycle' fields are ambiguous; both durations are given here rather than in the numeric fields."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "During this crossover study, 21 participants received real stimulation, and 21 participants received sham stimulation.",
+   "randomised": "As shown in Figure S1, 29 participants were enrolled, 22 were randomized, and 20 crossed over.",
+   "blinding": "Participants were randomized to real (active) or sham (placebo) groups when they arrived for the first stimulation visit. The device operator was necessarily unblinded to allocation at the first stimulation visit. All other staff, participants, and clinical raters remained blinded.",
+   "auditory_control": "Continuous white noise was played throughout the 10-minute session via earbuds with the goal of masking any potential auditory effects caused by the ultrasound.",
+   "direction_of_effect": "At the group level, the average effect of the SCC modulation was deactivation: beta weights extracted from the SCC ROI (Figure 2D) were significantly less than zero across the cohort (t = 22.43, p = .028, 1-sample 2-tailed t test).",
+   "adverse_events": "Two participants experienced a severe psychiatric adverse event with onset later than the 24-hour follow-up visit, both of which followed real stimulation.",
+   "exposures[0].device.family": "Briefly, 2 ultrasound transducer phased arrays were situated in a frame over the left and right sides of the head.",
+   "exposures[0].in_situ.pressure_kpa": "Ultrasound was delivered with an amplitude of 1 MPa at target [31.1 W/cm<sup>2</sup>; following skull correction (10)], 30-ms burst duration containing pulses of 5 ms on and 5 ms off, separated by 1.4-second burst intervals, for 60 seconds.",
+   "exposures[0].in_situ.isppa_w_cm2": "Ultrasound was delivered with an amplitude of 1 MPa at target [31.1 W/cm<sup>2</sup>; following skull correction (10)], 30-ms burst duration containing pulses of 5 ms on and 5 ms off, separated by 1.4-second burst intervals, for 60 seconds.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was delivered to each target with an amplitude of 1 MPa [31.1 W/cm<sup>2</sup>; following skull correction (10)], with a 30-ms burst duration containing pulses of 5 ms on and 5 ms off separated by 1.4- or 0.7-second burst intervals. Overall, the treatment session consisted of 3 blocks (A, B, C), each of which included stimulation of all 3 targets. Block A contained three to five 1-minute sonications to test the tolerability of each target with 1.4-second burst intervals. Block B contained six 3-minute sonications with 1.4-second burst intervals. Block C contained six 3-minute sonications with 0.7-second burst intervals.",
+   "n_sessions_per_subject": "Seven days later, each participant returned for the second stimulation visit, where participants crossed over from real to sham or from sham to real.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was delivered with an amplitude of 1 MPa at target [31.1 W/cm<sup>2</sup>; following skull correction (10)], 30-ms burst duration containing pulses of 5 ms on and 5 ms off, separated by 1.4-second burst intervals, for 60 seconds.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was delivered with an amplitude of 1 MPa at target [31.1 W/cm<sup>2</sup>; following skull correction (10)], 30-ms burst duration containing pulses of 5 ms on and 5 ms off, separated by 1.4-second burst intervals, for 60 seconds."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "29 participants enrolled, 22 randomised, 21 actually received real stimulation and 21 received sham stimulation (crossover design); n_subjects recorded as 21 (number exposed to real ultrasound)."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "The main text does not state the ultrasound fundamental/carrier frequency for this device; not reported here even though it is likely described in the cited companion methods papers, which were not used for this extraction."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The paper describes a two-level burst structure (5 ms on/5 ms off pulses grouped into a 30-ms burst, itself repeated at 1.4 s or 0.7 s intervals) without stating which level corresponds to 'pulse duration', PRF, or duty cycle, and never states a duty cycle percentage; left not_reported per the burst-rule guidance and both durations described in protocol_description instead."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target vocabulary lists 'subgenual_anterior_cingulate_cortex' with SCC/subcallosal cingulate as a synonym; used directly since the paper's SCC matches this term."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

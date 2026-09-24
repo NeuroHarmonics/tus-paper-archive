@@ -1,0 +1,326 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024bendau",
+ "doi": "10.1016/j.ultrasmedbio.2023.11.003",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 24,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "ECG-derived heart rate; respiration rate (differential pressure transducer); haematoxylin and eosin histology",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "At 850 kPa targeting the thalamus/hypothalamus (Location I), FUS decreased heart rate and increased respiratory rate; the same pressure targeting a distant motor-related region (Location II) instead increased heart rate. 425 kPa at Location I produced small, non-significant changes relative to sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No evidence of cell damage was found within or adjacent to the FUS focus in any of the three mice used for histology.",
+ "exposures": [
+  {
+   "label": "Location I (thalamus/hypothalamus)",
+   "target": {
+    "terms": [
+     "thalamus",
+     "hypothalamus"
+    ],
+    "label": "thalamus and hypothalamus (Location I: +2 mm posterior, +2 mm lateral to lambda)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic SAS",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": [
+     425,
+     850
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     300,
+     600
+    ],
+    "isppa_w_cm2": [
+     2.5,
+     10
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 60,
+    "protocol_description": "The target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse; each mouse underwent one sonication session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Location II (motor cortex/caudate putamen)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex",
+     "dorsal_striatum"
+    ],
+    "label": "primary motor cortex (M1) and caudate putamen (Location II: +5.2 mm posterior, +1.5 mm lateral to lambda)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic SAS",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": [
+     850
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     600
+    ],
+    "isppa_w_cm2": [
+     10
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 60,
+    "protocol_description": "The target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse; each mouse underwent one sonication session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We performed this study on 24 male wild-type C57BL/6 mice weighing 20- 25 grams.",
+   "n_sessions_per_subject": "Each mouse underwent one sonication session.",
+   "blinding": "To avoid bias, data was processed blindly, and sections of data or entire sonications were excluded for which the extraction of cardiac or breathing rates was unsuccessful, often due to poor quality of the raw data or motion-related artifacts.",
+   "readout_other": "No evidence of cell damage was found within or adjacent to the FUS focus in any of the three mice used for histology.",
+   "safety_notes": "No evidence of cell damage was found within or adjacent to the FUS focus in any of the three mice used for histology.",
+   "exposures[0].target.label": "Location I was located at +2 mm posterior and +2 mm lateral from lambda. When targeted over these coordinates, notable structures within the volume include the primary visual cortex (V1), hippocampus, thalamus, and hypothalamus.",
+   "exposures[1].target.label": "Location II was located at +5.2 mm posterior and +1.5 mm lateral to lambda. Location II was chosen as a spatially-distant and functionally-distinct region of the brain most signi<sup>fi</sup>cantly comprising the primary motor cortex (M1) and caudate putamen.",
+   "exposures[0].fundamental_frequency_khz": "All sonications were performed using a single-element FUS transducer driven at 2 MHz (center frequency: 1.94 MHz; outer diameter: 70 mm; inner void diameter: 24 mm; focal depth: 60 mm; focal length 8.7 mm; focal width: 1 mm; Imasonic SAS, Voray-sur-l’Ognon, France).",
+   "exposures[1].fundamental_frequency_khz": "All sonications were performed using a single-element FUS transducer driven at 2 MHz (center frequency: 1.94 MHz; outer diameter: 70 mm; inner void diameter: 24 mm; focal depth: 60 mm; focal length 8.7 mm; focal width: 1 mm; Imasonic SAS, Voray-sur-l’Ognon, France).",
+   "exposures[0].free_field.pressure_kpa": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[0].in_situ.pressure_kpa": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[1].free_field.pressure_kpa": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[1].in_situ.pressure_kpa": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[1].in_situ.isppa_w_cm2": "At Location I, three stimulation parameters were used: FUS at 425 kPa (derated values: 300 kPa PNP; 2.5 W=cm<sup>2</sup> I ), FUS at 850 kPa (derated values: 600 kPa PNP; 10 $W / c m ^ { 2 }$ I<sub>SPPA</sub>), and laser heating at 38 mW. FUS was applied to Location II at 850 kPa.",
+   "exposures[0].timing.sonication_duration_s": "After positioning, the target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse.",
+   "exposures[1].timing.sonication_duration_s": "After positioning, the target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse.",
+   "exposures[0].timing.protocol_description": "After positioning, the target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse.",
+   "exposures[1].timing.protocol_description": "After positioning, the target location was sonicated for 60 seconds with 60 seconds between trials for up to 15 trials per mouse.",
+   "exposures[0].timing.duty_cycle_pct": "Methods: The thalamus and hypothalamus of wild-type mice were sonicated with a continuous-wave, 2 MHz FUS transducer at pressures of 425 and 850 kPa for 60 seconds.",
+   "exposures[1].timing.duty_cycle_pct": "Methods: The thalamus and hypothalamus of wild-type mice were sonicated with a continuous-wave, 2 MHz FUS transducer at pressures of 425 and 850 kPa for 60 seconds.",
+   "exposures[0].device.manufacturer": "All sonications were performed using a single-element FUS transducer driven at 2 MHz (center frequency: 1.94 MHz; outer diameter: 70 mm; inner void diameter: 24 mm; focal depth: 60 mm; focal length 8.7 mm; focal width: 1 mm; Imasonic SAS, Voray-sur-l’Ognon, France).",
+   "exposures[1].device.manufacturer": "All sonications were performed using a single-element FUS transducer driven at 2 MHz (center frequency: 1.94 MHz; outer diameter: 70 mm; inner void diameter: 24 mm; focal depth: 60 mm; focal length 8.7 mm; focal width: 1 mm; Imasonic SAS, Voray-sur-l’Ognon, France)."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "A 'sham condition' is referenced in the results/figures (e.g., 'In the sham condition, changes in cardiac and respiratory rate...') but its mechanism is not described in the Methods."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Only 850 kPa (with its associated derated values) is explicitly restated for Location II; the same derating/intensity figures given for Location I are assumed to apply since the paper does not repeat separate derated values for Location II."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The 425 kPa entry's intensity unit in the source text is garbled ('2.5 W=cm2 I') without an explicit ISPPA subscript, unlike the 850 kPa entry which explicitly states I_SPPA; both are recorded as ISPPA by parallel structure."
+   },
+   {
+    "field": "blinding",
+    "reason": "The paper states data was 'processed blindly' (blinded analysis of cardiac/respiratory extraction), which is recorded as single blinding; this does not necessarily reflect blinding of stimulus delivery."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "disagree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.duty_cycle_pct": "both_defensible",
+   "exposures[1].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

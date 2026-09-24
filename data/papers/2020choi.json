@@ -1,0 +1,313 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020choi",
+ "doi": "10.1007/s10439-019-02431-w",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Thy1-GCaMP6s)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "wide-field GCaMP calcium imaging",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Stimulation of barrel or visual cortex increased local calcium signal at the stimulated site (excitatory), but the barrel-cortex stimulation also produced a suppressive (decreased) calcium response in an adjacent S1 (trunk) region, and periodic (but not random) stimulation also drove auditory-cortex activation via an indirect pathway.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Barrel cortex stimulation (periodic and random sequences)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "barrel cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.662
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "other_patterned"
+    ],
+    "pulse_duration_ms": 0.333,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Each stimulus imaging trial consisted of recording for 5 s pre-stimulation, 200 ms stimulation, and 24.8 s post-stimulation periods, with a data session of 50 trials averaged into a single 30-s data period. The T1 trigger signal comprised 50 trigger pulses with a pulse repetition period of 30 s (total trigger pulse train length 25 min); periodic sequences used a fixed PRF of 1.5 kHz while random sequences jittered the pulse start time within each 666-us repetition period to maintain the same 50% duty cycle without a fixed audible PRF."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 49.95,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Visual cortex stimulation (periodic and random sequences)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.662
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "other_patterned"
+    ],
+    "pulse_duration_ms": 0.333,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Each stimulus imaging trial consisted of recording for 5 s pre-stimulation, 200 ms stimulation, and 24.8 s post-stimulation periods, with a data session of 50 trials averaged into a single 30-s data period. The T1 trigger signal comprised 50 trigger pulses with a pulse repetition period of 30 s (total trigger pulse train length 25 min); periodic sequences used a fixed PRF of 1.5 kHz while random sequences jittered the pulse start time within each 666-us repetition period to maintain the same 50% duty cycle without a fixed audible PRF."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 49.95,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine-week-old male were used for this study. Five transgenic mice for neuronal population imaging (Thy1-GCaMP6s, Jackson Laboratory, USA) were used for optical imaging of the neuronal calcium",
+   "anaesthesia": "Before imaging, mice were allowed to fully recover from isoflurane anesthesia and re-anesthetized with 1.3 mg/kg urethane administrated intraperitoneally in order to minimize the efects of isoflurane on vascular dynamics.",
+   "exposures[0].fundamental_frequency_khz": "For every rising edge of the pulse in T2, the custommade pulse generator transmits a 333-ls long 3330- cycle 10-MHz burst.",
+   "exposures[0].timing.pulse_duration_ms": "For every rising edge of the pulse in T2, the custommade pulse generator transmits a 333-ls long 3330- cycle 10-MHz burst.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As described in Fig. 1c, a periodic pulse train can be generated by using the periodic T2 signal with a PRF of 1.5 kHz, and the length of the pulse train is 200 ms corresponding to 300 trigger pulses.",
+   "exposures[0].timing.duty_cycle_pct": "To secure the time for pulsing the 333 ls long burst at 50% duty cycle, the pulsing start time is permitted between 0 and 333 ls within the pulse repetition period.",
+   "exposures[0].timing.sonication_duration_s": "Each stimulus imaging trial consisted of recording for 5 s pre-stimulation, 200 ms stimulation, and 24.8 s post-stimulation periods, and a data session comprising 50 trials was acquired, and ultimately single 30-s data periods were generated by averaging the multi trial data to reduce inconsistent artifacts.",
+   "exposures[0].free_field.pressure_kpa": "The transmitted pressure was 0.20 MPa with 50% duty cycles correspond to 0.662 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The transmitted pressure was 0.20 MPa with 50% duty cycles correspond to 0.662 W/cm<sup>2</sup>.",
+   "exposures[1].fundamental_frequency_khz": "For every rising edge of the pulse in T2, the custommade pulse generator transmits a 333-ls long 3330- cycle 10-MHz burst.",
+   "exposures[1].timing.pulse_duration_ms": "For every rising edge of the pulse in T2, the custommade pulse generator transmits a 333-ls long 3330- cycle 10-MHz burst.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "As described in Fig. 1c, a periodic pulse train can be generated by using the periodic T2 signal with a PRF of 1.5 kHz, and the length of the pulse train is 200 ms corresponding to 300 trigger pulses.",
+   "exposures[1].timing.duty_cycle_pct": "To secure the time for pulsing the 333 ls long burst at 50% duty cycle, the pulsing start time is permitted between 0 and 333 ls within the pulse repetition period.",
+   "exposures[1].timing.sonication_duration_s": "Each stimulus imaging trial consisted of recording for 5 s pre-stimulation, 200 ms stimulation, and 24.8 s post-stimulation periods, and a data session comprising 50 trials was acquired, and ultimately single 30-s data periods were generated by averaging the multi trial data to reduce inconsistent artifacts.",
+   "exposures[1].free_field.pressure_kpa": "The transmitted pressure was 0.20 MPa with 50% duty cycles correspond to 0.662 W/cm<sup>2</sup>.",
+   "exposures[1].free_field.ispta_w_cm2": "The transmitted pressure was 0.20 MPa with 50% duty cycles correspond to 0.662 W/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "paper states '0.662 W/cm2' immediately after mentioning the 50% duty cycle, suggesting a duty-cycle-averaged (Ispta) intensity, but the paper never labels it Isppa or Ispta explicitly; recorded as Ispta with this uncertainty flagged."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "study compares a periodic pulse train (fixed 1.5 kHz PRF) against a non-periodic 'random' sequence with the same duty cycle; both are combined here as one exposure per target with waveform listed as ['pulsed','other_patterned']."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "the paper's 'random' pulse-timing sequence is designed specifically to reduce auditory-cortex activation compared with a periodic sequence, but this is a property of the stimulus design rather than a standard auditory-masking control, so it is recorded as 'other'."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "each mouse received 50 repeated 30-s trials per condition (see Table 1 for which of the 5 mice received which conditions), but the paper does not state a number of discrete sessions."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.isppa_w_cm2": "second"
+  }
+ }
+}

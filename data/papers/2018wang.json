@@ -1,0 +1,173 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018wang",
+ "doi": "10.12659/msm.913205",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty healthy white guinea pigs of mixed sexes were used in this study.",
+   "randomised": "Animals were randomly divided into a normal control group (n=10) and a gentamicin cochlear poisoning group (n=20).",
+   "exposures[0].fundamental_frequency_khz": "The waveform of the signal was a sinusoidally enveloped random phase pip of 32.5 kHz and 85.0 kHz in 0.5 ms duration.",
+   "exposures[0].timing.pulse_duration_ms": "The waveform of the signal was a sinusoidally enveloped random phase pip of 32.5 kHz and 85.0 kHz in 0.5 ms duration.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Induction was performed using clicks, 30–35 kHz pulse square wave (pulse frequency was 100 times/s) and 80–90 kHz pulse square wave (pulse frequency was 100 times/s).",
+   "exposures[0].timing.sonication_duration_s": "Induced parameters were TR2000 and TE20, with 600 repetitions, 20 min scanning time, acoustic stimulation for 20 s, and no acoustic stimulation for 10 s."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Stimulus intensity was reported only as amplifier output peak-to-peak voltage relative to a 20 V (0 dB) reference; no pressure (kPa) or intensity (W/cm2) value was given."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper does not discuss adverse events or safety of the ultrasound stimulation itself (only gentamicin-induced cochlear damage, which is the disease model, not an ultrasound safety outcome)."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "This study is itself about perception of ultrasound via the cochlea; the standard 'auditory confound' vocabulary does not map cleanly, so left not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "disagree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].fundamental_frequency_khz": "first"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "guinea pig",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "gentamicin-induced cochlear (ototoxic) poisoning model",
+ "n_subjects": 30,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "fmri",
+  "histology_molecular"
+ ],
+ "readout_other": "auditory brainstem response (ABR) threshold; BOLD fMRI region-of-interest (ROI) induced by bone-conducted ultrasound; immunofluorescence for Prestin, Otoferlin and F-Actin in cochlear hair cells",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Bone-conducted ultrasound induced ABR responses and cerebral cortex BOLD ROI in normal guinea pigs at both frequency bands, but in gentamicin-poisoned (cochlear hair-cell damaged) animals only the higher (80-90 kHz) frequency induced responses, while 30-35 kHz did not, indicating hair-cell involvement in low-frequency ultrasound perception.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Bone-conducted ultrasound to cochlea (30-35 kHz and 80-90 kHz)",
+   "target": {
+    "terms": [
+     "cochlea"
+    ],
+    "label": "bone-conducted ultrasound via the mastoid region (cochlea)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": [
+    32.5,
+    85.0
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 20,
+    "protocol_description": "Ultrasonic vibration was generated by a triggered function generator system and delivered through an ultrasonic transducer as a sinusoidally enveloped random-phase pip of 32.5 kHz and 85.0 kHz in 0.5 ms duration; for ABR, 30-35 kHz and 80-90 kHz pulse square waves were used (pulse frequency 100 times/s). For fMRI ROI detection, bone-conducted pulsed square waves were used with acoustic stimulation for 20 s and no acoustic stimulation for 10 s, over a 20-min scan (600 repetitions). Stimulus intensity was expressed as amplifier output peak-to-peak voltage (max 20 V = 0 dB reference), not as an absolute acoustic pressure or intensity."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ]
+}

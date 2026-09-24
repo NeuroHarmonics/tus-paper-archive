@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024riisc",
+ "doi": "10.1097/j.pain.0000000000003322",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "Brief Pain Inventory (BPI); PROMIS pain intensity, depression, and anxiety; verbal numerical rating scale (NRS) pain scores; General Assessment of Side Effects (GASE) questionnaire",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Active ACC stimulation produced significantly greater reduction in pain than sham at all timepoints. fMRI showed deactivation at target for subgenual ACC stimulation in significant subjects, while aMCC stimulation produced activation at target in 2 of 3 significant subjects and deactivation in 1.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The stimulation was well tolerated with no adverse events detected; side effects were generally mild and resolved within 24 hours.",
+ "exposures": [
+  {
+   "label": "ACC stimulation (8 subregions: subgenual ACC and pACC-to-aMCC)",
+   "target": {
+    "terms": [
+     "anterior_cingulate_cortex",
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "anterior cingulate cortex (ACC): 2 targets within subgenual ACC (Brodmann Area 25) and 6 targets from pACC to aMCC (Brodmann Areas s24, p24, a24, 33)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": 31.0,
+    "ispta_w_cm2": 0.66
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 1.42,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     30,
+     180
+    ],
+    "protocol_description": "Treatment consisted of 2 blocks: Block A contained sixteen 30-second stimulations across 8 targets (each stimulated twice) to test for immediate symptom reduction, with verbal pain reports taken 15-60 s between sonications; the 4 targets with strongest reduction were selected for Block B, which delivered twelve 3-minute sonications randomly interleaved, again spaced by 15-60 s. Each sonication used a 30 ms burst duration containing 5 ms on/5 ms off pulses (duty cycle 50%), with bursts separated by a 0.7 s burst interval (labeled PRF = 1.42 Hz); it is unclear whether pulse_duration should be the 30 ms burst or the 5 ms sub-pulse given the stated duty cycle and PRF do not arithmetically reconcile."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.71,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty patients with chronic pain received two 40- minute active or sham stimulation protocols and were monitored for one week in a randomized crossover trial.",
+   "n_sessions_per_subject": "This study evaluated FUS stimulation of the ACC over a single 1- hour session containing 40 minutes of active sonication. Ultrasound was focused on a target using 2 phased array transducers placed over the left and right parietal bones.",
+   "randomised": "This study was a pilot double-blind, randomized, controlled crossover trial assessing the efficacy and safety of focused ultrasound (FUS) stimulation of the ACC for patients with generalized chronic pain (ClinicalTrials.gov NCT05674903).",
+   "blinding": "This study was a pilot double-blind, randomized, controlled crossover trial assessing the efficacy and safety of focused ultrasound (FUS) stimulation of the ACC for patients with generalized chronic pain (ClinicalTrials.gov NCT05674903).",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>). Thermal index at target was calculated using $\\mathsf { W } / \\mathsf { W } _ { \\mathrm { d e g } } ,$ with W 5 $3 1 0 , 0 0 0 \\mathsf { W } / \\mathsf { m } ^ { 2 } \\mathsf { a n d } \\bar { \\mathsf { W } } _ { \\mathrm { d e g } } = \\Delta \\mathsf { T } \\mathsf { p C } / ( 2 \\alpha \\hat { t } ) = 4 \\bar { 8 } 0 , 0 0 0 \\bar { \\mathsf { W } } / \\mathsf { m } ^ { 2 }$ , where ΔT is 1 degree of temperature change, r is density of brain tissue, $1 0 3 0 \\mathsf { k g } / \\mathsf { m } ^ { 3 }$ , C is specific heat of brain tissue, 3630 J/(kg K), a is the absorption of brain tissue, $6 \\mathsf { M H z } ^ { - 1 } \\mathsf { m } ^ { - 1 }$ , and f is frequency, 0.65 MHz. Potential skull heating was assessed with both simulations and measurements inside ex vivo human skulls in previous work,<sup>51</sup> finding a maximum 0.047˚C temperature increase for 30-millisecond pulses.",
+   "exposures[0].in_situ.pressure_kpa": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>).",
+   "exposures[0].in_situ.isppa_w_cm2": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>).",
+   "exposures[0].in_situ.ispta_w_cm2": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>).",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>).",
+   "exposures[0].timing.sonication_duration_s": "The treatment session, performed outside the scanner, consisted of 2 stimulation blocks. Block A contained sixteen 30-second stimulations to test for immediate symptom reduction. Symptoms were assessed verbally after each sonication with subjects reporting any positive or negative changes to their pain. The targets were ordered randomly without replacement such that each target was stimulated twice. Verbal reports typically took 15 to 60 seconds between each sonication. We selected the 4 targets that yielded the strongest reduction in the pain symptoms. Block B delivered to these 4 targets twelve 3-minute sonications, randomly interleaved.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was delivered to each target with amplitude of 1 MPa (estimated using the relative through-transmit skull correction,<sup>5</sup> spatial peak pulse average intensity (I ) 31.0 W/cm<sup>2</sup>, mechanical index (MI) 5 1.2, thermal index (TI) 5 0.64), 30 milliseconds burst duration containing pulses of 5 milliseconds on and 5 milliseconds off (duty cycle 5 50%), separated by 0.7- second burst interval (pulse repetition frequency (PRF) 5 1.42 Hz, spatial peak temporal average intensity (I ) 0.66 W/cm<sup>2</sup>)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Abstract states twenty patients; Methods/Results state 23 patients recruited, with 20 active and 20 sham data points available for analysis; 2 subjects who started in sham never crossed over to active."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states a 30 ms burst duration containing 5 ms on/5 ms off sub-pulses (duty cycle 50%) separated by a 0.7 s burst interval labeled PRF = 1.42 Hz; duty_cycle/PRF does not arithmetically match either the 30 ms or 5 ms duration, so which duration is 'the pulse' cannot be resolved from the text."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "This paper does not restate the device manufacturer/model; it references a device described in prior publications."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "8 discrete targets spanning subgenual ACC and pACC-to-aMCC were stimulated; the most specific single/paired target IDs were chosen to represent this span."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

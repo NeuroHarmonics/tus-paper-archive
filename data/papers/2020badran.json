@@ -1,0 +1,211 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020badran",
+ "doi": "10.1016/j.brs.2020.10.007",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 19,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Quantitative sensory thresholding (QST): thermal sensory, pain, and tolerance thresholds via thermode on the left forearm (Medoc Pathway System); secondary in-scanner pain ratings via MRI-compatible handpad",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Active tFUS to the right anterior thalamus attenuated the pre-post increase in thermal pain sensitivity (antinociceptive effect) relative to sham: pain thresholds decreased less after active tFUS (-0.51C) than after sham (-1.08C), pre-post x active-sham interaction p=.046.",
+ "adverse_events": "none_observed",
+ "safety_notes": "There were no adverse events (AEs) observed throughout this experiment. One subject who was not included in the analysis experienced an in-scanner panic attack, and had been randomized to active tFUS that visit.",
+ "exposures": [
+  {
+   "label": "Active tFUS to right anterior thalamus",
+   "target": {
+    "terms": [
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "right anterior thalamus"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix Corp., Sherman Oaks, CA, USA",
+    "model": "BXPulsar 1002 tFUS System"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.995
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.719
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 720,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Fundamental frequency 650 kHz, PRF 10 Hz, pulse width 5 ms, duty cycle 5%, sonication duration 30 s, inter-sonication interval 30 s, 10 sonications per session (conventional 30s ON/30s OFF block design), two 10-min tFUS sessions spread 10 min apart per visit."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "During their initial visit, participants were screened and signed written informed consent. Of the 29 consented, 19 completed the study and yielded useable data (11 women, mean age 24.5 SD 4.6, range 18e38).",
+   "randomised": "This MUSC Institutional Review Board-approved study utilized a three-visit, double-blind, randomized, sham-controlled crossover trial in this concurrent tFUS/MRI study.",
+   "blinding": "This MUSC Institutional Review Board-approved study utilized a three-visit, double-blind, randomized, sham-controlled crossover trial in this concurrent tFUS/MRI study.",
+   "n_sessions_per_subject": "Participants subsequently returned on two separate experimental tFUS/MRI visits at least one week apart during which they received two, 10-min sessions of either active or sham tFUS within the bore of the MRI scanner (Fig. 1).",
+   "adverse_events": "There were no adverse events (AEs) observed throughout this experiment. One subject who was not included in the analysis experienced an in-scanner panic attack, and had been randomized to active tFUS that visit.",
+   "exposures[0].fundamental_frequency_khz": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].free_field.ispta_w_cm2": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].in_situ.ispta_w_cm2": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].timing.pulse_duration_ms": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].timing.duty_cycle_pct": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].timing.sonication_duration_s": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]. The intensity ISPTA. is based on the US FDA derating approach for diagnostic ultrasound systems. This assumes a uniform tissue attenuation of 0.3dB/cm-MHz (and so it is denoted ISPTA.<sub>3</sub>) [www.fda.gov/media/71100/ download. 2019][42]. While it is not completely predictive of the therapeutic transcranial situation, it does provide an upper bound on in-situ exposure. The two tFUS sessions were spread 10 min apart. E-Prime 3.0 software (Psychology Software Tools, Inc., Pittsburgh, PA, USA) was used to trigger tFUS in a conventional 30s ON, 30s OFF block design (Fig. 2d).",
+   "exposures[0].device.manufacturer": "d BrainSonix Corporation, Sherman Oaks, CA, USA",
+   "exposures[0].device.model": "We administered ultrasound using the BrainSonix BXPulsar 1002 tFUS System (BrainSonix Corp., Sherman Oaks, CA, USA) using a single-element, air-backed, spherical ultrasound transducer with a 61 mm diameter and 80 mm focal length.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Sonication parameters were as follow: [Fundamental frequency: 650 kHz, Pulse repetition frequency: 10 Hz, Pulse Width: 5 ms, Duty Cycle: 5%, Sonication Duration: 30s, Inter-Sonication Interval: 30 s, Number of Sonications: 10, ISPTA. 995 mW/cm2, ISPTA. 719 mW/ cm2, Peak rarefactional pressure 0.72 MPa]."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Text lists 'ISPTA. 995 mW/cm2, ISPTA. 719 mW/cm2' with garbled subscripts; interpreted as free-field ISPTA=995 mW/cm2 and FDA-derated ISPTA.3=719 mW/cm2 based on the following sentence explaining the derating approach. Please verify against original PDF formatting."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Domain (free-field vs in-situ) of the stated 'Peak rarefactional pressure 0.72 MPa' is not explicitly labelled; assigned to free_field per the rule to default there when domain is unclear."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Interpreted as 2 (one active tFUS visit, one sham tFUS visit); each visit itself comprised two 10-min sonication sessions."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Sham condition: tFUS device turned off (transducer coupled identically but not activated). Two, 10-min sonication sessions occurred within each of the two experimental visits (one active, one sham).",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

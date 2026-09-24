@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016hatch",
+ "doi": "10.1371/journal.pone.0164278",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  6
+ ],
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "whole-cell patch-clamp electrophysiology (AP firing/kinetics, passive properties); Neurolucida dendritic morphometry and confocal spine density imaging",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No change in CA1 neuronal AP firing or kinetics was observed after single or multiple SUS treatments compared to sham at any time-point; however, multiple SUS treatments prevented an age-related reduction in apical dendritic tree length/complexity seen in sham-treated mice at 3 months.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Designed as a safety study; no changes in neuronal excitability, AP kinetics or passive membrane properties were detected after single or repeated SUS/microbubble treatments, and multiple treatments did not damage dendritic structure (indeed preserved apical dendritic tree structure with ageing).",
+ "exposures": [
+  {
+   "label": "Scanning ultrasound (SUS) treatment of the whole brain with microbubbles",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "the entire brain"
+   },
+   "device": {
+    "family": "philips_research",
+    "manufacturer": "Philips Research",
+    "model": "Therapy Imaging Probe System (TIPS)"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 700,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 6,
+    "protocol_description": "Ultrasound was applied sequentially in a scanning mode by applying it for 6 seconds duration per spot, moving the focus 1.5 mm and repeating the application until the entire brain was treated as described previously. The focus of the transducer had a volume of 1.5 mm x 1.5 mm x 12 mm. Mice received either a single SUS treatment (analysed 2 or 24 hours later) or six weekly SUS treatments (analysed one week or three months after the final treatment)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 24 female C57Bl/6 mice (3 mice per sham and SUS group for each of the 4 experimental protocols), aged 4 months at the beginning of our proof-of-concept study, were anaesthetized by intraperitoneal injection with ketamine (100 mg/kg, Provet) and xylazine (10 mg/ kg, Ilium) and the head hair was removed by shaving and depilatory cream.",
+   "n_sessions_per_subject": "Following random allocation to a treatment group, animals were treated with a single SUS treatment and analyzed 2 and 24 hours later (Fig 1B), respectively, or received six SUS treatments once weekly for six weeks, and were analyzed after the sixth treatment or were aged for 3 months before final analysis (Fig 1C).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound settings used for treatments were 1 MHz centre frequency, 0.7 MPa peak rarefactional pressure applied outside the skull, 10 Hz pulse repetition frequency, 10% duty cycle and 10 ms pulse length.",
+   "exposures[0].free_field.pressure_kpa": "The ultrasound settings used for treatments were 1 MHz centre frequency, 0.7 MPa peak rarefactional pressure applied outside the skull, 10 Hz pulse repetition frequency, 10% duty cycle and 10 ms pulse length.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound settings used for treatments were 1 MHz centre frequency, 0.7 MPa peak rarefactional pressure applied outside the skull, 10 Hz pulse repetition frequency, 10% duty cycle and 10 ms pulse length.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound settings used for treatments were 1 MHz centre frequency, 0.7 MPa peak rarefactional pressure applied outside the skull, 10 Hz pulse repetition frequency, 10% duty cycle and 10 ms pulse length.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound settings used for treatments were 1 MHz centre frequency, 0.7 MPa peak rarefactional pressure applied outside the skull, 10 Hz pulse repetition frequency, 10% duty cycle and 10 ms pulse length.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was applied sequentially in a scanning mode by applying it for 6 seconds duration per spot, moving the focus 1.5 mm and repeating the application until the entire brain was treated as described previously.",
+   "exposures[0].device.manufacturer": "Ultrasound was generated by the Therapy Imaging Probe System (TIPS, Philips Research) that is composed of an annular array transducer with a focal length of 80 mm, an 80 mm radius of curvature, an 80 mm spherical shell with a 31 mm"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states total mice (24) split 3 sham/3 SUS per each of 4 protocols; recorded as group sizes for the SUS-exposed arm only (3x4), not summed, and total includes an equal number of sham mice not exposed to ultrasound."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Paper states 0.7 MPa peak rarefactional pressure 'applied outside the skull' without stating whether this was a water-tank/free-field measurement; recorded as free_field because it is explicitly outside the skull (not in-situ), but the domain wording is not the paper's usual 'measured in water' phrasing."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Ultrasound was scanned over the entire brain (BBB-opening protocol); readouts were specifically from hippocampal CA1 neurons, but the sonication itself was not targeted to the hippocampus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,244 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024yu",
+ "doi": "10.1088/1741-2552/ad9406",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Local field potentials (LFP) and multi-unit spiking activity recorded from a 96-channel Utah array in area V4; peri-stimulus time histograms (PSTH)",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "tFUS at FEF produced pulse-repetition-frequency-dependent bidirectional remote modulation of V4 activity: 100 Hz PRF produced an inhibitory effect (reduced LFP/spiking) while 200 Hz, 1-4 kHz PRF produced excitatory effects (increased LFP amplitude/spiking); higher duty cycle produced a broader excitatory impact; effects were spatially confined to FEF sub-regions and absent when targeting insula or using decoupled sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Stimulations were observed to be safe, based on tFUS safety monitoring described in the paper's Supplementary Note 2.",
+ "exposures": [
+  {
+   "label": "tFUS to frontal eye field (FEF)",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "frontal eye field (FEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H275"
+   },
+   "fundamental_frequency_khz": 700,
+   "free_field": {
+    "pressure_kpa": 2700,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     952.8,
+     1160
+    ],
+    "isppa_w_cm2": 10.4,
+    "ispta_w_cm2": [
+     5.2,
+     2.6,
+     6.2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     5,
+     2.5,
+     0.5,
+     0.25,
+     0.1257,
+     0.0629,
+     0.2
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     200,
+     1000,
+     2000,
+     4000,
+     3000
+    ],
+    "duty_cycle_pct": [
+     50,
+     25,
+     60
+    ],
+    "sonication_duration_s": [
+     0.3,
+     0.4
+    ],
+    "protocol_description": "tFUS delivered to FEF at varying pulse repetition frequencies (100 Hz-4 kHz) and duty cycles (25-60%) with 300 ms sonication duration (400 ms for fixation-only trials without visual stimulus), while electronically steering the ultrasound focus through the depth of FEF (superficial to deep in the arcuate sulcus) to test subregional specificity; e.g. 100 Hz PRF used a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape); a decoupled sham condition (transducer physically disconnected from scalp) and an active control targeting the insula were also tested."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We recorded from an implanted electrode array in the visual cortex of a rhesus macaque (Macaca mulatta) with concurrent tFUS stimulation. The subject was trained to perform a passive fixation task. The animal fixated centrally while a natural image was displayed for 400 ms in the V4 receptive field. After fixation, the animal performed a visually guided saccade to complete the trial. For each recording session, 120 trials with only visual stimulation (duration: 400 ms) and 120 trials with concurrent visual and tFUS stimulation were randomized and presented. All animal experiments in this investigation were conducted in accordance with the institutional animal care and use guidelines of Carnegie Mellon University and the National Institutes ofHealth Guide for the Care and Use of Laboratory Animals. The study protocol (PROTO201900010) was reviewed and approved by the Institutional Animal Care and Use Committee at Carnegie Mellon University.",
+   "exposures[0].fundamental_frequency_khz": "We used a customized 128-element random array ultrasound transducer (H275) at a 700 kHz fundamental frequency transmitted from a relatively large acoustic aperture (diameter: 60 mm, F-number: 0.58). This ultrasound probe was manufactured by Sonic Concepts, Inc. (Bothell, Washington, USA). A transducer holder (with X and Y axes indicators, using Tough 1500 Resin) and a customized ultrasound collimator (using Clear Resin) were 3D printed (Form 3+, Formlabs, Somerville, MA, USA) to fix the transducer’s location on the animal’s chair and assist the ultrasound targeting and steering along specific directions. The H275 was driven by a Vantage 256 research ultrasound platform (Verasonics, Kirkland, WA, USA) operating at 700 kHz with the output voltage initially set at 12.4 V (figures 1(i) and (j)) to achieve the pressure level in free water. This output voltage was further finely tuned to maintain the same ultrasound pressure level when steering the ultrasound focus in the presence of skull bone sample.",
+   "exposures[0].free_field.pressure_kpa": "Single-element ultrasound transducers have been employed previously to modulate brain activity in NHPs [3–9], but this technology has a major compromise in axial specificity. Such transducers need mechanical movement to adjust the spatial locations of the ultrasound focus if one would like to scan spatially across a targeted brain region. The customized H275 (figure 1(a)), the random element spatial configuration as illustrated in the inset) was employed to achieve electrical spatial beam steering capability with improved focal performance. In free water, the simulated coherent axial and lateral resolutions ( 6 dB contour width and length) are 5.61 mm and 1.89 mm, respectively (figures 1(a)– (c)). In degassed water, both dimensions were physically measured as 6.13 mm and 2.15 mm, respectively (figures 1(i) and (j)) with the spatial-peak pressure amplitude of 2.70 MPa (peak-peak pressure). In the presence of a fully hydrated skull sample piece (from a different rhesus macaque than was used in this study) immersed in degassed water, the transcranial ultrasound focus was still spatially tight with a lateral focal size of 2.67 mm and an axial focal size of 7.71 mm ( 6 dB contour width and length) (figures 1(k) and (l)). The acoustic insertion loss due to the skull was measured as approximately 9.1 dB. Furthermore, the in-situ ultrasound spatial-peak pressure was measured as 952.8 kPa (figures 1(k) and (l)) through a needle hydrophone (HNR-0500, Onda Corp., USA) driven by a 3-axis precision motion system (BiSlide system, Velmex Inc., USA), which was commensurate with the simulated transcranial ultrasound in figures 1(d)–(f).",
+   "exposures[0].in_situ.pressure_kpa": "Single-element ultrasound transducers have been employed previously to modulate brain activity in NHPs [3–9], but this technology has a major compromise in axial specificity. Such transducers need mechanical movement to adjust the spatial locations of the ultrasound focus if one would like to scan spatially across a targeted brain region. The customized H275 (figure 1(a)), the random element spatial configuration as illustrated in the inset) was employed to achieve electrical spatial beam steering capability with improved focal performance. In free water, the simulated coherent axial and lateral resolutions ( 6 dB contour width and length) are 5.61 mm and 1.89 mm, respectively (figures 1(a)– (c)). In degassed water, both dimensions were physically measured as 6.13 mm and 2.15 mm, respectively (figures 1(i) and (j)) with the spatial-peak pressure amplitude of 2.70 MPa (peak-peak pressure). In the presence of a fully hydrated skull sample piece (from a different rhesus macaque than was used in this study) immersed in degassed water, the transcranial ultrasound focus was still spatially tight with a lateral focal size of 2.67 mm and an axial focal size of 7.71 mm ( 6 dB contour width and length) (figures 1(k) and (l)). The acoustic insertion loss due to the skull was measured as approximately 9.1 dB. Furthermore, the in-situ ultrasound spatial-peak pressure was measured as 952.8 kPa (figures 1(k) and (l)) through a needle hydrophone (HNR-0500, Onda Corp., USA) driven by a 3-axis precision motion system (BiSlide system, Velmex Inc., USA), which was commensurate with the simulated transcranial ultrasound in figures 1(d)–(f).",
+   "exposures[0].in_situ.isppa_w_cm2": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].in_situ.ispta_w_cm2": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].timing.pulse_duration_ms": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].timing.duty_cycle_pct": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].timing.sonication_duration_s": "\fTo test the neuromodulation effects, we recor ded the LFP and MUA from V4 when two types of tFUS stimulation (ultrasound waveforms and core parameters illustrated in figure 2(c)) were delivered to FEF. Both stimulation types shared the same duty cycle (DC, i.e. 50%). The first stimulation type used a 100 Hz pulse repetition frequency (PRF) with a tone burst duration of 5 ms (3500 cycles per pulse, 30 pulses per sonication, rectangular ramp shape, 300 ms sonication duration, estim ated in-situ spatial-peak pulse-average intensity I<sub>SPPA</sub>: $1 0 . 4 ~ \\mathrm { W ~ } ~ \\mathrm { c m } ^ { - 2 }$ , in-situ spatial-peak temporal average I<sub>SPTA</sub>: 5.2 W $\\mathrm { c m } ^ { - 2 } )$ . The LFP recorded from one electrode in area V4 during the hybrid stimulation condition (i.e., visual stimulation with simultaneous tFUS stimulation) showed a statistically signi ficant difference during the time window from 400 to 443 ms (figure 2(d)), starting 100 ms after the end of sonication. At the middle of this time window $( t = 4 2 0 \\mathrm { m s } )$ , the LFP amplitude sampled across all 96-channel electrode array presented significant difference $( ^ { * * * } p < 0 . 0 0 1 )$ ) due to the tFUS stimula tion (figure 2(e)) and the effect size quantified with Cohen’s d was 0.75. Specifically, comparing the PSTH in visual stimulation with that in the hybrid stimulation (figure 2(f)), an example single neuronal unit sig nificantly reduced its spiking rates at 335 and 455 ms $( ^ { \\ast } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 )$ . Thus, this comparison demonstrated a potential inhibitory effect of the 100 Hz PRF tFUS at the FEF on the visual evoked response remotely at the V4. At the same LFP recording electrode as shown in figure 2(d), 200 Hz PRF tFUS (1750 cycles per pulse, 60 pulses per sonication, 300 ms sonication duration, rectangular ramp shape, estimated in-situ $I _ { \\mathrm { S P P A } } { : } 1 0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , in-situ $I _ { \\mathrm { S P T A } } { : 5 . 2 } \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ produced an excitatory effect during the sonication period, and significant differences in the LFP waveforms were seen during 92–131 ms (figure 2(g)). At the middle ofthis time window $( t = 1 1 0 \\mathrm { m s } )$ , the LFP amplitudes of the entire electrode array also exhibited significant differences $( ^ { * * * } p < 0 . 0 0 1 )$ between the two conditions (figure $2 ( \\mathrm { h } ) )$ and the Cohen’s d was 0.64 indicating a medium effect size. Consistent with this LFP finding, the PSTHs for another neuron (figure 2(i)) exhibited significantly increased spik ing activities $( ^ { * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 5 , ^ { * * } p _ { \\mathrm { a d j u s t e d } } < 0 . 0 1 )$ at multiple time points during sonication, while exhibiting significantly reduced spiking rates after ultra sound stimulation ceased. The waveforms of the corresponding neuronal action potentials are shown in the inset of figures 2(f) and 2(i), respectively. In summary, we observed that, when applied to FEF, different ultrasound PRFs with the same DC induced bidirectional neuromodulation effects remotely at V4. The sorted trial-averaged LFP heatmaps of all channels and the electrode layout of the Utah array are illustrated in supplementary figure S2.",
+   "exposures[0].device.manufacturer": "This ultrasound probe was manufactured by Sonic Concepts, Inc.",
+   "exposures[0].device.model": "We used a customized 128-element random array ultrasound transducer (H275) at a 700 kHz fundamental frequency transmitted from a relatively large acoustic aperture (diameter: 60 mm, F-number: 0.58)."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Multiple recording sessions with 120-240 trials each were conducted across different PRF/duty-cycle/steering conditions, but no total session count is stated"
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Two in-situ pressure figures are given for the FEF target: 952.8 kPa from direct hydrophone measurement through an excised skull sample, and 1.16 MPa from full subject-specific skull/brain simulation; both are listed"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Most pulse durations were computed from stated cycles-per-pulse divided by the 700 kHz fundamental frequency (an explicitly permitted conversion), except the 5 ms value for the 100 Hz PRF condition which was stated directly"
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Many PRF/duty-cycle/duration combinations were tested at one target and frequency (FEF, 700 kHz); values are listed rather than split into separate exposures, so pairing between specific PRF and duty-cycle/duration values is not preserved in these lists"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "first",
+   "exposures[0].timing.pulse_duration_ms": "both_defensible"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013menz",
+ "doi": "10.1523/jneurosci.3521-12.2013",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "tiger salamander",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Multielectrode array extracellular recording of retinal ganglion cell spiking",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "US directly evoked precisely timed ganglion-cell spiking (excitatory), while simultaneously modulating visual sensitivity in a spatially dependent way: sensitivity decreased near the US focus and increased at a distance, and increased locally at US offset.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Focused ultrasound stimulation of the isolated salamander retina at 43 MHz",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "the isolated retina"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 43000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.03,
+     30,
+     180
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1000,
+    "pulse_repetition_frequency_hz": [
+     0.5,
+     15
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     60,
+     300
+    ],
+    "protocol_description": "For most experiments, this consisted of 1 s of stimulus On and 1 s of stimulus Off, repeated for many cycles, for a total duration of 1-5 min. In some experiments, the On and Off times were varied randomly to make a binary noise stimulus sampled at 30 Hz to match the temporal structure of visual stimuli. High-frequency sub-modulation of the 43 MHz carrier within each On pulse (10 Hz to 1 MHz) was tested and found to have no effect on responses when average power was held constant, so it was eliminated in favor of a continuous carrier for the On period."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The US transducer was a custom-made, focused delay line transducer with a Lithium Niobate active element and a fused quartz focusing lens, and was operated at the designed center acoustic frequency of 43 MHz.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "A stimulus frequency of 0.5 Hz was used, and average power was varied between 0.03 and 30 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ (Fig. 3a).",
+   "exposures[0].timing.pulse_duration_ms": "For most experiments, this consisted of 1 s of stimulus On and 1 s of stimulus Off, repeated for many cycles, for a total duration of 1–5 min.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The 43 MHz carrier was modulated at low frequencies (0.5–15 Hz) to match the temporal pattern used for visual stimulation (Fig. 1c).",
+   "exposures[0].timing.duty_cycle_pct": "The calculated time-averaged acoustic power was $1 0 { - } 3 0 \\ \\mathrm { W / c m } ^ { 2 }$ for 50% duty cycle stimulus (e.g., 1 s On, 1 s Off) for most experiments (exceptions noted).",
+   "exposures[0].timing.sonication_duration_s": "For most experiments, this consisted of 1 s of stimulus On and 1 s of stimulus Off, repeated for many cycles, for a total duration of 1–5 min."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "The paper states 'time-averaged acoustic power' calculated from an insertion-loss calibration curve (measured in a water bath, not explicitly labelled free-field or in-situ), so the value is placed in unspecified_domain; recorded under ispta_w_cm2 though spatial averaging (peak vs average) is not specified."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "180 W/cm2 was the maximum power used in a separate CdCl2 synaptic-block experiment ('The stimulus was repeated at progressively higher-power levels up to 180 W/cm2'), included in the list alongside the main 0.03-30 W/cm2 sweep."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports numbers of cells analysed per figure/comparison but never states the total number of retinas or salamanders used."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Effects were mixed: direct excitatory spiking responses to US onset/offset, plus bidirectional (increase or decrease) modulation of visual sensitivity depending on distance from the US focus and On vs Off timing."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.ispta_w_cm2": "first",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "first"
+  }
+ }
+}

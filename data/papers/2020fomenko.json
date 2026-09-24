@@ -1,0 +1,230 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020fomenko",
+ "doi": "10.7554/elife.54497",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "TMS-induced motor-evoked potentials (single- and paired-pulse); visuomotor reaching/reaction-time task",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "TUS (esp. lower duty cycle, longer sonication duration, and PRF in blocked design) suppressed TMS-evoked MEP amplitude and increased SICI (inhibitory on M1 excitability), while the same basic parameters shortened reaction time in a visuomotor task (facilitatory on behaviour).",
+ "adverse_events": "none_observed",
+ "safety_notes": "No subjects reported any adverse effects, but two (13%) participants reported a transient warm sensation at the sonication site after multiple experimental blocks. Neurological examinations after each experimental visit were normal.",
+ "exposures": [
+  {
+   "label": "M1 TUS parameter-variation experiments (basic parameters + DC/PRF/sonication-duration sweeps)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex (M1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc, Bothell, Washington",
+    "model": "custom two-element annular array ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 9.26,
+    "ispta_w_cm2": [
+     0.93,
+     2.78,
+     4.63
+    ]
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.54,
+     2.32
+    ],
+    "ispta_w_cm2": [
+     0.23,
+     0.69,
+     1.16
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     200,
+     500,
+     1000
+    ],
+    "duty_cycle_pct": [
+     10,
+     25,
+     30,
+     50
+    ],
+    "sonication_duration_s": [
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5
+    ],
+    "protocol_description": "Basic parameters: 500 kHz, PRF=1000 Hz, DC=30%, sonication duration=0.5 s, ISPPA=2.32 W/cm^2, TMS pulse time-locked 10 ms before the end of sonication. Four separate blocked/interleaved sub-experiments then independently varied DC (10,30,50%), sonication duration (0.1-0.5 s), PRF with fixed DC (200,500,1000 Hz), and PRF with adjusted DC to hold burst duration constant (10,25,50% DC for 200,500,1000 Hz respectively). Blocks were 15 consecutive sonications of one parameter value with a 5 s inter-stimulus interval and a 20 s rest between blocks; interleaved delivery used 60 randomized sonications with a 5 s ISI and no rest periods."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Since a scalp-coil distance of 10 mm is used in all subsequent experiments, two participants requiring very high stimulation intensities (>95% of maximum stimulator output to generate a 1 mV peak-to-peak MEP in the contralateral FDI) were excluded, leaving 16 participants on which to perform data collection.",
+   "n_sessions_per_subject": "Subjects were studied on four separate visits.",
+   "exposures[0].fundamental_frequency_khz": "A custom two-element annular array ultrasound transducer (Sonic Concepts Inc, Bothell, Washington) operating at a fundamental frequency of 500 kHz and housed in a MRI-safe non-ferromagnetic brass cylinder measuring 38 mm in diameter and 10 mm thick was used (Figure 1—figure supplement 1).",
+   "exposures[0].free_field.isppa_w_cm2": "<tr><td>ISPPA(W/ cm²)</td><td>9.26</td><td>2.32</td><td>9.26</td><td>2.32</td><td>9.26</td><td>2.32</td></tr>",
+   "exposures[0].free_field.ispta_w_cm2": "<tr><td>ISPTA (W/ cm²)</td><td>0.93</td><td>0.23</td><td>2.78</td><td>0.69</td><td>4.63</td><td>1.16</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td>ISPPA(W/ cm²)</td><td>9.26</td><td>2.32</td><td>9.26</td><td>2.32</td><td>9.26</td><td>2.32</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td>ISPTA (W/ cm²)</td><td>0.93</td><td>0.23</td><td>2.78</td><td>0.69</td><td>4.63</td><td>1.16</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Four separate experiments each featuring systematic examination of a distinct sonication parameter were conducted in the following order: DC (sham, 10, 30, 50%), Sonication duration (sham, 0.1, 0.2, 0.3, 0.4, 0.5 s), PRF (sham, 200, 500, 1000 Hz), and adjusted PRF (sham, 200, 500, 1000 Hz).",
+   "exposures[0].timing.duty_cycle_pct": "Four separate experiments each featuring systematic examination of a distinct sonication parameter were conducted in the following order: DC (sham, 10, 30, 50%), Sonication duration (sham, 0.1, 0.2, 0.3, 0.4, 0.5 s), PRF (sham, 200, 500, 1000 Hz), and adjusted PRF (sham, 200, 500, 1000 Hz).",
+   "exposures[0].timing.sonication_duration_s": "Four separate experiments each featuring systematic examination of a distinct sonication parameter were conducted in the following order: DC (sham, 10, 30, 50%), Sonication duration (sham, 0.1, 0.2, 0.3, 0.4, 0.5 s), PRF (sham, 200, 500, 1000 Hz), and adjusted PRF (sham, 200, 500, 1000 Hz).",
+   "exposures[0].device.manufacturer": "A custom two-element annular array ultrasound transducer (Sonic Concepts Inc, Bothell, Washington) operating at a fundamental frequency of 500 kHz and housed in a MRI-safe non-ferromagnetic brass cylinder measuring 38 mm in diameter and 10 mm thick was used (Figure 1—figure supplement 1)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "18 healthy participants were recruited/enrolled; 2 were excluded before any TUS exposure (excessive TMS stimulator intensity requirement), leaving 16 who actually received TUS."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper gives duty cycle and PRF for each condition but never states pulse (burst) duration in ms directly; computing it (DC/PRF) would be arithmetic we must not perform, so left not_reported. Both DC and PRF values are in protocol_description."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The value 0.54 W/cm^2 (near-somatosensory-threshold condition) is not explicitly labeled 'intracranial' in its own sentence, but is used interchangeably with the paper's other estimated-intracranial ISPPA value (2.32 W/cm^2) throughout the text; included here by that consistency but flagged as an inferred domain."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "MEP/SICI readouts show suppression (inhibitory) while the visuomotor reaction-time readout shows facilitation (faster RT); classified as mixed_or_unclear rather than picking one."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "first"
+  }
+ }
+}

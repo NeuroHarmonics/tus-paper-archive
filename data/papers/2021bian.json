@@ -1,0 +1,323 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021bian",
+ "doi": "10.34133/2021/2674692",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "disorders_of_consciousness",
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  6,
+  6,
+  4,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "arousal behavioral scoring (head/whisker/leg/tail movement, righting reflex), open field test, c-Fos/tyrosine hydroxylase immunohistochemistry, H&E and Nissl staining",
+ "readout_timing": "online",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of the VTA increased c-Fos expression, induced arousal/righting reflex recovery, shortened emergence time from isoflurane anaesthesia, and reduced recovery time after TBI; the D1 antagonist SCH-23390 blocked the arousal response, indicating a dopaminergic excitatory mechanism.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and Nissl staining showed no abnormal findings (haemorrhaging or tissue damage) in the VTA of the ultrasound group compared with sham; mechanical index was about 0.3 and estimated brain temperature rise only 0.1°C, within clinical ultrasound imaging safety guidelines.",
+ "exposures": [
+  {
+   "label": "VTA sonication (arousal/reanimation experiments)",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "Collimators to focus ultrasound to the VTA"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3300,
+   "free_field": {
+    "pressure_kpa": [
+     360,
+     586,
+     758
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 7.94,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "Ultrasound stimulation was initiated after 40 min of anaesthesia and continued for two doses of 30 min or until the righting reflex behavior returned, with an interstimulus interval (ISI) of 2 s. In the TBI experiment, 15 min of US stimulation was given to each injured mouse 15 min after injury."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "V1 sonication (control target)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "V1 (related to the bregma: 1.10 mm anterior/posterior, −1.50 mm medial/lateral, and −0.50 mm dorsal/ventral)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3300,
+   "free_field": {
+    "pressure_kpa": 586,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "We repeated the arousal experiment with US stimulation of the primary visual cortex (V1) to demonstrate the specificity of US stimulation, using the same stimulation protocol as for the VTA."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "To determine the VTA activity, we randomly divided the mice into a US group (n <sub>=</sub> 6) and a sham group (n <sub>=</sub> 6).",
+   "randomised": "To determine the VTA activity, we randomly divided the mice into a US group (n <sub>=</sub> 6) and a sham group (n <sub>=</sub> 6).",
+   "blinding": "The person performing the scoring was unaware of our interventions in the experiment (e.g., ultrasound versus sham; saline versus SCH-23390/sulpiride; VTA versus V1) to prevent biasing.",
+   "auditory_control": "Furthermore, the mouse model of mechanical-induced deafness was prepared according to the method described in reference [58]. Ultrasound stimulation showed similar efects on both normal and deaf mice.",
+   "exposures[0].target.label": "Collimators to focus ultrasound to the VTA (related to the bregma: −3.40 mm anterior/posterior, −0.48 mm medial/lateral, and −4.30 mm dorsal/ventral) and V1 (related to the bregma: 1.10 mm anterior/posterior, −1.50 mm medial/lateral, and −0.50 mm dorsal/ventral) were mounted on the surface ofthe mouse skull with medical bone cement.",
+   "exposures[1].target.label": "Collimators to focus ultrasound to the VTA (related to the bregma: −3.40 mm anterior/posterior, −0.48 mm medial/lateral, and −4.30 mm dorsal/ventral) and V1 (related to the bregma: 1.10 mm anterior/posterior, −1.50 mm medial/lateral, and −0.50 mm dorsal/ventral) were mounted on the surface ofthe mouse skull with medical bone cement.",
+   "exposures[0].fundamental_frequency_khz": "The radio frequency signals with a frequency of 3.3 MHz were generated by a four-channel function generator (DG4162, RIGOL, China) and amplified by a 100 W power amplifier (2100L, EI, USA) to drive an ultrasound transducer.",
+   "exposures[1].fundamental_frequency_khz": "The radio frequency signals with a frequency of 3.3 MHz were generated by a four-channel function generator (DG4162, RIGOL, China) and amplified by a 100 W power amplifier (2100L, EI, USA) to drive an ultrasound transducer.",
+   "exposures[0].free_field.pressure_kpa": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa. The acoustic pressures were measured in the absence of the skull.",
+   "exposures[1].free_field.pressure_kpa": "Unlike the sham group, the US group was given 40 min of US at an acoustic pressure of 586 kPa.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound intensity used in this study was well below the regulatory limit for nonobstetric ultrasound imaging (maximum $I _ { \\mathrm { S P P A } } = 1 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ which is $7 . 9 4 \\mathrm { \\ : W } / \\mathrm { c m } ^ { 2 } ( I _ { \\mathrm { S P P A } } ) [ 5 2 ]$ .",
+   "exposures[0].timing.pulse_duration_ms": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[1].timing.pulse_duration_ms": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[0].timing.duty_cycle_pct": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[1].timing.duty_cycle_pct": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[0].timing.sonication_duration_s": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa.",
+   "exposures[1].timing.sonication_duration_s": "The parameters used in this experiment were PRF of 500 Hz, pulse duration of 1 ms, duty cycle of 50%, sonication duration of 1 s, ISI of 2 s, and acoustic pressure of 360 kPa, 586 kPa, and 758 kPa."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Multiple sub-experiments report different ultrasound-exposed group sizes (c-Fos n=6, dose-response n=8 per pressure, antagonist NS-US n=4, V1-comparison n=6, TBI+US n=8); the paper never states a combined total and cohort overlap across experiments is unclear, so group sizes are listed rather than summed."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Three acoustic pressures (360, 586, 758 kPa) were tested to find behavioral thresholds; 586 kPa was used for the main follow-on experiments."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "This ISPPA value (7.94 W/cm2) is mentioned in the Discussion as the intensity used in the study compared to a regulatory limit, but is not clearly labeled free-field or in-situ."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper reports that skull/dura attenuation was about 54% and gives transcranial focus dimensions, but never states a resulting derated in-situ pressure value in kPa."
+   },
+   {
+    "field": "device.manufacturer",
+    "reason": "The custom wearable ultrasound transducer's manufacturer/model is not given; only the driving function generator and amplifier models are specified."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "first",
+   "exposures[1].free_field.pressure_kpa": "first"
+  }
+ }
+}

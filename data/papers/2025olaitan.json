@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025olaitan",
+ "doi": "10.1111/jnc.70001",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 38,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other",
+  "histology_molecular"
+ ],
+ "readout_other": "Fast-scan cyclic voltammetry (FSCV) via carbon-fiber microelectrode measuring electrically-evoked dopamine release in the NAc core (and control regions: caudate-putamen, NAc shell); H&E histology for cell damage/death assessment",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "2-min LIFU sonication of the PLC at 13 W/cm2 ISPPA inhibited electrically-evoked dopamine release in the NAc core by ~50% for up to 2 h; 26 W/cm2 produced less inhibition (~30%) and 6.5 W/cm2 produced no significant inhibition, i.e. a non-monotonic (U-shaped) intensity-response. Effects were anatomically/circuit specific (no change with LIFU to S1J-NAc core, or PLC-CP/PLC-NAc shell).",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E histology showed no significant cell damage or death in sonicated PLC tissue at any tested intensity (6.5, 13, 26 W/cm2) versus no-LIFU controls; Pennes bioheat modelling predicted maximum brain temperature rises of only 0.2-0.9 degC across intensities, below thermal-mechanism thresholds and within natural brain temperature fluctuation.",
+ "exposures": [
+  {
+   "label": "LIFU to prelimbic cortex (PLC), dopamine recorded in NAc core",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "prelimbic cortex (PLC) of the medial prefrontal cortex (dmPFC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus-ims",
+    "model": "XMS-310-B miniature-case immersion transducer"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     470,
+     710,
+     1060
+    ],
+    "isppa_w_cm2": [
+     6.5,
+     13,
+     26
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 120,
+    "protocol_description": "500 ms pulse trains of 500 pulses each (1 kHz PRF, 360 microsecond/36% duty-cycle pulses), with pulse trains separated by a 4.5-s interval for a total of 24 pulse trains (pulse train repetition frequency 0.1 Hz, pulse train duty cycle 3.6%), giving a 120-s total sonication duration delivered once through a burr hole over the PLC. Baseline ISPPA was 13 W/cm2 (0.71 MPa, MI 0.44); separate conditions halved (6.5 W/cm2, 0.47 MPa, MI 0.29) or doubled (26 W/cm2, 1.06 MPa, MI 0.65) this intensity."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 38 male Sprague-Dawley rats (Charles River Laboratories, Wilmington, MA, USA) between 280 and 320 g (8–9 weeks old) were used across a total of seven experimental conditions.",
+   "randomised": "Since all animals had similar weight and age ranges, animals were assigned to different experimental groups non-systematically. No randomization was performed to allocate subjects in the study.",
+   "exposures[0].fundamental_frequency_khz": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].in_situ.pressure_kpa": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].in_situ.isppa_w_cm2": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].timing.pulse_duration_ms": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].timing.duty_cycle_pct": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "exposures[0].timing.sonication_duration_s": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments. Ultrasonic waveforms were generated using a twochannel, 30 MHz Dual Channel Function/Arbitrary Waveform Generator (4054B; BK Precision, Yorba Linda, CA, USA). Channel 1 was a 5-V peak-to-peak (Vpp) square wave of 1 kHz (kHz) $\\left( N = 5 0 0 \\right)$ with a 36% pulse duty cycle (PDC). This setup was used to gate channel 2, which was a 10 MHz sine wave. The overall setup resulted in a 500 ms pulse train of 500 pulses or a pulse repetition frequency (PRF) of 1 kHz, each pulse occurring for 360 microseconds. The output of channel 2 was sent through a 30-watt amplifier (E&I 230L; Electronics and Innovation, Rochester, NY, USA) before being sent to the transducer through its corresponding matching network. Waveforms were visualized using a 200 MHz 4 Channel 2GS/s Oscilloscope (TDS2024C; Tektronix, Beaverton, O, USA). These pulsing parameters have been shown previously to induce local suppression of neuronal activity in different human brain areas (Legon et  al.  2014; Legon, Ai, et  al.  2018; Legon, Bansal, et  al.  2018). LIFU delivery was performed over a 120-s total sonication duration with 500 ms pulse trains separated by a 4.5-s pulse train interval for a total of 24 pulses, leading to a pulse train repetition frequency (PtRF) of 0.1 Hz and a pulse train duty cycle (PtDC) of 3.6%. The baseline spatial peak pulsed average intensity $( I _ { \\mathrm { S P P A } } )$ delivered to the target was 13W/cm<sup>2</sup>, equating to 0.71 megapascals (MPa) and a mechanical index (MI) of 0.44. Two other intensities were employed in separate conditions to evaluate the effect of halving $( I _ { \\mathrm { { S P P A } } } { = } 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , 0.47 MPa, MI = 0.29) or doubling $( I _ { \\mathrm { { S P P A } } } { = } 2 6 \\mathrm { { W } } / \\mathrm { { c m } } ^ { 2 }$ , 1.06 MPa, MI = 0.65) the spatial peak, pulsed average intensity on dopamine levels. A pictographic representation of the parameters can be seen in Figure S1. Thermal modeling of the temperature rise was used to ensure thermal safety (see Section 2.9 below).",
+   "adverse_events": "As shown by the intactness of most nuclei (purple), no significant cell damage was observed with the No-LIFU Control (Figure 7a), 6.5W/cm<sup>2</sup> $\\mathrm { L I F U } _ { S S P A }$ (Figure 7b), $1 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { L I F U } I _ { \\mathrm { S S P A } }$ (Figure 7c), or 26W/ $\\mathrm { c m } ^ { 2 } \\mathrm { L I F U } I _ { \\mathit { S S P A } } \\left( \\mathrm { F i g u r e 7 d } \\right)$ .",
+   "exposures[0].device.manufacturer": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments.",
+   "exposures[0].device.model": "A 10 MHz miniature-case immersion transducer (XMS-310-B, Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length from the exit plane was used for all experiments.",
+   "n_sessions_per_subject": "Figure 3c shows the averaged data for n = 7 rats, and inhibition was observed 2 min after sonication with $1 3 \\mathrm { W / c m } ^ { 2 } \\mathrm { L I F U }$ , and dopamine release continued to be inhibited for 2 h after a single LIFU treatment."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Intensity/pressure were calibrated in a water tank (hydrophone + voltage sweep) and then described as 'delivered to the target'; transducer was applied through a burr hole with no intervening skull, so free-field vs in-situ is not explicitly distinguished by the authors. Recorded as in_situ (method=measurement) because the paper frames the values as delivered to the target; could equally be read as free-field."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Two-level burst structure (360 microsecond pulses at 1 kHz PRF forming 500 ms pulse trains, pulse trains repeated at ~0.1-0.2 Hz for 120 s total); pulse_duration/PRF/duty_cycle here describe the inner pulse level, consistent with the stated 36% PDC = 0.36 ms x 1000 Hz."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper interchangeably calls the target the prelimbic cortex (PLC) and dmPFC; mapped to prefrontal_cortex as the most specific available vocabulary term."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

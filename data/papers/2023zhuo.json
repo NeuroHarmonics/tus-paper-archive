@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023zhuo",
+ "doi": "10.1088/1741-2552/acd7a4",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "C57BL/6 mouse (isolated retina)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "multi-electrode array recording of retinal ganglion cell spiking",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Background ultrasound increased spontaneous firing (spike count) of ON-RGCs and increased peak firing rate / shortened first-spike latency of light-evoked responses; effect required NMDARs, extrasynaptic NMDARs, and TRPV4.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "background ultrasound stimulation of isolated mouse retina",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT, USA",
+    "model": "A314S-SU-F1.001N-PTF"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 216,
+    "isppa_w_cm2": 1.5,
+    "ispta_w_cm2": 0.5
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1000,
+    "pulse_repetition_frequency_hz": 0.333,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 33.3
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].free_field.pressure_kpa": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].free_field.isppa_w_cm2": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].free_field.ispta_w_cm2": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound modulation phenomenon was previously observed from RGC (Zhuo et al 2022). To investigate the underlying mechanism(s), the same ultrasound parameters were adopted in the experiments conducted in the present work. In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022). The ultrasound transducer was used in conjunction with a conical acoustic collimator (length of 25 mm). With the aid of a micromanipulator (M3301L, World Precision Instruments, USA), the tip of the collimator was immersed in the perfusate (figure 1(a)) (Menz et al 2013, Jiang et al 2018). The ultrasound frequency and acoustic pressure at the collimator outlet were 1 MHz and 216 kPa, respectively. The spatial peak pulse average intensity (I ) was 1.5 W $\\mathrm { c m } ^ { - 2 }$ and the spatial peak temporal average intensity $\\left( I _ { \\mathrm { S P T A } } \\right)$ was 0.5 W $\\mathrm { c m } ^ { - 2 }$ (Jiang et al 2018, Zhang et al 2019). The distribution of acoustic pressure in the lateral and axial planes is presented in figures 1(b) and (c). Ultrasound was repeatedly applied to the retina with 1 s duration separated by 2 s intervals 120 times (360 s in total, figures 1(d) and (e)).",
+   "exposures[0].device.manufacturer": "In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022).",
+   "exposures[0].device.model": "In our experiment, we used a 1 MHz ultrasound transducer (A314S-SU-F1.001N-PTF, Olympus NDT, USA) driven by an ultrasonic pulse generator to produce low-frequency, low-intensity ultrasound pulses (Qiu et al 2017, Zhuo et al 2022)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports retinas-per-experiment (3, 2, 3, 2, 3 retinas across the five pharmacology sub-experiments) but never a single total; cannot determine whether these are overlapping or distinct animals."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (0.333 Hz) derived from the stated 1 s ON / 2 s OFF period (3 s cycle), a unit conversion from a stated period rather than independent report."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper gives both a 1 s per-pulse ON duration and a 360 s total exposure duration; recorded the 1 s uninterrupted pulse as sonication_duration_s and put the 360 s total in protocol_description, but this is a judgement call under the burst rule."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not directly stated by the paper; not computed from the 1 s ON / 2 s OFF pattern per the rule against deriving duty cycle."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Pressure/intensity measured at the collimator outlet immersed in Ringer's solution (no skull); treated as free-field since paper does not use in-situ/derating language."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "exposures[0].timing.pulse_duration_ms": "first",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "first"
+  }
+ }
+}

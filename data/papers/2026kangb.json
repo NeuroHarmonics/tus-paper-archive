@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026kangb",
+ "doi": "10.64898/2026.02.20.707135",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 27,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Semantic association task (accuracy, reaction time, inverse efficiency) and a number-judgement control task",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Active taVNS increased post-stimulation accuracy relative to sham (one-tailed t(26)=2.29, p=.015) and produced faster reaction times relative to pre-stimulation (t(26)=2.56, p=.017); the omnibus ANOVA interaction was not significant, and effects relied on planned, partly one-tailed post hoc comparisons. Performance on the non-semantic control task was unchanged.",
+ "adverse_events": "observed",
+ "safety_notes": "A side-effects questionnaire (skin irritation, dizziness, ear pain, etc.) was completed after each session; a small number of mild events were reported (e.g. 3 instances of ear pain in both active and sham), with no significant difference between active and sham stimulation (all chi-square <1.02, p>.313).",
+ "exposures": [
+  {
+   "label": "Active U-taVNS (ultrasound taVNS, right cymba conchae)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "auricular branch of the vagus nerve (right cymba conchae)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NeurGear Inc.",
+    "model": "ZenBud"
+   },
+   "fundamental_frequency_khz": 5300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1030,
+    "isppa_w_cm2": 0.081,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 41,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1800,
+    "protocol_description": "Participants received 30 minutes of taVNS (active or sham) after the pre-stimulation session; the semantic association task and a number-judgement control task were repeated immediately after stimulation (post-stimulation session)."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 12.1951
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "27 healthy adults participated in the study (6 males; mean age = 24 ± 3.4 years; age range: 20–36 years). All participants completed a VNS Safety Questionnaire to verify eligibility. Exclusion criteria were: age under 18; presence of implanted medical devices (e.g., pacemaker, cochlear implant); history of carotid atherosclerosis or cervical vagotomy; cardiovascular conditions (including hypertension, hypotension, bradycardia, and tachycardia); metallic implants in the head or neck; current or past neurological or psychiatric disorders; tendency to faint; family history of epilepsy; use of psychoactive medication (except hormonal contraceptives); and pregnancy.",
+   "n_sessions_per_subject": "First, the sample size and single-session protocol limit inference about individual variability, durability, and dose-response relationships.",
+   "exposures[0].target.label": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].fundamental_frequency_khz": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].timing.duty_cycle_pct": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].unspecified_domain.pressure_kpa": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae. The stimulation protocol employed a centre frequency of 5.3 MHz, a pulse repetition frequency of 41 Hz, a 50% duty cycle, a peak mechanical output of 0.081 W/cm², and an average pressure amplitude of 1.03 MPa.",
+   "exposures[0].timing.sonication_duration_s": "Participants completed two sessions, an active stimulation session and a sham session separated by a minimum of five days. Session order was counterbalanced across the participants. At the beginning of each session, participants performed a semantic memory task and a number judgement task as a control task. After the prestimulation session, participants received 30 minutes of taVNS. Immediately following stimulation (post stimulation session), both tasks were repeated (Fig. 1A). At the end of each session, participants completed a side-effects questionnaire assessing any mild adverse sensations (e.g., headache, neck tension, nausea, tingling, or ear pain).",
+   "exposures[0].device.manufacturer": "taVNS was administered using ultrasound stimulation (ZenBud, NeurGear Inc., Rochester, NY, USA), targeting the right cymba conchae."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "The paper states there was an 'active stimulation session and a sham session' but does not describe the sham device/mechanism (unlike the companion Kang emotional-bias paper), so sham mechanism is unspecified."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Sentence gives 'an average pressure amplitude of 1.03 MPa' alongside a separately labelled 'peak mechanical output of 0.081 W/cm2'; domain (free-field vs in-situ) is not stated for either value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only duty cycle (50%) and PRF (41 Hz) are stated; per-pulse duration is not explicitly reported and was not computed from DC/PRF."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Tasks were performed before and immediately after the 30-minute stimulation period; no assessment during stimulation is described, so timing is classified as offline."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

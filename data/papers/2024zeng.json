@@ -1,0 +1,219 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zeng",
+ "doi": "10.1016/j.brs.2024.03.001",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 8,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Motor-evoked potential (MEP) amplitude, resting motor threshold (RMT), short-interval intracortical inhibition (SICI), intracortical facilitation (ICF), short-interval intracortical facilitation (SICF), all via single- and paired-pulse TMS",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tbTUS increased MEP amplitude in all parameter sets except acoustic intensity of 10 W/cm2 (no effect); higher duty cycle (5/10/15%) and longer sonication duration (40/80/120 s) produced longer-lasting facilitation, and PRF of 5 Hz produced greater/longer facilitation than 2 or 10 Hz.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No subject reported any adverse effects during or after tbTUS. Maximum ISPPA (2.26 W/cm2) and ISPTA (0.34 W/cm2) tested were well below the 2019 FDA cephalic ultrasound guideline maxima of 190 W/cm2 and 0.72 W/cm2.",
+ "exposures": [
+  {
+   "label": "tbTUS of left motor cortex, sweep of intensity/PRF/duty cycle/duration",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left motor cortex (motor hotspot of right FDI)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H246 (custom two-element annular array)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1.13,
+     2.26
+    ],
+    "ispta_w_cm2": [
+     0.11,
+     0.23,
+     0.34
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": [
+     10,
+     20,
+     30,
+     50
+    ],
+    "pulse_repetition_frequency_hz": [
+     2,
+     5,
+     10
+    ],
+    "duty_cycle_pct": [
+     5,
+     10,
+     15
+    ],
+    "sonication_duration_s": [
+     40,
+     80,
+     120
+    ],
+    "protocol_description": "The original tbTUS protocol was an 80 s train of 20 ms bursts of ultrasound repeated every 200 ms (AI=20 W/cm2, PRF=5 Hz, DC=10%, SD=80s). In 7 further sessions, one parameter was changed at a time (AI=10 W/cm2; PRF=2 or 10 Hz; DC=5% or 15%; SD=40 or 120 s), with tone-burst duration adjusted to maintain the stated duty cycle. Each of the 8 parameter sets was applied on a separate day, at least one week apart, in a randomised cross-over design."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We studied 14 right-handed healthy subjects (eight females, age range: 23–34 years, mean $\\mathrm { a g e } \\pm \\mathrm { S D } \\mathrm { : } 2 7 . 8 \\pm 3 . 5$ years).",
+   "n_sessions_per_subject": "In a randomized, cross-over design, tbTUS with eight sets of parameters were applied to the left motor cortex in 14 subjects in random order on separate days at least one week apart.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was induced through a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 0.5 MHz, diameter of 38 mm and thickness of 10 mm.",
+   "exposures[0].in_situ.isppa_w_cm2": "For the original tbTUS protocol $( \\mathrm { A I } = 2 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } , \\mathrm { P R F } = 5 \\mathrm { H z , D C } = 1 0 \\% , \\mathrm { S D } = 8 0 s ) ,$ , the spatial peak-pulse-average intensity (I<sub>SPPA</sub>) was $2 . 2 6 \\mathrm { ~ \\textit ~ { ~ W ~ } ~ } / \\mathrm { c m } ^ { 2 }$ and the spatial-peak time-average intensity (I ) was $0 . 2 3 ~ \\mathrm { W / c m ^ { 2 } } .$ . For tbTUS with AI of $1 0 ~ \\mathrm { W / c m } ^ { 2 } ,$ I<sub>SPPA</sub> was $1 . 1 3 \\mathrm { W / c m ^ { 2 } }$ and $\\mathrm { { I s p T A } }$ was 0.11 ${ \\mathrm { w } } / { \\mathrm { c m } } ^ { 2 } .$",
+   "exposures[0].in_situ.ispta_w_cm2": "For tbTUS with DC of 5% and 15%, I<sub>SPPA</sub> was $2 . 2 6 \\mathrm { ~ W / c m } ^ { 2 } ,$ and I<sub>SPTA</sub> were 0.11 and $0 . 3 4 \\mathrm { W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.pulse_duration_ms": "Tone-burst duration (TBD) was 20 m s for original tbTUS, and the sessions with AI of 10 $\\mathrm { { W / c m ^ { 2 } } }$ and SD of 40 or 120 s. To maintain the DC at 10%, the TBD was set to 50 m s for the session with PRF of 2 Hz and 10 m s for the session with PRF of 10 Hz. To obtain DC of 5% and 15%, TBD was set to 10 m s and 30 m s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulse repetition frequencies (PRF) of 2, 5, and 10 Hz for tbTUS were tested.",
+   "exposures[0].timing.duty_cycle_pct": "Duty cycles (DC) of 5%, 10%, and 15% were tested.",
+   "exposures[0].timing.sonication_duration_s": "Sonication durations (SD) of 40, 80 and 120 s were tested.",
+   "exposures[0].device.manufacturer": "Ultrasound was induced through a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 0.5 MHz, diameter of 38 mm and thickness of 10 mm.",
+   "exposures[0].device.model": "Ultrasound was induced through a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 0.5 MHz, diameter of 38 mm and thickness of 10 mm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Table 1's 'AI' column is the acoustic intensity set on the transducer power output system during calibration, not explicitly labelled as a measured free-field ISPPA/ISPTA value; left not_reported to avoid mislabelling a device setpoint as a measured free-field intensity."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "In-situ ISPPA/ISPTA values are derived by applying a generic 75% skull-attenuation figure taken from a different prior study, not measured or individually simulated for these subjects."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper describes a randomized cross-over design but does not state whether participants or assessors were blinded to the tbTUS parameter set used in each session."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

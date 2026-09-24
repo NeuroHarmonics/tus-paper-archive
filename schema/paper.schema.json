@@ -1,0 +1,619 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/NeuroHarmonics/tus-paper-archive/schema/paper.schema.json",
+ "title": "TUS Paper Archive record, schema 1.0",
+ "description": "One included paper. Written from SCHEMA.md v1.0. target.terms are validated against schema/targets.json by scripts/validate.py, which injects the enum at run time.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema_version",
+  "citekey",
+  "doi",
+  "model_system",
+  "species",
+  "conditions",
+  "condition_other",
+  "n_subjects",
+  "subject_unit",
+  "n_sessions_per_subject",
+  "randomised",
+  "blinding",
+  "sham_type",
+  "auditory_control",
+  "readouts",
+  "readout_other",
+  "readout_timing",
+  "anaesthesia",
+  "direction_of_effect",
+  "direction_notes",
+  "adverse_events",
+  "safety_notes",
+  "exposures",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "citekey": {
+   "type": "string",
+   "pattern": "^[0-9]{4}[a-z]+[a-z]?$"
+  },
+  "doi": {
+   "type": "string",
+   "minLength": 6
+  },
+  "model_system": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "human_healthy",
+     "human_patient",
+     "nonhuman_primate",
+     "large_animal",
+     "rodent",
+     "other_vertebrate",
+     "invertebrate",
+     "ex_vivo_tissue",
+     "in_vitro_cell"
+    ]
+   }
+  },
+  "species": {
+   "$ref": "#/$defs/text3"
+  },
+  "conditions": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "healthy",
+     "essential_tremor",
+     "parkinsons_disease",
+     "depression",
+     "anxiety",
+     "epilepsy",
+     "chronic_pain",
+     "disorders_of_consciousness",
+     "alzheimers_disease",
+     "stroke",
+     "schizophrenia",
+     "substance_use_disorder",
+     "traumatic_brain_injury",
+     "vascular_dementia",
+     "retinal_degeneration",
+     "systemic_inflammation",
+     "myocardial_infarction",
+     "other"
+    ]
+   }
+  },
+  "condition_other": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "n_subjects": {
+   "$ref": "#/$defs/int3"
+  },
+  "subject_unit": {
+   "enum": [
+    "participant",
+    "animal",
+    "preparation",
+    "culture"
+   ]
+  },
+  "n_sessions_per_subject": {
+   "$ref": "#/$defs/int3"
+  },
+  "randomised": {
+   "enum": [
+    true,
+    false,
+    "not_reported",
+    null
+   ]
+  },
+  "blinding": {
+   "enum": [
+    "none",
+    "single",
+    "double",
+    "not_reported",
+    null
+   ]
+  },
+  "sham_type": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "none",
+     "inactive_transducer",
+     "active_control_site",
+     "sound_only",
+     "unfocused_or_detuned",
+     "no_treatment_control",
+     "undescribed",
+     "other"
+    ]
+   }
+  },
+  "auditory_control": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "none",
+     "not_reported",
+     "masking_sound",
+     "ramped_pulses",
+     "sound_only_sham",
+     "deafened_subjects",
+     "matched_device_sound",
+     "control_experiment",
+     "post_hoc_check",
+     "other"
+    ]
+   }
+  },
+  "readouts": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "fmri",
+     "other_mri",
+     "pet",
+     "eeg_meg",
+     "invasive_electrophysiology",
+     "emg_mep",
+     "behaviour",
+     "clinical_scale",
+     "autonomic_physiology",
+     "cellular_imaging",
+     "histology_molecular",
+     "cerebral_haemodynamics",
+     "none_reported",
+     "other"
+    ]
+   }
+  },
+  "readout_other": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "readout_timing": {
+   "enum": [
+    "online",
+    "offline",
+    "both",
+    "not_reported"
+   ]
+  },
+  "anaesthesia": {
+   "enum": [
+    "awake",
+    "anaesthetised",
+    "both",
+    "not_reported",
+    null
+   ]
+  },
+  "direction_of_effect": {
+   "enum": [
+    "excitatory",
+    "inhibitory",
+    "bidirectional",
+    "no_effect",
+    "mixed_or_unclear",
+    "not_assessed"
+   ]
+  },
+  "direction_notes": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "adverse_events": {
+   "enum": [
+    "not_reported",
+    "none_observed",
+    "observed",
+    null
+   ]
+  },
+  "safety_notes": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "exposures": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "$ref": "#/$defs/exposure"
+   }
+  },
+  "provenance": {
+   "$ref": "#/$defs/provenance"
+  }
+ },
+ "$defs": {
+  "num3": {
+   "description": "number | list of numbers (swept) | not_reported | null (not applicable)",
+   "oneOf": [
+    {
+     "type": "number"
+    },
+    {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "number"
+     }
+    },
+    {
+     "const": "not_reported"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "int3": {
+   "oneOf": [
+    {
+     "type": "integer",
+     "minimum": 0
+    },
+    {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "integer",
+      "minimum": 0
+     }
+    },
+    {
+     "const": "not_reported"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "text3": {
+   "anyOf": [
+    {
+     "type": "string",
+     "minLength": 1
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "exposure": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "label",
+    "target",
+    "device",
+    "fundamental_frequency_khz",
+    "free_field",
+    "in_situ",
+    "unspecified_domain",
+    "timing"
+   ],
+   "properties": {
+    "label": {
+     "type": "string",
+     "minLength": 1
+    },
+    "target": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "terms",
+      "label"
+     ],
+     "properties": {
+      "terms": {
+       "type": "array",
+       "minItems": 1,
+       "uniqueItems": true,
+       "items": {
+        "type": "string"
+       }
+      },
+      "label": {
+       "$ref": "#/$defs/text3"
+      }
+     }
+    },
+    "device": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "family",
+      "manufacturer",
+      "model"
+     ],
+     "properties": {
+      "family": {
+       "enum": [
+        "neurofus",
+        "sonic_concepts",
+        "blatek",
+        "philips_research",
+        "mettler",
+        "neurosona",
+        "brainsonix",
+        "insightec",
+        "openwater",
+        "attune",
+        "igt_imasonic",
+        "olympus_panametrics",
+        "ultran",
+        "other_manufacturer",
+        "custom_built",
+        "not_reported"
+       ]
+      },
+      "manufacturer": {
+       "$ref": "#/$defs/text3"
+      },
+      "model": {
+       "$ref": "#/$defs/text3"
+      }
+     }
+    },
+    "fundamental_frequency_khz": {
+     "$ref": "#/$defs/num3"
+    },
+    "free_field": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "pressure_kpa",
+      "isppa_w_cm2",
+      "ispta_w_cm2"
+     ],
+     "properties": {
+      "pressure_kpa": {
+       "$ref": "#/$defs/num3"
+      },
+      "isppa_w_cm2": {
+       "$ref": "#/$defs/num3"
+      },
+      "ispta_w_cm2": {
+       "$ref": "#/$defs/num3"
+      }
+     }
+    },
+    "in_situ": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "method",
+      "reported_as",
+      "pressure_kpa",
+      "isppa_w_cm2",
+      "ispta_w_cm2"
+     ],
+     "properties": {
+      "method": {
+       "enum": [
+        "simulation",
+        "derating",
+        "measurement",
+        "not_reported",
+        null
+       ]
+      },
+      "reported_as": {
+       "enum": [
+        "single_value",
+        "mean_or_range_across_subjects",
+        "not_reported",
+        null
+       ]
+      },
+      "pressure_kpa": {
+       "$ref": "#/$defs/num3"
+      },
+      "isppa_w_cm2": {
+       "$ref": "#/$defs/num3"
+      },
+      "ispta_w_cm2": {
+       "$ref": "#/$defs/num3"
+      }
+     }
+    },
+    "unspecified_domain": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "pressure_kpa",
+      "isppa_w_cm2",
+      "ispta_w_cm2"
+     ],
+     "properties": {
+      "pressure_kpa": {
+       "$ref": "#/$defs/num3"
+      },
+      "isppa_w_cm2": {
+       "$ref": "#/$defs/num3"
+      },
+      "ispta_w_cm2": {
+       "$ref": "#/$defs/num3"
+      }
+     }
+    },
+    "timing": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "waveform",
+      "pulse_duration_ms",
+      "pulse_repetition_frequency_hz",
+      "duty_cycle_pct",
+      "sonication_duration_s",
+      "protocol_description"
+     ],
+     "properties": {
+      "waveform": {
+       "oneOf": [
+        {
+         "enum": [
+          "continuous",
+          "pulsed",
+          "theta_burst",
+          "other_patterned",
+          "not_reported"
+         ]
+        },
+        {
+         "type": "array",
+         "minItems": 1,
+         "uniqueItems": true,
+         "items": {
+          "enum": [
+           "continuous",
+           "pulsed",
+           "theta_burst",
+           "other_patterned"
+          ]
+         }
+        }
+       ]
+      },
+      "pulse_duration_ms": {
+       "$ref": "#/$defs/num3"
+      },
+      "pulse_repetition_frequency_hz": {
+       "$ref": "#/$defs/num3"
+      },
+      "duty_cycle_pct": {
+       "$ref": "#/$defs/num3"
+      },
+      "sonication_duration_s": {
+       "$ref": "#/$defs/num3"
+      },
+      "protocol_description": {
+       "$ref": "#/$defs/text3"
+      }
+     }
+    },
+    "derived": {
+     "type": "object",
+     "description": "written by scripts/derive.py, never by an extractor"
+    }
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "extracted",
+    "source_quotes",
+    "flags",
+    "human_edited",
+    "notes"
+   ],
+   "properties": {
+    "extracted": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "by",
+      "model",
+      "date"
+     ],
+     "properties": {
+      "by": {
+       "type": "string"
+      },
+      "model": {
+       "type": "string"
+      },
+      "date": {
+       "type": "string",
+       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      }
+     }
+    },
+    "source_quotes": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "string",
+      "minLength": 8
+     }
+    },
+    "second_pass": {
+     "type": "object",
+     "additionalProperties": {
+      "enum": [
+       "agree",
+       "disagree"
+      ]
+     }
+    },
+    "flags": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "field",
+       "reason"
+      ],
+      "properties": {
+       "field": {
+        "type": "string"
+       },
+       "reason": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "human_edited": {
+     "type": "boolean"
+    },
+    "notes": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "tiebreak": {
+     "type": "object",
+     "additionalProperties": {
+      "enum": [
+       "first",
+       "second",
+       "both_defensible",
+       "neither",
+       "unresolvable"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

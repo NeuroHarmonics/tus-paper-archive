@@ -1,0 +1,233 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022vasan",
+ "doi": "10.1002/advs.202101950",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (HEK293 cell line); rat (primary cortical/hippocampal neuron culture)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  30,
+  30
+ ],
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "high-speed digital holographic microscopy (DHM) of membrane deflection; whole-cell current-clamp electrophysiology",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound-induced membrane deflection produced capacitance changes that the model predicts depolarize the membrane and trigger action potentials at sufficient pressure/duration (1 MPa, or 0.5 MPa with longer stimulus); current-clamp recordings at 0.5 MPa peak pressure showed an initial spike followed by voltage oscillations.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "HEK293 cell membrane deflection imaging",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "HEK293 cells (coverslip-adherent, in perfusion chamber)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 6720,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "For imaging, coverslips were mounted in a custom perfusion chamber with a built-in ultrasound transducer. Each recording consisted of a 25 ms baseline, a 50 ms ultrasound stimulus, and a 25 ms post-stimulus dwell; no pressure amplitude was reported for this imaging experiment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Primary rat neuron membrane deflection imaging and current-clamp electrophysiology",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "rat primary cortical/hippocampal neurons in culture"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 6720,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 500,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "Each DHM recording consisted of a 25 ms baseline, a 50 ms ultrasound stimulus, and a 25 ms post-stimulus dwell. The same ultrasound delivery rig was used for whole-cell current-clamp electrophysiology; recordings were carried out at peak pressures of 0.5 MPa because access resistance could not be maintained at higher pressures."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "c) The maximum deflection from the mean position was found to be 100– 400 nm, with a median deflection of 214 nm for HEK293 cells and 160 nm for neurons $( N = 3 0$ for each cell type).",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency was measured to be 6.72 MHz using noncontact laser Doppler vibrometry (UHF-120SV, Polytec, Waldbronn, Germany).",
+   "exposures[0].timing.sonication_duration_s": "Once cells were in focus, a 6.72 MHz ultrasound pulse of 50 ms duration was delivered while imaging with an immersion objective as described in following sections, and a cell membrane profile was reconstructed and analyzed.",
+   "exposures[1].fundamental_frequency_khz": "The fundamental frequency was measured to be 6.72 MHz using noncontact laser Doppler vibrometry (UHF-120SV, Polytec, Waldbronn, Germany).",
+   "exposures[1].timing.sonication_duration_s": "Each recording began with 25 ms ofno stimulus as a baseline, followed by a 50 ms ultrasound stimulus, and ended with a 25 ms baseline.",
+   "exposures[1].unspecified_domain.pressure_kpa": "Recordings were carried out in response to peak pressures of 0.5 MPa as access resistance could not be maintained when high pressures were delivered."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "No pressure amplitude was reported for the DHM imaging experiments (only 6.72 MHz frequency and 50 ms pulse duration were stated); the 0.5-1 MPa values elsewhere in the paper are from the theoretical model or the separate patch-clamp experiment."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "The paper does not state whether the 0.5 MPa peak pressure used for patch-clamp recordings is a free-field or in-situ value; recorded as unspecified domain."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports N=30 for each of the two cell types (HEK293, neurons) in the DHM imaging experiments; no separate n is given for the patch-clamp electrophysiology experiments, and totals are not summed per instructions."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

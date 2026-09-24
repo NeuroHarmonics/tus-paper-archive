@@ -1,0 +1,215 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019menz",
+ "doi": "10.1523/jneurosci.2394-18.2019",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "tiger salamander",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  2,
+  2
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging"
+ ],
+ "readout_other": "multielectrode array (MEA) recording of ganglion cell spiking; two-photon laser-scanning imaging of membrane displacement (FM4-64 dye)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound increased retinal ganglion cell firing in an intensity-dependent, saturating manner; higher acoustic frequency (up to 43 MHz) produced greater activation, consistent with radiation force rather than cavitation as the physical mechanism.",
+ "adverse_events": null,
+ "safety_notes": "With perfusion running, temperature change was not measurable at 60 W/cm2 and 15 MHz; without perfusion, only a 0.1-0.2 degree C increase was measured. At 43 MHz and 30 W/cm2 no temperature rise was measurable with perfusion running, though a 0.5 degree C increase was measured from prolonged stimulation without perfusion.",
+ "exposures": [
+  {
+   "label": "Ultrasonic stimulation of isolated retina across carrier frequencies (0.5-43 MHz)",
+   "target": {
+    "terms": [
+     "retinal_explant"
+    ],
+    "label": "isolated retina on multielectrode array (ganglion cell layer)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "custom (43 MHz); Panametrics (15 MHz); Olympus (2.25 MHz operated at 1.9/2.9 MHz; 0.5 MHz)",
+    "model": "43 MHz custom transducer; A319S (15 MHz); V305 (2.25 MHz); V301 (0.5 MHz)"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    1900,
+    2900,
+    15000,
+    43000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1.6,
+     40,
+     60,
+     95,
+     155
+    ],
+    "ispta_w_cm2": [
+     1.6,
+     40,
+     60,
+     95,
+     155
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "CW is used for all experiments. A 100 ms CW pulse duration was found optimal at 43 and 15 MHz and used as the default pulse duration at other frequencies (repeated every 5 s to minimize adaptation). For 43 MHz, pulse intensity and duration were additionally varied across a wide range (Fig. 6a,b) to characterize response; those swept values are given only in figure form. Imaging of retinal displacement at 43 MHz used a separate 1 s ON/1 s OFF stimulus protocol at ISP = 40 W/cm2."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We used four different transducers, 43 MHz (custom), 15 MHz (Panametrics, A319S, 0.5 diameter, 2 inch focal length), 2.25 MHz (Olympus, V305) and 0.5 MHz (Olympus, V301), to span a large frequency range.",
+   "exposures[0].timing.sonication_duration_s": "A 100 ms pulse duration was still optimal, and this value was used as the default pulse duration in other experiments (Fig. 6a,b).",
+   "n_subjects": "For the imaging experiments, we used three retinas from 3 salamanders; for the 43 MHz electrophysiology, we used three retinas from 3 salamanders; for 15 MHz recordings, we used two retinas from 2 salamanders; and for lower frequency recordings (2.9 MHz, 1.9 MHz, and 500 kHz), we used two retinas from 2 salamanders.",
+   "exposures[0].timing.duty_cycle_pct": "CW is used for all experiments, so the only relevant parameters are carrier frequency, power, pulse duration, and repetition rate, which are given for each experiment.",
+   "exposures[0].device.manufacturer": "We used four different transducers, 43 MHz (custom), 15 MHz (Panametrics, A319S, 0.5 diameter, 2 inch focal length), 2.25 MHz (Olympus, V305) and 0.5 MHz (Olympus, V301), to span a large frequency range.",
+   "exposures[0].device.model": "We used four different transducers, 43 MHz (custom), 15 MHz (Panametrics, A319S, 0.5 diameter, 2 inch focal length), 2.25 MHz (Olympus, V305) and 0.5 MHz (Olympus, V301), to span a large frequency range.",
+   "exposures[0].free_field.isppa_w_cm2": "Finally, at 500 kHz, at the maximum achievable spatial peak power with our transducer $( \\mathrm { I } _ { \\mathrm { S P } } \\ : = \\ : 1 . 6 \\ : \\ : \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , responses of single cells to this stimulus could not be detected with significance and were only detectable when averaging across a population of neurons (Fig. 6d).",
+   "exposures[0].free_field.ispta_w_cm2": "All power measurements are the spatial peak, $\\mathrm { I } _ { \\mathrm { S P } } ,$ because with a 100% duty cycle (continuous wave [CW]) $\\mathrm { I _ { S P P A } } = \\mathrm { I _ { S P T A } }$ (i.e., pulse average \u0004 temporal average) in free space (water tank)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Frequencies 0.5-43 MHz were tested as a frequency-response sweep at the same retinal target; kept as a single exposure per the frequency-sweep exception, though pulse duration/intensity combinations differed somewhat by frequency (mostly given only in figures, not text)."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Specific intensities are stated in text for particular sub-experiments (e.g., ISP=40 W/cm2 at 43 MHz for imaging; ISP=1.6 W/cm2 maximum achievable at 500 kHz for electrophysiology) but a single per-frequency intensity list for the main stimulation/threshold sweep is only given in figures (Fig. 6, 7); left not_reported to avoid conflating figure-only values with text-stated ones."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives numbers of retinas/salamanders per sub-experiment (imaging, 43 MHz, 15 MHz, lower frequencies) but never a single combined total exposed to ultrasound; recorded as the list of group sizes and subject_unit set to 'preparation' since one retina is the functional unit per animal."
+   },
+   {
+    "field": "device",
+    "reason": "Four different transducers from different manufacturers (one custom-built) were used across the frequency range; device fields combine all into one entry with a flag rather than four near-duplicate exposures."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "For 43 MHz, pulse duration was swept over a wide range (Fig. 6a,b, figure-only values); only the 100 ms default value used for other frequencies is stated in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "neither",
+   "exposures[0].free_field.ispta_w_cm2": "neither"
+  }
+ }
+}

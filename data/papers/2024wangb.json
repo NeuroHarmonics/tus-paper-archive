@@ -1,0 +1,222 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024wangb",
+ "doi": "10.1093/cercor/bhae143",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6N wild-type); mouse (APP/PS1 transgenic)",
+ "conditions": [
+  "healthy",
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "emg_mep"
+ ],
+ "readout_other": "polysomnographic LFP (motor cortex) and EMG (neck muscle) recording; NREM/REM/wake sleep staging, power spectrum, sample entropy, cross-frequency coupling",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "RUS reduced total sleep time and NREM sleep ratio in healthy mice, increased theta relative power and reduced theta-gamma coupling in REM sleep; in AD mice RUS reduced total sleep time, reduced REM gamma power, and altered NREM cross-frequency coupling (increased delta-gamma, decreased theta-fast gamma). Overall RUS was not beneficial to sleep quality in either group.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "retinal ultrasound stimulation (RUS) of healthy and Alzheimer's disease mice",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina (mouse eyeball)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 310,
+    "isppa_w_cm2": 3.2,
+    "ispta_w_cm2": 0.16
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The unfocused ultrasound transducer was affixed to the mouse eyeball via a conical collimator; mice that were awake were gently immobilized using specialized headgear during administration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "<tr><td>RUS</td><td>LFP recording from motor cortex (n = 6).</td><td>LFP recording from motor cortex (n = 6).</td></tr>",
+   "randomised": "Twelve C57BL/6N wild-type mice (all males; body mass: 20–25 g; age: approximately 12 wk; Beijing Vital River Laboratory Animal Technology Co., Ltd, China) and 12 APP/PS1 transgenic mice (all males; body mass: 22–26 g; age: 24–25 wk; Beijing Huafukang Biotechnology Co., Ltd, China) were used in the experiment. The 12-wk-old WT mice were used for sleep studies in previous research (Missig et al. 2018; Li et al. 2022; Milman et al. 2022). The C57BL/6N wild-type mice were chosen for the sleep experiment of healthy mice (Miyoshi et al. 2019). Previous studies demonstrated that APP/PS1 transgenic mice have sleep disorders, and compared with wild-type mice, the characteristic parameters of sleeprelated EEG signals are different (Oishi et al. 2017; Kent et al. 2018). Therefore, APP/PS1 transgenic mice were used in sleep disorder experiments. In prior investigations, it was observed that mice with the APP/PS1 genotype could develop stable plaques as early as 6 mo of age (Holcomb et al. 1999; King et al. 1999). Furthermore, the accumulation of amyloid-β (Aβ) has been associated with a reduction in NREM sleep (Kang et al. 2009; Roh et al. 2012). Hence, we opted to investigate the impact of RUS on sleep disorders in AD mice at the age of 24–25 wk. We conducted an analysis by comparing the parameters of healthy mice and AD mice within the same group without conducting inter-group comparisons between the 2. This approach ensured that the age disparity between healthy mice and AD mice did not introduce any confounding effects into the statistical results. The mice were assigned randomly to their respective groups, as delineated in Table 1. Here, “CTRL” represents the control group. The control group underwent the same procedure as the stimulation group, but the power amplifier of the control group was turned off. All research procedures were conducted in accordance with the guidelines and were approved by the Animal Ethics and Administrative Council of Yanshan University. Moreover, all mice involved in the study were administered anesthesia with 10% chloral hydrate at a dosage of 0.32 mL per 100 g body weight. In all experiments, the body temperature of the mice was maintained at 37<sup>◦</sup>C using a closed-loop animal thermometer (69002; Ruiwode, Shenzhen, China). The mouse model developed in our previous study was used (Xu et al. 2015). RUS can induce neural activity in the visual cortex (Qian et al. 2022). It is well established that neural activity within the visual cortex has the capacity to induce plasticity and heightened excitability within the motor cortex (Garcia-Rill and Dubrovsky 1974; Vyazovskiy et al. 2006; Kim et al. 2015). Previous studies evaluated the sleep status by recording EEG signals from the motor cortex (Kumru et al. 2016). We referred to the previous literature (Xu et al. 2015; Rodriguez et al. 2016; Oishi et al. 2017) to record the LFP signals of the motor cortex to evaluate sleep. Customized meta electrodes were implanted in the skull above the right fronta bone (anteroposterior, +1.5 mm; mediolateral, +1.5 mm; from Bregma) to record the LFP. In preparation for the experiments, 2 openings were surgically created in the prefrontal cortex for reference and grounding purposes. The electrodes, custom-made by tungsten, were delicately positioned within the brain tissues and the neck muscles to facilitate the recording of neural and EMG activity. These homemade electrodes were securely fastened in place using a bonding material known as Super-Bond C&B. Following the surgical procedures, the animals were individually housed in dedicated cages, and the ambient temperature was rigorously maintained at 24 ± 1<sup>◦</sup>C.",
+   "anaesthesia": "The animals were treated postoperatively and housed in individual cages with lights turned on at 7:00 AM daily on a 12/12 h light/dark cycle. The experiments were started 1 wk after surgery, and the mice were placed in their cages for the experiments. To minimize the impact of circadian rhythms on the experimental outcomes, we maintained uniform lighting conditions and living environments for all samples. We allowed the subjects to acclimate to the experimental settings and establish a consistent routine. Additionally, we undertook efforts to ensure a similar daily regimen. In the stimulation and control groups, LFP signals were recorded on days 1, 3, and 7 following the initiation of RUS, and testing was not conducted between day 3 and 7. The experimental procedures of the control group were the same as those of the stimulation group, expecting the amplifier to be turned off. We kept all mice under the same recording time and environmental conditions. To monitor the sleep patterns of the mice, we captured real-time sleep videos by positioning a video camera atop their cages. In order to avoid the influence of external light on the stimulation effect, RUS, conducted in a dark environment, commenced at 8:30 AM and lasted for 15 min. To ensure precise application, the mice that were awake were gently immobilized using specialized headgear during the administration of RUS (Abel et al. 2013). Next, we put all the mice into the recording room and recorded LFP signals from 10:00 AM to 6:00 PM (8 h) in a bright environment, according to previous work (Zhou et al. 2020). For the nonstimulation groups, video recordings were also conducted on the same days. Throughout the recording process, the environment was consistently well-lit.",
+   "blinding": "The operation of the LFP and EMG electrodes was facilitated through the use of a dual-channel preamplifier (63386; A-M Systems, USA). The recordings were performed in differential mode using an A-M system amplifier. We implanted reference and ground electrodes into the prefrontal cortex and recorded electrodes into the motor cortex as the LFP signal. We used the voltage potential difference recorded by the electrode at the front (top of the prefrontal cortex) and the posterior electrode (motor cortex) as the LFP signal and the potential difference between the 2 EMG electrodes as the EMG signal. A 32-channel neural signal processor (Cerebus Data Acquisition System; BlackRock Microsystems, USA) was used to convert analog signals into digital signals, which were then transmitted to a computer for data storage and processing at a sampling frequency of 2 kHz. A low-pass filter with a 1,000 Hz cutoff frequency was set in the differential preamplifier system. For the following data analysis, we selected 3 h of LFP data from 1:00 PM to 4:00 PM for sleep analysis. The sleep states were classified into NREM sleep, REM sleep, and wakefulness using custom-written MATLAB software. We calculated the proportions of NREM sleep, REM sleep, and TST (defined as the combined duration of NREM and REM sleep) over a 3 h time frame. Additionally, we computed the NREM and REM ratios for this 3 h duration. Furthermore, we determined the number and duration of episodes during each sleep phase. We calculated the NREM and REM sleep ratios by dividing the NREM and REM time by the TST + AWAKE time. The classification was performed without any information regarding the identity of the animals. Wake was classified by the activated electroencephalogram (LFP) and muscle tone, NREM sleep by high delta power (0.5–4 Hz) of the LFP and decreased muscle tone, and REM sleep by high theta power (4–8 Hz) of the LFP and no muscle tone. We selected these criteria based on previous literature (Funk et al. 2017).",
+   "sham_type": "Twelve C57BL/6N wild-type mice (all males; body mass: 20–25 g; age: approximately 12 wk; Beijing Vital River Laboratory Animal Technology Co., Ltd, China) and 12 APP/PS1 transgenic mice (all males; body mass: 22–26 g; age: 24–25 wk; Beijing Huafukang Biotechnology Co., Ltd, China) were used in the experiment. The 12-wk-old WT mice were used for sleep studies in previous research (Missig et al. 2018; Li et al. 2022; Milman et al. 2022). The C57BL/6N wild-type mice were chosen for the sleep experiment of healthy mice (Miyoshi et al. 2019). Previous studies demonstrated that APP/PS1 transgenic mice have sleep disorders, and compared with wild-type mice, the characteristic parameters of sleeprelated EEG signals are different (Oishi et al. 2017; Kent et al. 2018). Therefore, APP/PS1 transgenic mice were used in sleep disorder experiments. In prior investigations, it was observed that mice with the APP/PS1 genotype could develop stable plaques as early as 6 mo of age (Holcomb et al. 1999; King et al. 1999). Furthermore, the accumulation of amyloid-β (Aβ) has been associated with a reduction in NREM sleep (Kang et al. 2009; Roh et al. 2012). Hence, we opted to investigate the impact of RUS on sleep disorders in AD mice at the age of 24–25 wk. We conducted an analysis by comparing the parameters of healthy mice and AD mice within the same group without conducting inter-group comparisons between the 2. This approach ensured that the age disparity between healthy mice and AD mice did not introduce any confounding effects into the statistical results. The mice were assigned randomly to their respective groups, as delineated in Table 1. Here, “CTRL” represents the control group. The control group underwent the same procedure as the stimulation group, but the power amplifier of the control group was turned off. All research procedures were conducted in accordance with the guidelines and were approved by the Animal Ethics and Administrative Council of Yanshan University. Moreover, all mice involved in the study were administered anesthesia with 10% chloral hydrate at a dosage of 0.32 mL per 100 g body weight. In all experiments, the body temperature of the mice was maintained at 37<sup>◦</sup>C using a closed-loop animal thermometer (69002; Ruiwode, Shenzhen, China). The mouse model developed in our previous study was used (Xu et al. 2015). RUS can induce neural activity in the visual cortex (Qian et al. 2022). It is well established that neural activity within the visual cortex has the capacity to induce plasticity and heightened excitability within the motor cortex (Garcia-Rill and Dubrovsky 1974; Vyazovskiy et al. 2006; Kim et al. 2015). Previous studies evaluated the sleep status by recording EEG signals from the motor cortex (Kumru et al. 2016). We referred to the previous literature (Xu et al. 2015; Rodriguez et al. 2016; Oishi et al. 2017) to record the LFP signals of the motor cortex to evaluate sleep. Customized meta electrodes were implanted in the skull above the right fronta bone (anteroposterior, +1.5 mm; mediolateral, +1.5 mm; from Bregma) to record the LFP. In preparation for the experiments, 2 openings were surgically created in the prefrontal cortex for reference and grounding purposes. The electrodes, custom-made by tungsten, were delicately positioned within the brain tissues and the neck muscles to facilitate the recording of neural and EMG activity. These homemade electrodes were securely fastened in place using a bonding material known as Super-Bond C&B. Following the surgical procedures, the animals were individually housed in dedicated cages, and the ambient temperature was rigorously maintained at 24 ± 1<sup>◦</sup>C.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "n_sessions_per_subject": "The ultrasonic emission system employed in this study was consistent with the one utilized in our prior research endeavors (Wang X et al. 2020). Two signal generators were used to modulate different ultrasonic pulse groups. The model of the signal generator was afg302c (Tektronix). The front waveform generator generated a square wave with F = 1 kHz, PPV = 5 V, and 1 cyc, and was mainly used to control the timing and duration of the stimulation. The second waveform generator was employed for the purpose of regulating the ultrasound frequency and intensity. Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA). The ultrasound transducer was affixed to the mouse eyeball with the aid of a conical collimator filled with an ultrasound coupling gel (TM-100, Jinya, China). As shown in Fig. 1, the fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of the pulsed ultrasound were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. RUS was administered once daily, with each session lasting a cumulative duration of 15 min, consistently for 7 consecutive days. The ultrasound pressure was 0.31 MPa, and the corresponding spatial peak and pulse average intensity $\\left( \\mathrm { I } _ { \\tt S p p a } \\right)$ and spatial peak time average $\\left( \\mathrm { I } _ { \\mathrm { s p t a } } \\right)$ values were 3.2 and 0.16 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].device.manufacturer": "Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA).",
+   "exposures[0].device.model": "Subsequently, the pulse signal generated by the waveform generator was conveyed to the power amplifier for amplification, and it was then transmitted to the unfocused ultrasonic transducer (V301-SU of Olympus, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Table 1 gives per-arm group sizes (n=6 RUS, n=6 CTRL, per healthy/AD group); recorded n_subjects as the 12 animals (6 healthy + 6 AD) that actually received real RUS, excluding the amplifier-off control arms."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "Domain (free-field vs in-situ) for the 0.31 MPa pressure / 3.2 & 0.16 W/cm2 intensities is not stated by the paper; recorded as unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper labels 50 ms as 'stimulation duration' alongside frequency/PRF/duty cycle; this matches duty_cycle/PRF (5% of a 1 s period = 50 ms) so was recorded as pulse duration under the burst rule."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only sleep-stage classification is stated as done 'without any information regarding the identity of the animals'; no blinding of stimulation delivery is described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+name: Propose a paper
+description: Suggest a paper the archive does not hold
+title: "Paper: "
+labels: [paper]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a paper the archive does not hold. A paper is included when it reports an original ultrasound exposure delivered to neural tissue with the intent of modulating its function. The criteria and exclusions are in INCLUSION.md. Proposed papers are screened at the next monthly run.
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      placeholder: 10.1016/j.brs.2024.04.013
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How it meets the four conditions
+      description: One line each is enough. Original exposure by the authors; ultrasound; delivered to neural tissue; intended to modulate function.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options:
+        - Open access
+        - Paywalled
+        - Not sure

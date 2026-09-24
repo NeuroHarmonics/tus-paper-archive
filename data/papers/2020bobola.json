@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020bobola",
+ "doi": "10.1016/j.brs.2020.03.016",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We used histological data from two acutely treated mice and one sham mouse, data separate from those we used in our final, more substantial analysis.",
+   "sham_type": "We exposed four sedated age-matched animals to sham ultrasound under the same pre/post ultrasound procedures.",
+   "auditory_control": "Also, we exposed sham animals to more sound at 40 Hz yet the ultrasoundexposed mice showed a substantial decrease in Ab plaque burden compared to sham-exposed ultrasound mice.",
+   "anaesthesia": "After initial exposure to isoflurane at 1.5e3% and placement within the experimental setup (see below), mice then received a subcutaneous injection of medetomidine [27] at 0.1 mg/ gram at which point we weaned them off of isoflurane to approximate the awake state used by Iaccarino et al.",
+   "exposures[0].fundamental_frequency_khz": "We used a two-annular 2 MHz transducer (Sonic Concepts, Woodinville WA, USA, model #H148 array S/N 003) with a cone placed on its distal surface that contained degassed water and capped with a thin membrane",
+   "exposures[0].free_field.isppa_w_cm2": "We used ultrasound with a spatial peak pulse average intensity (I_sppa) value of 190 W/cm2 as define over the 5 s the ultrasound was turned on.",
+   "exposures[0].free_field.ispta_w_cm2": "When integrated over the time the ultrasound was turned on, this translates into a spatial peak temporal average intensity (I_spta) value of 3.0 W/cm2, above the derated FDA limit for diagnostic ultrasound (0.72 W/cm2) and consistent with a range of ultrasound studies dedicated to brain activation.",
+   "exposures[0].timing.pulse_duration_ms": "Within each target location(s) we applied tFUS at 40 Hz with a carrier frequency of 2.0 MHz and pulse lengths of 400 μs, for 5 s followed by 5 s of no ultrasound, for 1 h.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Within each target location(s) we applied tFUS at 40 Hz with a carrier frequency of 2.0 MHz and pulse lengths of 400 μs, for 5 s followed by 5 s of no ultrasound, for 1 h.",
+   "exposures[0].timing.sonication_duration_s": "Within each target location(s) we applied tFUS at 40 Hz with a carrier frequency of 2.0 MHz and pulse lengths of 400 μs, for 5 s followed by 5 s of no ultrasound, for 1 h.",
+   "exposures[0].device.manufacturer": "We used a two-annular 2 MHz transducer (Sonic Concepts, Woodinville WA, USA, model #H148 array S/N 003) with a cone placed on its distal surface that contained degassed water and capped with a thin membrane (Saran Wrap, S.C.",
+   "exposures[0].device.model": "We used a two-annular 2 MHz transducer (Sonic Concepts, Woodinville WA, USA, model #H148 array S/N 003) with a cone placed on its distal surface that contained degassed water and capped with a thin membrane (Saran Wrap, S.C.",
+   "n_sessions_per_subject": "Chronic studies targeted comparable brain in each hemisphere for 1 h/day for five days."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The abstract states '400 ms-long pulses' while the Methods states 'pulse lengths of 400 μs'; 400 ms is physically impossible at a 40 Hz PRF (25 ms period), so the Methods value (0.4 ms) was used and the abstract text is likely a unit typo/OCR error."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Acute study used a single 1 h session while the chronic study used 5 daily 1 h sessions; no single per-subject session count applies across the whole paper."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham ultrasound procedure mechanism (e.g., transducer powered off vs. blocked) is not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (5XFAD (C57BL/6))",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  5
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "colocalization of activated microglia with Abeta plaque (immunofluorescence); Abeta plaque burden; eNOS immunostaining; EEG continuous wavelet transform analysis",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Acute tFUS increased the percentage of activated microglia colocalized with Abeta plaque relative to sham and to the contralateral hemisphere; five days of chronic tFUS reduced Abeta plaque burden by ~47% relative to sham; EEG showed a signal at 40 Hz (the PRF) during stimulation, consistent with tFUS-driven neural activation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to hippocampus (acute and chronic, 40 Hz pulsed)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H148 array (two-annular, 2 MHz)"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 190,
+    "ispta_w_cm2": 3.0
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 5,
+    "protocol_description": "Ultrasound delivered for 5 s followed by 5 s of no ultrasound, repeated for 1 h total per session. Acute study: a single 1 h session to one hippocampus (5 tFUS mice, 4 sham). Chronic study: 1 h/day to each hippocampus (both hemispheres) for 5 consecutive days (5 tFUS mice, 5 sham)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.6
+   }
+  }
+ ]
+}

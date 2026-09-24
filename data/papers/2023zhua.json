@@ -1,0 +1,342 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023zhua",
+ "doi": "10.1073/pnas.2300291120",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Ultrasound applied was of 0.5- MHz frequency, 1-kHz PRF, 50% duty cycle.",
+   "exposures[0].timing.pulse_duration_ms": "EMG Experiments. For EMG experiments, ultrasound stimuli (0.3, 0.35, 0.4, and 0.45 MPa) were administered with 500-μs tone burst, 1-kHz PRF, 500-ms duration, and 15-s intervals.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound applied was of 0.5- MHz frequency, 1-kHz PRF, 50% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound applied was of 0.5- MHz frequency, 1-kHz PRF, 50% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "For video-capturing, 0.35/0.45-MPa ultrasound stimuli were administered with $5 0 0 \\ – \\mu \\varsigma$ tone burst, 1-kHz PRF, 50/250/500-ms duration, and 5-s intervals.",
+   "exposures[0].unspecified_domain.pressure_kpa": "For EMG experiments, ultrasound stimuli (0.3, 0.35, 0.4, and 0.45 MPa) were administered with 500-μs tone burst, 1-kHz PRF, 500-ms duration, and 15-s intervals.",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound parameters were as follows: frequency: 0.5 MHz; duty cycle: 50%, PRF: 1 kHz, duration: 300 ms; 5-s intervals; five times repetition in each intensity group.",
+   "exposures[1].timing.pulse_duration_ms": "Ultrasound stimuli (0.35 MPa) were administered with 500-µs tone burst, 1-kHz PRF, and 300-ms duration.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Ultrasound parameters were as follows: frequency: 0.5 MHz; duty cycle: 50%, PRF: 1 kHz, duration: 300 ms; 5-s intervals; five times repetition in each intensity group.",
+   "exposures[1].timing.duty_cycle_pct": "Ultrasound parameters were as follows: frequency: 0.5 MHz; duty cycle: 50%, PRF: 1 kHz, duration: 300 ms; 5-s intervals; five times repetition in each intensity group.",
+   "exposures[1].timing.sonication_duration_s": "Ultrasound parameters were as follows: frequency: 0.5 MHz; duty cycle: 50%, PRF: 1 kHz, duration: 300 ms; 5-s intervals; five times repetition in each intensity group.",
+   "exposures[1].unspecified_domain.pressure_kpa": "Mice were stimulated with four trials of ultrasound stimulation (0.03 MPa, 0.06 MPa, 0.12 MPa, or 0.25 MPa).",
+   "exposures[0].device.model": "Acute brain slices were collected 4 wk postinjection and treated with Yoda1 or ultrasound, in a setup building by a 0.5-MHz plane transducer, a gassed perfusion system, and an inverted fluorescent microscope (SIAppendix, Fig.",
+   "exposures[1].device.model": "Acute brain slices were collected 4 wk postinjection and treated with Yoda1 or ultrasound, in a setup building by a 0.5-MHz plane transducer, a gassed perfusion system, and an inverted fluorescent microscope (SIAppendix, Fig."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Study uses many separate small cohorts across sub-experiments (e.g. N=5 Ctrl/4 P1KO for behaviour, N=5/5 for fiber photometry, 24 mice for CEA groups, 3/3 for c-Fos); no single total exposed to ultrasound is stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not explicitly stated for any sub-experiment; appears to be a single recording/testing session per assay."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "List merges discrete pressures reported across several sub-experiments (ex vivo calcium imaging, forelimb/hind limb video, EMG, and the smoothed-waveform ipsi/contralateral test); the fiber-photometry cortex assay additionally reports a 0.02-0.12 MPa range not folded into this list."
+   },
+   {
+    "field": "exposures[0].domain",
+    "reason": "Paper does not state whether applied pressures were measured in free field or at the brain surface/in situ; placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "500-µs tone burst is explicitly stated for the ex vivo/behavioural sub-experiments using the same fixed device protocol (1 kHz PRF, 50% duty cycle) but is not separately restated for the CEA fiber-photometry assay."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper describes a 'smoothed waveform' with randomised pulse timing to exclude auditory confound, which is analogous to but not verbatim 'ramped pulses'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[1].timing.pulse_duration_ms": "both_defensible"
+  }
+ },
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (C57BL/6J; Piezo1 conditional knockout, Piezo1 tm2.1Apat)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "EMG (gastrocnemius); DeepLabCut-tracked forelimb/hind limb movement; GCaMP6s calcium imaging (ex vivo brain slices and in vivo fiber photometry); c-Fos and Piezo1 immunostaining",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound evoked calcium influx, EMG responses, contralateral limb movement, and c-Fos expression in motor cortex and central amygdala neurons in a pressure-dependent manner; these excitatory responses were significantly reduced, but not abolished, by neuronal Piezo1 knockout.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Right motor cortex (Piezo1 conditional knockout vs control; ex vivo slices and in vivo)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "right motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "0.5-MHz lithium niobate ultrasound transducer (ex vivo: 0.5-MHz plane transducer)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     30,
+     60,
+     120,
+     200,
+     250,
+     300,
+     350,
+     400,
+     450,
+     800
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.05,
+     0.25,
+     0.3,
+     0.5
+    ],
+    "protocol_description": "Across sub-experiments (ex vivo calcium imaging, forelimb/hind limb video tracking, EMG, fiber photometry, and an ipsilateral-vs-contralateral smoothed-waveform test), the same 0.5 MHz / 1 kHz PRF / 50% duty-cycle protocol was used with pressures, sonication durations and inter-stimulus intervals (5-15 s, or randomised 10-50 s for the smoothed-waveform test) varied by assay; the fiber-photometry assay in Ctrl/P1KO cortex used a separately stated pressure range of 0.02-0.12 MPa (300 ms duration) not included in the numeric pressure list here."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Central amygdala (CEA), neuronal vs astrocytic Piezo1 knockout",
+   "target": {
+    "terms": [
+     "central_amygdala"
+    ],
+    "label": "central amygdala (CEA)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "0.5-MHz transducer with water-tube wave-guide"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     30,
+     60,
+     120,
+     250
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Four trials of ultrasound (0.03, 0.06, 0.12 or 0.25 MPa), each trial 3-6 stimuli with 5-s inter-stimulus interval, and 50 s rest between trials, delivered to the CEA of anesthetised mice while recording GCaMP6s fiber photometry in four viral groups (neuronal or astrocytic Piezo1 knockout and their controls)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

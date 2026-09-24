@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026tang",
+ "doi": "10.1038/s41467-026-73787-6",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "Insomnia symptoms (self-reported, PSQI 6-10, no formal clinical diagnosis) in one study subgroup",
+ "n_subjects": 28,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "eeg_meg",
+  "autonomic_physiology",
+  "behaviour",
+  "clinical_scale"
+ ],
+ "readout_other": "Polysomnography (EEG/EOG/EMG) sleep staging; PSQI, Epworth Sleepiness Scale, Stanford Sleepiness Scale, State-Trait Anxiety Inventory; heart rate variability (ECG); emotional face-matching (Hariri) task response time; resting-state and task fMRI (BOLD, ALFF, pCASL CBF, functional connectivity)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "A PRF of 100 Hz was selected throughout the study specifically to promote inhibition of the STN (based on a preliminary pilot study suggesting a PRF-dependent bimodal effect, with 10 Hz excitatory and 100 Hz inhibitory); STN-FUS was associated with increased REM duration and decreased REM latency, interpreted as downstream disinhibition of REM-promoting circuits secondary to STN inhibition.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Blood oxygen saturation levels, heart rate, and blood pressure were measured throughout the session, showing no significant changes with STN-FUS by CRUTA on health vitals; follow-up emails one week after the session confirmed no detrimental health effects.",
+ "exposures": [
+  {
+   "label": "STN-FUS with NEUSLeeP/CRUTA (target engagement study and overnight REM sleep study)",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "left subthalamic nucleus (STN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Concentric Ring Ultrasound Transducer Array (CRUTA)"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 900,
+    "isppa_w_cm2": 26.9,
+    "ispta_w_cm2": 0.674
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 680,
+    "isppa_w_cm2": 15.4,
+    "ispta_w_cm2": 0.385
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "In an initial single-session target-engagement study (n=16), participants received 10 min of FUS delivered as 10 blocks of 30 s ON / 30 s OFF (Pressure 0.90 MPa, PRF 100 Hz, pulse duration 0.5 ms), before/after resting-state fMRI. In the subsequent overnight sleep study, participants underwent two consecutive overnight sessions (sham night 1, FUS night 2); on the FUS night, stimulation (30 s ON/30 s OFF for 5 min) was delivered per block every 90 min for five blocks overnight. Table 1 also reports a 'Burst Duty' of 50% (the 30 s ON/30 s OFF cycling) in addition to the 5% 'Pulse Duty' derived from the 0.5 ms pulse within the 10 ms PRF period. A separate preliminary pilot study (cited as ref 68, fMRI-compatible BrainSonix device) tested 10 Hz vs 100 Hz PRF at 5% duty cycle and ~719 mW/cm2 derated ISPTA, finding a PRF-dependent bimodal (excitatory at 10 Hz, inhibitory at 100 Hz) effect; frequency and other parameters for that pilot device are not given in the main text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The CRUTA with a thickness of3.1-mm has a center frequency of 0.65 MHz, where successful neuromodulation was reported in cortex<sup>53,56</sup>, thalamus<sup>57</sup>, and amygdala<sup>58</sup> This enables a millimeter axial resolution (Fig. 3a–4 and Supplementary Figs. 5–10) by controlling the phase delay between each channel element, comparable with currently available ultrasound stimulation devices operating at similar frequencies (Supplementary Table. 2).",
+   "exposures[0].timing.pulse_duration_ms": "Participants were then subjected to 10 min of FUS (Table 1, Pressure: 0.90 MPa, Pulse Repetition Frequency: 100 Hz, Pulse Duration: 0.5 ms, Duty Cycle: 5%, 30 s ON 30 s OFF) whilst simultaneously measuring their SpO and heart rate every minute to ensure no adverse effects due to FUS (Fig. 4c).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Participants were then subjected to 10 min of FUS (Table 1, Pressure: 0.90 MPa, Pulse Repetition Frequency: 100 Hz, Pulse Duration: 0.5 ms, Duty Cycle: 5%, 30 s ON 30 s OFF) whilst simultaneously measuring their SpO and heart rate every minute to ensure no adverse effects due to FUS (Fig. 4c).",
+   "exposures[0].timing.duty_cycle_pct": "Participants were then subjected to 10 min of FUS (Table 1, Pressure: 0.90 MPa, Pulse Repetition Frequency: 100 Hz, Pulse Duration: 0.5 ms, Duty Cycle: 5%, 30 s ON 30 s OFF) whilst simultaneously measuring their SpO and heart rate every minute to ensure no adverse effects due to FUS (Fig. 4c).",
+   "exposures[0].timing.sonication_duration_s": "Ten minutes of stimulation (10 blocks, each block 30 s ON and $3 0 s 0 \\mathsf { F F } ,$ , PRF 100 Hz, PD = 0.5 ms, 0.90 MPa).",
+   "exposures[0].free_field.pressure_kpa": "<tr><td>Peak Pressure (P)</td><td>0.90 MPa</td><td>0.68 MPa</td><td>一</td></tr>",
+   "exposures[0].in_situ.pressure_kpa": "<tr><td>Peak Pressure (P)</td><td>0.90 MPa</td><td>0.68 MPa</td><td>一</td></tr>",
+   "exposures[0].free_field.isppa_w_cm2": "<tr><td>Spatial peak pulse aver- age intensity  $( \\boldsymbol { \\mathrm { I } } _ { \\mathsf { s p p a } } )$ </td><td>26.9 W/cm²</td><td>15.4 W/cm²</td><td>一</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td>Spatial peak pulse aver- age intensity  $( \\boldsymbol { \\mathrm { I } } _ { \\mathsf { s p p a } } )$ </td><td>26.9 W/cm²</td><td>15.4 W/cm²</td><td>一</td></tr>",
+   "exposures[0].free_field.ispta_w_cm2": "<tr><td>Spatial peak temporal average intensity  $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ </td><td>0.674 W/ cm²</td><td>0.385 W/cm²</td><td>&lt;0.720 W/ cm²</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td>Spatial peak temporal average intensity  $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ </td><td>0.674 W/ cm²</td><td>0.385 W/cm²</td><td>&lt;0.720 W/ cm²</td></tr>",
+   "n_subjects": "Here, a total of 28 subjects across both groups’ (healthy, n = 16; 8 males and 8 females/insomnia, n = 12; 6 males and 6 females) polysomnographic data was staged by a certified trained sleep expert were presented (Fig. 5c).",
+   "n_sessions_per_subject": "The sleep study consists of two consecutive overnight sessions wearing the NEUSLeeP, where the first night is sham and the second night with FUS (Fig. 5a)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "28 subjects were recorded (healthy n=16, insomnia n=12) but 2 were excluded from analysis for excessive noise (subjects #1 and #25), leaving 26 analysed ('the observed effects of NEUSLeeP enabled STN-FUS in 26 subjects'); enrolled/recorded total (28) is reported here per convention. It is also unclear whether the 16 healthy participants overlap with the separately described 16-participant STN target-engagement sub-study (mean age reported as 25.7±6.3 years there vs. 22.7±5.4 years for the healthy REM-study group)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "the value of 2 reflects the two consecutive overnight sessions (sham + FUS) of the main REM sleep study; a subset of participants may have also undergone an earlier single-session STN target-engagement scan (10 min FUS with pre/post fMRI), which would add a session not counted here."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "the paper reports the sonication structure at several nested timescales (30 s ON/OFF block cycling; 5 or 10 min per experimental block; 10 min total for the engagement study); 30 s (the length of one uninterrupted ON period) was recorded as sonication_duration_s per the definition, with the other durations placed in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Table 1 reports both a 'Pulse Duty' of 5% (matching 0.5 ms pulse duration at 100 Hz PRF) and a separate 'Burst Duty' of 50% (the 30 s ON/30 s OFF block cycling); 5% (Pulse Duty) was recorded as duty_cycle_pct and the 50% Burst Duty is described in protocol_description."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "CRUTA is described as a custom-made transducer array built by the authors; no external manufacturer is named for the transducer itself (the driving electronics, Vantage 64LE, are from Verasonics)."
+   },
+   {
+    "field": "condition_other",
+    "reason": "the insomnia subgroup was screened by PSQI score only and explicitly described as not having received a formal clinical diagnosis; classified under 'other' rather than as a distinct clinical condition."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023mahoney",
+ "doi": "10.3389/fpsyt.2023.1211566",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "behaviour",
+  "clinical_scale",
+  "other_mri",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Craving Visual Analog Scale (VAS); Hamilton Depression Rating Scale (HAM-D); Columbia Suicide Severity Rating Scale (CSSRS); heart rate monitoring; structural MRI (T1, T2 FLAIR, T2*, DWI, SWI, GRE) for safety",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "In the two participants receiving the enhanced (90 W) dose, active LIFU acutely attenuated cue-induced substance craving relative to sham sonication, with reductions also seen in daily craving ratings over the following week; minimal acute changes were seen with the lower (60 W) dose.",
+ "adverse_events": "observed",
+ "safety_notes": "No safety concerns were present during the procedure nor during the 24-h, 7-day and 90-day follow-up evaluations based on clinical observation and subject report. There were no AEs which were unexpected and deemed related to the LIFU procedure and there were no SAE's. At the conclusion of the study, participants reported a total of 10 AEs throughout the 90-day follow-up, 9 of which were mild and 1 of which was moderate.",
+ "exposures": [
+  {
+   "label": "LIFU to bilateral nucleus accumbens (60 W lower dose and 90 W enhanced dose)",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "bilateral nucleus accumbens (NAc)"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "ExAblate Neuro Type 2"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     55,
+     80
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 3.3,
+    "sonication_duration_s": 300,
+    "protocol_description": "After baseline sham sonication, two 5-min sessions of active sonication were delivered to the left NAc, followed by two 5-min sessions to the right NAc (10 min per hemisphere total). Table 1 gives on/off repetition time of 5 s on/10 s off with pulse duration (on/off) of 100/900 ms and duty cycle 3.3%. The first two participants received the 60 W lower dose at 220 kHz; participants #3 and #4 received the 90 W enhanced dose at 220 kHz."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Four participants (three male, one female) were enrolled and successfully completed the study (Table 2).",
+   "n_sessions_per_subject": "The timeline for the assessments/procedures performed on the sonication day is displayed in Figure 1.",
+   "randomised": "This clinical trial utilized an open-label design to investigate the safety, feasibility, and tolerability of LIFU targeting the NAc in individuals with SUD (Clinicaltrials.gov Identifier: NCT04197921).",
+   "blinding": "After obtaining baseline assessments (described below), 5 min of singleblinded (participant only) sham sonication was delivered to the left NAc, followed by 5 min to the right NAc.",
+   "exposures[0].fundamental_frequency_khz": "The first two participants received a 60 W “lower” dose of LIFU at 220 kHz and participants #3 and #4 received a 90 W “enhanced” dose at 220 kHz.",
+   "exposures[0].timing.sonication_duration_s": "The MR-guided LIFU treatment protocol for blood-brain barrier opening has been previously published by our team (30). Building upon our experience with LIFU, we utilized the ExAblate Neuro Type 2 (Insightec) device/system which utilizes a tranducer helmet array comprised of >1,000 ultrasound transducers which precisely converge on a defined focal point in the brain (NAc) (16). After obtaining baseline assessments (described below), 5 min of singleblinded (participant only) sham sonication was delivered to the left NAc, followed by 5 min to the right NAc. We administered sham LIFU first in all participants as potential carryover efects of active LIFU were unknown given that this was the first known investigation of LIFU in humans with SUD. Next, two 5-min sessions of active sonication were delivered to the left NAc, followed by two 5-min sessions to the right NAc (all participants received the sonications in this order with no hypothesized rationale for sonicating the left NAc first). The first two participants received a 60 W “lower” dose of LIFU at 220 kHz and participants #3 and #4 received a 90 W “enhanced” dose at 220 kHz. Additional sonication parameters are detailed in Table 1. Sham and active sonication procedures were indistinguishable to the participant (e.g., the ultrasound device made the same sound, each session was 5 min, and assessments were conducted identically); however, no energy was delivered during sham sonication. Participants were monitored as inpatients for 24 h post-sonication. The timeline for the assessments/procedures performed on the sonication day is displayed in Figure 1.",
+   "adverse_events": "At the conclusion of the study, participants reported a total of 10 AEs throughout the 90-day follow-up (lower LIFU dose: 3 total AEs; enhanced LIFU dose: 7 total AEs), 9 of which were mild and 1 of which was moderate (anxiety in one participant who received the lower LIFU dose deemed not related to the LIFU procedure but related to SUD).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<td rowspan=1 colspan=1>Intensity (watts/cm²)</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>~55</td><td rowspan=1 colspan=1>~80</td>",
+   "exposures[0].timing.pulse_duration_ms": "<td rowspan=1 colspan=1>Pulse duration (on/off)</td><td rowspan=1 colspan=3>100/900 ms</td>",
+   "exposures[0].timing.duty_cycle_pct": "<td rowspan=1 colspan=1>Pulse duration (on/off)</td><td rowspan=1 colspan=3>100/900 ms</td></tr><tr><td rowspan=1 colspan=1>Duty cycle (%)</td><td rowspan=1 colspan=3>3.3%</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<td rowspan=1 colspan=1>Repetition time (on/off)</td><td rowspan=1 colspan=3>5/10 s</td>",
+   "exposures[0].device.manufacturer": "We acknowledge the manufacturer of the focused ultrasound device (Insightec) for their regulatory and technical support (Insightec had no role in the analysis of data or in the interpretation of results)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Table 1 lists 'Intensity (watts/cm²)' as ~55 (lower dose) and ~80 (enhanced dose) without specifying whether this is Isppa or Ispta, or the measurement domain (free field vs. in situ); recorded under isppa_w_cm2 as the more likely peak-intensity interpretation and flagged."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF of 1 Hz was derived by converting the stated pulse period (100 ms on + 900 ms off = 1000 ms) to a rate, per the unit-conversion allowance in the instructions, not from the duty cycle."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper states sham and active sonication were indistinguishable because 'the ultrasound device made the same sound' in both conditions; this does not map cleanly onto the closed vocabulary and is recorded as 'other'."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Table 1 states duty cycle 3.3%, which is inconsistent with the 100/900 ms on/off pulse pattern alone (which implies 10%); likely reflects an additional nested on/off macro-structure (5 s on/10 s off) not fully described numerically. Recorded as stated in Table 1."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

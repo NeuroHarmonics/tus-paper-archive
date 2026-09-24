@@ -1,0 +1,309 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023yu",
+ "doi": "10.1016/j.ultrasmedbio.2023.08.016",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "Procambarus clarkii (crayfish)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  7,
+  6
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Intracellular current-clamp recordings from a motor axon and a muscle fiber of the crayfish opener neuromuscular preparation",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "FUS reliably produced hyperpolarization (FUSH) in motor axons at pressures of 0.1-0.6 MPa; FUSH was enhanced by cooling, unaffected by heating, not suppressed by K2P channel blockers, and largely absent in muscle fibers.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Temperature-manipulation experiments (motor axon / muscle fiber)",
+   "target": {
+    "terms": [
+     "neuromuscular_junction",
+     "crayfish_neurons"
+    ],
+    "label": "crayfish opener neuromuscular junction (motor axon and muscle fiber)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     300,
+     600
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.00094
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.08,
+    "protocol_description": "An 80 ms burst of continuous sinusoidal waves at 2.1 MHz was used in temperature experiments. Optimal intensity per preparation (typically 0.3-0.6 MPa) was the level at which FUS-evoked depolarization occurred in <5% of trials; this was then used for the remainder of the experiment. A typical cycle included three trials (FUS alone, an AP train alone, FUS and an AP train simultaneously) with a 10 s rest between trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Pharmacological (K2P channel blocker) experiments (motor axon)",
+   "target": {
+    "terms": [
+     "neuromuscular_junction",
+     "crayfish_neurons"
+    ],
+    "label": "crayfish opener neuromuscular junction (motor axon)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     300,
+     600
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.00094
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Thirty FUS tone bursts at 1 kHz with 50% duty cycle were delivered to trigger FUSH, chosen to visualize hyperpolarization evoked by individual bursts; each tone burst lasted 500 microseconds. A typical cycle contained eight current steps (four hyperpolarizing, four depolarizing) with a 2 s rest between steps, repeated with and without FUS, in the presence of fluoxetine, norfluoxetine, or Ba2+ to test K2P channel involvement."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "Each preparation represents a recording session from a motor axon dissected from an animal.",
+   "exposures[0].fundamental_frequency_khz": "The FUS protocol used in temperature experiments involved an 80 ms burst of continuous waves (2.1 MHz).",
+   "exposures[0].unspecified_domain.pressure_kpa": "The intensity at which FUS-induced depolarization was observed in less than 5% of the trials, typically between 0.3 and 0.6 MPa, was then used for that preparation in the remainder of the experiment.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Taking into account the Rexolite impedance and duty cycle, the intensity of the spatial peak temporal average (ISPTA) of FUS at the focal point should be 0.94 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "The FUS protocol used in temperature experiments involved an 80 ms burst of continuous waves (2.1 MHz).",
+   "exposures[1].fundamental_frequency_khz": "In these blocker experiments, we used a 2 MHz FUS transducer, which was ofthe same construction as that used in the temperature experiments.",
+   "exposures[1].unspecified_domain.pressure_kpa": "The intensity at which FUS-induced depolarization was observed in less than 5% of the trials, typically between 0.3 and 0.6 MPa, was then used for that preparation in the remainder of the experiment.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "Taking into account the Rexolite impedance and duty cycle, the intensity of the spatial peak temporal average (ISPTA) of FUS at the focal point should be 0.94 mW/cm<sup>2</sup>.",
+   "exposures[1].timing.pulse_duration_ms": "Individual hyperpolarization matches the duration of each FUS tone, which lasted 500 µs.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The ultrasound pulse pattern was composed ofa train of30 pulses delivered at 1 kHz with a duty cycle of50%.",
+   "exposures[1].timing.duty_cycle_pct": "The ultrasound pulse pattern was composed ofa train of30 pulses delivered at 1 kHz with a duty cycle of50%.",
+   "n_subjects": "Figure 3 illustrates FUSH results in six preparations for the axons (Fig. 3A) and muscles (Fig. 3B) to demonstrate the effects of temperature on FUSH across the entire set of preparations."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports preparation counts per sub-experiment (6 for cooling, 7 for heating, 6 for pharmacological blockade) with unclear overlap between them; a total distinct-animal count is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the acoustic pressure is a free-field or in-situ (target) value; recorded as unspecified domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the acoustic pressure is a free-field or in-situ (target) value; recorded as unspecified domain."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Value is a calculated/theoretical estimate ('should be 0.94 mW/cm2'), not a directly measured quantity."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Value is a calculated/theoretical estimate ('should be 0.94 mW/cm2'), not a directly measured quantity."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "Total duration of the 30-pulse train (30 ms at 1 kHz) is not explicitly stated by the paper; left not_reported rather than computed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[1].free_field.pressure_kpa": "both_defensible",
+   "exposures[1].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[1].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

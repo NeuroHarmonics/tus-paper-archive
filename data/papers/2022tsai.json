@@ -1,0 +1,208 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022tsai",
+ "doi": "10.1007/s13311-022-01195-x",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "schizophrenia"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "spontaneous object recognition task; Morris water maze reversal learning; open field locomotor activity; western blot (GAD67, CB, PV, BDNF, GDNF, VEGF); immunofluorescence (PV+ and CB+ cell counts in cingulate cortex)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS reversed MK-801-induced deficits: improved novel-object discrimination and reversal-learning performance, restored hippocampal CB and PV levels, restored PV+/CB+ cell densities in cingulate cortex, and rebalanced BDNF levels in hippocampus and mPFC; these are behavioral-rescue and molecular outcomes rather than a measured direction of neuromodulatory effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to brain region near bregma in MK-801 rat model of schizophrenia",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "desired region (3.0 mm posterior and 2.5 mm lateral to the bregma) of the brain"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Panametrics",
+    "model": "A392S"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.528
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "The focused transducer was positioned using a stereotaxic apparatus in order to direct the acoustic beam to the desired region (3.0 mm posterior and 2.5 mm lateral to the bregma) of the brain. Each rat hemisphere was treated by LIPUS daily with triple sonications. The duration of each sonication was 5 min, and there was an interval of 5 min between each sonication. LIPUS would be turned on when the LIPUS group and the MK-801 + LIPUS group accepted treatment while the Sham group and MK-801 group were just anesthetized."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "n = 8 for all groups",
+   "randomised": "After habituation period, the animals were randomly assigned into four groups, namely, the Sham (sham-operated) group, the LIPUS group, the MK-801 group, and the MK-801 + LIPUS group.",
+   "anaesthesia": "Before the LIPUS stimulation, each animal was anesthetized in the prone position by inhalation of 2% isoflurane in 2 l/min oxygen, and the body temperature was maintained at 37 °C using a heating pad.",
+   "sham_type": "LIPUS would be turned on when the LIPUS group and the MK-801 + LIPUS group accepted treatment while the Sham group and MK-801 group were just anesthetized. The only different step between four groups is that LIPUS was turned on or not.",
+   "exposures[0].device.model": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz.",
+   "exposures[0].fundamental_frequency_khz": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz.",
+   "exposures[0].timing.pulse_duration_ms": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz.",
+   "exposures[0].timing.sonication_duration_s": "Each rat hemisphere was treated by LIPUS daily with triple sonications. The duration of each sonication was 5 min, and there was an interval of 5 min between each sonication.",
+   "exposures[0].free_field.ispta_w_cm2": "The spatial-peak temporal-average intensity (ISPTA) over the focused transducer head was 528 mW/cm2 and was measured with a radiation force balance (RFB, Precision Acoustics, Dorset, UK) in degassed water.",
+   "exposures[0].target.label": "The focused transducer was positioned using a stereotaxic apparatus in order to direct the acoustic beam to the desired region (3.0 mm posterior and 2.5 mm lateral to the bregma) of the brain.",
+   "exposures[0].timing.protocol_description": "The focused transducer was positioned using a stereotaxic apparatus in order to direct the acoustic beam to the desired region (3.0 mm posterior and 2.5 mm lateral to the bregma) of the brain. Each rat hemisphere was treated by LIPUS daily with triple sonications. The duration of each sonication was 5 min, and there was an interval of 5 min between each sonication.",
+   "n_sessions_per_subject": "Twenty-four hours after last treatment, the animals were assigned for biochemical analysis, histological assessment, and behavioral evaluation (Fig. 1B).",
+   "exposures[0].device.manufacturer": "LIPUS was generated by a 1-MHz focused piezoelectric transducer (A392S; Panametrics, Waltham, MA, USA) with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports per-group n=8 for behavioral cohorts (LIPUS group and MK-801+LIPUS group are the two groups receiving ultrasound) but never a combined total; a subset of n=5 per group was used for histology. Recorded as the list of the two ultrasound-exposed group sizes [8,8]."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Computed from 'daily with triple sonications' over the treatment period; paper states LIPUS stimulation lasted 5 days (sacrificed 24 h after last treatment), so 5 daily sessions (each with 3 sonications) is inferred from the described schedule."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target coordinates (3.0 mm posterior, 2.5 mm lateral to bregma) are not explicitly named by the paper as a specific brain structure; classified as hippocampus based on typical rat stereotaxic coordinates and the paper's focus on hippocampal CB/PV/BDNF outcomes, but this is an inference and not the paper's own terminology."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study reports behavioral-rescue and molecular (PV/CB/BDNF) outcomes rather than a measured direction of neuromodulatory (excitatory/inhibitory) neural effect, so 'not_assessed' was used."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper does not include a dedicated safety/histology evaluation section (unlike the companion Song et al. 2022 paper using the same device/parameters), so adverse_events could not be confirmed from the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

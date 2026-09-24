@@ -1,0 +1,192 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022yu",
+ "doi": "10.1016/j.ultrasmedbio.2022.05.028",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A set of eight preparations were used for statistical analysis in this report.",
+   "exposures[0].fundamental_frequency_khz": "FUS-induced responses reported here were evoked by a train of 20 FUS pulses (2.1 MHz), each pulse lasting 50 ms (Fig. 1D), delivered at 1 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS-induced responses reported here were evoked by a train of 20 FUS pulses (2.1 MHz), each pulse lasting 50 ms (Fig. 1D), delivered at 1 kHz.",
+   "exposures[0].timing.duty_cycle_pct": "In other words, each pulse train lasted 20 ms with a duty cycle of 5%.",
+   "exposures[0].timing.sonication_duration_s": "In other words, each pulse train lasted 20 ms with a duty cycle of 5%.",
+   "exposures[0].timing.pulse_duration_ms": "The FUS was a train of 20 FUS bursts (2.1 MHz and ${ \\bf 5 0 } \\mu { \\bf s }$ per burst) delivered at 1 kHz.",
+   "exposures[0].free_field.pressure_kpa": "Based on calibrations of the same transducer reported previously (Lin et al. 2019), the pressure typically ranged from 0.1 to 0.3 MPa, which was well below the maximal pressure (0.75 MPa) the transducer was capable of delivering.",
+   "exposures[0].free_field.ispta_w_cm2": "Taking into account Rexolite impedance and duty cycle (1-ms total burst duration/20 s), the intensity of the spatial peak temporal average $\\left( I _ { \\mathrm { S P T A } } \\right)$ of FUS at the focal point should be 0.94 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].device.manufacturer": "The active element of the transducer was a spherical piezo cup from Steminc Piezo (SMSF20C30F21, Steiner & Martins, Davenport, FL, USA).",
+   "exposures[0].device.model": "The active element of the transducer was a spherical piezo cup from Steminc Piezo (SMSF20C30F21, Steiner & Martins, Davenport, FL, USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The Methods text states 'each pulse lasting 50 ms', which conflicts with the abstract and Fig. 1D legend ('50 μs per burst'/'50-μs tone bursts') and with the stated duty cycle: 5% duty cycle at a 1 kHz PRF (1 ms period) implies a 50 μs pulse, not 50 ms. This is very likely an OCR/typographic confusion of μ for m. Recorded as 0.05 ms (50 μs) per the abstract/figure and the burst-rule arithmetic; the conflicting 'each pulse lasting 50 ms' wording appears in the Methods body."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa,exposures[0].free_field.ispta_w_cm2",
+    "reason": "The preparation is an isolated axon bathed directly in saline with no skull or intervening tissue path; the paper does not use free-field/in-situ terminology. Values are placed in free_field per the instruction that in a bath/dish preparation with no skull or tissue path, in_situ is null."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "Procambarus clarkii (crayfish)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Two-electrode current-clamp recording of FUS-evoked membrane depolarization (FUSD: amplitude, onset delay, frequency of occurrence, duration) in isolated crayfish opener motor axons",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS tone-burst trains produced membrane depolarization (FUSD) in crayfish motor axons. Lowering saline osmolarity to 75% of control significantly increased FUSD amplitude and frequency of occurrence and shortened onset delay during a 15-min window after the switch, while FUSD duration was unchanged in that window (though it became significantly shorter over an expanded 45-min window).",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS tone-burst train applied to isolated motor axon",
+   "target": {
+    "terms": [
+     "excised_nerve"
+    ],
+    "label": "the motor axons of the crayfish opener neuromuscular junction"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Steminc Piezo (Steiner & Martins)",
+    "model": "SMSF20C30F21"
+   },
+   "fundamental_frequency_khz": 2100,
+   "free_field": {
+    "pressure_kpa": [
+     100,
+     300
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.00094
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.05,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.02,
+    "protocol_description": "A test current step to trigger action potentials was alternated with a trial testing the effect of the FUS tone burst; the time gap between the current step and the FUS tone burst was 0.5 s, FUSD was recorded as a 20-s-long trace, and there was a 10-s gap before the next test current step. The lowest FUS pressure capable of triggering FUSD in 10% of trials was chosen for each preparation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

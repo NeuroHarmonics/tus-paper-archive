@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024qi",
+ "doi": "10.1136/svn-2023-002614",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Experiments were designed as shown in online supplemental figure 1. A LIFUS with 500 kHz centre frequency was suitable for rodent research (Ultrasound Neurostimulation System, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China).",
+   "exposures[0].device.manufacturer": "Experiments were designed as shown in online supplemental figure 1. A LIFUS with 500 kHz centre frequency was suitable for rodent research (Ultrasound Neurostimulation System, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China).",
+   "exposures[0].device.model": "Experiments were designed as shown in online supplemental figure 1. A LIFUS with 500 kHz centre frequency was suitable for rodent research (Ultrasound Neurostimulation System, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China).",
+   "exposures[0].timing.duty_cycle_pct": "500 kHz pulse repetition frequency (PRF), 300 ms sonication duration (SD) and 50% duty cycle $\\mathrm { ( D C ) ^ { 2 3 } }$ were used across all the ultrasound experiments (figure 1D).",
+   "exposures[0].timing.protocol_description": "500 kHz pulse repetition frequency (PRF), 300 ms sonication duration (SD) and 50% duty cycle $\\mathrm { ( D C ) ^ { 2 3 } }$ were used across all the ultrasound experiments (figure 1D).",
+   "exposures[0].target.label": "We investigated angiogenesis in the perifocal region of the ipsilateral hemisphere after MCAO (figure 1G).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "We combined different ultrasonic intensity (UI: 22, 101, 201 $\\mathrm { { m W / c m ^ { 2 } } ) }$ and stimulation duration (1, 3, 5 min) to treat stroke mice in the late acute stage (online supplemental table S2).",
+   "randomised": "Parameters of LIFUS including stimulation frequency, intensity, duration and relative protocols were generated and listed as shown in the online supplemental materials. For in vivo experiments, mice (n=120) were randomly allocated into experimental treatment or control groups, and n=12 mice per group were analysed for neurobehavioural tests and laser speckle imaging; other experiments were around n=4 mice per group, the details we put in the online supplemental materials.",
+   "blinding": "Last, proof-of-concept studies were performed in vivo. Outcomes were determined by assessing molecular factors, histological phenotype, electrophysiology and neurobehavioural function performed in a blinded manner 14 days after the ischaemic brain injury.",
+   "safety_notes": "To explore whether longer time of ultrasound stimulation would have better or side effect in MCAO mice, we added a group of 10-min stimulation with 101 mW/ cm<sup>2</sup> every other day. Then, we labelled ultrasound stimulation 3, 5 and 10 min with 101 mW/cm every other day as US1, US2 and US3, respectively (online supplemental table S3). We examined the brain atrophy volume to further determine the appropriate ultrasound parameter (figure 1E). Cresyl violet staining results showed that US3 damaged the ipsilateral hemisphere in both young and aged healthy mice compared with the control, indicated that 10 min was an overtime of stimulation.",
+   "direction_notes": "Since GluR1 is a calcium-permeable neurotransmitter receptor and plays a key role in synaptic plasticity, we also applied fibre photometry records to detect $\\mathrm { { C a } ^ { 2 + } }$ changes after LIFUS. The results showed that frequency change of the calcium signals slightly increased in the US group (figure 6D), while it was significantly higher in the IS US groups than that in the IS, IS US CAMK2N1 and IS US gf-CAMK2N1 groups during 3-min LIFUS (figure 6E).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Schematic diagram of ultrasound, PRF was 1 kHz and 1/PRF was 1 s, SD was 300 ms, and DC was 50%.",
+   "exposures[0].timing.sonication_duration_s": "500 kHz pulse repetition frequency (PRF), 300 ms sonication duration (SD) and 50% duty cycle $\\mathrm { ( D C ) ^ { 2 3 } }$ were used across all the ultrasound experiments (figure 1D)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Main text states PRF = 500 kHz (identical to the 500 kHz carrier frequency, likely an error), while the Figure 1D legend states 'PRF was 1 kHz and 1/PRF was 1 s' (internally inconsistent, since 1 kHz implies a 1 ms period, not 1 s). The two statements conflict and neither could be confirmed, so PRF is left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The paper labels 300 ms as 'sonication duration (SD)' in the pulse-diagram parameters, but separately reports total per-session ultrasound exposure durations of 1, 3, 5, or 10 minutes; it is unclear which corresponds to the schema's one-uninterrupted-train duration, so left not_reported and both durations are described in protocol_description."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports many different per-experiment group sizes (n=120 total mice allocated; n=12/group for behaviour and imaging; ~n=4/group for other assays; n=3-7 in various figure panels) without stating a single total number of animals exposed to ultrasound."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Ultrasound was given 'every other day' from day 7 post-MCAO, but the total number of stimulation sessions per animal is not explicitly stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The comparison for the ultrasound intervention is an untreated (no-device) stroke group (IS); the paper does not describe a device-based sham (e.g., powered-off transducer) for these experiments, so no listed vocabulary term fits precisely."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper does not state whether the 22/101/201 mW/cm2 ultrasonic intensity values are free-field or in-situ; domain left unspecified."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Laser speckle imaging of cerebral blood flow; fibre photometry (GCaMP6s) calcium imaging; Western blot; fluorescence in situ hybridisation (FISH); qPCR; immunostaining (CD31/Ki67, lectin); Golgi-Cox staining; scRNA-seq; iTRAQ proteomics",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFUS increased the frequency of fibre-photometry calcium transients and EMG amplitude in stimulated (US, IS US) mice relative to unstimulated groups, indicating increased neural/motor activity during stimulation, alongside promotion of angiogenesis and synaptogenesis.",
+ "adverse_events": "observed",
+ "safety_notes": "Cresyl violet staining results showed that US3 damaged the ipsilateral hemisphere in both young and aged healthy mice compared with the control, indicated that 10 min was an overtime of stimulation.",
+ "exposures": [
+  {
+   "label": "LIFUS to ipsilateral hemisphere after MCAO",
+   "target": {
+    "terms": [
+     "hemisphere_unspecified"
+    ],
+    "label": "ipsilateral hemisphere (perifocal region of MCAO territory)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences",
+    "model": "Ultrasound Neurostimulation System"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.022,
+     0.101,
+     0.201
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "500 kHz pulse repetition frequency (PRF), 300 ms sonication duration (SD) and 50% duty cycle (DC) were used across all the ultrasound experiments (figure 1D). Separately, ultrasonic intensity (22, 101, 201 mW/cm2) and total stimulation duration (1, 3, 5, or 10 min, every other day) were varied to optimise the treatment; 3 min at 101 mW/cm2 every other day (US1) was chosen as the optimal protocol starting 7 days after MCAO."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ]
+}

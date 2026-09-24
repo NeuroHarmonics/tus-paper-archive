@@ -1,0 +1,384 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025darmani",
+ "doi": "10.1038/s41467-025-57883-7",
+ "model_system": [
+  "human_patient",
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "parkinsons_disease",
+  "other",
+  "healthy"
+ ],
+ "condition_other": "dystonia (one DBS-implanted patient in Experiment I)",
+ "n_subjects": [
+  10,
+  15
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Local field potentials (LFP) recorded via bilateral GPi-DBS leads (Medtronic Percept PC); stop-signal task (stop-signal reaction time, go-trial reaction time)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "In DBS patients, both tbTUS and 10 Hz TUS of the GPi significantly increased overall LFP power (3-30 Hz) versus sham, with tbTUS preferentially increasing theta power and 10 Hz TUS preferentially increasing beta power lasting up to 40 min; in healthy participants, tbTUS of the GPi (but not the pulvinar) impaired response inhibition (longer stop-signal reaction times).",
+ "adverse_events": "none_observed",
+ "safety_notes": "No patient reported discomfort or complications during electrophysiology sessions and neurological assessments showed no change before/after TUS; none of the patients could distinguish sham from real TUS or reported hearing it.",
+ "exposures": [
+  {
+   "label": "GPi tbTUS and 10 Hz TUS (Experiment I patients; Experiment II healthy participants)",
+   "target": {
+    "terms": [
+     "globus_pallidus_internus"
+    ],
+    "label": "globus pallidus internus (GPi)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "CTX-500 (NeuroFUS TPO)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     2.5,
+     7
+    ],
+    "ispta_w_cm2": [
+     0.25,
+     2.1
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "theta_burst",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     20,
+     30
+    ],
+    "pulse_repetition_frequency_hz": [
+     5,
+     10
+    ],
+    "duty_cycle_pct": [
+     10,
+     30
+    ],
+    "sonication_duration_s": [
+     120,
+     40
+    ],
+    "protocol_description": "In Experiment I (GPi-DBS patients), each electrophysiology visit began with a sham (active or passive) followed one hour later by real TUS (tbTUS or 10 Hz TUS) applied bilaterally, sequentially to left then right GPi via neuronavigation; order of sham type and TUS protocol was randomized. In Experiment II (healthy participants), the same tbTUS protocol was applied bilaterally to the GPi (2 min per side, two rounds) in a separate session from pulvinar stimulation, with a stop-signal task performed before and after each round."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Pulvinar tbTUS (Experiment II, active control site)",
+   "target": {
+    "terms": [
+     "pulvinar"
+    ],
+    "label": "pulvinar"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "CTX-500 (NeuroFUS TPO)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     2.3,
+     9
+    ],
+    "ispta_w_cm2": [
+     0.25,
+     0.95
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 120,
+    "protocol_description": "In healthy participants, the pulvinar was targeted bilaterally with the same tbTUS protocol as the GPi (2 min per side, two rounds) in a session separate from GPi stimulation, serving as an active control site for the stop-signal task; side of head and GPi/pulvinar session order were randomized."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten patients (nine PD patients and one dystonia patient) with GPi-DBS implants (ClinicalTrials.gov identifier NCT06232629) participated in this experiment.",
+   "n_sessions_per_subject": "The second and third sessions were dedicated to electrophysiology recordings, which were conducted at least one week apart.",
+   "exposures[0].fundamental_frequency_khz": "We employed the NeuroFUS TPO and CTX-500 4- channel transducer (Brainbox Ltd., Cardiff, UK) operating at a central frequency of 500 kHz.",
+   "exposures[1].fundamental_frequency_khz": "We employed the NeuroFUS TPO and CTX-500 4- channel transducer (Brainbox Ltd., Cardiff, UK) operating at a central frequency of 500 kHz.",
+   "exposures[0].timing.pulse_duration_ms": "For the real TUS protocols of the experiment, we utilized either a theta-burst TUS (tbTUS) protocol<sup>12,51</sup>, with parameters of 20 ms pulse duration, 200 ms pulse repetition interval, and 120 s total duration, or a 10 Hz TUS protocol<sup>8,41</sup>, with a 30 ms pulse duration, 100 ms pulse repetition interval, and 40 s total duration.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For the real TUS protocols of the experiment, we utilized either a theta-burst TUS (tbTUS) protocol<sup>12,51</sup>, with parameters of 20 ms pulse duration, 200 ms pulse repetition interval, and 120 s total duration, or a 10 Hz TUS protocol<sup>8,41</sup>, with a 30 ms pulse duration, 100 ms pulse repetition interval, and 40 s total duration.",
+   "exposures[0].timing.sonication_duration_s": "For the real TUS protocols of the experiment, we utilized either a theta-burst TUS (tbTUS) protocol<sup>12,51</sup>, with parameters of 20 ms pulse duration, 200 ms pulse repetition interval, and 120 s total duration, or a 10 Hz TUS protocol<sup>8,41</sup>, with a 30 ms pulse duration, 100 ms pulse repetition interval, and 40 s total duration.",
+   "exposures[0].timing.duty_cycle_pct": "For thermal simulations, the 10 Hz TUS protocol included 40 s of sonication with a 30% duty cycle, while the tbTUS protocol included 120 s with a 10% duty cycle as input parameters.",
+   "exposures[1].timing.pulse_duration_ms": "For the real TUS protocols of the experiment, we utilized either a theta-burst TUS (tbTUS) protocol<sup>12,51</sup>, with parameters of 20 ms pulse duration, 200 ms pulse repetition interval, and 120 s total duration, or a 10 Hz TUS protocol<sup>8,41</sup>, with a 30 ms pulse duration, 100 ms pulse repetition interval, and 40 s total duration.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "For the real TUS protocols of the experiment, we utilized either a theta-burst TUS (tbTUS) protocol<sup>12,51</sup>, with parameters of 20 ms pulse duration, 200 ms pulse repetition interval, and 120 s total duration, or a 10 Hz TUS protocol<sup>8,41</sup>, with a 30 ms pulse duration, 100 ms pulse repetition interval, and 40 s total duration.",
+   "exposures[1].timing.sonication_duration_s": "Then, adequate ultrasound gel (Wavelength MP Blue, Sabel Med, Oldsmar, FL) was applied to both the participant’s head and the transducer, ensuring the absence of air bubbles between the transducer and the scalp, and sonication was delivered for two minutes.",
+   "exposures[1].timing.duty_cycle_pct": "For thermal simulations, the 10 Hz TUS protocol included 40 s of sonication with a 30% duty cycle, while the tbTUS protocol included 120 s with a 10% duty cycle as input parameters.",
+   "exposures[0].free_field.isppa_w_cm2": "Both protocols were administered bilaterally with an intensity of30 W/ cm² ISPPA (measured in water).",
+   "exposures[1].free_field.isppa_w_cm2": "Both protocols were administered bilaterally with an intensity of30 W/ cm² ISPPA (measured in water).",
+   "exposures[0].in_situ.ispta_w_cm2": "The spatial-peak temporal average intensity (ISPTA) values varied between protocols, ranging from 0.75 to 2.1 W/cm<sup>2</sup> for 10 Hz TUS and from 0.25 to 0.7 W/cm<sup>2</sup> for tbTUS, due to differences in DC (Fig. 2F).",
+   "exposures[0].in_situ.isppa_w_cm2": "However, ISPPA estimates within the target area based on individual brain characteristics were similar for the two protocols, ranging from 2.5 to 7 W/cm<sup>2</sup> (Fig. 2G).",
+   "exposures[1].in_situ.isppa_w_cm2": "Figure 8D, E suggests the ISPPA estimates within the target area ranged from 1.6 to 8 W/cm<sup>2</sup> for the GPi and 2.3 to 9 W/cm<sup>2</sup> for the pulvinar; In addition, the ISPTA estimates within the target area ranged from 0.2 to 0.85 W/cm<sup>2</sup> for the GPi and 0.25 to 0.95 W/cm<sup>2</sup> for the pulvinar.",
+   "exposures[1].in_situ.ispta_w_cm2": "Figure 8D, E suggests the ISPPA estimates within the target area ranged from 1.6 to 8 W/cm<sup>2</sup> for the GPi and 2.3 to 9 W/cm<sup>2</sup> for the pulvinar; In addition, the ISPTA estimates within the target area ranged from 0.2 to 0.85 W/cm<sup>2</sup> for the GPi and 0.25 to 0.95 W/cm<sup>2</sup> for the pulvinar.",
+   "exposures[0].device.manufacturer": "The focal spot dimensions which are simulated are all in full agreement with the experimental water tank measurements provided by the manufacturer (SonicConcepts, WA, USA).",
+   "exposures[0].device.model": "We employed the NeuroFUS TPO and CTX-500 4- channel transducer (Brainbox Ltd., Cardiff, UK) operating at a central frequency of 500 kHz.",
+   "exposures[1].device.manufacturer": "The focal spot dimensions which are simulated are all in full agreement with the experimental water tank measurements provided by the manufacturer (SonicConcepts, WA, USA).",
+   "exposures[1].device.model": "We employed the NeuroFUS TPO and CTX-500 4- channel transducer (Brainbox Ltd., Cardiff, UK) operating at a central frequency of 500 kHz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports two separate experiments with different cohorts (10 DBS-implanted movement-disorder patients in Experiment I; 15 healthy participants in Experiment II); no combined total is stated, so recorded as a list of group sizes."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "ISPTA range differs by protocol within the same GPi target/frequency (tbTUS 0.25-0.7 W/cm2; 10 Hz TUS 0.75-2.1 W/cm2); recorded as a nested list [[tbTUS range],[10 Hz TUS range]] to preserve both; Experiment II (healthy participants, tbTUS only) separately reports GPi ISPTA range 0.2-0.85 W/cm2, not merged into this value."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "Experiment II pulvinar-specific range (2.3-9 W/cm2, in situ) used; this experiment (healthy participants) is distinct from Experiment I's GPi DBS-patient simulations."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper explicitly states patients were blinded to condition ('administered in a blinded manner'); no statement about blinding of the experimenter/analyst, so coded as single rather than double."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "LFP was recorded before, during (T0) and after (T10/T25/T40) TUS (online+offline); behavioural stop-signal task was assessed only offline (pre/post blocks); coded as both at the paper level."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Second group size (15 healthy participants) is stated separately in Experiment II Methods: 'Fifteen healthy participants (age range:18-35 years...) participated in this experiment.' Only the Experiment I quote is stored due to one-quote-per-field limit."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhangb",
+ "doi": "10.1111/cns.13463",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Sucrose preference test (SPT); forced swim test (FST); open field test (OFT); Western blot (BDNF, TrkB, ERK, Akt, mTOR, S6K); c-Fos immunohistochemistry; hematoxylin-eosin and Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Single 200 Hz LIPUS stimulation of the vmPFC increased c-Fos-positive neuron counts (285 Hz and 500 Hz did not alter behavior); four weeks of chronic 200 Hz LIPUS improved depression-like behaviors (increased sucrose preference, decreased FST immobility) and partially restored BDNF/TrkB/ERK/mTORC1/S6K signaling in CUS rats.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE and Nissl staining revealed intact brain structure and neurons with no microhemorrhage, edema, cell necrosis, or local inflammatory response in any group; measured temperature elevation was theoretically calculated to be less than 0.4 degrees C; negative acoustic pressure (0.28 MPa in situ) was far below the cavitation threshold (40 MPa) and intensity/MI were below FDA diagnostic ultrasound limits.",
+ "exposures": [
+  {
+   "label": "LIPUS to ventromedial prefrontal cortex (vmPFC), PRF screening (200/285/500 Hz) and chronic 200 Hz stimulation",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "ventromedial prefrontal cortex (vmPFC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": 400,
+    "isppa_w_cm2": 6.2,
+    "ispta_w_cm2": 0.248
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 280,
+    "isppa_w_cm2": 3.84,
+    "ispta_w_cm2": 0.154
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     200,
+     285,
+     500
+    ],
+    "duty_cycle_pct": 4,
+    "sonication_duration_s": 1,
+    "protocol_description": "Parameter screening: normal rats received a single 30-minute LIPUS session of the vmPFC at one of three PRFs (200, 285, or 500 Hz); only 200 Hz significantly reduced FST immobility, so 200 Hz was used going forward. Chronic study: rats in the CUS+LIPUS group received ultrasound stimulation for twenty minutes each day for four consecutive weeks (CUS+sham LIPUS and control groups wore the same apparatus with power turned off). Chronic parameters: 200 Hz PRF, 4% duty cycle, 0.2 ms tone burst duration, 1 s sonication duration, 3 s inter-stimulus interval."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Normal and CUS rats were used to examine the effects of chronic LIPUS stimulation. They were control, CUS + sham LIPUS and CUS + LIPUS groups (n = 8 rats per group).",
+   "randomised": "Before CUS, animals were randomly (stratified random) divided into the blank control group (n = 8) and CUS group (n = 22), according to baseline sucrose preference indices (SPI).",
+   "anaesthesia": "Compared with previous studies,12,22 we applied LIPUS to awake and free-moving animals rather than anesthetized ones.",
+   "exposures[0].fundamental_frequency_khz": "LIPUS was generated by a home-made wearable transducer (frequency: 800 kHz), mainly consist of 1-3 PZT-5H/epoxy composite, epoxy backing, and Parylene layer (Figure 2B), as described in Ref. 23.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In order to obtain suitable stimulation parameters, we first examined the behavioral effects of 30-min single LIPUS stimulation of the vmPFC with three different PRFs (200 Hz, 285 Hz and 500 Hz) in nonstressed rats.",
+   "exposures[0].timing.pulse_duration_ms": "The LIPUS parameters applied to chronic stimuli (Figure 2B) were as follows: 200 Hz pulse repetition frequency (PRF), 4% duty cycle (DC), 0.2 ms tone burst duration (TBD), 1 seconds sonication duration (SD), and 3 seconds inter-stimulus interval (ISI).",
+   "exposures[0].timing.duty_cycle_pct": "The LIPUS parameters applied to chronic stimuli (Figure 2B) were as follows: 200 Hz pulse repetition frequency (PRF), 4% duty cycle (DC), 0.2 ms tone burst duration (TBD), 1 seconds sonication duration (SD), and 3 seconds inter-stimulus interval (ISI).",
+   "exposures[0].timing.sonication_duration_s": "The LIPUS parameters applied to chronic stimuli (Figure 2B) were as follows: 200 Hz pulse repetition frequency (PRF), 4% duty cycle (DC), 0.2 ms tone burst duration (TBD), 1 seconds sonication duration (SD), and 3 seconds inter-stimulus interval (ISI).",
+   "exposures[0].free_field.pressure_kpa": "As shown in Figure 2C, the negative acoustic pressure was 0.40 MPa and the spatial-peak temporal-average intensity $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ was $2 4 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ , with a corresponding spatial-peak pulse-average intensity $( \\boldsymbol { \\mathsf { I } } _ { \\mathsf { s p p a } } )$ of $6 . 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ in free space.",
+   "exposures[0].free_field.isppa_w_cm2": "As shown in Figure 2C, the negative acoustic pressure was 0.40 MPa and the spatial-peak temporal-average intensity $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ was $2 4 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ , with a corresponding spatial-peak pulse-average intensity $( \\boldsymbol { \\mathsf { I } } _ { \\mathsf { s p p a } } )$ of $6 . 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ in free space.",
+   "exposures[0].free_field.ispta_w_cm2": "As shown in Figure 2C, the negative acoustic pressure was 0.40 MPa and the spatial-peak temporal-average intensity $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ was $2 4 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ , with a corresponding spatial-peak pulse-average intensity $( \\boldsymbol { \\mathsf { I } } _ { \\mathsf { s p p a } } )$ of $6 . 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ in free space.",
+   "exposures[0].in_situ.pressure_kpa": "After passing through the rat skull, the acoustic pressure decreased about 30%, with the negative acoustic pressure being 0.28 MPa and $\\mathsf { I } _ { \\mathsf { s p t a } }$ was $1 5 4 \\mathrm { \\ m W / c m } ^ { 2 }$ (corresponding to $\\mathsf { I } _ { \\mathsf { s p p a } } 3 . 8 4 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "After passing through the rat skull, the acoustic pressure decreased about 30%, with the negative acoustic pressure being 0.28 MPa and $\\mathsf { I } _ { \\mathsf { s p t a } }$ was $1 5 4 \\mathrm { \\ m W / c m } ^ { 2 }$ (corresponding to $\\mathsf { I } _ { \\mathsf { s p p a } } 3 . 8 4 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "After passing through the rat skull, the acoustic pressure decreased about 30%, with the negative acoustic pressure being 0.28 MPa and $\\mathsf { I } _ { \\mathsf { s p t a } }$ was $1 5 4 \\mathrm { \\ m W / c m } ^ { 2 }$ (corresponding to $\\mathsf { I } _ { \\mathsf { s p p a } } 3 . 8 4 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ ."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Reported total covers only the chronic CUS+LIPUS group (n=8); a separate parameter-screening experiment also exposed normal rats to single LIPUS sessions (n=6-8 per PRF group across 3 PRFs), an imprecise range not included in this total."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "The three PRFs (200/285/500 Hz) were tested only in the single-dose screening experiment; the chronic 4-week CUS study used only 200 Hz with the other timing parameters (DC, TBD, SD, ISI) given specifically for the chronic protocol."
+   },
+   {
+    "field": "randomised",
+    "reason": "Initial split into control/CUS groups was explicitly randomized (stratified); the subsequent redistribution of CUS rats into CUS+sham-LIPUS and CUS+LIPUS groups was based on sucrose preference index stratification rather than stated as random."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ }
+}

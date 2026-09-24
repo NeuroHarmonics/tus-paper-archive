@@ -1,0 +1,418 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023yang",
+ "doi": "10.1038/s42255-023-00804-z",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6NCrl, UCP1-KO); rat (Wistar Han IGS); HEK293T cells (in vitro)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular",
+  "other_mri"
+ ],
+ "readout_other": "Body/BAT/tail temperature (thermal imaging, telemetry), VO2/RQ (indirect calorimetry), ECG/heart rate, locomotor activity, fiber photometry (GCaMP6s) in POA and DMH, single-nucleus RNA-sequencing, FISH/immunohistochemistry (Fos, Trpm2, Adcyap1, NeuN, GFAP, Iba1), MRI thermometry",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of the POA activated POA and downstream DMH neurons (increased Fos expression and evoked Ca2+ activity), which in turn suppressed BAT thermogenesis and drove systemic hypothermia and hypometabolism; the effect required the ultrasound-sensitive ion channel TRPM2 and was attenuated (not abolished) by TRPM2 knockdown.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Immunohistological examination of mouse brains after ultrasound treatment did not find any visible tissue damage or inflammation.",
+ "exposures": [
+  {
+   "label": "Ultrasound-induced hypothermia/hypometabolism (UIH), mouse POA, 3.2 MHz",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "hypothalamus preoptic area (POA)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3200,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     400,
+     800,
+     1200,
+     1600
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     2,
+     10
+    ],
+    "protocol_description": "Default protocol: peak negative in-situ pressure 1.6 MPa, duty cycle 50%, PRF 10 Hz, stimulus duration 10 s, inter-stimulus interval 30 s, 6 stimuli total, via a wearable transducer glued to the mouse skull over the POA. A gaussian envelope was applied to pulse onset/offset to reduce broadband auditory activation. In a parameter study, stimulus duration (2-10 s) and acoustic pressure (0.4, 0.8, 1.2, 1.6 MPa) were varied independently while other parameters were held constant. A closed-loop feedback controller turned ultrasound on/off (same parameters, 20 s inter-stimulus interval) to hold core temperature below 34 degC for approximately 24 h continuously, with pressure increased 10% and stimulus number increased to 8 after 12 h to compensate for gel attenuation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Ultrasound-induced hypothermia (UIH), rat POA, 1.5 MHz",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "hypothalamus preoptic area (POA)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1400,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 10,
+    "protocol_description": "Same wearable-transducer protocol as in mice (duty cycle 50%, PRF 10 Hz, stimulus duration 10 s, inter-stimulus interval 30 s), scaled to a 1.5 MHz transducer and a peak negative in-situ pressure of 1.4 MPa, with 20 stimuli delivered to freely-moving rats."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "In vitro TRPM2 activation by ultrasound in HEK293T cells",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "HEK293T cells overexpressing TRPM2 (in vitro)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 60,
+    "protocol_description": "Cultured HEK293T cells overexpressing TRPM2 were sonicated with a customized in vitro US setup (different transducer from the in vivo experiments) 30 s after the start of Ca2+ imaging, to test direct ultrasound sensitivity of the TRPM2 channel; a subset of wells received the TRPM2 blocker 2-APB before sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 40.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[0].in_situ.pressure_kpa": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[0].timing.duty_cycle_pct": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[0].timing.sonication_duration_s": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[0].timing.pulse_duration_ms": "during and after ultrasound stimulation (1.6 MPa in acoustic pressure 3.2 MHz in frequency, 50 ms in pulse duration, 10 Hz in pulse repetition frequency, 10 s in stimulus duration, 30 s in inter-stimulus interval and 6 in total number of stimuli; Fig. 1c).",
+   "exposures[1].fundamental_frequency_khz": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[1].in_situ.pressure_kpa": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[1].timing.duty_cycle_pct": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[1].timing.sonication_duration_s": "US stimulation was performed using the following parameters: fundamental frequency of 3.2 MHz for mice and 1.5 MHz for rats, peak negative acoustic pressure (in situ pressure with skull attenuation considered) of 1.6 MPa for mice and 1.4 MPa for rats, duty cycle of 50%, pulse repetition frequency of 10 Hz, stimulus duration of 10 s, inter-stimulus interval of ${ 3 0 5 , }$ stimulus number of 6 (mice) or 20 (rats). In the parameter study, the stimulus duration (2–10 s) and acoustic pressure (0.4, 0.8, 1.2 and 1.6 MPa) were varied, while other parameters were kept the same.",
+   "exposures[1].timing.pulse_duration_ms": "during and after ultrasound stimulation (1.6 MPa in acoustic pressure 3.2 MHz in frequency, 50 ms in pulse duration, 10 Hz in pulse repetition frequency, 10 s in stimulus duration, 30 s in inter-stimulus interval and 6 in total number of stimuli; Fig. 1c).",
+   "exposures[2].fundamental_frequency_khz": "At 30 s after the start of recording, US stimulation (frequency of 1.7 MHz, acoustic pressure of 1.0 MPa, duty cycle of 40%, PRF of 10 Hz, duration of 60 s) was applied to the cells using the customized US stimulation setup as described in our previous study<sup>34</sup>.",
+   "exposures[2].unspecified_domain.pressure_kpa": "At 30 s after the start of recording, US stimulation (frequency of 1.7 MHz, acoustic pressure of 1.0 MPa, duty cycle of 40%, PRF of 10 Hz, duration of 60 s) was applied to the cells using the customized US stimulation setup as described in our previous study<sup>34</sup>.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "At 30 s after the start of recording, US stimulation (frequency of 1.7 MHz, acoustic pressure of 1.0 MPa, duty cycle of 40%, PRF of 10 Hz, duration of 60 s) was applied to the cells using the customized US stimulation setup as described in our previous study<sup>34</sup>.",
+   "exposures[2].timing.duty_cycle_pct": "At 30 s after the start of recording, US stimulation (frequency of 1.7 MHz, acoustic pressure of 1.0 MPa, duty cycle of 40%, PRF of 10 Hz, duration of 60 s) was applied to the cells using the customized US stimulation setup as described in our previous study<sup>34</sup>.",
+   "exposures[2].timing.sonication_duration_s": "At 30 s after the start of recording, US stimulation (frequency of 1.7 MHz, acoustic pressure of 1.0 MPa, duty cycle of 40%, PRF of 10 Hz, duration of 60 s) was applied to the cells using the customized US stimulation setup as described in our previous study<sup>34</sup>."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Dozens of separate cohorts (mice, UCP1-KO mice, rats, in vitro cells) with different, non-overlapping n reported per assay across the paper; no single study-wide total of subjects exposed to ultrasound is given."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most animals received a single acute stimulation session, but the closed-loop feedback experiment delivered many intermittent stimuli continuously over ~24 h; no single value applies across the study."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "The 50 ms pulse duration is explicitly stated only in the context of the mouse experiment (Fig. 1c); it is assumed to also apply to rats because duty cycle (50%) and PRF (10 Hz) are stated to be identical for mice and rats, but this is not separately confirmed in the text for rats."
+   },
+   {
+    "field": "exposures[2].timing.pulse_duration_ms",
+    "reason": "Pulse duration for the in vitro TRPM2 experiment is not stated directly; only duty cycle (40%) and PRF (10 Hz) are given, and pulse duration was not computed from these per instructions."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Ultrasound stimulation itself was delivered to awake, freely-moving animals; brief isoflurane anaesthesia (1-1.5%) was used only for surgery and daily transducer attachment (<=15 min), not during stimulation/testing."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The exact mechanism of the 'US-' (no ultrasound) control condition (e.g., whether a transducer was worn but inactive) is not explicitly described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "first",
+   "exposures[1].timing.pulse_duration_ms": "first",
+   "exposures[2].in_situ.pressure_kpa": "second",
+   "exposures[2].in_situ.isppa_w_cm2": "second",
+   "exposures[2].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

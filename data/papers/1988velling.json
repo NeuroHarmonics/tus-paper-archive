@@ -1,0 +1,301 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1988velling",
+ "doi": "10.1007/bf01193880",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].timing.pulse_duration_ms": "Various regimes of focused ultrasonic action were studied: individual pulses with durations ranging from 0.1 to l00 msec and packets of pulses with frequencies of l-20 pulses/sec.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Various regimes of focused ultrasonic action were studied: individual pulses with durations ranging from 0.1 to l00 msec and packets of pulses with frequencies of l-20 pulses/sec.",
+   "exposures[0].in_situ.isppa_w_cm2": "The calculated ultrasound intensity at the focus varied from 1 μW/cm² to 1400 W/cm².",
+   "exposures[1].timing.pulse_duration_ms": "Various regimes of focused ultrasonic action were studied: individual pulses with durations ranging from 0.1 to l00 msec and packets of pulses with frequencies of l-20 pulses/sec.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "In awake rabbits, focused ultrasound with an intensity of l-100 mW/cm² and a frequency of modulation equal to 6-l0 Hz results in a stable and pronounced increase in the amplitude of the ECoG along with a shift to low frequencies for durations of the action up to 20 min.",
+   "exposures[1].in_situ.isppa_w_cm2": "The functional state of the neocortex was investigated during ultrasonic action in a range of intensities causing a consistent change in the amplitude of the ECoG (1-l00 mW/cm²).",
+   "exposures[0].timing.sonication_duration_s": "During the action of focused ultrasound over 5-l0 sec and during modulation of ultrasonic action by frequencies of up to 6 Hz, an effect involving an increase in the amplitude of the ECoG took place along with a shift in the spectral rhythms to the side of low frequencies (Fig. 2, II, 3).",
+   "exposures[1].timing.sonication_duration_s": "In awake rabbits, focused ultrasound with an intensity of l-100 mW/cm² and a frequency of modulation equal to 6-l0 Hz results in a stable and pronounced increase in the amplitude of the ECoG along with a shift to low frequencies for durations of the action up to 20 min."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "No carrier/fundamental ultrasound frequency (MHz) is stated anywhere in this paper for either the acute or chronic experiments."
+   },
+   {
+    "field": "exposures[1].fundamental_frequency_khz",
+    "reason": "Same as exposures[0]: fundamental frequency is never reported."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "17 cats are stated for the acute experiments, but the number of rabbits used in the chronic experiments is never given, so a study-wide n_subjects cannot be determined."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The 'various regimes' sentence describing pulse duration, repetition rate and intensity range appears once in the Methods and is applied here to both the acute (cat) and chronic (rabbit) exposures because the paper does not clearly separate the parameter ranges used in each series."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Classified as in_situ/simulation because the text specifies 'intensity at the focus' (i.e. at the target) and describes it as 'calculated' rather than measured in water; however the paper does not explicitly describe a derating or simulation method, so this domain assignment is uncertain."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "Same uncertainty as exposures[0].in_situ.isppa_w_cm2."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].timing.sonication_duration_s": "neither",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.sonication_duration_s": "second"
+  }
+ },
+ "model_system": [
+  "other_vertebrate",
+  "large_animal"
+ ],
+ "species": "cat; rabbit",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "ECoG (electrocorticogram) via implanted tungsten electrodes; visual evoked potentials to light flashes; thresholds for motor activity to direct electrostimulation of motor cortex",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Low intensities (1-100 mW/cm2) activated/increased ECoG amplitude and cortical excitability, higher intensities (1-100 W/cm2) suppressed the ECoG and produced pathological 'peak-wave' activity, and intensities below 0.1 mW/cm2 produced no effect; the direction of the ECoG and excitability change depended on intensity, duration and modulation frequency.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Acute experiments: ultrasonic action through a trepanned opening in cats",
+   "target": {
+    "terms": [
+     "sensorimotor_cortex",
+     "temporal_lobe",
+     "parietal_lobe"
+    ],
+    "label": "temporal, sensorimotor, and parietal cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1e-06,
+     1400
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.1,
+     100
+    ],
+    "pulse_repetition_frequency_hz": [
+     1,
+     20
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     5,
+     600
+    ],
+    "protocol_description": "Ultrasound was delivered through a trepanned skull opening to cats under light nembutal anaesthesia, focused with a micromanipulator-mounted emitter onto temporal, sensorimotor and parietal cortex sites. Regimes studied ranged from individual short pulses (0.1-100 ms, up to 100 repeated pulses) to extended trains ('packets of pulses' at 1-20 pulses/s) lasting from seconds to many minutes; short single pulses at intensities up to 1400 W/cm2 produced no ECoG change, whereas trains longer than about 10 s produced graded ECoG suppression (1-100 W/cm2) or a biphasic activation/suppression response (10-100 mW/cm2) depending on modulation frequency and duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Chronic experiments: ultrasonic action through intact skull bone in awake rabbits",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "neocortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.001,
+     0.1
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.1,
+     100
+    ],
+    "pulse_repetition_frequency_hz": [
+     6,
+     10
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1200,
+    "protocol_description": "In chronic experiments, the ultrasound focus was fixed to the intact skull of awake rabbits with the focus 1.5-2.0 mm below the dura at a selected neocortical site. Regimes ranged from individual pulses (0.1-100 ms) to trains at 1-20 pulses/s. Intensities of 1-100 mW/cm2 with modulation at 6-10 Hz produced a stable increase in ECoG amplitude for exposures lasting up to 20 min; within this range, 10-100 mW/cm2 lowered cortical excitability (reduced evoked-potential amplitude, raised electrostimulation threshold) while 1-10 mW/cm2 increased excitability."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

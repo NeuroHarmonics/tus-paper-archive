@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025atkinsonclementa",
+ "doi": "10.1016/j.crneur.2025.100148",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 9,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "Seed-based resting-state functional connectivity (R2) from left anterior hippocampus; fractional amplitude of low-frequency fluctuations (fALFF); regional homogeneity (ReHo); diffusion-weighted imaging tractography for structural connectivity",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "TUS of the left anterior hippocampus increased functional connectivity (R2) between the hippocampus and distant regions (cerebellum, V2, orbitofrontal cortex, premotor cortex) in a time-constrained window (~40-60 min post-TUS); fALFF and ReHo showed both increases (e.g. putamen, pons, inferior temporal cortex) and decreases (e.g. posterior medial cortex, parietal lobules, hippocampus) over a more extended and region-specific time course lasting up to at least 100 min.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Offline TUS of left anterior hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "left anterior hippocampus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H115-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 682,
+    "isppa_w_cm2": 15.5,
+    "ispta_w_cm2": 4.26
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 548,
+    "isppa_w_cm2": 10,
+    "ispta_w_cm2": 2.76
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 40,
+    "protocol_description": "A commonly used primate 'offline' TUS protocol (250 kHz, 30 ms bursts, 100 ms pulse-repetition interval, 30% duty cycle, 40 s total duration) was applied once per TUS session via a single-element transducer coupled through a water-filled cone, targeting the left anterior hippocampus under stereotaxic neuronavigation; rs-fMRI was acquired 32-91 min afterward (median scan time used for modelling)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "For this study, one Rhesus macaque (Macaca mulatta, male, 15 years old, 13.5 kg) underwent 52 resting-state fMRI (rs-fMRI) obtained awake and distributed in 21 daily scanning sessions.",
+   "n_sessions_per_subject": "27 scans (12 sessions) were obtained without any stimulation (“control”) while 25 (9 sessions) were obtained between 32 and 91 min following TUS applied on the left anterior hippocampus (see Fig. 1; mean = 45.8min; standard deviation = 12.9min; quartile 1 = 32–46min; quartile 2 = 46–54min; quartile 3 = 54–61min; quartile 4 = 61–91min).",
+   "exposures[0].fundamental_frequency_khz": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].timing.pulse_duration_ms": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].timing.duty_cycle_pct": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].timing.sonication_duration_s": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].free_field.isppa_w_cm2": "The following parameters were used for the stimulation, controlled through a digital function generator (KeySight 33500B Trueform, Santa Rosa, CA, USA): fundamental frequency: 250 kHz, pulse duration: 30ms, pulse repetition interval: 100ms, pulse repetition frequency: 10Hz, duty cycle: 30%, I<sub>SPPA</sub>: 15.5W/cm<sup>2</sup>; total duration: 40 s.",
+   "exposures[0].free_field.pressure_kpa": "Based on simulations achieved using k-plan, sonification outputs were estimated in water (maximum peak pressure: 682 kPa; I<sub>sppa</sub>: 15.5W/cm<sup>2</sup>; I<sub>spta</sub>: 4.26W/cm<sup>2</sup>) and in situ (maximum peak pressure: 548 kPa; $\\mathrm { I _ { s p p a } } \\mathrm { : 1 0 W / c m ^ { 2 } } \\mathrm { ; I _ { s p t a } } \\mathrm { : 2 . 7 6 W / c m ^ { 2 } } \\mathrm { ; }$ Mechanical Index: 1.1; Maximal increase temperature: $+ 2 . 6 1 \\ ^ { \\circ } \\mathrm { C } ) .$",
+   "exposures[0].free_field.ispta_w_cm2": "Based on simulations achieved using k-plan, sonification outputs were estimated in water (maximum peak pressure: 682 kPa; I<sub>sppa</sub>: 15.5W/cm<sup>2</sup>; I<sub>spta</sub>: 4.26W/cm<sup>2</sup>) and in situ (maximum peak pressure: 548 kPa; $\\mathrm { I _ { s p p a } } \\mathrm { : 1 0 W / c m ^ { 2 } } \\mathrm { ; I _ { s p t a } } \\mathrm { : 2 . 7 6 W / c m ^ { 2 } } \\mathrm { ; }$ Mechanical Index: 1.1; Maximal increase temperature: $+ 2 . 6 1 \\ ^ { \\circ } \\mathrm { C } ) .$",
+   "exposures[0].in_situ.pressure_kpa": "Based on simulations achieved using k-plan, sonification outputs were estimated in water (maximum peak pressure: 682 kPa; I<sub>sppa</sub>: 15.5W/cm<sup>2</sup>; I<sub>spta</sub>: 4.26W/cm<sup>2</sup>) and in situ (maximum peak pressure: 548 kPa; $\\mathrm { I _ { s p p a } } \\mathrm { : 1 0 W / c m ^ { 2 } } \\mathrm { ; I _ { s p t a } } \\mathrm { : 2 . 7 6 W / c m ^ { 2 } } \\mathrm { ; }$ Mechanical Index: 1.1; Maximal increase temperature: $+ 2 . 6 1 \\ ^ { \\circ } \\mathrm { C } ) .$",
+   "exposures[0].in_situ.isppa_w_cm2": "Based on simulations achieved using k-plan, sonification outputs were estimated in water (maximum peak pressure: 682 kPa; I<sub>sppa</sub>: 15.5W/cm<sup>2</sup>; I<sub>spta</sub>: 4.26W/cm<sup>2</sup>) and in situ (maximum peak pressure: 548 kPa; $\\mathrm { I _ { s p p a } } \\mathrm { : 1 0 W / c m ^ { 2 } } \\mathrm { ; I _ { s p t a } } \\mathrm { : 2 . 7 6 W / c m ^ { 2 } } \\mathrm { ; }$ Mechanical Index: 1.1; Maximal increase temperature: $+ 2 . 6 1 \\ ^ { \\circ } \\mathrm { C } ) .$",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on simulations achieved using k-plan, sonification outputs were estimated in water (maximum peak pressure: 682 kPa; I<sub>sppa</sub>: 15.5W/cm<sup>2</sup>; I<sub>spta</sub>: 4.26W/cm<sup>2</sup>) and in situ (maximum peak pressure: 548 kPa; $\\mathrm { I _ { s p p a } } \\mathrm { : 1 0 W / c m ^ { 2 } } \\mathrm { ; I _ { s p t a } } \\mathrm { : 2 . 7 6 W / c m ^ { 2 } } \\mathrm { ; }$ Mechanical Index: 1.1; Maximal increase temperature: $+ 2 . 6 1 \\ ^ { \\circ } \\mathrm { C } ) .$",
+   "exposures[0].device.manufacturer": "The single-element H115-MR transducer (manufacturer: Sonic Concepts Inc., Bothell, USA; number of elements: 1, radius of curvature: 64 mm) was used with a coupling cone filled with degassed water and sealed with a latex membrane to reach a focal depth of 51.74 mm.",
+   "exposures[0].device.model": "The single-element H115-MR transducer (manufacturer: Sonic Concepts Inc., Bothell, USA; number of elements: 1, radius of curvature: 64 mm) was used with a coupling cone filled with degassed water and sealed with a latex membrane to reach a focal depth of 51.74 mm."
+  },
+  "flags": [
+   {
+    "field": "direction_of_effect",
+    "reason": "Effects vary substantially by neural metric and region: functional connectivity (R2) showed increases only, while fALFF and ReHo showed both increases and decreases depending on brain region; coded as bidirectional at the whole-study level."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

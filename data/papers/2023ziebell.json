@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023ziebell",
+ "doi": "10.1016/j.brs.2023.08.011",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Based on effect size calculations, N = 152 participants (106 female = 70%, 46 male = 30%) with complete datasets could be collected (almost exactly the number of 156 participants recommended for detecting a small effect of d = 0.20 in a within t-test with alpha = 0.050 and beta = 0.200).",
+   "n_sessions_per_subject": "All N = 152 participants completed two almost equally structured sessions that were separated by exactly seven days (unless participant rescheduling was required). The only difference between those two sessions was whether TUS or Sham was applied in the second step of the experimental protocol.",
+   "exposures[0].fundamental_frequency_khz": "0.500 MHz</td><td>0.500 MHz</td><td>0.500 MHz</td><td>0.500 MHz</td></tr><tr><td>",
+   "exposures[0].free_field.pressure_kpa": "</td><td>1.09 MPa  $4 0 \\mathrm { \\ : W / c m ^ { 2 } }$ </td></",
+   "exposures[0].free_field.isppa_w_cm2": "</td><td>1.09 MPa  $4 0 \\mathrm { \\ : W / c m ^ { 2 } }$ </td></",
+   "exposures[0].free_field.ispta_w_cm2": " { m W / c m ^ { 2 } }$ </td><td> $1 9 9 \\mathrm { \\ m W / c m ^ { 2 } }$ </td><",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<tr><td>PL</td><td>40 Hz</td><td>40 Hz</td><td>40 Hz</td><td>40 Hz</td></tr><tr>",
+   "exposures[0].timing.sonication_duration_s": "TT</td><td>30 s</td><td>120 s</td><td>30 s</td><td>120 s</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td> $I _ { S P T A }$ </td><td> $6 5 ~ { \\mu \\mathrm { s } }$ </td><td> $1 2 5 ~ { \\mu s }$ </td><td>65 μs</td><td>125 μs</td></tr>",
+   "exposures[0].timing.duty_cycle_pct": "<tr><td>PL</td><td>40 Hz</td><td>40 Hz</td><td>40 Hz</td><td>40 Hz</td></tr><tr><td> $P R F$ </td><td></td><td></td><td>0.26%</td><td>0.50%</td></tr><tr><td> $_ { D C }$ </td><td>0.26%</td><td>0.50%</td><td></td><td></td></tr>",
+   "exposures[0].device.manufacturer": "All studies used the exact same specifically manufactured device prototype (https://thync.com/, product name: Neurotrek U+, including gel pads for optimal transducer-skull-connection provided by https://siliconesolutions."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Table 1 row labels are shifted by one row in text extraction (MinerU); PRF=40 Hz value read from the row visually labelled 'PL' which, cross-checked against the referenced Sanguinetti/Reznik studies with identical device and known published parameters, is actually the PRF row."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Table 1 row labels are shifted by one row; the 0.50% value read from the row visually labelled '$PRF$' is, by cross-check with the known device parameters, the duty-cycle row."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Table 1 row labels are shifted by one row; 125 µs read from the row visually labelled '$I_{SPTA}$' is, by cross-check, the pulse-length (PL) row."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Both TUS and Sham conditions produced the same audible 40 Hz PRF humming from the device, so auditory experience was matched between conditions; this does not map cleanly onto the closed vocabulary (not masking, ramping, or a dedicated sound-only sham)."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham was delivered by flipping the transducer so the beam emanated away from the skull (device still powered), matching the 'aimed away' variant of inactive_transducer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 152,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "Midfrontal theta (EEG, electrode FCz) during a virtual T-maze approach/withdrawal task; joystick-based approach vs withdrawal behaviour frequencies; Self-Assessment Manikin (SAM) and visual analogue mood scales (VAMS)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Right PFC TUS (vs Sham) significantly decreased conflict-related midfrontal theta (MFT), and this MFT reduction explained greater approach and less withdrawal behaviour in conflict events of a virtual T-maze task; no significant TUS effect on subjective mood was found.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No TUS-specific side effects were reported; nine potentially eligible participants withdrew during the (non-TUS) familiarisation session because of discomfort (simulator sickness, sore skin from the EEG setup) unrelated to TUS itself.",
+ "exposures": [
+  {
+   "label": "Right prefrontal cortex TUS vs Sham (virtual T-maze task)",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "right prefrontal cortex (PFC), targeted via EEG electrode position F8"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Thync (device prototype; product name Neurotrek U+)",
+    "model": "Neurotrek U+"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1090,
+    "isppa_w_cm2": 40,
+    "ispta_w_cm2": 0.199
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.125,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": 0.5,
+    "sonication_duration_s": 120,
+    "protocol_description": "Single-element transducer focused at 30 mm via a two-part lens, applied via EEG electrode position F8 to target the right PFC; TUS or Sham (transducer flipped so the beam emanated away from the skull) was delivered double-blind, order randomly counterbalanced within subjects across two sessions separated by exactly 7 days; the virtual T-maze task (100 trials) began about 50 min and ended about 100 min after TUS/Sham."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.5,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

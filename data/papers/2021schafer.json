@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021schafer",
+ "doi": "10.1109/tuffc.2020.3006781",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri"
+ ],
+ "readout_other": "Pulsed Arterial Spin Labeling (ASL) perfusion imaging (3-D turbo GRASE, FAIR QII), before/after subtraction",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFUP sonication produced an increase in cerebral blood flow (measured with ASL) localized to the entorhinal cortex focal region in a single participant.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "fMRI/ASL example, entorhinal cortex, single participant (65-mm focal-depth transducer)",
+   "target": {
+    "terms": [
+     "entorhinal_cortex"
+    ],
+    "label": "entorhinal cortex"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix, Inc.",
+    "model": "BX1002 (Stimulator)"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 710,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.942
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.72
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "The ultrasound transmit parameters were 942 mW/cm2 ISPTA.0 (720 mW/cm2 ISPTA.3), 100-Hz PRF, 5% duty cycle, 0.71 MPa pr.0, and 30 s ON/30 s OFF for one 10-min treatment block, targeted using MRI fiducial-guided alignment with a 65-mm focal-depth transducer."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The transducer plastic housing (machined polyoxymethylene, Dupont Delrin) contains the 650-kHz piezo-element and enables the transducer to be affixed within the transducer holder, which is held in place using an adjustable strap.",
+   "exposures[0].free_field.pressure_kpa": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].free_field.ispta_w_cm2": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].in_situ.ispta_w_cm2": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "n_subjects": "This is a representative sample image from a single participant recruited under an IRB-approved study conducted at UCLA (IRB: 18-000104).",
+   "n_sessions_per_subject": "The ultrasound transmit parameters were 942 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A . 0 } }$ (720 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { S P T A } . 3 } )$ , 100-Hz PRF, 5% duty cycle, 0.71 MPa $p _ { \\mathrm { r . 0 , } }$ and $3 0 \\mathrm { ~ s ~ } \\mathrm { ~ O N } / 3 0$ s OFF for one 10-min treatment block.",
+   "exposures[0].device.manufacturer": "This study, conducted under an investigational device exemption (IDE) issued to BrainSonix, explored noninvasive brain stimulation with focused ultrasound with derated spatial-peak temporal-average intensities of up to $7 2 0 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "PRF (100 Hz) and duty cycle (5%) are stated but pulse duration is never stated directly; not computed to avoid unauthorised arithmetic."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper does not explicitly name an intended target region beyond 'temporal region'; entorhinal cortex is inferred from the text stating the observed perfusion change was 'in the focal region'."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "720 mW/cm2 is the FDA-style derated (0.3 dB/cm/MHz) value the system displays alongside the nonderated value, not a measured or simulated in-brain value; classified as in_situ via 'derating' method per the paper's own description of this approach."
+   }
+  ],
+  "human_edited": false,
+  "notes": "This is primarily a device/engineering description paper (LIFUP/BX1002 system). Only one concrete exposure with reported parameters is presented as the paper's own data (Section V, single-participant fMRI/ASL example). Other clinical results (2015 epilepsy case series, 2016 disorders-of-consciousness case) are cited from separate prior publications and were not re-extracted as exposures here.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

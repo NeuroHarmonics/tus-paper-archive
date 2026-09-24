@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026caulfield",
+ "doi": "10.1016/j.brs.2026.103171",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "we administered bilateral stimulation of the CMT in N = 16 healthy adult participants using a novel wearable focused ultrasound neuromodulation device and 3 distinct pulse frequencies (1Hz, 5Hz, and 25Hz) and a diffuse unfocused sham stimulation (4 LIFU sessions per person; 64 total sessions)",
+   "n_sessions_per_subject": "we administered bilateral stimulation of the CMT in N = 16 healthy adult participants using a novel wearable focused ultrasound neuromodulation device and 3 distinct pulse frequencies (1Hz, 5Hz, and 25Hz) and a diffuse unfocused sham stimulation (4 LIFU sessions per person; 64 total sessions)",
+   "blinding": "This study was registered on ClinicalTrials.gov (NCT06461221) and was approved by the MUSC IRB, and consisted of 6 counterbalanced, within-subject, double-blind, sham-controlled in-person visits (Fig. 1A).",
+   "sham_type": "Sham stimulation was delivered via unfocused diffuse ultrasonic beams at the same scalp-level intensity but without focusing stimulation to the bilateral CMT (Fig. 1D).",
+   "adverse_events": "No structural abnormalities or imaging changes were observed.",
+   "exposures[0].target.terms": "A novel wearable bilateral 128-element ultrasonic transducer (Attune Neurosciences, Inc.; Fig. 1C) targeted the bilateral CMT with high precision and accuracy via k-wave modeling",
+   "exposures[0].device.family": "LIFU was administered using the wearable ATTN201 device (Attune Neurosciences, Inc., San Francisco, CA, USA) which contains bilateral 64-element transducers (128 elements total; Fig. 1C).",
+   "exposures[0].fundamental_frequency_khz": "For each condition, stimulation was delivered at a 500Hz fundamental frequency, 20% duty cycle, and 60 V/pulse at the scalp level.",
+   "exposures[0].in_situ.isppa_w_cm2": "For ISPPA analyses in Fig. 5, we averaged the within-subject left and right ISPPA values as we stimulated the bilateral CMT, for an average of",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Visits 2-5 delivered LIFU at 4 pulse repetition frequencies (1Hz, 5Hz, 25Hz, unfocused diffuse sham) in a fully counterbalanced order.",
+   "exposures[0].timing.duty_cycle_pct": "For each condition, stimulation was delivered at a 500Hz fundamental frequency, 20% duty cycle, and 60 V/pulse at the scalp level.",
+   "exposures[0].timing.sonication_duration_s": "We report that 50 s of 25Hz LIFU significantly improved reaction time in a directed attention task in comparison to a diffuse, unfocused sham condition up to at least 40 min post-stimulation.",
+   "exposures[0].device.manufacturer": "b Attune Neurosciences, San Francisco, CA, USA",
+   "exposures[0].device.model": "LIFU Simulations showing the wearable Attune ATTN201 stimulation device and segmentation pipeline."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Paper states '500Hz fundamental frequency', which is unusually low for an ultrasound carrier frequency (typical LIFU devices use hundreds of kHz to a few MHz); recorded as stated (0.5 kHz) rather than assuming a typo of 500 kHz."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper describes the 4 stimulation conditions as 'fully counterbalanced' but never uses the word 'randomised/randomized' for condition order; not assumed."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Unfocused diffuse ultrasound sham (elements fired in a deprogrammed sequence, same scalp intensity) does not match a listed sham_type category; coded as other."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper does not discuss auditory/masking confounds explicitly; sham matched scalp-level sensation but no auditory-control method is named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].fundamental_frequency_khz": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour",
+  "other_mri"
+ ],
+ "readout_other": "Visual Oddball task reaction time; Psychomotor Vigilance Task; EEG alpha/theta bands; MRI safety scan battery (T1 MPRage, diffusion-weighted, T2-susceptibility, 3D T2-FLAIR, T2-weighted)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "25 Hz LIFU significantly sped Oddball reaction time and increased pre-trial tonic alpha-theta ratio versus sham, while 1 Hz and 5 Hz LIFU had no significant effect; within the 25 Hz condition, lower on-target ISPPA intensities were associated with larger improvements in reaction time and EEG measures than higher intensities.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No structural abnormalities or imaging changes were observed on neuroradiological MRI review; tolerability ratings (headache, pain, skin/scalp irritation, facial twitching, fatigue, fearfulness/anxiety) were very low at all timepoints and did not persist beyond the stimulation period.",
+ "exposures": [
+  {
+   "label": "LIFU to bilateral centromedian nucleus of the thalamus (1/5/25 Hz PRF)",
+   "target": {
+    "terms": [
+     "centromedian_nucleus"
+    ],
+    "label": "bilateral Centromedian Nucleus of the Thalamus (CMT)"
+   },
+   "device": {
+    "family": "attune",
+    "manufacturer": "Attune Neurosciences, Inc.",
+    "model": "ATTN201"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 4.38,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1,
+     5,
+     25
+    ],
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 50,
+    "protocol_description": "In Visits 2-5, ... 50 s of active 1Hz, active 5Hz, active 25Hz, or sham stimulation was delivered in each session. Sham stimulation was delivered via unfocused diffuse ultrasonic beams at the same scalp-level intensity but without focusing stimulation to the bilateral CMT. For each condition, stimulation was delivered at a 500Hz fundamental frequency, 20% duty cycle, and 60 V/pulse at the scalp level."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

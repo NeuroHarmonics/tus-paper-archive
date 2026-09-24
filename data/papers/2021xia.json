@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021xia",
+ "doi": "10.1016/j.neuroimage.2021.118557",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 22,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS-induced motor-evoked potentials (MEP) from first dorsal interosseous muscle; dual-site paired-pulse TMS for interhemispheric inhibition (IHI); Hall-effect sensor quantification of TMS-induced electromagnetic field",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS suppressed ipsilateral M1 MEP amplitude from shortly before to about 20 ms after the end of 500 ms sonication, with a stronger effect in the blocked than the interleaved design; no significant effect was found on contralateral M1 excitability.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of left primary motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1), hand area"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H246"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 9.26,
+    "ispta_w_cm2": 2.78
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.32,
+    "ispta_w_cm2": 0.69
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "TUS was delivered via a custom two-element annular array transducer coupled to the underside of (or, in Experiment 2, detached from) the TMS coil, with channel phasing set to a 30 mm sonication depth. TUS was delivered every 6 s. Single-pulse TMS was timed at various intervals before, during and after each 500 ms sonication (interleaved or blocked design) to probe the time course of ipsilateral and contralateral M1 excitability; active sham (transducer flipped away) and inactive sham (active face toward scalp, unpowered) conditions were interleaved with real TUS trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.3
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Five participants were excluded due to high motor thresholds with an inability to evoke 1 mV MEP at maximum stimulator output (MSO), leaving 22 participants (12 males, 10 females; 1 left-handed, 21 right-handed) on which to perform data collection.",
+   "randomised": "In this blocked design, 15 trials of each condition appeared consecutively with 120 trials in total, and the order of these conditions was randomly assigned before the experiment for each subject.",
+   "exposures[0].fundamental_frequency_khz": "The sonication parameters were similar to those used in previous human studies (Ai et al., 2016; Fomenko et al., 2020; Legon et al., 2018b): fundamental frequency = 500 kHz, pulse repetition frequency $\\begin{array} { r } { \\mathrm { ( P R F ) } = 1 0 0 0 \\ \\mathrm { H z } , } \\end{array}$ duty cycle = 30%, sonication duration = 0.5 s, and estimated intracranial intensity $= 2 . 3 2 \\mathrm { \\ W / c m ^ { 2 } \\ I _ { S P P A } }$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The sonication parameters were similar to those used in previous human studies (Ai et al., 2016; Fomenko et al., 2020; Legon et al., 2018b): fundamental frequency = 500 kHz, pulse repetition frequency $\\begin{array} { r } { \\mathrm { ( P R F ) } = 1 0 0 0 \\ \\mathrm { H z } , } \\end{array}$ duty cycle = 30%, sonication duration = 0.5 s, and estimated intracranial intensity $= 2 . 3 2 \\mathrm { \\ W / c m ^ { 2 } \\ I _ { S P P A } }$ .",
+   "exposures[0].timing.duty_cycle_pct": "The sonication parameters were similar to those used in previous human studies (Ai et al., 2016; Fomenko et al., 2020; Legon et al., 2018b): fundamental frequency = 500 kHz, pulse repetition frequency $\\begin{array} { r } { \\mathrm { ( P R F ) } = 1 0 0 0 \\ \\mathrm { H z } , } \\end{array}$ duty cycle = 30%, sonication duration = 0.5 s, and estimated intracranial intensity $= 2 . 3 2 \\mathrm { \\ W / c m ^ { 2 } \\ I _ { S P P A } }$ .",
+   "exposures[0].timing.sonication_duration_s": "The sonication parameters were similar to those used in previous human studies (Ai et al., 2016; Fomenko et al., 2020; Legon et al., 2018b): fundamental frequency = 500 kHz, pulse repetition frequency $\\begin{array} { r } { \\mathrm { ( P R F ) } = 1 0 0 0 \\ \\mathrm { H z } , } \\end{array}$ duty cycle = 30%, sonication duration = 0.5 s, and estimated intracranial intensity $= 2 . 3 2 \\mathrm { \\ W / c m ^ { 2 } \\ I _ { S P P A } }$ .",
+   "exposures[0].free_field.isppa_w_cm2": "The estimated extracranial intensity of TUS was $\\mathrm { I _ { S P T A } } = 2 . 7 8 \\mathrm { W } / \\mathrm { c m ^ { 2 } } , \\mathrm { I _ { S P P A } } = 9 . 2 6 \\mathrm { W } / \\mathrm { c m ^ { 2 } }$ and a mechanical index of 0.74 (Fomenko et al., 2020).",
+   "exposures[0].free_field.ispta_w_cm2": "The estimated extracranial intensity of TUS was $\\mathrm { I _ { S P T A } } = 2 . 7 8 \\mathrm { W } / \\mathrm { c m ^ { 2 } } , \\mathrm { I _ { S P P A } } = 9 . 2 6 \\mathrm { W } / \\mathrm { c m ^ { 2 } }$ and a mechanical index of 0.74 (Fomenko et al., 2020).",
+   "exposures[0].in_situ.isppa_w_cm2": "Based on these attenuation values and our quantification of the transducer in free water, we estimated that our intracranial intensity of TUS was $\\mathrm { I } _ { \\mathrm { S P T A } } = 0 . 6 9 \\ : \\mathrm { W / c m ^ { 2 } } ;$ $\\mathrm { I } _ { \\mathrm { S P P A } } = 2 . 3 2 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and mechanical index of 0.19.",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on these attenuation values and our quantification of the transducer in free water, we estimated that our intracranial intensity of TUS was $\\mathrm { I } _ { \\mathrm { S P T A } } = 0 . 6 9 \\ : \\mathrm { W / c m ^ { 2 } } ;$ $\\mathrm { I } _ { \\mathrm { S P P A } } = 2 . 3 2 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and mechanical index of 0.19.",
+   "exposures[0].device.manufacturer": "A custom two-element annular array 500 kHz ultrasound transducer (H246, Sonic Concepts Inc.) housed in a brass cylinder measuring 38 mm in diameter and 10 mm thick was used.",
+   "exposures[0].device.model": "A custom two-element annular array 500 kHz ultrasound transducer (H246, Sonic Concepts Inc.) housed in a brass cylinder measuring 38 mm in diameter and 10 mm thick was used."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Tone-burst duration within the 500 ms sonication train is not stated; only PRF and duty cycle are given."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "In-situ (intracranial) intensities are derated estimates based on literature skull attenuation values, not direct measurement."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation refers to the order of within-subject stimulation conditions (including active/sham), not allocation to independent groups."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

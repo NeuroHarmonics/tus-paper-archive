@@ -1,0 +1,311 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2012kim",
+ "doi": "10.1016/j.ultrasmedbio.2012.04.023",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Male Sprague-Dawley rats (weight 290 to 405 g; n 5 22) were used in this study.",
+   "anaesthesia": "All animals were anesthetized with an intraperitoneal injection of a ketamine/xylazine mixture of 80:10 mg/kg before sonication.",
+   "exposures[0].fundamental_frequency_khz": "For the 350 kHz, the same range of acoustic intensities were applied to the separate group of animals $( n \\ = \\ 3 )$ , and $\\mathrm { { I _ { s p p a } } }$ of 8.6 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the minimum intensity that resulted in the successful stimulation, was used throughout the rest of the experiment (n 5 16).",
+   "exposures[0].in_situ.isppa_w_cm2": "For the 350 kHz, the same range of acoustic intensities were applied to the separate group of animals $( n \\ = \\ 3 )$ , and $\\mathrm { { I _ { s p p a } } }$ of 8.6 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the minimum intensity that resulted in the successful stimulation, was used throughout the rest of the experiment (n 5 16).",
+   "exposures[0].in_situ.ispta_w_cm2": "The resulting $\\mathrm { { I _ { s p t a } } }$ was calculated as 4.6 W/cm<sup>2</sup> considering the duty factor (54%) with the corresponding mechanical index (MI) of 0.9 (peak negative pressure 20.53 MPa).",
+   "exposures[0].in_situ.pressure_kpa": "The peak negative pressure used in this study (0.54 MPa) was also far lower than the intensity that could cause any cavitation-related brain tissue damage (i.e., acoustic pressure of 40 MPa in the absence of air bubbles) (Dalecki 2004).",
+   "exposures[0].timing.pulse_duration_ms": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication. This waveform generator triggered the operation of the second waveform generator that sent out sinusoidal waves at each fundamental frequency having a tone-burst duration (TBD) of 0.36 msec.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication.",
+   "exposures[0].timing.duty_cycle_pct": "The resulting $\\mathrm { { I _ { s p t a } } }$ was calculated as 4.6 W/cm<sup>2</sup> considering the duty factor (54%) with the corresponding mechanical index (MI) of 0.9 (peak negative pressure 20.53 MPa).",
+   "exposures[0].timing.sonication_duration_s": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication.",
+   "exposures[1].fundamental_frequency_khz": "The application of 650 kHz FUS to the same area, across the ranges of acoustic intensities, from 0.5 up to 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\ \\mathrm { I } _ { \\mathrm { s p p a } } ,$ did not elicit eye movement in any of the tested animals $( n = 3 )$ .",
+   "exposures[1].in_situ.isppa_w_cm2": "The application of 650 kHz FUS to the same area, across the ranges of acoustic intensities, from 0.5 up to 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\ \\mathrm { I } _ { \\mathrm { s p p a } } ,$ did not elicit eye movement in any of the tested animals $( n = 3 )$ .",
+   "exposures[1].timing.pulse_duration_ms": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication. This waveform generator triggered the operation of the second waveform generator that sent out sinusoidal waves at each fundamental frequency having a tone-burst duration (TBD) of 0.36 msec.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication.",
+   "exposures[1].timing.duty_cycle_pct": "The resulting $\\mathrm { { I _ { s p t a } } }$ was calculated as 4.6 W/cm<sup>2</sup> considering the duty factor (54%) with the corresponding mechanical index (MI) of 0.9 (peak negative pressure 20.53 MPa).",
+   "exposures[1].timing.sonication_duration_s": "The first waveform generator was used to define the pulse repetition frequency (PRF) at 1.5 kHz, the overall sonication duration of 200 msec and the timing of each sonication."
+  },
+  "flags": [
+   {
+    "field": "exposures[*].target",
+    "reason": "The abducens nerve (cranial nerve VI) has no dedicated id in the target vocabulary; mapped to the generic 'peripheral_nerve' parent term."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Methods section gives a garbled figure ('peak negative pressure 20.53 MPa'); the Discussion states a clean value of 0.54 MPa, which was used here (540 kPa)."
+   },
+   {
+    "field": "exposures[1].timing",
+    "reason": "Pulse duration, PRF, duty factor and overall sonication duration are stated in Methods as shared parameters used 'at each fundamental frequency' (350 and 650 kHz); applied to both exposures on that basis."
+   },
+   {
+    "field": "exposures[1].in_situ.ispta_w_cm2",
+    "reason": "No Ispta or pressure value is given specifically for the (ineffective) 650 kHz condition; only the tested Isppa range is stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham or inactive-transducer control condition is described; only different frequencies/intensities are compared."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 22,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Video-based frame-by-frame quantification of abductive eyeball movement; H&E histology of nerve/brain tissue; Trypan Blue extravasation for blood-brain-barrier integrity; thermocouple temperature measurement in a tissue-mimicking gel phantom and excised cranial tissue (safety assay, not a neural readout)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Pulsed FUS at 350 kHz to the abducens nerve elicited discrete, stepwise ipsilateral abductive eyeball movement that increased with repeated 1-s-interval sonications and reversed after sonication stopped, indicating excitatory nerve stimulation; the same waveform parameters at 650 kHz produced no eye movement in any animal across the full intensity range tested.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No evidence of blood-brain-barrier disruption (Trypan Blue) or acute nerve/brain tissue damage (H&E) was found after sonication; surviving rats (up to 49 days) showed normal behaviour including normal eye tracking; in vitro/ex vivo thermal measurements detected no temperature change beyond instrumental fluctuation (<0.1 C); the peak negative pressure used (0.54 MPa) and mechanical index (0.9) were far below thresholds associated with cavitation-related tissue damage (40 MPa) and the diagnostic-imaging MI limit (1.9).",
+ "exposures": [
+  {
+   "label": "350 kHz FUS to abducens nerve (effective stimulation)",
+   "target": {
+    "terms": [
+     "peripheral_nerve"
+    ],
+    "label": "abducens nerve (cranial nerve VI)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 540,
+    "isppa_w_cm2": 8.6,
+    "ispta_w_cm2": 4.6
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 54,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "For the 350 kHz condition, the same intensity range (0.5-20 W/cm2 Isppa, 0.5 W/cm2 steps) was first tested in a separate group (n=3); Isppa=8.6 W/cm2, the minimum intensity giving successful stimulation, was then used throughout the rest of the experiment (n=16). Sonication was given in 1-s intervals, 10 times per trial; the eyeball movement increased stepwise during the repetitive sonication, reaching its maximum around 7 s after onset, and rolled back to baseline in 6.9+-0.4 s after sonication stopped."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 54.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "650 kHz FUS to abducens nerve (no effect)",
+   "target": {
+    "terms": [
+     "peripheral_nerve"
+    ],
+    "label": "abducens nerve (cranial nerve VI)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.5,
+     20
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 54,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Acoustic intensities from 0.5 up to 20 W/cm2 Isppa (0.5 W/cm2 steps) were applied to a separate group of rats (n=3) at 650 kHz using the same pulsing parameters (TBD=0.36 msec, PRF=1.5 kHz, overall sonication duration 200 msec) as the 350 kHz condition; no eyeball movement was elicited at any tested intensity."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 54.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

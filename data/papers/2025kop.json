@@ -1,0 +1,361 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025kop",
+ "doi": "10.1016/j.brs.2025.06.009",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "sound_only"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Visual analogue scale (VAS) ratings of somatosensory co-stimulation (general, tactile, thermal, painful subscales) and psychophysical sensory-perception thresholds (PEST-based yes/no detection task); post-experiment closed-format psychometric questionnaire and open-question descriptors of sensations.",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This study characterises peripheral somatosensory co-stimulation (a confound of TUS), not a CNS neuromodulatory effect; TUS was targeted at inactive temporal-lobe white matter 'not expected to either produce or interact with sensory perception', so no CNS direction-of-effect is assessed.",
+ "adverse_events": "observed",
+ "safety_notes": "One participant experienced psychological distress unrelated to TUS and discontinued participation (data not analysed). Another participant displayed skin irritation at the stimulation site after participation, which resolved within a few hours. No further adverse events were reported.",
+ "exposures": [
+  {
+   "label": "Standard 250 kHz protocol at temporal-lobe white matter, with dose/dose-modality, ramping, PRF, aperture, near-field-peak and temporal-summation manipulations",
+   "target": {
+    "terms": [
+     "white_matter"
+    ],
+    "label": "white matter of the temporal lobe"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "250-2CH (CTX250-014); 250-4CH (CTX250-026) used for the aperture-area comparison"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     19.72,
+     13.06,
+     6.5,
+     13.1,
+     19.6,
+     26.1,
+     5.23
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     50,
+     100,
+     150,
+     200
+    ],
+    "pulse_repetition_frequency_hz": [
+     5,
+     10,
+     50,
+     100,
+     200,
+     500,
+     1000
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     1,
+     10
+    ],
+    "protocol_description": "Standard protocol: square-wave PRF 5 Hz, PRI 200 ms, PD 100 ms, DC 50%, PTD 1 s, ISPPA 19.72 W/cm2 (ISPPA,SCALP 13.06 W/cm2), inter-trial interval ~10 s. Around this standard, the study independently manipulated: dose (3.3/6.5/9.8/13.1 J/cm2) via either ISPPA.SCALP (6.5/13.1/19.6/26.1 W/cm2, PD fixed 100 ms) or PD (50/100/150/200 ms, ISPPA.SCALP fixed 13.1 W/cm2); ramping (tapered cosine amplitude-modulation durations of 1, 10, 50 ms vs square wave); PRF (5/10/50/100/200/500/1000 Hz, each with full Tukey ramping); transducer aperture area (15.90 cm2 250-2CH vs 33.18 cm2 250-4CH, equal integrated total scalp intensity); near-field peak amplitude via focal depth (35.7/38.3/40.3(standard)/42.1/44.1 mm, corresponding to manufacturer-reported near-field scalp intensities of 5.3/9.4/13.8/17.9/22.3 W/cm2); and temporal summation (interspersed vs sequential trials, trial blocks, and an extended 10-s PTD at ISPPA.SCALP = 5.23 W/cm2)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "500 kHz dose-response protocol at temporal-lobe white matter",
+   "target": {
+    "terms": [
+     "white_matter"
+    ],
+    "label": "white matter of the temporal lobe"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "500-2CH (CTX500-006)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     18.5,
+     30.8,
+     43.1
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "The dose-response relationship at 500 kHz was mapped similarly to 250 kHz, by manipulating ISPPA.SCALP (18.5/30.8/43.1 W/cm2); the paper does not restate PD/PRF/duty-cycle/PTD values specifically for the 500 kHz condition (Supplementary Fig. 8)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-nine participants were recruited, and twenty-five participants completed the study (14 female, 11 male, aged 25 ± 4.3). Three participants were excluded after MRI intake, because the target sample size was achieved. One participant was excluded for psychological distress unrelated to TUS. All participants were free of psychiatric and neurological disorders, had no contraindications to brain stimulation, and provided informed consent.",
+   "exposures[0].fundamental_frequency_khz": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition interval (PRI) of 200 ms, a pulse duration (PD) of 100 ms, a duty cycle (DC) of 50%, and a pulse train duration (PTD) of 1 s. The spatial-peak pulseaverage intensity $\\operatorname { ( I _ { S P P A } ) }$ was $1 9 . 7 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and the corresponding nearfield intensity in the scalp (I<sub>SPPA.SCALP</sub>) was 13.06 ${ \\mathrm { W / c m } } ^ { 2 } .$ . An inter-trial interval of approximately 10 s was used. All conditions adhered to ITRUSST recommendations for biophysical safety [64] (see Supplementary Table 1 for safety metrics). To identify strategies to mitigate the somatosensory confound, we investigated multiple facets of this standard protocol, as well as transducer characteristics. Each section below describes a different investigation.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "We applied stimulation at four doses: $3 . 3 / 6 . 5 / 9 . 8 / 1 3 . 1 \\mathrm { J / c m } ^ { 2 } .$ The same dose was achieved via manipulation of two ‘dose modalities’: I<sub>SPPA.</sub> <sub>SCALP</sub> and pulse duration (PD). We included dose modality to determine whether somatosensory co-stimulation was influenced by ‘dose sharpness’, i.e., the speed of equal dose delivery through shorter and higher intensity pulses versus longer and lower intensity pulses. Here, the interaction between ‘Dose’ and ‘Dose Modality’ (I<sub>SPPA.SCALP</sub>/PD) can yield insight into whether increasing intensity versus pulse duration has a different effect on the magnitude of somatosensory co-stimulation. Levels for I<sub>SPPA.SCALP</sub> were $6 . 5 / 1 3 . 1 / 1 9 . 6 / 2 6 . 1 ~ \\mathrm { W / c m } ^ { 2 }$ , with PD = 100 ms held constant (‘PD $1 0 0 ~ \\mathrm { { m s } ^ { ' } ) }$ . Levels for pulse duration were 50/ 100/150/200 ms, with I<sub>SPPA.SCALP</sub> $= 1 3 . 1 ~ \\mathrm { W / c m ^ { 2 } }$ held constant (see Fig. 1D).",
+   "exposures[0].timing.pulse_duration_ms": "We applied stimulation at four doses: $3 . 3 / 6 . 5 / 9 . 8 / 1 3 . 1 \\mathrm { J / c m } ^ { 2 } .$ The same dose was achieved via manipulation of two ‘dose modalities’: I<sub>SPPA.</sub> <sub>SCALP</sub> and pulse duration (PD). We included dose modality to determine whether somatosensory co-stimulation was influenced by ‘dose sharpness’, i.e., the speed of equal dose delivery through shorter and higher intensity pulses versus longer and lower intensity pulses. Here, the interaction between ‘Dose’ and ‘Dose Modality’ (I<sub>SPPA.SCALP</sub>/PD) can yield insight into whether increasing intensity versus pulse duration has a different effect on the magnitude of somatosensory co-stimulation. Levels for I<sub>SPPA.SCALP</sub> were $6 . 5 / 1 3 . 1 / 1 9 . 6 / 2 6 . 1 ~ \\mathrm { W / c m } ^ { 2 }$ , with PD = 100 ms held constant (‘PD $1 0 0 ~ \\mathrm { { m s } ^ { ' } ) }$ . Levels for pulse duration were 50/ 100/150/200 ms, with I<sub>SPPA.SCALP</sub> $= 1 3 . 1 ~ \\mathrm { W / c m ^ { 2 } }$ held constant (see Fig. 1D).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "PRFs were administered at 5/10/50/100/200/500/1000 Hz, covering the range of typically applied PRFs in the human literature to date [3,11,14,66]. Here, amplitude modulation consisted of a fully smoothed Tukey ramp (PD = PRI; tapered cosine ramp duration = 0.5⋅PRI), creating a more narrowband frequency distribution for the administered PRF, in contrast to the wider frequency distribution of square-wave pulse envelopes.",
+   "exposures[0].timing.duty_cycle_pct": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition interval (PRI) of 200 ms, a pulse duration (PD) of 100 ms, a duty cycle (DC) of 50%, and a pulse train duration (PTD) of 1 s. The spatial-peak pulseaverage intensity $\\operatorname { ( I _ { S P P A } ) }$ was $1 9 . 7 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and the corresponding nearfield intensity in the scalp (I<sub>SPPA.SCALP</sub>) was 13.06 ${ \\mathrm { W / c m } } ^ { 2 } .$ . An inter-trial interval of approximately 10 s was used. All conditions adhered to ITRUSST recommendations for biophysical safety [64] (see Supplementary Table 1 for safety metrics). To identify strategies to mitigate the somatosensory confound, we investigated multiple facets of this standard protocol, as well as transducer characteristics. Each section below describes a different investigation.",
+   "exposures[0].timing.sonication_duration_s": "To investigate possible sustained effects outlasting the stimulation period, as relevant for offline protocols with their longer pulse train durations (PTDs), we extended the PTD to 10 s at an $\\operatorname { I } _ { \\mathrm { S P P A . S C A L P } }$ of 5.23 $\\mathrm { { W / c m ^ { 2 } } }$ . Participants continuously reported their sensations on a VAS throughout this extended PTD, capturing the onset, development, and persistence of somatosensory co-stimulation in response to sustained stimulation.",
+   "exposures[1].fundamental_frequency_khz": "Stimulation was applied at 250 and 500 kHz using two transducers (250-2 C H & 500-2 C H). Focal depths, intensities, and gel-pad thicknesses were adjusted to optimise comparability and account for varying intensity (distribution) in the scalp between the two transducers (see Figs. 1F and 5). The dose-response relationship was mapped for 500 kHz, similar to 250 kHz, by manipulating the I<sub>SPPA.SCALP</sub> (18.5/30.8/43.1 W/ $\\mathrm { c m } ^ { 2 } ;$ Supplementary Fig. 8).",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "Stimulation was applied at 250 and 500 kHz using two transducers (250-2 C H & 500-2 C H). Focal depths, intensities, and gel-pad thicknesses were adjusted to optimise comparability and account for varying intensity (distribution) in the scalp between the two transducers (see Figs. 1F and 5). The dose-response relationship was mapped for 500 kHz, similar to 250 kHz, by manipulating the I<sub>SPPA.SCALP</sub> (18.5/30.8/43.1 W/ $\\mathrm { c m } ^ { 2 } ;$ Supplementary Fig. 8).",
+   "exposures[0].device.manufacturer": "TUS was delivered using two NeuroFUS systems (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., Bothell, WA, USA).",
+   "exposures[0].device.model": "The experiment involved three transducers: a two-element 250 kHz transducer (250-2CH; serial number: CTX250-014, aperture diameter d = 45 mm, $\\mathsf { a r e a } = 1 5 .",
+   "exposures[1].device.manufacturer": "TUS was delivered using two NeuroFUS systems (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., Bothell, WA, USA).",
+   "exposures[1].device.model": "9 0 \\ \\mathrm { c m } ^ { 2 } ) ,$ a two-element 500 kHz transducer (500-2CH; serial number: CTX500-006, d = 45 mm, area = $1 5 .",
+   "exposures[1].timing.pulse_duration_ms": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition inter",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition inter",
+   "exposures[1].timing.duty_cycle_pct": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition inter",
+   "exposures[1].timing.sonication_duration_s": "The standard TUS protocol (Fig. 1D, bold) was applied using transducer 250-2 C H at a 250 kHz fundamental frequency (f<sub>0</sub>) with a square wave pulse repetition frequency (PRF) of 5 Hz, pulse repetition inter"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "25 participants completed the study, but one was later excluded for psychological distress and their data was not analysed (analysed n=24); enrolled/completed n=25 is given per instructions, analysed n differs."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "List combines intensity values from several sentences (standard protocol ISPPA=19.72 and ISPPA,SCALP=13.06 W/cm2; dose-modality sweep 6.5/13.1/19.6/26.1 W/cm2; extended-duration test 5.23 W/cm2); only the dose-modality sentence is quoted directly. The paper never labels these as 'free field' or 'in situ' (brain) values; ISPPA,SCALP is explicitly a near-field scalp measurement, distinct from a brain/target value, so all are placed in unspecified_domain rather than free_field/in_situ."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50% duty cycle is stated only for the standard protocol; the paper does not restate duty cycle for the PD sweep (50/100/150/200 ms) or PRF sweep (5-1000 Hz) conditions, where it may differ."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "The 250 kHz exposure also included near-field-peak (focal depth 35.7-44.1 mm; manufacturer scalp intensities 5.3-22.3 W/cm2) and transducer-aperture-area (15.90 vs 33.18 cm2) manipulations not captured as separate numeric list entries; see protocol_description."
+   },
+   {
+    "field": "exposures[1].timing",
+    "reason": "Timing parameters (PD, PRF, duty cycle, PTD) are not explicitly restated for the 500 kHz dose-response experiment; only the ISPPA.SCALP sweep (18.5/30.8/43.1 W/cm2) is given in the main text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "first",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "first",
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.duty_cycle_pct": "second",
+   "exposures[1].timing.sonication_duration_s": "second"
+  }
+ }
+}

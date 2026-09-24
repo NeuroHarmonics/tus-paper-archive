@@ -1,0 +1,252 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021yua",
+ "doi": "10.1038/s41467-021-22743-7",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "Wistar rat (Hsd:WI) and transgenic mouse (CaMKIIa-ChR2, PV-ChR2)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  9,
+  10,
+  7,
+  3,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Multi-unit and single-unit spiking activity classified into regular-spiking (RSU, presumed excitatory) and fast-spiking (FSU, presumed inhibitory) units from 32-channel intracranial electrode arrays; local field potentials; optogenetic ('optotagging') identification of CaMKIIa (excitatory) and parvalbumin (inhibitory) neurons in transgenic mice; hematoxylin and eosin histology for tissue damage.",
+ "readout_timing": "online",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Regular-spiking (presumed excitatory) units showed PRF-dependent increases in firing rate (significantly higher at 3000-4500 Hz vs 30 Hz), while fast-spiking (presumed inhibitory) units showed no significant change in firing rate across PRF levels, indicating cell-type-selective excitatory modulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "All tFUS stimulation parameters used on the S1 cortices of rats and mice were maintained in brief exposures (i.e., 67-ms sonication per trial, with the total duty cycle of each trial being <3%) and with low intensities, which led to negligible calculated temperature rises (< 0.1 °C) at the targeted brain area. In addition, the mechanical index (MI) used in these experiments was less than 0.15, given the low peak negative pressure (i.e., <100 kPa).",
+ "exposures": [
+  {
+   "label": "tFUS PRF sweep at primary somatosensory cortex (S1)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "left primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Scientific Solutions Americas, Inc. / Blatek Industries, Inc.",
+    "model": "V391-SU-F1.5IN-PTF / AT31529"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 148,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 79,
+    "isppa_w_cm2": 0.1758,
+    "ispta_w_cm2": [
+     0.00105,
+     0.01055,
+     0.05274,
+     0.10548,
+     0.15822
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.134,
+     0.2,
+     0.4,
+     2,
+     20
+    ],
+    "pulse_repetition_frequency_hz": [
+     30,
+     300,
+     1500,
+     3000,
+     4500
+    ],
+    "duty_cycle_pct": [
+     0.6,
+     6,
+     30,
+     60,
+     90
+    ],
+    "sonication_duration_s": 0.067,
+    "protocol_description": "Rat S1 was stimulated with 500 kHz tFUS at 40-degree incidence at five PRF levels (30-4500 Hz), each sonication ('ultrasound duration', UD) lasting 67 ms, with inter-sonication interval (ISoI) of 2.5 s (10% jittered). In a first design (Table 1), tone-burst duration (TBD) was held constant at 200 µs while duty cycle varied with PRF (0.6-90%). In a second design (Table 2), TBD was instead adjusted per PRF (20, 2, 0.4, 0.2, 0.134 ms) to hold duty cycle constant at 60% across all five PRF levels, keeping Isppa, Isptp and Ispta constant. The same f0=500 kHz parameters (PRF 30 and 300 Hz only) were used in optogenetic mice. Three sham conditions were used: sham with flipped transducer (SFLP, aimed away from skull), sham at skull front (SSKF, a different skull site), and sham at electrode shank (SSHK, ultrasound delivered to the electrode shank away from the brain, at 100/43/28/13% derated energy levels)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "After recording the MUAs from the first group of wild-type male Wistar rats (N = 9), we studied the neural effects of the administered pulsed tFUS through intracranial MUA recordings.",
+   "randomised": "We randomized the order of applied tFUS and sham ultrasound conditions, which was believed to mitigate the influence of anesthetic level to the statistical analyses.",
+   "exposures[0].fundamental_frequency_khz": "Single-element focused transducers were used for tFUS stimulation with specifications of acoustic aperture outer diameter (OD) 28.5 mm, ultrasound fundamental frequency (f ) 0.5 MHz, −6 dB bandwidth 300–690 kHz, a nominal focal distance of 38 mm (V391-SU-F1.5IN-PTF, Olympus Scientific Solutions Americas, Inc., USA) or transducer OD 25.4 mm, f 0.5 MHz, a nominal focal distance of 38 mm (AT31529, Blatek Industries, Inc., USA).",
+   "exposures[0].free_field.pressure_kpa": "The spatial-peak ultrasound pressure is measured as 148 kPa.",
+   "exposures[0].in_situ.pressure_kpa": "After penetrating through the ex vivo skull top, spatial-peak ultrasound pressure is measured as $7 9 \\mathsf { k P a } .$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td>tFUS conditionsa</td><td>PRF (Hz)</td><td>DC (%)</td><td>IsPTA (mW/cm²)</td></tr><tr><td>PRF 30 Hz</td><td>30</td><td>0.6</td><td>1.05</td></tr><tr><td>PRF 300 Hz</td><td>300</td><td>6</td><td>10.55</td></tr><tr><td>PRF 1500 Hz</td><td>1,500</td><td>30</td><td>52.74</td></tr><tr><td>PRF 3000 Hz</td><td>3,000</td><td>60</td><td>105.48</td></tr><tr><td>PRF 4500 Hz</td><td>4,500</td><td>90</td><td>158.22</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td>tFUS conditionsa</td><td>PRF (Hz)</td><td>DC (%)</td><td>IsPTA (mW/cm²)</td></tr><tr><td>PRF 30 Hz</td><td>30</td><td>0.6</td><td>1.05</td></tr><tr><td>PRF 300 Hz</td><td>300</td><td>6</td><td>10.55</td></tr><tr><td>PRF 1500 Hz</td><td>1,500</td><td>30</td><td>52.74</td></tr><tr><td>PRF 3000 Hz</td><td>3,000</td><td>60</td><td>105.48</td></tr><tr><td>PRF 4500 Hz</td><td>4,500</td><td>90</td><td>158.22</td></tr></table>",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td>tFUS conditionᵃ</td><td>PRF (Hz)</td><td>TBD (ms)</td></tr><tr><td>PRF 30 Hz DC 60%</td><td>30</td><td>20</td></tr><tr><td>PRF 300 Hz DC 60%</td><td>300</td><td>2</td></tr><tr><td>PRF 1500 Hz DC 60%</td><td>1,500</td><td>0.4</td></tr><tr><td>PRF 3000 Hz DC 60%</td><td>3,000</td><td>0.2</td></tr><tr><td>PRF 4500 Hz DC 60%</td><td>4,500</td><td>0.134</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "As noted in Table 1, all ultrasound conditions used the same $f _ { 0 }$ of 0.5 MHz, ultrasound duration (UD, i.e., sonication duration) of 67 ms and tone-burst duration (TBD) of 200 μs.",
+   "adverse_events": "Moreover, hematoxylin and eosin stains gathered immediately after stimulation at S1 showed no evidence of neuronal damage, local hemorrhage or inflammatory response at the stimulation site (Supplementary Fig. 12).",
+   "safety_notes": "All tFUS stimulation parameters used on the S1 cortices of rats and mice were maintained in brief exposures (i.e., 67-ms sonication per trial, with the total duty cycle of each trial being <3%) and with low intensities, which led to negligible calculated temperature rises (< 0.1 °C) at the targeted brain area.",
+   "exposures[0].device.manufacturer": "diameter (OD) 28.5 mm, ultrasound fundamental frequency (f ) 0.5 MHz, −6 dB bandwidth 300–690 kHz, a nominal focal distance of 38 mm (V391-SU-F1.5IN-PTF, Olympus Scientific Solutions Americas, Inc., USA) or transducer OD 25.4 mm, f 0.5 MHz, a nominal focal distance of 38 mm (AT31529, Blatek Industries, Inc., USA).",
+   "exposures[0].device.model": "diameter (OD) 28.5 mm, ultrasound fundamental frequency (f ) 0.5 MHz, −6 dB bandwidth 300–690 kHz, a nominal focal distance of 38 mm (V391-SU-F1.5IN-PTF, Olympus Scientific Solutions Americas, Inc., USA) or transducer OD 25.4 mm, f 0.5 MHz, a nominal focal distance of 38 mm (AT31529, Blatek Industries, Inc., USA).",
+   "exposures[0].in_situ.isppa_w_cm2": "<sup>a</sup>Except for the ultrasound pulse repetition frequency (PRF), the ultrasound duty cycle (DC), and the spatial-peak temporal-average intensity (I ), all of the listed tFUS conditions keep the following parameters constant, i.e., ultrasound fundamental frequency (f = 500 kHz), ultrasound duration (UD = 67 ms), cycle per pulse number (CPP = 100), tone-burst duration (TBD = 200 µs), spatial-peak pulse-average intensity (I = 175.80 mW/cm2), and spatial-peak temporalpeak intensity (I = 351.61 mW/cm2).",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td>tFUS conditionsa</td><td>PRF (Hz)</td><td>DC (%)</td><td>IsPTA (mW/cm²)</td></tr><tr><td>PRF 30 Hz</td><td>30</td><td>0.6</td><td>1.05</td></tr><tr><td>PRF 300 Hz</td><td>300</td><td>6</td><td>10.55</td></tr><tr><td>PRF 1500 Hz</td><td>1,500</td><td>30</td><td>52.74</td></tr><tr><td>PRF 3000 Hz</td><td>3,000</td><td>60</td><td>105.48</td></tr><tr><td>PRF 4500 Hz</td><td>4,500</td><td>90</td><td>158.22</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Combines pulse durations from two separate sub-experiments (Table 1: constant 0.2 ms TBD across PRFs; Table 2: TBD varied with PRF to hold duty cycle at 60%); list values are not positionally paired with the PRF/duty-cycle lists."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper does not state whether Isppa/Ispta in Tables 1-2 are free-field or in-situ values; placed in unspecified_domain. Separately measured free-field (148 kPa) and through-skull (79 kPa) pressures are reported without explicit intensity equivalents."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes are reported for distinct sub-experiments (ketamine/xylazine rats N=9, isoflurane rats N=10, constant-duty-cycle isoflurane rats N=7, PV mice N=3, CaMKIIa mice N=2); possible overlap between the N=10 and N=7 rat cohorts is not stated. Additional chemically deafened rats and genetically deafened mice used in supplementary auditory-confound experiments are not enumerated in the main text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "SSHK (ultrasound delivered to the electrode shank rather than a brain target) does not clearly fit a listed sham category and is recorded as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

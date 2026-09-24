@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025huang",
+ "doi": "10.1016/j.brs.2025.01.015",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "other_mri"
+ ],
+ "readout_other": "motor sequence learning (MSL) response-time task; TMS-elicited motor evoked potentials (MEP) from paretic APB; diffusion-weighted imaging (DWI) / apparent diffusion coefficient (ADC)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Higher-intensity LIFUS (HIGH: 4, 6, 8 W/cm2 ISPPA) produced greater motor sequence learning improvement (6/9 vs 0/9 participants improving >=20%, p=0.009) and a non-significant trend toward greater corticospinal excitability (7/9 vs 5/9, p=0.62) compared to LOW (0, 1, 2 W/cm2).",
+ "adverse_events": "observed",
+ "safety_notes": "No participant met the pre-defined stopping rules (2nd-degree scalp burn, seizure, new DWI lesion/major ADC reduction, discontinuation); one participant at 8 W/cm2 had a mild first-degree scalp burn with pain that resolved within 24 h without treatment, attributed to transducer heat and insufficient coupling gel.",
+ "exposures": [
+  {
+   "label": "3+3 intensity-escalation LIFUS over the ipsilesional motor cortex during motor sequence learning",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "ipsilesional motor cortex"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Blatek Industries, Inc.",
+    "model": "AT32080"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 40,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 490,
+    "isppa_w_cm2": [
+     0,
+     1,
+     2,
+     4,
+     6,
+     8
+    ],
+    "ispta_w_cm2": [
+     0,
+     0.05,
+     0.1,
+     0.2,
+     0.3,
+     0.4
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "We applied 12-min LIFUS over the ipsilesional motor cortex while participants were concurrently practicing 3 blocks of a motor sequence learning (MSL) task using the affected hand. Function generator (FG) A delivered 500 pulses at a 1000 Hz pulse repetition frequency (PRF) to trigger FG B, while FG B provided 100 cycles of a 500 kHz sine wave per pulse; the electrical waveform consists of a 200 us tone burst duration, a 500 ms sonication duration (SD), and a 1 s inter-stimulus interval. Intensity was escalated across participants using a 3+3 dose-escalation design (0, 1, 2, 4, 6, 8 W/cm2 ISPPA, estimated in-vivo transcranial value), with three participants enrolled per dose level."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Eighteen participants (6 females, aged 52 ± 14 years) met the eligibility criteria and participated in the study.",
+   "n_sessions_per_subject": "This study consists of one baseline visit and one testing visit (Fig. 2A).",
+   "exposures[0].fundamental_frequency_khz": "Adhering to the reporting standards of the International Transcranial Ultrasonic Stimulation Safety and Standards Consortium (ITRUSST) [18], we used a custom-made, 500 kHz single-element focused ultrasound transducer with a 30 mm focal depth (AT32080, Blatek Industries, Inc., PA, USA) for motor cortex stimulation.",
+   "exposures[0].free_field.isppa_w_cm2": "Based on the average from our previous wave propagation experiments, simulations [19], and literature values [2,9,20], we set the measured I<sub>SPPA</sub> in free water to 40 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ;$ providing the estimated transcranial 8 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ I<sub>SPPA</sub> considering human skull attenuation (Fig. 2C).",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td></td><td>Current study</td><td>Zhang et al., 2021 [44]</td><td>Zeng et al., 2022 [10]</td><td>Samuel et al., 2023 [11]</td><td colspan=\"2\">Zhang et al., 2023 [43]</td></tr><tr><td>Population</td><td>Stroke</td><td>Healthy</td><td>Healthy</td><td>Parkinson&#x27;s Disease</td><td>Healthy</td><td>Healthy</td></tr><tr><td>Effect, E/I</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>I</td></tr><tr><td>Total stimulation duration</td><td>12 min</td><td>15 min</td><td>80 s</td><td>80 s</td><td>5 min</td><td>5 min</td></tr><tr><td>Fundamental Frequency, kHz</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td></tr><tr><td>PRF, Hz</td><td>1000</td><td>100</td><td>5</td><td>5</td><td>2000</td><td>50</td></tr><tr><td>TBD, µs</td><td>200</td><td>500</td><td>20000</td><td>20000</td><td>200</td><td>400</td></tr><tr><td>DC, percent</td><td>20</td><td>5</td><td>10</td><td>10</td><td>40</td><td>2</td></tr><tr><td>SD, ms</td><td>500</td><td>500</td><td>80000</td><td>80000</td><td>500</td><td>500</td></tr><tr><td>SP, s</td><td>1.5</td><td>8.5</td><td>N/A</td><td>N/A</td><td>2</td><td>2</td></tr><tr><td> $\\mathrm { I } _ { \\mathrm { S P P A } } , \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>8</td><td>2.846</td><td>2.26</td><td>~0.45</td><td>2.46</td><td>2.46</td></tr><tr><td>Averaged IsPTA, mW/cm²</td><td>533</td><td>142</td><td>230</td><td>~45.2</td><td>246.24</td><td>12.312</td></tr><tr><td>Pressure, MPa</td><td>0.49</td><td>N/A</td><td>0.3</td><td>N/A</td><td>N/A</td><td>N/A</td></tr></table>",
+   "exposures[0].in_situ.isppa_w_cm2": "The intensity-escalation regimen was 0 $\\mathsf { W } / \\mathsf { c m } ^ { 2 } \\gg 1 \\mathrm { ~ W } / \\mathrm { c m } ^ { 2 } \\gg 2$ W/ cm<sup>2</sup> ≫ 4 $\\mathrm { \\ : W / c m } ^ { 2 } \\gg 6 \\mathrm { \\ : W / c m } ^ { 2 } \\gg 8 \\mathrm { \\ : W / c m } ^ { 2 }$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "Considering the intensity transmission ratio through the skull and additional attenuation by scalp and brain tissue [22], the expected averaged I<sub>SPTA</sub> for the $\\operatorname { I } _ { \\mathrm { S P P A } }$ groups of I<sub>SPPA</sub> 0, 1, 2, 4, 6, and $\\mathrm { { 3 \\ : W / c m ^ { 2 } } }$ was $0 , 5 0 \\pm 5 4 , 1 0 0 \\pm 1 0 8 , 2 0 0 \\pm 2 1 6 ,$ $3 0 0 \\pm 3 2 4 ,$ , and $4 0 0 \\pm 4 3 2$ m $\\mathsf { { I W / c m } } ^ { 2 } ,$ respectively (all ranges end at zero).",
+   "exposures[0].timing.pulse_duration_ms": "Overall, the electrical waveform adheres to common practices $[ 2 , 1 0 ]$ and consists of a 200 μs tone burst duration, a 500 ms sonication duration (SD), and a 1 s inter-stimulus interval (Fig. 2E).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Specifically, function generator (FG) A delivered 500 pulses at a 1000 Hz pulse repetition frequency (PRF) to trigger FG B, while FG B provided 100 cycles of a 500 kHz sine wave per pulse.",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td></td><td>Current study</td><td>Zhang et al., 2021 [44]</td><td>Zeng et al., 2022 [10]</td><td>Samuel et al., 2023 [11]</td><td colspan=\"2\">Zhang et al., 2023 [43]</td></tr><tr><td>Population</td><td>Stroke</td><td>Healthy</td><td>Healthy</td><td>Parkinson&#x27;s Disease</td><td>Healthy</td><td>Healthy</td></tr><tr><td>Effect, E/I</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>I</td></tr><tr><td>Total stimulation duration</td><td>12 min</td><td>15 min</td><td>80 s</td><td>80 s</td><td>5 min</td><td>5 min</td></tr><tr><td>Fundamental Frequency, kHz</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td></tr><tr><td>PRF, Hz</td><td>1000</td><td>100</td><td>5</td><td>5</td><td>2000</td><td>50</td></tr><tr><td>TBD, µs</td><td>200</td><td>500</td><td>20000</td><td>20000</td><td>200</td><td>400</td></tr><tr><td>DC, percent</td><td>20</td><td>5</td><td>10</td><td>10</td><td>40</td><td>2</td></tr><tr><td>SD, ms</td><td>500</td><td>500</td><td>80000</td><td>80000</td><td>500</td><td>500</td></tr><tr><td>SP, s</td><td>1.5</td><td>8.5</td><td>N/A</td><td>N/A</td><td>2</td><td>2</td></tr><tr><td> $\\mathrm { I } _ { \\mathrm { S P P A } } , \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>8</td><td>2.846</td><td>2.26</td><td>~0.45</td><td>2.46</td><td>2.46</td></tr><tr><td>Averaged IsPTA, mW/cm²</td><td>533</td><td>142</td><td>230</td><td>~45.2</td><td>246.24</td><td>12.312</td></tr><tr><td>Pressure, MPa</td><td>0.49</td><td>N/A</td><td>0.3</td><td>N/A</td><td>N/A</td><td>N/A</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "Overall, the electrical waveform adheres to common practices $[ 2 , 1 0 ]$ and consists of a 200 μs tone burst duration, a 500 ms sonication duration (SD), and a 1 s inter-stimulus interval (Fig. 2E).",
+   "exposures[0].device.manufacturer": "Safety and Standards Consortium (ITRUSST) [18], we used a custom-made, 500 kHz single-element focused ultrasound transducer with a 30 mm focal depth (AT32080, Blatek Industries, Inc., PA, USA) for motor cortex stimulation.",
+   "exposures[0].device.model": "Safety and Standards Consortium (ITRUSST) [18], we used a custom-made, 500 kHz single-element focused ultrasound transducer with a 30 mm focal depth (AT32080, Blatek Industries, Inc., PA, USA) for motor cortex stimulation."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "The 0 W/cm2 dose level (transducer applied, zero acoustic output) functions as a sham but is not explicitly labelled 'sham' by the authors."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "The estimated transcranial intensity is derived from a measured free-water intensity combined with a skull attenuation/transmission ratio informed by prior simulations; could be read as either 'derating' or 'simulation'."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "The 0.49 MPa pressure value in Table 2 is given only for the top of the escalation (matching the 8 W/cm2 ISPPA / 533 mW/cm2 ISPTA row); per-dose pressures for the lower intensity levels are not stated."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The 40 W/cm2 free-water ISPPA is stated only as the setting used to produce the top (8 W/cm2) estimated transcranial dose; free-field values for the lower doses in the escalation are not stated."
+   },
+   {
+    "field": "randomised",
+    "reason": "Dose level was assigned by a fixed 3+3 escalation scheme, not randomisation, but the paper never explicitly states whether allocation was randomised."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "first",
+   "exposures[0].timing.duty_cycle_pct": "first"
+  }
+ }
+}

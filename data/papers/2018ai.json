@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018ai",
+ "doi": "10.1186/s12868-018-0456-6",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Five participants [ages 20–25 (mean 22.8 2.2  years); 3 male, 2 females; 4 right handed, 1 left handed] were included in the study.",
+   "n_sessions_per_subject": "In the second session, participants performed the same finger tapping task during either tFUS or sham neuromodulation.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound transducer was a custom made [15] 30  mm diameter 7T MRI compatible single element focused 500 kHz with a focal length of 30 mm.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Channel 1 was set to deliver tFUS at a pulse repetition frequency (PRF) at 1 kHz and channel 2 was set to drive the transducer at 500 kHz in burst mode while using channel 1 as the trigger for channel 2.",
+   "exposures[0].timing.pulse_duration_ms": "Channel 2 was set to deliver 180 cycles per pulse, and channel 1 was set to deliver 500 pulses, resulting in a 500 ms duration (Fig. 1b).",
+   "exposures[0].timing.sonication_duration_s": "Channel 2 was set to deliver 180 cycles per pulse, and channel 1 was set to deliver 500 pulses, resulting in a 500 ms duration (Fig. 1b).",
+   "exposures[0].timing.duty_cycle_pct": "our lower duty cycle (36% vs. 50%) and intensity values may leave us in the transition zone between excitation and inhibition or result only in inhibition [31]",
+   "exposures[0].free_field.isppa_w_cm2": "Measurements in the acoustic tank revealed an spatial peak pulse average intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ of $1 6 . 9 5 ~ \\mathrm { { W / c m ^ { \\hat { 2 } } } }$ and a mechanical index (MI) of 0.97 from the ultrasonic neuromodulation waveform in water."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration is derived from the stated 180 cycles per pulse and 500 kHz driving frequency (180/500000 s = 0.36 ms) via the cycles-per-pulse/frequency conversion the schema explicitly permits, and matches the '36% duty cycle' separately stated in the Discussion (0.36 ms / 1 ms period)."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Transducer is described only as 'custom made' with no manufacturer name; classified as custom_or_research."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "The paper qualitatively states that skull attenuates free-field pressure by a factor of 6-7 (based on prior modelling) but does not report a specific derated in-situ intensity or pressure value for this cohort."
+   },
+   {
+    "field": "randomised",
+    "reason": "The order of tFUS and sham conditions was counterbalanced across participants, which is a systematic (non-random) design; the paper does not use the word randomised, so this field is recorded as not_reported rather than inferred as true or false."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri"
+ ],
+ "readout_other": "7T BOLD fMRI activation volume and percent signal change in M1 finger representations (thumb, index, middle), supplementary motor area (SMA) and dorsal premotor cortex (PMd) during a cued finger-tapping task",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "tFUS to the M1 thumb representation increased BOLD activation volume (703+/-334 mm3 vs 375+/-167 mm3 for sham, p=0.039) without changing percent BOLD signal change; the effect was spatially confined to the thumb representation, with no significant change in adjacent index/middle finger representations or in downstream SMA/PMd. The authors could not determine whether the volume increase reflects excitation or increased activity of inhibitory interneuron populations.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to M1 thumb representation",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 thumb representation (hand knob), targeted via fMRI-localised finger representation"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 16.95,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Each tFUS stimulation delivered 180 cycles per pulse at 500 kHz (0.36 ms pulse duration) at a pulse repetition frequency of 1 kHz for 500 pulses, giving a 500 ms stimulus duration; this waveform was delivered every two TRs (2.75 s) for a total of 54 stimulations per scan, interleaved with a cued finger-tapping task."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

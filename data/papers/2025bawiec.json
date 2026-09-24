@@ -1,0 +1,227 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025bawiec",
+ "doi": "10.1002/jum.16600",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri"
+ ],
+ "readout_other": "susceptibility-weighted imaging (SWI) for vascular micro-hemorrhage; post-session sensation questionnaire (itching, heat/burning, tingling, vibrating/pulsing, sound, tension, pain)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This was a safety/usability/feasibility study of a novel wearable steerable LIFU system; no neuromodulatory or behavioral effect of stimulation was assessed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No serious or subjective adverse events reported; no findings on post-delivery susceptibility-weighted imaging; sensation questionnaire showed low levels of itching, heat/burning, tingling, vibration, sound, tension and pain.",
+ "exposures": [
+  {
+   "label": "LIFU to left amPFC (Phases 1.1-1.3, dose escalation)",
+   "target": {
+    "terms": [
+     "anterior_prefrontal_cortex"
+    ],
+    "label": "left anterior medial Prefrontal Cortex (amPFC), (L) Brodmann Area 10"
+   },
+   "device": {
+    "family": "openwater",
+    "manufacturer": "Openwater",
+    "model": "custom 400 kHz 2D matrix array (128 elements) with Verasonics Vantage driving electronics"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     510,
+     650,
+     820
+    ],
+    "isppa_w_cm2": [
+     8.04,
+     13.1,
+     20.8
+    ],
+    "ispta_w_cm2": [
+     0.201,
+     0.327,
+     0.508
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     30,
+     600
+    ],
+    "protocol_description": "The ultrasound delivery parameters (frequency, pulse length, and pulse repetition frequency) remained the same throughout the study, but the pressure amplitude was systematically varied across three phases (PNP 510, 650, 820 kPa in Phases 1.1, 1.2, 1.3, respectively, with n=9, 6, 5 participants). In Phase 1.1 a single focus was used with a 30-second on-off pattern of pulse trains; in Phases 1.2 and 1.3 a multi-focus 'interleaved pulses' approach rastered across five foci was used with no on-off cycling. Total ultrasound delivery duration was 10 minutes per participant."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty individuals (16 F, 4 M) participated in this study. Participants recruited for this study were selected to have some degree of repetitive negative thinking, having a score on the Perseverative Thinking Questionnaire $\\left( \\mathrm { P T Q } \\right) ^ { 2 9 }$ above the 25th percentile. Inclusion criteria also included age 18–35, English-speaking, and without any neurological symptoms or symptoms of mania/psychosis. Exclusion criteria included: smoker or use of tobacco products or any form of nicotine daily or nearly daily, history of head injury with loss of consciousness for more than 5 minutes, uncorrected vision and/or hearing impairment, current or history of brain or mental illness judged likely to interfere with testing, including drug and/or alcohol dependence, a diagnosed sleep disorder (eg, Insomnia), current drug, alcohol, or prescription drug intoxication, history of epilepsy, history of migraines, metal implants in head or face (including permanent dental retainers), history of cardiac problems, current major depressive disorder, a score higher than a 24 on the Beck Depression Inventory II (BDI-II),<sup>30</sup> and acute suicidal ideation.",
+   "n_sessions_per_subject": "After the ultrasound device was placed on each participant’s forehead with the custom headset and all parameters were established by operators trained in the use of the neuronavigation system, participants were instructed to sit quietly and keep their eyes open for the duration of the ultrasound delivery, which was 10 minutes. It should be noted that the “virtual fitting” step described in Section 1.5.2 was developed during the study (in response to the discovery that some subjects had pronounced sinuses), so was not used during headset fitting, but instead used retrospectively to compare the unguided transducer placement to the “optimized” positions.",
+   "adverse_events": "No serious or subjective AEs were reported from subjects. In addition to monitoring AEs by verbally asking whether subjects experienced any side effects since the last session, a “sensation” questionnaire was administered after each session to assess potential sensations subjects may experience (on a scale from 0 to 10, with 0 being no sensation to 10 being a high amount of sensation) from the ultrasound, including: itching, heat/burning, tingling, vibrating/pulsing, sound, tension, and pain.",
+   "exposures[0].target.label": "Before ultrasound delivery, participants completed an MRI session including a structural T1 scan and a 3-minute PETRA short TE scan to assess skull thickness and density. The ultrasound was administered immediately after completion of the baseline MRI. Focused ultrasound targeted the left anterior medial Prefrontal Cortex (amPFC; Talairach coordinates in Table 2). The amPFC is a core hub of the default mode network (DMN) that subserves self-relevant thought,<sup>31</sup> and was selected for a future study examining tFUS in major depression, a condition characterized by hyperconnectivity within the DMN.<sup>32</sup> Given the focus on linguistic repetitive negative thought for that future study, the left hemisphere amPFC was favored over the right as the target.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound transducer array—The neuromodulation ultrasound array consists of a two-dimensional (2D) array that is designed to be placed and held on the forehead of an individual by a headset superstructure. The custom 400 kHz 2D array consists of 128 ultrasound elements in 11 rows and 12 columns, with the corner elements not connected. The array is cylindrically focused with a radius of curvature of 50 mm in the horizontal direction. There are two thermistors located in the face of the array’s corners to allow temperature monitoring during the tFUS delivery. The elements are square and have a 4.1 mm pitch making the surface area 21.5 cm<sup>2</sup>. The array has a 2-m insulated cable sleeve that carries all of the control and sensing cables from the array to the ultrasound driving electronics. This flexible connection allows freedom of movement for the participant to position themselves comfortably during the session. The cables are routed to a 260-pin Cannon ITT Zero Insertion Force connector through custom PCB boards that have electrical matching components (inductors) soldered to them. These inductors are connected in series to cancel out the capacitive impedance of the transducers array elements at 400 kHz. An image of the transducer is shown in Figure 3.",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td>Variable</td><td>Phase 1.1</td><td>Phase 1.2</td><td>Phase 1.3</td><td>Units</td></tr><tr><td>Number of volunteers</td><td>9</td><td>6</td><td>5</td><td></td></tr><tr><td>Target focal position (Lateral</td><td> $- 0 . 5 9 9 \\pm 2 . 3$ </td><td> $- 2 . 3 1 \\pm 3 . 2$ </td><td> $0 . 1 1 9 \\pm 2$ </td><td>mm</td></tr><tr><td>Target focal position (Elevation)</td><td> $- 4 . 1 1 \\pm 7 . 1$ </td><td> $- 4 . 4 7 \\pm 4 . 1$ </td><td> $- 1 . 1 4 \\pm 5 . 4$ </td><td>mm</td></tr><tr><td>Target focal position (Axial)</td><td> $5 0 . 7 \\pm 3 . 6$ </td><td> $5 2 . 3 \\pm 2 . 6$ </td><td> $4 8 \\pm 4 . 2$ </td><td>mm</td></tr><tr><td>Peak negative pressure (PNP)</td><td>510</td><td>650</td><td>820</td><td>kPa</td></tr><tr><td>Pulse-average intensity  $( I _ { \\mathsf { S P P A } } )$ </td><td>8.04</td><td>13.1</td><td>20.8</td><td> $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ </td></tr><tr><td>Time-average intensity  $( I _ { \\mathsf { S P T A } } )$ </td><td>201</td><td>327</td><td> $5 0 8 \\pm 4 6$ </td><td> $\\mathsf { m W / c m ^ { 2 } }$ </td></tr><tr><td>Lateral-elevation (—3 dB) beamwidth</td><td> $4 . 3 2 \\pm 0 . 2 6$ </td><td> $4 . 2 9 \\pm 0 . 1 9$ </td><td> $8 . 6 4 \\pm 0 . 5 4$ </td><td>mm</td></tr><tr><td>Axial (—3 dB) beamwidth</td><td> $2 4 . 5 \\pm 2 . 6$ </td><td> $2 5 . 3 \\pm 2$ </td><td> $2 3 \\pm 2 . 9$ </td><td>mm</td></tr><tr><td>Lateral-elevation (—6 dB) beamwidth</td><td> $6 . 4 3 \\pm 0 . 4 2$ </td><td> $6 . 2 8 \\pm 0 . 4 9$ </td><td> $1 0 . 7 \\pm 0 . 6 6$ </td><td>mm</td></tr><tr><td>Axial (—6 dB) beamwidth</td><td> $3 4 . 3 \\pm 1 . 8$ </td><td> $3 5 . 3 \\pm 1 . 2$ </td><td> $3 3 . 1 \\pm 3 . 3$ </td><td>mm</td></tr><tr><td>Thermal index (TIC)</td><td> $0 . 3 2 5 \\pm 0 . 0 2$ </td><td> $0 . 5 3 6 \\pm 0 . 0 3 6$ </td><td> $1 . 4 8 \\pm 0 . 2 2$ </td><td></td></tr><tr><td>Mechanical index (MI)</td><td>0.806</td><td>1.03</td><td>1.3</td><td></td></tr></table>",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td>Variable</td><td>Phase 1.1</td><td>Phase 1.2</td><td>Phase 1.3</td><td>Units</td></tr><tr><td>Number of volunteers</td><td>9</td><td>6</td><td>5</td><td></td></tr><tr><td>Target focal position (Lateral</td><td> $- 0 . 5 9 9 \\pm 2 . 3$ </td><td> $- 2 . 3 1 \\pm 3 . 2$ </td><td> $0 . 1 1 9 \\pm 2$ </td><td>mm</td></tr><tr><td>Target focal position (Elevation)</td><td> $- 4 . 1 1 \\pm 7 . 1$ </td><td> $- 4 . 4 7 \\pm 4 . 1$ </td><td> $- 1 . 1 4 \\pm 5 . 4$ </td><td>mm</td></tr><tr><td>Target focal position (Axial)</td><td> $5 0 . 7 \\pm 3 . 6$ </td><td> $5 2 . 3 \\pm 2 . 6$ </td><td> $4 8 \\pm 4 . 2$ </td><td>mm</td></tr><tr><td>Peak negative pressure (PNP)</td><td>510</td><td>650</td><td>820</td><td>kPa</td></tr><tr><td>Pulse-average intensity  $( I _ { \\mathsf { S P P A } } )$ </td><td>8.04</td><td>13.1</td><td>20.8</td><td> $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ </td></tr><tr><td>Time-average intensity  $( I _ { \\mathsf { S P T A } } )$ </td><td>201</td><td>327</td><td> $5 0 8 \\pm 4 6$ </td><td> $\\mathsf { m W / c m ^ { 2 } }$ </td></tr><tr><td>Lateral-elevation (—3 dB) beamwidth</td><td> $4 . 3 2 \\pm 0 . 2 6$ </td><td> $4 . 2 9 \\pm 0 . 1 9$ </td><td> $8 . 6 4 \\pm 0 . 5 4$ </td><td>mm</td></tr><tr><td>Axial (—3 dB) beamwidth</td><td> $2 4 . 5 \\pm 2 . 6$ </td><td> $2 5 . 3 \\pm 2$ </td><td> $2 3 \\pm 2 . 9$ </td><td>mm</td></tr><tr><td>Lateral-elevation (—6 dB) beamwidth</td><td> $6 . 4 3 \\pm 0 . 4 2$ </td><td> $6 . 2 8 \\pm 0 . 4 9$ </td><td> $1 0 . 7 \\pm 0 . 6 6$ </td><td>mm</td></tr><tr><td>Axial (—6 dB) beamwidth</td><td> $3 4 . 3 \\pm 1 . 8$ </td><td> $3 5 . 3 \\pm 1 . 2$ </td><td> $3 3 . 1 \\pm 3 . 3$ </td><td>mm</td></tr><tr><td>Thermal index (TIC)</td><td> $0 . 3 2 5 \\pm 0 . 0 2$ </td><td> $0 . 5 3 6 \\pm 0 . 0 3 6$ </td><td> $1 . 4 8 \\pm 0 . 2 2$ </td><td></td></tr><tr><td>Mechanical index (MI)</td><td>0.806</td><td>1.03</td><td>1.3</td><td></td></tr></table>",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td>Variable</td><td>Phase 1.1</td><td>Phase 1.2</td><td>Phase 1.3</td><td>Units</td></tr><tr><td>Number of volunteers</td><td>9</td><td>6</td><td>5</td><td></td></tr><tr><td>Target focal position (Lateral</td><td> $- 0 . 5 9 9 \\pm 2 . 3$ </td><td> $- 2 . 3 1 \\pm 3 . 2$ </td><td> $0 . 1 1 9 \\pm 2$ </td><td>mm</td></tr><tr><td>Target focal position (Elevation)</td><td> $- 4 . 1 1 \\pm 7 . 1$ </td><td> $- 4 . 4 7 \\pm 4 . 1$ </td><td> $- 1 . 1 4 \\pm 5 . 4$ </td><td>mm</td></tr><tr><td>Target focal position (Axial)</td><td> $5 0 . 7 \\pm 3 . 6$ </td><td> $5 2 . 3 \\pm 2 . 6$ </td><td> $4 8 \\pm 4 . 2$ </td><td>mm</td></tr><tr><td>Peak negative pressure (PNP)</td><td>510</td><td>650</td><td>820</td><td>kPa</td></tr><tr><td>Pulse-average intensity  $( I _ { \\mathsf { S P P A } } )$ </td><td>8.04</td><td>13.1</td><td>20.8</td><td> $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ </td></tr><tr><td>Time-average intensity  $( I _ { \\mathsf { S P T A } } )$ </td><td>201</td><td>327</td><td> $5 0 8 \\pm 4 6$ </td><td> $\\mathsf { m W / c m ^ { 2 } }$ </td></tr><tr><td>Lateral-elevation (—3 dB) beamwidth</td><td> $4 . 3 2 \\pm 0 . 2 6$ </td><td> $4 . 2 9 \\pm 0 . 1 9$ </td><td> $8 . 6 4 \\pm 0 . 5 4$ </td><td>mm</td></tr><tr><td>Axial (—3 dB) beamwidth</td><td> $2 4 . 5 \\pm 2 . 6$ </td><td> $2 5 . 3 \\pm 2$ </td><td> $2 3 \\pm 2 . 9$ </td><td>mm</td></tr><tr><td>Lateral-elevation (—6 dB) beamwidth</td><td> $6 . 4 3 \\pm 0 . 4 2$ </td><td> $6 . 2 8 \\pm 0 . 4 9$ </td><td> $1 0 . 7 \\pm 0 . 6 6$ </td><td>mm</td></tr><tr><td>Axial (—6 dB) beamwidth</td><td> $3 4 . 3 \\pm 1 . 8$ </td><td> $3 5 . 3 \\pm 1 . 2$ </td><td> $3 3 . 1 \\pm 3 . 3$ </td><td>mm</td></tr><tr><td>Thermal index (TIC)</td><td> $0 . 3 2 5 \\pm 0 . 0 2$ </td><td> $0 . 5 3 6 \\pm 0 . 0 3 6$ </td><td> $1 . 4 8 \\pm 0 . 2 2$ </td><td></td></tr><tr><td>Mechanical index (MI)</td><td>0.806</td><td>1.03</td><td>1.3</td><td></td></tr></table>",
+   "exposures[0].timing.pulse_duration_ms": "Thermal testing of the array was performed to ensure that it was able to pass the Still Air and Stimulated use tests outlined in the IEC 60601-2-37 standard. These tests were performed with the same stimulation parameters as the study (5 ms burst, 10 Hz PRF, same waveform apodization), but at a 20% higher driving voltage than used during the study. There was no off time during the duration of the tests.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Thermal testing of the array was performed to ensure that it was able to pass the Still Air and Stimulated use tests outlined in the IEC 60601-2-37 standard. These tests were performed with the same stimulation parameters as the study (5 ms burst, 10 Hz PRF, same waveform apodization), but at a 20% higher driving voltage than used during the study. There was no off time during the duration of the tests.",
+   "exposures[0].timing.sonication_duration_s": "Figure 9. Pulse sequences. Left: Phase 1.1; Right: Phase 1.2 and Phase 1.3. In Phase 1.1, a single focus is used, with a 30 seconds on–of pattern of pulse trains. In the later phases, the pulses are rastered across five partially offset foci, resulting in a longer per-focus PRI but allowing greater spatial coverage and requiring no on-off cycling.",
+   "exposures[0].timing.protocol_description": "While the simulation results indicated the ultrasound beams were below the safety thresholds for diagnostic ultrasound, a conservative stepped approach was taken with volunteers. In Phase 1.1 of the study, consisting of the first nine participants, a single low peak negative pressure (PNP) amplitude (510 kPa) focus was used. Following no AEs, the PNP for each focus was increased to 650 kPa for the six participants in Phase 1.2. In addition to changing the focal pressure a new multi-focus approach was implemented that increased the effective area where the ultrasound energy was delivered as detailed below. Following no AEs in Phase 1.2, Phase 1.3 ultrasound parameters were changed again by increasing the PNP of the pulses to 820 kPa, while still keeping the new multifocus approach of interleaved pulses. This was done to both maximize the ultrasound area and pulse pressure.",
+   "exposures[0].device.manufacturer": "Received December 19, 2023, from the Openwater, San Francisco, California, USA (C.R.B., P.J.H., S.B.O., S.D.K.); and Department of Psychology, University of Arizona, Tucson, Arizona, USA (J.N.S., J.F.D.-F., J.J.B.A.).",
+   "exposures[0].device.model": "The custom 400 kHz 2D array consists of 128 ultrasound elements in 11 rows and 12 columns, with the corner elements not connected."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Values are from k-Wave simulations assuming homogeneous soft tissue with the skull explicitly neglected ('beamforming was performed neglecting the presence of the skull'); classified as in_situ (at-target, simulated) rather than free_field because the simulation models the target location inside the head, not water. A separate post-hoc simulation using segmented skull data reported lower derated pressures (mean 0.34, 0.33, 0.45 MPa for the three target pressures) but is not captured in this field to avoid conflating two different simulation methods for the same exposure."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The 10-minute figure is the total per-participant ultrasound delivery duration; internal on/off cycling in Phase 1.1 (30-s on-off pattern) versus continuous multi-focus delivery in Phases 1.2-1.3 means the length of a single uninterrupted train may differ from this total duration."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not explicitly stated in the text for the actual study parameters; the configuration table lists a 'typical' pulse duration of 5 ms and PRI of 100 ms but duty cycle is not given directly."
+   },
+   {
+    "field": "randomised",
+    "reason": "Participants were assigned sequentially to increasing-dose phases (first nine participants in Phase 1.1, then six in Phase 1.2, then five in Phase 1.3) in a conservative dose-escalation design, not a randomised allocation."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "first",
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].free_field.ispta_w_cm2": "first",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "first",
+   "exposures[0].in_situ.ispta_w_cm2": "first",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026gao",
+ "doi": "10.1016/j.ultras.2025.107923",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy",
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "pet",
+  "histology_molecular"
+ ],
+ "readout_other": "c-Fos immunofluorescence; hematoxylin-eosin and Nissl staining; Novel Object Recognition, Y-maze, Morris Water Maze; 18F-florbetapir PET imaging; Abeta immunofluorescence",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Combined 40 Hz ultrasound-light (US2+L) stimulation significantly increased gamma-band (30-100 Hz) power and cross-regional phase synchronization in bilateral hippocampal CA1 compared to sham/unimodal stimulation, improved spatial learning and memory in the Morris water maze in 5xFAD mice, and reduced beta-amyloid plaque deposition (PET SUVR and immunofluorescence) versus sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Hematoxylin-Eosin and Nissl staining revealed no structural or morphological damage in either the ultrasound or sham group, confirming the safety of the stimulation parameters used.",
+ "exposures": [
+  {
+   "label": "40 Hz ultrasound (alone or combined with 40 Hz light) to bilateral hippocampal CA1",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "bilateral dorsal hippocampal CA1 region"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-made dual-target holographic ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 3300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.625,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": 2.5,
+    "sonication_duration_s": 1,
+    "protocol_description": "Ultrasound stimulation parameters: fundamental frequency 3.3 MHz, PRF 40 Hz, duty cycle 2.5%, tone-burst duration 0.625 ms, sonication duration (SD) 1 s, interstimulus interval (ISI) 10 s. Stimulation duration was 30 min/day for 14 days total, synchronised with 40 Hz light stimulation of the same duration/cycle. A prior short-term optimisation experiment tested total daily stimulation durations of 15, 30, and 60 min (US1-3); 30 min (US2) was identified as the optimal condition and used in subsequent long-term/behavioural experiments."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 2.5,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "randomised": "Ten-week-old $\\mathrm { C 5 7 B L } / 6 \\mathrm { J }$ mice were randomly assigned to sham or ultrasound stimulation group, with the only difference being actual ultrasound exposure (Fig. 2A).",
+   "exposures[0].fundamental_frequency_khz": "Finally, the ultrasound stimulation parameters were set as follows: fundamental frequency (FF): 3.3 MHz, pulse repetition frequency (PRF): 40 Hz, duty cycle (DC): 2.5 %, tone-burst duration (TBD): 0.625 ms, sonication duration (SD): 1 s, interstimulus interval (ISI): 10 s. The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "exposures[0].timing.pulse_duration_ms": "Finally, the ultrasound stimulation parameters were set as follows: fundamental frequency (FF): 3.3 MHz, pulse repetition frequency (PRF): 40 Hz, duty cycle (DC): 2.5 %, tone-burst duration (TBD): 0.625 ms, sonication duration (SD): 1 s, interstimulus interval (ISI): 10 s. The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Finally, the ultrasound stimulation parameters were set as follows: fundamental frequency (FF): 3.3 MHz, pulse repetition frequency (PRF): 40 Hz, duty cycle (DC): 2.5 %, tone-burst duration (TBD): 0.625 ms, sonication duration (SD): 1 s, interstimulus interval (ISI): 10 s. The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "exposures[0].timing.duty_cycle_pct": "Finally, the ultrasound stimulation parameters were set as follows: fundamental frequency (FF): 3.3 MHz, pulse repetition frequency (PRF): 40 Hz, duty cycle (DC): 2.5 %, tone-burst duration (TBD): 0.625 ms, sonication duration (SD): 1 s, interstimulus interval (ISI): 10 s. The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "exposures[0].timing.sonication_duration_s": "Finally, the ultrasound stimulation parameters were set as follows: fundamental frequency (FF): 3.3 MHz, pulse repetition frequency (PRF): 40 Hz, duty cycle (DC): 2.5 %, tone-burst duration (TBD): 0.625 ms, sonication duration (SD): 1 s, interstimulus interval (ISI): 10 s. The stimulation duration was 30 min/day, and the stimulation cycle lasted for 14 days in total.",
+   "exposures[0].timing.protocol_description": "We performed a short-term stimulation protocol to optimize ultrasound parameters (Fig. 3A), assigning mice to sham, three ultrasound groups (US 1–3), light-only (L), and combined ultrasound-light (US + L) conditions. US 1–3 involved 40 Hz stimulation for 15, 30, and 60 min, respectively. Spectral analysis showed that US 2 (30 min) significantly increased theta, alpha, beta, and gamma band power in CA1 (Fig. 3B), while US 1 and US 3 had no significant effects, identifying US 2 as the optimal condition.",
+   "safety_notes": "Hematoxylin-Eosin and Nissl staining revealed no structural or morphological damage in either group (Fig. 2C, D), confirming the safety of the stimulation parameters used."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports many different group sizes across sub-experiments only in figure legends (e.g. c-Fos Sham n=5, US n=6; short-term Sham n=19, US1 n=7, US2 n=9, US3 n=6; long-term Sham n=8-10, US2 n=9-13, etc.); no single total number of ultrasound-exposed animals is stated in the main text, so n_subjects is recorded as not_reported."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The 14-day/30-min-per-day protocol applies to the chronic AD-model behavioural/imaging experiments; separate single-session sub-experiments (c-Fos validation, short-term LFP parameter optimisation) used only one ultrasound session per animal."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice underwent surgery under anaesthesia to implant an ultrasound collimator/electrodes, but the paper does not explicitly state whether animals were awake or anaesthetised during the daily ultrasound-light stimulation sessions themselves."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "No numeric pressure or intensity (kPa or W/cm2) value is given anywhere in the main text for the ultrasound exposure; only relative/simulated pressure distributions and a qualitative ~40% transcranial attenuation are reported."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle (2.5%) and PRF (40 Hz) imply a pulse duration of 0.625 ms, which matches the independently stated tone-burst duration (TBD: 0.625 ms); no discrepancy found."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

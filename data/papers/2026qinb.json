@@ -1,0 +1,390 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026qinb",
+ "doi": "10.1109/tnsre.2026.3664418",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour",
+  "other_mri"
+ ],
+ "readout_other": "Subjective tactile-sensation discrimination accuracy (tapping/vibration/electrical/pressure/no-stimulation); local blood perfusion volume (BPV) measured by laser speckle imaging",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFUS evoked distinguishable fine tactile sensations with high discrimination accuracy and produced an increase in local blood perfusion volume (vasodilation) beneath the fingertip since stimulation onset, unlike TENS which decreased BPV.",
+ "adverse_events": "observed",
+ "safety_notes": "Some participants reported nociceptive pain (burning/twinge) with inappropriate parameters (AI above 1.96 MPa or PRF above 100 Hz) or after repeated strong stimulation during pretesting; affected participants were excluded or rescheduled. Estimated and measured focal temperature rises were 0.76C and 0.72C respectively, below levels expected to cause pain. Follow-up at one week and two months found no short- or long-term adverse reaction.",
+ "exposures": [
+  {
+   "label": "LIFUS-250",
+   "target": {
+    "terms": [
+     "digital_nerve"
+    ],
+    "label": "right index fingertip"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Pantsd Inc.",
+    "model": "HN81C-750-250KC"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     10.28,
+     12.26,
+     22.82,
+     25.92,
+     10.28,
+     13.91,
+     20.86,
+     28.02
+    ],
+    "ispta_w_cm2": [
+     0.25,
+     0.37,
+     0.69,
+     0.78,
+     0.22,
+     0.42,
+     0.63,
+     0.84
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     4,
+     7,
+     14,
+     24,
+     63,
+     72,
+     80,
+     88
+    ],
+    "duty_cycle_pct": 3,
+    "sonication_duration_s": 2,
+    "protocol_description": "Four distinct PRF ranges (4-7, 14-24, 63-72, 80-88 Hz) were paired with a moderate or strong acoustic intensity (AI, 30-40% or 60-70% of each participant's individually determined [AImin, AImax] threshold range) to elicit tapping, vibration, electrical, and pressure sensations, respectively, each delivered for a 2-s trial. A separate pretest to determine AI thresholds used a fixed PRF of 50 Hz, a fixed duty cycle of 3%, and a 2-s stimulation duration; duty cycle for the four main sensation-eliciting conditions is not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LIFUS-500",
+   "target": {
+    "terms": [
+     "digital_nerve"
+    ],
+    "label": "right index fingertip"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "NDT Inc.",
+    "model": "IBP0.512"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     10.28,
+     16.36,
+     31.51,
+     35.33,
+     12.78,
+     15.03,
+     31.68,
+     35.33
+    ],
+    "ispta_w_cm2": [
+     0.31,
+     0.49,
+     0.95,
+     1.06,
+     0.38,
+     0.45,
+     1.04,
+     1.15
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     4,
+     7,
+     14,
+     24,
+     63,
+     72,
+     80,
+     88
+    ],
+    "duty_cycle_pct": 3,
+    "sonication_duration_s": 2,
+    "protocol_description": "Four distinct PRF ranges (4-7, 14-24, 63-72, 80-88 Hz) were paired with a moderate or strong acoustic intensity (AI, 30-40% or 60-70% of each participant's individually determined [AImin, AImax] threshold range) to elicit tapping, vibration, electrical, and pressure sensations, respectively, each delivered for a 2-s trial. A separate pretest to determine AI thresholds used a fixed PRF of 50 Hz, a fixed duty cycle of 3%, and a 2-s stimulation duration; duty cycle for the four main sensation-eliciting conditions is not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "16 healthy right-handed volunteers (10 males, 6 females, age 25 ± 3 years) without any neurological or skin diseases were recruited in this work.",
+   "n_sessions_per_subject": "Each volunteer participated in two tactile stimulation experiments using LIFUS and TENS, respectively.",
+   "exposures[0].fundamental_frequency_khz": "The custom-made transducer operating at the FF of 250 kHz (HN81C-750-250KC, Pantsd Inc., China, 40.5 mm focal length, 79.2 mm diameter) was equipped with a collimator (41.05 mm height). Another transducer working at the FF of 500 kHz (IBP0.512, NDT Inc., USA, 44.5 mm focal length, 38.1 mm diameter) was equipped with a custom collimator (45 mm height).",
+   "exposures[1].fundamental_frequency_khz": "The custom-made transducer operating at the FF of 250 kHz (HN81C-750-250KC, Pantsd Inc., China, 40.5 mm focal length, 79.2 mm diameter) was equipped with a collimator (41.05 mm height). Another transducer working at the FF of 500 kHz (IBP0.512, NDT Inc., USA, 44.5 mm focal length, 38.1 mm diameter) was equipped with a custom collimator (45 mm height).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "After each trial that lasted for 2s, participants reported their perceived sensation verbally.",
+   "exposures[1].timing.sonication_duration_s": "After each trial that lasted for 2s, participants reported their perceived sensation verbally.",
+   "exposures[0].free_field.isppa_w_cm2": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[1].free_field.isppa_w_cm2": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[0].free_field.ispta_w_cm2": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[1].free_field.ispta_w_cm2": "<table><tr><td>Types</td><td>PRF (Hz)</td><td> $\\mathrm { I _ { S P P A } }$  (W/cm2)</td><td> $\\mathrm { I } _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>FF (kHz)</td></tr><tr><td rowspan=\"2\">Tapping</td><td rowspan=\"2\">4-7</td><td>10.28-12.26</td><td>0.25-0.37 (M)</td><td>250</td></tr><tr><td>10.28-16.36</td><td>0.31-0.49 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Vibration</td><td rowspan=\"2\">14-24</td><td>22.82-25.92</td><td>0.69-0.78 (S)</td><td>250</td></tr><tr><td>31.51-35.33</td><td>0.95-1.06 (S)</td><td>500</td></tr><tr><td rowspan=\"2\">Electrical</td><td rowspan=\"2\">63-72</td><td>10.28-13.91</td><td>0.22-0.42 (M)</td><td>250</td></tr><tr><td>12.78-15.03</td><td>0.38-0.45 (M)</td><td>500</td></tr><tr><td rowspan=\"2\">Pressure</td><td rowspan=\"2\">80-88</td><td>20.86-28.02</td><td>0.63-0.84 (S)</td><td>250</td></tr><tr><td>31.68-35.33</td><td>1.04-1.15 (S)</td><td>500</td></tr></table>",
+   "exposures[0].device.manufacturer": "The custom-made transducer operating at the FF of 250 kHz (HN81C-750-250KC, Pantsd Inc., China, 40.5 mm focal length, 79.2 mm diameter) was equipped with a collimator (41.05 mm height).",
+   "exposures[0].device.model": "The custom-made transducer operating at the FF of 250 kHz (HN81C-750-250KC, Pantsd Inc., China, 40.5 mm focal length, 79.2 mm diameter) was equipped with a collimator (41.05 mm height).",
+   "exposures[1].device.manufacturer": "Another transducer working at the FF of 500 kHz (IBP0.512, NDT Inc., USA, 44.5 mm focal length, 38.1 mm diameter) was equipped with a custom collimator (45 mm height).",
+   "exposures[1].device.model": "Another transducer working at the FF of 500 kHz (IBP0.512, NDT Inc., USA, 44.5 mm focal length, 38.1 mm diameter) was equipped with a custom collimator (45 mm height).",
+   "exposures[0].timing.duty_cycle_pct": "A fixed PRF of 50 Hz, a fixed duty cycle of 3% and a stimulation duration of 2s was used in this step.",
+   "exposures[1].timing.duty_cycle_pct": "A fixed PRF of 50 Hz, a fixed duty cycle of 3% and a stimulation duration of 2s was used in this step."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Abstract states '14 healthy volunteers' but Methods states '16 healthy right-handed volunteers ... were recruited'; the more detailed Methods count (16) is used."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "A fixed duty cycle of 3% is stated only for the separate AI-threshold pretest (PRF 50 Hz, 2 s); duty cycle for the four main sensation-eliciting stimuli (Table I) is not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; only PRF and intensity are given for the sensation-eliciting stimuli, and duty cycle needed to derive pulse duration is not reported for these conditions."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Table I gives four separate PRF ranges (one per tactile sensation type); recorded as the flattened list of the eight range boundaries in table order (tapping, vibration, electrical, pressure)."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Isppa/Ispta were measured with a needle hydrophone in a degassed water bath (device characterization), then delivered directly onto the acoustically transparent skin with no intervening skull; classified as free-field, and recorded as the eight table values (one per sensation type/level) in table order."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Participants wore eye masks and earmuffs during testing to avoid visual and auditory distraction; classified as masking_sound."
+   },
+   {
+    "field": "sham_type",
+    "reason": "A 'no stimulation' condition was included as one of the five randomly-ordered trial types within each block, functioning as a within-session no-stimulation control; classified as none because no separate sham transducer/control arm is described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[1].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[1].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[1].timing.duty_cycle_pct": "second"
+  }
+ }
+}

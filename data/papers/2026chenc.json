@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chenc",
+ "doi": "10.1088/1741-2552/ae9eed",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "During the post-intervention phase (Post), the escape latencies in the WT, AD, AD+TUS, AD+Sham, and WT+TUS groups were",
+   "n_subjects.alt": "were $1 8 . 5 4 \\pm 4 . 7 9 , 4 2 . 2 5 \\pm 2 . 3 1 , 3 3 . 6 3 \\pm$",
+   "exposures[0].target.terms": "a craniotomy was performed above the hippocampal CA1 region",
+   "exposures[0].device.family": "delivered via a focused ultrasound transducer (V302-SU, Olympus, USA; center frequency 1 MHz; aperture diameter 25.4 mm)",
+   "exposures[0].fundamental_frequency_khz": "delivered via a focused ultrasound transducer (V302-SU, Olympus, USA; center frequency 1 MHz; aperture diameter 25.4 mm)",
+   "exposures[0].unspecified_domain.pressure_kpa": "The acoustic pressure was 0.36 MPa, spatial-peak pulse-average intensity (Isppa) was 4.3 W/cm², spatial-peak temporal-average intensity (Ispta) was 217.2 mW/cm², and the mechanical index (MI) was 0.36.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The acoustic pressure was 0.36 MPa, spatial-peak pulse-average intensity (Isppa) was 4.3 W/cm², spatial-peak temporal-average intensity (Ispta) was 217.2 mW/cm², and the mechanical index (MI) was 0.36.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The acoustic pressure was 0.36 MPa, spatial-peak pulse-average intensity (Isppa) was 4.3 W/cm², spatial-peak temporal-average intensity (Ispta) was 217.2 mW/cm², and the mechanical index (MI) was 0.36.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulation was delivered at a pulse repetition frequency (PRF) of 40 Hz, with a duty cycle of 5% and a duration of 10 s per trial (figure1(b)).",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound stimulation was delivered at a pulse repetition frequency (PRF) of 40 Hz, with a duty cycle of 5% and a duration of 10 s per trial (figure1(b)).",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound stimulation was delivered at a pulse repetition frequency (PRF) of 40 Hz, with a duty cycle of 5% and a duration of 10 s per trial (figure1(b)).",
+   "exposures[0].device.manufacturer": "was amplified using a radiofrequency power amplifier (E&I240L, ENI Inc., $\\mathrm { U S A } ) ,$ and delivered via a focused ultrasound transducer (V302-SU, Olympus, USA; center frequency 1 MHz; aperture diameter 25.4 mm).",
+   "exposures[0].device.model": "was amplified using a radiofrequency power amplifier (E&I240L, ENI Inc., $\\mathrm { U S A } ) ,$ and delivered via a focused ultrasound transducer (V302-SU, Olympus, USA; center frequency 1 MHz; aperture diameter 25.4 mm)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "All five behavioural groups (WT, AD, AD+TUS, AD+Sham, WT+TUS) are reported with n=6 each; only AD+TUS and WT+TUS received real 40 Hz TUS, so those two group sizes are listed rather than summed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the reported acoustic pressure/Isppa/Ispta were measured free-field (e.g. hydrophone in water) or simulated/derated in situ; only a COMSOL finite-element simulation is mentioned for confirming focal targeting, not explicitly linked to these numbers, so values are placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only duty cycle (5%) and PRF (40 Hz) are given; the paper does not separately state a pulse duration, and it is not computed here per the burst rule."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper describes a single 10 s per-trial stimulation and pre/on/post LFP recording, but does not state how many trials/days of TUS each animal received before the post-intervention Morris water maze test."
+   },
+   {
+    "field": "sham_type",
+    "reason": "AD+Sham group underwent 'transducer coupling and the sham stimulation procedure' but the paper does not describe the specific sham mechanism (e.g. power off vs. no coupling)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (APP/PS1 transgenic and wild-type)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Local field potential (LFP) recordings from hippocampal CA1 (nonlinear dynamics, phase-amplitude coupling, oscillatory event analysis); Morris water maze escape latency",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "40 Hz TUS shortened Morris water maze escape latency in AD mice (AD+TUS vs AD and vs AD+Sham) but produced frequency-band-dependent, bidirectional electrophysiological changes in CA1: reduced complexity/increased dynamical activity in broadband and high-frequency (gamma, ripple) oscillations but increased complexity in theta and beta bands, alongside reduced theta-gamma and gamma-gamma phase-amplitude coupling.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The maximum temperature increase did not exceed 0.05°C, and the mechanical index (0.36) was well below the FDA safety limit (MI < 1.9) and the ITRUSST consensus thermal-risk threshold (peak ΔT < 2°C).",
+ "exposures": [
+  {
+   "label": "40 Hz TUS to hippocampal CA1 in AD (APP/PS1) and wild-type mice",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "hippocampal CA1 region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 360,
+    "isppa_w_cm2": 4.3,
+    "ispta_w_cm2": 0.2172
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 10,
+    "protocol_description": "Ultrasound stimulation was delivered at a pulse repetition frequency (PRF) of 40 Hz, with a duty cycle of 5% and a duration of 10 s per trial. LFPs were recorded before, during, and after stimulation in awake, head-fixed mice; five experimental groups (WT, AD, AD+TUS, AD+Sham, WT+TUS, n=6 each) were tested in the Morris water maze before and after intervention, with only the AD+TUS and WT+TUS groups receiving real 40 Hz TUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.25
+   }
+  }
+ ]
+}

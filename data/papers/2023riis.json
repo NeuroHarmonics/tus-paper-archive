@@ -1,0 +1,178 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023riis",
+ "doi": "10.1186/s13256-023-04194-4",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Case presentation A 30-year-old Caucasian woman with severe treatment-resistant non-psychotic depression was recruited into a clinical study approved by the Institutional Review Board of the University of Utah.",
+   "n_sessions_per_subject": "To evaluate the immediate efects of the stimulation on mood states, we used Diadem to modulate three separate areas of the cingulate cortex in this subject over a 2-hour stimulation session.",
+   "exposures[0].fundamental_frequency_khz": "Each target was sonicated with a 650  kHz continuous wave for 30-millisecond ON periods followed by 4-second OFF periods (0.8% duty) for an average duration of 2  minutes (range 20–180  seconds).",
+   "exposures[0].in_situ.pressure_kpa": "The estimated peak pressure at target was 1.0 MPa following Diadem’s compensation for the ultrasound attenuation by the head and hair [14].",
+   "exposures[0].timing.pulse_duration_ms": "Each target was sonicated with a 650  kHz continuous wave for 30-millisecond ON periods followed by 4-second OFF periods (0.8% duty) for an average duration of 2  minutes (range 20–180  seconds).",
+   "exposures[0].timing.duty_cycle_pct": "Each target was sonicated with a 650  kHz continuous wave for 30-millisecond ON periods followed by 4-second OFF periods (0.8% duty) for an average duration of 2  minutes (range 20–180  seconds).",
+   "exposures[0].timing.sonication_duration_s": "Each target was sonicated with a 650  kHz continuous wave for 30-millisecond ON periods followed by 4-second OFF periods (0.8% duty) for an average duration of 2  minutes (range 20–180  seconds)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states 30 ms ON periods followed by 4 s OFF periods but does not label a pulse repetition frequency; not computed here."
+   },
+   {
+    "field": "exposures",
+    "reason": "Three anatomically distinct cingulate sub-targets (posterior SCC, anterior SCC, pregenual cingulate) shared identical frequency and timing parameters and were combined into a single exposure entry rather than split three ways."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control stimulus was an unfocused (plane-wave) ultrasound of the same waveform/pressure, which does not map cleanly onto the closed sham_type vocabulary; classified as other."
+   },
+   {
+    "field": "in_situ.method",
+    "reason": "Peak pressure at target is described as 'estimated' via Diadem's individualized measurement-based compensation for skull/hair attenuation; not explicitly labelled simulation, derating, or measurement in the text, classified as measurement given the through-transmit calibration described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "six-item Hamilton Depression Rating Scale (HDRS-6); Quick Inventory of Depressive Symptoms self-report (QIDS-SR); General Assessment of Side Effects (GASE) survey",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasound stimulation of the subcallosal cingulate cortex (SCC) target caused a significant decrease in fMRI BOLD activity within the target during active stimulation (not seen with unfocused control stimulation), suggesting inhibition of the SCC; the patient's depressive symptoms (HDRS-6) fell from 11 to 0 within 24 hours and remained in remission for at least 44 days.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse effects were noted by the subject or attending psychiatrist; the GASE survey reported no side effects related to treatment; no anomalies were observed on T1- or T2-weighted MRI.",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of three SCC-associated cingulate targets (posterior SCC, anterior SCC, pregenual cingulate)",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex",
+     "pregenual_anterior_cingulate_cortex"
+    ],
+    "label": "posterior subcallosal cingulate cortex (SCC), anterior SCC, and pregenual cingulate"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Diadem"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 0.8,
+    "sonication_duration_s": [
+     20,
+     180
+    ],
+    "protocol_description": "Each target was sonicated with a 650 kHz continuous wave for 30-millisecond ON periods followed by 4-second OFF periods (0.8% duty) for an average duration of 2 minutes (range 20-180 seconds). Each target was sonicated ten times, with randomized order between the three sites, for a total of 30 stimulation epochs spanning 64 minutes of active stimulation within an overall 2-hour stimulation session. A separate unfocused (plane-wave) control stimulus with the same waveform and pressure amplitude was also delivered to control for generic ultrasound artifacts."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

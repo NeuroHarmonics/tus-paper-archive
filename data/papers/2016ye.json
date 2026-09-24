@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016ye",
+ "doi": "10.1016/j.ultrasmedbio.2016.02.012",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  5,
+  5,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Forelimb (triceps) EMG: success rate of evoked contractions, contraction latency, contraction duration, peak amplitude",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound from 0.3 to 2.9 MHz evoked forelimb muscle contractions (measured by EMG); success rate and efficacy decreased and required intensity increased substantially as frequency increased, with success rate correlating with particle displacement and cavitation index but not radiation force.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Frequency sweep (0.3-2.9 MHz) ultrasound stimulation of mouse motor cortex",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex (forelimb representation)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": [
+    300,
+    400,
+    500,
+    600,
+    1000,
+    1400,
+    1900,
+    2400,
+    2900
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.02,
+     127
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.08,
+    "protocol_description": "Five sets of experiments (A-E) tested continuous-wave sonications at frequencies from 0.3 to 2.9 MHz. Experiment A compared 0.3-0.6 MHz using both a constant 40,000-cycle duration and a constant 80 ms duration; experiments B-E used a fixed 80 ms CW pulse duration throughout (0.6-1.4 MHz in B, 1.4-2.9 MHz in C, 0.3-0.6 MHz with a different focused transducer in D, and 1.4 vs 2.9 MHz mapped across multiple brain sites in E). Within each block, sonications of different intensities plus one sham (transducer output off) were delivered in random order, with at least a 2 s delay between sonications."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "we sonicated five mice according to a semi-randomized schedule consisting of blocks of sonications (Fig. 1).",
+   "exposures[0].target.label": "The area of the entire motor cortex and the area represented by the elbow portion of both forelimbs, as reported by Tennant et al. (2011), are plotted for reference.",
+   "exposures[0].fundamental_frequency_khz": "Five sets of experiments were performed to examine the effects of ultrasound frequencies ranging from 0.3 to 2.9 MHz (Table 1).",
+   "exposures[0].device.model": "Four ultrasound transducers (Olympus, Waltham, MA, USA) were used, one for each set of experiments, to cover a range of frequencies from 0.3 to 2.9 MHz (Table 1).",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td></td><td>Center Experiment frequency (MHz)</td><td>Diameter (in.)</td><td>Focusing</td><td>Cone</td><td>US parameters</td><td>Mice (n)</td></tr><tr><td>A</td><td>0.5</td><td>1</td><td>planar</td><td></td><td>Frequency: 0.3, 0.4, 0.5 and 0.6 MHz Duration: 80 ms CW and 40,000 cycles Intensities: 4 intensities plus sham for each frequency, within a range from 0.1–3.5 W/cm² sppa after attenuation</td><td>5</td></tr><tr><td>B</td><td>1.0</td><td>0.75</td><td>1.90” PTF</td><td></td><td>Frequency: 0.6, 1.0 and 1.4 MHz Duration: 80 ms CW Intensities: 5 intensities plus sham for each frequency, within a range from 0.02–9.4 W/cm² sppa after attenuation</td><td>5</td></tr><tr><td>C</td><td>2.25</td><td>0.75</td><td>1&quot; PTF</td><td></td><td>Frequency: 1.4, 1.9, 2.4 and 2.9 MHz Duration: 80 ms CW Intensities: 4 intensities plus sham for each frequency, within a range from 1.1–127 W/cm² sppa after attenuation</td><td>5</td></tr><tr><td>D</td><td>0.5</td><td>1</td><td>1.25” PTF</td><td>H</td><td>Frequency: 0.3, 0.4, 0.5 and 0.6 MHz Duration: 80 ms CW Intensities: 4 intensities plus sham for each frequency, within a range from 0.04–3.1 W/cm² sppa after attenuation</td><td>5</td></tr><tr><td>E</td><td>2.25</td><td>0.75</td><td>1&quot; PTF</td><td></td><td>Frequency: 1.4 and 2.9 MHz Duration: 80 ms CW Intensities: at 1.4 MHz, 56.9 W/cm² sppa after attenuation plus sham; at 2.9 MHz, 90.7 W/cm² sppa after attenuation plus sham</td><td>6</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "All sonications were kept at constant pulse duration of 80 ms.",
+   "exposures[0].device.manufacturer": "Four ultrasound transducers (Olympus, Waltham, MA, USA) were used, one for each set of experiments, to cover a range of frequencies from 0.3 to 2.9 MHz (Table 1)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes are given per sub-experiment (A-D: n=5 mice each, E: n=6 mice); the paper never states a combined total, and some mice/experiments were later excluded (see Methods), so group sizes are listed rather than summed."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is the mouse motor cortex region controlling forelimb (triceps) contraction, identified via EMG; not a more specific sub-region such as primary motor cortex."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Frequencies pooled from Table 1 across five sub-experiments (A-E) that used different transducers/geometries; treated as one exposure per the frequency-response-curve exception since target and general timing (80 ms CW pulses) were held constant across the sweep."
+   },
+   {
+    "field": "exposures[0].device.model",
+    "reason": "Four different Olympus transducers (0.5 MHz planar 1 in.; 1 MHz focused 0.75 in., 1.90 in. PTF; 2.25 MHz focused 0.75 in., 1 in. PTF used for both experiments C and E) were used across the frequency sweep; see paper Table 1 for exact geometry per experiment."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Value is an approximate overall range ('about 1' to 'more than 100 W/cm2') stated in the Results text for threshold intensities across the full 0.3-2.9 MHz sweep; per-frequency/per-experiment ranges differ substantially and are given only in Table 1 and Figs. 5a-d, which could not be captured by a single verbatim quote."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Domain classified as in_situ because intensities are described in figure captions (e.g., Fig. 5) as 'spatial peak intensity after accounting for skull attenuation', i.e. derated for measured mouse-skull insertion loss."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "second"
+  }
+ }
+}

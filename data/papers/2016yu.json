@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016yu",
+ "doi": "10.1109/tbme.2016.2591924",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Event-related potentials, mean global field power (MGFP), time-frequency (short-time Fourier transform) spectral analysis, EEG source imaging (minimum-norm electrophysiological source imaging)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Low-intensity tFUS (Ispta < 1 mW/cm2) evoked time-locked EEG activation whose amplitude/extent increased with sonication intensity and duration; source imaging showed initial activation at the targeted cortical site that propagated to surrounding regions during ongoing sonication.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Applied intensities (Ispta 0.1-0.6 mW/cm2, Isppa 0.74-4.6 mW/cm2) were far below FDA diagnostic ultrasound imaging limits (Ispta 720 mW/cm2, Isppa 190 W/cm2) and below the lowest Ispta previously reported to be neuromodulatory in vivo; no hindlimb EMG response was observed at these intensities.",
+ "exposures": [
+  {
+   "label": "Low-intensity tFUS of rat anterior cortex",
+   "target": {
+    "terms": [
+     "frontal_lobe"
+    ],
+    "label": "right/left anterior cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V389"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     18.3,
+     27.9,
+     45.9
+    ],
+    "isppa_w_cm2": [
+     0.0007,
+     0.0014,
+     0.0046
+    ],
+    "ispta_w_cm2": [
+     0.0001,
+     0.0002,
+     0.0006
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.005,
+     0.05,
+     0.2
+    ],
+    "protocol_description": "tFUS pulses were produced in a burst mode by a single-element focused transducer using a single-pulse burst mode (rather than a tens-of-cycles tone-burst) at a 2 kHz pulse repetition frequency, delivered through a conical collimator to a scalp site, with 3 s intersonication intervals. Three sonication intensities (SI1-SI3) were tested at a fixed 200 ms sonication duration in one experiment; a second experiment compared 5, 50, and 200 ms sonication durations at a fixed intensity (Ispta 0.6 mW/cm2). A sham condition used the same 200 ms sonication with the transducer aimed away from the animal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Three one-year-old rat subjects were used, and each was anesthetized using katamine/xylazine mixture (75 and 10 mg/kg, respectively) with certain dosage determined by both the rat's weight and the anesthetic duration (2–3 h).",
+   "exposures[0].target.label": "and were employed to perturb the intact rat brain in anesthesia, as shown in Fig. 1.",
+   "exposures[0].device.model": "This ultrasound transducer has a diameter of 38.1 mm, a center frequency of 500 kHz, a −6- dB bandwidth of 300–690 kHz and a nominal focal distance of 55 mm.",
+   "exposures[0].fundamental_frequency_khz": "This ultrasound transducer has a diameter of 38.1 mm, a center frequency of 500 kHz, a −6- dB bandwidth of 300–690 kHz and a nominal focal distance of 55 mm.",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td>Parameters</td><td>SI1</td><td>SI 2</td><td>SI3</td></tr><tr><td> $\\mathrm { I _ { s p t a } } ~ \\mathrm { ( m W / c m ^ { 2 } ) }$ </td><td>0.1</td><td>0.2</td><td>0.6</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td> $\\mathrm { I _ { s p p a } } ~ \\mathrm { ( m W / c m ^ { 2 } ) }$ </td><td>0.7</td><td>1.4</td><td>4.6</td></tr>",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td> $\\mathrm { P _ { r } \\ ( k P a ) }$ </td><td>18.3</td><td>27.9</td><td>45.9</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The transducer is controlled by two function generators (33220 A, Keysight Technologies, USA) that manage the time sequence of ultrasonic output, so as to produce a specified time burst of pulses with 2-kHz pulse repetition frequency in 3-s intersonication intervals.",
+   "exposures[0].timing.sonication_duration_s": "Fig. 3 shows 16-channel scalp ERPs averaged from 600 trials of another rat subject... in response to (a) 5-, (b) 50-, and (c) 200-ms sonication conditions in a top-view of the rat head."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Figures describe the sonicated site only as 'right anterior cortex' / 'left anterior cortex'; no more specific named cortical subregion is given, so mapped to frontal_lobe as the closest match."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Intensities/pressures were measured with a calibrated hydrophone placed behind a piece of freshly excised Wistar rat skull, i.e. measured through skull, matching the 'measurement' in_situ method."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper contrasts its 'single-pulse burst mode' with the tone-burst mode (tens of cycles per pulse) used in prior studies, but never states the duration of an individual pulse in ms; only the pulse repetition frequency (2 kHz) of pulses within the sonication train is given, so pulse_duration_ms is left not_reported (burst-rule ambiguity)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

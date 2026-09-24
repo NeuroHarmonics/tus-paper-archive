@@ -1,0 +1,328 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026zheng",
+ "doi": "10.1038/s41467-026-75826-8",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "cynomolgus and rhesus macaque (Macaca fascicularis, Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Block-design BOLD fMRI; MR acoustic radiation force imaging (MR-ARFI) for targeting confirmation; 32-channel linear electrode recordings of local field potentials and single/multi-unit spiking in thalamic VPL",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to the thalamic VPL produced BOLD increases at the target and at 27 off-target regions including posterior insula, increased low-frequency (delta/theta/alpha) LFP power, and increased single/multi-unit firing rates in VPL; remote FUS stimulation of the posterior insula reproduced similar LFP and spiking increases in VPL.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermal simulations estimated skull temperature rises up to about 2.46C and brain temperature rises below 2C at the highest transmit powers tested (computed cranial-bone thermal index TIC=7.4, above the ITRUSST-recommended 6.0, prompting additional subject-specific thermal simulation); no explicit behavioural or clinical adverse-event assessment was reported.",
+ "exposures": [
+  {
+   "label": "FUS to thalamic VPL nucleus",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "ventroposterior lateral (VPL) thalamic nucleus, hand representation"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": [
+     2690,
+     3720
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     550,
+     700,
+     1450
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "650 kHz pulse trains (500 ms train duration, PRF 1 kHz, 0.5 ms pulses, 50% duty cycle, 50 microsecond ramp up/down) were used for both fMRI and electrophysiology experiments targeting the VPL. For fMRI, trains were repeated at 0.5 Hz for a 16-s stimulation block (8 trains/block) followed by a minimum 30-s rest, targeting an in vivo pressure of 550 kPa (assuming 39% transmission through the skull). For electrophysiology, single 500-ms trains were delivered with a 5-s inter-stimulation interval (20-50 trials/run) at higher targeted in vivo pressures (0.70-1.45 MPa across the two subjects) than the fMRI protocol, to obtain robust electrophysiological signals while limiting thermal risk."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Remote FUS to posterior insular cortex",
+   "target": {
+    "terms": [
+     "posterior_insula"
+    ],
+    "label": "posterior insular cortex"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     550,
+     1000
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Same 650 kHz pulse parameters as the VPL target (500 ms train, PRF 1 kHz, 0.5 ms pulses, 50% duty cycle) were used to remotely stimulate the posterior insular cortex while recording LFP and spiking in the thalamic VPL; only 3 locations and 4 runs of insula stimulation were performed (versus 35 locations/41 runs for VPL). The fMRI protocol's common 550 kPa in-vivo target also applied to insula stimulation; a representative electrophysiology insula-stimulation run targeted 1.00 MPa in vivo."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Four monkeys underwent five MRI and FUS stimulation sessions.",
+   "n_sessions_per_subject": "Four monkeys underwent five MRI and FUS stimulation sessions.",
+   "exposures[0].fundamental_frequency_khz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[0].timing.pulse_duration_ms": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[0].timing.duty_cycle_pct": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[0].timing.sonication_duration_s": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[0].in_situ.pressure_kpa": "The targeted in vivo pressures were 0.70 to 1.45 MPa.",
+   "exposures[0].free_field.pressure_kpa": "With subject 1, we measured an estimated $2 . 4 6 ^ { \\circ } \\mathsf { C }$ rise in the skull during the 150-second block with 2.69 MPa free-field pressure. For subject 2, we performed two sonication runs at 3.72 MPa free-field pressure, which induced an estimated $2 . 3 6 ^ { \\circ } \\mathrm { C }$ rise in temperature in the skull.",
+   "exposures[1].fundamental_frequency_khz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[1].timing.pulse_duration_ms": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[1].timing.duty_cycle_pct": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[1].timing.sonication_duration_s": "The FUS stimulation blocks consisted of trains of 650 kHz pulses<sup>85</sup>, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, pulse duration of 0.5 ms, and duty cycle of 50%.",
+   "exposures[1].in_situ.pressure_kpa": "The targeted in vivo pressure was 1.00 MPa.",
+   "exposures[0].device.manufacturer": "We employed a custom-designed, MR-compatible, 128-element transducer (radius of curvature = 72 mm, outer diameter = 103 mm, element diameter = 6.6 mm, free-field full-width half max 9.3 mm and 2.2 mm in the axial and lateral directions 35, 74 , manufactured by Imasonic (Besancon, France) was used in the current study.",
+   "exposures[1].device.manufacturer": "We employed a custom-designed, MR-compatible, 128-element transducer (radius of curvature = 72 mm, outer diameter = 103 mm, element diameter = 6.6 mm, free-field full-width half max 9.3 mm and 2.2 mm in the axial and lateral directions 35, 74 , manufactured by Imasonic (Besancon, France) was used in the current study."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states 'Four monkeys participated in fMRI experiments, and two macaque monkeys (two female Macaca fascicularis and two male Macaca mulatta) participated in electrophysiology studies' - 'two macaque monkeys' is inconsistent with the four sex/species identifiers listed immediately after; unclear whether the electrophysiology animals overlap with the four fMRI animals or add to the total. n_subjects here uses the explicit 'Four monkeys underwent five MRI and FUS stimulation sessions' statement."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "List combines the fMRI-protocol target pressure (550 kPa, single stated value, method: assumed 39% transmission) with the electrophysiology-protocol targeted range across two subjects (0.70-1.45 MPa); these were two distinct experimental sessions/modalities at the same target and frequency."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "2.69 MPa (subject 1) is the free-field pressure used specifically for a thermal-safety verification run at the highest transmit power tested; a second free-field pressure (3.72 MPa, subject 2, two runs) was also tested but is not included in this single value."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "550 kPa is the common fMRI-protocol target pressure (also used for VPL); 1.00 MPa is the value reported specifically for an electrophysiology insula-stimulation run (Figure 6 legend)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "second"
+  }
+ }
+}

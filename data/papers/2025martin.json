@@ -1,0 +1,241 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025martin",
+ "doi": "10.1038/s41467-025-63020-1",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 7,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "fmri"
+ ],
+ "readout_other": null,
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Online TUS to the LGN (300 ms pulses every 3 s, 775 kPa) increased visually-evoked activity in ipsilateral V1 during stimulation; offline theta-burst TUS to the LGN (20 ms pulses at 5 Hz for 80 s) instead decreased visually-evoked V1 activity ~40 min after stimulation, with the decrease no longer significant ~140 min after stimulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "After each session, participants were asked to report any changes in visual perception; no changes were reported by any participant. Simulations predicted a maximum brain temperature rise of less than 0.2 degC and MI_TC below 1.9, within ITRUSST safety limits.",
+ "exposures": [
+  {
+   "label": "TUS to left LGN (online block-design and offline theta-burst experiments)",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "lateral geniculate nucleus (LGN)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts (custom transducer elements)",
+    "model": "Custom 256-element helmet array"
+   },
+   "fundamental_frequency_khz": 555,
+   "free_field": {
+    "pressure_kpa": 2580,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 775,
+    "isppa_w_cm2": 20,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "theta_burst"
+    ],
+    "pulse_duration_ms": [
+     300,
+     20
+    ],
+    "pulse_repetition_frequency_hz": [
+     0.33,
+     5
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": [
+     15,
+     80
+    ],
+    "protocol_description": "Online experiment: active TUS delivered as 300 ms pulses every 3 s (10 ms cosine ramp up/down) during 10 of 20 checkerboard blocks (15 s stimulus blocks, 9 s rest), interleaved with sham (system powered on, no ultrasound); up to six on-target runs per day over two visits, plus off-target (MDN) control runs in three participants. Offline experiment: theta-burst protocol of 20 ms ultrasound pulses delivered at 5 Hz (every 200 ms; duty cycle 10%; 1 ms ramp up/down) for a total train duration of 80 s, delivered once to the LGN and once to the active-control MDN site in four participants, with fMRI acquired at baseline, ~20-40 min (early) and ~140-160 min (late) after stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Seven healthy participants (6 male, age range 28–54) gave their written informed consent to participate, in line with ethical approval from the East Midlands Leicester South Research",
+   "exposures[0].fundamental_frequency_khz": "The system is based around a semi-ellipsoidal helmet housing 256 individually-controllable transducer elements operating at a frequency of 555 kHz.",
+   "exposures[0].device.manufacturer": "Each element is made from an air-backed piezocomposite material with an acoustic matching layer enclosed in a custom-designed plastic housing (Sonic Concepts).",
+   "exposures[0].free_field.pressure_kpa": "<table><tr><td></td><td>Spatial Peak Pressure Amplitude</td><td>Position of Spatial Peak Pressure</td><td>Axial Focal Size (-3dB)</td><td>Lateral Focal Size (-3dB)</td><td>Axial Focal Size (-6dB)</td><td>Lateral Focal Size (-6dB)</td></tr><tr><td>Geometric centre</td><td>2.88 ± 0.06 MPa</td><td>[0, 0, 0] mm</td><td>3.4 mm</td><td>[1.3, 1.3] mm</td><td>4.9 mm</td><td>[1.8, 1.7] mm</td></tr><tr><td>Left LGN</td><td> $2 . 5 8 \\pm 0 . 0 6 ~ \\mathsf { M P a }$ </td><td>[-9, 23, -13] mm</td><td>1.8 mm</td><td>[1.4, 1.6] mm</td><td>2.6 mm</td><td>[2.0, 2.3] mm</td></tr><tr><td>MDN</td><td> $2 . 2 5 \\pm 0 . 1 1 ~ \\mathsf { M P a }$ </td><td>[2, 1, -5] mm</td><td>3.8 m</td><td>[1.2, 1.5] mm</td><td>5.1 mm</td><td>[1.7, 1.9] mm</td></tr></table>",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td></td><td>Spatial Peak Pressure Amplitude</td><td>Mean position of Spatial Peak Pressure</td><td>Axial Focal Size (-3dB)</td><td>Lateral Focal Size (-3dB)</td><td>Axial Focal Size (-6dB)</td><td>Lateral Focal Size (-6dB)</td></tr><tr><td>Left LGN</td><td> $7 7 5 \\pm 1 6 3 \\mathsf { k P a }$ </td><td>[-9, 23, -13] mm</td><td>2.2 mm</td><td>[1.5, 1.5] mm</td><td>3.1 mm</td><td>[2.2, 2.2] mm</td></tr><tr><td>MDN</td><td> $7 7 5 \\pm 1 6 3 \\mathsf { k P a }$ </td><td>[2, 1, -5] mm</td><td>3.0 mm</td><td>[1.5, 1.4] mm</td><td>4.1 mm</td><td>[2.0, 1.9] mm</td></tr></table>",
+   "exposures[0].in_situ.isppa_w_cm2": "The target was selected as described in Target identification, and the target acoustic pressure for all experiments and participants was set to 775 kPa. This corresponds to 20 W/cm<sup>2</sup> pulse average intensity assuming a characteristic impedance of 1.5 MRayls. In [X, Y, Z] helmet coordinates (see Fig. S2a), the mean position ofthe left LGN was at [−9, 23, −13] mm, the mean position of the MDN was [–5,1,2] mm, and the mean distance from the LGN to the MDN was 23 mm (Fig. S9). Across all participants and targets, the simulations predicted an in situ pressure amplitude at the target of 775 kPa, a maximum temperature increase in the brain ofless than 0.2 °C, and a mechanical index ${ \\sf M I } _ { \\sf T C }$ of less than 1.9, in accordance with the ITRUSST consensus on biophysical safety<sup>57</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "Active TUS (300 ms pulses every 3 s, target pressure of 775 kPa; see Fig. S7) was applied during halfofthe visual stimulation blocks, while the other halfserved as sham stimulation (system powered on but no ultrasound delivered), with the order of blocks pseudo-randomised to prevent order effects.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Active TUS (300 ms pulses every 3 s, target pressure of 775 kPa; see Fig. S7) was applied during halfofthe visual stimulation blocks, while the other halfserved as sham stimulation (system powered on but no ultrasound delivered), with the order of blocks pseudo-randomised to prevent order effects.",
+   "exposures[0].timing.duty_cycle_pct": "During the stimulation session, participants fixated on a blank white screen while TUS was applied using a theta burst protocol. The stimulation lasted for a total of 80 s, with 20 ms of stimulation repeated every 200 ms (pulse repetition frequency: 5 Hz; duty cycle: 10%; 1 ms ramp-up and rampdown).",
+   "exposures[0].timing.sonication_duration_s": "This stimulation protocol, known as theta burst stimulation (TBS), consists of short, 20 ms ultrasound pulses delivered at a theta rhythm (5 Hz) for a total of 80 s.",
+   "randomised": "Experimental design. We employed a single-blind, pseudo-randomised, sham-controlled block design to investigate the effects of transcranial ultrasound stimulation (TUS) on the visual system. During the experiment, participants fixated on a central point while a visual checkerboard stimulus was presented (see “Visual stimulus” section).",
+   "blinding": "Experimental design. We employed a single-blind, pseudo-randomised, sham-controlled block design to investigate the effects of transcranial ultrasound stimulation (TUS) on the visual system. During the experiment, participants fixated on a central point while a visual checkerboard stimulus was presented (see “Visual stimulus” section).",
+   "adverse_events": "After each session, participants were asked to report any changes in visual perception. No changes were reported by any of the participants.",
+   "exposures[0].device.model": "We introduce an advanced transcranial ultrasound stimulation (TUS) system for precise deep brain neuromodulation, featuring a 256-element helmetshaped transducer array (555 kHz), stereotactic positioning, individualised planning, and real-time fMRI monitoring.",
+   "n_sessions_per_subject": "Ofthe seven participants, four completed all seven visits, two took part in visits 1–5, and one took part in visits 1–4."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Reported as one exposure (single target/frequency) per instructions; list combines the online 300 ms pulse with the offline 20 ms theta-burst pulse, two structurally different protocols."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Online value (0.33 Hz) is converted from the stated '300 ms pulses every 3 s' interval (a period-to-frequency conversion), not stated directly as a PRF by the authors; offline PRF (5 Hz) is stated directly."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "10% duty cycle is stated only for the offline theta-burst protocol; the online single-pulse-per-block protocol has no stated duty cycle, so only one value is given despite two protocols."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Online value (15 s) is the duration of one active checkerboard/TUS block (Fig. S7 'Pulse Train'); offline value (80 s) is the total theta-burst train duration; these are not the same kind of quantity."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Free-field spatial peak pressure amplitude (2.58 +/- 0.06 MPa) taken from the Left LGN row of Supplementary Fig. S7 table; recorded as the mean."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "In-situ pressure (775 +/- 163 kPa) is the achieved value across participants/sessions from the Supplementary Fig. S7 table, coinciding with the 775 kPa target set point stated in the main text."
+   },
+   {
+    "field": "blinding",
+    "reason": "Online experiment is described as single-blind; the offline (theta-burst) experiment is explicitly described as unblinded. The single value recorded reflects the primary/online experiment only."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Includes both the online experiment's device-powered-but-inactive sham and the active-control-site (MDN) condition used in both experiments."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "both_defensible"
+  }
+ }
+}

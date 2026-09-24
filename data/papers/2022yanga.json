@@ -1,0 +1,359 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022yanga",
+ "doi": "10.1016/j.brs.2022.12.003",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "cynomolgus macaque (Macaca fascicularis)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "MR acoustic radiation force imaging (MR-ARFI) for FUS beam localization; BOLD fMRI as the neural response readout",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "High-intensity (925 kPa) FUS excited the target and most off-target regions at rest and enhanced touch-evoked BOLD in area 1/2; medium (425 kPa) and low (200 kPa) intensity FUS suppressed touch-evoked BOLD responses at the target and most off-target regions, with weaker resting-state activation at lower intensities.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The maximum temperature rise detected was $2 ^ { \\circ } C$ in the highpressure condition, while we measured $< 0 . 5 ^ { \\circ } C$ in the medium FUS condition, which matches our prior observations and thermal simulations [9].",
+ "exposures": [
+  {
+   "label": "FUS neuromodulation of area 3a/3b at 250 kHz (high/medium/low pressure)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "area 3a/3b (primary somatosensory cortex, hand region)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": [
+     925,
+     425,
+     200
+    ],
+    "isppa_w_cm2": [
+     1.24,
+     5.6,
+     26.6
+    ],
+    "ispta_w_cm2": [
+     0.062,
+     0.28,
+     1.329
+    ]
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.4,
+     1.9,
+     8.9
+    ],
+    "ispta_w_cm2": [
+     0.0209,
+     0.094,
+     0.446
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.25,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "FUS pulses were delivered in a block-based scheme identical to the tactile stimuli. During an 'on' block, a 250 kHz, 300 ms pulse was emitted with a 3-s intersonication interval; a single 300 ms pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle). Stimulation blocks were 30 s total, resulting in 10 FUS bursts per 'on' block."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "MR-ARFI beam localization sonication at third harmonic (non-neuromodulatory)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "area 3a/3b (primary somatosensory cortex, hand region)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 802,
+   "free_field": {
+    "pressure_kpa": 2810,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 4.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 0.23,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "For beam localization (not neuromodulation), sonications were performed at the third harmonic of the transducer (802 kHz) for 4.5 ms (3609 cycles) with a maximum free-field pressure of 2.81 MPa and a duty cycle of 0.23%, to generate detectable MR-ARFI tissue displacement."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Two female adult macaque monkeys (M.fascicularis) underwent six MRI experiments (three for each monkey).",
+   "n_sessions_per_subject": "Two female adult macaque monkeys (M.fascicularis) underwent six MRI experiments (three for each monkey).",
+   "exposures[0].fundamental_frequency_khz": "During an “on” block, a 250 kHz, 300 ms pulse was emitted with a 3-s intersonication interval from a spherically focused MR-compatible transducer (diameter 64 mm ROC 63.2 mm, H115 Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% $\\mathsf { D } _ { 2 } \\mathsf { O }$ (Deuterium oxide, or heavy water) that had been undisturbed for 24 h to allow large bubbles to float out of the solution. The $\\mathsf { D } _ { 2 } \\mathsf { O }$ was used to replace most of the $_ { \\mathrm { H } _ { 2 } \\mathrm { O } }$ to reduce signal intensities and geometric distortions of MR images due to the ineffective shimming associated with the presence of high intensity $_ { \\mathrm { H } _ { 2 } \\mathrm { O } }$ signals outside the brain. A single 300 ms pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle).",
+   "exposures[0].free_field.pressure_kpa": "The free-field peak negative pressures (PNP) at the spatial focus during this pulse were 925 kPa, 425 kPa, and 200 kPa for high, medium, and low conditions, corresponding to un-derated mechanical indexes (MI) of 0.9, 1.3, and 1.9.",
+   "exposures[0].free_field.isppa_w_cm2": "Estimating the spatial peak pulse average (I ) from a sinusoidal pulse in brain tissue (sound speed 1562 m/s and density of 1030 kg/m<sup>3</sup>) yields 1.24 W/cm<sup>2</sup>, 5.6 W/cm<sup>2</sup>, and $2 6 . 6 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ , and spatial peak temporal average (I ) of 62 mW/cm<sup>2</sup>, 280 $\\mathrm { \\ m w } / \\mathrm { c m } ^ { 2 }$ , 1329 mW/ $\\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].free_field.ispta_w_cm2": "Estimating the spatial peak pulse average (I ) from a sinusoidal pulse in brain tissue (sound speed 1562 m/s and density of 1030 kg/m<sup>3</sup>) yields 1.24 W/cm<sup>2</sup>, 5.6 W/cm<sup>2</sup>, and $2 6 . 6 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ , and spatial peak temporal average (I ) of 62 mW/cm<sup>2</sup>, 280 $\\mathrm { \\ m w } / \\mathrm { c m } ^ { 2 }$ , 1329 mW/ $\\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "When derated to 58% (based on hydrophone measurements through ex vivo skull as in Yang et al., 2018 [9]), these values are $\\mathsf { M I } = 0 . 6 8 \\substack { , 1 . 0 }$ , and 1.46, I values of 0.4 W/cm<sup>2</sup>, $1 . 9 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ,$ , and $8 . 9 \\ \\mathrm { W / c m ^ { 2 } }$ , and I values of 20.9 mW/cm<sup>2</sup>, 94 $\\mathrm { { m w } } / { \\mathrm { c m } } ^ { 2 } ,$ , and 446 mW/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "When derated to 58% (based on hydrophone measurements through ex vivo skull as in Yang et al., 2018 [9]), these values are $\\mathsf { M I } = 0 . 6 8 \\substack { , 1 . 0 }$ , and 1.46, I values of 0.4 W/cm<sup>2</sup>, $1 . 9 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ,$ , and $8 . 9 \\ \\mathrm { W / c m ^ { 2 } }$ , and I values of 20.9 mW/cm<sup>2</sup>, 94 $\\mathrm { { m w } } / { \\mathrm { c m } } ^ { 2 } ,$ , and 446 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound stimulation blocks were 30 s total with an inter-stimulation interval (ISI) of 3 s and a burst length of 300 ms. Each burst consisted of a 2 kHz pulse repetition frequency with a 250 us sonication for a 50% duty cycle",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulation blocks were 30 s total with an inter-stimulation interval (ISI) of 3 s and a burst length of 300 ms. Each burst consisted of a 2 kHz pulse repetition frequency with a 250 us sonication for a 50% duty cycle",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound stimulation blocks were 30 s total with an inter-stimulation interval (ISI) of 3 s and a burst length of 300 ms. Each burst consisted of a 2 kHz pulse repetition frequency with a 250 us sonication for a 50% duty cycle",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound stimulation blocks were 30 s total with an inter-stimulation interval (ISI) of 3 s and a burst length of 300 ms. Each burst consisted of a 2 kHz pulse repetition frequency with a 250 us sonication for a 50% duty cycle",
+   "exposures[1].fundamental_frequency_khz": "Sonications were performed at the third harmonic of the transducer (802 kHz) for 4.5 ms (3609 cycles) with a maximum free-field pressure of 2.81 MPa and a duty cycle of 0.23%.",
+   "exposures[1].free_field.pressure_kpa": "Sonications were performed at the third harmonic of the transducer (802 kHz) for 4.5 ms (3609 cycles) with a maximum free-field pressure of 2.81 MPa and a duty cycle of 0.23%.",
+   "exposures[1].timing.duty_cycle_pct": "Sonications were performed at the third harmonic of the transducer (802 kHz) for 4.5 ms (3609 cycles) with a maximum free-field pressure of 2.81 MPa and a duty cycle of 0.23%.",
+   "safety_notes": "The maximum temperature rise detected was $2 ^ { \\circ } C$ in the highpressure condition, while we measured $< 0 . 5 ^ { \\circ } C$ in the medium FUS condition, which matches our prior observations and thermal simulations [9].",
+   "exposures[0].device.manufacturer": "kHz, 300 ms pulse was emitted with a 3-s intersonication interval from a spherically focused MR-compatible transducer (diameter 64 mm ROC 63.2 mm, H115 Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% $\\mathsf { D } _ { 2 } \\mathsf { O }$ (Deuterium oxide, or heavy water) that had been",
+   "exposures[0].device.model": "kHz, 300 ms pulse was emitted with a 3-s intersonication interval from a spherically focused MR-compatible transducer (diameter 64 mm ROC 63.2 mm, H115 Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% $\\mathsf { D } _ { 2 } \\mathsf { O }$ (Deuterium oxide, or heavy water) that had been",
+   "exposures[1].device.manufacturer": "kHz, 300 ms pulse was emitted with a 3-s intersonication interval from a spherically focused MR-compatible transducer (diameter 64 mm ROC 63.2 mm, H115 Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% $\\mathsf { D } _ { 2 } \\mathsf { O }$ (Deuterium oxide, or heavy water) that had been",
+   "exposures[1].device.model": "kHz, 300 ms pulse was emitted with a 3-s intersonication interval from a spherically focused MR-compatible transducer (diameter 64 mm ROC 63.2 mm, H115 Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% $\\mathsf { D } _ { 2 } \\mathsf { O }$ (Deuterium oxide, or heavy water) that had been",
+   "exposures[1].timing.pulse_duration_ms": "Sonications were performed at the third harmonic of the transducer (802 kHz) for 4.5 ms (3609 cycles) with a maximum free-field pressure of 2.81 MPa and a duty cycle of 0.23%."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "As stated in the text, the un-derated intensity and mechanical index values (1.24-26.6 W/cm2 and MI 0.9-1.9) appear in an order that decreases with increasing pressure (925->200 kPa gives MI 0.9->1.9), which is the inverse of the expected relationship (intensity/MI should rise with pressure); recorded exactly as ordered in the source text."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Same apparent high/medium/low pressure vs. intensity ordering inversion as in the free-field values; recorded as stated."
+   },
+   {
+    "field": "exposures[1].fundamental_frequency_khz",
+    "reason": "802 kHz is the third harmonic of the H115 transducer's 250 kHz fundamental, used only for MR-ARFI beam localization, not for neuromodulation."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "The paper gives total sonication length (4.5 ms, 3609 cycles) and duty cycle (0.23%) for the MR-ARFI sonication but not a pulse repetition frequency, so the individual pulse duration/PRF (the burst-rule split) cannot be resolved and are left not_reported."
+   },
+   {
+    "field": "randomised",
+    "reason": "The paper does not describe randomisation of stimulation condition order or session assignment."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.sonication_duration_s": "second"
+  }
+ }
+}

@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021yuan",
+ "doi": "10.1109/tbme.2021.3050797",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 42,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Local field potential recording (silver needle electrode) for sharp wave-ripple (SPW-R) detection; intrinsic signal optical imaging of deoxyhemoglobin (HbR) hemodynamic responses.",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS induced sharp wave-ripple (SPW-R) neural activity and hemodynamic (HbR) responses that decreased in amplitude with increasing anesthesia depth (awake > 0.3% > 0.9% > absent at 1.5% isoflurane) and increased with increasing ultrasound intensity.",
+ "adverse_events": "not_reported",
+ "safety_notes": "In our experiment, the maximum ultrasound intensity I is $2 7 ~ \\mathrm { W / c m ^ { 2 } }$ and pulse duration t is 0.4s. We can get that the temperature rise is ${ \\sim } 0 . 1 2 ^ { \\circ } \\mathrm { C }$ , which is lower than the damage threshold.",
+ "exposures": [
+  {
+   "label": "TUS of visual cortex across anesthesia levels and ultrasound intensities",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "mouse visual cortex (AP=-3.8, ML=2.5)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     50,
+     100,
+     300,
+     500,
+     550,
+     700,
+     900
+    ],
+    "isppa_w_cm2": [
+     0.08,
+     0.3,
+     3,
+     8.3,
+     10.1,
+     16.3,
+     27
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "A circular skull section (3.5 mm diameter) was removed to expose the visual cortex directly for TUS delivery. Mice were tested under 0% (awake), 0.3%, 0.9% and 1.5% isoflurane using a fixed maximum ultrasound pressure of 0.55 MPa (10.1 W/cm2 Isppa); a separate group of mice was tested at 0.3% and 0.9% isoflurane across a sweep of ultrasound pressures (0.05-0.9 MPa). Sixteen trials were averaged per condition; LFP and hemodynamic responses were quantified over a 0-3 s window from TUS onset."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of forty-two C57BL mice were used in the experiments (all male, body weights 20–25g, ages 4–5weeks, Beijing Vital River Laboratory Animal Technology Co., Ltd. China).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound fundamental frequency, pulsed repetition frequency, stimulation duration and duty cycles were 500 kHz, 1 kHz, 400 ms and 50%, respectively (Fig. 1(b)).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound fundamental frequency, pulsed repetition frequency, stimulation duration and duty cycles were 500 kHz, 1 kHz, 400 ms and 50%, respectively (Fig. 1(b)).",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound fundamental frequency, pulsed repetition frequency, stimulation duration and duty cycles were 500 kHz, 1 kHz, 400 ms and 50%, respectively (Fig. 1(b)).",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound fundamental frequency, pulsed repetition frequency, stimulation duration and duty cycles were 500 kHz, 1 kHz, 400 ms and 50%, respectively (Fig. 1(b)).",
+   "exposures[0].unspecified_domain.pressure_kpa": "In the experiment with different anesthesia levels, the maximum ultrasound pressure was 0.55 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 10.1 W/cm<sup>2</sup>. In the experiment with different ultrasound intensities, the ultrasound intensities were 0.05 MPa, 0.1 MPa, 0.3 MPa, 0.5 MPa, 0.7 MPa, 0.9 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 0.08 W/cm<sup>2</sup>, 0.3 W/cm<sup>2</sup>, 3 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $8 . 3 ~ \\mathrm { W / c m } ^ { 2 }$ , 16.3 W/cm<sup>2</sup>, 27 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } .$ , respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "In the experiment with different anesthesia levels, the maximum ultrasound pressure was 0.55 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 10.1 W/cm<sup>2</sup>. In the experiment with different ultrasound intensities, the ultrasound intensities were 0.05 MPa, 0.1 MPa, 0.3 MPa, 0.5 MPa, 0.7 MPa, 0.9 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 0.08 W/cm<sup>2</sup>, 0.3 W/cm<sup>2</sup>, 3 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $8 . 3 ~ \\mathrm { W / c m } ^ { 2 }$ , 16.3 W/cm<sup>2</sup>, 27 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } .$ , respectively.",
+   "safety_notes": "In our experiment, the maximum ultrasound intensity I is $2 7 ~ \\mathrm { W / c m ^ { 2 } }$ and pulse duration t is 0.4s. We can get that the temperature rise is ${ \\sim } 0 . 1 2 ^ { \\circ } \\mathrm { C }$ , which is lower than the damage threshold."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The 400 ms value is explicitly labelled 'stimulation duration' (SD, recorded as sonication_duration_s) in Methods, but the Discussion separately refers to '0.4s' as 'pulse duration' in a temperature calculation; duty cycle (50%) and PRF (1000 Hz) would imply an internal tone-burst of 0.5 ms, but this is not stated directly and is not computed here."
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Paper does not state whether pressures/intensities are free-field or in-situ; the visual cortex was directly exposed via craniotomy (no skull in the acoustic path), but this is not discussed by the authors as a domain distinction."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "List combines the single fixed pressure used in the anesthesia-level experiment (550 kPa) with the separate pressure sweep used in the ultrasound-intensity experiment (50-900 kPa); these are two different sub-experiments, not one continuous sweep."
+   },
+   {
+    "field": "device",
+    "reason": "No transducer manufacturer or model is given in the main text; setup is described as similar to a previous study by the same group."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

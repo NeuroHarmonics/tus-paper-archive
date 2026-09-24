@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025desai",
+ "doi": "10.1002/brb3.70318",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "Motor evoked potentials (MEP) from FDI, OP and ADM muscles; Nine-Hole Peg Test (NHPT) fine motor function",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Real tbTUS immediately followed by FES produced a transient decrease in FDI and OP MEP amplitudes at T45 (not present after sham), returning to baseline by T80; this uncorrected finding did not survive Bonferroni correction for multiple comparisons. No significant change in Nine-Hole Peg Test performance.",
+ "adverse_events": "none_observed",
+ "safety_notes": "All 15 participants completed both visits with no adverse events reported; one participant's MEP data were excluded from analysis due to background EMG activity (14 analysed).",
+ "exposures": [
+  {
+   "label": "tbTUS of left M1 (real vs sham) immediately followed by FES",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1), FDI hotspot"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "H246"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 11.73,
+    "ispta_w_cm2": 1.17
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.93,
+    "ispta_w_cm2": 0.29
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Real tbTUS consisted of an 80-s train of 20 ms ultrasound bursts repeated every 200 ms (400 bursts total) targeted at the TMS-defined FDI motor hotspot, immediately followed by 30 min of functional electrical stimulation (FES, 40 Hz, 300 microsecond pulse width) of the FDI and opponens pollicis during a pinch-grip pick-up task. Sham tbTUS used an identical protocol with the transducer flipped so the active face pointed away from the scalp."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fifteen healthy participants were recruited through advertisements at the University Health Network (UHN).",
+   "n_sessions_per_subject": "All study participants underwent two study visits consisting of real (active condition) or sham tbTUS (sham condition) of the left M1 immediately followed by 30 min of FES training for fine motor function of the right hand (Figure 1).",
+   "exposures[0].fundamental_frequency_khz": "tbTUS was delivered using a custom two-element annular array ultrasound transducer (H246; Sonic Concepts, Bothell, WA) with a fundamental frequency of 0.5 MHz, a diameter of 38 mm, and a thickness of 10 mm.",
+   "exposures[0].free_field.isppa_w_cm2": "The free water values for the depth of 30 mm were 11.73 W/cm<sup>2</sup> for spatial peak-pulse-average intensity (ISPPA) and 1.17 W/cm<sup>2</sup> for spatial peak-time average intensity (ISPTA).",
+   "exposures[0].free_field.ispta_w_cm2": "The free water values for the depth of 30 mm were 11.73 W/cm<sup>2</sup> for spatial peak-pulse-average intensity (ISPPA) and 1.17 W/cm<sup>2</sup> for spatial peak-time average intensity (ISPTA).",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimation of the ISPPA and ISPTA at the brain target (30 mm) were 2.93 and 0.29 W/cm<sup>2</sup>, respectively, based on a 75% attenuation due to skull density (Mueller et al. 2017; Fomenko et al. 2020).",
+   "exposures[0].in_situ.ispta_w_cm2": "The estimation of the ISPPA and ISPTA at the brain target (30 mm) were 2.93 and 0.29 W/cm<sup>2</sup>, respectively, based on a 75% attenuation due to skull density (Mueller et al. 2017; Fomenko et al. 2020).",
+   "exposures[0].timing.pulse_duration_ms": "The real tbTUS paradigm consisted of an 80-s train of\n\n20 ms ultrasound bursts, repeated every 200 ms (pulse repetition frequency [PRF] = 5 Hz, duty cycle = 10%, total number of bursts = 400) (Zeng et al. 2022; Samuel et al. 2022).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The real tbTUS paradigm consisted of an 80-s train of\n\n20 ms ultrasound bursts, repeated every 200 ms (pulse repetition frequency [PRF] = 5 Hz, duty cycle = 10%, total number of bursts = 400) (Zeng et al. 2022; Samuel et al. 2022).",
+   "exposures[0].timing.duty_cycle_pct": "The real tbTUS paradigm consisted of an 80-s train of\n\n20 ms ultrasound bursts, repeated every 200 ms (pulse repetition frequency [PRF] = 5 Hz, duty cycle = 10%, total number of bursts = 400) (Zeng et al. 2022; Samuel et al. 2022).",
+   "exposures[0].timing.sonication_duration_s": "The real tbTUS paradigm consisted of an 80-s train of\n\n20 ms ultrasound bursts, repeated every 200 ms (pulse repetition frequency [PRF] = 5 Hz, duty cycle = 10%, total number of bursts = 400) (Zeng et al. 2022; Samuel et al. 2022).",
+   "exposures[0].device.manufacturer": "tbTUS was delivered using a custom two-element annular array ultrasound transducer (H246; Sonic Concepts, Bothell, WA) with a fundamental frequency of 0.5 MHz, a diameter of 38 mm, and a thickness of 10 mm.",
+   "exposures[0].device.model": "tbTUS was delivered using a custom two-element annular array ultrasound transducer (H246; Sonic Concepts, Bothell, WA) with a fundamental frequency of 0.5 MHz, a diameter of 38 mm, and a thickness of 10 mm."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "15 participants enrolled and completed both visits with no adverse events, but MEP data were analysed for only 14 (one excluded for background EMG activity); enrolled n=15 recorded per instructions with this flag."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Section 2.1 separately states 'The power of real tbTUS was set at 20 W/cm2', which conflicts with the free-water ISPPA of 11.73 W/cm2 reported for the same 30 mm depth/parameters a few sentences earlier; domain and metric for the 20 W/cm2 figure are not specified, so recorded in unspecified_domain with this discrepancy flagged."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "The significant MEP decrease at T45 for real tbTUS+FES did not survive Bonferroni correction for multiple comparisons (p>0.01), so classified as mixed_or_unclear rather than a confirmed inhibitory effect."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

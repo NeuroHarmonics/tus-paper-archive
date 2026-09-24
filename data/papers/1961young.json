@@ -1,0 +1,157 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1961young",
+ "doi": "10.1001/archneur.1961.00450070085009",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "frog",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Compound action potentials of alpha, beta and gamma fibre groups recorded from the sciatic nerve",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Focused ultrasound reversibly or irreversibly blocked conduction in the sciatic nerve; smaller myelinated fibres (gamma, then beta) were blocked before larger alpha fibres, and repeated ultrasound produced cumulative, increasing depression of conduction.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Focused ultrasound irradiation of frog sciatic nerve",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1150,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     140,
+     1200
+    ],
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "The ultrasound (2.7 megacycles per sec.) was administered in pulses of 0.14-1.2 sec. duration, with a 2-3 sec. interval between pulses. In each experiment the flux of ultrasound (pulse width and train length) was increased gradually until a level was reached which would affect conduction of impulses; depending on the effect desired, a pulse width of 0.5-0.8 sec. and a train length of 1-20 pulses were usually employed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The ultrasound (2.7 megacycles per sec.) was administered in pulses of 0.14-1.2 sec. duration, with a 2-3 sec. interval between pulses.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound (2.7 megacycles per sec.) was administered in pulses of 0.14-1.2 sec. duration, with a 2-3 sec. interval between pulses.",
+   "n_subjects": "Effects similar to this were observed in experiments on 15 different nerves.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Before each experiment the output of the transducer was calibrated to yield an intensity of 1,150 watts per square centimeter at the focal region.\""
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper states only an undifferentiated 'intensity' (1,150 W/cm^2) calibrated at the focal region in saline; it does not specify spatial-peak pulse-average vs. temporal-average, and the nerve itself was covered in liquid petrolatum rather than saline during exposure, so the domain of this calibration value is uncertain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Only an inter-pulse interval (2-3 s) and train lengths (1-20 pulses) are given; no explicit repetition rate or duty cycle is stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

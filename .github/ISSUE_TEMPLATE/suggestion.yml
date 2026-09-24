@@ -1,0 +1,37 @@
+name: Suggestion
+description: Suggest a change to the archive, the site or the documentation
+title: "Suggestion: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for anything that is not a correction to a paper's record or a proposal for a new paper: a field that would be useful, a filter or view the site lacks, a vocabulary term, a change to the inclusion criteria, an error in the documentation, or a problem with the data files or scripts. For a wrong value use the Correction form; for a missing paper use the Propose a paper form.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Data fields or schema
+        - Site (search, filters, paper pages, charts)
+        - Inclusion criteria
+        - Vocabularies
+        - Documentation
+        - Scripts or pipeline
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: What you would change and why. Where it helps, give an example paper or query.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Links, references, or the analysis you were trying to do.
+    validations:
+      required: false

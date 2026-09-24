@@ -1,0 +1,280 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022balasubramanian",
+ "doi": "10.1109/tuffc.2022.3152427",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (SH-SY5Y neuroblastoma cell line)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer",
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Calcium imaging (Fluo-8 AM) for ion-channel/action-potential activation; Caspase-3 and Annexin V apoptosis staining; Calcein-Blue AM viability; DAPI nuclear staining and phalloidin (F-actin) staining quantified in ImageJ",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "GHz ultrasound stimulation activated calcium transients (ion-channel/action-potential activation) in SH-SY5Y neural cells; it also produced non-toxic morphological changes (more condensed/spherical nuclei, longer neurites and cell elongation) versus unstimulated controls.",
+ "adverse_events": null,
+ "safety_notes": "Viability assays (Caspase-3, Annexin V, Calcein-Blue AM, Fluo-8 AM) showed GHz ultrasound was nontoxic across 0-1.2 W/cm2, in contrast to a high-intensity (>5 W/cm2) kilohertz ultrasound positive control that did induce apoptotic/necrotic markers.",
+ "exposures": [
+  {
+   "label": "GHz (1.47 GHz) chip-scale ultrasound stimulation of SH-SY5Y neural cells (Devices A/B/C)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "SH-SY5Y human neural cells (differentiated) in culture"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Institute of Microelectronics (IME), A*STAR, Singapore",
+    "model": "chip-scale AlN thin-film piezoelectric GHz ultrasound transducer (Devices A, B and C)"
+   },
+   "fundamental_frequency_khz": 1470000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.05,
+     1.2
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     20,
+     30,
+     300
+    ],
+    "protocol_description": "GHz ultrasound was delivered as continuous-wave stimulation. For ion-channel/calcium-imaging experiments, 10 s of prestimulus data was followed by 20 s of continuous-wave GHz ultrasound (Devices A/B) or 30 s of electrical stimulation followed by 30 s of US+electrical costimulation (Device C), then poststimulus recording. For morphology (nuclear/F-actin) experiments, cells were exposed to US for 300 s (three independent trials per condition, >150 cells per category) and assessed 24 h later. For the viability dose-response, ultrasound was applied for 20 s and cells assayed 120 s after exposure across an intensity range of 0-1.2 W/cm2."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Kilohertz-ultrasound positive control (apoptosis/necrosis assay)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "SH-SY5Y human neural cells in culture"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "92-kHz resonance piezoelectric ceramic disk transducer, 22 mm"
+   },
+   "fundamental_frequency_khz": 92,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 300,
+    "protocol_description": "Used only as a high-intensity positive control for apoptosis/necrosis staining, applied for 300 s followed by 1 h incubation; intensity is stated only as an inequality ('>5 W/cm2 acts as a positive control'), not a specific value."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "These transducers use a thin-film aluminum nitride (AlN) deposition that allows for operating resonance range with a center bandwidth at 1.47 GHz.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Viability tests demonstratedthat the neurons retained structural integrity and viability across a wide range of GHz US stimulus intensities (0–1.2 W/cm<sup>2</sup>), validating that measurements occur at nontoxic doses of US.",
+   "exposures[0].timing.sonication_duration_s": "For Devices A and B, 20 s of continuous wave GHz ultrasonic stimulation was applied following the initial prestimulus.",
+   "exposures[1].fundamental_frequency_khz": "Caspase-3 and Annexin V staining was performed following 300 s of ultrasonic stimulus and 1 h of incubation with costimulatory GHz Device B, kilohertz resonance transducers at high intensity (92-kHz resonance, piezoelectric ceramic 22-mm disk) and a healthy control.",
+   "exposures[1].timing.sonication_duration_s": "Caspase-3 and Annexin V staining was performed following 300 s of ultrasonic stimulus and 1 h of incubation with costimulatory GHz Device B, kilohertz resonance transducers at high intensity (92-kHz resonance, piezoelectric ceramic 22-mm disk) and a healthy control.",
+   "exposures[0].device.manufacturer": "The authors would like to thank the Institute of Microelectronics in Singapore (IME Singapore A\\*STAR) for fabrication of chips in collaboration with SonicMEMS Members as a part of the Intelligence Advanced Research Projects Activity (I-ARPA) TIC Program; they would also like to thank Dr.",
+   "exposures[1].device.model": "Caspase-3 and Annexin V staining was performed following 300 s of ultrasonic stimulus and 1 h of incubation with costimulatory GHz Device B, kilohertz resonance transducers at high intensity (92-kHz resonance, piezoelectric ceramic 22-mm disk) and a healthy control."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Different assays report different independent-trial counts (e.g. 'three independent trials', 'n>50 cells per condition', 'over 150 cells per category') with no single stated total number of independent cultures/replicates; left not_reported."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Main US-free control cells were still interfaced with the (inactive) transducer for the same duration, matching inactive_transducer; a second negative control used off-resonance (300 MHz vs 1.47 GHz) drive voltage plus a pharmacological (gentamicin) channel blocker, which does not match a listed sham mechanism and is recorded as 'other'."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "0.05 W/cm2 is the intensity used for the main stimulation experiments and 0-1.2 W/cm2 is the range swept in the viability dose-response; both are reported as spatial-peak/'peak' intensity without a stated measurement domain (water bath vs. cell interface), so both are placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity for the kilohertz positive control is given only as an inequality ('>5 W/cm2'), not a specific value, so it is left not_reported."
+   },
+   {
+    "field": "exposures[1].timing.waveform",
+    "reason": "Waveform (continuous vs pulsed) of the 92-kHz positive-control transducer is not described in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "first",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.duty_cycle_pct": "second"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026yuanb",
+ "doi": "10.1109/tbme.2025.3612200",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Local field potential (LFP) peak amplitude via tungsten microelectrode recording; cytochrome oxidase histological staining to anatomically validate the C2 barrel column",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS pulses evoked local field potential responses in the C2 barrel column of primary somatosensory cortex that increased with acoustic pressure (mean amplitude rising from 16.2 uV at 0.8 MPa to 35.6 uV at 1.6 MPa; no detectable response at 0.4 MPa), and were spatially confined to the anatomically defined C2 barrel column (submillimeter resolution).",
+ "adverse_events": "not_reported",
+ "safety_notes": "Theoretical estimations indicated a maximum temperature rise of approximately 0.1-0.2 degC, far below the 1 degC safety threshold; Ispta (83 mW/cm^2) was well below the FDA diagnostic ultrasound limit (720 mW/cm^2) and MI (0.8) was below the FDA limit (MI<1.9) and below MI values previously reported not to cause neuroinflammation.",
+ "exposures": [
+  {
+   "label": "FUS mapping of C2 barrel column, primary somatosensory cortex (exposed dura, craniotomy)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "C2 whisker barrel (bbl) column, left primary somatosensory cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Siansonic, Inc.",
+    "model": "HIFU"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     400,
+     800,
+     1200,
+     1600
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.083
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "FUS was sequentially delivered to each of 25 spatial coordinates in a 5x5 scanning grid (0.2 mm step size) over the C2 barrel column, with 10 pulses per stimulation site; each site was stimulated twice and the response averaged. A preliminary multi-pressure experiment applied four pressure levels (0.4, 0.8, 1.2 and 1.6 MPa) in a randomized sequence at the same site, each repeated 10 times, before final parameters (1.6 MPa PNP, 1 ms pulse width, 1 Hz PRF, 10 pulses) were selected for the main mapping experiment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "All experimental procedures were approved by the Animal Care and Use Committee of Xi’an Jiaotong University (Protocol XJTUAE2024112, approved March 21, 2024) and followed the ARRIVE guidelines (PLoS Biol. 2010; 8(6): e1000412) [40]. Ten male Sprague-Dawley (SD) rats (8 weeks old, weighing 250–300 g) were obtained from the Institute of Medical Experimental Animals, Chinese Academy of Medical Sciences (24- 03-021-D-000010) [41]. They were housed in a temperaturecontrolled room $( 2 2 \\pm 2 ^ { \\circ } \\mathrm { C } )$ under a 12h light/dark cycle, with ad libitum access to food and water. Animals were acclimated to the laboratory environment for at least one week before surgery and were fasted overnight prior to anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "A 4.0 MHz FUS transducer (HIFU, Siansonic, Inc., Xi’an, China) was positioned vertically above the exposed dura mater. The animal’s head was adjusted using a stereotaxic head holder to orient the transducer perpendicular to the cortical surface (targeting the C2 bbl column), thereby ensuring optimal acoustic focusing.",
+   "exposures[0].unspecified_domain.pressure_kpa": "To preliminarily evaluate the capability of the system to discriminate neural responses under different FUS input pressures, we conducted a multi-pressure level experiment targeting the same cortical site (C2 bbl column center) in the same rat. Four pressure levels (0.4, 0.8, 1.2, and 1.6 MPa) were applied in a randomized sequence, with each level repeated 10 times. As shown in Fig. 4(a), the vertical black line at 0 ms indicates the onset ofultrasound stimulation. No detectable LFP response was observed at 0.4 MPa, whereas consistent evoked LFP signals were observed at pressures of 0.8 MPa and above. As illustrated in Fig. 4(b), the mean LFP amplitude increased from $1 6 . 2 \\pm$ 1.2 uV at 0.8 MPa to $2 1 . 7 \\pm 1 . 1$ uV at 1.2 MPa and $3 5 . 6 \\pm$ 0.8 uV at 1.6 MPa. A one-way ANOVA revealed a significant main effect of pressure on the response $( \\mathrm { F } ( 2 , 2 7 ) = 2 2 . 8 , p <$ 0.05), and Tukey’s post hoc test indicated significant differences between each pair of adjacent pressure levels $( p < 0 . 0 5 )$ . These findings demonstrate a clear pressure-dependent modulation trend and provide preliminary experimental evidence for the system’s ability to distinguish neural responses under different FUS input parameters.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Based on the above findings demonstrating pressuredependent modulation and the system’s discrimination capability, the FUS parameters were set to ensure brain tissue safety during stimulation, including a center frequency of 4 MHz, PNP of 1.6 MPa, pulse width of 1 ms, PRF of 1 Hz, and 10 pulses per stimulation site. Under these conditions, the spatial-peak temporal-average intensity (Ispta) was 83 mW/cm<sup>2</sup>, which is substantially below the FDA safety limit for diagnostic ultrasound (720 $\\mathrm { { m W } / \\mathrm { { c m } ^ { 2 } ) } }$ . Theoretical estimations indicated a maximum temperature rise of approximately $0 . 1 { - } 0 . 2 \\ ^ { \\circ } \\mathrm { C } .$ , far below the widely accepted safety threshold of 1 ◦C. The mechanical index (MI) was 0.8, well below the FDA upper limit for diagnostic ultrasound $( \\mathbf { M I } < 1 . 9 )$ . Regarding the potential neuroinflammatory risk, the mechanical index (MI) used in this study was 0.8, which is lower than values previously reported to induce no neuroinflammatory response. Specifically, Liu et al. reported no inflammation at $\\mathbf { M I } = 0 . 8 9$ using CD11b staining [45]; Zheng et al. observed no microglial activation at MI = 0.95 using IBA1/CD68 co-staining [46]; and Lin et al. found no glial activation or inflammation at $\\mathrm { M I } = 1 . 0$ using dual IBA1/GFAP labeling [47]. Collectively, these findings support the immunological safety of FUS stimulation at MI = 0.8.",
+   "exposures[0].timing.pulse_duration_ms": "Based on the above findings demonstrating pressuredependent modulation and the system’s discrimination capability, the FUS parameters were set to ensure brain tissue safety during stimulation, including a center frequency of 4 MHz, PNP of 1.6 MPa, pulse width of 1 ms, PRF of 1 Hz, and 10 pulses per stimulation site. Under these conditions, the spatial-peak temporal-average intensity (Ispta) was 83 mW/cm<sup>2</sup>, which is substantially below the FDA safety limit for diagnostic ultrasound (720 $\\mathrm { { m W } / \\mathrm { { c m } ^ { 2 } ) } }$ . Theoretical estimations indicated a maximum temperature rise of approximately $0 . 1 { - } 0 . 2 \\ ^ { \\circ } \\mathrm { C } .$ , far below the widely accepted safety threshold of 1 ◦C. The mechanical index (MI) was 0.8, well below the FDA upper limit for diagnostic ultrasound $( \\mathbf { M I } < 1 . 9 )$ . Regarding the potential neuroinflammatory risk, the mechanical index (MI) used in this study was 0.8, which is lower than values previously reported to induce no neuroinflammatory response. Specifically, Liu et al. reported no inflammation at $\\mathbf { M I } = 0 . 8 9$ using CD11b staining [45]; Zheng et al. observed no microglial activation at MI = 0.95 using IBA1/CD68 co-staining [46]; and Lin et al. found no glial activation or inflammation at $\\mathrm { M I } = 1 . 0$ using dual IBA1/GFAP labeling [47]. Collectively, these findings support the immunological safety of FUS stimulation at MI = 0.8.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Based on the above findings demonstrating pressuredependent modulation and the system’s discrimination capability, the FUS parameters were set to ensure brain tissue safety during stimulation, including a center frequency of 4 MHz, PNP of 1.6 MPa, pulse width of 1 ms, PRF of 1 Hz, and 10 pulses per stimulation site. Under these conditions, the spatial-peak temporal-average intensity (Ispta) was 83 mW/cm<sup>2</sup>, which is substantially below the FDA safety limit for diagnostic ultrasound (720 $\\mathrm { { m W } / \\mathrm { { c m } ^ { 2 } ) } }$ . Theoretical estimations indicated a maximum temperature rise of approximately $0 . 1 { - } 0 . 2 \\ ^ { \\circ } \\mathrm { C } .$ , far below the widely accepted safety threshold of 1 ◦C. The mechanical index (MI) was 0.8, well below the FDA upper limit for diagnostic ultrasound $( \\mathbf { M I } < 1 . 9 )$ . Regarding the potential neuroinflammatory risk, the mechanical index (MI) used in this study was 0.8, which is lower than values previously reported to induce no neuroinflammatory response. Specifically, Liu et al. reported no inflammation at $\\mathbf { M I } = 0 . 8 9$ using CD11b staining [45]; Zheng et al. observed no microglial activation at MI = 0.95 using IBA1/CD68 co-staining [46]; and Lin et al. found no glial activation or inflammation at $\\mathrm { M I } = 1 . 0$ using dual IBA1/GFAP labeling [47]. Collectively, these findings support the immunological safety of FUS stimulation at MI = 0.8.",
+   "exposures[0].device.manufacturer": "A 4.0 MHz FUS transducer (HIFU, Siansonic, Inc., Xi’an, China) was positioned vertically above the exposed dura mater."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressures (0.4-1.6 MPa PNP) are stated without specifying whether they are free-field (water-tank calibrated) or in-situ values; the transducer was aimed directly at the exposed dura through a craniotomy (no skull in the path), but the paper does not explicitly label the delivered PNP by domain, so it is recorded as unspecified_domain."
+   },
+   {
+    "field": "device.family",
+    "reason": "The transducer manufacturer (Siansonic, Inc.) is a named commercial maker not covered by the specific vocabulary entries; classified as commercial_other."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Only pulse count (10 pulses per site) and PRF (1 Hz) are given; total sonication duration per site is not explicitly stated and was not computed."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomization refers to the order of the four pressure levels tested in the single-rat pilot experiment ('applied in a randomized sequence'), not group allocation across the 10-rat cohort."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible"
+  }
+ }
+}

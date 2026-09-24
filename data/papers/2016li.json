@@ -1,0 +1,345 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016li",
+ "doi": "10.1038/srep24738",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "EMG signals from tail muscles; video-recorded tail-flick/motion responses; hematoxylin-eosin (HE) staining of brain slices for safety",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Both 1 MHz and 5 MHz ultrasound evoked EMG-recorded tail-flick motor responses; peak EMG amplitude increased with acoustic intensity, and 5 MHz produced a smaller, more anatomically specific activation region with shorter response latency than 1 MHz.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Peak brain temperature elevation was 0.2°C for 1 MHz (300 ms stimulus) and 1.6°C for 5 MHz (300 ms stimulus), decreasing to 0.8°C for 5 MHz at 150 ms; HE staining showed no morphological damage, bleeding, or necrosis versus control mice.",
+ "exposures": [
+  {
+   "label": "1 MHz ultrasound stimulation of mouse brain (tail-flick evoking site)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "3.5 mm lateral to the midline and 7.5 mm posterior to the rear corner of mouse eyes"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V314-1 MHz"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.13,
+     0.23
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "All parameters were kept consistent between frequencies (50% duty cycle of pulse, 1 ms pulse period, 1 kHz pulse repetition frequency, 300 pulses per stimulus, and 3 second interval); for 1 MHz, cycles-per-pulse (CPP) was set to 500 to give a 0.5 ms pulse duration. Acoustic intensity was varied over six Ispta values from 130 to 230 mW/cm2, delivered for a stimulation duration of one minute per intensity/site; nine stimulation sites 0.3 mm apart were tested per mouse for the anatomical-specificity comparison."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "5 MHz ultrasound stimulation of mouse brain (tail-flick evoking site)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "3.5 mm lateral to the midline and 7.5 mm posterior to the rear corner of mouse eyes"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V308-5 MHz"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.13,
+     0.23
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Same block structure as the 1 MHz condition (50% duty cycle, 1 ms pulse period, 1 kHz PRF, 300 pulses per stimulus, 3 s interval); for 5 MHz, CPP was set to 2500 to give the same 0.5 ms pulse duration, with driving amplitude increased to compensate for the ~4.2 dB skull attenuation at 5 MHz. Acoustic intensity was varied over six Ispta values from 130 to 230 mW/cm2, one minute per intensity/site; for the safety/HE-stain cohort, 5 MHz was also delivered continuously for 30 minutes."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "10 male C57BL/6 mice, 8–10 weeks old, 21 g (+/−15%) in body weight were used.",
+   "exposures[0].target.label": "One of the most sensitive stimulation sites locates around 3.5 mm lateral to the midline and 7.5 mm posterior to the rear corner of mouse eyes.",
+   "exposures[1].target.label": "One of the most sensitive stimulation sites locates around 3.5 mm lateral to the midline and 7.5 mm posterior to the rear corner of mouse eyes.",
+   "exposures[0].device.model": "An ultrasound transducer (V314-1 MHz or V308-5 MHz, 0.75 in., F = 1.5 in., Olympus NDT, Waltham, MA, USA), a needle hydrophone (SN2010, 0.5 mm probe, Precision acoustics, Dorchester, UK), and a mouse skull were sunk into a tank which was filled with degassed water.",
+   "exposures[1].device.model": "An ultrasound transducer (V314-1 MHz or V308-5 MHz, 0.75 in., F = 1.5 in., Olympus NDT, Waltham, MA, USA), a needle hydrophone (SN2010, 0.5 mm probe, Precision acoustics, Dorchester, UK), and a mouse skull were sunk into a tank which was filled with degassed water.",
+   "exposures[0].fundamental_frequency_khz": "1MHz and 5MHz ultrasound stimulation were evaluated in the same group of mice.",
+   "exposures[1].fundamental_frequency_khz": "1MHz and 5MHz ultrasound stimulation were evaluated in the same group of mice.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The compensated acoustic intensities range from 130 mW/cm2 to 230 mW/cm2.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "The compensated acoustic intensities range from 130 mW/cm2 to 230 mW/cm2.",
+   "exposures[0].timing.pulse_duration_ms": "For 1 MHz and 5 MHz ultrasound, CPPs were set to 500 and 2500, respectively, to satisfy the demand of 50% duty cycle, i.e. 0.5 ms pulse duration.",
+   "exposures[1].timing.pulse_duration_ms": "For 1 MHz and 5 MHz ultrasound, CPPs were set to 500 and 2500, respectively, to satisfy the demand of 50% duty cycle, i.e. 0.5 ms pulse duration.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "all other parameters were kept consistent (50% duty cycle of pulse, 1 ms pulse period, 1 kHz pulse repetition frequency, 300 pulses per stimulus, and 3 second interval).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "all other parameters were kept consistent (50% duty cycle of pulse, 1 ms pulse period, 1 kHz pulse repetition frequency, 300 pulses per stimulus, and 3 second interval).",
+   "exposures[0].timing.duty_cycle_pct": "all other parameters were kept consistent (50% duty cycle of pulse, 1 ms pulse period, 1 kHz pulse repetition frequency, 300 pulses per stimulus, and 3 second interval).",
+   "exposures[1].timing.duty_cycle_pct": "all other parameters were kept consistent (50% duty cycle of pulse, 1 ms pulse period, 1 kHz pulse repetition frequency, 300 pulses per stimulus, and 3 second interval).",
+   "exposures[0].timing.sonication_duration_s": "The peak value of temperature elevation is 0.2 °C induced by 1 MHz ultrasound with 300 ms stimulus duration.",
+   "exposures[1].timing.sonication_duration_s": "The peak temperature elevation for 5 MHz ultrasound with the same duration is 1.6 °C, which is higher than the value induced by low frequency ultrasound.",
+   "adverse_events": "1 MHz and 5 MHz ultrasound did not induce obvious morphological changes in the stimuli regions, as compared with the control mice. In addition, there is no obvious tissue bleeding or cell necrosis in the tissue stimulated by ultrasound.",
+   "exposures[0].device.manufacturer": "An ultrasound transducer (V314-1 MHz or V308-5 MHz, 0.75 in., F = 1.5 in., Olympus NDT, Waltham, MA, USA), a needle hydrophone (SN2010, 0.5 mm probe, Precision acoustics, Dorchester, UK), and a mouse skull were sunk into a tank which was filled with degassed water.",
+   "exposures[1].device.manufacturer": "An ultrasound transducer (V314-1 MHz or V308-5 MHz, 0.75 in., F = 1.5 in., Olympus NDT, Waltham, MA, USA), a needle hydrophone (SN2010, 0.5 mm probe, Precision acoustics, Dorchester, UK), and a mouse skull were sunk into a tank which was filled with degassed water."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports several different n values across analyses (n=5, n=6, n=10, n=20 for HE stain safety group); n_subjects taken from the main Animal preparation paragraph."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper never names the stimulated brain region anatomically; it is identified only by stereotaxic coordinates and by the tail-flick motor response it evokes."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper does not state whether these Ispta values are free-field or in-brain; they are described only as 'compensated' to offset skull attenuation, so domain is ambiguous and placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Same ambiguity as exposures[0]; both frequencies were driven to the same compensated intensity level."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "300 ms stimulus duration is taken from the temperature-safety section (same protocol); the main neuromodulation Methods describe the train as '300 pulses per stimulus' at 1 kHz PRF without directly stating its length in ms, so this reuses the safety-section figure for the same protocol."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "Same as exposures[0]; 5 MHz was also tested at a shorter 150 ms duration for thermal safety, noted in protocol_description."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[1].in_situ.ispta_w_cm2": "both_defensible",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

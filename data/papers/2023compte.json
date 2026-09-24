@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023compte",
+ "doi": "10.1101/2023.08.08.552410",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 24 rats were randomly distributed into the different experimental groups (N=6 animals per experimental group, as follows: N=6/24 EV:UT, N=6/24 EV:tFUS, N=6/24 TYR:UT, N=6/24 TYR:tFUS).",
+   "n_sessions_per_subject": "In all experimental groups, MRI-guided tFUS/sham treatments were performed once a week for 3 consecutive weeks.",
+   "exposures[0].fundamental_frequency_khz": "A tFUS trajectory was then planned thanks to these sequences using the Thermoguide software (IGT, Pessac, FRANCE) and tFUS were sent thanks to a 20 mm curvature radius 7-elements 1, 5 MHz transducer (Imasonic, Voray sur l’Ognon, France).",
+   "exposures[0].free_field.pressure_kpa": "The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1,05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to $\\mathrm { I } _ { \\mathrm { s p t a } } { = 1 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } }$",
+   "exposures[0].free_field.ispta_w_cm2": "The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1,05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to $\\mathrm { I } _ { \\mathrm { s p t a } } { = 1 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } }$",
+   "exposures[0].timing.pulse_duration_ms": "The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1,05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to $\\mathrm { I } _ { \\mathrm { s p t a } } { = 1 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } }$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1,05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to $\\mathrm { I } _ { \\mathrm { s p t a } } { = 1 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } }$",
+   "exposures[0].timing.sonication_duration_s": "The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1,05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to $\\mathrm { I } _ { \\mathrm { s p t a } } { = 1 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } }$",
+   "exposures[0].device.manufacturer": "A tFUS trajectory was then planned thanks to these sequences using the Thermoguide software (IGT, Pessac, FRANCE) and tFUS were sent thanks to a 20 mm curvature radius 7-elements 1, 5 MHz transducer (Imasonic, Voray sur l’Ognon, France)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF was not stated directly; converted from the stated inter-pulse period ('a duration of 3 ms every 97 ms') to ~10.3 Hz, a unit conversion rather than an inference."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper contrasts 'tFUS' vs 'sham' treatment groups but never describes what the sham procedure physically involved (transducer powered off, blocked, aimed away, etc.)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only the two constituent tFUS-treated group sizes (EV:tFUS n=6, TYR:tFUS n=6) are stated; the paper never states a combined total, so both group sizes are listed rather than summed."
+   },
+   {
+    "field": "blinding",
+    "reason": "Blinding is stated only for outcome assessors ('investigator blinded to the experimental groups') during behavioural/histological quantification; no statement is made about blinding of the individuals administering tFUS/sham treatment."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Cylinder test for contralateral forepaw use; stereological cell counts of TH-positive SN neurons; optical densitometry of intracellular/extracellular neuromelanin; immunohistochemistry for TH, Iba-1, CD68, GFAP and p62",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This study assessed disease-modifying/neuroprotective effects (reduced intracellular/extracellular neuromelanin, attenuated nigrostriatal degeneration, improved contralateral forepaw use) rather than acute excitatory or inhibitory neuromodulation; no measure of neural excitability was reported.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No inflammatory traces were observed in the SN of tFUS-treated non-melanized (AAV-EV) control animals, indicating tFUS per se did not induce brain inflammation; thermal simulations for the parameters used estimated a maximum thermal rise of 0.12°C.",
+ "exposures": [
+  {
+   "label": "tFUS to the substantia nigra (SN) in neuromelanin-producing parkinsonian rats",
+   "target": {
+    "terms": [
+     "substantia_nigra"
+    ],
+    "label": "SN (substantia nigra), ipsilateral to AAV-TYR injection"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic (transducer); Image Guided Therapy (IGT), Pessac, France (Thermoguide guidance system)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": 1050,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 1.1
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 10.31,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "MRI-guided tFUS/sham treatments were performed once a week for 3 consecutive weeks, targeting the SN ipsilateral to AAV injections. The power of the tFUS ultrasound beam was initially set at 5% corresponding to a Peak Negative Pressure of 1.05 MPa in water according to the calibration, with a duration of 3 ms every 97 ms for 600 repetitions (10 minutes), corresponding to Ispta=1.1 W/cm2. Behavioural/histological effects were assessed at 4 months post-AAV injection, ~2.5 months after the last tFUS application."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3.093
+   }
+  }
+ ]
+}

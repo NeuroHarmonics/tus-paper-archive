@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017kim",
+ "doi": "10.1038/s41598-017-13572-0",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "optical intrinsic signal imaging (OISI) of cortical HbO/RHb hemodynamics; laser speckle imaging (LSI) of cerebral blood flow (separate sub-experiment, n=3 mice)",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "All three tUS paradigms (differing only in PRF/pulse duration at matched Isppa/Ispta) increased HbO and decreased RHb relative to sham, indicating activation; peak HbO amplitude was significantly larger with higher PRF (shorter pulses).",
+ "adverse_events": "not_reported",
+ "safety_notes": "The sonication parameters were selected to be below FDA diagnostic-ultrasound limits (Ispta 720 mW/cm2, Isppa 190 W/cm2, MI 1.9) and the peak negative pressure of 0.53 MPa used was described as far below the threshold for thermal or cavitation-related brain tissue damage.",
+ "exposures": [
+  {
+   "label": "tUS of mouse cortex at three PRF/pulse-duration paradigms (matched Isppa/Ispta)",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "mouse cortex, directed towards the bregma to provide a full image of the cortical brain"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Corp.",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 425,
+   "free_field": {
+    "pressure_kpa": 530,
+    "isppa_w_cm2": 1.84,
+    "ispta_w_cm2": 0.129
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.188,
+     0.094,
+     0.047
+    ],
+    "pulse_repetition_frequency_hz": [
+     375,
+     750,
+     1500
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "The ultrasound delivered was a 425 kHz pulse-modulated signal containing 10 pulse trains given over a period of 5 seconds for each trial. Every stimulus is a pulse train lasting 200 ms with M pulses given at a rate determined by the pulse repetition frequency (PRF), with each pulse having N cycles (Table 1: PRF 375/750/1500 Hz, N cycles 80/40/20, M pulses 75/150/300). Each trial image acquisition lasts for a total of 17 s including 5 s of stimulation containing ten ultrasound pulse trains with a repetition rate of 2 Hz; the interval between the beginning of each trial was fixed to 1 minute. The experiment on awake animals consisted of 100 randomly shuffled trials (25 per paradigm, including sham)."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of twelve female BALB/c mice weighing 17–20 g (9–10 weeks old) were used for the experiments $( \\mathrm { n } = 7 ,$ awake; ${ \\mathfrak { n } } = 2 ,$ , anaesthetized; ${ \\mathfrak { n } } = 3 ,$ laser speckle imaging).",
+   "n_sessions_per_subject": "All animals received four diferent stimulation conditions, including sham, within a single image acquisition experiment.",
+   "exposures[0].fundamental_frequency_khz": "The tUS was achieved using a focused acoustic beam from a single element ultrasound transducer (V301-SU, Olympus Corp., Japan) operating at 425 kHz as fundamental frequency, having a low acoustic attenuation through the skull.",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td rowspan=1 colspan=1>#</td><td rowspan=1 colspan=1>Centralfrequency (kHz)</td><td rowspan=1 colspan=1>Pulse RepetitionFrequenċy (Hz)</td><td rowspan=1 colspan=1>N cycles</td><td rowspan=1 colspan=1>M pulses</td><td rowspan=1 colspan=1>ISPPA (W/cm²)</td><td rowspan=1 colspan=1>ISPTA (mW/cm²)</td><td rowspan=1 colspan=1>NegativePressure (MPa)</td><td rowspan=1 colspan=1>MechanicalIndex</td></tr><tr><td rowspan=3 colspan=1>123</td><td rowspan=3 colspan=1>425kHz</td><td rowspan=1 colspan=1>375</td><td rowspan=1 colspan=1>80</td><td rowspan=1 colspan=1>75</td><td rowspan=3 colspan=1>1.84</td><td rowspan=3 colspan=1>129</td><td rowspan=3 colspan=1>0.53</td><td rowspan=3 colspan=1>0.81</td></tr><tr><td rowspan=1 colspan=1>750</td><td rowspan=1 colspan=1>40</td><td rowspan=1 colspan=1>150</td></tr><tr><td rowspan=1 colspan=1>1500</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>300</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=1 colspan=1>#</td><td rowspan=1 colspan=1>Centralfrequency (kHz)</td><td rowspan=1 colspan=1>Pulse RepetitionFrequenċy (Hz)</td><td rowspan=1 colspan=1>N cycles</td><td rowspan=1 colspan=1>M pulses</td><td rowspan=1 colspan=1>ISPPA (W/cm²)</td><td rowspan=1 colspan=1>ISPTA (mW/cm²)</td><td rowspan=1 colspan=1>NegativePressure (MPa)</td><td rowspan=1 colspan=1>MechanicalIndex</td></tr><tr><td rowspan=3 colspan=1>123</td><td rowspan=3 colspan=1>425kHz</td><td rowspan=1 colspan=1>375</td><td rowspan=1 colspan=1>80</td><td rowspan=1 colspan=1>75</td><td rowspan=3 colspan=1>1.84</td><td rowspan=3 colspan=1>129</td><td rowspan=3 colspan=1>0.53</td><td rowspan=3 colspan=1>0.81</td></tr><tr><td rowspan=1 colspan=1>750</td><td rowspan=1 colspan=1>40</td><td rowspan=1 colspan=1>150</td></tr><tr><td rowspan=1 colspan=1>1500</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>300</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound delivered was a 425 kHz pulse-modulated signal containing 10 pulse trains given over a period of 5 seconds for each trial. Every stimulus is a pulse train lasting 200 ms with M pulses given at a rate determined by the pulse repetition frequency (PRF), with each pulse having N cycles.",
+   "exposures[0].device.manufacturer": "The tUS was achieved using a focused acoustic beam from a single element ultrasound transducer (V301-SU, Olympus Corp., Japan) operating at 425 kHz as fundamental frequency, having a low acoustic attenuation through the skull.",
+   "exposures[0].device.model": "The tUS was achieved using a focused acoustic beam from a single element ultrasound transducer (V301-SU, Olympus Corp., Japan) operating at 425 kHz as fundamental frequency, having a low acoustic attenuation through the skull.",
+   "exposures[0].free_field.pressure_kpa": "Furthermore, the maximum peak negative pressure of 0.53 MPa used in the study is far below the threshold for thermal efects or cavitation related brain tissue damage",
+   "exposures[0].free_field.isppa_w_cm2": "The stimulation paradigms were selected in a way to keep the same spatial peak pulse average $( \\mathrm { I } _ { \\mathrm { S P P A } } { = } \\dot { 1 } . 8 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ as well as spatial peak time average intensity $\\dot { ( \\mathrm { I } _ { \\mathrm { S P T A } } = 1 2 9 \\mathrm { m W } / \\mathrm { c m } ^ { \\dot { 2 } } ) }$ but with diferent pulse durations and repetition rates.",
+   "exposures[0].free_field.ispta_w_cm2": "The stimulation paradigms were selected in a way to keep the same spatial peak pulse average $( \\mathrm { I } _ { \\mathrm { S P P A } } { = } \\dot { 1 } . 8 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ as well as spatial peak time average intensity $\\dot { ( \\mathrm { I } _ { \\mathrm { S P T A } } = 1 2 9 \\mathrm { m W } / \\mathrm { c m } ^ { \\dot { 2 } } ) }$ but with diferent pulse durations and repetition rates."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated directly in ms; computed from N cycles ÷ fundamental frequency (Table 1: N=80/40/20 cycles at 425 kHz), per the sanctioned cycles-per-pulse conversion."
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "The paper does not state whether the reported Isppa/Ispta/pressure values were measured in water (free field) or in situ; classified as unspecified domain."
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "The protocol nests short pulses (intra-train PRF 375/750/1500 Hz) within 200 ms trains that repeat 10 times over 5 s at a 2 Hz train-repetition rate; the schema's single PRF/duty-cycle fields cannot represent both levels. pulse_duration_ms and pulse_repetition_frequency_hz refer to the intra-train pulsing; sonication_duration_s is set to the 200 ms train length per the paper's own definition of a pulse train."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation described is of trial order/paradigm sequence within a single-arm, within-subject design (100 randomly shuffled trials), not allocation to separate treatment groups."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

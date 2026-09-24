@@ -1,0 +1,295 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025xiao",
+ "doi": "10.1016/j.ultrasmedbio.2025.06.009",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  5,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Ex-vivo fluorescence imaging (Azure Sapphire) of IRDye800-1kDa tracer distribution in brain sections to quantify glymphatic influx; physiological monitoring (heart rate, respiratory rate, oxygen level, perfusion, body/pad temperature) via PhysioSuite",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "FUS significantly enhanced glymphatic tracer transport across all isoflurane anesthesia levels (main effect of FUS, p=7.70x10^-7); anesthesia depth independently affected transport (p=7.45x10^-11) but did not interact significantly with FUS treatment (p=0.106), indicating the FUS effect was independent of anesthetic depth. This is a fluid-transport outcome, not a measure of neuronal excitation/inhibition.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No statistically significant differences in pad/rectal temperature, oxygen level, heart rate, or perfusion were observed during sonication across anesthesia sub-groups in Ultrasound vs Control groups; a decrease in respiratory rate was observed under FUS at heavy (3%) anesthesia, though this could not be solely attributed to ultrasound.",
+ "exposures": [
+  {
+   "label": "Brain-wide grid-pattern FUS for glymphatic transport enhancement",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "entire brain (non-targeted, brain-wide grid-pattern sonication)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Image Guided Therapy",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 200,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 7.7,
+    "sonication_duration_s": 840,
+    "protocol_description": "A 650 kHz spherically focused transducer was swept across the entire rat brain in a grid pattern (six 3 mm x 14 mm sub-loops, START (0,0) to STOP (18,14)), with each loop taking ~27.12 s plus a 50 ms pause, for a total of 30 loops per rat. Sham procedures used the identical trajectory with zero input power. Rats were under 1.5%, 2%, or 3% isoflurane anesthesia during sonication, beginning 10 min after intrathecal tracer injection."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "In-vivo calibration: focal vascular barrier opening validation",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "focal targeted brain region used to validate transducer targeting/coupling (region not further specified)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Image Guided Therapy",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 350,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 60,
+    "protocol_description": "To confirm the ultrasound field's in-vivo targeting/coupling, a vascular barrier opening assay was performed with an established ultrasound pulse (650 kHz, 1 PRF, 1 min, 0.35 MPa) combined with an ultrasound contrast agent (Optison), in 5 rats designated for calibration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Healthy male Sprague Dawley rats were obtained from Charles River and used after acclimation for 3 d. A total of 35 rats were used in this study. Among them, <sup>fi</sup>ve rats were speci<sup>fi</sup>cally designated for in-vivo calibration involving vascular barrier opening, while the remaining 30 rats were utilized for ultrasonic glymphatic manipulation.",
+   "sham_type": "For sham procedures, the identical positioning and trajectory were employed, but the input power to the ultrasound transducer was zero.",
+   "adverse_events": "Among these parameters, such as pad temperature regulating body heat within the 36 −37°C range, rectal temperature, oxygen levels, heart rate, and perfusion, no statistically signi<sup>fi</sup>cant differences were observed during sonication across various anesthetic sub-groups in both Ultrasound and Control groups, as depicted in Figure 3A.",
+   "exposures[0].fundamental_frequency_khz": "Methods: FUS (650 kHz, 0.2 MPa, duty cycle 7.7%, brain-wide for 10 min) was applied to rats under anesthesia levels ranging from 1.5% to 3.0%. A model tracer, 1 kDa-IRDye800 was used to assess glymphatic influx in exvivo brain.",
+   "exposures[0].in_situ.pressure_kpa": "In brief, our technique employed 650kHz ultrasound frequency, 0.2 MPa in situ pressure, and a 7.7% local duty cycle applied throughout the brain for 10 min [20].",
+   "exposures[0].timing.duty_cycle_pct": "So, ultrasound, at an in-situ pressure of 0.2 MPa with a duty cycle of around 7.7%, was applied transcranially across the entirety of the brain for 14 min.",
+   "exposures[0].timing.sonication_duration_s": "So, ultrasound, at an in-situ pressure of 0.2 MPa with a duty cycle of around 7.7%, was applied transcranially across the entirety of the brain for 14 min.",
+   "exposures[1].fundamental_frequency_khz": "To confirm the ultrasound field’s behavior in in-vivo conditions, we implemented the vascular barrier opening assay using an established ultrasound pulse (650 kHz, 1PRF, 1 min, 0.35 MPa), in combination with an ultrasound contrast agent (Optison − GE HealthCare, Chicago, IL, USA), as illustrated in Supplementary Figure 1.",
+   "exposures[1].unspecified_domain.pressure_kpa": "To confirm the ultrasound field’s behavior in in-vivo conditions, we implemented the vascular barrier opening assay using an established ultrasound pulse (650 kHz, 1PRF, 1 min, 0.35 MPa), in combination with an ultrasound contrast agent (Optison − GE HealthCare, Chicago, IL, USA), as illustrated in Supplementary Figure 1.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "To confirm the ultrasound field’s behavior in in-vivo conditions, we implemented the vascular barrier opening assay using an established ultrasound pulse (650 kHz, 1PRF, 1 min, 0.35 MPa), in combination with an ultrasound contrast agent (Optison − GE HealthCare, Chicago, IL, USA), as illustrated in Supplementary Figure 1.",
+   "exposures[1].timing.sonication_duration_s": "To confirm the ultrasound field’s behavior in in-vivo conditions, we implemented the vascular barrier opening assay using an established ultrasound pulse (650 kHz, 1PRF, 1 min, 0.35 MPa), in combination with an ultrasound contrast agent (Optison − GE HealthCare, Chicago, IL, USA), as illustrated in Supplementary Figure 1.",
+   "exposures[0].device.manufacturer": "Brie fl y, the ultrasound system included a 650 kHz spherically focused single-element transducer, a generator that incorporated the degassing system, a passive cavitation detector, a 3D-positioning system, and a water tank (Image Guided Therapy- in Pessac, France).",
+   "exposures[1].device.manufacturer": "Brie fl y, the ultrasound system included a 650 kHz spherically focused single-element transducer, a generator that incorporated the degassing system, a passive cavitation detector, a 3D-positioning system, and a water tank (Image Guided Therapy- in Pessac, France).",
+   "n_sessions_per_subject": "Following a 10-min interval from the cisternal injection, the Ultrasound group underwent a 10-min exposure to 650 kHz ultrasound at a pressure of 0.2 MPa, covering the entire brain region."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Abstract/results state the ultrasound exposure lasted 10 min, but the methods describe the grid-sweep trajectory (30 loops) taking approximately 14 min to complete; both durations are recorded as a list due to this text-text discrepancy."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "The 0.2 MPa in-situ pressure is based on an assumed 30% pressure insertion loss for skull attenuation rather than a direct measurement through skull in this cohort; classified as derating."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Represents the four groups (3 anesthesia-level glymphatic FUS+ groups of n=5 each, plus n=5 calibration animals) that received active ultrasound; paper gives only group sizes (Table 1), not an overall total exposed to ultrasound."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "Text states '1PRF' for the calibration pulse; interpreted as PRF = 1 Hz, but this notation is ambiguous."
+   },
+   {
+    "field": "exposures[1].target",
+    "reason": "The specific brain region targeted for the vascular-barrier-opening calibration assay is not explicitly named in the text (only 'targeted brain regions')."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

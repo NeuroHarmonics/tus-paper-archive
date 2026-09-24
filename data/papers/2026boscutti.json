@@ -1,0 +1,335 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026boscutti",
+ "doi": "10.64898/2026.06.16.732762",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  14,
+  5,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "functional ultrasound imaging (fUSI) / power Doppler cerebral blood volume (CBV) imaging",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU stimulation of the SC produced only putatively inhibitory responses (reductions in DeltaCBV/CBV) that grew with pressure and depended on PRF/DC protocol; BEACUN-optimized LIFU stimulation of the DLG suppressed visual-evoked fUSI responses (signal reduction).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "superior colliculus (SC) fUSI-LIFU parameter mapping and live BEACUN optimization",
+   "target": {
+    "terms": [
+     "superior_colliculus"
+    ],
+    "label": "superior colliculus (SC)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Vermon, France",
+    "model": "linear array, 15-MHz centre frequency, 128 elements, 0.1-mm pitch (driven by a Verasonics Vantage NXT 256-channel research scanner)"
+   },
+   "fundamental_frequency_khz": 15000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     0,
+     2200
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     100,
+     100,
+     100,
+     10,
+     2
+    ],
+    "duty_cycle_pct": [
+     10,
+     5,
+     1,
+     1,
+     1
+    ],
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Repeated stimulation sessions tested 5 PRF-DC combinations (100 Hz/10%, 100 Hz/5%, 100 Hz/1%, 10 Hz/1%, 2 Hz/1%); pressure was varied in 6 steps between 0 and 2.2 MPa within each session. Each 110-s trial comprised a 20-s baseline, a 30-s period of interleaved fUSI/LIFU stimuli (during which a 500-ms LIFU pulse train alternated between two laterally-displaced foci, followed by a 750-ms delay before the next fUSI frame), and a 60-s post-stimulation period. Individual LIFU pulse duration was capped at 5 ms to prevent transducer overheating. In separate live BEACUN validation experiments (N=5 additional rats), pressure, PRF and DC were treated as continuous parameters and pressure was limited to 1.6 MPa."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "dorsal lateral geniculate (DLG) nucleus, live BEACUN optimization with concurrent visual stimulation",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "dorsal lateral geniculate (DLG) nucleus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Vermon, France",
+    "model": "linear array, 15-MHz centre frequency, 128 elements, 0.1-mm pitch (driven by a Verasonics Vantage NXT 256-channel research scanner)"
+   },
+   "fundamental_frequency_khz": 15000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 95.81,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Live BEACUN optimization (N=5 rats) searched continuous PRF/DC/pressure parameters to suppress visual-evoked fUSI responses at the DLG target; pressure was limited to 1 MPa (max allowed). At the optimum found across sessions, PRF was 95.81 +/- 9.38 Hz, duty cycle was 10%, and pressure was 1 MPa (the maximum allowed)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.0437
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "LIFU target position in all the experimental sessions registered to the rat brain atlas $( N = 4 8$ sessions in 14 rats). The thick blue contour indicates the SC. We carried out BEACUN optimization sessions in N = 5 rats, and in all sessions BEACUN was able to suppress visual-evoked responses measured by fUSI at the DLG target (Figure 5d-f, Supplementary Figure 7, Supplementary Videos 2- 3).",
+   "randomised": "The order of the trials with the different LIFU protocols was shuffled within individual sessions, and the order of the protocols was shuffled at the animal level to control for order and carry-over effects.",
+   "exposures[0].fundamental_frequency_khz": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch).",
+   "exposures[1].fundamental_frequency_khz": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch).",
+   "exposures[0].in_situ.pressure_kpa": "To map the parameter space of the fUSI-LIFU stimulation in the SC target, we used repeated stimulation sessions during which we tested the following protocols defined as combinations of PRF and DC: 1) 100 Hz, 10%; 2) 100 Hz, 5%; 3) 100 Hz, 1%; 4) 10 Hz, 1%; 5) 2 Hz, 1%. In each session, we fixed the PRF and DC and varied the pressure in six steps between 0 and 2.2 MPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To map the parameter space of the fUSI-LIFU stimulation in the SC target, we used repeated stimulation sessions during which we tested the following protocols defined as combinations of PRF and DC: 1) 100 Hz, 10%; 2) 100 Hz, 5%; 3) 100 Hz, 1%; 4) 10 Hz, 1%; 5) 2 Hz, 1%. In each session, we fixed the PRF and DC and varied the pressure in six steps between 0 and 2.2 MPa.",
+   "exposures[0].timing.duty_cycle_pct": "To map the parameter space of the fUSI-LIFU stimulation in the SC target, we used repeated stimulation sessions during which we tested the following protocols defined as combinations of PRF and DC: 1) 100 Hz, 10%; 2) 100 Hz, 5%; 3) 100 Hz, 1%; 4) 10 Hz, 1%; 5) 2 Hz, 1%. In each session, we fixed the PRF and DC and varied the pressure in six steps between 0 and 2.2 MPa.",
+   "exposures[0].timing.sonication_duration_s": "During the 30-s stimulation period, a 500-ms LIFU pulse train was delivered (alternatively between the two foci), followed by a 750-ms delay before the next fUSI acquisition to minimize interference between the two modalities.",
+   "exposures[1].in_situ.pressure_kpa": "At the optimum, the PRF was $9 5 . 8 1 \\pm 9 . 3 8$ Hz, the DC was 10%, and the pressure was 1 $\\mathsf { M P a }$ (max pressure allowed in these experiments).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "At the optimum, the PRF was $9 5 . 8 1 \\pm 9 . 3 8$ Hz, the DC was 10%, and the pressure was 1 $\\mathsf { M P a }$ (max pressure allowed in these experiments).",
+   "exposures[1].timing.duty_cycle_pct": "At the optimum, the PRF was $9 5 . 8 1 \\pm 9 . 3 8$ Hz, the DC was 10%, and the pressure was 1 $\\mathsf { M P a }$ (max pressure allowed in these experiments).",
+   "exposures[1].timing.sonication_duration_s": "During the 30-s stimulation period, a 500-ms LIFU pulse train was delivered (alternatively between the two foci), followed by a 750-ms delay before the next fUSI acquisition to minimize interference between the two modalities.",
+   "exposures[0].device.manufacturer": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch).",
+   "exposures[0].device.model": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch).",
+   "exposures[1].device.manufacturer": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch).",
+   "exposures[1].device.model": "We implemented the fUSI-LIFU sequence on a Vantage NXT 256-channel research scanner (Verasonics Inc., Kirkland, WA, USA) connected to a linear array transducer (Vermon, France; 15-MHz center frequency; 128 elements; 0.1-mm pitch)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports separate rat counts for the SC ground-truth parameter mapping (N=14, 48 sessions), the live SC BEACUN validation (N=5), and the live DLG BEACUN experiments (N=5); overlap between these cohorts is not stated, so counts are listed rather than summed."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia status is stated explicitly only for the DLG visual-stimulation sessions ('anesthetized rats were habituated in a dark chamber'); it is not stated for the SC fUSI-LIFU sessions."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation refers to shuffling of stimulus/pressure/protocol order within and across sessions, not allocation to a control/treatment group (there is no control group in this methods/optimization paper)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Individual LIFU pulse duration is stated only as an upper limit (5 ms, to avoid transducer overheating), not as a value for each PRF/DC combination tested; per-condition pulse duration would require dividing duty cycle by PRF (arithmetic not performed)."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "The 1 MPa value for the DLG live BEACUN experiment is the maximum pressure allowed (a search-space bound) and also the pressure found at the optimum; it is not an independently reported free-standing exposure pressure."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Sonication is delivered as two interleaved 500-ms LIFU pulse trains (alternating foci) with 750-ms gaps within the 30-s stimulation window; the 30 s value refers to this whole interleaved window, not one uninterrupted train."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second",
+   "exposures[1].timing.sonication_duration_s": "second"
+  }
+ }
+}

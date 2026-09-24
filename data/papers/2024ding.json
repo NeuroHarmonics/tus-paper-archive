@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024ding",
+ "doi": "10.1523/jneurosci.2438-23.2024",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Motor-evoked potential (MEP) amplitude, resting motor threshold, SICI, LICI, ICF, SICF peak/trough via single- and paired-pulse TMS",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tbTUS alone increased MEP amplitude (LTP-like facilitation) for 30-60 min; priming with cTBS150 (metaplasticity condition) prolonged this facilitation to 90 min, while cTBS150 delivered after tbTUS (depotentiation) abolished the facilitation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tbTUS to left M1 (hand motor hotspot)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1) hand motor hotspot (FDI representation)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H246 (custom two-element annular array)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.69,
+    "ispta_w_cm2": 0.17
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "The tbTUS paradigm consisted of an 80 s train of pulses with a pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms delivered every 200 ms (5 Hz), and duty cycle of 10%, for a total number of 400 pulses. Sham tbTUS delivered the same theta burst pattern, but the transducer was flipped so that the active face of the transducer was directed away from the head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Subjects and experimental design. We studied 15 right-handed healthy human subjects (nine females and six males; age range, 18–46; mean age ± SD, 26.73 ± 6.97). None of the participants had a history of neurological or psychiatric disorders and were not taking medications that afect brain excitability. Each participant underwent a neurological examination by a neurologist. All subjects participated in four study visits: (1) sham cTBS150→real tbTUS (tbTUS only), (2) real cTBS150→sham tbTUS (cTBS only), (3) real cTBS150→real tbTUS (metaplasticity), (4) real tbTUS→real cTBS150 (depotentiation) in randomized order at least 5 d apart (Fig. 1). TMS and TUS stimulations were delivered 1–2 min apart. The study was approved by the University Health Network Research Ethics Board. The subjects provided written informed consent, and the experimental procedures were performed in accordance with the Declaration of Helsinki.",
+   "n_sessions_per_subject": "Subjects and experimental design. We studied 15 right-handed healthy human subjects (nine females and six males; age range, 18–46; mean age ± SD, 26.73 ± 6.97). None of the participants had a history of neurological or psychiatric disorders and were not taking medications that afect brain excitability. Each participant underwent a neurological examination by a neurologist. All subjects participated in four study visits: (1) sham cTBS150→real tbTUS (tbTUS only), (2) real cTBS150→sham tbTUS (cTBS only), (3) real cTBS150→real tbTUS (metaplasticity), (4) real tbTUS→real cTBS150 (depotentiation) in randomized order at least 5 d apart (Fig. 1). TMS and TUS stimulations were delivered 1–2 min apart. The study was approved by the University Health Network Research Ethics Board. The subjects provided written informed consent, and the experimental procedures were performed in accordance with the Declaration of Helsinki.",
+   "exposures[0].fundamental_frequency_khz": "Single and paired TMS was applied using a 70 mm figure-of-eight coil connected to four Magstim 200<sup>2</sup> stimulators via a “four-to-one” connection box (Magstim). rTMS was delivered using an active or a sham aircooled 70 mm figure-of-eight coil connected to the Magstim Super Rapid<sup>2</sup> stimulator which produced biphasic pulses. All pulses were triggered using Signal 4.07 software (Cambridge Electronic Design). Ultrasound stimulation was delivered using a custom two-element annular array ultrasound transducer (H246, Sonic Concepts) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm. A programmable radiofrequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts) delivered the required power to the transducer via a 50 Ω impedance matching module. The power of ultrasound was set as 20 W. The sonication depth was set as 30 mm according to a model of the scalp–cortex distance to the hand motor area (Stokes et al., 2005). The same transducer and settings were used in our previous studies (Samuel et al., 2022; Zeng et al., 2022; Shamli Oghli et al., 2023).",
+   "exposures[0].in_situ.isppa_w_cm2": "The acoustic pressure field of the tbTUS ultrasound waveform was modeled using BabelBrain (Pichardo, 2023) with an average skull template (Fig. 2). Based on modeling in BabelBrain, the spatial peak–pulse average intensity $\\left( \\mathrm { I } _ { \\mathrm { S P P A } } \\right)$ at the target was 1.69 W/cm<sup>2</sup>, and the spatial peak–time average intensity $\\left( \\mathrm { I } _ { \\mathrm { S P T A } } \\right)$ was 0.17 W/cm<sup>2</sup>; both were well below the United States Food and Drug Administration (FDA) safety standards. The estimated mechanical index was 0.3, and the temperature rise was 0.6°C at the skull and 0°C at the target focus.",
+   "exposures[0].in_situ.ispta_w_cm2": "The acoustic pressure field of the tbTUS ultrasound waveform was modeled using BabelBrain (Pichardo, 2023) with an average skull template (Fig. 2). Based on modeling in BabelBrain, the spatial peak–pulse average intensity $\\left( \\mathrm { I } _ { \\mathrm { S P P A } } \\right)$ at the target was 1.69 W/cm<sup>2</sup>, and the spatial peak–time average intensity $\\left( \\mathrm { I } _ { \\mathrm { S P T A } } \\right)$ was 0.17 W/cm<sup>2</sup>; both were well below the United States Food and Drug Administration (FDA) safety standards. The estimated mechanical index was 0.3, and the temperature rise was 0.6°C at the skull and 0°C at the target focus.",
+   "exposures[0].timing.pulse_duration_ms": "Theta burst transcranial ultrasound stimulation. The tbTUS paradigm consisted of an 80 s train of pulses with a pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms delivered every 200 ms (5 Hz), and duty cycle of 10%, for a total number of 400 pulses (Samuel et al.,",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Theta burst transcranial ultrasound stimulation. The tbTUS paradigm consisted of an 80 s train of pulses with a pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms delivered every 200 ms (5 Hz), and duty cycle of 10%, for a total number of 400 pulses (Samuel et al.,",
+   "exposures[0].timing.duty_cycle_pct": "Theta burst transcranial ultrasound stimulation. The tbTUS paradigm consisted of an 80 s train of pulses with a pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms delivered every 200 ms (5 Hz), and duty cycle of 10%, for a total number of 400 pulses (Samuel et al.,",
+   "exposures[0].timing.sonication_duration_s": "Theta burst transcranial ultrasound stimulation. The tbTUS paradigm consisted of an 80 s train of pulses with a pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms delivered every 200 ms (5 Hz), and duty cycle of 10%, for a total number of 400 pulses (Samuel et al.,",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered using a custom two-element annular array ultrasound transducer (H246, Sonic Concepts) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm.",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered using a custom two-element annular array ultrasound transducer (H246, Sonic Concepts) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm."
+  },
+  "flags": [
+   {
+    "field": "blinding",
+    "reason": "Paper states experimenters were not blinded (limitation), while participants received sham via flipped transducer; classified as single-blind."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "No systematic adverse-event assessment reported; only subjective post-session questioning about sensations described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

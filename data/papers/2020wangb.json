@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020wangb",
+ "doi": "10.1109/tbme.2019.2912840",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 19,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Tail motor response (movement) monitored during TUS",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Relative power of theta band decreased while relative power of gamma and high-gamma bands increased with increasing Isppa and stimulation duration; LFP entropy decreased with increasing Isppa and SD; no significant effect of duty cycle was found.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermal modelling estimated a maximum temperature increase of ~4.8x10^-3 degrees C at the highest intensity and longest duration used, considered far below the threshold for thermal bioeffects.",
+ "exposures": [
+  {
+   "label": "TUS of mouse motor cortex, sweep of intensity/duration/duty cycle",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.2,
+     0.4,
+     0.8,
+     1.1
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "sonication_duration_s": [
+     0.1,
+     0.2,
+     0.3,
+     0.4
+    ],
+    "protocol_description": "The FF and PRF of the ultrasound were 500 and 1 kHz, respectively. Other combinations of the ultrasound parameters Isppa, SD, and DC are displayed in Table I. The other ultrasonic parameters remained unchanged so that we could quantitatively analyze the changes in parameters of LFP with a single ultrasonic parameter. TUS group (19 mice): The mice in the TUS group were used to analyze the effects of TUS of different parameters on neural oscillations."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "TUS group (19 mice): The mice in the TUS group were used to analyze the effects of TUS of different parameters on neural oscillations.",
+   "exposures[0].fundamental_frequency_khz": "The FF and PRF of the ultrasound were 500 and 1 kHz, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<table><tr><td> $\\overline { { \\mathrm { I } _ { \\mathrm { s p p a } } ( \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) } }$  SD=400ms DC=40%</td><td>SD(ms)  $\\mathrm { { I _ { s p p a } } = 1 . 1 W / c m ^ { 2 } }$  DC=40%</td><td>DC(%)  $\\mathrm { \\Delta I _ { s p p a } = 1 . 1 W / c m ^ { 2 } }$  SD=400ms</td></tr><tr><td>1.1</td><td>100</td><td>10</td></tr><tr><td>0.8</td><td>200</td><td>20</td></tr><tr><td>0.4</td><td>300</td><td>30</td></tr><tr><td>0.2</td><td>400</td><td>40</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FF and PRF of the ultrasound were 500 and 1 kHz, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td> $\\overline { { \\mathrm { I } _ { \\mathrm { s p p a } } ( \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) } }$  SD=400ms DC=40%</td><td>SD(ms)  $\\mathrm { { I _ { s p p a } } = 1 . 1 W / c m ^ { 2 } }$  DC=40%</td><td>DC(%)  $\\mathrm { \\Delta I _ { s p p a } = 1 . 1 W / c m ^ { 2 } }$  SD=400ms</td></tr><tr><td>1.1</td><td>100</td><td>10</td></tr><tr><td>0.8</td><td>200</td><td>20</td></tr><tr><td>0.4</td><td>300</td><td>30</td></tr><tr><td>0.2</td><td>400</td><td>40</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "<table><tr><td> $\\overline { { \\mathrm { I } _ { \\mathrm { s p p a } } ( \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) } }$  SD=400ms DC=40%</td><td>SD(ms)  $\\mathrm { { I _ { s p p a } } = 1 . 1 W / c m ^ { 2 } }$  DC=40%</td><td>DC(%)  $\\mathrm { \\Delta I _ { s p p a } = 1 . 1 W / c m ^ { 2 } }$  SD=400ms</td></tr><tr><td>1.1</td><td>100</td><td>10</td></tr><tr><td>0.8</td><td>200</td><td>20</td></tr><tr><td>0.4</td><td>300</td><td>30</td></tr><tr><td>0.2</td><td>400</td><td>40</td></tr></table>",
+   "exposures[0].device.manufacturer": "The pulsed signal from the second generator was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU, Olympus, USA).",
+   "exposures[0].device.model": "The pulsed signal from the second generator was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU, Olympus, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "33 mice were used in total (19 TUS, 5 sham, 9 dead-animal control for electrode-vibration noise); n_subjects reports only the active TUS group since sham/control did not receive brain-penetrating stimulation intended to modulate neural activity."
+   },
+   {
+    "field": "exposures[0].sham_type",
+    "reason": "Sham group received real ultrasound output but with the collimator oriented parallel to the skull so the wave would not penetrate into brain tissue; classified as inactive_transducer (aimed away) but mechanism differs from a powered-off transducer."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Field distribution (kPa) was measured 'under the skull' by hydrophone (ex vivo skull), but the paper does not explicitly state whether the reported Isppa sweep values are free-field or in-situ/through-skull; domain left unspecified."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible"
+  }
+ }
+}

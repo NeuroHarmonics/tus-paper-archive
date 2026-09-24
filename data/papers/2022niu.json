@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022niu",
+ "doi": "10.1016/j.brs.2022.01.015",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  5,
+  6
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "field excitatory postsynaptic potentials (fEPSP) via extracellular electrodes in dentate gyrus; hematoxylin & eosin histology for tissue-damage assessment",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "tFUS at PRFs of 3-10 kHz induced sustained long-term depression (LTD) of fEPSP slope in the dentate gyrus, averaging ~19.6% depression and lasting 20-60 min; no LTP was observed, and depression magnitude did not differ significantly across PRFs tested.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Hematoxylin and eosin stains gathered immediately after stimulation in the hippocampus show no evidence of neuronal damage, local hemorrhage or inflammatory response at the stimulation site.",
+ "exposures": [
+  {
+   "label": "tFUS to dentate gyrus (mPP-DG pathway)",
+   "target": {
+    "terms": [
+     "dentate_gyrus"
+    ],
+    "label": "dentate gyrus (medial perforant path to DG pathway)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Scientific Solutions Americas",
+    "model": "V301-SU-F1.5INPTF"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.61,
+    "ispta_w_cm2": 0.975
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 99,
+    "isppa_w_cm2": 0.425,
+    "ispta_w_cm2": 0.255
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.167,
+    "pulse_repetition_frequency_hz": [
+     3000,
+     10000
+    ],
+    "duty_cycle_pct": 25,
+    "sonication_duration_s": 300,
+    "protocol_description": "Pulsed tFUS was delivered for a total of 5 min at each of 5 PRFs between 3 and 10 kHz. Pulses at the chosen PRF were delivered at 50% duty cycle (DC_PRF); groups of these pulses were further gated by a 50 Hz 'encoding frequency' with its own 50% duty cycle (10 ms on / 10 ms rest), giving an overall duty cycle of 25%. For example, at PRF 3000 Hz each pulse comprised 83 cycles of the 500 kHz carrier, described as an 'approximate pulse duration of 167 ms' (likely microseconds). fEPSP was recorded 10 min before and for 30-60 min after stimulation; sham used the same protocol delivered to the anterior contralateral skull, away from the hippocampus."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Single-element focused transducers were used for tFUS stimulation with ultrasound fundamental frequency 0.5 MHz, element diameter of 25.4 mm and nominal focal distance of 38 mm (V301- SU-F1.5INPTF Olympus Scientific Solutions Americas, Inc., USA). Transducers are focused ultrasound transducers with a concave surface. tFUS stimulation is delivered at the dentate gyrus through the rat skull. Transducer interfaces with the skull via a collimator filled with ultrasound coupling gel, with a tip diameter of 5 mm. Pulsed tFUS stimulation was delivered for 5 min at various PRFs.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Under both isoflurane (Fig. 4) and ketamine-xylazine anesthesia (Fig. S2), LTD was observed after tFUS stimulation was applied with PRF of 3e10 kHz.",
+   "exposures[0].timing.duty_cycle_pct": "The overall duty cycle of the stimulation, including $\\mathsf { D C } _ { \\mathrm { P R F } }$ and $\\sf D C _ { \\mathrm { f r e q } }$ <sub>encoding</sub>, is 25%.",
+   "exposures[0].timing.sonication_duration_s": "We applied pulsed tFUS stimulation with total duration of 5 min, with 5 levels of pulse repetition frequencies each administered at 50 Hz sonication frequency at the mPP.",
+   "exposures[0].in_situ.pressure_kpa": "Hydrophone measured spatial-peak temporal-peak intensity (I<sub>SPTP</sub>) after transmission through skull is 846 $\\mathsf { m w } / \\mathsf { c m } ^ { 2 }$ (spatial-peak pulse-average intensity I : 425 mW/cm<sup>2</sup>, spatial-peak temporalaverage I : 255 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at PRF 3000 Hz) with the spatial-peak pressure amplitude of99 kPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "Hydrophone measured spatial-peak temporal-peak intensity (I<sub>SPTP</sub>) after transmission through skull is 846 $\\mathsf { m w } / \\mathsf { c m } ^ { 2 }$ (spatial-peak pulse-average intensity I : 425 mW/cm<sup>2</sup>, spatial-peak temporalaverage I : 255 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at PRF 3000 Hz) with the spatial-peak pressure amplitude of99 kPa.",
+   "exposures[0].in_situ.ispta_w_cm2": "Hydrophone measured spatial-peak temporal-peak intensity (I<sub>SPTP</sub>) after transmission through skull is 846 $\\mathsf { m w } / \\mathsf { c m } ^ { 2 }$ (spatial-peak pulse-average intensity I : 425 mW/cm<sup>2</sup>, spatial-peak temporalaverage I : 255 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at PRF 3000 Hz) with the spatial-peak pressure amplitude of99 kPa.",
+   "exposures[0].free_field.isppa_w_cm2": "The I is 1.61 W/cm<sup>2</sup>, and the I is 975 mW/cm<sup>2</sup> at a PRF of 3000 Hz.",
+   "exposures[0].free_field.ispta_w_cm2": "The I is 1.61 W/cm<sup>2</sup>, and the I is 975 mW/cm<sup>2</sup> at a PRF of 3000 Hz.",
+   "n_subjects": "In N 16 adult wildtype rats, we observed sustained depression of fEPSP slope after 5 min of tFUS focused at the presynaptic field mPP.",
+   "exposures[0].device.manufacturer": "Single-element focused transducers were used for tFUS stimulation with ultrasound fundamental frequency 0.5 MHz, element diameter of 25.4 mm and nominal focal distance of 38 mm (V301- SU-F1.5INPTF Olympus Scientific Solutions Americas, Inc., USA).",
+   "n_sessions_per_subject": "For each animal, one to two sham conditions, and five to six tFUS conditions were applied.",
+   "exposures[0].timing.pulse_duration_ms": "For example, for PRF 3000 Hz, each pulse consists of 83 cycles of the 500 kHz fundamental frequency, with an approximate pulse duration of167 ms at $5 0 \\% \\mathrm { D C } _ { \\mathrm { P R F } } .$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states a range (3-10 kHz) for '5 different tFUS PRFs tested' but does not list all 5 exact values in the main text (only 3, 4, and 10 kHz are named in specific comparisons); range endpoints recorded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Stimulation has a nested burst structure (individual PRF pulses at 50% duty cycle, further grouped into 10-ms-on/10-ms-off blocks at a 50 Hz 'encoding frequency'); the paper gives an example pulse duration of '167 ms' for PRF 3000 Hz, which appears to be a units typo for microseconds (83 cycles at 500 kHz = ~166 us, not ms). Left not_reported and described in protocol_description per the burst rule."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Value is stated only in a figure legend (Fig. 1E-F caption), not the main narrative text."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Value is stated only in a figure legend (Fig. 1E-F caption), not the main narrative text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states 'For each animal, one to two sham conditions, and five to six tFUS conditions were applied', a range rather than a fixed number of sessions per subject."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].free_field.ispta_w_cm2": "first",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

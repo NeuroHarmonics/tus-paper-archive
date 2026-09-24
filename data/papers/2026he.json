@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026he",
+ "doi": "10.1002/advs.202515991",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 39,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Two-photon calcium imaging (GCaMP6s) of V1 neurons through a cranial glass window; auditory brainstem response (ABR) testing used to confirm surgical deafening",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Ultrasound directly and pressure-dependently activated a sparse population of ultrasound-sensitive neurons (UNs; up to 1.144% of neurons at 450 kPa) in V1 of deafened mice, independent of audition. When combined with visual stimulation, ultrasound bidirectionally modulated visual-sensitive neurons (VNs): one VN subgroup was inhibited by ultrasound (VNs2, p<0.0001) while another was excited (VNs3, p<0.0001), and a third was unaffected (VNs1).",
+ "adverse_events": "not_reported",
+ "safety_notes": "Calculated mechanical index (MI = 0.45) at the maximum negative pressure of 450 kPa (1 MHz) was below the FDA limit of 1.9; ISPPA (6.75 W/cm2) and ISPTA (55.33 mW/cm2) at this pressure were well below FDA safety thresholds (190 W/cm2 and 720 mW/cm2 respectively); simulated focal temperature rise after 0.25 s of continuous ultrasound action at 450 kPa was approximately 0.055 degrees C.",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of primary visual cortex (V1) through cranial glass window",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual cortex (V1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom annular ultrasound transducer integrated with 2-photon objective lens"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     69,
+     178,
+     315,
+     450
+    ],
+    "isppa_w_cm2": 6.75,
+    "ispta_w_cm2": 0.05533
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": [
+     2.5,
+     10,
+     50,
+     250,
+     500,
+     1000,
+     2000
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Smoothed ultrasonic pulses (sine-windowed to minimise auditory artifacts) were delivered through a cranial glass window to V1. At PRF 10 Hz: pulse duration (PD) 50 ms, pulse repetition interval (PRI) 100 ms, ramp duration (RD) 25 ms, stimulation duration (SD) 0.5 s (5 pulses), stimulation interval (SI) 30 s; each trial comprised 10 ultrasound stimulations (first discarded, 9 analysed). Pressure was varied (0, 69, 178, 315, 450 kPa) at fixed PRF 10 Hz; PRF was separately varied (2.5-2000 Hz) at a fixed pressure of 315 kPa to test auditory confound across cell types."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty-nine male C57BL/6 mice (8 weeks old, weight: 20–25 g) were used in the study.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound system was operated at a center frequency of 1 MHz, with PRFs of 10 Hz and ultrasound pressures of 0, 69, 178, 315, and 450 kPa.",
+   "exposures[0].timing.pulse_duration_ms": "As shown in Figure 1C, when the PRF is 10 Hz, the pulse duration (PD) is 50 ms, the pulse repetition interval (PRI) is 100 ms, the ramp duration (RD) is 25 ms, the ultrasonic stimulation duration (SD) is 0.5 s, including 5 ultrasonic pulses, and the ultrasonic stimulation interval (SI) is 30 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "These comprehensive results indicate that across all tested PRFs (2.5, 10, 50, 250, 500, 1000, and 2000 Hz), auditory confound did not cause significant changes in",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound duty cycle used in this study was 50%, the stimulation time was $_ { 0 . 5 \\mathrm { ~ s ~ } }$ (the actual ultrasound action time was 0.25 s), and the maximum negative ultrasound pressure was 450 kPa.",
+   "exposures[0].timing.sonication_duration_s": "As shown in Figure 1C, when the PRF is 10 Hz, the pulse duration (PD) is 50 ms, the pulse repetition interval (PRI) is 100 ms, the ramp duration (RD) is 25 ms, the ultrasonic stimulation duration (SD) is 0.5 s, including 5 ultrasonic pulses, and the ultrasonic stimulation interval (SI) is 30 s.",
+   "exposures[0].in_situ.pressure_kpa": "We then applied ultrasound to V1 at pressures of0, 69, 178, 315, and 450 kPa (1 MHz ofcenter frequency, 50 ms ofPD, 10 Hz ofPRF, 30 s SI, 500 ms SD).",
+   "exposures[0].in_situ.isppa_w_cm2": "With a maximum negative ultrasound pressure of 450 kPa, the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was $6 . 7 5 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ which is well below the FDA limit of 190 W/cm<sup>2</sup> [45]; the spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ is 55.33 mW/cm<sup>2</sup> under the employed protocol (0.5-s pulsed sonication at 50% duty cycle, repeated every 30.5 s), which is well below the FDA safety threshold of 720 mW/cm<sup>2</sup> [45].",
+   "exposures[0].in_situ.ispta_w_cm2": "With a maximum negative ultrasound pressure of 450 kPa, the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was $6 . 7 5 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ which is well below the FDA limit of 190 W/cm<sup>2</sup> [45]; the spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ is 55.33 mW/cm<sup>2</sup> under the employed protocol (0.5-s pulsed sonication at 50% duty cycle, repeated every 30.5 s), which is well below the FDA safety threshold of 720 mW/cm<sup>2</sup> [45].",
+   "auditory_control": "By performing large-scale 2PCI in the V1 of surgically deafened mice, we eliminated the auditory confound at its source.",
+   "direction_notes": "We found that UNs and VNs are two basically non-overlapping neuronal subpopulations, but ultrasound stimulation of V1 can inhibit or excite VNs. This shows that ultrasound-activated UNs can excite or inhibit VNs, and UNs may regulate VNs’ encoding of visual information.",
+   "safety_notes": "In this study, the maximum negative pressure of ultrasound was 0.45 MPa, the central frequency was 1 MHz, and the calculated MI was 0.45, which is lower than the U.S. Food and Drug Administration (FDA) regulation that MI should not exceed 1.9 [45]. With a maximum negative ultrasound pressure of 450 kPa, the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was $6 . 7 5 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ which is well below the FDA limit of 190 W/cm<sup>2</sup> [45]; the spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ is 55.33 mW/cm<sup>2</sup> under the employed protocol (0.5-s pulsed sonication at 50% duty cycle, repeated every 30.5 s), which is well below the FDA safety threshold of 720 mW/cm<sup>2</sup> [45]."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Pressures were measured via hydrophone through a glass cranial window (using ex vivo mouse skull plus glass) rather than in free water alone; classified as in_situ (measurement) since this represents the field reaching the neurons, though the paper does not use the term 'in situ' itself."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "ISPPA (6.75 W/cm2) is only explicitly reported for the maximum 450 kPa condition, not for the other tested pressures (69, 178, 315 kPa)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "The main pressure-sweep experiments used a fixed PRF of 10 Hz; a separate experiment swept PRF (2.5-2000 Hz) at a fixed pressure of 315 kPa. Both parameter sweeps are combined into one exposure per the one-exposure-per-target-and-frequency rule, recorded as a list."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper describes 10 ultrasound stimulation trials per recording session but does not state whether individual mice underwent one or multiple separate imaging sessions/days across the various sub-experiments (pressure sweep, PRF sweep, hearing vs deaf comparisons)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "39 mice total were used across viral injection/glass window/deafening procedures; individual sub-experiments report smaller overlapping cohort sizes in figure legends (e.g. n=7, n=8 mice per group) that could not be reliably summed without double-counting."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia (ketamine/xylazine) was used for surgical procedures (viral injection, glass window, deafening), but the paper does not explicitly state whether mice were awake or anaesthetised during the 2PCI/ultrasound stimulation sessions themselves."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

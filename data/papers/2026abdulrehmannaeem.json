@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026abdulrehmannaeem",
+ "doi": "10.61919/pfm2z844",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "mild neurocognitive disorder",
+ "n_subjects": 38,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "behaviour"
+ ],
+ "readout_other": "Hopkins Verbal Learning Test-Revised delayed recall; Trail Making Test Part B completion time; resting-state fMRI seed-based fronto-hippocampal functional connectivity; visual analogue scale for post-session discomfort",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Active ultrasound produced greater improvement than sham in delayed verbal recall (persisting at 2 months), faster Trail Making Test Part B completion, and increased fronto-hippocampal resting-state functional connectivity.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events were reported; two participants in the active group withdrew due to headache and one sham participant withdrew due to procedural anxiety. Post-session discomfort (VAS) did not differ significantly between groups.",
+ "exposures": [
+  {
+   "label": "Single session of low-intensity focused ultrasound to right inferior frontal gyrus/dorsolateral prefrontal cortex",
+   "target": {
+    "terms": [
+     "inferior_frontal_gyrus",
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "right inferior frontal gyrus and the adjacent dorsolateral prefrontal cortex"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.8,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Participants received a single 20-minute session of low-intensity focused ultrasound aimed at the right inferior frontal gyrus and adjacent dorsolateral prefrontal cortex, with the transducer positioned using individual MRI-based neuronavigation and held in place for the whole session. The sham group underwent an identical procedure except that the transducer did not deliver any ultrasound output."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "pulse_duration_implied_ms": 3.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "They split these people into two groups with 38 people in each group.",
+   "n_sessions_per_subject": "People in the group got a twenty minute session of low intensity focused ultrasound.",
+   "randomised": "They used a computer to assign people to one of two groups.",
+   "blinding": "The people in the study and the ones who checked the results did not know which group they were in.",
+   "sham_type": "The sham group did not actually get any ultrasound.",
+   "auditory_control": "People in the group went through the same procedure. The machine was placed in the spot on their brain. Everything else was the same how long it lasted where the machine was the sounds it made and what they saw..",
+   "readout_other": "The primary outcome was episodic memory one week after stimulation, assessed using the delayed-recall component of the Hopkins Verbal Learning Test–Revised.",
+   "adverse_events": "However two people in the group stopped because they got headaches and one person in the sham group stopped because they were too nervous, about the procedure.",
+   "safety_notes": "No one had any problems.",
+   "exposures[0].target.label": "This was aimed at the inferior frontal gyrus and the area next to it called the dorsolateral prefrontal cortex.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound was given at a frequency of 500 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "It was also given in pulses that repeated one hundred times per second.",
+   "exposures[0].timing.duty_cycle_pct": "The machine was on for thirty percent of the time.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The intensity of the ultrasound was point eight watts per centimeter.",
+   "exposures[0].timing.sonication_duration_s": "People in the group got a twenty minute session of low intensity focused ultrasound.",
+   "exposures[0].timing.protocol_description": "The sham group did not actually get any ultrasound."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "76 participants were randomized (38 per arm) but only 68 completed all assessments (33 active/35 sham); enrolled count for the active-ultrasound arm (38) is reported here per the enrolled-vs-analysed rule."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Text states only 'the intensity of the ultrasound was point eight watts per centimeter' without specifying Isppa vs Ispta or free-field vs in-situ domain, and the unit is stated incompletely (missing '-squared')."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The '20-minute session' is described as the overall treatment session length; it is not explicit whether this is one continuous sonication train or contains internal breaks beyond the stated pulsing (100 Hz PRF, 30% duty cycle)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated directly; could be inferred from duty cycle (30%) and PRF (100 Hz) as 3 ms but per instructions this is not computed/recorded from arithmetic."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper says exposure to sound and other procedural elements were standardized across groups ('what they heard') but does not describe a specific masking-sound or other defined auditory-control mechanism."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No device manufacturer or model is given anywhere in the manuscript; limitations section explicitly states 'the ultrasound system...were not fully described.'"
+   },
+   {
+    "field": "overall",
+    "reason": "This manuscript is written in unusually simplified, imprecise language throughout (e.g. 'point eight watts per centimeter') and its own discussion/limitations section states the ultrasound system, calibration, coordinates, and sham details were not fully described; numbers were extracted as stated but should be treated with caution."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

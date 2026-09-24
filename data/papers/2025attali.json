@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025attali",
+ "doi": "10.1016/j.brs.2025.04.018",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 25,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "MADRS; 17- and 6-item HDRS; QIDS-SR; neuropsychological battery (D2 test of attention, trail making test, category fluency task, Grober & Buschke test, WAIS-IV digit span, Stroop test); resting-state fMRI functional connectivity of the left SCC; T1/FLAIR/T2* MRI for safety",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "A low duty cycle protocol associated with inhibitory stimulation was chosen to inhibit the hyperactive SCC in depression; depression severity decreased over the treatment course, and exploratory fMRI showed altered SCC connectivity with left DLPFC (increased) and right hippocampus/parahippocampus (decreased).",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events occurred; mild transient unintended effects (sleepiness, anxiety/nervousness, tinnitus, fatigue, tingling, burning/heat, euphoria, transducer pressure) were reported after a minority of sessions and resolved within days.",
+ "exposures": [
+  {
+   "label": "mTUS to left subcallosal cingulate (SCC)",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "left subcallosal cingulate (SCC), at the crossing of the forceps minor, cingulum bundle and uncinate fasciculus"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic (transducer); Image Guided Therapy (driving electronics)",
+    "model": "Serial Number 13474-1002"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.1844
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 4.5,
+    "pulse_repetition_frequency_hz": 14,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 5,
+    "protocol_description": "The electronics were programmed to deliver ramped pulses with a 5% duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33%), resulting in an overall duty cycle of 1.8%. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6.3,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Methods: The safety and precision of this device was addressed through a series of numerical simulations and experimental measurements on ex vivo human skulls. Five participants with TRD were included in this open-label study (ClinicalTrials.gov identifier: NCT06085950) and underwent an intensive 5-day course of mTUS with a total of 25 sessions of 5 min each.",
+   "n_sessions_per_subject": "Methods: The safety and precision of this device was addressed through a series of numerical simulations and experimental measurements on ex vivo human skulls. Five participants with TRD were included in this open-label study (ClinicalTrials.gov identifier: NCT06085950) and underwent an intensive 5-day course of mTUS with a total of 25 sessions of 5 min each.",
+   "randomised": "Methods: The safety and precision of this device was addressed through a series of numerical simulations and experimental measurements on ex vivo human skulls. Five participants with TRD were included in this open-label study (ClinicalTrials.gov identifier: NCT06085950) and underwent an intensive 5-day course of mTUS with a total of 25 sessions of 5 min each.",
+   "auditory_control": "The electronics were programmed to deliver ramped pulses with a 5 % duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33 %), resulting in an overall duty cycle of 1.8 % (Fig. 1g), according to the ITRUSST reporting terminology [45]. A low duty cycle associated with inhibitory stimulation [46] was used since depression is associated with SCC hyperactivity [47,48]. The sonication patterns were inspired by previous studies [49,50] and optimized to ensure thermal safety. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Ramping was applied to each pulse to avoid auditory cofound [51], as described in Ref. [52]. After each mTUS session, participants were asked if they heard any particular sounds during the session. The total electric power administered was the same for each subject, which resulted in different ultrasound exposures at the target due to varied skull losses, estimated using numerical simulations. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions.",
+   "adverse_events": "Of the 20 items on the tolerance questionnaire completed after each of the 25 mTUS sessions (a total of 125 records for the 5 patients), 8 unintended effects were reported (Suppl. Fig. 1 and Suppl. Fig. 2): sleepiness was reported after 31/125 sessions, anxiety/nervousness after 3/125 sessions, tinnitus after 2/125 sessions, fatigue after 2/125 sessions, and tingling (in the right arm), burning or heat (in the right arm), euphoria, and transducer pressure after 1/125 sessions. These unintended effects were transient, as they were absent the day after they occurred and during follow-up visits in all cases.",
+   "exposures[0].fundamental_frequency_khz": "We developed a portable clinical TUS device based on personalized acoustic metamaterials (Fig. 1a-b). mTUS was delivered using a spherical transducer (center frequency of 500 kHz, radius of curvature of 10 cm, aperture diameter of 10 cm, Serial Number 13474-1002, Imasonic, Voray-sur-l’Ognon, France) connected to dedicated driving electronics (custom-made prototype developed with Image Guided Therapy, Pessac, France) operating at 500 kHz. The free field (in water) lateral and axial dimensions of the −3 dB oval-shaped acoustic beam cross-sections were 2.9 and 18 mm, respectively. The transducer was mounted in a custom 3D-printed housing which included mounting clips to hold the personalized metalens. Coupling to the patient’s scalp was achieved using a degassed water-filled silicone membrane and with additional medical acoustic gel (colorless contact gel, Drexco Medical, Crosne, France) on the membrane and on the skin. An optical neuronavigator (Visor2, ANT Neuro, Hengelo, The Netherlands) was used for targeting, allowing the clinician to overlay the metalens-corrected acoustic focus on the target area displayed on the pre-treatment T1 MR images. We calibrated the neuronavigator for the acoustic focus to be displayed on the screen to match the focal position of the transducer (as detailed in the Supplementary Material). The mean ± SD measured error was $0 . 0 9 \\pm 0 . 0 7$ mm. A non-invasive head support system ensured that participants heads remained immobile during the sessions.",
+   "exposures[0].in_situ.ispta_w_cm2": "The personalized SCC targets were deeply located, at a mean ± SD depth of $6 7 . 1 \\pm 7 . 6$ mm from the skin (range: [54.5–74.8]). The mean ± SD offset of the maximum pressure in the brain would have been $5 . 0 \\pm$ 4.3 mm (range: [1.6–12.3]) without correction (i.e., without the metalens), and was significantly improved (W = 15, p = 0.031) to $1 . 3 \\pm 0 . 4$ mm (range: [1.0–1.8]) with the personalized metalens (Fig. 2a-b). The mean ± SD derated spatial peak time average intensity (I<sub>SPTA</sub>) at the target for the five participants would have been 91.7 ± 20.3 mW/cm (range: [64.7–119.7]) without correction and was significantly increased (+101 %, W = 15, p = 0.031) to 184.4 ± 74.0 mW/cm<sup>2</sup> (range: [103.6–291.9]) with the metalens (Fig. 2c). Robustness of metalens precision was furthermore assessed on ex vivo skulls prior to the clinical trial and on patients’ CT scans throughout the clinical trial, as detailed in the Supplementary Material.",
+   "exposures[0].timing.pulse_duration_ms": "The electronics were programmed to deliver ramped pulses with a 5 % duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33 %), resulting in an overall duty cycle of 1.8 % (Fig. 1g), according to the ITRUSST reporting terminology [45]. A low duty cycle associated with inhibitory stimulation [46] was used since depression is associated with SCC hyperactivity [47,48]. The sonication patterns were inspired by previous studies [49,50] and optimized to ensure thermal safety. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Ramping was applied to each pulse to avoid auditory cofound [51], as described in Ref. [52]. After each mTUS session, participants were asked if they heard any particular sounds during the session. The total electric power administered was the same for each subject, which resulted in different ultrasound exposures at the target due to varied skull losses, estimated using numerical simulations. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The electronics were programmed to deliver ramped pulses with a 5 % duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33 %), resulting in an overall duty cycle of 1.8 % (Fig. 1g), according to the ITRUSST reporting terminology [45]. A low duty cycle associated with inhibitory stimulation [46] was used since depression is associated with SCC hyperactivity [47,48]. The sonication patterns were inspired by previous studies [49,50] and optimized to ensure thermal safety. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Ramping was applied to each pulse to avoid auditory cofound [51], as described in Ref. [52]. After each mTUS session, participants were asked if they heard any particular sounds during the session. The total electric power administered was the same for each subject, which resulted in different ultrasound exposures at the target due to varied skull losses, estimated using numerical simulations. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions.",
+   "exposures[0].timing.duty_cycle_pct": "The electronics were programmed to deliver ramped pulses with a 5 % duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33 %), resulting in an overall duty cycle of 1.8 % (Fig. 1g), according to the ITRUSST reporting terminology [45]. A low duty cycle associated with inhibitory stimulation [46] was used since depression is associated with SCC hyperactivity [47,48]. The sonication patterns were inspired by previous studies [49,50] and optimized to ensure thermal safety. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Ramping was applied to each pulse to avoid auditory cofound [51], as described in Ref. [52]. After each mTUS session, participants were asked if they heard any particular sounds during the session. The total electric power administered was the same for each subject, which resulted in different ultrasound exposures at the target due to varied skull losses, estimated using numerical simulations. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions.",
+   "exposures[0].timing.sonication_duration_s": "The electronics were programmed to deliver ramped pulses with a 5 % duty cycle (pulse duration of 4.5 ms including ramp duration of 0.75 ms, pulse repetition interval of 71 ms, pulse repetition frequency of 14 Hz), repeated in a pulse train (pulse train duration of 5 s, pulse train repetition interval of 15 s, pulse train repetition frequency of 0.07 Hz, pulse train duty cycle of 33 %), resulting in an overall duty cycle of 1.8 % (Fig. 1g), according to the ITRUSST reporting terminology [45]. A low duty cycle associated with inhibitory stimulation [46] was used since depression is associated with SCC hyperactivity [47,48]. The sonication patterns were inspired by previous studies [49,50] and optimized to ensure thermal safety. The 5-s pattern was repeated 20 times for a total treatment time of 5 min. Ramping was applied to each pulse to avoid auditory cofound [51], as described in Ref. [52]. After each mTUS session, participants were asked if they heard any particular sounds during the session. The total electric power administered was the same for each subject, which resulted in different ultrasound exposures at the target due to varied skull losses, estimated using numerical simulations. Pulsed ultrasound was applied for 5 min, 5 times per day for 5 days with a minimum delay of 1 h between two sessions.",
+   "exposures[0].device.manufacturer": "was delivered using a spherical transducer (center frequency of 500 kHz, radius of curvature of 10 cm, aperture diameter of 10 cm, Serial Number 13474-1002, Imasonic, Voray-sur-l’Ognon, France) connected to dedicated driving electronics (custom-made prototype developed with Image Guided Therapy, Pessac, France) operating",
+   "exposures[0].device.model": "was delivered using a spherical transducer (center frequency of 500 kHz, radius of curvature of 10 cm, aperture diameter of 10 cm, Serial Number 13474-1002, Imasonic, Voray-sur-l’Ognon, France) connected to dedicated driving electronics (custom-made prototype developed with Image Guided Therapy, Pessac, France) operating"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Paper reports derated ISPTA both without correction (91.7 mW/cm2 mean) and with the personalized metalens (184.4 mW/cm2 mean) in the same sentence; the metalens value (as actually used clinically) is recorded here."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Stated pulse duty cycle is 5%, but pulse duration (4.5 ms) x PRF (14 Hz) = 6.3%, a minor discrepancy possibly reflecting rounding of the ramp duration; recorded as stated (5%)."
+   },
+   {
+    "field": "randomised",
+    "reason": "Open-label single-arm pilot trial; no randomisation to treatment arms was performed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

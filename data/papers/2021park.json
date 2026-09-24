@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021park",
+ "doi": "10.1186/s40035-021-00274-x",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (5xFAD, 6 months old)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "ELISA for soluble/insoluble Aβ42 and Aβ40; Thioflavin S plaque staining and Iba1 microglial immunostaining with morphological analysis; Perls' Prussian blue staining for microbleeds; EEG spontaneous gamma power, phase-locking value, and cross-frequency phase-amplitude coupling",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Two weeks of 40-Hz tUS increased spontaneous EEG gamma power (normalizing it to wild-type levels) and improved cross-frequency phase-amplitude coupling, alongside reduced insoluble Aβ42 and Aβ plaque number in cortex and hippocampus.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Perls' Prussian blue staining for hemosiderin (microbleeds) showed no significant difference between tUS and sham groups, and the median number of deposits per section was numerically lower in the tUS group.",
+ "exposures": [
+  {
+   "label": "unfocused transcranial ultrasound to whole brain, 40 Hz gamma entrainment, 5xFAD mice",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "entire brain (unfocused, skull-mounted transducer)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Steiner & Martins Inc.",
+    "model": "SMD07T03R411"
+   },
+   "fundamental_frequency_khz": 300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.2,
+    "ispta_w_cm2": 0.0144
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "A piezo-ceramic disc transducer implanted on the skull delivered 300-kHz ultrasound pulsed at 40 Hz with a 3-ms pulse width. These pulses were organized into 200-ms-ON/800-ms-OFF sub-cycles, which were themselves repeated in 10-s-ON/30-s-OFF stimulation blocks (180 repeats), giving a 2-h daily session repeated for 14 days. A computational simulation estimated that >60% of ultrasound pressure was transmitted through the mouse skull, affecting 9% (-6 dB) or 45% (-12 dB) of brain volume."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 12.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twelve male 5 FAD mice were assigned to the tUS treatment group (n 6; Tg/Stim ) and the sham treatment group (n 6; Tg/Stim-), and wild-type mice (n 6; WT) without tUS treatment were assigned to the control group.",
+   "n_sessions_per_subject": "The tUS was performed every day for two weeks. The duration of stimulation session was 2 h daily and repeated for 2 weeks.",
+   "exposures[0].fundamental_frequency_khz": "The 300  kHz ultrasonic beams pulsed at 40  Hz with 3-ms pulse width were applied transcranially.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Twelve male 5 FAD mice were assigned to the tUS treatment group (n 6; Tg/Stim ) and the sham treatment group (n 6; Tg/Stim-), and wild-type mice (n 6; WT) without tUS treatment were assigned to the control group. The tUS was performed every day for two weeks. We used the piezo-ceramic disc transducer implanted to the mouse head above the EEG electrode layer. The 300  kHz ultrasonic beams pulsed at 40  Hz with 3-ms pulse width were applied transcranially. The stimulation trains of 200-ms ON and 800-ms OFF periods were repeated in stimulation blocks of 10-s ON and 30-s OFF periods (Fig. 1c). The duration of stimulation session was 2 h daily and repeated for 2 weeks. The ultrasonic beam was applied to the entire brain. The width of the ultrasound beam ranged from 5.5 to 6.0  mm. We used Lab-View (National Instruments Corporation, Austin, TX) to control the function generator. The signal generated by the function generator was amplified before being transferred to the piezo-ceramic disc transducer. The tUS pulsed at 40 Hz successfully induced EEG responses centered at 40  Hz, confirmed by averaging the \\~ 1200 time–frequency plots for each mouse during 2 h of stimulation (Fig. 1d). We used ultrasound with a spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ value of $1 . 2 ~ \\mathrm { W / c m ^ { 2 } }$ and a spatial peak time average intensity $( \\mathrm { I } _ { \\mathrm { S P T A } } )$ value of 14.4 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } .$ . The sonication parameters selected are considered safe and below the limits set by the US Food and Drug Administration for diagnostic ultrasound imaging $( \\mathrm { I _ { S P T A } } \\ 7 2 0 \\ \\mathrm { m W / c m ^ { 2 } } , \\mathrm { I _ { S P P A } } 1 9 0 \\ \\mathrm { W / c m ^ { 2 } }$ Mechanical Index",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Twelve male 5 FAD mice were assigned to the tUS treatment group (n 6; Tg/Stim ) and the sham treatment group (n 6; Tg/Stim-), and wild-type mice (n 6; WT) without tUS treatment were assigned to the control group. The tUS was performed every day for two weeks. We used the piezo-ceramic disc transducer implanted to the mouse head above the EEG electrode layer. The 300  kHz ultrasonic beams pulsed at 40  Hz with 3-ms pulse width were applied transcranially. The stimulation trains of 200-ms ON and 800-ms OFF periods were repeated in stimulation blocks of 10-s ON and 30-s OFF periods (Fig. 1c). The duration of stimulation session was 2 h daily and repeated for 2 weeks. The ultrasonic beam was applied to the entire brain. The width of the ultrasound beam ranged from 5.5 to 6.0  mm. We used Lab-View (National Instruments Corporation, Austin, TX) to control the function generator. The signal generated by the function generator was amplified before being transferred to the piezo-ceramic disc transducer. The tUS pulsed at 40 Hz successfully induced EEG responses centered at 40  Hz, confirmed by averaging the \\~ 1200 time–frequency plots for each mouse during 2 h of stimulation (Fig. 1d). We used ultrasound with a spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ value of $1 . 2 ~ \\mathrm { W / c m ^ { 2 } }$ and a spatial peak time average intensity $( \\mathrm { I } _ { \\mathrm { S P T A } } )$ value of 14.4 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } .$ . The sonication parameters selected are considered safe and below the limits set by the US Food and Drug Administration for diagnostic ultrasound imaging $( \\mathrm { I _ { S P T A } } \\ 7 2 0 \\ \\mathrm { m W / c m ^ { 2 } } , \\mathrm { I _ { S P P A } } 1 9 0 \\ \\mathrm { W / c m ^ { 2 } }$ Mechanical Index",
+   "exposures[0].timing.pulse_duration_ms": "The 300  kHz ultrasonic beams pulsed at 40  Hz with 3-ms pulse width were applied transcranially.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The 300  kHz ultrasonic beams pulsed at 40  Hz with 3-ms pulse width were applied transcranially.",
+   "exposures[0].device.manufacturer": "A piezo-ceramic disc transducer (SMD07T03R411, Steiner & Martins Inc., Davenport, FL) with two connecting wires was placed on top of the headmount layer and combined by dental cement (Fig.  1b).",
+   "exposures[0].device.model": "A piezo-ceramic disc transducer (SMD07T03R411, Steiner & Martins Inc., Davenport, FL) with two connecting wires was placed on top of the headmount layer and combined by dental cement (Fig.  1b).",
+   "exposures[0].timing.sonication_duration_s": "The stimulation trains of 200-ms ON and 800-ms OFF periods were repeated in stimulation blocks of 10-s ON and 30-s OFF periods (Fig. 1c)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "the protocol has multiple nested timing levels (3-ms pulses at 40 Hz forming a 200-ms-ON/800-ms-OFF sub-cycle, itself forming 10-s-ON/30-s-OFF blocks repeated over a 2-h daily session); this does not map onto a single 'uninterrupted train' duration, so left not_reported and described fully in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "classified as pulsed based on the stated 40-Hz pulse repetition frequency and 3-ms pulse width; the nested 200/800 ms and 10/30 s block structure could also be described as other_patterned."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "not explicitly stated as a percentage by the paper; not computed from pulse width and PRF."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "a computational simulation reported that >60% of ultrasound pressure was transmitted through the mouse skull and that 9% or 45% of brain volume was affected depending on threshold, but no absolute in-brain pressure or intensity value (kPa or W/cm2) was given, so in_situ numeric fields are not_reported."
+   },
+   {
+    "field": "sham_type",
+    "reason": "the paper states only that six mice 'received sham treatment' without describing the sham mechanism (e.g. inactive transducer vs. other)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

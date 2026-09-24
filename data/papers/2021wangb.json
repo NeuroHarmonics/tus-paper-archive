@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021wangb",
+ "doi": "10.1088/1741-2552/ac409f",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 42,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": null,
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "UTS increased spike firing rate of thalamic pyramidal neurons and interneurons and of M1 pyramidal neurons, increased theta-band LFP power in both regions, and increased Granger-causal coupling of LFP between thalamus and M1, indicating direct excitation of the thalamus and indirect (downstream) excitation of M1.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasonic thalamic stimulation (UTS) of the posterior thalamic nuclear group",
+   "target": {
+    "terms": [
+     "posterior_thalamic_nucleus"
+    ],
+    "label": "thalamus; posterior thalamic nuclear group"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V323-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 380,
+    "isppa_w_cm2": 4.81,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Ultrasound was delivered as a single 400 ms stimulation train per trial, with 16 trials per recording session and a 10 s interval between successive stimuli; the firing-rate analysis window ran from 2 s before to 8 s after each UTS trial."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Forty-two C57BL/6 mice were used in these experiments (all male; body weight, 25 g; Beijing Vital River Laboratory Animal Technology $\\mathrm { C o . , }$ Ltd China).",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 500 kHz, 400 ms, 1 kHz, and 50%, respectively (figure 1(b)).",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound intensity was 0.38 MPa.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The corresponding spatial-peak and pulse-average intensity values were 4.81 W $\\mathrm { c m } ^ { - 2 }$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 500 kHz, 400 ms, 1 kHz, and 50%, respectively (figure 1(b)).",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 500 kHz, 400 ms, 1 kHz, and 50%, respectively (figure 1(b)).",
+   "exposures[0].timing.sonication_duration_s": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 500 kHz, 400 ms, 1 kHz, and 50%, respectively (figure 1(b)).",
+   "exposures[0].device.manufacturer": "The ultrasound transducer (V323-SU, Olympus, USA) was connected to the mouse skull with a conical coupling cone filled with ultrasound coupling gel (figure 1(a)).",
+   "exposures[0].device.model": "The ultrasound transducer (V323-SU, Olympus, USA) was connected to the mouse skull with a conical coupling cone filled with ultrasound coupling gel (figure 1(a))."
+  },
+  "flags": [
+   {
+    "field": "randomised",
+    "reason": "Paper states mice were 'randomly divided into two groups' for the thalamus/M1 recording assignment, not that treatment (UTS) vs a control condition was randomised; there is no sham arm in this within-subject before/after design."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only stimulation duration (400 ms), PRF (1 kHz) and duty cycle (50%) are stated; pulse duration is derivable (duty/PRF) but is never stated explicitly, so it is left not_reported per the no-arithmetic rule."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Methods describe 16 trials per experiment but do not state whether this was one recording session or several; left not_reported."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "The 0.38 MPa 'ultrasound intensity' value and the 4.81 W/cm2 Isppa value are not stated as free-field, in-brain/derated, or through-skull; domain is unspecified so both are recorded under unspecified_domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021shi",
+ "doi": "10.1038/s41377-021-00580-z",
+ "model_system": [
+  "in_vitro_cell",
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley, primary cortical neuron culture); mouse (GAD2-Cre/tdTomato, brain slices)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "GCaMP6f calcium imaging (wide-field fluorescence); whole-cell patch-clamp recording (current-clamp and voltage-clamp) in brain slices",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TFOE optoacoustic stimulation evoked calcium transients/action potentials in cultured neurons and excitatory pyramidal cells; inhibitory interneurons showed subthreshold depolarization at rest and required additional depolarizing current to reach threshold for a short action potential train.",
+ "adverse_events": null,
+ "safety_notes": "Tip-surface temperature during a 50 ms/7.8 mW stimulation train increased by only 0.093 +/- 0.004 degC and was undetectable for the 1 ms/11.4 mW condition, both far below the reported threshold for thermal-induced neuron modulation.",
+ "exposures": [
+  {
+   "label": "Single-cell / subcellular TFOE stimulation of cultured primary cortical neurons (calcium imaging)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "primary rat cortical neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "tapered fiber optoacoustic emitter (TFOE)"
+   },
+   "fundamental_frequency_khz": 6600,
+   "free_field": {
+    "pressure_kpa": 2700,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "other_patterned"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1700,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.05,
+     0.001
+    ],
+    "protocol_description": "A TFOE was placed ~5 um from a targeted neuron. Laser pulse trains at 1030 nm, 1.7 kHz repetition rate, of either 50 ms duration (7.8 mW, 85 pulses) or 1 ms duration (two pulses, 11.4 mW) were delivered to evoke calcium transients. Separately, single-laser-pulse (3 ns) stimulation was used to test threshold pulse energy (1-8 pulses) and to demonstrate sub-microsecond acoustic pulses as the shortest stimuli reported for neuron activation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "TFOE stimulation of neurons in acute mouse cortical brain slices with whole-cell patch-clamp recording",
+   "target": {
+    "terms": [
+     "brain_slice"
+    ],
+    "label": "mouse cortical slices"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "tapered fiber optoacoustic emitter (TFOE)"
+   },
+   "fundamental_frequency_khz": 6600,
+   "free_field": {
+    "pressure_kpa": 2700,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1700,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.005,
+    "protocol_description": "TFOE was integrated with a patch pipette and placed ~5-10 um from GAD2-tdTomato-negative pyramidal neurons or GAD2-tdTomato-positive inhibitory interneurons in mouse cortical slices; laser pulse trains of 1030 nm, 11.4 mW, 1.7 kHz repetition rate and 5 ms duration were used while recording membrane voltage under current-clamp."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The spatial resolution of the generated acoustic field, defined by the distance where the pressure decreases to 1/e of initial pressure at 0 µm, was found to be 39.6 µm, 5.5 times smaller compared to the acoustic wavelength of 0.22 mm corresponding to the peak frequency of 6.6 MHz in water.",
+   "exposures[0].free_field.pressure_kpa": "Here, we report a miniaturized tapered fiber optoacoustic emitter (TFOE) capable of generating an ultrasound field with a 2.7 MPa pressure and a spatial resolution of 39.6 µm, which offers an unprecedented high spatial resolution for ultrasound stimulation.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A 3-ns pulsed laser at 1030 nm and 1.7 kHz repetition rate was used to deliver laser pulses of a 50 millisecond duration at an average power of 7.8 mW, corresponding to 85 pulses.",
+   "exposures[0].timing.sonication_duration_s": "A 3-ns pulsed laser at 1030 nm and 1.7 kHz repetition rate was used to deliver laser pulses of a 50 millisecond duration at an average power of 7.8 mW, corresponding to 85 pulses.",
+   "exposures[1].fundamental_frequency_khz": "The spatial resolution of the generated acoustic field, defined by the distance where the pressure decreases to 1/e of initial pressure at 0 µm, was found to be 39.6 µm, 5.5 times smaller compared to the acoustic wavelength of 0.22 mm corresponding to the peak frequency of 6.6 MHz in water.",
+   "exposures[1].free_field.pressure_kpa": "Here, we report a miniaturized tapered fiber optoacoustic emitter (TFOE) capable of generating an ultrasound field with a 2.7 MPa pressure and a spatial resolution of 39.6 µm, which offers an unprecedented high spatial resolution for ultrasound stimulation.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Laser: 11.4 mW, 1.7 kHz, 5 ms duration.",
+   "exposures[1].timing.sonication_duration_s": "Laser: 11.4 mW, 1.7 kHz, 5 ms duration."
+  },
+  "flags": [
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "Value (Laser: 11.4 mW, 1.7 kHz, 5 ms duration) is stated only in a figure caption (Fig. 5), not in the main running text describing the patch-clamp experiment."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "Same figure-caption source as above."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "2.7 MPa is the headline device characterization (measured in water at the emitter tip, ~0 um distance); actual pressure delivered to cells stimulated at ~5-10 um distance is lower (paper separately states 1.9 MPa at 10 um) and was not applied uniformly to every reported exposure condition."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Controls used (TTX pharmacology; uncoated bare-fiber 'laser only' control) do not map cleanly onto the closed sham_type vocabulary; coded as 'other'."
+   },
+   {
+    "field": "model_system",
+    "reason": "This is a photoacoustic (optically-driven) ultrasound emitter applied at single-cell/tissue-slice range rather than a conventional transcranial/piezoelectric transducer study; included per batch listing."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports per-experiment sample sizes (e.g. N=6 from 3 cultures; N=8 cells from three cultures; 10 neurons tested) but never a single aggregate count of cultures/preparations used across the whole study."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[1].in_situ.pressure_kpa": "first",
+   "exposures[1].in_situ.isppa_w_cm2": "first",
+   "exposures[1].in_situ.ispta_w_cm2": "first",
+   "exposures[1].timing.pulse_duration_ms": "second"
+  }
+ }
+}

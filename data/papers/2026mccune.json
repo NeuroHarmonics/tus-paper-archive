@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026mccune",
+ "doi": "10.1109/tbme.2025.3602291",
+ "model_system": [
+  "human_healthy",
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "carpal tunnel syndrome (median nerve entrapment neuropathy)",
+ "n_subjects": [
+  18,
+  6
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "clinical_scale"
+ ],
+ "readout_other": "N20-P30 somatosensory evoked potential peak-to-peak amplitude (64-channel EEG); verbal pain rating (1-10 scale) and symptom description in CTS subjects",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "On-nerve median nerve FUS reduced N20-P30 SSEP amplitude at both 1.8 and 2.9 MPa in healthy subjects and at 2.9 MPa in CTS subjects, and reduced verbal pain ratings by 40.6% on average in CTS subjects; off-nerve (active) control sonication instead slightly increased SSEP amplitude and produced no symptom change.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No inertial cavitation was detected at either sonication pressure, and room-temperature chicken breast sonicated at the higher dose (2.9 MPa, 1.1 MHz, 1 Hz PRF, 5 ms PD, 1000 pulses) produced only a 0.12°C peak temperature increase; no adverse events were reported by subjects.",
+ "exposures": [
+  {
+   "label": "Median nerve FUS (on-nerve), healthy and CTS subjects, 1.8 vs 2.9 MPa",
+   "target": {
+    "terms": [
+     "median_nerve"
+    ],
+    "label": "median nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     1800,
+     2900
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": [
+     1,
+     0.5
+    ],
+    "duty_cycle_pct": [
+     0.5,
+     0.25
+    ],
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Single 5 ms FUS pulses were triggered simultaneously with each median-nerve electrical stimulation pulse. Healthy subjects received 1000 electrical/FUS pulse pairs at 1 Hz (0.5% duty cycle); CTS subjects received 500 pairs at 0.5 Hz (0.25% duty cycle) to reduce discomfort. Non-randomized healthy subjects were sonicated at 1.8 MPa derated PPP; randomized healthy subjects and all CTS subjects were sonicated at 2.9 MPa derated PPP. A separate off-nerve (transducer moved ~3 cm laterally) active-control group was tested for each pressure/population."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Eighteen (n = 18 subjects; 11 female, 7 male; $2 7 . 5 \\pm 2 . 9$ years old, x¯  standard deviation) healthy subjects were recruited",
+   "exposures[0].fundamental_frequency_khz": "The median nerve in all subjects was sonicated at 1.1 MHz with pulses of 5 ms in duration. Subjects in the non-randomized condition all received sonication at 1.8 MPa derated peakpositive pressure (PPP) (1.6 MPa derated peak-negative pressure (PNP), 1.5 MI) and subjects in the randomized condition all received sonication at 2.9 MPa derated PPP (2.5 MPa derated PNP, 2.4 MI). All clinical CTS subjects were sonicated at 2.9 MPa. Single FUS pulses were triggered at the same time as electrical stimulation (Fig. 1(c)), yielding a maximum pulse repetition frequency (PRF) of 1 Hz (0.5% duty cycle) for healthy subjects and 0.5 Hz (0.25% duty cycle) for the CTS subjects. Lateral and axial beam profiles demonstrated beam lengths of 1.5 mm laterally and 11.3 mm axially (Supplemental Fig. 1).",
+   "exposures[0].in_situ.pressure_kpa": "The median nerve in all subjects was sonicated at 1.1 MHz with pulses of 5 ms in duration. Subjects in the non-randomized condition all received sonication at 1.8 MPa derated peakpositive pressure (PPP) (1.6 MPa derated peak-negative pressure (PNP), 1.5 MI) and subjects in the randomized condition all received sonication at 2.9 MPa derated PPP (2.5 MPa derated PNP, 2.4 MI). All clinical CTS subjects were sonicated at 2.9 MPa. Single FUS pulses were triggered at the same time as electrical stimulation (Fig. 1(c)), yielding a maximum pulse repetition frequency (PRF) of 1 Hz (0.5% duty cycle) for healthy subjects and 0.5 Hz (0.25% duty cycle) for the CTS subjects. Lateral and axial beam profiles demonstrated beam lengths of 1.5 mm laterally and 11.3 mm axially (Supplemental Fig. 1).",
+   "exposures[0].timing.pulse_duration_ms": "The median nerve in all subjects was sonicated at 1.1 MHz with pulses of 5 ms in duration. Subjects in the non-randomized condition all received sonication at 1.8 MPa derated peakpositive pressure (PPP) (1.6 MPa derated peak-negative pressure (PNP), 1.5 MI) and subjects in the randomized condition all received sonication at 2.9 MPa derated PPP (2.5 MPa derated PNP, 2.4 MI). All clinical CTS subjects were sonicated at 2.9 MPa. Single FUS pulses were triggered at the same time as electrical stimulation (Fig. 1(c)), yielding a maximum pulse repetition frequency (PRF) of 1 Hz (0.5% duty cycle) for healthy subjects and 0.5 Hz (0.25% duty cycle) for the CTS subjects. Lateral and axial beam profiles demonstrated beam lengths of 1.5 mm laterally and 11.3 mm axially (Supplemental Fig. 1).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The median nerve in all subjects was sonicated at 1.1 MHz with pulses of 5 ms in duration. Subjects in the non-randomized condition all received sonication at 1.8 MPa derated peakpositive pressure (PPP) (1.6 MPa derated peak-negative pressure (PNP), 1.5 MI) and subjects in the randomized condition all received sonication at 2.9 MPa derated PPP (2.5 MPa derated PNP, 2.4 MI). All clinical CTS subjects were sonicated at 2.9 MPa. Single FUS pulses were triggered at the same time as electrical stimulation (Fig. 1(c)), yielding a maximum pulse repetition frequency (PRF) of 1 Hz (0.5% duty cycle) for healthy subjects and 0.5 Hz (0.25% duty cycle) for the CTS subjects. Lateral and axial beam profiles demonstrated beam lengths of 1.5 mm laterally and 11.3 mm axially (Supplemental Fig. 1).",
+   "exposures[0].timing.duty_cycle_pct": "The median nerve in all subjects was sonicated at 1.1 MHz with pulses of 5 ms in duration. Subjects in the non-randomized condition all received sonication at 1.8 MPa derated peakpositive pressure (PPP) (1.6 MPa derated peak-negative pressure (PNP), 1.5 MI) and subjects in the randomized condition all received sonication at 2.9 MPa derated PPP (2.5 MPa derated PNP, 2.4 MI). All clinical CTS subjects were sonicated at 2.9 MPa. Single FUS pulses were triggered at the same time as electrical stimulation (Fig. 1(c)), yielding a maximum pulse repetition frequency (PRF) of 1 Hz (0.5% duty cycle) for healthy subjects and 0.5 Hz (0.25% duty cycle) for the CTS subjects. Lateral and axial beam profiles demonstrated beam lengths of 1.5 mm laterally and 11.3 mm axially (Supplemental Fig. 1).",
+   "n_sessions_per_subject": "It is important to highlight some of the limitations of this study. First, SSEP and pain reductions were only evaluated over the course of a single experiment. CTS subjects were followed up within one week after FUS, but only subjective descriptions of their pain were recorded. While this study demonstrates reductions in the short term, CTS subjects reported a return to their baseline symptoms 1-3 days after treatment. We therefore do not expect a single session to provide long-term relief. Despite this, we cannot conclude whether pain would be attenuated across multiple sessions or determine what treatment schedule could lead to long-term pain relief. Longitudinal studies are necessary to address these questions. Second, pain is not the only CTS symptom. Hand weakness and loss of fine motor function are other debilitating symptoms, which can be measured through grip strength changes, nerve conduction studies, and questionnaires on hand function in daily tasks such as the Boston Carpal Tunnel Questionnaire. Future work should investigate these to better explore the efficacy of FUS for clinical CTS treatment. Additionally, the symptoms of CTS subjects were only measured at the beginning and end of the FUS session. This led to several minutes between the first and last pain ratings, and thus subjects may have had a difficult time standardizing these ratings. This method was selected for two reasons: first, because requiring CTS subjects to rate each ofthe 500 electrical stimulations would have greatly prolonged the experiment duration and second, because the jaw movements associated with speech introduce large muscle artifacts in the EEG signal. We therefore limited verbal ratings to immediately before and after EEG acquisition. Lastly, we did not investigate potential benefits from combining multiple pain reducing therapies, such as FUS and pharmacology, which might provide even greater pain relief than either method on its own.",
+   "exposures[0].device.manufacturer": "An FUS transducer (1.1 MHz, 4-element annular array; Sonic Concepts Inc., Bothell, WA, USA) driven by a Verasonics Vantage system (Vantage 256; Verasonics Inc, Kirkland, WA, USA) was focused to the median nerve 7-10 cm proximal from the wrist."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states group sizes separately (18 healthy, 6 CTS); no explicit combined total of 24 is given, so recorded as a list per the group-sizes rule."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressures are stated as 'derated' peak-positive pressure; classified as in_situ/derating rather than free_field since the paper does not report a separate water-tank (free-field) value."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Off-nerve sonication used real ultrasound output moved ~3 cm laterally from the nerve, classified as active_control_site; the paper describes it as an 'active sham'."
+   },
+   {
+    "field": "randomised",
+    "reason": "Design was mixed: the 1.8 MPa healthy group used a non-randomized order (single-blind), while the 2.9 MPa healthy and CTS groups used randomized order (double-blind); majority (15/24) were randomized so 'true' was chosen, with blinding set to 'double' for the same majority."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Total duration of the pulse train session is not stated directly in seconds (only pulse counts and repetition rates); left not_reported to avoid computing it."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

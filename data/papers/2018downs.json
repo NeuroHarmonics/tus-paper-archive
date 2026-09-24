@@ -1,0 +1,222 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018downs",
+ "doi": "10.1088/1361-6560/aa9fc2",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 42,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "EMG of the tibialis anterior muscle during/after FUS sciatic nerve stimulation; open field behavioral test; H&E histology; thermocouple temperature measurement; acoustic radiation force/tissue-displacement measurement",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS stimulation of the sciatic nerve elicited EMG responses and visible muscle contraction (excitation), abolished by downstream nerve transection; effects attributed to a mechanical, not thermal, mechanism.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Blinded histology and open-field behavioral testing showed no damage for FUS parameters found effective for stimulation; damage was only observed for supra-threshold 'positive control' parameters (5.4 MPa, 90% DC, 1 kHz PRF, 0.5 s) or pressures/durations beyond the effective range (>100 ms at 5.7 MPa, 90% DC).",
+ "exposures": [
+  {
+   "label": "FUS stimulation of the sciatic nerve (parameter sweep)",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "SU-107"
+   },
+   "fundamental_frequency_khz": 3570,
+   "free_field": {
+    "pressure_kpa": [
+     1100,
+     8300
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "not_reported",
+    "pressure_kpa": [
+     700,
+     5400
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     15,
+     35,
+     50,
+     90,
+     100
+    ],
+    "sonication_duration_s": [
+     0.004,
+     1
+    ],
+    "protocol_description": "FUS parameters were swept across peak negative pressure, stimulation duration, and duty cycle at a fixed 1 kHz PRF; each parameter combination was tried n=5 times for a total of 2000 trials. A 100% duty cycle condition is described as continuous wave. Successful stimulation (eliciting reproducible EMG/muscle activation) required pressures and duty cycles above 3.2 MPa and 35%, respectively; sub-experiments for histology, open-field testing and thermocouple measurements used fixed parameters within this swept range (e.g., 4.5 MPa/90% DC/4.5-9 ms for histology and open field; 0.7-5.4 MPa/100% DC/5 ms for thermocouple)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Male C57BL/6J mice weighing between 22 to 28 g were used in all experiments (n = 42).",
+   "exposures[0].fundamental_frequency_khz": "All FUS experiments were conducted with a HIFU transducer with a 3.57 MHz center frequency (0.46 × 3.55 mm focal area, 35 mm focal depth; SU-107, SonicConcepts, Seattle, WA, USA).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS parameters employed during the experiments ranged from 1.1–8.3 MPa peak negative pressure, 4 ms–1 s stimulation duration, 15–100% duty cycle, 1 kHz PRF.",
+   "exposures[0].timing.duty_cycle_pct": "Changes for each parameter were modified as such: Duty cycle 15, 35, 50, 90, 100%, Pressure 0.6 MPa increments and duration 100 ms increments, unless under 10 ms, then by 1 ms increments.",
+   "exposures[0].timing.sonication_duration_s": "FUS parameters employed during the experiments ranged from 1.1–8.3 MPa peak negative pressure, 4 ms–1 s stimulation duration, 15–100% duty cycle, 1 kHz PRF.",
+   "exposures[0].in_situ.pressure_kpa": "Accounting for the pressure attenuation through the muscle to reach the sciatic nerve, delivered pressures ranged from 0.7 to 5.4 MPa (Marquet et al 2011).",
+   "exposures[0].device.manufacturer": "All FUS experiments were conducted with a HIFU transducer with a 3.57 MHz center frequency (0.46 × 3.55 mm focal area, 35 mm focal depth; SU-107, SonicConcepts, Seattle, WA, USA).",
+   "exposures[0].device.model": "All FUS experiments were conducted with a HIFU transducer with a 3.57 MHz center frequency (0.46 × 3.55 mm focal area, 35 mm focal depth; SU-107, SonicConcepts, Seattle, WA, USA).",
+   "exposures[0].free_field.pressure_kpa": "FUS parameters employed during the experiments ranged from 1.1–8.3 MPa peak negative pressure, 4 ms–1 s stimulation duration, 15–100% duty cycle, 1 kHz PRF."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n=42 is given as the overall number of mice 'used in all experiments'; a separate electrical-stimulation cohort (n=9) is mentioned later and it is unclear whether these 9 are included in the 42."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Text does not explicitly state whether the 1.1-8.3 MPa 'employed' pressure range is a free-field (water/transducer output) value or already accounts for tissue attenuation; placed here rather than free_field because domain is not stated."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Reported_as vocabulary (single_value / mean_or_range_across_subjects) does not cleanly describe a parameter-sweep range; recorded as not_reported for reported_as."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper gives duty cycle and PRF plus an overall 'stimulation duration' (the sonication/train length), but does not separately state an individual pulse width; not computed here per the no-arithmetic rule."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "100% duty cycle condition is explicitly called continuous wave elsewhere in Results ('100% DC (continuous wave)'), while other duty cycles are pulsed; both are recorded as a list."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

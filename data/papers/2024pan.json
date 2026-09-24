@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024pan",
+ "doi": "10.1093/schbul/sbad078",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "schizophrenia"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Open field test (locomotor activity, time in center); prepulse inhibition (PPI) of acoustic startle; western blot (NR1/PV puncta via immunofluorescence, GAD65, GAD67, VGLUT1, VGAT, DAT, c-Fos); immunofluorescence/immunohistochemistry for c-Fos, NeuN, PV and TH double-labeling",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIPUS pretreatment prevented MK-801-induced hyperlocomotion, anxiety-like behavior and PPI deficits, reversed MK-801-induced downregulation of NR1 and GAD65 in the mPFC, and suppressed the MK-801-induced increase in c-Fos expression in the mPFC and VTA, consistent with LIPUS acting to suppress MK-801-induced cortical hyperexcitation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to prefrontal cortex (PFC), daily pretreatment for 5 days",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "prefrontal cortex (PFC)"
+   },
+   "device": {
+    "family": "mettler",
+    "manufacturer": "Mettler Electronics",
+    "model": "ME740 generator with ME7413 plane transducer"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 300,
+    "protocol_description": "The duration of each sonication was 5 minutes, with a 5-minute interval between each sonication; the total sonication time of the LIPUS stimulation was 15 minutes every day, delivered daily for 5 days to the PFC (3.0 mm anterior to bregma), while animals were anesthetized with 2% isoflurane."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "randomised": "The animals were randomly assigned to 4 groups: The Sham group, the LIPUS group, the MK-801 group, and the LIPUS+MK-801 group.",
+   "n_sessions_per_subject": "After the habituation period, animals in the LIPUS group and LIPUS+MK-801 group were treated with LIPUS daily for 5 days.",
+   "sham_type": "The only different step of LIPUS stimulation between 4 groups, is that, LIPUS was turned on or not.",
+   "anaesthesia": "During LIPUS stimulation, 4 groups were anesthetized in the prone position through inhalation of 2% isoflurane in 2 L/min oxygen; body temperature was maintained at 37 °C using a heating pad.",
+   "exposures[0].fundamental_frequency_khz": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm<sup>2</sup> effective radiating area) with 2-miliseconds burst lengths at a 20% duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The spatial average intensity over the plane transducer head was 500 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm<sup>2</sup> effective radiating area) with 2-miliseconds burst lengths at a 20% duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm<sup>2</sup> effective radiating area) with 2-miliseconds burst lengths at a 20% duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm<sup>2</sup> effective radiating area) with 2-miliseconds burst lengths at a 20% duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.sonication_duration_s": "In order to reduce the thermal effect of ultrasound, the duration of each sonication was 5 minutes, with a 5-minute interval between each sonication. The total sonication time of the LIPUS stimulation was 15 minutes every day.",
+   "exposures[0].device.manufacturer": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm 2 effective radiating area) with 2-miliseconds burst",
+   "exposures[0].device.model": "Low-intensity pulsed ultrasound was generated by a therapeutic ultrasound generator (ME740, Mettler Electronics, Anaheim, CA, USA) and a 1-MHz plane transducer (ME7413, Mettler Electronics; with a 4.4 cm 2 effective radiating area) with 2-miliseconds burst"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper reports '500 mW/cm2 spatial average intensity over the plane transducer head', which does not clearly correspond to either spatial-peak pulse-average (ISPPA) or spatial-peak temporal-average (ISPTA) intensity as defined in this schema; assigned to ISPTA as the closer match (both are time-averaged metrics) but the terminology mismatch should be checked against source. Domain (free field vs in situ) is also not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Figure legends report different per-group n's for different outcomes (n=10 per group for behavioral tests in Figure 1; n=5 per group for immunofluorescence/western-blot outcomes in Figures 2-5); only 2 of the 4 groups (LIPUS, LIPUS+MK-801) actually received active ultrasound, but the paper does not give a single total count of ultrasound-exposed animals."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Animals were anesthetized (2% isoflurane) during LIPUS delivery, but behavioral testing (open field, PPI) was conducted afterward with no anesthesia mentioned; classified as 'both' since the paper describes an anesthetized delivery procedure but presumably awake behavioral assessment."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper does not include an explicit statement about adverse events or safety monitoring for the LIPUS procedure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025jina",
+ "doi": "10.1109/tnsre.2024.3492158",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "emg_mep"
+ ],
+ "readout_other": "local field potential (LFP) recording in motor cortex; electromyography (EMG) of tail muscle; multi-scale transfer entropy (MSTE) analysis of functional cortico-muscular coupling",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "LIPUS altered LFP-EMG and EMG-LFP multi-scale transfer entropy coupling in a way that depended on the number of tone-bursts (NTB) and the time scale examined; averaged across scales, LFP-EMG coupling after stimulation was lower than before, while EMG-LFP coupling after stimulation was higher than before, without a simple monotonic relationship to NTB.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS of tail motor cortex with varying number of tone-bursts (NTB)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex, tail region"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 3.6,
+    "protocol_description": "In this paper, the parameter setting is Isppa = 1.1 W/cm2, SD = 3.6s, PRF = 1 kHz, FF = 50%, DC = 250, NTB = 100,150,200,250,300. A collimator, attached to the flat ultrasound transducer, was precisely targeted at the motor cortex located within the tail region of the mice, with a 60-degree angle between the LIPUS application and the microelectrode placement. LFP and EMG were recorded before and after LIPUS for each of the five NTB conditions, with 30 trials collected per group."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twelve male BALB/c mice, weighing between 20 to 25 grams were utilized for the experimental procedures (Beijing Vital River Laboratory Animal Technology Co., Ltd.).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "In this paper, the parameter setting is Isppa = 1.1 W/cm<sup>2</sup>, SD = 3.6s, PRF = 1 kHz, FF = 50%, DC = 250, NTB = 100,150,200,250,300.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In this paper, the parameter setting is Isppa = 1.1 W/cm<sup>2</sup>, SD = 3.6s, PRF = 1 kHz, FF = 50%, DC = 250, NTB = 100,150,200,250,300.",
+   "exposures[0].timing.sonication_duration_s": "In this paper, the parameter setting is Isppa = 1.1 W/cm<sup>2</sup>, SD = 3.6s, PRF = 1 kHz, FF = 50%, DC = 250, NTB = 100,150,200,250,300."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Text states 'FF = 50%, DC = 250' -- a percentage attached to fundamental frequency (FF) and an out-of-range value (250) attached to duty cycle (DC), which is very likely a label/value swap or extraction error in the source (DC is typically a percentage such as 50%, and FF a frequency such as 250 kHz), but the correct pairing cannot be determined with confidence, so both fields are left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Same source inconsistency as fundamental_frequency_khz: 'FF = 50%, DC = 250' appears to have swapped labels/values; left not_reported rather than guessed."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; NTB (number of tone-bursts) is the paper's manipulated timing-related variable but does not map to pulse duration, PRF, duty cycle or sonication duration as defined by the schema, so it is only described in protocol_description."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not stated whether the five NTB conditions were tested in one acute session or across multiple sessions per animal."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

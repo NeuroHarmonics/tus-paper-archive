@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021folloni",
+ "doi": "10.1126/sciadv.abg7700",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 5,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "behaviour"
+ ],
+ "readout_other": "win-stay/lose-shift probabilistic reward-guided choice task; reinforcement-learning model fits",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS to area 47/12o reduced win-stay/lose-shift-related neural activity in 47/12o and choice-value-related activity in ACC, disrupting credit assignment and behavioral use of choice values; global-reward-state-related activity in anterior insula and its influence on behavior were unaffected by 47/12o TUS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to area 47/12o (bilateral)",
+   "target": {
+    "terms": [
+     "orbitofrontal_cortex"
+    ],
+    "label": "area 47/12o (lateral orbitofrontal cortex, at border of orbital/ventral prefrontal cortex)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept",
+    "model": "H115-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": [
+     1170,
+     1290
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     42.6,
+     34.6
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 40,
+    "protocol_description": "Offline TUS protocol: bilateral stimulation of area 47/12o applied several minutes before the behavioral/fMRI testing session, using a single-element transducer with a coupling cone, applied once for 40 s per session; five 47/12o TUS sessions and five interleaved sham sessions per animal in experiment 1 (counterbalanced order)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Four male rhesus monkeys (Macaca mulatta), here referred to as D, E, F, and ${ \\mathrm { G } } ,$ were tested in the experiment (mean weight, 12.65 kg; 9.9 years of age). They were socially housed (group of four animals) and kept on a 12-hour light/dark cycle, with access to water for 12 to 16 hours on testing days and with ad libitum water otherwise. Before task training, the animals underwent aseptic surgery to implant an MRI-compatible head post (Rogue Research). The head post was necessary to prevent head movement during the TUS and imaging data acquisition. All procedures were conducted under licenses from the U.K. Home Office in accordance with the U.K. Animals (Scientific Procedures) Act 1986 and with the European Union guidelines (EU Directive 2010/63/EU).",
+   "n_sessions_per_subject": "Each animal underwent two experiments for a total of 20 sessions in each one (four animals × five sessions). Experiment 1 consisted in two separate conditions: One condition used TUS targeted to lOFC area 47/12o. In the other condition no stimulation was applied (sham). Sham and TUS days were interleaved and counterbalanced in order. To ensure that the behavioral effects of TUS were not induced by nonfocal modulation of activity in prefrontal cortex, we ran an additional control experiment (experiment 2), but this time, targeting a separate prefrontal area—aPFC before the animals underwent the same task. Experiment 2 also consisted of two separate conditions: one control condition in which no stimulation was applied (sham) and the active control condition in which TUS was applied to a control area aPFC. “Again, sham and TUS days were interleaved and counterbalanced in order”. In each experiment, each of the four animals performed five sessions, and the order of experiments was counterbalanced across animals (two animals performed experiment 1 first and then experiment 2, and two animals performed experiment 2 before experiment 1). Thus, each animal performed five sessions of the sham condition that were interleaved with five session of the TUS condition (five 47/12o TUS sessions in experiment 1 and five aPFC TUS sessions in experiment 2) in the MRI scanner. Because there were no differences in sham performance in experiments 1 and 2, all sham data were combined in the final analyses. No statistical methods were used to predetermine sample sizes but our sample sizes are similar to those reported in previous publications (7, 9, 11, 25). The experiment was controlled by Presentation software (Neurobehavioral Systems Inc., Albany, CA).",
+   "sham_type": "In each experiment, sham sessions were interleaved with TUS sonication days and completely mirrored a typical stimulation session (the experimental laboratory setting was the same as were the procedures involved in preparing for stimulation such as neuronavigation and cone positioning and application of the cone to the shaved skin on the head of the animal) except that sonication was not triggered.",
+   "exposures[0].fundamental_frequency_khz": "A single-element piezoelectric ultrasound transducer (H115-MR, diameter of 64 mm, Sonic Concept) with a 51.74-mm focal depth was used with a coupling cone filled with degassed water and sealed with a latex membrane (Durex). The ultrasound wave frequency was set to the 250-kHz resonance frequency, and 30-ms bursts of ultrasound were generated every 100 ms with a digital function generator (Handyscope HS5, TiePie Engineering). Overall, the stimulation lasted for 40 s. A 75-W amplifier (75A250A, Amplifier Research) was used to deliver the required power to the transducer. A TiePie probe connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was constant throughout the stimulation session. Voltage values per session ranged from 130 to 136 V and corresponded to a peak negative pressure ranging from 1.17 to 1.29 MPa, respectively, as measured in water with an in-house heterodyne interferometer (39).",
+   "exposures[0].free_field.pressure_kpa": "A single-element piezoelectric ultrasound transducer (H115-MR, diameter of 64 mm, Sonic Concept) with a 51.74-mm focal depth was used with a coupling cone filled with degassed water and sealed with a latex membrane (Durex). The ultrasound wave frequency was set to the 250-kHz resonance frequency, and 30-ms bursts of ultrasound were generated every 100 ms with a digital function generator (Handyscope HS5, TiePie Engineering). Overall, the stimulation lasted for 40 s. A 75-W amplifier (75A250A, Amplifier Research) was used to deliver the required power to the transducer. A TiePie probe connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was constant throughout the stimulation session. Voltage values per session ranged from 130 to 136 V and corresponded to a peak negative pressure ranging from 1.17 to 1.29 MPa, respectively, as measured in water with an in-house heterodyne interferometer (39).",
+   "exposures[0].timing.pulse_duration_ms": "Fig. 2. Estimated peak intensities and spatial distributions of ultrasound based on a high-resolution macaque whole-head computed tomography scan. (A) Before each session, the TUS protocol consisted of a 40-s ultrasonic stimulation with a rectangular envelope over a train of pulses: The pattern displayed was repeated 40 times. Within the ultrasonic stimulation pulse train, each pulse had a pulse duration of 30 ms and a pulse repetition interval (PRI) of 100 ms for a duty cycle of 30%. The pulse repetition frequency (PRF) within the stimulus duration was 10 Hz. PRF = 1/PRI. a.u., arbitrary units. (B) Simulated focused ultrasound peak intensities and spatial distribution in the brain when targeting right and left area 47/12o, based on a high-resolution macaque whole-head computed tomography scan. The maximum spatial-peak pulse-averaged intensity (I ) at the acoustic focus point was 42.6 W/cm<sup>2</sup> for the left area 47/12o target and 34.6 W/cm<sup>2</sup> for the right area 47/12o target. aPFC TUS protocol was the same as the one we previously used in (8). Because the beams do not overlap, there is no region of dark red as we have estimated that there has been in some of our previous studies, in which beam overlap was intended (9). TUS occurred several minutes before the behavioral task was performed. Such a stimulation protocol is often referred to as an “offline protocol.”",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Fig. 2. Estimated peak intensities and spatial distributions of ultrasound based on a high-resolution macaque whole-head computed tomography scan. (A) Before each session, the TUS protocol consisted of a 40-s ultrasonic stimulation with a rectangular envelope over a train of pulses: The pattern displayed was repeated 40 times. Within the ultrasonic stimulation pulse train, each pulse had a pulse duration of 30 ms and a pulse repetition interval (PRI) of 100 ms for a duty cycle of 30%. The pulse repetition frequency (PRF) within the stimulus duration was 10 Hz. PRF = 1/PRI. a.u., arbitrary units. (B) Simulated focused ultrasound peak intensities and spatial distribution in the brain when targeting right and left area 47/12o, based on a high-resolution macaque whole-head computed tomography scan. The maximum spatial-peak pulse-averaged intensity (I ) at the acoustic focus point was 42.6 W/cm<sup>2</sup> for the left area 47/12o target and 34.6 W/cm<sup>2</sup> for the right area 47/12o target. aPFC TUS protocol was the same as the one we previously used in (8). Because the beams do not overlap, there is no region of dark red as we have estimated that there has been in some of our previous studies, in which beam overlap was intended (9). TUS occurred several minutes before the behavioral task was performed. Such a stimulation protocol is often referred to as an “offline protocol.”",
+   "exposures[0].timing.duty_cycle_pct": "Fig. 2. Estimated peak intensities and spatial distributions of ultrasound based on a high-resolution macaque whole-head computed tomography scan. (A) Before each session, the TUS protocol consisted of a 40-s ultrasonic stimulation with a rectangular envelope over a train of pulses: The pattern displayed was repeated 40 times. Within the ultrasonic stimulation pulse train, each pulse had a pulse duration of 30 ms and a pulse repetition interval (PRI) of 100 ms for a duty cycle of 30%. The pulse repetition frequency (PRF) within the stimulus duration was 10 Hz. PRF = 1/PRI. a.u., arbitrary units. (B) Simulated focused ultrasound peak intensities and spatial distribution in the brain when targeting right and left area 47/12o, based on a high-resolution macaque whole-head computed tomography scan. The maximum spatial-peak pulse-averaged intensity (I ) at the acoustic focus point was 42.6 W/cm<sup>2</sup> for the left area 47/12o target and 34.6 W/cm<sup>2</sup> for the right area 47/12o target. aPFC TUS protocol was the same as the one we previously used in (8). Because the beams do not overlap, there is no region of dark red as we have estimated that there has been in some of our previous studies, in which beam overlap was intended (9). TUS occurred several minutes before the behavioral task was performed. Such a stimulation protocol is often referred to as an “offline protocol.”",
+   "exposures[0].timing.sonication_duration_s": "A single-element piezoelectric ultrasound transducer (H115-MR, diameter of 64 mm, Sonic Concept) with a 51.74-mm focal depth was used with a coupling cone filled with degassed water and sealed with a latex membrane (Durex). The ultrasound wave frequency was set to the 250-kHz resonance frequency, and 30-ms bursts of ultrasound were generated every 100 ms with a digital function generator (Handyscope HS5, TiePie Engineering). Overall, the stimulation lasted for 40 s. A 75-W amplifier (75A250A, Amplifier Research) was used to deliver the required power to the transducer. A TiePie probe connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was constant throughout the stimulation session. Voltage values per session ranged from 130 to 136 V and corresponded to a peak negative pressure ranging from 1.17 to 1.29 MPa, respectively, as measured in water with an in-house heterodyne interferometer (39).",
+   "exposures[0].in_situ.isppa_w_cm2": "The maximum spatial-peak pulse-averaged intensity (ISPPA) at the acoustic focus point was approximately 35–40 W/cm<sup>2</sup> in the left and in the right area 47/12o (Fig. 2 and fig. S1). In addition, in another active control condition, we examined the impact of TUS to an anterior prefrontal cortex (aPFC) area that has not previously linked to credit assignment.\n\nS C I E N C E A D V A N C E S | R E S E A R C H A R T I C L E\n\n<sup>1</sup>Wellcome Centre for Integrative Neuroimaging (WIN), Department of Experimental Psychology, Tinsley Building, Mansfield Road, Oxford OX1 3TA, University of Oxford, Oxford, UK. <sup>2</sup>School of Psychology, University of Plymouth, Plymouth, UK. <sup>3</sup>Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen, Nijmegen, 6525 HR, Netherlands. <sup>4</sup>Physics for Medicine Paris, ESPCI Paris, INSERM, CNRS, PSL Research University, Paris, France. <sup>5</sup>GHU PARIS Psychiatrie and Neurosciences, site Sainte-Anne, Service Hospitalo-Universitaire, Pôle Hospitalo-Universitaire, Paris 15, F-75014 Paris, France. <sup>6</sup>Université de Paris, F-75005 Paris, France. <sup>7</sup>Université Lyon 1, Inserm, Stem Cell and Brain Research Institute U1208, 18 Avenue Doyen Lepine, 69500 Bron, France.\n\n\\*Corresponding author. Email: davide.folloni@mssm.edu (D.F.); elsa.fouragnan@ plymouth.ac.uk (E.F.) †These authors contributed equally to this work.\n\nDownloaded from https://www.science.org at University College London on August 24, 2026\n\nFolloni et al., Sci. Adv. 7, eabg7700 (2021) 15 December 2021\n\fFig. 1. Experimental design. (A) Four macaques learned to choose one of the two options represented by visual stimuli presented on a computer monitor by pressing an adjacent touch sensor while in the MRI scanner. The two options presented on each trial were drawn from a larger set of three options. Macaques learned about new stimulus sets in each daily testing session. (B) Each option, if chosen, had a probabilistic association with juice reward delivery that drifted over time during the course of the experiment. The reward histories for the three options were uncorrelated with one another (<22% mean shared variance), making it possible to identify neural activ ity that was correlated with the value of each one of the three options. (C) We examined the neural circuits encoding different features of rewards. This includes the specific relationships between choices and outcomes essential for credit assignment and (D) the general value of the environment regardless of the specific choice taken, a feature of reward that we refer to as the GRS. (E) To test our hypotheses, we also investigated the choice value representations that result from credit assignment and the decision to stay or switch on future trials. (F) We used three experimental TUS settings: Sham, where no stimulation was applied; (G) TUS targeting a region in area 47/12o, hypothesized to disrupt both credit assignment and value representations that depend on credit assignment; and an active control condition (H) in which TUS was applied to anterior prefrontal cortex (aPFC), hypothesized to cause no disruption in credit assignment and value representation. Blue, red, and green color codes indicate results relating to sham, 47/12o, and aPFC conditions, respectively, in the subsequent figures.\n\nIt has been argued that it is the acoustic radiation force of the propagating TUS wave that affects neurons (16). This stretches the cell membrane so that ion channels are transiently opened (17). While active discussion about the mechanism through which TUS exerts its effects continues, what is clear is that it has a relatively circumscribed effect on neural activity but can operate at a distance from the transducer and so it can be used to stimulate deep cortex and subcortical brain areas in a relatively selective manner. TUS has been applied to aPFC, anterior cingulate cortex (ACC), supplementary motor area, basal forebrain, and amygdala, while whole-brain measurements of neural activity were obtained with fMRI. The whole-brain connectome (a measure of the patterns of correlation between each voxel in the brain and everywhere else in the brain) has been estimated and compared with and without TUS. The pattern of interaction between the stimulated region and the rest of brain changes, but patterns of connections between most other brain regions remain unchanged (6–9). It has also been shown that when it is applied to a brain region, then specific behavioral processes are disrupted (3,  4,  7,  9,  18). The effects are transient, but with some stimulation protocols, they outlast the stimulation period and last for somewhere between half an hour and a day. They occur in the absence of evidence of permanent tissue damage (8, 19). In the current study, we applied a short TUS train for 40 s and, within 10 or 15 min, begun measuring its impact on neural activity and behavior over a subsequent period of several tens of minutes, while macaques performed a task (Fig. 1). Similar TUS protocols have previously been shown to affect either neural activity or behavior (3, 4, 6–10). Unlike in previous studies, which focused either on recording neural activity or behavioral effects in the absence of neural recordings, here, we recorded TUS’s effect on behavior and neural activity throughout the whole brain with fMRI. In this way, we sought to manipulate neural activity, measure the effects of this manipulation in a specific primate brain circuit, and record the impact of this manipulation on behavior.\n\nDownloaded from https://www.science.org at University College London on August 24, 2026\n\fA\n\nFig. 2. Estimated peak intensities and spatial distributions of ultrasound based on a high-resolution macaque whole-head computed tomography scan. (A) Before each session, the TUS protocol consisted of a 40-s ultrasonic stimulation with a rectangular envelope over a train of pulses: The pattern displayed was repeated 40 times. Within the ultrasonic stimulation pulse train, each pulse had a pulse duration of 30 ms and a pulse repetition interval (PRI) of 100 ms for a duty cycle of 30%. The pulse repetition frequency (PRF) within the stimulus duration was 10 Hz. PRF = 1/PRI. a.u., arbitrary units. (B) Simulated focused ultrasound peak intensities and spatial distribution in the brain when targeting right and left area 47/12o, based on a high-resolution macaque whole-head computed tomography scan. The maximum spatial-peak pulse-averaged intensity (I ) at the acoustic focus point was 42.6 W/cm<sup>2</sup> for the left area 47/12o target and 34.6 W/cm<sup>2</sup> for the right area 47/12o target.",
+   "exposures[0].device.model": "A single-element piezoelectric ultrasound transducer (H115-MR, diameter of 64 mm, Sonic Concept) with a 51.74-mm focal depth was used with a coupling cone filled with degassed water and sealed with a latex membrane (Durex). The ultrasound wave frequency was set to the 250-kHz resonance frequency, and 30-ms bursts of ultrasound were generated every 100 ms with a digital function generator (Handyscope HS5, TiePie Engineering). Overall, the stimulation lasted for 40 s. A 75-W amplifier (75A250A, Amplifier Research) was used to deliver the required power to the transducer. A TiePie probe connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was constant throughout the stimulation session. Voltage values per session ranged from 130 to 136 V and corresponded to a peak negative pressure ranging from 1.17 to 1.29 MPa, respectively, as measured in water with an in-house heterodyne interferometer (39)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Reported as an approximate range (35-40 W/cm2) across the two bilateral target hemispheres (left 42.6, right 34.6 W/cm2 from simulation), not a range across subjects; reported_as vocabulary has no exact match for this case."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Study used both a no-stimulation sham condition (transducer procedures mirrored but sonication not triggered) and a genuine active-stimulation control at a different site (aPFC); both are recorded."
+   },
+   {
+    "field": "randomised",
+    "reason": "Sham/TUS days were counterbalanced and interleaved but the paper does not use the word 'randomised' for session order."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "second"
+  }
+ }
+}

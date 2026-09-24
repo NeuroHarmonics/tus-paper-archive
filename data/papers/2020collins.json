@@ -1,0 +1,343 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020collins",
+ "doi": "10.1523/eneuro.0213-20.2020",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "medicinal leech (Hirudo verbana)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  14,
+  6,
+  8
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "intracellular sharp-electrode recording of resting membrane potential and action potentials",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US reliably produced dose-dependent depolarization of the resting membrane potential, increased spike frequency, and reduced spike amplitude in Retzius and N cells; the authors conclude these effects are likely an artifact of US-induced electrode resonance rather than a genuine neuromodulatory effect, since they could be mimicked by manual displacement of the recording electrode.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Retzius neuron (acute 100 ms pulsed and extended 20-min pulsed protocols)",
+   "target": {
+    "terms": [
+     "leech_neurons"
+    ],
+    "label": "Retzius neuron"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102-MR"
+   },
+   "fundamental_frequency_khz": 960,
+   "free_field": {
+    "pressure_kpa": 111,
+    "isppa_w_cm2": 4,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.313,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     30
+    ],
+    "sonication_duration_s": [
+     0.1,
+     10
+    ],
+    "protocol_description": "Acute paradigm: a single 100-ms tone of pulsed 960-kHz US (313-us pulses at 1-kHz PRF) was applied following a 20-s baseline, with peak pressures/intensities increased sequentially across repeated trials until electrode impalement was lost (specific tested pressure values are shown only in Fig. 2/3, not stated as a list in the main text). Extended paradigm: pulsed 960-kHz US (312.5-us pulses at 1-kHz PRF, ~30% duty cycle, fixed at 4 W/cm2 Isppa and 111 kPa) was applied for the first 10 s of every minute for a total application period of 20 min; a waiting-period control with no US replaced the stimulus in a separate control condition."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 31.3
+   }
+  },
+  {
+   "label": "N cell (nociceptive mechanosensory neuron), continuous 300 ms tone",
+   "target": {
+    "terms": [
+     "leech_neurons"
+    ],
+    "label": "N cell"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102-MR"
+   },
+   "fundamental_frequency_khz": 960,
+   "free_field": {
+    "pressure_kpa": 20,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "A single tone of continuous (100% duty cycle) 960-kHz US was applied for 300 ms per trial to N cells, with peak pressures/intensities increased sequentially across repeated trials (starting at 20 kPa RMS) until electrode impalement was lost."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "For the first set of experiments, depicted in Figures 3, 4, we applied US as described to 14 leech ganglia while recording intracellularly from one of the bilateral Retzius cells $( n = 1 4$ Retzius cells). Data from 2/14 recordings were not included in analyses because of an unstable baseline (membrane potential rising rapidly before US application because of poor electrode impalement); final $n = 1 2$ . We applied US at ascending pressures to six N cells (n = 6) while recording intracellularly. Our first tested pressure was 20 kPa (root mean squared, the highest pressure used by Dedola et al., 2020); we observed that 0/6 cells responded. We found that Retzius neurons (n = 8) exposed to 20 min of US were depolarized from their pre-US baseline (mean change = 16.03 mV, SD = 8.29).",
+   "anaesthesia": "they were housed at room temperature $( 2 2 { - } 2 4 ^ { \\circ } \\mathrm { C } )$ in a large tank filled with pond water and anaesthetized on ice before dissection.",
+   "exposures[0].fundamental_frequency_khz": "In our first paradigm (Figs. 3, 4), US trials consisted of the application of a single tone of 960-kHz pulsed US for 100 ms following a 20-s baseline recording period. Pulses were 313 ms in duration and were delivered at a 1-kHz pulse repetition frequency.",
+   "exposures[0].timing.pulse_duration_ms": "Tones consisted of 100 pulses of 300 cycles of US $( 3 1 3 - upmu \\mathsf { s }$ pulse duration).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In our first paradigm (Figs. 3, 4), US trials consisted of the application of a single tone of 960-kHz pulsed US for 100 ms following a 20-s baseline recording period. Pulses were 313 ms in duration and were delivered at a 1-kHz pulse repetition frequency.",
+   "exposures[0].timing.duty_cycle_pct": "Tones consisted of 313-ms pulses (pulse duration) pulsed at 1 kHz (pulse repetition frequency), yielding a duty cycle of ;30%.",
+   "exposures[0].timing.sonication_duration_s": "In our first paradigm (Figs. 3, 4), US trials consisted of the application of a single tone of 960-kHz pulsed US for 100 ms following a 20-s baseline recording period. Pulses were 313 ms in duration and were delivered at a 1-kHz pulse repetition frequency. In our third paradigm (Fig. 6), US trials consisted of a 20- min application of 960-kHz pulsed US preceded by a baseline recording period of at least 20 s. A subsequent baseline recording was made after the US application. US was applied for the first 10 s of every minute (tone duration =10 s).",
+   "exposures[1].fundamental_frequency_khz": "In our second paradigm (Fig. 5), US trials consisted of a single tone of 960-kHz continuous (100% duty cycle) US applied for 300 ms.",
+   "exposures[1].timing.duty_cycle_pct": "In our second paradigm (Fig. 5), US trials consisted of a single tone of 960-kHz continuous (100% duty cycle) US applied for 300 ms.",
+   "exposures[1].timing.sonication_duration_s": "In our second paradigm (Fig. 5), US trials consisted of a single tone of 960-kHz continuous (100% duty cycle) US applied for 300 ms.",
+   "exposures[0].device.manufacturer": "The US transducer (Sonic Concepts H102-MR) was placed beneath the preparation (Fig.",
+   "exposures[0].device.model": "The US transducer (Sonic Concepts H102-MR) was placed beneath the preparation (Fig.",
+   "exposures[1].device.manufacturer": "The US transducer (Sonic Concepts H102-MR) was placed beneath the preparation (Fig.",
+   "exposures[1].device.model": "The US transducer (Sonic Concepts H102-MR) was placed beneath the preparation (Fig.",
+   "exposures[0].free_field.pressure_kpa": "US intensity and pressure were fixed at 4-W/cm<sup>2</sup> spatial peak pulse average intensity (I<sub>SPPA</sub>) and 111 kPa, respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "US intensity and pressure were fixed at 4-W/cm<sup>2</sup> spatial peak pulse average intensity (I<sub>SPPA</sub>) and 111 kPa, respectively.",
+   "exposures[1].free_field.pressure_kpa": "Our first tested pressure was 20 kPa (root mean squared, the highest pressure used by Dedola et al., 2020); we observed that 0/6 cells responded."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "a ~30% duty cycle is stated explicitly only for the extended 20-min protocol; the acute 100-ms paradigm states pulse duration (313 us) and PRF (1 kHz) separately but never states its duty cycle in the text, so only the one explicit value (30%) is recorded."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "the acute paradigm (100 ms single tone) and the extended paradigm (10-s tone repeated every minute for 20 min total) are merged into one exposure because both target the same cell type and frequency; the two very different sonication_duration values are listed together and described further in protocol_description."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "111 kPa and 4 W/cm2 Isppa are explicitly stated only for the extended (20-min) sub-protocol, not for the acute 100-ms dose-response paradigm, whose tested pressures are shown only in figures; domain (free field vs in situ) is not stated by the paper, so recorded as unspecified_domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "20 kPa (RMS) is stated as only the first/lowest tested pressure in an ascending sweep to loss of impalement; the full sweep is shown only in a figure, not enumerated in the main text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "the extended-protocol control replaced the 20-min US application with an equivalent waiting period (no US); no inactive-transducer or blinded-sham mechanism is described, so classified as 'other'."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "reported as three separate group sizes for three sub-experiments (14 Retzius ganglia for the acute paradigm, of which 12 were analysed after excluding 2 for unstable baseline; 6 N cells; 8 Retzius ganglia for the extended paradigm); paper never states an overall total."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "leeches were anaesthetized on ice prior to dissection and ganglion isolation; the isolated ganglion preparation itself was not under anaesthesia during ultrasound delivery."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

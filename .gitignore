@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# COPYRIGHT GUARDRAIL. Do not relax these; see README "Data files".
+# PDFs are copyrighted; extracted full text is a derivative work. Neither is
+# ever committed. They live in the private corpus repo, reached by symlink.
+# ---------------------------------------------------------------------------
+*.pdf
+candidates/
+
+# library and data/text are symlinks into the private corpus repo, cloned beside this one.
+# No trailing slash: the pattern must match the link as well as a directory.
+library
+data/text
+
+# Raw Crossref responses.
+data/crossref-cache.json
+
+# Raw sweep output: ~7MB of unscreened candidates carrying harvested abstracts.
+# An intermediate, and it holds publisher abstracts. Regenerate: scripts/sweep.py.
+data/sweep-candidates.json
+
+# ---------------------------------------------------------------------------
+# Ephemeral working files.
+#
+# The want-list is regenerated on every acquire.py run. Rebuild with:
+#   uv run scripts/sweep.py && uv run scripts/acquire.py
+# ---------------------------------------------------------------------------
+data/wanted.csv
+data/wanted.html
+data/needs-decision.csv
+data/needs-decision.md
+data/title-review.md
+data/review-list.html
+data/text-index.json
+data/text-index-citekey.json
+
+# ---------------------------------------------------------------------------
+# Tooling
+# ---------------------------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+node_modules/
+
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Google Drive sync artefacts
+*.gdoc
+*.gsheet
+icon?
+Icon?
+
+# Screener output lives in a scratch directory until check_verdicts.py --apply records it
+# in data/screening.jsonl; a file that fails validation is never recorded.
+
+# MinerU service scratch, if it ever escapes its temp dir (see pdf_markdown.py).
+output/

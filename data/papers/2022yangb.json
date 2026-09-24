@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022yangb",
+ "doi": "10.4103/1673-5374.335158",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": "transient middle cerebral artery occlusion (ischemic stroke model)",
+ "n_subjects": 76,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "modified neurological severity score (mNSS); cresyl violet staining for infarct/edema volume; Western blot and immunostaining for tight junction proteins (ZO-1, occludin, claudin-5); IgG leakage staining; gelatin zymography (MMP-9/MMP-2 activity); RT-qPCR (IL-1beta, TNF-alpha, TGF-beta); laser speckle imaging of cerebral blood flow",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This study assessed neuroprotective and vascular outcomes (edema volume, blood-brain barrier integrity, inflammation, cerebral blood flow) rather than direct neuronal excitability, so excitatory/inhibitory direction of neuromodulatory effect was not assessed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No detectable pathological changes were seen on hematoxylin and eosin staining of tFUS-treated brain compared to normal controls, and tFUS itself did not cause IgG (BBB) leakage in normal (sham) mice.",
+ "exposures": [
+  {
+   "label": "tFUS to left (ipsilateral) hemisphere after transient MCA occlusion",
+   "target": {
+    "terms": [
+     "hemisphere_unspecified"
+    ],
+    "label": "left hemisphere (ipsilateral to MCA occlusion), 2 mm beneath the cortical surface"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.039
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.3,
+    "protocol_description": "tFUS was applied to the left hemisphere for 10 minutes with the probe attached to the overlying skull, using a single-element focused ultrasound transducer. Parameters: fundamental frequency 500 kHz; spatial peak temporal average intensity 39 mW/cm2; pulse width 500 microseconds; pulse interval 1 ms; stimulation (train) duration 300 ms; stimulation interval 3 seconds. Treatment was given once, 2, 4, or 8 hours after occlusion depending on group."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Adult male C57BL/6J mice weighing 25 to 30 g were used in the study experiments (n = 76, purchased from Charles River Laboratories, China [license No. SCXK (Jing) 2019-0009]).",
+   "n_sessions_per_subject": "The mice in the experimental groups underwent 10 minutes of tFUS 2, 4, and 8 hours after occlusion, respectively.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was induced using the following parameters: fundamental frequency, 500 kHz; spatial peak temporal average intensity, 39 mW/cm ; pulse width, 500 μs; pulse interval,1 ms; stimulation duration, 300 ms; and stimulation interval, 3 seconds (Figure 1B and C).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Ultrasound was induced using the following parameters: fundamental frequency, 500 kHz; spatial peak temporal average intensity, 39 mW/cm ; pulse width, 500 μs; pulse interval,1 ms; stimulation duration, 300 ms; and stimulation interval, 3 seconds (Figure 1B and C).",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was induced using the following parameters: fundamental frequency, 500 kHz; spatial peak temporal average intensity, 39 mW/cm ; pulse width, 500 μs; pulse interval,1 ms; stimulation duration, 300 ms; and stimulation interval, 3 seconds (Figure 1B and C).",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was induced using the following parameters: fundamental frequency, 500 kHz; spatial peak temporal average intensity, 39 mW/cm ; pulse width, 500 μs; pulse interval,1 ms; stimulation duration, 300 ms; and stimulation interval, 3 seconds (Figure 1B and C).",
+   "exposures[0].device.manufacturer": "Mice were anesthetized with 1.5% isoflurane (RWD Life Science, Shenzhen, China) in air under spontaneous breathing conditions.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was induced using the following parameters: fundamental frequency, 500 kHz; spatial peak temporal average intensity, 39 mW/cm ; pulse width, 500 μs; pulse interval,1 ms; stimulation duration, 300 ms; and stimulation interval, 3 seconds (Figure 1B and C)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "76 mice were enrolled in total across all 6 groups (12-13 per group), but only 4 of the 6 groups (sham/tFUS, tMCAO/tFUS at 2h/4h/8h) actually received active tFUS; the paper does not give an exact count of ultrasound-exposed animals, only the per-group range, so the total N=76 enrolled is recorded here."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper reports pulse width (500 microseconds) and pulse interval (1 ms) rather than PRF directly; PRF was not computed here."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated; it would require computing pulse width / (pulse width + pulse interval), which was not done here."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "The paper states a single 'spatial peak temporal average intensity' without specifying whether it was measured/derived in free field or in situ."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study measured edema, BBB integrity, inflammation and cerebral blood flow rather than neuronal excitability; classified as not_assessed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

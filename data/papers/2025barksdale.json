@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025barksdale",
+ "doi": "10.1038/s41380-025-03033-w",
+ "model_system": [
+  "human_healthy",
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy",
+  "depression",
+  "anxiety",
+  "other"
+ ],
+ "condition_other": "bipolar I and II disorder, panic disorder, social anxiety disorder, and posttraumatic stress disorder (collectively 'mood, anxiety, and trauma-related disorders', MATRDs)",
+ "n_subjects": 52,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": [
+  1,
+  15
+ ],
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "behaviour",
+  "clinical_scale"
+ ],
+ "readout_other": "Mood and Anxiety Symptom Questionnaire General Distress subscale (MASQ-GD) and other MASQ subscales; PHQ-9; GAD-7; PCL-5; QIDS; STAI; BDI-II; BAI; emotional face matching task fMRI",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Active vs sham tFUS/fMRI reduced left amygdala BOLD signal on average, and repeated tFUS treatment produced sustained decreases in task-based amygdala activation and clinical symptom scores.",
+ "adverse_events": "observed",
+ "safety_notes": "24 mild-to-moderate AEs (e.g., decreased concentration, tingling, headache, dizziness) reported across 29 participants, evenly split between active and sham conditions; no serious AEs or AEs requiring medical intervention.",
+ "exposures": [
+  {
+   "label": "tFUS/rtFUS to left amygdala",
+   "target": {
+    "terms": [
+     "amygdala"
+    ],
+    "label": "left amygdala"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "Pulsar 1002"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 640,
+    "isppa_w_cm2": 14.4,
+    "ispta_w_cm2": 0.71991
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm2, derated spatial peak temporal average intensity of 719.91 milliwatts/cm2, and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Patients and HCs first underwent two double-blind administrations of tFUS/fMRI (active and sham order counterbalanced) separated by about a week; patients then commenced once-daily rtFUS treatment delivered 5 days a week for 3 consecutive weeks (15 sessions) using the same protocol."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Of 83 individuals assessed, 52 (29 patients, 23 HC) were eligible and enrolled (Table 1 and Supplementary Table 4). Of 52, 47 completed both tFUS/fMRI scans (25 patients, 22 HC), and 24 patients initiated daily rtFUS. Of 24, 3 discontinued prior to completing treatment, leaving 21 individuals receiving all sessions of rtFUS (\\~88% of sample initiating; Supplementary Fig. 3). A wide spectrum of diagnoses was represented, including MDD (N = 16), bipolar I disorder (N = 4), bipolar II disorder (N = 6), GAD (N = 16), PTSD (N = 10), SAD (N = 7), and PD (N = 2).",
+   "n_sessions_per_subject": "In an unblinded treatment trial, the same patients then underwent 3-week daily (15 sessions) MRIguided repetitive tFUS (rtFUS) to the left amygdala to examine safety, feasibility, symptom change, and change in amygdala reactivity to emotional faces.",
+   "adverse_events": "There were 24 AEs reported across 29 participants, with \\~92% (22 of 24) occurring in-scanner (Supplementary Table 7). There was an even split of AEs across active and sham (11 in each) with no significant differences in frequency by condition $( \\mathsf { X } ^ { 2 } = 0 . 0 0 ,$ p = 1.00). There were 2 additional AEs reported in the treatment portion (headache and irritability). Most common AEs across conditions were decreased concentration, tingling in limbs/hands, headache, and dizziness/light-headedness (2 of each). Severities ranged from 1–7, with mean severity in the active in-scanner sonication being the highest at \\~5. Nearly all AEs resolved during the study visit, except for two cases of mild headache that abated prior to next study visit and one case of mild increased irritability during treatment that abated within a few days. About 50% of participants reported some AE (14 of 29) across all study procedures, with only 4 participants reporting an AE only during verum FUS. There were no serious AEs nor AEs requiring medical intervention.",
+   "exposures[0].target.label": "Here, we report findings from a double-blind, sham-controlled, within-subject tFUS/fMRI target-engagement study in patients with MATRDs and healthy controls (HCs) followed by a single-arm unblinded pilot clinical trial of daily repetitive tFUS (rtFUS) targeted to the left amygdala in MATRD patients. The target engagement study was designed to confirm a modulatory effect of left amygdala tFUS and examine potential case-control differences in tFUS-evoked responses. We used task-based fMRI to probe amygdala function before and after rtFUS to test the hypothesis that rtFUS would promote sustained post-intervention attenuations of amygdala activity. Left amygdala was selected based on evidence for a more prominent left-sided abnormality [5]. tFUS was targeted using structural MRI-guided placement against the left temporal bone (thinnest portion of lateral skull) [56] of a single-element transducer designed for human subcortical neuromodulation [57]. Patients and HCs first underwent two double-blind administrations of tFUS/fMRI (active and sham order counterbalanced) separated by about a week. Patients then commenced with once-daily rtFUS treatment delivered 5 days a week (Mon-Fri) for 3 consecutive weeks using the same protocol administered during tFUS/fMRI, previously demonstrated to attenuate left amygdala fMRI activation to fear provocation [38] and employed in the GAD treatment study [55]. We hypothesized that active vs. sham tFUS/fMRI would reduce left amygdala BOLD signal and that rtFUS in patients would be safe, show high rates of treatment completion, produce significant improvements on our primary clinical outcome, and attenuate task-based amygdala fMRI activation to naturalistic probes (emotional faces) following treatment.",
+   "exposures[0].in_situ.pressure_kpa": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].in_situ.isppa_w_cm2": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].in_situ.ispta_w_cm2": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].timing.pulse_duration_ms": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].timing.duty_cycle_pct": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].timing.sonication_duration_s": "tFUS administration. In tFUS/fMRI and rtFUS treatment sessions, participants received the same tFUS stimulation protocol with the Brainsonix Pulsar 1002 [57], which has demonstrated engagement of amygdala and other subcortical structures in previously-published studies [35, 38, 39, 55]. Participants received tFUS with the following parameters: 10 Hz pulse repetition frequency (PRF), 5% duty cycle (DC), 5 ms pulse width, derated spatial peak pulse average intensity of 14.4 watts/cm<sup>2</sup>, derated spatial peak temporal average intensity of 719.91 milliwatts/cm<sup>2</sup> (720 milliwatts/cm<sup>2</sup> is the current FDA safety limit), and derated instantaneous peak pressure of 0.64 megapascals over 10 min in 10 sets of 30 s on/off blocks. Parameters were informed by: (a) animal work suggesting lower DCs (percentage of the time from the start of one tone burst duration to the start of the next tone burst duration, i.e. one cycle of tFUS sonication in a pulsed design, during which ultrasound is delivered) showed inhibitory effects whereas higher DCs (e.g., 50%) showed excitatory effects [67]; and (b) unpublished pilot data. AEs and blinding integrity/confidence was assessed via written questionnaire after each session.",
+   "exposures[0].device.manufacturer": "We thank Brainsonix and ANT Neuro for manufacturing the equipment used on this study and for providing technological support."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "52 individuals (29 MATRD patients, 23 healthy controls) were enrolled and underwent tFUS/fMRI targeting; only 47 completed both active and sham sessions, so the exact number who received at least one active-condition sonication is not separately stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Session count differs by subgroup: all participants (patients and healthy controls) underwent 2 tFUS/fMRI sessions (active+sham, counterbalanced), while only MATRD patients went on to receive up to 15 additional daily rtFUS treatment sessions; recorded as a list of the two distinct session counts stated in the text rather than a single combined number."
+   },
+   {
+    "field": "randomised",
+    "reason": "Active/sham order was 'counterbalanced' across participants; the paper does not state whether this counterbalancing was achieved via a randomisation procedure."
+   },
+   {
+    "field": "blinding",
+    "reason": "The target-engagement tFUS/fMRI phase was double-blind and sham-controlled, but the subsequent repetitive tFUS (rtFUS) clinical trial phase was explicitly unblinded/single-arm; 'double' reflects the sham-controlled comparison only."
+   },
+   {
+    "field": "fundamental_frequency_khz",
+    "reason": "Paper does not state the fundamental/carrier ultrasound frequency of the Brainsonix Pulsar 1002 device used."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "neither"
+  }
+ }
+}

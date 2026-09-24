@@ -1,0 +1,164 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1951fry",
+ "doi": "10.1121/1.1906774",
+ "model_system": [
+  "other_vertebrate"
+ ],
+ "species": "frog (species not stated; average weight about 23 g, range 15-32 g)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 500,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "hind-limb paralysis (all-or-none) as the functional endpoint following ultrasound irradiation of the lumbar spinal cord.",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasound above a threshold acoustic amplitude produced permanent paralysis of the frog hind limbs after a duration that decreased linearly with amplitude (1/time proportional to amplitude minus threshold); the effect persisted at 13 atmospheres hydrostatic pressure sufficient to suppress cavitation, and was argued not to be caused by bulk or localised temperature rise.",
+ "adverse_events": "observed",
+ "safety_notes": "Ultrasound at sufficient amplitude/duration produced permanent paralysis of the frog hind limbs; effect was not prevented by suppressing cavitation with hydrostatic pressure.",
+ "exposures": [
+  {
+   "label": "Intact frog, lumbar enlargement of the spinal cord, under atmospheric or 13-atmosphere hydrostatic pressure",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "lumbar enlargement of the spinal cord, intact frog, sound beam incident on the dorsal surface"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 980,
+   "free_field": {
+    "pressure_kpa": [
+     1013.3,
+     1215.9
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     5.4,
+     7.8
+    ],
+    "protocol_description": "Frogs at atmospheric pressure or under 13 atmospheres hydrostatic pressure (sufficient to suppress cavitation) were irradiated on the dorsal surface over the lumbar enlargement with a single continuous sonication; the reciprocal of the minimum exposure time for paralysis increased linearly with acoustic amplitude, with a definite threshold in each case. In a separate summation experiment at 10 atmospheres acoustic pressure amplitude, an initial subparalytic dose of 5.4 s (paralysis time for a single irradiation at this level was 7.8 s) was followed by a second dose after a variable interval to study recovery."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The experiments described in this paper were all performed at an ultrasonic frequency of 0.98 mc.",
+   "exposures[0].free_field.pressure_kpa": "The sound level is held constant at a pressure amplitude of 10 atmospheres, which corresponds to a driving crystal voltage of 4.5 kilovolts.",
+   "exposures[0].timing.sonication_duration_s": "This level corresponds to a paralysis time of 7.8 seconds for a single irradiation.",
+   "n_subjects": "Observations on about 500 frogs were required to obtain the data for Figs. 2 and 3."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "List combines two explicitly stated free-field pressure-amplitude calibration points (about 12 atmospheres at 5.5 kV, used for the main amplitude-duration data of Fig. 2/3; and 10 atmospheres, held constant for the summation experiment of Fig. 4); the source quote given is only for the first."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper reports that the average acoustic pressure amplitude measured directly in the cord (via an inserted probe) is 0.8 of the free-field amplitude, but gives no absolute in-situ figure; per the no-derating rule this ratio is not converted into a number here."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper states 'about 500 frogs' were needed for the main amplitude-duration dataset (Figs. 2-3); this excludes additional frogs used in the separate summation sub-experiments (stated only as '12 to 15 frogs ... per point')."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "neither",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

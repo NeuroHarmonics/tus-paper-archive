@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2015guo",
+ "doi": "10.1109/tbme.2015.2427339",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  16,
+  9
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Neurological severity score (NSS); TTC staining for cortical infarct volume; laser speckle imaging (LSI) of cerebral blood flow; MPO immunohistochemistry for neutrophil infiltration",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "The pTUS parameters (established via motor output/EMG responses in pilot work, indicating excitatory neuromodulation) were applied to the ischemic cortex immediately after dMCAO; treated rats had lower NSS, smaller infarct volume, fewer infiltrating neutrophils, and increased regional cerebral blood flow than untreated controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Estimated brain temperature rise was <0.01C for the frequency/intensity used over 60 min of stimulation; ISATA values used were all under the threshold reported for thermal or cavitational damage, though the authors note a theoretical risk of haemorrhage for unhealthy vessels.",
+ "exposures": [
+  {
+   "label": "Collimated 0.5 MHz pTUS to ischemic/somatosensory cortex",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "ischemic cortex (ischemic core after distal MCAO); in a separate cerebral-blood-flow experiment, 'the overall somatosensory cortex'"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.155,
+    "ispta_w_cm2": 0.086
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.4,
+     0.67
+    ],
+    "protocol_description": "Each tone pulse comprised 200 acoustic cycles at 0.5 MHz (NC = 200) repeated at a tone-burst PRF of 1.5 kHz. In stroke experiments, 360 trials (0.4 s sonication per trial, 10 s intertrial interval) of collimated pTUS were delivered to the ischemic cortex immediately after dMCAO for a total of 60 min, using 600 tone bursts per trial (NTB = 600). In a separate cerebral-blood-flow experiment on non-ischemic rats, three blocks of 12 trials (2 min intertrial, 10 min interblock interval) were tested with NTB = 600, 800 or 1000, giving per-trial sonication durations of about 0.40-0.67 s. Ultrasound power was reported as spatial-average pulse-average (ISAPA, 2.155 W/cm2) and spatial-average temporal-average (ISATA, 43-86 mW/cm2 depending on NTB) intensities, not spatial-peak values."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty-eight male Sprague Dawley rats $( 3 0 0 \\pm 2 0 \\mathrm { g } .$ Slac Laboratory Animal, Shanghai, China) were randomly separated into: 1) dMCAO-control group $( n = 1 6 )$ , in which the animals were subjected to standard dMCAO injury without any ultrasound interventions. These rats were anesthetized up to ∼2 h following the same protocols as the pTUS group considering the potential influences of anesthetics. 2) dMCAO-pTUS group $( n = 1 6 )$ , in which the rats were treated with pTUS immediately after the dMCAO for 60 min, and 3) Sham group (n = 6) that received the same surgical procedures except dMCAO.",
+   "n_sessions_per_subject": "In stroke experiments, 360 trials (sonication duration for each trial: 0.4 s, intertrial interval: 10 s) of collimated pTUS were delivered immediately to stimulate the ischemic core after the dMCAO, and NTB was set to 600 in order to increase the sonication time.",
+   "exposures[0].fundamental_frequency_khz": "In this study, we tested the 0.5-MHz pTUS with different parameters [i.e., the number of acoustic cycles per pulse (NC), pulse repetition frequency (PRF), spatial-average temporalaverage intensity $( I _ { \\mathrm { S A T A } } )$ , the number of tone bursts (NTB)] from an immersion-type planar transducer, and we could observe evident motor outputs and EMG signals (noncollimated: $\\mathrm { N C } = 2 0 0 , \\mathrm { P R F } = 1 . 5 \\mathrm { k H z , N T B } = 2 0 0 , I _ { \\mathrm { S A T A } } \\colon 5 7 \\mathrm { m W / c m ^ { 2 } } .$",
+   "exposures[0].timing.pulse_duration_ms": "In this study, we tested the 0.5-MHz pTUS with different parameters [i.e., the number of acoustic cycles per pulse (NC), pulse repetition frequency (PRF), spatial-average temporalaverage intensity $( I _ { \\mathrm { S A T A } } )$ , the number of tone bursts (NTB)] from an immersion-type planar transducer, and we could observe evident motor outputs and EMG signals (noncollimated: $\\mathrm { N C } = 2 0 0 , \\mathrm { P R F } = 1 . 5 \\mathrm { k H z , N T B } = 2 0 0 , I _ { \\mathrm { S A T A } } \\colon 5 7 \\mathrm { m W / c m ^ { 2 } } .$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In this study, we tested the 0.5-MHz pTUS with different parameters [i.e., the number of acoustic cycles per pulse (NC), pulse repetition frequency (PRF), spatial-average temporalaverage intensity $( I _ { \\mathrm { S A T A } } )$ , the number of tone bursts (NTB)] from an immersion-type planar transducer, and we could observe evident motor outputs and EMG signals (noncollimated: $\\mathrm { N C } = 2 0 0 , \\mathrm { P R F } = 1 . 5 \\mathrm { k H z , N T B } = 2 0 0 , I _ { \\mathrm { S A T A } } \\colon 5 7 \\mathrm { m W / c m ^ { 2 } } .$",
+   "exposures[0].timing.sonication_duration_s": "The raw laser speckle images were recorded for 20 s, including 4-s baseline, $0 . 4 0 { - } 0 . 6 7 { - } \\mathrm { s } \\ \\mathrm { p T U S }$ , and approximate 16 s of poststimulation.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound power in this study was measured by a radiation force balance system (RFB-2000, Onda, Corp., Sunnyvale, CA, USA) with spatial average pulse average intensity $\\left( I _ { \\mathrm { S A P A } } \\right)$ of 2.155 $\\mathrm { W } / \\mathrm { c m } ^ { \\bar { 2 } }$ and spatial average temporal average intensity $( I _ { \\mathrm { S A T A } } )$ of 86 mW/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound power in this study was measured by a radiation force balance system (RFB-2000, Onda, Corp., Sunnyvale, CA, USA) with spatial average pulse average intensity $\\left( I _ { \\mathrm { S A P A } } \\right)$ of 2.155 $\\mathrm { W } / \\mathrm { c m } ^ { \\bar { 2 } }$ and spatial average temporal average intensity $( I _ { \\mathrm { S A T A } } )$ of 86 mW/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated directly as a duration; computed via the permitted cycles-per-pulse / frequency conversion from NC = 200 acoustic cycles at 0.5 MHz."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper reports only spatial-average intensities (ISAPA 2.155 W/cm2, ISATA 43-86 mW/cm2 depending on NTB), not the spatial-peak ISPPA/ISPTA quantities requested by this field; left not_reported rather than conflating spatial-average with spatial-peak intensity."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Same as above: only spatial-average temporal-average intensity (ISATA) is reported, which is a distinct quantity from spatial-peak ISPTA."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "38 rats were split into dMCAO-control (n=16, no ultrasound), dMCAO-pTUS (n=16, ultrasound-exposed) and Sham-surgery (n=6, no ultrasound, no dMCAO) groups; a separate cohort of 9 rats was used for the cerebral-blood-flow experiment. Only the 16 pTUS-treated stroke rats and the 9 CBF-experiment rats received ultrasound; these are recorded as two group sizes since the paper gives no combined total and it is unclear whether any animals overlap between experiments (e.g. the n=6 immunohistochemistry subset)."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper's 'Sham' group refers to sham surgery for the stroke model (no dMCAO), not a sham/inactive-ultrasound condition; the ultrasound comparator ('Control') simply received no ultrasound device application, so sham_type is recorded as 'none'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

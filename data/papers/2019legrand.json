@@ -1,0 +1,277 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019legrand",
+ "doi": "10.1101/813006",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "depression",
+  "anxiety"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  20,
+  10,
+  4,
+  15
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  5
+ ],
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "pet",
+  "histology_molecular"
+ ],
+ "readout_other": "Electrode-free video and EMG motor-evoked potentials (M1 parameter finding); c-Fos immunolabelling; [18F]-FDG microPET imaging; LC-HRMS brain metabolomics; nest-building, reward-maze and open-field behavioural tests",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "USNS of M1 produced dose-dependent motor-evoked responses; acute/chronic USNS of the infralimbic cortex increased local and distant (striatum, thalamus, hippocampus, PAG, raphe) c-Fos expression and FDG metabolism, reduced anxiety-related behaviours (open-field mobility/center-crossings, nest-building) but did not improve anhedonia (reward-maze) relative to fluoxetine.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "single-pulse USNS of primary motor cortex M1 for parameter optimization",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex M1"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     50,
+     500
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.16,
+    "protocol_description": "Single-pulse USNS (160-ms tone bursts) was delivered over left M1 at peak negative pressures stepped from 50 to 500 kPa in 50-kPa increments. In a first subset (n=20), 10 pulses 10 s apart were delivered per pressure step via a threshold-hunting algorithm (electrode-free motor response scoring). In a second subset (n=10, EMG), pressures from 350-500 kPa were tested; 400 kPa (160-msec pulse) gave the best combination of motor success, MEP amplitude, reliability and focality and was adopted for subsequent infralimbic-cortex USNS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "acute and chronic repeated USNS of the infralimbic cortex (IL)",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "infralimbic cortex (IL), the sgACC equivalent in rodents"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 400,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.16,
+    "protocol_description": "Acute USNS was a 10-min session of 60 pulses (each pulse 400 kPa, 160-msec) repeated at a rate of 0.1 Hz over the infralimbic cortex under 1% isoflurane. For chronic USNS, one such session was applied every day for 5 consecutive days (day 29-33), totalling 300 stimuli over 60 min; a Sham group received the same procedure with the transducer deactivated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty mice were used for setting-up optimal US neurostimulation (USNS) parameters with motor response measurements, determined with: 1) electrode-free video recordings of the targeted limb (n=20) and 2) electromyography (n=10).",
+   "exposures[0].fundamental_frequency_khz": "US waves were generated using a single-element transducer with a central frequency of 500 kHz, coupled to a water-filled collimated column (d=10 mm) and operated on a stereotaxic frame.",
+   "exposures[0].free_field.pressure_kpa": "In a cohort of thirty mice positioned in the stereotaxic frame under gaseous anesthesia (0.1- 1% isoflurane), peak negative pressures ranging from 50 to 500 kPa by steps of 50 kPa were delivered from the transducer (25) (Figure 1A).",
+   "exposures[0].timing.sonication_duration_s": "The transducer had a diameter of 38 mm and was focused at 65 mm, driven with an electrical signal generated by an arbitrary waveform generator set for 160-millisecond pulses and amplified with a power amplifier.",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound stimuli were generated using a single-element transducer focused at 65 mm (active diameter of 38 mm, Imasonic, Besançon, France) with a central frequency of 500 kHz and a fractional bandwidth of 58%.",
+   "exposures[1].free_field.pressure_kpa": "From single-pulse USNS data and previous studies (16), the pattern of acute USNS was constructed as a 10-min session of 60 USNS pulses (1 pulse: 400 kPa, 160-msec) repeated at a rate of 0.1 Hz and delivered over the prefrontal cortex under 1% isoflurane anesthesia.",
+   "exposures[1].timing.sonication_duration_s": "From single-pulse USNS data and previous studies (16), the pattern of acute USNS was constructed as a 10-min session of 60 USNS pulses (1 pulse: 400 kPa, 160-msec) repeated at a rate of 0.1 Hz and delivered over the prefrontal cortex under 1% isoflurane anesthesia.",
+   "exposures[0].device.manufacturer": "Ultrasound stimuli were generated using a single-element transducer focused at 65 mm (active diameter of 38 mm, Imasonic, Besançon, France) with a central frequency of 500 kHz and a fractional bandwidth of 58%.",
+   "exposures[1].device.manufacturer": "Ultrasound stimuli were generated using a single-element transducer focused at 65 mm (active diameter of 38 mm, Imasonic, Besançon, France) with a central frequency of 500 kHz and a fractional bandwidth of 58%.",
+   "n_sessions_per_subject": "This constituted one treatment session of chronic USNS (or “acute USNS”); one session was applied every day for 5 consecutive days from day 29 to day 33 to constitute the chronic protocol of chronic USNS (total of 300 US stimuli over 60 min)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives group sizes for separate sub-experiments (M1 parameter-finding: 20 electrode-free + 10 EMG; acute USNS: 4; chronic USNS: 15) rather than one exposed total; listed rather than summed."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Varies by sub-experiment: single session for M1 parameter-finding and acute USNS, 5 daily sessions for chronic USNS."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper states a skull attenuation coefficient (6.32±2.18% at 500 kHz) used to derate pressure inside the brain but does not give the resulting derated kPa value for specific stimulation levels."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "Paper equates the infralimbic cortex (IL) with the rodent sgACC counterpart; target term chosen on that explicit equivalence rather than the vmPFC/prelimbic hierarchy."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "neither"
+  }
+ }
+}

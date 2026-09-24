@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019liu",
+ "doi": "10.1016/j.brainresbull.2018.12.004",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6,
+  6,
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "apparent diffusion coefficient (ADC) mapping from diffusion-weighted MRI; TTC staining",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LITUS inhibited the post-stroke decrease in ADC (a marker of cytotoxic edema/ischemic injury) when applied at 0.5-6 h after stroke onset, with no significant effect at 9 h; this is a neuroprotective/therapeutic outcome rather than a measure of excitatory/inhibitory neuromodulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The maximum temperature enhancement induced by LITUS was estimated (using I=2.6 W/cm2, t=0.0005 s, alpha=0.0175 cm^-1) to be 1.2x10^-3 degrees C, far below the temperature threshold predicted to induce tangible thermal bio-effects.",
+ "exposures": [
+  {
+   "label": "LITUS applied to ischemic cortex after distal MCA occlusion, at delays of 0.5, 1, 3, 6 or 9 h",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "ischemic cortex following distal middle cerebral artery occlusion (dMCAO)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.6,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "The total stimulation duration was 10 min with 200 trials. The ultrasound FF and PRF were 500 kHz and 1 kHz, respectively. The ultrasound SD and TBD were 400 ms and 0.5 ms, and the Isppa value was 2.6 W/cm2. LITUS was performed once, at 0.5 h, 1 h, 3 h, 6 h, or 9 h after dMCAO depending on group; MR imaging was performed 15 min before (Pre-Stim) and 1, 2, and 3 h after (Post-Stim) LITUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In the present study, 60 Sprague Dawley rats (250 ± 10 g) were divided randomly into <sup>fi</sup>ve groups (each group including LITUS group (6 rats) and control group (CTRL group: 6 rats)) with di<sup>f</sup>erent treatment delays (0.5 h, 1 h, 3 h, 6 h, and 9 h).",
+   "randomised": "Based on the time from stroke onset to treatment, the animals were divided randomly into five groups (each group including LITUS group and CTRL group) named 0.5 h, 1 h, 3 h, 6 h, and 9 h.",
+   "blinding": "A radiologist with 10 years of experience in neural MR imaging, who was blinded to the animal grouping, measured the ADC from the lesion area.",
+   "anaesthesia": "Surgical anesthesia was induced with sodium pentobarbital (3%, 5 mg/100 g).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound FF and PRF were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound FF and PRF were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound SD and TBD were 400 ms and 0.5 ms, and the Isppa value was 2.6 W/cm2.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound SD and TBD were 400 ms and 0.5 ms, and the Isppa value was 2.6 W/cm2.",
+   "exposures[0].free_field.isppa_w_cm2": "The ultrasound pressure was measured by a calibrated needletype hydrophone (HNR500; Onda, USA) and the Isppa value was 2.6 W/cm2.",
+   "exposures[0].device.manufacturer": "The pulsed signal from the second generator was ampli fi ed by a linear power ampli fi er $( \\mathbb { E } \\& \\ I 2 4 0 \\mathrm { L } ;$ ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan).",
+   "exposures[0].device.model": "The pulsed signal from the second generator was ampli fi ed by a linear power ampli fi er $( \\mathbb { E } \\& \\ I 2 4 0 \\mathrm { L } ;$ ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan).",
+   "n_sessions_per_subject": "The LITUS was performed at 0.5 h, 1 h, 3 h, 6 h, and 9 h after dMCAO in all groups, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "Once the MR imaging was <sup>fi</sup>nished, the rats were stimulated with ultrasound for 10 min (I = 2.6 W/cm<sup>2</sup>, fundamental frequency: 500 kHz, duty cycle: 50%, stimulation duration: 400 ms) in the LITUS groups and went without ultrasound stimulation in the control (CTRL) group."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "CTRL group 'went without ultrasound stimulation' and 'received the same experimental protocol' but the paper does not describe whether a transducer was placed without power (inactive_transducer) or simply omitted; mechanism of the control is not described."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Total of 60 rats were enrolled (30 LITUS + 30 CTRL); n_subjects here counts only the 30 rats that received active ultrasound (LITUS groups)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not stated as a percentage in the text; PRF (1 kHz) and pulse duration (0.5 ms) are given separately and left unconverted per protocol."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Domain assumed free_field because pressure/intensity was measured by hydrophone without stated skull/tissue path; paper does not explicitly label this as a free-field or in-situ value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ }
+}

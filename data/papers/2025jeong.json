@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025jeong",
+ "doi": "10.1177/13872877251333614",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 6,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "MMSE-2; Clinical Dementia Rating (CDR); Seoul Neuropsychological Screening Battery-II (SNSB-II) domains (attention, language, visuospatial, memory, executive function); resting-state fMRI seed-to-voxel functional connectivity",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Memory domain scores significantly increased after LIFU treatment (z=2.29, p=0.02); functional connectivity between the left DLPFC and the left perirhinal cortex and left dorsomedial prefrontal cortex increased; attention, language, visuospatial, executive function and MMSE-2 scores did not significantly change.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The treatment was well tolerated, and no participants reported any adverse events; there were no significant changes in vital signs, laboratory tests, or structural brain imaging at follow-up.",
+ "exposures": [
+  {
+   "label": "Repeated neuronavigation-guided LIFU to the left dorsolateral prefrontal cortex",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "left dorsolateral prefrontal cortex (DLPFC; Brodmann area [BA] 46)"
+   },
+   "device": {
+    "family": "neurosona",
+    "manufacturer": "Neurosona Co., Ltd",
+    "model": "NS-US200"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 3.0,
+    "ispta_w_cm2": 1.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder. The ultrasound focus was formed 30 mm from the exit plane of the transducer, and the focal size was 4 mm in diameter and 18 mm in length at 90% maximum intensity. Patients were scheduled to receive a total of six treatments over a two-week period (extended to three weeks if needed)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The remaining 10 patients received 6 LIFU treatments and completed the study.",
+   "n_sessions_per_subject": "Methods: Ten early-stage AD patients underwent six sessions of neuronavigation-guided LIFU targeting the left dorsolateral prefrontal cortex (DLPFC) within 2–3 weeks, alongside ongoing standard pharmacotherapy.",
+   "randomised": "First, the absence of a sham comparison group constrains our capacity to conclusively determine the cognitive enhancement effects of the treatment.",
+   "blinding": "First, the absence of a sham comparison group constrains our capacity to conclusively determine the cognitive enhancement effects of the treatment.",
+   "exposures[0].fundamental_frequency_khz": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].timing.pulse_duration_ms": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].timing.duty_cycle_pct": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].timing.sonication_duration_s": "For each session, the ultrasound stimulation was delivered for 20 min with the following parameters based on previous LIFU studies in healthy volunteers and patients with major depressive disorder (MDD)<sup>33,34</sup>: fundamental frequency = 250 kHz, tone burst duration = 1 ms, pulse repetition frequency = 500 Hz, duty cycle = 50%, sonication duration = 300 ms, spatial-peak pulse-average acoustic intensity (Isppa) = 3.0 W/cm<sup>2</sup>, spatial-peak temporal-average intensity (Ispta) = 1.5 W/cm², in situ mechanical index = 0.6.",
+   "exposures[0].device.manufacturer": "Before the first session of each patient, T1-weighted and CT data were coregistered using 3D Slicer software version 4.11 (https://www.slicer.org) and uploaded to the dedicated LIFU system (NS-US200, Neurosona Co., Ltd, Seoul, South Korea) for real-time image-guided neuronavigation.",
+   "exposures[0].device.model": "Before the first session of each patient, T1-weighted and CT data were coregistered using 3D Slicer software version 4.11 (https://www.slicer.org) and uploaded to the dedicated LIFU system (NS-US200, Neurosona Co., Ltd, Seoul, South Korea) for real-time image-guided neuronavigation."
+  },
+  "flags": [
+   {
+    "field": "randomised",
+    "reason": "Single-arm, uncontrolled pilot design with no sham/comparison group; not explicitly described as randomised or non-randomised."
+   },
+   {
+    "field": "blinding",
+    "reason": "No sham/control arm is used, so blinding could not be implemented; not explicitly stated by the authors."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "The parameter list attaches the label 'in situ' only to the mechanical index; it is unclear whether the adjacent ISPPA/ISPTA values are also in-situ (brain-target) estimates or free-field settings, so they are recorded as unspecified domain."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Same ambiguity as ISPPA: domain not explicitly stated for this intensity value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

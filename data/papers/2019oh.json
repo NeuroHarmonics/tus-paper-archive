@@ -1,0 +1,439 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019oh",
+ "doi": "10.1016/j.cub.2019.08.021",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6J, TRPA1 KO, Best1 KO, hGFAP-GFP); Sprague-Dawley rat (organotypic hippocampal slice culture; primary astrocyte/neuron source)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  4,
+  7,
+  4,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "MEA recording of hippocampal CA1 firing; Ca2+ imaging (Fura-2/ratiometric); tail movement scoring; immunogold electron microscopy; Western blot",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LILFU increased tail movement scores, hippocampal CA1 firing, and astrocytic/neuronal Ca2+ responses via TRPA1-Best1-NMDAR signaling; effects were reduced by TRPA1/Best1 knockout, shRNA knockdown, or pharmacological blockade.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Transcranial LILFU to motor cortex, in vivo tail movement test",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex (transcranial, in vivo)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "EofE Ultrasonics Co., Ltd",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.23,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.06667,
+    "protocol_description": "Ultrasound was produced by two function generators in series, amplified by a linear power amplifier, and delivered through a single-element focused transducer (6.5 cm diameter, 7 cm geometrical focal length) via a water-filled cone housing. Tail movement was scored 1-3 depending on movement height, and was increased in an intensity-dependent manner in both WT and TRPA1 KO (or Best1 KO) mice, though less so in the KO lines."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 34.5
+   }
+  },
+  {
+   "label": "LILFU applied to organotypic rat hippocampal (CA1) slice culture during MEA recording",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region of organotypic rat hippocampal slice culture"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "MKC Korea",
+    "model": "ultrasound pulser MKPR-1025 with custom 10x10 mm water-immersion transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 11.52,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20.97,
+    "pulse_repetition_frequency_hz": 1160,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "For all MEA recording, LILFU was applied for 3 min, following a 3 min baseline; the percent of neuronal firing from baseline was measured. For blocking experiments HC030031, niflumic acid, NPPB, AP-5 or kynurenic acid were added to the ACSF."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 2432.52
+   }
+  },
+  {
+   "label": "LILFU applied via pMUT array to HEK293T cells (TRPA1/TRPC1/TRPV4/Piezo1) and cultured cortical astrocytes for Ca2+ imaging",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "TRPA1/TRPC1/TRPV4/Piezo1-expressing HEK293T cells and primary cultured cortical astrocytes"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported (in-house fabrication)",
+    "model": "custom piezoelectric micromachined ultrasonic transducer (pMUT) array, ~430 kHz resonance, 500 micron element diameter"
+   },
+   "fundamental_frequency_khz": 430,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 67.3,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.25,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.1,
+    "protocol_description": "The acoustic power from a single transducer could be controlled from 10.2 kPa to 67.3 kPa by varying the applied actuation voltage from 11 V to 66 V. LEDs for Ca2+ imaging were triggered at 1 Hz and synchronized with sCMOS time-lapse imaging; LILFU-induced Ca2+ responses were compared with N-methylmaleimide (NMM)-induced responses."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "randomised": "Animals were randomly and evenly allocated to each experimental group.",
+   "blinding": "To perform the group allocation in a blinded manner during data collection, animal preparation and experiments were performed by different investigators.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was induced with following parameters: 350 kHz fundamental frequency, 1.5 kHz pulse repetition frequency, 0.23 ms pulse duration, 66.67 ms sonication duration.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was induced with following parameters: 350 kHz fundamental frequency, 1.5 kHz pulse repetition frequency, 0.23 ms pulse duration, 66.67 ms sonication duration.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was induced with following parameters: 350 kHz fundamental frequency, 1.5 kHz pulse repetition frequency, 0.23 ms pulse duration, 66.67 ms sonication duration.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was induced with following parameters: 350 kHz fundamental frequency, 1.5 kHz pulse repetition frequency, 0.23 ms pulse duration, 66.67 ms sonication duration.",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound was induced with following parameters: 500 kHz fundamental frequency, 1.16 kHz pulse repetition frequency, 20.97 ms pulse duration.",
+   "exposures[1].timing.pulse_duration_ms": "Ultrasound was induced with following parameters: 500 kHz fundamental frequency, 1.16 kHz pulse repetition frequency, 20.97 ms pulse duration.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Ultrasound was induced with following parameters: 500 kHz fundamental frequency, 1.16 kHz pulse repetition frequency, 20.97 ms pulse duration.",
+   "exposures[1].unspecified_domain.pressure_kpa": "Parameters were optimized to yield a spatial peak pressure of 11.52 kPa.",
+   "exposures[1].timing.sonication_duration_s": "For all MEA recoding, LILFU was applied for 3 min, following a 3 min baseline.",
+   "exposures[2].fundamental_frequency_khz": "In the experiment for Ca2+ imaging in vitro, ultrasound was induced with following parameters: 430 kHz fundamental frequency, 2 kHz pulse repetition frequency, 0.25 ms pulse duration, 100 ms sonication duration, acoustic power of 67.3 kPa with an applied voltage of 66 V.",
+   "exposures[2].timing.pulse_duration_ms": "In the experiment for Ca2+ imaging in vitro, ultrasound was induced with following parameters: 430 kHz fundamental frequency, 2 kHz pulse repetition frequency, 0.25 ms pulse duration, 100 ms sonication duration, acoustic power of 67.3 kPa with an applied voltage of 66 V.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "In the experiment for Ca2+ imaging in vitro, ultrasound was induced with following parameters: 430 kHz fundamental frequency, 2 kHz pulse repetition frequency, 0.25 ms pulse duration, 100 ms sonication duration, acoustic power of 67.3 kPa with an applied voltage of 66 V.",
+   "exposures[2].timing.sonication_duration_s": "In the experiment for Ca2+ imaging in vitro, ultrasound was induced with following parameters: 430 kHz fundamental frequency, 2 kHz pulse repetition frequency, 0.25 ms pulse duration, 100 ms sonication duration, acoustic power of 67.3 kPa with an applied voltage of 66 V.",
+   "exposures[2].unspecified_domain.pressure_kpa": "The acoustic power from a single transducer can be controlled from 10.2 kPa to 67.3 kPa with varying the applied actuation voltage from 11V to 66 V.",
+   "exposures[0].device.manufacturer": "NY, USA) and then provided a single-element focused ultrasound transducer (EofE Ultrasonics Co., Ltd, Gyenggi-do, Korea) with a diameter of 6.5 cm, a geometrical focal length of 7 cm.",
+   "exposures[1].device.manufacturer": "For generating LILFU for MEA recording, ultrasound pulser (MKPR-1025; MKC Korea, Seoul, Korea) and water-immersion transducer $( 1 0 \\times 1 0$ mm square crystal element; TKS Co., Busan, Korea) centered approximately 5 mm over the MEA in contact with the perfusing ACSF were used.",
+   "exposures[1].device.model": "For generating LILFU for MEA recording, ultrasound pulser (MKPR-1025; MKC Korea, Seoul, Korea) and water-immersion transducer $( 1 0 \\times 1 0$ mm square crystal element; TKS Co., Busan, Korea) centered approximately 5 mm over the MEA in contact with the perfusing ACSF were used.",
+   "exposures[2].device.manufacturer": "The fabrication process starts with a 4-inch silicon-on-insulator (SOI) wafer and the wafer is bonded with a 1-mm-thick bulk PZT film.",
+   "exposures[2].device.model": "MRI, cost-effective implementation, and long-lasting neuromodulatory effect without noticeable side effects when the non-thermal power levels range from 30 to 500 mW/cm 2 at the frequency of less than 1 MHz [8].",
+   "n_subjects": "(B) Tail movement score of WT (n = 4) and TRPA1 KO (n = 7) under various intensities of ultrasound."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports distinct group sizes per sub-experiment across three model systems (e.g., in vivo tail movement WT n=4 vs TRPA1 KO n=7 in Figure 1B; WT n=4 vs Best1 KO n=4 in Figure 6H; various cell/slice replicate counts n=3-15 in other figures) with no single combined total exposed to ultrasound; recorded as not_reported."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper argues effects are not due to impaired hearing because TRPA1 KO and Best1 KO mice have normal hearing (cited from prior reports), but does not describe an explicit auditory-masking or sham-sound control paradigm; classified as 'other'."
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "No pressure or intensity value is stated in text for the in vivo transcranial tail-movement exposure (only that effects were 'intensity-dependent'); left not_reported/null."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "Pressure measured at the MEA/slice interface in perfusing ACSF without skull; paper does not state whether this is a free-field or in-situ value, so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[2].unspecified_domain.pressure_kpa",
+    "reason": "Acoustic power stated at the transducer surface for cultured cells with no domain terminology used by the paper; placed in unspecified_domain. A range (10.2-67.3 kPa) is achievable, but 67.3 kPa was the value explicitly used for the described Ca2+ imaging protocol."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not stated as a percentage in the text for any of the three protocols; PRF and pulse duration are given separately and left unconverted."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "No anaesthesia is mentioned for the in vivo tail-movement LILFU experiments (a separate, terminal EM procedure used sodium pentobarbital anaesthesia); left not_reported rather than inferring 'awake'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[2].in_situ.pressure_kpa": "second",
+   "exposures[2].in_situ.isppa_w_cm2": "second",
+   "exposures[2].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

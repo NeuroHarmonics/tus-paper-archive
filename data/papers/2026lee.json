@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026lee",
+ "doi": "10.1016/j.brs.2026.103158",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Von Frey mechanical withdrawal threshold; c-Fos and NeuN immunofluorescence",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TOAH-delivered dual-foci VP thalamic stimulation reduced c-Fos+ cell density and the proportion of active (c-Fos+/NeuN+) neurons in CCI+US versus CCI mice, and increased mechanical withdrawal thresholds (analgesia), consistent with reduced neuronal activity in the targeted nuclei.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The density of NeuN + neurons did not differ significantly between the CCI and CCI + US groups (CCI: 14650 cells/mm<sup>2</sup>, CCI + US: 15129 cells/mm<sup>2</sup>, $P = 0 . 3 1 7 ) ,$ indicating preserved neuronal integrity following ultrasound exposure (Fig. 8C).",
+ "exposures": [
+  {
+   "label": "Dual-foci transcranial stimulation of bilateral VP thalamic nuclei via TOAH hologram lens",
+   "target": {
+    "terms": [
+     "ventral_posterior_nucleus"
+    ],
+    "label": "bilateral ventral posterior nuclei (VP) of the thalamus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom single-element transducer (13 mm aperture, PZT-4) with 3D-printed thickness-only acoustic hologram (TOAH) lens and coupling cone"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     750,
+     730
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     1.13,
+     1.07
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "An FPGA board gated a function generator producing a 2 MHz sinusoidal signal, delivered as repeated tone bursts (tone burst duration 3 ms, pulse repetition period 5 ms) with a 200 ms inter-stimulation interval, applied for 120 s total per session, described as continuous theta-burst ultrasound stimulation (cTBUS) parameters adapted from prior work. In vivo, ultrasound was delivered on days 8 and 11 after CCI surgery, with a final stimulation on day 14 after the last behavioural assessment (3 sessions total)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 12 male C57BL/6J mice (8 weeks old, 20–25 g) were used. Animals were randomly assigned to four groups (n = 3 per group): sham control (SC), SC + US, CCI, and CCI + US.",
+   "n_sessions_per_subject": "The experimental timeline is illustrated in Fig. 7A. Briefly, ultrasound stimulation was delivered on days 8 and 11 following CCI surgery, and behavioral responses were evaluated using the von Frey test three days after each stimulation session (days 11 and 14). After the behavioral assessment on day 14, mice received a final ultrasound stimulation and were subsequently sacrificed for immunohistological analysis to quantify neuronal responses in the VP nuclei.",
+   "randomised": "A total of 12 healthy male C57BL/6J mice (age, 8 weeks; weight, 20–25 g) were used in this study. Mice were randomly assigned to four groups (n = 3 per group): sham control (SC), SC + US, CCI, CCI + US.",
+   "anaesthesia": "Animals were anesthetized via intraperitoneal injection of a Zoletil/ Xylazine mixture (60/10 mg/kg). Anesthesia depth was confirmed using the tail pinch reflex.",
+   "exposures[0].fundamental_frequency_khz": "A piezoelectric ceramic disk (PZT-4, Dongiltech, South Korea; 13 mm diameter, 2 MHz center frequency) served as the active element.",
+   "exposures[0].in_situ.pressure_kpa": "The peak negative pressures at the dual foci were calibrated to 0.75 MPa (left) and 0.73 MPa (right) using ex vivo measurements, corresponding to mechanical indices of 0.53 and 0.52, respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "1.13 $W / c m ^ { 2 }$ and $1 . 0 7 W / c m ^ { 2 } .$ . To target different brain regions, only the hologram lens needs to be replaced while all other procedures remained unchanged.",
+   "exposures[0].timing.pulse_duration_ms": "Stimulation was applied for 120 s using repeated tone bursts (tone burst duration $\\mathbf { ( T B D ) } = 3$ ms, pulse repetition period $( \\mathrm { P R P } ) = 5$ ms) with an inter-stimulation interval (ISI) of 200 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Stimulation was applied for 120 s using repeated tone bursts (tone burst duration $\\mathbf { ( T B D ) } = 3$ ms, pulse repetition period $( \\mathrm { P R P } ) = 5$ ms) with an inter-stimulation interval (ISI) of 200 ms.",
+   "exposures[0].timing.sonication_duration_s": "Stimulation was applied for 120 s using repeated tone bursts (tone burst duration $\\mathbf { ( T B D ) } = 3$ ms, pulse repetition period $( \\mathrm { P R P } ) = 5$ ms) with an inter-stimulation interval (ISI) of 200 ms.",
+   "exposures[0].timing.waveform": "Using continuous theta-burst ultrasound stimulation (cTBUS) parameters adapted from prior work [39], the treated group exhibited reduced c-Fos expression within the targeted nuclei, accompanied by a significant increase in mechanical withdrawal thresholds.",
+   "exposures[0].device.model": "A piezoelectric ceramic disk (PZT-4, Dongiltech, South Korea; 13 mm diameter, 2 MHz center frequency) served as the active element."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "'SC' groups are a sham surgical/CCI procedure (nerve exposure without ligation), not a sham ultrasound arm; there is no inactive-transducer or sham-US condition, so sham_type is coded none."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Session count (3) is inferred from the described treatment days (8, 11, and a final session on day 14) rather than an explicit statement of total session number."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (200 Hz) is a unit conversion from the stated pulse repetition period (PRP = 5 ms), not an independently stated PRF value."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated; computing it from TBD/PRP (3/5 ms) would require arithmetic not performed here."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "2 MHz center frequency is the PZT element specification confirmed elsewhere as the driving frequency used in vivo (FPGA-gated 2 MHz sinusoidal signal)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

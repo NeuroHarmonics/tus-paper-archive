@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025fu",
+ "doi": "10.1109/tnsre.2025.3564033",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J); mouse (TRAP2-tdTomato)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  7,
+  6,
+  7,
+  5,
+  3,
+  4,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular",
+  "other_mri"
+ ],
+ "readout_other": "von Frey, brush and cold-plate pain behaviour tests; Real-Time Place Avoidance; in vivo two-photon spinal-cord calcium imaging; c-Fos and TRAP2-tdTomato immunohistochemistry; 9.4T MRI, HE/Nissl histology and infrared thermography for safety",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "aMCS increased neuronal activity (tdTomato labelling) in the primary motor cortex (M1) and zona incerta, but decreased it in the lateral periaqueductal gray and spinal cord dorsal horn (SCDH); SCDH calcium activity was also reduced by two-photon imaging, alongside improved pain behaviours.",
+ "adverse_events": "none_observed",
+ "safety_notes": "9.4T MRI showed no significant differences or damage at stimulated sites; HE and Nissl staining showed no tissue damage or neuronal loss; infrared thermography showed no significant temperature alterations at the skull or collimator.",
+ "exposures": [
+  {
+   "label": "acoustic motor cortex stimulation (aMCS), Groups 1-4 parameter sweep",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 (primary motor cortex)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 4170,
+   "free_field": {
+    "pressure_kpa": [
+     1100,
+     225,
+     1100,
+     1100
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     870,
+     179,
+     870,
+     870
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     100,
+     100,
+     5,
+     50
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 1,
+    "protocol_description": "Four parameter groups (paired PRF/pressure combinations, in order Group1-4) shared sonication duration (SD)=1 s, inter-stimulus interval (ISI)=10 s, and duty cycle (DC)=10%. Mice received one week of daily 15-minute aMCS sessions starting on the 8th day post-SNI surgery; sham/control animals had the transducer mounted identically but received no ultrasound energy. Separate cohorts received Group 1 parameters for two-photon spinal calcium imaging (1 week of aMCS), TRAP2 activity mapping (2 consecutive days of 15 min aMCS), and safety assessment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "conditions": "An experimental protocol was designed involving one week of aMCS to investigate the analgesic effect of aMCS under various ultrasound parameters, employing pain behavior assessments (von Frey, brush, and cold plate) (Fig. 2A) as evaluation measures. We established four aMCS groups, each with different parameters (Group 1: n = 8; Group 2: n = 7; Group $3 \\colon \\mathrm { ~ n ~ = ~ 6 ; ~ }$ Group $4 \\colon \\mathrm { ~ n ~ } = \\mathrm { ~ 7 ~ }$ , along with a sham group (SNI + sham aMCS: n = 8) and a control group (sham SNI + sham aMCS: n = 8). For both sham and control groups, the ultrasound transducer was mounted in the same manner as in the aMCS groups, but no input of ultrasound energy. Initially, baseline pain behavior assessments were conducted in wild-type mice. After conducting baseline pain behavior assessments in wild-type mice, either SNI or sham surgery on the right side was performed (Fig. 1B), accompanied by installation of a transducer collimator on the left side of the mouse head (Fig. 1D) to enable precise stimulation during wakefulness. One week after SNI surgery, a reassessment of pain behavior revealed significant reductions in mechanical paw withdrawal thresholds, increased brush sensitivity, and diminished cold withdrawal latency in SNI mice compared to baseline and sham SNI mice.",
+   "exposures[0].fundamental_frequency_khz": "Innovation Ltd., Rochester, NY, USA). A transducer having a 12mm radius of curvature and a center frequency of 4.17 MHz was utilized to generate ultrasound waveforms. After calculating the relationship between the focal spot and target positions, we fabricated a 3D printed collimator for installing the transducer. The weight of the transducer and collimator combination is 2 grams, allowing free movement of mice wearing the device. The transducer’s acoustic field was measured using a calibrated fiber-optic hydrophone (FOH; Precision Acoustics Ltd., Dorchester, U.K.) in a three-dimensional scanning tank (UMS3, Precision Acoustics Ltd., Dorchester, U.K.). Fig. 1E shows the transducer’s acoustic pressure distributions in the longitudinal plane with and without a mouse skull respectively (Group 1 parameter).",
+   "exposures[0].free_field.pressure_kpa": "Four sets of ultrasound stimulation parameters were used in this study. All sets shared the same sonication duration $( \\mathrm { S D } = 1 \\ \\mathrm { s } )$ , inter-stimulus interval $( \\mathrm { I S I } = 1 0 ~ \\mathrm { s } )$ , and duty cycle $( \\mathrm { D C } = 1 0 \\% )$ . The parameters were differentiated by variations in pulse repletion frequency (PRF) and acoustic pressure (AP). In Group 1, the PRF was set to 100 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In Group 2, the PRF was set to 100 Hz, and the AP was set to 225 kPa without skull and 179 kPa with skull. In Group 3, the PRF was set to 5 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In group 4, the PRF was set to 50 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. The AP was attenuated by 20.8% as it passed through the mouse skull. We performed 15 minutes aMCS with Group 1 parameters in normal mice, followed by perfusion and immunohistochemical staining, and found increased c-Fos expression in the M1 compare to sham group (Fig. 1G, H). This result confirms that aMCS device can accurately stimulate the M1 area.",
+   "exposures[0].in_situ.pressure_kpa": "Four sets of ultrasound stimulation parameters were used in this study. All sets shared the same sonication duration $( \\mathrm { S D } = 1 \\ \\mathrm { s } )$ , inter-stimulus interval $( \\mathrm { I S I } = 1 0 ~ \\mathrm { s } )$ , and duty cycle $( \\mathrm { D C } = 1 0 \\% )$ . The parameters were differentiated by variations in pulse repletion frequency (PRF) and acoustic pressure (AP). In Group 1, the PRF was set to 100 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In Group 2, the PRF was set to 100 Hz, and the AP was set to 225 kPa without skull and 179 kPa with skull. In Group 3, the PRF was set to 5 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In group 4, the PRF was set to 50 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. The AP was attenuated by 20.8% as it passed through the mouse skull. We performed 15 minutes aMCS with Group 1 parameters in normal mice, followed by perfusion and immunohistochemical staining, and found increased c-Fos expression in the M1 compare to sham group (Fig. 1G, H). This result confirms that aMCS device can accurately stimulate the M1 area.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Four sets of ultrasound stimulation parameters were used in this study. All sets shared the same sonication duration $( \\mathrm { S D } = 1 \\ \\mathrm { s } )$ , inter-stimulus interval $( \\mathrm { I S I } = 1 0 ~ \\mathrm { s } )$ , and duty cycle $( \\mathrm { D C } = 1 0 \\% )$ . The parameters were differentiated by variations in pulse repletion frequency (PRF) and acoustic pressure (AP). In Group 1, the PRF was set to 100 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In Group 2, the PRF was set to 100 Hz, and the AP was set to 225 kPa without skull and 179 kPa with skull. In Group 3, the PRF was set to 5 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In group 4, the PRF was set to 50 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. The AP was attenuated by 20.8% as it passed through the mouse skull. We performed 15 minutes aMCS with Group 1 parameters in normal mice, followed by perfusion and immunohistochemical staining, and found increased c-Fos expression in the M1 compare to sham group (Fig. 1G, H). This result confirms that aMCS device can accurately stimulate the M1 area.",
+   "exposures[0].timing.duty_cycle_pct": "Four sets of ultrasound stimulation parameters were used in this study. All sets shared the same sonication duration $( \\mathrm { S D } = 1 \\ \\mathrm { s } )$ , inter-stimulus interval $( \\mathrm { I S I } = 1 0 ~ \\mathrm { s } )$ , and duty cycle $( \\mathrm { D C } = 1 0 \\% )$ . The parameters were differentiated by variations in pulse repletion frequency (PRF) and acoustic pressure (AP). In Group 1, the PRF was set to 100 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In Group 2, the PRF was set to 100 Hz, and the AP was set to 225 kPa without skull and 179 kPa with skull. In Group 3, the PRF was set to 5 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In group 4, the PRF was set to 50 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. The AP was attenuated by 20.8% as it passed through the mouse skull. We performed 15 minutes aMCS with Group 1 parameters in normal mice, followed by perfusion and immunohistochemical staining, and found increased c-Fos expression in the M1 compare to sham group (Fig. 1G, H). This result confirms that aMCS device can accurately stimulate the M1 area.",
+   "exposures[0].timing.sonication_duration_s": "Four sets of ultrasound stimulation parameters were used in this study. All sets shared the same sonication duration $( \\mathrm { S D } = 1 \\ \\mathrm { s } )$ , inter-stimulus interval $( \\mathrm { I S I } = 1 0 ~ \\mathrm { s } )$ , and duty cycle $( \\mathrm { D C } = 1 0 \\% )$ . The parameters were differentiated by variations in pulse repletion frequency (PRF) and acoustic pressure (AP). In Group 1, the PRF was set to 100 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In Group 2, the PRF was set to 100 Hz, and the AP was set to 225 kPa without skull and 179 kPa with skull. In Group 3, the PRF was set to 5 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. In group 4, the PRF was set to 50 Hz, and the AP was set to 1100 kPa without skull and 870 kPa with skull. The AP was attenuated by 20.8% as it passed through the mouse skull. We performed 15 minutes aMCS with Group 1 parameters in normal mice, followed by perfusion and immunohistochemical staining, and found increased c-Fos expression in the M1 compare to sham group (Fig. 1G, H). This result confirms that aMCS device can accurately stimulate the M1 area.",
+   "n_subjects": "Sample sizes for each group were as follows: Group 1 (n = 8), Group 2 (n = 7), Group 3 (n = 6), Group 4 (n = 7), sham group (n = 8), and control group (n = 8).",
+   "sham_type": "An experimental protocol was designed involving one week of aMCS to investigate the analgesic effect of aMCS under various ultrasound parameters, employing pain behavior assessments (von Frey, brush, and cold plate) (Fig. 2A) as evaluation measures. We established four aMCS groups, each with different parameters (Group 1: n = 8; Group 2: n = 7; Group $3 \\colon \\mathrm { ~ n ~ = ~ 6 ; ~ }$ Group $4 \\colon \\mathrm { ~ n ~ } = \\mathrm { ~ 7 ~ }$ , along with a sham group (SNI + sham aMCS: n = 8) and a control group (sham SNI + sham aMCS: n = 8). For both sham and control groups, the ultrasound transducer was mounted in the same manner as in the aMCS groups, but no input of ultrasound energy. Initially, baseline pain behavior assessments were conducted in wild-type mice. After conducting baseline pain behavior assessments in wild-type mice, either SNI or sham surgery on the right side was performed (Fig. 1B), accompanied by installation of a transducer collimator on the left side of the mouse head (Fig. 1D) to enable precise stimulation during wakefulness. One week after SNI surgery, a reassessment of pain behavior revealed significant reductions in mechanical paw withdrawal thresholds, increased brush sensitivity, and diminished cold withdrawal latency in SNI mice compared to baseline and sham SNI mice.",
+   "anaesthesia": "An experimental protocol was designed involving one week of aMCS to investigate the analgesic effect of aMCS under various ultrasound parameters, employing pain behavior assessments (von Frey, brush, and cold plate) (Fig. 2A) as evaluation measures. We established four aMCS groups, each with different parameters (Group 1: n = 8; Group 2: n = 7; Group $3 \\colon \\mathrm { ~ n ~ = ~ 6 ; ~ }$ Group $4 \\colon \\mathrm { ~ n ~ } = \\mathrm { ~ 7 ~ }$ , along with a sham group (SNI + sham aMCS: n = 8) and a control group (sham SNI + sham aMCS: n = 8). For both sham and control groups, the ultrasound transducer was mounted in the same manner as in the aMCS groups, but no input of ultrasound energy. Initially, baseline pain behavior assessments were conducted in wild-type mice. After conducting baseline pain behavior assessments in wild-type mice, either SNI or sham surgery on the right side was performed (Fig. 1B), accompanied by installation of a transducer collimator on the left side of the mouse head (Fig. 1D) to enable precise stimulation during wakefulness. One week after SNI surgery, a reassessment of pain behavior revealed significant reductions in mechanical paw withdrawal thresholds, increased brush sensitivity, and diminished cold withdrawal latency in SNI mice compared to baseline and sham SNI mice.",
+   "blinding": "7) Immunostaining: The mice were deeply anesthetized with isoflurane and then transcardially perfused with cold phosphate buffered saline (PBS), followed by 4% paraformaldehyde (PFA). The brains and spinal cords were then dissected, postfixed in PFA for 24 h, and subsequently dehydrated in a 30% sucrose solution for 48 h. The specimens were embedded in Optimum Cutting Temperature (OCT) and stored at $- 8 0 ^ { \\circ } \\mathrm { C }$ until sectioning. Coronal brain and transverse spinal cord sec tions were sliced at a thickness of 40 and 25 µm, respectively, using a cryostat (CM1900, Leica Microsystems, Bannockburn, IL). Sections from TRAP2-tdTomato mice, which did not require immunohistochemistry to visualize tdTomato-positive neurons, were sealed with a DAPI-containing anti-fluorescence quenching mounting medium. For c-Fos immunostaining, the sections were incubated in a blocking buffer (0.5% Triton X-100, 5% bovine serum albumin in PBS) for 2 h at room temperature. Subsequently, the sections were incubated with primary rabbit antibody against c-Fos (1:1000, 226003, Synaptic Systems) at $4 ^ { \\circ } \\mathrm { C }$ overnight. After three washes with PBS, the sections were incubated with an anti-rabbit Alexa Flour 543-conjugated secondary antibody (1:500, Invitrogen) for 3 h at room temperature. Fluorescent images were acquired using a laser scanning confocal microscope (Olympus, Tokyo, Japan), and cell quantification was conducted in a double-anonymous manner.",
+   "adverse_events": "The safety of aMCS was evaluated using MRI, histology, and thermal effect assessments in both the aMCS and sham groups (n=3 per group). Initially, a 9.4T MRI scan of the mouse brain was performed before and after aMCS (Group 1 parameters). The MRI images revealed no significant differences between the aMCS and sham groups, and no damage was observed at the stimulated sites. Subsequent histological assessments, including Hematoxylin and Eosin (HE) and Nissl brain staining, revealed no evidence of tissue damage or neuronal loss (Fig. 5A). Additionally, temperature changes were monitored using infrared thermography, and no significant alterations were detected in the skull or collimator sites (Fig. 5B, C). These findings confirmed that aMCS is safe under the specific parameters used in this study."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper never states one overall total of aMCS-exposed mice (95 total mice includes sham/control/excluded animals); listed the per-cohort group sizes that received real aMCS (behaviour Groups 1-4: n=8,7,6,7; SCDH calcium-imaging cohort: n=3; TRAP2 cohort: n=4; safety cohort: n=3) rather than summing them."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only PRF (100/5/50 Hz) and duty cycle (10%) are stated; pulse duration is not independently reported and was not computed from duty_cycle/PRF per the rule against deriving this value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF and acoustic pressure vary together across four named groups (paired combinations, not a full factorial); recorded as parallel lists in Group1-4 order rather than independent sweeps."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Session count differs by sub-experiment: ~7 daily sessions (1 week) for the main behaviour and SCDH-imaging cohorts, 2 sessions for the TRAP2 cohort, and an unspecified number for the safety cohort; no single figure applies to the whole study."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Transducer described only as custom-built (12 mm radius of curvature, 4.17 MHz); no manufacturer or model name given for the transducer itself (only for the function generator and amplifier)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

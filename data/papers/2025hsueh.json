@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025hsueh",
+ "doi": "10.1016/j.heares.2025.109379",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  4,
+  6,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "auditory brainstem response (ABR) latency/amplitude across waves I, II, III, V; c-Fos immunohistochemistry with tdTomato TRAP2 reporter in the cochlear nucleus",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation produced greater ABR latency shifts (most clearly in wave II) than baseline drift, and significantly increased c-Fos-positive neuronal activation in the cochlear nucleus in the acute ultrasound group, with a non-significant increase in the preconditioning group; ABR threshold and P1 amplitude were unaffected.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Acoustic intensity was measured as 43 mW/cm2 (SPTA) with a hydrophone; skin-surface temperature rose ~0.5C during 1 min of stimulation, judged negligible and consistent with a prior report that this intensity does not cause structural damage to the mouse inner ear.",
+ "exposures": [
+  {
+   "label": "Transcranial ultrasound stimulation covering the entire brain (including the cochlear nucleus)",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "entire brain, including the cochlear nucleus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "C539-SM"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 50,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.043
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": 60,
+    "protocol_description": "A commercially available 1-MHz ultrasound transducer was placed on the shaved head of the mouse in an anterior-posterior position between the eyes and ears to ensure coverage of the entire brain, including the cochlear nucleus. TUS was applied for 1 min, either between the 5th and 6th ABR recordings, immediately prior to the first 12 kHz tone presentation (ultrasound preconditioning group), or 30 minutes before sacrifice / immediately prior to the second tone presentation (acute ultrasound group)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.01
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "These mice were randomly assigned to three experimental groups: a sham control group (n = 5), an ultrasound preconditioning group $( n = 6 )$ , and an acute ultrasound group (n = 5).",
+   "n_sessions_per_subject": "TUS was applied for 1 min between the 5th and 6th ABR recordings (Fig. 1B).",
+   "randomised": "These mice were randomly assigned to three experimental groups: a sham control group (n = 5), an ultrasound preconditioning group $( n = 6 )$ , and an acute ultrasound group (n = 5).",
+   "exposures[0].fundamental_frequency_khz": "A commercially available 1-MHz ultrasound transducer (C539-SM, Olympus, Tokyo, Japan) was placed on the shaved head of the mouse in an anterior-posterior position between the eyes and ears to ensure coverage of the entire brain, including the cochlear nucleus (Fig. 1A).",
+   "exposures[0].unspecified_domain.pressure_kpa": "Stimulation parameters were as follows: input voltage of 900 mVpp (corresponding to a peak acoustic pressure of 50 kPa), duty cycle of 1 %, and repetition rate of 1 kHz (Lim et al., 2022).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "To assess potential thermal effects, the acoustic intensity was measured as 43 mW/cm² (SPTA) using a hydrophone, and temperature changes at the skin surface were monitored using a thermocouple.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Stimulation parameters were as follows: input voltage of 900 mVpp (corresponding to a peak acoustic pressure of 50 kPa), duty cycle of 1 %, and repetition rate of 1 kHz (Lim et al., 2022).",
+   "exposures[0].timing.duty_cycle_pct": "Stimulation parameters were as follows: input voltage of 900 mVpp (corresponding to a peak acoustic pressure of 50 kPa), duty cycle of 1 %, and repetition rate of 1 kHz (Lim et al., 2022).",
+   "exposures[0].timing.sonication_duration_s": "TUS was applied for 1 min between the 5th and 6th ABR recordings (Fig. 1B).",
+   "exposures[0].device.manufacturer": "A commercially available 1-MHz ultrasound transducer (C539-SM, Olympus, Tokyo, Japan) was placed on the shaved head of the mouse in an anterior-posterior position between the eyes and ears to ensure coverage of the entire brain, including the cochlear nucleus (Fig.",
+   "exposures[0].device.model": "A commercially available 1-MHz ultrasound transducer (C539-SM, Olympus, Tokyo, Japan) was placed on the shaved head of the mouse in an anterior-posterior position between the eyes and ears to ensure coverage of the entire brain, including the cochlear nucleus (Fig."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper never states a single total of ultrasound-exposed animals; list combines the ultrasound preconditioning (n=6) and acute ultrasound (n=5) groups from the cochlear-nucleus mapping cohort (quoted) plus the separate ABR ultrasound (US) group (n=4, stated in a different sentence: '8 wild-type mice were used, split into an ultrasound (US) group (n = 4) and a control group (n = 4)')."
+   },
+   {
+    "field": "randomised",
+    "reason": "Random assignment is stated only for the cochlear-nucleus mapping cohort (sham/preconditioning/acute groups); not stated for the ABR US/control groups."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Neither the ABR control group nor the cochlear-nucleus sham/tone-only groups are described with a specific sham mechanism (e.g., inactive transducer); classified as other."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Duty cycle (1%) and PRF (1 kHz) are stated but the paper does not itself state a pulse duration; left not_reported rather than computed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.ispta_w_cm2": "first",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "first"
+  }
+ }
+}

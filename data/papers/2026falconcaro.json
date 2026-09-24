@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026falconcaro",
+ "doi": "10.64898/2026.03.06.710106",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 29,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "3-back working memory task (correct rejection rate, error false alarm rate, sensitivity d'); side-effects questionnaire",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "no_effect",
+ "direction_notes": "U-taVNS showed a similar directional trend to E-taVNS across working memory performance measures (d', correct rejection rate) but active vs sham differences did not reach statistical significance (e.g. d' ratio: t(28)=0.50, p=0.619). Post-hoc pre-to-post comparisons within the active U-taVNS condition showed significant increases in d' and overall accuracy, but a similar pattern was seen in the U-taVNS sham condition.",
+ "adverse_events": "observed",
+ "safety_notes": "A higher proportion of participants receiving E-taVNS reported skin irritation compared to U-taVNS (E-taVNS: 20.0%; U-taVNS: 3.4%; chi2=3.86, p=0.049); ear pain was reported by both groups (E-taVNS: 16.7%; U-taVNS: 10.3%) with no significant difference between modalities.",
+ "exposures": [
+  {
+   "label": "Ultrasound taVNS (U-taVNS) to right cymba conchae",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "right cymba conchae (auricular branch of the vagus nerve)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NeurGear Inc., Rochester, NY, USA",
+    "model": "ZenBud"
+   },
+   "fundamental_frequency_khz": 5300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1030,
+    "isppa_w_cm2": 0.081,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 41,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1800,
+    "protocol_description": "Participants received 30 minutes of taVNS per session; each participant completed two sessions (one active, one sham) separated by at least five days, with session order counterbalanced. Sham stimulation used an identical sham device that delivered no active ultrasound."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 12.1951
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "59 healthy adults (46 females, 13 males; M age = 23.6, SD=2.88) were recruited and randomly allocated to either the electrical taVNS group (E-taVNS; n = 30) or the ultrasound taVNS group (U-taVNS; n = 29).",
+   "n_sessions_per_subject": "Each participant completed two sessions: one active stimulation session and one sham session, separated by at least five days.",
+   "randomised": "59 healthy adults (46 females, 13 males; M age = 23.6, SD=2.88) were recruited and randomly allocated to either the electrical taVNS group (E-taVNS; n = 30) or the ultrasound taVNS group (U-taVNS; n = 29).",
+   "blinding": "Materials and Methods: Fifty-nine participants underwent a single-blind, shamcontrolled, within-subject design study, with working memory performance assessed using a 3-back task before and after stimulation.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was delivered to the right cymba conchae using the ZenBud device (NeurGear Inc., Rochester, NY, USA). Parameters included a 5.3 MHz center frequency, 41 Hz pulse repetition frequency, 50% duty cycle, peak mechanical output of 0.081 W/cm<sup>2</sup>, and average intensity of 1.03 MPa. Sham stimulation was administered using an identical sham device that delivered no active ultrasound.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulation was delivered to the right cymba conchae using the ZenBud device (NeurGear Inc., Rochester, NY, USA). Parameters included a 5.3 MHz center frequency, 41 Hz pulse repetition frequency, 50% duty cycle, peak mechanical output of 0.081 W/cm<sup>2</sup>, and average intensity of 1.03 MPa. Sham stimulation was administered using an identical sham device that delivered no active ultrasound.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound stimulation was delivered to the right cymba conchae using the ZenBud device (NeurGear Inc., Rochester, NY, USA). Parameters included a 5.3 MHz center frequency, 41 Hz pulse repetition frequency, 50% duty cycle, peak mechanical output of 0.081 W/cm<sup>2</sup>, and average intensity of 1.03 MPa. Sham stimulation was administered using an identical sham device that delivered no active ultrasound.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Ultrasound stimulation was delivered to the right cymba conchae using the ZenBud device (NeurGear Inc., Rochester, NY, USA). Parameters included a 5.3 MHz center frequency, 41 Hz pulse repetition frequency, 50% duty cycle, peak mechanical output of 0.081 W/cm<sup>2</sup>, and average intensity of 1.03 MPa. Sham stimulation was administered using an identical sham device that delivered no active ultrasound.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Ultrasound stimulation was delivered to the right cymba conchae using the ZenBud device (NeurGear Inc., Rochester, NY, USA). Parameters included a 5.3 MHz center frequency, 41 Hz pulse repetition frequency, 50% duty cycle, peak mechanical output of 0.081 W/cm<sup>2</sup>, and average intensity of 1.03 MPa. Sham stimulation was administered using an identical sham device that delivered no active ultrasound.",
+   "exposures[0].timing.sonication_duration_s": "Following these baseline assessments, participants received 30 minutes of taVNS. Immediately after stimulation, the task was repeated (Fig. 1a).",
+   "safety_notes": "A higher proportion of participants in the E-taVNS group reported skin irritation (20.0%) compared to those in the U-taVNS group (3.4%) $( X ^ { 2 } = 3 . 8 6 , p = 0 . 0 4 9 )$ , indicating UtaVNS was associated with a lower incidence of skin irritation than E-taVNS. Although other aversive effects were reported, none yielded statistical significance on the incidence between the two modalities. A portion of participants also reported ear pain (E-taVNS: 16.7%; U-taVNS: 10.3%), but no significant differences in incidence were found between the two modalities $( X ^ { 2 } = 0 . 5 0 , p = 0 . 4 7 8 )$ .",
+   "exposures[0].device.manufacturer": "is a member of the Scientific Advisory Board of NeurGear Inc."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "29 participants were allocated to U-taVNS, but one female participant was excluded from analysis for missing sham-session data ('Due to missing data from Sham session, one female participant from U-taVNS was excluded from the analysis'; 'Therefore, a total of 58 participants were analyzed, 30 for E-taVNS and 28 for U-taVNS.'); n_subjects reflects the enrolled/allocated total (29) rather than the analysed total (28)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "The paper labels this 1.03 MPa value 'average intensity', though MPa is a pressure unit not an intensity unit; recorded as pressure_kpa (1030 kPa) rather than an intensity field."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "'Peak mechanical output of 0.081 W/cm2' is not explicitly labelled ISPPA or ISPTA; assigned to ISPPA given the word 'peak', but this is an inference."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Duty cycle (50%) and PRF (41 Hz) are stated but pulse duration is not; not computed per the no-arithmetic rule."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "The paper does not state whether the reported pressure/intensity values are free-field or in-situ; recorded under unspecified_domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

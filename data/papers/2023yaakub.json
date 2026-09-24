@@ -1,0 +1,370 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023yaakub",
+ "doi": "10.1038/s41467-023-40998-0",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 24,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "other_mri",
+  "fmri"
+ ],
+ "readout_other": "Magnetic resonance spectroscopy (MEGA-PRESS; GABA+/water and Glx/water); resting-state fMRI functional connectivity (seed-based and independent components analysis)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Theta-burst TUS reduced GABA+ (disinhibition) selectively in the PCC (not dACC) at ~20-30 min post-stimulation, and increased resting-state functional connectivity of both the dACC and PCC with their associated networks, with larger effects at ~46 min than ~13 min post-TUS.",
+ "adverse_events": "observed",
+ "safety_notes": "Three participants reported increased fatigue after TUS sessions; one reported a mild transient headache after dACC TUS; one reported a persistent headache/neck pain after the sham session (attributed to the MRI, not TUS); one reported a transient cool sensation near the transducer site after PCC TUS. No other symptoms were reported, and most participants could not distinguish TUS from sham.",
+ "exposures": [
+  {
+   "label": "Theta-burst TUS of left dorsal anterior cingulate cortex (dACC)",
+   "target": {
+    "terms": [
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "left dorsal anterior cingulate cortex (dACC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS TPO and CTX-500-4"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1010,
+    "isppa_w_cm2": 33.8,
+    "ispta_w_cm2": 3.38
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 660,
+    "isppa_w_cm2": 15.07,
+    "ispta_w_cm2": 1.507
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 80,
+    "protocol_description": "Theta-burst TUS protocol (previously shown to increase corticospinal excitability): 20 ms pulses delivered at a pulse repetition interval of 200 ms for a total duration of 80 s (400 pulses total), applied offline immediately before a series of MRI/MRS/rsfMRI scans acquired at approximately 13, 22-34, and 46 min post-TUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  },
+  {
+   "label": "Theta-burst TUS of left posterior cingulate cortex (PCC)",
+   "target": {
+    "terms": [
+     "posterior_cingulate_cortex"
+    ],
+    "label": "left posterior cingulate cortex (PCC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS TPO and CTX-500-4"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1010,
+    "isppa_w_cm2": 33.8,
+    "ispta_w_cm2": 3.38
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 650,
+    "isppa_w_cm2": 14.47,
+    "ispta_w_cm2": 1.447
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 80,
+    "protocol_description": "Theta-burst TUS protocol: 20 ms pulses delivered at a pulse repetition interval of 200 ms for a total duration of 80 s (400 pulses total), applied offline immediately before a series of MRI/MRS/rsfMRI scans acquired at approximately 13, 22-34, and 46 min post-TUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-four healthy volunteers (14 female) aged between 22 and 53 years (mean = 33.8, s.d. ± 9.7) participated in the study.",
+   "n_sessions_per_subject": "All participants completed three separate TUS and MRI sessions at least one week apart and at the same time of the day for each participant ( ± 30 mins) to control for the effects ofthe circadian rhythm on GABA fluctuations.",
+   "exposures[0].fundamental_frequency_khz": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[0].timing.pulse_duration_ms": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[0].timing.sonication_duration_s": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[0].free_field.pressure_kpa": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[0].free_field.isppa_w_cm2": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[0].free_field.ispta_w_cm2": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[1].fundamental_frequency_khz": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[1].timing.pulse_duration_ms": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[1].timing.sonication_duration_s": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK). This consisted of a four-element ultrasound transducer (64 mm diameter) with a central frequency of 500 kHz. We used the theta-burst TUS protocol<sup>18</sup> with the following parameters: pulse duration = 20 ms, pulse repetition interval = 200 ms and total duration = 80 s, giving a total of 400 pulses.",
+   "exposures[1].free_field.pressure_kpa": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[1].free_field.isppa_w_cm2": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[1].free_field.ispta_w_cm2": "We simulated the acoustic pressure distribution generated by the transducer in three dimensions in a free field for two focal depths: 60 mm (Fig. 2a) and 69 mm (Fig. 2b), representing the average focal depths across individuals for the left dACC and left PCC regions respectively. At the target spatial-peak pulse-average intensity $( I _ { \\mathrm { S P P A } } )$ of 33.8 W/cm<sup>2</sup>, the maximum pressure at the TUS focus was 1.01 MPa, mechanical index (MI) 1.4 and spatial-peak temporal-average intensity $( I _ { \\mathrm { S P T A } } )$ 3380 mW/cm<sup>2</sup> before transcranial transmission.",
+   "exposures[1].in_situ.pressure_kpa": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[1].in_situ.isppa_w_cm2": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[1].in_situ.ispta_w_cm2": "<table><tr><td></td><td>dACC</td><td>PCC</td><td>t test p</td></tr><tr><td>Focal distance [mm]</td><td>58.0±4.9</td><td>69.5±6.5</td><td>9.66×10-9</td></tr><tr><td>Maximum pres- sure [MPa]</td><td>0.66±0.05</td><td>0.65±0.04</td><td>n.s.</td></tr><tr><td>MI</td><td>0.95±0.07</td><td>0.93±0.06</td><td>n.s.</td></tr><tr><td>ISPPA [W/cm²]</td><td>15.07±2.16</td><td>14.47±1.78</td><td>n.s.</td></tr><tr><td>ISPTA [mW/cm²]</td><td>1507±216</td><td>1447±178</td><td>n.s.</td></tr><tr><td>-6 dB focal volume [mm³]</td><td>515±197</td><td>745±188</td><td>1.51×10⁻4</td></tr><tr><td>Volume overlapping with",
+   "exposures[0].device.manufacturer": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK).",
+   "exposures[0].device.model": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK).",
+   "exposures[1].device.manufacturer": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK).",
+   "exposures[1].device.model": "We used the NeuroFUS TPO and CTX-500-4 transducer (Brainbox Ltd., Cardiff, UK)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states pulse repetition interval (200 ms); converted to PRF (5 Hz) as a direct reciprocal unit conversion, not a computed/derived parameter."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not explicitly stated as a percentage in the text (only pulse duration and PRI given); left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle not explicitly stated as a percentage in the text (only pulse duration and PRI given); left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Value taken from Table 1 (mean +/- SD across participants from per-subject transcranial simulations); mean reported here, SD in quote."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "Value taken from Table 1 (mean +/- SD across participants from per-subject transcranial simulations); mean reported here, SD in quote."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

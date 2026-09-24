@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017li",
+ "doi": "10.1016/j.brs.2017.02.008",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "Laser speckle imaging (LSI) of cerebral blood flow; TTC-stained brain sections for infarct volume and brain edema",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "The pTUS parameters used were selected as 'suppressive' based on prior experimental/theoretical work intended to down-regulate brain metabolism/neural activity. pTUS preconditioning before photothrombotic stroke reduced ischemic areas, delayed hemodynamic compromise, and reduced infarct volume and brain edema at 48 h compared with controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Six rats died within 48 h after stroke induction (2/14 pTUS-PC, 4/12 control); the paper does not attribute these deaths to the ultrasound exposure, and mortality was numerically higher in the non-ultrasound control group.",
+ "exposures": [
+  {
+   "label": "pTUS preconditioning of primary somatosensory cortex before photothrombotic stroke",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "the primary somatosensory cortex of the rat brain (right primary hind-limb somatosensory cortex)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 589,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.402
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 10,
+    "protocol_description": "The ultrasound exposure was software-controlled: a 10 s single sequence (i.e., 1000 tone bursts) was repeated 180 times at a 10 s interval and delivered to the rat cortex before the induction of photothrombotic stroke. The pTUS-PC group was exposed to ultrasound treatment for 60 min total (chosen for comparison with a prior study). The control group was handled identically, including anaesthesia, but without the ultrasound stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-six adult male Sprague-Dawley rats $\\left( 3 2 0 \\pm 2 0 \\mathrm { \\ g } , \\right.$ Slac Laboratory Animal Co. Ltd., Shanghai, China) were randomly assigned to pTUS-PC group (n 14) or control group (n 12).",
+   "exposures[0].fundamental_frequency_khz": "the pTUS waves were produced by an immersion-type ultrasound transducer (V301-SU, Olympus NDT, Waltham, USA) operating at 0.5 MHz, which was chosen based on the study described in Ref. [24].",
+   "exposures[0].timing.pulse_duration_ms": "Also, based on the sonication parameters that have been suggested as suppressive both experimentally [27,39] and theoretically [40], the ultrasound energy was delivered in 0.5 ms tone bursts at pulse repetition frequency of 100 Hz and the peak pressure amplitude of 589 kPa, corresponding to acoustic intensity of $\\mathrm { I } _ { \\mathrm { S P T A } } = 4 0 2 \\ : \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Also, based on the sonication parameters that have been suggested as suppressive both experimentally [27,39] and theoretically [40], the ultrasound energy was delivered in 0.5 ms tone bursts at pulse repetition frequency of 100 Hz and the peak pressure amplitude of 589 kPa, corresponding to acoustic intensity of $\\mathrm { I } _ { \\mathrm { S P T A } } = 4 0 2 \\ : \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].unspecified_domain.pressure_kpa": "Also, based on the sonication parameters that have been suggested as suppressive both experimentally [27,39] and theoretically [40], the ultrasound energy was delivered in 0.5 ms tone bursts at pulse repetition frequency of 100 Hz and the peak pressure amplitude of 589 kPa, corresponding to acoustic intensity of $\\mathrm { I } _ { \\mathrm { S P T A } } = 4 0 2 \\ : \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Also, based on the sonication parameters that have been suggested as suppressive both experimentally [27,39] and theoretically [40], the ultrasound energy was delivered in 0.5 ms tone bursts at pulse repetition frequency of 100 Hz and the peak pressure amplitude of 589 kPa, corresponding to acoustic intensity of $\\mathrm { I } _ { \\mathrm { S P T A } } = 4 0 2 \\ : \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound exposure was software-controlled: A 10s single sequence, i.e., 1000 tone bursts was repeated 180 times at 10s interval and delivered to the rat cortex before the induction of photothrombotic stroke.",
+   "n_sessions_per_subject": "At this time pTUS-PC group was exposed to ultrasound treatment for 60 min (chosen for comparison with the experiments in Ref. [24])."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "14 rats were enrolled in the pTUS-PC (ultrasound-exposed) group; 2 of these died before the 48 h endpoint and were excluded from analysis (enrolled n=14, analysed n=12). n_subjects reflects enrolled/exposed animals."
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "The paper states the peak pressure (589 kPa) and corresponding Ispta (402 mW/cm2) as 'delivered to the rat cortex' but does not explicitly state whether this was measured in water/free field, through the thinned skull, or simulated; classified as unspecified domain."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper states the control group was 'handled identically to the pTUS-PC group, with the exception of the ultrasound stimulation' but does not explicitly describe whether a transducer was placed without power (inactive_transducer) or simply omitted."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

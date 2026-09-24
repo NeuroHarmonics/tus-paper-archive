@@ -1,0 +1,157 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024furukawa",
+ "doi": "10.1016/j.jneumeth.2023.110048",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In the present study, we used four C57BL/6 J mice (two males and five females, 5–10 weeks old, Japan SLC Inc., Hamamatsu, Japan).",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was generated for a 1-s period by the PMUT driven by the 70 V sinusoidal signal at an oscillatory frequency of 880 kHz.",
+   "exposures[0].free_field.pressure_kpa": "On the basis of these results, we applied an acoustic pressure of 65.6 ± 1.8 kPa (for an input voltage of 70 V) of ultrasound stimulation to brain slices in vitro.",
+   "exposures[0].timing.duty_cycle_pct": "Successively, we applied ultrasound stimulation (880 kHz continuous wave) for 1 s, and imaged the $\\mathrm { C a ^ { 2 + } }$ transients, followed by monitoring of $\\mathrm { C a ^ { 2 + } }$ transients during the recovery period for 1 s (total of 3 s per trial).",
+   "exposures[0].timing.sonication_duration_s": "Successively, we applied ultrasound stimulation (880 kHz continuous wave) for 1 s, and imaged the $\\mathrm { C a ^ { 2 + } }$ transients, followed by monitoring of $\\mathrm { C a ^ { 2 + } }$ transients during the recovery period for 1 s (total of 3 s per trial)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states four mice but gives a sex breakdown of two males and five females, which sums to seven, not four; likely a typo."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper states slices were cut to contain the auditory cortex but does not confirm stimulation/imaging was confined to that region; other cortical cell types may have been included."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ },
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (C57BL/6J), acute brain slices",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Fluorescent calcium imaging (Fluo-4 AM, Fura-2 AM); local field potential (LFP) recording via on-chip microelectrodes",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "PMUT ultrasound stimulation (880 kHz, 65.6 kPa, 1 s continuous wave) increased intracellular calcium signals (Fluo-4 AM and Fura-2 AM) in brain slice cells versus 0-V sham, indicating cellular activation.",
+ "adverse_events": null,
+ "safety_notes": "Authors report a temperature rise of only 0.15C during 1 s continuous driving and note repeated stimulation with a 5 min rest period produced reproducible responses without evidence of cell death.",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of auditory cortex brain slice",
+   "target": {
+    "terms": [
+     "auditory_cortex"
+    ],
+    "label": "auditory cortex (brain slice)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PMUT (custom piezoelectric micromachined ultrasound transducer)"
+   },
+   "fundamental_frequency_khz": 880,
+   "free_field": {
+    "pressure_kpa": 65.6,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 1,
+    "protocol_description": "We applied ultrasound stimulation (880 kHz continuous wave) for 1 s, and imaged the Ca2+ transients, followed by monitoring of Ca2+ transients during the recovery period for 1 s (total of 3 s per trial). Each measurement consisted of 10 trials with the same stimulation conditions; sham stimulation used 0-V input voltage; a 5 min rest period was inserted between repeated stimulations."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

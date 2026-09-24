@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023zhao",
+ "doi": "10.1016/j.neuroimage.2023.119952",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6,
+  6,
+  5,
+  6,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging"
+ ],
+ "readout_other": "Whisker-dependent novel object discrimination task; in vivo two-photon calcium imaging (GCaMP6f) of layer 5 pyramidal neurons; two-photon dendritic spine imaging (Thy1-YFP)",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS significantly increased neuronal calcium transient frequency and signal intensity, increased the growth rate (but not death rate) of dendritic spines, and improved whisker-dependent novel object discrimination; effects persisted for up to about 14 days post-stimulation before returning to baseline.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of barrel cortex",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "barrel cortex (BC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 510,
+    "isppa_w_cm2": 8.6,
+    "ispta_w_cm2": 0.43
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Ultrasound delivered transcranially to the barrel cortex via a coupling tube; each stimulation was followed by a 5-min pause, for a total of three sets of 25 min per day, given once daily for 7 consecutive days while mice were awake and head-fixed. Five additional mice were stimulated with ultrasound parameters previously shown not to elicit auditory responses, to assess non-specific auditory confounds."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-nine C57BL/6 mice participated in the behavioral experiment of distinguishing new things based on their whiskers and were divided into four groups (control group, TUS a group, TUS b group, TUS c group), with six mice in each group, and their timeline design is shown in Fig. 1(B).",
+   "n_sessions_per_subject": "The time line of the TUS group is shown in Fig. 2(B), given 7 consecutive days of TUS stimulation.",
+   "exposures[0].fundamental_frequency_khz": "The main parameters of the output ultrasound were as follows: fundamental frequency, 1 MHz; fundamental wave period (the number of sine waves in one pulse period (1 s)), 50,000; pulse repetition frequency, 1 Hz; duty cycle, 5%; and stimulation time, 50 ms.",
+   "exposures[0].timing.pulse_duration_ms": "The main parameters of the output ultrasound were as follows: fundamental frequency, 1 MHz; fundamental wave period (the number of sine waves in one pulse period (1 s)), 50,000; pulse repetition frequency, 1 Hz; duty cycle, 5%; and stimulation time, 50 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The main parameters of the output ultrasound were as follows: fundamental frequency, 1 MHz; fundamental wave period (the number of sine waves in one pulse period (1 s)), 50,000; pulse repetition frequency, 1 Hz; duty cycle, 5%; and stimulation time, 50 ms.",
+   "exposures[0].timing.duty_cycle_pct": "The main parameters of the output ultrasound were as follows: fundamental frequency, 1 MHz; fundamental wave period (the number of sine waves in one pulse period (1 s)), 50,000; pulse repetition frequency, 1 Hz; duty cycle, 5%; and stimulation time, 50 ms.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound pressure was 0.51 MPa, and corresponding spatial-peak pulse average intensity $( \\mathrm { { I } } _ { \\mathrm { { s p p a } } } )$ and spatial-peak temporal average $( \\mathrm { I } _ { \\mathrm { s p t a } } )$ values were 8.6 and 0.43 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound pressure was 0.51 MPa, and corresponding spatial-peak pulse average intensity $( \\mathrm { { I } } _ { \\mathrm { { s p p a } } } )$ and spatial-peak temporal average $( \\mathrm { I } _ { \\mathrm { s p t a } } )$ values were 8.6 and 0.43 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound pressure was 0.51 MPa, and corresponding spatial-peak pulse average intensity $( \\mathrm { { I } } _ { \\mathrm { { s p p a } } } )$ and spatial-peak temporal average $( \\mathrm { I } _ { \\mathrm { s p t a } } )$ values were 8.6 and 0.43 W/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "(E&I 240 L, ENI Inc., USA) and then further amplified using a focused ultrasound probe (V301-SU, focus [diameter, 25.4 mm; radius of curvature, 40 mm], Olympus, USA) during ultrasound stimulation.",
+   "exposures[0].device.model": "(E&I 240 L, ENI Inc., USA) and then further amplified using a focused ultrasound probe (V301-SU, focus [diameter, 25.4 mm; radius of curvature, 40 mm], Olympus, USA) during ultrasound stimulation."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Sum of TUS-exposed animals across sub-experiments: 18 behavioural (TUS a+b+c groups, 6 each), 5 auditory-confound-control mice, 6 calcium-imaging TUS mice, and 5 dendritic-spine-imaging TUS mice; sham/control animals from each sub-experiment are excluded."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper does not use the term 'sonication duration'; value taken as one 25-min set of repeating 1 Hz/50 ms pulses, described as 'a total of three sets of 25 min' separated by 5-min pauses."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper used ultrasound stimulus parameters previously shown (Mohammadjavadi et al. 2019) not to elicit auditory responses, rather than a conventional masking-sound or sound-only sham; classified as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

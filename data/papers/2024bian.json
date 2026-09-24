@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024bian",
+ "doi": "10.1016/j.neurom.2023.12.007",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6N)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "nitroglycerin-induced migraine model",
+ "n_subjects": [
+  6,
+  9
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Open-field behavior (movement time/speed, head scratching, grooming); intrinsic signal optical imaging (ISOI) of cortical deoxyhemoglobin (HbR); single-channel LFP power spectra; plasma CGRP ELISA; cortical CGRP and c-Fos Western blot",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "TUS decreased the NTG-elevated 0.5-4 Hz LFP power band while increasing the NTG-suppressed 4-40 Hz power bands, returning both toward control levels; TUS also kept cortical HbR close to control levels (inhibiting the NTG-induced decrease) and reduced NTG-elevated plasma CGRP, cortical CGRP, and cortical c-Fos.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Cortical TUS at NTG injection / imaging window",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "cerebral cortex beneath the cranial imaging window (2 mm posterior, 2 mm lateral to bregma)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "After NTG (or saline) injection, the NTG+TUS (and Ctrl+TUS) groups received ultrasound stimulation for 15 minutes with a 1 second stimulation interval, targeted at the imaging window; different groups of mice were used for behavioral, optical imaging, and LFP recording sub-experiments."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The experimental numbers in each group were Ctrl+NS, NTG, NTG+TUS (n  9) and Ctrl+TUS (n  6), and biochemical analysis showed that n 7.",
+   "exposures[0].device.model": "which was connected to the ultrasound transducer (V301-SU, Olympus, Shinjuku Monolith, Tokyo, Japan).",
+   "exposures[0].fundamental_frequency_khz": "After NTG was injected, the function generator was triggered to send a signal with a fundamental frequency (FF)  500 kHz, a pulse repetition frequency (PRF) 1 Hz, a duty cycle 5%, a stimulation interval of 1 second, and a stimulation time of 15 minutes, and the stimulation location was the image window.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "After NTG was injected, the function generator was triggered to send a signal with a fundamental frequency (FF)  500 kHz, a pulse repetition frequency (PRF) 1 Hz, a duty cycle 5%, a stimulation interval of 1 second, and a stimulation time of 15 minutes, and the stimulation location was the image window.",
+   "exposures[0].timing.duty_cycle_pct": "After NTG was injected, the function generator was triggered to send a signal with a fundamental frequency (FF)  500 kHz, a pulse repetition frequency (PRF) 1 Hz, a duty cycle 5%, a stimulation interval of 1 second, and a stimulation time of 15 minutes, and the stimulation location was the image window.",
+   "exposures[0].timing.sonication_duration_s": "After NTG was injected, the function generator was triggered to send a signal with a fundamental frequency (FF)  500 kHz, a pulse repetition frequency (PRF) 1 Hz, a duty cycle 5%, a stimulation interval of 1 second, and a stimulation time of 15 minutes, and the stimulation location was the image window.",
+   "exposures[0].timing.pulse_duration_ms": "FF=500 kHz, PRF=1Hz, NC=25000, DC=5%",
+   "exposures[0].target.label": "After NTG was injected, the function generator was triggered to send a signal with a fundamental frequency (FF)  500 kHz, a pulse repetition frequency (PRF) 1 Hz, a duty cycle 5%, a stimulation interval of 1 second, and a stimulation time of 15 minutes, and the stimulation location was the image window.",
+   "exposures[0].timing.protocol_description": "In our experiments, different groups of mice were used for behavioral tests, optical imaging, and LFP recording experiments.",
+   "exposures[0].device.manufacturer": "The function generator (AFG3022C; Tektronix, Beaverton, OR) was connected to the signal amplifier (E&I240 L, Bell Electronics, Renton, WA), which was connected to the ultrasound transducer (V301-SU, Olympus, Shinjuku Monolith, Tokyo, Japan)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes (Ctrl+TUS n=6, NTG+TUS n=9) are reused across separate behavioral, optical imaging, and LFP recording sub-experiments using different groups of mice, and a separate n=7 is used for biochemical analysis; the total unique number of TUS-exposed animals is not stated (total across the whole study is 127 mice for all purposes)."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "The stimulation site is described only by stereotaxic coordinates relative to bregma ('the image window', -2 mm AP, 2 mm ML), without naming a specific cortical subregion; recorded as generic cerebral cortex."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration (50 ms) is derived from the number of cycles per pulse (NC=25000) divided by the fundamental frequency (500 kHz), consistent with duty cycle (5%) / PRF (1 Hz); this conversion is explicitly sanctioned by the extraction instructions."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Surgery for window/electrode implantation was performed under isoflurane anaesthesia, but the paper does not explicitly state whether animals were awake or anaesthetised during the TUS/behavioral/LFP recording sessions themselves; 'awake' is inferred from the freely-moving LFP recording and open-field behavioral testing."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

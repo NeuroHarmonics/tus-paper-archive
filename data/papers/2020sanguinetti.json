@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020sanguinetti",
+ "doi": "10.3389/fnhum.2020.00052",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  25,
+  9
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer",
+  "none"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "behaviour",
+  "fmri"
+ ],
+ "readout_other": "Visual Analog Mood Scale (VAMS) - Global Affect and Global Vigor; resting-state fMRI seed-to-voxel functional connectivity",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "tFUS to the right IFG increased self-reported positive mood (Global Affect, and Global Vigor in Experiment 2) relative to baseline/placebo, while resting-state functional connectivity between the rIFG and left prefrontal/limbic areas (subgenual cortex, orbitofrontal cortex, dorsal ACC, entorhinal cortex) decreased and connectivity with premotor cortex increased; DMN connectivity generally decreased.",
+ "adverse_events": "not_reported",
+ "safety_notes": "All intensity levels were well below FDA guidelines (global maximum Ispta below 720 mW/cm2, Isppa below 190 mW/cm2); estimated Isppa delivered to brain tissue after skull attenuation would be unlikely to exceed 16.2 W/cm2.",
+ "exposures": [
+  {
+   "label": "tFUS to right inferior frontal gyrus (rIFG)",
+   "target": {
+    "terms": [
+     "inferior_frontal_gyrus"
+    ],
+    "label": "right inferior frontal gyrus (rIFG; BA45), targeted via F8 EEG electrode location"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Neurotrek, Inc., Boston, MA (transducer element: Blatek, Inc., Pittsburgh, PA)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     1270,
+     1260
+    ],
+    "isppa_w_cm2": 54,
+    "ispta_w_cm2": [
+     0.13,
+     0.272
+    ]
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 16.2,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.065,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": [
+     0.26,
+     0.5
+    ],
+    "sonication_duration_s": [
+     30,
+     120
+    ],
+    "protocol_description": "Experiment 1 (n=24 tFUS-Active, double-blind, placebo-controlled): 30 s of tFUS with 0.26% duty cycle, pulse repetition period 23 ms; mood assessed by VAMS at baseline and 10, 20, 30 min post-tFUS. Experiment 2 (n=9, single-arm, no control condition): 2 min of tFUS with duty cycle increased to 0.5%; resting-state fMRI acquired before tFUS and 20 min after, with VAMS at baseline, 10 and 30 min post-tFUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.26
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Participants were randomly assigned to either the tFUS-Active (n = 25) or Placebo condition (n = 26).",
+   "exposures[0].fundamental_frequency_khz": "A custom focused ultrasound system generated ultrasound pulses (Neurotrek, Inc., Boston, MA, United States) emitted with a single element transducer (500 kHz, with a two-part lens focused at 30 mm; Blatek, Inc., Pittsburg, PA, United States). The resultant tFUS waveform had the following characteristics: acoustic frequency was 0.5 MHz, pulse duration was 65 µs, pulse repetition period was 23 ms, pulse repetition frequency was 40 Hz, duty cycle was 0.26%, and stimulus duration was 30 s.",
+   "exposures[0].free_field.pressure_kpa": "A calibrated hydrophone measured the acoustic intensity (Onda, HN-500, Sunnyvale, CA, United States) by mounting the hydrophone on a three-axis stage positioning system and submerging the ultrasound transducer in a water tank with degassed water. At the center of the emitted ultrasound beam, the peak rarefactional pressure was 1.27 MPa, the mechanical index was 1.79, $I _ { \\mathrm { s p p a } }$ was 54 W/cm<sup>2</sup>, and $I _ { \\mathrm { s p t a } }$ was 130 mW/cm<sup>2</sup>.",
+   "exposures[0].free_field.isppa_w_cm2": "At the center of the emitted ultrasound beam, the peak rarefactional pressure was 1.27 MPa, the mechanical index was 1.79, $I _ { \\mathrm { s p p a } }$ was 54 W/cm<sup>2</sup>, and $I _ { \\mathrm { s p t a } }$ was 130 mW/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "At the center of the emitted ultrasound beam, the peak rarefactional pressure, measured in water, was 1.26 MPa, the mechanical index was 1.79, $I _ { \\mathrm { s p p a } }$ was 54 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 } ;$ , and $I _ { \\mathrm { s p t a } }$ was 272 mW/cm<sup>2</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "When measuring single-channel 500 kHz ultrasound beam characteristics in free water through a human skull, about 70– 80% of the intensity is absorbed (Legon et al., 2018). Thus, $I _ { \\mathrm { s p p a } }$ delivered to brain tissue, attenuated by the skull, would be unlikely to exceed 16.2 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "A custom focused ultrasound system generated ultrasound pulses (Neurotrek, Inc., Boston, MA, United States) emitted with a single element transducer (500 kHz, with a two-part lens focused at 30 mm; Blatek, Inc., Pittsburg, PA, United States). The resultant tFUS waveform had the following characteristics: acoustic frequency was 0.5 MHz, pulse duration was 65 µs, pulse repetition period was 23 ms, pulse repetition frequency was 40 Hz, duty cycle was 0.26%, and stimulus duration was 30 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A custom focused ultrasound system generated ultrasound pulses (Neurotrek, Inc., Boston, MA, United States) emitted with a single element transducer (500 kHz, with a two-part lens focused at 30 mm; Blatek, Inc., Pittsburg, PA, United States). The resultant tFUS waveform had the following characteristics: acoustic frequency was 0.5 MHz, pulse duration was 65 µs, pulse repetition period was 23 ms, pulse repetition frequency was 40 Hz, duty cycle was 0.26%, and stimulus duration was 30 s.",
+   "exposures[0].timing.duty_cycle_pct": "We used the same tFUS device and waveforms from Experiment 1, except the duty cycle increased to 0.5%, and the duration was 2 min.",
+   "exposures[0].timing.sonication_duration_s": "We used the same tFUS device and waveforms from Experiment 1, except the duty cycle increased to 0.5%, and the duration was 2 min.",
+   "exposures[0].device.manufacturer": "A custom focused ultrasound system generated ultrasound pulses (Neurotrek, Inc., Boston, MA, United States) emitted with a single element transducer (500 kHz, with a two-part lens focused at 30 mm; Blatek, Inc., Pittsburg, PA, United States).",
+   "n_sessions_per_subject": "Measurements occurred at four-time points within a 1-h time frame: Once during a baseline period before tFUS (Baseline), 10 min after tFUS (Post-10), 20 min after tFUS (Post-20), and 30 min after tFUS (Post-30)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Experiment 1 (n=24 tFUS-Active, of 48 total incl. placebo) and Experiment 2 (n=9, single-arm) are independent samples of participants; listed as separate group sizes rather than summed since the paper never states a combined total."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The 16.2 W/cm2 estimate is derated using a generic literature-cited 70-80% skull absorption figure (Legon et al., 2018), not a measurement specific to this study's participants; a separate, patient-specific k-Wave simulation is also reported giving a 53% reduction in intracranial peak pressure, but no corresponding kPa/W-cm2 value is stated for that simulation."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Experiment 1 used a double-blind placebo (inactive transducer, no ultrasound output) condition; Experiment 2 was single-arm with no control condition at all ('There was no control condition')."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No active auditory masking was implemented; participants who reported hearing a buzzing/clicking sound from the device were compared post hoc to those who did not, finding no significant difference in mood effects, but this is a post hoc analysis rather than an active control method."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

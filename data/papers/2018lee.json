@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018lee",
+ "doi": "10.1186/s12868-018-0459-3",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 7,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Frame-by-frame video analysis (29.97 fps) of elicited body movements (tail, limb, whisker, head/neck/ear, chewing) synchronized to an LED sonication-onset marker; post-sonication H&E, VAF-toluidine blue, GFAP, and caspase-3 histology",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS to motor cortical areas elicited body movements (tail, limb, whisker, head/neck/ear, chewing) in awake and anesthetized (ketamine/xylazine, isoflurane) rats; the awake condition showed higher response rates, lower and less variable acoustic intensity thresholds, and shorter response latencies than the anesthetized conditions. Off-target sonication (including auditory areas) did not elicit responses.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological analysis (H&E, VAF-toluidine blue, GFAP, caspase-3) after repeated sonication sessions over 5-8 months showed no signs of hemorrhage, edema, ischemia, gliosis, or apoptosis; estimated thermal increase was 0.016 degrees C, considered negligible; no BBB disruption detected by trypan blue in 2 rats.",
+ "exposures": [
+  {
+   "label": "tFUS to motor cortical areas (tail/limb/whisker representations), compared across awake and anesthetized states",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortical areas (tail, limb, and whisker motor representations)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "in-house-built miniature wearable FUS transducer (PZT ceramic element, American Piezo Ceramics)"
+   },
+   "fundamental_frequency_khz": 600,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 670,
+    "isppa_w_cm2": [
+     2.3,
+     14.9
+    ],
+    "ispta_w_cm2": 7.5
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulsed sonication (PRF 500 Hz, 1 ms tone-burst duration, 50% duty cycle, 300 ms sonication duration) with 5-10 s inter-stimulation interval; 10 sonication events per session, three repeated sessions per experimental condition (awake, ketamine/xylazine anesthesia, isoflurane anesthesia) with at least 48 h between sessions. Acoustic output was individually titrated per rat/condition to find the minimum intensity eliciting motor responses; off-target sonications (including unilateral auditory areas) were also delivered as a spatial-specificity control."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "For the tFUS sessions using anesthesia, the Sprague– Dawley rats (all male, n 7) were anesthetized with either ketamine/xylazine (80:10 mg/kg; intraperitoneal; i.p.) or isoflurane (initial induction with 3–4% followed by 0.5% for the maintenance, at oxygen flow rate of 2 L per min; inhalation).",
+   "n_sessions_per_subject": "We examined the response rates to the sonication from the same group of animals (n 7, named as 'R1' to 'R7') through three repeated tFUS sessions, under each experimental condition.",
+   "randomised": "The sequence of these experimental sessions was randomized and balanced.",
+   "exposures[0].fundamental_frequency_khz": "A fundamental frequency (FF) of 600 kHz was used to actuate the miniature transducer, and the acoustic intensity profile of the FUS transducer was characterized along the sonication direction as well as on the transversal plane at the focus (Fig. 1b).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Based on our previous studies [37], we used the acoustic parameters (Fig. 1f) as follows: pulse repetition frequency (PRF) of 500 Hz, tone burst duration (TBD) of 1 ms (i.e., a duty cycle of 50%), and sonication duration of 300 ms, with a 5–10 s inter-stimulation interval (ISI), with varying acoustic output (see below).",
+   "exposures[0].timing.pulse_duration_ms": "Based on our previous studies [37], we used the acoustic parameters (Fig. 1f) as follows: pulse repetition frequency (PRF) of 500 Hz, tone burst duration (TBD) of 1 ms (i.e., a duty cycle of 50%), and sonication duration of 300 ms, with a 5–10 s inter-stimulation interval (ISI), with varying acoustic output (see below).",
+   "exposures[0].timing.duty_cycle_pct": "Based on our previous studies [37], we used the acoustic parameters (Fig. 1f) as follows: pulse repetition frequency (PRF) of 500 Hz, tone burst duration (TBD) of 1 ms (i.e., a duty cycle of 50%), and sonication duration of 300 ms, with a 5–10 s inter-stimulation interval (ISI), with varying acoustic output (see below).",
+   "exposures[0].timing.sonication_duration_s": "Based on our previous studies [37], we used the acoustic parameters (Fig. 1f) as follows: pulse repetition frequency (PRF) of 500 Hz, tone burst duration (TBD) of 1 ms (i.e., a duty cycle of 50%), and sonication duration of 300 ms, with a 5–10 s inter-stimulation interval (ISI), with varying acoustic output (see below).",
+   "exposures[0].in_situ.isppa_w_cm2": "The range of acoustic intensities used for the experiment was 2.3–14.9 W/cm2 Isppa for the awake sessions, 7.5–14.9 W/cm2 Isppa for the ketamine/xylazine sessions, and 9.0–14.9 W/cm2 Isppa for the isoflurane sessions.",
+   "exposures[0].in_situ.pressure_kpa": "such signs were not observed in the present study with 14.9 W/cm2 Isppa (7.5 W/cm2 Ispta, 0.67 MPa, MI of 0.86).",
+   "exposures[0].in_situ.ispta_w_cm2": "such signs were not observed in the present study with 14.9 W/cm2 Isppa (7.5 W/cm2 Ispta, 0.67 MPa, MI of 0.86).",
+   "sham_type": "Also, tFUS was intentionally delivered to of-target locations (lateral or caudal to the target, few millimeters away and including unilateral auditory areas) to examine the spatial specificity in stimulation."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states three repeated tFUS sessions per experimental condition (awake, ketamine/xylazine, isoflurane); a single total across all three conditions per rat is not explicitly stated (would be ~9)."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Range spans three different physiological conditions (awake, ketamine/xylazine, isoflurane) with different response thresholds, not a single systematic sweep at one state."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Value (0.67 MPa) and the paired Ispta value are drawn from a correlated triplet given for the specific 14.9 W/cm2 Isppa condition (the upper end of the intensity range used) in the Safety section, not for the full range of intensities used in the study."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Stated in the transducer characterization section as the device's maximum output capability; not explicitly labeled as a free-field (water tank) versus in-situ (post-skull) measurement, but appears in the context of the pre-derating device characterization, distinct from the sonication-parameters section that explicitly discusses skull derating."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second"
+  }
+ }
+}

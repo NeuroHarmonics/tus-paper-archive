@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021cainb",
+ "doi": "10.1038/s41598-021-85504-y",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "T2*-weighted BOLD fMRI during sonication; arterial spin labeling (ASL) perfusion MRI before/between/after sonication runs",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Mode 1 LIFU (100 Hz PRF, 0.5 ms pulse width) reduced BOLD signal in left GP and left thalamus during sonication and reduced whole-brain perfusion (ASL) afterward; Mode 2 (10 Hz PRF, 5 ms pulse width) produced no detectable BOLD effect despite the same intensity/duty cycle, but still reduced ASL perfusion.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Left globus pallidus LIFU, Mode 1 and Mode 2 parameter sets",
+   "target": {
+    "terms": [
+     "globus_pallidus"
+    ],
+    "label": "left globus pallidus (GP)"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix Inc.",
+    "model": "BXPulsar 1001"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.4,
+    "ispta_w_cm2": 0.72
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     5
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     10
+    ],
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Two 5-min LIFU runs per session, each consisting of ten 30-s sonication blocks preceded by 30-s rest blocks (block design). Each participant underwent two sessions on separate days (Mode 1 in one session, Mode 2 in the other, order counterbalanced), i.e. four 10-min sessions total, each containing 5 min of active sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Here, we administered two sessions of deep-brain LIFU in 16 healthy volunteers. In each session, participants received two 5-min doses (i.e., runs) of LIFU aimed at the left globus pallidus (GP). Each run featured, in an of/on block design, ten 30-s blocks of sonication each preceded by 30-s of rest (see Fig. 1A). Given the current uncertainty with respect to how diferent sonication parameters (e.g., duty cycle, pulse repetition frequency, pulse width) relate to local and distal brain modulation, two sonication modes modeled after prior work<sup>4–7</sup> were administered, one per session. To assess the “online” (concurrent efects) efects of LIFU, we collected T2\\*-weighted blood oxygenation level dependent (BOLD) data during each sonication run. To assess “ofline” (longer-lasting) efects of LIFU, we also collected perfusion-weighted arterial spin labeling (ASL) data prior to the first sonication run, in-between the two runs, and after the second run. The main aims of the work were to assess the online and ofline topography (local and global) and valence (i.e., up-/down-modulation) of the brain response to each sonication setting.",
+   "n_sessions_per_subject": "Here, we administered two sessions of deep-brain LIFU in 16 healthy volunteers. In each session, participants received two 5-min doses (i.e., runs) of LIFU aimed at the left globus pallidus (GP). Each run featured, in an of/on block design, ten 30-s blocks of sonication each preceded by 30-s of rest (see Fig. 1A). Given the current uncertainty with respect to how diferent sonication parameters (e.g., duty cycle, pulse repetition frequency, pulse width) relate to local and distal brain modulation, two sonication modes modeled after prior work<sup>4–7</sup> were administered, one per session. To assess the “online” (concurrent efects) efects of LIFU, we collected T2\\*-weighted blood oxygenation level dependent (BOLD) data during each sonication run. To assess “ofline” (longer-lasting) efects of LIFU, we also collected perfusion-weighted arterial spin labeling (ASL) data prior to the first sonication run, in-between the two runs, and after the second run. The main aims of the work were to assess the online and ofline topography (local and global) and valence (i.e., up-/down-modulation) of the brain response to each sonication setting.",
+   "randomised": "Experimental design and MR image parameters. All participants underwent three discrete sessions in the 3 T Siemens Prisma Magnetic Resonance Imaging (MRI) scanner at the Staglin IMHRO Center for Cognitive Neuroscience at UCLA. For each session, a 20-channel siemens Prisma head coil was used in order to allow the space necessary for our transducer. During session (1) baseline structural and functional BOLD data was collected. This included a T1-weighted structural sequence (MPRAGE, TR = 2000 ms, TE = 2.52 ms, voxel size 1 mm<sup>3</sup>), T2-weighted structural sequence (TR = 1500 ms, TE = 104 ms, voxel size 1 mm<sup>3</sup>), a baseline arterial spin labeling image (TR = 4.6 ms, TE = 16.18 ms, 8 sequential slices, voxel size 1 mm<sup>3</sup>, inversion time = 1990 ms, tag-controlled pulsed ASL (PASL), bolus duration = 700 ms), a baseline functional image (T2\\*-weighted Gradient Recall Echo sequence, TR = 700 ms, TE = 33 ms, FOV dimensions: [78, 78, 54 voxels], voxel size 2.5 mm<sup>3</sup>, interleaved multiband acquisition, 1000 volumes total), and a white-matter nulled T1-weighted image used to better capture the fine structure of subcortical nuclei. During sessions (2) and (3) LIFU was applied. Firstly, a high-resolution T1-weighted MPRAGE sequence (TR = 2000 ms, TE = 2.52 ms, voxel size 1 mm<sup>3</sup>) was acquired for data analysis (i.e., registration of functional data from native space to the MNI template). Then, an additional lower-resolution T1-weighted image (TR = 1900  ms, TE = 2.2  ms, voxel size 2 mm<sup>3</sup>) was acquired following transducer placement to confirm final transducer positioning (see “Ultrasound Positioning” section). Once the transducer was positioned, participants underwent 5 functional acquisitions (with the same parameters as in the first session): two T2\\*-weighted BOLD sequences, acquired contemporaneously to LIFU sonication, and three ASL sequences, collected prior to the first LIFU run, after the first LIFU run (i.e., in between LIFU runs 1 and 2), and after the second LIFU run. In other words, participants underwent 5 functional scans in the following order: ASL (i.e., “Pre-LIFU 1”), BOLD-LIFU (i.e., “LIFU run 1”), ASL (i.e., “Post-LIFU 1”), BOLD-LIFU (i.e., “LIFU run 2”), and ASL (i.e., “Post-LIFU 2”). In each LIFU run, 5 min of sonication were administered in 10 of–on cycles consisting of 30-s blocks of LIFU preceded by 30-s blocks of rest (resulting in 10 “LIFUP-of” and 10 “LIFUP-on” blocks of 30 s each; see Fig. 1). Finally, in Session 3, participants underwent again the same data acquisition (and order). Sessions 2 and 3 thus only difered in the sonication parameter set used. Specifically, half the participants underwent two Mode 1 sonications in Session 2 and two Mode 2 sonications in Session 3, whereas the remaining participants underwent two Mode 2 sonications in Session 2 and two Mode 1 sonications in Session 3. Order was counterbalanced across participants.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "Ultrasound waveform. A BXPulsar 1001, Brainsonix Inc. ultrasound device was used in two modes. While both modes employ a 650 kHz carrier wave, the distinction between them is a high PRF (100 Hz) with low Pulse Width (0.5 ms) for Mode 1 and a low PRF (10 Hz) with high Pulse Width (5 ms) for Mode 2. Pulsation was administered in 2, 10-min sessions on each of 2 diferent days and thus in 4, 10-min sessions total. Within each 10-min session, pulsation alternated between 30 s of LIFU and 30 s of no-LIFU for a total of 10, 30 s trains of pulsation per sonication (5-min of LIFU total per 10-min session)—a standard block design amenable to BOLD MRI. For both modes, carrier wave frequency= 650 kHz, Duty Cycle = 5%, I = 720 mW/cm<sup>2</sup>; I = 14.40 W/ cm<sup>2</sup> (see Fig. 1A). This intensity falls under the safety guidelines for ultrasound imaging of the cranium provided by the FDA<sup>42</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Experimental design and MR image parameters. All participants underwent three discrete sessions in the 3 T Siemens Prisma Magnetic Resonance Imaging (MRI) scanner at the Staglin IMHRO Center for Cognitive Neuroscience at UCLA. For each session, a 20-channel siemens Prisma head coil was used in order to allow the space necessary for our transducer. During session (1) baseline structural and functional BOLD data was collected. This included a T1-weighted structural sequence (MPRAGE, TR = 2000 ms, TE = 2.52 ms, voxel size 1 mm<sup>3</sup>), T2-weighted structural sequence (TR = 1500 ms, TE = 104 ms, voxel size 1 mm<sup>3</sup>), a baseline arterial spin labeling image (TR = 4.6 ms, TE = 16.18 ms, 8 sequential slices, voxel size 1 mm<sup>3</sup>, inversion time = 1990 ms, tag-controlled pulsed ASL (PASL), bolus duration = 700 ms), a baseline functional image (T2\\*-weighted Gradient Recall Echo sequence, TR = 700 ms, TE = 33 ms, FOV dimensions: [78, 78, 54 voxels], voxel size 2.5 mm<sup>3</sup>, interleaved multiband acquisition, 1000 volumes total), and a white-matter nulled T1-weighted image used to better capture the fine structure of subcortical nuclei. During sessions (2) and (3) LIFU was applied. Firstly, a high-resolution T1-weighted MPRAGE sequence (TR = 2000 ms, TE = 2.52 ms, voxel size 1 mm<sup>3</sup>) was acquired for data analysis (i.e., registration of functional data from native space to the MNI template). Then, an additional lower-resolution T1-weighted image (TR = 1900  ms, TE = 2.2  ms, voxel size 2 mm<sup>3</sup>) was acquired following transducer placement to confirm final transducer positioning (see “Ultrasound Positioning” section). Once the transducer was positioned, participants underwent 5 functional acquisitions (with the same parameters as in the first session): two T2\\*-weighted BOLD sequences, acquired contemporaneously to LIFU sonication, and three ASL sequences, collected prior to the first LIFU run, after the first LIFU run (i.e., in between LIFU runs 1 and 2), and after the second LIFU run. In other words, participants underwent 5 functional scans in the following order: ASL (i.e., “Pre-LIFU 1”), BOLD-LIFU (i.e., “LIFU run 1”), ASL (i.e., “Post-LIFU 1”), BOLD-LIFU (i.e., “LIFU run 2”), and ASL (i.e., “Post-LIFU 2”). In each LIFU run, 5 min of sonication were administered in 10 of–on cycles consisting of 30-s blocks of LIFU preceded by 30-s blocks of rest (resulting in 10 “LIFUP-of” and 10 “LIFUP-on” blocks of 30 s each; see Fig. 1). Finally, in Session 3, participants underwent again the same data acquisition (and order). Sessions 2 and 3 thus only difered in the sonication parameter set used. Specifically, half the participants underwent two Mode 1 sonications in Session 2 and two Mode 2 sonications in Session 3, whereas the remaining participants underwent two Mode 2 sonications in Session 2 and two Mode 1 sonications in Session 3. Order was counterbalanced across participants.",
+   "exposures[0].device.manufacturer": "A BXPulsar 1001, Brainsonix Inc.",
+   "exposures[0].device.model": "A BXPulsar 1001, Brainsonix Inc."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "No sham/inactive-transducer session; comparison is Mode1 vs Mode2 vs inter-block baseline rest, and right-hemisphere ROIs as anatomical control."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "1.0558 MPa is the pressure at the transducer face used as a simulation input parameter (water tank measurement), not necessarily the free-field focal pressure."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Isppa/Ispta values are labeled with a \".3\" subscript denoting deration at 0.3 dB/cm-MHz through human tissue, i.e. an estimated in-situ (derated) value rather than a measured free-field value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second"
+  }
+ }
+}

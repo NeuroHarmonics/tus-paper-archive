@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017casella",
+ "doi": "10.1002/nau.23241",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology"
+ ],
+ "readout_other": "Bladder pressure (cystometry) via transurethral catheter, quantifying suppression/return of cyclical detrusor contractions",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Transcutaneous ultrasound stimulation of the posterior tibial nerve suppressed rhythmic bladder (detrusor) contractions in anesthetized rats, with suppression beginning on average 3 min 23 s after ultrasound onset and lasting ~13 min 50 s, without evoking a motor response in the ipsilateral toe.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Pulses were within FDA diagnostic-imaging limits for mechanical index (MI = 1.9, equal to the FDA limit) and Isppa (28 W/cm2 vs 190 W/cm2 limit) but exceeded the FDA Ispta limit (2100 mW/cm2 vs 720 mW/cm2); the Pennes bioheat equation predicted a ~3°C temperature rise, and similar heating was experimentally observed in pork (data not shown), so mild hyperthermia in the tibial nerve region is likely though not directly measured in the rats studied.",
+ "exposures": [
+  {
+   "label": "Transcutaneous ultrasound stimulation of the posterior tibial nerve",
+   "target": {
+    "terms": [
+     "tibial_nerve"
+    ],
+    "label": "posterior tibial nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 950,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 28,
+    "ispta_w_cm2": 2.1
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.252,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Ultrasound pulses consisted of 63-cycle 250 kHz bursts repeating at a rate of 2 kHz over a total duration of 300 ms; this 300 ms pulse was itself repeated every 2 s. Stimulation was delivered in set time intervals of 5-10 min, and if bladder contractions were unchanged by the end of a period, the probe was repositioned by 1-2 mm and the cycle repeated; total ultrasound exposure time was 5 min (n=6), 10 min (n=3) or 15 min (n=1) per animal. After the initial stimulation, pulses were reapplied at 15, 20, 30, 40, 53 and 70 min to test for a refractory period."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In total, we applied ultrasound stimulation to 10 animals for 5 min (N = 6), 10 min (N = 3), and 15 min (N = 1).",
+   "exposures[0].target.label": "the ultrasound probe was positioned slightly superior to the medial malleolus, over the position of the posterior tibial nerve (Fig. 1).",
+   "exposures[0].device.model": "Ultrasound stimulation was applied using a single element spherically focused transducer with a center frequency of 250 kHz (H-115MR, Sonic Concepts, Bothell, WA).",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was applied using a single element spherically focused transducer with a center frequency of 250 kHz (H-115MR, Sonic Concepts, Bothell, WA).",
+   "exposures[0].free_field.pressure_kpa": "This pulse was repeated every 2 s and had a peak negative pressure of 950 kPa as measured in a free water field by a needle hydrophone.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound pulses consisted of 63-cycle 250 kHz bursts repeating at a rate of 2 kHz over a total duration of 300 ms (Fig. 1).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound pulses consisted of 63-cycle 250 kHz bursts repeating at a rate of 2 kHz over a total duration of 300 ms (Fig. 1).",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound pulses consisted of 63-cycle 250 kHz bursts repeating at a rate of 2 kHz over a total duration of 300 ms (Fig. 1).",
+   "adverse_events": "Using a standard method to estimate temperature rise by coupling an acoustic source with the Pennes bioheat equation, we estimate that a temperature rise of ~3° C could result from the pulses used in this manuscript.",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was applied using a single element spherically focused transducer with a center frequency of 250 kHz (H-115MR, Sonic Concepts, Bothell, WA).",
+   "n_sessions_per_subject": "In total, we applied ultrasound stimulation to 10 animals for 5 min (N = 6), 10 min (N = 3), and 15 min (N = 1).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound pulses used in the present study are within FDA diagnostic imaging limits for mechanical index (MI = 1.9 which equals the FDA limit) and intensity spatial peak pulse average $\\mathrm { ( I _ { s p p a } } , 2 8 \\mathrm { W / c m } ^ { 2 }$ compared to FDA limit of $1 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ but exceed the limits for intensity spatial peak temporal average (I ) (2100 mW/cm<sup>2</sup> compared to the FDA limit of 720 mW/cm<sup>2</sup>).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound pulses used in the present study are within FDA diagnostic imaging limits for mechanical index (MI = 1.9 which equals the FDA limit) and intensity spatial peak pulse average $\\mathrm { ( I _ { s p p a } } , 2 8 \\mathrm { W / c m } ^ { 2 }$ compared to FDA limit of $1 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ but exceed the limits for intensity spatial peak temporal average (I ) (2100 mW/cm<sup>2</sup> compared to the FDA limit of 720 mW/cm<sup>2</sup>)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Abstract states a slightly different peak negative pressure of 900 kPa ('peak negative pressure of 900 kPa pulsed at 0.5 Hz'), while Methods states 950 kPa measured in a free water field; the Methods value is used here and the discrepancy is flagged."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Domain (free-field vs in-situ) is not explicitly stated for these Isppa/Ispta figures; classified as free_field because they are derived from the pressure explicitly measured 'in a free water field'."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "0.252 ms obtained via the sanctioned cycles-per-pulse ÷ frequency conversion (63 cycles / 250 kHz); paper does not state pulse duration directly in ms."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

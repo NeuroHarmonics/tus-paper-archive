@@ -1,0 +1,162 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020prieto",
+ "doi": "10.1085/jgp.202012672",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "whole-cell current-clamp patch-clamp recording (action potential firing, frequency-input curves, waveform)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Ultrasound inhibited action potential firing at low (near-threshold) input currents/firing frequencies, but potentiated firing at higher input currents/firing frequencies; it also increased threshold current, f-i slope and maximum firing frequency, hyperpolarized resting membrane potential, decreased action potential width, and increased AHP depth.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "43 MHz continuous-wave ultrasound applied to CA1 pyramidal neurons in acute hippocampal brain slices",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 pyramidal neurons, hippocampus, acute rodent brain slices"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 43000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 50,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 1,
+    "protocol_description": "A 1-s, continuous-wave ultrasound pulse at 43 MHz and 50 W/cm2 was applied either 500 ms before the start of a 2-s current injection, or 1 s after the start of a 3-s current step, to compare firing in the presence versus absence of ultrasound in the same cell; the interval between ultrasound applications was at least 12 s, and control/ultrasound trials were alternated with the first condition tested varying randomly on a cell-by-cell basis."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Continuous-wave ultrasound at 43 MHz and 50 $\\scriptstyle { \\mathsf { W } } / \\cos ^ { 2 }$ was applied to brain slices using a setup similar to that we previously used for our experiments on cultured cells (Prieto et al., 2018), except that the tissue was visualized with a dissecting micro scope at low magnification.",
+   "exposures[0].free_field.isppa_w_cm2": "The ultrasound intensity (50 W/ cm<sup>2</sup>) is the spatial peak, pulse average intensity for the free field.",
+   "exposures[0].timing.duty_cycle_pct": "We chose to use continuouswave ultrasound (without additional low-frequency modulation within the pulse) because continuous-wave ultrasound was previously found to be optimal for ultrasound neuromodulation ofretinal ganglion cells at 43 MHz (Menz et al., 2013).",
+   "exposures[0].timing.sonication_duration_s": "Throughout the experiments reported here, ultrasound was applied at 43 MHz and 50 W/cm<sup>2</sup> as a 1-s, continuous-wave pulse."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n=66 refers to individual patch-clamped neurons/cells (from an unspecified number of slices/animals), not distinct tissue preparations or animals; subject_unit 'preparation' is an approximation since the vocabulary has no explicit 'cell' category."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "The ultrasound is applied directly to an ex vivo brain slice via a thin polystyrene film with no intervening skull or other tissue path; treated analogously to a bath/dish preparation with in_situ fields null."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Not applicable: acute ex vivo brain slice preparation has no capacity for auditory perception."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

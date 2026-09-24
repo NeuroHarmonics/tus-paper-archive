@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023wangb",
+ "doi": "10.1093/cercor/bhad398",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "Sprague-Dawley, Wistar-Kyoto, and spontaneously hypertensive rat (SHR)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "attention deficit hyperactivity disorder (ADHD) model (spontaneously hypertensive rat, SHR)",
+ "n_subjects": [
+  7,
+  7,
+  7
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "other_mri"
+ ],
+ "readout_other": "local field potential (LFP, theta/beta/gamma amplitude and relative power); laser speckle contrast imaging (LSCI) of cerebral blood flow; neurovascular coupling (Pearson correlation between LFP and CBF)",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "In SHR (ADHD model) rats, 7 days of LIUS to prefrontal cortex normalized electrical-stimulation-evoked responses toward SD/WKY levels: it increased theta and gamma cortical excitability and NVC coupling strength while decreasing beta-band excitability and CBF peak response/peak time, relative to SHR controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIUS to prefrontal cortex in SD, WKY and SHR (ADHD model) rats",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "prefrontal cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "LIUS (500 kHz fundamental frequency, 1 Hz PRF, 5% duty cycle, 50 ms pulse) delivered to the prefrontal cortex for a total stimulation time of 15 min per day, continuously for 7 days; cortical electrical stimulation (15 uA, 3 s, 10 trials at 5-min intervals) was used afterward to probe evoked CBF, LFP and neurovascular coupling on days 1, 4 and 7."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "exposures[0].timing.duty_cycle_pct": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "exposures[0].timing.pulse_duration_ms": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "exposures[0].timing.sonication_duration_s": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "n_subjects": "Fourteen WKY rats, 14 SHR rats, and 14 Sprague-Dawley (SD) rats (all male; postnatal day, 25 1; body weight, 100 to 140 g; Beijing Vital River Laboratory Animal Technology Co., Ltd China) were used in this study. Each strain of rats was randomly and <sup>evenly</sup> <sup>divided</sup> <sup>into</sup> <sup>2</sup> <sup>groups</sup> <sup>(n</sup> = <sup>7</sup> <sup>per</sup> <sup>group).</sup> <sup>One</sup> <sup>group</sup> <sup>was</sup> used as the control group (marked as the control group), and the other one was used as the LIUS group (marked as the LIUS group). All procedures were performed in accordance with the guidelines of the Animal Ethics and Management Committee of Yanshan University. The animals were housed in standard cages in a temperature-controlled (22 1◦C), ventilated animal room maintained on a 12-h light–dark cycle (from 08:00 to 20:00). The animals had ad libitum access to food and water.",
+   "n_sessions_per_subject": "The LIUS system and parameters were identical to those used in our previous study (Wang et al. 2023). As shown in Fig. 1B, a pulse signal was generated using a signal generator (AFG3022C; Tektronix, United States) and amplified using an amplifier (E&I 240L, ENI Inc., United States). The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves. The 3D printed conical collimator with a coupling liquid connected the transducer and the rat head to allow the ultrasound waves to penetrate the rat brain. The bottom aperture of the conical collimator was 4 mm. As shown in Fig. 1C, the fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration of the ultrasound waves were 500 kHz, 1 Hz, 5%, and 50 ms, respectively. The stimulation location was in the prefrontal cortex (1.25 mm left and right, 4.5 mm from the bregma). The total stimulation time for each stimulus was 15 min. LIUS was continuously performed for 7 days (Fig. 1F).",
+   "exposures[0].device.manufacturer": "The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves.",
+   "exposures[0].device.model": "The amplifier was connected to a focused ultrasound transducer (V301-SU; Olympus, Tokyo, Japan) to generate ultrasound waves."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The paper labels 50 ms as 'stimulation duration' rather than explicitly as pulse duration; this was resolved via the burst rule because duty cycle (5%) / PRF (1 Hz) = 0.05 s = 50 ms, matching the stated value exactly, confirming it is the pulse duration rather than a separate sonication-train duration."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives n=7 LIUS-exposed rats per strain (SD, WKY, SHR); a combined total across strains is not explicitly stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Rats were anesthetized (2% isoflurane) for surgery, but the recording/LIUS system is explicitly built for 'free-moving rats'; anesthesia status during the LIUS stimulation itself is not explicitly restated, so 'awake' is inferred from the free-moving-rat framing."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

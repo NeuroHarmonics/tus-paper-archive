@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013deffieux",
+ "doi": "10.1016/j.cub.2013.10.029",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  10,
+  12
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site",
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Antisaccade/prosaccade task: saccade latency, error rate, amplitude, peak velocity and skewness measured via infrared eye tracking",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ipsilateral antisaccade latencies were significantly slowed by FUS to the left FEF (monkey Y and L), with a marginal increase in contralateral error rate for one monkey; no significant effect on contralateral latencies, saccade amplitude, peak velocity or skewness, and no effect when the transducer was aimed at premotor cortex or in sham (transducer moved away) sessions.",
+ "adverse_events": "none_observed",
+ "safety_notes": "All acoustic parameters (MI, ISPPA, ISPTA) were far below FDA diagnostic ultrasound imaging safety limits, and no discomfort was imposed on the animals during ultrasonic neurostimulation.",
+ "exposures": [
+  {
+   "label": "FUS to the left frontal eye field during antisaccade task",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "left frontal eye field (FEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 320,
+   "free_field": {
+    "pressure_kpa": 600,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 350,
+    "isppa_w_cm2": 4,
+    "ispta_w_cm2": 0.0135
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "FUS pulses were delivered to the left FEF at a 100 ms stimulus onset asynchrony after visual target appearance, with rise and fall times of 1 ms, and a minimum 30 s pause between each ultrasonic pulse. Each session comprised a 100-trial AS baseline block, a 400-trial block (360 without FUS, 40 with FUS pseudorandomly interleaved, 20 per side), and a 100-trial posttest block."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Two macaques (Macaca mulatta ‘‘Y’’ and ‘‘L’’) participated in this study.",
+   "n_sessions_per_subject": "Monkey Y performed ten sessions and monkey L twelve sessions.",
+   "exposures[0].fundamental_frequency_khz": "The frequency was set to 320 kHz and the pulse duration to 100 ms using a first function generator, with rise and fall times set to 1 ms using a second generator (AFG3101, Tektronix) connected to the amplitude modulation entry of the first one.",
+   "exposures[0].timing.sonication_duration_s": "The frequency was set to 320 kHz and the pulse duration to 100 ms using a first function generator, with rise and fall times set to 1 ms using a second generator (AFG3101, Tektronix) connected to the amplitude modulation entry of the first one.",
+   "exposures[0].free_field.pressure_kpa": "The pressure amplitude at focus was set to 0.6 MPa, as measured in free water with a heterodyne interferometer.",
+   "exposures[0].in_situ.pressure_kpa": "0.35 MPa in the brain of the monkeys. The corresponding mechanical index (MI) is 0.6 6 0.1 W/cm<sup>2</sup> and intensity spatial peak pulse average (ISPPA) is $4 \\pm 1 . 1 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ behind the skull.",
+   "exposures[0].in_situ.isppa_w_cm2": "0.35 MPa in the brain of the monkeys. The corresponding mechanical index (MI) is 0.6 6 0.1 W/cm<sup>2</sup> and intensity spatial peak pulse average (ISPPA) is $4 \\pm 1 . 1 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ behind the skull.",
+   "exposures[0].in_situ.ispta_w_cm2": "By taking into account a minimum 30 s pause between each ultrasonic pulse, we also estimated the corresponding spatial peak time average intensity (ISPTA) at less than 13.5 6 3.8 mW/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "A single-element ultrasound transducer (H115, diameter 64 mm, Sonic Concept), geometrically focused to 63 mm, was used with a coupling cone (C103, Sonic Concepts) filled with degassed water.",
+   "exposures[0].device.model": "A single-element ultrasound transducer (H115, diameter 64 mm, Sonic Concept), geometrically focused to 63 mm, was used with a coupling cone (C103, Sonic Concepts) filled with degassed water."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "The 0.35 MPa in-brain value, ISPPA and ISPTA are derated estimates based on skull-transmission measurements at seven locations on an ex vivo macaque skull specimen (mean ± SD), not measurements in the live animals; reported_as coded as mean_or_range_across_subjects for lack of a closer category."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Paper reports ISPTA as an upper bound ('at less than 13.5 ± 3.8 mW/cm2'); the stated value is recorded as-is rather than as a strict mean."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Two distinct control manipulations were used: stimulation of a control site (premotor cortex) and a sham condition where the transducer was moved 4 cm away; both are listed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

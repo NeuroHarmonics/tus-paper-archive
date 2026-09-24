@@ -1,0 +1,157 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1958fry",
+ "doi": "10.1126/science.127.3289.83",
+ "model_system": [
+  "other_vertebrate"
+ ],
+ "species": "cat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Visually-evoked cortical potentials recorded via bipolar electrodes placed in cortical areas of both hemispheres, in response to repeated light flashes",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasonic irradiation of the lateral geniculate nucleus reversibly suppressed the visually-evoked cortical potential: the primary response was reduced to less than one-third of its original amplitude and the secondary response to practically zero at the termination of irradiation, with complete recovery apparent 30 minutes after exposure.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The effect was produced by a dosage of ultrasound which does not cause any histologically observable lesion in the tissue.",
+ "exposures": [
+  {
+   "label": "Ultrasonic irradiation of lateral geniculate nucleus",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "lateral geniculate nucleus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     20,
+     120
+    ],
+    "protocol_description": "With a suitably chosen sound level and with an exposure time in the range from 20 to 120 seconds, it has been possible to produce reversible suppressions of various components of the elicited electrical response in the visual cortex. The focus of the sound beam is placed successively in and around the region of the lateral geniculate nucleus."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].timing.sonication_duration_s": "With a suitably chosen sound level and with an exposure time in the range from 20 to 120 seconds, it has been possible to produce reversible suppressions of various components of the elicited electrical response in the visual cortex."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper gives a range (20-120 s), not a single value; represented as a two-element list [min, max]."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper says results were 'obtained in a number of animals' without giving a count."
+   },
+   {
+    "field": "model_system",
+    "reason": "Cat is not explicitly listed under any model_system category (large_animal examples are sheep/pig/rabbit/dog); classified as other_vertebrate."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No explicit sham condition is described; classified as 'none' because the design compares before/during/after ultrasound within the same animal rather than using a separate sham session."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "This is a very brief communication (Science, 1 page); frequency, pressure, and intensity of the ultrasound are not stated in the available text."
+   }
+  ],
+  "human_edited": false,
+  "notes": "This is a very short (~1 page) Science communication with minimal methodological detail. Most acoustic parameters (frequency, pressure, intensity, waveform) are not reported in the text; only the exposure duration range (20-120 s) is quantified.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019zhangb",
+ "doi": "10.1109/tbme.2018.2845689",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 17,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "sucrose preference test; open field test; forced swim test; hippocampal BDNF western blot; H&E histology",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Daily TUS to the left prelimbic cortex for 2 weeks reversed restraint-stress-induced anhedonia (higher sucrose preference index) and reduced exploratory behaviour, and significantly increased hippocampal BDNF expression, compared with sham-TUS restrained rats.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining did not show the presence of any tissue damage or hemorrhage after 2 weeks of daily TUS; theoretical maximum temperature increase was calculated as only 0.02C.",
+ "exposures": [
+  {
+   "label": "Transcranial ultrasound stimulation (TUS) of left prelimbic cortex",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "prelimbic cortex (PLC, homologous to human PFC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 380,
+    "isppa_w_cm2": 7.59,
+    "ispta_w_cm2": 4.55
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 3
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 60,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Rats were treated with TUS 15 min/day for 2 weeks, with an interval of 3 s adopted between two stimulation trials to avoid thermal accumulation. Sham-TUS animals underwent the identical anaesthesia, fixation and gel-coupling procedure with the transducer powered off."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "and restraint/ST-Res (N 13), Fig. 1(a)) for evaluating the short-term impact of restraint and three groups (control with sham TUS/LT-Ctr-ShamTUS (N  16), restraint with sham TUS/LT-Res-ShamTUS (N 16), and restraint with TUS/LT-Res-TUS (N 17), Fig. 1(b)) for studying the long-term effects of restraint and antidepressant-like effects of TUS.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For each trial, ultrasound pulses were repeated at PRF of 1.5 KHz for a SD of 400 ms.",
+   "exposures[0].timing.sonication_duration_s": "For each trial, ultrasound pulses were repeated at PRF of 1.5 KHz for a SD of 400 ms.",
+   "exposures[0].fundamental_frequency_khz": "Each ultrasound pulse contained 200 sinusoidal waves corresponding to the TBD of 0.4 ms at the fundamental frequency of 0.5 MHz.",
+   "exposures[0].timing.pulse_duration_ms": "Each ultrasound pulse contained 200 sinusoidal waves corresponding to the TBD of 0.4 ms at the fundamental frequency of 0.5 MHz.",
+   "exposures[0].free_field.pressure_kpa": "The spatial-peak temporal-peak pressure is 0.38 MPa.",
+   "exposures[0].free_field.isppa_w_cm2": "Based on the acoustic pressure field, the spatial-peak pulse-average intensity $\\left( I _ { \\mathrm { S P P A } } \\right)$ was estimated to be 7.59 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and the spatial-peak temporal-average intensity (I<sub>SPTA</sub>) was $4 . 5 5 ~ \\mathrm { W / c m ^ { 2 } }$ at duty cycle of 60%.",
+   "exposures[0].free_field.ispta_w_cm2": "Based on the acoustic pressure field, the spatial-peak pulse-average intensity $\\left( I _ { \\mathrm { S P P A } } \\right)$ was estimated to be 7.59 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and the spatial-peak temporal-average intensity (I<sub>SPTA</sub>) was $4 . 5 5 ~ \\mathrm { W / c m ^ { 2 } }$ at duty cycle of 60%.",
+   "exposures[0].timing.duty_cycle_pct": "Based on the acoustic pressure field, the spatial-peak pulse-average intensity $\\left( I _ { \\mathrm { S P P A } } \\right)$ was estimated to be 7.59 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and the spatial-peak temporal-average intensity (I<sub>SPTA</sub>) was $4 . 5 5 ~ \\mathrm { W / c m ^ { 2 } }$ at duty cycle of 60%.",
+   "exposures[0].in_situ.ispta_w_cm2": "Thus the $I _ { S P T A }$ transmitted into rat’s brain could be about $3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].device.manufacturer": "(ii) a custom-designed radio frequency amplifier (HGX100, Nanjing, China), (iii) a single element immersion type planar transducer (25.4 mm in diameter, V301, Olympus, USA), and (iv) a custom-designed acoustic collimator (7 mm diameter output aperture).",
+   "exposures[0].device.model": "(ii) a custom-designed radio frequency amplifier (HGX100, Nanjing, China), (iii) a single element immersion type planar transducer (25.4 mm in diameter, V301, Olympus, USA), and (iv) a custom-designed acoustic collimator (7 mm diameter output aperture).",
+   "n_sessions_per_subject": "Rats were treated by TUS 15 min every day for 2 weeks."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n_subjects reflects the enrolled LT-Res-TUS group size (N=17); analysed sample sizes differ across outcomes (e.g. n=16 for behavioural tests, n=5 for BDNF western blot, n=3 for histology)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states TUS was given '15 min every day for 2 weeks' but never states an explicit number of sessions; not computed from the duration description."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "In-brain ISPTA (~3 W/cm2) is a theoretical estimate obtained by derating the free-field value using a calculated 33% skull/tissue attenuation, not a direct measurement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "first"
+  }
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018eguchi",
+ "doi": "10.1016/j.brs.2018.05.012",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "vascular_dementia",
+  "alzheimers_disease"
+ ],
+ "condition_other": "vascular dementia (bilateral carotid artery stenosis, BCAS model)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Y-maze, passive avoidance, and novel object recognition tests; cerebral blood flow by laser speckle imaging; immunohistochemistry (GST-p, Klüver-Barrera, CD31, GFAP, Iba-1, DCX, Ki67, amyloid-beta); RNA-sequencing, RT-qPCR, Western blotting, ELISA (eNOS, neurotrophins, APP/BACE-1, etc.)",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Whole-brain LIPUS therapy improved cognitive function, cerebral blood flow, and reduced pathology (white matter lesions in the VaD model; amyloid-beta plaque and microgliosis in the AD model) via eNOS-dependent mechanisms; the paper does not assess acute excitatory/inhibitory neuromodulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "LIPUS-treated mice showed no signs of cramps, paralysis, cerebral hemorrhage, hypothermia, hyperthermia, or increased mortality compared with control mice, and no effects on body weight or systolic blood pressure, for up to 3 months.",
+ "exposures": [
+  {
+   "label": "Whole-brain LIPUS therapy",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole brain"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1875,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.017067,
+    "pulse_repetition_frequency_hz": 6000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Whole-brain LIPUS therapy (1.875 MHz, 6.0 kHz, 32 cycles per pulse) was applied to mouse models of vascular dementia (BCAS) and Alzheimer's disease (5XFAD), including eNOS-knockout mice; full device, session number, and treatment-schedule details are given only in Supplementary Methods, which were not available in the main text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 10.24
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We applied the LIPUS therapy (1.875 MHz, 6.0 kHz, 32cycles) to the whole brain.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We applied the LIPUS therapy (1.875 MHz, 6.0 kHz, 32cycles) to the whole brain.",
+   "exposures[0].timing.pulse_duration_ms": "We applied the LIPUS therapy (1.875 MHz, 6.0 kHz, 32cycles) to the whole brain."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "The abstract lists three numbers (1.875 MHz, 6.0 kHz, 32 cycles) without labeling them; 6.0 kHz is interpreted as the pulse repetition frequency based on common usage in this parameter format, but the paper does not explicitly name it as PRF."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration was derived from the stated 32 cycles per pulse divided by the 1.875 MHz fundamental frequency (32/1,875,000 Hz = 0.017067 ms), per the allowed cycles-per-pulse-over-frequency conversion; the paper does not itself state a pulse duration in ms."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Full methods (including group sizes) are in Supplementary Methods, not provided; main text gives many different per-figure n's (e.g., n=12-17, n=5-12, n=6, n=9-10, n=20-25) across different endpoints and models, with no single total."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control mice 'underwent the same procedure without the LIPUS treatment', but the paper does not describe whether a transducer was present but inactive, or whether ultrasound was simply not applied; coded as 'other'."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Methods for whole-brain LIPUS delivery (including whether mice were anaesthetised or awake during sonication) are in Supplementary Methods, not provided in the main text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

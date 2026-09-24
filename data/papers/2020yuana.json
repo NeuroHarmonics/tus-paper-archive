@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020yuana",
+ "doi": "10.1016/j.neuroimage.2020.116597",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 29,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "invasive_electrophysiology",
+  "behaviour",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Laser speckle contrast imaging (LSCI) of cortical blood flow (CBF); intrinsic signal optical imaging (ISOI) of deoxyhemoglobin (HbR)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS induced time-locked increases in motor (EMG/whisker/tail movement), neural (LFP) and hemodynamic (CBF, HbR) signals; CBF peak amplitude increased monotonically with increasing ultrasound intensity and stimulation duration, with only a weak effect of duty cycle.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Estimated TUS-induced temperature rise was ~4.8x10^-3 degrees C, considered minimal; no significant motor, neural activity or hemodynamic CBF changes were observed under deep anaesthesia (2% isoflurane), arguing against a thermal origin of the CBF response.",
+ "exposures": [
+  {
+   "label": "TUS of mouse motor cortex, multi-parameter sweep",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.2,
+     0.4,
+     0.8,
+     1.1
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "sonication_duration_s": [
+     0.05,
+     0.1,
+     0.2,
+     0.3,
+     0.4
+    ],
+    "protocol_description": "Three groups were used in our experiments: Group 1, six mice for the tail motor response, neural activity and CBF response experiments. Group 2, nine mice for the whisker motor response and deoxyhemoglobin metabolism. Group 3, eleven mice for CBF response vs multi-parameters. Group 4, three mice for evaluating the thermal effects for CBF response. An f=500 kHz US frequency, 1 kHz PRF pulse train was used across all experiments. For group 1 and group 2, the SD and DC were 400 ms and 40%, respectively. For the group 3, additional combinations of ultrasound parameters were used, including Isppa, DC and SD as shown in Table 1. A CCD camera records for 25s; ultrasound was delivered to brain tissue followed by a baseline of 5s; sixteen trials were averaged to improve signal-to-noise ratio."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of twenty-nine BALB/c mice were used in the experiments (all male, body weights 20–25g, ages 4–5 weeks, Beijing Vital River Laboratory Animal Technology Co., Ltd. China; nine mice were used for ISOI and twenty mice for LSCI).",
+   "exposures[0].fundamental_frequency_khz": "An $\\mathbf { f } = 5 0 0$ kHz US frequency, 1 kHz PRF pulse train was used across all experiments.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<table><tr><td> $\\mathrm { I _ { \\mathrm { s p p a } } ( W / c m ^ { 2 } ) , S D = 4 0 0 }$   $\\mathrm { m } s , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { S D } ( \\mathrm { m s } ) , \\mathrm { I _ { \\mathrm { s p p a } } } = 0 . 8 \\mathrm { W } /$   $\\mathrm { c m } ^ { 2 } , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { { D C ( ^ { 9 } / _ { 0 } ) , I _ { s p p a } } } = 0 . 8 \\mathrm { { W / c m ^ { 2 } } } ,$   $\\mathrm { S D } = 4 0 0 ~ \\mathrm { m s }$ </td></tr><tr><td>0.2</td><td>50</td><td>10</td></tr><tr><td>0.4</td><td>100</td><td>20</td></tr><tr><td>0.8</td><td>200</td><td>30</td></tr><tr><td>1.1</td><td>300</td><td>40</td></tr><tr><td></td><td>400</td><td></td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "An $\\mathbf { f } = 5 0 0$ kHz US frequency, 1 kHz PRF pulse train was used across all experiments.",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td> $\\mathrm { I _ { \\mathrm { s p p a } } ( W / c m ^ { 2 } ) , S D = 4 0 0 }$   $\\mathrm { m } s , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { S D } ( \\mathrm { m s } ) , \\mathrm { I _ { \\mathrm { s p p a } } } = 0 . 8 \\mathrm { W } /$   $\\mathrm { c m } ^ { 2 } , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { { D C ( ^ { 9 } / _ { 0 } ) , I _ { s p p a } } } = 0 . 8 \\mathrm { { W / c m ^ { 2 } } } ,$   $\\mathrm { S D } = 4 0 0 ~ \\mathrm { m s }$ </td></tr><tr><td>0.2</td><td>50</td><td>10</td></tr><tr><td>0.4</td><td>100</td><td>20</td></tr><tr><td>0.8</td><td>200</td><td>30</td></tr><tr><td>1.1</td><td>300</td><td>40</td></tr><tr><td></td><td>400</td><td></td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "<table><tr><td> $\\mathrm { I _ { \\mathrm { s p p a } } ( W / c m ^ { 2 } ) , S D = 4 0 0 }$   $\\mathrm { m } s , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { S D } ( \\mathrm { m s } ) , \\mathrm { I _ { \\mathrm { s p p a } } } = 0 . 8 \\mathrm { W } /$   $\\mathrm { c m } ^ { 2 } , \\mathrm { D C } = 4 0 \\%$ </td><td> $\\mathrm { { D C ( ^ { 9 } / _ { 0 } ) , I _ { s p p a } } } = 0 . 8 \\mathrm { { W / c m ^ { 2 } } } ,$   $\\mathrm { S D } = 4 0 0 ~ \\mathrm { m s }$ </td></tr><tr><td>0.2</td><td>50</td><td>10</td></tr><tr><td>0.4</td><td>100</td><td>20</td></tr><tr><td>0.8</td><td>200</td><td>30</td></tr><tr><td>1.1</td><td>300</td><td>40</td></tr><tr><td></td><td>400</td><td></td></tr></table>",
+   "exposures[0].device.manufacturer": "An unfocused ultrasound transducer (V301-SU, Olympus, USA) with center frequency f 500 kHz and a 31 mm diameter.",
+   "exposures[0].device.model": "An unfocused ultrasound transducer (V301-SU, Olympus, USA) with center frequency f 500 kHz and a 31 mm diameter."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Field distribution (kPa) was measured by needle hydrophone after passing through the coupling cone/skull path, but the paper does not explicitly state whether the reported Isppa sweep values are free-field or in-situ; domain left unspecified."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham/control ultrasound arm is described for the main dose-response experiments; only a separate deep-anaesthesia control was used to probe thermal confounds."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

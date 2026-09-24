@@ -1,0 +1,507 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024kimc",
+ "doi": "10.1182/blood.2023023718",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J; humanized HbSS-BERK, HbAA-BERK, HbSS-Townes)",
+ "conditions": [
+  "healthy",
+  "chronic_pain"
+ ],
+ "condition_other": "humanized sickle cell disease (SCD) mouse models (HbSS-BERK, HbSS-Townes) modelling chronic pain/hyperalgesia",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  14
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "Hind paw withdrawal latency/frequency/threshold (heat, cold, mechanical hyperalgesia); rotarod motor performance; scalp EEG spectral power; H&E, Prussian blue, TUNEL, CD31 and IgG histology",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "tFUS with PRF of 40 Hz suppressed heat/cold/mechanical hyperalgesia (analgesic, inhibitory effect), while tFUS with PRF of 3 kHz to S1HL exacerbated heat and mechanical hypersensitivity (pro-nociceptive, excitatory effect); a PRF of 1 kHz was identified as an approximate turning point between the two effects.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No significant difference in rotarod latency-to-fall was observed after single- or multi-session tFUS compared with baseline or controls; double-blind H&E and TUNEL histology after 14-day multisession treatment showed no change in tissue structural integrity, iron deposits, or apoptotic cell number, and no IgG extravasation or blood-vessel disruption.",
+ "exposures": [
+  {
+   "label": "tFUS to S1 hindlimb representation (S1HL)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "right/left hindlimb representation area of the S1 (S1HL)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts (custom 128-element array)",
+    "model": "H276"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.35,
+    "ispta_w_cm2": [
+     0.00202,
+     0.05053,
+     0.20846
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     40,
+     1000,
+     3000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.1,
+     0.4
+    ],
+    "protocol_description": "tFUS beam electronically steered with a tone-burst duration (TBD) of 200 microseconds, PRF of 40 Hz or 3 kHz (also 1 kHz explored to identify an inhibition/excitation turning point), ultrasound duration of 100 or 400 ms per sonication, intersonication interval of 2 or 4 s, and total sonication time of 10 min, 20 min, or 1 hour per session. Single-session tFUS was used for short-term behavioural testing; multisession tFUS (1 hour per day for 14 days) was used for sustained-effect testing in older female HbSS-BERK mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tFUS to insula",
+   "target": {
+    "terms": [
+     "insular_cortex"
+    ],
+    "label": "left insula"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts (custom 128-element array)",
+    "model": "H276"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.35,
+    "ispta_w_cm2": [
+     0.00202,
+     0.20846
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     40,
+     3000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.1,
+     0.4
+    ],
+    "protocol_description": "Single-session tFUS with PRF of 40 Hz at the left insula produced a sustained (30 min <= effect < 1 hour) attenuation of heat hyperalgesia, whereas PRF of 3 kHz did not differ from baseline. Multisession tFUS (1 hour per day for 14 days) with PRF of 40 Hz to insula also produced sustained amelioration of heat hyperalgesia in older female HbSS-BERK mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tFUS to thalamus",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "left thalamus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts (custom 128-element array)",
+    "model": "H276"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.35,
+    "ispta_w_cm2": [
+     0.00202,
+     0.20846
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     40,
+     3000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.1,
+     0.4
+    ],
+    "protocol_description": "Delivering tFUS with a PRF of 40 Hz to the thalamus resulted in only a less-pronounced, non-significant tendency toward attenuating heat hyperalgesia, in contrast to the significant sustained effect seen with insula stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "condition_other": "We subsequently investigated the impact of tFUS stimulation on the well-established humanized mouse model of SCD (HbSS-BERK) that constitutively displays significant thermal and mechanical hyperalgesia, which is similar to that observed in human participants with SCD.",
+   "n_sessions_per_subject": "We initially observed a significant change in the behavioral response to heat stimulus, represented as the averaged hPWL, in older female HbSS-BERK mice (10 to 15-monthold) compared with those in younger female mice (5 to 9-month-old; supplemental Figure 5A).",
+   "exposures[0].target.label": "In Figure 2B, a study paradigm for EEG measurements is presented to simultaneously investigate how tFUS stimulation influences intrinsic brain activities and heat stimulus–evoked activities where tFUS was directed onto the right hindlimb representation area of the S1 (S1HL), followed by noxious heat stimulation $( \\leq 4 7 ^ { \\circ } \\mathrm { C } )$ to the plantar surface of the contralateral hind paw.",
+   "exposures[0].device.model": "Figure 2A illustrates the behavioral experimental setup, incorporating various types of behavioral tests, tFUS stimulation using the random array transducer (H276) with multiple control groups, and video assessment with data analysis.",
+   "exposures[0].fundamental_frequency_khz": "In addition, it is essential to consider that modifying the ultrasound’s fundamental frequency from 1.5 MHz to hundreds of kHz and increasing ultrasound intensity may be necessary to effectively modulate larger human brain targets when accounting for thick human skulls.",
+   "exposures[0].timing.pulse_duration_ms": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In addition, we adjusted PRF values from 40 Hz to 3 kHz, which results in changes to spatial peak temporal average (SPTA) intensity (I ) values from 2.02 to 208.46 mW/cm<sup>2</sup>, and found that tFUS with a PRF of 1 kHz, corresponding to $\\mathsf { I } _ { \\mathsf { S P T A } }$ of 50.53 mW/cm<sup>2</sup>, can be considered as a turning point from generating neural inhibition (suppressing pain-related signals) to inducing neural excitation (intensifying pain-related signals) when tFUS is applied to S1HL (supplemental Figure 8B).",
+   "exposures[0].timing.sonication_duration_s": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[0].in_situ.ispta_w_cm2": "In addition, we adjusted PRF values from 40 Hz to 3 kHz, which results in changes to spatial peak temporal average (SPTA) intensity (I ) values from 2.02 to 208.46 mW/cm<sup>2</sup>, and found that tFUS with a PRF of 1 kHz, corresponding to $\\mathsf { I } _ { \\mathsf { S P T A } }$ of 50.53 mW/cm<sup>2</sup>, can be considered as a turning point from generating neural inhibition (suppressing pain-related signals) to inducing neural excitation (intensifying pain-related signals) when tFUS is applied to S1HL (supplemental Figure 8B).",
+   "exposures[1].target.label": "We investigated achieving a sustained tFUS effect on heat hyperalgesia by targeting deeper brain structures, including the insula and thalamus. The single-session tFUS with the PRF of 40 Hz at the left insula (Figure 4A) showed a much longer latency of the contralateral hind paw compared with the ipsilateral hind paw for 30 minutes, which differed from the prestimulation baseline.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "This effect was specific to the tFUS stimulation, as neither the control groups (negative control and sham treatment) nor tFUS with the PRF of 3 kHz significantly differed from their respective baseline values (Figure 4B).",
+   "exposures[1].timing.protocol_description": "Collectively, single-session tFUS stimulation with the PRF of 40 Hz to the insula, but not the thalamus, is effective for a sustained attenuation (30 minutes ≤ effect <1 hour) of hyperalgesia to heat stimuli in female HbSS-BERK mice.",
+   "exposures[2].target.label": "In contrast, delivering tFUS with the PRF of 40 Hz to the thalamus resulted in a less pronounced behavioral response with a tendency toward attenuating heat hyperalgesia (Figure 4C).",
+   "exposures[2].timing.protocol_description": "In contrast, delivering tFUS with the PRF of 40 Hz to the thalamus resulted in a less pronounced behavioral response with a tendency toward attenuating heat hyperalgesia (Figure 4C).",
+   "sham_type": "Two control sets, including a negative control group (no tFUS stimulation, maintaining the same experimental procedures) and a sham-treated group (applying tFUS to a control brain structure near the bregma), were used to rule out potential confounding factors from the observed tFUS–mediated modulatory effects (Figure 2C).",
+   "adverse_events": "We did not observe any significant change in the structural integrity of the tissues, iron deposits, or the number of apoptotic cells in the ipsilatera (treated) and contralateral (untreated) brains, as well as those from the sham, negative control, and multisession high-dose tFUS treatment (Figure 6D; supplemental Figure 7E-F).",
+   "exposures[1].fundamental_frequency_khz": "In addition, it is essential to consider that modifying the ultrasound’s fundamental frequency from 1.5 MHz to hundreds of kHz and increasing ultrasound intensity may be necessary to effectively modulate larger human brain targets when accounting for thick human skulls.",
+   "exposures[1].timing.pulse_duration_ms": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[1].timing.sonication_duration_s": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[2].fundamental_frequency_khz": "In addition, it is essential to consider that modifying the ultrasound’s fundamental frequency from 1.5 MHz to hundreds of kHz and increasing ultrasound intensity may be necessary to effectively modulate larger human brain targets when accounting for thick human skulls.",
+   "exposures[2].timing.pulse_duration_ms": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[2].timing.sonication_duration_s": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[1].in_situ.isppa_w_cm2": "For clinical translation, low-intensity ultrasound $( \\mathsf { l } _ { \\mathsf { S P T A } } \\colon$ 208.46 mW/cm<sup>2</sup> at the highest PRF of 3 kHz and 0.35 W/cm<sup>2</sup> at the TBD of 200 μs measured behind a freshly excised female mouse skull sample) was used to adhere to the regulatory standards for diagnostic ultrasound safety $( 1 _ { \\mathsf { S P T A } } \\leq 7 2 0 \\mathrm { \\ m W / c m } ^ { 2 } ; 1 _ { \\mathsf { S P P A } } \\leq 1 9 0$ W/cm<sup>2</sup>) set by the US Food and Drug Administration.<sup>57,58</sup>",
+   "exposures[2].in_situ.isppa_w_cm2": "For clinical translation, low-intensity ultrasound $( \\mathsf { l } _ { \\mathsf { S P T A } } \\colon$ 208.46 mW/cm<sup>2</sup> at the highest PRF of 3 kHz and 0.35 W/cm<sup>2</sup> at the TBD of 200 μs measured behind a freshly excised female mouse skull sample) was used to adhere to the regulatory standards for diagnostic ultrasound safety $( 1 _ { \\mathsf { S P T A } } \\leq 7 2 0 \\mathrm { \\ m W / c m } ^ { 2 } ; 1 _ { \\mathsf { S P P A } } \\leq 1 9 0$ W/cm<sup>2</sup>) set by the US Food and Drug Administration.<sup>57,58</sup>",
+   "exposures[1].in_situ.ispta_w_cm2": "In addition, we adjusted PRF values from 40 Hz to 3 kHz, which results in changes to spatial peak temporal average (SPTA) intensity (I ) values from 2.02 to 208.46 mW/cm<sup>2</sup>, and found that tFUS with a PRF of 1 kHz, corresponding to $\\mathsf { I } _ { \\mathsf { S P T A } }$ of 50.53 mW/cm<sup>2</sup>, can be considered as a turning point from generating neural inhibition (suppressing pain-related signals) to inducing neural excitation (intensifying pain-related signals) when tFUS is applied to S1HL (supplemental Figure 8B).",
+   "exposures[2].in_situ.ispta_w_cm2": "In addition, we adjusted PRF values from 40 Hz to 3 kHz, which results in changes to spatial peak temporal average (SPTA) intensity (I ) values from 2.02 to 208.46 mW/cm<sup>2</sup>, and found that tFUS with a PRF of 1 kHz, corresponding to $\\mathsf { I } _ { \\mathsf { S P T A } }$ of 50.53 mW/cm<sup>2</sup>, can be considered as a turning point from generating neural inhibition (suppressing pain-related signals) to inducing neural excitation (intensifying pain-related signals) when tFUS is applied to S1HL (supplemental Figure 8B).",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "After characterizing the customized H276 probe (supplemental Figures 1-3), the tFUS beam was electronically steered (Table 1) and applied with controllable parameters, including a tone-burst duration (TBD) of 200 μs, pulse repetition frequency (PRF) of 40 Hz and 3 kHz, ultrasound duration of 100 milliseconds and 400 milliseconds, intersonication interval of 2 seconds and 4 seconds, and total sonication time of 10 minutes, 20 minutes, and 1 hour (Figure 2D).",
+   "exposures[0].in_situ.isppa_w_cm2": "For clinical translation, low-intensity ultrasound $( \\mathsf { l } _ { \\mathsf { S P T A } } \\colon$ 208.46 mW/cm<sup>2</sup> at the highest PRF of 3 kHz and 0.35 W/cm<sup>2</sup> at the TBD of 200 μs measured behind a freshly excised female mouse skull sample) was used to adhere to the regulatory standards for diagnostic ultrasound safety $( 1 _ { \\mathsf { S P T A } } \\leq 7 2 0 \\mathrm { \\ m W / c m } ^ { 2 } ; 1 _ { \\mathsf { S P P A } } \\leq 1 9 0$ W/cm<sup>2</sup>) set by the US Food and Drug Administration.<sup>57,58</sup>",
+   "exposures[0].device.manufacturer": "The authors also thank Kyle Morrison from Sonic Concepts, Inc for providing consultation in customizing the H276 probe.",
+   "exposures[1].device.manufacturer": "The authors also thank Kyle Morrison from Sonic Concepts, Inc for providing consultation in customizing the H276 probe.",
+   "exposures[1].device.model": "The authors also thank Kyle Morrison from Sonic Concepts, Inc for providing consultation in customizing the H276 probe.",
+   "exposures[2].device.manufacturer": "The authors also thank Kyle Morrison from Sonic Concepts, Inc for providing consultation in customizing the H276 probe.",
+   "exposures[2].device.model": "The authors also thank Kyle Morrison from Sonic Concepts, Inc for providing consultation in customizing the H276 probe."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports many separate per-experiment, per-sex, per-strain group sizes (e.g., n=8, n=10, n=11 mice) across dozens of sub-experiments but never gives an overall total number of animals used."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Both single-session (n_sessions=1) and 14-day multisession protocols are used in different sub-experiments; recorded as a list [1, 14]."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper gives tone-burst duration and PRF directly (not requiring the burst rule) but never states a numeric duty cycle percentage."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The 0.35 W/cm2 value is given alongside an ISPTA value in the same sentence without an explicit ISPPA label, but is inferred to be ISPPA because it is compared against the FDA ISPPA limit (190 W/cm2) in the same sentence."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "ISPTA values are explicitly said to be measured behind an excised mouse skull sample, so classified as in_situ (method=measurement) rather than free field or unspecified domain; list order corresponds to PRF list order [40, 1000, 3000 Hz]."
+   },
+   {
+    "field": "condition_other",
+    "reason": "Sickle cell disease is not itself in the closed conditions vocabulary; 'chronic_pain' is used as the closest matching modelled condition, with SCD noted in condition_other."
+   },
+   {
+    "field": "provenance",
+    "reason": "A separate 'high-dose' safety value (transcranial peak-peak pressure 2059.75 kPa; ISPTA 262.30 mW/cm2 at PRF 40 Hz and ISPPA 32.79 W/cm2 at TBD 200 microseconds) is mentioned for an extended safety window but is not clearly attributable to a single exposure/target, so it is not included in any exposure's numeric fields."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "disagree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "first",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "first",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "neither",
+   "exposures[2].in_situ.isppa_w_cm2": "second",
+   "exposures[2].in_situ.ispta_w_cm2": "neither",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

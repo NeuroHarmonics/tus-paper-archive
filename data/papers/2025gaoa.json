@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025gaoa",
+ "doi": "10.1002/jnr.70079",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "acute postoperative pain (hindpaw incision model)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Randall-Selitto mechanical withdrawal test; modified Hargreaves thermal withdrawal test; hindpaw startle-extension and grasp-flexion reflex scoring; transmission electron microscopy of sciatic nerve ultrastructure",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "FUS application to the sciatic nerve reversibly increased thermal and mechanical withdrawal thresholds and decreased hindpaw motor and non-pain sensory responses, consistent with inhibition of nociceptive, motor and non-nociceptive sensory fibers.",
+ "adverse_events": "observed",
+ "safety_notes": "By TEM, alterations to sciatic nerve ultrastructure (reduced numbers of myelinated axons, thinly myelinated axons, decreased cytoskeletal density, electron-dense abnormalities) persisted for up to 24 weeks after FUS application before nerve anatomy appeared to return toward normal.",
+ "exposures": [
+  {
+   "label": "Two-pulse-train FUS applied directly to the exposed sciatic nerve",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1470,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     1860,
+     1970
+    ],
+    "isppa_w_cm2": [
+     112,
+     126
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 20,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 8,
+    "protocol_description": "Two pulse trains were applied directly to the exposed sciatic nerve 1 cm proximal to its trifurcation: 1.86 MPa (Isppa 112 W/cm2, MI 1.5) for 8 s, then 2 min later 1.97 MPa (Isppa 126 W/cm2, MI 1.6) for 8 s; each train used a 50 ms burst period and 50% duty cycle. This parameter set was identified through an iterative process to achieve reversible peripheral nerve inhibition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 25.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "A FUS transducer (frequency 1.47 MHz) with a 100 mm radius of curvature (built in-house at Stanford University) was utilized.",
+   "exposures[0].unspecified_domain.pressure_kpa": "FUS was applied directly to the sciatic nerve 1 cm proximal to its division into its 3 terminal branches using two pulse trains (50 millisecond burst period, 50% duty cycle): 1.86 megapascals (spatial peak pulse average intensities (Isppa) = 112 W cm-2; mechanical index (MI) = 1.5) for 8 s, and 2 min later, 1.97 megapascals (Isppa = 126 W cm-2; MI = 1.6) for 8 s.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "FUS was applied directly to the sciatic nerve 1 cm proximal to its division into its 3 terminal branches using two pulse trains (50 millisecond burst period, 50% duty cycle): 1.86 megapascals (spatial peak pulse average intensities (Isppa) = 112 W cm-2; mechanical index (MI) = 1.5) for 8 s, and 2 min later, 1.97 megapascals (Isppa = 126 W cm-2; MI = 1.6) for 8 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS was applied directly to the sciatic nerve 1 cm proximal to its division into its 3 terminal branches using two pulse trains (50 millisecond burst period, 50% duty cycle): 1.86 megapascals (spatial peak pulse average intensities (Isppa) = 112 W cm-2; mechanical index (MI) = 1.5) for 8 s, and 2 min later, 1.97 megapascals (Isppa = 126 W cm-2; MI = 1.6) for 8 s.",
+   "exposures[0].timing.duty_cycle_pct": "FUS was applied directly to the sciatic nerve 1 cm proximal to its division into its 3 terminal branches using two pulse trains (50 millisecond burst period, 50% duty cycle): 1.86 megapascals (spatial peak pulse average intensities (Isppa) = 112 W cm-2; mechanical index (MI) = 1.5) for 8 s, and 2 min later, 1.97 megapascals (Isppa = 126 W cm-2; MI = 1.6) for 8 s.",
+   "exposures[0].timing.sonication_duration_s": "FUS was applied directly to the sciatic nerve 1 cm proximal to its division into its 3 terminal branches using two pulse trains (50 millisecond burst period, 50% duty cycle): 1.86 megapascals (spatial peak pulse average intensities (Isppa) = 112 W cm-2; mechanical index (MI) = 1.5) for 8 s, and 2 min later, 1.97 megapascals (Isppa = 126 W cm-2; MI = 1.6) for 8 s.",
+   "randomised": "Male adult Sprague–Dawley rats (Charles River Laboratories, Wilmington, Massachusetts, USA), weighing between 600 and 800 g (3–12 months of age) were randomly assigned to the following experimental groups: Intervention group (INT): FUS application + hindpaw (HP) incision; Control group 1 (C1): FUS sham + HP incision; Control group 2 (C2): FUS sham only; Control group 3 (C3): HP incision only.",
+   "blinding": "When possible, testers were blinded to study arm allocation (as it is apparent when HP and flank incisions are and are not present).",
+   "n_sessions_per_subject": "FUS was applied to the rat sciatic nerve before making the HP incision."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports only totals across all 4 study arms (INT, C1, C2, C3) combined: 'Animals for behavioral studies: n = 50 ... animals for TEM: n = 49'. It never states the size of the INT (actual FUS) group alone, so the number of animals actually exposed to ultrasound cannot be extracted."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "FUS (two pulse trains, 2 min apart) was applied once per animal before HP incision, but the paper never states a number of stimulation sessions."
+   },
+   {
+    "field": "blinding",
+    "reason": "Blinding of outcome assessors was only possible 'when possible' (incisions were visible), so blinding was partial/conditional rather than a strict single-blind design."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (20 Hz) is derived from the stated 50 ms burst period as a period-to-frequency unit conversion, as permitted by the burst rule; pulse duration itself is not stated directly (would require multiplying duty cycle by period) and is left not_reported."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "TEM showed nerve ultrastructure alterations (reduced myelinated axon numbers, thin myelination, cytoskeletal density loss, electron-dense abnormalities) persisting up to 24 weeks post-FUS, recorded as an observed structural effect even though behavior returned to baseline and the paper frames it as reversible."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "first",
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "first",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "first"
+  }
+ }
+}

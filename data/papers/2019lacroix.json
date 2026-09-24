@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019lacroix",
+ "doi": "10.3791/58781",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (A-172 glioblastoma cell line)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Calcium imaging using the cell-permeant fluorescent indicator Fluo-4 AM, quantified as relative fluorescence change (deltaF/F0) per region of interest",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIPUS stimulation of cultured human glioblastoma (A-172) cells produced robust calcium elevations (increased Fluo-4 fluorescence) during the 10 s sonication, interpreted by the authors as a non-thermal effect based on a calculated temperature rise of only about 1 mC per pulse.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS-induced calcium imaging in cultured glioblastoma cells (representative example)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "human glioblastoma cells (A-172) grown on a polyester-bottom culture dish"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 88,
+    "ispta_w_cm2": 0.877
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": 10,
+    "protocol_description": "LIPUS was applied by manually driving a 4 MHz transducer with a pulse waveform of 158 V peak-to-peak amplitude, 0.1 ms pulse duration and 10 ms pulse repetition frequency (i.e. 1% duty cycle). Images were acquired at a speed of 1 frame per second by a standard CCD camera and LIPUS was applied for 10 sec between frames 20 and 30; the waveform consisted of 100 usec pulses containing 400 cycles at 4 MHz and repeated every 10 ms for 10 sec."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "LIPUS was applied by manually by driving a 4 MHz transducer with a pulse waveform of 158 V peak-to-peak amplitude, 0.1 ms pulse duration and 10 ms pulse repetition frequency (i.e. 1% duty cycle).",
+   "exposures[0].timing.pulse_duration_ms": "LIPUS was applied by manually by driving a 4 MHz transducer with a pulse waveform of 158 V peak-to-peak amplitude, 0.1 ms pulse duration and 10 ms pulse repetition frequency (i.e. 1% duty cycle).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIPUS waveform consists of 100 μsec pulses containing 400 cycles at 4 MHz and repeated every 10 ms for 10 sec.",
+   "exposures[0].timing.duty_cycle_pct": "LIPUS was applied by manually by driving a 4 MHz transducer with a pulse waveform of 158 V peak-to-peak amplitude, 0.1 ms pulse duration and 10 ms pulse repetition frequency (i.e. 1% duty cycle).",
+   "exposures[0].timing.sonication_duration_s": "Images were acquired at a speed of 1 frame per second by a standard CCD camera and LIPUS was applied for 10 sec between frames 20 and 30.",
+   "exposures[0].free_field.isppa_w_cm2": "These parameters correspond to $\\mathrm { I _ { s p p a } } = 8 8 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (well below the diagnostic limit of 190 $\\mathrm { W ~ c m } ^ { - 2 } )$ and $\\mathrm { { I _ { s p t a } } = }$ 877 mW $\\mathrm { c m } ^ { - 2 }$ (slightly above the diagnostic limit of $7 2 0 \\mathrm { m W } \\mathrm { c m } ^ { - 2 } )$ , respectively.",
+   "exposures[0].free_field.ispta_w_cm2": "These parameters correspond to $\\mathrm { I _ { s p p a } } = 8 8 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (well below the diagnostic limit of 190 $\\mathrm { W ~ c m } ^ { - 2 } )$ and $\\mathrm { { I _ { s p t a } } = }$ 877 mW $\\mathrm { c m } ^ { - 2 }$ (slightly above the diagnostic limit of $7 2 0 \\mathrm { m W } \\mathrm { c m } ^ { - 2 } )$ , respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].device.family",
+    "reason": "The protocol's Table of Materials lists several possible transducer suppliers (Olympus, Benthowave, Precision Acoustics, Ultrasonic-S-lab) but the specific device used for the representative 4 MHz experiment is not identified by manufacturer or model."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensities were obtained from hydrophone calibration curves measured in the same degassed water tank used to hold the sample (no skull or intervening tissue), so classified as free-field per the bath convention; the paper does not use the term 'free field' explicitly."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "This is a general bioeffect (calcium transient) demonstration in a non-neuronal cell line, not a neuromodulation experiment with an excitatory/inhibitory neural readout; 'excitatory' is used loosely to reflect the increase in the calcium signal."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].free_field.ispta_w_cm2": "first",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "first",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "first"
+  }
+ }
+}

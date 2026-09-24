@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2012legon",
+ "doi": "10.1371/journal.pone.0051177",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty subjects (13 male, 7 female, aged 21–59, mean age 32.6610.4) provided written informed consent to participate in the study.",
+   "exposures[0].fundamental_frequency_khz": "The PUNS-M waveform had the following parameters: A = 0.35 MHz, PD = 2 msec, PRF = 70 Hz, and np = 35 to produce a stimulus duration of 0.5 sec yielding a spatial-peak temporal-average intensity (I<sub>SPTA</sub>) of 11.8 W/cm<sup>2</sup> (Figure 1B–D). The PUNS-T waveform had the following parameters: A = 0.35 MHz, PD = 10 msec, PRF = 100 Hz, and np = 100 to produce a stimulus duration of 1.0 sec yielding an I of 54.8 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "The PUNS-M waveform had the following parameters: A = 0.35 MHz, PD = 2 msec, PRF = 70 Hz, and np = 35 to produce a stimulus duration of 0.5 sec yielding a spatial-peak temporal-average intensity (I<sub>SPTA</sub>) of 11.8 W/cm<sup>2</sup> (Figure 1B–D). The PUNS-T waveform had the following parameters: A = 0.35 MHz, PD = 10 msec, PRF = 100 Hz, and np = 100 to produce a stimulus duration of 1.0 sec yielding an I of 54.8 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The PUNS-M waveform had the following parameters: A = 0.35 MHz, PD = 2 msec, PRF = 70 Hz, and np = 35 to produce a stimulus duration of 0.5 sec yielding a spatial-peak temporal-average intensity (I<sub>SPTA</sub>) of 11.8 W/cm<sup>2</sup> (Figure 1B–D). The PUNS-T waveform had the following parameters: A = 0.35 MHz, PD = 10 msec, PRF = 100 Hz, and np = 100 to produce a stimulus duration of 1.0 sec yielding an I of 54.8 W/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "The PUNS-M waveform had the following parameters: A = 0.35 MHz, PD = 2 msec, PRF = 70 Hz, and np = 35 to produce a stimulus duration of 0.5 sec yielding a spatial-peak temporal-average intensity (I<sub>SPTA</sub>) of 11.8 W/cm<sup>2</sup> (Figure 1B–D). The PUNS-T waveform had the following parameters: A = 0.35 MHz, PD = 10 msec, PRF = 100 Hz, and np = 100 to produce a stimulus duration of 1.0 sec yielding an I of 54.8 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The PUNS-M waveform had the following parameters: A = 0.35 MHz, PD = 2 msec, PRF = 70 Hz, and np = 35 to produce a stimulus duration of 0.5 sec yielding a spatial-peak temporal-average intensity (I<sub>SPTA</sub>) of 11.8 W/cm<sup>2</sup> (Figure 1B–D). The PUNS-T waveform had the following parameters: A = 0.35 MHz, PD = 10 msec, PRF = 100 Hz, and np = 100 to produce a stimulus duration of 1.0 sec yielding an I of 54.8 W/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "The output from channel two was sent through a 40 W linear RF amplifier (E&I 240L; Electronics & Innovation) before being sent to a custom 0.35 MHz MRcompatible gas matrix piezocomposite ultrasound transducer (Ultran Group, State College, Pennsylvania USA).",
+   "exposures[0].device.model": "The output from channel two was sent through a 40 W linear RF amplifier (E&I 240L; Electronics & Innovation) before being sent to a custom 0.35 MHz MRcompatible gas matrix piezocomposite ultrasound transducer (Ultran Group, State College, Pennsylvania USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0]",
+    "reason": "PUNS-M and PUNS-T share the same target (fingertip) and fundamental frequency (0.35 MHz) and differ only in timing/intensity parameters, so per the one-exposure-per-target-x-frequency rule they are combined into a single exposure with list-valued timing/intensity fields rather than split into two exposures."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "The paper describes stimulation of 'the volar surface of the index finger' rather than a named nerve; mapped to the closest vocabulary term, digital_nerve (finger nerve)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "The paper does not state whether the hydrophone-measured ISPTA values are free-field or account for any tissue path to the finger; recorded as unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated as a percentage. Note PUNS-T's stated PD (10 msec) equals its own period (1/PRF = 1/100 Hz = 10 msec), implying an unusually high (near 100%) duty cycle despite being described as 'pulsed'; not computed or filled per the no-arithmetic rule."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Earplugs to dampen auditory stimulation are described only for the conventional vibrotactile control condition ('All subjects were outfitted with earplugs...'), not for the PUNS (ultrasound) stimulation conditions; recorded as not_reported for the ultrasound exposure."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "EEG/fMRI responses are time-locked to stimulus onset (online), while VAS intensity/thermal ratings were collected as a separate subjective report; coded as both."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "fmri",
+  "behaviour"
+ ],
+ "readout_other": "Ultrasound-evoked potentials (USEPs; P1/N1/N2/P2 components) via 64-channel EEG and current source density (CSD) mapping; BOLD fMRI; visual analog scales (VAS) for stimulus intensity and thermal sensation; comparison somatosensory-evoked potentials (SEPs) from conventional vibrotactile stimulation",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Pulsed ultrasonic neurostimulation (PUNS) delivered to the fingertip elicited ultrasound-evoked potentials (USEPs; P1/N1/N2/P2) and BOLD activation of somatosensory, insular, cingulate, opercular and striatal regions for both waveforms tested; a mechanical waveform (PUNS-M) produced USEP latencies consistent with low-threshold Abeta-fiber activation, while a thermal waveform (PUNS-T) produced later potentials and greater anterior insula/cingulate BOLD activation consistent with Adelta/C-fiber recruitment, both indicating excitatory activation of somatosensory afferents and central circuits.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Peripheral ultrasonic neurostimulation (PUNS) of the index fingertip: mechanical (PUNS-M) and thermal (PUNS-T) waveforms",
+   "target": {
+    "terms": [
+     "digital_nerve"
+    ],
+    "label": "volar surface of the index finger (fingertip)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "custom 0.35 MHz MR-compatible gas matrix piezocomposite transducer"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     11.8,
+     54.8
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     2,
+     10
+    ],
+    "pulse_repetition_frequency_hz": [
+     70,
+     100
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.5,
+     1.0
+    ],
+    "protocol_description": "Two PUNS waveforms were delivered to the volar surface of the index finger through an acoustic-gel reservoir on the transducer face. PUNS-M (mild vibration sensation): PD=2 msec, PRF=70 Hz, np=35, stimulus duration 0.5 s, ISPTA=11.8 W/cm2. PUNS-T (thermal/warming sensation): PD=10 msec, PRF=100 Hz, np=100, stimulus duration 1.0 s, ISPTA=54.8 W/cm2. During EEG recording, stimuli were delivered every 12 s (+ up to 2 s random jitter) in alternating 50-event blocks to the right and left index fingers, three blocks per finger (150 stimulations per finger, ~1 h 15 min total). During fMRI, stimuli were delivered every sixth TR (12 s), 75 stimuli per finger in separate ~15-min runs."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

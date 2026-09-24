@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zou",
+ "doi": "10.7150/thno.99820",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular",
+  "other_mri"
+ ],
+ "readout_other": "Seizure number/duration from EEG; c-Fos immunofluorescence in hippocampus, amygdala, NTS, LC, DRN; RT-qPCR for Piezo1/Piezo2 mRNA in nodose ganglion; H&E staining; 9.4T MRI and thermal imaging for safety",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Closed-loop and open-loop aBCI stimulation of the vagus nerve reduced PTZ-induced seizure number and duration and suppressed c-Fos-indexed neuronal hyperexcitability in hippocampus, amygdala and NTS; effects required a PRF near 20 Hz, adequate acoustic pressure, and an intact, mechanosensitive-channel-competent vagus nerve (abolished by vagotomy or GsMTx4).",
+ "adverse_events": "none_observed",
+ "safety_notes": "MRI showed intact brain structure with no edema or necrosis after stimulation; H&E staining of vagus nerve and vasculature showed no inflammation or necrosis; local neck/vagus nerve temperature increased by less than 1 C during 15-minute aBCI stimulation.",
+ "exposures": [
+  {
+   "label": "Acoustic (aBCI) stimulation of the cervical vagus nerve",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "cervical vagus nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     450,
+     900,
+     1800
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.0822,
+     0.3287,
+     1.3149
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1,
+     20,
+     1000
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 5,
+    "protocol_description": "Ultrasound was delivered to the vagus nerve in 5 s trains (SD) separated by a 5 s inter-stimulus interval (ISI), at PRF 1/20/1000 Hz and DC 10%, for a total insonation time of 15 or 30 minutes, at acoustic pressures of 0.45/0.90/1.80 MPa; parameters were screened sequentially and 20 Hz PRF, 15 min insonation and 0.90 MPa were selected as optimal. In the closed-loop aBCI system, ultrasound stimulation was triggered on detection of a seizure and delivered for up to 60 seconds (matched to typical single-seizure duration) until epileptic discharges resolved."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "In this study, we used a 250 kHz focused ultrasound transducer (Sonic Concepts, H-115).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasonic parameters were as follows: pulse-repetition frequencies (PRF) = 1 / 20 / 1000 Hz, duty cycle (DC) = 10%, sonication duration (SD) = 5 s, inter-stimulus interval (ISI) = 5 s, insonation time = 15 / 30 minutes, acoustics pressure (AP) = 0.45 / 0.90 / 1.80 MPa, and spatial peak temporal average intensity $\\mathrm { ( I _ { s p t a } ) = 8 2 . 2 / 3 2 8 . 7 / 1 3 1 4 . 9 m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasonic parameters were as follows: pulse-repetition frequencies (PRF) = 1 / 20 / 1000 Hz, duty cycle (DC) = 10%, sonication duration (SD) = 5 s, inter-stimulus interval (ISI) = 5 s, insonation time = 15 / 30 minutes, acoustics pressure (AP) = 0.45 / 0.90 / 1.80 MPa, and spatial peak temporal average intensity $\\mathrm { ( I _ { s p t a } ) = 8 2 . 2 / 3 2 8 . 7 / 1 3 1 4 . 9 m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.sonication_duration_s": "The ultrasonic parameters were as follows: pulse-repetition frequencies (PRF) = 1 / 20 / 1000 Hz, duty cycle (DC) = 10%, sonication duration (SD) = 5 s, inter-stimulus interval (ISI) = 5 s, insonation time = 15 / 30 minutes, acoustics pressure (AP) = 0.45 / 0.90 / 1.80 MPa, and spatial peak temporal average intensity $\\mathrm { ( I _ { s p t a } ) = 8 2 . 2 / 3 2 8 . 7 / 1 3 1 4 . 9 m W / c m ^ { 2 } }$ .",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasonic parameters were as follows: pulse-repetition frequencies (PRF) = 1 / 20 / 1000 Hz, duty cycle (DC) = 10%, sonication duration (SD) = 5 s, inter-stimulus interval (ISI) = 5 s, insonation time = 15 / 30 minutes, acoustics pressure (AP) = 0.45 / 0.90 / 1.80 MPa, and spatial peak temporal average intensity $\\mathrm { ( I _ { s p t a } ) = 8 2 . 2 / 3 2 8 . 7 / 1 3 1 4 . 9 m W / c m ^ { 2 } }$ .",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasonic parameters were as follows: pulse-repetition frequencies (PRF) = 1 / 20 / 1000 Hz, duty cycle (DC) = 10%, sonication duration (SD) = 5 s, inter-stimulus interval (ISI) = 5 s, insonation time = 15 / 30 minutes, acoustics pressure (AP) = 0.45 / 0.90 / 1.80 MPa, and spatial peak temporal average intensity $\\mathrm { ( I _ { s p t a } ) = 8 2 . 2 / 3 2 8 . 7 / 1 3 1 4 . 9 m W / c m ^ { 2 } }$ .",
+   "exposures[0].device.manufacturer": "In this study, we used a 250 kHz focused ultrasound transducer (Sonic Concepts, H-115).",
+   "exposures[0].device.model": "In this study, we used a 250 kHz focused ultrasound transducer (Sonic Concepts, H-115)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports many separate rat cohorts across sub-experiments (PRF screening n=6 per arm; insonation-time n=12/8; pressure n=13/13; vagotomy n=8; closed-loop main test: random aBCI n=12, closed-loop aBCI n=7; Piezo qPCR n=11; GsMTx4 experiment n=8/8; c-Fos experiment n=8) but never states a combined total; n_subjects here lists only the initial PRF dose-finding cohort (the sub-experiment most directly tied to the recorded exposure's PRF sweep)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the reported acoustic pressure/ISPTA values were measured in water (free field) or at/near the vagus nerve (in situ); recorded as unspecified domain."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "A separate 60-second stimulation duration is described for the closed-loop system (set to match typical single-seizure duration), differing from the 5 s 'SD' listed in Table 1 for the open-loop dose-finding experiments; both durations are noted in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Duty cycle (10%) and PRF are given but pulse duration is never stated directly; left not_reported rather than computed from duty_cycle/PRF."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham condition is described only as 'sham group was not stimulated'; the physical implementation (e.g. transducer powered off vs. removed) is not described, so mechanism is unclear."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

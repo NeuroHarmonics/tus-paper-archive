@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023wangc",
+ "doi": "10.3390/brainsci13040657",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "Ultrasound stimulation was conducted at four time points around the anesthesia/surgery: 8 h before anesthesia/surgery, 4 h before surgery, 4 h after surgery, and 8 h after surgery.",
+   "exposures[0].fundamental_frequency_khz": "Illustration of ultrasound stimulation parameters: fundamental frequency (FF) of 1 MHz, pulse repetition frequency (PRF) of 1 Hz, sonication duration (SD) of 50 ms, and duty cycle (DC) of 5%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Illustration of ultrasound stimulation parameters: fundamental frequency (FF) of 1 MHz, pulse repetition frequency (PRF) of 1 Hz, sonication duration (SD) of 50 ms, and duty cycle (DC) of 5%.",
+   "exposures[0].timing.duty_cycle_pct": "Illustration of ultrasound stimulation parameters: fundamental frequency (FF) of 1 MHz, pulse repetition frequency (PRF) of 1 Hz, sonication duration (SD) of 50 ms, and duty cycle (DC) of 5%.",
+   "exposures[0].timing.sonication_duration_s": "The duration of sonication was alternated bilaterally for 2.5 min and repeated three times with a total stimulation time of 15 min.",
+   "exposures[0].in_situ.ispta_w_cm2": "After transcranial attenuation, the spatial-peak temporal-average intensities (I ) 1 mm from the cone tip was 177 mW/cm<sup>2</sup>.",
+   "n_subjects": "<sub>Morris</sub> <sub>water</sub> <sub>maze</sub> <sub>test.</sub> <sub>n</sub> <sub>=</sub> <sub>12</sub> roup. Data were presented as Mean ±<sub>per</sub> <sub>group.</sub>",
+   "exposures[0].timing.pulse_duration_ms": "with 50 ms burst lengths at a 5% duty cycle and a repetition frequency of 1 Hz."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms,exposures[0].timing.sonication_duration_s",
+    "reason": "Figure 1D explicitly labels the 50 ms value 'sonication duration (SD)'. Duty cycle (5%) divided by PRF (1 Hz, i.e. a 1 s period) arithmetically equals 50 ms, which would normally identify this as the per-pulse ON duration (pulse duration) rather than a train duration under the burst rule; the paper's own label was followed (sonication_duration_s=0.05) and pulse_duration_ms left not_reported rather than resolved by arithmetic."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "The paper states the intensity value is 'after transcranial attenuation' but does not specify whether this was measured through an excised skull or computed using an assumed attenuation coefficient; classified as 'derating' with this ambiguity noted."
+   },
+   {
+    "field": "device",
+    "reason": "No manufacturer or model is given for the ultrasound transducer itself; only the unrelated stereotaxic apparatus (RWD Life Science) is named."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Different subsets of mice were used for different assays (Morris water maze n=12/group, RT-qPCR n=6/group, Western blot n=4/group, immunofluorescence n=3/group across four groups); no single total number of ultrasound-exposed animals is stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "C57BL/6 mouse (aged, 16-18 months)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "Postoperative delayed neurocognitive recovery (dNCR) / postoperative neurocognitive impairment following anaesthesia/laparotomy surgery in aged mice",
+ "n_subjects": [
+  12,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Morris water maze (escape latency, platform crossings, swimming speed); RT-qPCR and Western blot for Piezo1, synaptic proteins (BDNF, synaptophysin, PSD95), Calpain1/2, PHLPP, Erk/p-Erk and inflammatory cytokines (TNF-alpha, IL-1beta, IL-6); immunofluorescence for c-Fos and Piezo1; hematoxylin-eosin staining",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIPUS applied to the dorsal hippocampus increased c-Fos expression (neuronal activation), attenuated anaesthesia/surgery-induced increases in Morris water maze escape latency, reduced hippocampal neuroinflammatory cytokines, restored synapse-related proteins (BDNF, synaptophysin, PSD95), suppressed Piezo1 overexpression, and reversed Calpain1/PHLPP/Erk pathway changes in aged mice after anaesthesia/surgery.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Hematoxylin-eosin staining showed no obvious histological changes in the hippocampus after LIPUS exposure compared with control, and LIPUS alone did not increase hippocampal neuroinflammatory cytokines compared with the control group.",
+ "exposures": [
+  {
+   "label": "LIPUS to dorsal hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "dorsal hippocampus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.177
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 150,
+    "protocol_description": "The duration of sonication was alternated bilaterally for 2.5 min and repeated three times, for a total stimulation time of 15 min, delivered at four time points around the anesthesia/surgery: 8 h before, 4 h before, 4 h after and 8 h after surgery. A calibrating cone was used so the focal point fell on the dorsal hippocampus (bregma +-1.40 mm, caudal -1.94 mm)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

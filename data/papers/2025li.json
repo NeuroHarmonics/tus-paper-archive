@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025li",
+ "doi": "10.1016/j.ultrasmedbio.2025.04.011",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging"
+ ],
+ "readout_other": "Whole-cell voltage-clamp patch-clamp recording of postsynaptic currents/action potentials; fluo-4 calcium imaging of network activity; particle image velocimetry (PIV) of ultrasound-induced acoustic streaming.",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIPUS evoked barrages of excitatory postsynaptic currents (EPSCs) and, at higher intensities, action potentials in high-density hippocampal cultures, via recurrent activation of an excitatory glutamatergic network; responses were abolished by TTX, kynurenic acid, or calcium-free medium, and were greatly attenuated in low-density or single-neuron (autaptic) cultures.",
+ "adverse_events": null,
+ "safety_notes": "Temperature increases associated with LIPUS were negligible (within 0.1-0.2 degrees by thermocouple; a fraction of a degree or less by infrared camera after 20 s of LIPUS), and LIPUS intensities as high as 1.61 W/cm2 had little effect on membrane holding current, indicating no evidence of thermal or damage-related artefact.",
+ "exposures": [
+  {
+   "label": "LIPUS stimulation of high-density (and low-density/autaptic) cultured hippocampal neurons",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "cultured hippocampal neurons"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V324-N-SU-F0.5IN"
+   },
+   "fundamental_frequency_khz": 25000,
+   "free_field": {
+    "pressure_kpa": [
+     590,
+     910
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.35,
+     1.61
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 20,
+    "protocol_description": "The 25 MHz transducer was operated in pulse mode: PRF 5 Hz, duty cycle 5%, giving a 10-ms pulse duration, for a total sonication (burst train) duration of 20 s. Ultrasound intensity (ISPTA) was varied across experiments from 0.35 to 1.61 W/cm2 (grouped as lower 0.35-0.58, medium 0.72-1.03, and higher 1.21-1.61 W/cm2) to characterise the dose-response of evoked synaptic activity; at least 100 s separated successive stimuli to avoid refractory responses."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The goal of our experiments was to characterize the effects of ultrasound on cultured mouse hippocampal neurons. For this purpose, we integrated a 25 MHz point-target-focus ultrasound transducer into an inverted microscope equipped with electrophysiology capabilities (Fig. 1a). During the experiment, the ultrasound transducer was operated in pulse mode with a duty cycle of 5%, a pulse repetition frequency of 5 Hz, and a total duration of 20 s (Fig. 1b). A needle hydrophone was used to measure the acoustic ῟ields generated by such low-intensity, pulsed ultrasound (LIPUS; Fig. S1). These inputs corresponded to pressures ranging from 0.59 to 0.91 MPa and their corresponding spatial peak-time average intensities, I<sub>SPTA</sub>, ranged from 0.58 to 1.41 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ (Fig. 1c).",
+   "exposures[0].free_field.pressure_kpa": "The goal of our experiments was to characterize the effects of ultrasound on cultured mouse hippocampal neurons. For this purpose, we integrated a 25 MHz point-target-focus ultrasound transducer into an inverted microscope equipped with electrophysiology capabilities (Fig. 1a). During the experiment, the ultrasound transducer was operated in pulse mode with a duty cycle of 5%, a pulse repetition frequency of 5 Hz, and a total duration of 20 s (Fig. 1b). A needle hydrophone was used to measure the acoustic ῟ields generated by such low-intensity, pulsed ultrasound (LIPUS; Fig. S1). These inputs corresponded to pressures ranging from 0.59 to 0.91 MPa and their corresponding spatial peak-time average intensities, I<sub>SPTA</sub>, ranged from 0.58 to 1.41 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ (Fig. 1c).",
+   "exposures[0].free_field.ispta_w_cm2": "The threshold level of LIPUS required to evoke such responses varied from experiment to experiment and ranged from 0.35 to 1.41 ${ \\mathrm { W / c m } } ^ { 2 } .$ . In general, the probability of evoking EPSC and APs increased as ultrasound intensity was increased: in all the examples shown in Figure 4, lower LIPUS intensities evoked smaller and briefer responses − consisting of fewer EPSCs and APs - than were observed when the stimulus intensity was increased.",
+   "exposures[0].timing.pulse_duration_ms": "We used 25 MHz high-frequency ultrasound to eliminate vibrations of the recording electrodes, ensuring stable patch-clamp recordings. To minimize thermal effects, we employed a low duty cycle of 5%. Our choice of parameters was informed by prior work from Liao et al. (2021) [64], who demonstrated that pulse lengths of 10√100 ms effectively activate the mechanosensitive ion channel Piezo1 via acoustic streaming-induced shear stress, using a total ultrasound exposure of 60 s. Since our study also involves acoustic streaming, we selected a pulse repetition frequency of 5 Hz with a 5% duty cycle to achieve a 10 ms pulse duration —optimizing mechanosensitive channel activation while mitigating heat generation. We applied a total sonication time of 20 s, which is shorter than but on the same order of magnitude as the 60 s used in their study.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The goal of our experiments was to characterize the effects of ultrasound on cultured mouse hippocampal neurons. For this purpose, we integrated a 25 MHz point-target-focus ultrasound transducer into an inverted microscope equipped with electrophysiology capabilities (Fig. 1a). During the experiment, the ultrasound transducer was operated in pulse mode with a duty cycle of 5%, a pulse repetition frequency of 5 Hz, and a total duration of 20 s (Fig. 1b). A needle hydrophone was used to measure the acoustic ῟ields generated by such low-intensity, pulsed ultrasound (LIPUS; Fig. S1). These inputs corresponded to pressures ranging from 0.59 to 0.91 MPa and their corresponding spatial peak-time average intensities, I<sub>SPTA</sub>, ranged from 0.58 to 1.41 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ (Fig. 1c).",
+   "exposures[0].timing.duty_cycle_pct": "The goal of our experiments was to characterize the effects of ultrasound on cultured mouse hippocampal neurons. For this purpose, we integrated a 25 MHz point-target-focus ultrasound transducer into an inverted microscope equipped with electrophysiology capabilities (Fig. 1a). During the experiment, the ultrasound transducer was operated in pulse mode with a duty cycle of 5%, a pulse repetition frequency of 5 Hz, and a total duration of 20 s (Fig. 1b). A needle hydrophone was used to measure the acoustic ῟ields generated by such low-intensity, pulsed ultrasound (LIPUS; Fig. S1). These inputs corresponded to pressures ranging from 0.59 to 0.91 MPa and their corresponding spatial peak-time average intensities, I<sub>SPTA</sub>, ranged from 0.58 to 1.41 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ (Fig. 1c).",
+   "exposures[0].timing.sonication_duration_s": "The goal of our experiments was to characterize the effects of ultrasound on cultured mouse hippocampal neurons. For this purpose, we integrated a 25 MHz point-target-focus ultrasound transducer into an inverted microscope equipped with electrophysiology capabilities (Fig. 1a). During the experiment, the ultrasound transducer was operated in pulse mode with a duty cycle of 5%, a pulse repetition frequency of 5 Hz, and a total duration of 20 s (Fig. 1b). A needle hydrophone was used to measure the acoustic ῟ields generated by such low-intensity, pulsed ultrasound (LIPUS; Fig. S1). These inputs corresponded to pressures ranging from 0.59 to 0.91 MPa and their corresponding spatial peak-time average intensities, I<sub>SPTA</sub>, ranged from 0.58 to 1.41 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ (Fig. 1c).",
+   "exposures[0].device.manufacturer": "A 25 MHz transducer (V324-N-SU-F0.5IN, Olympus) was used to stimulate neuron cultures.",
+   "exposures[0].device.model": "A 25 MHz transducer (V324-N-SU-F0.5IN, Olympus) was used to stimulate neuron cultures."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports per-figure numbers of recorded neurons/experiments (e.g. N=28 patched neurons, N=26 calcium-imaging experiments, N=4-10 per intensity bin) rather than a single total count of independent cultures/animals; no overall subject total is stated."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "0.35-1.61 W/cm2 combines the hydrophone-characterised range (0.58-1.41 W/cm2, Fig. 1c) with the wider functional threshold/dose-response range reported later in Results (0.35 to 1.41 W/cm2, extending to 1.61 W/cm2 for the highest tested bin); domain is a water-coupled dish/chamber setup with no skull or tissue path, so values are recorded under free_field."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration is directly stated by the authors ('we selected a pulse repetition frequency of 5 Hz with a 5% duty cycle to achieve a 10 ms pulse duration'), resolving the duty-cycle/PRF relationship explicitly rather than by the extractor's own arithmetic."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ }
+}

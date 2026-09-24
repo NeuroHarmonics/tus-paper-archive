@@ -1,0 +1,192 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023mishra",
+ "doi": "10.1016/j.brs.2023.09.013",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "Macaca fascicularis (n=2, female) and Macaca mulatta (n=2, male)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "MR acoustic radiation force imaging (MR-ARFI) for FUS beam localization; BOLD fMRI responses to nociceptive heat and heat + FUS stimulation",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Concurrent FUS suppressed heat-evoked BOLD responses in the targeted thalamic nuclei (VPL and surrounding) and in most (9 of 24) heat-responsive cortical areas; however, four cortical areas that did not respond to heat alone showed enhanced/unmasked responses under heat + FUS, indicating some off-target regions were disinhibited rather than suppressed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "To date, our MRI safety investigations in these monkeys have not detected any tissue damage caused by ultrasound exposure.",
+ "exposures": [
+  {
+   "label": "Concurrent FUS suppression of thalamic VPL and surrounding nuclei during nociceptive heat stimulation",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus",
+     "ventral_posteromedial_nucleus",
+     "mediodorsal_nucleus",
+     "ventral_lateral_nucleus",
+     "centromedian_nucleus"
+    ],
+    "label": "thalamic VPL and surrounding nuclei (centromedial_parafascicular, mediodorsal, ventral_lateral, ventral_lateral_posteroventral, ventroposterior_medial_and_lateral)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 550,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "The FUS stimulation blocks consisted of trains of 650 kHz pulses, 500 ms pulse train duration, PRF of 1 kHz, and pulse duration of 0.5 ms; this 500-ms pulse train was repeated at a slow PRF of 0.5 Hz for 16 s, matching the 16-s interleaved heat/heat+FUS stimulus blocks. Individual pulses were ramped up and down (50 us ramp) to reduce auditory-range spectral content. Each of the three stimulus conditions (FUS only, heat only, heat + FUS) was presented in interleaved 16-s blocks in randomized sequence, repeated seven times. A separate high-pressure MR-ARFI calibration pulse (650 kHz, 8.5 ms, max in vivo pressure 3.5 MPa, duty cycle 0.85%) was used only for beam/target localization, not as a neuromodulation exposure."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Four adult macaque monkeys (two female Macaca fascicularis and two male M. mulatta) underwent five MRI and FUS experimental sessions.",
+   "species": "Four adult macaque monkeys (two female Macaca fascicularis and two male M. mulatta) underwent five MRI and FUS experimental sessions.",
+   "randomised": "For each fMRI stimulation run, three stimulus conditions – FUS only, heat only, and heat + FUS (of thalamic nuclei) - were presented in interleaved 16-s duration blocks in a randomized sequence.",
+   "exposures[0].fundamental_frequency_khz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, and pulse duration of 0.5 ms.",
+   "exposures[0].in_situ.pressure_kpa": "Our target in vivo pressure was 550 kPa. This was estimated based on a transmission percentage of 39%.",
+   "exposures[0].timing.pulse_duration_ms": "The FUS stimulation blocks consisted of trains of 650 kHz pulses, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, and pulse duration of 0.5 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, and pulse duration of 0.5 ms.",
+   "exposures[0].timing.sonication_duration_s": "A 128-element transducer array (radius of curvature = 72 mm, outer diameter = 103 mm, element diameter = 6.6 mm, free-field full-width half max 9.3 mm and 2.2 mm in the axial and lateral directions [30], manufactured by Imasonic (Besancon, France) was used in the current study and was placed around the midline of the head. The scalp was shaved, and a chemical depilatory cream was applied before transmission gel was placed on the scalp to ensure adequate acoustic coupling. The FUS stimulation blocks consisted of trains of 650 kHz pulses, 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz, and pulse duration of 0.5 ms. Detailed FUS parameters are reported in the Supplementary Table 1. This pulse train was repeated at 0.5 Hz for $^ \\textrm { \\scriptsize 1 6  s . }$ Individual pulses were ramped up and down (ramp duration 50 us) to reduce spectral content in the auditory range [31]. Our target in vivo pressure was 550 kPa. This was estimated based on a transmission percentage of 39%. Steering compensation was performed based on hydrophone measurements of the beam during lateral steering of the transducer. A custom cone was filled with water (approximately 10% $_ \\mathrm { H _ { 2 } O }$ and 90% $\\mathbf { D _ { 2 } O } )$ and connected to a degassing circuit to minimize bubble formation in the fluid. $\\mathrm { D } _ { 2 } \\mathrm { O }$ was used to reduce geometric distortions of the MR images due to ineffective shimming of the water concentration in the cone. Water was recovered after every experiment, and the percentage changed due to dilution with regular water from the degassing circuit. The transducer was driven by a custom-built amplifier system (Image Guided Therapy, Pessac, France) and controlled through a custom Python program.",
+   "exposures[0].timing.protocol_description": "Each stimulation condition was repeated seven times.",
+   "exposures[0].timing.duty_cycle_pct": "\fFig. 1. Targeted FUS stimulation of thalamus VPL nucleus with MR-ARFI feedback and fMRI monitoring. (A) Coronal section of the macaque brain with Nissl stain (adopted from brainmaps.org) shows the location of VPL nucleus. (B) Schematic showing MRI compatible stereotaxic positioning system used for experiments to place the acoustic focus at the target. (C) Coronal (a), axial (b) and sagittal (c) views of nociceptive heat (47.5 ◦C) stimulus-evoked fMRI activation foci. Activation foci are displayed on NMT2.0 template $( \\mathrm { t } > 2 , \\mathsf { p } < 0 . 0 5 ,$ , FDR corrected). (D) Display of MR-ARFI focuses targeted at thalamic nuclei on coronal, axial and sagittal planes. Color scale: tissue displacement in microns. (E) A 128 channel FUS array delivered 650 kHz pulsed US with fast PRF of 1 kHz with a 50% duty cycle for 500 ms, slow PRF of 0.5 Hz for 16s. Estimated in vivo pressure was 550 kPa (39% transmission estimate). (F) Interleaved heat and heat + FUS stimulation presentation paradigm. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Classified as 'other_patterned' because the protocol nests fast pulses (1 kHz, 50% duty, 0.5 ms) inside 500-ms trains that are themselves repeated at a slow 0.5 Hz rate for 16 s; this triple-level structure does not map cleanly onto a single waveform category."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states 4 monkeys underwent 5 total MRI/FUS sessions (not evenly divisible per animal), so a per-subject session count cannot be determined and is left not_reported."
+   },
+   {
+    "field": "conditions",
+    "reason": "Coded as chronic_pain because the study models nociceptive/pain processing circuits in healthy monkeys as a pain-management research model, not because the animals had a diagnosed pain condition."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not explicitly stated by the paper; pulse duration (0.5 ms) and PRF (1 kHz) are both given but duty cycle itself is not named, so it is left not_reported rather than computed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

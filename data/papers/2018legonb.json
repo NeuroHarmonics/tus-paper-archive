@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018legonb",
+ "doi": "10.1038/s41598-018-28320-1",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 50,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "Single-pulse TMS motor evoked potential (MEP) recruitment curves; paired-pulse short interval intracortical inhibition (SICI) and intracortical facilitation (ICF); simple visual stimulus-response reaction time task with EMG from abductor pollicis brevis",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasound to M1 significantly attenuated single-pulse MEP amplitude across tested TMS intensities (largest at 90-100% stimulator output) and attenuated intracortical facilitation (ICF, ISI 10-15 ms) without significantly affecting short-interval intracortical inhibition (SICI, ISI 1-5 ms); ultrasound to the APB M1 representation significantly reduced simple reaction time relative to both active (vertex) and passive (M1) sham.",
+ "adverse_events": "observed",
+ "safety_notes": "No severe symptoms were reported by the 20/50 participants (40%) who responded to a follow-up symptoms questionnaire; mild and moderate symptoms included neck pain, sleepiness, muscle twitches, itchiness and headache, none of which persisted or worsened.",
+ "exposures": [
+  {
+   "label": "Primary motor cortex (M1): hand-knob/FDI hotspot (single- and paired-pulse MEP experiments) and APB hotspot (reaction time experiment)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex (M1) hand-knob representation; FDI hotspot for the MEP experiments and APB hotspot for the reaction time experiment"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 17.12,
+    "ispta_w_cm2": 6.16
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 120,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Channel 1 was set to deliver tFUS at a pulse repetition frequency (PRF) of 1 kHz and channel 2 was set to drive the transducer at 500 kHz in burst mode using channel 1 as the trigger; channel 2 delivered 180 cycles per pulse and channel 1 delivered 500 pulses, resulting in a 500 msec duration waveform. For the single- and paired-pulse experiments, ultrasound was time-locked to occur 100 msec prior to the TMS pulse; for the reaction time experiment, ultrasound was time-locked to occur 100 msec prior to the visual stimulus. The sham condition involved turning over the transducer so no ultrasound was delivered while maintaining contact and equitable auditory artifact."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 50 healthy volunteers; 16 men and 34 women, aged 19 to 38 years (22 ± 3.59 years) participated in the experiments.",
+   "exposures[0].fundamental_frequency_khz": "For all experiments we used a custom-made single element focused transducer with a center frequency of 0.5 MHz, 30 mm aperture and 22 mm focal length.",
+   "exposures[0].free_field.isppa_w_cm2": "The calculated spatial peak pulse average intensity $( \\mathrm { I _ { s p p a } } )$ in free water was 17.12 W/cm<sup>2</sup> with a corresponding spatial peak temporal average $( \\hat { \\mathrm { { I } } } _ { \\mathrm { { s p t a } } } )$ of 6.16 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The calculated spatial peak pulse average intensity $( \\mathrm { I _ { s p p a } } )$ in free water was 17.12 W/cm<sup>2</sup> with a corresponding spatial peak temporal average $( \\hat { \\mathrm { { I } } } _ { \\mathrm { { s p t a } } } )$ of 6.16 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.pressure_kpa": "Thus, it is possible that our waveform combined with our relatively low intracranial modeled pressure of \\~120 kPa is not suficient for neural excitation.",
+   "exposures[0].timing.pulse_duration_ms": "Channel 2 was set to deliver 180 cycles per pulse, and channel 1 was set to deliver 500 pulses, resulting in a 500 msec duration.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Channel 1 was set to deliver tFUS at a pulse repetition frequency (PRF) at 1 kHz and channel 2 was set to drive the transducer at 500 kHz in burst mode while using channel 1 as the trigger for channel 2.",
+   "exposures[0].timing.sonication_duration_s": "Channel 2 was set to deliver 180 cycles per pulse, and channel 1 was set to deliver 500 pulses, resulting in a 500 msec duration."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration was not stated directly in ms; it was converted from the stated '180 cycles per pulse' at the stated 500 kHz drive frequency (180/500000 Hz = 0.36 ms), the schema's sanctioned cycles-per-pulse-to-duration unit conversion."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Value ('~120 kPa') is an approximate figure from the Discussion referring to the modeled intracranial pressure, not a table/methods value with full precision."
+   },
+   {
+    "field": "randomised",
+    "reason": "Experiments 1 and 2 describe conditions as 'counterbalanced across participants' while Experiment 3 explicitly states order was 'randomized across participants'; recorded as true for the whole study but the terminology differs by sub-experiment."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper describes provision of ear protection to mask any audible transducer buzzing rather than a listed auditory-control vocabulary mechanism; recorded as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "first"
+  }
+ }
+}

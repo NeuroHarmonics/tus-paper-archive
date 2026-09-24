@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022papp",
+ "doi": "10.3389/fnins.2022.803356",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (CD1/ICR)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  24,
+  9
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  5
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Neurolucida 3D dendritic reconstruction/morphometry of GFP- and Brainbow-labeled layer V pyramidal neurons; c-Fos, BDNF and TRPC4 immunohistochemistry; BDNF qRT-PCR",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "A single prenatal ultrasound exposure increased the number of basal dendrites and elevated c-Fos immunoreactivity (a marker of neuronal activation) in retrosplenial layer V pyramidal neurons; a single exposure did not change BDNF, but repeated (5x) weekly exposure additionally increased BDNF immunoreactivity.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Diagnostic ultrasound exposure of pregnant mice / pups (retrosplenial cortex neurons analysed)",
+   "target": {
+    "terms": [
+     "retrosplenial_cortex"
+    ],
+    "label": "retrosplenial cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GE",
+    "model": "Logiq V2 (4C-RS convex probe)"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1557,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.056
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "Mice previously subjected to in utero electroporation were deeply anesthetized and received a single 10-minute abdominal diagnostic ultrasound exposure (GE Logiq V2, 4C-RS convex probe, 3 MHz, MI=0.9, TIS=0.8) at embryonic day 18.5 (E18.5); the probe covered the whole abdominal region so all embryos received the same dose. After birth, unfocused ultrasound was applied directly to the skull. In a separate cohort, the E18.5 exposure was followed by 4 further weekly ultrasound stimuli during the first 4 postnatal weeks (5 exposures total). Sham/control animals underwent identical handling with the transducer pressed to the abdomen but without actual ultrasound output."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Mice that previously underwent in utero electroporation were deeply anesthetized with Na-pentobarbital (50 mg/kg), and US stimulus was applied on E18.5 for 10 min. The US device was a GE Logiq V2, the frequency used was constantly 3 MHz, and both mechanical and thermic indexes were kept under 1.0 (MI = 0.9; TIS = 0.8; other parameters: D: 17, DR: 69 dB, AO%: 100). The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55<sup>◦</sup>, footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz). The transducer was covered by AquaUltra Basic US gel (Ultragel, Budapest, Hungary), and the transducer was gently placed to the belly of the mouse (in case of embryonic treatment) or directly to the skull of the animals (after birth). The focus of US was in the midline of the pregnant mice during the E18.5 treatment (which was from the same distance from the uterine horns); after birth, unfocused US was used related to the small size of the skull. The US probe covered the territory of the abdominal region of the pregnant mice, indicating that all embryos got the same US dose independently from the exact position in the embryos. The calculated average intensity during the exposition was 56 mW/cm<sup>2</sup>, and the calculated peak negative acoustic pressure was 1.557 MPa. In the case of five times repetitive US exposure experiment, the first treatment took place at E18.5 (in utero), which was followed by 4 further US stimuli once a week at the first 4 postnatal weeks. Control animals underwent the same manipulations [i.e., the mouse was anesthetized, in utero electroporation (except the samples for qRT-PCR)]. The US transducer was pressed to the abdomen as the US-stimulated ones without being subjected to actual US exposure.",
+   "exposures[0].timing.sonication_duration_s": "Mice that previously underwent in utero electroporation were deeply anesthetized with Na-pentobarbital (50 mg/kg), and US stimulus was applied on E18.5 for 10 min. The US device was a GE Logiq V2, the frequency used was constantly 3 MHz, and both mechanical and thermic indexes were kept under 1.0 (MI = 0.9; TIS = 0.8; other parameters: D: 17, DR: 69 dB, AO%: 100). The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55<sup>◦</sup>, footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz). The transducer was covered by AquaUltra Basic US gel (Ultragel, Budapest, Hungary), and the transducer was gently placed to the belly of the mouse (in case of embryonic treatment) or directly to the skull of the animals (after birth). The focus of US was in the midline of the pregnant mice during the E18.5 treatment (which was from the same distance from the uterine horns); after birth, unfocused US was used related to the small size of the skull. The US probe covered the territory of the abdominal region of the pregnant mice, indicating that all embryos got the same US dose independently from the exact position in the embryos. The calculated average intensity during the exposition was 56 mW/cm<sup>2</sup>, and the calculated peak negative acoustic pressure was 1.557 MPa. In the case of five times repetitive US exposure experiment, the first treatment took place at E18.5 (in utero), which was followed by 4 further US stimuli once a week at the first 4 postnatal weeks. Control animals underwent the same manipulations [i.e., the mouse was anesthetized, in utero electroporation (except the samples for qRT-PCR)]. The US transducer was pressed to the abdomen as the US-stimulated ones without being subjected to actual US exposure.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Mice that previously underwent in utero electroporation were deeply anesthetized with Na-pentobarbital (50 mg/kg), and US stimulus was applied on E18.5 for 10 min. The US device was a GE Logiq V2, the frequency used was constantly 3 MHz, and both mechanical and thermic indexes were kept under 1.0 (MI = 0.9; TIS = 0.8; other parameters: D: 17, DR: 69 dB, AO%: 100). The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55<sup>◦</sup>, footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz). The transducer was covered by AquaUltra Basic US gel (Ultragel, Budapest, Hungary), and the transducer was gently placed to the belly of the mouse (in case of embryonic treatment) or directly to the skull of the animals (after birth). The focus of US was in the midline of the pregnant mice during the E18.5 treatment (which was from the same distance from the uterine horns); after birth, unfocused US was used related to the small size of the skull. The US probe covered the territory of the abdominal region of the pregnant mice, indicating that all embryos got the same US dose independently from the exact position in the embryos. The calculated average intensity during the exposition was 56 mW/cm<sup>2</sup>, and the calculated peak negative acoustic pressure was 1.557 MPa. In the case of five times repetitive US exposure experiment, the first treatment took place at E18.5 (in utero), which was followed by 4 further US stimuli once a week at the first 4 postnatal weeks. Control animals underwent the same manipulations [i.e., the mouse was anesthetized, in utero electroporation (except the samples for qRT-PCR)]. The US transducer was pressed to the abdomen as the US-stimulated ones without being subjected to actual US exposure.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Mice that previously underwent in utero electroporation were deeply anesthetized with Na-pentobarbital (50 mg/kg), and US stimulus was applied on E18.5 for 10 min. The US device was a GE Logiq V2, the frequency used was constantly 3 MHz, and both mechanical and thermic indexes were kept under 1.0 (MI = 0.9; TIS = 0.8; other parameters: D: 17, DR: 69 dB, AO%: 100). The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55<sup>◦</sup>, footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz). The transducer was covered by AquaUltra Basic US gel (Ultragel, Budapest, Hungary), and the transducer was gently placed to the belly of the mouse (in case of embryonic treatment) or directly to the skull of the animals (after birth). The focus of US was in the midline of the pregnant mice during the E18.5 treatment (which was from the same distance from the uterine horns); after birth, unfocused US was used related to the small size of the skull. The US probe covered the territory of the abdominal region of the pregnant mice, indicating that all embryos got the same US dose independently from the exact position in the embryos. The calculated average intensity during the exposition was 56 mW/cm<sup>2</sup>, and the calculated peak negative acoustic pressure was 1.557 MPa. In the case of five times repetitive US exposure experiment, the first treatment took place at E18.5 (in utero), which was followed by 4 further US stimuli once a week at the first 4 postnatal weeks. Control animals underwent the same manipulations [i.e., the mouse was anesthetized, in utero electroporation (except the samples for qRT-PCR)]. The US transducer was pressed to the abdomen as the US-stimulated ones without being subjected to actual US exposure.",
+   "n_subjects": "Altogether, 5 pregnant mice with 24 electroporated embryos (survived 20, selected 10 for morphometry and immunohistochemistry) were subjected to US stimulation and 5 pregnant mice with 21 electroporated embryos (survived 18, selected 7 for morphometry and immunohistochemistry) were used as control. Additional 3 US-stimulated and 3 control pregnant mice were sacrificed for collecting 9 US-stimulated and 9 control pups (3 from each pregnant mouse).",
+   "exposures[0].device.manufacturer": "The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55 ◦ , footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz).",
+   "exposures[0].device.model": "The used abdominal US head was a 4C-RS convex probe (frequency range: 2.0–5.0 MHz, number of elements: 128, convex radius: 60 mmR, FOV: 55 ◦ , footprint: 18.3 × 66.2 mm, B-mode imaging frequency: 2.0, 3.0, 4.0, 5.0 MHz, harmonic imaging frequency: 3.0, 4.0, 5.0 MHz).",
+   "n_sessions_per_subject": "In the case of five times repetitive US exposure experiment, the first treatment took place at E18.5 (in utero), which was followed by 4 further US stimuli once a week at the first 4 postnatal weeks."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Ultrasound was applied to the whole maternal abdomen (unfocused with respect to the fetal brain); retrosplenial cortex was the region subsequently analysed for morphological effects, not a spatially targeted stimulation site."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper states a single 'calculated average intensity' (56 mW/cm2) without specifying whether this is spatial-peak pulse-average (Isppa) or spatial-peak temporal-average (Ispta) intensity, or the domain (water/free-field vs in situ); recorded as Ispta by convention and flagged."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain (free-field vs in situ) not stated by the paper for this 'calculated peak negative acoustic pressure'; placed in unspecified_domain per the three-way rule."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives separate group sizes for the electroporation/morphometry cohort (24 embryos enrolled, real US) and a separate qRT-PCR cohort (9 pups, real US); recorded as a list per SCHEMA.md guidance. An additional 'five times repetitive' subgroup exists but its own N is not stated, so it is not included in this list."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most animals received a single 10-min exposure at E18.5, but a separate repetitive-exposure subgroup received 5 total exposures (E18.5 plus 4 further weekly doses); no single value applies to the whole study."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper reports no gross morphological changes in most dendritic parameters and intact cortical layering, but does not make an explicit overall safety/adverse-event statement for the animals or fetuses."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

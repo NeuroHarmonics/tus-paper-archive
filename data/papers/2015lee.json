@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2015lee",
+ "doi": "10.1038/srep08743",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg"
+ ],
+ "readout_other": "Subjective tactile sensation report (touch-sensor signalled) during FUS trials; EEG evoked potentials at C3 and P3 electrode sites compared to median-nerve somatosensory evoked potentials (SEP)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to hand S1 elicited explicit tactile sensations (tingling, sensation of movement) on the contralateral hand/fingers and evoked EEG potentials with mid- and long-latency components resembling median-nerve SEP, indicating cortical activation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Neurological exam before and after sonication showed no abnormal findings across all subjects; follow-up anatomical MRI at 4 time points (immediate, 2, 4, 8 weeks) identified no radiological abnormalities; 8-week follow-up interviews reported no changes in mental/physical status. Estimated ISPTA (~350 mW/cm2) was below the FDA imaging limit of 720 mW/cm2 and MI (0.62) was below the FDA limit of 1.9.",
+ "exposures": [
+  {
+   "label": "FUS sonication of hand primary somatosensory cortex (S1)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "hand primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Channel Industries",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": 1.5
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.7,
+    "ispta_w_cm2": 0.35
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "The sonication session consisted of batches of sonication trials that were 3 s apart. Each trial provided a sinusoidal acoustic pressure wave of 250 kHz, operating at a tone-burst-duration of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e. duty cycle of 50%) and a sonication duration of 300 ms to elicit excitation in the S1. FUS (consisting of ~200 stimulation trials) was administered on the hand S1 of each hemisphere, one hemisphere at a time, in a randomized sequence, plus a separate sham-type FUS session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Overview of Experimental Procedures. Healthy human volunteers (n 5 18, five females, age 29.2 6 6.4 yrs, range 21–43) participated in this study under the approval of the Institutional Review Board (IRB; Incheon St. Mary’s Hospital, The Catholic University of Korea).",
+   "exposures[0].fundamental_frequency_khz": "Sonication Setup. A ceramic piezoelectric FUS transducer operating at 250 kHz (Channel Industries, Santa Barbara, CA) was used to generate the acoustic pressure wave for the sonication of hand primary somatosensory cortex (S1).",
+   "exposures[0].timing.pulse_duration_ms": "The sonication session consisted of batches of sonication trials that were 3 s apart (Fig. 1e). Each trial provided a sinusoidal acoustic pressure wave of 250 kHz, operating at a tone-burst-duration of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e. duty cycle of50%) and a sonication duration of300 ms to elicit excitation in the S1.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The sonication session consisted of batches of sonication trials that were 3 s apart (Fig. 1e). Each trial provided a sinusoidal acoustic pressure wave of 250 kHz, operating at a tone-burst-duration of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e. duty cycle of50%) and a sonication duration of300 ms to elicit excitation in the S1.",
+   "exposures[0].timing.duty_cycle_pct": "The sonication session consisted of batches of sonication trials that were 3 s apart (Fig. 1e). Each trial provided a sinusoidal acoustic pressure wave of 250 kHz, operating at a tone-burst-duration of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e. duty cycle of50%) and a sonication duration of300 ms to elicit excitation in the S1.",
+   "exposures[0].timing.sonication_duration_s": "The sonication session consisted of batches of sonication trials that were 3 s apart (Fig. 1e). Each trial provided a sinusoidal acoustic pressure wave of 250 kHz, operating at a tone-burst-duration of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e. duty cycle of50%) and a sonication duration of300 ms to elicit excitation in the S1.",
+   "exposures[0].free_field.isppa_w_cm2": "The acoustic intensity at the FUS focus, without the presence of the skull, had a spatial-peak pulse-average acoustic intensity $\\mathrm { ( I _ { s p p a } ) }$ of 3 W/cm<sup>2</sup>, resulting in a spatial-peak temporal-average acoustic intensity (I ) of 1.5 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The acoustic intensity at the FUS focus, without the presence of the skull, had a spatial-peak pulse-average acoustic intensity $\\mathrm { ( I _ { s p p a } ) }$ of 3 W/cm<sup>2</sup>, resulting in a spatial-peak temporal-average acoustic intensity (I ) of 1.5 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimated acoustic intensity at the intended target had a spatial-peak pulse-average acoustic intensity $( \\mathrm { I _ { s p p a } } ) \\mathrm { o f } 0 . 7 \\overset {  } { \\pm } 0 . 5 \\mathrm { W / c m ^ { 2 } } ( \\mathrm { m e a n } \\overset {  } { \\pm } \\mathrm { s . d . } , n = 2 \\overset { \\cdot } { 4 } )$ , which was only about 24% of the incident $\\mathrm { { I _ { s p p a } } }$ of 3 W/cm<sup>2</sup>, suggesting that 76% of the incident intensity, on average, was attenuated during the transcranial application ofthe FUS.",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on neurological and neuroradiological assessment, the sonication parameters used in this study appear to be safe, with an acoustic intensity of 2.5 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ (maximum simulated value observed in the left hemispheric sonication in ‘h9’). The corresponding mechanical index (MI) was 0.62, which is much lower than the American Food and Drug Administration (FDA) safety guideline limit of 1.9 for soft tissue sonication<sup>55</sup>. The estimated spatial-peak temporalaverage acoustic intensity $\\left( \\mathrm { { I } _ { \\mathrm { { s p t a } } } } \\right)$ at the target, averaged across the responsive subjects, was on the order of 350 mW/cm<sup>2</sup> (based on the 50% duty cycle of $0 . 7 \\pm 0 . 5 \\ \\mathrm { W / c m ^ { 2 } \\ I _ { s p p a } ; }$ Table 2), which was also lower than the maximum allowed sonication intensity of $7 2 0 \\ \\mathrm { m W / c m ^ { 2 } I _ { s p t a } }$ by the FDA in ultrasound imagers<sup>55</sup>.",
+   "exposures[0].device.manufacturer": "A ceramic piezoelectric FUS transducer operating at 250 kHz (Channel Industries, Santa Barbara, CA) was used to generate the acoustic pressure wave for the sonication of hand primary somatosensory cortex (S1).",
+   "n_sessions_per_subject": "FUS (consisting of ,200 stimulation trials) was administered on the hand S1 of each hemisphere, one hemisphere at a time, in a randomized sequence."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Sham described only as 'mimicked the experimental procedures without providing actual sonication'; the exact mechanism (powered off, blocked, etc.) is not specified."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "A separate subset of subjects who underwent EEG recording (h13-h18) reported a different in-situ estimate (1.0 ± 0.4 W/cm2 Isppa); the value used here is the mean reported for the main cohort (n=24) in Table 2."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper describes bilateral sonication plus a separate sham session but does not state an explicit total number of sessions per subject."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "first"
+  }
+ }
+}

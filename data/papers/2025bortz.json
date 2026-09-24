@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025bortz",
+ "doi": "10.1016/j.brs.2025.09.004",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "high-speed (~828 Hz) single-neuron voltage imaging using the genetically encoded voltage indicator SomArchon; optical spike detection",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "TUS evoked both rapid membrane depolarization (activation, 29.2% of neurons) and hyperpolarization (suppression, 8.7% of neurons), with entrainment at both 10 and 40 Hz PRFs; evoked responses commonly shifted from depolarization to hyperpolarization (response depotentiation) across repeated trials.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to motor/visual cortex neurons via sub-chin transducer",
+   "target": {
+    "terms": [
+     "primary_motor_cortex",
+     "primary_visual_cortex"
+    ],
+    "label": "motor cortex or visual cortex (craniotomy/imaging site)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran",
+    "model": "GS350-D13"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": 401,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 110,
+    "isppa_w_cm2": 0.129,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     20,
+     5
+    ],
+    "pulse_repetition_frequency_hz": [
+     10,
+     40
+    ],
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 1,
+    "protocol_description": "Each recording trial was 3 s in duration, comprising a 1-s pre-stimulation baseline with the transducer off, 1-s of ultrasound stimulation at either 10 or 40 Hz PRF with a 20% duty cycle, and a 1-s post-stimulation with the transducer off. Each neuron was typically recorded over 20 trials (range: 10-40), with an inter-trial interval of ~2-10 s."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "To determine whether TUS-evoked significant transient responses in each neuron, we computed the mean Vm amplitude in the first 250 ms of each stimulation trial and the corresponding pre-stimulation period immediately before stimulation onset, and compared across trials using the Wilcoxon signed-rank test (α = 0.05). Neurons were classified as transiently modulated if Vm significantly exceeded pre-stimulation levels (Methods, Fig. 3a and b). Of the 161 recorded neurons across 15 mice, 38.0 % (61/161) were significantly transiently modulated, with 29.2 % (47/161) activated (depolarized) and 8.7 % (14/161) suppressed (hyperpolarized) (Table 1, Fig. 3c–f). The fraction of modulated neurons showed no noticeable difference between 10 Hz and 40 Hz PRFs. In contrast, only 5.7 % and 3.6 % of neurons were modulated during the delayed period (250 ms to 1 s after onset) at 10 Hz and 40 Hz PRFs, respectively, and all were activated. Although 40 Hz PRF may engage auditory pathways more strongly than 10 Hz PRF during the delayed window (Supplemental Fig. 1), this did not translate into significant evoked responses in the motor cortex neurons recorded. Finally, most Vm-modulated neurons (88 %, 61/69) responded during the transient window, indicating that rapid Vm changes dominated TUS responses.",
+   "exposures[0].fundamental_frequency_khz": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective. Ultrasound gel (Aquasonic Clear® Ultrasound Gel 03–08\\_BX, Parker Laboratories, Fairfield, NJ) was applied between the transducer and the chin to ensure efficient acoustic coupling and propagation to the brain. Ultrasound was delivered in 1-s bursts per trial, pulsed at either 10 or 40 Hz with a 20 % duty cycle. Pulse trains were triggered via MATLAB (MathWorks, Inc.) through a USB-6259 NI-DAQ multifunction I/O system (National Instruments). TTL triggers from the NI-DAQ and the imaging camera were simultaneously recorded using the Open Ephys platform (http://openephys.org) for precise offline alignment of stimulation and imaging frames. Sham stimulation controls were performed by coupling the transducer, with ultrasound gel, to the ventral abdomen of awake, headfixed mice.",
+   "exposures[0].free_field.pressure_kpa": "To estimate the ultrasound intensity at the cortical recording site, we first measured the free-field acoustic waveform of the transducer in degassed water using a needle hydrophone. The peak pressure was 401 kPa with a focal region of 20 mm height and 6 mm width (Fig. 1e, left). Using this empirically measured pressure as input, we performed k-Wave simulations to model intracranial pressure and intensity distributions. Simulations predicted a maxium intensity of 0.18 MPa at the intracranial bone and 0.11 MPa at the imaging site, the latter corresponding to a maximum in situ I<sub>SPPA</sub> of 0.129 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (Fig. 1e, right; Supplemental Table 2; Methods). This I<sub>SPPA</sub> value at the imaging site is consistent with the low-intensity range reported in prior neuromodulation studies [44,51,52,82], where effective stimulation pressures and I<sub>SPPA</sub> values ranged \\~88–438 kPa and ${ \\sim } 0 . 0 7 9 { \\sim } 6 . 4 ~ \\mathrm { ~ W / c m ^ { 2 } } ,$ respectively.",
+   "exposures[0].in_situ.pressure_kpa": "To estimate the ultrasound intensity at the cortical recording site, we first measured the free-field acoustic waveform of the transducer in degassed water using a needle hydrophone. The peak pressure was 401 kPa with a focal region of 20 mm height and 6 mm width (Fig. 1e, left). Using this empirically measured pressure as input, we performed k-Wave simulations to model intracranial pressure and intensity distributions. Simulations predicted a maxium intensity of 0.18 MPa at the intracranial bone and 0.11 MPa at the imaging site, the latter corresponding to a maximum in situ I<sub>SPPA</sub> of 0.129 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (Fig. 1e, right; Supplemental Table 2; Methods). This I<sub>SPPA</sub> value at the imaging site is consistent with the low-intensity range reported in prior neuromodulation studies [44,51,52,82], where effective stimulation pressures and I<sub>SPPA</sub> values ranged \\~88–438 kPa and ${ \\sim } 0 . 0 7 9 { \\sim } 6 . 4 ~ \\mathrm { ~ W / c m ^ { 2 } } ,$ respectively.",
+   "exposures[0].in_situ.isppa_w_cm2": "To estimate the ultrasound intensity at the cortical recording site, we first measured the free-field acoustic waveform of the transducer in degassed water using a needle hydrophone. The peak pressure was 401 kPa with a focal region of 20 mm height and 6 mm width (Fig. 1e, left). Using this empirically measured pressure as input, we performed k-Wave simulations to model intracranial pressure and intensity distributions. Simulations predicted a maxium intensity of 0.18 MPa at the intracranial bone and 0.11 MPa at the imaging site, the latter corresponding to a maximum in situ I<sub>SPPA</sub> of 0.129 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (Fig. 1e, right; Supplemental Table 2; Methods). This I<sub>SPPA</sub> value at the imaging site is consistent with the low-intensity range reported in prior neuromodulation studies [44,51,52,82], where effective stimulation pressures and I<sub>SPPA</sub> values ranged \\~88–438 kPa and ${ \\sim } 0 . 0 7 9 { \\sim } 6 . 4 ~ \\mathrm { ~ W / c m ^ { 2 } } ,$ respectively.",
+   "exposures[0].timing.pulse_duration_ms": "TUS-evoked depolarization latencies ranged from 5 to 53 ms (10.85 ± 1.59 ms, mean ± SEM), with 34 neurons (72.3 %) having a latency under 10 ms (Fig. 4). Interestingly, latencies were modestly shorter during 10 Hz PRF (range: 5–37 ms, mean $\\pm \\mathtt { S E M } \\colon 9 . 5 8 \\pm 1 . 3 1 \\ \\mathrm { m s } , N =$ 31) compared to during 40 Hz (range: 5–53 ms, mean ± SEM: 13.31 ± 3.94 ms, N = 16). This difference may reflect the higher initial energy delivered during the first 20 ms of stimulation onset, as 10 Hz TUS has a 20 ms pulse, but 40 Hz has only a 5 ms pulse. Further quantification of the overall activation profiles revealed slight difference between PRFs, with 10 Hz TUS-evoked responses peaking at $1 5 4 . 6 \\pm 1 3 . 3$ ms with a full-width at half-maximum (FWHM) of $2 7 4 . 0 \\pm 2 3 . 8$ ms and 40 Hz TUS-evoked responses peaking at $1 1 7 . 1 \\pm 1 1 . 7$ ms with a FWHM of $1 9 9 . 8 \\pm 3 1 . 9$ ms. FWHM values were significantly broader at 10 Hz than 40 Hz (Mann–Whitney U test, one-tailed, $\\mathbf { p } = 0 . 0 2 4 )$ , indicating more sustained depolarization at 10 Hz PRFs. The fact that many neurons exhibited short-latency responses under 10 ms confirms that TUS directly modulates neuronal dynamics at the cellular level, rather than through indirect somatosensory or auditory activation, or systematic heating.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective. Ultrasound gel (Aquasonic Clear® Ultrasound Gel 03–08\\_BX, Parker Laboratories, Fairfield, NJ) was applied between the transducer and the chin to ensure efficient acoustic coupling and propagation to the brain. Ultrasound was delivered in 1-s bursts per trial, pulsed at either 10 or 40 Hz with a 20 % duty cycle. Pulse trains were triggered via MATLAB (MathWorks, Inc.) through a USB-6259 NI-DAQ multifunction I/O system (National Instruments). TTL triggers from the NI-DAQ and the imaging camera were simultaneously recorded using the Open Ephys platform (http://openephys.org) for precise offline alignment of stimulation and imaging frames. Sham stimulation controls were performed by coupling the transducer, with ultrasound gel, to the ventral abdomen of awake, headfixed mice.",
+   "exposures[0].timing.duty_cycle_pct": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective. Ultrasound gel (Aquasonic Clear® Ultrasound Gel 03–08\\_BX, Parker Laboratories, Fairfield, NJ) was applied between the transducer and the chin to ensure efficient acoustic coupling and propagation to the brain. Ultrasound was delivered in 1-s bursts per trial, pulsed at either 10 or 40 Hz with a 20 % duty cycle. Pulse trains were triggered via MATLAB (MathWorks, Inc.) through a USB-6259 NI-DAQ multifunction I/O system (National Instruments). TTL triggers from the NI-DAQ and the imaging camera were simultaneously recorded using the Open Ephys platform (http://openephys.org) for precise offline alignment of stimulation and imaging frames. Sham stimulation controls were performed by coupling the transducer, with ultrasound gel, to the ventral abdomen of awake, headfixed mice.",
+   "exposures[0].timing.sonication_duration_s": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective. Ultrasound gel (Aquasonic Clear® Ultrasound Gel 03–08\\_BX, Parker Laboratories, Fairfield, NJ) was applied between the transducer and the chin to ensure efficient acoustic coupling and propagation to the brain. Ultrasound was delivered in 1-s bursts per trial, pulsed at either 10 or 40 Hz with a 20 % duty cycle. Pulse trains were triggered via MATLAB (MathWorks, Inc.) through a USB-6259 NI-DAQ multifunction I/O system (National Instruments). TTL triggers from the NI-DAQ and the imaging camera were simultaneously recorded using the Open Ephys platform (http://openephys.org) for precise offline alignment of stimulation and imaging frames. Sham stimulation controls were performed by coupling the transducer, with ultrasound gel, to the ventral abdomen of awake, headfixed mice.",
+   "exposures[0].device.manufacturer": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective.",
+   "exposures[0].device.model": "A planar ultrasound transducer with a center frequency of 350 kHz (Ultran GS350-D13) was positioned beneath the chin of awake, headfixed mice, aligned under the microscope objective."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Study included 20 total mice; 161 neurons recorded from 15 mice received real TUS (n_subjects reported here), while a separate 5 mice contributed 60 neurons under sham (off-target abdominal) ultrasound only. The paper does not explicitly confirm whether the sham mice were a fully distinct set from the 20 total or drawn from the same pool with different sessions."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Body text states a simulated peak pressure of 0.11 MPa (110 kPa) at the imaging site, used to derive the reported in situ ISPPA; however, the Figure 1 caption reports a different simulated in-situ peak pressure of 209 kPa, and the text separately reports 0.18 MPa (180 kPa) at the intracranial bone. These three values are inconsistent; the imaging-site body-text value is used here."
+   },
+   {
+    "field": "target",
+    "reason": "The sub-chin transducer is unfocused/broad relative to the mouse brain and its position was not adjusted between motor-cortex and visual-cortex recording sessions; both target regions are listed for the single exposure rather than splitting into two exposures."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No masking sound, ramping, or deafening was used; instead the authors selected sub-auditory-threshold intensity based on a computational auditory brainstem response (ABR) prediction model (Choi et al.) and used an off-target sham to rule out auditory/systemic confounds."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].timing.pulse_duration_ms": "first"
+  }
+ }
+}

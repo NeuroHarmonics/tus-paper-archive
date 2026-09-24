@@ -1,0 +1,437 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019cotero",
+ "doi": "10.1038/s41467-019-08750-9",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "Sprague-Dawley rat (primary spleen/liver stimulation and DfMRI experiments); C57BL/6, nude, ChAT-floxed/CD4-Cre, and α7 nicotinic-receptor knockout mice (mechanistic CAP experiments)",
+ "conditions": [
+  "systemic_inflammation"
+ ],
+ "condition_other": "Endotoxin (LPS)-induced acute systemic inflammation and hyperglycemia (sepsis-like) model",
+ "n_subjects": [
+  5,
+  4,
+  12,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "other_mri",
+  "autonomic_physiology"
+ ],
+ "readout_other": "ELISA/HPLC for splenic/serum norepinephrine, acetylcholine, TNF, IL-1alpha, intracellular kinase activation (p38, p70S6K, Akt, GSK3B, c-Src), blood glucose and insulin; c-Fos immunohistochemistry in hypothalamic/NTS nuclei; diffusion-weighted (ADC) MRI; heart-rate monitoring",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of splenic nerve terminals increased norepinephrine and acetylcholine release and activated CAP-related intracellular signalling, reducing endotoxin-induced TNF and IL-1alpha; ultrasound stimulation of the porta hepatis increased c-Fos expression in hypothalamic and NTS nuclei and altered hypothalamic ADC on DfMRI, consistent with activation of vagal afferent/glucoregulatory pathways and reduced LPS-induced hyperglycemia.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Ultrasound energy was kept below levels associated with thermal damage or ablation/cavitation (35 W/cm2); H&E histology of stimulated spleen showed no significant morphological difference from control tissue.",
+ "exposures": [
+  {
+   "label": "Splenic ultrasound stimulation (cholinergic anti-inflammatory pathway), pressure sweep",
+   "target": {
+    "terms": [
+     "splanchnic_nerve"
+    ],
+    "label": "spleen (nerve terminals/innervation points of the splenic ganglia, cholinergic anti-inflammatory pathway)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H106"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": [
+     30,
+     1720
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.13636,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 60,
+    "protocol_description": "Pulse center frequency 1.1 MHz, pulse repetition period 0.5 ms (2000 Hz PRF), 136.36 microsecond pulse length; pulse amplitude/pressure varied across experiments from 0.03-1.72 MPa (most main-text figures used 0.83 MPa, within the most effective range of 0.25-0.83 MPa). A single ultrasound stimulus did not surpass 1 min; a second 1-min stimulus could be applied. Voltage-to-pressure calibration was performed in degassed water with a needle hydrophone."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 27.272
+   }
+  },
+  {
+   "label": "Hepatic (porta hepatis) ultrasound stimulation, main experiments (0.83 MPa)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "porta hepatis (liver; hepatic vagal sensory afferents/glucose-sensitive neurons)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H106"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": 830,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.13636,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 60,
+    "protocol_description": "Same HIFU system and pulse parameters as the splenic experiments (1.1 MHz, 2000 Hz PRF, 136.36 microsecond pulse length), fixed at 0.83 MPa; U/S was image-guided to the porta hepatis region of the liver, a single stimulus not surpassing 1 min."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 27.272
+   }
+  },
+  {
+   "label": "Hepatic (porta hepatis) ultrasound stimulation during diffusion-weighted fMRI (MR-compatible transducer)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "porta hepatis (liver; hepatic vagal sensory afferents/glucose-sensitive neurons)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1470,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 3200,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.15,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 60,
+    "protocol_description": "An MR-compatible ultrasound probe (1.47 MHz) coupled to the abdomen via a gel/water-filled cone focused on the porta hepatis. Each ultrasound treatment lasted 60 s, with square-wave pulses applied at 150/350 microsecond on/off periods; sound pressure at the focal point was approximately 3.2 MPa. Applied to 6 of 10 rats undergoing DfMRI; the other 4 rats received LPS with no US treatment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "n = 5 for all experiments in this figure except for all LPS − (U/S) controls which were n = 7",
+   "exposures[0].fundamental_frequency_khz": "For most of the animal experiments, the pulse center frequency was 1.1 MHz, the pulse repetition period was 0.5 ms (corresponding to a pulse repetition frequency of 2000 Hz); the pulse amplitude and pulse length varied.",
+   "exposures[0].timing.pulse_duration_ms": "stimulation parameters were 1.1 MHz, 136.36 µs pulse length, and 0.5 ms pulse repetition period)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For most of the animal experiments, the pulse center frequency was 1.1 MHz, the pulse repetition period was 0.5 ms (corresponding to a pulse repetition frequency of 2000 Hz); the pulse amplitude and pulse length varied.",
+   "exposures[0].timing.sonication_duration_s": "An U/S stimulus was then applied with total duration of a single stimulus not surpassing a single 1 min pulse.",
+   "exposures[0].free_field.pressure_kpa": "and with U/S stimulation (0.03–1.72 MPa).",
+   "exposures[1].fundamental_frequency_khz": "For most of the animal experiments, the pulse center frequency was 1.1 MHz, the pulse repetition period was 0.5 ms (corresponding to a pulse repetition frequency of 2000 Hz); the pulse amplitude and pulse length varied.",
+   "exposures[1].timing.pulse_duration_ms": "stimulation parameters were 1.1 MHz, 136.36 µs pulse length, and 0.5 ms pulse repetition period)",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "For most of the animal experiments, the pulse center frequency was 1.1 MHz, the pulse repetition period was 0.5 ms (corresponding to a pulse repetition frequency of 2000 Hz); the pulse amplitude and pulse length varied.",
+   "exposures[1].timing.sonication_duration_s": "An U/S stimulus was then applied with total duration of a single stimulus not surpassing a single 1 min pulse.",
+   "exposures[1].free_field.pressure_kpa": "All experiments in this figure were performed using the same US settings as in Fig. 2 (0.83 MPa)",
+   "exposures[2].fundamental_frequency_khz": "The abdomen region was coupled through a gel/water filled cone to an MR-compatible U/S probe (f= 1.47 MHz), focusing on the porta hepatis, a liver region known to contain glucose sensitive neurons.",
+   "exposures[2].timing.pulse_duration_ms": "Each ultrasound treatment lasted 60 s, during which square wave pulses were applied at 150/350-μs on/off periods. The sound pressure at the focal point was approximately 3.2 MPa.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Each ultrasound treatment lasted 60 s, during which square wave pulses were applied at 150/350-μs on/off periods. The sound pressure at the focal point was approximately 3.2 MPa.",
+   "exposures[2].timing.sonication_duration_s": "Each ultrasound treatment lasted 60 s, during which square wave pulses were applied at 150/350-μs on/off periods. The sound pressure at the focal point was approximately 3.2 MPa.",
+   "exposures[2].unspecified_domain.pressure_kpa": "Each ultrasound treatment lasted 60 s, during which square wave pulses were applied at 150/350-μs on/off periods. The sound pressure at the focal point was approximately 3.2 MPa.",
+   "n_sessions_per_subject": "After incubation, the animal was euthanized and tissue, blood samples are collected as described below.",
+   "exposures[0].device.manufacturer": "The system consists of a 1.1 MHz, High Intensity Focused Ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350L) and a function generator (Agilent 33120A).",
+   "exposures[0].device.model": "The system consists of a 1.1 MHz, High Intensity Focused Ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350L) and a function generator (Agilent 33120A).",
+   "exposures[1].device.manufacturer": "The system consists of a 1.1 MHz, High Intensity Focused Ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350L) and a function generator (Agilent 33120A).",
+   "exposures[1].device.model": "The system consists of a 1.1 MHz, High Intensity Focused Ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350L) and a function generator (Agilent 33120A)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "No target ID in the taxonomy corresponds to 'spleen'; splanchnic_nerve (viscera-innervating sympathetic nerve) was used as the closest match to the splenic nerve terminals actually targeted."
+   },
+   {
+    "field": "exposures[1].target",
+    "reason": "No target ID corresponds to 'liver' or its hepatic vagal branch specifically; vagus_nerve was used as the closest match since the porta hepatis target contains hepatic vagal sensory afferents."
+   },
+   {
+    "field": "exposures[2].timing.pulse_repetition_frequency_hz",
+    "reason": "Not stated directly as a frequency; derived from the stated 150/350 microsecond on/off periods (period = 500 microseconds -> 2000 Hz), matching the PRF used in the other exposures."
+   },
+   {
+    "field": "exposures[2].timing.duty_cycle_pct",
+    "reason": "Computed directly from the stated 150 microsecond on-time over the 500 microsecond total on/off period (30%); not stated as a duty cycle by the paper."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "This paper reports dozens of partially overlapping rat and mouse cohorts (typically n=3-12) across many figures/sub-experiments (spleen dose-response, kinetics, duration-of-effect, knockout/denervation mechanism studies, liver studies, DfMRI) without a single overall total; recorded are the largest distinct group sizes explicitly stated for ultrasound-stimulated animals in the primary spleen, liver, and DfMRI experiments. Mouse knockout/denervation cohort sizes (Figs. 4-5) are not included as they were not clearly stated as a single n in the extracted text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham/control animals received LPS without ultrasound ('LPS, -U/S'), but the paper does not state whether the ultrasound transducer/probe was still positioned (inactive) or omitted entirely during sham sessions."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Pressure values are drawn from a voltage-to-pressure calibration performed in degassed water (free field) with a needle hydrophone; the paper does not discuss derating for the actual tissue path to the spleen/liver."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "n_sessions_per_subject": "first",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "both_defensible",
+   "exposures[2].timing.duty_cycle_pct": "second"
+  }
+ }
+}

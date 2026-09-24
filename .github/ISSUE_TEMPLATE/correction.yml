@@ -1,0 +1,49 @@
+name: Correction
+description: Report a value that is wrong in a paper's record
+title: "Correction: "
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a value that is wrong in a paper's record. Give the value shown, the correct value, and the sentence of the paper that states it. Corrections are committed to the repository and appear on the site at the next release.
+  - type: input
+    id: citekey
+    attributes:
+      label: Paper
+      description: The citekey shown at the top of the paper page (for example 2021collins), or the DOI.
+      placeholder: 2021collins
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field
+      description: The field as labelled on the paper page. If the paper has more than one exposure, say which.
+      placeholder: Pulse duration (ms), second exposure
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: Value shown
+      description: What the archive currently shows, including "not reported" if that is the problem.
+  - type: input
+    id: correct
+    attributes:
+      label: Correct value
+      description: In the units the paper uses; the archive converts.
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: Supporting sentence
+      description: The sentence of the paper that gives the correct value, and where it is (section, table or figure). Values given only in a supplement or a figure are recorded as not reported; say so if that is the case.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional. For example, if several fields are affected, or the paper itself is inconsistent.

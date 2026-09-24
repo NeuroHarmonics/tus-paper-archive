@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023shin",
+ "doi": "10.3390/brainsci13101433",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 6,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "Visual analog scale (VAS) for current/average/maximum pain; Korean Brief Pain Inventory (K-BPI); follow-up brain MRI for safety",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Low-energy tcNgFUS to the bilateral dorsal ACC was associated with reduced current, average, and maximum pain VAS scores and improved BPI daily-life interference over 4 weeks; direction is inferred from clinical pain reduction, not a direct neurophysiological measurement.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No procedure-related complications, such as a burning sensation of the scalp, headache, or seizure, were observed during the follow-up period. Additionally, no specific changes in the structure of the target, such as inertial cavitation, edema, or hemorrhage, were observed after sonication according to the follow-up brain MRI.",
+ "exposures": [
+  {
+   "label": "tcNgFUS to bilateral anterior cingulate cortex (Brodmann area 24, dorsal ACC)",
+   "target": {
+    "terms": [
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "bilateral anterior cingulate cortex (Brodmann area 24, dorsal ACC)"
+   },
+   "device": {
+    "family": "neurosona",
+    "manufacturer": "Neurosona Corporation",
+    "model": "NS-US100"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.72
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     5,
+     10
+    ],
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     50,
+     70
+    ],
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Low-energy FUS had a frequency of 250 kHz, spatial-peak temporal-average intensity of less than 0.72 W/cm2, and tone burst duration of 5–10 ms. Stimulation was performed with a 50–70% duty cycle (the rate occupied by an ultrasonic donation per second). The total stimulation time, including the rest period, did not exceed 30 min in all patients. Additionally, the device was used within a range that does not exceed a Mechanical Index of 1.9 (in situ peak rarefaction pressure less than 0.95 MPa according to the Food and Drug Administration safety standards for ultrasonic imaging devices). Treatment was carried out three times a week for 2 weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Eleven patients underwent FUS with a frequency of 250 kHz and spatial-peak temporal-average intensity of 0.72 W/cm<sup>2</sup>.",
+   "n_sessions_per_subject": "Treatment was carried out three times a week for 2 weeks (every",
+   "randomised": "This was a prospective, single-center, single-arm, open-label, exploratory trial with a 3-month follow-up.",
+   "blinding": "This was a prospective, single-center, single-arm, open-label, exploratory trial with a 3-month follow-up.",
+   "exposures[0].fundamental_frequency_khz": "Low-energy FUS had a frequency of 250 kHz, spatial-peak temporal-average intensity of less than $0 . 7 2 W / \\mathrm { c m } ^ { 2 } ,$ and tone burst duration of 5–10 ms.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Eleven patients underwent FUS with a frequency of 250 kHz and spatial-peak temporal-average intensity of 0.72 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "Low-energy FUS had a frequency of 250 kHz, spatial-peak temporal-average intensity of less than $0 . 7 2 W / \\mathrm { c m } ^ { 2 } ,$ and tone burst duration of 5–10 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Low-energy FUS had a frequency of 250 kHz, spatial-peak temporal-average intensity of less than $0 . 7 2 W / \\mathrm { c m } ^ { 2 } ,$ and tone burst duration of 5–10 ms. Stimulation was performed with a 50–70% duty cycle (the rate occupied by an ultrasonic donation per second).",
+   "exposures[0].device.manufacturer": "TcNgFUS was performed using an NS-US100 ® (Neurosona Corporation, Seoul, TcNgFUS was performed using an NS-US100 ® (Neurosona Corporation, Seoul, Re Republic of Korea).",
+   "exposures[0].device.model": "TcNgFUS was performed using an NS-US100 ® (Neurosona Corporation, Seoul, TcNgFUS was performed using an NS-US100 ® (Neurosona Corporation, Seoul, Re Republic of Korea)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "12 patients enrolled/recruited; 1 withdrew consent during follow-up leaving 11 in the final analysis. n_subjects reported here is the enrolled/treated total (12); flagged because analysed n=11."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states frequency (3x/week for 2 weeks) rather than a single total session count; 6 is derived by simple multiplication of the stated schedule."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is not numerically stated; only tone-burst duration and duty cycle are given, and duty-cycle/PRF cannot be used to resolve pulse duration since pulse duration is already directly stated as a range."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper states the device was operated 'within a range that does not exceed... in situ peak rarefaction pressure less than 0.95 MPa' – this is a stated safety ceiling/compliance limit, not necessarily the actual delivered pressure, so no specific pressure value was recorded."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity of 0.72 W/cm2 (abstract) / 'less than 0.72 W/cm2' (Methods) is not explicitly assigned to a free-field or in-situ domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

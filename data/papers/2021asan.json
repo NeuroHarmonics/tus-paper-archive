@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021asan",
+ "doi": "10.1016/j.brs.2021.03.004",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "extracellular single-unit recording of cerebellar Purkinje cell simple spikes",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Purkinje cell simple spikes were entrained to the ultrasound pulse pattern with a probability peak shortly after pulse onset; overall firing rate was unchanged, and authors describe the immediate net effect as excitatory, though longer pulses produced a wider, delayed response suggesting an additional inhibitory component.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Cerebellar cortex sonication with varying pulse duration and PRF",
+   "target": {
+    "terms": [
+     "cerebellar_cortex"
+    ],
+    "label": "cerebellar vermis lobule 6 or 7"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Scientific Solutions Americas Inc.",
+    "model": "V-301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     88,
+     438
+    ],
+    "isppa_w_cm2": [
+     0.26,
+     6.4
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     50,
+     100
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Ten-second-long neural recordings were collected and each second of recording contained 500 ms of ultrasound stimulation followed by 500 ms of no-stimulation period. The PRF was set to either 50 Hz or 100 Hz to make it close to the spontaneous firing rates of PCs. The pulse duration was adjusted to 0.5, 1, or 2 ms in sequential trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Six male Sprague Dawley rats (320e350 g) were used in this study.",
+   "exposures[0].fundamental_frequency_khz": "The carrier frequency of the sinusoidal signal was set to 500 kHz, corresponding to the peak efficiency of the transducer.",
+   "exposures[0].free_field.pressure_kpa": "At 2.5 mm away from the focal plane (Fig. 2G), the peak pressure was measured as 2.5 kPa/V and the peak pressure amplitudes were estimated to be between 88 kPa and 438 kPa for the transducer voltages of 35 Vpp and 175 Vpp respectively, with corresponding spatial-peak-pulse-average intensity (I\\_SPPA) levels of $0 . 2 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 6.4 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.isppa_w_cm2": "At 2.5 mm away from the focal plane (Fig. 2G), the peak pressure was measured as 2.5 kPa/V and the peak pressure amplitudes were estimated to be between 88 kPa and 438 kPa for the transducer voltages of 35 Vpp and 175 Vpp respectively, with corresponding spatial-peak-pulse-average intensity (I\\_SPPA) levels of $0 . 2 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 6.4 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse duration was adjusted to 0.5, 1, or 2 ms in sequential trials.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The PRF was set to either 50 Hz or 100 Hz to make it close to the spontaneous firing rates of PCs.",
+   "exposures[0].timing.sonication_duration_s": "Ten-second-long neural recordings were collected and each second of recording contained 500 ms of ultrasound stimulation followed by 500 ms of no-stimulation period.",
+   "exposures[0].device.manufacturer": "31 mm, Olympus Scientific Solutions Americas Inc., Waltham, MA) at the posterior side of the cerebellum (Fig.",
+   "exposures[0].device.model": "The ultrasonic stimulation was applied using a 500-kHz immersion-type ultrasonic transducer (V-301-SU, focal length 31.75 mm from the transducer rim, diam."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Pressure/intensity range is from water-tank hydrophone calibration; paper states these should be considered upper bounds for the actual tissue exposure since exact PC location within the field was unknown, so free-field vs in-situ assignment is uncertain."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not directly stated; not computed from pulse duration and PRF per protocol."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "18 Purkinje cells were recorded across 6 animals; n_subjects given as number of animals, not units."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026cooper",
+ "doi": "10.21203/rs.3.rs-10503490/v1",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "chronic_pain",
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 36,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour",
+  "clinical_scale"
+ ],
+ "readout_other": "Trial-by-trial open-ended subjective reports scored by valence (positive/neutral/negative); numeric rating scale (NRS) and PROMIS pain intensity (chronic pain cohort); PANAS-X Sadness subscale and 6-item Hamilton Depression Rating Scale (HDRS-6) (TRD cohort)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Study assessed subjective cognitive-emotional valence and clinical symptom change rather than neurophysiological excitation/inhibition. Active sonication produced more non-neutral (mostly positive-valence) immediate responses than sham, and positive response rate predicted subsequent reductions in pain/depression severity.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU to ACC subregions (sgACC, pgACC, dACC) in chronic pain and treatment-resistant depression cohorts",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex",
+     "pregenual_anterior_cingulate_cortex",
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "anterior cingulate cortex (ACC) subdivisions: subgenual (sgACC), pregenual (pgACC), and dorsal ACC (dACC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": 31,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     30,
+     180
+    ],
+    "protocol_description": "Individual brief stimulation trials ranged 30 seconds to three minutes, delivered over three sequential blocks per session and separated by short pauses (15-60 seconds) for subjective reporting; each treatment session lasted approximately 60 minutes with 39-44 cumulative trial minutes. Within each trial, 30-ms bursts (5 ms on/5 ms off, 50% pulse duty cycle) recurred at intervals of 0.7-1.4 s (burst duty cycle 2-4%), giving an overall duty cycle of 1-2% across the trial."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Here we describe the subjective reports of 36 individuals diagnosed with either chronic pain or major depression who received repeated brief stimulation trials (807 active, 797 sham; duration 30s-3min) spanning the dorsoventral extent of the ACC.",
+   "n_sessions_per_subject": "Both studies utilized similar double-blind, randomized, sham-controlled crossover designs involving LIFU stimulation across two designated stimulation visits (Fig. 1).",
+   "exposures[0].fundamental_frequency_khz": "Sonication was delivered during trials lasting 30 seconds to three minutes with a 650-kHz carrier frequency and estimated peak pressure amplitude of 1.0 MPa following skull attenuation correction.",
+   "exposures[0].in_situ.pressure_kpa": "Sonication was delivered during trials lasting 30 seconds to three minutes with a 650-kHz carrier frequency and estimated peak pressure amplitude of 1.0 MPa following skull attenuation correction.",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimated mechanical index was 1.2, spatial peak pulse-average intensity was 31 W/cm², and spatial-peak temporalaverage intensity was < 720 mW/cm², meeting FDA 510(k) Track 3 guidelines for diagnostic ultrasound and consensus criteria for non-significant-risk transcranial ultrasound [33].",
+   "exposures[0].timing.pulse_duration_ms": "Bursts were 30 ms in duration, alternating 5 ms on and 5 ms off (pulse duty cycle 50%).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Bursts were 30 ms in duration, alternating 5 ms on and 5 ms off (pulse duty cycle 50%).",
+   "exposures[0].timing.duty_cycle_pct": "Bursts were 30 ms in duration, alternating 5 ms on and 5 ms off (pulse duty cycle 50%).",
+   "exposures[0].timing.sonication_duration_s": "Sonication was delivered during trials lasting 30 seconds to three minutes with a 650-kHz carrier frequency and estimated peak pressure amplitude of 1.0 MPa following skull attenuation correction."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "Chronic pain cohort was sampled across eight ACC targets (sgACC, pgACC, dACC) and the TRD cohort mainly across three sgACC subregions; pooled into one exposure with combined target terms since acoustic parameters were identical across targets and outcomes are reported per-parcel rather than per-exposure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (100 Hz) derived directly from the stated on/off sub-pulse durations (5 ms on + 5 ms off = 10 ms period), a period-to-frequency unit conversion rather than independent arithmetic."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The 30-ms burst is treated as the uninterrupted train; bursts recurred every 0.7-1.4 s within a longer 30 s-3 min trial (burst duty cycle 2-4%, overall duty cycle 1-2%), a nested structure described in protocol_description rather than the four numeric fields."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Paper states ISPTA was '< 720 mW/cm2' (an upper bound); recorded as 0.72 W/cm2."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Device manufacturer/model not named in this paper; described only as 'a novel low-intensity transcranial focused ultrasound device' referencing prior publications (Riis et al., IEEE Trans Biomed Eng 2024; Commun Eng 2024)."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study measured subjective cognitive-emotional valence and clinical scores, not a neurophysiological excitatory/inhibitory readout; classified as not_assessed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

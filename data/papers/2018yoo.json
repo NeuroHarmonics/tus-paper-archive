@@ -1,0 +1,180 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018yoo",
+ "doi": "10.1002/ima.22262",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Somatosensory evoked potentials (SEP) via needle EEG electrodes, evoked by electrical stimulation of the hind limb",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "FUS produced SEP waveforms that differed from sham (additional/shifted peaks) persisting beyond 35 min post-sonication, but the authors could not determine whether the change reflected potentiation or depression of excitability.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Theoretical bioheat modelling estimated a temperature rise of 0.093 degrees C at the FUS focus, judged negligible; thermocouple measurement at the focus during a separate 10 min session at room temperature showed no measurable temperature change.",
+ "exposures": [
+  {
+   "label": "Wearable transcranial FUS to somatosensory area (hind limb representation)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory area (of the left hind limb)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 4.2,
+    "ispta_w_cm2": 0.21
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 600,
+    "protocol_description": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (5% duty cycle) at 4.2 W/cm2 Isppa (210 mW/cm2 Ispta), applied transcranially for 10 min. SEP was measured twice before sonication (Base 1 at -5 min, Base 2 at -2 min) and five times after (Post 1-5 at 5, 10, 15, 25, and 35 min post-sonication); sham sessions used the identical setup without sonication, on a different day, with FUS/sham order randomized and balanced across animals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Sprague-Dawley rats (all male; $n = 1 1 )$ underwent surgery to implant a pedestal (Plastics One, Roanoke, VA) to the skull using a cyanoacrylate adhesive (Loctite 4541; Loctite Corporation, Rocky Hill, CT) with two screws to anchor the pedestal to the skull.",
+   "exposures[0].fundamental_frequency_khz": "A fundamental ultrasound frequency of 650 kHz was used and the acoustic focus was formed 10.5 mm away from the exit plane of the transducer. The size of the focus was 7.5 mm in length and 2.5 mm in diameter, being measured at full-width at half-maximum (FWHM) of acoustic intensity profile (Figure 1C,D).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (i.e., 5% duty cycle) at 4.2 W/cm<sup>2</sup> spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } ; \\mathrm { i . e . , } 2 1 0 \\mathrm { \\ m W / c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ based on the parameters that have shown transient suppressive effects on cortical excitability.<sup>5</sup> The parameter setting does not raise tissue temperature.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (i.e., 5% duty cycle) at 4.2 W/cm<sup>2</sup> spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } ; \\mathrm { i . e . , } 2 1 0 \\mathrm { \\ m W / c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ based on the parameters that have shown transient suppressive effects on cortical excitability.<sup>5</sup> The parameter setting does not raise tissue temperature.",
+   "exposures[0].timing.pulse_duration_ms": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (i.e., 5% duty cycle) at 4.2 W/cm<sup>2</sup> spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } ; \\mathrm { i . e . , } 2 1 0 \\mathrm { \\ m W / c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ based on the parameters that have shown transient suppressive effects on cortical excitability.<sup>5</sup> The parameter setting does not raise tissue temperature.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (i.e., 5% duty cycle) at 4.2 W/cm<sup>2</sup> spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } ; \\mathrm { i . e . , } 2 1 0 \\mathrm { \\ m W / c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ based on the parameters that have shown transient suppressive effects on cortical excitability.<sup>5</sup> The parameter setting does not raise tissue temperature.",
+   "exposures[0].timing.duty_cycle_pct": "FUS was given with 100 Hz pulse repetition frequency, 0.5 ms tone burst duration (i.e., 5% duty cycle) at 4.2 W/cm<sup>2</sup> spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } ; \\mathrm { i . e . , } 2 1 0 \\mathrm { \\ m W / c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ based on the parameters that have shown transient suppressive effects on cortical excitability.<sup>5</sup> The parameter setting does not raise tissue temperature.",
+   "exposures[0].timing.sonication_duration_s": "We transcranially applied low-intensity FUS (210 mW/cm<sup>2</sup> spatial-peak temporal-average intensity; $I _ { \\mathrm { s p t a } } )$ to the somatosensory areas of the rat brain for 10 min at a low duty cycle (5%; in a pulsed mode), far lower than the level that could alter the tissue temperature.<sup>21</sup> Concurrently, we measured electroencephalographic (EEG) SEP induced by the unilateral electrical stimulation of the hind limb before and up to 35 min after the sonication to examine the presence of differential SEP features affected by FUS. The sham sessions (i.e., without sonication using the same experimental setup) were also conducted to provide the control condition.",
+   "n_sessions_per_subject": "We also conducted the sham FUS session (i.e., no sonication, otherwise using the same experimental settings) for each of the animals on different days (with a 2–3 days gap between the sessions)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Paper does not state whether the reported Isppa/Ispta values are free-field or in-situ/derated; placed in unspecified_domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

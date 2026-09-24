@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021collins",
+ "doi": "10.1523/eneuro.0514-20.2021",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "medicinal leech (Hirudo verbana)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  26,
+  21,
+  4
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "extracellular suction-electrode recording of DP nerve/DE-3 spiking; intracellular sharp-electrode recording of DE-3 soma",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Of 18 responsive DE-3 motoneurons, 13 showed inhibition (mean 43.3% decrease in firing) and 4 showed excitation (mean 60.7% increase); the predominant, direct, thermally-mediated effect was inhibition via axonal conduction block.",
+ "adverse_events": "observed",
+ "safety_notes": "A minority of strongly inhibited nerves failed to recover baseline firing for the remainder of viability (e.g., one nerve fired only once 60 s after stimulus end); most nerves (77.8%) recovered within 20% of baseline.",
+ "exposures": [
+  {
+   "label": "960-kHz pulsed US applied to the dorsal posterior (DP) nerve / DE-3 motoneuron axon",
+   "target": {
+    "terms": [
+     "leech_neurons"
+    ],
+    "label": "DE-3 motoneuron axon in the dorsal posterior (DP) nerve of the medicinal leech"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-102MR"
+   },
+   "fundamental_frequency_khz": 960,
+   "free_field": {
+    "pressure_kpa": [
+     660,
+     1300
+    ],
+    "isppa_w_cm2": 14.52,
+    "ispta_w_cm2": 4.84
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": [
+     0.1,
+     0.316,
+     1.0,
+     3.16,
+     10,
+     30
+    ],
+    "protocol_description": "US pulses of 290 cycles (~300 us) applied at a 1-kHz pulse repetition frequency (intrapulse duty cycle 30%) for a 30-s stimulus train, within a 90-s trial (30 s baseline, 30 s stimulus, 30 s recovery, with longer recovery for shorter-duration pilot trials). Five shorter application durations (100 ms-10 s) were piloted first and failed to reliably modulate firing before 30 s was adopted as the standard duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We applied 960-kHz US to DP nerves between the ganglion and the suction electrode recording site at the distal end of the DP nerve (Fig. 1D). US was generated with a Sonic Concepts H-102MR transducer coupled with a focusing cone filled with degassed, deionized water. Waveforms were designed by an Agilent 33500B Series function generator and triggered by TTL pulses generated by an Axon CNS Digidata 1440A via pClamp software. Waveforms were amplified by an E&I 100W RF linear power amplifier (model 2100L), and impedance matched with a Sonic Concepts matching network. US pulses consisted of 290 cycles and were 300 <sub>m</sub>s in duration. We applied 500 pulses/s at a 1-kHz pulse repetition frequency; pulse parameters are diagrammed in Figure 2A.",
+   "exposures[0].timing.pulse_duration_ms": "We applied 960-kHz US to DP nerves between the ganglion and the suction electrode recording site at the distal end of the DP nerve (Fig. 1D). US was generated with a Sonic Concepts H-102MR transducer coupled with a focusing cone filled with degassed, deionized water. Waveforms were designed by an Agilent 33500B Series function generator and triggered by TTL pulses generated by an Axon CNS Digidata 1440A via pClamp software. Waveforms were amplified by an E&I 100W RF linear power amplifier (model 2100L), and impedance matched with a Sonic Concepts matching network. US pulses consisted of 290 cycles and were 300 <sub>m</sub>s in duration. We applied 500 pulses/s at a 1-kHz pulse repetition frequency; pulse parameters are diagrammed in Figure 2A.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We applied 960-kHz US to DP nerves between the ganglion and the suction electrode recording site at the distal end of the DP nerve (Fig. 1D). US was generated with a Sonic Concepts H-102MR transducer coupled with a focusing cone filled with degassed, deionized water. Waveforms were designed by an Agilent 33500B Series function generator and triggered by TTL pulses generated by an Axon CNS Digidata 1440A via pClamp software. Waveforms were amplified by an E&I 100W RF linear power amplifier (model 2100L), and impedance matched with a Sonic Concepts matching network. US pulses consisted of 290 cycles and were 300 <sub>m</sub>s in duration. We applied 500 pulses/s at a 1-kHz pulse repetition frequency; pulse parameters are diagrammed in Figure 2A.",
+   "exposures[0].timing.duty_cycle_pct": "Figure 2. US pulse parameters and trial design with an example response. A, Each US application trial lasted 90 s in duration wherein 960-kHz pulsed US was applied for 30 s, preceded by a baseline period (30 s; example, top trace). Each US pulse was 300 ms in duration (bottom trace), and was applied with a 1-kHz pulse repetition frequency with a 50% duty cycle (middle trace; intrapulse duty cycle of 30%). B, Example of extracellular DE-3 recorded spikes with the US-associated artifact (top trace). The same recording after filtering the data with a sixth-order low-pass Butterworth filter (frequency cutoff = 1000 Hz; middle trace). Extracellular spike data from the filtered trace binned in 1-s intervals to yield spike frequency in Hertz (bottom trace). The US application period is denoted by the stimulus period box; the analysis period is denoted by the analysis box.",
+   "exposures[0].timing.sonication_duration_s": "We first tested DP nerves (N = 10) with US at five different application durations (100 ms, 316 ms, 1.0 s, 3.16 s, and 10 s). Applications shorter than 10 s failed to discernibly modulate DE-3 firing rate in any of the nerves tested or evoke firing in other neurons whose axons pass through the DP nerve. To determine whether longer durations would yield more consistent modulation, we extended the application time to 30 s. Our initial attempts suggested that this stimulus duration yielded more reliable and dramatic modulation than shorter durations.",
+   "n_subjects": "We thus performed US trials on an additional 21 nerves $( N = 2 1 )$ on a latex substrate with the recording dish positioned over a large water bath to enable better dissipation of heat (schematic, Fig. 5A).",
+   "direction_of_effect": "We characterized the effects of 30-s US applications after determining that this stimulus duration yielded more reliable outcomes than shorter durations (see Materials and Methods). To determine the quantitative effects of 30 s of US on DE-3, we measured the activity of 48 DP nerves $( N = 4 8 )$ from 18 leeches. Twenty-six nerves were exposed to 30 s of 960-kHz US; a schematic of an experimental trial is shown in Figure 2. The remaining nerves (N = 22) served as untreated controls. Six nerves (four treated with US, two controls) were excluded from analysis because of low spontaneous firing rates (,1 Hz; N = 3 from US group, N = 1 from control group) or high firing variability (e.g., bursting activity; N = 1 each from US and control; for exclusion criteria, see Materials and Methods). Thus, N = 22 nerves exposed to US were subsequently analyzed. Maximal changes in DE-3 firing occurred during the last 10 s of application and continued for an additional 10 s (Fig. 2B, analysis box in third trace). Firing rates during this 20-s peak period were normalized to the mean baseline firing rate. Representative traces of US-induced inhibitory and excitatory effects are shown in Figure 3A alongside a representative control trial. Normalized means of US-treated and control nerve firing rates during the analysis period are displayed in Figure 3B. Mean deviation from baseline of firing of all US-treated nerves was $4 7 . 3 \\pm 7 . 8 9 \\%$ (statistics refer to mean 6 SEM). Mean deviation from baseline of control nerves was $4 . 5 6 \\pm 5 . 1 0 \\%$ In control nerves, firing during the analysis window was largely consistent with baseline, with only 2/20 (10.0%) having mean firing rates that differed by .20%. For the US condition, 18/22 (81.8%) of treated nerves showed substantial modulation of activity (Fisher’s exact test, $p = 2 . 8 5 1 8 \\mathsf { e } - 0 6 ) ^ { \\circ }$ . In the US group, we observed mainly inhibitory responses (13 out of 18; $m e a n { = } 4 3 . 3 \\pm 7 . 6 3 \\%$ decrease in firing rate from baseline). There were a few excitatory cases (four out of 18; $m e a n { = } 6 0 . 7 \\pm 1 5 . 1 \\%$ increase in firing); 1/18 omitted (see Materials and Methods). Some of these excitatory cases in the treated nerves may have been because of some inherent variability across preparations since a similar extent of excitation was also observed across the control nerves. As will be addressed in the following sections, greater excitatory effects may be elicited through US stimulation of presynaptic or synaptic mechanisms rather than direct activation of the soma or axon of a motoneuron; thus, we cannot rule out the possibility that US stimulation was not completely isolated to the DP nerve for the excitatory cases shown in Figure 3B.",
+   "n_sessions_per_subject": "All reported trials were performed on stimulus-naive nerves. Typical trials were 90 s in duration: 30 s of baseline, 30 s of stimulus application, and 30 s of recovery (a sample trial is shown in Fig. 2A). Shorter pulse trials were also 90 s, but with longer recovery periods to compensate for shorter stimulation periods. Recovery periods were extended in trials in which nerves failed to return to within 20% of baseline firing rate until recovery was achieved, or until sufficient time passed to impair nerve viability (;1 h). Control trials were equivalent in duration but did not include stimulus application.",
+   "exposures[0].device.manufacturer": "US was generated with a Sonic Concepts H-102MR transducer coupled with a focusing cone filled with degassed, deionized water.",
+   "exposures[0].device.model": "US was generated with a Sonic Concepts H-102MR transducer coupled with a focusing cone filled with degassed, deionized water.",
+   "exposures[0].free_field.pressure_kpa": "we doubled US absolute peak negative pressure to 1.3 MPa in four nerves in our low-heat latex dish paradigm.",
+   "exposures[0].free_field.isppa_w_cm2": "Absolute peak negative pressure was ;660 kPa, yielding a spatial peak pulse average intensity (I ) of 14.52 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "Our 30% duty cycle yielded a spatial peak temporal average intensity $( \\mathsf { I } _ { \\mathsf { S P T A } } )$ of 4.84 W/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Figure 2 legend states 'Each US pulse was 300 ms in duration', but the Methods text states pulses were '290 cycles and were 300 <micro>s [us] in duration' (consistent with 290 cycles at 960 kHz ~=302 us); the figure legend's 'ms' appears to be a units/typo error, so 300 us (0.3 ms) is used."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Figure 2 legend gives two different duty-cycle figures in the same sentence: '50% duty cycle' and 'intrapulse duty cycle of 30%'. 30% is consistent with the stated 300 us pulse duration and 1 kHz PRF (1 ms period); 50% is not explained and may refer to a different (unspecified) duty parameter."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Methods text states 'We applied 500 pulses/s at a 1-kHz pulse repetition frequency', which is internally inconsistent (500 pulses/s implies 500 Hz, not 1 kHz); 1 kHz is used here as the explicitly labeled 'pulse repetition frequency'."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain (free-field vs in-situ) is not stated by the paper; the leech nerve was immersed directly in a saline bath (no intervening skull/tissue), and pressure was characterized by hydrophone in that setting."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "26 nerves were exposed to the main 30-s/960-kHz protocol (22 analysed after exclusions); additional, overlapping/non-overlapping subsets of nerves were also tested under modified conditions (dual-recording N=4, Ca2+-free saline N=10, low-heat latex-dish N=21, pressure-doubled N=4), which are not summed into a single total."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "neither",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

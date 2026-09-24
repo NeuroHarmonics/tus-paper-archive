@@ -1,0 +1,186 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2014mueller",
+ "doi": "10.1016/j.brs.2014.08.008",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  18,
+  7
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Instantaneous EEG phase and phase rate (beta 13-30 Hz, gamma 30-55 Hz) and spectral power at intrinsic and median-nerve somatosensory-evoked-potential (SEP) epochs",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "tFUS altered the phase distribution of intrinsic beta (not gamma) EEG activity and the phase rate of both beta and gamma bands; evoked SEP phase effects were seen in the early but not late epoch. These are changes in oscillatory phase dynamics rather than a clear excitatory/inhibitory shift, and effects were abolished when the transducer was moved 1 cm laterally.",
+ "adverse_events": "not_reported",
+ "safety_notes": "We have previously verified this waveform does not produce heating of the skin or skull bone.",
+ "exposures": [
+  {
+   "label": "tFUS to somatosensory cortex (EEG site CP3)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex, targeted from 10-20 EEG site CP3 (effectively targeting S1)"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Blatek, Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 800,
+    "isppa_w_cm2": 23.87,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "A total of 120 ultrasonic stimuli (0.5 s each) were delivered at an ISI of 6 s (with 4 s positive randomisation) from EEG site CP3, with median nerve stimulation time-locked to occur 100 ms after tFUS onset (120 median nerve stimuli per condition). Sham and tFUS were run in a single session, counterbalanced across subjects; a separate cohort received tFUS 1 cm lateral to CP3 as a spatial-specificity control."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Two separate subject groups were used in experiments. The first experiment included eighteen volunteer participants (11 male, 7 female, age 18e54, mean age 29.62 10.9), which performed the experimental task with the US transducer placed at CP3.",
+   "n_sessions_per_subject": "The tFUS treatment condition involved acoustically coupling the active face of the US transducer to the scalp, while the sham condition involved flipping the transducer such that the inactive face made contact with the scalp. In this manner, ultrasonic energy was not transmitted into the head and the active buzzing sound of the transducer was identical for both the sham and tFUS condition.",
+   "exposures[0].fundamental_frequency_khz": "The waveform employed for tFUS stimulation had the following parameters: Af 0.50 MHz, PD 360 ms, PRF 1.0 kHz and np 500.",
+   "exposures[0].free_field.pressure_kpa": "This produced a stimulus duration of 0.5 s yielding a peak rarefactional pressure of 0.80 MPa, a mechanical index of 1.13 and a spatial-peak pulse-average intensity (ISPPA) of 23.87 W/cm2 before transcutaneous and transcranial transmission.",
+   "exposures[0].free_field.isppa_w_cm2": "This produced a stimulus duration of 0.5 s yielding a peak rarefactional pressure of 0.80 MPa, a mechanical index of 1.13 and a spatial-peak pulse-average intensity (ISPPA) of 23.87 W/cm2 before transcutaneous and transcranial transmission.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse duration (PD) of the waveform was set to 0.36 ms by adjusting the number of cycles per pulse (c/p) on channel 2e180, and the stimulus duration (0.5 s) was set by adjusting the number of pulses (np) on channel 1e500.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The waveform employed for tFUS stimulation had the following parameters: Af 0.50 MHz, PD 360 ms, PRF 1.0 kHz and np 500.",
+   "exposures[0].timing.sonication_duration_s": "This produced a stimulus duration of 0.5 s yielding a peak rarefactional pressure of 0.80 MPa, a mechanical index of 1.13 and a spatial-peak pulse-average intensity (ISPPA) of 23.87 W/cm2 before transcutaneous and transcranial transmission.",
+   "exposures[0].device.manufacturer": "The output of channel 2 was sent through a 40-W linear RF amplifier (E&I 240L; Electronics & Innovation) before being sent to a custom-designed focused ultrasound transducer (Blatek, Inc., State College, PA) having a center frequency of 0.5 MHz, a diameter of 30 mm and a focal length of 30 mm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Earlier in the same paragraph the methods state the pulse duration 'was set to 0.36 ms' (180 cycles at 0.5 MHz), but the summary waveform line states 'PD 360 ms'; 360 ms is inconsistent with the stated PRF (1 kHz) and stimulus duration (500 pulses in 0.5 s), so 0.36 ms is almost certainly correct and 360 ms a units typo. Recorded as stated in the summary specification line (360 ms) per the no-correction rule."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives two separate cohort sizes (18 at CP3, 7 at the 1-cm-lateral site) and never states a combined total."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

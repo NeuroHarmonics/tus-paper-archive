@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022bao",
+ "doi": "10.1016/j.neulet.2022.136882",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "single-unit activity (SUA) recordings from SI and ACC; Von Frey Filament (VFF) mechanical threshold testing",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "liFUS to the L5 DRG increased pyramidal neuron spike frequency in SI (excitatory) beginning at 120 min post-treatment, while it attenuated (decreased) ACC interneuron firing (inhibitory) beginning at 80 min post-treatment.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "liFUS to left L5 DRG",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "left L5 dorsal root ganglion (DRG)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Acoustic MedSystems, Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 11000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 20,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 13,
+    "pulse_repetition_frequency_hz": 38,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 180,
+    "protocol_description": "Treatment occurred for 3 min at 20 W/cm2 and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50% duty cycling, a period of 90 µs, and a pulse width of 13 ms. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 49.4,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "species": "All animal work was approved by the Institutional Animal Care and Use Committee at Albany Medical College. Adult male Sprague-Dawley Rats (200–225 g, Taconic, Rensselaer, NY) were divided into 2 surgery groups, 2 treatment groups, and SUA recordings were performed in 1 of 2 brain regions.",
+   "n_subjects": "Results: Following CPNI surgery, all rats (n = 30) displayed a significant increase in mechanical sensitivity.",
+   "sham_type": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].target.label": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].fundamental_frequency_khz": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].timing.pulse_duration_ms": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].timing.duty_cycle_pct": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].timing.sonication_duration_s": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "n_sessions_per_subject": "liFUS treatment at the left L5 DRG occurred after the initial 20 min baseline neural spike recording period. The liFUS treatment site was identified by palpating for the iliac crest, and moving one vertebra up to the left L5 lumbar vertebrae. This location was marked and the skin area surrounding this location was shaved. Aquasonic 100 ultrasound jelly (Parker Laboratories, Fairfield, NJ) was applied to both the treatment site and the liFUS probe developed by Acoustic MedSystems, Inc. (AMC, Savoy, Illinois). The probe was angled to reliably target the L5 DRG. The probe contains 2 angled piezo transducers which focus treatment on a region at a depth of 5 mm. Treatment occurred for 3 min at 20 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and an ultrasonic frequency of 11 MHz pulsed at 38 Hz with 50 % duty cycling, a period of 90 µs, and a pulse width of 13 ms [4].",
+   "exposures[0].device.manufacturer": "c Acoustic Medical Systems, Savoy, IL, United States"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states a combined CPNI total (n=30, including both liFUS and sham liFUS animals) and gives neuron/unit counts per cohort in figure legends, but does not state the number of animals specifically receiving active liFUS."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper refers repeatedly to a 'CPNI sham liFUS' condition but never describes what the sham liFUS procedure entailed (e.g., device off, blocked, or aimed away), so mechanism is unknown."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states 'a period of 90 µs' alongside a 38 Hz PRF (implied period ~26.3 ms) and 13 ms pulse width; the 90 µs value is inconsistent with the other stated parameters (possible typo/unit error in source) and was not used for any field."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper states '20 W/cm2' without specifying whether this is Isppa or Ispta, or the measurement domain (free field vs. at target)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

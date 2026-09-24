@@ -1,0 +1,316 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021tseng",
+ "doi": "10.1016/j.isci.2021.102955",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  14,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Large-scale single-neuron GCaMP6f/jGCaMP7f calcium imaging (wide-field fluorescence microscope, 20 Hz)",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound reliably increased intracellular calcium (GCaMP6 fluorescence) in a large fraction of individual neurons in both hippocampal CA1 and motor cortex; responses in motor cortex were larger in amplitude and longer in duration than in hippocampus.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of hippocampal CA1 during calcium imaging in awake mice",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "hippocampus CA1"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "The Ultra Group Inc",
+    "model": "GS350-D13 (planar ultrasound transducer)"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": 440,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 24.3,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.214,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.1,
+    "protocol_description": "During each imaging session, mice experienced 20 trials of ultrasound stimulation, each trial lasting 30 or 60 s, with ultrasound onset 10 s after start of imaging. Each stimulation consisted of 200 pulses at 2 kHz, each pulse containing 75 cycles of 350 kHz sine wave ultrasound, for a total 100-ms-long stimulation period, delivered via a planar transducer placed under the animal's head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 42.8
+   }
+  },
+  {
+   "label": "Ultrasound stimulation of motor cortex during calcium imaging in awake mice",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "The Ultra Group Inc",
+    "model": "GS350-D13 (planar ultrasound transducer)"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": 440,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 26.3,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.214,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Following the same protocol as the hippocampal experiments, mice experienced 20 trials of 30 or 60 s each, with ultrasound onset 10 s after imaging start. Each stimulation consisted of 200 pulses at 2 kHz, each pulse containing 75 cycles of 350 kHz sine wave ultrasound, for a total 100-ms-long stimulation period, delivered via a planar transducer placed under the animal's head; an off-target control positioned the transducer under the abdomen instead."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 42.8
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We found that 1067 of the 5868 recorded neurons (18.2%) were significantly activated, exhibiting increased GCaMP6 fluorescence intensity upon ultrasound stimulation (Figure 2F and Table 1, n = 5868 neurons from 23 imaging sessions in 14 mice).",
+   "exposures[0].fundamental_frequency_khz": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[0].free_field.pressure_kpa": "During experiments, the ultrasound amplifier was set at 70% of its maximum power, re sulting a transducer output at 0.44 MPa at the end of the near field.",
+   "exposures[0].in_situ.pressure_kpa": "instantaneous pressure of 24.3 kPa (Figure 1B), whereas the motor cortex area under the imaging window received 26.3 kPa (Figure 1C).",
+   "exposures[0].timing.pulse_duration_ms": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[0].timing.sonication_duration_s": "We demonstrate that brief 100-ms-long pulses of ultrasound reliably elicit transient increases in intracellular calcium concentration in a large fraction of individual neurons in both the hippocampus and the motor cortex.",
+   "exposures[1].fundamental_frequency_khz": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[1].free_field.pressure_kpa": "During experiments, the ultrasound amplifier was set at 70% of its maximum power, re sulting a transducer output at 0.44 MPa at the end of the near field.",
+   "exposures[1].in_situ.pressure_kpa": "whereas the motor cortex area under the imaging window received 26.3 kPa (Figure 1C).",
+   "exposures[1].timing.pulse_duration_ms": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Each stimulation consisted of 200 pulses at 2 kHz, with each pulse containing 75 cycles of 350 kHz sine wave ultrasound delivered at 0.44 MPa peak pressure, similar to that used in Tufail et al. (Tufail et al., 2011).",
+   "exposures[1].timing.sonication_duration_s": "We demonstrate that brief 100-ms-long pulses of ultrasound reliably elicit transient increases in intracellular calcium concentration in a large fraction of individual neurons in both the hippocampus and the motor cortex.",
+   "exposures[0].device.manufacturer": "## Region-specific effects of ultrasound on individual neurons in the awake mammalian brain",
+   "exposures[0].device.model": "A commercial ultrasound transducer (GS350-D13, The Ultra Group Inc, PA) was placed under the head via a custom 3D printed holder that allowed for complete filling of ultrasound gel between the ultrasound transducer and the animal to ensure proper transfer of ultrasound to the head or the abdomen.",
+   "exposures[1].device.manufacturer": "## Region-specific effects of ultrasound on individual neurons in the awake mammalian brain",
+   "exposures[1].device.model": "A commercial ultrasound transducer (GS350-D13, The Ultra Group Inc, PA) was placed under the head via a custom 3D printed holder that allowed for complete filling of ultrasound gel between the ultrasound transducer and the animal to ensure proper transfer of ultrasound to the head or the abdomen."
+  },
+  "flags": [
+   {
+    "field": "exposures[*].timing.pulse_duration_ms",
+    "reason": "Computed as cycles-per-pulse divided by fundamental frequency (75 cycles / 350 kHz = 0.214 ms), which the extraction instructions list as an allowed unit conversion rather than prohibited arithmetic."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper never gives one aggregate subject count; reported group sizes for the two brain-region ultrasound exposures are given as a list (14 mice for hippocampus, 4 mice for motor cortex). Separate sham (3 mice) and off-target abdomen-control (5 mice) groups are not included since they did not receive on-target ultrasound."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Exact number (24.3 kPa) appears in the source text but the sentence is split awkwardly across a figure-caption insertion in the extracted markdown; quoted the sentence fragment containing the number as it appears verbatim."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

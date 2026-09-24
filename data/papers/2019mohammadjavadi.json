@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019mohammadjavadi",
+ "doi": "10.1016/j.brs.2019.03.005",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6 wild-type; TRIOBP and Samba LOXHD1 deaf knockout strains)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 32,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects",
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "emg_mep"
+ ],
+ "readout_other": "Auditory brainstem responses (ABR) to acoustic clicks/tones and to tFUS envelopes; forelimb EMG success rate, contraction duration and latency in response to tFUS",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS elicited forelimb EMG motor responses (muscle contraction) whose duration scaled linearly with ultrasound pulse duration; response magnitude/probability was unaffected by genetic deafness or by envelope smoothing that eliminated auditory brainstem responses, and response latency (~80 ms) greatly exceeded startle-reflex latency, indicating direct activation of central motor circuits rather than an auditory-mediated startle reflex.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to midbrain (motor pathways), all four experiments",
+   "target": {
+    "terms": [
+     "midbrain"
+    ],
+    "label": "midbrain, which contains several motor pathways"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1,
+     2.79,
+     3.78
+    ],
+    "ispta_w_cm2": [
+     2.9
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1500,
+     8000
+    ],
+    "duty_cycle_pct": [
+     80
+    ],
+    "sonication_duration_s": [
+     0.08,
+     0.16,
+     0.32,
+     0.64
+    ],
+    "protocol_description": "Four 80-ms ultrasound envelopes were compared: continuous wave with a rectangular on/off transition (CWre), pulsed wave with rectangular envelope at 1.5 kHz PRF (PW1.5re, 80% duty cycle), pulsed wave with rectangular envelope at 8.0 kHz PRF (PW8.0re, 80% duty cycle), and continuous wave with a 12-ms smoothed on/off envelope (CWse). Experiment 1 used CWre at ISPPA 1, 2.79 or 3.78 W/cm2 (plus a 0 W/cm2 sham) to compare hearing vs. genetically deaf mice. Experiments 2-3 compared the four envelopes at a constant ISPTA of 2.9 W/cm2 and 80 ms duration. Experiment 4 used CWre at ISPTA 2.9 W/cm2 with durations of 80, 160, 320 or 640 ms (plus a 0 W/cm2 sham) to test the relationship between US duration and EMG response duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty-two mice were studied. Twenty-one were normal hearing (WT C57BL/6) mice (Charles Rivers, Wilmington, MA, USA) and eleven were genetically deaf knockout mice.",
+   "randomised": "For this experiment, a single run contained twenty sonications in random order: six sonication envelopes at each intensity level, and two sham sonications at $0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ .",
+   "exposures[0].fundamental_frequency_khz": "A 500 kHz ultrasound signal was delivered from a planar ultrasound transducer (V301, Olympus, Waltham, MA, USA) consistent with the transducers used other studies [8,10], as opposed to the highly focused transducers.",
+   "exposures[0].free_field.isppa_w_cm2": "The ultrasound waveforms used in these experiments were 80 ms $( \\mathrm { C W _ { r e } } )$ with intensities of 1, 2.79 and $3 . 7 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ .",
+   "exposures[0].free_field.ispta_w_cm2": "Eight mice were sonicated using four US envelopes $( \\mathrm { C W _ { r e } } , \\ \\mathrm { P W _ { 1 . 5 r e } } , \\ \\mathrm { P W _ { 8 . 0 r e } } ,$ and $\\mathrm { C W } _ { \\mathsf { s e } } )$ at a constant I<sub>SPTA</sub> $( 2 . 9 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "2. Pulsed wave with a rectangular envelope and a 1.5 kHz pulse repetition frequency $( \\mathrm { P R F } ) ( \\mathrm { P W } _ { 1 . 5 \\mathrm { r e } } ) .$ . The waveform was generated by triggering the above-referenced function generator with pulse waves produced at the 1.5 kHz pulse repetition frequency using a second function generator (33220 A, Agilent Santa Clara, CA, USA), with an 80% duty cycle rectangular envelope.",
+   "exposures[0].timing.duty_cycle_pct": "2. Pulsed wave with a rectangular envelope and a 1.5 kHz pulse repetition frequency $( \\mathrm { P R F } ) ( \\mathrm { P W } _ { 1 . 5 \\mathrm { r e } } ) .$ . The waveform was generated by triggering the above-referenced function generator with pulse waves produced at the 1.5 kHz pulse repetition frequency using a second function generator (33220 A, Agilent Santa Clara, CA, USA), with an 80% duty cycle rectangular envelope.",
+   "exposures[0].timing.sonication_duration_s": "The fourth experiment was designed to determine if motor response duration was related to sonication duration using a single US envelope $( \\mathrm { C W _ { r e } } )$ with durations of 80, 160, 320 and 640 ms.",
+   "exposures[0].device.manufacturer": "A 500 kHz ultrasound signal was delivered from a planar ultrasound transducer (V301, Olympus, Waltham, MA, USA) consistent with the transducers used other studies [8,10], as opposed to the highly focused transducers.",
+   "exposures[0].device.model": "A 500 kHz ultrasound signal was delivered from a planar ultrasound transducer (V301, Olympus, Waltham, MA, USA) consistent with the transducers used other studies [8,10], as opposed to the highly focused transducers."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Individual tone-burst width for the pulsed envelopes (PW1.5re, PW8.0re) is not stated directly; only PRF (1.5/8.0 kHz) and duty cycle (80%) are given, and pulse width was not computed per extraction rules. For the continuous-wave envelopes (CWre, CWse) pulse_duration_ms would be null by convention, but cannot be represented separately from the pulsed envelopes' value within a single list-valued field for this single target x frequency exposure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "The 8.0 kHz PRF value (list) is sourced from the sentence describing PW8.0re ('This signal is the same as in number 2 above except with a PRF of 8.0 kHz'), not reproduced in source_quotes; the quoted sentence covers the 1.5 kHz value."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Pressure was measured with a hydrophone in a degassed water tank (~2 mm from the waveguide tip), but ISPPA/ISPTA were computed using brain-tissue acoustic impedance (density 1040 kg/m3, speed of sound 1560 m/s) because 'the mouse skull has negligible attenuation for ultrasound at 500 kHz... attenuation due to the skull was ignored.' Values are recorded under free_field since they were physically measured in water; the paper's stated assumption implies these approximate in-brain values too, but no explicit in-situ number is separately restated, so in_situ is left not_reported."
+   },
+   {
+    "field": "conditions",
+    "reason": "TRIOBP and Samba LOXHD1 knockout mice are genetically deaf strains used as a mechanistic control to eliminate peripheral auditory input, not a disease model of translational relevance; conditions is recorded as healthy."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham sonications used 0 W/cm2 output (transducer present, no acoustic energy delivered); classified as inactive_transducer."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Single exposure (500 kHz, midbrain target) aggregates four sub-experiments that varied envelope shape (CW rectangular, PW at 1.5/8.0 kHz PRF, CW smoothed), intensity and duration; see protocol_description. Hearing status (WT vs. TRIOBP vs. Samba LOXHD1 deaf mice) is a within-exposure comparison arm, not a separate exposure.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

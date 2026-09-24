@@ -1,0 +1,163 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026kitahara",
+ "doi": "10.1002/tee.70263",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Fluo-4AM calcium imaging of auditory-cortex brain-slice neurons/glia, with pharmacological block of mechanosensitive channels using ruthenium red",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Four distinct calcium-response patterns were identified, including both excitatory (influx during stimulation followed by post-stimulus efflux) and inhibitory (efflux during stimulation, in some cases followed by delayed influx) activity across cells.",
+ "adverse_events": null,
+ "safety_notes": "Directly measured tissue temperature increased by only 0.0062 ± 0.010 °C during the 200-ms stimulation period, indicating negligible thermal effects; acoustic pressure was reported to be well below the cavitation threshold.",
+ "exposures": [
+  {
+   "label": "Continuous-wave ultrasound stimulation of auditory cortex brain slice",
+   "target": {
+    "terms": [
+     "auditory_cortex"
+    ],
+    "label": "auditory cortex (acute coronal brain slice)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "piezoelectric micromachined ultrasound transducer (PMUT)"
+   },
+   "fundamental_frequency_khz": 360,
+   "free_field": {
+    "pressure_kpa": 92.8,
+    "isppa_w_cm2": 0.291,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "A single 200-ms continuous-wave ultrasound stimulation was delivered per trial, 3 s after the start of fluorescence recording (10 s total per trial); ten trials were conducted per slice with 30-s intertrial intervals. Responses were compared against sham (0 Pa) stimulation trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fig. 8. Feature analysis of $\\mathrm { C a } ^ { 2 + }$ dynamics in the pre-US, stim, and post-US windows. A total of 76 cells were analyzed (a: 5 cells, b: 26 cells, c: 18 cells, and d: 27 cells) from 16 slices; $^ { * * * } p < 0 . 0 0 5$ . Dotted lines represent individual cells within each group, and the red line indicates the median. Increases in fluorescence intensity reflect intracellular $\\mathrm { C a } ^ { \\bar { 2 } + }$ influx, whereas decreases indicate intracellular $\\mathrm { C a } ^ { 2 + }$ efflux",
+   "exposures[0].fundamental_frequency_khz": "To quantify cellular activity before and after ultrasound stimulation, slices were loaded with the $\\mathrm { C a } ^ { 2 + }$ indicator Fluo-4AM (CS32, Dojindo Laboratories). Ultrasound stimuli consisted of continuous waves at 360 kHz with an acoustic pressure of 92.8 kPa and a duration of 200 ms $( I _ { \\mathrm { \\ s p p a } } = 2 9 1$ mW/cm<sup>2</sup> in the unit; Fig. 3). The waveform presented in Fig. 3 corresponds to the acoustic pressure signal measured in the experiment. The selection of burst duration was based on the standard transcranial ultrasound stimulation parameters [12], which typically evoke multiple action potentials in single neurons [10]. During each trial, artificial cerebrospinal fluid was perfused through the chamber that was mounted on the PMUT. The fluorescence recording began, and a single ultrasound stimulation was delivered after 3 s; imaging continued for a total of 10 s. Ten trials were conducted with 30-s intertrial intervals. Fluorescence imaging was performed using a fixed-stage upright microscope (BX61WI-35FL/IR7-2, Olympus) equipped with a 40 water-immersion objective lens (LUMPlanFI/IR, Olympus). The emitted fluorescence was captured using a CMOS camera (acA1920-155um, Basler) at a frame rate of 50 fps. Individual cells were identified in the resulting fluorescence images based on their cellular morphology.",
+   "exposures[0].free_field.pressure_kpa": "To quantify cellular activity before and after ultrasound stimulation, slices were loaded with the $\\mathrm { C a } ^ { 2 + }$ indicator Fluo-4AM (CS32, Dojindo Laboratories). Ultrasound stimuli consisted of continuous waves at 360 kHz with an acoustic pressure of 92.8 kPa and a duration of 200 ms $( I _ { \\mathrm { \\ s p p a } } = 2 9 1$ mW/cm<sup>2</sup> in the unit; Fig. 3). The waveform presented in Fig. 3 corresponds to the acoustic pressure signal measured in the experiment. The selection of burst duration was based on the standard transcranial ultrasound stimulation parameters [12], which typically evoke multiple action potentials in single neurons [10]. During each trial, artificial cerebrospinal fluid was perfused through the chamber that was mounted on the PMUT. The fluorescence recording began, and a single ultrasound stimulation was delivered after 3 s; imaging continued for a total of 10 s. Ten trials were conducted with 30-s intertrial intervals. Fluorescence imaging was performed using a fixed-stage upright microscope (BX61WI-35FL/IR7-2, Olympus) equipped with a 40 water-immersion objective lens (LUMPlanFI/IR, Olympus). The emitted fluorescence was captured using a CMOS camera (acA1920-155um, Basler) at a frame rate of 50 fps. Individual cells were identified in the resulting fluorescence images based on their cellular morphology.",
+   "exposures[0].free_field.isppa_w_cm2": "To quantify cellular activity before and after ultrasound stimulation, slices were loaded with the $\\mathrm { C a } ^ { 2 + }$ indicator Fluo-4AM (CS32, Dojindo Laboratories). Ultrasound stimuli consisted of continuous waves at 360 kHz with an acoustic pressure of 92.8 kPa and a duration of 200 ms $( I _ { \\mathrm { \\ s p p a } } = 2 9 1$ mW/cm<sup>2</sup> in the unit; Fig. 3). The waveform presented in Fig. 3 corresponds to the acoustic pressure signal measured in the experiment. The selection of burst duration was based on the standard transcranial ultrasound stimulation parameters [12], which typically evoke multiple action potentials in single neurons [10]. During each trial, artificial cerebrospinal fluid was perfused through the chamber that was mounted on the PMUT. The fluorescence recording began, and a single ultrasound stimulation was delivered after 3 s; imaging continued for a total of 10 s. Ten trials were conducted with 30-s intertrial intervals. Fluorescence imaging was performed using a fixed-stage upright microscope (BX61WI-35FL/IR7-2, Olympus) equipped with a 40 water-immersion objective lens (LUMPlanFI/IR, Olympus). The emitted fluorescence was captured using a CMOS camera (acA1920-155um, Basler) at a frame rate of 50 fps. Individual cells were identified in the resulting fluorescence images based on their cellular morphology.",
+   "exposures[0].timing.sonication_duration_s": "To quantify cellular activity before and after ultrasound stimulation, slices were loaded with the $\\mathrm { C a } ^ { 2 + }$ indicator Fluo-4AM (CS32, Dojindo Laboratories). Ultrasound stimuli consisted of continuous waves at 360 kHz with an acoustic pressure of 92.8 kPa and a duration of 200 ms $( I _ { \\mathrm { \\ s p p a } } = 2 9 1$ mW/cm<sup>2</sup> in the unit; Fig. 3). The waveform presented in Fig. 3 corresponds to the acoustic pressure signal measured in the experiment. The selection of burst duration was based on the standard transcranial ultrasound stimulation parameters [12], which typically evoke multiple action potentials in single neurons [10]. During each trial, artificial cerebrospinal fluid was perfused through the chamber that was mounted on the PMUT. The fluorescence recording began, and a single ultrasound stimulation was delivered after 3 s; imaging continued for a total of 10 s. Ten trials were conducted with 30-s intertrial intervals. Fluorescence imaging was performed using a fixed-stage upright microscope (BX61WI-35FL/IR7-2, Olympus) equipped with a 40 water-immersion objective lens (LUMPlanFI/IR, Olympus). The emitted fluorescence was captured using a CMOS camera (acA1920-155um, Basler) at a frame rate of 50 fps. Individual cells were identified in the resulting fluorescence images based on their cellular morphology.",
+   "exposures[0].timing.duty_cycle_pct": "To quantify cellular activity before and after ultrasound stimulation, slices were loaded with the $\\mathrm { C a } ^ { 2 + }$ indicator Fluo-4AM (CS32, Dojindo Laboratories). Ultrasound stimuli consisted of continuous waves at 360 kHz with an acoustic pressure of 92.8 kPa and a duration of 200 ms $( I _ { \\mathrm { \\ s p p a } } = 2 9 1$ mW/cm<sup>2</sup> in the unit; Fig. 3). The waveform presented in Fig. 3 corresponds to the acoustic pressure signal measured in the experiment. The selection of burst duration was based on the standard transcranial ultrasound stimulation parameters [12], which typically evoke multiple action potentials in single neurons [10]. During each trial, artificial cerebrospinal fluid was perfused through the chamber that was mounted on the PMUT. The fluorescence recording began, and a single ultrasound stimulation was delivered after 3 s; imaging continued for a total of 10 s. Ten trials were conducted with 30-s intertrial intervals. Fluorescence imaging was performed using a fixed-stage upright microscope (BX61WI-35FL/IR7-2, Olympus) equipped with a 40 water-immersion objective lens (LUMPlanFI/IR, Olympus). The emitted fluorescence was captured using a CMOS camera (acA1920-155um, Basler) at a frame rate of 50 fps. Individual cells were identified in the resulting fluorescence images based on their cellular morphology."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "92.8 kPa and 291 mW/cm2 were measured via hydrophone in water/calibration conditions at the stimulation voltage (60 Vpp); the paper does not separately report a pressure value measured with the brain slice in place, so domain is recorded as free-field rather than in-situ."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n_subjects is recorded as the 16 brain slices analysed (from 8 mice); subject_unit is 'preparation' since ultrasound was delivered to slices, not directly to the source animals."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

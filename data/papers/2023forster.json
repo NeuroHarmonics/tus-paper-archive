@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023forster",
+ "doi": "10.1016/j.jad.2023.02.032",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "<tr><td rowspan=\"2\">litFUS (n = 14)</td>",
+   "randomised": "In a randomized controlled double blind experimental setup with 55 participants, litFUS was used to inhibit the right lateral prefrontal cortex (lPFC), a region closely connected to CC modulation.",
+   "blinding": "In a randomized controlled double blind experimental setup with 55 participants, litFUS was used to inhibit the right lateral prefrontal cortex (lPFC), a region closely connected to CC modulation.",
+   "exposures[0].timing.duty_cycle_pct": "In this study, a two-minute application of litFUS was performed with a duty cycle of 0.5 %.",
+   "exposures[0].timing.sonication_duration_s": "In this study, a two-minute application of litFUS was performed with a duty cycle of 0.5 %.",
+   "exposures[0].device.manufacturer": "The low-intensity transcranial focused ultrasound (litFUS) was administered using a device manufactured by Thync (Los Gatos, USA).",
+   "n_sessions_per_subject": "following a 2-min application of litFUS. No further neuromodulation was carried out throughout the task."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only participants in the litFUS group (n=14) received real ultrasound; the Sham group (n=13) had the transducer aimed away from the head, and the Control/Experimental groups (n=15 each) had no contact with the ultrasound device at all."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Sonication parameters (frequency, pressure, intensity, PRF, pulse duration) are only shown in Fig. 2 ('The modulation itself is described by the parameters provided in Fig. 2'), which could not be read from the extracted text; recorded as not_reported rather than read off a figure."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Waveform coded as 'pulsed' based on the stated duty cycle of 0.5% (i.e., not continuous); PRF and individual pulse duration are not stated in the text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The procedure describes a single lab visit with one litFUS administration before the chess task, but no sentence explicitly states the number of sessions per participant."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour",
+  "clinical_scale"
+ ],
+ "readout_other": "Midline theta power spectral density at electrodes Fz and Pz; chess move-quality (engine pawn-unit evaluation function); BDI-V depression scale; visual analog mood scales (VAMS) and self-report ratings of control, effort, worry and will to win",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "The litFUS parameters used were expected, based on computational models (Plaksin et al.) and prior reviews, to have inhibitory effects on the right lPFC; the litFUS group showed lower midline theta power at Fz and Pz (indirectly reflecting reduced cingulate cortex activity) that was largely unaffected by participants' depression scores, unlike the sham and control groups.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "litFUS to right lateral prefrontal cortex (lPFC) prior to a learned-helplessness chess task",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "right lateral prefrontal cortex (lPFC), F8 electrode position"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Thync (Los Gatos, USA)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 0.5,
+    "sonication_duration_s": 120,
+    "protocol_description": "A single 2-minute application of litFUS (duty cycle 0.5%, i.e. active modulation time of only 0.6 s) was delivered to the F8 electrode position (right lPFC) via a gel pad, using a device manufactured by Thync, before participants played 8 games of chess against an unbeatable computer opponent. EEG, ECG and electrodermal measures were prepared afterward, so theta power was recorded approximately 30-90 minutes after litFUS administration (offline effects). Sham stimulation used the same transducer aimed away from the head so that a comparable audible sound was produced without therapeutic ultrasound delivery."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

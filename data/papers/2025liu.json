@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025liu",
+ "doi": "10.1007/s10072-024-07704-4",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  30,
+  30
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 8,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Simplified Fugl-Meyer Assessment (FMA); Barthel Index (BI); Transcranial Doppler (TCD) peak systolic (Vs) and mean (Vm) blood flow velocity of ACA/MCA/PCA",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "TUS (alone or combined with FNS) increased peak systolic and mean blood flow velocity in the ACA, MCA and PCA and improved FMA and Barthel Index scores relative to before treatment, with the TUS+FNS combined group showing greater improvement than either treatment alone; the study assessed clinical/vascular outcomes rather than a direct measure of cortical excitatory/inhibitory neuromodulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "After the treatment, a good effect was also obtained, and no patients were found [to have] obvious adverse reactions (wording as in source, likely a translation artifact).",
+ "exposures": [
+  {
+   "label": "Transcranial ultrasound stimulation to bilateral temporal and occipital windows",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "bilateral temporal window (1 cm above the zygomatic arch) and occipital window (1 cm below the occipital tuberosity), covering ACA/MCA/PCA blood supply areas"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Shijiazhuang Du Kang Medical Devices Co., Ltd.",
+    "model": "DK-102TC transcranial ultrasound electrotherapy instrument"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.9,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": [
+     6.7,
+     16.7
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1200,
+    "protocol_description": "Collimated pulse wave from a 40-mm probe (effective radiation area 3-4 cm2); pulse duration 10 ms; pulse repetition period 60-150 ms; duty cycle of the output waveform given as ratios 1:5, 1:8, 1:11, 1:14. Three probes placed at bilateral temporal and occipital windows; stimulation frequency 800 kHz +/-10%, intensity 0.9 W/cm2, duration 20 min, once daily, 6 days/week, average treatment course 8 days (max 12 days)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 90 patients with a positive diagnosis of stroke in the acute stage who attended the Department of Neurology of the Second Hospital of Hebei Medical University (China) from December 2020 to January 2022 were selected. The random number table method was used to divide the patients into FNS, TUS, and TUS + FNS groups, respectively, with 30 cases in each group.",
+   "n_sessions_per_subject": "Therefore, based on previous studies, this study used TUS with a frequency of 800 kHz and an intensity of 0.9 W/cm2 for 20 min, with an average treatment of 8 days and a maximum of 12 days.",
+   "randomised": "A total of 90 patients with a positive diagnosis of stroke in the acute stage who attended the Department of Neurology of the Second Hospital of Hebei Medical University (China) from December 2020 to January 2022 were selected. The random number table method was used to divide the patients into FNS, TUS, and TUS + FNS groups, respectively, with 30 cases in each group.",
+   "exposures[0].fundamental_frequency_khz": "Transcranial ultrasound stimulation was conducted using a transcranial ultrasound electrotherapy device. The output beam type of the treatment head was a collimated pulse wave, with a diameter of 40 mm for the ultrasound probe. The efective radiation area of a single probe reaches 3-4cm2, and the pulse duration of its output waveform is 10ms; The pulse repetition period of the output waveform is 60ms \\~ 150ms; The duty cycle of the output waveform is 1:5, 1:8, 1:11, 1:14. During treatment, the patient is placed in a comfortable supine position and wears a transcranial ultrasound strap, which is used to secure the three ultrasound probes. An appropriate amount of coupling agent was applied to the ultrasound probe, and the three ultrasound probes were placed in the patient’s bilateral temporal window (1 cm above the zygomatic arch, within the area between the lateral edge of the orbit and the anterior frontal margin) and occipital window (1 cm below the occipital tuberosity), respectively. The stimulation frequency was 800 kHz ± 10%, the stimulation intensity was 0.9 W/cm2, and the stimulation duration was 20 min, once a day, 6 times a week.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Transcranial ultrasound stimulation was conducted using a transcranial ultrasound electrotherapy device. The output beam type of the treatment head was a collimated pulse wave, with a diameter of 40 mm for the ultrasound probe. The efective radiation area of a single probe reaches 3-4cm2, and the pulse duration of its output waveform is 10ms; The pulse repetition period of the output waveform is 60ms \\~ 150ms; The duty cycle of the output waveform is 1:5, 1:8, 1:11, 1:14. During treatment, the patient is placed in a comfortable supine position and wears a transcranial ultrasound strap, which is used to secure the three ultrasound probes. An appropriate amount of coupling agent was applied to the ultrasound probe, and the three ultrasound probes were placed in the patient’s bilateral temporal window (1 cm above the zygomatic arch, within the area between the lateral edge of the orbit and the anterior frontal margin) and occipital window (1 cm below the occipital tuberosity), respectively. The stimulation frequency was 800 kHz ± 10%, the stimulation intensity was 0.9 W/cm2, and the stimulation duration was 20 min, once a day, 6 times a week.",
+   "exposures[0].timing.pulse_duration_ms": "Transcranial ultrasound stimulation was conducted using a transcranial ultrasound electrotherapy device. The output beam type of the treatment head was a collimated pulse wave, with a diameter of 40 mm for the ultrasound probe. The efective radiation area of a single probe reaches 3-4cm2, and the pulse duration of its output waveform is 10ms; The pulse repetition period of the output waveform is 60ms \\~ 150ms; The duty cycle of the output waveform is 1:5, 1:8, 1:11, 1:14. During treatment, the patient is placed in a comfortable supine position and wears a transcranial ultrasound strap, which is used to secure the three ultrasound probes. An appropriate amount of coupling agent was applied to the ultrasound probe, and the three ultrasound probes were placed in the patient’s bilateral temporal window (1 cm above the zygomatic arch, within the area between the lateral edge of the orbit and the anterior frontal margin) and occipital window (1 cm below the occipital tuberosity), respectively. The stimulation frequency was 800 kHz ± 10%, the stimulation intensity was 0.9 W/cm2, and the stimulation duration was 20 min, once a day, 6 times a week.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Transcranial ultrasound stimulation was conducted using a transcranial ultrasound electrotherapy device. The output beam type of the treatment head was a collimated pulse wave, with a diameter of 40 mm for the ultrasound probe. The efective radiation area of a single probe reaches 3-4cm2, and the pulse duration of its output waveform is 10ms; The pulse repetition period of the output waveform is 60ms \\~ 150ms; The duty cycle of the output waveform is 1:5, 1:8, 1:11, 1:14. During treatment, the patient is placed in a comfortable supine position and wears a transcranial ultrasound strap, which is used to secure the three ultrasound probes. An appropriate amount of coupling agent was applied to the ultrasound probe, and the three ultrasound probes were placed in the patient’s bilateral temporal window (1 cm above the zygomatic arch, within the area between the lateral edge of the orbit and the anterior frontal margin) and occipital window (1 cm below the occipital tuberosity), respectively. The stimulation frequency was 800 kHz ± 10%, the stimulation intensity was 0.9 W/cm2, and the stimulation duration was 20 min, once a day, 6 times a week.",
+   "exposures[0].timing.sonication_duration_s": "Transcranial ultrasound stimulation was conducted using a transcranial ultrasound electrotherapy device. The output beam type of the treatment head was a collimated pulse wave, with a diameter of 40 mm for the ultrasound probe. The efective radiation area of a single probe reaches 3-4cm2, and the pulse duration of its output waveform is 10ms; The pulse repetition period of the output waveform is 60ms \\~ 150ms; The duty cycle of the output waveform is 1:5, 1:8, 1:11, 1:14. During treatment, the patient is placed in a comfortable supine position and wears a transcranial ultrasound strap, which is used to secure the three ultrasound probes. An appropriate amount of coupling agent was applied to the ultrasound probe, and the three ultrasound probes were placed in the patient’s bilateral temporal window (1 cm above the zygomatic arch, within the area between the lateral edge of the orbit and the anterior frontal margin) and occipital window (1 cm below the occipital tuberosity), respectively. The stimulation frequency was 800 kHz ± 10%, the stimulation intensity was 0.9 W/cm2, and the stimulation duration was 20 min, once a day, 6 times a week.",
+   "adverse_events": "Therefore, based on previous studies, this study used TUS with a frequency of 800 kHz and an intensity of 0.9 W/cm2 for 20 min, with an average treatment of 8 days and a maximum of 12 days. After the treatment, a good efect was also obtained, and no patients were found. Obvious adverse reactions occurred.",
+   "exposures[0].device.manufacturer": "In this study, the DK-102TC transcranial ultrasound electrotherapy instrument was used to perform FNS treatment.",
+   "exposures[0].device.model": "In this study, the DK-102TC transcranial ultrasound electrotherapy instrument was used to perform FNS treatment."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Converted from the stated pulse repetition period (60-150 ms) to Hz; paper does not itself state a PRF in Hz."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper states duty cycle only as ratios (1:5, 1:8, 1:11, 1:14) without specifying whether this is on:off or on:total, so it cannot be safely converted to a percentage."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper states only a generic 'stimulation intensity' (0.9 W/cm2) without specifying spatial-peak-pulse-average vs spatial-average-temporal-average, and without stating whether this is a free-field or in-situ value."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "TUS target is described only as bilateral temporal and occipital acoustic windows for whole-brain blood-flow enhancement, not a specific anatomical structure; mapped to whole_brain_or_unfocused."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Total ultrasound-exposed n is the sum of the TUS-only and TUS+FNS groups (30 each); paper never states this combined total directly, so the two group sizes are listed rather than summed."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study reports vascular (blood-flow velocity) and functional (FMA/BI) outcomes rather than a direct measure of cortical excitation/inhibition; mapped to not_assessed."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Source sentence ('no patients were found. Obvious adverse reactions occurred.') appears to be a translation/OCR artifact; interpreted as meaning no adverse reactions were observed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "both_defensible"
+  }
+ }
+}

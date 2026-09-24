@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025oliveira",
+ "doi": "10.1016/j.jphotobiol.2025.113306",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (osteoblasts, chondrocytes, periodontal ligament fibroblasts); mouse (N2a neuroblastoma cells)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other"
+ ],
+ "readout_other": "MTS colorimetric cell viability/metabolic activity assay; trypan blue exclusion cell counting (proliferation)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Combined ultrasound+light stimulation increased metabolic activity in human osteoblasts; light alone (not ultrasound alone) increased metabolic activity in human chondrocytes; ultrasound alone did not significantly change metabolic activity in any of the four cell types tested, and neither individual nor combined stimuli affected human periodontal ligament fibroblasts or mouse-derived neuroblastoma (N2a) cells.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The safety of the device was confirmed as there was no cell death for any cell type, no cell contamination during stimulation, and no alterations in cellular morphology were detected during or after individual or simultaneous stimulation; temperature rise during stimulation was below 1.0 degC.",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of cultured cells (osteoblasts, chondrocytes, periodontal ligament fibroblasts, N2a neuroblastoma cells)",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "other"
+    ],
+    "label": "human osteoblasts (hFOB), human chondrocytes, human periodontal ligament fibroblasts, and mouse-derived neuroblastoma (N2a Tau P301L) cells in 12-well culture plates"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "PI Ceramics GmbH (piezoelectric disc); custom-built stimulation device",
+    "model": "Custom multi-modal stimulation device with PIC255 piezoelectric disc (ref 000084902)"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 300,
+    "protocol_description": "Piezoelectric disc (PIC255, 3-mm diameter, 2-mm thickness) immersed at the centre of each well, 8 mm from the cells; ultrasound applied at 1.0 MHz, 100 mW/cm2, for 5 min, once daily for three consecutive days, with cells collected for viability/proliferation analysis the day after the last stimulation session. Conditions also included PBM alone (810 nm, 7.5 mW/cm2, 5 min), combined PBM+US, and device-off controls."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Cells were stimulated for three days, in triplicate, and collected for analysis on the day after the last stimulation session.",
+   "exposures[0].fundamental_frequency_khz": "4. US using 1.0 MHz with 100 $\\mathrm { { m W / c m ^ { 2 } } }$ for 5 min;",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "4. US using 1.0 MHz with 100 $\\mathrm { { m W / c m ^ { 2 } } }$ for 5 min;",
+   "exposures[0].timing.sonication_duration_s": "4. US using 1.0 MHz with 100 $\\mathrm { { m W / c m ^ { 2 } } }$ for 5 min;",
+   "adverse_events": "This multi-modal stimulation device was only tested with cell culture, but it is also compatible with specimens of biological tissues with dimensions that fit 12-well plates. The safety of the device was confirmed as there was no cell death for any cell type. The sterilization conditions of this device are compatible with the cell culture environment since no cell contamination occurred during the stimulation procedure.",
+   "exposures[0].device.manufacturer": "Thus, cylindrical ferroelectric soft piezoelectric discs of PIC255 (modified lead zirconate titanate), of 3-mm diameter and 2-mm thickness, with polarization in the thickness direction, and with silver printed electrodes were purchased from PI Ceramics GmbH (ref 000084902, Lederhose, Germany) (main features on Supplementary Table S2).",
+   "exposures[0].device.model": "Thus, cylindrical ferroelectric soft piezoelectric discs of PIC255 (modified lead zirconate titanate), of 3-mm diameter and 2-mm thickness, with polarization in the thickness direction, and with silver printed electrodes were"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states cells were stimulated 'in triplicate' per condition; no single total number of independent cultures/wells across the whole study is given, so the per-condition replicate count (3) is used as a proxy."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Ultrasound protocol used for the biological validation experiments (1.0 MHz, 100 mW/cm2, 5 min) is not explicitly described as continuous or pulsed; inferred as continuous by default since no duty cycle/PRF is stated for this specific experiment (device is stated elsewhere to support pulsed operation at 1-50 Hz as a general capability, not confirmed as used here)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Power density (100 mW/cm2) is not stated to be measured in free field or at the cells specifically (in situ); domain left unspecified."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Device was validated across four different cell types (osteoblasts, chondrocytes, periodontal ligament fibroblasts, N2a neuroblastoma); only the N2a neuronal-like line maps to a defined neural target term (cultured_neurons), the others are non-neural cell types mapped to 'other'."
+   },
+   {
+    "field": "randomised",
+    "reason": "In vitro cell-culture study; field set to null per instructions for tissue/cell work."
+   },
+   {
+    "field": "blinding",
+    "reason": "In vitro cell-culture study; field set to null per instructions for tissue/cell work."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ }
+}

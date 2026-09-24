@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025rezaia",
+ "doi": "10.1016/j.biopsych.2025.01.001",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour",
+  "clinical_scale",
+  "other"
+ ],
+ "readout_other": "cue-induced substance craving rating (0-10 scale); urine toxicology (gas chromatography-mass spectrometry); Hamilton Depression Rating Scale; Columbia Suicide Severity Rating Scale; Snaith-Hamilton Pleasure Scale; Neuro-QOL subscales",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Resting-state fMRI showed decreased connectivity from the NAc to reward and cognitive regions post-FUS, accompanied by sustained reductions in cue-induced substance craving and use.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious device-related adverse events or imaging abnormalities were observed; there were 9 mild AEs (most commonly headache) and 1 moderate AE (anxiety) judged procedure-related, and one serious AE (drug overdose) judged unrelated to the procedure.",
+ "exposures": [
+  {
+   "label": "Bilateral NAc FUS neuromodulation",
+   "target": {
+    "terms": [
+     "nucleus_accumbens",
+     "internal_capsule"
+    ],
+    "label": "bilateral nucleus accumbens (NAc) and ventral anterior internal capsule"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "ExAblate Neuro Type 2"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 0.333,
+    "duty_cycle_pct": 3.3,
+    "sonication_duration_s": 300,
+    "protocol_description": "An initial 5-minute (300 s) zero-energy FUS session (no energy delivered) was followed by four 5-minute (300 s) block sessions of active FUS (8 subspots per target, 90-100 W therapeutic energy, 100 repetitions per subspot at an effective TR of 3 s), delivered to the bilateral NAc for up to a total of 20 minutes of active FUS. All block sessions were single-blinded (participant only)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3.33,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "METHODS: This prospective, open-label, single-arm study enrolled 8 participants with severe, primary opioid use disorder with co-occurring substance use.",
+   "n_sessions_per_subject": "The protocol allowed for a second treatment if participants experienced a recurrence of drug use or craving returned to their approximate pre-FUS baseline.",
+   "randomised": "This prospective, single-arm, open-label trial (Clinicaltrials.gov identifier: NCT04197921) was conducted between February and November 2023 and investigated the effects of lowintensity FUS neuromodulation in participants with severe OUD (6 or more symptoms from the DSM-5 criteria) (25) and co-occurring SUDs.",
+   "blinding": "Next, 43 5-minute (300 seconds) block sessions of active FUS (8 subspots, 90–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; TR = 3 seconds; pulse duration = 100 ms) were delivered to the bilateral NAc (up to a total of 20 minutes of active FUS).",
+   "readouts": "Participants received a 20-minute session of low-intensity FUS (220 kHz) neuromodulation targeting the bilateral nucleus accumbens (NAc) with follow-up for 90 days.",
+   "direction_of_effect": "Resting-state fMRI demonstrated decreased connectivity from the NAc to reward and cognitive regions post-FUS.",
+   "adverse_events": "RESULTS: No serious device-related adverse events or imaging abnormalities were observed. Following FUS, participants demonstrated immediate (p , .002) and sustained (p , .0001; mean 91%) reductions in cue-induced opioid craving, with median ratings on a scale from 0 to 10 as follows: 6.9 (pre-FUS) versus 0.6 (90-day post-FUS). Craving reductions were similar for other illicit substances (e.g., methamphetamine [p , .002], cocaine [p , .02]). Decreases in opioid and co-occurring substance use were confirmed by urine toxicology. Seven participants remained abstinent at 30 days; 5 participants remained abstinent throughout 90 days post-FUS. Resting-state fMRI demonstrated decreased connectivity from the NAc to reward and cognitive regions post-FUS.",
+   "safety_notes": "There were 9 mild AEs (most commonly headache) and 1 moderate AE (anxiety) that were procedure related (refer to Table S3 for detailed AEs).",
+   "exposures[0].target.label": "The focused ultrasound treatment region targets (the NAc and ventral anterior internal capsule) were identified using T1,",
+   "exposures[0].device.family": "FUS protocol employed the ExAblate Neuro Type 2 (Insightec) device with a 220-kHz hemispheric transducer helmet comprising 1024 ultrasound transducers that converge to our defined target focal point (24).",
+   "exposures[0].device.manufacturer": "FUS protocol employed the ExAblate Neuro Type 2 (Insightec) device with a 220-kHz hemispheric transducer helmet comprising 1024 ultrasound transducers that converge to our defined target focal point (24).",
+   "exposures[0].device.model": "FUS protocol employed the ExAblate Neuro Type 2 (Insightec) device with a 220-kHz hemispheric transducer helmet comprising 1024 ultrasound transducers that converge to our defined target focal point (24).",
+   "exposures[0].fundamental_frequency_khz": "Participants received a 20-minute session of low-intensity FUS (220 kHz) neuromodulation targeting the bilateral nucleus accumbens (NAc) with follow-up for 90 days.",
+   "exposures[0].timing.pulse_duration_ms": "Next, 43 5-minute (300 seconds) block sessions of active FUS (8 subspots, 90–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; TR = 3 seconds; pulse duration = 100 ms) were delivered to the bilateral NAc (up to a total of 20 minutes of active FUS).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Next, 43 5-minute (300 seconds) block sessions of active FUS (8 subspots, 90–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; TR = 3 seconds; pulse duration = 100 ms) were delivered to the bilateral NAc (up to a total of 20 minutes of active FUS).",
+   "exposures[0].timing.duty_cycle_pct": "Next, 43 5-minute (300 seconds) block sessions of active FUS (8 subspots, 90–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; TR = 3 seconds; pulse duration = 100 ms) were delivered to the bilateral NAc (up to a total of 20 minutes of active FUS).",
+   "exposures[0].timing.sonication_duration_s": "Next, 43 5-minute (300 seconds) block sessions of active FUS (8 subspots, 90–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; TR = 3 seconds; pulse duration = 100 ms) were delivered to the bilateral NAc (up to a total of 20 minutes of active FUS)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Source text reads '43 5-minute (300 seconds) block sessions', which is inconsistent with the paper's own later statement that participants were 'scheduled to complete four 5-minute block sessions for a total of 20 minutes of active FUS'; recorded protocol_description using the four-block figure and flagged the '43' as a likely OCR/typesetting error for 'four'."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF was derived by converting the stated repetition period (TR = 3 seconds) to Hz (1/3 = 0.333 Hz); this is consistent with the stated duty cycle (100 ms / 3 s = 3.3%)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most participants received a single FUS treatment, but the protocol allowed a second treatment after relapse and one participant received a second treatment; recorded as 1 (primary treatment) with this caveat."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "The paper reports acoustic power (90-100 W) but no pressure or intensity (kPa or W/cm2) values in any domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

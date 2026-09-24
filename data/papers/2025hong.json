@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025hong",
+ "doi": "10.1016/j.intimp.2024.113680",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "rat (Sprague-Dawley); BV2 murine microglial cell line",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "Modified neurological severity score (mNSS), elevated body swing test, rotarod test, open field test; T2-weighted MRI infarct volume; Western blot, immunofluorescence, qRT-PCR, TUNEL staining, fluorescence in situ hybridization, dual-luciferase reporter assay",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "tFUS suppressed microglial NLRP3 inflammasome activation and pro-inflammatory cytokine release (NLRP3, ASC, Caspase1, IL-1β, TNF-α, IL-6) while increasing anti-inflammatory IL-10, and improved neurobehavioral recovery and reduced infarct volume after MCAO.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to the ischemic cortex after MCAO",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "the cortex (ischemic hemisphere)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "ndtXducer (transducer element); mobile system integrated by Shenzhen Institutes of Advanced Technology",
+    "model": "1905055"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 5.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Ultrasound stimulation was administered for 15 min daily for seven consecutive days, starting 24 h post-MCAO, using a 400 ms sonication-duration train (1 ms tone bursts at 500 Hz PRF) with a 2.6 s inter-stimulus interval; the sham-tFUS (MCAO) group underwent the identical procedure with the power amplifier deactivated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "Ultrasound stimulation was administered for 15 min daily, starting 24 h post-MCAO, and continued for seven consecutive days.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound stimulation parameters were set at 0.5 MHz frequency, 5.1 W/cm2 spatial peak pulse average acoustic intensity (Isppa), 1 ms tone burst duration (TBD), 500 Hz pulse repetition frequency (PRF), 400 ms sonication duration (SD), and 2.6 s inter-stimuli interval (ISI).",
+   "exposures[0].free_field.isppa_w_cm2": "The ultrasound stimulation parameters were set at 0.5 MHz frequency, 5.1 W/cm2 spatial peak pulse average acoustic intensity (Isppa), 1 ms tone burst duration (TBD), 500 Hz pulse repetition frequency (PRF), 400 ms sonication duration (SD), and 2.6 s inter-stimuli interval (ISI).",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation parameters were set at 0.5 MHz frequency, 5.1 W/cm2 spatial peak pulse average acoustic intensity (Isppa), 1 ms tone burst duration (TBD), 500 Hz pulse repetition frequency (PRF), 400 ms sonication duration (SD), and 2.6 s inter-stimuli interval (ISI).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation parameters were set at 0.5 MHz frequency, 5.1 W/cm2 spatial peak pulse average acoustic intensity (Isppa), 1 ms tone burst duration (TBD), 500 Hz pulse repetition frequency (PRF), 400 ms sonication duration (SD), and 2.6 s inter-stimuli interval (ISI).",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation parameters were set at 0.5 MHz frequency, 5.1 W/cm2 spatial peak pulse average acoustic intensity (Isppa), 1 ms tone burst duration (TBD), 500 Hz pulse repetition frequency (PRF), 400 ms sonication duration (SD), and 2.6 s inter-stimuli interval (ISI).",
+   "exposures[0].device.manufacturer": "The ultrasonic pulse signal was generated by a signal generator (DG4162, RIGOL, Beijing, China) and transmitted through a power amplifier (LZY-$^ { 2 2 + }$ , MiniCircuits, Brooklyn, USA) to an ultrasonic sensor (1905055, ndtXducer, Northborough, MA, USA).",
+   "exposures[0].device.model": "The ultrasonic pulse signal was generated by a signal generator (DG4162, RIGOL, Beijing, China) and transmitted through a power amplifier (LZY-$^ { 2 2 + }$ , MiniCircuits, Brooklyn, USA) to an ultrasonic sensor (1905055, ndtXducer, Northborough, MA, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports a total pool of 135 rats obtained ('A total of 135 male Sprague-Dawley (SD) rats ... were obtained'; 'A total of 17 rats were excluded due to post-ischemia death, and 8 were excluded for unsuccessful ischemia induction'), but animals were then split across many sub-experiments/figures with individually reported group sizes of n=4-10 each (sham, MCAO, MCAO+tFUS, plus shRNA/vehicle arms), so the number of animals that actually received active tFUS cannot be reduced to one total from the text."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The 5.1 W/cm2 Isppa is assumed to be a free-field (water tank) value because the Methods state acoustic parameters were 'precisely measured using an ultrasonic parameter water tank system ... and hydrophones', but the paper does not explicitly label this value as free-field or in-situ."
+   },
+   {
+    "field": "device.manufacturer",
+    "reason": "The transducer element is credited to ndtXducer (model 1905055), but it was integrated by the Shenzhen Institutes of Advanced Technology into a custom 'mobile ultrasound stimulation system' along with a separate signal generator (RIGOL) and power amplifier (MiniCircuits); coded as a custom/research system overall."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "This study measures tFUS's anti-inflammatory/neuroprotective effect on microglial NLRP3 signaling and post-stroke behavioural recovery, not neuronal excitability directly; 'inhibitory' here refers to suppression of NLRP3-driven neuroinflammation/microglial activation rather than a measured decrease in neural firing."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ }
+}

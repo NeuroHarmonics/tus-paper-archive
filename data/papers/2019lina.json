@@ -1,0 +1,167 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019lina",
+ "doi": "10.1152/jn.00541.2018",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "Procambarus clarkii (crayfish)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  11,
+  5
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Two-electrode intracellular current-clamp recording of membrane potential and input resistance in crayfish motor axon; extracellular loose-patch recording in a subset",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "A focused ultrasound burst consistently produced a fast hyperpolarization, which was stochastically followed or superseded by subthreshold depolarization or action potentials; depolarization persisted after blocking voltage-gated Na+, K+ and HCN channels and was associated with decreased membrane resistance.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Focused ultrasound burst applied to isolated crayfish motor axon",
+   "target": {
+    "terms": [
+     "crayfish_neurons",
+     "neuromuscular_junction"
+    ],
+    "label": "motor axon of the crayfish opener neuromuscular junction"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2100,
+   "free_field": {
+    "pressure_kpa": [
+     100,
+     1000
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.0042,
+     0.0094
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.005,
+    "protocol_description": "Unless otherwise specified, responses were evoked by a single 5-ms, 2.1-MHz US tone burst focused (1-mm focal diameter) on the axon. US stimuli were delivered in 20-s cycles, each cycle consisting of a 10-s recorded trace followed by a 10-s interval before the next recording, over 2-4 h recording sessions; some protocols delivered bursts repeatedly at a low rate (about every 10 s) within a session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Group 2 (n  11; Fig. 2 and Fig. 3) axons were used to generate a statistical summary of electrophysiological parameters of US-activated depolarization, and group $3 \\ ( n = 5 ,$ Fig. 6) axons were probed with ramp current injection to assess input resistance $( R _ { \\mathrm { i n } } )$ changes during US-induced depolarization.",
+   "exposures[0].fundamental_frequency_khz": "The active element of the transducer was a 2.1-MHz spherical piezo cup from STEMINC (Steiner & Martins).",
+   "exposures[0].free_field.pressure_kpa": "When a US burst (2.1 MHz, 1-mm focal diameter, 0.1–1 MPa) was focused on a motor axon of the crayfish neuromuscular junction, it consistently produced a fast hyperpolarization, which was followed or superseded by subthreshold depolarizations or action potentials in a stochastic manner.",
+   "exposures[0].free_field.ispta_w_cm2": "Intensity of the spatial peak temporal average in these preparations ranged from 4.2 to 9.4 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Unless specified otherwise in the figures, US-induced responses reported here were evoked by one 5-ms US burst at 2.1 MHz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Quote covers Groups 2 and 3 (n=11, n=5); Group 1 (n=6) is described in the same paragraph with garbled source formatting and is included in the list but not separately quoted."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "0.1-1 MPa is the overall pressure range used across experiments (from the abstract); individual figures cite specific intensities (e.g. 2.7-9.4 mW/cm2) for particular trials that are not individually itemised here."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second"
+  }
+ }
+}

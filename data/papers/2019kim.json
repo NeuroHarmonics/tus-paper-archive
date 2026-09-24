@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019kim",
+ "doi": "10.1016/j.brs.2018.11.007",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "EMG recording of motor responses (success defined as 3x EMG noise floor); visual/video observation of motor responses in freely-moving mice",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Transcranial ultrasound to motor cortex via a miniature CMUT ring array evoked EMG motor responses with success rate increasing with intensity (Ispta), reaching over 70% average success at 34.1 mW/cm2 in 4 mice; success rate was negligible or much reduced with no AC drive, no DC bias, or a flipped (aimed-away) transducer.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No significant tissue damage such as vascular hemorrhage or neuronal necrosis was observed compared to control mice.",
+ "exposures": [
+  {
+   "label": "Transcranial ultrasound stimulation of motor cortex (acute and freely-moving mice)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "32-element, 183-kHz CMUT ring array transducer"
+   },
+   "fundamental_frequency_khz": 183,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.0341,
+     0.0554
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 4.5,
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": 90,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "The CMUT array was biased at DC bias voltage of 100 V and driven with AC peak-to-peak voltage of 80 V at 183 kHz. Each stimulation trial consisted of 40-pulses of 90% duty cycle at a pulse repeat frequency (PRF) of 200 Hz, and each 4.5-ms long pulse consisted of 756 pulses of ultrasound. At each intensity, approximately 25 stimulation trials were conducted over 4 min, with success rate measured by adjusting the AC voltage to vary intensity. Since the duration of sonication in the in vivo protocol is only 0.2 s per trial, the temperature effect (~0.1C after ~240 s of continuous sonication in a phantom) should be negligible."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 90.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "For all four mice, an increase in the success rate was observed as the intensity $( \\mathrm { I } _ { \\mathsf { S p t a } } )$ increased (Fig. 2D), which was comparable to the ones demonstrated in the literature where bulky ultrasound transducer array was used [3].",
+   "exposures[0].fundamental_frequency_khz": "The CMUT array was biased at DC bias voltage of 100 V and driven with AC peak-to-peak voltage of 80 V at 183 kHz. Each stimulation trial consisted of 40-pulses of 90% duty cycle at a pulse repeat frequency (PRF) of 200 Hz, and each 4.5-ms long pulse consisted of 756 pulses of ultrasound (Fig. 2A, S7).",
+   "exposures[0].timing.pulse_duration_ms": "The CMUT array was biased at DC bias voltage of 100 V and driven with AC peak-to-peak voltage of 80 V at 183 kHz. Each stimulation trial consisted of 40-pulses of 90% duty cycle at a pulse repeat frequency (PRF) of 200 Hz, and each 4.5-ms long pulse consisted of 756 pulses of ultrasound (Fig. 2A, S7).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The CMUT array was biased at DC bias voltage of 100 V and driven with AC peak-to-peak voltage of 80 V at 183 kHz. Each stimulation trial consisted of 40-pulses of 90% duty cycle at a pulse repeat frequency (PRF) of 200 Hz, and each 4.5-ms long pulse consisted of 756 pulses of ultrasound (Fig. 2A, S7).",
+   "exposures[0].timing.duty_cycle_pct": "The CMUT array was biased at DC bias voltage of 100 V and driven with AC peak-to-peak voltage of 80 V at 183 kHz. Each stimulation trial consisted of 40-pulses of 90% duty cycle at a pulse repeat frequency (PRF) of 200 Hz, and each 4.5-ms long pulse consisted of 756 pulses of ultrasound (Fig. 2A, S7).",
+   "exposures[0].timing.sonication_duration_s": "Since the duration ofsonication in our in vivo protocol is only 0.2 s, the temperature effect should be negligible.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "During this trial, the total ultrasound power that was delivered (i.e., pulse intensity integral (PII)), was $0 . 2 8 \\mathrm { m J } / \\mathrm { c m } ^ { 2 }$ and spatial-peak, temporal-average intensity (I<sub>spta</sub>) was $5 5 . 4 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ .",
+   "safety_notes": "we observed no significant tissue damage such as vascular hemorrhage and neuronal necrosis compared to that of the control mice (Figure S9).",
+   "exposures[0].device.model": "Results:: The developed transducer is a 32-element, 183-kHz ring array with a weight of 0.035 g (with PCB: 0.73 g), a diameter of 8.1 mm, a focal length of 2.3 mm, and lateral resolution of 2.75 mm."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Text explicitly gives 'four mice' for the main intensity-response experiment, but additional single-mouse control experiments (0V AC, 0V DC, flipped device) and the separate freely-moving-mouse demonstration may or may not overlap with these four animals; total unique subjects across all experiments is unclear."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "The paper contrasts prior work using anesthetized, head-fixed animals with its own acute and awake freely-moving experiments, but never explicitly states whether the acute (head-fixed) mouse experiments were performed under anesthesia."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity values (55.4 mW/cm2 at the described 80V driving condition; 34.1 mW/cm2 at which success rate exceeded 70%) are not stated as free-field or in-situ; domain is unspecified. Figure 2 caption labels the varied intensity as ISPPA while the text calls the same quantity ISPTA, a text/figure inconsistency."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Three control conditions are described (0V AC with 100V DC; 0V DC with 80V AC; device flipped/aimed away); classified overall as inactive_transducer, with the flipped-device condition also serving as an auditory (buzzing sound) sham."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

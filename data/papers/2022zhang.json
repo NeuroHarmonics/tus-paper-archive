@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022zhang",
+ "doi": "10.1109/tbme.2022.3162073",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In this experiment, 12 rats were randomly divided into two groups: control group (n = 6) and tFUS group (n = 6).",
+   "n_sessions_per_subject": "At the 30<sup>th</sup> minute after formalin injection, tFUS (US-650 kHz, PD = 1 ms, PRF = 100 Hz, 691 mW/cm<sup>2</sup>) was conducted to stimulate the periaqueductal gray (PAG) for 5 minutes (on 5 s and off 5 s) in the tFUS group, but there was no treatment in the control group.",
+   "randomised": "In this experiment, 12 rats were randomly divided into two groups: control group (n = 6) and tFUS group (n = 6).",
+   "exposures[0].fundamental_frequency_khz": "As shown in Fig. 2(a), the diameter of the self-designed focused ultrasound transducer was 12 mm, and the center frequency was 650 kHz.",
+   "exposures[0].in_situ.pressure_kpa": "In this experiment, the peak pressure of the ultrasound waves at the focusing region after passing rat skull is about 0.47 MPa, so the maximum MI is about 0.58 and $I _ { S P T A }$ is about 691 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } ( P R F = 1 0 0 $ Hz and $P D = 1 { \\mathrm { m s } } )$ , which are less than the safety ultrasound threshold of the U.S. Food and Drug Administration (FDA) $( M I < 1 . 9 $ $I _ { S P T A } < 7 2 0 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ [51].",
+   "exposures[0].in_situ.ispta_w_cm2": "In this experiment, the peak pressure of the ultrasound waves at the focusing region after passing rat skull is about 0.47 MPa, so the maximum MI is about 0.58 and $I _ { S P T A }$ is about 691 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } ( P R F = 1 0 0 $ Hz and $P D = 1 { \\mathrm { m s } } )$ , which are less than the safety ultrasound threshold of the U.S. Food and Drug Administration (FDA) $( M I < 1 . 9 $ $I _ { S P T A } < 7 2 0 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ [51].",
+   "exposures[0].timing.pulse_duration_ms": "After the preliminary experiments before this study, the ideal ultrasonic stimulation parameters in the tFUS group were determined as PRF = 100 Hz and PD = 1 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "After the preliminary experiments before this study, the ideal ultrasonic stimulation parameters in the tFUS group were determined as PRF = 100 Hz and PD = 1 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Fig. 1. Schematic diagram of the PAG stimulation by tFUS for analgesia. (a) Ultrasound stimulation system setup. (b) tFUS stimulation strategy and waveforms (US-650 kHz, PD = 1 ms, PRF = 100 Hz, DC = 10%).",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation strategy is shown in Fig. 1(b), where ultrasound stimulation was applied for 5 min with an interval (on 5 s and off 5 s)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper states a total of 14 rats used in the study but only explicitly labels 6 as the tFUS (ultrasound-exposed) group in the main electrophysiology experiment; how the remaining rats (temperature measurement, PAG mechanism recording) were allocated to ultrasound exposure is not clearly separated."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Only relative attenuation without skull (~25-29% of with-skull intensity) is given; no absolute free-field pressure/intensity value is stated in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "formalin-induced acute inflammatory pain (nociception) model",
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "local field potential (LFP) recording from spinal cord dorsal horn (L5) and periaqueductal gray; hematoxylin and eosin (H&E) staining",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS increased LFP activity in the PAG during stimulation and suppressed formalin-induced nociceptive LFP power (delta, theta, beta, gamma bands) in the spinal dorsal horn, consistent with an analgesic effect mediated by PAG activation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining showed no notable brain tissue injury after tFUS stimulation of the PAG; temperature increase in brain tissue was not higher than 0.2 °C, and peak pressure (0.47 MPa) was far below the cavitation threshold (40 MPa).",
+ "exposures": [
+  {
+   "label": "tFUS stimulation of the periaqueductal gray (PAG)",
+   "target": {
+    "terms": [
+     "periaqueductal_gray"
+    ],
+    "label": "periaqueductal gray (PAG)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 470,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.691
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 5,
+    "protocol_description": "tFUS (650 kHz, PD=1 ms, PRF=100 Hz, DC=10%) was applied to the PAG for a 5-min session structured as repeating 5-s-on/5-s-off cycles, beginning 30 min after formalin injection (or, in the separate mechanistic recording, delivered directly while an electrode recorded PAG LFP)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

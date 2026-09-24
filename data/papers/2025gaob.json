@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025gaob",
+ "doi": "10.1523/jneurosci.2218-24.2025",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Hsd:WI, Envigo)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  16,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Multisite intracranial single/multi-unit recordings (32-channel NeuroNexus microelectrodes) from S1, POm and auditory cortex; RSU/FSU spike classification; directional spike-time tiling coefficient (dSTTC) analysis",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "High PRF (>=1,500 Hz) with mid-range duty cycle selectively excited S1 regular-spiking units and synchronized POm activity (feedback modulation), while 30 Hz PRF produced an inhibitory S1 response; both time-locked and ~200 ms delayed (feedforward) responses were parameter dependent.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS targeting S1, varying PRF and duty cycle",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H276"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": 1626.4,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 88,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.02942
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     30,
+     300,
+     1500,
+     3000,
+     4500
+    ],
+    "duty_cycle_pct": [
+     0.6,
+     6,
+     30,
+     60,
+     90
+    ],
+    "sonication_duration_s": 0.067,
+    "protocol_description": "Each trial used a 67 ms ultrasound duration with a 2.5 s intersonication interval (10% jitter), 500 trials per parameter, and randomized order of stimulation conditions. PRF (30-4,500 Hz) was swept at a constant 200 us pulse duration; duty cycle (0.6-90%) was separately swept at fixed 3,000 Hz and 30 Hz PRF, with pulse duration in that sweep calculated from PRF x DC rather than stated directly."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "To explore the neuronal responses in the CTC pathway to tFUS, multiunit activities were recorded from the S1 and POm (N= 16).",
+   "exposures[0].fundamental_frequency_khz": "The customized 128-element random array ultrasound transducer H276 (f0: 1.5 MHz, −3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts) was used in our experiments.",
+   "exposures[0].free_field.pressure_kpa": "Using parameters of 1,500 Hz PRF, 200 μs pulse duration (PD), 67 ms ultrasound duration (UD), and 5 V input voltage achieved the spatial peak pressure of 1,626.4 kPa in free water without beam steering.",
+   "exposures[0].in_situ.pressure_kpa": "The measured peak-to-peak in situ ultrasound pressure magnitude with beam steering (targeting S1) was 88 kPa (Fig. 1C) and spatial-peak temporal average (I ) was 29.42 mW/cm2.",
+   "exposures[0].in_situ.ispta_w_cm2": "The measured peak-to-peak in situ ultrasound pressure magnitude with beam steering (targeting S1) was 88 kPa (Fig. 1C) and spatial-peak temporal average (I ) was 29.42 mW/cm2.",
+   "exposures[0].timing.pulse_duration_ms": "For the PRF efect exploration, the pulse duration (PD) was set at 200 μs for all the PRFs.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The PRFs that were tested in this work contained 30, 300, 1,500, 3,000, and 4,500 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "We tested five levels of DCs as we used in the PRFs exploration: 0.6, 6, 30, 60, and 90%.",
+   "exposures[0].timing.sonication_duration_s": "In our study, the intersonication interval (ISI) was set at 2.5 s for each trial with 10% jitter and the ultrasound duration (UD) was kept at 67 ms for each condition.",
+   "exposures[0].device.manufacturer": "The customized 128-element random array ultrasound transducer H276 (f 0 : 1.5 MHz, −3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts) was used in our experiments.",
+   "exposures[0].device.model": "The customized 128-element random array ultrasound transducer H276 (f 0 : 1.5 MHz, −3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts) was used in our experiments."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Only the in-situ spatial-peak temporal-average intensity (Ispta, 29.42 mW/cm2) is reported for the calibrated beam-steered condition; an in-situ Isppa value is not given, so it is left not_reported."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes are reported separately for the main CTC-pathway cohort (N=16) and a second cohort used only to test for auditory confound (N=12); the paper never states a combined total."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper does not use an active auditory-masking method; instead it recorded from auditory cortex (a separate N=12 cohort) to test whether AC neurons responded to tFUS, finding low-PRF (30 Hz) tFUS produced an auditory confound while high-PRF (3,000 Hz) did not. Coded as 'other' since this is a confound analysis rather than a listed control method."
+   },
+   {
+    "field": "randomised",
+    "reason": "'Randomised' here refers to randomisation of the order of stimulation parameter conditions within subjects ('The order of stimulation conditions was randomized'), not random allocation to separate treatment/control groups."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The 200 us pulse duration is stated as constant for the PRF-effect exploration; for the separate duty-cycle exploration the paper states pulse duration was calculated from PRF x DC but does not give the resulting discrete values, so only the 200 us value is recorded."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "A third condition -- ~170 kPa used only for target-confirmation trials before recording -- is described in Methods but is not part of the recorded 500-trial stimulation parameters, so it is not included in the pressure fields; see protocol_description."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,321 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021lim",
+ "doi": "10.7554/elife.61660",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  3
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "cellular_imaging"
+ ],
+ "readout_other": "p-ERK immunohistochemistry; doublecortin (DCX) immunofluorescence for neurogenesis; live-cell calcium imaging (Oregon Green 488 BAPTA-1, Fura-2, Fluo-4) in cultured cortical neurons and CHO cells",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound increased p-ERK-positive cell counts (a marker of neuronal activation) and evoked calcium influx in cortical neurons via ASIC1a-dependent mechanotransduction, and repeated stimulation increased DCX-marked neurogenesis in dentate gyrus.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "transcranial ultrasound to mouse brain (p-ERK activation and DCX/neurogenesis experiments)",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "mouse brain, transducer positioned between the nasal process of maxilla and the axis of the ear"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "C539-SM"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.005
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": [
+     60,
+     300
+    ],
+    "protocol_description": "Mice received either a single 1-min ultrasound exposure (p-ERK experiments) or three consecutive daily treatments (DCX/neurogenesis experiments, stated as either 5-min sessions at 5 mW/cm2 in the main text, or 1-min sessions at 5 mW/cm2 for the Asic1-/- comparison); Figure 5's legend instead describes the first neurogenesis experiment as 4 mW/cm2, 1% for 5 min. Mice were randomly assigned to sham (transducer on head, not powered) or real ultrasound treatment under isoflurane anaesthesia."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.01
+   }
+  },
+  {
+   "label": "micropipette-guided ultrasound to cultured cortical neurons (calcium imaging mechanotransduction experiments)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "primary cultured cortical neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": [
+     8,
+     8.72,
+     12,
+     15.3
+    ],
+    "isppa_w_cm2": 0.0074,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     0.05,
+     20,
+     100
+    ],
+    "sonication_duration_s": 3,
+    "protocol_description": "A micropipette-guided 1-MHz transducer (15 mm diameter) delivered ultrasound at varying input voltage and duty factor (DF): an ultrasound-predominant condition (up to 2000 mVpp, DF 0.05%), an acoustic-streaming-predominant condition (up to 100 mVpp, DF 100%, i.e. continuous), and a mixed condition (700 mVpp, DF 20%) that most effectively elevated calcium. Most dose-response figures used a 3 s stimulation; some supplementary comparisons extended stimulation to 10 s (no response, ultrasound-predominant) or reduced it to 1.5 s (response present, mixed condition)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Two different ultrasonic setups were used in our study. We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A). Simulation for calcium imaging was done with micropipette ultrasound (Chu et al., 2021) attaching a 1MHz transducer (15 mm in diameter). Schematics of experimental setup for ultrasound calcium imaging is shown in Figure 2A. All the transducers were controlled by a function generator (Tektronix AFG1022, Beaverton, OR, USA) through a power amplifier (E&I 210 L, Rochester, NY, USA). The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation. We characterized cellular exposure to ultrasound using a hydrophone (HGL-1000, Onda, Sunnyvale, CA, US) immersed in water. The intensity used for in vivo animal experiments was $5 \\ \\mathsf { m w } / \\mathsf { c m } ^ { 2 } \\ ( \\mathsf { I } _ { \\mathsf { S P T A } } )$ , and 7.4 mW/cm<sup>2</sup> $( | _ { \\mathsf { S P P A } } ,$ , at 700 mVpp) for micropipette in vitro experiment. These intensity values are within the range of not causing any side effects from ultrasound, like heat and cavitation.",
+   "exposures[0].free_field.ispta_w_cm2": "Two different ultrasonic setups were used in our study. We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A). Simulation for calcium imaging was done with micropipette ultrasound (Chu et al., 2021) attaching a 1MHz transducer (15 mm in diameter). Schematics of experimental setup for ultrasound calcium imaging is shown in Figure 2A. All the transducers were controlled by a function generator (Tektronix AFG1022, Beaverton, OR, USA) through a power amplifier (E&I 210 L, Rochester, NY, USA). The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation. We characterized cellular exposure to ultrasound using a hydrophone (HGL-1000, Onda, Sunnyvale, CA, US) immersed in water. The intensity used for in vivo animal experiments was $5 \\ \\mathsf { m w } / \\mathsf { c m } ^ { 2 } \\ ( \\mathsf { I } _ { \\mathsf { S P T A } } )$ , and 7.4 mW/cm<sup>2</sup> $( | _ { \\mathsf { S P P A } } ,$ , at 700 mVpp) for micropipette in vitro experiment. These intensity values are within the range of not causing any side effects from ultrasound, like heat and cavitation.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation.",
+   "exposures[0].timing.duty_cycle_pct": "The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation.",
+   "exposures[0].timing.sonication_duration_s": "Compared to the non-treated controls, after three consecutive days of 5 min ultrasound treatments (5 mW/cm<sup>2</sup>), DCX staining in dentate gyrus at day 4 and day seven showed a significant twofold increase (Figure  5).",
+   "exposures[1].fundamental_frequency_khz": "Two different ultrasonic setups were used in our study. We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A). Simulation for calcium imaging was done with micropipette ultrasound (Chu et al., 2021) attaching a 1MHz transducer (15 mm in diameter). Schematics of experimental setup for ultrasound calcium imaging is shown in Figure 2A. All the transducers were controlled by a function generator (Tektronix AFG1022, Beaverton, OR, USA) through a power amplifier (E&I 210 L, Rochester, NY, USA). The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation. We characterized cellular exposure to ultrasound using a hydrophone (HGL-1000, Onda, Sunnyvale, CA, US) immersed in water. The intensity used for in vivo animal experiments was $5 \\ \\mathsf { m w } / \\mathsf { c m } ^ { 2 } \\ ( \\mathsf { I } _ { \\mathsf { S P T A } } )$ , and 7.4 mW/cm<sup>2</sup> $( | _ { \\mathsf { S P P A } } ,$ , at 700 mVpp) for micropipette in vitro experiment. These intensity values are within the range of not causing any side effects from ultrasound, like heat and cavitation.",
+   "exposures[1].free_field.pressure_kpa": "were ended by a 0.01 % Saponin cell perforation to calibrate the maximum response (Figure 2— figure supplement 3C). This method was going to be utilized for the tests for inhibitors and dosage studies. To ensure that this method is reliable, cells were repeatedly stimulated and clear responses were observed even though the magnitude of responses typically dropped to 30–60% during the second stimulation (Figure 2—figure supplement 3D). The ultrasound predominant mode with only compressional stress cannot induce a response even when the stimulation was extended to 10  s (Figure 2—figure supplement 4A). Similarly, the prolong stimulation of acoustic streaming invoking shear stresses also only elevated mildly the amplitude of calcium response (Figure 2—figure supplement 4B). On the other hand, the combined compression stress with acoustic streaming can reproducibly elevated calcium response even in 1.5 s stimulation (Figure 2B and Video 2, Figure 2—figure supplement 4C). The ultrasound-induced calcium responses were dose-dependent with a threshold of 400 mVpp (8 kPa) and $\\mathsf { E C } _ { 5 0 }$ of 700 mVpp (12 kPa) (Figure 2C and Figure 2—figure supplement 4D-K). The corresponding stress levels of ultrasound at 400 mVpp, 500 mVpp, 700 mVpp or 900 mVpp were 8 kPa, 8.72 kPa, 12 kPa, and 15.3 kPa, respectively.",
+   "exposures[1].free_field.isppa_w_cm2": "Two different ultrasonic setups were used in our study. We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A). Simulation for calcium imaging was done with micropipette ultrasound (Chu et al., 2021) attaching a 1MHz transducer (15 mm in diameter). Schematics of experimental setup for ultrasound calcium imaging is shown in Figure 2A. All the transducers were controlled by a function generator (Tektronix AFG1022, Beaverton, OR, USA) through a power amplifier (E&I 210 L, Rochester, NY, USA). The input voltage was 900 mVpp with a duty factor of 1 % at 1 kHz pulse rate for the in vivo stimulation. We characterized cellular exposure to ultrasound using a hydrophone (HGL-1000, Onda, Sunnyvale, CA, US) immersed in water. The intensity used for in vivo animal experiments was $5 \\ \\mathsf { m w } / \\mathsf { c m } ^ { 2 } \\ ( \\mathsf { I } _ { \\mathsf { S P T A } } )$ , and 7.4 mW/cm<sup>2</sup> $( | _ { \\mathsf { S P P A } } ,$ , at 700 mVpp) for micropipette in vitro experiment. These intensity values are within the range of not causing any side effects from ultrasound, like heat and cavitation.",
+   "exposures[1].timing.duty_cycle_pct": "Figure 2. Neuronal calcium signals induced by micropipette-guided ultrasound suppressed by ASIC1a inhibitors. (A) A micropipette positioned to the cortical neurons cultured on a 30 mm cover slips mounted to a chamber coupled to microscope platform. Calcium signals recorded from neurons stained by Invitrogen Oregon Green $4 8 8 ~ \\mathsf { B A P T A } \\mathsf { - } 1 .$ , AM cell permeant. (B) Line graphs of averaged calcium signals in four neurons stimulated by micropipette ultrasound for 3 s with an input voltage 2000mVpp, duty factor (DF) 0.05 % $( \\mathsf { n } = 5 ) ;$ or 100mVpp, DF100% $( \\mathsf { n } = 3 )$ or $7 0 0 m \\mathsf { V } \\mathsf { p p }$ , DF20% $( \\mathsf { n } = 4 )$ . The red-dotted line denotes start of the stimulation while the yellow-dotted line denotes the end. (C) Calcium responses as a function of micropipette ultrasound in 20%DF. Dose-dependent (input voltages from $1 0 \\mathsf { m V } \\mathsf { p p } ,$ to 900mVpp, DF20%) responses of ultrasound with an EC50 of 700mVpp is shown $( \\mathsf { n } = 5 )$ (D) Effects of gadolinium (120 μM), a non-selective blocker of mechanically sensitive ion channels, on calcium signals in cortical neurons $( \\mathsf { n } = 5 )$ . (E) Effects of $\\mathsf { G s M T x { - } } 4$ (500 nM), a selective Piezo inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 )$ . Control ${ \\mathsf { n } } = 4 .$ (F) Effect of Ruthenium red $( 1 0 \\mu \\mathsf { M } )$ , a non-selective TRP inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 ) .$ Control ${ \\mathsf { n } } = 6 .$ (G) Effects of amiloride $( 1 0 0 \\mu \\mathrm { m } )$ an ${ \\sf A S I C s }$ family inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 )$ . (H) Effects of $\\mathsf { P C T } \\times \\mathsf { 1 }$ treated (50 nM), a selective $\\mathsf { A S l C 1 }$ a inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 5 )$ . (I) Statistical analyses of channel blockers on ultrasound-induced calcium signals in cortical neurons. Control $\\mathsf { n } = 2 \\mathsf { 1 }$ Gadolinium $( 5 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Gadolinium $( 1 0 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5$ , GsMTx-4 (500 nM) ${ \\mathsf n } = 5$ , Ruthenium red $( 5 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Ruthenium red $( 1 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Amiloride (100 $\\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ PcTx1 (50 nM) ${ \\mathsf { n } } = 5 .$",
+   "exposures[1].timing.sonication_duration_s": "Figure 2. Neuronal calcium signals induced by micropipette-guided ultrasound suppressed by ASIC1a inhibitors. (A) A micropipette positioned to the cortical neurons cultured on a 30 mm cover slips mounted to a chamber coupled to microscope platform. Calcium signals recorded from neurons stained by Invitrogen Oregon Green $4 8 8 ~ \\mathsf { B A P T A } \\mathsf { - } 1 .$ , AM cell permeant. (B) Line graphs of averaged calcium signals in four neurons stimulated by micropipette ultrasound for 3 s with an input voltage 2000mVpp, duty factor (DF) 0.05 % $( \\mathsf { n } = 5 ) ;$ or 100mVpp, DF100% $( \\mathsf { n } = 3 )$ or $7 0 0 m \\mathsf { V } \\mathsf { p p }$ , DF20% $( \\mathsf { n } = 4 )$ . The red-dotted line denotes start of the stimulation while the yellow-dotted line denotes the end. (C) Calcium responses as a function of micropipette ultrasound in 20%DF. Dose-dependent (input voltages from $1 0 \\mathsf { m V } \\mathsf { p p } ,$ to 900mVpp, DF20%) responses of ultrasound with an EC50 of 700mVpp is shown $( \\mathsf { n } = 5 )$ (D) Effects of gadolinium (120 μM), a non-selective blocker of mechanically sensitive ion channels, on calcium signals in cortical neurons $( \\mathsf { n } = 5 )$ . (E) Effects of $\\mathsf { G s M T x { - } } 4$ (500 nM), a selective Piezo inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 )$ . Control ${ \\mathsf { n } } = 4 .$ (F) Effect of Ruthenium red $( 1 0 \\mu \\mathsf { M } )$ , a non-selective TRP inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 ) .$ Control ${ \\mathsf { n } } = 6 .$ (G) Effects of amiloride $( 1 0 0 \\mu \\mathrm { m } )$ an ${ \\sf A S I C s }$ family inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 4 )$ . (H) Effects of $\\mathsf { P C T } \\times \\mathsf { 1 }$ treated (50 nM), a selective $\\mathsf { A S l C 1 }$ a inhibitor, on calcium signals in cortical neurons $( \\mathsf { n } = 5 )$ . (I) Statistical analyses of channel blockers on ultrasound-induced calcium signals in cortical neurons. Control $\\mathsf { n } = 2 \\mathsf { 1 }$ Gadolinium $( 5 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Gadolinium $( 1 0 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5$ , GsMTx-4 (500 nM) ${ \\mathsf n } = 5$ , Ruthenium red $( 5 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Ruthenium red $( 1 0 \\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ Amiloride (100 $\\mu \\mathsf { M } ) \\mathsf { n } = 5 ,$ PcTx1 (50 nM) ${ \\mathsf { n } } = 5 .$",
+   "exposures[0].device.manufacturer": "We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A).",
+   "exposures[0].device.model": "We used a commercial 1MHz transducer (C539-SM, Olympus, Tokyo, Japan) for mouse brain stimulation in the in vivo experiment (Figure 1A).",
+   "n_sessions_per_subject": "We performed the same experiments on either the wildtype mice or the Asic1 knockout (Asic1<sup>-/-</sup>) mice for 3 consecutive days of 1 min ultrasound treatments (5 mW/cm<sup>2</sup>) and sacrificed the mice at day seven to quantify the ultrasound effects on DCX staining in these mice."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "the in vivo sonication duration differs across experiments and across text vs. figure legend: 1 min (p-ERK experiment) and 3x1 min (Asic1 DCX experiment) at 5 mW/cm2, but the first DCX/neurogenesis experiment is stated as 3x5 min at 5 mW/cm2 in text while Figure 5's own legend states 4 mW/cm2, 1% for 5 min for the same experiment -- text and figure disagree on intensity."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "paper states duty factor (1%) and pulse rate (1 kHz) for in vivo stimulation but never states pulse duration directly; not computed per instructions."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "domain of the 5 mW/cm2 (ISPTA) in vivo intensity is not stated explicitly as free-field or in-brain; it is described in the same sentence as a hydrophone-in-water characterization, so placed in free_field, but this is transcranial delivery and the value could represent an unspecified/derated domain."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "the paper reports many different small group sizes across separate p-ERK, calcium-imaging, and DCX/neurogenesis sub-experiments (e.g. n=5, n=11, n=10, n=4, n=9...) with no single aggregate total exposed to ultrasound stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "sessions per subject differ by experiment: single 1-min session for p-ERK; three consecutive daily sessions for the DCX/neurogenesis experiments."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "micropipette ultrasound duty factor was swept across several values (0.05%, 20%, 100%) to test different physical mechanisms (compression vs. streaming vs. mixed); recording the sweep as a list."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "most micropipette dose-response figures use a 3 s stimulation, but the same section also reports responses with stimulation extended to 10 s and reduced to 1.5 s for other conditions; 3 s recorded as the primary/most common value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "neither",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

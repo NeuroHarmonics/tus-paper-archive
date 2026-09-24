@@ -1,0 +1,366 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026legrand",
+ "doi": "10.1038/s44384-026-00050-z",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/cByJRj)",
+ "conditions": [
+  "depression",
+  "anxiety"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  30,
+  15
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  5
+ ],
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "pet",
+  "histology_molecular",
+  "emg_mep",
+  "other"
+ ],
+ "readout_other": "18F-FDG microPET; c-Fos immunohistochemistry; targeted LC-HRMS metabolomics; electromyographic motor-evoked potentials used for pressure-response optimisation",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Repeated IL-USNS increased local c-Fos expression in the infralimbic cortex (target engagement) and reversed UCMS-induced deficits in nest-building and anxiety-like open-field exploration, with sustained hypermetabolism (FDG-PET) in vmPFC/IL and connected limbic regions.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Furthermore, metabolomic analysis revealed no increase in inflammatory or excitotoxic markers typically associated with tissue damage<sup>54,55</sup>, supporting an excellent safety profile.",
+ "exposures": [
+  {
+   "label": "Single-pulse pressure-response mapping at primary motor cortex (M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 (primary motor cortex)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     50,
+     500
+    ],
+    "isppa_w_cm2": 5.33,
+    "ispta_w_cm2": 0.085
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 160,
+    "pulse_repetition_frequency_hz": 0.1,
+    "duty_cycle_pct": 1.6,
+    "sonication_duration_s": 0.16,
+    "protocol_description": "Single continuous 160 ms pulses delivered to left M1 at pressures stepped from 50 to 500 kPa in 50 kPa increments, ten pulses per step, repeated every 10 s (0.1 Hz); this inter-pulse repetition corresponds to a stated 1.6% duty cycle across the pulse train (distinct from the internal waveform, which is a single continuous burst per pulse). Motor success (visible forepaw twitch, n=20) and motor-evoked potential amplitude (EMG, n=10) were used to derive a motor threshold of 250 kPa and an optimal plateau at 400 kPa."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.6,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Repeated-pulse USNS of the infralimbic cortex (IL)",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "infralimbic cortex (IL), rodent homologue of vmPFC"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 400,
+    "isppa_w_cm2": 5.33,
+    "ispta_w_cm2": 0.085
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 160,
+    "pulse_repetition_frequency_hz": 0.1,
+    "duty_cycle_pct": 1.6,
+    "sonication_duration_s": 600,
+    "protocol_description": "60 single 160 ms pulses at 400 kPa delivered at 0.1 Hz (every 10 s) over a 10 min session. For focality confirmation (c-Fos), one such session was given to 4 active mice (vs 4 sham-anaesthesia mice); for the chronic UCMS experiment, one session per day was repeated for 5 consecutive days (days 29-33), targeted stereotaxically at bregma +2.0 mm, midline."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.6,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty mice were used for setting-up US stimulation parameters with (i) motor cortex stimulation using single-pulse USNS and (ii) one session of repeated-pulse USNS targeted to the IL, while 41 mice underwent the UCMS to assess the efficacy.",
+   "randomised": "From this timepoint, UCMS mice were assigned using stratified randomisation based on coat state deterioration, ensuring balanced baseline stress levels across groups.",
+   "blinding": "Cell counting was performed blind to group identity.",
+   "anaesthesia": "Mice breathed 1.8 L min⁻¹ 100% O₂ with isoflurane (2.5% induction; 1–1.5% maintenance unless otherwise stated).",
+   "exposures[0].fundamental_frequency_khz": "US stimuli were produced by a spherically focused transducer (500 kHz, 38 mm diameter, 65 mm focus, Imasonic, Besançon, France), driven by a function generator (AFG3022, Tektronix) and 500 W amplifier (ADECE) through a 50 Ω matching network.",
+   "exposures[0].in_situ.pressure_kpa": "Visible motor screening (n = 20). Under near-awake anaesthesia (0.1% isoflurane)<sup>31</sup>, animals received ten 160 ms pulses at each pressure step from 50 kPa to 500 kPa in 50 kPa increments (10 s inter-stimulus interval) (Fig. 1A).",
+   "exposures[0].timing.sonication_duration_s": "Visible motor screening (n = 20). Under near-awake anaesthesia (0.1% isoflurane)<sup>31</sup>, animals received ten 160 ms pulses at each pressure step from 50 kPa to 500 kPa in 50 kPa increments (10 s inter-stimulus interval) (Fig. 1A).",
+   "exposures[1].fundamental_frequency_khz": "US stimuli were produced by a spherically focused transducer (500 kHz, 38 mm diameter, 65 mm focus, Imasonic, Besançon, France), driven by a function generator (AFG3022, Tektronix) and 500 W amplifier (ADECE) through a 50 Ω matching network.",
+   "exposures[1].in_situ.pressure_kpa": "Guided by the single-pulse optimisation data and previous neuromodulation work<sup>33</sup>, we devised a repeated-pulse protocol consisting of 60 pulses (160 ms, 400 kPa) delivered at 0.1 Hz over 10 min.",
+   "exposures[1].in_situ.isppa_w_cm2": "Applying 400 kPa provided a lateral focal diameter of approximately 1-2 mm, defined by the region that maintained pressures within the effective 350–400 kPa stimulation range (Fig. 1C). At $\\mathrm { { p } \\approx 0 . 4 0 \\mathrm { { M P a } , } }$ $\\mathrm { I } _ { \\mathrm { S P P A } } { \\approx } 5 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { \\mathrm { S P T A } } { \\approx } 0 . 0 8 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[1].in_situ.ispta_w_cm2": "Applying 400 kPa provided a lateral focal diameter of approximately 1-2 mm, defined by the region that maintained pressures within the effective 350–400 kPa stimulation range (Fig. 1C). At $\\mathrm { { p } \\approx 0 . 4 0 \\mathrm { { M P a } , } }$ $\\mathrm { I } _ { \\mathrm { S P P A } } { \\approx } 5 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { \\mathrm { S P T A } } { \\approx } 0 . 0 8 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[1].timing.sonication_duration_s": "Guided by the single-pulse optimisation data and previous neuromodulation work<sup>33</sup>, we devised a repeated-pulse protocol consisting of 60 pulses (160 ms, 400 kPa) delivered at 0.1 Hz over 10 min.",
+   "exposures[0].device.manufacturer": "US stimuli were produced by a spherically focused transducer (500 kHz, 38 mm diameter, 65 mm focus, Imasonic, Besançon, France), driven by a function generator (AFG3022, Tektronix) and 500 W amplifier (ADECE) through a 50 Ω matching network.",
+   "exposures[1].device.manufacturer": "US stimuli were produced by a spherically focused transducer (500 kHz, 38 mm diameter, 65 mm focus, Imasonic, Besançon, France), driven by a function generator (AFG3022, Tektronix) and 500 W amplifier (ADECE) through a 50 Ω matching network.",
+   "n_sessions_per_subject": "The USNS session (60 160-msec pulses at 400 kPa every 10 s) was repeated for 5 consecutive days from day 29 to day 33 to obtain a chronic, 5-session USNS treatment (Fig. 2A).",
+   "exposures[0].in_situ.isppa_w_cm2": "At $\\mathrm { { p } \\approx 0 . 4 0 \\mathrm { { M P a } , } }$ $\\mathrm { I } _ { \\mathrm { S P P A } } { \\approx } 5 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { \\mathrm { S P T A } } { \\approx } 0 . 0 8 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].in_situ.ispta_w_cm2": "At $\\mathrm { { p } \\approx 0 . 4 0 \\mathrm { { M P a } , } }$ $\\mathrm { I } _ { \\mathrm { S P P A } } { \\approx } 5 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { \\mathrm { S P T A } } { \\approx } 0 . 0 8 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].timing.pulse_duration_ms": "Single continuous 160 ms pulses were delivered to the left primary M1 at 50–500 kPa (50 kPa increments, repeated every 10 s (0.1 Hz; duty cycle 1.6%).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Single continuous 160 ms pulses were delivered to the left primary M1 at 50–500 kPa (50 kPa increments, repeated every 10 s (0.1 Hz; duty cycle 1.6%).",
+   "exposures[0].timing.duty_cycle_pct": "Single continuous 160 ms pulses were delivered to the left primary M1 at 50–500 kPa (50 kPa increments, repeated every 10 s (0.1 Hz; duty cycle 1.6%).",
+   "exposures[1].timing.pulse_duration_ms": "Guided by the single-pulse optimisation data and previous neuromodulation work<sup>33</sup>, we devised a repeated-pulse protocol consisting of 60 pulses (160 ms, 400 kPa) delivered at 0.1 Hz over 10 min.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Guided by the single-pulse optimisation data and previous neuromodulation work<sup>33</sup>, we devised a repeated-pulse protocol consisting of 60 pulses (160 ms, 400 kPa) delivered at 0.1 Hz over 10 min.",
+   "exposures[1].timing.duty_cycle_pct": "Single continuous 160 ms pulses were delivered to the left primary M1 at 50–500 kPa (50 kPa increments, repeated every 10 s (0.1 Hz; duty cycle 1.6%)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Given as group-size list per instructions rather than summed: 30 mice for parameter-setting (M1 motor screening n=20 plus EMG n=10, a subset of which were later reused for the 8-mouse IL c-Fos focality experiment), and 15 mice in the chronic IL-USNS treatment arm of the UCMS cohort; other UCMS arms (sham-USNS, vehicle, fluoxetine, non-stressed) did not receive ultrasound."
+   },
+   {
+    "field": "sham_type",
+    "reason": "'Sham-USNS'/'sham controls' are described only as anaesthesia without ultrasound; the paper does not state whether a transducer was placed but powered off or simply absent, so the sham mechanism is not fully described."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Text states 'duty cycle 1.6%' for the repeated 160 ms pulses at 0.1 Hz, but this describes the inter-pulse repetition duty cycle across a pulse train, not the internal pulse waveform (which is a single continuous burst); left null per the continuous-wave rule and described in protocol_description instead."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Varies by experiment: single session for M1 optimisation and the 8-mouse c-Fos focality test, versus 5 consecutive daily sessions for the chronic UCMS IL-USNS group."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "set to pulsed by the tie-break: the ruled timing has a pulse repetition or duty cycle"
+   },
+   {
+    "field": "exposures[1].timing.waveform",
+    "reason": "set to pulsed by the tie-break: the ruled timing has a pulse repetition or duty cycle"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "neither",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.duty_cycle_pct": "second",
+   "exposures[1].timing.sonication_duration_s": "second"
+  }
+ }
+}

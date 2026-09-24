@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024badawe",
+ "doi": "10.1101/2024.12.26.630403",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty male Sprague-Dawley rats, weighing between 270-480 g, were used in this study.",
+   "exposures[0].fundamental_frequency_khz": "A cone, of outer diameter 25 mm, coupled the transducer, of center frequency 500 kHz, with the sciatic nerve as it received ultrasonic pulses at a frequency of 500 kHz, number of cycles (CPP) = 125, and tone burst duration (TBD) = 250 µs.",
+   "exposures[0].timing.pulse_duration_ms": "A cone, of outer diameter 25 mm, coupled the transducer, of center frequency 500 kHz, with the sciatic nerve as it received ultrasonic pulses at a frequency of 500 kHz, number of cycles (CPP) = 125, and tone burst duration (TBD) = 250 µs.",
+   "exposures[0].timing.duty_cycle_pct": "The duty cycle of ultrasound waves was varied between 30%, 50%, and 80% by altering the burst period.",
+   "exposures[0].timing.sonication_duration_s": "The sonication duration was varied between 30, 60, 90, and 120 seconds.",
+   "exposures[0].free_field.isppa_w_cm2": "Two intensities were considered, 1.4 W/cm² and 3.39 W/cm².",
+   "exposures[0].device.manufacturer": "These insights contribute to the development of ultrasound-based therapies for managing neurological and peripheral nerve disorders, presenting a non-invasive, controllable method for peripheral nerve stimulation with significant clinical implications.",
+   "exposures[0].device.model": "A single-element unfocused ultrasound transducer (Mana Instruments E0525-SU) was connected to a 50- dB gain RF amplifier (Electronics & Innovation Ltd., Rochester, NY, USA), receiving electrical pulses from a waveform generator (SIGILENT-SDS 1025).",
+   "n_sessions_per_subject": "Each rat underwent three trials, maintaining a consistent sonication duration while altering the DC in each trial."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Appears to be a single acute terminal surgical session per animal (exposed sciatic nerve, three trials, then euthanised for histology), but the paper does not state a session count explicitly."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Duty cycle was varied 'by altering the burst period', but the paper never states the resulting period/PRF values numerically, so PRF cannot be computed without assuming unstated burst-period values."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensity was measured with a calibrated hydrophone in a degassed-water tank at the tip of the coupling cone (free field), separate from the in vivo sciatic-nerve exposures."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "neither"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular"
+ ],
+ "readout_other": "Electrically-evoked EMG peak-to-peak amplitude (Vpp) and area-under-curve (AUC) in gastrocnemius muscle; H&E histology of the sciatic nerve",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Lower cumulative ultrasound energy (shorter sonication duration and/or lower duty cycle) enhanced electrically-evoked EMG activity (excitation), while higher cumulative energy (longer sonication duration and/or higher duty cycle, e.g. 120 s at 80% duty cycle) suppressed EMG activity; effects persisted for up to 5 minutes post-sonication before returning to baseline.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining showed no anatomical damage, inflammation or nerve degeneration; maximum temperature increase was 0.34 °C during the most intense sonication (120 s, 80% duty cycle); effects were judged non-cavitational and non-thermal.",
+ "exposures": [
+  {
+   "label": "Sciatic nerve, varying sonication duration and duty cycle (electrically-evoked EMG)",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "left sciatic nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Mana Instruments",
+    "model": "E0525-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1.4,
+     3.39
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.25,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     30,
+     50,
+     80
+    ],
+    "sonication_duration_s": [
+     30,
+     60,
+     90,
+     120
+    ],
+    "protocol_description": "In each of three trials per rat, a single sonication duration (30, 60, 90 or 120 s) was held constant while duty cycle (30%, 50% or 80%) was varied; ultrasound was applied concurrently with ongoing electrical nerve stimulation (2 Hz, 2 ms pulses) after a 30-s electrical-only baseline (Region A), followed by a 5-min electrical-only recovery period whose final 30 s (Region B) was used to quantify sustained effects; a 15-min rest separated trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

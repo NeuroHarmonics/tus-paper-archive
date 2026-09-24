@@ -1,0 +1,370 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2014kima",
+ "doi": "10.1016/j.brs.2014.06.011",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 37,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Sonication-synchronised tail movement detected by a piezoelectric motion sensor (threshold = 3x baseline SD) and visual inspection; post-sonication H&E histology of brain tissue for hemorrhage/tissue damage",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Pulsed FUS elicited tail motor responses in an all-or-nothing manner; threshold acoustic intensity depended on tone-burst duration, duty cycle and sonication duration, with 1-5 ms TBD/50% DC/300 ms SD at 350 kHz giving the lowest thresholds; pulsed sonication required lower intensities than energy-matched continuous sonication, and 350 kHz required lower intensities than 650 kHz.",
+ "adverse_events": "observed",
+ "safety_notes": "H&E histology showed no tissue damage or hemorrhage in 29 of 30 animals examined; one animal exposed to a high acoustic intensity (22.4 W/cm2 Isppa, 11.2 W/cm2 Ispta, MI 1.38, peak pressure 0.81 MPa) for a brief period later showed hemosiderin-containing areas suggesting prior local bleeding, though still well below the reported cavitation damage threshold (40 MPa).",
+ "exposures": [
+  {
+   "label": "Tail somatomotor cortex, 350 kHz, pulsed parameter sweep (TBD/DC/SD) and energy-matched continuous-wave comparison",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "somatomotor area of the brain that elicits tail movement (mid-line, 2 mm posterior to Bregma)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     420,
+     810
+    ],
+    "isppa_w_cm2": [
+     4.9,
+     5.6,
+     7.73,
+     22.4
+    ],
+    "ispta_w_cm2": [
+     2.5,
+     2.8,
+     7.73,
+     11.2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.25,
+     0.5,
+     1,
+     2,
+     3,
+     5
+    ],
+    "pulse_repetition_frequency_hz": [
+     60,
+     100,
+     140,
+     150,
+     170,
+     230,
+     250,
+     300,
+     350,
+     500,
+     600,
+     700,
+     1000,
+     1200,
+     1400,
+     2000,
+     2800
+    ],
+    "duty_cycle_pct": [
+     30,
+     50,
+     70,
+     100
+    ],
+    "sonication_duration_s": [
+     0.15,
+     0.2,
+     0.3,
+     0.4
+    ],
+    "protocol_description": "Threshold acoustic intensities for eliciting tail movement were mapped at 350 kHz across combinations of tone-burst duration (0.25-5 ms), duty cycle (30/50/70%) and sonication duration (200/300/400 ms; fixed at 50% DC for the SD comparison), each stimulus given with an inter-stimulus interval of 2-3 s, success defined as sonication-synchronised tail movement on 5 consecutive stimuli. For comparison, a continuous-wave condition (100% duty cycle, 150 ms sonication duration, 350 kHz) was designed to deposit the same overall acoustic energy as the 50% DC/300 ms pulsed condition. The sequence of parameter sets was randomised and balanced across animals; repeated sessions on the same animal (different parameter sets, >=2 days apart) were allowed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Tail somatomotor cortex, 650 kHz, pulsed parameter sweep (fixed 50% DC/300 ms SD, varying TBD)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "somatomotor area of the brain that elicits tail movement (mid-line, 2 mm posterior to Bregma)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.25,
+     0.5,
+     1,
+     2,
+     3,
+     5
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     170,
+     250,
+     500,
+     1000
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Using 50% duty cycle and 300 ms sonication duration, threshold acoustic intensities were examined at 650 kHz across the same six tone-burst durations tested at 350 kHz, in a separate group of animals, to compare stimulation efficiency between the two fundamental frequencies; 350 kHz elicited responses at lower threshold intensities than 650 kHz for all tone-burst durations."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "All animal experiments described in this study were approved by the Harvard Medical Area Standing Committee on Animals. The SpragueeDawley rat (all male, n 37) was anesthetized using an intraperitoneal injection of a 80:10 mg/kg, ketamine/xylazine mixture.",
+   "exposures[0].fundamental_frequency_khz": "Two air-backed, spherical segment FUS transducers (6 cm in diameter, 7 cm in radius-ofcurvature, each operating at the 350 or 650 kHz FF) were used.",
+   "exposures[0].in_situ.pressure_kpa": "In this study, we were able to elicit motor responses at less than $3 ~ { \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ~ { \\mathsf { I } } _ { { \\mathsf { s p t a } } }$ (corresponding to $6 ~ { \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ~ { \\mathsf { I } } _ { { \\mathsf { s p p a } } } ,$ , peak pressure of 0.42 MPa, MI of 0.71) by using the effective sonication parameters described above.",
+   "exposures[0].in_situ.isppa_w_cm2": "The comparison between the pulsed sonication (50% DC, 300 ms SD, 350 kHz FF) and its equivalent continuous sonication (150 ms SD, 350 kHz FF) showed that the continuous sonication was able to elicit tail movement in rats at $7 . 7 3 \\pm 0 . 8 3 \\mathrm { W / c m ^ { 2 } I _ { \\mathrm { s p p a } } ( I _ { \\mathrm { s p t a } } }$ equates to I<sub>sppa</sub> due to the use of 100% DC), and $1 . 1 6 \\pm \\dot { 0 . 1 2 } \\dot { \\mathrm { J } / \\mathrm { c m } ^ { 2 } }$ E<sub>sppa</sub>.",
+   "exposures[0].in_situ.ispta_w_cm2": "The comparison between the pulsed sonication (50% DC, 300 ms SD, 350 kHz FF) and its equivalent continuous sonication (150 ms SD, 350 kHz FF) showed that the continuous sonication was able to elicit tail movement in rats at $7 . 7 3 \\pm 0 . 8 3 \\mathrm { W / c m ^ { 2 } I _ { \\mathrm { s p p a } } ( I _ { \\mathrm { s p t a } } }$ equates to I<sub>sppa</sub> due to the use of 100% DC), and $1 . 1 6 \\pm \\dot { 0 . 1 2 } \\dot { \\mathrm { J } / \\mathrm { c m } ^ { 2 } }$ E<sub>sppa</sub>.",
+   "exposures[0].timing.pulse_duration_ms": "The threshold AIs that elicited the motor responses were examined over the range of TBDs (0.25, 0.5, 1, 2, 3, and 5 ms) using three different pulse DC groups $( n = 1 1 , 2 7 9 \\pm 2 3 \\mathrm { \\mathrm { g } }$ for 50% DC; n 9, 286 36 g for 30% DC; $n = 1 0 , 2 9 0 \\pm 2 1$ g for $7 0 \\% \\mathrm { D C } )$ at a fixed SD of 300 ms, whereby the use of 50% DC elicited motor responses at the lowest AIs (see Results section; Fig. 3).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The threshold AIs that elicited the motor responses were examined over the range of TBDs (0.25, 0.5, 1, 2, 3, and 5 ms) using three different pulse DC groups $( n = 1 1 , 2 7 9 \\pm 2 3 \\mathrm { \\mathrm { g } }$ for 50% DC; n 9, 286 36 g for 30% DC; $n = 1 0 , 2 9 0 \\pm 2 1$ g for $7 0 \\% \\mathrm { D C } )$ at a fixed SD of 300 ms, whereby the use of 50% DC elicited motor responses at the lowest AIs (see Results section; Fig. 3).",
+   "exposures[0].timing.duty_cycle_pct": "<tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>300</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>300</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>300</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>300</td></tr><tr><td>350</td><td>50</td><td>3</td><td>0.17</td><td>300</td></tr><tr><td>350</td><td>50</td><td>5</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>30</td><td>0.25</td><td>1.20</td><td>300</td></tr><tr><td>350</td><td>30</td><td>0.5</td><td>0.60</td><td>300</td></tr><tr><td>350</td><td>30</td><td>1</td><td>0.30</td><td>300</td></tr><tr><td>350</td><td>30</td><td>2</td><td>0.15</td><td>300</td></tr><tr><td>350</td><td>30</td><td>3</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>30</td><td>5</td><td>0.06</td><td>300</td></tr><tr><td>350</td><td>70</td><td>0.25</td><td>2.80</td><td>300</td></tr><tr><td>350</td><td>70</td><td>0.5</td><td>1.40</td><td>300</td></tr><tr><td>350</td><td>70</td><td>1</td><td>0.70</td><td>300</td></tr><tr><td>350</td><td>70</td><td>2</td><td>0.35</td><td>300</td></tr><tr><td>350</td><td>70</td><td>3</td><td>0.23</td><td>300</td></tr><tr><td>350</td><td>70</td><td>5</td><td>0.14</td><td>300</td></tr><tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>200</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>200</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>200</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>200</td></tr><tr><td>350</td><td>50</td><td>3</td><td>0.17</td><td>200</td></tr><tr><td>350</td><td>50</td><td>5</td><td>0.10</td><td>200</td></tr><tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>400</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>400</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>400</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>400</td></tr><tr><td>350 350</td><td>50</td><td>3</td><td>0.17</td><td>400 400</td></tr><tr><td>650</td><td>50</td><td>5</td><td>0.10 1.00</td><td></td></tr><tr><td></td><td>50</td><td>0.5</td><td></td><td>300</td></tr><tr><td>650</td><td>50</td><td>1</td><td>0.50</td><td>300</td></tr><tr><td>650</td><td>50</td><td>2</td><td>0.25</td><td>300</td></tr><tr><td>650</td><td>50</td><td>3</td><td>0.17</td><td>300</td></tr><tr><td>650</td><td>50</td><td>5</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>100</td><td>一</td><td>一</td><td>150</td></tr>",
+   "exposures[0].timing.sonication_duration_s": "<tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>300</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>300</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>300</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>300</td></tr><tr><td>350</td><td>50</td><td>3</td><td>0.17</td><td>300</td></tr><tr><td>350</td><td>50</td><td>5</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>30</td><td>0.25</td><td>1.20</td><td>300</td></tr><tr><td>350</td><td>30</td><td>0.5</td><td>0.60</td><td>300</td></tr><tr><td>350</td><td>30</td><td>1</td><td>0.30</td><td>300</td></tr><tr><td>350</td><td>30</td><td>2</td><td>0.15</td><td>300</td></tr><tr><td>350</td><td>30</td><td>3</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>30</td><td>5</td><td>0.06</td><td>300</td></tr><tr><td>350</td><td>70</td><td>0.25</td><td>2.80</td><td>300</td></tr><tr><td>350</td><td>70</td><td>0.5</td><td>1.40</td><td>300</td></tr><tr><td>350</td><td>70</td><td>1</td><td>0.70</td><td>300</td></tr><tr><td>350</td><td>70</td><td>2</td><td>0.35</td><td>300</td></tr><tr><td>350</td><td>70</td><td>3</td><td>0.23</td><td>300</td></tr><tr><td>350</td><td>70</td><td>5</td><td>0.14</td><td>300</td></tr><tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>200</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>200</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>200</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>200</td></tr><tr><td>350</td><td>50</td><td>3</td><td>0.17</td><td>200</td></tr><tr><td>350</td><td>50</td><td>5</td><td>0.10</td><td>200</td></tr><tr><td>350</td><td>50</td><td>0.25</td><td>2.00</td><td>400</td></tr><tr><td>350</td><td>50</td><td>0.5</td><td>1.00</td><td>400</td></tr><tr><td>350</td><td>50</td><td>1</td><td>0.50</td><td>400</td></tr><tr><td>350</td><td>50</td><td>2</td><td>0.25</td><td>400</td></tr><tr><td>350 350</td><td>50</td><td>3</td><td>0.17</td><td>400 400</td></tr><tr><td>650</td><td>50</td><td>5</td><td>0.10 1.00</td><td></td></tr><tr><td></td><td>50</td><td>0.5</td><td></td><td>300</td></tr><tr><td>650</td><td>50</td><td>1</td><td>0.50</td><td>300</td></tr><tr><td>650</td><td>50</td><td>2</td><td>0.25</td><td>300</td></tr><tr><td>650</td><td>50</td><td>3</td><td>0.17</td><td>300</td></tr><tr><td>650</td><td>50</td><td>5</td><td>0.10</td><td>300</td></tr><tr><td>350</td><td>100</td><td>一</td><td>一</td><td>150</td></tr>",
+   "exposures[1].fundamental_frequency_khz": "Using 50% DC and 300 ms SD, the threshold AIs that elicited the movement responses were subsequently examined at 650 kHz FF across a different set of animals $( n = 8 , 2 8 9 \\pm 1 2 \\mathrm { \\bf ~ g } )$ to examine the stimulation efficiency compared to the use of 350 kHz FF.",
+   "exposures[1].timing.pulse_duration_ms": "The threshold AIs that elicited the motor responses were examined over the range of TBDs (0.25, 0.5, 1, 2, 3, and 5 ms) using three different pulse DC groups $( n = 1 1 , 2 7 9 \\pm 2 3 \\mathrm { \\mathrm { g } }$ for 50% DC; n 9, 286 36 g for 30% DC; $n = 1 0 , 2 9 0 \\pm 2 1$ g for $7 0 \\% \\mathrm { D C } )$ at a fixed SD of 300 ms, whereby the use of 50% DC elicited motor responses at the lowest AIs (see Results section; Fig. 3).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<tr><td>650</td><td>50</td><td>5</td><td>0.10 1.00</td><td></td></tr><tr><td></td><td>50</td><td>0.5</td><td></td><td>300</td></tr><tr><td>650</td><td>50</td><td>1</td><td>0.50</td><td>300</td></tr><tr><td>650</td><td>50</td><td>2</td><td>0.25</td><td>300</td></tr><tr><td>650</td><td>50</td><td>3</td><td>0.17</td><td>300</td></tr><tr><td>650</td><td>50</td><td>5</td><td>0.10</td><td>300</td></tr>",
+   "exposures[1].timing.duty_cycle_pct": "Using 50% DC and 300 ms SD, the threshold AIs that elicited the movement responses were subsequently examined at 650 kHz FF across a different set of animals $( n = 8 , 2 8 9 \\pm 1 2 \\mathrm { \\bf ~ g } )$ to examine the stimulation efficiency compared to the use of 350 kHz FF.",
+   "exposures[1].timing.sonication_duration_s": "Using 50% DC and 300 ms SD, the threshold AIs that elicited the movement responses were subsequently examined at 650 kHz FF across a different set of animals $( n = 8 , 2 8 9 \\pm 1 2 \\mathrm { \\bf ~ g } )$ to examine the stimulation efficiency compared to the use of 350 kHz FF."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Threshold intensities vary continuously with TBD/DC/SD (Table 1, Figs 3-4); only the headline optimal range (abstract), the stated 'effective' operating point, and the one high-intensity/adverse-event case are captured here rather than every combination tested."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Only two peak-pressure values are stated in the text (0.42 MPa for the effective parameters, 0.81 MPa for the high-intensity case that produced a histological finding); pressure is not given for other parameter combinations."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "The continuous-wave comparison condition (100% duty cycle, 150 ms sonication duration) is described in protocol_description rather than added to these numeric lists, because it cannot be represented as a parallel array element alongside the pulsed TBD/PRF values without breaking the pulsed-only correspondence between those two fields."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "The source table's rows for 650 kHz at 0.25 and 0.5 ms tone-burst duration are corrupted/merged in text extraction (values bleed into adjacent rows); only the four legible PRF values (for 1, 2, 3 and 5 ms TBD) are included, though the main text states the full six-TBD range was tested at 650 kHz."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "The paper states 350 kHz gave lower threshold intensities than 650 kHz across all TBDs but the specific 650 kHz threshold values are only shown in Fig. 5, not stated numerically in the main text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "neither",
+   "exposures[0].in_situ.ispta_w_cm2": "neither",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[0].timing.sonication_duration_s": "second",
+   "exposures[1].timing.pulse_duration_ms": "both_defensible",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

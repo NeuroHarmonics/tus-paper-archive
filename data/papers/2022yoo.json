@@ -1,0 +1,177 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022yoo",
+ "doi": "10.1038/s41467-022-28040-1",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We used a frequency of 300 kHz, within the range utilized in recent studies in a variety of organisms<sup>9,11,14–19,36</sup>, and continuous-wave stimulation, which was found to be as effective as pulsed ultrasound<sup>4</sup>.",
+   "exposures[0].free_field.isppa_w_cm2": "To establish the pulse parameters under which neurons in culture respond to ultrasound, we stimulated the cells across a range of pulse intensities (0–15 W/cm<sup>2</sup>) and pulse durations (0–500 ms, CW, continuous wave) while imaging calcium responses with virally transfected GCaMP6f (Fig. 1c and Supplementary Video 1).",
+   "exposures[0].timing.sonication_duration_s": "To establish the pulse parameters under which neurons in culture respond to ultrasound, we stimulated the cells across a range of pulse intensities (0–15 W/cm<sup>2</sup>) and pulse durations (0–500 ms, CW, continuous wave) while imaging calcium responses with virally transfected GCaMP6f (Fig. 1c and Supplementary Video 1).",
+   "exposures[0].device.manufacturer": "A 300 kHz ultrasound transducer (BII-7654/300IM, Benthowave Instrument INC.",
+   "exposures[0].device.model": "A 300 kHz ultrasound transducer (BII-7654/300IM, Benthowave Instrument INC."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Reported as independent-experiment replicate counts (n=3-7 dishes) that vary across dozens of separate sub-experiments; no aggregate total of stimulated cultures is given."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each dish received many repeated ultrasound pulses at randomized intensities/durations (inter-pulse interval 20 s); no discrete 'session' count per dish is stated."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "A second, less-characterized frequency (670 kHz, different transducer) was also tested with the same general configuration and found not to differ from 300 kHz; recorded only as a note in protocol_description rather than as a list value because other parameters/device were not identically documented for it."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Domain classified as free-field because neurons were stimulated in a water tank with no skull/tissue path; the paper reports generic 'acoustic intensity' rather than explicitly labelling it Isppa or Ispta."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ },
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "mouse (embryonic day 18 C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "GCaMP6f calcium imaging; Ace2N voltage imaging; ultra-high-speed (5 Mfps) optical imaging of membrane deformation",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Focused ultrasound directly excited cultured cortical neurons via mechanosensitive Ca2+-permeable channels (TRPP1/2, TRPC1, Piezo1), amplified by TRPM4 and T-type Ca2+ channels, producing calcium/voltage responses and burst firing that grew with intensity and pulse duration.",
+ "adverse_events": null,
+ "safety_notes": "No sustained calcium accumulation or irreversible membrane perforation was observed after repetitive ultrasound stimuli at the optimized parameters (15 W/cm2, 500 ms, 30 repeats, 20 s inter-pulse interval); cell viability was assessed with live/dead staining.",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of cultured primary cortical neurons",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "primary cortical neurons in culture"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Benthowave Instrument INC. Canada",
+    "model": "BII-7654/300IM"
+   },
+   "fundamental_frequency_khz": 300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0,
+     15
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0,
+     0.5
+    ],
+    "protocol_description": "Cultured cortical neurons on an acoustically transparent Mylar film were stimulated with continuous-wave ultrasound across a range of pulse intensities (0-15 W/cm2) and pulse durations (0-500 ms, CW), inter-pulse interval fixed at 20 s; subsequent experiments used 15 W/cm2 and 500 ms CW. A 670 kHz transducer and pulsed-wave stimulation (1 kHz and 1.5 kHz PRF) were also tested for comparison with no substantial difference in response amplitude or onset delay from the 300 kHz CW condition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

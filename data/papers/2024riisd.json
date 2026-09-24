@@ -1,0 +1,310 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024riisd",
+ "doi": "10.1109/tbme.2023.3313987",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "Psychiatrist-rated 7-point scale for depression and anxiety mood states; Generic Assessment of Side Effects (GASE) questionnaire; structural T1-w and T2-w MRI",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasound was delivered at a low duty cycle intended to suppress (inhibit) neural activity in the hyperactive subgenual cingulate cortex; stimulation for 60 s or longer led to significant improvements (reductions) in depression and anxiety metrics, with no effect from sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse effects were noted by either subject or the attending psychiatrist; structural MRI showed no apparent changes.",
+ "exposures": [
+  {
+   "label": "Subgenual cingulate cortex (SGC) stimulation",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "subgenual cingulate cortex (SGC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": 31,
+    "ispta_w_cm2": 0.233
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 0.75,
+    "sonication_duration_s": [
+     60,
+     180
+    ],
+    "protocol_description": "Ultrasound was delivered into the target in 30 ms ON periods followed by 4 s OFF periods; sonication duration varied from 60-180 s. Targets were presented randomly in a blinded manner, interleaved with an active sham (unfocused plane wave with the same energy and waveform) over a 1.5 hour neuromodulation session; a psychiatrist rated mood immediately after each of 27 total stimuli."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Ventral striatum stimulation",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "ventral striatum"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1000,
+    "isppa_w_cm2": 31,
+    "ispta_w_cm2": 0.233
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 0.75,
+    "sonication_duration_s": [
+     60,
+     180
+    ],
+    "protocol_description": "Ultrasound was delivered into the target in 30 ms ON periods followed by 4 s OFF periods; sonication duration varied from 60-180 s. Targets were presented randomly in a blinded manner, interleaved with an active sham (unfocused plane wave with the same energy and waveform) over a 1.5 hour neuromodulation session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Two patients (female, aged 32 and 35) with history of severe treatment-resistant depression were recruited in the study.",
+   "n_sessions_per_subject": "The second, MRI-free visit was performed at the Huntsman Mental Health Institute. The subject’s head was immobilized in the same thermoplastic mask and the arrays locked in the same position as during the initial visit. We delivered ultrasonic stimulation into the subgenual cingulate cortex and the ventral striatum. The targets were presented randomly, in a blinded manner, and were interleaved with the above described active sham stimulation (plane waves) over a 1.5 hour neuromodulation session.",
+   "randomised": "The targets were presented randomly, in a blinded manner, and were interleaved with the above described active sham stimulation (plane waves) over a 1.5 hour neuromodulation session.",
+   "blinding": "Subjects were blinded to the individual stimuli.",
+   "exposures[0].fundamental_frequency_khz": "The array elements are made of PMN-PT material, with a square surface geometry of 6 mm × 6 mm, and operate at a fundamental frequency of 650 kHz. The rated acoustic power at the transducer surface was 3 W/cm<sup>2</sup> (Suppl. Fig. 2).",
+   "exposures[1].fundamental_frequency_khz": "The array elements are made of PMN-PT material, with a square surface geometry of 6 mm × 6 mm, and operate at a fundamental frequency of 650 kHz. The rated acoustic power at the transducer surface was 3 W/cm<sup>2</sup> (Suppl. Fig. 2).",
+   "exposures[0].device.family": "The device consists of 252 independently controlled elements, which provides the ability to modulate multiple deep brain targets at a high spatiotemporal resolution, without the need to move the device or the subject.",
+   "exposures[1].device.family": "The device consists of 252 independently controlled elements, which provides the ability to modulate multiple deep brain targets at a high spatiotemporal resolution, without the need to move the device or the subject.",
+   "exposures[0].in_situ.pressure_kpa": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].in_situ.pressure_kpa": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[0].in_situ.isppa_w_cm2": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].in_situ.isppa_w_cm2": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[0].in_situ.ispta_w_cm2": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].in_situ.ispta_w_cm2": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].timing.pulse_duration_ms": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].timing.duty_cycle_pct": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s.",
+   "exposures[1].timing.sonication_duration_s": "The ultrasound was delivered into each target in 30 ms ON periods (650 kHz, 1.0 MPa peak pressure, estimated using the relative through transmit skull correction method [28]), $M I = 1 . 2 , I _ { s P P A } = 3 1 \\mathrm { { W / c m ^ { 2 } } ) }$ followed by 4 s OFF periods (0.75% duty, $I _ { s P T A } = 0 . 2 3 3 \\mathrm { ~ W / c m ^ { 2 } } )$ . Sonication duration varied from 60–180 s."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper gives 30 ms ON and 4 s OFF periods and a duty cycle (0.75%) but never labels a PRF value; computing PRF from the ON+OFF period would require summing two separately stated numbers, which is arithmetic this extraction avoids."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Active sham delivered the same energy/waveform as an unfocused (defocused) plane wave rather than a powered-off transducer or a different anatomical site, which does not cleanly match a listed sham_type category."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Direction is based on the authors' stated intent to suppress SGC activity via low duty cycle and the resulting mood improvement; no direct neural activity measurement (e.g., imaging) confirmed inhibition in this paper."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only 2 patients were studied; findings are proof-of-concept."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026pyeon",
+ "doi": "10.1016/j.brs.2026.103197",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  10,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "Fos immunohistochemistry; freezing behavior scoring; real-time place preference (chamber avoidance); operant lever-pressing during cocaine self-administration, extinction, and retention testing; locomotor velocity",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS of the elPBN increased Fos expression (neuronal activation), consistent with excitation of this aversion-signaling region; behaviorally this activation produced freezing, place avoidance, and a persistent suppression of cocaine-reinforced lever pressing.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Temperature beneath the skull rose by less than 0.5 degrees C during a single 4.5-s or 9-s stimulation and by about 0.5 degrees C after 20 consecutive stimulations, levels the authors describe as unlikely to affect behavior; an off-target control receiving identical acoustic exposure showed no behavioral suppression, arguing against a nonspecific thermal effect.",
+ "exposures": [
+  {
+   "label": "elPBN tFUS",
+   "target": {
+    "terms": [
+     "parabrachial_nucleus"
+    ],
+    "label": "extralateral parabrachial nucleus (elPBN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.439,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     9,
+     4.5
+    ],
+    "protocol_description": "Pulsed 5 MHz sine waves (PD 0.5 ms, PRF 1 kHz) were gated into 0.5-s bursts (BD) separated by 1-s inter-burst intervals (IBI). For the c-Fos assay and open-arena behavioral test, six or four such 9-s trains were delivered with 60-s inter-sonication intervals. For the RTPP test, bursts were delivered continuously for up to 1 min while the animal occupied the paired chamber, followed by a 30-s timeout. During cocaine self-administration extinction, each active lever press triggered a 4.5-s train (3 bursts) over a 4-day extinction phase."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The same animals used in the preceding freezing and placeavoidance experiments were subsequently tested in the cocaine operant paradigm (tFUS, n = 10, 5 males/5 females; pooled control, n = 10, 6 males/4 females, comprising sham and off-target controls, n = 5 each).",
+   "exposures[0].fundamental_frequency_khz": "To induce neuromodulatory effects, bilateral tFUS stimulation was delivered at the resonant frequency of the device (5 MHz) to generate low-intensity ultrasound, as described previously [28].",
+   "exposures[0].timing.pulse_duration_ms": "Pulsed sine waves with a pulse duration (PD) of 0.5 ms were repeated at a pulse repetition frequency (PRF) of 1 kHz and gated within square waves to form ultrasound bursts (Fig. 1C).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulsed sine waves with a pulse duration (PD) of 0.5 ms were repeated at a pulse repetition frequency (PRF) of 1 kHz and gated within square waves to form ultrasound bursts (Fig. 1C).",
+   "exposures[0].timing.sonication_duration_s": "The stimulation parameters were adjusted depending on the experimental purpose while maintaining consistent acoustic features (5 MHz resonant frequency, 0.5 ms PD, and 1 kHz PRF). For the c-Fos assay, each stimulation consisted of six bursts (burst duration (BD) = 0.5 s, interburst interval (IBI) = 1 s) for a total sonication duration (SD) of 9 s, repeated eight times with 60 s inter-sonication intervals (ISIs). For the behavioral phenotype test in the open arena, the same stimulation pattern (BD = 0.5 s, IBI = 1 s, SD = 9 s) was delivered four times with $6 0 \\mathrm { ~ s ~ } \\mathrm { I S I s }$ . For the real-time place preference (RTPP) test, bilateral stimulation was applied while the animals remained in the stimulation-paired chamber for up to 1 min (BD = 0.5 s, IBI = 1 s), followed by a 30 s timeout before subsequent stimulation could resume. During the cocaine self-administration task, each active lever press triggered stimulation consisting of three bursts (BD = 0.5 s, IBI = 1 s, $\\mathrm { S D } = 4 . 5 \\mathrm { s } )$",
+   "exposures[0].free_field.isppa_w_cm2": "The maximum spatialpeak pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ at the focal point was determined to be 2.439 W/cm² under both homogeneous and realistic acoustic impedance conditions."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Study comprises separate cohorts: n=8 tFUS mice for the Fos assay and n=10 tFUS mice reused across freezing/RTPP/cocaine behavioral experiments; a 5-mouse off-target subgroup (within the n=10 pooled control) also received real, mistargeted ultrasound and is not counted here; reported as the list of distinct tFUS group sizes."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Session structure differs by sub-experiment (single session for Fos/freezing/RTPP vs. a 4-day extinction phase for the cocaine operant task), so no single per-subject session count is stated."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated as a percentage; PD (0.5 ms) and PRF (1 kHz) are given but duty cycle is not computed by the paper."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Isppa (2.439 W/cm2) was measured in a degassed soybean oil tank during device characterization (pre-implantation), not in the skull/brain; treated as free-field. No in-brain/simulated intensity is reported."
+   },
+   {
+    "field": "blinding",
+    "reason": "Blinding to group identity is stated only for Fos-positive cell counting, not for the behavioral scoring or overall study design."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Some outcomes were assessed during stimulation (RTPP chamber time, lever pressing) and others well after (Fos, 60 min post-stimulation); coded as both."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "first",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

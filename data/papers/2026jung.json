@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026jung",
+ "doi": "10.1038/s41467-026-69579-7",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 23,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "matched_device_sound",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "Semantic association task and pattern-matching control task (accuracy, reaction time); GABA-edited MEGA-PRESS MRS (GABA+, Glx, NAA, choline, total creatine); voxel-based morphometry (grey matter volume); dynamic causal modelling of effective connectivity; post-study aversive-effects questionnaire",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "ATL tbTUS decreased GABA+ and increased Glx (increased excitation-inhibition balance) and increased NAA, choline and total creatine relative to control (ventricle) stimulation; it decreased task-induced BOLD activity in the ATL, IFG and pMTG, increased grey matter volume in the ventromedial ATL, increased intrinsic effective connectivity across the semantic network, and improved semantic task accuracy.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No participants reported experiencing any discomfort during the experiment. The transcranial mechanical index (MItc; max = 1.33) and temperature rise (max at target=0.567 °C; max at tissue = 2.88 °C: max at skull = 4.69 °C) for both regions remained below the safety limits recommended by the United States Food and Drug Administration (US FDA).",
+ "exposures": [
+  {
+   "label": "tbTUS to the left ventromedial anterior temporal lobe (ATL)",
+   "target": {
+    "terms": [
+     "temporal_pole"
+    ],
+    "label": "left ventromedial anterior temporal lobe (ATL)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "CTX-500-4CH transducer with NeuroFUS PRO TPO-203 system"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 578.22,
+    "isppa_w_cm2": 11.46,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 54.51,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Participants completed three sessions at least 5 days apart, counterbalanced across participants: session 1 acquired a T1-weighted MRI; sessions 2 and 3 applied tbTUS to either the left ventromedial ATL (active) or the left lateral ventricle (control), each followed by a semantic association task, a pattern-matching control task and MRS/fMRI/VBM scanning. Pulse repetition interval was 200 ms; steering depth was variable (ATL = 5.31 +/- 0.72 cm)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-22"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-three healthy young adults (6 males, mean age = 21 ± 3.02 years, ranging from 19 to 33) were recruited for this study. All participants were right-handed English speakers<sup>91</sup> with no current diagnosis of neurological or psychiatric disorders, and were not taking any medications known to influence brain chemistry during the study. The sample size was determined based on a previous study<sup>39</sup>, which indicates that for a significant level of ɑ = 0.05, power = 80%, at least 18 participants were required to detect tbTUS effects compared to sham. One participant completed only first and second sessions (ATL stimulation). Participants were compensated £30 for completing each session.",
+   "n_sessions_per_subject": "We investigated the regional and task-specific effects of tbTUS on semantic memory, focusing on structural, biochemical, functional and behavioural changes. Participants completed three sessions (Fig. 1). In session 1, a high-resolution T1-weighted MR image was acquired for neuronavigation. In sessions 2 and 3, tbTUS was applied to either the left ventromedial ATL (active stimulation) or the left lateral ventricle (control stimulation) with a 5-day gap at minimum. Following each tbTUS, participants underwent scanning. In these sessions, participants performed a semantic association task and a pattern-matching control task before and after tbTUS (Fig. 1B, see details in Methods). During structural imaging and MRS acquisition, participants were instructed to remain relaxed with their eyes open. MRS was used to detect and quantify regional GABA+ and glx (glutamate + glutamine) concentrations in the ATL and occipital cortex (OCC) as a control region (Fig. 1C). For fMRI, participants performed the semantic and control tasks in a block design (Fig. 1B). After the scanning session, participants repeated the tasks and completed an aversive response questionnaire related to tbTUS at the end of the study.",
+   "blinding": "Participants were informed that stimulation would be applied to different areas of the semantic network, although experimenters were aware of the stimulation site to ensure accurate targeting. To check blinding integrity, participants were verbally asked at the end of all sessions, after being informed that one session involved control stimulation, whether they could distinguish between the two stimulation condi tions. No participants were able to identify the control session.",
+   "exposures[0].device.model": "We used the four-element CTX-500-4CH transducer coupled with the NeuroFus PRO TPO-203 system (Sonic Concepts, Brainbox Ltd., Cardiff, United Kingdom; fundamental frequency: 0.5 MHz; diameter: 64 mm).",
+   "exposures[0].fundamental_frequency_khz": "TUS was delivered using theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, duty cycle = 10%, pulse repetition frequency = 5 Hz, ISPPA = 54.51 W/cm², and total duration = 80 s (Fig. 2A).",
+   "exposures[0].in_situ.pressure_kpa": "Group-level results indicated a peak pressure at the target of $5 7 8 . 2 2 \\pm 1 0 1 . 2 7$ kPa for the ATL stimulation and $6 2 4 . 6 \\pm 9 0 . 0$ kPa for the ventricle stimulation. The ISPPA in situ was 11.46 ± 4.09 W/cm² for the ATL stimulation and 13.26 ± 4.19 W/cm² for the ventricle stimulation. The transcranial mechanical index was 0.80 ± 0.16 (max = 1.11) for the ATL stimulation and 0.88 ± 0.13 (max = 1.33) for the ventricle stimulation.",
+   "exposures[0].in_situ.isppa_w_cm2": "Group-level results indicated a peak pressure at the target of $5 7 8 . 2 2 \\pm 1 0 1 . 2 7$ kPa for the ATL stimulation and $6 2 4 . 6 \\pm 9 0 . 0$ kPa for the ventricle stimulation. The ISPPA in situ was 11.46 ± 4.09 W/cm² for the ATL stimulation and 13.26 ± 4.19 W/cm² for the ventricle stimulation. The transcranial mechanical index was 0.80 ± 0.16 (max = 1.11) for the ATL stimulation and 0.88 ± 0.13 (max = 1.33) for the ventricle stimulation.",
+   "exposures[0].timing.pulse_duration_ms": "TUS was delivered using theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, duty cycle = 10%, pulse repetition frequency = 5 Hz, ISPPA = 54.51 W/cm², and total duration = 80 s (Fig. 2A).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "TUS was delivered using theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, duty cycle = 10%, pulse repetition frequency = 5 Hz, ISPPA = 54.51 W/cm², and total duration = 80 s (Fig. 2A).",
+   "exposures[0].timing.duty_cycle_pct": "TUS was delivered using theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, duty cycle = 10%, pulse repetition frequency = 5 Hz, ISPPA = 54.51 W/cm², and total duration = 80 s (Fig. 2A).",
+   "exposures[0].timing.sonication_duration_s": "TUS was delivered using theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, duty cycle = 10%, pulse repetition frequency = 5 Hz, ISPPA = 54.51 W/cm², and total duration = 80 s (Fig. 2A).",
+   "adverse_events": "No participants reported experiencing any discomfort during the experiment. Questionnaire analysis showed no significant differences between the ATL and ventricle stimulation (χ<sup>2</sup> < 4.326, Ps > 0.115) (Table S4).",
+   "exposures[0].device.manufacturer": "We used the four-element CTX-500-4CH transducer coupled with the NeuroFus PRO TPO-203 system (Sonic Concepts, Brainbox Ltd., Cardiff, United Kingdom; fundamental frequency: 0.5 MHz; diameter: 64 mm).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "TUS was delivered using identical theta-burst parameters as follows: central frequency = 500 kHz, pulse duration = 20 ms, pulse repetition interval = 200 ms, pulse repetition frequency = 5 Hz, duty cycle = 10%, ISPPA = 54.51 W/cm2, total duration = 80 sec, steering depth = variable (ATL = 5.31 ± 0.72 cm; ventricle = 5.28 ± 0.34 cm) (Fig. 2A)."
+  },
+  "flags": [
+   {
+    "field": "randomised",
+    "reason": "Paper states stimulation order was 'counterbalanced across participants' but never uses the word randomised."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The 54.51 W/cm² ISPPA is given alongside the theta-burst protocol parameters (a device output specification) rather than explicitly labelled as a free-field/water measurement; placed here as the most likely domain, distinct from the simulated in-situ ISPPA reported separately."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The paper's target is the 'ventromedial anterior temporal lobe (ATL)', which has no exact match in the target vocabulary; mapped to the closest listed term, temporal_pole."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

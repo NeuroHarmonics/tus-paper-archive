@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019lib",
+ "doi": "10.1109/tbme.2018.2821201",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 17,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Extracellular action-potential (spike) recordings in S1BF; head-turning behavioural test",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound delivered via the head-mounted stimulator increased extracellular spike firing in S1BF during stimulation and evoked head-turning responses toward the stimulated hemisphere significantly more often than sham (no coupling gel) stimulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Mice were observed for over 1 month after stimulation experiments with no abnormal behaviour.",
+ "exposures": [
+  {
+   "label": "Head-mounted ultrasound stimulation of primary somatosensory cortex barrel field (S1BF) in freely moving mice",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex barrel field (S1BF)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1200,
+    "isppa_w_cm2": 46,
+    "ispta_w_cm2": 0.7
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "A series of 2-MHz ultrasound stimuli was delivered to each mouse in a 360-s trial for electrophysiology (stimulus repetition period 6 s). For head-turning tests, two head-mounted stimulators (left and right S1BF) delivered the same stimulus parameters alternately every 6 s; control trials used the same procedure but without acoustic coupling gel so no ultrasound entered the brain."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "17 male C57BL/6 mice that were 10–12 weeks old and weighed 23 g ( 15%) were randomly divided into two groups: (1) ultrasound stimuli and spike acquisition (group US-SPIKE, $n = 4 )$ , (2) ultrasound stimuli and head-turning (group US-HEAD, $n = 1 3 )$ .",
+   "exposures[0].fundamental_frequency_khz": "Considering the size of the mouse brain and the ultrasound attenuation of the mouse skull, a piece of disk-shaped piezoelectric ceramic (5 mm in diameter and 1 mm thick) with a resonant frequency of 2 MHz was adapted for the ultrasound stimulator.",
+   "exposures[0].timing.pulse_duration_ms": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].timing.duty_cycle_pct": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].timing.sonication_duration_s": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "n_sessions_per_subject": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].unspecified_domain.pressure_kpa": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "A series of 2-MHz ultrasound stimuli $( P _ { \\mathrm { 0 } } = 1 . 2 \\mathrm { M P a }$ $T _ { 1 } ~ = ~ 0 . 3$ ms, $T _ { 2 } ~ = ~ 1$ ms, $T _ { 3 } ~ = ~ 3 0 0$ ms, $T _ { 4 } ~ = ~ 6$ sec, duty cycle = 30%, $I _ { \\mathrm { s p p a } } = 4 6 \\mathrm { W / c m ^ { 2 } }$ $I _ { \\mathrm { s p t a } } = 0 . 7 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was delivered to each mouse in a 360 seconds trial."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF converted from the stated pulse repetition period T2 = 1 ms via the paper's own formula PRF = 1/T2, not independent arithmetic."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "US-SPIKE mice received one 360-s recording trial; US-HEAD mice received many alternating stimuli within a single behavioural test session; paper does not define a discrete session count."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Values (P0, Isppa, Ispta) given in the Stimulus Parameters/Results section are transducer output values in the acoustic focal region; not explicitly stated as pre- versus post-skull, though a separate ~3 dB skull attenuation is reported elsewhere without being applied to this specific stimulus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

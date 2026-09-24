@@ -1,0 +1,357 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023kim",
+ "doi": "10.1371/journal.pone.0288654",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "fmri"
+ ],
+ "readout_other": "FUS-evoked EEG potentials (FEP) and reference somatosensory evoked potentials (SSEP) from median nerve stimulation; resting-state fMRI functional connectivity (rsFC); separate auditory evoked potential (AEP) measurement in a different participant group; clinical neurological evaluation and neuroanatomical MRI for safety",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to S1 and to VPL each generated distinct EEG evoked potentials (FEP) similar to somatosensory evoked potentials, with the 0.5 ms pulse-duration condition producing the most distinctive ipsilateral peaks; resting-state fMRI showed increased functional connectivity between sonicated regions and sensorimotor/associative networks lasting at least ~1 hour post-VPL stimulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No cavitation events were detected; no participant reported discomfort during or after sonication; repeated neurological evaluations, EEG and neuroanatomical MRI revealed no adverse or unintended effects across the study period.",
+ "exposures": [
+  {
+   "label": "Primary somatosensory cortex (S1) stimulation",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex (S1, non-dominant hand representation)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-D40-FL57 (D40)"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.7,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 4.1,
+    "ispta_w_cm2": 2.9
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     1400,
+     700,
+     350
+    ],
+    "duty_cycle_pct": 70,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Three pulse-duration (PD) conditions (0.5, 1, 2 ms), each 200 ms long, delivered at a constant 70% duty cycle (PRF adjusted per PD). Trials were administered 4 s apart; 80 trials per PD condition were given in randomized, balanced order together with a passive sham (no sonication) condition, for a session lasting ~21 min (1,280 s)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Ventral posterolateral thalamic nucleus (VPL) stimulation",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "ventral posterolateral nucleus (VPL), thalamic projection of the somatosensory circuit"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-D90-FL130 (D90)"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 9.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.4,
+    "ispta_w_cm2": 2.4
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     1400,
+     700,
+     350
+    ],
+    "duty_cycle_pct": 70,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Same pulse scheme as the S1 session (three PD conditions of 0.5, 1, 2 ms, each 200 ms long, 70% duty cycle, PRF adjusted per PD), delivered via the D90 transducer about a week after the S1 session; 80 trials per PD condition plus sham, 4 s apart, ~21 min session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Five of the consented individuals withdrew prior to participating in FUS sessions and the remaining eight completed the study (three females, age = 32.1 ± 6.0 y.o., range: 23–42, mean ± standard deviation).",
+   "n_sessions_per_subject": "Following Visit #1, two separate FUS sessions (Visits #2 and #3; conducted about a week apart, 7.9 ± 2.5 days) were administered to stimulate the S1 and VPL, respectively in sequence.",
+   "blinding": "The participants were not informed regarding the presence, including types, of any sensation prior to the sonication while any verbal descriptors that may bias the perception were not used by the study staff throughout the study.",
+   "sham_type": "80 trials per PD condition in a randomized and balanced fashion with the inclusion of a passive sham condition (i.e., no sonication), which rendered a FUS session lasting \\~21 min (1,280 s).",
+   "exposures[0].target.label": "The S1 target was determined from the local activation maxima observed in the postcentral gyrus while the VPL was identified from the local maximum coordinate anterior to the ventral lateral nucleus, all cross-referenced to the anatomical MR images.",
+   "exposures[1].target.label": "The S1 target was determined from the local activation maxima observed in the postcentral gyrus while the VPL was identified from the local maximum coordinate anterior to the ventral lateral nucleus, all cross-referenced to the anatomical MR images.",
+   "exposures[0].fundamental_frequency_khz": "For the FUS stimulation, a fundamental sinusoidal frequency of 250 kHz was used.",
+   "exposures[1].fundamental_frequency_khz": "For the FUS stimulation, a fundamental sinusoidal frequency of 250 kHz was used.",
+   "exposures[0].timing.pulse_duration_ms": "Three types of stimulation trials using different PDs (0.5, 1 and 2 ms), each 200 ms long, were delivered based on our experience in stimulating small/large animals and humans [7, 8, 18, 19, 40].",
+   "exposures[1].timing.pulse_duration_ms": "Three types of stimulation trials using different PDs (0.5, 1 and 2 ms), each 200 ms long, were delivered based on our experience in stimulating small/large animals and humans [7, 8, 18, 19, 40].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To maintain a 70% duty cycle across the varying PDs, the PRF was adjusted to 1,400, 700, and 350 Hz respectively for each stimulation trial (The graphical illustration of the pulse scheme is shown in Fig 2E).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "To maintain a 70% duty cycle across the varying PDs, the PRF was adjusted to 1,400, 700, and 350 Hz respectively for each stimulation trial (The graphical illustration of the pulse scheme is shown in Fig 2E).",
+   "exposures[0].timing.duty_cycle_pct": "To maintain a 70% duty cycle across the varying PDs, the PRF was adjusted to 1,400, 700, and 350 Hz respectively for each stimulation trial (The graphical illustration of the pulse scheme is shown in Fig 2E).",
+   "exposures[1].timing.duty_cycle_pct": "To maintain a 70% duty cycle across the varying PDs, the PRF was adjusted to 1,400, 700, and 350 Hz respectively for each stimulation trial (The graphical illustration of the pulse scheme is shown in Fig 2E).",
+   "exposures[0].timing.sonication_duration_s": "Three types of stimulation trials using different PDs (0.5, 1 and 2 ms), each 200 ms long, were delivered based on our experience in stimulating small/large animals and humans [7, 8, 18, 19, 40].",
+   "exposures[1].timing.sonication_duration_s": "Three types of stimulation trials using different PDs (0.5, 1 and 2 ms), each 200 ms long, were delivered based on our experience in stimulating small/large animals and humans [7, 8, 18, 19, 40].",
+   "exposures[0].free_field.isppa_w_cm2": "The free-water $( i . e . ,$ un-derated) spatial-peak pulse-average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { s p p a } } } } \\right)$ was 14.7 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for S1 and $9 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p p a } }$ for VPL stimulation.",
+   "exposures[1].free_field.isppa_w_cm2": "The free-water $( i . e . ,$ un-derated) spatial-peak pulse-average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { s p p a } } } } \\right)$ was 14.7 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for S1 and $9 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p p a } }$ for VPL stimulation.",
+   "exposures[0].in_situ.isppa_w_cm2": "The results of the simulated acoustic propagation profile within individuals’ calvarium (S3 Fig; shown at the coronal plane intersecting the simulated maximum pressure) yielded an average in situ $\\mathrm { I _ { s p p a } o f 4 . 1 } \\pm 2 . 3 \\mathrm { W / c m } ^ { 2 }$ for the S1 stimulation and 3.4 ± 1.1 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for the VPL stimula tion at the intended target (Table 1).",
+   "exposures[1].in_situ.isppa_w_cm2": "The results of the simulated acoustic propagation profile within individuals’ calvarium (S3 Fig; shown at the coronal plane intersecting the simulated maximum pressure) yielded an average in situ $\\mathrm { I _ { s p p a } o f 4 . 1 } \\pm 2 . 3 \\mathrm { W / c m } ^ { 2 }$ for the S1 stimulation and 3.4 ± 1.1 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for the VPL stimula tion at the intended target (Table 1).",
+   "exposures[0].in_situ.ispta_w_cm2": "Considering the 70% duty cycle, in situ spatial-peak temporal-average intensity $ { \\left( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } \\right) }$ were $2 . 9 \\pm 1 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for the S1 stimulation and 2.4 ± 0.8 W/ $\\mathrm { c m } ^ { 2 }$ for thalamic stimulation whereby these intensities would not significantly raise the tissue temperature.",
+   "exposures[1].in_situ.ispta_w_cm2": "Considering the 70% duty cycle, in situ spatial-peak temporal-average intensity $ { \\left( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } \\right) }$ were $2 . 9 \\pm 1 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for the S1 stimulation and 2.4 ± 0.8 W/ $\\mathrm { c m } ^ { 2 }$ for thalamic stimulation whereby these intensities would not significantly raise the tissue temperature.",
+   "adverse_events": "No cavitation events were detected in any of the FUS sessions, which agree with the premise that cavitation is unlikely to occur at the applied pressure level [52]. No discomfort during and after the sonication was reported from any of the participants throughout the study period.",
+   "exposures[0].device.manufacturer": "Two different types of gas-matrix piezoelectric FUS transducers (GPS200-D40-FL57, referred to as ‘D40’ and GPS200-D90-FL130, referred to as ‘D90’, Ultran Group, State College, PA) were mounted on a headgear (Fig 2B).",
+   "exposures[1].device.manufacturer": "Two different types of gas-matrix piezoelectric FUS transducers (GPS200-D40-FL57, referred to as ‘D40’ and GPS200-D90-FL130, referred to as ‘D90’, Ultran Group, State College, PA) were mounted on a headgear (Fig 2B).",
+   "exposures[0].device.model": "Two different types of gas-matrix piezoelectric FUS transducers (GPS200-D40-FL57, referred to as ‘D40’ and GPS200-D90-FL130, referred to as ‘D90’, Ultran Group, State College, PA) were mounted on a headgear (Fig 2B). The focus was formed 31 mm from the exit plane of the D40 transducer (used for S1 stimulation). The D90 transducer, having a focal length of 84 mm, was used to sonicate the VPL.",
+   "exposures[1].device.model": "Two different types of gas-matrix piezoelectric FUS transducers (GPS200-D40-FL57, referred to as ‘D40’ and GPS200-D90-FL130, referred to as ‘D90’, Ultran Group, State College, PA) were mounted on a headgear (Fig 2B). The focus was formed 31 mm from the exit plane of the D40 transducer (used for S1 stimulation). The D90 transducer, having a focal length of 84 mm, was used to sonicate the VPL."
+  },
+  "flags": [
+   {
+    "field": "auditory_control",
+    "reason": "No concurrent auditory masking was used during FUS sessions; instead, auditory evoked potentials to mimicking tones were measured in a separate group of participants after the fact to assess possible auditory confounds, which does not fit cleanly into the closed vocabulary."
+   },
+   {
+    "field": "randomised",
+    "reason": "Session order (S1 always Visit #2, VPL always Visit #3) was fixed rather than randomized across participants; within-session trial order (PD conditions and sham) was randomized and balanced, but no explicit statement of subject/group-level randomisation is given."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The 'passive sham' consisted of the transducer remaining in place with no sonication triggered during that trial, interpreted as inactive_transducer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

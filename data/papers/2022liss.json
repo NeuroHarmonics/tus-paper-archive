@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022liss",
+ "doi": "10.1111/ner.13531",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep",
+  "histology_molecular"
+ ],
+ "readout_other": "Von Frey filament mechanical threshold testing, hot plate test, open field test, elevated plus maze, forced swim test; sensory nerve action potential (SNAP) nerve conduction velocity/latency; H&E and fluoro-jade histology of the DRG",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "liFUS to the L5 DRG increased mechanical pain thresholds (anti-nociceptive), reduced immobility in the forced swim test (anti-depressant-like), and increased sensory nerve conduction latency, consistent with the authors' proposed mechanism of K2P/Na channel activation causing long-term hyperpolarization of DRG neurons; effects lasted longer in females (7 days) than males (3 days).",
+ "adverse_events": "none_observed",
+ "safety_notes": "At the 8 W/3 min dose used, liFUS produced no fluoro-jade or H&E evidence of pyknosis or cellular edema in the DRG at 1 day or 1 week post-treatment, and no locomotor damage (open field testing) was observed; a higher 10 W dose used in prior work had produced edema.",
+ "exposures": [
+  {
+   "label": "liFUS of the L5 dorsal root ganglion in CPN-injury rats",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "L5 dorsal root ganglion (DRG)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Acoustic MedSystems, Savoy, IL",
+    "model": "Volumetric Focused Ultrasound (VFUS), multi-channel array with four internal transducers"
+   },
+   "fundamental_frequency_khz": 11000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 13,
+    "pulse_repetition_frequency_hz": 38,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "liFUS was delivered transcutaneously to the L5 DRG for 3 min at 8 W (a dose-response curve from 4-8 W was also tested), described as pulsed at 38 Hz; the text gives two different short-duration values for this pulsing that could not be reconciled: 'a pulse modulation at 38 Hz for 90 microseconds' in one place, and '38 Hz with a period of 90 microseconds, and pulse width of 13 msec' in another. Power (Watts) is reported rather than a spatial-average pressure or intensity, so no kPa or W/cm2 value could be extracted."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 49.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A dose-response curve examining various amplitudes from 4 W to 8 W at 3 min with a pulse modulation at 38 Hz for 90 μsec was performed (N 8 males; N 11 females).",
+   "n_sessions_per_subject": "Each animal underwent a single session of liFUS treatment.",
+   "exposures[0].fundamental_frequency_khz": "The probe delivered pulsed liFUS at 8 W for 3 min, 11 MHz pulsed at 38 Hz with a period of 90 μsec, and pulse width of 13 msec.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The probe delivered pulsed liFUS at 8 W for 3 min, 11 MHz pulsed at 38 Hz with a period of 90 μsec, and pulse width of 13 msec.",
+   "exposures[0].timing.sonication_duration_s": "The probe delivered pulsed liFUS at 8 W for 3 min, 11 MHz pulsed at 38 Hz with a period of 90 μsec, and pulse width of 13 msec.",
+   "exposures[0].device.manufacturer": "2 Acoustic Medical Systems, Savoy, IL, USA;",
+   "exposures[0].timing.pulse_duration_ms": "The probe delivered pulsed liFUS at 8 W for 3 min, 11 MHz pulsed at 38 Hz with a period of 90 μsec, and pulse width of 13 msec."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Two different short-duration values are given for the 38 Hz pulsing: 'a pulse modulation at 38 Hz for 90 microseconds' (Methods, dose-response sentence) and 'pulse width of 13 msec' (Methods, main dosing sentence), and it is unclear which (if either) is the true per-pulse duration versus a nested sub-cycle period; left not_reported per the burst-duration ambiguity rule."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Dose is reported only as electrical drive power (4-8 W), never as a spatial-average pressure (kPa) or intensity (W/cm2), so no value could be placed in any domain."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper refers to 'sham liFUS' cohorts but does not describe in this text how the sham condition was produced (e.g. inactive transducer vs detuned); classified as undescribed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "No single total N is stated; the two largest reported group sizes (female and male baseline VFF cohorts) are given as a list. Downstream dose-response and electrophysiology sub-experiments use smaller, non-overlapping subsets of these animals."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

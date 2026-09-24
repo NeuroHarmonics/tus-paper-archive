@@ -1,0 +1,369 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016leec",
+ "doi": "10.1186/s12868-016-0303-6",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "self-reported type/location of tactile sensations; touch-sensor tap response indicating sensation timing",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to SI, SII, or SI+SII simultaneously elicited tactile sensations (e.g. tingling, weak electrical current, numbness) from the hand/arm contralateral to sonication in most subjects, with no sensations reported during sham; stimulation of specific SII sub-regions did not reliably elicit the corresponding sensation-specific percept, indicating an excitatory but not finely spatially-selective effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Neurological examination and MMSE before/after sonication and at follow-up (same day, 2 weeks, 4 weeks) showed no abnormal findings; telephone follow-up at 8 weeks reported no discomfort or mental/physical changes. Estimated in-situ intensity (7.0-8.8 W/cm2 Isppa, 3.5-4.4 W/cm2 Ispta) was slightly above the IEC 60601 part 2 Ispta limit of 3 W/cm2 but below intensities (up to 13.4 W/cm2 Isppa in situ) previously found not to cause microscopic brain damage in sheep; estimated temperature rise was 0.0092 degC.",
+ "exposures": [
+  {
+   "label": "SI_FUS: stimulation of primary somatosensory cortex alone",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory area (SI) of the hand"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "The Ultran Group Ltd",
+    "model": "single-element FUS transducer, 210 kHz, 30 mm outer diameter, 25 mm focal distance"
+   },
+   "fundamental_frequency_khz": 210,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 35.0,
+    "ispta_w_cm2": 17.5
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     7.0,
+     8.8
+    ],
+    "ispta_w_cm2": [
+     3.5,
+     4.4
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "FUS procedures were divided into multiple sessions: (1) SI alone (SI_FUS), (2) four sub-regions of SII (SII_FUS), (3) simultaneous SI and SII (SI/SII_FUS), and (4) sham (Sham_FUS, same setup without sonication); condition order was randomized and balanced across subjects. Sonication was administered 20 times per session/sub-region. Participants tapped a touch sensor to report sensation timing and verbally reported location/type of sensation after each condition; both subject and operator were blinded to the nature of the sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "SII_FUS: stimulation of secondary somatosensory cortex sub-regions (vibrotactile, pressure, warmth, coolness)",
+   "target": {
+    "terms": [
+     "secondary_somatosensory_cortex"
+    ],
+    "label": "secondary somatosensory area (SII)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "The Ultran Group Ltd",
+    "model": "single-element FUS transducer, 210 kHz, 30 mm outer diameter, 25 mm focal distance"
+   },
+   "fundamental_frequency_khz": 210,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 35.0,
+    "ispta_w_cm2": 17.5
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     7.0,
+     8.8
+    ],
+    "ispta_w_cm2": [
+     3.5,
+     4.4
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "FUS procedures were divided into multiple sessions: (1) SI alone (SI_FUS), (2) four sub-regions of SII corresponding to vibrotactile, pressure, warmth and coolness representations (SII_FUS), (3) simultaneous SI and SII (SI/SII_FUS), and (4) sham (Sham_FUS, same setup without sonication); condition order was randomized and balanced across subjects. Sonication was administered 20 times per session/sub-region. Participants tapped a touch sensor to report sensation timing and verbally reported location/type of sensation after each condition; both subject and operator were blinded to the nature of the sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten healthy volunteers (two females, ages 23–34, average of $2 7 . 8 \\pm 4 . 1$ years, labeled 'h1' through 'h10' herein) with no clinical history of peripheral/central neurological diseases participated.",
+   "exposures[0].fundamental_frequency_khz": "In order to independently deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm.",
+   "exposures[0].free_field.isppa_w_cm2": "The incident acoustic intensity at the FUS focus, in the absence of skull, was 35.0 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ spatial-peak pulse-average acoustic intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ , resulting in a spatial peak temporal-average acoustic intensity $\\mathrm { ( I _ { \\mathrm { { s p t a } } } ) }$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The incident acoustic intensity at the FUS focus, in the absence of skull, was 35.0 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ spatial-peak pulse-average acoustic intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ , resulting in a spatial peak temporal-average acoustic intensity $\\mathrm { ( I _ { \\mathrm { { s p t a } } } ) }$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "Considering the average acoustic transmission rate of 20–25 % at the intended targets [20] and a 50  % duty cycle, it is estimated that $7 . 0 { - } 8 . 8 \\ \\mathrm { \\ W / c m ^ { 2 } \\ I _ { s p p a } } ,$ corresponding to $3 . 5 { - } 4 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ was provided to the regional brain location.",
+   "exposures[0].in_situ.ispta_w_cm2": "Considering the average acoustic transmission rate of 20–25 % at the intended targets [20] and a 50  % duty cycle, it is estimated that $7 . 0 { - } 8 . 8 \\ \\mathrm { \\ W / c m ^ { 2 } \\ I _ { s p p a } } ,$ corresponding to $3 . 5 { - } 4 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ was provided to the regional brain location.",
+   "exposures[0].timing.pulse_duration_ms": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[1].fundamental_frequency_khz": "In order to independently deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm.",
+   "exposures[1].free_field.isppa_w_cm2": "The incident acoustic intensity at the FUS focus, in the absence of skull, was 35.0 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ spatial-peak pulse-average acoustic intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ , resulting in a spatial peak temporal-average acoustic intensity $\\mathrm { ( I _ { \\mathrm { { s p t a } } } ) }$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[1].free_field.ispta_w_cm2": "The incident acoustic intensity at the FUS focus, in the absence of skull, was 35.0 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ spatial-peak pulse-average acoustic intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ , resulting in a spatial peak temporal-average acoustic intensity $\\mathrm { ( I _ { \\mathrm { { s p t a } } } ) }$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[1].in_situ.isppa_w_cm2": "Considering the average acoustic transmission rate of 20–25 % at the intended targets [20] and a 50  % duty cycle, it is estimated that $7 . 0 { - } 8 . 8 \\ \\mathrm { \\ W / c m ^ { 2 } \\ I _ { s p p a } } ,$ corresponding to $3 . 5 { - } 4 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ was provided to the regional brain location.",
+   "exposures[1].in_situ.ispta_w_cm2": "Considering the average acoustic transmission rate of 20–25 % at the intended targets [20] and a 50  % duty cycle, it is estimated that $7 . 0 { - } 8 . 8 \\ \\mathrm { \\ W / c m ^ { 2 } \\ I _ { s p p a } } ,$ corresponding to $3 . 5 { - } 4 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ was provided to the regional brain location.",
+   "exposures[1].timing.pulse_duration_ms": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[1].timing.duty_cycle_pct": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[1].timing.sonication_duration_s": "We adapted similar sonication parameters that were utilized in the successful stimulation of the SI in humans [20] and in animals [12, 16, 21] (Fig.  1b), having a sonication duration (SD) of 500  ms, with a tone-burst-duration (TBD) of 1  ms repeated at a frequency of 500  Hz (i.e., pulse repetition frequency; PRF), yielding a 50  % duty cycle.",
+   "exposures[0].device.manufacturer": "deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm.",
+   "exposures[0].device.model": "deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm.",
+   "exposures[1].device.manufacturer": "deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm.",
+   "exposures[1].device.model": "deliver acoustic energy to the SI and SII in the left hemisphere, we used two sets of single-element FUS transducers (operating at 210  kHz frequency, The Ultran Group Ltd, State College, PA) (Fig.  1a), which were segmented-spheres in shape, each having an outer diameter (OD) of 30  mm and a focal distance of 25  mm."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The FUS procedure comprised multiple within-day condition blocks per subject (SI alone; four SII sub-regions; four SI/SII sub-regions; sham), each given 20 times, but the paper does not state a single 'number of sessions per subject'; left not_reported rather than computed by counting condition blocks."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "In-situ intensity is an estimate (not per-subject simulation or measurement) based on a previously reported average transcranial transmission rate of 20-25%, given as a range (7.0-8.8 W/cm2 Isppa); the midpoint (7.9) is recorded per schema convention and the quote carries the full range."
+   },
+   {
+    "field": "exposures[*].target",
+    "reason": "In the SI/SII_FUS condition both SI and SII were sonicated simultaneously with two independent transducers using the same parameters; this combined condition is captured in protocol_description under both the SI and SII exposures rather than as a separate exposure, since the target/frequency pairs are unchanged."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

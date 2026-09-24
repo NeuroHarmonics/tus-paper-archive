@@ -1,0 +1,340 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wangb",
+ "doi": "10.2139/ssrn.7076166",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 30,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "cerebral_haemodynamics",
+  "behaviour",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Resting-state 19-channel EEG absolute power (delta, theta, alpha, beta, gamma) pre/post stimulation; 106-channel fNIRS HbO during Corsi spatial working-memory task and Go/NoGo response-inhibition task; ECG, blood pressure, heart rate, body temperature; 0-10 comfort/fatigue/tolerability ratings",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "The 500 kHz/20% duty-cycle protocol produced a statistically significant (FDR-corrected) increase in absolute alpha band power in the posterior left frontal region; the other three protocols showed changes in the same direction but did not reach significance after FDR correction. fNIRS and behavioral (Corsi, Go/NoGo) changes were parameter- and task-dependent, with most ROI-level and correlation results not surviving FDR correction.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No stimulation related serious adverse events were reported during the study. Vital sign monitoring showed decreases in systolic blood pressure or heart rate after stimulation under some parameter conditions at the uncorrected p value level, but none remained statistically significant after FDR correction.",
+ "exposures": [
+  {
+   "label": "tFUS to left DLPFC, 500 kHz protocols (20% and 50% duty cycle)",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "left dorsolateral prefrontal cortex (DLPFC)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Jiangsu Zhongke Yinbian Medical Technology Co., Ltd.",
+    "model": "ZK JLCS 8601"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 480,
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 50,
+    "duty_cycle_pct": [
+     50,
+     20
+    ],
+    "sonication_duration_s": 1800,
+    "protocol_description": "Each of 30 participants received all four active parameter protocols (500 kHz and 800 kHz, each at 20% and 50% duty cycle) across four visits in a within-subject randomized crossover design (Williams balanced Latin square), with a washout interval of more than 24 h between protocols. No sham stimulation control was included; the human component was designed for active parameter comparison and short-term safety/feasibility assessment."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tFUS to left DLPFC, 800 kHz protocols (20% and 50% duty cycle)",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "left dorsolateral prefrontal cortex (DLPFC)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Jiangsu Zhongke Yinbian Medical Technology Co., Ltd.",
+    "model": "ZK JLCS 8601"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": 1530,
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 50,
+    "duty_cycle_pct": [
+     50,
+     20
+    ],
+    "sonication_duration_s": 1800,
+    "protocol_description": "Each of 30 participants received all four active parameter protocols (500 kHz and 800 kHz, each at 20% and 50% duty cycle) across four visits in a within-subject randomized crossover design (Williams balanced Latin square), with a washout interval of more than 24 h between protocols. No sham stimulation control was included; the human component was designed for active parameter comparison and short-term safety/feasibility assessment."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-22"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 30 healthy middle aged and older adults were enrolled. Their mean age was 58.47 ± 7.88 years, and the sex ratio was 16:14. All participants completed the four interventions and outcome assessments according to the study protocol.",
+   "n_sessions_per_subject": "The study used a within subject randomized crossover design. Each participant received all four active parameter protocols across four visits.",
+   "exposures[0].fundamental_frequency_khz": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[0].free_field.isppa_w_cm2": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China). The transducer center frequency was determined according to the selected parameter combination. The free field acoustic intensity was set to 3 W/cm², the nominal intensity at the actual focus was below 0.3 W/cm² and the mechanical index was controlled below 1.9.",
+   "exposures[0].free_field.pressure_kpa": "Considering these physical differences, device feasibility and clinical operability, we selected two frequencies, 500 kHz, and 800 kHz, each paired with 20% and 50% duty cycles, yielding four protocols for the human crossover study. Other parameter settings are shown in Table 3. Visualization of the four parameter combinations showed that the ultrasound beams could penetrate brain tissue along the predefined transcranial route and that the main energy beam was accurately located within the target brain parenchyma (Figure 5). To further ensure physical safety in the clinical experiment, the final parameter protocols were acoustically measured on the experimental device after simulation-based screening. The measurements showed that, for the 500 kHz protocols, the maximum peak pressure in the focal zone was 0.48 MPa and the MI was 0.68; for the 800 kHz protocols, the maximum peak pressure was 1.53 MPa and the MI was approximately 1.71. Both values satisfied MI < 1.9.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[1].fundamental_frequency_khz": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[1].free_field.isppa_w_cm2": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China). The transducer center frequency was determined according to the selected parameter combination. The free field acoustic intensity was set to 3 W/cm², the nominal intensity at the actual focus was below 0.3 W/cm² and the mechanical index was controlled below 1.9.",
+   "exposures[1].free_field.pressure_kpa": "Considering these physical differences, device feasibility and clinical operability, we selected two frequencies, 500 kHz, and 800 kHz, each paired with 20% and 50% duty cycles, yielding four protocols for the human crossover study. Other parameter settings are shown in Table 3. Visualization of the four parameter combinations showed that the ultrasound beams could penetrate brain tissue along the predefined transcranial route and that the main energy beam was accurately located within the target brain parenchyma (Figure 5). To further ensure physical safety in the clinical experiment, the final parameter protocols were acoustically measured on the experimental device after simulation-based screening. The measurements showed that, for the 500 kHz protocols, the maximum peak pressure in the focal zone was 0.48 MPa and the MI was 0.68; for the 800 kHz protocols, the maximum peak pressure was 1.53 MPa and the MI was approximately 1.71. Both values satisfied MI < 1.9.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[1].timing.duty_cycle_pct": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[1].timing.sonication_duration_s": "<table><tr><td>Protocol</td><td>Intensity (W/cm2)</td><td>Duty cycle Frequency (kHz)</td><td>Pulse repetition frequency (Hz)</td><td>Exposure duration</td></tr><tr><td>1</td><td>3 50%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>2</td><td>3 20%</td><td>500</td><td>50</td><td>30 min</td></tr><tr><td>3</td><td>50%</td><td>800</td><td>50</td><td>30 min</td></tr><tr><td>4</td><td>20%</td><td>800</td><td>50</td><td>30 min</td></tr></table>",
+   "exposures[0].device.manufacturer": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China).",
+   "exposures[0].device.model": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China).",
+   "exposures[1].device.manufacturer": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China).",
+   "exposures[1].device.model": "Transcranial focused ultrasound stimulation was delivered using a ZK JLCS 8601 stimulator (Jiangsu Zhongke Yinbian Medical Technology Co., Ltd., China)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper states 'free field acoustic intensity was set to 3 W/cm2' without specifying whether this is spatial-peak pulse-average or temporal-average intensity; recorded as isppa_w_cm2 by convention for a device intensity setting."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "'Nominal intensity at the actual focus was below 0.3 W/cm2' is an upper-bound statement, not an exact measured value, and the paper does not state whether it was derived by simulation or derating; recorded as 0.3 with method set to derating as a best fit."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Table 3's 'Intensity (W/cm2)' column shows '3' only for the 500 kHz protocols and appears blank for the 800 kHz protocols, though the text states a single free-field intensity (3 W/cm2) applies to all four protocols; used the text statement."
+   },
+   {
+    "field": "exposures",
+    "reason": "Study is a 2x2 sweep of center frequency (500/800 kHz) and duty cycle (20%/50%) at one target (left DLPFC); split into one exposure per frequency with duty_cycle_pct as a list, per the one-exposure-per-target-x-frequency rule."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper does not explicitly state 'no auditory control was used' in methods, but lists inability to exclude auditory or somatosensory co-stimulation as a limitation because no sham was included; inferred as none."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Only one of four parameter combinations reached significance after FDR correction for the primary EEG outcome; other outcomes (fNIRS, behaviour) were largely non-significant after correction."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013tych",
+ "doi": "10.1016/j.ultrasmedbio.2012.08.012",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  33,
+  30,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Hind-paw withdrawal reflex to iFU; comparison thermal (Hargreaves) withdrawal latency test",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Neuropathic (pSNL) rats preferentially withdrew their injured paw from iFU at lower iFU intensity thresholds than sham-surgery or normal-control rats, with greater sensitivity and specificity for the ipsilateral paw.",
+ "adverse_events": "none_observed",
+ "safety_notes": "We have as well, to a larger cohort, again without incident (Dickey et al. 2012).",
+ "exposures": [
+  {
+   "label": "iFU paw-withdrawal threshold testing in partial sciatic nerve ligation (pSNL), sham-surgery and normal-control rats",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "the plantar surface of the paw"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1150,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     84.2,
+     97.7,
+     223
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "In the absence of a hind paw withdrawal response, the intensity of ultrasound was increased in increments beginning at approximately 30% of the previous intensity, tapering to 10%, starting with an initial acoustic intensity of approximately 10 W/cm2. After identification of the iFU threshold value, both hind paws were tested in a serial fashion for their withdrawal responses to that amount of iFU for an additional six iFU applications, with at least 30 s between each application."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "We partially ligated the sciatic nerve within the right hind paws of 33 Sprague–Dawley rats (180–200 mg, Taconic) following the surgical protocol of Seltzer et al.",
+   "n_sessions_per_subject": "On days 5 and 7 after surgery, we habituated sets of three rats to their free-ranging presence within a cage containing three separate enclosures, each with a wiremesh bottom.",
+   "safety_notes": "We have as well, to a larger cohort, again without incident (Dickey et al. 2012).",
+   "exposures[0].target.label": "This time, we applied individual acoustic pulses of length 0.2 s to the plantar surface of the paw, using ultrasound gel (Aquasonic 100 ultrasound transmission gel; Parker Laboratories Inc., Fairfield, NJ, USA) to ensure adequate coupling.",
+   "exposures[0].fundamental_frequency_khz": "We created the iFU signal (individual ultrasound pulses with a center frequency of 1.15 MHz, each lasting for 0.2 s) with two function generators (HP33120A; Hewlett-Packard, Palo Alto, CA, USA), amplified by a power amplifier (ENI A150; ENI, Rochester, NY, USA) whose signal we transmitted directly to the transducer.",
+   "exposures[0].free_field.ispta_w_cm2": "For the pSNL group, we found an iFU threshold intensity and dose of $8 4 . 2 \\pm 2 5 . 5 \\mathrm { W / c m } ^ { 2 }$ and $1 6 . 8 \\pm 5 . 1 [ \\mathrm { W / c m } ^ { 2 } ] ^ { \\ast } \\mathrm { s } ,$ respectively.",
+   "exposures[0].timing.sonication_duration_s": "We created the iFU signal (individual ultrasound pulses with a center frequency of 1.15 MHz, each lasting for 0.2 s) with two function generators (HP33120A; Hewlett-Packard, Palo Alto, CA, USA), amplified by a power amplifier (ENI A150; ENI, Rochester, NY, USA) whose signal we transmitted directly to the transducer."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives group sizes (33 pSNL, 30 sham, 12 normal control) but never states a combined total exposed to ultrasound, so group sizes are listed rather than summed."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Value reported is the mean iFU threshold intensity found per group (Table 3), not a fixed applied stimulus level; the device's intensity was titrated up from about 10 W/cm2 in each session until a withdrawal threshold was reached."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Paper reports intensity as I_SATA (spatially averaged, temporally averaged), which does not exactly match either the isppa or ispta schema fields; recorded here under ispta_w_cm2 as the closest match."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Surgery for the pSNL and sham groups was performed under deep isoflurane anesthesia, but the iFU behavioural testing itself (5-7+ days later) was performed on awake, unanesthetized animals; anaesthesia field reflects the testing condition."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

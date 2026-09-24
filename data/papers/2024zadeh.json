@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zadeh",
+ "doi": "10.1016/j.brs.2024.04.005",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS-induced motor-evoked potential (MEP) amplitude and latency; resting motor threshold (RMT)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "PRFs of 10 Hz and 100 Hz produced significant, sustained decreases in MEP amplitude (inhibition), lasting at least 30 min and over 60 min respectively; 1000 Hz PRF and sham produced no significant change.",
+ "adverse_events": "observed",
+ "safety_notes": "Participants reported mild-to-moderate symptoms possibly/probably related to stimulation across active and sham conditions; none were rated severe or definitely related to TUS. Maximum predicted brain temperature increase was 0.3-0.99 C and predicted mechanical index ranged 0.44-1.19, both within FDA guidelines.",
+ "exposures": [
+  {
+   "label": "TUS of left primary motor cortex at 10/100/1000 Hz PRF",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H317 (128-element phased array)"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 980,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 5,
+    "ispta_w_cm2": 0.5
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     10,
+     100,
+     1000
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 120,
+    "protocol_description": "Ultrasound delivery in all stimulation sessions consisted of a 120-s train with a DC of 10%, driven at a fundamental frequency of 250 kHz. A total ramping of 25% of the burst duration (12.5% up, 12.5% down) was applied to all PRF conditions to reduce auditory confounds. Each PRF (10, 100, 1000 Hz) and a sham condition were tested on separate days in randomised order; MEPs were assessed at baseline and 5, 30 and 60 min post-TUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 25 neurologically healthy individuals participated in the study, all of whom provided written informed consent. Four participants were withdrawn from the study during the stimulation visits due to irregular attendance, inability to relax, or experiencing dizziness during TMS. The remaining 21 participants (9 males and 12 females) had a mean (±SD) age of 27.86 (±6.25) years.",
+   "n_sessions_per_subject": "The experiment comprised five visits, encompassing one MRI scan session and four stimulation sessions.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven by the 128-channel system, utilizing a fundamental frequency of 250 kHz.",
+   "exposures[0].free_field.pressure_kpa": "The max pressure of 0.98 MPa was calculated for the amplifier amplitude of 87 used (Fig. 1B).",
+   "exposures[0].in_situ.isppa_w_cm2": "The Babelbrain software ensured an in-situ spatial peak-pulse-average intensity (I<sub>SPPA</sub>) of 5 W/cm<sup>2</sup> and spatial peak-time average intensity (I<sub>SPTA</sub>) of 0.5 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "The Babelbrain software ensured an in-situ spatial peak-pulse-average intensity (I<sub>SPPA</sub>) of 5 W/cm<sup>2</sup> and spatial peak-time average intensity (I<sub>SPTA</sub>) of 0.5 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The effects of three different TUS PRFs (10, 100, and 1000 Hz) with a constant duty cycle of 10 % on corticospinal excitability in the primary motor cortex were assessed using TMS induced motor evoked potentials (MEPs).",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound delivery in all stimulation sessions consisted of a 120-s train with a DC of 10 %. The transducer was driven by the 128-channel system, utilizing a fundamental frequency of 250 kHz.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound delivery in all stimulation sessions consisted of a 120-s train with a DC of 10 %. The transducer was driven by the 128-channel system, utilizing a fundamental frequency of 250 kHz.",
+   "exposures[0].device.manufacturer": "This study used a 128-element custom-made phased array ultrasound transducer (H317, Sonic Concepts, WA, USA) capable of operating at 250 kHz or 700 kHz.",
+   "exposures[0].device.model": "This study used a 128-element custom-made phased array ultrasound transducer (H317, Sonic Concepts, WA, USA) capable of operating at 250 kHz or 700 kHz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "25 individuals enrolled but 4 withdrew during stimulation visits (irregular attendance, inability to relax, dizziness during TMS), leaving 21 who completed all sessions and were analysed; enrolled figure (25) recorded per enrolled-vs-analysed convention."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The 0.98 MPa value comes from the calibration procedure performed at PRF 100 Hz / DC 2% (50-cycle burst) used for focus characterization, not explicitly confirmed as the free-field pressure delivered during the actual DC 10% experimental protocol."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The corresponding sentence in the main Methods text has an OCR/typesetting artefact that drops the numeral; the value (5 W/cm2) is only clearly legible in the Fig. 2 caption text, which was used as the quote."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states duty cycle (10%) and PRF (10/100/1000 Hz) but never states pulse duration directly; left not_reported rather than computed from duty_cycle/PRF."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,304 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022riisa",
+ "doi": "10.1101/2022.12.16.520788",
+ "model_system": [
+  "human_healthy",
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy",
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  11,
+  5
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "verbal report (Pain, Vibration, or Tap) of a nociceptive/tactile percept following each ultrasound stimulus",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "RTT-corrected ultrasound through an ex-vivo skull produced dose-dependent nociceptive/tactile response rates in the thumb (up to 62.7% at 1.8 MPa), whereas uncorrected or off-target (sham) stimulation produced no significant responses.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No subject reported side effects at 1 week follow-up. Subjects (n = 5) did not feel any discomfort during the procedure. No subject experienced detrimental effects during or following the procedure.",
+ "exposures": [
+  {
+   "label": "Peripheral nerve (thumb) stimulation through ex-vivo skull with RTT correction",
+   "target": {
+    "terms": [
+     "digital_nerve"
+    ],
+    "label": "nerves in the thumb"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": [
+     1300,
+     1550,
+     1800
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Each subject experienced eight distinct stimuli, presented randomly. The ultrasound stimuli were 300 ms in duration. There were three different correction methods-hydrophone correction, no correction, and RTT correction (see above)-and a sham condition. In the sham condition, which was specifically presented for the ideal, hydrophone correction, the ultrasound was programmatically steered 10 mm below the target. For hydrophone- and RTT-corrected stimuli, we varied the intended peak pressure levels across 1.3, 1.55, and 1.8 MPa. The no correction and sham stimuli were tested only at the highest intended pressure level. We performed 10 repetitions of each stimuli producing a total of 80 trials per subject. The stimuli were delivered every 8-12 seconds and randomized so that subjects could not anticipate their onset or type."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "RTT through-transmit calibration scan through the human head",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "through both sides of the human head (skull attenuation measurement)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Verasonics (driving system: Vantage256)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 80,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.3,
+    "ispta_w_cm2": 0.0054
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.0154,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "The RTT scan consists of brief (< 100us) low-intensity (average peak pressure of 80 kPa in free field; Suppl. Fig. 4) pulses of ultrasound. The RTT scan takes less than one second to complete. In this method, the transducers emitted a 10-cycle, 650 kHz pulse from each of its elements while recording responses from all the other, non-transmitting elements. During the through-transmit scans, the peak pressure amplitude of each transducers was 80 kPa. The entire process of this scan takes less than 1 s to complete."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "First, we tested how ultrasound could be applied through the skull to stimulate nerves. To test effects on nerves within intact biological tissues, we instructed 11 human subjects to place their thumb into a holder at the central target inside an ev-vivo skull.",
+   "exposures[0].fundamental_frequency_khz": "a, RTT enables effective modulation of peripheral nerves through skull. The arrays targeted nerves in the thumb of 11 participants. The thumb was secured in the central target inside an ex-vivo skull. The arrays delivered into the target a 300 ms stimulus at a frequency of 650 kHz and pressure amplitude of 1.8 MPa.",
+   "exposures[0].free_field.pressure_kpa": "b, Dose-response relationship of the stimulation. The LOW, MEDIUM, and HIGH labels correspond to an intended peak pressure of 1.3, 1.55, and 1.8 MPa, as measured in free-field.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimuli were 300 ms in duration.",
+   "exposures[0].timing.duty_cycle_pct": "The arrays delivered into the target a 300 ms stimulus at a frequency of 650 kHz and pressure amplitude of 1.8 MPa.",
+   "exposures[0].timing.protocol_description": "Each subject experienced eight distinct stimuli, presented randomly. The ultrasound stimuli were 300 ms in duration. There were three different correction methods-hydrophone correction, no correction, and RTT correction (see above)-and a sham condition. In the sham condition, which was specifically presented for the ideal, hydrophone correction, the ultrasound was programmatically steered 10 mm below the target. For hydrophone- and RTT-corrected stimuli, we varied the intended peak pressure levels across 1.3, 1.55, and 1.8 MPa. The no correction and sham stimuli were tested only at the highest intended pressure level. We performed 10 repetitions of each stimuli producing a total of 80 trials per subject. The stimuli were delivered every 8-12 seconds and randomized so that subjects could not anticipate their onset or type.",
+   "exposures[1].fundamental_frequency_khz": "In this method, the transducers emitted a 10-cycle, 650 kHz pulse from each of its elements while recording responses from all the other, non-transmitting elements. During the through-transmit scans, the peak pressure amplitude of each transducers was 80 kPa. The entire process of this scan takes less than 1 s to complete.",
+   "exposures[1].free_field.pressure_kpa": "We next assessed whether RTT could be applied to the human head, which presents additional key barriers for transcranial ultrasound including hair, scalp, acoustic coupling, and the brain. This test also evaluated the safety of the method. RTT was designed to be safe. The RTT scan consists of brief (< 100µs) low-intensity (average peak pressure of 80 kPa in free field; Suppl. Fig. 4) pulses of ultrasound. The RTT scan takes less than one second to complete. Subjects (n = 5) did not feel any discomfort during the procedure.",
+   "exposures[1].timing.protocol_description": "The RTT scan consists of brief (< 100µs) low-intensity (average peak pressure of 80 kPa in free field; Suppl. Fig. 4) pulses of ultrasound. The RTT scan takes less than one second to complete.",
+   "n_sessions_per_subject": "Each subject experienced eight distinct stimuli, presented randomly.",
+   "exposures[1].device.manufacturer": "The transducers were driven by a programmable system (Vantage256, Verasonics).",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "This result is expected because RTT uses diagnostic-imaging-like, < 100 µs pulses that were safely within the FDA 510(k) Track 3 guidelines<sup>42</sup>: $I _ { \\mathrm { S P P A } } = 1 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $I _ { \\mathrm { S P T A } } = 5 . 4 ~ \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ . ",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "This result is expected because RTT uses diagnostic-imaging-like, < 100 µs pulses that were safely within the FDA 510(k) Track 3 guidelines<sup>42</sup>: $I _ { \\mathrm { S P P A } } = 1 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $I _ { \\mathrm { S P T A } } = 5 . 4 ~ \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ . ",
+   "exposures[1].timing.pulse_duration_ms": "In this method, the transducers emitted a 10-cycle, 650 kHz pulse from each of its elements while recording responses from all the other, non-transmitting elements."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports two separate, non-overlapping subject groups (11 for peripheral nerve stimulation via ex-vivo skull; 5 for RTT scans through the living human head) rather than a single combined total; recorded as a list of group sizes."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "This is a technology-validation (RTT) paper rather than a neuromodulation study; the nerve-stimulation exposure is delivered through an ex-vivo human skull to a live subject's thumb, not to the brain itself. Included because the paper explicitly frames this as ultrasonic stimulation of nerves through the skull."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Paper reports only relative percentages of the free-field intensity delivered into the target after RTT correction (e.g. 98.8% ± 17.8%), not an absolute in-situ pressure/intensity value, so in-situ fields are left not_reported."
+   },
+   {
+    "field": "exposures[1]",
+    "reason": "The RTT through-transmit scan is a diagnostic-imaging-like calibration/safety measurement (not intended neuromodulation); included as a second exposure because it is explicitly applied through the living human head at a stated frequency and pressure, distinct in target and parameters from exposure 1."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "Paper states each RTT pulse is '10-cycle, 650 kHz' and separately that scan pulses are '<100 microseconds'; converting cycles/frequency gives ~0.015 ms, but this was left not_reported rather than computed because the qualitative '<100us' description is what the paper emphasizes for safety and the two descriptions were not reconciled."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Classified as 'online' because subjects verbally reported a percept immediately following each brief (300 ms) stimulus; paper does not use the terms 'online'/'offline'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[1].timing.pulse_duration_ms": "second"
+  }
+ }
+}

@@ -1,0 +1,331 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016leea",
+ "doi": "10.1016/j.ultrasmedbio.2015.10.001",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "sheep (Dorset, all female)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  4,
+  8
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "EMG-based motor evoked potentials (hind leg gastrocnemius); EEG-based sonication-triggered visual evoked potentials (sVEP); post-sonication behavioral/health monitoring; H&E histology",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS elicited contralateral hind-limb MEPs from SM1 and sonication-triggered VEPs from V1, both increasing in magnitude with acoustic intensity above an individually variable threshold; only stimulatory (excitatory) effects were assessed/observed, no suppression was tested.",
+ "adverse_events": "observed",
+ "safety_notes": "No adverse behavioral effects or SM1 histologic abnormalities were seen, but microhemorrhages (without edema, necrosis or inflammation) were found on H&E histology in the V1 cortex of 4 of 8 sheep exposed to highly repetitive sonication (500 or more times, every second, Isppa 6.6-10.5 W/cm^2, MI 0.9-1.2); a single high-intensity sVEP session (13.4 W/cm^2 Isppa) and SM1 sonication did not cause tissue abnormality. Mechanical index across exposures ranged 0.5-1.4, below the FDA diagnostic-imaging limit of 1.9.",
+ "exposures": [
+  {
+   "label": "Primary sensorimotor cortex (SM1) stimulation, EMG-based motor evoked potentials",
+   "target": {
+    "terms": [
+     "sensorimotor_cortex"
+    ],
+    "label": "primary sensorimotor (SM1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Channel Industries (piezo-ceramic element; custom transducer assembly)",
+    "model": "single-element ceramic piezo-electric FUS transducer, 250 kHz, 6-cm outer diameter, 7-cm radius of curvature"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.5,
+     11.8
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "During each FUS session, batches of sonication were given in 5-s intervals (for MEP measurement) to the target area in the brain. The minimum AI eliciting tangible responses was searched for by increasing the AI from 0.5 W/cm^2 Isppa with 30 s between trials, then increased (in-situ, skull-attenuation corrected) up to 11.8 W/cm^2 Isppa for SM1. Focused ultrasound was administered to the left hemisphere of the SM1 area and EMG-based MEP measurements were taken from both hind legs."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Primary visual cortex (V1) stimulation, EEG-based sonication-triggered visual evoked potentials",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual (V1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Channel Industries (piezo-ceramic element; custom transducer assembly)",
+    "model": "single-element ceramic piezo-electric FUS transducer, 250 kHz, 6-cm outer diameter, 7-cm radius of curvature"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.5,
+     14.3
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "During each FUS session, batches of sonication were given in 1-s intervals (for sVEP measurement) to the target area in the brain. The minimum AI eliciting tangible responses was searched for by increasing the AI from 0.5 W/cm^2 Isppa with 30 s between trials, then increased (in-situ, skull-attenuation corrected) up to 14.3 W/cm^2 Isppa for V1. A total of four to eight multiple FUS sessions were performed on each sheep to acquire the sVEPs, with EEG responses averaged (n=100, every second for each sonication) to derive the sVEP; a subset of sheep additionally received highly repetitive sonication (500 or more sonications, every second) to probe prolonged-exposure effects."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "In the present study, we applied stimulatory focused ultrasound transcranially to the primary sensorimotor (SM1) and visual (V1) brain areas in sheep (Dorset, all female, n 5 8), under the guidance of magnetic resonance imaging, and examined the electrophysiologic responses.",
+   "n_sessions_per_subject": "A total of four to eight multiple FUS sessions were performed on each sheep to acquire the sVEPs.",
+   "exposures[0].fundamental_frequency_khz": "A single-element ceramic piezo-electric FUS transducer (Channel Industries, Santa Barbara, CA, USA), having 250-kHz operating frequency, was used for transcranial sonication of the SM1 and V1 of the sheep brain.",
+   "exposures[0].in_situ.isppa_w_cm2": "On detection of the relevant physiologic signals elicited by FUS (i.e., MEP or sVEP), the AI at the FUS focus, corrected for the attenuation through the skull (see below for the measurement via ex vivo skull samples), was increased to have an in situ AIs of up to 11.8 W/ $\\mathrm { c m } ^ { 2 } \\ I _ { \\mathrm { s p p a } }$ for the SM1 area and $1 4 . 3 \\ \\mathrm { \\ W / c m } ^ { 2 } \\ I _ { \\mathrm { s p p a } }$ for the V1 area.",
+   "exposures[0].timing.pulse_duration_ms": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[0].timing.duty_cycle_pct": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[0].timing.sonication_duration_s": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[1].fundamental_frequency_khz": "A single-element ceramic piezo-electric FUS transducer (Channel Industries, Santa Barbara, CA, USA), having 250-kHz operating frequency, was used for transcranial sonication of the SM1 and V1 of the sheep brain.",
+   "exposures[1].in_situ.isppa_w_cm2": "On detection of the relevant physiologic signals elicited by FUS (i.e., MEP or sVEP), the AI at the FUS focus, corrected for the attenuation through the skull (see below for the measurement via ex vivo skull samples), was increased to have an in situ AIs of up to 11.8 W/ $\\mathrm { c m } ^ { 2 } \\ I _ { \\mathrm { s p p a } }$ for the SM1 area and $1 4 . 3 \\ \\mathrm { \\ W / c m } ^ { 2 } \\ I _ { \\mathrm { s p p a } }$ for the V1 area.",
+   "exposures[1].timing.pulse_duration_ms": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[1].timing.duty_cycle_pct": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[1].timing.sonication_duration_s": "Each 300-ms-long sonication was composed of a 1-ms-long 250-kHz sinusoidal wave pulse given at a PRF of 500 Hz (i.e., a pulsed mode with a duty cycle of 50%) (Fig. 1d).",
+   "exposures[0].device.manufacturer": "A 3-T clinical MRI scanner with an eight-channel head coil was used.",
+   "exposures[0].device.model": "By use of a 250-kHz focused ultrasound transducer, the area was sonicated in pulsed mode (tone-burst duration of 1 ms, duty cycle of 50%) for 300 ms.",
+   "exposures[1].device.manufacturer": "A 3-T clinical MRI scanner with an eight-channel head coil was used.",
+   "exposures[1].device.model": "By use of a 250-kHz focused ultrasound transducer, the area was sonicated in pulsed mode (tone-burst duration of 1 ms, duty cycle of 50%) for 300 ms."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The 0.5 W/cm^2 starting value of the intensity search is not explicitly stated to be pre- or post-skull-correction; it is grouped with the corrected in-situ maxima (11.8/14.3 W/cm^2) as the tested range, but this domain assignment for the lower bound is uncertain."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The '4 to 8 sessions per sheep' figure is stated specifically for the sVEP (V1) data collection; the number of SM1/MEP sessions per sheep is not given as clearly (Table 1 shows a variable number of FUS procedures per sheep)."
+   },
+   {
+    "field": "exposures[*].timing.protocol_description",
+    "reason": "Inter-sonication/inter-trial intervals (5 s for MEP, 1 s for sVEP, 30 s during threshold search) and the highly repetitive V1 sub-study (500+ sonications) are described qualitatively per the schema's protocol_description field rather than as additional numeric timing fields."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "first",
+   "exposures[1].in_situ.isppa_w_cm2": "first"
+  }
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022cheng",
+ "doi": "10.1016/j.brs.2021.12.005",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "eeg_meg"
+ ],
+ "readout_other": "in vivo two-photon calcium imaging (GCaMP6s); EEG recording with wavelet decomposition",
+ "readout_timing": "online",
+ "anaesthesia": "both",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "30 MHz ultrasound reliably suppressed calcium transients and increased low-frequency (0.3-1.3 Hz) EEG activity in awake mice; both effects disappeared under isoflurane anesthesia.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Although much stronger ultrasound (Ispta reached 11.8 W/cm2, CW) was employed in this control study, no microglia aggregation was observed. Brain tissue temperature variation during ultrasound modulation showed less than 1 C variation and negligible difference between awake and anesthetized mice.",
+ "exposures": [
+  {
+   "label": "30 MHz (also 20 and 40 MHz) ultrasound to visual cortex",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex (V1)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "PI35-2-R0.50"
+   },
+   "fundamental_frequency_khz": [
+    20000,
+    30000,
+    40000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     2.17,
+     4.46
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 60,
+    "protocol_description": "The typical recording session was 300 s long: the first 60 s the ultrasound was off (baseline), the next 60 s the ultrasound was on (modulation), and the last 180 s the ultrasound was off (recovery). Amplitude-modulated (pulsed) waveforms were also tested at a 10% duty cycle with modulation frequency varied from 100 Hz to 100 kHz, and with sinusoidal amplitude modulation from 0.5 to 2 MHz, but none of these modulated waveforms suppressed calcium transients as effectively as the CW signal."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "ultrasound to motor cortex (parameters not restated)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "PI35-2-R0.50"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "We also tested the motor cortex which showed the same effects (Supplementary Fig. 5)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "randomised": "All the data in this study are represented as mean ± standard error. All the data analysis was performed with the Shapiro-Wilk normality test. For the data that passed the normality test $( P > 0 . 0 5 )$ , an unpaired t-test with Welch's correction was selected for two groups' comparison, the one or two-way ANOVA Tukey's or Sidak's multiple comparisons test were selected for comparing multiple groups. $P < 0 . 0 5$ is recognized as statistically significant. All statistical analyses were performed using GraphPad Prism. No results of the successful acquisition from images and measurements were excluded and filtered. The experiment did not include randomized and blinding experiments. At least three mice were used in each experiment.",
+   "blinding": "All the data in this study are represented as mean ± standard error. All the data analysis was performed with the Shapiro-Wilk normality test. For the data that passed the normality test $( P > 0 . 0 5 )$ , an unpaired t-test with Welch's correction was selected for two groups' comparison, the one or two-way ANOVA Tukey's or Sidak's multiple comparisons test were selected for comparing multiple groups. $P < 0 . 0 5$ is recognized as statistically significant. All statistical analyses were performed using GraphPad Prism. No results of the successful acquisition from images and measurements were excluded and filtered. The experiment did not include randomized and blinding experiments. At least three mice were used in each experiment.",
+   "adverse_events": "To test whether the applied ultrasound could cause any damage to the brain tissue [18], we applied the 30 MHz ultrasound to the brain of Cx3cr1-EGFP mice that expressed EGFP in the microglia. Tissue damage would cause the aggregation of the microglia processes. Although much stronger ultrasound (I<sub>spta</sub> reached 11.8 W/cm<sup>2</sup>, CW) was employed in this control study, no microglia aggregation was observed (Fig. 4c). Moreover, we monitored the brain tissue temperature variation during the ultrasound modulating using miniature thermocouple sensors (PerfectPrime, TL0201, 0.1 mm), which showed less than 1 C variation and negligible difference between awake and anesthetized mice (Supplementary Fig. 3).",
+   "safety_notes": "To test whether the applied ultrasound could cause any damage to the brain tissue [18], we applied the 30 MHz ultrasound to the brain of Cx3cr1-EGFP mice that expressed EGFP in the microglia. Tissue damage would cause the aggregation of the microglia processes. Although much stronger ultrasound (I<sub>spta</sub> reached 11.8 W/cm<sup>2</sup>, CW) was employed in this control study, no microglia aggregation was observed (Fig. 4c). Moreover, we monitored the brain tissue temperature variation during the ultrasound modulating using miniature thermocouple sensors (PerfectPrime, TL0201, 0.1 mm), which showed less than 1 C variation and negligible difference between awake and anesthetized mice (Supplementary Fig. 3).",
+   "exposures[0].target.label": "First, we employed the dual-modality system to observe the neuronal response to the 30 MHz continuous wave (CW) ultrasound in the visual cortex of awake mice expressing GCaMP6s. With the ultrasound applied, the calcium transient was significantly reduced (Fig. $1 { \\mathsf { c } } { \\mathsf { e } } ,$ Supplementary Figs. 1eeg). After the ultrasound was turned off, the calcium transient gradually recovered. To quantify this phenomenon, we performed statistical analysis on the $\\Delta F / F _ { 0 } .$ The statistics of 4 mice and 180 neurons show that the presence of the 30 MHz ultrasound can reliably suppress the neuronal calcium activity (Fig. 1f). However, if the mice were under anesthesia with isoflurane (inherently suppressed neuronal activity and calcium transient [44e46]), the effect of ultrasound became insignificant (Fig. 1g).",
+   "exposures[0].device.family": "The dual-modality system involves the combination of a twophoton laser scanning fluorescence microscope and a highfrequency focused ultrasound transducer (Fig. 1a). To accommodate the ultrasound transducer (PI35-2-R0.50, Olympus NDT), we employed a water-dipping objective lens (Nikon 16x NA 0.8) with a large access angle.",
+   "exposures[0].fundamental_frequency_khz": "Next, we explored the implementation of different carrier frequencies and waveforms. Within the ~20 MHz bandwidth of our 30 MHz transducer, we tested 20 and 40 MHz ultrasound (Supplementary Fig. 2a). Both showed similar suppression effects on neurons albeit the effect of the 40 MHz wave was weaker due to the greater attenuation coefficient in water and the 12.7 mm-long water path. We further tested the effect of amplitude modulation on the 30 MHz ultrasound. Experimentally, we applied pulsed modulation to the 30 MHz carrier signal and varied the duty cycle of the modulation. The data suggest that the reduced duty cycle gradually diminished the effect of neural modulation (Supplementary Fig. 2b) and the CW signal offered the strongest suppression to calcium transients. For the 10% duty cycle, we also varied the modulation frequency from 100 Hz to 100 kHz, which made a minor difference to the results (Supplementary Fig. 2c). Finally, we tested using sinusoidal amplitude modulation and varied the modulation frequency from 0.5 MHz to 2 MHz, which also made little difference (Supplementary Fig. 2d). Overall, none of these modulated waveforms worked better than the CW highfrequency ultrasound.",
+   "exposures[0].free_field.ispta_w_cm2": "We also tested moving the ultrasound transducer 5 mm away from the imaging FOV. As expected, the effect of the calcium transient suppression disappeared (Fig. 4b). The employed ultrasound intensity $( \\mathrm { I } _ { \\mathsf { s p t a } } ; 2 . 1 7 - 4 . 4 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 } , \\mathrm { C W } )$ in this study was a bit higher than the common medical ultrasound imaging intensity.",
+   "exposures[0].timing.waveform": "First, we employed the dual-modality system to observe the neuronal response to the 30 MHz continuous wave (CW) ultrasound in the visual cortex of awake mice expressing GCaMP6s. With the ultrasound applied, the calcium transient was significantly reduced (Fig. $1 { \\mathsf { c } } { \\mathsf { e } } ,$ Supplementary Figs. 1eeg). After the ultrasound was turned off, the calcium transient gradually recovered. To quantify this phenomenon, we performed statistical analysis on the $\\Delta F / F _ { 0 } .$ The statistics of 4 mice and 180 neurons show that the presence of the 30 MHz ultrasound can reliably suppress the neuronal calcium activity (Fig. 1f). However, if the mice were under anesthesia with isoflurane (inherently suppressed neuronal activity and calcium transient [44e46]), the effect of ultrasound became insignificant (Fig. 1g).",
+   "exposures[0].timing.duty_cycle_pct": "First, we employed the dual-modality system to observe the neuronal response to the 30 MHz continuous wave (CW) ultrasound in the visual cortex of awake mice expressing GCaMP6s. With the ultrasound applied, the calcium transient was significantly reduced (Fig. $1 { \\mathsf { c } } { \\mathsf { e } } ,$ Supplementary Figs. 1eeg). After the ultrasound was turned off, the calcium transient gradually recovered. To quantify this phenomenon, we performed statistical analysis on the $\\Delta F / F _ { 0 } .$ The statistics of 4 mice and 180 neurons show that the presence of the 30 MHz ultrasound can reliably suppress the neuronal calcium activity (Fig. 1f). However, if the mice were under anesthesia with isoflurane (inherently suppressed neuronal activity and calcium transient [44e46]), the effect of ultrasound became insignificant (Fig. 1g).",
+   "exposures[0].timing.sonication_duration_s": "The calcium imaging data were primarily collected from layer 2/ 3 neurons of the visual cortex. We also tested the motor cortex which showed the same effects (Supplementary Fig. 5). The calcium image recording rate was 4 Hz. The typical recording session was 300 s long. In the first 60 s, the ultrasound was off (recording baseline activity). In the next 60 s, the ultrasound was on (modulation). In the last 180 s, the ultrasound was off (recovery).",
+   "exposures[1].target.label": "The calcium imaging data were primarily collected from layer 2/ 3 neurons of the visual cortex. We also tested the motor cortex which showed the same effects (Supplementary Fig. 5). The calcium image recording rate was 4 Hz. The typical recording session was 300 s long. In the first 60 s, the ultrasound was off (recording baseline activity). In the next 60 s, the ultrasound was on (modulation). In the last 180 s, the ultrasound was off (recovery).",
+   "exposures[1].device.manufacturer": "To accommodate the ultrasound transducer (PI35-2-R0.50, Olympus NDT), we employed a water-dipping objective lens (Nikon 16x NA 0.8) with a large access angle.",
+   "exposures[1].device.model": "To accommodate the ultrasound transducer (PI35-2-R0.50, Olympus NDT), we employed a water-dipping objective lens (Nikon 16x NA 0.8) with a large access angle.",
+   "exposures[0].device.manufacturer": "The dual-modality system involves the combination of a twophoton laser scanning fluorescence microscope and a highfrequency focused ultrasound transducer (Fig. 1a). To accommodate the ultrasound transducer (PI35-2-R0.50, Olympus NDT), we employed a water-dipping objective lens (Nikon 16x NA 0.8) with a large access angle.",
+   "exposures[0].device.model": "The dual-modality system involves the combination of a twophoton laser scanning fluorescence microscope and a highfrequency focused ultrasound transducer (Fig. 1a). To accommodate the ultrasound transducer (PI35-2-R0.50, Olympus NDT), we employed a water-dipping objective lens (Nikon 16x NA 0.8) with a large access angle."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "4 mice specifically reported for the primary calcium-suppression phenomenon ('the statistics of 4 mice and 180 neurons'); additional, unspecified numbers of mice ('at least three mice ... in each experiment') were used in other sub-experiments (frequency comparisons, motor cortex, transgenic controls) not included in this count."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "20 and 40 MHz were also tested at the same target as the primary 30 MHz condition, with only a qualitative comparison of suppression strength reported (no separate intensity/timing values); combined into a single exposure per the frequency-sweep rule."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Intensity was measured with a hydrophone 'at the sound focus', typically a free-field/water measurement technique, but mice had a cranial window (skull removed, plastic coverslip with ~90% acoustic transmission) rather than an intact skull, so domain assignment (free-field vs. delivered-at-brain) is uncertain."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "A pulsed/amplitude-modulated condition at 10% duty cycle and modulation-frequency range 100 Hz-100 kHz is also described in text, but was a secondary comparison to the primary CW protocol; not entered as separate list values to avoid conflating with the CW dose-response data."
+   },
+   {
+    "field": "exposures[1].fundamental_frequency_khz",
+    "reason": "Motor cortex is mentioned only briefly in Methods with reference to a supplementary figure; no frequency, intensity, or timing values were restated for this target, so it is recorded as not_reported rather than assumed identical to the visual cortex protocol."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham condition is described; the closest control is moving the ultrasound transducer 5 mm away from the imaging/recording site, coded as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "disagree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].fundamental_frequency_khz": "first",
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

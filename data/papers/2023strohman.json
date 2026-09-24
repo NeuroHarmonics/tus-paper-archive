@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023strohman",
+ "doi": "10.1101/2023.06.30.547251",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "autonomic_physiology",
+  "behaviour"
+ ],
+ "readout_other": "contact heat-evoked potential (CHEP, N1-P1 amplitude); heart rate variability (SDNN, RMSSD, pNN50, CV, LF/HF power); blood pressure; electrodermal response (EDR); pain ratings (0-9 numerical rating scale)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU to the dACC reduced pain ratings and the CHEP N1-P1 peak-to-peak amplitude (driven by P1) relative to Sham, and increased heart-rate-variability measures (SDNN, CV, LF power, LF/HF ratio) towards pre-task baseline, consistent with the authors' hypothesised inhibitory effect on the dACC.",
+ "adverse_events": "observed",
+ "safety_notes": "For the LIFU condition, one participant reported a mild headache, one reported mild unusual scalp sensations, two reported mild neck pain, one reported mild tooth pain, and one reported mild nausea. For the Sham condition, mild unusual feelings, tingling, itching, sleepiness, inattentiveness, twitching, anxious feeling, and balance issues were each reported by one to three participants. No moderate or serious adverse events were reported for either condition.",
+ "exposures": [
+  {
+   "label": "LIFU to the dorsal anterior cingulate cortex (dACC), time-locked to contact heat pain",
+   "target": {
+    "terms": [
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "dorsal anterior cingulate cortex (dACC), MNI (0,18,30)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-104"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 370,
+    "isppa_w_cm2": 4.5,
+    "ispta_w_cm2": 1.62
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 60.13,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 1,
+    "protocol_description": "Channel 1 was a 5Vp-p square wave burst of 1kHz (N = 1000) with a 36% duty cycle used to gate channel 2 that was a 500 kHz sine wave. This resulted in a 1 second waveform of 1000 pulses of 360 microseconds. LIFU delivery was time-locked to the CHEP stimulus, beginning at -200 ms (prior to stimulus) and ending at +800 ms after heat stimulus delivery. A total of 40 such LIFU/CHEP trials were delivered per session, with a random inter-stimulus interval of 10-20 seconds between trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 16 healthy participants (6M/10F, aged 28 ± 5.46 years) met inclusion criteria and were enrolled in the study.",
+   "randomised": "Sessions 2 and 3 were formal testing days where participants were counterbalanced for Sham or real LIFU to the dACC.",
+   "exposures[0].fundamental_frequency_khz": "We used a single-element focused ultrasound transducer (Sonic Concepts<sup>TM</sup> , model H-104) with a center frequency of 0.5 MHz, 64 mm aperture, 52 mm focal length from the exit plane and an f# of 0.81.",
+   "exposures[0].timing.pulse_duration_ms": "This resulted in a 1 second waveform of 1000 pulses of 360 microseconds $( \\mu \\mathsf { s } )$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Channel 1 was a 5Vp-p square wave burst of 1kHz (N = 1000) with a 36% duty cycle used to gate channel 2 that was a 500 kHz sine wave.",
+   "exposures[0].timing.duty_cycle_pct": "Channel 1 was a 5Vp-p square wave burst of 1kHz (N = 1000) with a 36% duty cycle used to gate channel 2 that was a 500 kHz sine wave.",
+   "exposures[0].timing.sonication_duration_s": "This resulted in a 1 second waveform of 1000 pulses of 360 microseconds $( \\mu \\mathsf { s } )$ .",
+   "exposures[0].free_field.pressure_kpa": "Acoustic Modelling. The extracranial peak negative pressure was 370 kPa for all participants.",
+   "exposures[0].free_field.isppa_w_cm2": "This translated to an intensity outside of the skull of $4 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ spatial-peak, pulsed averaged $( \\mathsf { I } _ { \\mathsf { s p p a } } ) \\mathsf { o r } \\ 1 . 6 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ spatial-peak, temporal averaged $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ .",
+   "exposures[0].free_field.ispta_w_cm2": "This translated to an intensity outside of the skull of $4 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ spatial-peak, pulsed averaged $( \\mathsf { I } _ { \\mathsf { s p p a } } ) \\mathsf { o r } \\ 1 . 6 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ spatial-peak, temporal averaged $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ .",
+   "exposures[0].in_situ.pressure_kpa": "Acoustic modelling estimated a mean $\\pm \\mathsf { S D }$ intracranial pressure at the dACC target of $6 0 . 1 3 \\pm 1 5 . 2 7$ kilopascals (kPa) with a range of 37.36 to 86.19 kPa (Table S1).",
+   "auditory_control": "For auditory masking, participants were given headphones connected to a tablet with a multitone white noise generator.",
+   "n_sessions_per_subject": "Sessions 2 and 3 were formal testing days where participants were counterbalanced for Sham or real LIFU to the dACC.",
+   "exposures[0].device.manufacturer": "We used a single-element focused ultrasound transducer (Sonic Concepts TM , model H-104) with a center frequency of 0.5 MHz, 64 mm aperture, 52 mm focal length from the exit plane and an f# of 0.81.",
+   "exposures[0].device.model": "We used a single-element focused ultrasound transducer (Sonic Concepts TM , model H-104) with a center frequency of 0.5 MHz, 64 mm aperture, 52 mm focal length from the exit plane and an f# of 0.81."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "The paper never describes the physical mechanism of the Sham condition (e.g. transducer off, angled away, etc.); classified as 'other' pending that detail."
+   },
+   {
+    "field": "blinding",
+    "reason": "Participants were counterbalanced across Sham/LIFU sessions and auditory-masked, but the paper does not explicitly state whether participants or experimenters were blinded to condition."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Design used one crossover session with real LIFU and one separate session with Sham (2 formal testing sessions total); n_sessions_per_subject here counts only the session in which active LIFU was delivered."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The 370 kPa 'extracranial' pressure is a simulation/model output (matched to empirical free-water field mapping), not a direct free-water hydrophone measurement of this exact value; placed in free_field since it represents pressure prior to transcranial transmission."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst-rule check: duty cycle (36%) / PRF (1000 Hz) = 0.36 ms, matching the stated '360 microsecond' pulse length, so no conflict; recorded directly from the stated 360 microsecond value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

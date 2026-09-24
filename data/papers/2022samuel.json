@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022samuel",
+ "doi": "10.1016/j.brs.2022.10.001",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "TMS-elicited motor-evoked potentials (MEP), short-interval intracortical inhibition (SICI), intracortical facilitation (ICF); magnetoencephalography (MEG) resting-state and motor-task recordings (spectral power, coherence); accelerometer-based finger movement detection",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Active tbTUS to left M1 significantly increased MEP amplitude and decreased SICI (disinhibition), with no change in ICF; sham tbTUS had no effect on any of these measures.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No subjects reported any adverse effects throughout the experiments, supporting the safety profile of tbTUS pulsing schemes.",
+ "exposures": [
+  {
+   "label": "Theta-burst TUS (tbTUS) to left primary motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left motor cortex (FDI hotspot in M1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H246"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.26,
+    "ispta_w_cm2": 0.23
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "The theta burst TUS (tbTUS) paradigm consists of an 80s train of pulses with pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms, ultrasonic stimulus duration of 200 ms, and duty cycle of 10%, for a total number of 400 pulses. The power of ultrasound was set as 20W. For sham tbTUS, the transducer was flipped so that the inactive face of the transducer was in contact with the scalp and ultrasonic energy was directed away from the head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of15 healthy subjects (7 females, age range: 20e37 years, mean age 27.1 years, SD: 5 ± 1 years; Supplementary Table 1) were recruited from advertisements posted at the University Health Network (UHN), in accordance with accepted Research Ethics Board protocols.",
+   "n_sessions_per_subject": "All subjects participated in three randomly assigned study visits, with one visit each for sham and active tbTUS separated by at least 7 days and one visit for an MRI scan (Supplementary Table 2).",
+   "randomised": "All subjects participated in three randomly assigned study visits, with one visit each for sham and active tbTUS separated by at least 7 days and one visit for an MRI scan (Supplementary Table 2).",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered using a custom twoelement annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was delivered using a custom twoelement annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm.",
+   "exposures[0].timing.pulse_duration_ms": "The theta burst TUS (tbTUS) paradigm consists of an 80s train of pulses with pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms, ultrasonic stimulus duration of 200 ms, and duty cycle of 10%, for a total number of 400 pulses.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The theta burst TUS (tbTUS) paradigm consists of an 80s train of pulses with pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms, ultrasonic stimulus duration of 200 ms, and duty cycle of 10%, for a total number of 400 pulses.",
+   "exposures[0].timing.duty_cycle_pct": "The theta burst TUS (tbTUS) paradigm consists of an 80s train of pulses with pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms, ultrasonic stimulus duration of 200 ms, and duty cycle of 10%, for a total number of 400 pulses.",
+   "exposures[0].timing.sonication_duration_s": "The theta burst TUS (tbTUS) paradigm consists of an 80s train of pulses with pulse repetition frequency (PFR) of 5 Hz, pulse duration of 20 ms, ultrasonic stimulus duration of 200 ms, and duty cycle of 10%, for a total number of 400 pulses.",
+   "exposures[0].free_field.isppa_w_cm2": "Based on the acoustic pressure field, the spatial peak-pulse-average intensity (ISPPA) was 2.26 W/cm2 and the spatial-peak time-average intensity (I ) was 0.23 W/cm2, both well below the United States Food and Drug Administration (FDA) safety standards.",
+   "exposures[0].free_field.ispta_w_cm2": "Based on the acoustic pressure field, the spatial peak-pulse-average intensity (ISPPA) was 2.26 W/cm2 and the spatial-peak time-average intensity (I ) was 0.23 W/cm2, both well below the United States Food and Drug Administration (FDA) safety standards.",
+   "sham_type": "For sham tbTUS, the transducer was flipped so that the inactive face of the transducer was in contact with the scalp and ultrasonic energy was directed away from the head.",
+   "direction_notes": "MEP amplitudes significantly increased from 1.03 ± 0.24 mV (mean ± SD) at the baseline to 1.39 ± 0.45 mV after active tbTUS (t(14) 5.17, p < 0.001; Fig. 2A).",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered using a custom twoelement annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, Washington) with a fundamental frequency of 0.5 MHz, diameter of 38 mm, and thickness of 10 mm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "ISPPA/ISPTA values were taken from field measurements made in water in a previous study (Zeng et al. 2022), not measured in the present cohort; assigned to free_field domain since the text explicitly states measurements were 'made in water'."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Set to 2 (one active + one sham tbTUS visit); paper describes a third visit for an MRI scan only, not counted as a TUS session."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "TMS/EMG and MEG measures were all collected before and after (not during) tbTUS administration."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

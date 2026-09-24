@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025anon",
+ "doi": "10.48550/arxiv.2511.14188",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "Long COVID (post-COVID-19) brain fog with perceptual/cognitive impairment",
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "fmri",
+  "behaviour",
+  "clinical_scale"
+ ],
+ "readout_other": "Continuous random dot motion (cRDM) task false-alarm and correct-response rates; brain-fog severity rating scale; resting-state fMRI seed-based functional connectivity from the right inferior insula",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Excitatory theta-burst TUS targeting the right inferior insula increased insula-seeded resting-state functional connectivity and significantly reduced the false-alarm rate on the cRDM perceptual task relative to sham (mean change -47.4% vs -23.7%), without a significant immediate change in self-reported brain fog severity.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Acoustic simulations confirmed exposure remained within safety guidelines and thermal simulations verified the maximum target temperature increase did not exceed 2 C; mechanical index was maintained at 0.693 +/- 0.045.",
+ "exposures": [
+  {
+   "label": "Theta-burst TUS of right inferior insula",
+   "target": {
+    "terms": [
+     "insular_cortex"
+    ],
+    "label": "right inferior insula (inferior circular sulcus, Destrieux atlas)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "H-104MR_4AA-4CH transducer with NeuroFUS TPO-203"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 33.8,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 7.37,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Theta-burst TUS consisted of 20 ms pulses within a 200 ms pulse-repetition interval (5 Hz PRF, 10% duty cycle), for a total of 400 cycles (80 s), delivered once to the right inferior insula under MRI/Brainsight neuronavigation guidance. The sham group underwent an identical procedure with no ultrasound output but matched auditory/procedural cues (transducer operational sound via bone-conduction headphones plus a pre-recorded TPO sound)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We recruited 40 community‑dwelling participants with persistent self‑reported brain‑fog symptoms following COVID‑19. Participants were randomly assigned to either the TUS group (n = 20) or the sham group (n = 20), with groups matched on demographics and baseline characteristics (Table 2).",
+   "n_sessions_per_subject": "Immediately after this single stimulation, brain fog symptom ratings did not change significantly $( p = 0 . 3 7 2 )$ .",
+   "exposures[0].timing.pulse_duration_ms": "For TUS group, we employed theta-burst TUS protocol28,29,40 which consisted of stimulation in pulses of 20 ms within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 seconds).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For TUS group, we employed theta-burst TUS protocol28,29,40 which consisted of stimulation in pulses of 20 ms within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 seconds).",
+   "exposures[0].timing.duty_cycle_pct": "For TUS group, we employed theta-burst TUS protocol28,29,40 which consisted of stimulation in pulses of 20 ms within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 seconds).",
+   "exposures[0].timing.sonication_duration_s": "For TUS group, we employed theta-burst TUS protocol28,29,40 which consisted of stimulation in pulses of 20 ms within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 seconds).",
+   "exposures[0].free_field.isppa_w_cm2": "The free-field spatial peak pulse-average intensity (ISPPA) was maintained at 33.8 W/cm².",
+   "exposures[0].in_situ.isppa_w_cm2": "We used transducer placement optimization to maximize target ISPPA (7.370 ± 0.959 W/cm²) and minimize off-target energy, while ensuring mechanical $( \\mathsf { M } \\mathsf { I } = 0 . 6 9 3 \\ \\pm$ 0.045) and thermal $( \\mathsf { C E M 4 3 } = 0 . 0 0 0 3 8 4 \\ \\pm \\ 0 . 0 0 0 0 0 7 5 )$ safety.",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered using NeuroFUS Transducer Power Output ™ (TPO-203) and H-104MR\\_4AA-4CH transducer (Sonic Concepts, Woodinville, WA, USA).",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered using NeuroFUS Transducer Power Output ™ (TPO-203) and H-104MR\\_4AA-4CH transducer (Sonic Concepts, Woodinville, WA, USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Transducer model (H-104MR_4AA-4CH, Sonic Concepts) is stated but the operating fundamental frequency is never given in the text."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n_subjects reflects only the 20 participants who received real ultrasound (TUS group); the sham group (n=20) received no ultrasound output."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

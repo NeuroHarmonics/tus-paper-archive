@@ -1,0 +1,241 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024kimb",
+ "doi": "10.1126/sciadv.adk3198",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6 and Thy1-GCaMP6f)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "invasive_electrophysiology",
+  "cellular_imaging",
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "Motor-evoked potentials (MEPs); subdermal EEG for theta-gamma phase-amplitude coupling; Neuropixels extracellular recording; GCaMP6f fiber photometry calcium imaging; whole-cell patch-clamp sEPSCs; c-Fos immunofluorescence and GluR4/AMPAR western blot; single-pellet reaching task (SPRT)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Intermittent theta-burst ultrasound (iTBUS) increased MEP amplitude (LTP-like facilitation), while continuous theta-burst ultrasound (cTBUS) decreased MEP amplitude (LTD-like depression); effects required NMDAR activation, BDNF/TrkB signalling, de novo protein synthesis, and TRPA1/Best1 channels.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Hematoxylin and eosin staining after 10 days of TBUS administration and Evans blue dye assessment after acute 800-pulse TBUS showed no tissue damage, hemorrhaging, or blood-brain-barrier disruption.",
+ "exposures": [
+  {
+   "label": "Theta burst ultrasound stimulation (iTBUS/cTBUS) to contralateral primary motor cortex (M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "contralateral M1 hotspot associated with the proximal forelimb muscle movement"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Panametrics",
+    "model": "V301 (V301-SU)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 299,
+    "isppa_w_cm2": 2.787,
+    "ispta_w_cm2": [
+     0.0544,
+     0.272
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "theta_burst"
+    ],
+    "pulse_duration_ms": 17,
+    "pulse_repetition_frequency_hz": 30,
+    "duty_cycle_pct": 51.1,
+    "sonication_duration_s": [
+     2,
+     100
+    ],
+    "protocol_description": "TBUS protocol: a 2-s theta-gamma coupling pattern in which ultrasound stimuli (17-ms, 500-kHz tone bursts) were delivered four times with a 33.33-ms interstimulus onset interval (30-Hz gamma), repeated every 200 ms (5-Hz theta). For intermittent TBUS (iTBUS), the 2-s train was delivered 10 times for 400 pulses, with an 8-s break interval between trains. For continuous TBUS (cTBUS), the protocol was performed continuously without break intervals, extending to 100 s for 400 pulses. A second series doubled pulse number to 800 for both iTBUS and cTBUS to test longevity of effects. TBUS was administered at 80% of the single-pulse motor-threshold-referenced intensity used to elicit MEPs."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 51.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].target.label": "To investigate the efects of ultrasound stimulation on brain function, we applied the noninvasive stimulation to the contralateral M1 of hotspot associated with the proximal forelimb muscle movement.",
+   "exposures[0].device.model": "The resulting sinusoidal waves were amplified using a 75-W RF power amplifier (A075, E&I, Rochester, NY, USA) and delivered to a transducer (Olympus Panametrics V301).",
+   "exposures[0].fundamental_frequency_khz": "The transducer used for tFUS stimulation in the M1 cortex had a diameter of 25 mm and operated at a center frequency of 500 kHz.",
+   "exposures[0].timing.pulse_duration_ms": "Upon each TTL pulse from the Master 9 pulse generator, function generator 1 produced 17 pulses at a PRF of 1 kHz, resulting in a pulse duration of 17 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "During iTBUS, four TTL pulses were delivered at 30 Hz (33.33-ms interstimulus onset interval), and this pattern was repeated at 5 Hz (200 ms) for a duration of 2 s, with an inter-train interval of 8 s.",
+   "exposures[0].timing.duty_cycle_pct": "For the 30-Hz gamma pattern using four 17-ms pulses, these four pulses (totaling 68 ms) are delivered over a period of 133.2 ms, resulting in a duty cycle of 51.1%.",
+   "exposures[0].timing.sonication_duration_s": "For iTBUS, the 2-s train was delivered 10 times for 400 pulses, with an 8-s break interval between each train. For cTBUS, the protocol was performed continuously without break intervals, extending to 100 s for 400 pulses.",
+   "safety_notes": "The results showed that TBUS did not induce any tissue damage or alterations in EB distribution, indicating the absence of gross tissue changes when TBUS was applied using an ultrasound intensity relative to the motor threshold (fig. S9).",
+   "exposures[0].device.manufacturer": "The acoustic beam profile of the transducer (V301-SU, Olympus Scientific Solutions Americas Inc., USA) was measured in a water tank using a needle hydrophone with a 2-mm diameter (NH2000, Precision Acoustics Ltd., UK).",
+   "n_subjects": "Subdermal electroencephalogram recordings demonstrated strong gamma-theta coupling during TBUS. n = 6 for each group.",
+   "exposures[0].free_field.pressure_kpa": "For the 17-ms ultrasound stimulus for eliciting MEPs, the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was $2 . 7 8 7 / \\mathrm { c m } ^ { 2 }$ , using an equation of A2/2ρc, where A is the peak rarefactional pressure (0.299 MPa), ρ is the density of the medium (1028 kg/m<sup>3</sup>), and c is the speed of sound in the medium (1515 m/s), as calculated in pre vious studies (40).",
+   "exposures[0].free_field.isppa_w_cm2": "For the 17-ms ultrasound stimulus for eliciting MEPs, the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was $2 . 7 8 7 / \\mathrm { c m } ^ { 2 }$ , using an equation of A2/2ρc, where A is the peak rarefactional pressure (0.299 MPa), ρ is the density of the medium (1028 kg/m<sup>3</sup>), and c is the speed of sound in the medium (1515 m/s), as calculated in pre vious studies (40).",
+   "exposures[0].free_field.ispta_w_cm2": "The spatialpeak temporal-average intensity (ISPTA) for iTBUS was $5 4 . 4 \\mathrm { mW } / \\mathrm { cm } ^ { 2 } ,$ and ISPTA for cTBUS was 272 $\\mathrm { mW } / \\mathrm { cm } ^ { 2 }$ ."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "This ISPPA (2.787 W/cm2) and pressure (0.299 MPa) value is for the 100%-intensity single ultrasound stimulus used to elicit MEPs and calibrate motor threshold; TBUS itself used 80% of this intensity but the paper does not restate the resulting scaled pressure/ISPPA number, only the ISPTA values specific to iTBUS/cTBUS."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain not stated as free field or in situ; intensity was measured with a needle hydrophone at the end of the acoustic collimator (near-field, close to brain), so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "The paper nests two frequencies (30 Hz gamma pulse-repetition rate and 5 Hz theta train-repetition rate); 30 Hz is recorded as the PRF of the individual 17-ms tone-burst pulses, while the 5 Hz theta nesting and inter-train structure are described in protocol_description."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation is mentioned (e.g., for c-Fos/western blot cohorts) but its mechanism (transducer off, blocked, etc.) is not described in the text."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports many separate small-group sub-experiments (e.g., n=6-10 per pharmacology/behaviour/imaging group) but never states an overall total number of animals used in the study."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most experiments used a single TBUS session per animal, but the single-pellet reaching task used daily TBUS for 10 consecutive days; no single overall number applies across the heterogeneous sub-experiments."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

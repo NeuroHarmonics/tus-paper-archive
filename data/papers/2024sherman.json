@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024sherman",
+ "doi": "10.1088/1741-2552/ad731c",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6 and Pvalb-tdTomato transgenic)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Single-cell GCaMP7f calcium imaging (wide-field microscopy through a cranial window) of motor cortex neurons",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US delivered at 10, 40, and 140 Hz (and 2 kHz) PRFs reliably increased calcium event density consistent with increased spiking probability in a subset of neurons; most activated neurons responded to only one PRF, indicating PRF-selective recruitment of distinct neuronal populations rather than a uniform excitatory or inhibitory population effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Motor cortex US at PRFs of 10, 40, 140 Hz (physiologic) and 2 kHz (supraphysiologic)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran",
+    "model": "GS350-D13"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": 522,
+    "isppa_w_cm2": 9.11,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     13,
+     95
+    ],
+    "isppa_w_cm2": [
+     0.2,
+     3.16
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     10,
+     40,
+     140,
+     2000
+    ],
+    "duty_cycle_pct": [
+     20,
+     42
+    ],
+    "sonication_duration_s": 1,
+    "protocol_description": "350 kHz US was delivered for 1 s per trial pulsed at PRFs of 10, 40, or 140 Hz at 20% duty cycle, or at a supraphysiologic 2 kHz PRF at 42% duty cycle. In single-PRF sessions, each of 20 trials lasted 50 s (10 s pre-US, 1 s US, 39 s recovery). In alternating-PRF sessions, 25 blocks of 3 trials (10, 40, 140 Hz, randomly ordered) were run, each trial with 10 s pre-US, 1 s US, and 10 s post-US. Sham stimulation used the same transducer setup but omitted the US gel coupling the transducer to the mouse's chin, preventing acoustic propagation into the brain while the mouse still experienced any transducer-associated sound. k-Wave simulation estimated an overall in-situ peak pressure of 289.5 kPa (~0.29 MPa) resulting from the 522 kPa free-field pressure, with a lower simulated pressure/intensity range specifically at the calcium-imaging site (13-95 kPa; 0.2-3.16 W/cm2, average 1.5 W/cm2); a phantom-skull hydrophone measurement of 125 kPa validated the upper end of this estimate."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We used a total of 16 adult mice, including 10 C57BL6 mice (9 female and 1 male) and 6 PV-tdT transgenic mice that were generated by crossing B6.Cg-Gt(ROSA)26Sor<sup>tm14(CAG-tdTomato)Hze</sup>/J (Jax, stock number: 007914) with B6.129P2-Pvalb<sup>tm1(cre)Arbr</sup>/J (Jax, stock number: 017320) mice (3 male and 3 female) (Jackson Laboratory, Bar Harbor, ME).",
+   "exposures[0].fundamental_frequency_khz": "Mice were positioned below the objective and head-fixed on a 3D printed platform, directly above a planar US transducer with 350 kHz center frequency (GS350-D13, Ultran, State College, PA).",
+   "exposures[0].device.manufacturer": "Mice were positioned below the objective and head-fixed on a 3D printed platform, directly above a planar US transducer with 350 kHz center frequency (GS350-D13, Ultran, State College, PA).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "US PRF of 10 Hz, 40 Hz, or 140 Hz at 20% DC or 2 kHz at 42% DC was used.",
+   "exposures[0].timing.duty_cycle_pct": "US PRF of 10 Hz, 40 Hz, or 140 Hz at 20% DC or 2 kHz at 42% DC was used.",
+   "exposures[0].timing.sonication_duration_s": "For these experiments, each recording session had 20 imaging trials, with each trial lasting for 50 s containing a 10 s period before US followed by 1 s of US stimulation and 39 s recovery, for a total inter-stimulation interval of 49 s.",
+   "exposures[0].free_field.pressure_kpa": "The acoustic pressure waveform had a peak amplitude of 522 kPa, corresponding to $I _ { \\mathrm { S P P A } }$ of 9.11 W $\\mathrm { c m } ^ { - 2 }$ in water (supplemental tables 5 and 6).",
+   "exposures[0].free_field.isppa_w_cm2": "The acoustic pressure waveform had a peak amplitude of 522 kPa, corresponding to $I _ { \\mathrm { S P P A } }$ of 9.11 W $\\mathrm { c m } ^ { - 2 }$ in water (supplemental tables 5 and 6).",
+   "exposures[0].in_situ.pressure_kpa": "At the site of calcium imaging, the simulated average peak pressure ranged 13– 95 kPa, and the spatial peak pulse average intensity (ISPPA) ranged 0.2–3.16 W $\\mathrm { c m } ^ { - 2 }$ (average intensity,",
+   "exposures[0].in_situ.isppa_w_cm2": "At the site of calcium imaging, the simulated average peak pressure ranged 13– 95 kPa, and the spatial peak pulse average intensity (ISPPA) ranged 0.2–3.16 W $\\mathrm { c m } ^ { - 2 }$ (average intensity,",
+   "exposures[0].device.model": "Mice were positioned below the objective and head-fixed on a 3D printed platform, directly above a planar US transducer with 350 kHz center frequency (GS350-D13, Ultran, State College, PA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.reported_as",
+    "reason": "The 13-95 kPa / 0.2-3.16 W/cm2 values are a spatial range across the calcium-imaging site from a single simulation, not a range or mean across subjects; the paper separately states a single overall simulated in-situ peak pressure of 289.5 kPa (~0.29 MPa), which is noted in the protocol description rather than as a separate field value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated directly; would require dividing duty cycle by PRF, which is arithmetic this extraction avoids."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham omitted the US gel coupling medium rather than powering off the transducer; classified as inactive_transducer (blocked coupling) but this is an inference from the described method."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle values (20% and 42%) correspond to different PRF subsets (10/40/140 Hz vs 2 kHz respectively) but are listed together without pairing to specific PRFs."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "first"
+  }
+ }
+}

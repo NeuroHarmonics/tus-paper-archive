@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023ahmed",
+ "doi": "10.1016/j.jnrt.2023.100067",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "For LIPUS stimulation, pulsed ultrasound with a frequency of 1 MHz, duty cycle of20%, and pulse repetition frequency of 1 kHz was used (Fig. 2(B)) as described in a previous study.<sup>27</sup>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For LIPUS stimulation, pulsed ultrasound with a frequency of 1 MHz, duty cycle of20%, and pulse repetition frequency of 1 kHz was used (Fig. 2(B)) as described in a previous study.<sup>27</sup>",
+   "exposures[0].timing.duty_cycle_pct": "For LIPUS stimulation, pulsed ultrasound with a frequency of 1 MHz, duty cycle of20%, and pulse repetition frequency of 1 kHz was used (Fig. 2(B)) as described in a previous study.<sup>27</sup>",
+   "exposures[0].timing.sonication_duration_s": "The stimulation was provided for about 10 min<sup>26</sup> during the reaching and grasping task and success rates were recorded.",
+   "exposures[0].device.manufacturer": "Piezoelectric discs (PZT-8, Beijing Quanxin Ultrasonic Co.",
+   "exposures[0].device.model": "Piezoelectric discs (PZT-8, Beijing Quanxin Ultrasonic Co.",
+   "n_subjects": "Fig. 6. (A) Average success rate (mean ± SEM; LIPUS group, n 6; combined group, $n = 4 ;$ and control group, n 5) of reaching and grasping tasks of three groups of rats."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Overlapping and inconsistent group sizes are reported across sub-experiments (e.g. LIPUS n=10 in experiment 1; LIPUS n=6, combined n=4 or n=7 in experiment 2), with no single stated total of ultrasound-exposed animals."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "LIPUS was delivered 'during the reaching and grasping task' across weekly behavioral tests over up to 6 weeks post-injury, but the exact number of stimulation sessions per animal is not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Methods text gives two different session-duration statements ('after 5 min of therapeutic stimulation, the behavior task was conducted' vs. 'LIPUS stimulation was delivered for 10 min during the reaching and grasping task'); the Results section's explicit 'about 10 min' was used, but the discrepancy is unresolved."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Reported metric is ISATA (spatial-average temporal-average intensity), not ISPTA; recorded here as the closest matching schema field."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Ex vivo intensity inside the vertebral canal is reported generically as 'intensity' (same ISATA-style measurement as the free-field value), not explicitly labelled ISPTA."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "Sprague-Dawley rat (female)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "cervical spinal cord injury (C4 dorsal funiculus crush)",
+ "n_subjects": [
+  10,
+  6,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep"
+ ],
+ "readout_other": "forelimb reaching and grasping success rate; grip strength; EMG of extensor and flexor digitorum muscles",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "LIPUS improved forelimb reaching/grasping success versus control at weeks 2-3 post-injury, but the benefit did not persist beyond week 3 when LIPUS was given alone; combined LIPUS+Buspirone produced more consistent improvement through week 6. Grip strength did not differ significantly between LIPUS and control groups except a within-group improvement in the LIPUS group at week 6.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Histopathological examination of the spinal cord after LIPUS stimulation was not performed, and the thermal effects of the stimulation were not considered negligible, which the authors note as limitations.",
+ "exposures": [
+  {
+   "label": "LIPUS stimulation of the cervical spinal cord (C4)",
+   "target": {
+    "terms": [
+     "cervical_spinal_cord"
+    ],
+    "label": "cervical cord (C4 level, above the dorsal-funiculus crush)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Beijing Quanxin Ultrasonic Co. Ltd",
+    "model": "PZT-8"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 600,
+    "protocol_description": "An implantable piezoelectric probe delivered pulsed LIPUS (1 MHz, 20% duty cycle, 1 kHz PRF) directly above the C4 dorsal funiculus crush. Stimulation was provided for about 10 min during the reaching and grasping task; a separate sentence in Methods states stimulation for 5 min before the behavior task followed by 10 min during the task, so the exact nested timing is not fully clear."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024lord",
+ "doi": "10.3389/fnhum.2024.1392199",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "Resting-state fMRI (BOLD) functional connectivity; arterial spin labelling (pcASL) and susceptibility-weighted imaging (SWI); Toronto Mindfulness Scale, Visual Analog Mood Scale, Self Scale, Amsterdam Resting-State Questionnaire",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Active TFUS to the ventral PCC decreased resting-state functional connectivity along the midline of the default mode network (PCC-mPFC and interhemispheric PCC/precuneus connections), with no significant changes in the sham group; active TFUS was also associated with increased state mindfulness and reduced Global Vigor.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No negative experiences or adverse events were reported by participants.",
+ "exposures": [
+  {
+   "label": "TFUS to the posterior cingulate cortex (PCC)",
+   "target": {
+    "terms": [
+     "posterior_cingulate_cortex"
+    ],
+    "label": "ventral posterior cingulate cortex (PCC)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "custom 4-channel ring transducer, 64 mm outer diameter"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 421.57,
+    "isppa_w_cm2": 5.58,
+    "ispta_w_cm2": 0.29337
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 129.6,
+    "isppa_w_cm2": 0.46,
+    "ispta_w_cm2": 0.02398
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10.526,
+    "duty_cycle_pct": 5.26,
+    "sonication_duration_s": 30,
+    "protocol_description": "TFUS was delivered as 30-s stimulus intervals followed by 30-s rest periods, repeated five times consecutively for a total session duration of 5 min, using MRI-guided neuronavigation with the beam focused at a fixed distance of 55 mm (average scalp-to-PCC distance)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.263,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Due to small sample sizes (n = 15 for each condition) and skewed results in many test questions, we  opted for non-parametric tests (Wilcoxon rank sum tests and linear mixed models) instead of parametric tests to analyze the psychometric scales.",
+   "n_sessions_per_subject": "Subjects were removed from the scanner, and real-time neuronavigation (Visor2, ANT Neuro, Netherlands) was used to apply either active or sham TFUS to their ventral PCC based on their individual structural MRI.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven by an acoustic amplifier (TPO-203, Sonic Concepts, Bothell, WA, USA), with the ultrasound beam having the following parameters: acoustic frequency (AF)=500kHz, pulse repetition frequency (PRF)=10.526Hz, pulse repetition period (PRP)=95ms, pulse duration (PD)=5ms or 2,500cycles, duty cycle=5.26%.",
+   "exposures[0].timing.pulse_duration_ms": "The transducer was driven by an acoustic amplifier (TPO-203, Sonic Concepts, Bothell, WA, USA), with the ultrasound beam having the following parameters: acoustic frequency (AF)=500kHz, pulse repetition frequency (PRF)=10.526Hz, pulse repetition period (PRP)=95ms, pulse duration (PD)=5ms or 2,500cycles, duty cycle=5.26%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The transducer was driven by an acoustic amplifier (TPO-203, Sonic Concepts, Bothell, WA, USA), with the ultrasound beam having the following parameters: acoustic frequency (AF)=500kHz, pulse repetition frequency (PRF)=10.526Hz, pulse repetition period (PRP)=95ms, pulse duration (PD)=5ms or 2,500cycles, duty cycle=5.26%.",
+   "exposures[0].timing.duty_cycle_pct": "The transducer was driven by an acoustic amplifier (TPO-203, Sonic Concepts, Bothell, WA, USA), with the ultrasound beam having the following parameters: acoustic frequency (AF)=500kHz, pulse repetition frequency (PRF)=10.526Hz, pulse repetition period (PRP)=95ms, pulse duration (PD)=5ms or 2,500cycles, duty cycle=5.26%.",
+   "exposures[0].timing.sonication_duration_s": "The pattern of [30s ON, 30s OFF] was repeated five times consecutively, totaling a 5-min duration.",
+   "exposures[0].free_field.pressure_kpa": "The measured output of this wave in degassed free water shows a peak negative pressure of 0.422 MPa. The output of the beam through a hydrated sample of cadaver parietal bone showed a peak negative pressure of 0.130 MPa (a 69.3% decrease).",
+   "exposures[0].in_situ.pressure_kpa": "The measured output of this wave in degassed free water shows a peak negative pressure of 0.422 MPa. The output of the beam through a hydrated sample of cadaver parietal bone showed a peak negative pressure of 0.130 MPa (a 69.3% decrease).",
+   "exposures[0].free_field.isppa_w_cm2": "Our parameters yielded an $\\mathrm { { I } _ { \\mathrm { { S P T A } } } }$ of 293 (mW/cm<sup>2</sup>) and an $\\mathrm { I _ { S P P A } }$ of 5.58 (W/cm<sup>2</sup>) as measured in water.",
+   "exposures[0].free_field.ispta_w_cm2": "Our parameters yielded an $\\mathrm { { I } _ { \\mathrm { { S P T A } } } }$ of 293 (mW/cm<sup>2</sup>) and an $\\mathrm { I _ { S P P A } }$ of 5.58 (W/cm<sup>2</sup>) as measured in water.",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td rowspan=1 colspan=1> $\\mathrm { I _ { S P P A } }$ </td><td rowspan=1 colspan=1>5.58</td><td rowspan=1 colspan=1>0.46</td><td rowspan=1 colspan=1>W/cm²</td><td rowspan=1 colspan=1>91.8</td><td rowspan=1 colspan=1>Spatial peak pulse average intensity</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td rowspan=1 colspan=1> $\\mathrm { I _ { S P T A } }$ </td><td rowspan=1 colspan=1>293.37</td><td rowspan=1 colspan=1>23.98</td><td rowspan=1 colspan=1>mW/cm²</td><td rowspan=1 colspan=1>91.8</td><td rowspan=1 colspan=1>Spatial peak temporal average intensity</td></tr>",
+   "exposures[0].device.manufacturer": "The focused ultrasound was delivered by a custom 4-channel ring transducer (Sonic Concepts, Bothell, WA,",
+   "exposures[0].device.model": "The focused ultrasound was delivered by a custom 4-channel ring transducer (Sonic Concepts, Bothell, WA,"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n=15 per condition (30 total enrolled, 15 active + 15 sham); only the active-TFUS group (n=15) is counted as exposed to real ultrasound."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The Methods describe a single TFUS/sham application per subject but do not state an explicit session count in a single sentence; inferred from the single-application procedure description."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

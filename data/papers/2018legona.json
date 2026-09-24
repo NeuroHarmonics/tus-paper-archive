@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018legona",
+ "doi": "10.1002/hbm.23981",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 40,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "Somatosensory evoked potential (P14, N20, P27, N33, P50, N70, P100, N140, LP) peak-to-peak amplitude/latency, FFT and Morlet wavelet time-frequency EEG analysis; two-point tactile discrimination task performance",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "tFUS to the VPL nucleus of thalamus attenuated the P14/N20 SEP peak-to-peak amplitude and EEG time series activity at 14-21 ms, inhibited early negativity around 35 ms, decreased alpha and beta spectral power and time-locked gamma power, and impaired performance below chance on a threshold two-point tactile discrimination task relative to sham.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The authors state they restricted acoustic intensity and mechanical index well below FDA diagnostic ultrasound limits (Isppa 190 W/cm2, MI 1.9) and used a pulsing strategy to avoid standing waves; no participant-level adverse event monitoring data are reported for this study.",
+ "exposures": [
+  {
+   "label": "Unilateral sensory thalamus (VPL nucleus), EEG and behavioural experiments",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "unilateral sensory thalamus that contains the ventro-posterior lateral (VPL) nucleus of thalamus"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group, Inc., State College, PA",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.56,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 137.79,
+    "isppa_w_cm2": 7.03,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Channel 1 was used to gate channel 2 that was a 500 kHz sine wave. Channel 1 was a 5Vp-p square wave burst of 1 kHz (N=500) with a pulse width of 360 ms (as printed; see flag); this resulted in a 0.5 s duration waveform with a duty cycle of 36%. A total of 300 ultrasonic waveforms were delivered at an inter-stimulus interval (ISI) of 4 s for the EEG experiment; for the behavioural experiment, tFUS onset (500 ms duration) occurred 100 ms before pin application to the fingertip."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Forty volunteer study participants (14 male, 26 female, aged 18–37 with a mean age of 23.0 6 4.38 years) provided written informed consent to participate in either the EEG or behavioral portion of the study.",
+   "exposures[0].fundamental_frequency_khz": "Channel 1 was used to gate channel 2 that was a 500 kHz sine wave.",
+   "exposures[0].free_field.isppa_w_cm2": "Measurements in the acoustic tank revealed an $I _ { \\mathsf { s p p a } }$ of 14.56 W/cm<sup>2</sup> and an MI of 0.89 from the ultrasonic neuromodulation waveform in water, and $7 . 0 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , MI of 0.56 when transmitted through the temporal window of the sectioned skull.",
+   "exposures[0].in_situ.isppa_w_cm2": "Measurements in the acoustic tank revealed an $I _ { \\mathsf { s p p a } }$ of 14.56 W/cm<sup>2</sup> and an MI of 0.89 from the ultrasonic neuromodulation waveform in water, and $7 . 0 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , MI of 0.56 when transmitted through the temporal window of the sectioned skull.",
+   "exposures[0].timing.pulse_duration_ms": "Channel 1 was a 5Vp-p square wave burst of 1 kHz (N 5 500) with a pulse width of 360 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Channel 1 was a 5Vp-p square wave burst of 1 kHz (N 5 500) with a pulse width of 360 ms.",
+   "exposures[0].timing.duty_cycle_pct": "This resulted in a 0.5 s duration waveform with a duty cycle of 36% (Figure 1b).",
+   "exposures[0].timing.sonication_duration_s": "This resulted in a 0.5 s duration waveform with a duty cycle of 36% (Figure 1b).",
+   "exposures[0].device.manufacturer": "The output of channel 2 was sent through a 100-W linear RF amplifier (E&I 2100L; Electronics & Innovation) before being sent to a custom-designed focused ultrasound transducer (Ultran Group, Inc., State College, PA)",
+   "n_sessions_per_subject": "Participants underwent the sensory discrimination testing during both tFUS and sham conditions in the same testing session.",
+   "exposures[0].in_situ.pressure_kpa": "In this model, the skull reduced the intracranial max acoustic pressure to 137.79 kPa representing a reduced peak pressure produced by the transducer in free water by six- to sevenfold."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states a pulse width of '360 ms', but this is inconsistent with the stated 1 kHz PRF and 36% duty cycle, which imply a pulse duration of 0.36 ms (360 microseconds); recorded as printed per the burst-duration rule."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Paper also reports an intracranial peak pressure of 137.79 kPa obtained from a separate k-Wave simulation (a different method, on a generic Visible Human skull) using the same transducer/waveform; only the empirically measured through-skull intensity (method=measurement) is recorded here because the schema allows only one method per in_situ block."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper does not use a standard auditory-control vocabulary term; it describes the sham (attenuating disk) as producing an audible sensation identical to the active condition, which is recorded here as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

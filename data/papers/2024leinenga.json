@@ -1,0 +1,310 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024leinenga",
+ "doi": "10.1038/s41380-024-02509-5",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  12,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 8,
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "fmri",
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "Active place avoidance spatial memory test; resting-state and stimulus-evoked fMRI; T2-weighted structural MRI and NODDI diffusion MRI; SWATH-MS quantitative proteomics; amyloid-beta ELISA; Campbell-Switzer silver staining for plaques; Western blot for synaptic tau",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "HighF (1 MHz) scanning ultrasound without microbubbles improved spatial memory (fewer shocks, better learning index) in APP23 mice relative to sham, increased resting-state functional connectivity in memory-related networks, and altered the cortical proteome, all without reducing amyloid-beta plaque burden; LowF (286 kHz) produced smaller, largely non-significant behavioural improvements.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "HighF: 1 MHz scanning ultrasound (SUS-only) to whole brain",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole brain (5x6 grid of scanning spots)"
+   },
+   "device": {
+    "family": "philips_research",
+    "manufacturer": "Philips Research",
+    "model": "Therapy Imaging Probe System (TIPS), 8-element annular array"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 700,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 570,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 6,
+    "protocol_description": "Whole-brain exposure achieved by scanning a 5x6 grid of spots (1.5 mm spacing) with the annular-array TIPS transducer; mice received 8 once-per-week treatments; sham mice received anaesthesia and transducer placement without power."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  },
+  {
+   "label": "LowF: 286 kHz scanning ultrasound (SUS-only) to whole brain",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole brain (4-spot grid)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell WA, USA",
+    "model": "H-117"
+   },
+   "fundamental_frequency_khz": 286,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 570,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 6,
+    "protocol_description": "Whole-brain exposure achieved with a 4-spot grid (6 mm spacing) using the H-117 transducer; mice received 8 once-per-week treatments; sham mice received anaesthesia and transducer placement without power."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "APP23 mice express human APP751 with the Swedish double mutation (KM670/671NL) under the control of the neuron-specific mThy1.2 promoter. As the mice age, they exhibit memory deficits and amyloid plaque formation [18]. In this study, 11 month-old APP23 mice were assigned to three treatment groups: sham (N = 12), 1 MHz ultrasound (N = 12, HighF), and 286 kHz ultrasound (N = 11, LowF). Assignment to treatment groups was based on matching performance of spatial memory (number of shocks) on day 5 of the APA test. APP23 mice were ranked from those receiving the fewest shocks to those receiving the most shocks on day 5 and were assigned to the three APP23 ultrasound treatment groups in rank order. A group of wild-type mice (N = 12) was included as fourth group. Following eight weekly treatments, mice underwent an APA re-test over five days, followed by an MRI analysis and the collection of brains for a proteomic, biochemical and histological analysis (Fig. 1).",
+   "n_sessions_per_subject": "Fi 1 Study design and spatial memory improvements in APP23 mice in response to $\\pmb { \\mathsf { S U S } } ^ { \\mathbf { o n l y } }$ at 1 MHz (HighF). A APP23 mice aged 11 months were treated with scanning ultrasound (SUS<sup>only</sup>) at 1 MHz center frequency (HighF) or 286 kHz center frequency (LowF) with conditions arriving at the same pressure inside the skull, accounting for the higher attenuation of high freguency ultrasound. Exposure of the whole brain was achieved by treating a 5 × 6 grid of spots with the HighF device, and 4 spots with the LowF device, taking into account the different −6 dB widths of the ultrasound focus at HighF (1 MHz, 1.5 mm) versus LowF (286 kHz, 6 mm). B APP23 mice and wild-type (WT) littermate controls were tested in the active place avoidance (APA) test over 5 days of training. APP23 mice then received eight once-per-week ultrasound treatments with either the HighF or LowF device. Controls received a sham treatment consisting of anesthesia and being placed under the ultrasound transducer, but the transducer was not turned on. WT mice were sham treated. Three days after the last ultrasound treatment, mice were retested in the APA (retest) in which the extra-maze cues were changed, the shock zone was placed in the opposite quadrant, and the arena rotated in a different direction. Between 2 and 7 days after the conclusion of the APA, mice received magnetic resonance imaging (MRI) scans and were sacrificed at the conclusion of the scans.",
+   "randomised": "APP23 mice express human APP751 with the Swedish double mutation (KM670/671NL) under the control of the neuron-specific mThy1.2 promoter. As the mice age, they exhibit memory deficits and amyloid plaque formation [18]. In this study, 11 month-old APP23 mice were assigned to three treatment groups: sham (N = 12), 1 MHz ultrasound (N = 12, HighF), and 286 kHz ultrasound (N = 11, LowF). Assignment to treatment groups was based on matching performance of spatial memory (number of shocks) on day 5 of the APA test. APP23 mice were ranked from those receiving the fewest shocks to those receiving the most shocks on day 5 and were assigned to the three APP23 ultrasound treatment groups in rank order. A group of wild-type mice (N = 12) was included as fourth group. Following eight weekly treatments, mice underwent an APA re-test over five days, followed by an MRI analysis and the collection of brains for a proteomic, biochemical and histological analysis (Fig. 1).",
+   "exposures[0].fundamental_frequency_khz": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].free_field.pressure_kpa": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].in_situ.pressure_kpa": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].timing.pulse_duration_ms": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].timing.sonication_duration_s": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[1].fundamental_frequency_khz": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[1].in_situ.pressure_kpa": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[1].timing.pulse_duration_ms": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[1].timing.sonication_duration_s": "Mice were anesthetized with ketamine (90 mg/kg) and xylazine (6 mg/kg), and the hair on the head was shaved and depilated. The parameters for ultrasound delivery for the LowF condition were: 286 kHz center frequency, 0.57 MPa peak rarefactional pressure in situ (as estimated by needle hydrophone measurements obtained in water and assuming negligible attenuation through the skull), 10 Hz pulse repetition frequency (PRF), 10 ms pulse length (PL), and a 6 s sonication time per spot. Ultrasound was generated by a H-117 model transducer (Sonic Concepts) with a 64 mm diameter, a 63.2 mm radius of curvature and a 22 mm inner opening. The −6 dB focal zone was 6 mm (lateral) × 39.5 mm (axial). A motorized positioning system moved the focus of the transducer array to four spots spaced 6 mm apart in relation to the skull such that the entire brain of the mouse was exposed to ultrasound. The HighF condition was: 1 MHz center frequency, 0.7 MPa peak rarefactional pressure (as estimated by needle hydrophone measurements in water for device calibration), 10 Hz PRF, 10 ms PL, and 6 s sonication per spot (Fig. 1). Ultrasound was generated by an eight-element annular array (TIPS system, Philips Research) with a diameter of 80 mm with an inner hole of 32 mm and an 80 mm radius of curvature. The focal zone of the array (−6 dB) was an ellipse of approximately 1.5 mm × 1.5 mm × 12 mm. The TIPS motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication such that ultrasound was delivered sequentially to the entire brain. The pressure level inside the brain was adjusted to be equivalent for the HighF and LowF ultrasound groups (0.57 MPa derated pressure), accounting for the higher, estimated 18% attenuation of 1 MHz ultrasound by the mouse skull [19].",
+   "exposures[0].device.manufacturer": "For the 1 MHz ultrasound application, an integrated focused ultrasound system was used (Therapy Imaging Probe System, TIPS, Philips Research).",
+   "exposures[1].device.manufacturer": "For the 286 kHz ultrasound application, a H-117 transducer was used (Sonic Concepts Bothell WA USA).",
+   "exposures[1].device.model": "For the 286 kHz ultrasound application, a H-117 transducer was used (Sonic Concepts Bothell WA USA). This transducer has a diameter of 64 mm, a radius of curvature of 63 mm, and an internal opening diameter of 20 mm. For the 1 MHz ultrasound application, an integrated focused ultrasound system was used (Therapy Imaging Probe System, TIPS, Philips Research). This system consists of an annular array transducer with a natural focus of 80 mm, a radius of curvature of 80 mm, a spherical shell of 80 mm with a central opening diameter of 31 mm, a 3D positioning system, and a programmable motorized system to move the ultrasound focus in the x and y planes to cover the entire brain area. A coupler mounted to the transducer was filled with degassed water and placed on the depilated head of the mouse with ultrasound gel for coupling, to ensure propagation of the ultrasound to the brain.",
+   "exposures[0].device.model": "For the 286 kHz ultrasound application, a H-117 transducer was used (Sonic Concepts Bothell WA USA). This transducer has a diameter of 64 mm, a radius of curvature of 63 mm, and an internal opening diameter of 20 mm. For the 1 MHz ultrasound application, an integrated focused ultrasound system was used (Therapy Imaging Probe System, TIPS, Philips Research). This system consists of an annular array transducer with a natural focus of 80 mm, a radius of curvature of 80 mm, a spherical shell of 80 mm with a central opening diameter of 31 mm, a 3D positioning system, and a programmable motorized system to move the ultrasound focus in the x and y planes to cover the entire brain area. A coupler mounted to the transducer was filled with degassed water and placed on the depilated head of the mouse with ultrasound gel for coupling, to ensure propagation of the ultrasound to the brain."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only per-group sizes are given for the two ultrasound-treated groups (HighF N=12, LowF N=11); no combined total exposed to ultrasound is stated, so group sizes are listed rather than summed. The sham (N=12) and WT (N=12) groups were not exposed to real ultrasound and are excluded."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "For the LowF condition the paper calls the water-measured 0.57 MPa value 'in situ' (assuming negligible skull attenuation) rather than free-field, so it was placed in in_situ rather than free_field despite being measured in water."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

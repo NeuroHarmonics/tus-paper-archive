@@ -1,0 +1,386 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026algermissen",
+ "doi": "10.1016/j.neuron.2026.03.009",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 36,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "resting-state fMRI BLA connectivity fingerprint; task-fMRI during an approach-avoidance emotional learning task; 7T MEGA-edited semi-LASER MRS (GABA/glutamate, E/I balance); STAI/PANAS/MASQ mood questionnaires; TUS debrief/side-effect and blinding-assessment questionnaire",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "BLA-TUS reduced BLA resting-state connectivity and decreased local E/I balance (GABA increase), consistent with an inhibitory effect, and increased approach behaviour toward neutral (ambiguous) faces and slowed RTs to happy/neutral faces in a bilaterality-dependent manner. Identical stimulation parameters applied to mid-insula (active control) instead increased E/I balance (GABA decrease, an excitatory-like effect), left approach behaviour unchanged, and increased choice repetition/positive learning rate.",
+ "adverse_events": "observed",
+ "safety_notes": "One participant withdrew due to a heating sensation on the skin underneath the transducer during TUS; two withdrew due to nausea during 7T-MRI. No significant mood changes (STAI/PANAS/MASQ) were observed after BLA-TUS or mIns-TUS, and there was no evidence of differences in reported side effects between sham, mIns, and BLA stimulation.",
+ "exposures": [
+  {
+   "label": "Basolateral amygdala TUS (BLA-TUS)",
+   "target": {
+    "terms": [
+     "basolateral_amygdala"
+    ],
+    "label": "basolateral amygdala (BLA)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro CTX-212-4CH (S/N: 021)"
+   },
+   "fundamental_frequency_khz": 212,
+   "free_field": {
+    "pressure_kpa": [
+     675,
+     1200
+    ],
+    "isppa_w_cm2": [
+     15.2,
+     48
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 6.9,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Each TUS visit involved 80-s stimulation (pulse duration 20 ms, pulse repetition interval 200 ms, 5 Hz PRF, 10% duty cycle, 400 pulses) applied to the left hemisphere followed sequentially by the right hemisphere outside the MRI scanner (bilateral stimulation), using individualised acoustic/thermal simulations and continuous neuronavigation for targeting. Immediately after TUS, participants entered the 7T scanner for task-fMRI, resting-state fMRI, and MRS. Free-field transducer output was individually tailored per participant to reach a planned in-situ Isppa of 5-8 W/cm2 at the target."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Mid-insula TUS (mIns-TUS, active control)",
+   "target": {
+    "terms": [
+     "posterior_insula"
+    ],
+    "label": "mid-insula (mIns), used as an active control region"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro CTX-212-4CH (S/N: 021)"
+   },
+   "fundamental_frequency_khz": 212,
+   "free_field": {
+    "pressure_kpa": [
+     675,
+     1200
+    ],
+    "isppa_w_cm2": [
+     15.2,
+     48
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 6.6,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Each TUS visit involved 80-s stimulation (pulse duration 20 ms, pulse repetition interval 200 ms, 5 Hz PRF, 10% duty cycle, 400 pulses) applied to the left hemisphere followed sequentially by the right hemisphere outside the MRI scanner (bilateral stimulation), using individualised acoustic/thermal simulations and continuous neuronavigation for targeting. Immediately after TUS, participants entered the 7T scanner for task-fMRI, resting-state fMRI, and MRS. Free-field transducer output was individually tailored per participant to reach a planned in-situ Isppa of 5-8 W/cm2 at the target."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of thirty-six healthy volunteers took part in the main TUS study conducted in the lab.",
+   "sham_type": "In sham sessions, we followed the same procedures except that the TPO output I was set to $0 { \\mathsf { W / c m } } ^ { 2 } ;$ , ensuring that no energy was transmitted.",
+   "auditory_control": "a custom masking sound generated to mimic the audible part of the active ultrasound using a 5Hz PRF, as in Yaakub et al.<sup>58</sup> was played for 80 s during the sham stimulation.",
+   "adverse_events": "Three participants withdrew from the study before data collection was complete, one due to discomfort during TUS (heating sensation on the skin underneath the transducer), two due to discomfort during 7T-MRI (nausea).",
+   "safety_notes": "Similarly, there was no evidence of differences in reported side effects after sham vs. mIns vs. BLA stimulation (all false discovery rate [FDR]-corrected p > 0.05 across the 26 potential symptoms; Friedman tests, Figure S8; Table S3).",
+   "exposures[0].target.label": "We used transcranial focused ultrasound stimulation (TUS) to modulate basolateral amygdala (BLA) activity.",
+   "exposures[1].target.label": "To test the spatial specificity of our effects, we stimulated mIns as an active control using a closely matched transducer trajectory through the temporal window.",
+   "exposures[0].device.model": "We used a 212 kHz NeuroFUS Pro transducer (CTX-212-4ch, diameter 64 mm, central frequency 212 kHz, steering range 32.4–58.4 mm; SonicConcepts, Seattle, USA) part of the NeuroFUS Pro system (Brainbox Ltd., Cardiff, UK).",
+   "exposures[1].device.model": "We used a 212 kHz NeuroFUS Pro transducer (CTX-212-4ch, diameter 64 mm, central frequency 212 kHz, steering range 32.4–58.4 mm; SonicConcepts, Seattle, USA) part of the NeuroFUS Pro system (Brainbox Ltd., Cardiff, UK).",
+   "exposures[0].fundamental_frequency_khz": "We employed a published 5 Hz patterned protocol<sup>58,75,134</sup> which consisted of 212 kHz stimulation in pulses of 20 ms (rectangular shape; no ramping) within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 s; Table 1).",
+   "exposures[1].fundamental_frequency_khz": "mIns-TUS used identical stimulation parameters (Tables 1 and S1; I<sub>SPPA</sub>: M = 6.6, SD = 1.3, range 3.2–9.0; Figure 7A).",
+   "exposures[0].free_field.pressure_kpa": "<tr><td>Free-field values used in experiment</td><td>mean = 956 kPa; range: 675–1,200 kPa</td></tr>",
+   "exposures[1].free_field.pressure_kpa": "<tr><td>Free-field values used in experiment</td><td>mean = 956 kPa; range: 675–1,200 kPa</td></tr>",
+   "exposures[0].free_field.isppa_w_cm2": "<tr><td>Output level settings</td><td>free-field IsppA: mean = 30.5 W/cm², range: 15.2–48 W/cm²</td></tr>",
+   "exposures[1].free_field.isppa_w_cm2": "<tr><td>Output level settings</td><td>free-field IsppA: mean = 30.5 W/cm², range: 15.2–48 W/cm²</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "(H) Achieved in situ $\\mathsf { I } _ { \\mathsf { S P P A } }$ across included participants (planned: 5–8 W/cm<sup>2</sup>; achieved: mean of 6.9 W/cm<sup>2</sup>, range 2.9–9.3 W/cm<sup>2</sup>).",
+   "exposures[1].in_situ.isppa_w_cm2": "mIns-TUS used identical stimulation parameters (Tables 1 and S1; I<sub>SPPA</sub>: M = 6.6, SD = 1.3, range 3.2–9.0; Figure 7A).",
+   "exposures[0].timing.pulse_duration_ms": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[1].timing.pulse_duration_ms": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[0].timing.sonication_duration_s": "We employed a published 5 Hz patterned protocol<sup>58,75,134</sup> which consisted of 212 kHz stimulation in pulses of 20 ms (rectangular shape; no ramping) within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 s; Table 1).",
+   "exposures[1].timing.sonication_duration_s": "We employed a published 5 Hz patterned protocol<sup>58,75,134</sup> which consisted of 212 kHz stimulation in pulses of 20 ms (rectangular shape; no ramping) within a pulse-repetition interval 200 ms (5 Hz pulse-repetition frequency; 10% duty cycle) and in total 400 cycles (80 s; Table 1).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[0].timing.duty_cycle_pct": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[1].timing.duty_cycle_pct": "Once acoustic planning was completed, participants attended visits 2–4, during which TUS was delivered bilaterally (BLA, mIns, or sham, counterbalanced; Figure 2A) for 80 s per hemisphere sequentially (5 Hz pulse repetition frequency [PRF]; pulse width: 20 ms, pulse repetition interval: 200 ms; duty cycle: $1 0 \\% ^ { 5 8 , 7 5 }$ Figure 2D).",
+   "exposures[0].device.manufacturer": "6 4 0 , p Transducer and drive system description Transducer manufacturer/model number NeuroFUS PRO CTX-212-4CH S/N: 021; Sonic Transducer center frequency Concepts; Brainbox Active diameter 212 kHz 64.0 mm Geometric focus 63.2 mm Focal depth 52.4 mm from transducer exit plane to geometric focus # of elements 1 central",
+   "exposures[1].device.manufacturer": "6 4 0 , p Transducer and drive system description Transducer manufacturer/model number NeuroFUS PRO CTX-212-4CH S/N: 021; Sonic Transducer center frequency Concepts; Brainbox Active diameter 212 kHz 64.0 mm Geometric focus 63.2 mm Focal depth 52.4 mm from transducer exit plane to geometric focus # of elements 1 central",
+   "n_sessions_per_subject": "In visits 2–4, participants read the task instructions, performed a practice version of the task, changed into MR-compatible scrubs, and received TUS targeting bilaterally either the basolateral amygdala (BLA), mid-insula (mIns, as an active control region), or sham (counterbalanced order)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "36 healthy volunteers were enrolled and underwent TUS, but the final behavioural sample was n=29 (4 further excluded for task performance), and neuroimaging analyses used varying, smaller sub-samples (n=20 for BLA resting-state/behavioural analyses requiring sufficient BLA stimulation volume, n=18 for mIns MRS, n=11 for BLA MRS). Enrolled total (36) is reported here per the enrolled-vs-analysed rule."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each participant underwent 3 TUS+MRI visits (BLA, mIns, sham, counterbalanced order) plus 1 MRI-only planning visit; each active target (BLA, mid-insula) was stimulated once. No single explicit 'n sessions' statement covers this crossover design, so the field is left not_reported rather than inferred."
+   },
+   {
+    "field": "randomised",
+    "reason": "The paper states stimulation order was 'counterbalanced' across BLA/mIns/sham visits but never uses the word randomised/randomized for this within-subject ordering."
+   },
+   {
+    "field": "blinding",
+    "reason": "No explicit single/double-blind label is given; participants' inability to distinguish sham from active TUS above chance (Bang Index near 0 for sham) suggests effective participant blinding, but the paper does not state who (participants, experimenters, assessors) was formally blinded."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Table 1 reports free-field pressure/intensity settings generically for the overall protocol without splitting values by BLA vs mIns target; the same range is applied to both exposures here."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Table 1 reports free-field pressure/intensity settings generically for the overall protocol without splitting values by BLA vs mIns target; the same range is applied to both exposures here."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Recorded as the achieved mean (6.9 W/cm2); paper also reports the achieved range (2.9-9.3 W/cm2) and a separate planned target range (5-8 W/cm2), see quote."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Authors note that pressure estimates from acoustic simulations remain highly uncertain due to limited knowledge of bone acoustic properties; no single in-situ pressure (kPa) figure is given in the main text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[1].free_field.pressure_kpa": "both_defensible",
+   "exposures[1].free_field.isppa_w_cm2": "both_defensible"
+  }
+ }
+}

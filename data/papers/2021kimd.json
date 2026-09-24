@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021kimd",
+ "doi": "10.1109/tbme.2020.3038018",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy",
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  5,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Near-infrared spectroscopy (NIRS) of cerebral hemodynamics (HbO/RHb/THb); open-field test locomotor distance; TTC staining for neuronal death",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Ultrasound stimulation of motor cortex produced a pronounced cerebral hemodynamic change, but the pattern differed across animals: half showed increased HbO/decreased RHb and half showed the reverse. Daily stimulation after stroke improved post-stroke locomotor recovery relative to sham and untreated groups.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Calculated temperature increase due to ultrasound was not higher than 0.14C (skull) and 0.0018C (brain); TTC staining showed no neuronal death after prolonged (40 min) sonication.",
+ "exposures": [
+  {
+   "label": "tFUS stimulation of motor cortex (online hemodynamic and offline post-stroke recovery)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Steiner & Martins Inc. (PZT ceramic element)",
+    "model": "SMD05T04R111 (PZT element)"
+   },
+   "fundamental_frequency_khz": 457,
+   "free_field": {
+    "pressure_kpa": 426,
+    "isppa_w_cm2": 1.6,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Each ultrasound stimulation lasted for 300 ms and contained a pulse train with a pulse repetition frequency (PRF) of 1 kHz and a duty cycle (DC) of 50%. For the online hemodynamic study, a total of 10 stimulations at 2 Hz were delivered for each trial, and each animal underwent 50 trials during an experimental session with the start of each trial being 1 minute apart. For post-stroke recovery, the tFUS group received daily stimulations with interstimulus interval of 2 sec for 40 min within 5 days after the stroke."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 30 male Sprague Dawley rats were used for this study (n = 6 NIRS, n = 5 tFUS-treated, n = 5 sham-treated, n = 5 untreated, n = 5 healthy, n = 4 histology).",
+   "randomised": "b) tFUS Stimulation: The stroke model rats were randomly divided into three groups; tFUS, sham-treated, and untreated.",
+   "sham_type": "The sham group underwent the same steps without actual sonication.",
+   "exposures[0].target.label": "Following scalp incision, the transducer was affixed using cyanoacrylate adhesive over the motor cortex (ML: 3.62, AP: 1.5).",
+   "exposures[0].device.manufacturer": "The PZT used in this study has a resonant frequency of 450 8 kHz and a diameter of 5 mm (SMD05T04R111, Steiner & Martins Inc., USA).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound generated by the system is shown in Fig. 2(a) and 2(b) and was matched with the selected stimulation condition (central frequency 457 kHz, PRF 1 kHz, 50% DC).",
+   "exposures[0].free_field.pressure_kpa": "Fig. 2(c) and 2(d) are the acoustic beam profile in free water with focal diameter of 3.1 mm (measured at -6 dB) and a maximum peak to a peak pressure of 426 kPa, corresponding to a spatial-peak pulse-average intensity (Isppa) of 1.6 W/cm2",
+   "exposures[0].free_field.isppa_w_cm2": "Fig. 2(c) and 2(d) are the acoustic beam profile in free water with focal diameter of 3.1 mm (measured at -6 dB) and a maximum peak to a peak pressure of 426 kPa, corresponding to a spatial-peak pulse-average intensity (Isppa) of 1.6 W/cm2",
+   "exposures[0].in_situ.method": "The sound attenuation due to skull absorption was measured by placing a small piece of the skull between transducer and hydrophone.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each ultrasound stimulation lasted for 300 ms and contained a pulse train with a pulse repetition frequency (PRF) of 1 kHz and a duty cycle (DC) of 50%.",
+   "exposures[0].timing.duty_cycle_pct": "Each ultrasound stimulation lasted for 300 ms and contained a pulse train with a pulse repetition frequency (PRF) of 1 kHz and a duty cycle (DC) of 50%.",
+   "exposures[0].timing.sonication_duration_s": "Each ultrasound stimulation lasted for 300 ms and contained a pulse train with a pulse repetition frequency (PRF) of 1 kHz and a duty cycle (DC) of 50%.",
+   "exposures[0].device.model": "The PZT used in this study has a resonant frequency of 450 8 kHz and a diameter of 5 mm (SMD05T04R111, Steiner & Martins Inc., USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives only per-group sizes (n=6 NIRS, n=5 tFUS-treated, n=5 sham, n=5 untreated, n=5 healthy, n=4 histology) and no combined total 'exposed to ultrasound'; recorded as a list of the three groups that received actual sonication (NIRS, tFUS-treated stroke, prolonged-sonication histology safety check)."
+   },
+   {
+    "field": "device.model",
+    "reason": "The assembled tFUS transducer is custom-built in-house (3D-printed housing/lens); the manufacturer/model given (Steiner & Martins Inc., SMD05T04R111) is for the PZT ceramic element only, not the complete transducer assembly."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper reports only percentage transmission through the skull (70% pressure, 50% intensity), not absolute in-situ pressure/intensity values; converting the percentage to an absolute value would require arithmetic, so left not_reported."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Two different protocols are described (single online session of 50 trials for NIRS; daily sessions for 5 days for stroke recovery); no single 'sessions per subject' count applies to both, so left not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023tsehay",
+ "doi": "10.1109/tbme.2022.3233345",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular"
+ ],
+ "readout_other": "motor evoked potentials (MEPs) in forelimb and hindlimb muscles; qPCR of immune/inflammation, neuromodulation and fibrosis genes; H&E and Masson's trichrome histology",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Hindlimb MEP amplitude significantly decreased during sonication of the spinal cord in both the 5- and 10-min cohorts, with gradual recovery to baseline after sonication; forelimb MEP amplitude (rostral to the sonication site) was unaffected.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and Masson's trichrome staining showed no detectable structural or morphological changes between sonicated and control spinal cords, qPCR showed no significant differences in immune/inflammatory, neuromodulatory or fibrosis genes, and temperature analysis showed minimal heating during sonication.",
+ "exposures": [
+  {
+   "label": "Low-intensity pulsed ultrasound to exposed dorsal spinal cord",
+   "target": {
+    "terms": [
+     "thoracic_spinal_cord"
+    ],
+    "label": "exposed dorsal spinal cord at the T11 and T12 vertebral levels (laminectomy site)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Panametrics",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 29.7,
+    "isppa_w_cm2": 0.06,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     300,
+     600
+    ],
+    "protocol_description": "All 10 rats received a 5-min sonication trial, and 5 of these rats also received an additional 10-min sonication trial after a 30-minute recovery period. Each trial comprised baseline, during-sonication, and post-sonication periods (1/5/5 min for the 5-min trial; 2/10/5 min for the 10-min trial), with MEPs acquired every minute."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "All experimental procedures were approved by the Johns Hopkins University Animal Care and Use Committee and conducted in accordance with the National Institutes of Health guidelines for the care and use of laboratory animals (Protocol #RA20M223). Male adult Sprague-Dawley rats $( \\mathrm { n } = 1 0 , 2 5 0 -$ 300 g, 15 weeks old; Charles River Laboratories) were used in this study and were housed at a temperature of $2 5 ~ ^ { \\circ } \\mathrm { C }$ with a 12/12-h light/dark cycle. Anesthesia was initially induced with 2% isoflurane (Baxter, USA) carried by oxygen at 4 L/min via a nose cone. The rat was placed on a surgical platform with a warming pad placed under the animal and the temperature was maintained at $3 7 \\pm 0 . 5 ^ { \\circ } \\mathrm { C }$ throughout the entire experiment.",
+   "exposures[0].fundamental_frequency_khz": "At the time of this study, no prior literature existed on ultrasound interventions for the spinal cord. Parameters were therefore adapted from existing literature on ultrasound neuromodulation in the brain and peripheral nerves [25], [26], [27], [28], [29], [30]. We chose a fundamental frequency of 500 kHz, which was reported to effectively stimulate the motor cortex [31] and has relatively deep penetration and fine spatial resolution. We chose a tone burst duration of 500 μs and a duty cycle of 50%, which showed bio-effects based on previous studies and our prior experiments [6], [24], [32] (Fig. 2).",
+   "exposures[0].timing.pulse_duration_ms": "At the time of this study, no prior literature existed on ultrasound interventions for the spinal cord. Parameters were therefore adapted from existing literature on ultrasound neuromodulation in the brain and peripheral nerves [25], [26], [27], [28], [29], [30]. We chose a fundamental frequency of 500 kHz, which was reported to effectively stimulate the motor cortex [31] and has relatively deep penetration and fine spatial resolution. We chose a tone burst duration of 500 μs and a duty cycle of 50%, which showed bio-effects based on previous studies and our prior experiments [6], [24], [32] (Fig. 2).",
+   "exposures[0].timing.duty_cycle_pct": "At the time of this study, no prior literature existed on ultrasound interventions for the spinal cord. Parameters were therefore adapted from existing literature on ultrasound neuromodulation in the brain and peripheral nerves [25], [26], [27], [28], [29], [30]. We chose a fundamental frequency of 500 kHz, which was reported to effectively stimulate the motor cortex [31] and has relatively deep penetration and fine spatial resolution. We chose a tone burst duration of 500 μs and a duty cycle of 50%, which showed bio-effects based on previous studies and our prior experiments [6], [24], [32] (Fig. 2).",
+   "exposures[0].timing.sonication_duration_s": "After setting up the ultrasound neuromodulation system, a 5-min sonication trial was started. All 10 rats received a 5-min sonication trial, and 5 of these rats received an additional 10-min sonication trial. Within each trial were 3 periods: baseline, during-sonication, and post-sonication. In the 5-min sonication trial, the baseline, during-sonication, and post-sonication periods lasted for 1 minute, 5 minutes, and 5 minutes, respectively. In the 10-min sonication trial, the baseline, during-sonication, and post-sonication periods lasted for 2 minutes, 10 minutes, and 5 minutes, respectively (Fig. 3). There was a 30-minute recovery time between the 5- and 10-min trials.",
+   "exposures[0].free_field.pressure_kpa": "Prior to the experiment, a water tank with a hydrophone (HNR-0500, ONDA corporation, USA) was used to calculate the root-mean-square pressure at the output aperture of the collimator throughout the middle portion of the bursts as 0.0297 MPa, while the instantaneous intensity was 0.060 W/cm<sup>2</sup>. This value was optimal as it was similar to minimum intensities reported in literature to have elicited changes in MEPs at our chosen fundamental frequency and duty cycle [33], [34], [35], [36], [37]. This intensity also ensures safety based on prior reported experiments [33], [34]. Finally, we chose 2 sonication durations: 5 and 10 minutes, because we found that it took about 3 to 4 minutes for the MEP amplitude to be maximally suppressed in our preliminary experiments, although the predominant suppression occurs immediately. The 10-min trials were used as a comparison for us to monitor the difference in recovery time following a longer sonication duration.",
+   "exposures[0].free_field.isppa_w_cm2": "Prior to the experiment, a water tank with a hydrophone (HNR-0500, ONDA corporation, USA) was used to calculate the root-mean-square pressure at the output aperture of the collimator throughout the middle portion of the bursts as 0.0297 MPa, while the instantaneous intensity was 0.060 W/cm<sup>2</sup>. This value was optimal as it was similar to minimum intensities reported in literature to have elicited changes in MEPs at our chosen fundamental frequency and duty cycle [33], [34], [35], [36], [37]. This intensity also ensures safety based on prior reported experiments [33], [34]. Finally, we chose 2 sonication durations: 5 and 10 minutes, because we found that it took about 3 to 4 minutes for the MEP amplitude to be maximally suppressed in our preliminary experiments, although the predominant suppression occurs immediately. The 10-min trials were used as a comparison for us to monitor the difference in recovery time following a longer sonication duration.",
+   "exposures[0].device.manufacturer": "The ultrasound neuromodulation system consists of 2 function generators (Agilent 33250A, Agilent Technologies, USA), an RF amplifier (E&I 240L RF Amplifier, Electronics & Innovation, USA), an ultrasound transducer (Olympus Panametrics V301, USA) and a custom-made cone-shape acoustic collimator.",
+   "exposures[0].device.model": "The ultrasound neuromodulation system consists of 2 function generators (Agilent 33250A, Agilent Technologies, USA), an RF amplifier (E&I 240L RF Amplifier, Electronics & Innovation, USA), an ultrasound transducer (Olympus Panametrics V301, USA) and a custom-made cone-shape acoustic collimator.",
+   "n_sessions_per_subject": "All 10 rats received a 5-min sonication trial, and 5 of these rats received an additional 10-min sonication trial."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Not stated; only tone-burst duration (500 us) and duty cycle (50%) given, PRF would require arithmetic (duty/pulse duration) which was not performed."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "All 10 rats received one 5-min sonication trial but only 5 of the 10 also received a second 10-min trial, so sessions per subject was not uniform and is not stated as a single number."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Pressure and intensity were measured in a water tank at the output aperture of the collimator; not explicitly labelled free-field vs in-situ, but no skull/tissue path was present between transducer and cord so free_field is used."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

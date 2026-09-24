@@ -1,0 +1,308 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024lub",
+ "doi": "10.1038/s41467-024-48683-6",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans; Royal College of Surgeons photoreceptor-degeneration model)",
+ "conditions": [
+  "healthy",
+  "retinal_degeneration"
+ ],
+ "condition_other": "Retinal photoreceptor degeneration (RCS rat model of retinitis pigmentosa)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular",
+  "cellular_imaging",
+  "other"
+ ],
+ "readout_other": "Multi-electrode array recordings from superior colliculus; fiber photometry (GCaMP8) from primary visual cortex; water-licking behavioral task; OCT, fundus imaging, and ERG; H&E and immunostaining (GFAP, CD68); RGC RNA-sequencing",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Focused ultrasound activated remaining retinal ganglion cells in photoreceptor-degenerate (PD) retinas via acoustic radiation force, producing neuronal response patterns in the superior colliculus with amplitude similar to light-evoked responses, and drove learned behavioral responses comparable to light stimuli.",
+ "adverse_events": "none_observed",
+ "safety_notes": "OCT/fundus imaging showed no structural retinal damage; ERG a- and b-wave amplitudes/latencies unchanged; histology showed no change in fundus structure, retinal layer thickness, microglial activation, or apoptosis after long-term (3 h, triweekly, 2 weeks) ultrasound exposure at pressures 50-100% above threshold.",
+ "exposures": [
+  {
+   "label": "Retina stimulation for electrophysiology and behavior (4.5 MHz default protocol)",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom single-channel and 16x16 2D ultrasound array transducers (4.4-4.5 MHz)"
+   },
+   "fundamental_frequency_khz": 4500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     2830,
+     2900
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     0.01,
+     0.02
+    ],
+    "protocol_description": "Unless otherwise specified, the default US sequences used in this study were 10-ms pulse with 100% duty cycle. The frame interval was at least 6 seconds to ensure the stimulated neurons fully recovered after each stimulation. Initial validation used focused ultrasound stimuli (4.5 MHz, 10 ms, 2.83 MPa); the figure legend for the same experiment instead states 4.4 MHz, 10 ms, 3 MPa. Water-licking training and testing used 4.5 MHz, 20 ms, 2.9 MPa."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Long-term safety exposure (3, 4.5, 20 MHz)",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom single-channel ultrasound transducers (3, 4.5, 20 MHz)"
+   },
+   "fundamental_frequency_khz": [
+    3000,
+    4500,
+    20000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     5800,
+     4300,
+     1700,
+     3500
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 10800,
+    "protocol_description": "We subjected three healthy rats, each with one eye under ultrasound stimulation at frequencies of 3, 4.5, and 20 MHz. The pulses had a duration of 10 ms and a repetition frequency of 5 Hz, with pressure amplitudes surpassing the threshold by 50% (derated pressures were 5.8 MPa, 4.3 MPa, and 1.7 MPa). In the positive control group, the 20-MHz ultrasound were applied for three hours with a pressure 100% higher than the safe intensity (3.5 MPa vs 1.7 MPa, 10-ms pulse duration, and a repetition frequency of 5 Hz). Each rat underwent stimulation for 3 hours triweekly for two weeks (Day 1 to Day 13)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "sham_type": "To rule out any unintended cues like device noise or random mechanical stimulus, we conducted control tests, in which the ultrasound stimulated the skin between the eyeball and ear.",
+   "auditory_control": "To prevent noise from equipment and devices from affecting the animals’ behavior, the animal table was surrounded by soundproofing acoustic foam (Acoustical Surfaces, Chaska, MN, USA).",
+   "exposures[0].fundamental_frequency_khz": "Upon switching to focused ultrasound stimuli (4.5 MHz, 10 ms, 2.83 MPa), both healthy and blind rats showed repetitive neuronal responses (Fig. 1e, Supplementary Fig. 5b, c).",
+   "exposures[0].timing.duty_cycle_pct": "Unless otherwise specified, the default US sequences used in this study were 10-ms pulse with 100% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "Unless otherwise specified, the default US sequences used in this study were 10-ms pulse with 100% duty cycle.",
+   "exposures[0].timing.protocol_description": "Ultrasound parameters for retina stimulation: 4.4 MHz, 10 ms, 3 MPa.",
+   "exposures[1].fundamental_frequency_khz": "We subjected three healthy rats, each with one eye under ultrasound stimulation at frequencies of 3, 4.5, and 20 MHz.",
+   "exposures[1].in_situ.pressure_kpa": "The pulses had a duration of 10 ms and a repetition frequency of 5 Hz, with pressure amplitudes surpassing the threshold by 50% (derated pressures were 5.8 MPa, 4.3 MPa, and 1.7 MPa).",
+   "exposures[1].timing.pulse_duration_ms": "The pulses had a duration of 10 ms and a repetition frequency of 5 Hz, with pressure amplitudes surpassing the threshold by 50% (derated pressures were 5.8 MPa, 4.3 MPa, and 1.7 MPa).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The pulses had a duration of 10 ms and a repetition frequency of 5 Hz, with pressure amplitudes surpassing the threshold by 50% (derated pressures were 5.8 MPa, 4.3 MPa, and 1.7 MPa).",
+   "exposures[1].timing.sonication_duration_s": "Each rat underwent stimulation for 3 hours triweekly for two weeks (Day 1 to Day 13).",
+   "adverse_events": "Ultrasound stimulation neither changed fundus structures, reduced retinal layer thickness, activated microglia, increased apoptosis, nor compromised the function of photoreceptors.",
+   "exposures[1].device.model": "Nevertheless, we designed and fabricated a 16-by-16 channel 4.5-MHz ultrasound array, striking an optimized balance between imaging and stimulation (Supplementary Fig.",
+   "exposures[0].unspecified_domain.pressure_kpa": "(Ultrasound parameters in both training and testing sessions: 4.5 MHz, 20 ms, 2.9 MPa)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Main text states 4.5 MHz/2.83 MPa for the initial validation experiment, but the Figure 1 legend states 4.4 MHz/3 MPa for the same experiment; both values are recorded."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper describes many partially-overlapping animal subsets for different sub-experiments (e.g., 3+3, 8, 8+8, 2+2, 3, 1) without ever stating a single overall total; not summed here."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Session counts differ by sub-experiment (single acute sessions vs 8-day behavioral training vs triweekly safety sessions over 2 weeks) with no single value applicable to all subjects."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "The 3.5 MPa positive-control value applies specifically to the 20 MHz condition, not to all three frequencies; list combines values from different sub-conditions."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Electrophysiology and safety experiments used anesthetized rats, while water-licking behavioral sessions were performed in awake, head-fixed rats."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "neither",
+   "exposures[0].timing.sonication_duration_s": "first",
+   "exposures[1].in_situ.pressure_kpa": "first"
+  }
+ }
+}

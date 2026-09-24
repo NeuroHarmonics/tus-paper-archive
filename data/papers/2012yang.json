@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2012yang",
+ "doi": "10.1159/000336001",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "Microdialysis with HPLC-electrochemical detection of extracellular glutamate and GABA; hematoxylin and eosin histology for hemorrhage/tissue damage",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Extracellular GABA levels decreased upon sonication and remained reduced (to ~82% of baseline) compared to the unsonicated control group, while extracellular glutamate levels did not differ between groups; the authors interpret the finding as consistent with an inhibitory/suppressive effect of the FUS parameters used.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological examination of transverse brain sections at the sonication focus and beam path showed no abnormal findings such as hemorrhaging or tissue damage.",
+ "exposures": [
+  {
+   "label": "FUS sonication of the thalamus",
+   "target": {
+    "terms": [
+     "thalamus",
+     "ventral_lateral_nucleus"
+    ],
+    "label": "thalamus (ventrolateral and ventromedial thalamic nucleus)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "SensMed",
+    "model": "Sonomo"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 350,
+    "isppa_w_cm2": 3.5,
+    "ispta_w_cm2": 0.175
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1200,
+    "protocol_description": "Microdialysates were collected every 20 min in a scheme of 3 baseline intervals (B1-B3), a single sonication interval (FUS), and 5 post-sonication intervals (P1-P5); the animal was sacrificed at the end of data collection without waking from anesthesia."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "One group (n = 11) received FUS sonication on the brain (noted as ‘FUS’), allowing us to investigate the effects of sonication on the extracellular levels of glutamate and GABA.",
+   "n_sessions_per_subject": "Upon the completion of data collection, the animal was sacrificed without waking from anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "An air-backed, spherical segment ultrasound transducer operating at a fundamental frequency of 650 kHz was used in the present study.",
+   "exposures[0].timing.pulse_duration_ms": "The following sonication parameters were used in the present study: 0.5 ms for the tone burst duration and 100 Hz for the pulse repetition frequency.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The following sonication parameters were used in the present study: 0.5 ms for the tone burst duration and 100 Hz for the pulse repetition frequency.",
+   "exposures[0].timing.sonication_duration_s": "Similarly, degradation of GABA via GABA transaminase (and subsequent action of succinate semi-aldehyde dehydrogenase) is not likely to be immediately affected during the relatively short sonication period (i.e. 20 min) and thus may not explain the observed phenomena [thus rendering hypotheses (a) and (b) unlikely].",
+   "exposures[0].in_situ.pressure_kpa": "The maximum peak negative pressure associated with the selected tone burst duration and pulse repetition frequency was measured to be 0.35 MPa, resulting in a mechanical index of 0.2.",
+   "exposures[0].in_situ.isppa_w_cm2": "The acoustic intensity at the focus was 175 mW/cm <sup>2</sup> in terms of spatial-peak temporal-average intensity, which corresponds to 3.5 W/cm <sup>2</sup> in terms of spatial-peak pulse-average intensity.",
+   "exposures[0].in_situ.ispta_w_cm2": "The acoustic intensity at the focus was 175 mW/cm <sup>2</sup> in terms of spatial-peak temporal-average intensity, which corresponds to 3.5 W/cm <sup>2</sup> in terms of spatial-peak pulse-average intensity.",
+   "exposures[0].device.manufacturer": "The FUS sonication apparatus (Sonomo; SensMed, Framingham, Mass., USA), using the scheme described previously, is displayed in figure 1 ."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "11 animals enrolled/exposed to FUS but one died during the experiment and one further animal was excluded for exceeding a 3 SD fluctuation threshold, leaving n=9 analysed; enrolled number (11) is reported here."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not stated explicitly as 'one session'; inferred from the single continuous terminal procedure (baseline/sonication/post intervals followed by sacrifice)."
+   },
+   {
+    "field": "target.terms",
+    "reason": "Paper states the focus sonicated 'the ventrolateral and ventromedial thalamic nucleus'; ventromedial thalamic nucleus has no exact match in the target vocabulary, so only ventral_lateral_nucleus plus the parent thalamus term are given."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Peak negative pressure and intensities are stated already corrected for ~87% skull attenuation ('in situ'), so classified as derating rather than free-field."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

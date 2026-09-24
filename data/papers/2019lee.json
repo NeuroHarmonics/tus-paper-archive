@@ -1,0 +1,173 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019lee",
+ "doi": "10.1038/s41378-019-0070-5",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Fura-2 AM ratiometric intracellular Ca2+ imaging",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound increased intracellular Ca2+ transients in cocultured neurons/astrocytes; response rate rose from 15.4% at 0 V to 76.0% at 66 V, showing a dose-dependent excitatory effect.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "pMUT array stimulation of cocultured cortical neurons and astrocytes",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "cultured_glia"
+    ],
+    "label": "cocultured neurons and astrocytes"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 430,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.025,
+     1.122
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2326,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "Pulses of 100 cycles of sinusoidal ultrasound were applied at a pulse repetition frequency of 2 kHz. For calcium-imaging experiments, cells were monitored for 120 s baseline, then the transducer was turned on continuously for 180 s (120-300 s), followed by 300 s of post-stimulation observation. Intensity was varied via input voltage (0-66 V) at a fixed distance (1 mm) and frequency; a separate localization test varied horizontal distance from the active transducer channel."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 46.52
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The peak intensity of $1 . 1 2 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ that was measured at 430 kHz with an input voltage of 66 V was identical to the impedance result (Fig. 5b).",
+   "exposures[0].free_field.isppa_w_cm2": "The acoustic intensity was found to range from 0.025 to $1 . 1 2 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ when the input voltage of pMUTs was varied from 11 to 66 V (Fig. 5c).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To actuate the pMUTs, we used a function generator (33500B; Agilent, USA) to apply 100 cycles of sinusoidal sound waves with a pulse repetition frequency (PRF) of 2 kHz, which is the effective value for stimulating neurons and astrocytes<sup>14</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Then, we monitored $\\mathrm { C a } ^ { 2 + }$ transients for 120 s as a control experiment and turned on the ultrasound transducer for 180 s (from 120 s to 300 s), followed by observing $\\mathrm { C a } ^ { 2 + }$ transients for 300 s after the transducer was turned off.",
+   "exposures[0].timing.pulse_duration_ms": "To actuate the pMUTs, we used a function generator (33500B; Agilent, USA) to apply 100 cycles of sinusoidal sound waves with a pulse repetition frequency (PRF) of 2 kHz, which is the effective value for stimulating neurons and astrocytes<sup>14</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse composed of 100 cycles; converting cycles/frequency requires choosing between the 500 kHz design target and the 430 kHz measured/used resonant frequency, which are both stated but not reconciled by the paper; left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated directly; would require the ambiguous pulse duration above plus the 2 kHz PRF, so left not_reported rather than computed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Different response-rate experiments used different numbers of independent culture plates (4 or 5 per condition); no single total number of independent cultures/subjects is stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

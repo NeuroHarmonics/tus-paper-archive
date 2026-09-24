@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024hacker",
+ "doi": "10.1109/tuffc.2023.3343915",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "none_reported"
+ ],
+ "readout_other": null,
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is a device-engineering and bench-safety-testing paper; no physiological or behavioural outcome of vagus nerve stimulation is reported.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Maximum temperature rise at the compliant pad was 3.6°C (below the 10°C IEC 60601-2-5 limit); mechanical output was well below IEC 60601-2-5 and FDA diagnostic ultrasound guidance limits; device programmed to power off after 29 minutes to limit dose.",
+ "exposures": [
+  {
+   "label": "Zenbud wearable auricular vagus nerve stimulator (device characterisation)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "auricular vagus nerve (cymba concha)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "NeurGear Company",
+    "model": "Zenbud"
+   },
+   "fundamental_frequency_khz": 8000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.009,
+    "ispta_w_cm2": 0.005
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 12.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1740,
+    "protocol_description": "The device was programmed to have a 50% duty cycle, with ON and OFF times of 12.5 ms; the device is programmed to turn on for only 29 min after application of power to limit dosage per IEC 60601-2-5."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Fig. 2 shows the front view of a head (10) wearing the apparatus to stimulate the auricular vagus nerve. The ultrasonic transducer (22) in Fig. 1 is held by headband (26). A higher frequency of ultrasound was chosen for this device to prevent excessive irradiation of the skull and brain. A transducer with a center frequency of 8 MHz confines the radiation to the vagus nerve area. The 10-mm-diameter transducer was selected to maximize contact in the concha depression of the ear in most adults (Fig. 1). The transducer is made of PZT-5A, 10 mm in diameter and 0.28 mm thick. The material and dimensions have a resonant frequency is 8 MHz. PZT-5A was chosen because it performs well as an energy emitter. A compliant pad (28) is the reaction force for a clamping force provided by expanding headband (26). An alignment pin (24) registers the device in the ear canal (16).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<table><tr><td>Parame ter</td><td>FDA Diagnostic Guidance</td><td>Output</td><td>Output *1.5</td></tr><tr><td>Isppa</td><td>190 W/cm^2</td><td>.009 W/cm^2</td><td>.023 W/Cm^2</td></tr><tr><td>Ispta</td><td>94 mW/cm^2</td><td>5 mW/cm^2</td><td>12 mW/cm^2</td></tr><tr><td>MI</td><td>1.9</td><td>0.196</td><td>0.308</td></tr><tr><td>TI</td><td>6</td><td>0.567</td><td>1.402</td></tr></table>",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "<table><tr><td>Parame ter</td><td>FDA Diagnostic Guidance</td><td>Output</td><td>Output *1.5</td></tr><tr><td>Isppa</td><td>190 W/cm^2</td><td>.009 W/cm^2</td><td>.023 W/Cm^2</td></tr><tr><td>Ispta</td><td>94 mW/cm^2</td><td>5 mW/cm^2</td><td>12 mW/cm^2</td></tr><tr><td>MI</td><td>1.9</td><td>0.196</td><td>0.308</td></tr><tr><td>TI</td><td>6</td><td>0.567</td><td>1.402</td></tr></table>",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound uses acoustic waves of mechanical energy to apply pressure to nerves [16], [17], [18]. This results in pressure changes between the intracellular and extracellular fluid, which causes changes in membrane curvature and flexoelectricity and results in action potential propagation [19]. Research shows that the pressure should be pulsed to allow for periodic biochemical recovery of the nerve junction. In the design, a small microprocessor, an ATTiny 13 A, pulses a piezo excitation circuit. A duty cycle of 50% has the largest evidence to yield an excitatory effect with ultrasound in neurons [19]. The device was programmed to have a 50% duty cycle, with ON and OFF times of 12.5 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound uses acoustic waves of mechanical energy to apply pressure to nerves [16], [17], [18]. This results in pressure changes between the intracellular and extracellular fluid, which causes changes in membrane curvature and flexoelectricity and results in action potential propagation [19]. Research shows that the pressure should be pulsed to allow for periodic biochemical recovery of the nerve junction. In the design, a small microprocessor, an ATTiny 13 A, pulses a piezo excitation circuit. A duty cycle of 50% has the largest evidence to yield an excitatory effect with ultrasound in neurons [19]. The device was programmed to have a 50% duty cycle, with ON and OFF times of 12.5 ms.",
+   "exposures[0].timing.sonication_duration_s": "The device was tested to meet multiple safety requirements, including IEC standards 60601-2-5, CISPR 11, and FCC Part 15. To meet IEC 60601-2-5, section 201.12.4.4.103, covering maximum exposure, the device is programmed to turn on for only 29 min after application of power to limit dosage per 60601-2-5. To meet IEC 60601-2-5, section 201.12.4.4.103, covering maximum temperature, an operating device was tested free hanging and when pressed against living human flesh. The maximum temperature rise was 3.6 C at the compliant pad, below specified maximum of 10 C. To test the device for compliance to IEC 60601-2-5, section 201.11.6.5, covering water immersion, a device was tested by immersing an operating device 1 m deep in a chlorinated swimming pool for 29 min. Some water infiltrated, but the device operated after drying out. The design is now revised to meet the IPX7 waterproofing standard by sealing the transducer head.",
+   "exposures[0].device.manufacturer": "This work was supported in part by NeurGear Company, in part by the Simone Center through the Rochester Institute of Technology, and in part by the Dr."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].device.model",
+    "reason": "Model name 'Zenbud' is only given in an author biography sentence, not the methods text."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Section IV separately states the resonator settles 'in a small fraction of the ON time of 12-ms', inconsistent with the 12.5 ms ON time stated in Section II; possible typo/rounding discrepancy."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (40 Hz) derived from the stated 12.5 ms ON / 12.5 ms OFF period, a unit conversion from a stated period."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain (free-field vs in-situ vs at-transducer-face) not stated by the paper; Table II 'Output' values used as unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "29-minute auto-shutoff interpreted as the maximum continuous stimulation session length, not restated elsewhere as a dosing duration."
+   },
+   {
+    "field": "model_system",
+    "reason": "Paper is primarily a device-engineering/bench-safety report; the only human involvement described is a temperature test against 'living human flesh' with no stated N, condition framing, or physiological readout."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Device-engineering paper: no efficacy study, subject cohort, or neural/behavioural readout is reported; fields reflect the device's designed/measured output parameters only.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020jiang",
+ "doi": "10.1038/s41467-020-14706-1",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6J, in vivo); rat (primary cortical neuron culture, in vitro)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site",
+  "other"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology",
+  "emg_mep",
+  "histology_molecular"
+ ],
+ "readout_other": "calcium imaging (OGD-1) in cultured neurons/glia; local field potential (LFP) in S1/A1; EMG from forelimb triceps brachii; post-hoc H&E histology",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FOC (fiber-optoacoustic converter) stimulation produced calcium transients in cultured neurons, LFP responses in S1, and EMG responses (motor activation) in forelimb muscle, consistent with direct neural activation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No obvious morphological changes were detected in neurons stimulated multiple times over a 2-h duration; no tissue damage was observed on histology after repeated in vivo stimulation.",
+ "exposures": [
+  {
+   "label": "FOC stimulation of cultured cortical neurons (in vitro)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "cultured rat cortical neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Fiber-Optoacoustic Converter (FOC)"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    5000
+   ],
+   "free_field": {
+    "pressure_kpa": 480,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.001,
+    "pulse_repetition_frequency_hz": 3600,
+    "duty_cycle_pct": 0.36,
+    "sonication_duration_s": [
+     0.02,
+     0.05,
+     0.1,
+     0.2
+    ],
+    "protocol_description": "The FOC emits omnidirectional 1-us acoustic pulses at a 3.6 kHz laser repetition rate (duty cycle ~0.36%). Stimulation trains of 20, 50, 100 or 200 ms were delivered to cultured neurons to find an activation threshold (100 and 50 ms produced calcium transients, 20 ms did not); repeated reliability was also tested with eight 200-ms bursts at a 2-s inter-burst interval."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.36,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "FOC stimulation of mouse primary somatosensory cortex (S1), in vivo",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Fiber-Optoacoustic Converter (FOC)"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    5000
+   ],
+   "free_field": {
+    "pressure_kpa": 480,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.001,
+    "pulse_repetition_frequency_hz": 3600,
+    "duty_cycle_pct": 0.36,
+    "sonication_duration_s": [
+     0.05,
+     0.2
+    ],
+    "protocol_description": "FOC placed in contact with the exposed brain surface (craniotomy, dura intact, saline-immersed); 200 ms and 50 ms laser pulse trains delivered while LFP was recorded from S1 with a tungsten electrode; separate trials tested ipsilateral A1 as an anatomical control and delivery without brain contact as a negative control."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.36,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "FOC stimulation of mouse primary motor cortex (M1), in vivo",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Fiber-Optoacoustic Converter (FOC)"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    5000
+   ],
+   "free_field": {
+    "pressure_kpa": 480,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.001,
+    "pulse_repetition_frequency_hz": 3600,
+    "duty_cycle_pct": 0.36,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "A 200 ms laser pulse train was delivered to the FOC placed on the motor cortex (stereotaxic coordinates) while EMG was recorded from the contralateral forelimb triceps brachii; the FOC was scanned over a 3x3 mm^2 grid (1 mm spacing) to map motor representation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.36,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "we observed robust local-field potential (LFP) response to the FOC stimulation for both stimulation durations, with response latency of 15.87 ± 1.34 ms (n = 9, from three mice) (Fig. 4b), which is indicative of direct neural activation.",
+   "exposures[0].fundamental_frequency_khz": "The radiofrequency spectrum shows that the generated acoustic wave is in the ultrasound frequency ranging from 0.5 to 5 MHz, with multiple peaks between 1 and 5 MHz (Fig. 1d).",
+   "exposures[1].fundamental_frequency_khz": "The radiofrequency spectrum shows that the generated acoustic wave is in the ultrasound frequency ranging from 0.5 to 5 MHz, with multiple peaks between 1 and 5 MHz (Fig. 1d).",
+   "exposures[2].fundamental_frequency_khz": "The radiofrequency spectrum shows that the generated acoustic wave is in the ultrasound frequency ranging from 0.5 to 5 MHz, with multiple peaks between 1 and 5 MHz (Fig. 1d).",
+   "exposures[0].free_field.pressure_kpa": "The maximum acoustic pressure is measured to be 0.48 MPa using a needle hydrophone.",
+   "exposures[1].free_field.pressure_kpa": "The maximum acoustic pressure is measured to be 0.48 MPa using a needle hydrophone.",
+   "exposures[2].free_field.pressure_kpa": "The maximum acoustic pressure is measured to be 0.48 MPa using a needle hydrophone.",
+   "exposures[0].timing.pulse_duration_ms": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[1].timing.pulse_duration_ms": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[2].timing.pulse_duration_ms": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[0].timing.duty_cycle_pct": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[1].timing.duty_cycle_pct": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[2].timing.duty_cycle_pct": "Second, the FOC generates 1-μs pulsed acoustic waves repeated at 3.6 kHz. The duty cycle of this acoustic wave is about 0.36%.",
+   "exposures[0].timing.sonication_duration_s": "To identify the threshold for FOC-induced neural activation, we varied the stimulation duration to 100, 50, and 20 ms. The FOC successfully produced neural activation with 100 and 50 ms stimulation, but not with 20 ms stimulation (Fig. 2c).",
+   "exposures[1].timing.sonication_duration_s": "Laser pulse trains with 200 ms and 50 ms duration were delivered to the FOC, and neural activities were recorded with a tungsten electrode.",
+   "exposures[2].timing.sonication_duration_s": "A laser pulse train over a period of 200 ms was delivered to the FOC, while the muscle potential was recorded simultaneously."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper never states a single total number of mice used across all in vivo experiments; group sizes stated per sub-experiment are 3 mice (S1/A1 LFP recordings), 3 mice (M1 EMG mapping), 2 mice (S1-to-forelimb EMG latency); these may partly overlap and are listed as reported rather than summed."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "The FOC is a broadband optoacoustic source (no discrete carrier/fundamental frequency); the stated 0.5-5 MHz range from the RF spectrum is recorded as the frequency range rather than a single value."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "0.48 MPa is a general device characterization (measured underwater with a needle hydrophone at the fiber tip) rather than a value measured for each specific in vitro/in vivo experiment; applied to all three exposures as the only reported pressure figure."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Controls used were mechanistic (FOC lifted off contact / no acoustic coupling; uncoated fiber with laser only; FOC aimed at a different site (A1) for spatial-confinement testing) rather than a classic transducer-off sham; mapped to inactive_transducer/active_control_site/other."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper tests for (and rules out) an indirect auditory/cochlear pathway by recording contralateral A1 responses, but does not implement a masking-sound or similar auditory control procedure; mapped to 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "disagree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "disagree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "disagree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].fundamental_frequency_khz": "both_defensible",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].fundamental_frequency_khz": "both_defensible",
+   "exposures[2].fundamental_frequency_khz": "both_defensible"
+  }
+ }
+}

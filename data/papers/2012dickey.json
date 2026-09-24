@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2012dickey",
+ "doi": "10.1016/j.ultrasmedbio.2011.09.020",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Our study group consisted of 17 test subjects (10 male, 7 female) ages 18–56 years.",
+   "n_sessions_per_subject": "We conducted the iFU and the ‘‘two-point’’ neurological testing on two separate days, at least one week apart, as described next.",
+   "randomised": "A computer program randomized each trial of 20 pulses for which finger was used (10 on left and 10 on right) and whether a sham pulse or a real pulse was given (10 real and 10 sham pulses per iFU intensity value).",
+   "blinding": "The participants were blinded, however, as to whether the iFU stimulus was actually delivered or a sham application was performed instead.",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency for our transducer was 1.117 MHz, within the range of ultrasound frequencies (0.5 to 3 MHz) used in other studies (Gavrilov et al. 1977a, 1977b; Wright et al. 2002, reviewed in Gavrilov 2008).",
+   "exposures[0].timing.sonication_duration_s": "For all experiments, we used a single pulse of ultrasound with a duration of 100 milliseconds.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The average intensity for the attainment of the 90% threshold value for those members who did attain a threshold was $1 0 6 . 4 \\pm 5 8 . 7 \\mathrm { W / c m } ^ { 2 }$ ."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Abstract rounds the frequency to '1.1 MHz'; the precise Methods value (1.117 MHz) was used."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper states sham vs real trials were randomized and subjects blinded, but never describes what a 'sham' application physically consisted of (e.g. transducer powered off, blocked, or aimed away); recorded as other."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "The paper's own intensity metric is described as 'spatially and temporally averaged' over the beam area (not a spatial-peak quantity), so its correspondence to the schema's Isppa/Ispta definitions is approximate; also, domain (free-field vs at-skin) is not stated, so values are placed in unspecified_domain. List combines the 90% (106.4 W/cm2) and 50% (95 W/cm2) threshold means, each stated in a separate sentence; the quoted sentence documents the 106.4 W/cm2 value only."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Left null because the stimulus is a single, non-repeated 100 ms burst per trial (classified as waveform=continuous per the single-uninterrupted-burst rule); duty cycle as a percentage is not meaningful/stated for a solitary pulse."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Coded 'observed' based on 5 of 34 test sessions in which subjects reported transient pain (median NRS 1/10); no lasting effects or tissue injury were reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 17,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Psychophysical detection (sensitivity/specificity) of intense focused ultrasound (iFU) sensation using the method of ascending limits; two-point discrimination test of mechanoreceptor density; pain rated on an 11-point numeric rating scale (NRS 0-10)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This study measured psychophysical detection of an iFU-induced cutaneous sensation as a function of intensity rather than excitation or suppression of neural circuit activity, so excitatory/inhibitory direction of effect does not apply.",
+ "adverse_events": "observed",
+ "safety_notes": "Of 34 test sessions (17 subjects x 2 sessions), five reported transient pain, generally once per testing period, with the vast majority (>99%) of sensations pain-free and a median pain score of NRS 1/10; none of the subjects complained of any long-lasting effects, and pre/post two-point discrimination and questionnaire results showed no short-term physiological or psychological changes associated with iFU testing.",
+ "exposures": [
+  {
+   "label": "iFU stimulation of the fingertip pad (intensity titration for sensation detection)",
+   "target": {
+    "terms": [
+     "digital_nerve"
+    ],
+    "label": "fingertip pad (index finger)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "solid cone device (custom aluminum housing with commercial flat piezoelectric transducer)"
+   },
+   "fundamental_frequency_khz": 1117,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 106.4
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "For all experiments a single 100-ms pulse of ultrasound was delivered to the fingertip pad. Using the method of ascending limits, iFU intensity was systematically increased (data binned in 30 W/cm2 increments for graphing) across trials of 20 applications (10 real, 10 sham) per intensity value until a subject reported 9 of 10 true positives (90% threshold), the output reached a ceiling of 650 W/cm2 (a value from separate animal studies shown to produce reliable, safe sensations), or time ran out for that subject; testing was repeated on a second day at least one week later."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

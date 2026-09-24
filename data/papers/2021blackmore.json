@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021blackmore",
+ "doi": "10.1038/s41380-021-01129-7",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  15,
+  20,
+  8,
+  8,
+  2,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 6,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cellular_imaging"
+ ],
+ "readout_other": "active place avoidance (APA) spatial learning test; hippocampal slice field-potential LTP recording; western blot (NR2B, pNR2B, NR2A, ERK, S6); SWATH-MS proteomics; immunofluorescence/immunohistochemistry (DCX, WFA, GFAP, Iba1)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "SUS with and without microbubbles restored LTP induction in aged mice; SUS-only also significantly improved spatial learning, increased synaptic NMDA receptor subunit levels/phosphorylation, increased neurogenesis, and reduced perineuronal net density, consistent with an overall potentiating/excitatory effect on synaptic plasticity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Thermal testing with a gray-matter mimetic showed a maximal temperature rise of ~1.1°C at the skull, far below the 43°C tissue damage threshold, and quantitative proteomics showed no increase in heat-shock proteins compared to sham, supporting the absence of heat-related bioeffects.",
+ "exposures": [
+  {
+   "label": "Scanning ultrasound (SUS) whole-brain treatment, with (SUS+MB) or without (SUS-only) microbubbles",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "the transducer sonicates a large area of the mouse brain during each treatment; a motorized positioning system moves the focus of the transducer array in a grid such that the ultrasound is delivered sequentially to the entire brain"
+   },
+   "device": {
+    "family": "philips_research",
+    "manufacturer": "Philips Research",
+    "model": "Therapy Imaging Probe System (TIPS)"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 700,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 6,
+    "protocol_description": "The motorized positioning system moved the focus of the transducer array in a grid with 1.5 mm between individual sites of sonication so that ultrasound was delivered sequentially to the entire brain. The animals all underwent a weekly treatment for six weeks prior to behavioral testing. A sub-experiment also tested one session (Single SUS, N=8) or three sessions (Triple SUS, N=8) versus the six sessions used for the main SUS-only cohort."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "To confirm that BBB opening was only achieved after ${ \\bf S } { \\bf U } { \\bf S } ^ { + { \\bf M } { \\bf B } }$ treatments, mice in three groups $( N = 2$ for each: naive, SUS<sup>+MB</sup>, and $\\mathrm { S U S ^ { o n l y } ) }$ were injected with 30 μl Evans blue dye (E2129, Sigma, 2% in saline) immediately after sonication.",
+   "blinding": "Researchers were blinded to phenotype during experimentation.",
+   "sham_type": "For sham treatments, mice received all injections and were placed under the ultrasound transducer, but no ultrasound was emitted.",
+   "n_sessions_per_subject": "The animals all underwent a weekly treatment for six weeks prior to behavioral testing, using an accelerated APA paradigm.",
+   "exposures[0].target.label": "A Schematic detail of the sonication procedure, indicating that the transducer sonicates a large area of the mouse brain during each treatment.",
+   "exposures[0].fundamental_frequency_khz": "system operated at a 1 MHz center frequency.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The parameters for ultrasound delivery were: 0.7 MPa peak rarefactional pressure, 10 Hz pulse repetition frequency,",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The parameters for ultrasound delivery were: 0.7 MPa peak rarefactional pressure, 10 Hz pulse repetition frequency,",
+   "exposures[0].timing.duty_cycle_pct": "10 % duty cycle, and a 6 s sonication time per spot.",
+   "exposures[0].timing.sonication_duration_s": "10 % duty cycle, and a 6 s sonication time per spot.",
+   "exposures[0].device.manufacturer": "An integrated focused ultrasound system was used (Therapy Imaging Probe System, TIPS, Philips Research) [10] (Supplementary Fig."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Ultrasound-exposed cohorts (SUS+MB N=15, SUS-only N=20, Single SUS N=8, Triple SUS N=8) are given as separate group sizes; paper does not state a combined total and Single/Triple SUS sub-cohorts may or may not overlap with the main SUS-only group."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.7 MPa peak rarefactional pressure is stated as the delivery parameter without specifying whether it is a free-field or in-situ (brain) value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration is not stated directly; only PRF (10 Hz) and duty cycle (10%) are given, from which a pulse duration is computable but not reported by the paper."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Main cohorts (SUS+MB, SUS-only) received 6 weekly sessions, but a sub-experiment also tested 1 and 3 session protocols in separate cohorts (Single SUS, Triple SUS)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022chu",
+ "doi": "10.1007/s13311-022-01250-7",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "EEG epileptiform spike/burst counts and durations; electrographic seizure frequency; histology (H&E, GFAP immunohistochemistry); hippocampal volume",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "FUS reduced EEG epileptiform spike counts, burst counts, burst durations, and electrographic seizure frequency relative to KA-only controls, with higher-intensity regimens producing greater and more prolonged suppression at the cost of tissue inflammation/gliosis.",
+ "adverse_events": "observed",
+ "safety_notes": "In group 3 (0.75 MI, 2.8 W/cm2), animals showed various degrees of inflammatory cell infiltration and one showed tissue necrosis in FUS-treated hippocampus/thalamus, comparable to KA-only animals. In group 6 (0.25 MI, 0.5 W/cm2), FUS treatments significantly normalized inflammatory-like gliosis and produced neither gliosis nor necrosis in normal (non-KA) animals exposed to the same parameters (n=2).",
+ "exposures": [
+  {
+   "label": "Pulsed FUS to right hippocampus (4 parameter regimens: groups 3-6)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "right hippocampus (CA1, CA2, CA3)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "SonicConcept",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     2.8,
+     0.5,
+     0.1,
+     0.5
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     30,
+     5,
+     1,
+     30
+    ],
+    "sonication_duration_s": [
+     600,
+     300,
+     300,
+     600
+    ],
+    "protocol_description": "FUS exposure level was set at 0.75 MI in groups 3, 4, and 5 and 0.25 MI in group 6. The exposure duration was either three consecutive 5-min (groups 4 and 5) or 10-min (groups 3 and 6) 'on' periods, with a 5-min 'off' period between each 'on' period, delivered in a single session at week 7. Groups (duty cycle, ISPTA, duration): group 3 = 30%, 2.8 W/cm2, 10 min*3; group 4 = 5%, 0.5 W/cm2, 5 min*3; group 5 = 1%, 0.1 W/cm2, 5 min*3; group 6 = 30%, 0.5 W/cm2, 10 min*3."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "All animal experiments were approved by the Institutional Animal Care and Use Committee of National Taiwan University, Taiwan (IACUC No. NTU-109-EL-00101). Animals were housed with a 12-h light/dark cycle and ad libitum access to food and water. Forty-three male Sprague–Dawley rats (290–330 g, BioLASCO Co., Ltd, Taiwan) were used. Among them, 39 received KA injections; 36 survived, 4 received non-KA sham injection, and 40 were evaluated experimentally with EEG. Of these, 25 KA-injected rats were treated with FUS and 15 rats (11 KA-injected rats and 4 non-KA-injected rats) were used as non-FUS controls. An additional four rats were used for histology analysis to examine potential brain damage after FUS sonication.",
+   "blinding": "1 s. Burst duration was calculated from the start of the first spike to the end of the last one (Fig. 4) [32]. For the analysis of the epileptic bursts, a blinded rater marked repetitive epileptiform spikes as well as spike bursts.",
+   "sham_type": "increase in seizure frequency from $5 . 1 \\pm 1 . 6$ (weeks 2–7) to $6 . 8 \\pm 2 . 3 7$ seizures per week (weeks 8–14). Animals receiving KA and sham FUS showed a non-significant $1 0 6 . 7 \\pm 1 3 6$ .1% increase of the electrographic seizure frequency (Fig. S2B).",
+   "adverse_events": "In group 3, with 0.75-MI sonication, animals showed various degrees of inflammatory cell infiltration and one showed tissue necrosis in FUS-treated hippocampus/thalamus, with the degree comparable to that of the KA-only animals (group 2; see Fig. 7).",
+   "safety_notes": "In group 3, with 0.75-MI sonication, animals showed various degrees of inflammatory cell infiltration and one showed tissue necrosis in FUS-treated hippocampus/thalamus, with the degree comparable to that of the KA-only animals (group 2; see Fig. 7).",
+   "exposures[0].target.label": "A focused ultrasound transducer (SonicConcept, USA; fundamental frequency = 0.5 MHz, radius curvature = 64.3 mm) delivered pulsed signals of 0.5 MHz guided by a function generator (A33420, Agilent, USA) and amplified by a radiofrequency power amplifier (240L, E&I, USA). The acoustic pressure was measured by a needle-type hydrophone (Reson, TC 4038, Goleta, California, USA) in a free field filled with deionized/degassed water. The diameter and length of the − 6 dB dimension of pressure field were 2 mm and 12 mm, respectively, and was aimed at the right hippocampus (Fig. 2).",
+   "exposures[0].device.family": "A focused ultrasound transducer (SonicConcept, USA; fundamental frequency = 0.5 MHz, radius curvature = 64.3 mm) delivered pulsed signals of 0.5 MHz guided by a function generator (A33420, Agilent, USA) and amplified by a radiofrequency power amplifier (240L, E&I, USA). The acoustic pressure was measured by a needle-type hydrophone (Reson, TC 4038, Goleta, California, USA) in a free field filled with deionized/degassed water. The diameter and length of the − 6 dB dimension of pressure field were 2 mm and 12 mm, respectively, and was aimed at the right hippocampus (Fig. 2).",
+   "exposures[0].fundamental_frequency_khz": "A focused ultrasound transducer (SonicConcept, USA; fundamental frequency = 0.5 MHz, radius curvature = 64.3 mm) delivered pulsed signals of 0.5 MHz guided by a function generator (A33420, Agilent, USA) and amplified by a radiofrequency power amplifier (240L, E&I, USA). The acoustic pressure was measured by a needle-type hydrophone (Reson, TC 4038, Goleta, California, USA) in a free field filled with deionized/degassed water. The diameter and length of the − 6 dB dimension of pressure field were 2 mm and 12 mm, respectively, and was aimed at the right hippocampus (Fig. 2).",
+   "exposures[0].free_field.ispta_w_cm2": "Based on our previous investigation [25], FUS parameters were chosen as listed in Table 1. FUS exposure level was set at 0.75 MI (mechanical index) in groups 3, 4, and 5 and 0.25 MI in group 6. The duty cycle ranged from 1 to 30% (groups 3, 4, and 5), which produced FUS exposure intensities (spatial-peak temporal average intensity, I<sub>SPTA</sub> from 0.1 to 2.8 W/cm<sup>2</sup>. The exposure duration was either three consecutive 5-min (groups 4 and 5) or 10-min (groups 3 and 6) “on” periods, with 5-min “of” period between each “on” period. During each sonication, ultrasonic gel was used to coat the FUS exposure window and to connect to the degassed water tank (Fig. 2).",
+   "exposures[0].timing.duty_cycle_pct": "Based on our previous investigation [25], FUS parameters were chosen as listed in Table 1. FUS exposure level was set at 0.75 MI (mechanical index) in groups 3, 4, and 5 and 0.25 MI in group 6. The duty cycle ranged from 1 to 30% (groups 3, 4, and 5), which produced FUS exposure intensities (spatial-peak temporal average intensity, I<sub>SPTA</sub> from 0.1 to 2.8 W/cm<sup>2</sup>. The exposure duration was either three consecutive 5-min (groups 4 and 5) or 10-min (groups 3 and 6) “on” periods, with 5-min “of” period between each “on” period. During each sonication, ultrasonic gel was used to coat the FUS exposure window and to connect to the degassed water tank (Fig. 2).",
+   "exposures[0].timing.sonication_duration_s": "Based on our previous investigation [25], FUS parameters were chosen as listed in Table 1. FUS exposure level was set at 0.75 MI (mechanical index) in groups 3, 4, and 5 and 0.25 MI in group 6. The duty cycle ranged from 1 to 30% (groups 3, 4, and 5), which produced FUS exposure intensities (spatial-peak temporal average intensity, I<sub>SPTA</sub> from 0.1 to 2.8 W/cm<sup>2</sup>. The exposure duration was either three consecutive 5-min (groups 4 and 5) or 10-min (groups 3 and 6) “on” periods, with 5-min “of” period between each “on” period. During each sonication, ultrasonic gel was used to coat the FUS exposure window and to connect to the degassed water tank (Fig. 2).",
+   "n_sessions_per_subject": "Four regimens of FUS given in a single session at week 7 were evaluated, with mechanical index (MI) ranging from 0.25 to 0.75, intensity spatial peak temporal average $( I _ { \\mathrm { S P T A } } )$ from 0.1 to 2.8 W per cm<sup>2</sup>, duty cycle from 1 to 30%, and three consecutive pulse trains for 5 or 10 min each.",
+   "exposures[0].device.manufacturer": "A focused ultrasound transducer (SonicConcept, USA; fundamental frequency = 0.5 MHz, radius curvature = 64.3 mm) delivered pulsed signals of 0.5 MHz guided by a function generator (A33420, Agilent, USA) and amplified by a radiofrequency power amplifier (240L, E&I, USA). The acoustic pressure was measured by a needle-type hydrophone (Reson, TC 4038, Goleta, California, USA) in a free field filled with deionized/degassed water. The diameter and length of the − 6 dB dimension of pressure field were 2 mm and 12 mm, respectively, and was aimed at the right hippocampus (Fig. 2)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Abstract states 'Forty-four male Sprague-Dawley rats' while Methods states 'Forty-three male Sprague-Dawley rats'; n_subjects (25) is the number of KA-injected rats treated with FUS per Methods and Table 1 (9+5+6+5). An additional 4 non-KA rats were exposed to FUS only for histology/safety testing and are not included in this count."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper reports duty cycle, mechanical index, and on/off period durations for each group but does not state pulse duration or PRF numerically anywhere in the text."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Not stated numerically; only duty cycle and 'on'/'off' period durations are given."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "List order corresponds to groups 3, 4, 5, 6 as given in Table 1 (2.8, 0.5, 0.1, 0.5 W/cm2 respectively), matched to duty_cycle_pct and sonication_duration_s lists in the same order."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

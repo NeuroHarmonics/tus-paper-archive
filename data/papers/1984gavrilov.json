@@ -1,0 +1,259 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1984gavrilov",
+ "doi": "10.1016/0041-624x(84)90008-8",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "1.95 MHz. A comparison was made between tactile sensations on the skin of the fingers in a control group of 21 healthy people, and 30 patients with eight forms of neurological diseases.",
+   "exposures[0].timing.sonication_duration_s": "It can be seen that with a stimulus duration of 0.1 ms the tactile sensitivity on the right (affected) hand was absent even at maximum intensities (1400 W cm-²).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "It can be seen that with a stimulus duration of 0.1 ms the tactile sensitivity on the right (affected) hand was absent even at maximum intensities (1400 W cm-²).",
+   "exposures[1].fundamental_frequency_khz": "For instance, at an ultrasonic frequency of the order of 0.5 MHz the threshold intensities in the focal region account for 0.01-0.1 W cm-², ignoring attenuation of ultrasound in biological tissues.",
+   "exposures[1].free_field.isppa_w_cm2": "For instance, at an ultrasonic frequency of the order of 0.5 MHz the threshold intensities in the focal region account for 0.01-0.1 W cm-², ignoring attenuation of ultrasound in biological tissues.",
+   "n_subjects": "A comparison was made between tactile sensations on the skin of the fingers in a control group of 21 healthy people, and 30 patients with eight forms of neurological diseases."
+  },
+  "flags": [
+   {
+    "field": "citekey",
+    "reason": "This is a review article summarizing multiple decades of experiments by the same research group across several species (man, frog, cat, skate, snail) and targets (skin receptors, labyrinth/auditory nerve, central nerve structures of invertebrates). Only the two sub-studies with fully specified frequency and dosimetry in the main text are extracted as exposures; the frog/snail/cat/skate experiments discussed are not independently quantified in this paper and are not represented as exposures."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "The paper states group sizes for one sub-study only (21 healthy controls, 30 patients) but never gives a total number of human subjects exposed across the whole review; other sub-studies (animal experiments) do not state subject counts at all."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The 0.1 ms stimulus duration and 1400 W/cm2 intensity are given as a single illustrative example from a figure (Fig. 6, intensity-duration threshold curve) rather than as the full tested parameter range."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain (free-field vs. in situ) of the 1400 W/cm2 'intensity in the focal region' value is not stated."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "Placed in free_field because the paper states the value is given 'ignoring attenuation of ultrasound in biological tissues'; the paper does not specify whether this is spatial-peak pulse-average or temporal-average intensity."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[1].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[1].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.duty_cycle_pct": "second"
+  }
+ },
+ "model_system": [
+  "human_healthy",
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "eight forms of neurological disease (e.g. syringomyelia) affecting skin sensitivity; hearing disorders (e.g. otosclerosis) diagnosed via ultrasonic audiometry",
+ "n_subjects": [
+  21,
+  30
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "psychophysical detection thresholds (tactile, thermal, pain sensations) and audiometric frequency-threshold curves for aural sensation",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Focused ultrasound evoked tactile, thermal, pain and auditory sensations in human subjects; patients with neurological disease or hearing disorders showed altered (usually elevated) thresholds relative to healthy controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The paper states in general terms that the authors' morphological, physiological and histochemical investigations show 'presently there are no insuperable obstacles in the path of the practical use of focused ultrasound for nerve structure stimulation,' but no specific adverse-event data are given.",
+ "exposures": [
+  {
+   "label": "Tactile/skin sensitivity thresholds and diagnosis of neurological disease (skin receptor stimulation)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "tactile sensations on the skin of the fingers"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1950,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1400,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0001,
+    "protocol_description": "Sensitivity was probed with single ultrasound stimuli of varying duration and intensity; for example, a 1.95 MHz beam with a stimulus duration of 0.1 ms was used to test tactile thresholds up to 1400 W/cm2 in the focal region, comparing a control group of 21 healthy people with 30 patients with eight forms of neurological disease."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  },
+  {
+   "label": "Auditory sensation thresholds via amplitude-modulated ultrasound directed at the internal ear (labyrinth)",
+   "target": {
+    "terms": [
+     "cochlea"
+    ],
+    "label": "labyrinth"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.01,
+     0.1
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Amplitude-modulated ultrasonic oscillations were directed to the labyrinth; the carrier frequency was far above the range audible to man (0.5-3 MHz) and the modulation frequency corresponded to the transmitted auditory information (e.g. speech, music, or pure tones for threshold determination)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     }
+    }
+   }
+  }
+ ]
+}

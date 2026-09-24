@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026alinenunes",
+ "doi": "10.1097/yct.0000000000001298",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale"
+ ],
+ "readout_other": "Visual Analog Scale (VAS); Brief Pain Inventory (BPI); McGill Pain Questionnaire; Douleur Neuropathique 4 (DN4); Hamilton Depression Rating Scale (HAM-D); Hamilton Anxiety Rating Scale (HAM-A); Patient Global Impression of Change (PGI-C); Clinical Global Impression of Change (CGI-C)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No statistically significant differences in VAS pain scores or secondary outcomes (BPI, McGill, DN4, HAM-D, HAM-A, PGI-C, CGI-C) were observed at any post-stimulation time point (immediate, 4h, 24h, 10 days) compared with baseline.",
+ "adverse_events": "observed",
+ "safety_notes": "One participant experienced mild transient neck discomfort; no serious adverse events or neurological complications were reported.",
+ "exposures": [
+  {
+   "label": "anterior thalamus tFUS, contralateral to pain side",
+   "target": {
+    "terms": [
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "anterior thalamus"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS PRO (64 mm transducer)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. Participants underwent 2 such sessions, with a 20-minute interval in between."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten individuals were screened between August 2022 and October 2024. Five subjects were excluded owing to implanted morphine pumps, deep brain stimulation (DBS) devices, or age exceeding the predefined inclusion criteria. The remaining 5 participants (4 males and 1 female) met the eligibility criteria and were enrolled in the study. None of the participants had scalp lesions or a history of seizures or brain surgery within the 6 months preceding enrollment. No participants discontinued the study, and all received 2 low-intensity tFUS stimulations administered 20 min apart, in accordance with the study protocol.",
+   "n_sessions_per_subject": "Ten individuals were screened between August 2022 and October 2024. Five subjects were excluded owing to implanted morphine pumps, deep brain stimulation (DBS) devices, or age exceeding the predefined inclusion criteria. The remaining 5 participants (4 males and 1 female) met the eligibility criteria and were enrolled in the study. None of the participants had scalp lesions or a history of seizures or brain surgery within the 6 months preceding enrollment. No participants discontinued the study, and all received 2 low-intensity tFUS stimulations administered 20 min apart, in accordance with the study protocol.",
+   "exposures[0].fundamental_frequency_khz": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].timing.pulse_duration_ms": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].timing.duty_cycle_pct": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].timing.sonication_duration_s": "Participants underwent 2 low-intensity tFUS sessions, with a 20-minute interval in between. Each tFUS session consisted of 10 cycles, with each comprising 30 s of sonication followed by a 30-second interval, with a total 10-minute duration. The maximum spatial-peak pulseaverage intensity (ISPPA) was 30 W/cm². The following parameters were used: 500 kHz frequency; 5 ms pulse width; 10 Hz pulse repetition frequency; and 5% duty cycle. Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA). The procedure was guided using a Brainsight neuronavigation system (Rogue Research Inc., Montreal, Canada). The anterior thalamus contralateral to the anatomic region exhibiting pain was selected as the target structure.",
+   "exposures[0].device.manufacturer": "Stimulation was delivered to the frontal region via a 64 mm transducer (NeuroFUS PRO, Brainbox, UK) coupled to the skin with a degassed aqueous gel (Aquaflex, Parker, USA)."
+  },
+  "flags": [
+   {
+    "field": "unspecified_domain.isppa_w_cm2",
+    "reason": "Paper states maximum ISPPA=30 W/cm2 without specifying whether this is a free-field or in-situ/derated value."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper does not mention any auditory-confound control (masking sound, sham tone, etc.)."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Only a single mild transient neck-discomfort event was reported (no serious adverse events); classified as 'observed' rather than 'none_observed'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

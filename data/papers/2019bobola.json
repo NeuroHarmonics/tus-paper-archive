@@ -1,0 +1,175 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019bobola",
+ "doi": "10.1016/j.ultrasmedbio.2019.04.014",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "From January 2017 through March of 2018, we successfully consented and tested 46 healthy, intact volunteers and 22 participants who had amputations all from the greater Seattle area.",
+   "exposures[0].device.model": "Our iFU system (Fig. 1) consisted of a commercial diagnostic ultrasound imaging machine connected to a custom-made iFU stimulation transducer. As in Gelhorn et al. (2015) and Mourad et al. (2018), the iFU transducer had an aperture diameter of 5 cm and a focal length of 4 cm.",
+   "exposures[0].fundamental_frequency_khz": "We chose ultrasound consistent with parameters used in our prior work involving transected nerve stimulation (McClintic et al. 2013; Mourad et al. 2018): a 2 MHz carrier frequency with a pulse of length 0.1 s and with $\\mathrm { { I _ { s p t a } } }$ stimulation values between 5 820 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "We chose ultrasound consistent with parameters used in our prior work involving transected nerve stimulation (McClintic et al. 2013; Mourad et al. 2018): a 2 MHz carrier frequency with a pulse of length 0.1 s and with $\\mathrm { { I _ { s p t a } } }$ stimulation values between 5 820 W/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Abstract—We used diagnostic ultrasound imaging to guide individual bursts (0.1 s) of 2 MHz intense focused ultrasound (iFU) to determine the sensitivity of intact and transected nerves."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "Same 2 MHz iFU protocol was applied to several different nerves (median, sciatic, tibial, peroneal) at both intact and transected sites; represented as one exposure with multiple target terms rather than splitting into near-identical entries."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "5-820 W/cm2 is the overall device/study range (starting ~16 W/cm2, device maximum 820 W/cm2, discussion states 5-820 W/cm2); individual per-nerve mean/median thresholds are study outcomes (see tables), not the applied exposure setting, so were not placed here."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Classified as a single continuous 0.1 s tone burst per trial (repeated as 5 separate bursts at ~0.5-1 Hz inter-trial rate), following the schema's example for an uninterrupted burst with no internal pulsing; PRF/duty cycle fields left null accordingly."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "both_defensible"
+  }
+ },
+ "model_system": [
+  "human_healthy",
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "major limb amputation with transected peripheral nerve(s)",
+ "n_subjects": [
+  46,
+  22
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "verbal report of presence/absence of a discernible sensation (e.g. 'tingly', 'warm') and the iFU intensity threshold (iFU_t) at which it occurred",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Intense focused ultrasound (iFU) stimulation of peripheral nerves evoked discernible sensations (nerve activation); transected nerves and one subgroup of intact contralateral nerves in amputees were more sensitive (lower threshold) than intact nerves of healthy volunteers.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Image-guided iFU stimulation of peripheral nerves (intact and transected)",
+   "target": {
+    "terms": [
+     "median_nerve",
+     "sciatic_nerve",
+     "tibial_nerve",
+     "peroneal_nerve"
+    ],
+    "label": "median, sciatic, tibial and peroneal nerves (intact and transected)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-made iFU stimulation transducer (5 cm aperture, 4 cm focal length), guided by a Philips EPIQ 5 diagnostic imaging system"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     5,
+     820
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "We applied iFU in five individual 0.1-s bursts, at approximately 0.5-1 Hz, to the target nerve, starting from a low intensity (~16 W/cm2) and increasing until a sensation was reported or the device maximum (820 W/cm2) was reached, defining the iFU intensity threshold (iFU_t)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

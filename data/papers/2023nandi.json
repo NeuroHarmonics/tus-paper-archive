@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023nandi",
+ "doi": "10.1016/j.brs.2023.02.004",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fourteen healthy participants (4 female, 31 ± 4.3 years) were included in the study, after excluding three participants due to technical problems.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven at 270 kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700 kPa (spatial peak pulse average intensity without ramping of 16 W/cm<sup>2</sup>) and a focal distance of 43 mm.",
+   "exposures[0].free_field.pressure_kpa": "The transducer was driven at 270 kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700 kPa (spatial peak pulse average intensity without ramping of 16 W/cm<sup>2</sup>) and a focal distance of 43 mm.",
+   "exposures[0].free_field.isppa_w_cm2": "The transducer was driven at 270 kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700 kPa (spatial peak pulse average intensity without ramping of 16 W/cm<sup>2</sup>) and a focal distance of 43 mm.",
+   "exposures[0].timing.pulse_duration_ms": "Ramped pulses (1 ms Tukey ramp, 3.25 ms total pulse duration) were applied at a pulse repetition frequency (PRF) of250 Hz, with a pulse train duration of 300 ms and an effective duty cycle of 50%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ramped pulses (1 ms Tukey ramp, 3.25 ms total pulse duration) were applied at a pulse repetition frequency (PRF) of250 Hz, with a pulse train duration of 300 ms and an effective duty cycle of 50%.",
+   "exposures[0].timing.duty_cycle_pct": "Ramped pulses (1 ms Tukey ramp, 3.25 ms total pulse duration) were applied at a pulse repetition frequency (PRF) of250 Hz, with a pulse train duration of 300 ms and an effective duty cycle of 50%.",
+   "exposures[0].timing.sonication_duration_s": "Ramped pulses (1 ms Tukey ramp, 3.25 ms total pulse duration) were applied at a pulse repetition frequency (PRF) of250 Hz, with a pulse train duration of 300 ms and an effective duty cycle of 50%.",
+   "exposures[0].device.manufacturer": "As described in our previous paper [3], TUS was delivered using a 2-element spherically focusing annular array transducer (H115- 2AA, Sonic Concepts) with a nominal outer aperture diameter and radius of curvature of 64mm."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Paper does not describe the mechanism used to generate sham TUS pulses in this V1 study."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Stated duty cycle (50%) and PRF (250 Hz) imply a 2 ms pulse, but the stated total pulse duration is 3.25 ms (including a 1 ms Tukey ramp); recorded as stated, not recomputed."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Real TUS increased N75 VEP amplitude relative to no-TUS trials, but real vs sham TUS trials were not significantly different, leaving the auditory-confound-free effect unclear."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": null,
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "TUS alone did not evoke potentials in the TUS-only blocks. In the checkerboard blocks, the N75 VEP component amplitude was larger for real TUS than no-TUS trials, but there was no significant difference between real and sham TUS trials directly.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ramped TUS to left V1",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual cortex (V1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115-2AA"
+   },
+   "fundamental_frequency_khz": 270,
+   "free_field": {
+    "pressure_kpa": 700,
+    "isppa_w_cm2": 16,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3.25,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Ramped pulses (1 ms Tukey ramp, 3.25 ms total pulse duration) were applied at a PRF of 250 Hz, with a pulse train duration of 300 ms and an effective duty cycle of 50%. In two TUS-only blocks, real and sham pulses (100 each) were applied randomly at a fixed inter-stimulus interval of 2 s; in two TUS checkerboard blocks, every fourth checkerboard flip (flipped every 0.5 s) was paired with a real or sham TUS trial (100 each), with the TUS trial starting 130 ms (±0-5 ms jitter) before the checkerboard flip."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 81.25,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ]
+}

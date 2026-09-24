@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024deveney",
+ "doi": "10.1016/j.brs.2023.12.007",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "essential_tremor"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 8,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale"
+ ],
+ "readout_other": "Essential Tremor Rating Assessment Scale (TETRAS: ADL and Performance subscales); Global Rating of Change (GRC)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Study assessed clinical tremor severity (TETRAS) and global rating of change, not neurophysiological excitation/inhibition; TETRAS scores decreased (improved) in all 10 patients.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse events or serious adverse events were reported.",
+ "exposures": [
+  {
+   "label": "Vim LIFU for essential tremor",
+   "target": {
+    "terms": [
+     "ventral_intermediate_nucleus"
+    ],
+    "label": "ventral intermediate nucleus of the thalamus (Vim)"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "Pulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.39,
+    "ispta_w_cm2": 0.71973
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 610,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20]."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "All patients enrolled in the open-label study (June 2022–September 2023) presented with a diagnosis of ET. All patients demonstrated a prominent action tremor and no bradykinesia or rigidity. Ten patients $( M _ { a g e } = 7 3 . 6 0$ years old, 4 females) (Supplementary Table 1) were enrolled and completed the study protocol. Concomitant or concurrent interventions were not considered exclusionary.",
+   "n_sessions_per_subject": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].fundamental_frequency_khz": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].unspecified_domain.pressure_kpa": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].timing.pulse_duration_ms": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].timing.duty_cycle_pct": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].timing.sonication_duration_s": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim. Participants underwent eight, 10-min focused ultrasound sessions, prescribed to be completed over the course of one week. Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa. LIFU was administered 30 s on and 30 s off for 10 min as described in Refs. [19,20].",
+   "exposures[0].device.manufacturer": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim.",
+   "exposures[0].device.model": "The study utilized the Brainsonix Pulsar 1002 to deliver lowintensity focused ultrasound pulses to the Vim.",
+   "exposures[0].in_situ.isppa_w_cm2": "Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa.",
+   "exposures[0].in_situ.ispta_w_cm2": "Sonication parameters were set within FDA exposure limits, with a fundamental frequency fixed at 650 kHz, pulse width of 5 ms, duty cycle of 5 %, a pulse repetition frequency of 10 Hz, I<sub>SPPA.3</sub> of 14.39 W/cm2, I<sub>SPTA.3</sub> of 719.73 mW/cm2, Mechanical Index of 0.75 and Peak Negative Pressure of 0.61 MPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Domain of the reported pressure/intensity values (water vs in-brain) is not stated by the paper; recorded as unspecified_domain."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Paper reports only clinical tremor scales (TETRAS, GRC), no neurophysiological measure of excitation/inhibition, so direction could not be assessed."
+   },
+   {
+    "field": "randomised",
+    "reason": "Open-label single-arm design; paper does not use the word randomised, inferred false."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

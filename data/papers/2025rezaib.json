@@ -1,0 +1,194 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025rezaib",
+ "doi": "10.1016/j.brs.2025.10.012",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "clinical_scale",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Glasgow Coma Scale; CT; MR thermometry; acoustic feedback monitoring",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Case report of a safety event; direction of neuromodulation effect on brain activity was not the subject of this report.",
+ "adverse_events": "observed",
+ "safety_notes": "Immediately after the second 90W/300s sonication the participant was found unarousable (GCS E1M5V1); MRI revealed petechial microhemorrhages within and beyond the targeted area, with subsequent hypercapnia, delayed recovery of consciousness, and residual memory/cognitive deficits at 5 months; the pattern was judged suggestive of inertial cavitation.",
+ "exposures": [
+  {
+   "label": "Bilateral NAc FUS neuromodulation (active treatment arm, adverse event case)",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "bilateral nucleus accumbens (NAc)"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "Insightec 220kHz system (Exablate Neuro)"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 0.333,
+    "duty_cycle_pct": 3.3,
+    "sonication_duration_s": 300,
+    "protocol_description": "Each FUS treatment block consisted of bilateral NAc sonication lasting 300 seconds (up to 6 blocks), delivering therapeutic energy up to 100 W, with four individual sub-spots per NAc target treated sequentially at an effective pulse repetition time of 3 seconds. In the reported adverse event, an initial 90 W sonication was halted at 89 seconds by the acoustic feedback safety system; a second 90 W sonication then ran the full 300 seconds without a halt, after which the participant became unarousable."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3.33,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A 44-year-old man with treatment-resistant SUD (Opioid: ~20 years & Methamphetamine ~10 years) with multiple overdoses (~6) and inpatient and outpatient treatment failures consented to participate in the study.",
+   "randomised": "In March 2024 we initiated a randomized double-blind sham controlled clinical trial of NAc FUS for severe SUD (NCT06218706).",
+   "blinding": "In March 2024 we initiated a randomized double-blind sham controlled clinical trial of NAc FUS for severe SUD (NCT06218706).",
+   "sham_type": "He was randomized to the FUS-sham arm of the study which was uneventful, and subsequently had multiple relapses on methamphetamine and cocaine during the 12-week post-sham observation.",
+   "adverse_events": "Immediately post-sonication, the participant was found to be unarousable (GCS score-E1M5V1) with symmetric motor response.",
+   "safety_notes": "MRI revealed petechial microhemorrhages both within and outside the targeted area, but no overt intracranial parenchymal hematoma.",
+   "exposures[0].target.label": "He was randomized to the FUS-sham arm of the study which was uneventful, and subsequently had multiple relapses on methamphetamine and cocaine during the 12-week post-sham observation.",
+   "exposures[0].device.family": "Our published protocol [3,8] uses the Insightec 220kHz system with MR-thermometry to monitor temperature.",
+   "exposures[0].device.manufacturer": "Our published protocol [3,8] uses the Insightec 220kHz system with MR-thermometry to monitor temperature.",
+   "exposures[0].device.model": "Our published protocol [3,8] uses the Insightec 220kHz system with MR-thermometry to monitor temperature.",
+   "exposures[0].fundamental_frequency_khz": "Our team has been investigating the safety, feasibility, and efficacy of NAc FUS neuromodulation for addiction (35-patients) and Alzheimer’s (3-patients) since 2021 using the Exablate Neuro 220 KHz device (Insightec; Israel) [3,4,8].",
+   "exposures[0].timing.pulse_duration_ms": "Each FUS treatment block consisted of bilateral NAc sonication lasting 300 seconds (up to 6 blocks), delivering therapeutic energy up to 100W (acoustic transmitted power by system’s transducer) with a pulse duration 100 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each NAc target comprised of four individual sub-spots that were treated sequentially at an effective pulse repetition time of 3 seconds and 3.3 % duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "Each NAc target comprised of four individual sub-spots that were treated sequentially at an effective pulse repetition time of 3 seconds and 3.3 % duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "Each FUS treatment block consisted of bilateral NAc sonication lasting 300 seconds (up to 6 blocks), delivering therapeutic energy up to 100W (acoustic transmitted power by system’s transducer) with a pulse duration 100 ms.",
+   "n_sessions_per_subject": "On the morning of the active procedure, the participant underwent routine assessments, a negative urine drug screen, and sedation (propofol and dexmedetomidine) prior to stereotactic headframe placement."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Paper explicitly states pressure and intensity values are proprietary to the manufacturer and not disclosed: 'Technical information regarding pressure intensities and mechanical index are unique and proprietary to Insightec.'"
+   },
+   {
+    "field": "sham_type",
+    "reason": "The mechanism of the sham condition is not described in this letter; recorded as 'other'."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF derived by converting the stated effective pulse repetition time (3 seconds) to Hz (1/3 = 0.333 Hz), consistent with the stated 3.3% duty cycle and 100 ms pulse duration."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

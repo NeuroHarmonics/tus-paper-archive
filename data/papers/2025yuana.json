@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025yuana",
+ "doi": "10.1002/jnr.70100",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 30,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Electrocorticography (ECoG) recorded from a surface electrode over the C2 barrel column (S1BF); peak amplitude, peak latency, and power spectral density (alpha/beta band) analysis",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Ultrasound preceding whisker stimulation by 25 ms significantly enhanced subsequent whisker-evoked cortical response amplitude and alpha/beta power (facilitation), whereas whisker stimulation preceding ultrasound by 10 ms significantly suppressed the ultrasound-evoked response; no facilitation/suppression was seen at 100 ms, indicating a temporally specific bidirectional excitability window.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of C2 barrel column (frequency and whisker-timing paradigm)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "C2 barrel column, primary somatosensory cortex (S1BF)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Siansonic Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": [
+    1000,
+    2000,
+    4000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.7
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 2,
+    "protocol_description": "A craniotomy was performed and the skull removed so that ultrasound was delivered directly onto the exposed dura via coupling gel. Three ultrasound frequencies (1, 2, 4 MHz) were tested in each animal with intensity and PRF held constant. Ultrasound was combined with whisker stimulation in whisker-ultrasound (W-U) and ultrasound-whisker (U-W) sequences at inter-stimulus intervals of 10, 25, and 100 ms. Each stimulation session lasted 2 s, with 100 continuous stimulations per condition, a 3-min inter-sequence interval, and a 1-h rest between different ultrasound frequencies in the same animal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "This study used 30 adult male Sprague–Dawley (SD) healthy rats, weighing 250–350g.",
+   "exposures[0].target.label": "This placement targeted the center of the C2 barrel column within the primary somatosensory cortex (S1BF).",
+   "exposures[0].fundamental_frequency_khz": "We designed a temporally shifted sensory paradigm to test how ultrasound frequency (1, 2, and 4 MHz), inter-stimulus interval (10, 25, and 100 ms), and stimulation order (ultrasound–whisker vs. whisker–ultrasound) affect cortical responses in the rat barrel cortex.",
+   "exposures[0].device.manufacturer": "The ultrasound system used in this study included a HIFU ultrasound transducer, manufactured by Siansonic Inc., Xi'an, China.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "In compliance with regulatory safety thresholds, the ultrasonic neuromodulation protocol employed a spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ of 700mW/ cm<sup>2</sup>, approximately 97% of the FDA-mandated diagnostic ultrasound limit (720mW/cm<sup>2</sup>).",
+   "exposures[0].timing.pulse_duration_ms": "During the experiment, we kept the ultrasound stimulation intensity and pulse repetition frequency (500 Hz) constant to ensure uniform ultrasound intensity across all experimental conditions. Each ultrasound pulse had a duration of 100 μs to maintain consistency in the stimulation.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "During the experiment, we kept the ultrasound stimulation intensity and pulse repetition frequency (500 Hz) constant to ensure uniform ultrasound intensity across all experimental conditions. Each ultrasound pulse had a duration of 100 μs to maintain consistency in the stimulation.",
+   "exposures[0].timing.sonication_duration_s": "Each stimulation session maintained 2 s, and a total of 100 continuous stimulations were administered to ensure the reproducibility of the experiment.",
+   "n_sessions_per_subject": "To minimize the cumulative neural effects of different ultrasound frequencies within the same rat, a 1-h rest interval was set between stimulations of each frequency."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each animal underwent a single terminal craniotomy experiment covering all frequency/interval conditions, but the paper does not explicitly state a number of sessions per animal."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not explicitly stated; only PRF (500 Hz) and pulse duration (100 µs) are given, which would allow computation (5%) but this was not done per the no-arithmetic rule."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Domain of the reported Ispta (700 mW/cm2) is not stated as free-field or in-situ; ultrasound is applied directly onto the exposed dura (craniotomy) via gel, with no skull path, but the paper does not label the measurement domain."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham/placebo ultrasound condition was used; whisker-only and ultrasound-only conditions served as unimodal reference comparators, not an inactive-device sham."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

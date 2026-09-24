@@ -1,0 +1,409 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026davidson",
+ "doi": "10.1016/j.brs.2026.103198",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "Resting-state fMRI sliding-window ROI-to-ROI connectivity among SCC, vmPFC and rACC; seed-to-brain connectivity; regional homogeneity (ReHo), amplitude of low-frequency fluctuations (ALFF) and fractional-ALFF (fALFF); mood, anxiety and quality-of-life scales; structural MRI for safety",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Active sonication produced a larger acute reduction in between-target (SCC-vmPFC-rACC) functional connectivity than sham approximately 1 hour post-treatment (Δr=-0.21, p<0.001), with return toward baseline by 24 hours; no clinical improvement in mood, anxiety or quality-of-life was observed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse events occurred, including sustained or clinically-significant worsening mood or anxiety, hypomanic symptoms, or structural MRI changes. The participant could not distinguish active from sham.",
+ "exposures": [
+  {
+   "label": "LIFU to subcallosal cingulate cortex (SCC), bilateral",
+   "target": {
+    "terms": [
+     "subgenual_anterior_cingulate_cortex"
+    ],
+    "label": "subcallosal cingulate cortex (SCC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "clinical-prototype transmit/receive sparse hemispherical phased array (4096 transmit elements at 258 kHz, 256 receive elements at 129 kHz)"
+   },
+   "fundamental_frequency_khz": 258,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": [
+     0.45,
+     0.5
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 400,
+    "protocol_description": "Six treatment volumes were selected: bilateral SCC, vmPFC, and rostral anterior cingulate cortex (rACC), sonicated sequentially within a single session. Active and defocused sham sonications were performed 4 weeks apart under maintained blinding; only LIFU operators knew allocation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LIFU to ventromedial prefrontal cortex (vmPFC), bilateral",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "ventromedial prefrontal cortex (vmPFC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "clinical-prototype transmit/receive sparse hemispherical phased array (4096 transmit elements at 258 kHz, 256 receive elements at 129 kHz)"
+   },
+   "fundamental_frequency_khz": 258,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": [
+     0.45,
+     0.5
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 400,
+    "protocol_description": "Six treatment volumes were selected: bilateral SCC, vmPFC, and rostral anterior cingulate cortex (rACC), sonicated sequentially within a single session. Active and defocused sham sonications were performed 4 weeks apart under maintained blinding; only LIFU operators knew allocation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LIFU to rostral anterior cingulate cortex (rACC), bilateral",
+   "target": {
+    "terms": [
+     "pregenual_anterior_cingulate_cortex"
+    ],
+    "label": "rostral anterior cingulate cortex (rACC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "clinical-prototype transmit/receive sparse hemispherical phased array (4096 transmit elements at 258 kHz, 256 receive elements at 129 kHz)"
+   },
+   "fundamental_frequency_khz": 258,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": [
+     0.45,
+     0.5
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 400,
+    "protocol_description": "Six treatment volumes were selected: bilateral SCC, vmPFC, and rostral anterior cingulate cortex (rACC), sonicated sequentially within a single session. Active and defocused sham sonications were performed 4 weeks apart under maintained blinding; only LIFU operators knew allocation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[1].fundamental_frequency_khz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[2].fundamental_frequency_khz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[0].in_situ.pressure_kpa": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[1].in_situ.pressure_kpa": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[2].in_situ.pressure_kpa": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[0].timing.pulse_duration_ms": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[1].timing.pulse_duration_ms": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[2].timing.pulse_duration_ms": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[0].timing.sonication_duration_s": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[1].timing.sonication_duration_s": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "exposures[2].timing.sonication_duration_s": "Sonication parameters were 258 kHz, CT-simulation-estimated target-wise mean estimated in-situ spatial-peak temporal-peak pressure of 0.5 MPa, 50-ms pulses, 0.45-0.50 Hz pulse-repetition frequency, and 400 s treatment per volume.",
+   "n_subjects": "We conducted a prospective randomized, blinded, active-versus-sham LIFU study in a 39- year-old man with TRD who had previously trialed multiple medications, psychotherapy, repetitive transcranial magnetic stimulation, electroconvulsive therapy, and ketamine (additional information in Supplement Material).",
+   "n_sessions_per_subject": "Active and defocused sham sonications were performed 4 weeks apart under maintained blinding; only LIFU operators knew allocation.",
+   "exposures[0].device.model": "The clinical-prototype transmit/receive sparse hemispherical array comprised 4096 transmit elements (258 kHz) and 256 receive elements (129 kHz), with stereotactic fixation, MRI/CT coregistration, CT-based aberration correction, electronic steering across volumes, and acoustic monitoring (10).",
+   "exposures[1].device.model": "The clinical-prototype transmit/receive sparse hemispherical array comprised 4096 transmit elements (258 kHz) and 256 receive elements (129 kHz), with stereotactic fixation, MRI/CT coregistration, CT-based aberration correction, electronic steering across volumes, and acoustic monitoring (10).",
+   "exposures[2].device.model": "The clinical-prototype transmit/receive sparse hemispherical array comprised 4096 transmit elements (258 kHz) and 256 receive elements (129 kHz), with stereotactic fixation, MRI/CT coregistration, CT-based aberration correction, electronic steering across volumes, and acoustic monitoring (10)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "The 0.5 MPa value is described as a 'target-wise mean' CT-simulation-estimated in-situ pressure across the treated volumes, not a separate value per target; applied identically to all three target exposures (SCC, vmPFC, rACC) because the paper does not break the pressure down by individual target."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is stated as a range (0.45-0.50 Hz), recorded as a two-element list per the range convention."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "This is a single-subject case study (n=1 patient)."
+   },
+   {
+    "field": "blinding",
+    "reason": "Text states 'only LIFU operators knew allocation', implying both participant and other assessors were blinded; classified as double-blind."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  }
+ }
+}

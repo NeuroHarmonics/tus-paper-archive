@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019vionbailly",
+ "doi": "10.1038/s41598-019-50147-7",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "Lumbricus terrestris (earthworm)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 84,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "electrophysiological recording of action potentials in giant axons (MGF/LGF) via inserted electrodes in the ventral nerve cord",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Pulsed focused ultrasound repeatedly triggered generation of action potentials (APs) in the earthworm's giant axons (MGF or LGF, depending on stimulation site); success rate and number of APs per response tended to increase with increasing PRF, pulse duration and pulse amplitude.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ventral nerve cord ultrasound neurostimulation (LEUS)",
+   "target": {
+    "terms": [
+     "earthworm_neurons"
+    ],
+    "label": "ventral nerve cord (medial and lateral giant fibers) of the earthworm, exposed at the anterior, medial, or posterior third of the body"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Ferroperm",
+    "model": "PZ28"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": [
+     2500,
+     7300
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.16,
+     1.05
+    ],
+    "pulse_repetition_frequency_hz": [
+     25,
+     125
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "The main ultrasound sequences used in this study consisted of a series of pulsed ultrasound bursts (f=1.1 MHz, Ncycles=175, PRF=125 Hz, Npulses=20). PRF was compared between 25 Hz and 125 Hz across trials (n=6) to assess success rate, and pulse duration (Ncycles=175-1150, i.e. ~0.16-1.05 ms) and pressure amplitude (2.5-7.3 MPa) were swept to identify response thresholds."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Focused ultrasound can repeatedly trigger the generation of APs in earthworm giant axons. Of the animals tested (n = 84), 92% presented a responsive nervous system after anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation. A mono-element spherically focused piezoelectric transducer (PZ28, Ferroperm, Kvistgaard, Denmark) presenting a central frequency of 1.1 MHz and a radius of curvature of 50 mm was used.",
+   "exposures[0].free_field.pressure_kpa": "The levels of pressure amplitudes applied with LEUS exposures ranged from 2.5 to 7.3 MPa in degassed water.",
+   "exposures[0].timing.pulse_duration_ms": "No neural response could be observed below a pressure amplitude $P _ { A } { = } 4 . 0 \\mathrm { M P a }$ in the range of pulse durations between 0.16 and 1.05 ms $( N _ { c y c l e s } = 1 7 5 \\mathrm { - } 1 1 \\bar { 5 } 0 )$ ).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The efect of the pulse repetition frequency (PRF) on the success rate was investigated by alternatively administering, to a given animal, two types of pulsed LEUS stimuli, with respective PRFs of 25 and 125 Hz.",
+   "exposures[0].device.manufacturer": "A mono-element spherically focused piezoelectric transducer (PZ28, Ferroperm, Kvistgaard, Denmark) presenting a central frequency of 1.1 MHz and a radius of curvature of 50 mm was used.",
+   "exposures[0].device.model": "A mono-element spherically focused piezoelectric transducer (PZ28, Ferroperm, Kvistgaard, Denmark) presenting a central frequency of 1.1 MHz and a radius of curvature of 50 mm was used."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Earthworm ventral nerve cord / giant fibers have no dedicated target id in the vocabulary; classified as 'other'."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper reports N_cycles, PRF and N_pulses per burst but never states a duty cycle percentage; not computed here."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper describes bursts of N_pulses=20 at a given PRF but does not state a total burst/train duration in seconds; not computed here."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each earthworm underwent a variable, undefined number of LEUS bursts/trials over a single extended session (30 min to several hours); no discrete session count is stated."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Ultrasound was delivered through a thin water layer directly onto the earthworm body (in vivo tissue path) but no derated/measured in-situ pressure or intensity at the nerve is reported; only the free-field water pressure is given."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

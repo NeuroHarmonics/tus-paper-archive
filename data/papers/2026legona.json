@@ -1,0 +1,433 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026legona",
+ "doi": "10.1016/j.ynpai.2026.100220",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "Contact heat evoked potentials (CHEP) N2-P2 peak-to-peak amplitude at Cz (paired-pulse S1/S2, sensory-gating S2/S1 ratio); 0-10 numerical pain rating scale for S2",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU to posterior insula (PI) and anterior midcingulate cortex (aMCC) reduced the S2 CHEP peak-to-peak amplitude and subjective pain ratings relative to sham; only PI neuromodulation also enhanced sensory gating (reduced S2/S1 ratio by ~28%). LIFU to anterior insula (AI) had no significant effect on any measure.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Across all visits, no moderate or severe adverse events were reported. The most frequently reported symptoms were sleepiness, headache, and anxiousness, though reports were mild and not specific to stimulation site or timing (see Fig. S2).",
+ "exposures": [
+  {
+   "label": "AI (dorsal anterior insula)",
+   "target": {
+    "terms": [
+     "anterior_insula"
+    ],
+    "label": "dorsal anterior insula (dAI)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 2.5,
+    "protocol_description": "Each trial consisted of a 2.5 s pulse train (N=2500 pulses at 1 kHz PRF; pulse width 300 microseconds; duty cycle 30%), time-locked to begin 500 ms before the first heat stimulus (S1) and end 2 s afterwards, so LIFU was on during both S1 and S2; 500 kHz sine carrier gated by a 1 kHz signal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "PI (posterior insula)",
+   "target": {
+    "terms": [
+     "posterior_insula"
+    ],
+    "label": "posterior insula (PI)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 2.5,
+    "protocol_description": "Each trial consisted of a 2.5 s pulse train (N=2500 pulses at 1 kHz PRF; pulse width 300 microseconds; duty cycle 30%), time-locked to begin 500 ms before the first heat stimulus (S1) and end 2 s afterwards, so LIFU was on during both S1 and S2; 500 kHz sine carrier gated by a 1 kHz signal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "aMCC (anterior midcingulate cortex)",
+   "target": {
+    "terms": [
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "anterior midcingulate cortex (aMCC)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "H-104 (500 kHz center frequency; aperture 64 mm; focal length 52 mm from exit plane)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 2.5,
+    "protocol_description": "Each trial consisted of a 2.5 s pulse train (N=2500 pulses at 1 kHz PRF; pulse width 300 microseconds; duty cycle 30%), time-locked to begin 500 ms before the first heat stimulus (S1) and end 2 s afterwards, so LIFU was on during both S1 and S2; 500 kHz sine carrier gated by a 1 kHz signal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 12 healthy volunteers (mean age: 33 ± 13 years; range = 21–61 years; 8 female, 4 male) provided written informed consent and received financial compensation for their participation.",
+   "randomised": "In visits 2 through 5, participants received LIFU targeted to one of three brain targets: the AI, PI, or aMCC, or an active Sham condition. Intervention order was randomized and counterbalanced across participants, with the Sham condition randomly assigned to either the AI, PI, or aMCC site (Fig. 1A).",
+   "blinding": "This study used a single-blind, active sham-controlled crossover design conducted over five visits on separate days, with a minimum interval of two days between visits.",
+   "n_sessions_per_subject": "In visits 2 through 5, participants received LIFU targeted to one of three brain targets: the AI, PI, or aMCC, or an active Sham condition. Intervention order was randomized and counterbalanced across participants, with the Sham condition randomly assigned to either the AI, PI, or aMCC site (Fig. 1A).",
+   "adverse_events": "Across all visits, no moderate or severe adverse events were reported. The most frequently reported symptoms were sleepiness, headache, and anxiousness, though reports were mild and not specific to stimulation site or timing (see Fig. S2).",
+   "exposures[0].fundamental_frequency_khz": "Channel 2 produced a 500 kHz sine carrier.",
+   "exposures[1].fundamental_frequency_khz": "Channel 2 produced a 500 kHz sine carrier.",
+   "exposures[2].fundamental_frequency_khz": "Channel 2 produced a 500 kHz sine carrier.",
+   "exposures[0].timing.pulse_duration_ms": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[1].timing.pulse_duration_ms": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[2].timing.pulse_duration_ms": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[0].timing.duty_cycle_pct": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[1].timing.duty_cycle_pct": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[2].timing.duty_cycle_pct": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[0].timing.sonication_duration_s": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[1].timing.sonication_duration_s": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[2].timing.sonication_duration_s": "Each trial consisted of a 2.5 s pulse train (N = 2500 pulses at 1 kHz PRF; pulse width = 300 μs; duty cycle = 30%), time-locked to begin 500 ms prior to the S1 heat stimulus onset and end 2 s afterwards so that LIFU was on during the generation of both S1 and S2 (Fig. 1B).",
+   "exposures[0].device.manufacturer": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA).",
+   "exposures[0].device.model": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA).",
+   "exposures[1].device.manufacturer": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA).",
+   "exposures[1].device.model": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA).",
+   "exposures[2].device.manufacturer": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA).",
+   "exposures[2].device.model": "For the left insula (dorsal (dAI), PI) we used an H-281 (500 kHz center frequency; active diameter 45.0 mm; geometric focus 45.0 mm; focal depth from exit plane 38.0 mm) (Sonic Concepts, Bothell, WA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[2].target.terms",
+    "reason": "Paper's own term is 'anterior midcingulate cortex (aMCC)', a Vogt-terminology region not separately enumerated in the target vocabulary; mapped to the closest listed term, dorsal_anterior_cingulate_cortex (dACC/BA24), which may not be an exact anatomical match."
+   },
+   {
+    "field": "exposures[*].in_situ.pressure_kpa",
+    "reason": "Individual-participant acoustic simulation results (k-Wave) are shown only as figure colour maps in kPa (Fig. 2), with no numeric intracranial pressure stated in the main text."
+   },
+   {
+    "field": "exposures[*].free_field.pressure_kpa",
+    "reason": "Empirical water-tank pressure measurements were used to calibrate stimulation but no numeric free-field pressure (kPa) value is given in the main text; a conservative 750 kPa 'outside the skull' value is used only for a separate thermal-safety simulation, not as the applied free-field pressure, so it was not used here."
+   },
+   {
+    "field": "blinding",
+    "reason": "Abstract/Methods label the design 'single-blind', but Section 2.4.1 states both participants and the data-analysis team were blinded to condition; recorded as 'single' per the paper's own explicit label, but this may understate the blinding actually achieved."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "4 refers to the four LIFU intervention visits (AI, PI, aMCC, Sham); an additional non-stimulation MRI/CT visit (Visit 1) is not counted."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Three active exposures (AI, PI, aMCC) share identical LIFU frequency and pulse timing; only anatomical target and transducer model differ. Sham (attenuator-blocked beam) is not treated as a fourth exposure per protocol. direction_of_effect classified as 'inhibitory' as the dominant significant pattern (PI, aMCC); AI showed no significant effect (see direction_notes).",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  }
+ }
+}

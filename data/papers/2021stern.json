@@ -1,0 +1,254 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021stern",
+ "doi": "10.1016/j.brs.2021.06.003",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "Rey Auditory Verbal Learning Test (RAVLT); Rey-Osterrieth Complex Figure Test (ROCFT); Brief Visuospatial Memory Test-Revised (BVMT-R); Taylor Complex Figure Test (TCFT); TUNEL, H&E and vanadium acid fuchsin (VAF)/toluidine blue histology of resected tissue",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Neuropsychological testing showed no significant change on most measures, but a small, statistically significant decline in RAVLT (verbal memory) scores pretest-to-posttest was seen for Group B; histology in 7/8 participants showed no damage, while one participant had inconclusive acidophilic-neuron/extravasation findings of unclear cause (possibly surgical artifact).",
+ "adverse_events": "observed",
+ "safety_notes": "No significant histopathologic damage was detected by TUNEL, H&E or VAF/toluidine blue staining in 7 of 8 participants; one participant (BX08) had acidophilic neurons and extravasation in both sonicated and non-sonicated tissue, of unclear/inconclusive relation to tFUS since the non-sonicated tissue was also damaged during resection. Neuropsychological testing showed a significant but slight decline in RAVLT scores pretest-to-posttest for Group B.",
+ "exposures": [
+  {
+   "label": "tFUS to anterior temporal lobe prior to resection; 'activation' (50% duty) and 'suppression' (5% duty) pulsing paradigms",
+   "target": {
+    "terms": [
+     "temporal_lobe"
+    ],
+    "label": "anterior temporal lobe"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix Inc.",
+    "model": "BX Pulsar"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": [
+     140,
+     1985
+    ],
+    "isppa_w_cm2": [
+     0.66,
+     152.1
+    ],
+    "ispta_w_cm2": [
+     0.33,
+     7.607
+    ]
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     110,
+     1727
+    ],
+    "isppa_w_cm2": [
+     0.5,
+     115.2
+    ],
+    "ispta_w_cm2": [
+     0.25,
+     5.76
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     2,
+     0.5
+    ],
+    "pulse_repetition_frequency_hz": [
+     250,
+     100
+    ],
+    "duty_cycle_pct": [
+     50,
+     5
+    ],
+    "sonication_duration_s": [
+     0.5,
+     30
+    ],
+    "protocol_description": "Two pulsing paradigms, classified as 'activation' (50% duty cycle, 8 sonications of 0.5 s, 2 ms pulse width, 250 Hz PRF) and 'suppression' (5% duty cycle, 2 sonications of 30 s, 0.5 ms pulse width, 100 Hz PRF), were delivered to the anterior temporal lobe under MRI guidance concurrently with T2*-weighted BOLD imaging, at least one day before scheduled resective surgery. Initial delivery was limited to a derated ISPTA of 720 mW/cm2 (Group A, BX01/BX02), with later participants (Group B, BX03/04/05/08; Group C, BX07) receiving up to a derated ISPTA of 5760 mW/cm2. One participant (BX07) did not receive the suppression paradigm."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Overall, eight patients were referred to the study from the UCLA Seizure Disorders Center after being scheduled for an anteriormesial temporal lobe resection as treatment for medicationresistant temporal lobe epilepsy.",
+   "n_sessions_per_subject": "We administered tFUS, with MRI guidance, to the temporal region on the side scheduled for resective surgery, within the anterior temporal lobe.",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency was 650 kHz in both instances.",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td></td><td>Sonication Duration (s)</td><td>Number of Sonications</td><td>Pulse Width (ms)</td><td>Pulse Repetition Frequency (Hz)</td><td>Duty Cycle</td></tr><tr><td>Activation</td><td>0.5</td><td>8</td><td>2</td><td>250</td><td>50%</td></tr><tr><td>Suppression</td><td>30</td><td>2</td><td>0.5</td><td>100</td><td>5%</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td></td><td>Sonication Duration (s)</td><td>Number of Sonications</td><td>Pulse Width (ms)</td><td>Pulse Repetition Frequency (Hz)</td><td>Duty Cycle</td></tr><tr><td>Activation</td><td>0.5</td><td>8</td><td>2</td><td>250</td><td>50%</td></tr><tr><td>Suppression</td><td>30</td><td>2</td><td>0.5</td><td>100</td><td>5%</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td></td><td>Sonication Duration (s)</td><td>Number of Sonications</td><td>Pulse Width (ms)</td><td>Pulse Repetition Frequency (Hz)</td><td>Duty Cycle</td></tr><tr><td>Activation</td><td>0.5</td><td>8</td><td>2</td><td>250</td><td>50%</td></tr><tr><td>Suppression</td><td>30</td><td>2</td><td>0.5</td><td>100</td><td>5%</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "<table><tr><td></td><td>Sonication Duration (s)</td><td>Number of Sonications</td><td>Pulse Width (ms)</td><td>Pulse Repetition Frequency (Hz)</td><td>Duty Cycle</td></tr><tr><td>Activation</td><td>0.5</td><td>8</td><td>2</td><td>250</td><td>50%</td></tr><tr><td>Suppression</td><td>30</td><td>2</td><td>0.5</td><td>100</td><td>5%</td></tr></table>",
+   "exposures[0].device.manufacturer": "Using the BrainSonix Pulsar 1002, tFUS was delivered under MR guidance, using the Siemens Magnetom 3T Prisma scanner.",
+   "exposures[0].free_field.pressure_kpa": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>",
+   "exposures[0].free_field.isppa_w_cm2": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>",
+   "exposures[0].free_field.ispta_w_cm2": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>",
+   "exposures[0].in_situ.pressure_kpa": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td>951</td><td>720</td><td>0.702</td><td>0.611</td><td>19.0</td><td>14.4</td><td></td><td>0.75</td><td>0.36</td><td>330</td><td>250</td><td>0.14</td><td>0.11</td><td>0.66</td><td>0.50</td><td>0.14</td><td>0.12</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "0.72 and 5.76 W/cm2 are the two derated ISPTA safety-limit tiers used across participant groups (Group A vs Groups B/C), not a stated continuous range; represented as a two-element list to capture the dose escalation across the study."
+   },
+   {
+    "field": "exposures[0].free_field.*, exposures[0].in_situ.pressure_kpa, exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Table 2 ('Ultrasound exposure values') gives detailed per-participant-group, per-dose-level ISPTA, Pr, ISPPA, MI and TIC values for the 5% and 50% duty-factor conditions, but the extracted table markup is garbled/misaligned (merged cells, ambiguous row-to-value correspondence); these more granular acoustic values were not extracted to avoid mis-assigning numbers to the wrong column."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study was designed primarily as a safety/feasibility study; the only functional readout (neuropsychological testing) showed an inconsistent pattern (mostly null, one significant decline) so direction is coded as mixed_or_unclear rather than inhibitory/excitatory."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Histology in one of eight participants (BX08) showed acidophilic neurons/extravasation, but the paper states this finding is inconclusive because the non-sonicated control tissue from the same participant was also damaged (likely by the resection procedure itself)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "neither",
+   "exposures[0].free_field.isppa_w_cm2": "neither",
+   "exposures[0].free_field.ispta_w_cm2": "neither",
+   "exposures[0].in_situ.pressure_kpa": "neither",
+   "exposures[0].in_situ.isppa_w_cm2": "neither",
+   "exposures[0].in_situ.ispta_w_cm2": "neither"
+  }
+ }
+}

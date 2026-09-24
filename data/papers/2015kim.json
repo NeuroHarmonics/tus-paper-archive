@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2015kim",
+ "doi": "10.1097/wnr.0000000000000330",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 24,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Visual-evoked potential (P1-N1) magnitude elicited by stroboscopic light stimulation",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "3 W/cm2 ISPPA at a 5% duty cycle suppressed the VEP during sonication; a higher intensity (5 W/cm2) or a higher duty cycle (8.3%) instead produced a slight excitatory increase in VEP magnitude that persisted into the post-sonication period.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The maximum MI used (0.75) was much lower than the FDA diagnostic-ultrasound limit of 1.9.",
+ "exposures": [
+  {
+   "label": "Pulsed FUS to visual cortex, varying acoustic intensity and duty cycle (350 kHz)",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "visual cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Channel Industries",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     1,
+     3,
+     5
+    ],
+    "ispta_w_cm2": [
+     0.03,
+     0.05,
+     0.25
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": [
+     100,
+     20,
+     166
+    ],
+    "duty_cycle_pct": [
+     5,
+     1,
+     8.3
+    ],
+    "sonication_duration_s": 150,
+    "protocol_description": "VEPs (to strobe light) were sampled nine times every 150 s: three presonication baselines (B1-B3), one 150-s sonication period (S), and five recovery periods (R1-R5). A fixed 0.5-ms tone-burst duration was used throughout. Three ISPPA levels (1, 3, 5 W/cm2) were tested at a fixed 5% duty cycle (100 Hz PRF); two further duty cycles (1% at 20 Hz PRF, 8.3% at 166 Hz PRF) were tested at a fixed 3 W/cm2 ISPPA. A no-sonication control group (n=8) was also run. Repeated sonication sessions were conducted on the same 24 animals on different days, each with a different parameter set."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Sprague–Dawley rats (all male, n = 24) were anesthetized through an intraperitoneal injection of a ketamine : xylazine mixture at 80 : 10 mg/kg before sonication.",
+   "exposures[0].fundamental_frequency_khz": "An air-backed, segmented spherical FUS transducer (Channel Industries, Santa Barbara, California, USA), which has an operating frequency of 350 kHz, was mounted to an articulated arm.",
+   "exposures[0].timing.pulse_duration_ms": "The range of sonication parameters included the pulsing parameter that previously showed suppressive effects on rabbits [5] and rats [12] – that is, a tone-burst duration of 0.5 ms and a pulse-repetition frequency of 100 Hz (thus operating at 5% duty cycle). To examine the effects of various acoustic intensities, three different spatial-peak pulse-average intensities $( I _ { \\mathrm { s p p a } } ) \\ : \\mathrm { ~ - ~ } \\mathrm { t h a t ~ } \\mathrm { i s , } \\ : 1 , \\ : 3 ,$ and $5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ( n = 1 0 , 9 ,$ , and 9, respectively) – were used at a fixed tone-burst duration of 0.5 ms, at a 100 Hz pulserepetition frequency (i.e. 5% duty cycle).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Next, the roles of different duty cycles (1 and 8.3%; $n = 1 0$ and 9, respectively) in modulating the magnitude of the VEP were examined by adopting two different pulserepetition frequencies (20 and 166 Hz), while maintaining the same acoustic intensity of $3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p p a } } ,$ with a tone-burst duration of 0.5 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Next, the roles of different duty cycles (1 and 8.3%; $n = 1 0$ and 9, respectively) in modulating the magnitude of the VEP were examined by adopting two different pulserepetition frequencies (20 and 166 Hz), while maintaining the same acoustic intensity of $3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p p a } } ,$ with a tone-burst duration of 0.5 ms.",
+   "exposures[0].timing.sonication_duration_s": "The sonication duration was set to the same duration as the VEP measurement segment (indicated as ‘S’ in Fig. 1c, i.e. 150 s).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "To examine the effects of various acoustic intensities, three different spatial-peak pulse-average intensities $( I _ { \\mathrm { s p p a } } ) \\ : \\mathrm { ~ - ~ } \\mathrm { t h a t ~ } \\mathrm { i s , } \\ : 1 , \\ : 3 ,$ and $5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ( n = 1 0 , 9 ,$ , and 9, respectively) – were used at a fixed tone-burst duration of 0.5 ms, at a 100 Hz pulserepetition frequency (i.e. 5% duty cycle).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "When the FUS was administered below a certain degree of temporally averaged acoustic intensity (i.e. 30 and $5 0 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p t a } } ,$ resulting from the use of $3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p p a } }$ at a 1% duty cycle and $1 \\mathrm { W / c m } ^ { 2 } I _ { \\mathrm { s p p a } }$ at a 5% duty cycle, respectively), the VEP was not affected by the sonication.",
+   "exposures[0].device.manufacturer": "An air-backed, segmented spherical FUS transducer (Channel Industries, Santa Barbara, California, USA), which has an operating frequency of 350 kHz, was mounted to an articulated arm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain of the reported intensities is unclear: the acoustic field was 'characterized in an ex-vivo setup' using a hydrophone, which does not clearly state whether this was a free-field (water tank) or through-tissue/through-skull measurement; recorded as unspecified domain rather than assumed free-field."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Same domain ambiguity as ISPPA above. Values combine the 30 and 50 mW/cm2 ISPTA figures (from 3 W/cm2 x1% duty and 1 W/cm2 x5% duty) with the separately stated maximum of 250 mW/cm2 ISPTA (5 W/cm2 x5% duty)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper states 'repeated sonication sessions on the same animal ... each session ... performed on different days with different sonication parameter sets' but never gives a fixed number of sessions per animal; group sizes per parameter condition (n=10,9,9 for intensities; n=10,9 for duty cycles; n=8 control) suggest not every animal received every condition."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The paper describes only 'a control experiment ... under identical experimental conditions as the FUS experiment, but without any sonication (n=8)'; it does not explicitly state whether the transducer remained in place powered off. Classified as inactive_transducer as the closest vocabulary match."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.ispta_w_cm2": "first"
+  }
+ }
+}

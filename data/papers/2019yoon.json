@@ -1,0 +1,590 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019yoon",
+ "doi": "10.1371/journal.pone.0224311",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "sheep (Ovis aries, Polypay breed)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "other_mri",
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "EMG (bilateral gastrocnemius) response rate/latency for excitatory FUS; EEG somatosensory evoked potential (SEP, P50-N40 magnitude) for suppressive FUS; post-sonication contrast-enhanced structural MRI for BBB disruption/tissue damage; H&E, VAF-toluidine blue, GFAP and caspase-3 histology; post-sonication behavioural monitoring",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Pulsed excitatory FUS (especially 70% duty cycle, 0.5 ms tone-burst duration) to M1 or thalamus elicited contralateral hind-limb EMG responses (maximum response rate 12.4% with EP17); continuous-wave (100% DC) excitatory sonication gave the lowest response rates. Low-duty-cycle (3-5%) suppressive FUS (SP1, SP3; 0.5 ms tone-burst duration) to S1 or thalamus reversibly reduced somatosensory evoked potential (SEP) magnitude by 18-35%, recovering within ~5 min after sonication.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No epileptographic EEG features were observed before or after FUS; neither anatomical nor contrast-enhanced MRI revealed gross tissue damage or BBB disruption; no histological signs of tissue damage (H&E, VAF-toluidine blue, caspase-3, GFAP) were detected; all sheep showed normal post-sonication behaviour without loss of appetite or weight loss across survival periods up to 2 months.",
+ "exposures": [
+  {
+   "label": "M1 excitatory sonication (parameter sets EP1-EP30)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 (primary motor area, right hind limb representation)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-400128"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     15.8,
+     18.2
+    ],
+    "ispta_w_cm2": [
+     4.7,
+     5.5,
+     7.9,
+     9.1,
+     11.1,
+     12.7,
+     15.8,
+     18.2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2,
+     3
+    ],
+    "pulse_repetition_frequency_hz": [
+     600,
+     300,
+     150,
+     100,
+     1000,
+     500,
+     250,
+     167,
+     1400,
+     700,
+     350,
+     233
+    ],
+    "duty_cycle_pct": [
+     30,
+     50,
+     70,
+     100
+    ],
+    "sonication_duration_s": [
+     0.06,
+     0.1,
+     0.14,
+     0.2
+    ],
+    "protocol_description": "In more detail, for the excitatory sonication in pulsed mode, we used a sonication duration of 200 ms. We combined four tone-burst durations (0.5, 1, 2, and 3 ms), three DCs (30, 50, and 70%, and corresponding PRFs), and two levels of in situ Isppa (15.8 and 18.2 W/cm2) for a total of 24 parameter sets (named EP1-EP24, see Table 1). Six additional sets (EP25-EP30), operating under continuous mode sonication (100% DC), were also administered with three sonication durations (60, 100, and 140 ms). Sonication in stimulation trials was given every 5 s (ISI = 5 s). The maximum response rate (12.4 +/- 9.2%) was observed with EP17 (0.5 ms tone-burst duration, 70% DC, 15.8 W/cm2 Isppa) stimulating M1."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "S1 suppressive sonication (parameter sets SP1-SP8)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "S1 (primary somatosensory area, right hind limb representation)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-400128"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     5.4,
+     11.6
+    ],
+    "ispta_w_cm2": [
+     0.16,
+     0.27,
+     0.35,
+     0.58
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1.0
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     60,
+     50,
+     30
+    ],
+    "duty_cycle_pct": [
+     3,
+     5
+    ],
+    "sonication_duration_s": 120,
+    "protocol_description": "To evaluate the suppressive FUS parameters, eight parameter sets of varying tone-burst durations (0.5 and 1.0 ms), DCs (3 and 5%), and levels of in situ Isppa (5.4 and 11.6 W/cm2) were examined (named SP1-SP8, see Table 2). Each suppressive sonication set was given for a duration of 2 min once per session (therefore, ISI did not apply). The use of SP1 and SP3 (tone-burst duration of 0.5 ms and Isppa of 5.4 W/cm2, acquired at 3 and 5% DCs) temporarily suppressed the SEP (18-35% reduction)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Thalamus (VL/VPL): excitatory sonication (EP1-EP30) and suppressive sonication (SP1-SP8)",
+   "target": {
+    "terms": [
+     "ventral_lateral_nucleus",
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "thalamus (ventrolateral nucleus VL / ventral posterolateral nucleus VPL, treated as a single sonication target)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-400128"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     15.8,
+     18.2,
+     5.4,
+     11.6
+    ],
+    "ispta_w_cm2": [
+     0.16,
+     0.27,
+     0.35,
+     0.58,
+     4.7,
+     5.5,
+     7.9,
+     9.1,
+     11.1,
+     12.7,
+     15.8,
+     18.2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2,
+     3,
+     1.0
+    ],
+    "pulse_repetition_frequency_hz": [
+     600,
+     300,
+     150,
+     100,
+     1000,
+     500,
+     250,
+     167,
+     1400,
+     700,
+     350,
+     233,
+     60,
+     50,
+     30
+    ],
+    "duty_cycle_pct": [
+     30,
+     50,
+     70,
+     100,
+     3,
+     5
+    ],
+    "sonication_duration_s": [
+     0.06,
+     0.1,
+     0.14,
+     0.2,
+     120
+    ],
+    "protocol_description": "The proximity of the VL and VPL in ovine neuroanatomy was beyond the spatial accuracy of sonication; therefore, a single spatial coordinate in the thalamus was assigned as a sonication target for both the excitatory parameter sets (EP1-EP30, same as used for M1) and the suppressive parameter sets (SP1-SP8, same as used for S1). Thalamic stimulation with excitatory parameters was highest with EP18, EP19, and EP20 (maximum response rate 6.9%); suppressive sonication of the thalamus with SP1 and SP3 produced a 31.4-34.3% reduction in SEP magnitude."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Only female sheep (Polypay, n = 10, weight = 49.1 ± 4.4 kg, labeled as 'SH1' to 'SH10') were used in this study",
+   "exposures[0].fundamental_frequency_khz": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[0].timing.pulse_duration_ms": "In more detail, for the excitatory sonication in pulsed mode, we used a sonication duration of 200 ms. We combined four tone-burst durations (0.5, 1, 2, and 3 ms), three DCs (30, 50, and 70%, and corresponding PRFs), and two levels of in situ Isppa (15.8 and 18.2 W/cm2) for a total of 24 parameter sets (named EP1–EP24, see Table 1).",
+   "exposures[0].timing.duty_cycle_pct": "In more detail, for the excitatory sonication in pulsed mode, we used a sonication duration of 200 ms. We combined four tone-burst durations (0.5, 1, 2, and 3 ms), three DCs (30, 50, and 70%, and corresponding PRFs), and two levels of in situ Isppa (15.8 and 18.2 W/cm2) for a total of 24 parameter sets (named EP1–EP24, see Table 1).",
+   "exposures[0].in_situ.isppa_w_cm2": "In more detail, for the excitatory sonication in pulsed mode, we used a sonication duration of 200 ms. We combined four tone-burst durations (0.5, 1, 2, and 3 ms), three DCs (30, 50, and 70%, and corresponding PRFs), and two levels of in situ Isppa (15.8 and 18.2 W/cm2) for a total of 24 parameter sets (named EP1–EP24, see Table 1).",
+   "exposures[0].timing.sonication_duration_s": "Six additional sets of excitatory sonication parameters (named EP25–EP30), operating under continuous mode sonication (i.e., 100% DC), were also administered with three sonication durations (60, 100, and 140 ms) and two levels of in situ spatial-peak pulse-average intensity (Isppa) of 15.8 and 18.2 W/cm2.",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[1].timing.pulse_duration_ms": "To evaluate the suppressive FUS parameters, eight parameter sets of varying tone-burst durations (0.5 and 1.0 ms), DCs (3 and 5%), and levels of in situ Isppa (5.4 and 11.6 W/cm2) were examined (named SP1–SP8, see Table 2). Each suppressive sonication set was given for a duration of 2 min once per session (therefore, ISI did not apply).",
+   "exposures[1].timing.duty_cycle_pct": "To evaluate the suppressive FUS parameters, eight parameter sets of varying tone-burst durations (0.5 and 1.0 ms), DCs (3 and 5%), and levels of in situ Isppa (5.4 and 11.6 W/cm2) were examined (named SP1–SP8, see Table 2). Each suppressive sonication set was given for a duration of 2 min once per session (therefore, ISI did not apply).",
+   "exposures[1].in_situ.isppa_w_cm2": "To evaluate the suppressive FUS parameters, eight parameter sets of varying tone-burst durations (0.5 and 1.0 ms), DCs (3 and 5%), and levels of in situ Isppa (5.4 and 11.6 W/cm2) were examined (named SP1–SP8, see Table 2). Each suppressive sonication set was given for a duration of 2 min once per session (therefore, ISI did not apply).",
+   "exposures[1].timing.sonication_duration_s": "To evaluate the suppressive FUS parameters, eight parameter sets of varying tone-burst durations (0.5 and 1.0 ms), DCs (3 and 5%), and levels of in situ Isppa (5.4 and 11.6 W/cm2) were examined (named SP1–SP8, see Table 2). Each suppressive sonication set was given for a duration of 2 min once per session (therefore, ISI did not apply).",
+   "exposures[1].in_situ.ispta_w_cm2": "<table><tr><td rowspan=2 colspan=1>Parameterset ID</td><td rowspan=2 colspan=1> $\\bf { D C } \\left( \\% \\right)$ </td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1>In situ Ia (Ispta W/cm²)</td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=2>Number of animals</td></tr><tr><td rowspan=1 colspan=1>S1</td><td rowspan=1 colspan=1>Thal</td></tr><tr><td rowspan=1 colspan=1>SP1</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.27</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP2</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.58</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>10</td></tr><tr><td rowspan=1 colspan=1>SP3</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.16</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP4</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.35</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP5</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.27</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP6</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.58</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP7</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.16</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP8</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.35</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=2 colspan=1>Parameterset ID</td><td rowspan=2 colspan=1> $\\bf { D C } \\left( \\% \\right)$ </td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1>In situ Ia (Ispta W/cm²)</td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=2>Number of animals</td></tr><tr><td rowspan=1 colspan=1>S1</td><td rowspan=1 colspan=1>Thal</td></tr><tr><td rowspan=1 colspan=1>SP1</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.27</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP2</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.58</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>10</td></tr><tr><td rowspan=1 colspan=1>SP3</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.16</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP4</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.35</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP5</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.27</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP6</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.58</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP7</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>5.4</td><td rowspan=1 colspan=1>0.16</td><td rowspan=1 colspan=1>0.80</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>SP8</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>1.0</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>11.6</td><td rowspan=1 colspan=1>0.35</td><td rowspan=1 colspan=1>1.17</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[2].fundamental_frequency_khz": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[2].timing.duty_cycle_pct": "The distances between M1 and other sonication targets (S1 and thalamus) were 7.6 ± 1.3 mm (n = 10) and 29.6 ± 3.0 mm (n = 10), respectively.",
+   "device.manufacturer": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[1].fundamental_frequency_khz": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[2].in_situ.isppa_w_cm2": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[2].in_situ.ispta_w_cm2": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[2].timing.pulse_duration_ms": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=2 colspan=1>Parameter set ID</td><td rowspan=2 colspan=1>DC (%)</td><td rowspan=2 colspan=1>TBD (ms)</td><td rowspan=2 colspan=1>PRF (Hz)</td><td rowspan=2 colspan=1>SD (ms)</td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { \\bf I _ { a } } ( \\mathrm { \\bf I _ { s p p a } W / c m } ^ { 2 } )$ </td><td rowspan=2 colspan=1> $I n s i t u \\mathrm { I _ { a } ( I _ { s p t a } W / c m ^ { 2 } ) }$ </td><td rowspan=2 colspan=1>In situ MI</td><td rowspan=1 colspan=3>Number ofanimals</td></tr><tr><td rowspan=1 colspan=3>M1  Thal</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=10>Pulsed mode sonication</td></tr><tr><td rowspan=1 colspan=1>EP1</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP2</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>600</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP3</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP4</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>300</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP5</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP6</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP7</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>4.7</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP8</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>5.5</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP9</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP10</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1000</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP11</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP12</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP13</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP14</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>7.9</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP16</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>167</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>9.1</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP17</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP18</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1400</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP19</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP20</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>700</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP21</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP22</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>350</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>9</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP23</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>11.1</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP24</td><td rowspan=1 colspan=1>70</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>233</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>12.7</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=5>Continuous mode sonication</td><td rowspan=1 colspan=3></td></tr><tr><td rowspan=1 colspan=1>EP25</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP26</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP27</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>=</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP28</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP29</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>15.8</td><td rowspan=1 colspan=1>1.37</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1>EP30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>18.2</td><td rowspan=1 colspan=1>1.47</td><td rowspan=1 colspan=2>8</td><td rowspan=1 colspan=1>8</td></tr></table>",
+   "exposures[2].timing.sonication_duration_s": "In more detail, for the excitatory sonication in pulsed mode, we used a sonication duration of 200 ms. We combined four tone-burst durations (0.5, 1, 2, and 3 ms), three DCs (30, 50, and 70%, and corresponding PRFs), and two levels of in situ $\\mathrm { { I _ { s p p a } } }$ (15.8 and 18.2 W/cm<sup>2</sup>) for a total of 24 parameter sets (named EP1–EP24, see Table 1). Six additional sets of excitatory sonication parameters (named EP25–EP30), operating under continuous mode sonication (i.e.,",
+   "exposures[0].device.manufacturer": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[0].device.model": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[1].device.manufacturer": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[1].device.model": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[2].device.manufacturer": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound.",
+   "exposures[2].device.model": "A single-element FUS transducer (GPS200-400128, Ultran Group, Hoboken, NJ) operating at a fundamental frequency of 250 kHz was used for transcranial delivery of ultrasound."
+  },
+  "flags": [
+   {
+    "field": "exposures[2]",
+    "reason": "Per the 'one exposure per target x frequency' rule, the thalamus exposure combines two very different protocols that share only the target (thalamus) and frequency (250 kHz): a short (200 ms/60-140 ms), high-duty-cycle (30-100%) excitatory protocol (EP1-EP30) and a long (2 min), low-duty-cycle (3-5%) suppressive protocol (SP1-SP8). The resulting list-valued timing/intensity fields span both protocols and should not be read as paired combinations; see protocol_description and exp_m1/exp_s1 for the disaggregated values."
+   },
+   {
+    "field": "exposures[2].target",
+    "reason": "The paper treats a single spatial coordinate in the thalamus as the sonication target because the proximity of VL (motor) and VPL (sensory) nuclei was below the spatial accuracy of sonication/registration; both target ids (ventral_lateral_nucleus, ventral_posterolateral_nucleus) are listed since the intended targets for excitatory vs suppressive sessions differed (VL vs VPL) even though a single physical coordinate was used."
+   },
+   {
+    "field": "*.free_field",
+    "reason": "The paper reports only 'in situ' (derated) Isppa/Ispta/MI values in Tables 1-2; the pre-derating (free-field, degassed-water) intensities are not given as numbers in the text, only the attenuation percentages (16.3% coupling gel, 69.4% skull) used to derive the in-situ values, so free_field fields are left not_reported."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "66 total sonication sessions were conducted across 10 sheep with 'up to four' sessions per animal and variable numbers of animals per parameter set (see Tables 1-2); not reduced to a single number per subject."
+   },
+   {
+    "field": "sham_type",
+    "reason": "For the suppressive (SEP) experiments, an active control condition was used: 'we also delivered sonication to the S1 and thalamic area in the right hemisphere' (functionally non-target, contralateral-pathway hemisphere) using SP3/SP7 parameters, classified as active_control_site. No sham/control condition is described for the excitatory (EMG) experiments."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Discussion notes that audible buzzing sound was sometimes produced by the coupling hydrogel during excitatory (but not suppressive) sonication, raising a possible auditory confound, but no explicit auditory masking or control procedure is reported."
+   },
+   {
+    "field": "exposures[2] (thalamus)",
+    "reason": "Source quotes for this combined exposure are keyed primarily to the excitatory Table 1 (EP1-EP30) HTML row content; the suppressive Table 2 (SP1-SP8) content, quoted separately under exposures[1], additionally contributes the duty_cycle_pct=[3,5], pulse_repetition_frequency_hz=[30,50,60,100] and sonication_duration_s=120 s values in this exposure's lists but is not re-keyed here because only one source quote is stored per field path."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Sample sizes and number of parameter sets per animal vary considerably by target and parameter set (see Tables 1-2 'Number of animals' columns, ranging 8-10); a single n_subjects=10 (total sheep enrolled) is reported at the top level. Frequency (250 kHz) and transducer are constant across all three exposures. Isppa/Ispta values in Tables 1 and 2 are already the paper's derated 'in situ' estimates (intensity transmission level of 25.6% applied to free-field/water-calibrated values), hence in_situ.method='derating'.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  }
+ }
+}

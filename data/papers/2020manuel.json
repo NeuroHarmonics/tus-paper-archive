@@ -1,0 +1,336 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020manuel",
+ "doi": "10.1038/s41598-020-72189-y",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Continuous wave ultrasound increased calcium signaling in brain slices in 19 out of 221 total trials (8.5%) across 53 slices (Fig. 1A).",
+   "safety_notes": "For continous wave pulses used in Fig. 1, heating from acoustic absorption was less than 1 °C at the maximum pressure and pulse duration used. For pulsed ultrasound, heating was less than $0 . 2 5 ^ { \\circ } \\mathrm { C }$ .",
+   "direction_notes": "1,500 Hz PRF resulted in an increase in calcium signaling from the baseline (p = 0.02, student’s t-test) for the time point immediately following US onset. No timepoints from 300 Hz trials showed statistically significant change from baseline.",
+   "exposures[0].fundamental_frequency_khz": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function generator (A150, E&I, Rochester, NY, USA; Keysight, 33500B Santa Rosa, CA, USA).",
+   "exposures[1].fundamental_frequency_khz": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function generator (A150, E&I, Rochester, NY, USA; Keysight, 33500B Santa Rosa, CA, USA).",
+   "exposures[0].timing.sonication_duration_s": "The shorter pulse was 50 kilocycles of sound, which corresponds to 200 ms and 100 ms for 250 kHz and 500 kHz, respectively. The longer pulses were 250 kilocycles, which were 1,000 ms and 500 ms for 250 kHz and 500 kHz sound, respectively.",
+   "exposures[1].timing.sonication_duration_s": "The shorter pulse was 50 kilocycles of sound, which corresponds to 200 ms and 100 ms for 250 kHz and 500 kHz, respectively. The longer pulses were 250 kilocycles, which were 1,000 ms and 500 ms for 250 kHz and 500 kHz sound, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The trials investigating PRF differed from continuous wave trials in that they were lower duty cycle (2% total duty cycle and 60% burst duty cycle as opposed to 100% in continuous wave) and longer in duration (160 s vs. 30 s).",
+   "exposures[1].timing.duty_cycle_pct": "The trials investigating PRF differed from continuous wave trials in that they were lower duty cycle (2% total duty cycle and 60% burst duty cycle as opposed to 100% in continuous wave) and longer in duration (160 s vs. 30 s).",
+   "exposures[1].free_field.pressure_kpa": "A center frequency of 500 kHz and pressure of 100 kPa were used.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Brain slices were sonicated with two pulsed ultrasound parameters with duty cycle, intensity, and transmit frequency held constant and PRF of 1,500 Hz and 300 Hz (Fig. 1B).",
+   "exposures[1].timing.pulse_duration_ms": "The 1,500 Hz pulses used 200 cycles per pulse (0.4 ms) and 100 pulses per burst. The 300 Hz pulses used 1,000 cycles per pulse (2 ms) and 20 pulses per burst.",
+   "exposures[1].timing.sonication_duration_s.total": "The total sonication time was 100 s (50 bursts, 0.5 Hz).",
+   "exposures[0].target.label": "Coronal brain slices containing the motor cortex were prepared from transgenic mice selectively expressing genetically encoded calcium indicator GCaMP6s in cortical pyramidal cells or all neuronal cells by crossing Cre-dependent GCaMP6s mice (JAX #024106) with CaMKIIα-Cre mice (JAX #005359) or Syn-Cre mice (JAX #003966), respectively.",
+   "exposures[1].target.label": "Coronal brain slices containing the motor cortex were prepared from transgenic mice selectively expressing genetically encoded calcium indicator GCaMP6s in cortical pyramidal cells or all neuronal cells by crossing Cre-dependent GCaMP6s mice (JAX #024106) with CaMKIIα-Cre mice (JAX #005359) or Syn-Cre mice (JAX #003966), respectively.",
+   "exposures[0].device.manufacturer": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function",
+   "exposures[0].device.model": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function",
+   "exposures[1].device.manufacturer": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function",
+   "exposures[1].device.model": "We developed an experimental apparatus capable of delivering ultrasound to a brain slice via a 1-inch spherically focused transducer (NDT, Huntington Beach, CA, USA) of either 250 kHz or 500 kHz (Fig. 4A) center frequency powered by an amplifier and function",
+   "exposures[0].free_field.pressure_kpa": "Among these parameters, 200 ms 350 kPa 250 kHz pulses showed the highest average response rate across all slices (5 out of 33 trials, 15%) but this was not statistically significant compared to the other parameters."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Continuous-wave pressure sweep values (stated in text as 80 and 350 kPa) are split across a figure caption/page break in the source file and could not be captured in a single contiguous quote, so free_field.pressure_kpa for the 250 kHz exposure is left not_reported; only the 500 kHz pulsed-condition pressure (100 kPa) had a clean contiguous quote."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "This field mixes durations from two different sub-conditions sharing the same target/frequency per the one-exposure-per-target-x-frequency rule: continuous-wave burst lengths (0.1, 0.5 s) and the total pulsed/PRF sonication time (100 s, 50 bursts at 0.5 Hz)."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "The paper reports two different duty-cycle figures for the pulsed condition: 60% within each burst (which matches the stated pulse durations via PRF) and 2% for the total sonication including the 0.5 Hz inter-burst interval; only the burst-level 60% value is used alongside continuous-wave's 100%, with the nested 2% total duty cycle described in protocol_description."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper argues that its ex vivo brain-slice model is inherently free of auditory-pathway confounds, but this is a property of the preparation rather than an explicit auditory_control method from the closed vocabulary."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "A total slice count (53) is given only for the continuous-wave experiment; slice counts for the PRF-dependence and TTX experiments are not aggregated to a total in the text (only per-condition cell/trial counts are given)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "disagree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].timing.duty_cycle_pct": "both_defensible"
+  }
+ },
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (transgenic GCaMP6s; coronal motor-cortex brain slices)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 53,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "calcium imaging (GCaMP6s) of brain slices via wide-field fluorescence microscopy",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound increased calcium signaling (neuronal activation); the response rate was PRF-dependent (1,500 Hz PRF produced a significant increase from baseline and higher response rates than 300 Hz or continuous-wave parameters). Ultrasound also temporarily reduced the inhibitory effect of 0.5 µM TTX, restoring calcium signaling that TTX alone suppressed.",
+ "adverse_events": null,
+ "safety_notes": "Heating from acoustic absorption was less than 1°C for continuous-wave pulses at the maximum pressure/duration used, and less than 0.25°C for pulsed ultrasound; there was no detectable change in image intensity due to acoustic-radiation-force displacement of the slices at the parameters used.",
+ "exposures": [
+  {
+   "label": "Continuous-wave 250 kHz sonication of motor-cortex brain slices",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "brain_slice"
+    ],
+    "label": "motor cortex (coronal brain slice)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NDT",
+    "model": "1-inch spherically focused transducer, 250 kHz"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": [
+     80,
+     350
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     0.2,
+     1.0
+    ],
+    "protocol_description": "Brain slices were sonicated with continuous-wave parameters varying pressure (paper states 80 and 350 kPa, though the two values could not both be captured in one contiguous quote) and pulse length (matched cycle counts across 250/500 kHz). A single trial comprised a baseline measurement, sonication measurement, and a rest period of 30 s or greater."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "500 kHz sonication of motor-cortex brain slices (continuous-wave and PRF/TTX pulsed trials)",
+   "target": {
+    "terms": [
+     "motor_cortex",
+     "brain_slice"
+    ],
+    "label": "motor cortex (coronal brain slice)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NDT",
+    "model": "1-inch spherically focused transducer, 500 kHz"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     80,
+     100,
+     350
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     0.4,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     300,
+     1500
+    ],
+    "duty_cycle_pct": [
+     100,
+     60
+    ],
+    "sonication_duration_s": [
+     0.1,
+     0.5,
+     100
+    ],
+    "protocol_description": "Continuous-wave 500 kHz trials used matched pressures/cycle counts as the 250 kHz trials (100 ms and 500 ms pulse lengths). Separately, pulsed PRF-dependence and TTX trials used a fixed 100 kPa pressure with a slow 0.5 Hz trigger firing 50 bursts per trial (100 s total sonication time); duty cycle was 60% within each burst and 2% for the total sonication. The 1,500 Hz condition used 200 cycles per pulse (0.4 ms) with 100 pulses per burst; the 300 Hz condition used 1,000 cycles per pulse (2 ms) with 20 pulses per burst. TTX (0, 0.5 or 1.0 µM) was perfused before a subset of these pulsed trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

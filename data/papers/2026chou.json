@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chou",
+ "doi": "10.1002/epi.70404",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "Daily seizure diaries (seizure frequency); Beck Anxiety Inventory (BAI); Beck Depression Inventory (BDI); Quality of Life in Epilepsy Inventory-31 (QOLIE-31); structural brain MRI safety assessment",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "The primary sham-controlled crossover analysis did not show a significant reduction in seizure frequency with LIFU versus sham (p=.068), but an uncontrolled open-label extension phase after crossover showed a significant longitudinal decrease in seizure frequency over time following LIFU.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events were observed. Mild headache was the most commonly reported adverse event, occurring during both FUS and sham treatment and follow-up; other transient symptoms included tremor (n=1), dental vibration sensation (n=1), and abdominal discomfort (n=1). All adverse events were self-limited and resolved spontaneously without medical intervention.",
+ "exposures": [
+  {
+   "label": "LIFU to individualized seizure onset zone (SOZ)",
+   "target": {
+    "terms": [
+     "hippocampus",
+     "frontal_lobe",
+     "parietal_lobe",
+     "temporal_lobe"
+    ],
+    "label": "seizure onset zone (SOZ); individualized targets predominantly hippocampus, with frontocentral, parietal, and temporal operculum targets in a subset of patients"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NaviFUS Corporation",
+    "model": "256-element phased array LIFU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     1.8,
+     7.2
+    ]
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 180,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.3
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 300,
+    "protocol_description": "Each session consisted of three consecutive 5-min sonications separated by two 5-min intermissions. Acoustic parameters were defined at both a safety ceiling (estimated intracranial ISPTA of 2.8 W/cm2, MI=.75, peak pressure .53 MPa, RMS pressure .37 MPa) and a planned therapeutic level (intracranial ISPTA of .3 W/cm2, MI=.25, peak pressure .18 MPa, RMS pressure .12 MPa); treatment trajectories were selected to approach the therapeutic level as closely as possible."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twelve patients were randomized and completed both treatment phases.",
+   "n_sessions_per_subject": "Each participant underwent two treatment phases, consisting of one FUS session and one sham session, separated by a 4-week (30 ± 7 days) observation period.",
+   "exposures[0].fundamental_frequency_khz": "Acoustic parameters were defined at both safety ceiling and therapeutic levels. The safety ceiling was set at an estimated intracranial spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { S P T A } } )$ of $2 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ , consistent with the maximum output validated in our prior first-in-human study.<sup>12</sup> At a center frequency of 500 kHz, this corresponded to an intracranial mechanical index (MI) of .75, peak pressure of .53 MPa, and root-mean-square (RMS) pressure of .37 MPa.",
+   "exposures[0].free_field.ispta_w_cm2": "To achieve sufficient energy delivery for neuromodulation, the system output $\\mathrm { I _ { S P T A } }$ was set between 1.8 W/ $\\mathrm { c m } ^ { 2 }$ and $7 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ( 4 . 7 \\pm 1 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) ,$ , corresponding to an output MI ranging from .6 to $1 . 2 \\ ( 1 . 0 \\pm . 2 )$ , respectively.",
+   "exposures[0].in_situ.pressure_kpa": "The planned therapeutic intensity was set at an intracranial $\\mathrm { I _ { S P T A } }$ of $. 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (MI = .25), corresponding to a peak pressure of .18 MPa and RMS pressure of .12 MPa.",
+   "exposures[0].in_situ.ispta_w_cm2": "The planned therapeutic intensity was set at an intracranial $\\mathrm { I _ { S P T A } }$ of $. 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (MI = .25), corresponding to a peak pressure of .18 MPa and RMS pressure of .12 MPa.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was delivered using a burst length of 3 ms, duty cycle of 30%, and pulse repetition frequency of 100 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was delivered using a burst length of 3 ms, duty cycle of 30%, and pulse repetition frequency of 100 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound was delivered using a burst length of 3 ms, duty cycle of 30%, and pulse repetition frequency of 100 Hz.",
+   "exposures[0].timing.sonication_duration_s": "Each session consisted of three consecutive 5-min sonications separated by two 5-min intermissions.",
+   "exposures[0].device.manufacturer": "Funding information NaviFUS Corp; National Health Research Institutes, Grant/Award Number: NHRI-EX111-10905NI and NHRI-EX112-11229NI",
+   "exposures[0].device.model": "The treatment device used in this study was provided by NaviFUS Corporation, a 256-element phase array LIFU, guided by a navigation system."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "Target (seizure onset zone) was individualized per patient across hippocampus, frontal, parietal, and temporal sites (Table 1); reported as a single exposure with combined target terms rather than per-target breakdown, since outcomes are pooled across the cohort."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Paper reports 'system output ISPTA' per patient without explicitly stating this was measured in water/free-field; domain assignment (free_field vs in_situ pre-skull) is inferred from context (it precedes the skull-corrected 'estimated transcranial' value)."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Per-patient post hoc simulation gave an estimated transcranial ISPTA ranging from .24 to .36 W/cm2 (mean .3±.04 W/cm2), closely matching the planned therapeutic single value of .3 W/cm2 used here; the range is not separately recorded."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Reflects the two sham-controlled crossover sessions; the open-label extension phase may have involved additional LIFU treatments, but the number of extension sessions is not clearly stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026cheng",
+ "doi": "10.3389/fnhum.2026.1884060",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Motor-evoked potential (MEP) amplitude, short- and long-interval intracortical inhibition (SICI/LICI), intracortical facilitation (ICF), and cortical silent period (cSP) via single/paired-pulse TMS-EMG",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Sonication at 12 W/cm2 ISPPA significantly increased MEP amplitude; TUS at 6, 9, and 12 W/cm2 significantly shortened cortical silent period (cSP). No significant change to SICI, LICI, or ICF at any intensity.",
+ "adverse_events": "observed",
+ "safety_notes": "During the experiment, one participant reported mild, transient distending pain over the right frontal region during the 9 W/cm2 sonication, which resolved spontaneously after 3 min rest period. No other adverse events were reported.",
+ "exposures": [
+  {
+   "label": "Active TUS to M1 hotspot (ISPPA 3, 6, 9, 12 W/cm2)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 hotspot"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GreenValley BrainTech Medical Technology Co. Ltd.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     3,
+     6,
+     9,
+     12
+    ],
+    "ispta_w_cm2": [
+     0.18,
+     0.36,
+     0.54,
+     0.72
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": 6,
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulse Duration (PD) = 0.3 ms, Pulse Repetition Interval (PRI) = 5 ms, Pulse Train Duration (PTD) = 1 s, Inter-Stimulus Interval (ISI) = 5 s, Sonication Period (SP) = 6 s, PRF = 200 Hz, DC = 6%. Each 1-s pulse train was delivered every 6 s, with total sonication delivered for 20 minutes per session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of twenty-five healthy, right-handed subjects (19 females, 6 males; mean age ± standard deviation = 24.0 ± 3.3 years, range = 21–30 years) recruited from Shanghai Yangzhi Rehabilitation Hospital participated in this study.",
+   "n_sessions_per_subject": "Each participant completed five experimental sessions, corresponding to four active ISPPA levels (3, 6, 9, and 12 W/cm<sup>2</sup> in the free-field) and one sham condition.",
+   "exposures[0].fundamental_frequency_khz": "An electronic control system drove the transducer to generate ultrasonic pulses characterized by an operating frequency of 500 kHz, a pulse duration of 300 μs, a pulse repetition interval of 5 ms, and a pulse train duration of 1 s, with each pulse train delivered every 6 s.",
+   "exposures[0].free_field.isppa_w_cm2": "Each participant completed five experimental sessions, corresponding to four active ISPPA levels (3, 6, 9, and 12 W/cm<sup>2</sup> in the free-field) and one sham condition.",
+   "exposures[0].free_field.ispta_w_cm2": "The spatialpeak temporal-average intensities (ISPTA) for the four active conditions were 180, 360, 540, and 720 mW/cm<sup>2</sup>, respectively, in addition to the sham stimulation (Figure 1D).",
+   "exposures[0].timing.pulse_duration_ms": "An electronic control system drove the transducer to generate ultrasonic pulses characterized by an operating frequency of 500 kHz, a pulse duration of 300 μs, a pulse repetition interval of 5 ms, and a pulse train duration of 1 s, with each pulse train delivered every 6 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "(D) TUS stimulation parameters. Key parameters included: Pulse Duration (PD) = 0.3 ms, Pulse Repetition Interval (PRI) = 5 ms, Pulse Train Duration (PTD) = 1 s, Inter-Stimulus Interval (ISI) = 5 s, resulting in Sonication Period $( S P ) = 6 ~ 5 , P R F = 2 0 0 ~ { \\mathsf { H z } } , D C = 6 \\%$",
+   "exposures[0].timing.duty_cycle_pct": "(D) TUS stimulation parameters. Key parameters included: Pulse Duration (PD) = 0.3 ms, Pulse Repetition Interval (PRI) = 5 ms, Pulse Train Duration (PTD) = 1 s, Inter-Stimulus Interval (ISI) = 5 s, resulting in Sonication Period $( S P ) = 6 ~ 5 , P R F = 2 0 0 ~ { \\mathsf { H z } } , D C = 6 \\%$",
+   "exposures[0].timing.sonication_duration_s": "An electronic control system drove the transducer to generate ultrasonic pulses characterized by an operating frequency of 500 kHz, a pulse duration of 300 μs, a pulse repetition interval of 5 ms, and a pulse train duration of 1 s, with each pulse train delivered every 6 s.",
+   "exposures[0].device.manufacturer": "Transcranial ultrasonic waveforms were produced by a singleelement ultrasonic transducer (GreenValley BrainTech Medical Technology Co."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Sham delivered minimum-dosage acoustic energy (ISPPA = 0.08 W/cm2 in free field) rather than a fully inactive transducer, blocked output, or sound-only condition; classified as 'other'."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Paper states intensities were quantified only in free water and explicitly notes they do not account for skull attenuation/phase aberration; no in-situ estimate was given."
+   },
+   {
+    "field": "exposures[0].device.model",
+    "reason": "Manufacturer given (GreenValley BrainTech Medical Technology Co. Ltd.) but no specific model name/number stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

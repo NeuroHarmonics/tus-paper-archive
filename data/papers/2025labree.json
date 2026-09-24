@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025labree",
+ "doi": "10.3390/brainsci15090986",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "none_reported"
+ ],
+ "readout_other": null,
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This study assessed blinding effectiveness and adverse effects only; no neuromodulatory or physiological effect of stimulation was assessed.",
+ "adverse_events": "observed",
+ "safety_notes": "Adverse effects reported by participants were generally uncommon, mild, and transient, mostly sensations (itching, burning, pain, tingling, warmth) on the skin under the transducer; four participants reported effects persisting past the session (one 5-10 min, one 'shortly', one 'briefly', one 30 min of painful skin).",
+ "exposures": [
+  {
+   "label": "Real ultrasonic vagus nerve stimulation (U-VNS) via ZenBud device",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "auricular branch of the vagus nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NeurGear",
+    "model": "ZenBud"
+   },
+   "fundamental_frequency_khz": 5300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1030,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 41,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1740,
+    "protocol_description": "It delivers low-intensity focused ultrasound to the auricular branch of the vagus nerve through several layers of skin (centre frequency 5.3 MHz, pulse repetition rate 41 hertz, 50% duty cycle, average intensity of 1.03 MPa). As a safety measure, the device shuts down automatically after running for 29 min. Participants sat in a quiet room with an investigator whilst undergoing stimulation (or sham) using the ZenBud device for 29 min; the abstract describes this as a '30 min session'."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 12.1951
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "It delivers low-intensity focused ultrasound to the auricular branch of the vagus nerve through several layers of skin (centre frequency 5.3 MHz, pulse repetition rate 41 hertz, 50% duty cycle, average intensity of 1.03 MPa).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "It delivers low-intensity focused ultrasound to the auricular branch of the vagus nerve through several layers of skin (centre frequency 5.3 MHz, pulse repetition rate 41 hertz, 50% duty cycle, average intensity of 1.03 MPa).",
+   "exposures[0].timing.duty_cycle_pct": "It delivers low-intensity focused ultrasound to the auricular branch of the vagus nerve through several layers of skin (centre frequency 5.3 MHz, pulse repetition rate 41 hertz, 50% duty cycle, average intensity of 1.03 MPa).",
+   "exposures[0].unspecified_domain.pressure_kpa": "It delivers low-intensity focused ultrasound to the auricular branch of the vagus nerve through several layers of skin (centre frequency 5.3 MHz, pulse repetition rate 41 hertz, 50% duty cycle, average intensity of 1.03 MPa).",
+   "exposures[0].timing.sonication_duration_s": "Following this, participants sat in a quiet room with an investigator whilst undergoing stimulation (or sham) using the ZenBud device for 29 min.",
+   "n_subjects": "However, to account for attrition, 20 healthy volunteers were recruited via word of mouth, departmental email lists, posters, and adverts distributed at the University of Nottingham and placed online.",
+   "randomised": "Ten participants were randomly assigned to receive either true U-VNS at the first session and sham at the second session, and the other ten to have sham at the first session and true U-VNS at the second.",
+   "blinding": "Methods: In this single-blind randomised controlled study, twenty healthy volunteers were randomly assigned to receive either a 30 min session of true U-VNS and a 30 min session of sham stimulation 1 week later, or vice versa.",
+   "n_sessions_per_subject": "Ten participants were randomly assigned to receive either true U-VNS at the first session and sham at the second session, and the other ten to have sham at the first session and true U-VNS at the seco",
+   "exposures[0].device.manufacturer": "To this end, the ZenBud device was developed by NeurGear Inc."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "The paper labels this value 'average intensity of 1.03 MPa', but MPa is a pressure unit not an intensity unit; recorded as a pressure (1030 kPa) since the stated units are MPa. Domain (free-field vs in-situ) is not specified by the paper, so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Abstract states sessions were '30 min', but the Methods/Procedure and device description both state the device runs for 29 min and auto-shuts-off after 29 min; 29 min (1740 s) used as the more specific/detailed value, with the discrepancy flagged."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "PRF (41 Hz) and duty cycle (50%) are both stated, which could allow pulse duration to be computed, but the paper does not state pulse duration directly, so left not_reported per the no-arithmetic rule."
+   },
+   {
+    "field": "readouts",
+    "reason": "This study assessed only blinding effectiveness and adverse effects via questionnaires, not a physiological or behavioural effect of stimulation, hence classified as none_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024bao",
+ "doi": "10.1113/jp285613",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 17,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS-elicited motor evoked potential (MEP) amplitude from first dorsal interosseous muscle",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Continuous theta-burst TUS reduced M1 excitability (MEP amplitude) at both superficial (~5 mm, grey matter) and deep (~16 mm, white matter) targets, persisting for at least 30 min; sham TUS did not alter excitability. Intermittent theta-burst TUS produced no significant change in MEP amplitude at either depth.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Simulations aimed to ensure the temperature increase inside the skull did not exceed 0.1 degC; measured simulated temperature rises were 0.074 +/- 0.016 degC (superficial) and 0.049 +/- 0.009 degC (deep).",
+ "exposures": [
+  {
+   "label": "Superficial and deep M1 stimulation (continuous and intermittent theta-burst TUS)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "hand representation area of M1, targeted at superficial (~5 mm, grey matter) and deep (~16 mm, white matter) focal depths"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "four-element spherical ultrasound transducer (three annular rings and a central disc)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.38,
+    "ispta_w_cm2": 0.24
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     5
+    ],
+    "duty_cycle_pct": [
+     10
+    ],
+    "sonication_duration_s": [
+     80,
+     2
+    ],
+    "protocol_description": "Continuous theta-burst TUS: 0.2 s bursts at 10% duty cycle repeated at 5 Hz for a total duration of 80 s (400 bursts, 8 s of cumulative sonication). Intermittent theta-burst TUS: 2 s trains (each comprising 10 bursts of 0.2 s at 10% duty cycle) repeated every 10 s over 400 s (40 trains, 400 bursts total, 8 s of cumulative sonication). Each participant received superficial, deep and sham TUS (Experiment 1) or superficial and deep TUS (Experiment 2), with at least 1 week between sessions."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Seventeen healthy volunteers (average ${ \\tt a g e } = 2 8 . 5 \\pm 1 0 . 1$ years) took part in the experiment.",
+   "n_sessions_per_subject": "Participants took part in five TUS sessions, during which they consistently experienced similar auditory stimuli from both the transducer and the masking noise.",
+   "randomised": "Each participant underwent superficial TUS, deep TUS and sham TUS procedures, administered in random order.",
+   "sham_type": "The sham TUS procedure was conducted similarly to the active TUS procedures, with the transducer in contact with the scalp, but no ultrasound energy was delivered to the brain.",
+   "auditory_control": "Throughout all three paradigms, Gaussian white noise generated by a computer was delivered to the participants to efectively mask any auditory signals from the transducer.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven at a frequency of 500 kHz by a four-channel Transducer Power Output provided by Sonic Concepts.",
+   "exposures[0].target.label": "The focal depths for the ultrasound stimulation were specifically set at approximately 5 mm and 16 mm beneath the cortical surface (Fig. 1B).",
+   "exposures[0].in_situ.isppa_w_cm2": "The parameters for TUS were established at a spatial-peak pulse-average intensity (I<sub>SPPA</sub>) of 2.38 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ and a spatial-peak time-average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ of 0.24 W/cm<sup>2</sup>, with a mechanical index (MI) of 0.378 for both superficial and deep stimulation for each participant.",
+   "exposures[0].in_situ.ispta_w_cm2": "The parameters for TUS were established at a spatial-peak pulse-average intensity (I<sub>SPPA</sub>) of 2.38 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ and a spatial-peak time-average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ of 0.24 W/cm<sup>2</sup>, with a mechanical index (MI) of 0.378 for both superficial and deep stimulation for each participant.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "These bursts were repeated at a theta frequency of 5 Hz for a total duration of 80 s (Fig. 1C).",
+   "exposures[0].timing.duty_cycle_pct": "The continuous theta-burst TUS protocol consisted of TUS bursts, each lasting 0.2 s with a duty cycle of 10%.",
+   "exposures[0].timing.sonication_duration_s": "These bursts were repeated at a theta frequency of 5 Hz for a total duration of 80 s (Fig. 1C).",
+   "exposures[0].timing.protocol_description": "The intermittent theta-burst TUS protocol involved administering theta-burst TUS stimuli in 2 s trains, which were repeated at intervals of 10 s over a period of 400 s, resulting in a total of 40 trains (Fig. 1C).",
+   "exposures[0].device.manufacturer": "TUS was administered using a four-element spherical ultrasound transducer comprising three annular rings and a central disc (Sonic Concepts; Fig."
+  },
+  "flags": [
+   {
+    "field": "exposures[0]",
+    "reason": "Superficial (~5 mm, grey matter) and deep (~16 mm, white matter) stimulation both target M1 at the same 500 kHz frequency and are combined into one exposure per the target x frequency rule; the two depths are described in the target label and protocol_description rather than as separate exposures."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The paper states a 0.2 s 'burst' duration with a 10% duty cycle repeated at a 5 Hz theta frequency; pulse_duration_ms=20 ms is derived from duty_cycle/PRF (10%/5Hz) per the burst rule, since no separate explicit pulse duration is given."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "80 s is the total duration of the continuous theta-burst protocol and 2 s is the individual train duration in the intermittent protocol; both protocols report 8 s of cumulative active sonication, described in protocol_description."
+   },
+   {
+    "field": "blinding",
+    "reason": "The paper does not use the word 'blind' explicitly; single-blinding of participants to condition is inferred from the sham design (transducer on scalp, no ultrasound delivered) and the statement that study objectives were not revealed to participants."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

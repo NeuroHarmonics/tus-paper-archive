@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016leeb",
+ "doi": "10.1038/srep34026",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 19,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": [
+  1,
+  2
+ ],
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "self-reported phosphene perception (verbal description); BOLD fMRI activation mapping; sonication-triggered visual evoked EEG potentials (N55, P100)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to V1 elicited phosphene perception in 11/19 (fully responsive) and 2/19 (partially responsive) subjects during fMRI, and in all 10 subjects during EEG sessions, together with V1 BOLD activation and network-wide fMRI activation (LGN, precuneus, fusiform, ITG, fronto-parietal, cingulate, thalamic and cerebellar regions) and evoked EEG peaks (N55, P100); sham FUS elicited no activation or sensation, indicating an excitatory/activating effect of sonication.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Neurological examinations (blinded) before/after sonication, follow-up MRI at up to 4 weeks, and follow-up interviews at 2 months revealed no abnormal findings attributable to FUS; one subject reported a transient headache during the sham FUS fMRI condition that resolved quickly. Maximum estimated in-situ Isppa was 11.6 W/cm2 (MI 1.2, below the FDA imaging limit of 1.9); mean in-situ Ispta (~1.5 W/cm2) was below the IEC 60601 therapeutic-equipment limit of 3 W/cm2. Authors caution against very high sonication repetition rates (>500 times, every second) based on prior ovine microhemorrhage findings.",
+ "exposures": [
+  {
+   "label": "Transcranial FUS to primary visual cortex (V1), image-guided",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual cortex (V1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "MR-compatible single-element FUS transducer (focal length 3 cm; focus 3 mm diameter x 17 mm length, FWHM)"
+   },
+   "fundamental_frequency_khz": 270,
+   "free_field": {
+    "pressure_kpa": 1480,
+    "isppa_w_cm2": 16.6,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.0,
+    "ispta_w_cm2": 1.5
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Event-related fMRI was conducted during three conditions (FUS, sham FUS, photic stimulation); the 300-ms long stimulation was given 50 times every 13 s, synchronized with the MR scanner. In a separate EEG session outside the MRI (a subset of 10 participants), stimulation (FUS, sham FUS, or photic) was given 50 times every 2.5 s, with resting-state and sham FUS as additional conditions; condition order was randomized and balanced across participants."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 19 healthy volunteers participated $( { \\mathrm { f e m a l e } } = 5 ;$ age 20–45, average $2 6 . 1 \\pm 5 . 4 )$ and informed consent was obtained from all subjects prior to the study procedures.",
+   "n_sessions_per_subject": "As a separate experimental session, we also measured the EEG evoked potentials associated with FUS and photic stimulation from a few participants (N= 10, female = 1, age 20–45, average $2 6 . 7 \\pm 7 . 1 )$ outside of the MRI.",
+   "exposures[0].fundamental_frequency_khz": "We used a 270 kHz frequency ultrasound to stimulate the V1, whereby similar ranges of frequencies have been employed to modulate human/ ovine brain activity14,17 and to achieve adequate transcranial transmission through the skull20.",
+   "exposures[0].free_field.pressure_kpa": "The incident acoustic intensity and pressure at the FUS focus were 16.6 W/cm2 (spatial-peak pulse-average intensity, $\\mathrm { I _ { s p p a } ) }$ and 1.48 MPa, respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "The incident acoustic intensity and pressure at the FUS focus were 16.6 W/cm2 (spatial-peak pulse-average intensity, $\\mathrm { I _ { s p p a } ) }$ and 1.48 MPa, respectively.",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimated $\\mathrm { { I _ { s p p a } } }$ at the intended target ranged from 0.7 to $6 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (average $3 . 0 \\pm 1 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ;$ mean $\\pm \\thinspace s . \\mathrm { d } .$ $N = 1 9 )$ , which was approximately 18% of the incident $\\mathrm { { I _ { s p p a } } }$ of $1 6 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , suggesting that approximately 82% of the incident intensity, on average, was attenuated during the transcranial application of the FUS.",
+   "exposures[0].in_situ.ispta_w_cm2": "The estimated $\\mathrm { { I _ { s p t a } } }$ at the target, averaged across the subjects, was on the order of $1 . 5 \\pm 0 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (based on the 50% duty cycle of $3 . 0 { \\pm } 1 . 7 \\mathrm { \\bar { W } / c m ^ { 2 } \\Delta _ { s p p a } } \\mathrm { \\bar { \\Omega } }$ Table 1).",
+   "exposures[0].timing.pulse_duration_ms": "We used a similar pulsing scheme that had previously resulted in the successful stimulation of the SI in humans17 and animals10,14: sonication duration of 300 ms with a tone burst duration (TBD) of 1 ms repeated at a pulse repetition frequency (PRF) of 500 Hz (yielding a 50% duty cycle, illustrated in Fig. 1b, lower panel).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We used a similar pulsing scheme that had previously resulted in the successful stimulation of the SI in humans17 and animals10,14: sonication duration of 300 ms with a tone burst duration (TBD) of 1 ms repeated at a pulse repetition frequency (PRF) of 500 Hz (yielding a 50% duty cycle, illustrated in Fig. 1b, lower panel).",
+   "exposures[0].timing.duty_cycle_pct": "We used a similar pulsing scheme that had previously resulted in the successful stimulation of the SI in humans17 and animals10,14: sonication duration of 300 ms with a tone burst duration (TBD) of 1 ms repeated at a pulse repetition frequency (PRF) of 500 Hz (yielding a 50% duty cycle, illustrated in Fig. 1b, lower panel).",
+   "exposures[0].timing.sonication_duration_s": "We used a similar pulsing scheme that had previously resulted in the successful stimulation of the SI in humans17 and animals10,14: sonication duration of 300 ms with a tone burst duration (TBD) of 1 ms repeated at a pulse repetition frequency (PRF) of 500 Hz (yielding a 50% duty cycle, illustrated in Fig. 1b, lower panel)."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "All 19 participants had one FUS-fMRI session; a subset of 10 participants additionally underwent a separate FUS-EEG session, so sessions per subject were either 1 or 2 depending on participation in the EEG arm."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation described ('these conditions were randomized and balanced across the participants') refers to within-subject ordering of FUS/sham/photic conditions, not allocation to separate treatment groups."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Reported as a mean +/- SD across 19 subjects (0.7-6.6 W/cm2 range, mean 3.0+/-1.7); the mean is recorded per schema convention and the quote carries the full spread."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible"
+  }
+ }
+}

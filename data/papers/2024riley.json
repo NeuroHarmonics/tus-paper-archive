@@ -1,0 +1,171 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024riley",
+ "doi": "10.1016/j.jneumeth.2023.110009",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Local field potential (LFP) recordings from a multishank electrode; saccade direction and latency in a two-alternative visual discrimination task",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TFUS stimulation of FEF produced an immediate rise in LFP activity that continued until stimulation ended, a rise in alpha-band power, and biased first saccades toward the opposite (contralateral) direction, consistent with excitatory activation similar to electrical microstimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Frontal eye field (FEF) TFUS stimulation (targets FEF 4, FEF 10, FEF 7)",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "Frontal Eye Fields (FEF)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1500,
+     1600
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "TFUS was delivered as a single 200 ms burst per trial to one of three FEF target locations (FEF 4, FEF 10, FEF 7), each stimulated independently, using simulation-derived per-element timing to compensate for skull aberrations. Stimulation was applied pseudorandomly to 2/3 of all tested trials, beginning 133 ms prior to the saccade cue onset and continuing through the saccade preparation stage of the task. Driving frequency, PRF, stimulation onset time, and duty cycle were varied substantially across the testing period to explore the parameter space; the values reported here (2.8 MHz, 1500-1600 Hz PRF, 40% duty cycle, 200 ms) correspond to the parameters used for the results shown."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "One rhesus macaque (Macaca mulatta), Monkey R (10 year-old, 8 kg) was used in this project.",
+   "exposures[0].fundamental_frequency_khz": "We delivered 2.8 MHz TFUS with a 1500–1600 Hz pulse repetition frequency and 40 % duty cycle to the subject’s FEF for 200 ms for a single burst during a trial.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We delivered 2.8 MHz TFUS with a 1500–1600 Hz pulse repetition frequency and 40 % duty cycle to the subject’s FEF for 200 ms for a single burst during a trial.",
+   "exposures[0].timing.duty_cycle_pct": "We delivered 2.8 MHz TFUS with a 1500–1600 Hz pulse repetition frequency and 40 % duty cycle to the subject’s FEF for 200 ms for a single burst during a trial.",
+   "exposures[0].timing.sonication_duration_s": "We delivered 2.8 MHz TFUS with a 1500–1600 Hz pulse repetition frequency and 40 % duty cycle to the subject’s FEF for 200 ms for a single burst during a trial.",
+   "exposures[0].device.family": "New Method: We utilized a custom-built capacitive micromachined ultrasonic transducer (CMUT) that would send ultrasonic waves through skin and skull to targets located in the Frontal Eye Fields (FEF) region triangulated from co-registered MRI and CT scans while a non-human primate subject was performing a discrimination behavioral task."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The pressure at the ultrasound focus is shown only in Fig. 1B (left); no numeric value is given in the main text."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Individual pulse-on duration within the 200 ms burst is not stated directly; computing it from duty cycle (40%) and PRF (1500-1600 Hz) would require arithmetic not explicitly performed by the paper."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "The animal performed a visual discrimination behavioral task during stimulation, implying an awake state, but the paper never explicitly states 'awake' or describes anaesthesia status."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Results are from a single animal; authors note 'caution is warranted due to only testing in one subject.'"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

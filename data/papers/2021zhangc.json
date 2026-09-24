@@ -1,0 +1,180 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhangc",
+ "doi": "10.3390/brainsci11060711",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  7
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "32-channel skull-surface EEG electrode array; phase-locking value (PLV) functional connectivity and graph-theoretical brain network indicators (path length, clustering coefficient, small-worldness, local/global efficiency)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU sonication of the hippocampus during kainic-acid-induced seizure significantly reduced EEG amplitude and phase-locking value (network connectivity strength), particularly in the low-frequency (delta/theta) bands, compared with untreated seizure controls, indicating a suppressive effect on epileptic network activity.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU to hippocampus in KA-induced seizure (Group 1) and non-epileptic (Group 3) rats",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Goworld, Guangdong, China",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.1011
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Kainic acid (6.5 mg/kg i.p.) was used to induce seizures in Group 1 (KA+/LIFU+, n=7) and Group 2 (KA+/LIFU-, n=7, no sonication, served as comparison control); Group 3 (KA-/LIFU+, n=7) received sonication without epilepsy induction. When seizures (forelimb clonus and tail-twitches) lasted 60 s, sonication was applied 5 times to the hippocampus (Stage 3); EEG was recorded continuously through baseline, pre-LIFU, sonication, and post-LIFU (60 s) stages. The waveform used np=200 pulses per burst."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 45.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The rats in Group 1 $( n = 7 )$ were treated with LIFU sonication after intraperitoneal injection of ${ \\mathrm { K A } } ,$ recorded as $\\mathrm { ^ { \\prime } K A ( + ) / L I F U ( + ) ^ { \\prime } }$ .",
+   "randomised": "Rats were randomly divided into three groups.",
+   "anaesthesia": "After the experiment started, the rats were anesthetized under full general anesthesia with 1.5% isoflurane in oxygen-enriched air first, and the EEG signals were recorded at a 1000 Hz sampling rate.",
+   "exposures[0].fundamental_frequency_khz": "a focused ultrasound transducer with a 0.5 MHz center frequency (35 mm focal depth, 20 mm in diameter; Goworld, Guangdong, China) was used.",
+   "exposures[0].device.manufacturer": "a focused ultrasound transducer with a 0.5 MHz center frequency (35 mm focal depth, 20 mm in diameter; Goworld, Guangdong, China) was used.",
+   "exposures[0].timing.pulse_duration_ms": "Figure 4. Pulsed ultrasound waveform generation with the following properties: Af = 0.5 MHz, $\\mathrm { c . p . p . } = 1 5 0 , \\mathrm { P R F } = 1 . 5 \\mathrm { k H z } , \\mathrm { n p } = 2 0 0 .$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Figure 4. Pulsed ultrasound waveform generation with the following properties: Af = 0.5 MHz, $\\mathrm { c . p . p . } = 1 5 0 , \\mathrm { P R F } = 1 . 5 \\mathrm { k H z } , \\mathrm { n p } = 2 0 0 .$",
+   "exposures[0].in_situ.ispta_w_cm2": "The maximum sound intensity of sonication used in this study was 101.1 $\\mathrm { m } \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\bar { ( } \\mathrm { I } _ { \\mathrm { S P T A } } )$ which was far below the upper regulatory limit of safety stipulated by American Institute of Ultrasound in Medicine (AIUM; 720 mW/cm2; [29]).",
+   "n_sessions_per_subject": "After the epilepsy behavior manifested in the rats, EEG data were continuously recorded in Group 2. When seizures lasted 60 s in Group 1, sonication was then applied 5 times (noted as ‘Stage $3 ^ { \\prime }$ in Figure 5)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Computed from stated cycles-per-pulse (c.p.p.=150) divided by fundamental frequency (0.5 MHz), a sanctioned unit conversion, not stated directly as a duration in ms."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Group 2 (KA+/LIFU-) received no transducer/apparatus at all as the comparison condition, rather than a classic inactive-transducer or active-control-site sham; coded as none."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Value comes from a finite-element simulation of the sound field in brain tissue; corresponding pressure and ISPPA values are only shown graphically (Figure 8) and not stated numerically in text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

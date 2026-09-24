@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026webler",
+ "doi": "10.64898/2026.01.08.698446",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The LIFU dataset includes 23 healthy participants who received modulation to individualized anterior and posterior insula targets (46 total targets) identified using an insular atlas (22) (Figure 1a).",
+   "exposures[0].target.label": "The LIFU dataset includes 23 healthy participants who received modulation to individualized anterior and posterior insula targets (46 total targets) identified using an insular atlas (22) (Figure 1a).",
+   "exposures[0].device.model": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281).",
+   "exposures[0].fundamental_frequency_khz": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281).",
+   "exposures[0].timing.duty_cycle_pct": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281).",
+   "exposures[0].timing.sonication_duration_s": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281).",
+   "readouts": "This dataset was chosen because heart rate variability, a cardiac function mediated by the autonomic nervous system (23), was a primary study outcome.",
+   "exposures[0].device.manufacturer": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281)."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "The reused LIFU dataset description does not mention a sham or control condition; classified as 'none' by default and should be checked against the original Legon/Strohman source paper."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only PRF (1 kHz) and duty cycle (36%) are stated for the pulse train; individual pulse duration would require arithmetic and was left unreported."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not stated whether anterior and posterior insula targets were stimulated in the same or separate sessions."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "No pressure or intensity values are reported anywhere in this paper for the LIFU dataset."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 23,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology"
+ ],
+ "readout_other": "heart rate variability (standard deviation of normal sinus beats)",
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "The paper analyses correlations between LIFU-site functional connectivity and heart rate variability across sites/subjects to build a causal circuit map; it does not report a simple stimulation-vs-baseline direction of neuromodulatory effect for the LIFU dataset itself.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU to individualized anterior/posterior insula targets (heart rate variability circuit dataset)",
+   "target": {
+    "terms": [
+     "anterior_insula",
+     "posterior_insula"
+    ],
+    "label": "individualized anterior and posterior insula targets"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-281"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 1,
+    "protocol_description": "One second pulse trains of 500 kHz (1 kHz pulse-repetition frequency, 36% duty cycle) LIFU were delivered to insular targets using a single-element focused transducer (Sonic Concepts H-281). LIFU was applied 200ms before a painful stimulus (i.e., contact heat evoked potential) for 1-second with a 36% duty cycle."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.36
+   }
+  }
+ ]
+}

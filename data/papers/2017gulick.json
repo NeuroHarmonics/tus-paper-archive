@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017gulick",
+ "doi": "10.1016/j.ultrasmedbio.2017.08.937",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep"
+ ],
+ "readout_other": "accelerometer-based limb/scrotum movement; hindlimb EMG",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Direct US bursts to motor cortex excited hindlimb/scrotum movement (excitatory), while concurrent US significantly suppressed the long-term epidural-cortical-stimulation-evoked motor response (inhibitory); short-term (single paired-pulse) modulation of the ECS response was not significant.",
+ "adverse_events": "none_observed",
+ "safety_notes": "US heating in motor cortex averaged 1.8 +/- 0.6 degC (peak ~3 degC) using a cortical thermocouple; no gross behavioral changes from repeated stimulation were observed.",
+ "exposures": [
+  {
+   "label": "US stimulation of motor cortex (US/ECS interaction and EMG-latency protocols)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "rat motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 200,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     4.5,
+     0.009
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.3,
+     0.003
+    ],
+    "protocol_description": "The US power was delivered in bursts of 500-us pulses every 1 ms (50% duty at a 1-kHz pulse rate). For the US-ECS interaction experiment, the 50% duty US bursts were 300 ms in duration at 0.5 Hz. For the EMG latency measurement, the US bursts were only 3 ms (4 pulses), repeated every 10 s. Burst interval for the US/ECS interaction experiment ranged 1-10 s (mean 2 s, Table 1)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The 200-kHz US frequency was chosen because lower frequencies appear to be more effective for stimulating motor cortex (Kim et al. 2014; Ye et al. 2016).",
+   "exposures[0].free_field.ispta_w_cm2": "For the US–ECS interaction experiment, the 50% duty US bursts were 300 ms in duration at 0.5 Hz, giving an SPTA (spatial peak time average) power of 4.5 W/cm<sup>2</sup>. For the EMG latency measurement, the US bursts were only 3 ms (4 pulses), repeated every 10 s, giving a 9 mW/cm<sup>2</sup> SPTA (Table 1).",
+   "exposures[0].timing.pulse_duration_ms": "The US power was delivered in bursts of 500 -s pulses every 1 ms (50% duty at a 1-kHz pulse rate).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The US power was delivered in bursts of 500 -s pulses every 1 ms (50% duty at a 1-kHz pulse rate).",
+   "exposures[0].timing.duty_cycle_pct": "The US power was delivered in bursts of 500 -s pulses every 1 ms (50% duty at a 1-kHz pulse rate).",
+   "exposures[0].timing.sonication_duration_s": "For the US–ECS interaction experiment, the 50% duty US bursts were 300 ms in duration at 0.5 Hz, giving an SPTA (spatial peak time average) power of 4.5 W/cm<sup>2</sup>. For the EMG latency measurement, the US bursts were only 3 ms (4 pulses), repeated every 10 s, giving a 9 mW/cm<sup>2</sup> SPTA (Table 1).",
+   "n_sessions_per_subject": "Four male Sprague-Dawley rats were implanted with epidural arrays and tested over multiple sessions (up to three sessions per rat).",
+   "n_subjects": "Four male Sprague-Dawley rats were implanted with epidural arrays and tested over multiple sessions (up to three sessions per rat)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper never states a single total: 4 array-implanted rats were used for the modulation/direct-response experiments, a separate group of 3 non-implanted rats was used only for temperature measurement, and EMG latency was measured in 2-3 rats (unclear overlap with the primary 4); left not_reported rather than guess a sum."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper reports 'SPTP' (spatial-peak time-peak) rather than the conventional ISPPA (spatial-peak pulse-average); mapped to isppa_w_cm2 as the closest standard quantity."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "The 100 W/cm2 power density was derived from a water-tank hydrophone/force-balance calibration, then applied in vivo through a craniotomy with no skull in the beam path; recorded as free_field since the paper never states an independently measured or simulated in-brain value."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Study has no designed sham/placebo arm for TUS itself; the 'no-US' ECS-only blocks were used as the comparison condition, classified here as no_treatment_control as the closest vocabulary fit."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation described is of trial order (which ECS pulses were preceded by a US burst) within-subject, not random allocation of subjects to groups."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second"
+  }
+ }
+}

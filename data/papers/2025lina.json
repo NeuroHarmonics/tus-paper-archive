@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025lina",
+ "doi": "10.1016/j.lfs.2024.123323",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  6,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  3,
+  4
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey mechanical withdrawal threshold; Hargreaves' plantar thermal withdrawal latency; CGRP and GABA ELISA on DRG culture supernatant; immunofluorescence staining for GABA, CGRP and TRPV1 in DRG sections.",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU activated GABAergic (inhibitory) DRG neurons and increased GABA release/expression, while deactivating/reducing CGRP-expressing (pro-nociceptive) neurons, producing a net analgesic/inhibitory effect on nociceptive signalling in both CFA-inflammatory and CCI-neuropathic pain models; the analgesic effect and CGRP suppression were reversed by intra-DRG injection of the GABA antagonist bicuculline.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU/FUS stimulation of the dorsal root ganglion (DRG) in CFA inflammatory and CCI neuropathic pain models (in vivo), and DRG primary cultures (ex vivo)",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "dorsal root ganglia (DRG), lumbar L3-L6"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic SAS, France",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": [
+     630,
+     240,
+     800
+    ],
+    "isppa_w_cm2": 26.3,
+    "ispta_w_cm2": 0.0165
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.625,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     120,
+     360
+    ],
+    "protocol_description": "In vivo: burst-tone mode ultrasound applied unilaterally to lumbar DRGs (L3-5 for CFA model, L4-6 for CCI model) at peak negative pressure 0.63 MPa, burst length 625 microseconds (250 cycles), PRF 1 Hz, for a 6-min stimulation session, repeated daily for four consecutive days (three consecutive days in the GABA-antagonism/bicuculline experiment, with intra-DRG bicuculline or saline injected 10 min before FUS on day 2). Pain responses were assessed before (daily/chronic response) and 30 min after (acute response) each session. Ex vivo: primary cultured DRG cells received a 2-min FUS sonication at 0.24-0.8 MPa (0 MPa in control) from below a 96-well culture plate."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.062
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fig. 4. Neuronal protein expression following FUS stimulation in a CFA-induced neuroinflammatory rat model. The rats received FUS stimulation for four consecutive days following unilateral CFA injection into the right hindpaw. The rats were sacrificed 30 min after FUS stimulation on day 4 to collect L3–L5 DRGs. DRGs were sliced and stained individually for GABA, CGRP, or TRPV1 proteins. Protein expression was quantified as a protein-positive percentage. (A) The percentage of GABA-expressing neurons. (B) The percentage of CGRP-expressing neurons. (C) The percentage of TRPV1- expressing neurons. (D) Representative images. Data are presented as mean ± SEM and were analyzed using unpaired student's t-test. ${ \\bf \\ddot { p } } < 0 . 0 5 ,$ , comparing the CFA and the CFA + FUS groups. Scale bar = 200 μm. N = 5/group.",
+   "exposures[0].fundamental_frequency_khz": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].free_field.pressure_kpa": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].free_field.isppa_w_cm2": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].free_field.ispta_w_cm2": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].timing.pulse_duration_ms": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For animal studies, at the beginning of each examination, the rats were anesthetized with 2 %–2.5 % isoflurane mixed with $\\mathrm { O } _ { 2 }$ at a flow rate of 1 L/min. FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy. An arbitrary function generator (33220 A, Agilent, Palo Alto, CA) was used to generate the driving signal by connecting to a radio frequency power amplifier (No. 500–009, Advanced Surgical Systems, Tucson, AZ) operated in burst output mode. During the sonication procedure, animals were anesthetized and immobilized on an operation table with body temperature maintainer. The hair on the back along the FUS stimulation path was shaved. The FUS transducer was attached directly on the animal back. The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min). The acoustic pressure was calibrated via a PVDF hydrophone (HNR-500, Onda, Sunnyvale, CA, USA), equivalent to the spatial-peak pulse-peak intensity (Isppa) of 26.3 W/cm2 or spatial-peak temporal-averaged intensity (Ispta) of approximately 16.5 mW/cm2. Fig. 1A represents the free-field pressure distribution.",
+   "exposures[0].timing.sonication_duration_s": "The lumber DRGs (L3–5 for the CFA model, and L4–L6 for the CCI model) were exposed to burst-tone mode ultrasound unilaterally (peak negative pressure = 0.63 MPa at focal spot; burst length = 625 μs; burst cycle = 250; pulse repetition frequency = 1 Hz; stimulation time = 6 min).",
+   "n_sessions_per_subject": "In the CFA experiments, rats received 6 min of LIFU pulsations targeted on L3–5 DRGs for four consecutive days.",
+   "exposures[0].device.manufacturer": "FUS transducer (Imasonic SAS, France; diameter = 60 mm, radius of curvature = 52 mm, frequency = 400 kHz) was applied to generate concentrated ultrasound energy."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes differ by sub-experiment and are not summed to a single total: N=5/group in the CFA analgesia/protein experiments and in the bicuculline experiments (Figs. 3, 4, 7, 8); control/control+FUS N=6 and CCI/CCI+FUS N=11 in the CCI experiments (Figs. 5, 6). Given as a list per instructions."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most experiments (main CFA and CCI analgesia/mechanism studies) used FUS for four consecutive days, but the GABA-antagonism (bicuculline) experiment used three consecutive days; 4 is given as the modal value with this flag."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "630 kPa is the fixed in vivo focal-spot peak negative pressure (explicitly stated to be from the free-field pressure distribution, Fig. 1A); 240 and 800 kPa are the ex vivo DRG-culture sonication range (0.24-0.8 MPa), whose domain (free field vs. through culture medium) is not explicitly labelled but is assumed comparable to the in vivo free-field calibration."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated; it is derivable from burst length (625 microseconds) and PRF (1 Hz) as 0.0625%, but this would be the extractor's own arithmetic, so left not_reported per instructions."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Comparator groups (CFA-only, CCI-only, i.e. no FUS) are untreated/no-stimulation controls rather than a sham TUS condition (no inactive transducer or active control site is described); coded as 'none'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "first",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

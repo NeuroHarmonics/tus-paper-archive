@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018baek",
+ "doi": "10.1177/1545968318790022",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  12,
+  5,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "Balance beam test; adhesive removal test; brain water content (wet/dry weight) assay for edema/tissue swelling; hematoxylin and eosin histology",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "During cerebellar LIFU sonication, MEPs were generated in both forelimbs accompanying an excitatory sonication parameter, and LIFU-treated stroke mice showed enhanced sensorimotor recovery versus stroke-only mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological observation of the tissue samples obtained from the whole cerebellum revealed no sign of bleeding or tissue damage.",
+ "exposures": [
+  {
+   "label": "Cerebellar LCN sonication (stroke + LIFU group)",
+   "target": {
+    "terms": [
+     "deep_cerebellar_nuclei"
+    ],
+    "label": "lateral cerebellar nucleus (LCN)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "The Ultran Group",
+    "model": "GPS350-D25 FL25"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.54,
+    "ispta_w_cm2": 1.25
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "The animals in the stroke + LIFU group were subjected to 2 successive 20-minute long LIFU stimulations separated by 20-minute rest intervals 1 day after the stroke, whereas LIFU stimulation was not applied to the stroke group. Repetitive sonication of LCN over the first 20-minute LIFU session generated 600 consecutive MEP responses in sync with the cerebellar stimulation every 2 seconds, with a 2-second interstimulus interval (ISI)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "A 0.35 MHz single element bowl-shaped focused US transducer (GPS350-D25 FL25, The Ultran Group, USA) with an aperture size of 25 mm, a focal length of 23.85 mm and lateral and axial full width at half maximum (FWHM) dimensions of 5.5 mm and 29.8 mm (Figure 1F), was employed in our experiments.",
+   "exposures[0].timing.pulse_duration_ms": "The LIFU exposure conditions used in our experiments were as follows: 50 % duty cycle, 1-kHz pulse repetitive frequency (PRF), 0.5 ms tone burst duration (TBD), 300-ms sonication duration (SD), 2-sesond interstimulus interval (ISI), and a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 2.54 W/cm<sup>2</sup> (Figure 1C).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIFU exposure conditions used in our experiments were as follows: 50 % duty cycle, 1-kHz pulse repetitive frequency (PRF), 0.5 ms tone burst duration (TBD), 300-ms sonication duration (SD), 2-sesond interstimulus interval (ISI), and a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 2.54 W/cm<sup>2</sup> (Figure 1C).",
+   "exposures[0].timing.duty_cycle_pct": "The LIFU exposure conditions used in our experiments were as follows: 50 % duty cycle, 1-kHz pulse repetitive frequency (PRF), 0.5 ms tone burst duration (TBD), 300-ms sonication duration (SD), 2-sesond interstimulus interval (ISI), and a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 2.54 W/cm<sup>2</sup> (Figure 1C).",
+   "exposures[0].timing.sonication_duration_s": "The LIFU exposure conditions used in our experiments were as follows: 50 % duty cycle, 1-kHz pulse repetitive frequency (PRF), 0.5 ms tone burst duration (TBD), 300-ms sonication duration (SD), 2-sesond interstimulus interval (ISI), and a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 2.54 W/cm<sup>2</sup> (Figure 1C).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The LIFU exposure conditions used in our experiments were as follows: 50 % duty cycle, 1-kHz pulse repetitive frequency (PRF), 0.5 ms tone burst duration (TBD), 300-ms sonication duration (SD), 2-sesond interstimulus interval (ISI), and a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 2.54 W/cm<sup>2</sup> (Figure 1C).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Finally, we elicited forelimb movement with the intensity $I _ { \\mathrm { s p p a } }$ of 2.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (ie, spatial-peak temporal-average intensity $I _ { \\mathrm { s p t a } } \\mathrm { o f } 1 . 2 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ and mechanical index (MI) of 0.54.",
+   "exposures[0].device.manufacturer": "A 0.35 MHz single element bowl-shaped focused US transducer (GPS350-D25 FL25, The Ultran Group, USA) with an aperture size of 25 mm, a focal length of 23.85 mm and lateral and axial full width at half maximum (FWHM) dimensions of 5.5 mm and 29.8 mm (Figure 1F), was employed in our experiments.",
+   "exposures[0].device.model": "A 0.35 MHz single element bowl-shaped focused US transducer (GPS350-D25 FL25, The Ultran Group, USA) with an aperture size of 25 mm, a focal length of 23.85 mm and lateral and axial full width at half maximum (FWHM) dimensions of 5.5 mm and 29.8 mm (Figure 1F), was employed in our experiments.",
+   "n_subjects": "The degree of cerebral edema was examined and compared between the stroke (n = 7) and the stroke + LIFU (n = 5) groups by calculating the percentage change of increased brain water content and tissue swelling.",
+   "n_sessions_per_subject": "In the second session, MEPs from the left forelimb were recorded in response to the cerebellar LCN stimulation."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Different LIFU-exposed sub-cohorts are reported for different tests (balance beam n=12, adhesive removal n=10, edema n=5, histology n=3 additional healthy mice); no single total is stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper describes 2 successive 20-minute LIFU stimulations separated by a 20-minute rest interval, given once 1 day after stroke; unclear whether this counts as 1 or 2 'sessions'."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain (free-field vs in-situ/brain) of the reported Isppa/Ispta values is not stated by the paper; transducer characterization (FWHM) was done in water but the exposure intensity value itself is not explicitly assigned to a domain."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the adhesive removal test is described as a 'blind test'; blinding for other outcome measures is not explicitly stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

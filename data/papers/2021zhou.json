@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhou",
+ "doi": "10.1109/tbme.2021.3071807",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  13,
+  11,
+  4,
+  4,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Rotarod test; pole test; TH/Iba-1/GFAP immunohistochemistry; c-Fos immunohistochemistry; Western blot (TNF-alpha, IL-1beta, COX-2, NF-kB, alpha-synuclein, iNOS, SOD-1, SOD-2); HE, Nissl and TUNEL staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of the STN significantly increased c-Fos-positive neuron counts (neuronal activation) and improved motor performance (pole test, rotarod), rescued dopaminergic neuron loss, and reduced neuroinflammatory markers (TNF-alpha, IL-1beta, COX-2, NF-kB, Iba-1, GFAP, alpha-synuclein, iNOS) in chronic MPTP mice; ultrasound of V1 (active control site) did not improve motor function.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE, Nissl and TUNEL staining showed no hemorrhaging, tissue damage, or cell apoptosis in the sonicated regions; negative acoustic pressure (190 kPa) was far below the cavitation threshold (40 MPa) and MI (0.17) and Ispta (430 mW/cm2) were far below FDA limits for clinical ultrasound imaging (1.9 MI, 720 mW/cm2 Ispta).",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of subthalamic nucleus (STN) in chronic MPTP mouse model",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "subthalamic nucleus (STN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3800,
+   "free_field": {
+    "pressure_kpa": 190,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.43
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "Ultrasound wave (3.8 MHz, 50% duty cycle, 1 kHz PRF, 30 min/day) was delivered to the STN of freely-moving mice via a wearable transducer, beginning the day after MPTP and probenecid injection (early stage of chronic PD progression); control+sham and MPTP+sham mice wore the transducer with the power turned off, and a separate MPTP+V1+US group received the same ultrasound parameters delivered to the primary visual cortex (V1) as an active control site to test for auditory/off-target confounds."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "n = 12 for control+sham and MPTP+sham group, n = 13 for MPTP+STN+US group, n = 11 for MPTP+V1+US group for behavior test",
+   "randomised": "Mice were randomly divided into 4 groups: control+sham, MPTP+sham, MPTP+STN+US, and MPTP+ primary visual cortex (V1) +US.",
+   "blinding": "The STN and V1 were outlined on 4 magnification, and c-Fos positive cells were counted manually under 10 magnification by observers who were double-blind to the experimental groups.",
+   "anaesthesia": "we designed and fabricated wearable transducers with deep penetration depth. We fabricated a 800 kHz wearable transducer for motor cortex stimulation",
+   "exposures[0].fundamental_frequency_khz": "In this study, we adopted a wearable transducer (3.8 MHz frequency, 2g weight) made of PZT-8 ceramic for freely moving PD mice.",
+   "exposures[0].timing.pulse_duration_ms": "1000) and inter-stimulus interval (ISI, 4 s). Channel 2 was 200 mV peak-to-peak sine wave to drive a 100 W power amplifier (2100L, EI, NY, USA) and controlled the time of burst duration (TBD, 0.5 ms) (Fig. 1e).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulsed ultrasound wave was produced by a two channel function generator (DG4162, Rigol, Suzhou, China). Channel 1 was 5 V peak-to-peak square wave and controlled the pulse repetition frequency (PRF, 1 kHz), number of tone burst (NTB,",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound wave was delivered to the STN with 1 kHz PRF, 50% DC, 1 s SD, and 4 s ISI, and significantly induced neuronal activity in the STN.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound wave was delivered to the STN with 1 kHz PRF, 50% DC, 1 s SD, and 4 s ISI, and significantly induced neuronal activity in the STN.",
+   "exposures[0].free_field.pressure_kpa": "The negative acoustic pressure in free space was 190 kPa and the spatial-peak temporal-average intensity $\\mathrm { ( I _ { s p t a } ) }$ was 430 mW/cm<sup>2</sup> (corresponding with MI of 0.17).",
+   "exposures[0].free_field.ispta_w_cm2": "The negative acoustic pressure in free space was 190 kPa and the spatial-peak temporal-average intensity $\\mathrm { ( I _ { s p t a } ) }$ was 430 mW/cm<sup>2</sup> (corresponding with MI of 0.17)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Sum of independent STN-ultrasound-exposed cohorts described in the paper: main behavioral/PD cohort (MPTP+STN+US, n=13), naive c-Fos characterization cohort (STN+US, n=4), and safety histology cohort (n=4); these are separate sub-experiments rather than a single reported total."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Text states US was delivered 'the day after MPTP and probenecid injection', which recurred every 3.5 days over 5 weeks, but the total number of stimulation sessions per mouse is not explicitly stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "MPTP+V1+US group received real active ultrasound to a different (non-STN) target (V1) as an active control site, in addition to a power-off inactive-transducer sham (control+sham, MPTP+sham)."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Authors used active ultrasound stimulation of a non-STN site (V1) to argue against an auditory-mediated confound, rather than a masking-sound or other listed auditory-control method."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Transducer was custom-fabricated in-house (PZT-8 ceramic, housing 3D-printed); no overall device manufacturer/model is given beyond the piezoelectric ceramic material source (Siansonic)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

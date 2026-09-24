@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026bai",
+ "doi": "10.1016/j.clinph.2026.2111707",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 20,
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg"
+ ],
+ "readout_other": "Fugl-Meyer Assessment for Upper Extremity (FMA-UE); Wolf Motor Function Test (WMFT); locomotion/gait analysis; single-pulse TMS-EEG (TMS-evoked potentials, global mean field power, source current density/scattering, PCI-lz, weighted phase lag index)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Upper and lower extremity motor function improved (FMA-UE 54 to 59, WMFT 21 to 24, increased step length and walking speed) after VLp tFUS. TMS-EEG showed increased late TEP amplitudes, enhanced TEP propagation to more distal regions (SCS), increased PCI-lz complexity, and strengthened beta-band phase coupling, interpreted as enhanced excitability and communication within the cerebello-thalamo-cortical loop.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse events or discomfort were reported.",
+ "exposures": [
+  {
+   "label": "tFUS theta-burst stimulation of the VLp",
+   "target": {
+    "terms": [
+     "ventral_lateral_nucleus"
+    ],
+    "label": "ventral lateral posterior (VLp) nucleus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "four-element transducer (DPX500) with TPO201-80 programmable radiofrequency amplifier"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 17.3,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.26,
+    "ispta_w_cm2": 0.23
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "tFUS was initiated over four weeks, comprising a total of 20 sessions, five sessions per week, following two baseline assessments (Pre1 and Pre2) separated by a two-week interval; post-intervention assessments were conducted at two weeks (Post1) and at the end of the four-week intervention (Post2)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-22"
+  },
+  "source_quotes": {
+   "n_subjects": "The patient is a 44-year-old male who experienced a left basal ganglia hemorrhage secondary to hypertension 37 months earlier, as shown in MRI (Fig. 1).",
+   "n_sessions_per_subject": "The patient underwent two baseline assessments prior to the intervention (Pre1 and Pre2, Fig. 1A), separated by a two-week interval. Subsequently, tFUS was initiated over four weeks, comprising a total of 20 sessions, five sessions per week.",
+   "randomised": "In summary, tFUS targeting the VLp shows promising therapeutic potential for motor recovery after basal ganglia stroke, and a randomized controlled trial is currently underway to further evaluate its effects.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was delivered using a four-element transducer (DPX500) with a fundamental frequency of 0.5 MHz, connected to a programmable radiofrequency amplifier (TPO201-80, Sonic Concepts Inc.).",
+   "exposures[0].device.model": "Ultrasound was delivered using a four-element transducer (DPX500) with a fundamental frequency of 0.5 MHz, connected to a programmable radiofrequency amplifier (TPO201-80, Sonic Concepts Inc.).",
+   "exposures[0].free_field.isppa_w_cm2": "The stimulator’s output spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 17.30 W/cm . Simulation estimated an intracranial $\\operatorname { I } _ { \\mathrm { S P P A } }$ of 2.26 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the target site, with a spatial-peak time-average intensity of 0.23 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "The stimulator’s output spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 17.30 W/cm . Simulation estimated an intracranial $\\operatorname { I } _ { \\mathrm { S P P A } }$ of 2.26 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the target site, with a spatial-peak time-average intensity of 0.23 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "The stimulator’s output spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 17.30 W/cm . Simulation estimated an intracranial $\\operatorname { I } _ { \\mathrm { S P P A } }$ of 2.26 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the target site, with a spatial-peak time-average intensity of 0.23 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "We used the probabilistic human thalamic nuclei atlas by Iglesias et al. (Iglesias et al., 2018) and thresholded voxels at probability >0.85 to define the VLp target in ICBM152 space. The ICBM152 T1 template was then warped to each individual’s native T1 MRI using SPM12, and the resulting inverse deformation field was applied to transform the VLp target into native space. To account for skull-induced distortion of focused ultrasound, BabelBrain was used to optimize transducer trajectories and perform intracranial simulations (Pichardo, 2023) (Fig. 1B and C). Ultrasound was delivered using a four-element transducer (DPX500) with a fundamental frequency of 0.5 MHz, connected to a programmable radiofrequency amplifier (TPO201-80, Sonic Concepts Inc.). The tFUS protocol delivered 20-ms ultrasound bursts at 5 Hz for 120 s (theta-burst pattern) (Zeng et al., 2022). The stimulator’s output spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 17.30 W/cm . Simulation estimated an intracranial $\\operatorname { I } _ { \\mathrm { S P P A } }$ of 2.26 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the target site, with a spatial-peak time-average intensity of 0.23 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The tFUS protocol delivered 20-ms ultrasound bursts at 5 Hz for 120 s (theta-burst pattern) (Zeng et al., 2022).",
+   "exposures[0].timing.sonication_duration_s": "The tFUS protocol delivered 20-ms ultrasound bursts at 5 Hz for 120 s (theta-burst pattern) (Zeng et al., 2022).",
+   "adverse_events": "No adverse events or discomfort were reported. Upper extremity motor function, including FMA-UE and WMFT, was comparable between Pre1 and Pre2, indicating a stable baseline and ruling out spontaneous recovery or effects of outpatient rehabilitation training (Fig. 1D). The FMA-UE score increased from 54 at Pre1 to 59 at Post2. Similarly, the WMFT score increased from 21 at Pre1 to 24 at Post2, further indicating improvement in upper extremity motor function. Locomotion analysis also revealed increased step length, decreased step width, and increased walking speed (Fig. 1E), suggesting enhanced gait performance.",
+   "exposures[0].device.manufacturer": "Ultrasound was delivered using a four-element transducer (DPX500) with a fundamental frequency of 0.5 MHz, connected to a programmable radiofrequency amplifier (TPO201-80, Sonic Concepts Inc.)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Single-patient case study; n_subjects=1 by design."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated as a percentage; 20 ms pulses at 5 Hz would imply 10% duty cycle but this is not computed here per instructions."
+   },
+   {
+    "field": "randomised",
+    "reason": "Not explicitly labelled in the text; inferred from this being a single case study and the authors' statement that a randomized controlled trial 'is currently underway'."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer (DPX500) manufacturer is not stated; classified as sonic_concepts because the driving amplifier (TPO201-80) is explicitly attributed to Sonic Concepts Inc."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

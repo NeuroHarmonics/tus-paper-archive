@@ -1,0 +1,156 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2007du",
+ "doi": "10.1016/j.brainres.2007.07.049",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "short-latency auditory evoked potentials (dual-biphasic P1-N1-P2-N2 waveform) recorded via electrodes implanted in dorsal, anteroventral and posteroventral cochlear nucleus",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Study characterised evoked-response amplitude and latency as a function of ultrasonic stimulus frequency (40-90 kHz) and cochlear-nucleus subnucleus rather than testing a modulatory effect against a baseline condition.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasonic tone pips (40-90 kHz) delivered monaurally into the ear canal, evoked responses recorded from cochlear nucleus",
+   "target": {
+    "terms": [
+     "cochlea"
+    ],
+    "label": "ear canal (monaural ultrasonic tone-pip stimulation)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": [
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 11,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Six ultrasonic tone pips (40, 50, 60, 70, 80, 90 kHz; 1 ms duration, 0.3 ms rise/fall, 0.4 ms plateau) delivered monaurally at a repetition rate of 11/s via a rubber tube into the ear canal; averaged evoked responses were based on 500 artifact-free trials per stimulus."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Eighteen male Sprague–Dawley rats (age 10–12 weeks, weight 290–350 g) obtained from Beijing Vital River Experimental Animals Technology Ltd. (Beijing, China) were anesthetized with chloral hydrate (400 mg kg <sup>−1</sup>, intraperitoneally) and placed in a Kopf small animal stereotaxic instrument. The scalp was incised, the skull exposed, and 0.75-mm diameter holes drilled at appropriate anterior–posterior/medial–lateral stereotaxic coordinates. Metal electrodes insulated except at the 0.25-mm diameter tip were then lowered to the target depth and the assembly fastened to the skull with dental acrylic. Stereotaxic coordinates (in mm) were dorsal cochlear nucleus (DCN) AP=−11.3, ML=±3.8, DV=−7.3 to −7.5; posterior-ventral cochlear nucleus (PVCN): AP=−11.0, ML=±3.8, DV=−8.4; anterior-ventral cochlear nucleus (AVCN: AP=−10.0, $\\mathrm { M L } { = } { \\pm } 4 . 3$ , DV=−8.6 to −8.7 (Paxinos and Watson, 1997). All animals were implanted bilaterally, with six animals each assigned to DCN, AVCN, and PVCN. Electrode impedance measured immediately after implantation showed acceptable low values $( \\mathrm { m e a n } = 1 2 . 8 \\mathrm { k } \\Omega , \\mathrm { S D } = 2 . 7 ,$ highest impedance=18 kΩ).",
+   "exposures[0].fundamental_frequency_khz": "The acoustic stimuli consisted of six ultrasonic (40, 50, 60, 70, 80 and 90 kHz) tone pips, 1-ms duration, 0.3-ms linear rise/fall and 0.4-ms plateau. Stimulus repetition rate was 11 s <sup>−1</sup>. Digital stimulus waveforms were delivered by a Berkeley Nucleonics Inc. Model 630 arbitrary function generator running at an internal clock rate of1.25 MHz (i.e., 1250 data points produced a 1-ms stimulus waveform). Output from the function generator was delivered to a Stewart PA-100B power amplifier (linear to 100 kHz) which in turn drove a Brüel and Kjær (B and K) 1/8-in. pressure-field condenser microphone used as an emitter source (Frederiksen, 1977). US stimuli were delivered monaurally into each ear via a rubber tube (3/16-in. O.D., extending 1 cm beyond the microphone tip) to prevent the microphone from directly touching the animal and to provide flexible entry into the ear canal (inserted as far as possible without distorting or blocking the tube end). The tube was positioned and held firmly in the ear canal by adjusting a multi-position clamp attached to the B and K microphone. The ear canal was not otherwise closed.Initial position adjustments ofthe microphone were made to verify optimal evoked response amplitudes.",
+   "exposures[0].timing.pulse_duration_ms": "The acoustic stimuli consisted of six ultrasonic (40, 50, 60, 70, 80 and 90 kHz) tone pips, 1-ms duration, 0.3-ms linear rise/fall and 0.4-ms plateau. Stimulus repetition rate was 11 s <sup>−1</sup>. Digital stimulus waveforms were delivered by a Berkeley Nucleonics Inc. Model 630 arbitrary function generator running at an internal clock rate of1.25 MHz (i.e., 1250 data points produced a 1-ms stimulus waveform). Output from the function generator was delivered to a Stewart PA-100B power amplifier (linear to 100 kHz) which in turn drove a Brüel and Kjær (B and K) 1/8-in. pressure-field condenser microphone used as an emitter source (Frederiksen, 1977). US stimuli were delivered monaurally into each ear via a rubber tube (3/16-in. O.D., extending 1 cm beyond the microphone tip) to prevent the microphone from directly touching the animal and to provide flexible entry into the ear canal (inserted as far as possible without distorting or blocking the tube end). The tube was positioned and held firmly in the ear canal by adjusting a multi-position clamp attached to the B and K microphone. The ear canal was not otherwise closed.Initial position adjustments ofthe microphone were made to verify optimal evoked response amplitudes.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The acoustic stimuli consisted of six ultrasonic (40, 50, 60, 70, 80 and 90 kHz) tone pips, 1-ms duration, 0.3-ms linear rise/fall and 0.4-ms plateau. Stimulus repetition rate was 11 s <sup>−1</sup>. Digital stimulus waveforms were delivered by a Berkeley Nucleonics Inc. Model 630 arbitrary function generator running at an internal clock rate of1.25 MHz (i.e., 1250 data points produced a 1-ms stimulus waveform). Output from the function generator was delivered to a Stewart PA-100B power amplifier (linear to 100 kHz) which in turn drove a Brüel and Kjær (B and K) 1/8-in. pressure-field condenser microphone used as an emitter source (Frederiksen, 1977). US stimuli were delivered monaurally into each ear via a rubber tube (3/16-in. O.D., extending 1 cm beyond the microphone tip) to prevent the microphone from directly touching the animal and to provide flexible entry into the ear canal (inserted as far as possible without distorting or blocking the tube end). The tube was positioned and held firmly in the ear canal by adjusting a multi-position clamp attached to the B and K microphone. The ear canal was not otherwise closed.Initial position adjustments ofthe microphone were made to verify optimal evoked response amplitudes."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "the acoustic/ultrasonic stimulus was delivered into the ear canal (normal hearing pathway) while recordings were made from the cochlear nucleus in the brainstem; target is recorded as the stimulation site (cochlea/ear canal), not the recording site."
+   }
+  ],
+  "human_edited": false,
+  "notes": "This study delivers audible-hearing-pathway ultrasonic tone pips (40-90 kHz) via a rubber tube into the rat ear canal to evoke cochlear-nucleus auditory responses; it is not a focused/transcranial ultrasound neuromodulation study, and stimulus intensity is reported only in dB SPL (not kPa or W/cm2), so pressure/intensity fields are not_reported.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

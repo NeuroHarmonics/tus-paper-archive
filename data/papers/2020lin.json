@@ -1,0 +1,319 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020lin",
+ "doi": "10.7150/thno.40520",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Five monkeys (Macaca fascicularis, labeled from 1 to 5, 4-7 years old, 5.4-5.9 kg) were provided by the Center of Guangdong Landao Biotechnology in Guangzhou, China.",
+   "anaesthesia": "Anesthesia was induced by injection of ketamine (10 mg/kg, i.m.) and atropine (0.05 mg/kg, i.m.) for 1.5 hours.",
+   "adverse_events": "Relatively small temperature elevation (0.69 ± 0.044°C) and intact cortex structure and neurons indicated that 30 min ultrasound stimulation in this study was safe for the treatment in epileptic monkey models (Supplementary Figure S2).",
+   "safety_notes": "Relatively small temperature elevation (0.69 ± 0.044°C) and intact cortex structure and neurons indicated that 30 min ultrasound stimulation in this study was safe for the treatment in epileptic monkey models (Supplementary Figure S2).",
+   "exposures[0].fundamental_frequency_khz": "A single-element focused ultrasound transducer (H116, Sonic Concept) was placed on the site of penicillin injection to deliver ultrasound energy to the epileptogenic foci (Figure 1A; see also in Supplementary Figure S1).",
+   "exposures[0].unspecified_domain.pressure_kpa": "The acoustic intensity (I<sub>SPPA</sub>) was evaluated to be approximately 2.02 W/cm2 (the acoustic pressure = 0.35 MPa), as measured with a needle hydrophone (Precision Acoustics, Dorchester, Dorset, UK).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The acoustic intensity (I<sub>SPPA</sub>) was evaluated to be approximately 2.02 W/cm2 (the acoustic pressure = 0.35 MPa), as measured with a needle hydrophone (Precision Acoustics, Dorchester, Dorset, UK).",
+   "exposures[0].timing.pulse_duration_ms": "A single-element ultrasound transducer with a fundamental frequency of 750 kHz, TBD of 300 μs, PRF of 1000 Hz, sonication duration (SD) of 200 ms, and inter-stimulation interval (ISI) of 5 seconds was used for stimulation of the epileptic focus.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A single-element ultrasound transducer with a fundamental frequency of 750 kHz, TBD of 300 μs, PRF of 1000 Hz, sonication duration (SD) of 200 ms, and inter-stimulation interval (ISI) of 5 seconds was used for stimulation of the epileptic focus.",
+   "exposures[0].timing.sonication_duration_s": "A single-element ultrasound transducer with a fundamental frequency of 750 kHz, TBD of 300 μs, PRF of 1000 Hz, sonication duration (SD) of 200 ms, and inter-stimulation interval (ISI) of 5 seconds was used for stimulation of the epileptic focus.",
+   "exposures[0].target.label": "Focal seizures were induced by penicillin injection in the right frontal lobe (3mm depth) lasting less than 48 hours.",
+   "exposures[1].fundamental_frequency_khz": "An ultrasound neuro-modulation chip with 28 MHz resonant frequency compatible with the patch-clamp systems due to the small size and transparent character was used for stimulation of slices in vitro (Figure S5)[39-41].",
+   "exposures[1].unspecified_domain.pressure_kpa": "the acoustic pressure equal to 0.13 MPa (the spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was evaluated to be approximately 465 mW/cm2.",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "the acoustic pressure equal to 0.13 MPa (the spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was evaluated to be approximately 465 mW/cm2.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "The spatial peak time average intensity (I<sub>SPTA</sub>) was equal to 233 mW/cm2 and was calculated by multiplying duty cycle to the I<sub>SPPA</sub>[43].",
+   "exposures[1].timing.pulse_duration_ms": "Sixty second low-intensity pulsed ultrasound waveforms with a fundamental frequency of 28 MHz, acoustic pressure of 0.13 MPa (I = 465 mW/cm2), TBD of 5 ms and PRF of 100 Hz were used to stimulate the human epileptic slices.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Sixty second low-intensity pulsed ultrasound waveforms with a fundamental frequency of 28 MHz, acoustic pressure of 0.13 MPa (I = 465 mW/cm2), TBD of 5 ms and PRF of 100 Hz were used to stimulate the human epileptic slices.",
+   "exposures[1].timing.sonication_duration_s": "Sixty second low-intensity pulsed ultrasound waveforms with a fundamental frequency of 28 MHz, acoustic pressure of 0.13 MPa (I = 465 mW/cm2), TBD of 5 ms and PRF of 100 Hz were used to stimulate the human epileptic slices.",
+   "exposures[1].target.label": "A total of 15 TLE patients and 4 glioma patients without epilepsy were included in the preliminary study."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "This paper spans three very different subject populations that cannot be summed to one total: 5 monkeys (in vivo), 15 TLE patients plus 4 non-epileptic glioma patients providing biopsy tissue for ex vivo brain slices, and 4 mice used only for parameter selection; subject_unit is set to 'animal' as an approximation."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Ketamine/atropine anesthesia is explicitly described for the surgical/injection procedure (1.5 h), but the paper does not clearly state whether the monkeys remained anesthetized during the subsequent video-EEG monitoring and 30-minute ultrasound treatment."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "The paper does not state whether the 0.35 MPa / 2.02 W/cm2 values were measured in free field or in situ; the skull was surgically removed and the transducer coupled directly to the dura, but no domain language ('free field' or 'in situ') is used."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "ISPTA is stated to be 'calculated by multiplying duty cycle to the ISPPA' but the duty cycle value itself is not given in the text (233/465 = 50% is implied, but not stated), so it is left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[1].in_situ",
+    "reason": "Ultrasound was delivered directly to an isolated brain slice bathed in ACSF via a chip beneath it, with no intervening skull or tissue path; set to not_reported (rather than null) because the record as a whole is not tissue-only (it also includes the in vivo monkey exposure)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ },
+ "model_system": [
+  "nonhuman_primate",
+  "ex_vivo_tissue"
+ ],
+ "species": "Macaca fascicularis (in vivo); human and mouse brain slices (ex vivo)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "video-EEG depth-electrode recording of epileptiform spikes; behavioral seizure monitoring (count, frequency, duration, interval); whole-cell/cell-attached patch-clamp recording of EPSCs/IPSCs and firing rate; biocytin/GAD67 immunostaining; H&E and Bielschowsky silver staining",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Ultrasound suppressed electrographic ictal spike frequency and behavioral seizures in penicillin-induced epileptic monkeys, and inhibited epileptiform discharges in human TLE brain slices, apparently via increased inhibitory (interneuron) synaptic activity and decreased pyramidal-neuron firing.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Relatively small temperature elevation (0.69 ± 0.044°C) and intact cortex structure and neurons indicated that 30 min ultrasound stimulation in this study was safe for the treatment in epileptic monkey models.",
+ "exposures": [
+  {
+   "label": "In vivo epileptic-focus stimulation (penicillin-induced epilepsy monkey model)",
+   "target": {
+    "terms": [
+     "frontal_lobe"
+    ],
+    "label": "right frontal lobe (epileptogenic focus, penicillin injection site)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept",
+    "model": "H116"
+   },
+   "fundamental_frequency_khz": 750,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 350,
+    "isppa_w_cm2": 2.02,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "A single-element ultrasound transducer with TBD of 300 µs, PRF of 1000 Hz, sonication duration (SD) of 200 ms and inter-stimulation interval (ISI) of 5 s was applied to the epileptogenic focus for 30 minutes total per session. Sham consisted of the transducer fixed in place for 30 minutes without ultrasound output; a separate control experiment placed the transducer away from the brain (audible-sound-only) for 8 hours."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  },
+  {
+   "label": "Ex vivo brain slice stimulation (mouse cortical slices for parameter selection; human TLE patient temporal-lobe slices)",
+   "target": {
+    "terms": [
+     "brain_slice"
+    ],
+    "label": "cortical/temporal-lobe brain slices (mouse, for parameter selection; human TLE patient biopsy, main experiment)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "ultrasound neuro-modulation chip (interdigital transducers on LiNbO3 substrate)"
+   },
+   "fundamental_frequency_khz": 28000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 130,
+    "isppa_w_cm2": 0.465,
+    "ispta_w_cm2": 0.233
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 60,
+    "protocol_description": "Sixty-second low-intensity pulsed ultrasound waveforms (28 MHz, TBD 5 ms, PRF 100 Hz) that produced an inhibitory effect in mice cortical slices were therefore used to stimulate the human epileptic slices; spontaneous activity was recorded for 60 s before and 60 s during ultrasound. A supplementary chip at 6.57 MHz was also tested but without quantified pressure/timing parameters reported."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ]
+}

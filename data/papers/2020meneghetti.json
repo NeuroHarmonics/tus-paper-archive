@@ -1,0 +1,224 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020meneghetti",
+ "doi": "10.1088/1741-2552/abae8b",
+ "model_system": [
+  "other_vertebrate"
+ ],
+ "species": "zebrafish (Danio rerio) larvae, Tg(elavl3:GCaMP6s)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  12,
+  10,
+  8,
+  8,
+  8,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 18,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "whole-CNS widefield calcium imaging (GCaMP6s) of larval zebrafish encephalon",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US stimulation increased calcium fluorescence (direct neural activation) across CNS regions in a region-dependent manner, strongest and fastest in a cerebellar subregion, with response amplitude increasing with US intensity (Ispta) and with duty cycle/pressure.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Whole-CNS unfocused ultrasound stimulation of zebrafish encephalon",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole zebrafish encephalon (CNS-wide, unfocused)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Precision Acoustics LTD, Dorchester, UK",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 490,
+   "free_field": {
+    "pressure_kpa": [
+     8,
+     40
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.0015,
+     0.12
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulsed ultrasound stimulations of 490 kHz were delivered in blocks of three stimuli of 100 ms each, with a duty cycle of 25%, 50%, 75% or 100%. A stimulus duration of 300 ms with a pulse repetition frequency of 10 Hz was chosen. Each recording session consisted of three identical US stimulation windows delivered every 15 s, with the overall acquisition time for every recording session fixed at 60 s. Pressure amplitude varied from 8 to 40 kPa in nine discrete steps; each larva underwent two sets of nine recording sessions, one for each pressure amplitude, and for each pressure amplitude the duty cycle was first set at either 25% or 50% and then increased to 100% or 75%. In a separate 'US-shielded' control condition, a 10 mm thick soundproofing element (transmitting 15.85% of incident acoustic pressure) was placed between the transducer and the Petri dish to block direct US stimulation of the brain while preserving water-movement stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We tested 12 3 dpf, 10 4 dpf, and 8 5 dpf larvae. Each larva has undergone two sets of nine recording sessions, one for each pressure amplitude. For each pressure amplitude, the duty cycle was first set at either 25% or 50% and then increased to 100% or 75%.",
+   "exposures[0].fundamental_frequency_khz": "US stimulation was applied by placing a 44 mm diameter PZT (Lead Zirconate Titanate) unfocused transducer (Precision Acoustics LTD, Dorchester, UK, S/N PA886, central frequency equal to 490 kHz, 3 dB bandwidth equal to 160 kHz, 6 dB X-profile beamwidth 19.88 mm, 6 dB Y-profile beamwidth 18.66 mm) at a distance of 165 mm from the animal specimen.",
+   "exposures[0].free_field.pressure_kpa": "Pulsed ultrasound stimulations of 490 kHz were delivered in blocks of three stimuli of 100 ms each, with a duty cycle of 25%, 50%, 75% or 100%. A stimulus duration of 300 ms with a pulse repetition frequency of 10 Hz was chosen. Pressure amplitude varied from 8 to 40 kPa in nine discrete steps.",
+   "exposures[0].free_field.ispta_w_cm2": "Pressure amplitude varied from 8 to 40 kPa in nine discrete steps. The $I _ { \\mathrm { s p t a } } ,$ , therefore, varied from 1.5 to 120 mW $\\mathrm { c m } ^ { - 2 }$ Each recording session consisted ofthree identical US stimulation windows delivered every 15 s.",
+   "exposures[0].timing.pulse_duration_ms": "Figure 1. Experimental setup and stimulation parameters. (a) Illustrative scheme (left) and photo (right) of the experimental setup composed of a PMMA tank full of degassed deionized water (3) in which the 44 mm diameter PZT unfocused US transducer was immersed (4). On top of the tank a custom-made interlocking housing (2) contained a Petri dish filled with fish water in which the zebrafish larvae were immobilized with agarose (5). Above the setup, a custom-made upright fluorescence microscope in epi configuration (1) was used for imaging the encephalon of the mounted larvae. Each recording sessions lasted for 60 s during which three stimulations were triggered every 15 s by a waveform generator in series with a 50 dB gain radio frequency power amplifier. (b) Temporal protocol of US stimulation: duty cycle (DC) 25% (blue) with $\\mathrm { T _ { O N } } = 2 5$ ms and $\\mathrm { T } _ { \\mathrm { O F F } } = 7 5$ ms; DC 50% (yellow) with $\\bar { \\mathrm { T } } _ { \\mathrm { O N } } = 5 0 $ ms and $\\mathrm { T } _ { \\mathrm { O F F } } = 5 0$ ms; DC 75% (orange) with $\\mathrm { T } _ { \\mathrm { O N } } = 7 5 $ ms and $\\mathrm { T } _ { \\mathrm { O F F } } = 2 5$ ms; DC 100% (red) with $\\mathrm { T } _ { \\mathrm { O N } } = 1 0 0 $ ms. The tone burst duration is equal to $\\mathrm { T _ { O N } }$ and the pulse repetition period is equal to 100 ms; the stimulation duration (SD) is of 300 ms for the four chosen temporal protocols. Each stimulation was repeated three times during every recording session with an inter stimulation interval of 15 s. In the inset it is shown the temporal evolution of US stimulation waves produced by a transducer with central frequency equal to 490 kHz. (c) Stimulation acoustic intensity (spatial peak temporal average measured in mW/cm<sup>2</sup>) for each experimental protocol divided into 5 balanced groups. The set of used US intensities is within the range suggested by the FDA for diagnostic US imaging.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulsed ultrasound stimulations of 490 kHz were delivered in blocks of three stimuli of 100 ms each, with a duty cycle of 25%, 50%, 75% or 100%. A stimulus duration of 300 ms with a pulse repetition frequency of 10 Hz was chosen. Pressure amplitude varied from 8 to 40 kPa in nine discrete steps.",
+   "exposures[0].timing.duty_cycle_pct": "Pulsed ultrasound stimulations of 490 kHz were delivered in blocks of three stimuli of 100 ms each, with a duty cycle of 25%, 50%, 75% or 100%. A stimulus duration of 300 ms with a pulse repetition frequency of 10 Hz was chosen. Pressure amplitude varied from 8 to 40 kPa in nine discrete steps.",
+   "exposures[0].timing.sonication_duration_s": "Pulsed ultrasound stimulations of 490 kHz were delivered in blocks of three stimuli of 100 ms each, with a duty cycle of 25%, 50%, 75% or 100%. A stimulus duration of 300 ms with a pulse repetition frequency of 10 Hz was chosen. Pressure amplitude varied from 8 to 40 kPa in nine discrete steps.",
+   "exposures[0].device.manufacturer": "US stimulation was applied by placing a 44 mm diameter PZT (Lead Zirconate Titanate) unfocused transducer (Precision Acoustics LTD, Dorchester, UK, S/N PA886, central frequency equal to 490 kHz, 3 dB bandwidth equal to 160 kHz, 6 dB X-profile beamwidth 19.88 mm, 6 dB",
+   "n_sessions_per_subject": "Each larva has undergone two sets of nine recording sessions, one for each pressure amplitude."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Pressure/Ispta calibration was performed both at the experimental distance in free field and, separately, inside the Petri dish to account for reflections/attenuation ('additional intensity measurements were performed by positioning the hydrophone tip inside the Petri dish...These measurements yielded the Ispta calibration reported in figure 1'); it is unclear whether the 8-40 kPa / 1.5-120 mW/cm2 range used for the actual protocol reflects the free-field or dish-corrected calibration."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives separate group sizes for the US-unshielded (12, 10, 8 by dpf) and US-shielded (8, 8, 6 by dpf) cohorts rather than a single total; listed as separate group sizes rather than summed."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper discusses possible low-frequency (~10 Hz envelope) auditory confound and argues zebrafish larvae have low sensitivity at this frequency, but no active auditory masking/control was implemented; classified as 'other' for this reasoning-based argument rather than an explicit control manipulation."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The 'US-shielded' condition uses a soundproofing element to block/attenuate (not fully eliminate, 15.85% pressure transmitted) direct ultrasound to the brain while preserving water movement; classified as inactive_transducer ('blocked') though it is a partial block rather than a fully inactive transducer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

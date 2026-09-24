@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024yang",
+ "doi": "10.1109/tnsre.2024.3363912",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "APP/PS1 transgenic mouse (C57BL/6 background)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 28,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Open field test; Morris water maze; fear conditioning test; local field potential (LFP) relative power and cross-frequency phase-amplitude coupling; single-unit spike firing rate and theta phase-locking; ELISA for amyloid-beta and Tau",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS reduced the elevated interneuron firing rate seen in AD mice, ameliorated abnormal theta phase-locking of interneuron and pyramidal neuron spikes, improved phase-amplitude coupling of delta-epsilon/delta-gamma/theta-gamma bands, and improved spatial learning/memory and anxiety-related behaviour in AD mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to hippocampus (ADsti group)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 300,
+    "isppa_w_cm2": 6,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz. Low-intensity TUS was applied to the hippocampus of the ADsti group for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa daily for a period of 28 days (D0-D27)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Our study protocols were submitted to and approved by the Animal Ethics and Administrative Council of Yanshan University.In this study, twelve female C57BL/6 mice (ages: 12-16 weeks, weight: 20-25 g, Beijing Vital River Laboratory Animal Technology Co., Ltd. China) were used as the Control group. Additionally, twenty-four female APP/PS1 transgenic mice (ages: 12-16 weeks, weight: 20-25 g, Beijing HFK Bio-Technology Co., Ltd. China) were randomly divided into an AD group (N=12) and an ADsti group (N=12), for which female APP/PS1 mice show earlier and higher β amyloid plaque load and earlier memory deficits compared to age-matched males [21], [22]. The Control group, AD group and ADsti group were randomly divided into two subsets for behavioural experiments and electroencephalogram (EEG) recording. What’s more, 6 female APP/PS1 transgenic mice were applied with trapezoidal pulses to prove auditory response. All animals were kept in an animal housing room on a 12 h/12 h light/dark cycle; the temperature and humidity were controlled at 20-24 <sup>◦</sup>C and 45%-55%, respectively, and the mice had unrestricted access to standard pelleted rodent feed and water.",
+   "n_sessions_per_subject": "In this study, a long-term course of ultrasonic stimulation (15 minutes per day for 28 days) was applied to the hippocampus of APP/PS1 mice, and behavioural experiments, EEG recordings and biochemical tests were carried out. We know that AD shows symptoms such as memory impairment, and the hippocampus is closely related to the memory. Therefore, the hippocampus was chosen as the stimulation site in our study [23], [24]. AD is a chronic neurodegenerative diseases and long-term TUS pattern may be more appropriate. In previous studies, 2-weeks period of ultrasound stimulation was used in vascular dementia rats and 6-weeks period of ultrasound stimulation was applied on aluminum induced AD models, which achieved effective stimulation effects [17], [25]. We referred to the previous studies and selected 4-weeks as the stimulation cycle.The timeline of the experiment is shown in Figure 1b which does not include the training period of the fear conditioning test. Ultrasound stimulation for the ADsti group was given daily on D0-D27. In addition, the fear conditioning test and EEG acquisition took place on the same dates, that is, D0-D6, W1 (D7), W2 (D14), W3 (D21), and W4 (D28), which the eleven specific days are collectively referred to as “day collection in stimulation (day CIS)”. During day CIS, TUS was performed after the fear conditioning test and EEG acquisition. Subsequently, the open field experiment was",
+   "randomised": "Our study protocols were submitted to and approved by the Animal Ethics and Administrative Council of Yanshan University.In this study, twelve female C57BL/6 mice (ages: 12-16 weeks, weight: 20-25 g, Beijing Vital River Laboratory Animal Technology Co., Ltd. China) were used as the Control group. Additionally, twenty-four female APP/PS1 transgenic mice (ages: 12-16 weeks, weight: 20-25 g, Beijing HFK Bio-Technology Co., Ltd. China) were randomly divided into an AD group (N=12) and an ADsti group (N=12), for which female APP/PS1 mice show earlier and higher β amyloid plaque load and earlier memory deficits compared to age-matched males [21], [22]. The Control group, AD group and ADsti group were randomly divided into two subsets for behavioural experiments and electroencephalogram (EEG) recording. What’s more, 6 female APP/PS1 transgenic mice were applied with trapezoidal pulses to prove auditory response. All animals were kept in an animal housing room on a 12 h/12 h light/dark cycle; the temperature and humidity were controlled at 20-24 <sup>◦</sup>C and 45%-55%, respectively, and the mice had unrestricted access to standard pelleted rodent feed and water.",
+   "anaesthesia": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "auditory_control": "Previous studies have reported that TUS modulates neural activity through non-specific auditory responses [53-54]. To evaluate the effect of non-specific auditory responses in our experiments, six AD mice were stimulated with a specific ultrasound (trapezoidal pulses) that have been proved with no auditory response in TUS [55]. The results shown in Figure S1 indicate that the modulation effect of TUS on AD is not due to auditory effects. The results shown in Figure S2(a-c) indicate that some features of the AD group changed as function of progression time.In addition, the ELISA analysis results shown in Figure S3 indicate that 28 days of ultrasound stimulation can significantly reduce the expression of Aβ and Tau protein (hallmarks of AD) in the hippocampus and cortex of AD mice.",
+   "exposures[0].fundamental_frequency_khz": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].in_situ.pressure_kpa": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].in_situ.isppa_w_cm2": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].timing.pulse_duration_ms": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].timing.duty_cycle_pct": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].timing.sonication_duration_s": "The TUS setup was similar to that used in our previous study (Fig. 1a-left)[12]. Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig. 1c). In our experimental setup, we adjusted the transducer position by integrating the sound field distribution with the mouse brain atlas to make the maximum ultrasound intensity target the hippocampus. The ultrasound intensity distribution under the ex vivo mouse skull in the x-y plane (Fig. 1e) and the normalized amplitude for 1 (Fig. 1d) were measured with a calibrated needle-type hydrophone (HNR500; Onda, United States) that was moved by a two-dimensional electric translation platform. The diameter of the focal area measured at full width at 50% maximum was ∼6.2 mm (Fig. 1d). The head of mouse was shaved, and low-intensity TUS was applied to the hippocampus of the ADsti group vertically only for a sonication time of 15 min at an ultrasound intensity of 0.3 MPa (corresponding to a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 6 W/cm<sup>2</sup>) daily for a period of 28 days (Fig. 1b).In our study, the mice were anesthetized by the isoflurane only during the ultrasound stimulation. Because the mice from all groups underwent the same anesthesia procedure, the statistical differences in experimental results between groups were due to ultrasound stimulation.",
+   "exposures[0].device.manufacturer": "Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig.",
+   "exposures[0].device.model": "Ultrasound treatment was performed with a 0.5-MHz unfocused piezoelectric transducer (V301-SU, Olympus, United States) with a 50-msec burst at a 5% duty cycle and a repetition frequency of 1 Hz (Fig."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "An additional 6 APP/PS1 mice received a different ultrasound waveform (trapezoidal pulses) solely to test for auditory confounds; these are not counted in n_subjects for the main hippocampal TUS exposure"
+   },
+   {
+    "field": "readout_timing",
+    "reason": "TUS was performed after the fear conditioning test and EEG acquisition on each collection day, so behavioural/EEG readouts were largely offline relative to sonication, though this alternation happened within the same day across the 28-day course"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

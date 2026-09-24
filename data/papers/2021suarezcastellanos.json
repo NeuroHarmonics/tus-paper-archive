@@ -1,0 +1,211 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021suarezcastellanos",
+ "doi": "10.1088/1741-2552/abdfb1",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": null,
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Single FUS pulses caused fiber volleys and fEPSPs (local field potentials) in hippocampal slices, i.e. de novo generation of synaptically-evoked neural activity; responses were abolished by the sodium-channel blocker TTX, confirming a genuine excitatory neuronal response rather than an artifact.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Single-pulse FUS stimulation of hippocampal brain slice (CA3/Schaffer collaterals)",
+   "target": {
+    "terms": [
+     "CA3"
+    ],
+    "label": "CA3 / Schaffer collaterals (hippocampal formation)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Meggitt A/S, Kvistgaard, Denmark",
+    "model": "custom single-element focused transducer, PZ26 element"
+   },
+   "fundamental_frequency_khz": 1780,
+   "free_field": {
+    "pressure_kpa": [
+     2500,
+     8000
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.16,
+     0.2
+    ],
+    "pulse_repetition_frequency_hz": [
+     0.2,
+     1
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.00016,
+     0.0002
+    ],
+    "protocol_description": "Each 'sonication' was a single short FUS tone burst (pulse duration 160-200 microseconds across most experiments) delivered repeatedly with several seconds between pulses (PRF stated as 0.2-1 Hz across the main experiments, e.g. 1 Hz or 0.1 Hz depending on the sub-study), analogous to repeated single-pulse trials rather than a duty-cycled train within one sonication; this inter-pulse repetition rate is therefore not entered in the numeric PRF field. In a separate TTX-control experiment, the pulse duration was lengthened; the paper states this value inconsistently as 3.5 ms in one place and 5.5 ms in another (same experiment: PRF 4 Hz, 6.3 MPa, n=100), and a stable baseline response was established over ~90 s before TTX perfusion for 600 s, followed by 200 s of post-TTX FUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The experiments in this work consisted of using 8 different brain slices (A, B, C, D, E, F, G, H) from 5 different animals (i, ii, iii, iv, v).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound stimulation system consisted of a custom-made single-element focused transducer (PZ26, Meggitt A/S, Kvistgaard, Denmark), with resonant frequency of 1.78 MHz, thickness of 1.25 mm, diameter of 15 mm and radius of curvature of 15 mm (Figure 2).",
+   "exposures[0].free_field.pressure_kpa": "FUS pressures applied throughout the study and reported spatial-average RMS acoustic pressures at the -3 dB focal spot $( p _ { s a r } ,$ Preston, 1991), unless otherwise stated, ranged from 2.5 to 8 MPa, the pulse-repetition frequency (PRF) varied from 0.2 to 1 Hz, and the pulse duration varied from 160 to 200 µs (Figure 3b).",
+   "exposures[0].timing.sonication_duration_s": "FUS pressures applied throughout the study and reported spatial-average RMS acoustic pressures at the -3 dB focal spot $( p _ { s a r } ,$ Preston, 1991), unless otherwise stated, ranged from 2.5 to 8 MPa, the pulse-repetition frequency (PRF) varied from 0.2 to 1 Hz, and the pulse duration varied from 160 to 200 µs (Figure 3b).",
+   "exposures[0].device.manufacturer": "The ultrasound stimulation system consisted of a custom-made single-element focused transducer (PZ26, Meggitt A/S, Kvistgaard, Denmark), with resonant frequency of 1.78 MHz, thickness of 1.25 mm, diameter of 15 mm and radius of curvature of 15 mm (Figure 2).",
+   "exposures[0].device.model": "The ultrasound stimulation system consisted of a custom-made single-element focused transducer (PZ26, Meggitt A/S, Kvistgaard, Denmark), with resonant frequency of 1.78 MHz, thickness of 1.25 mm, diameter of 15 mm and radius of curvature of 15 mm (Figure 2).",
+   "exposures[0].timing.pulse_duration_ms": "FUS pressures applied throughout the study and reported spatial-average RMS acoustic pressures at the -3 dB focal spot $( p _ { s a r } ,$ Preston, 1991), unless otherwise stated, ranged from 2.5 to 8 MPa, the pulse-repetition frequency (PRF) varied from 0.2 to 1 Hz, and the pulse duration varied from 160 to 200 µs (Figure 3b).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS pressures applied throughout the study and reported spatial-average RMS acoustic pressures at the -3 dB focal spot $( p _ { s a r } ,$ Preston, 1991), unless otherwise stated, ranged from 2.5 to 8 MPa, the pulse-repetition frequency (PRF) varied from 0.2 to 1 Hz, and the pulse duration varied from 160 to 200 µs (Figure 3b)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "Focal spot was preferentially aimed at CA3/Schaffer collaterals but electrodes across the whole hippocampal slice (including CA1) recorded responses; treated as one target (CA3) since that is the paper's stated aim point."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper reports a 'PRF' (0.2-1 Hz for main experiments, 4 Hz for the TTX experiment) describing the interval between separate single-pulse trials, not periodic on/off gating within one sonication; classified as waveform=continuous per schema rule and PRF left null, with the repetition rate described in protocol_description instead."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "The TTX-experiment pulse duration is stated as '3.5 ms' in the main Methods text and as '5.5 ms' in the later summary of slice divisions, for what appears to be the same experiment (6.3 MPa, PRF 4 Hz); this discrepancy could not be resolved from the text so both values are reported and the number is not entered in a numeric field."
+   },
+   {
+    "field": "exposures[0].in_situ.reported_as",
+    "reason": "The in_situ pressures are five COMSOL-simulated mean±SD values at different depths through the brain slice thickness (a spatial profile), not a mean or range across subjects; 'mean_or_range_across_subjects' is used here only because it is the closest available vocabulary term for a reported mean±SD."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No conventional sham arm is described; classified as active_control_site based on the control experiment where FUS pulses were applied away from the hippocampal structure (same slice, off-target) to confirm responses were not electromagnetic artifact."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "set to pulsed by the tie-break: the ruled timing has a pulse repetition or duty cycle"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "first",
+   "exposures[0].in_situ.ispta_w_cm2": "first"
+  }
+ }
+}

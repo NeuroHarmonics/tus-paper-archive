@@ -1,0 +1,183 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023ye",
+ "doi": "10.3389/fnins.2023.1269267",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (SK-N-SH neuroblastoma cell line)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "serum deprivation (in vitro neuronal injury/starvation model)",
+ "n_subjects": 5,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Immunocytochemistry (tubulin staining, neurite length via NeuronJ); Western blot (BDNF, p-ERK1/2/ERK1/2, p-Akt/Akt, p-mTOR/mTOR); LDH cytotoxicity assay",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "LIPUS treatment groups A (50 mW/cm2, 40%), B (25 mW/cm2, 20%) and C (50 mW/cm2, 20%) significantly enhanced neurite outgrowth and increased BDNF, p-ERK1/2, p-Akt and p-mTOR levels relative to the serum-starved control, whereas group D (25 mW/cm2, 10%) did not significantly enhance neurite length or downstream signalling despite raising BDNF.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS stimulation of serum-starved SK-N-SH neuroblastoma cells (Groups A-D)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "SK-N-SH human neuroblastoma cells (serum-starved, in vitro)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.025,
+     0.05
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     40,
+     20,
+     20,
+     10
+    ],
+    "sonication_duration_s": 600,
+    "protocol_description": "Four LIPUS parameter configurations (A: 50 mW/cm2 SATA/40% DC; B: 25 mW/cm2/20% DC; C: 50 mW/cm2/20% DC; D: 25 mW/cm2/10% DC), UFF 1.5 MHz and PRF 1 kHz held constant, were applied to serum-starved (1% FBS) SK-N-SH cells for 10 min/day (transducer rotated 180 degrees after the first 5 min) for 4 consecutive days, compared against a serum-starved control and a healthy (10% FBS) control receiving no LIPUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "N = 5/group ns: no statistical significance; <sup>∗∗∗∗</sup>p < 0.0001.",
+   "exposures[0].fundamental_frequency_khz": "Two control groups were included: (1) SK-N-SH cells cultured in complete media (10% FBS) without LIPUS stimulation were used as a healthy control group, and (2) SK-N-SH cells grown in low-serum media without LIPUS stimulation were used as the control for serum starvation. Four LIPUS treatment groups grown in low-serum media (1% FBS) were tested. To investigate the efect of various SATA intensities (mW/cm<sup>2</sup>) and DC (%) on cellular responses, four distinct LIPUS treatment parameter configurations were tested: (A) 50 mW/cm<sup>2</sup>, 40%, (B) 25 mW/cm<sup>2</sup>, 20%, (C) 50 mW/cm<sup>2</sup>, 20%, and (D) 25 mW/cm<sup>2</sup>, 10%. Groups A and C shared the same ultrasound intensity but varied in duty cycles. This pattern was mirrored in groups B and D. Notably, the ultrasound amplitude in groups B and D was approximately 0.707 times that of groups A and C. UFF was set at 1.5 MHz and the PRF was set to 1 kHz in the four groups and remained constant. LIPUS treatment began 18 h post-transition to the low-serum media (on day 2) for 10 min. To ensure a uniform ultrasound distribution, the transducer was rotated 180<sup>◦</sup> following the initial 5-min treatment period, then continued for 5 min. The 10-min LIPUS treatment was repeated every 24 h. Ten minutes after the fourth LIPUS treatment (on day 5), the supernatants were collected for cell viability assessments, and the cells were either collected for protein extraction or imaged using immunocytochemistry (ICC).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Two control groups were included: (1) SK-N-SH cells cultured in complete media (10% FBS) without LIPUS stimulation were used as a healthy control group, and (2) SK-N-SH cells grown in low-serum media without LIPUS stimulation were used as the control for serum starvation. Four LIPUS treatment groups grown in low-serum media (1% FBS) were tested. To investigate the efect of various SATA intensities (mW/cm<sup>2</sup>) and DC (%) on cellular responses, four distinct LIPUS treatment parameter configurations were tested: (A) 50 mW/cm<sup>2</sup>, 40%, (B) 25 mW/cm<sup>2</sup>, 20%, (C) 50 mW/cm<sup>2</sup>, 20%, and (D) 25 mW/cm<sup>2</sup>, 10%. Groups A and C shared the same ultrasound intensity but varied in duty cycles. This pattern was mirrored in groups B and D. Notably, the ultrasound amplitude in groups B and D was approximately 0.707 times that of groups A and C. UFF was set at 1.5 MHz and the PRF was set to 1 kHz in the four groups and remained constant. LIPUS treatment began 18 h post-transition to the low-serum media (on day 2) for 10 min. To ensure a uniform ultrasound distribution, the transducer was rotated 180<sup>◦</sup> following the initial 5-min treatment period, then continued for 5 min. The 10-min LIPUS treatment was repeated every 24 h. Ten minutes after the fourth LIPUS treatment (on day 5), the supernatants were collected for cell viability assessments, and the cells were either collected for protein extraction or imaged using immunocytochemistry (ICC).",
+   "exposures[0].timing.duty_cycle_pct": "Two control groups were included: (1) SK-N-SH cells cultured in complete media (10% FBS) without LIPUS stimulation were used as a healthy control group, and (2) SK-N-SH cells grown in low-serum media without LIPUS stimulation were used as the control for serum starvation. Four LIPUS treatment groups grown in low-serum media (1% FBS) were tested. To investigate the efect of various SATA intensities (mW/cm<sup>2</sup>) and DC (%) on cellular responses, four distinct LIPUS treatment parameter configurations were tested: (A) 50 mW/cm<sup>2</sup>, 40%, (B) 25 mW/cm<sup>2</sup>, 20%, (C) 50 mW/cm<sup>2</sup>, 20%, and (D) 25 mW/cm<sup>2</sup>, 10%. Groups A and C shared the same ultrasound intensity but varied in duty cycles. This pattern was mirrored in groups B and D. Notably, the ultrasound amplitude in groups B and D was approximately 0.707 times that of groups A and C. UFF was set at 1.5 MHz and the PRF was set to 1 kHz in the four groups and remained constant. LIPUS treatment began 18 h post-transition to the low-serum media (on day 2) for 10 min. To ensure a uniform ultrasound distribution, the transducer was rotated 180<sup>◦</sup> following the initial 5-min treatment period, then continued for 5 min. The 10-min LIPUS treatment was repeated every 24 h. Ten minutes after the fourth LIPUS treatment (on day 5), the supernatants were collected for cell viability assessments, and the cells were either collected for protein extraction or imaged using immunocytochemistry (ICC).",
+   "exposures[0].timing.sonication_duration_s": "Two control groups were included: (1) SK-N-SH cells cultured in complete media (10% FBS) without LIPUS stimulation were used as a healthy control group, and (2) SK-N-SH cells grown in low-serum media without LIPUS stimulation were used as the control for serum starvation. Four LIPUS treatment groups grown in low-serum media (1% FBS) were tested. To investigate the efect of various SATA intensities (mW/cm<sup>2</sup>) and DC (%) on cellular responses, four distinct LIPUS treatment parameter configurations were tested: (A) 50 mW/cm<sup>2</sup>, 40%, (B) 25 mW/cm<sup>2</sup>, 20%, (C) 50 mW/cm<sup>2</sup>, 20%, and (D) 25 mW/cm<sup>2</sup>, 10%. Groups A and C shared the same ultrasound intensity but varied in duty cycles. This pattern was mirrored in groups B and D. Notably, the ultrasound amplitude in groups B and D was approximately 0.707 times that of groups A and C. UFF was set at 1.5 MHz and the PRF was set to 1 kHz in the four groups and remained constant. LIPUS treatment began 18 h post-transition to the low-serum media (on day 2) for 10 min. To ensure a uniform ultrasound distribution, the transducer was rotated 180<sup>◦</sup> following the initial 5-min treatment period, then continued for 5 min. The 10-min LIPUS treatment was repeated every 24 h. Ten minutes after the fourth LIPUS treatment (on day 5), the supernatants were collected for cell viability assessments, and the cells were either collected for protein extraction or imaged using immunocytochemistry (ICC).",
+   "exposures[0].free_field.ispta_w_cm2": "To investigate the efect of various SATA intensities (mW/cm<sup>2</sup>) and DC (%) on cellular responses, four distinct LIPUS treatment parameter configurations were tested: (A) 50 mW/cm<sup>2</sup>, 40%, (B) 25 mW/cm<sup>2</sup>, 20%, (C) 50 mW/cm<sup>2</sup>, 20%, and (D) 25 mW/cm<sup>2</sup>, 10%."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper reports 'spatial average-temporal average (SATA)' intensity, not spatial-peak temporal-average (ISPTA); recorded here as the closest available field, but SATA is a spatially-averaged (not spatial-peak) quantity so the two are not equivalent."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "The abstract lists group B and D duty cycles both as 10%, inconsistent with the Methods (section 2.3) and Discussion, which both give group B as 20% duty cycle; the Methods/Discussion values (40, 20, 20, 10 for A-D) are used here as the more detailed and internally consistent source."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only duty cycle and PRF are stated; pulse duration is not given directly and was not computed from these per instructions."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "N=5 is the replicate count reported for the LDH and western blot assays; a different N=250 is reported for neurite-length/soma-width quantification (likely a cell count rather than a replicate/culture count), so a single 'n_subjects' is ambiguous across assays."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

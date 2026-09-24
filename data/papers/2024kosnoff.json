@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024kosnoff",
+ "doi": "10.1038/s41467-024-48576-8",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site",
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "mVEP brain-computer-interface speller Euclidean letter error; EEG source imaging (N200 theta/alpha/beta/gamma power and inter-regional connectivity)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS to the geometric center of V5 (tFUS-GC) significantly reduced BCI speller Euclidean error and amplified N200 theta/alpha power in V5 and downstream in the dorsal (superior parietal) visual pathway compared to non-modulated, decoupled-sham and tFUS-GP conditions, consistent with enhanced feature-based visual-motion attention.",
+ "adverse_events": "none_observed",
+ "safety_notes": "A questionnaire assessing headache, neck pain, dental pain, nausea, dizziness, anxiety and abnormal muscle contractions was administered before and after each session; none of the subjects reported adverse symptoms after the sessions.",
+ "exposures": [
+  {
+   "label": "tFUS-GC: tFUS to the geometric center of V5",
+   "target": {
+    "terms": [
+     "extrastriate_visual_cortex"
+    ],
+    "label": "geometric center of V5 (middle temporal complex)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Verasonics, Kirkland, Washington, USA",
+    "model": "H275 (128-element random array)"
+   },
+   "fundamental_frequency_khz": 700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 200,
+    "isppa_w_cm2": 0.168,
+    "ispta_w_cm2": 0.101
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 3000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "tFUS pulsed for 140 cycles per pulse at 700 kHz (yielding 200 microsecond pulse duration), 1500 pulses per sonication at a 3 kHz PRF, giving a 500 ms sonication; 1-4 sonication repeats were applied per BCI epoch, with the first sonication beginning 100 ms before visual stimulus onset and additional sonications spaced equidistantly over the epoch."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Our study complies with all relevant ethical regulations regarding human research. It was reviewed and approved by the Advarra Institutional Review Board (protocol number: STUDY2017\\_00000426). 25 healthy human subjects (13 male / 12 female; mean age: $2 4 . 0 \\pm 5 . 5 9 )$ were recruited from around the university area in Pittsburgh. Interested subjects were safety screened for MRI eligibility and informed of the potential risks of the study. Subjects who wished to continue gave voluntary informed consent in accordance with the World Medical Association’s Declaration of Helsinki. A subject’s data were excluded from analysis iftheir non-modulated BCI classifier was random chance. Subjects were compensated for their time at a rate of\\$20 per hour. We did not obtain consent to publish subject-identifying information.",
+   "exposures[0].fundamental_frequency_khz": "Ex-vivo transcranial measurements. A 128-element random array ultrasound transducer H275 with 700 kHz fundamental frequency (Verasonics; Kirkland, Washington, USA) was characterized in a freewater tank through a hydrated human skull fragment (Ethnicity: Caucasian, Age: 58, Gender: Male, acquired from Skulls Unlimited International, Inc.) (Fig. 6d). A hydrophone was placed on one side of the skull, opposite the ultrasound transducer. The hydrophone was moved with a stepper motor to capture the transcranial pressure field in three dimensions. Estimated target pressure, derated spatial peak pulseaverage intensity $\\left( \\mathsf { I } _ { \\mathsf { S P P A } . 3 } \\right)$ , and derated spatial peak temporal-average intensity $( \\mathsf { I } _ { \\mathsf { S P T A } . 3 } )$ were calculated to ensure safety in compliance with the current available FDA guidelines<sup>72</sup>.",
+   "exposures[0].in_situ.pressure_kpa": "tFUS target pressure and derated intensities generated by the customized 128-element random array ultrasound transducer H275 were estimated by transcranial pressure readings through 3D needle hydrophone scanning behind a fully hydrated real human skull sample (ethnicity: Caucasian, age: 58, gender: male) submerged in degassed water in a water tank. The following ultrasound parameters are measured and estimated for the administered transcranial ultrasound stimulation: peak-to-peak pressure at the brain target 0.2 MPa, derated spatial-peak temporal-average intensity $\\left( \\mathsf { I } _ { \\mathsf { S P T A } . 3 } \\right)$ 101 mW/cm<sup>2</sup>, and derated spatial-peak pulse-average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } . 3 } )$ 0.168 W/cm<sup>2</sup>. While currently there are no FDA safety guidelines specifically for ultrasound neuromodulation, the estimated ultrasound energy is within safety limits for ultrasound diagnostic imaging $( \\mathsf { I } _ { \\mathsf { S P T A } , 3 } < 7 2 0 \\mathsf { m W } / \\mathsf { c m } ^ { 2 } , \\mathsf { I } _ { \\mathsf { S P P A } , 3 } < 1 9 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ) ^ { 7 2 }$",
+   "exposures[0].in_situ.isppa_w_cm2": "tFUS target pressure and derated intensities generated by the customized 128-element random array ultrasound transducer H275 were estimated by transcranial pressure readings through 3D needle hydrophone scanning behind a fully hydrated real human skull sample (ethnicity: Caucasian, age: 58, gender: male) submerged in degassed water in a water tank. The following ultrasound parameters are measured and estimated for the administered transcranial ultrasound stimulation: peak-to-peak pressure at the brain target 0.2 MPa, derated spatial-peak temporal-average intensity $\\left( \\mathsf { I } _ { \\mathsf { S P T A } . 3 } \\right)$ 101 mW/cm<sup>2</sup>, and derated spatial-peak pulse-average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } . 3 } )$ 0.168 W/cm<sup>2</sup>. While currently there are no FDA safety guidelines specifically for ultrasound neuromodulation, the estimated ultrasound energy is within safety limits for ultrasound diagnostic imaging $( \\mathsf { I } _ { \\mathsf { S P T A } , 3 } < 7 2 0 \\mathsf { m W } / \\mathsf { c m } ^ { 2 } , \\mathsf { I } _ { \\mathsf { S P P A } , 3 } < 1 9 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ) ^ { 7 2 }$",
+   "exposures[0].in_situ.ispta_w_cm2": "tFUS target pressure and derated intensities generated by the customized 128-element random array ultrasound transducer H275 were estimated by transcranial pressure readings through 3D needle hydrophone scanning behind a fully hydrated real human skull sample (ethnicity: Caucasian, age: 58, gender: male) submerged in degassed water in a water tank. The following ultrasound parameters are measured and estimated for the administered transcranial ultrasound stimulation: peak-to-peak pressure at the brain target 0.2 MPa, derated spatial-peak temporal-average intensity $\\left( \\mathsf { I } _ { \\mathsf { S P T A } . 3 } \\right)$ 101 mW/cm<sup>2</sup>, and derated spatial-peak pulse-average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } . 3 } )$ 0.168 W/cm<sup>2</sup>. While currently there are no FDA safety guidelines specifically for ultrasound neuromodulation, the estimated ultrasound energy is within safety limits for ultrasound diagnostic imaging $( \\mathsf { I } _ { \\mathsf { S P T A } , 3 } < 7 2 0 \\mathsf { m W } / \\mathsf { c m } ^ { 2 } , \\mathsf { I } _ { \\mathsf { S P P A } , 3 } < 1 9 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ) ^ { 7 2 }$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "This experiment was designed as a cross-over study, with the same subjects tested in four conditions in a predominantly randomized order: “non-modulated” (inactive tFUS), “decoupled-sham” tFUS (decoupled, but active, tFUS to account for audio-induced confounds), “US-control” (active tFUS targeted to a control brain location located by more than 1-cm away), and V5-targeted “tFUS” (estimated peak-to-peak pressure: 0.2 MPa, approximate focal beam diameter: 2 mm, approximate focal beam length: 2 mm (Fig. 6d), pulse-repetition frequency: 3 kHz, pulse duration: 200 µs, sonication duration: 500 ms (Fig. 6e). In some cases, the designated 3-hour experiment time did not allow for testing all four conditions and subjects were unable to be scheduled back. When it was apparent that time would become an issue, we prioritized testing tFUS-GC and Non-modulated conditions, given that this project was majorly to test whether tFUS neuromodu lation could enhance BCI performance. The partial data for these sessions were included in the analysis if they did not meet the other exclusion criteria.",
+   "exposures[0].timing.pulse_duration_ms": "This experiment was designed as a cross-over study, with the same subjects tested in four conditions in a predominantly randomized order: “non-modulated” (inactive tFUS), “decoupled-sham” tFUS (decoupled, but active, tFUS to account for audio-induced confounds), “US-control” (active tFUS targeted to a control brain location located by more than 1-cm away), and V5-targeted “tFUS” (estimated peak-to-peak pressure: 0.2 MPa, approximate focal beam diameter: 2 mm, approximate focal beam length: 2 mm (Fig. 6d), pulse-repetition frequency: 3 kHz, pulse duration: 200 µs, sonication duration: 500 ms (Fig. 6e). In some cases, the designated 3-hour experiment time did not allow for testing all four conditions and subjects were unable to be scheduled back. When it was apparent that time would become an issue, we prioritized testing tFUS-GC and Non-modulated conditions, given that this project was majorly to test whether tFUS neuromodu lation could enhance BCI performance. The partial data for these sessions were included in the analysis if they did not meet the other exclusion criteria.",
+   "exposures[0].timing.sonication_duration_s": "This experiment was designed as a cross-over study, with the same subjects tested in four conditions in a predominantly randomized order: “non-modulated” (inactive tFUS), “decoupled-sham” tFUS (decoupled, but active, tFUS to account for audio-induced confounds), “US-control” (active tFUS targeted to a control brain location located by more than 1-cm away), and V5-targeted “tFUS” (estimated peak-to-peak pressure: 0.2 MPa, approximate focal beam diameter: 2 mm, approximate focal beam length: 2 mm (Fig. 6d), pulse-repetition frequency: 3 kHz, pulse duration: 200 µs, sonication duration: 500 ms (Fig. 6e). In some cases, the designated 3-hour experiment time did not allow for testing all four conditions and subjects were unable to be scheduled back. When it was apparent that time would become an issue, we prioritized testing tFUS-GC and Non-modulated conditions, given that this project was majorly to test whether tFUS neuromodu lation could enhance BCI performance. The partial data for these sessions were included in the analysis if they did not meet the other exclusion criteria.",
+   "exposures[0].timing.protocol_description": "fragment in a water tank. (right) A visualization of the profiled 2 mm focal point scaled to a 93 mm brain and centered on V5 (red circle), as well as at an example tFUS-GP area 1.41 cm away (green x). e A typical trial epoch consists of 12 row/ column 200 ms line flashes and four 500-ms tFUS sonications. The first sonication begins 100 ms prior to the first BCI stimulation. The ultrasound parameters used for this experiment were as follows: a customized 128-element 700 kHz $f _ { 0 } ,$ pulsed for 140 cycles (cycles-per-pulse, CPP). Each sonication consists of 1500 pulses (pulse number, PN), repeated at a pulse-repetition frequency (PRF) of 3 kHz.",
+   "exposures[0].device.manufacturer": "A 128-element random array ultrasound transducer H275 with 700 kHz fundamental frequency (Verasonics; Kirkland, Washington, USA) was characterized in a freewater tank through a hydrated human skull fragment (Ethnicity: Caucasian, Age: 58, Gender: Male, acquired from Skulls Unlimited International, Inc.) (Fig.",
+   "exposures[0].device.model": "Ex-vivo transcranial measurements. A 128-element random array ultrasound transducer H275 with 700 kHz fundamental frequency (Verasonics; Kirkland, Washington, USA) was characterized in a freewater tank through a hydrated human skull fragment (Ethnicity: Caucasian, Age: 58, Gender: Male, acquired from Skulls Unlimited International, Inc.) (Fig. 6d). A hydrophone was placed on one side of the skull, opposite the ultrasound transducer. The hydrophone was moved with a stepper motor to capture the transcranial pressure field in three dimensions. Estimated target pressure, derated spatial peak pulseaverage intensity $\\left( \\mathsf { I } _ { \\mathsf { S P P A } . 3 } \\right)$ , and derated spatial peak temporal-average intensity $( \\mathsf { I } _ { \\mathsf { S P T A } . 3 } )$ were calculated to ensure safety in compliance with the current available FDA guidelines<sup>72</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Values are described as both measured through an ex-vivo skull sample and 'derated'; paper text explicitly labels the reported intensities as derated, so method is recorded as derating."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states a single ~3-hour cross-over session was intended to cover all four conditions, but does not give an explicit numeric count of sessions per subject."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper describes the design as 'predominantly randomized order' with two conditions prioritized for scheduling reasons, so randomisation was not strict for all subjects."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

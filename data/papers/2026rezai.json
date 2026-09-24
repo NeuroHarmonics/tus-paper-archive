@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026rezai",
+ "doi": "10.1016/j.brs.2025.103014",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "Craving and drug-use outcomes; MR thermometry monitoring of target-site temperature; neurological/behavioral/imaging assessment for adverse events",
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is a letter clarifying technical/safety parameters and the circumstances of a reported serious adverse event (brain injury) during an FDA Significant-Risk trial of FUS neuromodulation for severe opioid use disorder; it does not itself report a new assessment of neuromodulation direction. Cited prior work from the same program reported 'clinically significant reductions in cravings and drug use.'",
+ "adverse_events": "observed",
+ "safety_notes": "A brain injury occurred in one patient treated at 90 W for 389 s (below the study's allowed maximum of 100 W / 30 min); the manufacturer estimates in-situ peak rarefactional pressures of 1.3-2.4 MPa (free-field water equivalent 2.1-3.5 MPa) with mechanical index values above the range generally considered nonsignificant risk. Following the event, enhanced acoustic-feedback monitoring, sonication stopping criteria, and power modulation were implemented; 11 further participants have since been treated safely. The authors hypothesize that patient-specific elevated CO2 may have lowered the threshold for endogenous cavitation in this case, which is under active preclinical investigation; prior halts in other participants were not associated with neurological, behavioral, or imaging changes, and MR thermometry showed no temperature increase at the target.",
+ "exposures": [
+  {
+   "label": "Insightec 220 kHz FUS neuromodulation (opioid use disorder trial)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "not_reported"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "Exablate 220 kHz"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": [
+     2100,
+     3500
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     1300,
+     2400
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 27,
+    "sonication_duration_s": 300,
+    "protocol_description": "Typical parameters were 220 kHz, emitted power 80-100 W, with a pulse pattern of 100 ms and 27% duty cycle spread across 8 sub-targets (3.3% duty cycle per spot). Sonication is delivered in up to six 5-minute treatment blocks with real-time acoustic-feedback monitoring and automatic safety halts; the study's allowed maximum was 100 W for up to 30 minutes. In the reported adverse-event case, the patient was treated at 90 W for 389 seconds."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The device manufacturer (Insightec) has provided the following statement regarding the acoustic pressure levels associated with this trial: “The typical parameters of 220KHz, emitted power of 80W–100W with a pulse pattern of 100 ms and 27 % duty cycle spread between 8 sub-targets (3.3 % for each specific spot).",
+   "exposures[0].timing.duty_cycle_pct": "The device manufacturer (Insightec) has provided the following statement regarding the acoustic pressure levels associated with this trial: “The typical parameters of 220KHz, emitted power of 80W–100W with a pulse pattern of 100 ms and 27 % duty cycle spread between 8 sub-targets (3.3 % for each specific spot).",
+   "exposures[0].timing.sonication_duration_s": "Due to the high sensitivity of the acoustic monitoring detectors, halt criteria, and cumulative sonication time (up to six 5-min treatment blocks), automatic safety halts have been triggered in previous participants, as reported in our letter.",
+   "exposures[0].free_field.pressure_kpa": "For additional clarity, we note that the RMS values provided above correspond to estimated peak rarefactional pressures in water of 2.1–3.5 MPa, and in situ peak rarefactional pressures of 1.3–2.4 MPa.",
+   "exposures[0].in_situ.pressure_kpa": "For additional clarity, we note that the RMS values provided above correspond to estimated peak rarefactional pressures in water of 2.1–3.5 MPa, and in situ peak rarefactional pressures of 1.3–2.4 MPa.",
+   "exposures[0].device.model": "Over the past four years, we have safely treated more than 35 patients with severe addictions with FUS neuromodulation using the Insightec 220KHz device and have achieved clinically significant reductions in cravings and drug use [2–5].",
+   "exposures[0].device.manufacturer": "was to provide timely clinical information about this outcome, the word-limited “Letter to the Editor” format and our agreements with the device manufacturer (Insightec, Israel) limited us from sharing detailed technical information and context for this case at that time."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The letter gives only approximate/partial cumulative counts for the broader trial ('more than 35 patients' treated before the safety-measure update, and '11 participants' treated after), plus the single adverse-event case; no single total for the specific protocol described is stated."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "This letter (a technical/safety clarification correspondence) never names the anatomical target in its own text; cited companion papers targeted the nucleus accumbens for substance use disorder, but that is not stated here, so target is left unspecified."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The manufacturer's statement gives a '100 ms' pulse pattern together with a 27% duty cycle, but does not state whether 100 ms is the pulse duration or the repetition period; burst-rule ambiguity could not be resolved, so pulse duration and PRF are left not_reported and both numbers are given in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "See pulse_duration_ms flag: the '100 ms' figure's role (pulse duration vs. period) is ambiguous, so PRF is left not_reported."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The manufacturer also reports a separate RMS-pressure estimate (theoretical 1.5-2.5 MPa, real-life 0.9-1.7 MPa) distinct from the peak rarefactional pressures (2.1-3.5 MPa water / 1.3-2.4 MPa in situ) used here; both metrics are given in the text, described in protocol_description/safety_notes."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Classified as 'derating' because the in-situ estimate is derived from the free-field/theoretical value adjusted by an empirical 60-70% factor from manufacturer experience, rather than a per-patient acoustic simulation."
+   },
+   {
+    "field": "sham_type",
+    "reason": "This letter does not describe the trial's control/sham arm (or state whether one exists); coded as other pending that information."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "The letter's purpose is safety/technical clarification of an adverse event, not a report of neuromodulation efficacy or direction; coded not_assessed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

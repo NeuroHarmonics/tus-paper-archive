@@ -1,0 +1,373 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024bancel",
+ "doi": "10.1016/j.brs.2024.05.003",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "essential_tremor"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "3D MR-compatible hand accelerometry (tremor power in 2-20 Hz band); Clinical Rating Scale for Tremor (CRST A-B); MR thermometry",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "5 of 9 patients (55%) were responders with a substantial and sustained decrease in tremor power (up to ~98% reduction) after VIM and/or DRT stimulation; 4 of 9 (45%) were non-responders who typically showed an increase in tremor power immediately after sonication.",
+ "adverse_events": "not_reported",
+ "safety_notes": "No significant thermal rise was observed on MR thermometry during neurostimulation sonications; temperature at target was 37.2 +/- 1.4 degC vs 36.8 +/- 1.4 degC at a control voxel 3 cm away.",
+ "exposures": [
+  {
+   "label": "VIM neuromodulation",
+   "target": {
+    "terms": [
+     "ventral_intermediate_nucleus"
+    ],
+    "label": "ventral intermediate nucleus of the thalamus (VIM)"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "Exablate Neuro"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": 800,
+    "isppa_w_cm2": 19.8,
+    "ispta_w_cm2": [
+     0.4,
+     2.6,
+     2.8
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     30,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     10,
+     167,
+     25
+    ],
+    "duty_cycle_pct": [
+     30,
+     33.4,
+     5
+    ],
+    "sonication_duration_s": [
+     5
+    ],
+    "protocol_description": "Four sonication patterns (modes 1-4) were tested; all lasted 35 s (three 5 s bursts followed by a 10 s off period), except Mode 4 (9-point 1.5x1.5 mm grid, total 54 s, 1 s pulse trains repeated every 9 s). Modes 1 and 2 achieved a high duty cycle (one-third) via a long-duration/low-PRF or short-duration/high-PRF burst respectively; Modes 3 and 4 used a low duty cycle (5%). For VIM, patients typically received modes 1, 2 and 3 in sequence; each pulse lasted less than 30 ms."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "DRT neuromodulation",
+   "target": {
+    "terms": [
+     "dentatorubrothalamic_tract"
+    ],
+    "label": "dentato-rubro-thalamic tract (DRT)"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "Exablate Neuro"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": 800,
+    "isppa_w_cm2": 19.8,
+    "ispta_w_cm2": [
+     0.4,
+     0.1
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     25
+    ],
+    "duty_cycle_pct": [
+     5
+    ],
+    "sonication_duration_s": [
+     5,
+     1
+    ],
+    "protocol_description": "DRT was stimulated using the low duty cycle (5%) mode 3 (35 s total: three 5 s bursts + 10 s off) and, in some patients, mode 4 (a 9-point 1.5x1.5 mm grid around the target, 1 s pulse trains per point, total 54 s). Patients typically moved from VIM stimulation (modes 1-3) to DRT stimulation with mode 3, then mode 4 to cover a larger zone."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine patients with ET, refractory to medical treatments and eligible for TUS thalamotomy were included in this study and accepted for treatment with the Insightec’s Exablate Neuro Magnetic Resonanceguided Focused Ultrasound (MRgFUS) device [72,73] at the Paris Brain Institute (ICM, Paris, France).",
+   "blinding": "The pulsing patterns were applied in a blind order for both the patient and the neurologist.",
+   "readout_other": "Tremor severity was evaluated using 3D MR-compatible accelerometers taped on the back of both hands during a standard tremoric posture [66].",
+   "safety_notes": "MR thermometry during neurostimulations showed no significant thermal rise, supporting a mechanical effect.",
+   "exposures[0].target.label": "We used the Insightec Exablate Neuro device [72,73] to apply low-power sonication. The system includes a 15 cm radius hemispherical 1024 element array operated at 650 kHz.",
+   "exposures[1].target.label": "We used the Insightec Exablate Neuro device [72,73] to apply low-power sonication. The system includes a 15 cm radius hemispherical 1024 element array operated at 650 kHz.",
+   "exposures[0].fundamental_frequency_khz": "We used the Insightec Exablate Neuro device [72,73] to apply low-power sonication. The system includes a 15 cm radius hemispherical 1024 element array operated at 650 kHz.",
+   "exposures[1].fundamental_frequency_khz": "We used the Insightec Exablate Neuro device [72,73] to apply low-power sonication. The system includes a 15 cm radius hemispherical 1024 element array operated at 650 kHz.",
+   "exposures[0].in_situ.pressure_kpa": "adjusted to produce an acoustic pressure of \\~0.8 MPa at the target inside the brain, corresponding to a spatial-peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $1 9 . 8 \\ \\mathrm { W / c m ^ { 2 } } .$",
+   "exposures[1].in_situ.pressure_kpa": "adjusted to produce an acoustic pressure of \\~0.8 MPa at the target inside the brain, corresponding to a spatial-peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $1 9 . 8 \\ \\mathrm { W / c m ^ { 2 } } .$",
+   "exposures[0].in_situ.isppa_w_cm2": "adjusted to produce an acoustic pressure of \\~0.8 MPa at the target inside the brain, corresponding to a spatial-peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $1 9 . 8 \\ \\mathrm { W / c m ^ { 2 } } .$",
+   "exposures[1].in_situ.isppa_w_cm2": "adjusted to produce an acoustic pressure of \\~0.8 MPa at the target inside the brain, corresponding to a spatial-peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $1 9 . 8 \\ \\mathrm { W / c m ^ { 2 } } .$",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[1].timing.pulse_duration_ms": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[1].timing.duty_cycle_pct": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[1].timing.sonication_duration_s": "<table><tr><td colspan=\"7\">Sonication mode 1</td></tr><tr><td></td><td>Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty cycle</td><td>Notes</td></tr><tr><td>Pulse</td><td>30 ms</td><td>0s</td><td>rectangular</td><td>100 ms/10 Hz</td><td>30 %</td><td></td></tr><tr><td>Pulse train</td><td>5s</td><td>Os</td><td>rectangular</td><td>15s/0.0667 Hz</td><td></td><td></td></tr><tr><td>Pulse train</td><td>35s</td><td>Os</td><td>rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat Sonication mode 2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Duration</td><td>Ramp duration</td><td>Ramp shape</td><td>Repetition interval/ frequency</td><td>Duty</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>5.98 ms/167 Hz 15s/0.0667 Hz</td><td>33.4 %</td><td></td></tr><tr><td>Pulse train Pulse train</td><td>5s 35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 3</td><td>Duration</td><td></td><td></td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td rowspan=\"4\">Pulse</td><td rowspan=\"2\"></td><td>Ramp duration</td><td>Ramp shape</td><td>frequency</td><td>cycle</td><td>Notes</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2 ms 5s</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz 15s/0.0667 Hz</td><td>5 %</td><td></td></tr><tr><td>35s</td><td>Os Os</td><td>rectangular rectangular</td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sonication mode 4</td><td>Duration</td><td>Ramp</td><td>Ramp shape</td><td>Repetition interval/</td><td>Duty</td><td></td></tr><tr><td></td><td></td><td>duration</td><td></td><td>frequency</td><td>cycle</td><td></td></tr><tr><td>Pulse</td><td>2 ms</td><td>0s</td><td>rectangular</td><td>40 ms/25 Hz</td><td>5 %</td><td>This sequence is applied for 1s successively on 9 points forming a 1.5 ×</td></tr><tr><td>Pulse train</td><td>1s</td><td>Os</td><td>rectangular</td><td>9s/0.111 Hz</td><td></td><td>1.5 mm grid</td></tr><tr><td></td><td>54s</td><td>0s</td><td></td><td>N/A</td><td></td><td></td></tr><tr><td>Pulse train</td><td></td><td></td><td>rectangular</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>repeat</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+   "exposures[0].timing.protocol_description": "All stimulation patterns lasted 35s and were composed of three 5s bursts followed by a 10s off period, except for Mode 4 which consisted of a series of 9 spots distributed on a 0.75 mm × 0.75 mm grid around the initial target, in the transverse plane with a total duration of 54s.",
+   "exposures[1].timing.protocol_description": "All stimulation patterns lasted 35s and were composed of three 5s bursts followed by a 10s off period, except for Mode 4 which consisted of a series of 9 spots distributed on a 0.75 mm × 0.75 mm grid around the initial target, in the transverse plane with a total duration of 54s.",
+   "exposures[0].device.manufacturer": "a Physics for Medicine Paris, Inserm U1273, ESPCI Paris, CNRS UMR 8063, PSL University, Paris, France b ICM-Paris Brain Institute, Centre de NeuroImagerie de Recherche-CENIR, Inserm U 1127, CNRS UMR 7225, Sorbonne Universit´e, F-75013, Paris, France c Insightec, Tirat Carmel, Israel",
+   "exposures[1].device.manufacturer": "a Physics for Medicine Paris, Inserm U1273, ESPCI Paris, CNRS UMR 8063, PSL University, Paris, France b ICM-Paris Brain Institute, Centre de NeuroImagerie de Recherche-CENIR, Inserm U 1127, CNRS UMR 7225, Sorbonne Universit´e, F-75013, Paris, France c Insightec, Tirat Carmel, Israel",
+   "n_sessions_per_subject": "The patients were scheduled for thalamotomy the same day, immediately after the exploratory neurostimulation study.",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td>ISPTA (W/cm²)</td><td>2.8</td><td>2.6</td><td>0.0</td><td>0.4</td><td>0.4</td><td>0.1</td><td>0.6</td><td>N/A</td></tr>",
+   "exposures[1].in_situ.ispta_w_cm2": "<tr><td>ISPTA (W/cm²)</td><td>2.8</td><td>2.6</td><td>0.0</td><td>0.4</td><td>0.4</td><td>0.1</td><td>0.6</td><td>N/A</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Table 3 reports per-sonication pressure (~0.17-0.99 MPa) and ISPTA (~0.02-2.8 W/cm2) values that vary across patients and sonication modes; only the main-text representative value (~0.8 MPa / 19.8 W/cm2 ISPPA) used for the standard high-power sonications is captured here."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "Table 3 reports per-sonication pressure (~0.79-0.99 MPa) and ISPTA (~0.1-0.7 W/cm2) values for DRT sonications that vary across patients; only the main-text representative value is captured here."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "The paper states the pressure was 'adjusted to produce' a target value inside the brain via the Insightec system but does not explicitly state whether this in-situ value is from simulation, derating, or measurement in the main text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not explicitly stated as a number; all sonications occurred in a single visit immediately before thalamotomy, but the paper does not give an explicit session count."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Values taken from Table 1 (sonication modes 1-3), which is a large flattened HTML table; quoted as the full table due to markdown flattening of the original multi-row table."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "neither",
+   "exposures[1].timing.sonication_duration_s": "first"
+  }
+ }
+}

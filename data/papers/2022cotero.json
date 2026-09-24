@@ -1,0 +1,506 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022cotero",
+ "doi": "10.1038/s41551-022-00870-w",
+ "model_system": [
+  "rodent",
+  "large_animal",
+  "in_vitro_cell"
+ ],
+ "species": "rat (ZDF, DIO/STZ, lean Zucker Sprague-Dawley), mouse (western-diet obesity), swine (healthy); rat dorsal root ganglion neurons (in vitro)",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "type-2 diabetes / diet-induced obesity / insulin resistance rodent models (ZDF, DIO, western-diet); healthy swine used for euglycaemic clamp studies",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cellular_imaging"
+ ],
+ "readout_other": "Blood glucose/insulin/HOMA-IR, circulating hormone panels (leptin, GLP-1, ghrelin, catecholamines), hypothalamic PVN single-unit firing (glucose-excited/inhibited neurons), cFOS/BDNF/GLUT4 immunohistochemistry, RNA-seq and untargeted metabolomics of multiple tissues, calcium imaging (Fluo4) in 3D DRG neuron cultures",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "pFUS at the porta hepatis activated afferent liver-brain nerve pathways (increased hypothalamic catecholamines, IRS-1, GLUT4, DRG calcium transients) and lowered blood glucose/improved insulin sensitivity across species, but effects on individual circulating hormones (leptin, GLP-1, ghrelin, norepinephrine) and on hypothalamic glucose-excited vs glucose-inhibited neuron firing differed in direction between models/neuron types, and the effect was abolished by nerve transection, chemical nerve block or TRPA1 channel blockade.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse pFUS-induced deviations of serum biomarkers were observed; circulating glucose, T4, cholesterol and amylase stayed in the normal range compared with sham controls, and the stimulation parameters used in the swine studies were kept within current FDA diagnostic-ultrasound limits (<720 mW/cm2 Ispta.3 and <1.9 MI).",
+ "exposures": [
+  {
+   "label": "Chronic/acute hepatic pFUS in ZDF/DIO rats and western-diet mice (1.1 MHz pre-clinical system)",
+   "target": {
+    "terms": [
+     "nerve_plexus"
+    ],
+    "label": "hepatoportal nerve plexus at the porta hepatis"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102 single-element focused transducer"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 1870,
+    "isppa_w_cm2": 125.7,
+    "ispta_w_cm2": [
+     0.0943,
+     0.581
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.15,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "pFUS was applied transcutaneously to the image-marked porta hepatis under isoflurane anaesthesia for 3 min, once daily for chronic studies (up to 40-56 d) or as a single stimulus before an oral/IV glucose tolerance test; sham animals underwent identical handling with the transducer powered off. One description of the ZDF-pFUS protocol states '150 burst cycles, 500 microsecond burst period', which would imply either a ~136 microsecond pulse (consistent with the 150 microsecond nominal pulse duration) at an unstated repetition period, or a much higher (2 kHz) repetition rate than the '5 Hz pulse repetition frequency' given as the nominal system setting; this could not be resolved."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.075
+   }
+  },
+  {
+   "label": "Hepatic pFUS during hypothalamic (PVN) electrophysiological recording (2.5 MHz system)",
+   "target": {
+    "terms": [
+     "nerve_plexus"
+    ],
+    "label": "hepatoportal nerve plexus at the porta hepatis (during PVN single-unit recording)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-made 2.5 MHz focused single-element ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 2500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.12,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Used only for the hypothalamic PVN single-unit recording experiments (Fig. 5), where hepatic pFUS was delivered while glucose-sensing PVN neuron firing was recorded following intraperitoneal glucose injection; stimulation duration for this specific protocol is not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.06
+   }
+  },
+  {
+   "label": "Hepatic pFUS in swine during hyperinsulinaemic-euglycaemic clamp (clinical GE LOGIQ E10 system)",
+   "target": {
+    "terms": [
+     "nerve_plexus"
+    ],
+    "label": "hepatoportal nerve plexus at the porta hepatis (swine)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GE Healthcare",
+    "model": "LOGIQ E10 with C1-6 abdominal probe"
+   },
+   "fundamental_frequency_khz": 2280,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.503
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 3.7,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "In healthy swine, a 3 min pFUS stimulus was applied to the ultrasound-image-targeted porta hepatis during a hyperinsulinaemic-euglycaemic clamp, using a clinically available diagnostic ultrasound system reconfigured in research mode; parameters were designed to achieve a mechanical index of ~1.77, within current FDA diagnostic-ultrasound limits."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.074
+   }
+  },
+  {
+   "label": "In vitro pFUS stimulation of 3D dorsal root ganglion neuron cultures",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion_culture"
+    ],
+    "label": "primary dorsal root ganglion (DRG) sensory neurons in 3D hydrogel culture"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102 single-element focused transducer (pre-clinical hepatic pFUS system)"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 830,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "3D cultures of DRG sensory neurons in porous hydrogel scaffolds were stimulated with the same pre-clinical hepatic pFUS transducer/generator system, coupled to each culture well, using pulse parameters and pressures corresponding to the in vivo hepatic experiments; calcium (Fluo4) imaging showed increased fluorescence during pFUS 'on' periods that returned to baseline when pFUS was turned off, and this response was blocked by mechanosensitive/TRPA1 channel blockers (GsMTx4, HC-030031) but not by TTX or omega-conotoxin."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "randomised": "Right: terminal (age 95 d) HOMA-IR scores for animals randomly assigned from the sham control $( n = 1 0 )$ , early pFUS $( \\mathsf { n } = \\mathsf { 1 0 } )$ , late pFUS $( n = 4 )$ and stop pFUS $\\left( n = 5 \\right)$ cohorts.",
+   "exposures[0].fundamental_frequency_khz": "The 1.1 MHz single-element focused ultrasound system (Supplementary Fig. 2a) is composed of a signal generator (Model 33120A, Agilent Technologies), an RF power amplifier (Model 350L, Electronics & Innovation) and a 1.1 MHz focused single-element ultrasound transducer (Model H102, Sonic Concepts).",
+   "exposures[0].in_situ.pressure_kpa": "Under the above settings, three separate systems were characterized, producing an MI of 1.79 ± 0.10 (mean ± s.d.), a derated peak negative pressure, pr.3 of 1.87 ± 0.11 MPa, a derated spatial-peak pulse-average intensity, Isppa.3 of 125.7 ± 15.0 W cm−2 and an Ispta.3 of 94.3 ± 11.2 mW cm−2.",
+   "exposures[0].in_situ.isppa_w_cm2": "Under the above settings, three separate systems were characterized, producing an MI of 1.79 ± 0.10 (mean ± s.d.), a derated peak negative pressure, pr.3 of 1.87 ± 0.11 MPa, a derated spatial-peak pulse-average intensity, Isppa.3 of 125.7 ± 15.0 W cm−2 and an Ispta.3 of 94.3 ± 11.2 mW cm−2.",
+   "exposures[0].in_situ.ispta_w_cm2": "The large-animal experiments were performed at ultrasound parameters designed to achieve a mechanical index (MI) of \\~1.77, with a derated spatial-peak time-average intensity (Ispta.3) of \\~503 mW cm−2 at the \\~65 mm depth of the hepatoportal plexus (to remain consistent with the Ispta.3 of \\~581 mW cm−2 at the \\~5 mm target depth in the rats).",
+   "exposures[0].timing.pulse_duration_ms": "150 µs pulse duration",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "5 Hz pulse repetition frequency",
+   "exposures[0].timing.sonication_duration_s": "Each animal underwent image-guided localization and marking of the porta hepatis, and then received once daily 3 min ultrasound treatments at this site over an extended period of 40 d (details of targeting and stimulation procedure in Methods).",
+   "exposures[1].fundamental_frequency_khz": "The focused ultrasound system used for recording experiments was composed of a signal generator (Model 33120A, Agilent Technologies), an RF power amplifier (Model 350L, Electronics & Innovation) and a custom-made 2.5 MHz focused single-element ultrasound transducer.",
+   "exposures[1].timing.pulse_duration_ms": "120 µs pulse duration (300 carrier cycles)",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "5 Hz pulse repetition frequency",
+   "exposures[2].fundamental_frequency_khz": "2.28 MHz carrier frequency",
+   "exposures[2].timing.pulse_duration_ms": "200 µs pulse length",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "\\~3.7 Hz pulse repetition rate",
+   "exposures[2].timing.sonication_duration_s": "Time 0 (dashed vertical line) denotes the start time of the 3 min pFUS stimulus applied to the porta hepatis using ultrasound image targeting (Extended Data Fig. 4) and using a commercial clinical ultrasound system (LOGIQ E10 with C1-6 abdominal probe).",
+   "exposures[2].in_situ.ispta_w_cm2": "The large-animal experiments were performed at ultrasound parameters designed to achieve a mechanical index (MI) of \\~1.77, with a derated spatial-peak time-average intensity (Ispta.3) of \\~503 mW cm−2 at the \\~65 mm depth of the hepatoportal plexus (to remain consistent with the Ispta.3 of \\~581 mW cm−2 at the \\~5 mm target depth in the rats).",
+   "exposures[3].fundamental_frequency_khz": "The ultrasound transducer, function generator and power amplifier system utilized for pre-clinical hepatic stimulation (and described above) were coupled to each individual culture well using a custom plastic fitting on the culture well plate.",
+   "exposures[3].unspecified_domain.pressure_kpa": "The rate of change, dF/dt, remained small without application of ultrasound stimulus (ultrasound off) compared with the significant dF/dt increases shown during ${ \\mathsf { p F U S } }$ stimulation (ultrasound on; at 0.83 MPa peak-positive pressure without any ion-channel blocker added to the culture with N > 30 cells per condition).",
+   "exposures[1].device.model": "Glucose and insulin levels were utilized to determine insulin resistance by applying the HOMA-IR formula, defined as fasting insulin (µU l−1) × fasting glucose (nmol l−1)/22.5120.",
+   "exposures[2].device.manufacturer": "4) and using a commercial clinical ultrasound system (LOGIQ E10 with C1-6 abdominal probe).",
+   "exposures[2].device.model": "4) and using a commercial clinical ultrasound system (LOGIQ E10 with C1-6 abdominal probe)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "This is a multi-species, multi-experiment paper (chronic/acute glucose studies, clamps, nerve-block studies, electrophysiology, multi-omics, in vitro) with dozens of small, non-overlapping cohorts (n typically 4-20) and no single stated aggregate subject total; left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "One sentence describing the ZDF-pFUS protocol gives '150 burst cycles, 500 microsecond burst period', which is hard to reconcile with the system's stated nominal '150 microsecond pulse duration' and '5 Hz pulse repetition frequency'; not entered as a numeric value because the intended quantities are unclear."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Two different derated Ispta values are reported for the same 1.1 MHz rodent system: 94.3 +/- 11.2 mW/cm2 from bench characterisation at the nominal 135 mV drive amplitude, and ~581 mW/cm2 'at the ~5 mm target depth in the rats' quoted when describing the swine dose; both are retained as list entries since the paper does not reconcile them (likely different drive amplitudes, given the stated linear MI-vs-amplitude scaling)."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "The stimulus duration used during the PVN electrophysiology recording experiments (Fig. 5) is not stated; the 3-min duration used elsewhere is not assumed to apply."
+   },
+   {
+    "field": "exposures[3].timing",
+    "reason": "The in vitro DRG culture experiments reuse the pre-clinical 1.1 MHz hepatic pFUS system, but no pulse duration, PRF, duty cycle or per-trial duration specific to the culture experiments is stated in the text; only the 0.83 MPa peak-positive pressure is given."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Effects on circulating hormones (leptin, GLP-1, ghrelin, norepinephrine) differed in direction between the ZDF and DIO models, and pFUS attenuated but did not reverse the direction of glucose-induced firing-rate changes in hypothalamic glucose-excited neurons; classified as mixed_or_unclear rather than a single direction."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "disagree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "first",
+   "exposures[2].timing.sonication_duration_s": "both_defensible",
+   "exposures[3].in_situ.pressure_kpa": "second",
+   "exposures[3].in_situ.isppa_w_cm2": "second",
+   "exposures[3].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

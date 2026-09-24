@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026khodayari",
+ "doi": "10.64898/2026.02.14.705923",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (ReNCell VM neural progenitor-derived dopaminergic neuron and standard glial/neuronal cultures)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "other"
+ ],
+ "readout_other": "Ca2+ fluorescence microscopy imaging (Fluo-4); fast-scan cyclic voltammetry (FSCV) with carbon-fiber microelectrode for dopamine release; immunocytochemistry (tyrosine hydroxylase, Nestin, GFAP)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Single-pulse FUS evoked immediate (<1 s) Ca2+ transients in both dopaminergic neurons and standard cells, and evoked dopamine release detected by FSCV specifically in dopaminergic neurons but not in standard cells.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Single-pulse FUS stimulation of cultured human dopaminergic neurons and standard (mixed glial/neuronal) cultures",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "cultured_glia"
+    ],
+    "label": "cultured dopaminergic (DA) neurons and standard differentiated ReNCell VM cultures (glia + neurons)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Fuji Ceramics Corp.",
+    "model": "C-21"
+   },
+   "fundamental_frequency_khz": 5110,
+   "free_field": {
+    "pressure_kpa": 24080,
+    "isppa_w_cm2": 19940,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.7,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0007,
+    "protocol_description": "Single 700 µs FUS pulses applied at pulse average acoustic powers (Pac) ranging from 12 W to 24 W were experimentally identified as capable of reliably triggering Ca2+ responses. A single-pulse protocol was chosen because low-energy FUS sequences can modulate neuronal activity without causing irreversible damage, and single, higher-intensity pulses provide a simpler framework for characterizing fundamental neuromodulatory effects before progressing to more complex repetitive-pulse protocols."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "For the novel FUS prototype used throughout the present study, this corresponded to $f _ { 7 } = 5 . 1 1$ MHz.",
+   "exposures[0].free_field.pressure_kpa": "<table><tr><td>Parameters</td><td>Free-field</td><td>in-vitro</td></tr><tr><td>—3 dB lateral diameter (μm)</td><td>293</td><td>293</td></tr><tr><td> $p _ { \\mathrm { s p } } \\left( \\mathrm { M P a } \\right)$ </td><td> $2 4 . 0 8 \\pm 2 . 8 5$ </td><td> $2 6 . 4 3 \\pm 3 . 1 2$ </td></tr><tr><td> $p _ { \\mathrm { s p r } } \\left( \\mathrm { M P a } \\right)$ </td><td> $1 7 . 0 2 \\pm 2 . 0 1$ </td><td> $1 8 . 6 9 \\pm 2 . 2 1$ </td></tr><tr><td> $p _ { \\mathrm { s a r } } \\left( \\mathrm { M P a } \\right)$ </td><td> $1 5 . 5 1 \\pm 1 . 8 3$ </td><td> $1 6 . 8 8 \\pm 1 . 9 9$ </td></tr><tr><td> $I _ { \\mathrm { s p p a } } ( \\mathrm { k W . c m ^ { - 2 } } )$ </td><td> $1 9 . 9 4 \\pm 4 . 1 9$ </td><td> $2 4 . 0 2 \\pm 5 . 0 4$ </td></tr><tr><td> $I _ { \\mathrm { s a p a } } ( \\mathrm { k W . c m ^ { - 2 } } )$ </td><td> $1 6 . 5 4 \\pm 3 . 4 7$ </td><td> $1 9 . 5 9 \\pm 4 . 1 2$ </td></tr><tr><td> $E _ { \\mathrm { t o t a l } } \\left( \\mathrm { m J } \\right)$ </td><td>1</td><td> $1 5 . 5 5 \\pm 3 . 2 6$ </td></tr><tr><td> $\\Delta T _ { \\mathrm { c e l l \\ M a x } } \\left( ^ { \\circ } \\mathbf { C } \\right)$ </td><td>1</td><td> $2 . 3 \\pm 0 . 4 6$ </td></tr><tr><td> $\\Delta T _ { \\mathrm { P D M S \\ M a x \\ } } ( ^ { \\circ } { \\bf C } )$ </td><td>1</td><td> $6 . 1 5 \\pm 1 . 2 8$ </td></tr></table>",
+   "exposures[0].free_field.isppa_w_cm2": "<table><tr><td>Parameters</td><td>Free-field</td><td>in-vitro</td></tr><tr><td>—3 dB lateral diameter (μm)</td><td>293</td><td>293</td></tr><tr><td> $p _ { \\mathrm { s p } } \\left( \\mathrm { M P a } \\right)$ </td><td> $2 4 . 0 8 \\pm 2 . 8 5$ </td><td> $2 6 . 4 3 \\pm 3 . 1 2$ </td></tr><tr><td> $p _ { \\mathrm { s p r } } \\left( \\mathrm { M P a } \\right)$ </td><td> $1 7 . 0 2 \\pm 2 . 0 1$ </td><td> $1 8 . 6 9 \\pm 2 . 2 1$ </td></tr><tr><td> $p _ { \\mathrm { s a r } } \\left( \\mathrm { M P a } \\right)$ </td><td> $1 5 . 5 1 \\pm 1 . 8 3$ </td><td> $1 6 . 8 8 \\pm 1 . 9 9$ </td></tr><tr><td> $I _ { \\mathrm { s p p a } } ( \\mathrm { k W . c m ^ { - 2 } } )$ </td><td> $1 9 . 9 4 \\pm 4 . 1 9$ </td><td> $2 4 . 0 2 \\pm 5 . 0 4$ </td></tr><tr><td> $I _ { \\mathrm { s a p a } } ( \\mathrm { k W . c m ^ { - 2 } } )$ </td><td> $1 6 . 5 4 \\pm 3 . 4 7$ </td><td> $1 9 . 5 9 \\pm 4 . 1 2$ </td></tr><tr><td> $E _ { \\mathrm { t o t a l } } \\left( \\mathrm { m J } \\right)$ </td><td>1</td><td> $1 5 . 5 5 \\pm 3 . 2 6$ </td></tr><tr><td> $\\Delta T _ { \\mathrm { c e l l \\ M a x } } \\left( ^ { \\circ } \\mathbf { C } \\right)$ </td><td>1</td><td> $2 . 3 \\pm 0 . 4 6$ </td></tr><tr><td> $\\Delta T _ { \\mathrm { P D M S \\ M a x \\ } } ( ^ { \\circ } { \\bf C } )$ </td><td>1</td><td> $6 . 1 5 \\pm 1 . 2 8$ </td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "Single 700 µs FUS pulses applied at pulse average acoustic powers $( P _ { a c } )$ ranging from 12 W to 24 W, were experimentally identified as capable of reliably triggering $\\mathrm { { C a ^ { 2 + } } }$ responses.",
+   "exposures[0].device.manufacturer": "The spherical ceramic FUS transducer (C-21, Ø= 15 mm, radius of curvature = 15mm; Fuji Ceramics Corp., Japan), providing an active surface of 1.76 cm<sup>2</sup>, perforated at its center (hole Ø= 2 mm), was sealed in a SLS 3D-printed nylon packaging (PA12, Xometry Europe, Germany) to form an operative channel allowing the passage of a CFME biosensor (Fig. 2(d)).",
+   "exposures[0].device.model": "The spherical ceramic FUS transducer (C-21, Ø= 15 mm, radius of curvature = 15mm; Fuji Ceramics Corp., Japan), providing an active surface of 1.76 cm<sup>2</sup>, perforated at its center (hole Ø= 2 mm), was sealed in a SLS 3D-printed nylon packaging (PA12, Xometry Europe, Germany) to form an operative channel allowing the passage of a CFME biosensor (Fig. 2(d)).",
+   "n_subjects": "Six FUS neurostimulations (n= 6) were performed per comparative groups of DA neurons versus standard cells.",
+   "exposures[0].timing.pulse_duration_ms": "This procedure resulted in the determination of the 700 µs single-pulse duration and the minimum spatial peak RMS pressure $( p _ { s p r } )$ , which represents the minimum effective stim ulus shared by both populations."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Isppa value taken from Table 1 (Free-field column); the corresponding in-text paragraph reports Isapa (spatial-average pulse-average), a different quantity, for this condition."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Study reports several sub-analyses each with n=6 independent trials (calcium imaging, FSCV) but never states one overall total number of culture preparations/dishes used."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Not applicable: in vitro cell culture study, no auditory system present."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Single 700 microsecond pulse treated as one uninterrupted 'continuous' burst per the burst-duration convention for single-tone-burst exposures; duty cycle within the pulse explicitly stated as 100%."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "set to pulsed by the tie-break: the ruled timing has a pulse repetition or duty cycle"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ }
+}

@@ -1,0 +1,388 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020gaur",
+ "doi": "10.1016/j.brs.2020.02.017",
+ "model_system": [
+  "nonhuman_primate",
+  "large_animal"
+ ],
+ "species": "rhesus macaque (Macaca mulatta) and Dorset sheep (Ovis aries)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  2,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "other_mri"
+ ],
+ "readout_other": "Hematoxylin & eosin histology (necrosis, apoptosis, edema, hemorrhage, inflammation, neuropil rarefaction); TUNEL staining for apoptosis; MR-ARFI for focal-spot visualisation/targeting; T2-weighted MRI for treatment planning",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is a histologic safety study, not an assessment of neuromodulatory direction of effect; no FUS-related tissue damage was observed at target sites in macaques or sheep.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No FUS-related pre-mortem histologic findings were observed in the rhesus macaques or in any of the examined sheep; extravascular red blood cells seen in meninges/parenchyma across all groups (including untreated controls) were attributed to post-mortem extraction artifact. Sheep in the high-dose FUS group were TUNEL-negative at the targeted site.",
+ "exposures": [
+  {
+   "label": "Rhesus macaque visual cortex FUS neuromodulation (270 kHz)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual cortex"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115"
+   },
+   "fundamental_frequency_khz": 270,
+   "free_field": {
+    "pressure_kpa": [
+     500,
+     1000,
+     2000,
+     4000
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.4,
+     1.6,
+     6.4,
+     25.8
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "FUS delivered as 300 ms pulsed bursts (50% duty cycle) occurring every 1 s, for a total of 500 bursts (one 8.3 min = 500 s trial) per location; applied to four locations in visual cortex per animal at four different free-field pressures (0.5, 1, 2, 4 MPa), giving estimated in-situ ISPTA values of 0.4-25.8 W/cm2 assuming ~40% pressure loss through the macaque skull."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Sheep transcranial FUS: MR-ARFI targeting and neuromodulation (550 kHz)",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "lateral geniculate nucleus and nearby subcortical locations"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec Ltd.",
+    "model": "ExAblate 2100"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     250,
+     900,
+     1700,
+     3600
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.6,
+     13.8,
+     5.6,
+     26.5
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": 16,
+    "pulse_repetition_frequency_hz": 2,
+    "duty_cycle_pct": [
+     50
+    ],
+    "sonication_duration_s": [
+     0.2,
+     0.3,
+     72
+    ],
+    "protocol_description": "MR-ARFI: FUS on for 16 ms bursts within a 500 ms window (128 bursts total, ~1.2 min = 72 s per application), used to visualise/verify the focal spot. Neuromodulation: FUS on for 200-300 ms bursts every 1 s, delivered as continuous-wave or 50%-duty-cycle pulsed ultrasound, comprising 120 bursts over 6 min (360 s) or 600 bursts over 20 min (1200 s) per application. Applied to the lateral geniculate nucleus (common location for all sheep) and nearby subcortical locations ~10-20 mm rostral / 10 mm caudal. In situ pressure/intensity were estimated via ex-vivo skull-cap hydrophone measurements, not simulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3.2
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "FUS neuromodulation was targeted to the primary visual cortex in rhesus macaques and to subcortical locations, verified by MR-ARFI, in eleven sheep.",
+   "exposures[0].fundamental_frequency_khz": "A single-element, 270 kHz focused ultrasound transducer fitted with an agar-filled cone was positioned at the back of the head and coupled with degassed ultrasound gel as illustrated in Fig. 1(b) (H-115, Sonic Concepts, Bothell, WA).",
+   "exposures[0].free_field.pressure_kpa": "Free-field stimulus pressure levels corresponded to 0.5, 1, 2, and 4 MPa as measured in a water tank by fiberoptic hydrophone (Precision Acoustics, Dorset, UK), in order to sample a range of values.",
+   "exposures[0].in_situ.ispta_w_cm2": "One spatial peak-temporal average intensity (I ) level was applied per location, with estimated in situ values of 0.4 (top) and 1.6 (bottom) W/cm<sup>2</sup> on the right hemisphere and 6.4 (top) and 25.8 (bottom) $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ on the left hemisphere, as illustrated in Fig. 1(c).",
+   "exposures[0].timing.duty_cycle_pct": "FUS was applied in 300 ms pulsed (50% duty cycle) bursts occurring every 1 s for a total of 500 stimuli, as illustrated in Fig. 1(d).",
+   "exposures[0].timing.sonication_duration_s": "FUS was applied in 300 ms pulsed (50% duty cycle) bursts occurring every 1 s for a total of 500 stimuli, as illustrated in Fig. 1(d).",
+   "exposures[1].fundamental_frequency_khz": "MR-guided focused ultrasound studies were conducted using a 1024 element, 550 kHz focused ultrasound transducer fitted with a membrane containing chilled, degassed water (ExAblate 2100, Insightec Ltd., Haifa, Israel).",
+   "exposures[1].in_situ.pressure_kpa": "The acoustic power levels applied during the study corresponded to in situ peak pressure estimates of 1.7e3.6 MPa for MR-ARFI (Fig. 4(b)) and 0.25e0.9 MPa for neuromodulation (Fig. 4(e)), and in situ I<sub>SPTA</sub> estimates ranging from $5 . 6 \\mathrm { t o } 2 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for MR-ARFI (Fig. 4(c)) and $0 . 6 { - } 1 3 . 8 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for neuromodulation (Fig. 4(f)).",
+   "exposures[1].in_situ.ispta_w_cm2": "The acoustic power levels applied during the study corresponded to in situ peak pressure estimates of 1.7e3.6 MPa for MR-ARFI (Fig. 4(b)) and 0.25e0.9 MPa for neuromodulation (Fig. 4(e)), and in situ I<sub>SPTA</sub> estimates ranging from $5 . 6 \\mathrm { t o } 2 6 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for MR-ARFI (Fig. 4(c)) and $0 . 6 { - } 1 3 . 8 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for neuromodulation (Fig. 4(f)).",
+   "exposures[1].timing.pulse_duration_ms": "Fig. 2(d) illustrates the MR-ARFI protocol in which FUS was on for 16 ms bursts within a 500 ms window (corresponding to the MR repetition time) over a period of 1.2 min.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Fig. 2(d) illustrates the MR-ARFI protocol in which FUS was on for 16 ms bursts within a 500 ms window (corresponding to the MR repetition time) over a period of 1.2 min.",
+   "exposures[1].timing.duty_cycle_pct": "Acoustic coupling and focal spot location were verified by MR-ARFI in the eleven sheep that underwent transcranial FUS. Fig. 2(d) illustrates the MR-ARFI protocol in which FUS was on for 16 ms bursts within a 500 ms window (corresponding to the MR repetition time) over a period of 1.2 min. Each application of MR-ARFI comprised 128 FUS bursts. Fig. 2(eeg) illustrates neuromodulation protocols, in which FUS was on for 200e300 ms bursts every 1 s with continuous wave (Fig. 2(f)) or pulsed (50% duty cycle) ultrasound (Fig. 2(e,g)). Each neuromodulation application comprised 120 (Fig. 2(e)) or 600 FUS bursts (Fig. 2(f and g)) over a period of 6 (Fig. 2(e)) or 20 min (Fig. 2(f and g)).",
+   "exposures[1].timing.sonication_duration_s": "Fig. 2(d) illustrates the MR-ARFI protocol in which FUS was on for 16 ms bursts within a 500 ms window (corresponding to the MR repetition time) over a period of 1.2 min.",
+   "exposures[0].device.manufacturer": "1(b) (H-115, Sonic Concepts, Bothell, WA).",
+   "exposures[0].device.model": "1(b) (H-115, Sonic Concepts, Bothell, WA).",
+   "exposures[1].device.manufacturer": "MR-guided focused ultrasound studies were conducted using a 1024 element, 550 kHz focused ultrasound transducer fitted with a membrane containing chilled, degassed water (ExAblate 2100, Insightec Ltd., Haifa, Israel).",
+   "exposures[1].device.model": "MR-guided focused ultrasound studies were conducted using a 1024 element, 550 kHz focused ultrasound transducer fitted with a membrane containing chilled, degassed water (ExAblate 2100, Insightec Ltd., Haifa, Israel)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Combined total across two species (2 rhesus macaques + 13 Dorset sheep, of which 11 received FUS and 2 were untreated controls); see provenance.notes for the breakdown."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Sessions varied by subgroup: macaques and 5 sheep received a single session, 6 sheep received repeated sessions 3-6 days apart, and the high-dose group received additional prolonged sessions (up to 70 consecutive MR-ARFI repetitions at one location); not reducible to a single figure."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper does not state whether animals were randomly allocated to dose/location or control groups."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The two control sheep received no ultrasound at all (true untreated controls matched for anaesthesia/MRI) rather than a sham stimulus mimicking active treatment; classified as sham_type 'none' for lack of a closer fit in the controlled vocabulary."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "All animals were anaesthetised during FUS; the paper does not address auditory confounds (not relevant/discussed for this histology-focused study)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (1 Hz) is derived from the stated repetition period ('occurring every 1 s'); not stated as a Hz value directly in the text."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Stated 50% duty cycle for a 300 ms burst repeated every 1 s implies ~30% duty if computed at the burst-repetition level (300 ms x 1 Hz); the discrepancy suggests the stated 50% describes an unspecified higher-frequency pulsing within each 300 ms burst window rather than the burst-to-repetition duty cycle. Recorded as stated; a 'burst rule' ambiguity."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Only in-situ ISPTA (not in-situ peak pressure) is given for the macaque experiment; recorded as not_reported."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF values (2 Hz for MR-ARFI's 500 ms window, 1 Hz for neuromodulation's 1 s repetition) are derived from stated repetition periods, not given as Hz values directly."
+   },
+   {
+    "field": "exposures[1].timing",
+    "reason": "Sheep transducer (550 kHz) was used for two protocols with very different timing (MR-ARFI: 16 ms bursts within a 500 ms window; neuromodulation: 200-300 ms bursts every 1 s, CW or 50% duty) combined here as list values within one exposure per the target x frequency exposure rule; see protocol_description for which values belong to which protocol."
+   },
+   {
+    "field": "exposures[1].in_situ.reported_as",
+    "reason": "In-situ pressure/intensity given as ranges across sonications/animals (not single values or explicit means); classified as mean_or_range_across_subjects."
+   }
+  ],
+  "human_edited": false,
+  "notes": "n_subjects combines 2 rhesus macaques and 13 Dorset sheep (11 receiving FUS, 2 untreated controls). Macaque exposure targets primary visual cortex at 270 kHz (Sonic Concepts H-115, ~40% assumed skull pressure loss). Sheep exposure targets the lateral geniculate nucleus and nearby subcortical sites at 550 kHz (Insightec ExAblate 2100), combining MR-ARFI targeting bursts and neuromodulation bursts; in-situ values for sheep were obtained via ex-vivo skull-cap hydrophone measurement (method='measurement'), not simulation or a fixed derating factor.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.sonication_duration_s": "second",
+   "exposures[1].in_situ.pressure_kpa": "first",
+   "exposures[1].in_situ.ispta_w_cm2": "first",
+   "exposures[1].timing.pulse_duration_ms": "neither",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "neither",
+   "exposures[1].timing.sonication_duration_s": "neither"
+  }
+ }
+}

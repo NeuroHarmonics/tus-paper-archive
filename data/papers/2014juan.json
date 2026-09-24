@@ -1,0 +1,231 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2014juan",
+ "doi": "10.1002/ima.22080",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Compound action potentials (CAP) recorded from the vagus nerve via cuff electrodes, following supramaximal electrical stimulation",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Vagus nerve compound action potential amplitude decreased and latency increased during ultrasound exposure in most trials, with a proportional relationship between acoustic intensity (Ispta) and the degree of inhibition.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Acoustic gel temperature increases after 15 s of ultrasound exposure were measured for each parameter combination (Table I), ranging up to a mean of about 0.93 degrees C; no explicit assessment of tissue damage or adverse events in the nerve was reported.",
+ "exposures": [
+  {
+   "label": "Left cervical vagus nerve, focused pulsed ultrasound at varying intensity/PRF/duty cycle",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "left cervical vagus nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Washington",
+    "model": "H-101"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     74.8,
+     89.0,
+     102.8,
+     74.8,
+     89.0,
+     102.8,
+     74.8,
+     89.0,
+     102.8
+    ],
+    "ispta_w_cm2": [
+     68.0,
+     80.9,
+     93.4,
+     22.7,
+     27.0,
+     31.1,
+     13.6,
+     16.2,
+     18.7
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1000,
+     1000,
+     1000,
+     330,
+     330,
+     330,
+     200,
+     200,
+     200
+    ],
+    "duty_cycle_pct": [
+     90.9,
+     90.9,
+     90.9,
+     30.3,
+     30.3,
+     30.3,
+     18.2,
+     18.2,
+     18.2
+    ],
+    "sonication_duration_s": 15,
+    "protocol_description": "A total of nine trials were performed on a single rat, each combining one of three intensity levels with one of three PRF/duty-cycle settings (Table I). Each trial consisted of 5 s of initial recording of evoked potentials without ultrasound, 15 s with ultrasound exposure, and 10 s of recovery."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "A focused ultrasound transducer (H-101, Sonic Concepts, Washington) was used to deliver acoustic energy to the vagus nerve. An RF amplifier was used to drive the transducer at a frequency of 1.1 MHz. A coupling cone filled with de-gassed water was used to couple the transducer to the nerve. The tip of the coupling cone was placed such that the acoustic focus was located on the nerve and between the electrodes. Figure 1 illustrates the placement of the FUS transducer relative to the stimulating and recording cuff electrodes. Pulsed focused ultrasound was utilized to insonify the nerve.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<table><tr><td colspan=\"7\">Intensity</td></tr><tr><td>Trial</td><td> $\\scriptstyle ( { \\mathrm { W } } / { \\mathrm { c m } } ^ { 2 } )$ </td><td>PRF (kHz)</td><td>Duty Cycle (%)</td><td> $I _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>Mechanical Index</td><td>∆T (°C) Mean ± STD</td></tr><tr><td>1</td><td>74.8</td><td>1</td><td>90.9</td><td>68.0</td><td>1.43</td><td> $0 . 0 2 \\pm 0 . 0 2$ </td></tr><tr><td>2</td><td>89.0</td><td>1</td><td>90.9</td><td>80.9</td><td>1.56</td><td> $0 . 1 5 \\pm 0 . 0 8$ </td></tr><tr><td>3</td><td>102.8</td><td>1</td><td>90.9</td><td>93.4</td><td>1.67</td><td> $0 . 1 3 \\pm 0 . 0 6$ </td></tr><tr><td>4</td><td>74.8</td><td>0.33</td><td>30.3</td><td>22.7</td><td>1.43</td><td> $0 . 1 1 \\pm 0 . 1 4$ </td></tr><tr><td>5</td><td>89.0</td><td>0.33</td><td>30.3</td><td>27.0</td><td>1.56</td><td> $0 . 1 7 \\pm 0 . 0 6$ </td></tr><tr><td>6</td><td>102.8</td><td>0.33</td><td>30.3</td><td>31.1</td><td>1.67</td><td> $0 . 2 7 \\pm 0 . 0 6$ </td></tr><tr><td>7</td><td>74.8</td><td>0.2</td><td>18.2</td><td>13.6</td><td>1.43</td><td> $0 . 6 0 \\pm 0 . 1 3$ </td></tr><tr><td>8</td><td>89.0</td><td>0.2</td><td>18.2</td><td>16.2</td><td>1.56</td><td> $0 . 9 2 \\pm 0 . 1 3$ </td></tr><tr><td>9</td><td>102.8</td><td>0.2</td><td>18.2</td><td>18.7</td><td>1.67</td><td> $0 . 9 3 \\pm 0 . 1 2$ </td></tr></table>",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "<table><tr><td colspan=\"7\">Intensity</td></tr><tr><td>Trial</td><td> $\\scriptstyle ( { \\mathrm { W } } / { \\mathrm { c m } } ^ { 2 } )$ </td><td>PRF (kHz)</td><td>Duty Cycle (%)</td><td> $I _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>Mechanical Index</td><td>∆T (°C) Mean ± STD</td></tr><tr><td>1</td><td>74.8</td><td>1</td><td>90.9</td><td>68.0</td><td>1.43</td><td> $0 . 0 2 \\pm 0 . 0 2$ </td></tr><tr><td>2</td><td>89.0</td><td>1</td><td>90.9</td><td>80.9</td><td>1.56</td><td> $0 . 1 5 \\pm 0 . 0 8$ </td></tr><tr><td>3</td><td>102.8</td><td>1</td><td>90.9</td><td>93.4</td><td>1.67</td><td> $0 . 1 3 \\pm 0 . 0 6$ </td></tr><tr><td>4</td><td>74.8</td><td>0.33</td><td>30.3</td><td>22.7</td><td>1.43</td><td> $0 . 1 1 \\pm 0 . 1 4$ </td></tr><tr><td>5</td><td>89.0</td><td>0.33</td><td>30.3</td><td>27.0</td><td>1.56</td><td> $0 . 1 7 \\pm 0 . 0 6$ </td></tr><tr><td>6</td><td>102.8</td><td>0.33</td><td>30.3</td><td>31.1</td><td>1.67</td><td> $0 . 2 7 \\pm 0 . 0 6$ </td></tr><tr><td>7</td><td>74.8</td><td>0.2</td><td>18.2</td><td>13.6</td><td>1.43</td><td> $0 . 6 0 \\pm 0 . 1 3$ </td></tr><tr><td>8</td><td>89.0</td><td>0.2</td><td>18.2</td><td>16.2</td><td>1.56</td><td> $0 . 9 2 \\pm 0 . 1 3$ </td></tr><tr><td>9</td><td>102.8</td><td>0.2</td><td>18.2</td><td>18.7</td><td>1.67</td><td> $0 . 9 3 \\pm 0 . 1 2$ </td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td colspan=\"7\">Intensity</td></tr><tr><td>Trial</td><td> $\\scriptstyle ( { \\mathrm { W } } / { \\mathrm { c m } } ^ { 2 } )$ </td><td>PRF (kHz)</td><td>Duty Cycle (%)</td><td> $I _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>Mechanical Index</td><td>∆T (°C) Mean ± STD</td></tr><tr><td>1</td><td>74.8</td><td>1</td><td>90.9</td><td>68.0</td><td>1.43</td><td> $0 . 0 2 \\pm 0 . 0 2$ </td></tr><tr><td>2</td><td>89.0</td><td>1</td><td>90.9</td><td>80.9</td><td>1.56</td><td> $0 . 1 5 \\pm 0 . 0 8$ </td></tr><tr><td>3</td><td>102.8</td><td>1</td><td>90.9</td><td>93.4</td><td>1.67</td><td> $0 . 1 3 \\pm 0 . 0 6$ </td></tr><tr><td>4</td><td>74.8</td><td>0.33</td><td>30.3</td><td>22.7</td><td>1.43</td><td> $0 . 1 1 \\pm 0 . 1 4$ </td></tr><tr><td>5</td><td>89.0</td><td>0.33</td><td>30.3</td><td>27.0</td><td>1.56</td><td> $0 . 1 7 \\pm 0 . 0 6$ </td></tr><tr><td>6</td><td>102.8</td><td>0.33</td><td>30.3</td><td>31.1</td><td>1.67</td><td> $0 . 2 7 \\pm 0 . 0 6$ </td></tr><tr><td>7</td><td>74.8</td><td>0.2</td><td>18.2</td><td>13.6</td><td>1.43</td><td> $0 . 6 0 \\pm 0 . 1 3$ </td></tr><tr><td>8</td><td>89.0</td><td>0.2</td><td>18.2</td><td>16.2</td><td>1.56</td><td> $0 . 9 2 \\pm 0 . 1 3$ </td></tr><tr><td>9</td><td>102.8</td><td>0.2</td><td>18.2</td><td>18.7</td><td>1.67</td><td> $0 . 9 3 \\pm 0 . 1 2$ </td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td colspan=\"7\">Intensity</td></tr><tr><td>Trial</td><td> $\\scriptstyle ( { \\mathrm { W } } / { \\mathrm { c m } } ^ { 2 } )$ </td><td>PRF (kHz)</td><td>Duty Cycle (%)</td><td> $I _ { \\mathrm { S P T A } } \\left( \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td>Mechanical Index</td><td>∆T (°C) Mean ± STD</td></tr><tr><td>1</td><td>74.8</td><td>1</td><td>90.9</td><td>68.0</td><td>1.43</td><td> $0 . 0 2 \\pm 0 . 0 2$ </td></tr><tr><td>2</td><td>89.0</td><td>1</td><td>90.9</td><td>80.9</td><td>1.56</td><td> $0 . 1 5 \\pm 0 . 0 8$ </td></tr><tr><td>3</td><td>102.8</td><td>1</td><td>90.9</td><td>93.4</td><td>1.67</td><td> $0 . 1 3 \\pm 0 . 0 6$ </td></tr><tr><td>4</td><td>74.8</td><td>0.33</td><td>30.3</td><td>22.7</td><td>1.43</td><td> $0 . 1 1 \\pm 0 . 1 4$ </td></tr><tr><td>5</td><td>89.0</td><td>0.33</td><td>30.3</td><td>27.0</td><td>1.56</td><td> $0 . 1 7 \\pm 0 . 0 6$ </td></tr><tr><td>6</td><td>102.8</td><td>0.33</td><td>30.3</td><td>31.1</td><td>1.67</td><td> $0 . 2 7 \\pm 0 . 0 6$ </td></tr><tr><td>7</td><td>74.8</td><td>0.2</td><td>18.2</td><td>13.6</td><td>1.43</td><td> $0 . 6 0 \\pm 0 . 1 3$ </td></tr><tr><td>8</td><td>89.0</td><td>0.2</td><td>18.2</td><td>16.2</td><td>1.56</td><td> $0 . 9 2 \\pm 0 . 1 3$ </td></tr><tr><td>9</td><td>102.8</td><td>0.2</td><td>18.2</td><td>18.7</td><td>1.67</td><td> $0 . 9 3 \\pm 0 . 1 2$ </td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was applied to the gel for at least 15 s using the same ultrasound parameters employed during the experimental trials.",
+   "n_subjects": "C. Data Acquisition. A total of nine trials were performed on a single rat.",
+   "n_sessions_per_subject": "A total of nine trials were performed on a single rat.",
+   "exposures[0].device.manufacturer": "A focused ultrasound transducer (H-101, Sonic Concepts, Washington) was used to deliver acoustic energy to the vagus nerve.",
+   "exposures[0].device.model": "A focused ultrasound transducer (H-101, Sonic Concepts, Washington) was used to deliver acoustic energy to the vagus nerve."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper never states whether the reported intensities are free-field (water) or in-situ values delivered to the surgically exposed nerve; placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "PRF and duty cycle are both given per trial, which would let pulse duration be computed, but the paper does not state a pulse duration directly, so it is left not_reported per the no-arithmetic rule."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

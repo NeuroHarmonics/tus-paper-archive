@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017wattiez",
+ "doi": "10.1016/j.brs.2017.07.007",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Single-unit extracellular recording in supplementary eye field (SEF) during an antisaccade task; saccadic reaction time/latency",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "TUS to frontal eye field (FEF) significantly modulated SEF single-neuron discharge in 39-41% of recorded neurons; of the modulated neurons, roughly half showed a transient increase and half a transient decrease in firing rate. Control TUS of extra-striate visual cortex produced almost no modulation (1/20 neurons).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of frontal eye field (FEF), monkeys Y and L",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "frontal eye field (FEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA, USA",
+    "model": "H115 (64 mm diameter, geometrically focused to 64 mm; 320 kHz)"
+   },
+   "fundamental_frequency_khz": 320,
+   "free_field": {
+    "pressure_kpa": [
+     760,
+     310
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     410,
+     240
+    ],
+    "isppa_w_cm2": [
+     5.6,
+     1.9
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "A single 100-ms tone burst (320 kHz, 5-ms rise/fall) was delivered to FEF once every 5 trials, with an unpredictable minimum interval of 3 s between trials (at least 10 s between ultrasound pulses); this was a single isolated burst per stimulation event, not a repeating pulse train, so PRF/duty cycle are not applicable."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Two captive-born macaques (Maccaca mulatta, $\\ \" \\mathrm { Y } ^ { \\prime }$ , and $\" \\mathrm { L } \" ,$ one male and one female 11 and 8 years old and 17 and 7 kg respectively) participated in this study.",
+   "exposures[0].fundamental_frequency_khz": "The transducer has four frequency resonances: 200 kHz, 320 kHz, 850 kHz and 1380 kHz. We chose the same main parameters (frequency and burst length) as our previous study [6] which had shown successful neuromodulation with the same transducer in monkeys: the ultrasound wave frequency was set to 320 kHz and 100 ms bursts of ultrasound were generated with a digital function generator, with rise and fall times set to 5 ms at the beginning and the end of the pulse, respectively (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[0].timing.pulse_duration_ms": "The transducer has four frequency resonances: 200 kHz, 320 kHz, 850 kHz and 1380 kHz. We chose the same main parameters (frequency and burst length) as our previous study [6] which had shown successful neuromodulation with the same transducer in monkeys: the ultrasound wave frequency was set to 320 kHz and 100 ms bursts of ultrasound were generated with a digital function generator, with rise and fall times set to 5 ms at the beginning and the end of the pulse, respectively (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[0].timing.sonication_duration_s": "The transducer has four frequency resonances: 200 kHz, 320 kHz, 850 kHz and 1380 kHz. We chose the same main parameters (frequency and burst length) as our previous study [6] which had shown successful neuromodulation with the same transducer in monkeys: the ultrasound wave frequency was set to 320 kHz and 100 ms bursts of ultrasound were generated with a digital function generator, with rise and fall times set to 5 ms at the beginning and the end of the pulse, respectively (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[0].free_field.pressure_kpa": "The peak pressure in the brain of the monkeys was estimated by using 3D simulations of the ultrasonic field (see details below), taking into account the experimental geometry $( 0 . 4 1 ~ \\pm ~ 0 . 0 8 ~ \\mathrm { { M P a } }$ for monkey Y and 0.24 ± 0.07 MPa for monkey L).",
+   "exposures[0].in_situ.pressure_kpa": "The peak pressure in the brain of the monkeys was estimated by using 3D simulations of the ultrasonic field (see details below), taking into account the experimental geometry $( 0 . 4 1 ~ \\pm ~ 0 . 0 8 ~ \\mathrm { { M P a } }$ for monkey Y and 0.24 ± 0.07 MPa for monkey L).",
+   "exposures[0].in_situ.isppa_w_cm2": "The corresponding overall spatial peak pulse average intensity (ISPPA) was thus estimated to be $5 . 6 \\pm 0 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $1 . 9 \\pm 0 . 2$ W/ $\\mathrm { c m } ^ { 2 }$ for monkey Y and L respectively $\\left( \\mathrm { I S P P A } = \\frac { P ^ { 2 } } { 2 \\rho ^ { \\ast } c } \\right.$ with and c approximated to $\\rho _ { w a t e r }$ and $c _ { w a t e r } )$ .",
+   "exposures[0].device.manufacturer": "A single element ultrasound transducer (H115, diameter 64 mm, Sonic Concept, Bothell, WA, USA), geometrically focused to 64 mm, was used with a coupling cone (C103, Sonic Concepts, Bothell, WA, USA) filled with degassed water.",
+   "exposures[0].device.model": "A single element ultrasound transducer (H115, diameter 64 mm, Sonic Concept, Bothell, WA, USA), geometrically focused to 64 mm, was used with a coupling cone (C103, Sonic Concepts, Bothell, WA, USA) filled with degassed water."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Values (0.76 MPa monkey Y, 0.31 MPa monkey L) are from Table 1 'Equivalent PNP in free water', not from a single contiguous sentence; quoted the corresponding in-brain PNP sentence for context and reconstructed the table row separately in provenance.notes."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "ISPPA values (5.6, 1.9 W/cm2) are derived by the authors from the simulated in-brain peak negative pressure using ISPPA=P^2/2ρc with water's ρ and c; recorded as in-situ since the pressure used in the calculation is the simulated brain (FEF) pressure, not the free-water pressure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Set to null: each stimulation event is a single isolated 100-ms tone burst (occurring once every 5 behavioural trials), not a periodic pulse train, so a within-sonication PRF/duty cycle is not defined."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper does not state whether the every-5th-trial TUS delivery schedule (with jittered 3s+ inter-trial gaps) constitutes randomisation."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No mention of auditory masking or control for auditory confounds in this paper."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Table 1 ('Estimations of peak pressure in monkeys' brains'): VPP 139+/-26V (Y), 56+/-15V (L); Equivalent PNP in free water 0.76+/-0.08 MPa (Y), 0.31+/-0.14 MPa (L); Simulated steady-state PNP in FEF 0.41+/-0.08 MPa (Y), 0.24+/-0.07 MPa (L). Control stimulation of extra-striate visual cortex used as an active control site (not modelled as a separate exposure, per the sham/control convention).",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "first"
+  }
+ }
+}

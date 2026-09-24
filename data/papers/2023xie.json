@@ -1,0 +1,181 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023xie",
+ "doi": "10.1016/j.neuroimage.2023.120423",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Y-maze new-arm exploration (spatial memory); local field potential power/cross-frequency coupling and single-unit spike recording (16-channel probe) in hippocampal CA1",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Closed-loop TUS delivered at the peak phase of hippocampal theta cycles for 7 days significantly improved Y-maze spatial memory performance and increased theta-gamma phase-amplitude coupling and gamma power, relative to sham; trough-phase and random-phase stimulation did not produce the same improvement.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Closed-loop phase-locked TUS to hippocampal CA1 (peak, trough, or random phase of theta cycle)",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region of the rat hippocampus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 510,
+    "isppa_w_cm2": 8.66,
+    "ispta_w_cm2": 0.43
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "Closed-loop, phase-locked 50 ms ultrasound tone bursts (0.5 MHz) were triggered at the peak, trough, or (in the random group) at 5 fixed times within each 1 s window based on real-time detection of hippocampal theta phase, with a 1 s stimulation refractory period, for a total stimulation time of 15 min/day for 7 consecutive days; sham stimulation group received no phase-locked triggering (mechanism not described). Rats were anesthetized during stimulation and awake during the Y-maze memory test."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In our study, we used 20 male Sprague-Dawley rats with body weights ranging from 160-220 grams, obtained from Beijing Vital River Laboratory Animal Technology $\\mathrm { C o . , }$ , Ltd. in China. The procedures employed were reviewed and approved by the Animal Ethics and Administrative Council of Yanshan University (Permit Number: 18106). The rats were kept in standard cages and exposed to a 12 h light/dark cycle, with access to food and water ad libitum. They were randomly assigned to one of four groups: peak stimulation (n=5), trough stimulation (n=5), random stimulation (n=5), and sham stimulation (n=5), in order to investigate the modulation of phase-locked ultrasound stimulation on memory.",
+   "n_sessions_per_subject": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound transducer was attached to the rat skull through a conical collimator filled with bubble-free ultrasound coupling gel, aligned vertically with the CA1 region of the hippocampus. As shown in Fig. 1(D), the fundamental frequency, stimulation duration, stimulation refractory period and total stimulation time per day are 0.5 MHz, 50 ms, 1s and 15 min, respectively. The rat was stimulated at the same time each day lasted for 7 days. At intervals of 1 second, in the peak stimulation or trough stimulation group, the stimulation system detected all theta rhythm peaks or troughs within 1 second for stimulation, and the random stimulation group stimulated 5 times at fixed time intervals within 1 second. The ultrasound pressure was 0.51 MPa, and the corresponding spatial peak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ values was 8.66 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } ,$ , and the spatial peak and time-average intensity $( \\mathrm { { I } } _ { \\mathsf { s p t a } } )$ values was $0 . 4 3 \\mathrm { \\ : W / c m } ^ { 2 } ;$ , respectively, stimulus intensities are chosen to meet safety thresholds $( \\mathrm { I _ { s p p a } } < 1 9 0 \\mathrm { W / c m ^ { 2 } } , \\mathrm { I _ { \\it s p t a } } < 0 . 7 2 \\mathrm { W / c m ^ { 2 } } )$ (Baek et al., 2017) and to elicit neural activity (Kubanek et al., 2018b). The temperature change evaluated by for formula $\\Delta \\mathrm { T } { = } 2 \\mathrm { { \\alpha } I t / ( \\rho _ { b } \\mathbf { C } _ { p } ) }$ (Lee et al., 2015) is approximately ${ \\sim } 3 . 8 ^ { \\ast } 1 0 ^ { - 3 \\circ } \\mathsf { C }$ .Where α is the absorption coefficient and equals $0 . 0 1 7 5 \\mathrm { c m } ^ { - 1 } , \\rho _ { \\mathrm { b } }$ is the density of brain tissue, $\\mathrm { C _ { p } }$ is the specific heat of brain tissue, and the product ${ \\rho } _ { \\mathrm { b } } { \\mathrm { C } } _ { \\mathrm { p } }$ is equal to 3.811J $\\mathrm { c m } ^ { 3 } \\mathrm { C } ^ { - 1 }$ , I and t is equal to $8 . 6 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and 0.05s, respectively. Fig. 1(E) displays the ultrasound field in both the axial (x-z) and cross-sectional $\\left( \\mathbf { x } { - } \\mathbf { y } \\right)$ views of the acoustic beam profile, which includes a collimator and a skull, aligned with the brain atlas. In Fig. 1(F), the distribution of the sound field is depicted along the white dotted lines. The diameter of the focal area, measured at the full width at half maximum (FWHM), ranged from 5.6 to 5.8 mm. In our experimental setup, we integrated the sound field distribution with the rat brain atlas to adjust the transducer positioning. Our goal was to position the CA1 region of the hippocampus within an area of higher acoustic intensity while minimizing exposure to other regions, such as CA2 and CA3, the entorhinal cortex and prefrontal cortex, which are relatively distant from the CA1 and therefore would be much less affected by strong ultrasound intensity."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "The figure legend (Fig. 1D) additionally defines 'CPP: number of cycles per pulse' and 'PEF: pulse repetition frequency' terms, implying possible internal pulsing within the 50 ms burst, but no PRF or duty-cycle values are given in the text, so the 50 ms tone burst was treated as a single continuous burst per the 'single uninterrupted burst' rule."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure (0.51 MPa) and intensities (Isppa 8.66 W/cm2, Ispta 0.43 W/cm2) are given without stating whether they are free-field or in-situ/derated values."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only the three ultrasound-exposed group sizes (peak, trough, random stimulation, n=5 each) are counted; the sham stimulation group (also n=5) is assumed not to have received real ultrasound, but the sham mechanism is not described."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The mechanism of the 'sham stimulation' group (e.g., inactive transducer vs. no output) is not described in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ }
+}

@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019cui",
+ "doi": "10.1186/s12868-018-0485-1",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "whole-cell patch clamp recordings of spontaneous action potentials and voltage-dependent potassium currents (IA, IK) in CA1 pyramidal neurons",
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US increased spontaneous firing rate and action potential amplitude while inhibiting transient outward (IA) and delayed rectifier (IK) potassium currents, shifting their voltage dependence and slowing IA recovery from inactivation.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasonic stimulation of hippocampal CA1 brain slices",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "rat hippocampal CA1 neurons"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V308"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.015,
+     0.03
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 20,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 900,
+    "protocol_description": "The ultrasound settings were 0.5 MHz center frequency, 20 Hz pulse repetition frequency, 50% duty cycle and 20 ms pulse length, and the pulse-average ultrasound intensities were 15 mW/cm2 or 30 mW/cm2. All stimulations lasted 15 min. The transducer (diameter 24 mm) was immersed in aCSF 1.5 cm above the brain slice and stimulated the entire slice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 40.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The number of rats for each control and experimental group is 12 $( \\boldsymbol { \\mathrm { n } } = 1 2 )$ Four brain slices of each rat were used for control and experimental groups.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound settings were 0.5 MHz center frequency, 20  Hz pulse repetition frequency, 50% duty cycle and 20  ms pulse length, and the pulse-average ultrasound intensities were 15 $\\mathrm { { m W / c m ^ { 2 } } }$ or $3 0 \\mathrm { m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound settings were 0.5 MHz center frequency, 20  Hz pulse repetition frequency, 50% duty cycle and 20  ms pulse length, and the pulse-average ultrasound intensities were 15 $\\mathrm { { m W / c m ^ { 2 } } }$ or $3 0 \\mathrm { m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound settings were 0.5 MHz center frequency, 20  Hz pulse repetition frequency, 50% duty cycle and 20  ms pulse length, and the pulse-average ultrasound intensities were 15 $\\mathrm { { m W / c m ^ { 2 } } }$ or $3 0 \\mathrm { m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound settings were 0.5 MHz center frequency, 20  Hz pulse repetition frequency, 50% duty cycle and 20  ms pulse length, and the pulse-average ultrasound intensities were 15 $\\mathrm { { m W / c m ^ { 2 } } }$ or $3 0 \\mathrm { m W / c m ^ { 2 } }$ .",
+   "exposures[0].timing.sonication_duration_s": "All stimulations lasted 15 min.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound settings were 0.5 MHz center frequency, 20  Hz pulse repetition frequency, 50% duty cycle and 20  ms pulse length, and the pulse-average ultrasound intensities were 15 $\\mathrm { { m W / c m ^ { 2 } } }$ or $3 0 \\mathrm { m W / c m ^ { 2 } }$ .",
+   "exposures[0].device.manufacturer": "The pulsed ultrasound signals were generated by a radio-frequency power amplifier (Model 150A 100C, AR, WA, USA), an ultrasonic transducer (V308, Olympus, Tokyo, Japan) and an arbitrary waveform generator (33500B, KEYSIGHT, CA, USA).",
+   "exposures[0].device.model": "The pulsed ultrasound signals were generated by a radio-frequency power amplifier (Model 150A 100C, AR, WA, USA), an ultrasonic transducer (V308, Olympus, Tokyo, Japan) and an arbitrary waveform generator (33500B, KEYSIGHT, CA, USA)."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Control condition was brain slices with no stimulation applied; the paper does not describe whether an inactive transducer was left in place, so the sham mechanism is not fully described."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Stated pulse length (20 ms) does not exactly match duty_cycle/PRF (50%/20 Hz = 25 ms); recorded as stated, not corrected."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper reports 'pulse-average ultrasound intensity' without stating whether this was measured in water/free field or at the slice; placed in unspecified_domain."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Paper does not state whether patch-clamp recordings were made during or after the 15-minute ultrasound exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

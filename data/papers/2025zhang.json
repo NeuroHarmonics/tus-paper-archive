@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025zhang",
+ "doi": "10.1038/s41467-025-62079-0",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "myocardial_infarction"
+ ],
+ "condition_other": "myocardial infarction (rat model, coronary artery ligation)",
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 28,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "autonomic_physiology",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "left stellate ganglion (LSG) neural discharge recording; TH/P2X7R/Iba-1/GFAP/alpha-SMA/vWF immunofluorescence; Masson trichrome and TTC staining; transmission electron microscopy; serum NE/NPY ELISA; heart rate variability; echocardiography (EF%, FS%, LVESV, LVEDV)",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Long-term transcranial ultrasound stimulation of the PVN reduced MI-induced left stellate ganglion overactivation, TH+ neuron elevation, neuroinflammation (microglia/astrocyte/P2X7R activation), serum NE/NPY, and abnormal HRV, and improved cardiac structure/function (reduced infarct size and fibrosis, improved EF%/FS%) relative to the MI group.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Ultrasound intensity (270.6 mW/cm2) and mechanical index (0.2) were both below FDA safety thresholds (720 mW/cm2 and 1.9); no significant temperature changes occurred during stimulation; biocompatibility assessments showed no notable adverse reactions, no surrounding tissue lesions, and no histopathological toxicity in major organs after long-term implantation.",
+ "exposures": [
+  {
+   "label": "Chronic transcranial ultrasound stimulation of bilateral PVN for MI treatment",
+   "target": {
+    "terms": [
+     "paraventricular_nucleus"
+    ],
+    "label": "bilateral paraventricular nucleus (PVN) of the hypothalamus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "frequency-adjustable ferroelectric heterojunction (f-FH), KNN-3.5BHT piezoceramic"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 360,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.2706
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 900,
+    "protocol_description": "The MI + f-FH group received daily 15-minute transcranial ultrasound stimulation of the PVN for four consecutive weeks, beginning after a 2-week post-implantation recovery period and induction of myocardial infarction. The device used an interval (pulsed) ultrasound stimulation scheme; full pulse timing parameters were reported only in Supplementary Table 2, not reproduced in the main text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Rats are randomized into three groups: the control group (n = 12, sham device implantation and sham MI), MI group (n = 12, sham device implantation and MI), and MI + f-FH group (n = 12, device implantation and MI).",
+   "randomised": "Rats are randomized into three groups: the control group (n = 12, sham device implantation and sham MI), MI group (n = 12, sham device implantation and MI), and MI + f-FH group (n = 12, device implantation and MI).",
+   "blinding": "All data are acquired by an experienced ultrasound physician who is blinded to the group information.",
+   "exposures[0].fundamental_frequency_khz": "Given that miniaturization is a critical requirement for implantable devices (focal length: 7.8-8.0 mm, PVN brain area)<sup>44</sup>, the ultrasound frequency (f ) is set to 3 MHz.",
+   "exposures[0].in_situ.pressure_kpa": "show an approximately linear relationship (Supplementary Fig. 7), with an acoustic pressure of 0.36 MPa at 100 V, enabling applications in deep brain neuromodulation.",
+   "exposures[0].timing.sonication_duration_s": "The MI + f-FH group subsequently receives daily 15-minute transcranial ultrasound stimulation of the PVN for four consecutive weeks (Supplementary Movie 1, Supplementary Fig. 8).",
+   "adverse_events": "Moreover, biocompatibility assessments indicate no notable adverse reactions (Supplementary Fig. 20, and Supplementary Movie 2) and surrounding tissue lesions (Supplementary Fig. 21) following the long-term implantation of f-FH.",
+   "safety_notes": "Furthermore, since the ultrasound intensity (270.6 mW/cm<sup>2</sup>) and mechanical index (0.2) delivered by the f-FH are both less than the FDA’s safety threshold (720 mW/cm<sup>2</sup>, and $1 . 9 ) ^ { 6 6 }$ , and the use of an interval pulse ultrasound stimulation, no significant temperature changes occur during transcranial ultrasound stimulation (Supplementary Fig. 19).",
+   "exposures[0].device.model": "a Developed KNN-3.5BHT piezoelectric ceramics.",
+   "n_sessions_per_subject": "For the treatment of chronic MI, the rats implanted with the f-FH recover for 2 weeks, followed by MI modeling, and then underwent 15 min stimulation on the PVN daily for 4 weeks.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Given that low-intensity focused ultrasound alleviates PVN neuroinflammation<sup>54,55</sup>, the ultrasound stimulation intensity for MI treatment $( \\boldsymbol { \\mathrm { I } } _ { \\mathrm { M I } } )$ by f-FH is set to 270.6 mW/cm<sup>2</sup> (Supplementary Table 2)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Value (0.36 MPa at 100 V) is described as 'transcranial focal pressure' from device characterization experiments (Supplementary Fig. 7), not explicitly confirmed as the pressure delivered during the in vivo MI-treatment protocol; assumed to be the same device/frequency."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper reports a single 'ultrasound stimulation intensity' (270.6 mW/cm2) without specifying whether it is Isppa or Ispta, or whether it is a free-field or in-situ value."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states 'the use of an interval pulse ultrasound stimulation' but full timing parameters (PRF, duty cycle, pulse duration) are only in Supplementary Table 2, not available in the main text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper states daily stimulation 'for four consecutive weeks' but never gives an explicit total session count."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the echocardiography assessor is explicitly described as blinded; overall study blinding design (e.g., for other readouts) is not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

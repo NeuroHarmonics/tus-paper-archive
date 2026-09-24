@@ -1,0 +1,160 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1957bowsher",
+ "doi": "10.1001/archneurpsyc.1957.02330400051005",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  2,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "Clinical grading of paralysis (paraplegia, monoplegia, monoparesis); Nissl-stained histology of the spinal cord",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is a histological damage/lesion study rather than a study of excitatory or inhibitory modulation: ultrasound produced cell depopulation, vacuolation and chromatolysis in ventral horn cells together with clinical paralysis.",
+ "adverse_events": "observed",
+ "safety_notes": "Irradiation produced paraplegia, left monoplegia or monoparesis in most mice, with ventral horn cell depopulation, vacuolation and chromatolysis, slight hemorrhage in one dorsal horn, and trypan blue staining indicating altered capillary permeability (blood-brain barrier breakdown) at the lesion site.",
+ "exposures": [
+  {
+   "label": "Focused ultrasound irradiation of thoracic spinal cord",
+   "target": {
+    "terms": [
+     "thoracic_spinal_cord"
+    ],
+    "label": "the level of the eighth thoracic vertebra"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 400,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Ultrasound was delivered as a pulsed dose at the following parameters: 2.5 megacycles per second with a voltage across the quartz crystal of 800. This was given as five pulses of 0.4 second, with an interval of 0.6 second between pulses."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was delivered as a pulsed dose at the following parameters: 2.5 megacycles per second with a voltage across the quartz crystal of 800.",
+   "exposures[0].timing.pulse_duration_ms": "This was given as five pulses of 0.4 second, with an interval of 0.6 second between pulses.",
+   "n_subjects": "Two additional animals were allowed to survive for 30 days but were not injected with trypan blue in vivo.",
+   "n_sessions_per_subject": "The mice were killed in pairs at 1.0, 2.0, 4.0, 8.0, and 24.0 hours after irradiation, having been injected subcutaneously half an hour before being killed with 0.25 cc. of trypan blue."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper describes 10 mice killed in pairs at set survival times, 2 additional mice surviving to 30 days, and 2 further mice discarded as only 'weak'; no single total N is ever stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states pulse duration (0.4 s) and inter-pulse interval (0.6 s) separately but never states a repetition rate or duty cycle; computing one would require arithmetic on two separately stated quantities, which was avoided."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Study reports focal histological lesion/damage (paralysis, cell death) rather than a graded excitatory/inhibitory modulation; classified as not_assessed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

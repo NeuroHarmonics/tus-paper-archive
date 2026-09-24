@@ -1,0 +1,349 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024wu",
+ "doi": "10.1002/advs.202401039",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6JNarl); C6 rat glioma cell line (in vitro)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Fluorescent CSF tracer / β-amyloid influx and clearance imaging, transcranial live fluorescence imaging, calcium imaging (Fluo-8), cell-surface biotinylation, flow cytometry, immunofluorescence, H&E/Luxol Fast Blue/Nissl histology, Evans blue BBB assay",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "VLIUS increased CSF tracer influx into paravascular spaces, enhanced interstitial tracer and beta-amyloid clearance, promoted TRPV4-dependent calcium influx and AQP4 translocation to the cell surface in astrocytes/C6 cells, all without observable tissue damage.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E, Luxol Fast Blue and Nissl staining showed no tissue damage, demyelination, gliosis or chromatolysis; NeuN/GFAP immunostaining showed no neuron loss or astrocyte increase; Evans blue assay showed no BBB leakage; astrocyte cell-volume increase after VLIUS was transient and resolved by 65 min.",
+ "exposures": [
+  {
+   "label": "transcranial VLIUS of mouse brain (in vivo)",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "mouse brain (planar transducer at center of brain)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, Tokyo, Japan",
+    "model": "C539-SM"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 98,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.00092,
+     0.00368,
+     0.00585
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.01,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": 300,
+    "protocol_description": "Following intracisternal (or intrastriatal) injection, mice were immediately stimulated with VLIUS for 5 min via a planar transducer coupled to the scalp with ultrasound gel. Three intensities (Ispta 0.92, 3.68, 5.85 mW/cm2) were screened; 3.68 mW/cm2 (pressure ~98 kPa) was optimal and used for subsequent experiments. The paper notes the short pulse repetition period made the exposure appear similar to continuous wave macroscopically despite the 1% duty cycle."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "VLIUS of C6 glioma cells (in vitro)",
+   "target": {
+    "terms": [
+     "cultured_glia"
+    ],
+    "label": "C6 glioma cells (astrocyte-like)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, Tokyo, Japan",
+    "model": "C539-SM"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 98,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.00368
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.01,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": 60,
+    "protocol_description": "A planar transducer was placed directly above C6 cells in a 24-well plate; the VLIUS setting was the same as the in vivo protocol except the duration was changed to 1 min. A separate micropipette-guided ultrasound system (not further parameterised here) was also used for live-cell calcium imaging, applying a 3 s ultrasound stimulus after 10 s pretreatment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "species": "Animals: All animal experiments were performed in accordance with the guidelines of the Institutional Animal Care and Use Committee of the National Taiwan University College ofMedicine (approval no. 20 201 028). C57BL/6JNarl mice (body weight, 20—25 g) were purchased from the National Laboratory Animal Center (Taiwan), and maintained under a controlled 12 h dark light/12 h cycle with access to water and food ad libitum. In all experiments, animals were anesthetized using a combination of Zoletil (50 mg $\\mathsf { k g } ^ { - 1 }$ , intraperitoneally) and xylazine (2.3 mg kg<sup>−1</sup>, intraperitoneally).",
+   "anaesthesia": "Animals: All animal experiments were performed in accordance with the guidelines of the Institutional Animal Care and Use Committee of the National Taiwan University College ofMedicine (approval no. 20 201 028). C57BL/6JNarl mice (body weight, 20—25 g) were purchased from the National Laboratory Animal Center (Taiwan), and maintained under a controlled 12 h dark light/12 h cycle with access to water and food ad libitum. In all experiments, animals were anesthetized using a combination of Zoletil (50 mg $\\mathsf { k g } ^ { - 1 }$ , intraperitoneally) and xylazine (2.3 mg kg<sup>−1</sup>, intraperitoneally).",
+   "adverse_events": "In safety experiments, the VLIUS showed no observable brain damage. As shown in Figure S4 (Supporting Information), H&E staining did not reveal tissue damage, gliosis, or chromatolysis. Furthermore, Luxol Fast Blue staining combined with Nissl staining did not show any demyelination, loss ofNissl bodies (indicating neuronal abnormalities), or chromatolysis. NeuN and GFAP immunostaining showed no significant decrease in the number ofneurons or any abnormal increase in the number ofastrocytes.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[0].timing.sonication_duration_s": "Intracisternal CSF Tracer Infusion: Intracisternal injection was performed as previously described with minor modifications.<sup>[49]</sup> The mice were weighed and anesthetized by an intraperitoneal injection of Zoletil/xylazine. The cisterna magna was exposed through a surgical incision using a stereotactic frame, while a 30-gauge needle connected to a Hamilton syringe via a polyethylene tube (PE10) was inserted into the cisterna magna. Fluorescent CSF tracers (Alexa Fluor 555; Cat No. A34786; Thermo Fisher Scientific, Waltham, MA, USA) were added to the artificial CSF at a concentration of 5 mg ml<sup>−1</sup>. These CSF tracers (6 μl) were infused at a constant rate of 1 μl min<sup>−1</sup> with a syringe pump (Harvard Apparatus, Holliston, MA, USA). During the experiment, the needle was kept in place to avoid depressurization of the CSF compartment. In the VLIUS stimulation group, mice were immediately stimulated with VLIUS for 5 min after intracisternal infusion. Thirty minutes after the start of intracisternal infusion, the mice were euthanized, and brains were harvested and fixed with 4% cold paraformaldehyde in PBS overnight. To evaluate the distribution of tracers into the brain parenchyma, 500 μm coronal slices were cut on a vibratome (MicroSlicer™ DTK-1000N, DSK, Kyoto, Japan) and then incubated in 2% phosphate-bufered saline with Tween (PBST) (2% Triton X-100 in PBS) for 2 days to promote tissue permeability. After washing three times with PBS, the tissues were cleared and incubated with RapiClear® 1.49 (SunJin Lab Co., Hsinchu City, Taiwan) for 1 h to promote transparency and were then mounted with fresh Rapi-Clear®. Samples were imaged using a fluorescence microscope (Olympus BX51 with a ToupTek camera) and the extended depth-of-field (EDF) method (ToupView software, Hangzhou, China) to provide higher-quality images and ensure faster acquisition oflarge amounts ofinformation. The tracer influx (area %) was analyzed using ImageJ software (16-bit image type; analyze particle setting: 80–infinity μm<sup>2</sup> size range, 0.0–1.0 circularity, and automatic threshold). The number of paravascular influxes was counted in brain sections where the subarachnoid tracer extended into the parenchyma (Figure 1C). The influx length was further measured from the subarachnoid space to the distal end using the ToupView software (Figure 1D). Additionally, 100 μm brain slices instead to measure the diffusion of the tracer in the anterior to posterior regions of the brain was used, for more refined results (Figure 1E).",
+   "exposures[0].unspecified_domain.pressure_kpa": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].timing.duty_cycle_pct": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].timing.pulse_duration_ms": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].timing.sonication_duration_s": "For in vitro experiments, $1 \\times 1 0 ^ { 5 }$ cells were seeded in a 24-well plate 18 h before the experiments. After renewing the medium, a planar transducer was placed directly above the cells. The VLIUS setting was the same as that described above, except that the duration was changed to 1 min. One hour following VLIUS stimulation, the cells were washed with phosphate bufered saline (PBS) in preparation for subsequent experimentation. For information regarding micropipette-guided ultrasound stimulation, please refer to the section on live-cell calcium signal imaging.",
+   "exposures[1].unspecified_domain.pressure_kpa": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "Ultrasound Devices and Stimulation Parameters: The ultrasound device setup was described in our previous study.<sup>[20]</sup> The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation. All stimulations were performed using a function generator (Tektronix AFG1022, Beaverton, OR, USA), equipped with a power amplifier (E&I 210 L, Electronics & Innovation, Rochester, USA). The planar transducer was placed at the center of the brain, and an ultrasound gel was applied at the interface between the bottom of the transducer and the mouse scalp. Following intracisternal injection, the mice were immediately stimulated with VLIUS for 5 min. VLIUS treatment was performed under the following conditions: center frequency, 1 MHz; pulse repetition frequency (PRF), 1 kHz; duty factor, 1%; and various spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { s p t a } } )$ of 0.92, 3.68, and 5.85 mW cm<sup>2</sup> (Figures S1 and S2, Supporting Information). Among these, $\\mathsf { I } _ { \\mathsf { s p t a } } = 3 . 6 8 \\mathsf { m w } \\mathsf { c m } ^ { 2 }$ (pressure level of ≈98 kPa) was the optimal condition for promoting tracer difusion (Figure S2, Supporting Information); as such, the subsequent experiments were conducted under these conditions. A more specific parameter was the pulse repetition period (1/PRF), which difers from the typical setting ofBBB opening. The period was shortened such that it appeared similar to a continuous wave when viewed macroscopically. However, because the duty cycle was only 1%, it prevents heat accumulation and the generation of cavitation. Compared to the commonly used ultrasound parameters, which remain at 10<sup>4</sup> cycles/s, the VLIUS parameter was distributed within 1 s as 10 cycles/pulse completed in 1000 pulses,<sup>[20]</sup> whereas the typical ultrasound parameter setting completes it in 10<sup>4</sup> cycles/pulse with one pulse.",
+   "n_sessions_per_subject": "Intracisternal CSF Tracer Infusion: Intracisternal injection was performed as previously described with minor modifications.<sup>[49]</sup> The mice were weighed and anesthetized by an intraperitoneal injection of Zoletil/xylazine. The cisterna magna was exposed through a surgical incision using a stereotactic frame, while a 30-gauge needle connected to a Hamilton syringe via a polyethylene tube (PE10) was inserted into the cisterna magna. Fluorescent CSF tracers (Alexa Fluor 555; Cat No. A34786; Thermo Fisher Scientific, Waltham, MA, USA) were added to the artificial CSF at a concentration of 5 mg ml<sup>−1</sup>. These CSF tracers (6 μl) were infused at a constant rate of 1 μl min<sup>−1</sup> with a syringe pump (Harvard Apparatus, Holliston, MA, USA). During the experiment, the needle was kept in place to avoid depressurization of the CSF compartment. In the VLIUS stimulation group, mice were immediately stimulated with VLIUS for 5 min after intracisternal infusion. Thirty minutes after the start of intracisternal infusion, the mice were euthanized, and brains were harvested and fixed with 4% cold paraformaldehyde in PBS overnight. To evaluate the distribution of tracers into the brain parenchyma, 500 μm coronal slices were cut on a vibratome (MicroSlicer™ DTK-1000N, DSK, Kyoto, Japan) and then incubated in 2% phosphate-bufered saline with Tween (PBST) (2% Triton X-100 in PBS) for 2 days to promote tissue permeability. After washing three times with PBS, the tissues were cleared and incubated with RapiClear® 1.49 (SunJin Lab Co., Hsinchu City, Taiwan) for 1 h to promote transparency and were then mounted with fresh Rapi-Clear®. Samples were imaged using a fluorescence microscope (Olympus BX51 with a ToupTek camera) and the extended depth-of-field (EDF) method (ToupView software, Hangzhou, China) to provide higher-quality images and ensure faster acquisition oflarge amounts ofinformation. The tracer influx (area %) was analyzed using ImageJ software (16-bit image type; analyze particle setting: 80–infinity μm<sup>2</sup> size range, 0.0–1.0 circularity, and automatic threshold). The number of paravascular influxes was counted in brain sections where the subarachnoid tracer extended into the parenchyma (Figure 1C). The influx length was further measured from the subarachnoid space to the distal end using the ToupView software (Figure 1D). Additionally, 100 μm brain slices instead to measure the diffusion of the tracer in the anterior to posterior regions of the brain was used, for more refined results (Figure 1E).",
+   "exposures[0].device.manufacturer": "[20] The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation.",
+   "exposures[0].device.model": "[20] The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation.",
+   "exposures[1].device.manufacturer": "[20] The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation.",
+   "exposures[1].device.model": "[20] The ultrasound field was generated using a 1 MHz commercial plane transducer (C539-SM; Olympus, Tokyo, Japan) for mouse brain stimulation."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes vary per experiment/figure (e.g. n=5-9 mice per arm across Figures 1-6) and the Figure 1 legend n-value ('n = 70 mice/group; two independent repeats of n = 5 mice per group') appears internally inconsistent (likely an OCR/typesetting error for n=10); no single overall total for VLIUS-exposed mice is given."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration (0.01 ms = 10 microseconds) derived from the paper's explicit statement of '10 cycles/pulse' at the 1 MHz fundamental frequency (cycles per pulse ÷ frequency), an allowed synonym conversion, not from dividing duty cycle by PRF."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain (free-field vs in-situ) not stated; paper elsewhere notes ~20% energy loss traversing the mouse skull, suggesting the 98 kPa value may be an unattenuated/output figure, but this is not stated explicitly."
+   },
+   {
+    "field": "exposures[1]",
+    "reason": "A separate micropipette-guided ultrasound device (cited to Chu et al.) was used for the live-cell calcium imaging assay with a 3 s exposure; its frequency/pressure are not restated in this paper, so it is described only in protocol_description rather than as a third exposure entry."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control mice were 'treated with or without VLIUS stimulation'; the mechanism of the control condition (transducer present but off, vs. no device at all) is not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024brunet",
+ "doi": "10.1101/2024.07.17.604026",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The optimal FUS stimulus activated 52% of DRG neurons (N=192 cells).",
+   "exposures[0].fundamental_frequency_khz": "The FUS stimulus consisted of a 20-MHz sinusoidal signal with peak positive pressure of 4 to 5 MPa and stimulus duration of 0.1 to 1 ms.",
+   "exposures[0].free_field.pressure_kpa": "To identify the US pulse parameters for which DRG neurons are activated, cells were stimulated by varying acoustic positive pressure (p<sup>+</sup>=4-5 MPa, corresponding to Spatial Peak Pulse Average intensity $\\mathsf { I } _ { \\mathsf { s p p a } } = 3 4 6 -$ 536 W/cm<sup>2</sup>) and stimulus durations (\u0003t=0.1-1 ms) (Table S1).",
+   "exposures[0].free_field.isppa_w_cm2": "To identify the US pulse parameters for which DRG neurons are activated, cells were stimulated by varying acoustic positive pressure (p<sup>+</sup>=4-5 MPa, corresponding to Spatial Peak Pulse Average intensity $\\mathsf { I } _ { \\mathsf { s p p a } } = 3 4 6 -$ 536 W/cm<sup>2</sup>) and stimulus durations (\u0003t=0.1-1 ms) (Table S1).",
+   "exposures[0].timing.sonication_duration_s": "The FUS stimulus consisted of a 20-MHz sinusoidal signal with peak positive pressure of 4 to 5 MPa and stimulus duration of 0.1 to 1 ms.",
+   "exposures[0].device.manufacturer": "To achieve this, the transducer was first operated in pulse-echo mode by using a pulser-receiver (5073PR, Olympus, France) and focused onto the culture dish containing an isolated polystyrene microbead with a radius of 20 µm located at the center of the optical field of view.",
+   "exposures[0].device.model": "Primary neuronal cultures were performed as described above and stimulated with a FUS transducer (Olympus V317-SM, central frequency of 20 MHz, active diameter of 6.32 mm, focal distance of 12.7 mm)."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Most cells received a single FUS stimulus (used for the pressure/duration dose-response and n=192 count), but the scRNA-seq and deformation sub-experiments used repeated stimulations (2 to 7 consecutive stimuli); n_sessions_per_subject=1 reflects the main dose-response experiment only."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Cells were in a dish/culture setup (no skull); paper describes the beam as 'free-field' (measured by hydrophone) so these values were placed in free_field, though this is a bath-type in vitro exposure rather than a whole-water free-field beam characterization for a transcranial study."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Classified as continuous (single uninterrupted tone burst per trial) per the burst rule; sonication_duration_s carries the 0.1-1 ms burst length instead."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.isppa_w_cm2": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "both_defensible"
+  }
+ },
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 192,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Calcium imaging (GCaMP6s / Fluo4-AM) of cultured DRG neurons; single-cell RNA sequencing; high-speed camera imaging of FUS-induced cell deformation.",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS elicited calcium responses (activation) in cultured DRG neurons, increasing with acoustic pressure and stimulus duration; GINIP+ neurons (C-LTMRs, MRGPRD+ NP1) were preferentially activated.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "optimal FUS stimulus to cultured DRG neurons",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion_culture"
+    ],
+    "label": "cultured DRG neurons"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V317-SM"
+   },
+   "fundamental_frequency_khz": 20000,
+   "free_field": {
+    "pressure_kpa": [
+     4000,
+     5000
+    ],
+    "isppa_w_cm2": [
+     346,
+     536
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.0001,
+     0.001
+    ],
+    "protocol_description": "The FUS stimulus consisted of a 20-MHz sinusoidal signal with peak positive pressure of 4 to 5 MPa and stimulus duration of 0.1 to 1 ms. Each cell was subjected to a single FUS stimulus to avoid potential cumulative effects (the 'optimal FUS stimulus' was 5 MPa for 1 ms). For the scRNA-seq experiment, neurons instead received two consecutive optimal FUS stimulations 2 minutes apart; for the deformation experiments, neurons received up to 6-7 consecutive stimuli sweeping pressure or duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023zhanga",
+ "doi": "10.1016/j.fmre.2022.02.010",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "alzheimers_disease",
+  "other"
+ ],
+ "condition_other": "natural aging (aging mouse model)",
+ "n_subjects": [
+  3,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  14,
+  66,
+  49
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Western blotting (WRAP53, TERT, BDNF, PSD-95, APP, A-beta, Tau, p-Tau); telomere length qPCR (T/S ratio); Morris water maze; fear conditioning; open field; rotarod; c-Fos immunofluorescence; beta-galactosidase senescence staining; RNA-seq transcriptomics; 16S rRNA gut microbiota sequencing",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "UDBS significantly increased c-Fos expression (a neuronal activation marker) in the cortex and hippocampus of aging mice, and was associated with decelerated telomere shortening and improved cognitive and motor behaviour.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "UDBS of hippocampus and cortex (normal, AD-model, and aging mice)",
+   "target": {
+    "terms": [
+     "hippocampus",
+     "cerebral_cortex"
+    ],
+    "label": "hippocampus and cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NdtXducer, Northborough, USA",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 340,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1,
+    "protocol_description": "UDBS delivered with 1 s sonication trains and a 1 s inter-stimulus interval, for 30 min/day. Experiment 1 (normal mice): treated for 14 days then sacrificed for telomerase western blotting. Experiment 2 (APP/PS1 Alzheimer's model mice): UDBS administered for 66 days, then behavioural testing and sacrifice for telomere evaluation on Day 100. Experiment 3 (aging mice): treated for 49 days, with behavioural, telomere, immunofluorescence and transcriptomic evaluation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Experiment 1: Six normal mice were randomized into the sham $\\left( n = 3 \\right)$ and UDBS (n = 3) groups. The mice were treated for 14 days (30 min/day) and then sacrificed for western blotting of telomerase.",
+   "exposures[0].fundamental_frequency_khz": "Fig. 1c displays the UDBS parameters: 500 kHz fundamental frequency, 500 Hz pulse repetition frequency, 5% duty cycle, 1 s sonication duration, 1 s inter-stimulus interval, and 0.34 MPa acoustic pressure.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Fig. 1c displays the UDBS parameters: 500 kHz fundamental frequency, 500 Hz pulse repetition frequency, 5% duty cycle, 1 s sonication duration, 1 s inter-stimulus interval, and 0.34 MPa acoustic pressure.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Fig. 1c displays the UDBS parameters: 500 kHz fundamental frequency, 500 Hz pulse repetition frequency, 5% duty cycle, 1 s sonication duration, 1 s inter-stimulus interval, and 0.34 MPa acoustic pressure.",
+   "exposures[0].timing.duty_cycle_pct": "Fig. 1c displays the UDBS parameters: 500 kHz fundamental frequency, 500 Hz pulse repetition frequency, 5% duty cycle, 1 s sonication duration, 1 s inter-stimulus interval, and 0.34 MPa acoustic pressure.",
+   "exposures[0].timing.sonication_duration_s": "Fig. 1c displays the UDBS parameters: 500 kHz fundamental frequency, 500 Hz pulse repetition frequency, 5% duty cycle, 1 s sonication duration, 1 s inter-stimulus interval, and 0.34 MPa acoustic pressure.",
+   "exposures[0].device.manufacturer": "UDBS (arbitrary waveform generator: 3102C, Tektronix, Texas, USA; power amplifier: 325LA, Electronics & Innovation Ltd, New York, USA; focused transducer: NdtXducer, Northborough, USA) was delivered to the hippocampus and cortex of the mice.",
+   "n_sessions_per_subject": "The mice were treated for 14 days (30 min/day) and then sacrificed for western blotting of telomerase."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Value is the sum of UDBS-exposed animals across three sub-experiments (3 normal + 10 APP/PS1 + 10 aging mice); sham-treated animals from each group (3+10+10) are excluded as they received no acoustic output."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The three sub-experiments used different treatment durations (14, 66, and 49 days respectively), so a single session count cannot be given; durations are described in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; duty cycle (5%) and PRF (500 Hz) are both given but pulse duration is not explicitly stated by the paper, so it is not computed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "neither"
+  }
+ }
+}

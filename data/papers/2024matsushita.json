@@ -1,0 +1,357 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024matsushita",
+ "doi": "10.1073/pnas.2404877121",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6J; TRPC6-KO)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging"
+ ],
+ "readout_other": "GCaMP6s fluorescence calcium imaging in cultured cortical/hippocampal neurons; in vivo extracellular multiunit recordings in cerebral cortex via tungsten microelectrode or 15-µm silicon probe; qPCR/RT-PCR for TRPC6 expression",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound irradiation induced rapid Ca2+ transients in cultured neurons and intensity-dependent increases in population neural activity in mouse cerebral cortex; both effects required the mechanosensitive channel TRPC6 and were greatly reduced by TRPC6 blockade or knockout.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Cultured cortical/hippocampal neurons (in vitro Ca2+ imaging)",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "cultured mouse cortical and hippocampal neurons"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NEPA GENE",
+    "model": "ST-TM1-6 transducer with SonoPore KTAC-4000 amplifier"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.38,
+    "ispta_w_cm2": [
+     0.017,
+     0.19,
+     0.294
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.1,
+     0.2,
+     0.5
+    ],
+    "protocol_description": "Neurons were stimulated with ultrasound waves at a frequency of 1 MHz. Each stimulus consisted of 100 Hz PRF with a duty cycle of 50%. Neurons were sonicated at different stimulation parameters in terms of irradiation intensities (17, 190, 294 mW/cm2) and durations (100, 200, 500 msec); an intensity of 190 mW/cm2 and a duration of 500 msec were chosen for all subsequent experiments."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Transcranial ultrasound to cerebral cortex (in vivo electrophysiology)",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "cerebral cortex (2.06 mm posterior, 0.36 mm rightward from bregma)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NEPA GENE",
+    "model": "ST-T1-3 transducer with SonoPore KTAC-4000 amplifier"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 160,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.07,
+     0.13,
+     0.21,
+     0.35,
+     0.52,
+     0.73
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Transcranial ultrasound irradiation of 1 MHz in 100 Hz PRF and 50% duty cycle, the same parameter as in our in vitro experiments. Basic parameters of the ultrasound burst pulse sequence are the same as that used for in vitro studies, but the train contains 10 burst pulses, and the duration is 100 msec. At each recording site, several recording sessions at different ultrasound intensities (0, 70, 130, 210, 350, 520, 730 mW/cm2) were performed; ultrasound stimulations were performed 20 times with a random interstimulus interval ranging from 10 to 20 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "n = 73 80 sessions from three mice for pre- and postrecordings, respectively.",
+   "sham_type": "At each recording site, several recording sessions at different ultrasoundintensities (0, 70, 130, 210, 350, 520, 730 mW/cm<sup>2</sup>) were performed.",
+   "auditory_control": "The TRPC6-mediated ultrasound neuromodulation in vivo was also confirmed in chemically deafened mice to exclude the possibility of auditory confounding via the periphery (SI Appendix, Fig. S9 C and D).",
+   "anaesthesia": "Mice were anesthetized with 0.5 to 1.5% isoflurane followed by subcutaneous administration of 0.1 to 0.3 mg/kg atropine, and they were mounted on a stereotaxic frame.",
+   "exposures[0].fundamental_frequency_khz": "Neurons were stimulated with ultrasound waves at a frequency of 1 MHz. Each stimulus consisted of 100 Hz PRF with a duty cycle of 50% (Fig.  1B).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Neurons were stimulated with ultrasound waves at a frequency of 1 MHz. Each stimulus consisted of 100 Hz PRF with a duty cycle of 50% (Fig.  1B).",
+   "exposures[0].timing.duty_cycle_pct": "Neurons were stimulated with ultrasound waves at a frequency of 1 MHz. Each stimulus consisted of 100 Hz PRF with a duty cycle of 50% (Fig.  1B).",
+   "exposures[0].timing.sonication_duration_s": "neurons were sonicated at diferent stimulation parameters in terms of irradiation intensities (17, 190, 294 mW/cm<sup>2</sup> ) and durations (100, 200, 500 msec).",
+   "exposures[0].free_field.ispta_w_cm2": "neurons were sonicated at diferent stimulation parameters in terms of irradiation intensities (17, 190, 294 mW/cm<sup>2</sup> ) and durations (100, 200, 500 msec).",
+   "exposures[0].free_field.isppa_w_cm2": "$I _ { \\mathsf { S P I A } }$ of the pulse sequence calculated as a total acoustic power divided by a radiation surface area of the transducer was 0.19 W/cm<sup>2</sup>, and $I _ { \\mathsf { S P P A } }$ of a 5-msec burst pulse was 0.38 W/cm<sup>2</sup> (Fig. 1B).",
+   "exposures[0].timing.pulse_duration_ms": "$I _ { \\mathsf { S P I A } }$ of the pulse sequence calculated as a total acoustic power divided by a radiation surface area of the transducer was 0.19 W/cm<sup>2</sup>, and $I _ { \\mathsf { S P P A } }$ of a 5-msec burst pulse was 0.38 W/cm<sup>2</sup> (Fig. 1B).",
+   "exposures[0].device.model": "Ultrasound stimulation was conducted using a 6-mm diameter flat transducer with 1-MHz center frequency (ST-TM1-6, NEPA GENE, Chiba, Japan) driven by SonoPore KTAC-4000 (NEPA GENE), an ultrasound amplifier to provide programmed burst pulses.",
+   "exposures[1].fundamental_frequency_khz": "Transcranial ultrasound irradiation of 1 MHz in 100 Hz PRF and 50% duty cycle, the same parameter as in our in vitro experiments ( Fig. 5 A and B ), significantly induced neural popula tion activities in the cerebral cortex in an intensity-dependent manner.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Transcranial ultrasound irradiation of 1 MHz in 100 Hz PRF and 50% duty cycle, the same parameter as in our in vitro experiments ( Fig. 5 A and B ), significantly induced neural popula tion activities in the cerebral cortex in an intensity-dependent manner.",
+   "exposures[1].timing.duty_cycle_pct": "Transcranial ultrasound irradiation of 1 MHz in 100 Hz PRF and 50% duty cycle, the same parameter as in our in vitro experiments ( Fig. 5 A and B ), significantly induced neural popula tion activities in the cerebral cortex in an intensity-dependent manner.",
+   "exposures[1].timing.protocol_description": "A 3 mm-diameter flat transducer (ST-T1-3, NEPA GENE) was used with SonoPore KTAC-4000 (NEPA GENE). Basic parameters of the ultrasound burst pulse sequence are the same as that used for in vitro studies, but the train contains 10 burst pulses, and the duration is 100 msec (Fig. 5A).",
+   "exposures[1].timing.sonication_duration_s": "A 3 mm-diameter flat transducer (ST-T1-3, NEPA GENE) was used with SonoPore KTAC-4000 (NEPA GENE). Basic parameters of the ultrasound burst pulse sequence are the same as that used for in vitro studies, but the train contains 10 burst pulses, and the duration is 100 msec (Fig. 5A).",
+   "exposures[1].free_field.pressure_kpa": "We scanned $\\dot { 1 } 9 \\times 1 9$ points at an interval of 0.5 mm. The peak pressure amplitude at the distribution center was 160 kPa.",
+   "exposures[1].free_field.ispta_w_cm2": "At each recording site, several recording sessions at different ultrasoundintensities (0, 70, 130, 210, 350, 520, 730 mW/cm<sup>2</sup>) were performed.",
+   "exposures[1].device.model": "A 3 mm-diameter flat transducer (ST-T1-3, NEPA GENE) was used with SonoPore KTAC-4000 (NEPA GENE).",
+   "exposures[1].timing.pulse_duration_ms": "$I _ { \\mathsf { S P I A } }$ of the pulse sequence calculated as a total acoustic power divided by a radiation surface area of the transducer was 0.19 W/cm<sup>2</sup>, and $I _ { \\mathsf { S P P A } }$ of a 5-msec burst pulse was 0.38 W/cm<sup>2</sup> (Fig. 1B).",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was conducted using a 6-mm diameter flat transducer with 1-MHz center frequency (ST-TM1-6, NEPA GENE, Chiba, Japan) driven by SonoPore KTAC-4000 (NEPA GENE), an ultrasound amplifier to provide programmed burst pulses.",
+   "exposures[1].device.manufacturer": "Ultrasound stimulation was conducted using a 6-mm diameter flat transducer with 1-MHz center frequency (ST-TM1-6, NEPA GENE, Chiba, Japan) driven by SonoPore KTAC-4000 (NEPA GENE), an ultrasound amplifier to provide programmed burst pulses."
+  },
+  "flags": [
+   {
+    "field": "model_system",
+    "reason": "Study combines an in vitro cultured-neuron mechanism experiment with an in vivo transcranial mouse experiment; n_subjects and subject_unit reflect only the in vivo animal experiment (3 mice)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper reports 73 pre- and 80 post-drug recording sessions pooled across three mice, without stating sessions per individual mouse."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Three intensities (17, 190, 294 mW/cm2) were tested as a sweep; only the 190 mW/cm2 condition was independently confirmed to match the calculated ISPTA (0.19 W/cm2)."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The 0 mW/cm2 condition in the in vivo intensity sweep is treated as the inactive/no-output control condition; no separate device-off sham session is described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.ispta_w_cm2": "both_defensible",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].timing.sonication_duration_s": "both_defensible",
+   "exposures[1].free_field.isppa_w_cm2": "second"
+  }
+ }
+}

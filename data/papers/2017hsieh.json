@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017hsieh",
+ "doi": "10.1016/j.ultrasmedbio.2017.03.002",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey mechanical paw-withdrawal threshold; acetone and cold-water immersion withdrawal latency; menthol/capsaicin-evoked nocifensive response duration; Western blot for TRPM8/TRPV1 in DRG; immunohistochemistry for substance P in spinal dorsal horn",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS reduced oxaliplatin-induced mechanical hyperalgesia and cold allodynia (increased paw withdrawal threshold/latency) and reduced oxaliplatin-related increases in TRPM8 protein in DRG and substance P in the spinal dorsal horn, versus sham-TUS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Transcutaneous TUS to bilateral hindlimb (sural/peroneal nerve distribution)",
+   "target": {
+    "terms": [
+     "peroneal_nerve",
+     "peripheral_nerve"
+    ],
+    "label": "bilateral hindlimbs innervated by sural and peroneal nerves"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "ITO Co, Tokyo, Japan",
+    "model": "US-750"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 300,
+    "protocol_description": "Pulsed-mode TUS (1 MHz, ISATA = 0.5 W/cm2, 50% duty cycle) was applied for 5 min per session, one session per day for 10 consecutive days (days 13-22), by slowly moving the sound head in a small circular direction on the bilateral hindlimbs innervated by sural and peroneal nerves."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-four animals were randomly divided into four groups: oxaliplatin and TUS treatment $( \\mathbf { n _ { \\alpha } } = \\mathbf { \\beta } 6 ,$ Oxa-TUS); oxaliplatin and sham TUS $( \\mathbf { n _ { \\alpha } } = \\mathbf { \\beta } _ { 6 }$ , OxasTUS); vehicle-only injection and TUS treatment (n 5 6, Veh-TUS); and vehicle-only injection and sham TUS (n 5 6, Veh-sTUS).",
+   "n_sessions_per_subject": "Twenty-four animals were randomly divided into four groups: oxaliplatin and TUS treatment $( \\mathbf { n _ { \\alpha } } = \\mathbf { \\beta } 6 ,$ Oxa-TUS); oxaliplatin and sham TUS $( \\mathbf { n _ { \\alpha } } = \\mathbf { \\beta } _ { 6 }$ , OxasTUS); vehicle-only injection and TUS treatment (n 5 6, Veh-TUS); and vehicle-only injection and sham TUS (n 5 6, Veh-sTUS). Each animal received a total of eight injections of either oxaliplatin or vehicle, administered at 3-d intervals (days 1, 4, 7, 10, 13, 16, 19 and 22). TUS or sham-TUS intervention was started 4 h after the fifth oxaliplatin/vehicle administration and then continued for 10 consecutive d (one session per day, days 13–22). Sensory behavioral examinations were assessed on the day before the first administration of oxaliplatin/vehicle (day 0, Pre-oxa) and before (day 12, Pre-treat) and after (day 24, Post-treat) all TUS/sTUS treatments. Animals were sacrificed for immunoassays 4 h after completion of final assessments (day 24). Figure 1 is a schematic of the experimental design.",
+   "exposures[0].fundamental_frequency_khz": "Pulsed-mode TUS (1 MHz, spatial average/temporal average intensity $[ I _ { \\mathrm { S A T A } } ] = 0 . 5 \\mathrm { W / c m } ^ { 2 }$ , 50% duty cycle) was applied for 5 min.",
+   "exposures[0].timing.pulse_duration_ms": "These ratios resulted in sonication/non-sonication times of 2 ms/2 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "These ratios resulted in sonication/non-sonication times of 2 ms/2 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Pulsed-mode TUS (1 MHz, spatial average/temporal average intensity $[ I _ { \\mathrm { S A T A } } ] = 0 . 5 \\mathrm { W / c m } ^ { 2 }$ , 50% duty cycle) was applied for 5 min.",
+   "exposures[0].timing.sonication_duration_s": "Pulsed-mode TUS (1 MHz, spatial average/temporal average intensity $[ I _ { \\mathrm { S A T A } } ] = 0 . 5 \\mathrm { W / c m } ^ { 2 }$ , 50% duty cycle) was applied for 5 min.",
+   "exposures[0].device.manufacturer": "Sonication was produced using a commercially available device (US-750, ITO Co, Tokyo, Japan) with a treatment head 1.7 cm in diameter and an effective radiating area of 0.75 cm 2 .",
+   "exposures[0].device.model": "Sonication was produced using a commercially available device (US-750, ITO Co, Tokyo, Japan) with a treatment head 1.7 cm in diameter and an effective radiating area of 0.75 cm 2 ."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Study had 24 animals in 4 groups of 6; n_subjects here counts only the two groups receiving real TUS (Oxa-TUS, Veh-TUS = 12); the other 12 received sham TUS with device output set to zero."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper gives ISATA (0.5 W/cm2) as a device setting without stating whether it is a free-field/water-tank calibration or an in-tissue value, so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (250 Hz) computed as the reciprocal of the stated 2 ms on / 2 ms off cycle period; the paper does not itself use the term PRF."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper states the behavioural tester was blinded to the oxaliplatin-vs-vehicle drug condition; it does not explicitly say whether the tester (or TUS administrator) was blinded to TUS-vs-sham-TUS assignment."
+   },
+   {
+    "field": "target.terms",
+    "reason": "Sural nerve has no dedicated vocabulary id; represented via the parent peripheral_nerve term alongside the more specific peroneal_nerve."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "both_defensible"
+  }
+ }
+}

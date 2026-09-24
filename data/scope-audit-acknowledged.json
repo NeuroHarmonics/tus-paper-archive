@@ -1,0 +1,51 @@
+{
+  "note": "Papers whose title matches an excluded-application pattern but which were reviewed against INCLUSION.md and deliberately kept. audit_scope.py suppresses these so it reports only NEW flags and can gate the monthly run. Removing an entry re-raises the flag.",
+  "10.3389/fphys.2020.00787": {
+    "title": "Ultrasonic Neuromodulation and Sonogenetics: A New Era for Neural Modulation",
+    "flagged": "C5 - the word 'sonogenetics' in the title",
+    "kept_because": "A review whose leading subject is ultrasonic neuromodulation broadly, with sonogenetics one subtopic. C31 keeps broad-but-in-scope reviews; C5 targets sonogenetics primary studies. Reviews contribute no exposure parameters, so a partially out-of-scope review costs nothing.",
+    "reviewed": "2026-08-25 (human, then confirmed by sonnet re-screen)"
+  },
+  "10.1038/s41598-026-62583-3": {
+    "title": "Transcranial functional ultrasound imaging shows widespread hemodynamic changes induced by focused ultrasound",
+    "flagged": "E3 - 'functional ultrasound imaging' reads as imaging-as-subject",
+    "kept_because": "FUS is the applied STIMULUS; fUS imaging is only the readout. E3 excludes ultrasound used as the camera for some other stimulus (cf. the excluded Song 2019, fUS imaging of epidural ELECTRICAL stimulation), not ultrasound stimulation measured by ultrasound.",
+    "reviewed": "2026-08-25"
+  },
+  "10.1016/j.brs.2014.06.011": {
+    "title": "Focused Ultrasound-mediated Non-invasive Brain Stimulation: Examination of Sonication Parameters",
+    "flagged": "E9 - the phrase 'non-invasive brain stimulation' in the title",
+    "kept_because": "A primary sonication-parameter study of FUS neuromodulation, not a cross-modality TMS/tDCS/DBS survey. E9 targets surveys, and the flag matched a phrase rather than the subject.",
+    "reviewed": "2026-08-25"
+  },
+  "10.1101/2023.08.08.552410": {
+    "title": "Non-ablative disease-modifying effects of magnetic resonance-guided focused ultrasound in neuromelanin-producing parkinsonian rodents",
+    "flagged": "E4 - 'magnetic resonance-guided focused ultrasound' in the title, after the audit pattern was widened to catch the spelled-out form",
+    "kept_because": "Ruled in scope. Despite the title it is not ablation: low-intensity tFUS to rodent brain at I_spta 1.1 W/cm-2, thermal effect deliberately limited, no microbubbles. The aim is neuroprotection and the authors cannot exclude a neuromodulatory mechanism; kept as bearing on mechanism. See also the D-note in INCLUSION.md, which uses this paper to fix where neuroprotection sits.",
+    "reviewed": "2026-08-30 (human)"
+  },
+  "10.1016/j.neulet.2015.07.024": {
+    "title": "Manipulating neuronal activity in the mouse brain with ultrasound: A comparison with optogenetic activation of the cerebral cortex",
+    "flagged": "E6 - the word 'optogenetic' in the title",
+    "kept_because": "The ultrasound arm sonicates native cortex; optogenetics is the COMPARATOR, not the mechanism under test. E6 excludes a response that DEPENDS on an introduced agent, which this one does not. Same shape as the acknowledged sonogenetics review: the pattern matched a word, not the subject.",
+    "reviewed": "2026-08-30 (human)"
+  },
+  "10.1136/rapm-2021-103115": {
+    "title": "Dose-dependent effects of high intensity focused ultrasound on compound action potentials in an ex vivo rodent peripheral nerve model: comparison to local anesthetics",
+    "flagged": "E4 - 'high intensity focused ultrasound' in the title",
+    "kept_because": "The endpoint is the compound action potential -- amplitude, area, latency, rate of rise -- and the framing is reversible inhibition of nerve conduction compared against local anaesthetics. That is modulation of neural function measured electrophysiologically, not lesioning. E4 targets ablation as the INTENT; intensity alone does not decide it.",
+    "reviewed": "2026-09-02 (agent, abstract read)"
+  },
+  "10.21203/rs.3.rs-9029217/v1": {
+    "title": "Diagnostic Ultrasound Modulates Human Motor Cortex: Neurophysiological Evidence from Paired-Pulse TMS",
+    "flagged": "E3 - the paired-pulse TMS phrasing reads as a cross-modality NIBS survey",
+    "kept_because": "Ultrasound is the STIMULUS; paired-pulse TMS is the measuring instrument, the same role EEG or MEPs play elsewhere in the archive. Note also that 'Diagnostic Ultrasound' here names the INTENSITY regime, not the intent -- the study applies diagnostic-intensity ultrasound to motor cortex and measures the modulation. All four conditions hold.",
+    "reviewed": "2026-09-03 (agent)"
+  },
+  "10.1001/archneurpsyc.1957.02330400051005": {
+    "title": "Effect of high-intensity focused ultrasound on nerve cells in spinal cord of mouse (1957)",
+    "flagged": "E4 - 'high-intensity focused ultrasound' in the title",
+    "kept_because": "Left ON THE WANT-LIST rather than resolved. This is Fry-era work and sits in the same class as Fry 1958, 'Production of Reversible Changes in the Central Nervous System', which is held: high-intensity ultrasound applied to neural tissue to establish what it does. Whether the endpoint is a reversible functional change (in scope, mechanism) or histological lesioning (E4) cannot be settled from the title, and no abstract is held. Flag acknowledged so the audit stays clean; the verdict waits for the paper.",
+    "reviewed": "2026-09-03 (agent, title only -- no abstract available)"
+  }
+}

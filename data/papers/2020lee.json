@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020lee",
+ "doi": "10.1109/tmi.2020.2992498",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Functional safety was conducted using gait analysis (Cat-Walk XT; Nodulus, Utrecht, Netherlands) 1 day before, 1 day after, and 5 days after sonication (n 10 male; 5 sham, 5 FUS).",
+   "anaesthesia": "Mice were anesthetized with isoflurane: 4% during induction and preparation, 2% during the procedure.",
+   "adverse_events": "H&E stains in Fig. 8(a) show that sonications at all parameters explored in the study appear safe and do not show apparent damage compared to sham sonications. There is no red blood cell extravasation or myelin disruption characteristic of damage to the sciatic nerve.",
+   "safety_notes": "H&E stains in Fig. 8(a) show that sonications at all parameters explored in the study appear safe and do not show apparent damage compared to sham sonications. There is no red blood cell extravasation or myelin disruption characteristic of damage to the sciatic nerve.",
+   "exposures[0].fundamental_frequency_khz": "A FUS stimulation transducer (H-215, 4 MHz, single-element FUS; Sonic Concepts Inc., Bothell, WA, USA) and an imaging array (L22-14vX-LF, 16 MHz, 128 elements linear array; Vermon, Tours, France).",
+   "exposures[0].in_situ.pressure_kpa": "The acoustic pressure was varied from 4 to 30 MPa in steps of 4 MPa and the pulse duration was varied from 0.5 to 10 ms in steps of 0.5 ms.",
+   "exposures[0].timing.duty_cycle_pct": "The acoustic pressure was varied from 4 to 30 MPa in steps of 4 MPa and the pulse duration was varied from 0.5 to 10 ms in steps of 0.5 ms.",
+   "exposures[0].timing.sonication_duration_s": "The acoustic pressure was varied from 4 to 30 MPa in steps of 4 MPa and the pulse duration was varied from 0.5 to 10 ms in steps of 0.5 ms.",
+   "exposures[0].target.label": "The experimental setup in Fig. 1(a) was used to activate the sciatic nerve in anesthetized mice.",
+   "exposures[0].device.manufacturer": "Two commercially available ultrasound transducers were used in a confocally aligned configuration: A FUS stimulation transducer (H-215, 4 MHz, single-element FUS; Sonic Concepts Inc., Bothell, WA, USA) and an imaging array (L22-14vX-LF, 16 MHz, 128 elements linear array; Vermon, Tours, France).",
+   "exposures[0].device.model": "Two commercially available ultrasound transducers were used in a confocally aligned configuration: A FUS stimulation transducer (H-215, 4 MHz, single-element FUS; Sonic Concepts Inc., Bothell, WA, USA) and an imaging array (L22-14vX-LF, 16 MHz, 128 elements linear array; Vermon, Tours, France)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports separate animal counts for different sub-experiments (parameter-space mapping n=6; focal-depth displacement experiment n=4; histology safety n=6 nerves; gait analysis n=10, 5 sham/5 FUS) without a single combined total; a preliminary cavitation-mapping follow-up (147 sonications) does not state a distinct animal count and is not included in the list."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham sonications are mentioned (e.g., 'sham ultrasound', '5 sham' mice) but the paper never describes how the sham was delivered (transducer off, blocked, etc.)."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "6.5 MPa is a hydrophone beam-characterization value measured in free field water for FWHM mapping, distinct from the muscle-derated pressures (4-30 MPa) used to dose the sciatic nerve; both are reported here in their respective domains."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Appendix A states that 'All pressures reported in this study are derated for attenuation in muscle tissue', so the 4-30 MPa sweep values used throughout Methods/Results are treated as in_situ (muscle-derated), not free-field, values."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Text (Methods, section J) states the histology PRF was 0.2 Hz while the Figure 8 caption states 0.3 Hz for the same experiment; this text-vs-figure disagreement could not be resolved."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Individual ms-scale bursts (0.5-10 ms) have no internal pulsing and are repeated at a very low external rate (0.03-0.3 Hz); classified as waveform=continuous per the schema's tone-burst rule, with the burst length recorded as sonication_duration_s rather than pulse_duration_ms."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "compound muscle action potentials (CMAP) via EMG; high frame-rate ultrasound displacement/elastography imaging of the nerve; passive cavitation mapping; H&E histology; CatWalk gait analysis (sciatic function index, paw print)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Higher-pressure, and to a lesser extent longer-duration, FUS pulses produced larger CMAP amplitudes and higher probability of motor activation (excitation) of the sciatic nerve, correlated with greater acoustic-radiation-force-induced nerve displacement.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E stains show that sonications at all parameters explored in the study appear safe and do not show apparent damage compared to sham sonications. There is no red blood cell extravasation or myelin disruption characteristic of damage to the sciatic nerve.",
+ "exposures": [
+  {
+   "label": "Sciatic nerve FUS parameter sweep (pressure and pulse duration)",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H-215"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     4000,
+     30000
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     0.0005,
+     0.01
+    ],
+    "protocol_description": "The acoustic pressure was varied from 4 to 30 MPa in steps of 4 MPa and the pulse duration was varied from 0.5 to 10 ms in steps of 0.5 ms; single pulses were emitted at 0.03 Hz to mitigate cumulative bioeffects. A base parameter of 24 MPa and 1 ms was used for follow-up displacement/safety experiments. A separate histology safety experiment applied 100 pulses (22-30 MPa, 1 ms) at a stated PRF of 0.2 Hz in the Methods text but 0.3 Hz in the corresponding figure caption. Gait-analysis safety experiments used 10 sonications (24 MPa, 1 ms, 30 s inter-stimulus interval)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

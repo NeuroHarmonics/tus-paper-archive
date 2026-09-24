@@ -1,0 +1,316 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025wu",
+ "doi": "10.1126/sciadv.ads6947",
+ "model_system": [
+  "rodent",
+  "human_patient",
+  "human_healthy"
+ ],
+ "species": "rat (Sprague-Dawley); human",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "hemorrhagic shock (rat model); various types of shock in human patients (systolic BP < 90 mmHg on admission)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Arterial blood pressure and heart rate monitoring; heart rate variability (HRV: LFP, HFP, LF/HF); plasma metabolomics (LC-MS); BOLD-fMRI and ASL-MRI (fALFF in OVLT, Pe, SFO; renal/liver perfusion); laser speckle contrast cerebral blood flow imaging; echocardiography and Doppler ultrasound of kidney/liver/heart; H&E and Prussian blue histology of cervical skin, sympathetic trunk and vagus nerve",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Cervical LIPUS stimulation raised blood pressure in normotensive and hemorrhagic shock rats and in shock patients, via excitation of the sympathetic nervous system (increased LFP/LF-HF, plasma catecholamines, hypothalamic OVLT/SFO activation); effect was reduced by sympathetic trunk transection and abolished by 6-OHDA sympathetic inhibition or SFO nucleotomy.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining of cervical skin, sympathetic nerve trunk and vagus nerve after 60 min of LIPUS stimulation showed no noticeable histological damage; Prussian blue staining showed no notable microbleeding; healthy human volunteers reported no discomfort after stimulation.",
+ "exposures": [
+  {
+   "label": "Cervical carotid triangle LIPUS stimulation in rats (dose-response and mechanistic experiments)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "cervical carotid triangle (overlying sympathetic nerve trunk, vagus nerve and carotid sinus nerve region)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "DJO FRANCE SAS",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     1,
+     2,
+     3
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 600,
+    "protocol_description": "A minimum of 5 min of baseline BP/ECG monitoring was performed before cervical LIPUS stimulation, followed by 10 min of stimulation, and 5 min of continued monitoring after stopping. In the dose-response experiment, Isppa was set to 1, 2, or 3 W/cm2 (5 rats per group); 2 W/cm2 was selected for subsequent mechanistic experiments (sympathectomy, HRV, metabolomics, fMRI, hemorrhagic shock)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": true
+   }
+  },
+  {
+   "label": "Cervical carotid triangle LIPUS stimulation in shock patients and healthy volunteers",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "cervical carotid triangle (overlying sympathetic trunk / carotid sinus nerve region), left neck anterior to sternocleidomastoid"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 300,
+    "protocol_description": "Cervical LIPUS was applied via a 5-cm2 ultrasound generator to the left carotid triangle. All participants (12 shock patients; 5 healthy volunteers) underwent a 5-min stimulus, with BP measurements recorded for a minimum of 5 min before and after the stimulus."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "randomised": "In the LIPUS doseresponse experience, rats were randomly divided into groups of the $\\mathrm { I s p \\bar { p } a } = 1 , \\bar { 2 , } \\mathrm { o r } 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , with five rats in each group. Ten rats with qualified BP were randomly assigned to the skin electrical stimulation and thermal stimulation groups, with five rats in each group. Ten rats were randomly assigned to the VN or SN severed groups, with five rats in each group.",
+   "sham_type": "For sham procedures, the identical positioning and trajectory were employed, but the input power to the ultrasound transducer was zero.",
+   "adverse_events": "The results showed that the histological characteristics of the cervical superficial skin tissue without stimulation and after 60 min of stimulation (Fig. 3, F and G), and the deep SNs (Fig. 3, H and I) and VNs (Fig. 3, J and K) were similar, suggesting that there was no noticeable damage after stimulation.",
+   "exposures[0].fundamental_frequency_khz": "LIPUS parameters: In the dose experiment, Isppa is set to 1 to 3 W/cm<sup>2</sup>; for the remaining experiments, the parameters used are as follows: 2-cm<sup>2</sup> ultrasound generator, Isppa of 2 W/cm<sup>2</sup>, fundamental frequency of 3 MHz, repetition frequency of 100 Hz, duty cycle of 50%, and pulse duration of 1 ms.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The BP of the rats varied to diferent extents after stimulation at 1, 2, and 3 $\\mathrm { \\Delta } \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial peak pulse average intensity (Isppa) (Fig. 2, A to C).",
+   "exposures[0].timing.pulse_duration_ms": "LIPUS parameters: In the dose experiment, Isppa is set to 1 to 3 W/cm<sup>2</sup>; for the remaining experiments, the parameters used are as follows: 2-cm<sup>2</sup> ultrasound generator, Isppa of 2 W/cm<sup>2</sup>, fundamental frequency of 3 MHz, repetition frequency of 100 Hz, duty cycle of 50%, and pulse duration of 1 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "LIPUS parameters: In the dose experiment, Isppa is set to 1 to 3 W/cm<sup>2</sup>; for the remaining experiments, the parameters used are as follows: 2-cm<sup>2</sup> ultrasound generator, Isppa of 2 W/cm<sup>2</sup>, fundamental frequency of 3 MHz, repetition frequency of 100 Hz, duty cycle of 50%, and pulse duration of 1 ms.",
+   "exposures[0].timing.duty_cycle_pct": "LIPUS parameters: In the dose experiment, Isppa is set to 1 to 3 W/cm<sup>2</sup>; for the remaining experiments, the parameters used are as follows: 2-cm<sup>2</sup> ultrasound generator, Isppa of 2 W/cm<sup>2</sup>, fundamental frequency of 3 MHz, repetition frequency of 100 Hz, duty cycle of 50%, and pulse duration of 1 ms.",
+   "exposures[0].timing.sonication_duration_s": "Monitor the animal’s BP and baseline electrocardiogram for at least 5 min before starting the LIPUS stimulation, which lasts for 10 min.",
+   "exposures[1].fundamental_frequency_khz": "The LIPUS is initiated with parameters set at an ultrasound frequency of 3 MHz, a pulse frequency of 100 Hz, a duty cycle of 50%, and an Isppa of 3 W/cm<sup>2</sup>.",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "The LIPUS is initiated with parameters set at an ultrasound frequency of 3 MHz, a pulse frequency of 100 Hz, a duty cycle of 50%, and an Isppa of 3 W/cm<sup>2</sup>.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The LIPUS is initiated with parameters set at an ultrasound frequency of 3 MHz, a pulse frequency of 100 Hz, a duty cycle of 50%, and an Isppa of 3 W/cm<sup>2</sup>.",
+   "exposures[1].timing.duty_cycle_pct": "The LIPUS is initiated with parameters set at an ultrasound frequency of 3 MHz, a pulse frequency of 100 Hz, a duty cycle of 50%, and an Isppa of 3 W/cm<sup>2</sup>.",
+   "exposures[1].timing.sonication_duration_s": "All participants underwent a 5-min stimulus, with BP measurements recorded for a minimum of 5 min both before and after the stimulus.",
+   "n_sessions_per_subject": "Monitor the animal’s BP and baseline electrocardiogram for at least 5 min before starting the LIPUS stimulation, which lasts for 10 min."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper spans many different rat cohorts (5 per intensity group; 9 vs 8 per HRV/metabolomics group; 5-6 per mechanistic sub-experiment) plus 12 shock patients and 5 healthy volunteers; no single overall total number of subjects exposed to ultrasound is stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Procedure describes a single baseline-stimulation-poststimulation timeline per animal/patient, but no explicit numeric statement of sessions per subject is given."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Stated pulse duration (1 ms) is inconsistent with the stated duty cycle (50%) and PRF (100 Hz), which would imply a 5 ms pulse; recorded as stated per the burst rule (possible typo)."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "No vocabulary term exactly matches 'cervical sympathetic trunk / carotid sinus nerve region'; classified as other."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "Pulse duration not explicitly stated for the human protocol, only duty cycle (50%) and pulse frequency (100 Hz)."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Value reflects the rat experiments (conducted under isoflurane anaesthesia); human patients and healthy volunteers were conscious/not anaesthetised."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026huanga",
+ "doi": "10.2139/ssrn.6360139",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 26,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site",
+  "other"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "32-channel silicon-probe single-unit recordings (spike sorting with Kilosort 4.0); extracellular action potential waveform features (peak/trough amplitude, half-width at trough, half-width at peak)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Spike rate increase was strongest at 500 Hz PRF (fixed 200 µs PD) and at 800 µs PD (fixed 50 Hz PRF), with a non-significant decrease at the shortest 50 µs PD. Extracellular action potential half-width at trough decreased (shortened) at higher PRFs (50 and 2000 Hz) but increased (broadened) at the longest pulse duration (800 µs), i.e. the direction of the waveform effect depended on which parameter was varied.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "PRF and pulse-duration sweep over motor cortex (M1)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group Inc.",
+    "model": "GS500-D13-P25"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1320,
+    "isppa_w_cm2": 58.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.05,
+     0.1,
+     0.2,
+     0.4,
+     0.8
+    ],
+    "pulse_repetition_frequency_hz": [
+     25,
+     50,
+     500,
+     2000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Trigger pulses were generated at PRFs of 25, 50, 500 and 2000 Hz for a total pulse train duration of 500 ms, with a pulse train repetition interval of 1 s. PRF was varied (25, 50, 500, 2000 Hz) at a fixed pulse duration of 200 µs, and pulse duration was varied (50, 100, 200, 400, 800 µs) at a fixed PRF of 50 Hz. For each parameter set, a 3-minute pre-TUS period (stimulation OFF) was followed by a 3-minute TUS stimulation period (stimulation ON). A second cohort of 8 rats then compared the combined strongest parameters (500 Hz PRF, 800 µs PD; 'M1 - Exp2') applied to motor cortex against the same parameters applied to the visual cortex (V1) and to the electrode holding bar."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-22"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-six male Sprague–Dawley rats (250–400 g; Charles River Laboratories) were used. All experimental procedures were approved by the KU Leuven Ethics Committee (P071/2024). Rats were housed under a 12-h light/dark with food and water available ad libitum.",
+   "anaesthesia": "Rats were anesthetized (intraperitoneal urethane, 10 mg/mL, Sigma Aldrich, USA) and head-fixed on a rodent dual-arm stereotaxic apparatus (World Precision Instruments, Sarasota, FL, United States).",
+   "exposures[0].fundamental_frequency_khz": "This trigger pulse train was then delivered to a waveform generator (RSDG-2082X, RS Components, UK), which produced a sine wave at the transducer's resonance frequency of 500 kHz, for every trigger pulse it received. The amplitude of this sinewave was set to 250 mV (peak to peak) on the waveform generator. For each tested pulse duration (PD), we adjusted the number of cycles using the waveform generator. Pulse durations of 50, 100, 200, 400, and 800 µs were tested, with corresponding cycle counts of 25, 50, 100, 200, and 400. The signal was amplified by an RF amplifier (ENI 240L, Bell Electronics NW, Inc., USA).",
+   "exposures[0].device.model": "Ultrasound stimulation was conducted using a focused ultrasound transducer (GS500- D13-P25, 0.5 MHz, diameter = 13 mm, Ultran Group Inc., State College PA, USA) equipped with a 3D-printed collimator filled with ultrasound gel (Herenz Ultraschallgel, Germany, Fig. 1A).",
+   "exposures[0].free_field.pressure_kpa": "The measured peak acoustic pressure with calibration was 1.32 MPa (Fig. 1.C), corresponding to a $\\mathsf { I } _ { \\mathsf { S P P A } }$ of approximately 58.1 W/cm² and a mechanical index (MI) of 1.87. The U.S. Food and Drug Administration (FDA) diagnostic ultrasound exposure limits are 190 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ for $\\mathsf { I } _ { \\mathsf { S P P A } }$ and 1.9 for MI. Based on calibration measurements, the applied acoustic exposures remained within FDA diagnostic safety limits. These parameters are consistent with ranges commonly reported in preclinical transcranial focused ultrasound stimulation studies (0.3–2 MPa) that have not been associated with histological damage under brief and low-duty-cycle sonication conditions [8, 9, 47, 48].",
+   "exposures[0].free_field.isppa_w_cm2": "The measured peak acoustic pressure with calibration was 1.32 MPa (Fig. 1.C), corresponding to a $\\mathsf { I } _ { \\mathsf { S P P A } }$ of approximately 58.1 W/cm² and a mechanical index (MI) of 1.87. The U.S. Food and Drug Administration (FDA) diagnostic ultrasound exposure limits are 190 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ for $\\mathsf { I } _ { \\mathsf { S P P A } }$ and 1.9 for MI. Based on calibration measurements, the applied acoustic exposures remained within FDA diagnostic safety limits. These parameters are consistent with ranges commonly reported in preclinical transcranial focused ultrasound stimulation studies (0.3–2 MPa) that have not been associated with histological damage under brief and low-duty-cycle sonication conditions [8, 9, 47, 48].",
+   "exposures[0].timing.pulse_duration_ms": "A custom MATLAB script was used to drive a multifunction USB DAQ acquisition card (NATIONAL INSTRUMENTS Co., USA) to generate trigger pulses at PRFs of 25Hz, 50Hz, 500Hz and 2000Hz for a total pulse train duration of 500ms (Fig.1B). The pulse train repetition interval was 1s (Fig.1B). This trigger pulse train was then delivered to a waveform generator (RSDG-2082X, RS Components, UK), which produced a sine wave at the transducer's resonance frequency of 500 kHz, for every trigger pulse it received. The amplitude of this sinewave was set to 250 mV (peak to peak) on the waveform generator. For each tested pulse duration (PD), we adjusted the number of cycles using the waveform generator. Pulse durations of 50, 100, 200, 400, and 800 µs were tested, with corresponding cycle counts of 25, 50, 100, 200, and 400. The signal was amplified by an RF amplifier (ENI 240L, Bell Electronics NW, Inc., USA).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A custom MATLAB script was used to drive a multifunction USB DAQ acquisition card (NATIONAL INSTRUMENTS Co., USA) to generate trigger pulses at PRFs of 25Hz, 50Hz, 500Hz and 2000Hz for a total pulse train duration of 500ms (Fig.1B). The pulse train repetition interval was 1s (Fig.1B). This trigger pulse train was then delivered to a waveform generator (RSDG-2082X, RS Components, UK), which produced a sine wave at the transducer's resonance frequency of 500 kHz, for every trigger pulse it received. The amplitude of this sinewave was set to 250 mV (peak to peak) on the waveform generator. For each tested pulse duration (PD), we adjusted the number of cycles using the waveform generator. Pulse durations of 50, 100, 200, 400, and 800 µs were tested, with corresponding cycle counts of 25, 50, 100, 200, and 400. The signal was amplified by an RF amplifier (ENI 240L, Bell Electronics NW, Inc., USA).",
+   "exposures[0].timing.sonication_duration_s": "A custom MATLAB script was used to drive a multifunction USB DAQ acquisition card (NATIONAL INSTRUMENTS Co., USA) to generate trigger pulses at PRFs of 25Hz, 50Hz, 500Hz and 2000Hz for a total pulse train duration of 500ms (Fig.1B). The pulse train repetition interval was 1s (Fig.1B). This trigger pulse train was then delivered to a waveform generator (RSDG-2082X, RS Components, UK), which produced a sine wave at the transducer's resonance frequency of 500 kHz, for every trigger pulse it received.",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was conducted using a focused ultrasound transducer (GS500- D13-P25, 0.5 MHz, diameter = 13 mm, Ultran Group Inc., State College PA, USA) equipped with a 3D-printed collimator filled with ultrasound gel (Herenz Ultraschallgel, Germany, Fig.",
+   "n_sessions_per_subject": "At the end of the experiment, the animals were euthanized by intraperitoneal injection of 200 mg/ml pentobarbital sodium (Dolethal, VETOQUINOL, France), administering a 2.5 ml dose to ensure humane euthanasia."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Methods state 26 rats were used overall, but Results report 21 rats for the PRF/PD sweep plus a separate cohort of 8 rats for the control experiments (21+8=29), which does not reconcile with the stated total of 26."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Text states the measured peak calibration pressure was 1.32 MPa, but the Figure 1C legend states the maximum pressure at the focus was approximately 1.627 MPa; the two values disagree."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not stated as a percentage for any PRF/PD combination; it would require computing PD x PRF, which was not done here."
+   },
+   {
+    "field": "sham_type",
+    "reason": "V1 sonication (real ultrasound to a different brain region) is recorded as active_control_site; the electrode-holding-bar sonication is a non-anatomical mechanical/vibration control not covered by the vocabulary and is recorded as other."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

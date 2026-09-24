@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013younan",
+ "doi": "10.1118/1.4812423",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Video recording, manually classified into no response / moderate (muscle contraction only) / strong (limb movement) motor response",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound reliably evoked motor responses (tail, hindleg, forelimb, eye, or whisker movement) above a pressure threshold in >60% of sessions; the threshold was lower during lighter anesthesia (0.61 MPa) than deeper anesthesia (0.77 MPa).",
+ "adverse_events": "none_observed",
+ "safety_notes": "Possible damage was investigated by careful examination of the skin of the rats after the experiment and one day later; behavior and weight were monitored over several days with no change observed, although no histology was performed.",
+ "exposures": [
+  {
+   "label": "Transcranial sonication near lambda for motor stimulation (tail/hindleg/forelimb/eye/whisker responses)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "around the locations lambda −1, 1, and 3 mm; these chosen locations did not correspond to the motor cortex area"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, MA",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 320,
+   "free_field": {
+    "pressure_kpa": [
+     400,
+     1000
+    ],
+    "isppa_w_cm2": 7.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 1200,
+    "isppa_w_cm2": 17.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.23,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.25,
+    "protocol_description": "The ultrasound sequence was based on the protocol of Tufail et al., with a slightly higher center frequency (320 kHz instead of 300 kHz) and a longer total sonication duration of 250 ms instead of 100 ms, found to be more efficient. Ultrasound pulses were applied to the rat brain every 10 s, and for each series of measurements 30 different pressure amplitudes were tested in random order to build a motor-response-versus-pressure curve."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 46.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "exposures[0].free_field.pressure_kpa": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "exposures[0].free_field.isppa_w_cm2": "Failure to obtain any motor response was observed in 40% of the attempts, even though the same protocol was followed and was specific for a given animal and a given day. It can be hypothesized that any change in the anesthetic cocktail or in the physiological state of the animal that day can play a major role in these experiments. Even though we suspect anesthesia, no correlation could be done with any specific animal, or the date of the opening of the anesthetic cocktails. When successful (60%), the experiments were consistent for the whole experimental session on a particular day and always demonstrated an acoustic threshold, as shown in Figs. 5(a) and 5(b). The mean pressure value was 0.68 0.1 MPa (N series 29), given in free water. One should also notice that depending on the anesthesia stage the threshold varied from 0.61 0.03 MPa (N series 3) to 0.77 0.04 MPa (N series 4). The excitability thus appears to be highly dependent on the anesthesia. Those pressures are again given in free water, uncorrected for skull transmission or reverberations, and correspond to an average Isppa of 7.5 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.pressure_kpa": "Results: Ultrasound pulse evoked a motor response in more than 60% of the experimental sessions. In those sessions, the stimulation was always present, repeatable with a pressure threshold under which no motor response occurred. This average acoustic pressure threshold was found to be 0.68 0.1 MPa (corresponding mechanical index, MI 1.2 and spatial peak, pulse averaged intensity, Isppa  7.5 W cm−<sup>2</sup>), as calibrated in free water. A slight variation was observed between deep anesthesia stage (0.77 0.04 MPa) and light anesthesia stage (0.61 0.03 MPa), assessed from the pedal reflex. Several kinds of motor responses were observed: movements of the tail, the hind legs, the forelimbs, the eye, and even a single whisker were induced separately. Numerical simulations of an equivalent experiment with identical acoustic parameters showed that the acoustic field was spread over the whole rat brain with the presence of several secondary pressure peaks. Due to reverberations, a 1.8-fold increase of the spatial peak, temporal peak acoustic pressure (Psptp) ( 0.4 standard deviation), a 3.6-fold increase ( 1.8) for the spatial peak, temporal peak acoustic intensity (Isptp), and 2.3 for the spatial peak, pulse averaged acoustic intensity (Isppa), were found compared to simulations of the beam in free water. Applying such corrections due to reverberations on the experimental results would yield a higher estimation for the average acoustic pressure threshold for motor neurostimulation at 320 KHz at 1.2 0.3 MPa (MI 2.2 0.5 and Isppa 17.5 7.5 W cm−<sup>2</sup>).",
+   "exposures[0].in_situ.isppa_w_cm2": "Results: Ultrasound pulse evoked a motor response in more than 60% of the experimental sessions. In those sessions, the stimulation was always present, repeatable with a pressure threshold under which no motor response occurred. This average acoustic pressure threshold was found to be 0.68 0.1 MPa (corresponding mechanical index, MI 1.2 and spatial peak, pulse averaged intensity, Isppa  7.5 W cm−<sup>2</sup>), as calibrated in free water. A slight variation was observed between deep anesthesia stage (0.77 0.04 MPa) and light anesthesia stage (0.61 0.03 MPa), assessed from the pedal reflex. Several kinds of motor responses were observed: movements of the tail, the hind legs, the forelimbs, the eye, and even a single whisker were induced separately. Numerical simulations of an equivalent experiment with identical acoustic parameters showed that the acoustic field was spread over the whole rat brain with the presence of several secondary pressure peaks. Due to reverberations, a 1.8-fold increase of the spatial peak, temporal peak acoustic pressure (Psptp) ( 0.4 standard deviation), a 3.6-fold increase ( 1.8) for the spatial peak, temporal peak acoustic intensity (Isptp), and 2.3 for the spatial peak, pulse averaged acoustic intensity (Isppa), were found compared to simulations of the beam in free water. Applying such corrections due to reverberations on the experimental results would yield a higher estimation for the average acoustic pressure threshold for motor neurostimulation at 320 KHz at 1.2 0.3 MPa (MI 2.2 0.5 and Isppa 17.5 7.5 W cm−<sup>2</sup>).",
+   "exposures[0].timing.pulse_duration_ms": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "exposures[0].timing.duty_cycle_pct": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "exposures[0].timing.sonication_duration_s": "The detailed parameters are as follows: ultrasound frequency was 320 KHz, number of cycles was 75 per pulse (pulse duration  230 μs), pulse repetition frequency (PRF) was 2 KHz (duty-cycle 50%), and the total burst duration was 250 ms. Only the pressure was changed in this study to identify the threshold, and ranged from 0.4 to 1 MPa peak pressure.",
+   "n_subjects": "All animals were Sprague Dawley rats (N  8; all male, body weight 150–250 g). Each rat was shaved prior to the experiment and was injected intraperitoneally with Ketamine and Xylazine for sedation (66 mg Ketamine for 1 kg body weight, 13 mg Xylazine for 1 kg body weight). Eight to ten minutes after anesthesia, and once the rat was deeply anesthetized, the animal was placed on the holder and his head was fixed in the stereotactic frame. A coupling gel was placed over the rat head and the ultrasonic transducer was positioned using the motors at the desired location (Fig. 3).",
+   "exposures[0].device.manufacturer": "A single element focused ultrasound transducer (H115, Sonic Concepts, Bothell, MA) (central frequency 250 kHz, peak frequency 320 kHz, diameter 64 mm, FD# 1) was used.",
+   "exposures[0].device.model": "A single element focused ultrasound transducer (H115, Sonic Concepts, Bothell, MA) (central frequency 250 kHz, peak frequency 320 kHz, diameter 64 mm, FD# 1) was used."
+  },
+  "flags": [
+   {
+    "field": "randomised",
+    "reason": "Randomisation described applies to the order of pressure amplitudes tested within a session, not assignment of subjects to groups; there are no groups/arms in this single-arm dose-response design."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target was a skull-surface location near lambda used because it gave reliable motor responses, explicitly not the motor cortex; no listed target term matches, so 'other' was used."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Reported as the tested range (0.4-1 MPa); the mean motor threshold (0.68 MPa) and its in-situ correction are separately reported as results, not as the exposure list."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

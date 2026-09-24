@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020braun",
+ "doi": "10.1016/j.brs.2020.08.014",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "This manuscript reports data from 18 healthy human participants who completed this part of the study (11 female and 7 male, mean age 26.22± 7.25 years).",
+   "randomised": "Stimulation and sham trials were presented in randomised order and subjects were asked to distinguish trials with active stimulation from trials in which no stimulation was applied.",
+   "auditory_control": "Delivering an audio waveform to participants through earphones while TUS was applied reduced detection rates to chance level and abolished the TUS-induced auditory EEG signal.",
+   "safety_notes": "Both acoustic and thermal participant-specific modelling was carried out to determine appropriate source locations and amplitudes in order to focus to the intended targets as well as satisfy the safety constraints (maximum peak modelled pressure in CSF or brain tissue 0.6 MPa, maximum temperature rise in skull bone = 3C, maximum temperature rise in brain tissue 1 C)",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was delivered through a 500 kHz singleelement geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA).",
+   "exposures[0].in_situ.pressure_kpa": "Numerical modelling for this participant showed the pressure at the V1 target to be 0.59 MPa, in the upper quartile but not at the top of the range (group mean 0.50 MPa, SD 0.08, range 0.30e0.60).",
+   "exposures[0].timing.pulse_duration_ms": "Each TUS trial consisted of a 300 ms burst, which was made up of 0.5 ms pulses of 500 kHz ultrasound (250 cycles) alternating with 0.5 ms of no ultrasound (that is, a burst duty cycle (BDC) of 50% and PRF of 1 kHz).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each TUS trial consisted of a 300 ms burst, which was made up of 0.5 ms pulses of 500 kHz ultrasound (250 cycles) alternating with 0.5 ms of no ultrasound (that is, a burst duty cycle (BDC) of 50% and PRF of 1 kHz).",
+   "exposures[0].timing.duty_cycle_pct": "Each TUS trial consisted of a 300 ms burst, which was made up of 0.5 ms pulses of 500 kHz ultrasound (250 cycles) alternating with 0.5 ms of no ultrasound (that is, a burst duty cycle (BDC) of 50% and PRF of 1 kHz).",
+   "exposures[0].timing.sonication_duration_s": "One stimulation trial consisted of a 300 ms burst applied at a 1 kHz pulse repetition frequency (PRF) and 50% BDC as shown in Fig. 1a and b.",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered through a 500 kHz singleelement geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA).",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered through a 500 kHz singleelement geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA).",
+   "n_sessions_per_subject": "The experiment was split into two blocks (Fig. 1a and b) which were conducted in the same order by every participant."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Sham/no-stimulation trials are described only as trials in which 'no TUS was applied'; the physical mechanism (transducer powered off vs. simply not triggered) is not described."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "This paper's purpose is to characterise an auditory confound rather than an intended neuromodulatory effect at the visual-cortex target, so direction_of_effect is recorded as not_assessed with the confound described in direction_notes."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.50 MPa is the group mean modelled (simulated) in-situ pressure at the V1 target reported for a subset of analysis (one participant's context); individual/group range was 0.30-0.60 MPa."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper does not state whether the unmasked and masked blocks (which were always run in that order) occurred within one session or across multiple visits."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "first"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "detection task (d' from hit/false-alarm rates distinguishing stimulation from sham trials); auditory event-related potentials (US-N1, US-P2) over electrode Cz",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "The study assessed an auditory confound rather than the intended neuromodulatory effect at V1: TUS elicited an audible tone and an auditory-evoked-potential-like EEG response (pronounced N1) that were abolished by an audio mask delivered through earphones.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Acoustic and thermal participant-specific modelling was carried out to satisfy safety constraints (maximum peak modelled pressure in CSF or brain tissue 0.6 MPa, maximum temperature rise in skull bone 3C, maximum temperature rise in brain tissue 1C).",
+ "exposures": [
+  {
+   "label": "TUS to right visual cortex (unmasked and masked blocks)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "right visual cortex"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc",
+    "model": "H-107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Each stimulation trial consisted of a 300 ms burst; 100 unmasked trials (50 stimulation, 50 sham) followed by 100 masked trials (50 stimulation, 50 sham) with a 1 kHz square-wave audio mask starting ~112 ms before TUS onset and lasting 700 ms, played through earphones."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

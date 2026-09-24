@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026qina",
+ "doi": "10.1016/j.brs.2026.103199",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 26,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "Single-pulse TMS-evoked motor evoked potentials (MEP) from right FDI at 120% RMT; stop-signal task (SSRT, Go RT, SSD); Stop-P3 event-related potential component (Fz, Cz, FC1, FC2)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Protocols A (rTUS), B (tbTUS) and D (iTBUS) increased MEP amplitude relative to sham (52-74% across post-stimulation time points), while Protocol C (cTBUS) decreased MEP amplitude relative to sham (31-35%); only tbTUS produced a significantly greater pre-to-post reduction in SSRT than sham, and only cTBUS significantly reduced Stop-P3 amplitude.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events occurred. Only one participant experienced a transient mild headache during the first tbTUS protocol session, which resolved without intervention. No participant reported hearing stimulation-associated sounds, perceiving transducer vibration, or noticing differences across stimulation conditions.",
+ "exposures": [
+  {
+   "label": "Four active TUS protocols (rTUS, tbTUS, cTBUS, iTBUS) vs sham over left M1",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1), TMS-defined FDI hotspot"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     8.086,
+     2.678,
+     3.151,
+     3.151
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.874,
+     2.64
+    ],
+    "ispta_w_cm2": [
+     0.0078,
+     0.3499
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "theta_burst"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     20,
+     17,
+     17
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     5,
+     30,
+     30
+    ],
+    "duty_cycle_pct": [
+     5,
+     10,
+     51,
+     51
+    ],
+    "sonication_duration_s": [
+     900,
+     80,
+     20,
+     92
+    ],
+    "protocol_description": "Protocol A (rTUS): PRF 100 Hz, DC 5%, tone-burst duration 500 us, inter-stimulation interval 8 s, total duration 15 min. Protocol B (tbTUS): PRF 5 Hz, DC 10%, TBD 20 ms, ISI 0 s, total duration 80 s. Protocol C (cTBUS): four 17-ms pulses at 30 Hz intra-group PRF form a 200-ms group (51% pulse duty cycle within the group, 34% overall duty cycle over the group period), groups repeated continuously for 20 s. Protocol D (iTBUS): same four-pulse 200-ms group structure as Protocol C, organized into ten 2-s theta-burst trains separated by 8-s inter-train intervals, total protocol duration 92 s (6.8 s total ultrasound-on time). Sham used an identical setup with ultrasound output disabled, duration matched to Protocol C (20 s). Total acoustic dose (T x Isppa) was equalized across the four active protocols by slightly increasing Isppa for Protocols B-D."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Methods: Twenty-six healthy adults were enrolled to complete up to five sessions (four active TUS protocols and one sham); 24 completed all the five sessions, separated by at least one week. Motor evoked potentials (MEPs) were recorded at 20 min and 0 min before stimulation, and at 0, 20, and 40 min after stimulation. Stop-signal task (SST) performance was assessed before and after stimulation, and simultaneous EEG was recorded during the SST to extract event-related potentials (ERP). Linear mixed‑effects models with false‑discovery‑rate correction were used for statistical analysis.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound waves were delivered using a custom immersion-type focused transducer (fundamental frequency: 0.5 M $\\mathrm { f } z ;$ focal length: 3.5 cm) driven by a custom TUS system developed in our laboratory. The focused transducer had an annular active aperture, with an outer diameter of 50 mm and a central opening diameter of 16 mm. The transducer was positioned about 1.3 cm over the left M1 using a gasketcoupling interface to ensure optimal acoustic coupling. The left M1 was localized via TMS mapping over a 5 × 5 grid (1 cm spacing). The site that elicited the largest MEP in the right first dorsal interosseous (FDI) was defined as the motor hotspot. At each session, this hotspot was re-determined and marked on the scalp with a medical marker pen for MEP, TEP, and TUS targeting.",
+   "exposures[0].free_field.isppa_w_cm2": "Protocol A (rTUS): fundamental frequency: 0.5 MHz; PRF: 100 Hz; DC: 5%; tone-burst duration (TBD): 500 μs; inter-stimulation interval (ISI): 8 s; total duration 15 min; I<sub>SPPA</sub>: 8.086 W/cm²; mechanical index (MI): 0.698. This protocol was adapted from previous studies [9,15,18].",
+   "exposures[0].timing.pulse_duration_ms": "Protocol A (rTUS): fundamental frequency: 0.5 MHz; PRF: 100 Hz; DC: 5%; tone-burst duration (TBD): 500 μs; inter-stimulation interval (ISI): 8 s; total duration 15 min; I<sub>SPPA</sub>: 8.086 W/cm²; mechanical index (MI): 0.698. This protocol was adapted from previous studies [9,15,18].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Protocol A (rTUS): fundamental frequency: 0.5 MHz; PRF: 100 Hz; DC: 5%; tone-burst duration (TBD): 500 μs; inter-stimulation interval (ISI): 8 s; total duration 15 min; I<sub>SPPA</sub>: 8.086 W/cm²; mechanical index (MI): 0.698. This protocol was adapted from previous studies [9,15,18].",
+   "exposures[0].timing.duty_cycle_pct": "Protocol A (rTUS): fundamental frequency: 0.5 MHz; PRF: 100 Hz; DC: 5%; tone-burst duration (TBD): 500 μs; inter-stimulation interval (ISI): 8 s; total duration 15 min; I<sub>SPPA</sub>: 8.086 W/cm²; mechanical index (MI): 0.698. This protocol was adapted from previous studies [9,15,18].",
+   "exposures[0].timing.sonication_duration_s": "Protocol A (rTUS): fundamental frequency: 0.5 MHz; PRF: 100 Hz; DC: 5%; tone-burst duration (TBD): 500 μs; inter-stimulation interval (ISI): 8 s; total duration 15 min; I<sub>SPPA</sub>: 8.086 W/cm²; mechanical index (MI): 0.698. This protocol was adapted from previous studies [9,15,18].",
+   "exposures[0].in_situ.isppa_w_cm2": "Acoustic exposure and safety parameters were characterized according to the ITRUSST reporting and biosafety recommendations [39,40]. The free-field (water-tank) beam profile was characterized both without and beneath the EEG cap using a calibrated hydrophone (Supplementary Fig. S2; Supplementary Table S2): without the cap, the focal length was 34.2 mm, the lateral full-width-at-half-maximum (FWHM) was 4.35 mm, and the axial beam angle was 0.75°; beneath the EEG cap, the corresponding values were 32.8 mm, 4.45 mm, and $3 . 3 2 ^ { \\circ }$ , respectively, indicating only minor changes in focal geometry through the cap. To estimate intracranial acoustic exposure and temperature rise, acoustic and thermal simulations were performed in k-Wave using an anatomical model derived from the structural MRI data of one male participant enrolled in the present study. The same anatomical model and transducer configuration were used to simulate all four active protocols, with protocol-specific acoustic and temporal parameters (Supplementary Table S3). A simulated acoustic-field map for Protocol A and temperature-rise maps for all four active protocols are shown in Supplementary Fig. S3. The simulated in-situ target I<sub>SPPA</sub> ranged from 0.874 to 2.640 W/cm², and the corresponding target-region transcranial mechanical index $\\left( \\mathrm { M I } _ { \\mathrm { t c } } \\right)$ ranged from 0.23 to 0.40 across the four protocols, both below the ITRUSST nonsignificant-risk level of 1.9. The corresponding in situ I ranged from 7.8 to 349.9 mW/cm² across the four protocols (Supplementary Tables S1 and S3). The estimated temperature rise was negligible for all protocols (target region $< ~ 0 . 1 5 ^ { \\circ } \\mathrm { C } ;$ skull $< 0 . 3 5 ^ { \\circ } \\mathrm { C } )$ , remaining well below the ITRUSST nonsignificant-risk level of a $2 ~ ^ { \\circ } \\mathrm { C }$ peak temperature rise and consistent with the low-intensity, shortduration nature of these stimulation protocols. A detailed biophysical safety evaluation against the ITRUSST consensus levels is provided in the Supplementary Materials.",
+   "exposures[0].in_situ.ispta_w_cm2": "Acoustic exposure and safety parameters were characterized according to the ITRUSST reporting and biosafety recommendations [39,40]. The free-field (water-tank) beam profile was characterized both without and beneath the EEG cap using a calibrated hydrophone (Supplementary Fig. S2; Supplementary Table S2): without the cap, the focal length was 34.2 mm, the lateral full-width-at-half-maximum (FWHM) was 4.35 mm, and the axial beam angle was 0.75°; beneath the EEG cap, the corresponding values were 32.8 mm, 4.45 mm, and $3 . 3 2 ^ { \\circ }$ , respectively, indicating only minor changes in focal geometry through the cap. To estimate intracranial acoustic exposure and temperature rise, acoustic and thermal simulations were performed in k-Wave using an anatomical model derived from the structural MRI data of one male participant enrolled in the present study. The same anatomical model and transducer configuration were used to simulate all four active protocols, with protocol-specific acoustic and temporal parameters (Supplementary Table S3). A simulated acoustic-field map for Protocol A and temperature-rise maps for all four active protocols are shown in Supplementary Fig. S3. The simulated in-situ target I<sub>SPPA</sub> ranged from 0.874 to 2.640 W/cm², and the corresponding target-region transcranial mechanical index $\\left( \\mathrm { M I } _ { \\mathrm { t c } } \\right)$ ranged from 0.23 to 0.40 across the four protocols, both below the ITRUSST nonsignificant-risk level of 1.9. The corresponding in situ I ranged from 7.8 to 349.9 mW/cm² across the four protocols (Supplementary Tables S1 and S3). The estimated temperature rise was negligible for all protocols (target region $< ~ 0 . 1 5 ^ { \\circ } \\mathrm { C } ;$ skull $< 0 . 3 5 ^ { \\circ } \\mathrm { C } )$ , remaining well below the ITRUSST nonsignificant-risk level of a $2 ~ ^ { \\circ } \\mathrm { C }$ peak temperature rise and consistent with the low-intensity, shortduration nature of these stimulation protocols. A detailed biophysical safety evaluation against the ITRUSST consensus levels is provided in the Supplementary Materials.",
+   "n_sessions_per_subject": "Each participant completed four active TUS sessions and one Sham session."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "26 were enrolled and received at least one active TUS session, but only 24 completed all five sessions; two participants completed only a single protocol each."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "The Isppa values are described as 'scalp-incident' intensities measured via hydrophone after passing through the EEG cap-and-electrode assembly, not a raw open-water free-field measurement; classified as free_field as the closest available domain since it was measured with a calibrated hydrophone in a water tank."
+   },
+   {
+    "field": "exposures[0].in_situ.reported_as",
+    "reason": "The simulated in-situ Isppa/Ispta values are reported as a range across the four protocols (parameter sweep), not a range or mean across subjects; 'mean_or_range_across_subjects' was used as the closest available vocabulary option."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Protocol A (rTUS) is a standard pulsed protocol; Protocols B (tbTUS), C (cTBUS) and D (iTBUS) are explicitly called theta-burst by the paper, though the authors caution their theta-burst timing is not equivalent to standard TMS theta-burst stimulation."
+   },
+   {
+    "field": "randomised",
+    "reason": "Randomisation refers to counterbalanced order of the five protocols across sessions (balanced Latin square), not allocation to independent treatment/control groups."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019wasilczuk",
+ "doi": "10.1016/j.ultrasmedbio.2018.09.005",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "systemic_inflammation"
+ ],
+ "condition_other": "LPS-induced acute systemic inflammation (endotoxemia)",
+ "n_subjects": [
+  11,
+  8,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  3
+ ],
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "autonomic_physiology"
+ ],
+ "readout_other": "serum cytokine panel (LEGENDplex 13-plex; TNF-alpha primary outcome); vagus nerve histology (H&E)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "uVNS reduced serum TNF-alpha levels (single application ~19% reduction, triple application ~73% reduction vs. no-stimulation controls), interpreted as activation of the cholinergic anti-inflammatory reflex; direct neural activation (action potentials) was not recorded, and the effect was abolished by distal efferent vagotomy.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histology of 8 vagus nerve specimens showed no significant lesions except mild, clinically insignificant multifocal neutrophil infiltration of the perineurium in one animal; temperature increased on average to a maximum of 2C over the 5-min stimulation.",
+ "exposures": [
+  {
+   "label": "Focused ultrasound vagus nerve stimulation (uVNS)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "left cervical vagus nerve (surgically exposed)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": 1.2
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 4,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 300,
+    "protocol_description": "Focused ultrasound was delivered for 5 min per stimulation session, applied to the surgically exposed left vagus nerve via a coupling cone and ultrasound gel. Animals received either a single stimulation (u1VNS) or three stimulations (u3VNS, u3Vx) at t=30, 90 and 150 min relative to LPS injection."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 4.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We divided animals into five groups: no stimulation with LPS (nVNS, n = 11), single ultrasound stimulation with LPS $( \\mathrm { u } _ { 1 } \\mathrm { V N S } , \\mathrm { n } = 1 1 )$ , triple ultrasound stimulation with LPS $( \\mathrm { u } _ { 3 } \\mathrm { V N S } , \\mathrm { n } = 8 )$ , triple ultrasound stimulation with LPS and efferent fiber cervical vagotomy $( \\mathrm { u } _ { 3 } \\mathrm { V } \\mathrm { x } ,$ n = 4) and electrical stimulation with LPS (eVNS, n = 5).",
+   "n_sessions_per_subject": "Control animals (nVNS) received no stimulation, single-stimulation (eVNS and $\\mathbf { u } _ { 1 } \\mathrm { V N S } )$ animals received stimulation only at t = 30, and triple-stimulation (u VNS) animals received stimulation at t = 30, 90 and 150.",
+   "exposures[0].fundamental_frequency_khz": "Focused ultrasound stimulation, when applicable, occurred for 5 min using a function generator (33522 A, Agilent Technologies, Santa Clara, CA, USA) with a $2 5 0 \\mathrm { - k H z } , 2 \\mathrm { - V _ { p p } }$ sine wave with pulse width of 4 ms and pulse repetition frequency of 10 Hz (Fig. 3).",
+   "exposures[0].timing.pulse_duration_ms": "Focused ultrasound stimulation, when applicable, occurred for 5 min using a function generator (33522 A, Agilent Technologies, Santa Clara, CA, USA) with a $2 5 0 \\mathrm { - k H z } , 2 \\mathrm { - V _ { p p } }$ sine wave with pulse width of 4 ms and pulse repetition frequency of 10 Hz (Fig. 3).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Focused ultrasound stimulation, when applicable, occurred for 5 min using a function generator (33522 A, Agilent Technologies, Santa Clara, CA, USA) with a $2 5 0 \\mathrm { - k H z } , 2 \\mathrm { - V _ { p p } }$ sine wave with pulse width of 4 ms and pulse repetition frequency of 10 Hz (Fig. 3).",
+   "exposures[0].timing.sonication_duration_s": "Focused ultrasound stimulation, when applicable, occurred for 5 min using a function generator (33522 A, Agilent Technologies, Santa Clara, CA, USA) with a $2 5 0 \\mathrm { - k H z } , 2 \\mathrm { - V _ { p p } }$ sine wave with pulse width of 4 ms and pulse repetition frequency of 10 Hz (Fig. 3).",
+   "exposures[0].free_field.isppa_w_cm2": "The $I _ { \\mathrm { S P P A } }$ and $I _ { \\mathrm { S P T A } }$ applied to the vagus nerve were 3 and $1 . 2 ~ \\mathrm { W / c m } ^ { 2 } .$ respectively.",
+   "exposures[0].free_field.ispta_w_cm2": "The $I _ { \\mathrm { S P P A } }$ and $I _ { \\mathrm { S P T A } }$ applied to the vagus nerve were 3 and $1 . 2 ~ \\mathrm { W / c m } ^ { 2 } .$ respectively.",
+   "exposures[0].device.manufacturer": "Before stimulation, the coupling cone attached to the transducer (H-115, Sonic Concepts, Bothell, WA, USA) was filled with de-gassed, de-ionized water and secured with a latex covering.",
+   "exposures[0].device.model": "Before stimulation, the coupling cone attached to the transducer (H-115, Sonic Concepts, Bothell, WA, USA) was filled with de-gassed, de-ionized water and secured with a latex covering."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper never states a combined total for ultrasound-exposed animals; group sizes for the three uVNS groups (u1VNS=11, u3VNS=8, u3Vx=4) are listed instead of summed."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensity was measured with a hydrophone in water at the focus but described in the text as the intensity 'applied to the vagus nerve'; since the nerve was surgically exposed and coupled with gel (no skull path), this was treated as a free-field measurement, but the paper does not explicitly state the domain."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper does not state whether animals were randomly allocated to groups."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

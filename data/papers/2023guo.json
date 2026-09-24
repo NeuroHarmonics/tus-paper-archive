@@ -1,0 +1,369 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023guo",
+ "doi": "10.1016/j.isci.2023.108372",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "wide-field cortical calcium imaging (GCaMP6s); H&E histology for tissue damage assessment",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No direct calcium responses to FUS were observed at the targeted cortex across tested continuous and pulsed parameters in deafened mice; only at very high pressures (>=1600 kPa, 916 kHz) was strong focal calcium activity seen, attributed to tissue damage and spreading depolarization rather than direct non-damaging neuromodulation.",
+ "adverse_events": "observed",
+ "safety_notes": "High-pressure continuous FUS (>=1600 kPa, up to 2000-2400 kPa, 916 kHz, 500 ms PD) caused focal spreading depolarization and confirmed brain damage on H&E staining at the sonication site; lower pressures (up to 900-1300 kPa) showed no histological damage reported in main text for those conditions.",
+ "exposures": [
+  {
+   "label": "270 kHz continuous FUS to visual cortex (near Lambda)",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "0.5 mm anterior and 2.5 mm lateral of Lambda (visual cortex)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115"
+   },
+   "fundamental_frequency_khz": 270,
+   "free_field": {
+    "pressure_kpa": [
+     100,
+     500,
+     900
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Continuous-wave FUS with a 500 ms pulse duration (PD) delivered at 270 kHz (transducer fundamental) to a target 0.5 mm anterior and 2.5 mm lateral of Lambda; 50 blocks of trials per animal, one trial of each stimulus type (sham, US at each pressure, light flash) presented once per block in random order, with a 20 s inter-stimulus interval."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "916 kHz FUS (continuous and pulsed) to visual cortex (near Lambda)",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "0.5 mm anterior and 2.5 mm lateral of Lambda (visual cortex)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-115"
+   },
+   "fundamental_frequency_khz": 916,
+   "free_field": {
+    "pressure_kpa": [
+     100,
+     2400
+    ],
+    "isppa_w_cm2": [
+     0.33,
+     5.33,
+     16.33,
+     33.33
+    ],
+    "ispta_w_cm2": [
+     0.189,
+     1.719,
+     0.099,
+     0.9,
+     0.10548,
+     1.8
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     0.229,
+     0.2,
+     20,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     2500,
+     1500,
+     30,
+     300
+    ],
+    "duty_cycle_pct": [
+     100,
+     57.3,
+     30,
+     60
+    ],
+    "sonication_duration_s": [
+     0.5,
+     0.06,
+     0.08,
+     0.067
+    ],
+    "protocol_description": "916 kHz (third harmonic) FUS at the same visual-cortex target as the 270 kHz exposure. Continuous-wave stimulation used a 500 ms pulse duration and was swept from 100 kPa up to 2,400 kPa across clear-skull and TPX cranial-window preparations (specific tested values included 100, 300, 400, 500, 700, 900, 1000, 1300, 1600, 2000 and 2400 kPa in different figures/sub-experiments), with a 20 s inter-stimulus interval for most experiments (155 s for the high-pressure long-ISI experiment in Figure S3) and 50 blocks per animal. Separately, eight pulsed ultrasound parameter sets (Table 1, 'Set1' replicating Tufail et al. and 'Set2' replicating Yu et al. pulse patterns) were also tested at 916 kHz at 100 kPa and 300 kPa, with pulse duration/PRF/duty cycle/number of pulses (Np) as tabulated, producing burst (sonication) lengths of 60, 80 or 67 ms."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].target.label": "The tip of the transducer (fundamental frequency at 270 kHz and third harmonic at 916 kHz) was manually aligned to the stimulation target, which is 0.5 mm anterior and 2.5 mm lateral of Lambda (Figure 2A).",
+   "exposures[1].target.label": "The tip of the transducer (fundamental frequency at 270 kHz and third harmonic at 916 kHz) was manually aligned to the stimulation target, which is 0.5 mm anterior and 2.5 mm lateral of Lambda (Figure 2A).",
+   "exposures[0].device.model": "Details of ultrasound generation and calibration are described in our previous study.<sup>29,30</sup> A single element transducer (H-115, Sonic Concepts, Bothell, WA) was used in all experiments.",
+   "exposures[1].device.model": "Details of ultrasound generation and calibration are described in our previous study.<sup>29,30</sup> A single element transducer (H-115, Sonic Concepts, Bothell, WA) was used in all experiments.",
+   "exposures[0].fundamental_frequency_khz": "The transducer can run at its first harmonic (270 kHz) and third harmonic (916 kHz) with different matching boxes, which were driven by a 200 W RF amplifier (E&I 2200, Electronics & Innovation, Rochester, NY).",
+   "exposures[1].fundamental_frequency_khz": "The transducer can run at its first harmonic (270 kHz) and third harmonic (916 kHz) with different matching boxes, which were driven by a 200 W RF amplifier (E&I 2200, Electronics & Innovation, Rochester, NY).",
+   "exposures[0].free_field.pressure_kpa": "(B) Representative examples of cortical activation map from one normal hearing mouse (Thy1-DT) and one deafened mouse (PouDTR-DT) to sham, US (270 kHz center frequency, 500 ms PD, pressure at 100, 500, and 900 kPa), and light flashes.",
+   "exposures[1].free_field.pressure_kpa": "This study presents a new conditionally deafened mouse model for studying the effects of FUS on neural activity in vivo and detailed char acterization of the cortex-wide calcium dynamics of deafened mice in response to continuous FUS with 500 ms PD, at pressures ranging from 100 kPa to 2,400 kPa.",
+   "exposures[1].free_field.isppa_w_cm2": "Intensities of 0.33, 5.33, 16.33, 33.33 W/cm<sup>2</sup> correspond to pressures of 100, 400, 700 1,000 kPa, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "Continuous ultrasound with a PD of 500 ms was utilized for all experiments, except for Figures 6 and S4B, in which we examined some pulsed ultrasound parameters.",
+   "exposures[1].timing.duty_cycle_pct": "<table><tr><td colspan=\"6\"></td><td rowspan=\"2\">Duty</td><td colspan=\"5\">US Stim</td></tr><tr><td>Parameter</td><td>f (MHz)</td><td>c/p</td><td>PD (ms)</td><td>PRF (Hz)</td><td>cycle</td><td>Np</td><td>length (ms)</td><td>Pr (kPa)</td><td>ISPPA (mW/cm2)</td><td>ISPTA (mW/cm2)</td></tr><tr><td>Set1</td><td>US1</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>100</td><td>330</td><td>189</td></tr><tr><td></td><td>US2</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>300</td><td>3000</td><td>1719</td></tr><tr><td></td><td>US3</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120</td><td>80</td><td>100</td><td>330</td><td>99</td></tr><tr><td></td><td>US4</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120 80</td><td></td><td>300</td><td>3000</td><td>900</td></tr><tr><td>Set2</td><td>US5</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US6</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>300</td><td>3000</td><td>1800</td></tr><tr><td></td><td>US7</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US8</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>300</td><td>3000</td><td>1800</td></tr></table>",
+   "exposures[1].timing.pulse_duration_ms": "<table><tr><td colspan=\"6\"></td><td rowspan=\"2\">Duty</td><td colspan=\"5\">US Stim</td></tr><tr><td>Parameter</td><td>f (MHz)</td><td>c/p</td><td>PD (ms)</td><td>PRF (Hz)</td><td>cycle</td><td>Np</td><td>length (ms)</td><td>Pr (kPa)</td><td>ISPPA (mW/cm2)</td><td>ISPTA (mW/cm2)</td></tr><tr><td>Set1</td><td>US1</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>100</td><td>330</td><td>189</td></tr><tr><td></td><td>US2</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>300</td><td>3000</td><td>1719</td></tr><tr><td></td><td>US3</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120</td><td>80</td><td>100</td><td>330</td><td>99</td></tr><tr><td></td><td>US4</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120 80</td><td></td><td>300</td><td>3000</td><td>900</td></tr><tr><td>Set2</td><td>US5</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US6</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>300</td><td>3000</td><td>1800</td></tr><tr><td></td><td>US7</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US8</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>300</td><td>3000</td><td>1800</td></tr></table>",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td colspan=\"6\"></td><td rowspan=\"2\">Duty</td><td colspan=\"5\">US Stim</td></tr><tr><td>Parameter</td><td>f (MHz)</td><td>c/p</td><td>PD (ms)</td><td>PRF (Hz)</td><td>cycle</td><td>Np</td><td>length (ms)</td><td>Pr (kPa)</td><td>ISPPA (mW/cm2)</td><td>ISPTA (mW/cm2)</td></tr><tr><td>Set1</td><td>US1</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>100</td><td>330</td><td>189</td></tr><tr><td></td><td>US2</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>300</td><td>3000</td><td>1719</td></tr><tr><td></td><td>US3</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120</td><td>80</td><td>100</td><td>330</td><td>99</td></tr><tr><td></td><td>US4</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120 80</td><td></td><td>300</td><td>3000</td><td>900</td></tr><tr><td>Set2</td><td>US5</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US6</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>300</td><td>3000</td><td>1800</td></tr><tr><td></td><td>US7</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US8</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>300</td><td>3000</td><td>1800</td></tr></table>",
+   "exposures[1].timing.sonication_duration_s": "<table><tr><td colspan=\"6\"></td><td rowspan=\"2\">Duty</td><td colspan=\"5\">US Stim</td></tr><tr><td>Parameter</td><td>f (MHz)</td><td>c/p</td><td>PD (ms)</td><td>PRF (Hz)</td><td>cycle</td><td>Np</td><td>length (ms)</td><td>Pr (kPa)</td><td>ISPPA (mW/cm2)</td><td>ISPTA (mW/cm2)</td></tr><tr><td>Set1</td><td>US1</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>100</td><td>330</td><td>189</td></tr><tr><td></td><td>US2</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>300</td><td>3000</td><td>1719</td></tr><tr><td></td><td>US3</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120</td><td>80</td><td>100</td><td>330</td><td>99</td></tr><tr><td></td><td>US4</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120 80</td><td></td><td>300</td><td>3000</td><td>900</td></tr><tr><td>Set2</td><td>US5</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US6</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>300</td><td>3000</td><td>1800</td></tr><tr><td></td><td>US7</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US8</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>300</td><td>3000</td><td>1800</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "As expected, when using the 270 kHz FUS, we were able to observe strong auditory confounds and off-target brain activation in normal hearing mice (Thy1-DT).",
+   "exposures[0].device.manufacturer": "9 GraphPad Software RRID:SCR_002798 Experiment control software This paper Open Science Framework: https://osf.io/ Other 4qsed/ Ultrasound transducer Sonic Concepts SN-115 Signal generator Keysight Technologies 33522B RF amplifier Electronics &amp; Innovation 1020L Multi-Field Magnetic Speakers Tucker-Davis Technologies",
+   "exposures[1].device.manufacturer": "9 GraphPad Software RRID:SCR_002798 Experiment control software This paper Open Science Framework: https://osf.io/ Other 4qsed/ Ultrasound transducer Sonic Concepts SN-115 Signal generator Keysight Technologies 33522B RF amplifier Electronics &amp; Innovation 1020L Multi-Field Magnetic Speakers Tucker-Davis Technologies",
+   "exposures[1].free_field.ispta_w_cm2": "<table><tr><td colspan=\"6\"></td><td rowspan=\"2\">Duty</td><td colspan=\"5\">US Stim</td></tr><tr><td>Parameter</td><td>f (MHz)</td><td>c/p</td><td>PD (ms)</td><td>PRF (Hz)</td><td>cycle</td><td>Np</td><td>length (ms)</td><td>Pr (kPa)</td><td>ISPPA (mW/cm2)</td><td>ISPTA (mW/cm2)</td></tr><tr><td>Set1</td><td>US1</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>100</td><td>330</td><td>189</td></tr><tr><td></td><td>US2</td><td>0.916</td><td>210</td><td>0.229</td><td>2500</td><td>57.3%</td><td>150 60</td><td></td><td>300</td><td>3000</td><td>1719</td></tr><tr><td></td><td>US3</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120</td><td>80</td><td>100</td><td>330</td><td>99</td></tr><tr><td></td><td>US4</td><td>0.916</td><td>183</td><td>0.2</td><td>1500</td><td>30%</td><td>120 80</td><td></td><td>300</td><td>3000</td><td>900</td></tr><tr><td>Set2</td><td>US5</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US6</td><td>0.916</td><td>18</td><td>20</td><td>30</td><td>60%</td><td>2 67</td><td></td><td>300</td><td>3000</td><td>1800</td></tr><tr><td></td><td>US7</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>72.6</td><td>175.80</td><td>105.48</td></tr><tr><td></td><td>US8</td><td>0.916</td><td>2</td><td>2</td><td>300</td><td>60%</td><td>20</td><td>67</td><td>300</td><td>3000</td><td>1800</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[1]",
+    "reason": "916 kHz continuous-wave sweep and Table 1 pulsed parameter sets are combined into one exposure per the target x frequency rule, even though waveform differs; this makes several timing list fields heterogeneous (mixing continuous and pulsed conditions)."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Recorded as the paper's stated overall range (100-2400 kPa) rather than every discrete pressure value tested across different figures/sub-experiments (100,300,400,500,700,900,1000,1300,1600,2000,2400 kPa); individual values are in protocol_description."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "The four intensity values quoted (Figure 4D) correspond only to the TPX-window continuous 100/400/700/1000 kPa subset, not the full 100-2400 kPa pressure range or the pulsed Table 1 conditions (which report separate ISPPA/ISPTA values in mW/cm2 not fully reproduced here)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Value (0.5 s) inferred from the stated 500 ms pulse duration (PD) used for all continuous-wave experiments at both frequencies; the anchor quote does not itself state the duration number."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Different figures/panels report different animal numbers (e.g., n=6, n=4, n=3, n=10) across overlapping sub-experiments and preparations (clear skull vs TPX window, deafened vs normal hearing); no single total number of ultrasound-exposed animals is stated."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Overall classified as no_effect for direct cortical neuromodulation, but very high pressures (>=1600 kPa) produced strong focal calcium activation attributed to tissue damage/spreading depolarization rather than physiological neuromodulation; see direction_notes."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "disagree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.duty_cycle_pct": "both_defensible",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

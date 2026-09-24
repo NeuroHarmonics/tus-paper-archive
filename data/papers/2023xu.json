@@ -1,0 +1,304 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023xu",
+ "doi": "10.1016/j.brs.2023.05.012",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J; Grin2c-iCre/Ai93D; Prrt2-mutant)",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "paroxysmal kinesigenic dyskinesia (Prrt2-deficient mouse model)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Two-photon calcium imaging of GCaMP6f in cerebellar granule cell boutons and Purkinje cell dendrites; dyskinesia behavioural scoring; TUNEL staining; anti-GFP immunohistochemistry",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound rapidly increased and sustained calcium activity in cerebellar granule cell boutons and Purkinje cell dendrites at the targeted region in a dose (duration/intensity)-dependent manner, with no significant change to an off-target site; transcranial ultrasound to the cerebellar hemisphere also reliably triggered dyskinesia attacks in Prrt2-mutant mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "TUNEL staining after ultrasound stimulation did not reveal TUNEL-positive apoptotic signals, and no cellular damage was observed in animals in which ultrasound triggered dyskinesia/cerebellar spreading depolarization.",
+ "exposures": [
+  {
+   "label": "Cerebellar cortex GrC/PC imaging and dyskinesia induction (88 kHz, CW, 5-10 s)",
+   "target": {
+    "terms": [
+     "cerebellar_cortex"
+    ],
+    "label": "cerebellar cortex, lobule VI-VIII (granule cell boutons and Purkinje cell dendrites); cerebellar hemisphere (dyskinesia induction)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Hainertec",
+    "model": "HNN–4SS-0890"
+   },
+   "fundamental_frequency_khz": 88,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     5,
+     10
+    ],
+    "protocol_description": "Continuous-wave (CW) ultrasonic stimuli of 5 or 10 s at 0.1 W/cm^2 were delivered to the cerebellar cortex (imaging window over lobule VI-VIII) during two-photon calcium imaging of GrC boutons; for Purkinje cell dendrite imaging, 5-s pulses were delivered every 30 s for a total of 10 trials. For dyskinesia induction, transcranial CW ultrasound (10 s, 0.1 W/cm^2) was applied to the cerebellar hemisphere; an off-target stimulus (10 s, 0.1 W/cm^2, same pattern) was applied to dental cement over the cerebrum. Each stimulation pattern was repeated 5 times, interleaved with at least 8 h for recovery."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Cerebellar cortex acoustic dose-response (127 kHz tone bursts, 80/500 ms)",
+   "target": {
+    "terms": [
+     "cerebellar_cortex"
+    ],
+    "label": "cerebellar cortex (Purkinje cell dendrites); cerebellar hemisphere (500-ms on-target dyskinesia test)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 127,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.14,
+     1.32,
+     4.4
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     0.08,
+     0.5
+    ],
+    "protocol_description": "Single uninterrupted tone bursts of 80 ms or 500 ms at 0.14, 1.32 or 4.4 W/cm^2 were delivered once per 20-s trial, for a total of 14-20 trials, to assess dose-dependence of Purkinje cell dendrite responses. A 500-ms, 4.4 W/cm^2 on-target burst was also tested for its ability to trigger dyskinesia in Prrt2-mutant mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The transducer (HNN–4SS-0890, Hainertec) used for 5–10 s stimulation was driven by electric signals from a excitation system at a fundamental frequency of 88 ± 1 kHz and coupled to targeted area with 2% agarose (UltraPure™ Agarose, Invitrogen).",
+   "exposures[0].timing.sonication_duration_s": "While ultrasonic stimulus $( 0 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ at a duration of 5 s and 10 s succeeded in triggering dyskinesia attacks (Fig. 6D), with no visible difference in latencies (Fig. 6E).",
+   "exposures[1].fundamental_frequency_khz": "The other transducer used for 80-ms and 500-ms stimulation was driven at its resonant spot (around 127 kHz) using a function generator (WF1974, NF Corporation) and a signal amplifier (ATA-L4, Aigtek), and coupled with degassed ultrasonic gel.",
+   "exposures[1].timing.sonication_duration_s": "Practically, we delivered ultrasonic pulses at durations of 80 and 500 ms and intensities of 0.14, 1.32 and $4 . 4 \\mathrm { W / c m } ^ { 2 } ;$ , with a trial duration of 20 s and a total of 14–20 trials.",
+   "exposures[0].timing.duty_cycle_pct": "We employed continuous wave (CW) ultrasonic stimuli $( 1 0 \\ s , 0 . 1 \\ \\mathrm { W / c m ^ { 2 } } )$ to the imaging field and obtained rapidly increased calcium responses, followed by persistent activation after stimulus offset (Fig. 2B–D).",
+   "exposures[1].timing.duty_cycle_pct": "Practically, we delivered ultrasonic pulses at durations of 80 and 500 ms and intensities of 0.14, 1.32 and $4 . 4 \\mathrm { W / c m } ^ { 2 } ;$ , with a trial duration of 20 s and a total of 14–20 trials.",
+   "exposures[0].device.manufacturer": "The transducer (HNN–4SS-0890, Hainertec) used for 5–10 s stimulation was driven by electric signals from a excitation system at a fundamental frequency of 88 ± 1 kHz and coupled to targeted area with 2% agarose (UltraPure™ Agarose, Invitrogen).",
+   "exposures[0].device.model": "The transducer (HNN–4SS-0890, Hainertec) used for 5–10 s stimulation was driven by electric signals from a excitation system at a fundamental frequency of 88 ± 1 kHz and coupled to targeted area with 2% agarose (UltraPure™ Agarose, Invitrogen).",
+   "exposures[0].free_field.isppa_w_cm2": "We employed continuous wave (CW) ultrasonic stimuli $( 1 0 \\ s , 0 . 1 \\ \\mathrm { W / c m ^ { 2 } } )$ to the imaging field and obtained rapidly increased calcium responses",
+   "exposures[1].free_field.isppa_w_cm2": "Practically, we delivered ultrasonic pulses at durations of 80 and 500 ms and intensities of 0.14, 1.32 and $4 . 4 \\mathrm { W / c m } ^ { 2 } ;$ , with a trial duration of 20 s and a total of 14"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Many separate sub-experiments (imaging, dose-response, dyskinesia) each report different, non-overlapping animal/session/bouton counts; no single study-wide total of animals exposed to ultrasound is stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Number of sessions per subject varies by sub-experiment (single imaging session vs. 5 repeated dyskinesia trials with recovery); no single value applies to the whole study."
+   },
+   {
+    "field": "exposures[1].fundamental_frequency_khz",
+    "reason": "Paper states the second transducer was driven 'around 127 kHz', an approximate rather than exact value."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain (free-field vs. in-brain) of the reported intensity is not stated in the main text; a figure legend indicates intensities were measured with a hydrophone at 3 mm from the horn surface (suggesting a free-field-like calibration), but this is not stated as such in running text."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain (free-field vs. in-brain) of the reported intensities is not stated in the main text."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle of 100% is inferred from the paper's designation of the stimulus as continuous wave (CW); not independently stated as a percentage."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle of 100% is inferred from the single uninterrupted tone-burst-per-trial description; not independently stated as a percentage."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "disagree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[1].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

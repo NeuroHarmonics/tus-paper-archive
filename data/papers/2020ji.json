@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020ji",
+ "doi": "10.3389/fnins.2020.586424",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "rabbit (New Zealand white and Japanese white)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology"
+ ],
+ "readout_other": "systolic/diastolic/mean arterial blood pressure (intra-arterial catheter, right common carotid artery) and heart rate",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "FUS to the left vagus nerve reduced systolic, diastolic and mean arterial blood pressure and heart rate; reductions increased with acoustic intensity (Isppa) and duty cycle.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS to exposed left vagus nerve, intensity/duty-cycle sweep",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "left vagus nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     18.0,
+     48.5,
+     87.3
+    ],
+    "ispta_w_cm2": [
+     5.4,
+     87.3
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     0.3,
+     0.5,
+     0.7
+    ],
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     30,
+     50,
+     70,
+     100
+    ],
+    "sonication_duration_s": 5,
+    "protocol_description": "Fundamental frequency, PRF, sonication duration (SD) and inter-stimulus interval (ISI) were fixed at 3.7 MHz, 1 kHz, 5 s and 1 s respectively; tone-burst duration (TBD) was varied to give duty cycles of 30, 50, 70 and 100% at each of three Isppa levels (18.0, 48.5, 87.3 W/cm^2). For each trial the FUS was applied for about 20 s in total (repeated 5-s trains at 1-s ISI), followed by a ~60 s wait for BP to return to baseline. Trial order was pseudo-randomized and balanced across animals, with repeated trials per parameter set."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In this study, the experiments of BP control through FUS modulation were conducted on eight white rabbits (six New Zealand white rabbits and two Japanese white rabbits, all male, body weight 3.5–4.5 kg).",
+   "exposures[0].fundamental_frequency_khz": "The focused ultrasound transducer with a fundamental frequency (FF) of 3.7 MHz, a diameter of 19.5 mm, and a focal length of 17 mm was connected to an acoustic collimator.",
+   "exposures[0].free_field.isppa_w_cm2": "During the experiment, the $I _ { \\mathrm { s p t a } }$ values ranged from 5.40 to 87.3 $\\mathrm { W } / \\mathrm { c m } ^ { \\overline { { 2 } } }$ by setting the DC values to be $3 0 , 5 0 , 7 0 ,$ and 100%, with diferent $I _ { s p p a }$ values (18.0, 48.5, and $8 7 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , as shown in Table 1.",
+   "exposures[0].free_field.ispta_w_cm2": "During the experiment, the $I _ { \\mathrm { s p t a } }$ values ranged from 5.40 to 87.3 $\\mathrm { W } / \\mathrm { c m } ^ { \\overline { { 2 } } }$ by setting the DC values to be $3 0 , 5 0 , 7 0 ,$ and 100%, with diferent $I _ { s p p a }$ values (18.0, 48.5, and $8 7 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , as shown in Table 1.",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td>18.0</td><td>30 0.3</td><td></td><td>5.4</td></tr><tr><td>48.5</td><td>30</td><td>0.3</td><td>14.6</td></tr><tr><td>87.3</td><td>30</td><td>0.3</td><td>26.2</td></tr><tr><td>18.0</td><td>50</td><td>0.5</td><td>9.0</td></tr><tr><td>48.5</td><td>50</td><td>0.5</td><td>24.3</td></tr><tr><td>87.3</td><td>50</td><td>0.5</td><td>43.6</td></tr><tr><td>18.0</td><td>70</td><td>0.7</td><td>12.6</td></tr><tr><td>48.5</td><td>70</td><td>0.7</td><td>34.0</td></tr><tr><td>87.3</td><td>70</td><td>0.7</td><td>61.1</td></tr><tr><td>18.0</td><td>100</td><td>一</td><td>18.0</td></tr><tr><td>48.5</td><td>100</td><td>一</td><td>48.5</td></tr><tr><td>87.3</td><td>100</td><td>一</td><td>87.3</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In this study, the FF, PRF, SD, and ISI were fixed and set to 3.7 MHz, 1 kHz, 5 s, and 1 s, respectively, and the TBD was changed with diferent values to obtain diferent DC and $I _ { \\mathrm { s p t a } } ,$ as listed in Table 1.",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td>18.0</td><td>30 0.3</td><td></td><td>5.4</td></tr><tr><td>48.5</td><td>30</td><td>0.3</td><td>14.6</td></tr><tr><td>87.3</td><td>30</td><td>0.3</td><td>26.2</td></tr><tr><td>18.0</td><td>50</td><td>0.5</td><td>9.0</td></tr><tr><td>48.5</td><td>50</td><td>0.5</td><td>24.3</td></tr><tr><td>87.3</td><td>50</td><td>0.5</td><td>43.6</td></tr><tr><td>18.0</td><td>70</td><td>0.7</td><td>12.6</td></tr><tr><td>48.5</td><td>70</td><td>0.7</td><td>34.0</td></tr><tr><td>87.3</td><td>70</td><td>0.7</td><td>61.1</td></tr><tr><td>18.0</td><td>100</td><td>一</td><td>18.0</td></tr><tr><td>48.5</td><td>100</td><td>一</td><td>48.5</td></tr><tr><td>87.3</td><td>100</td><td>一</td><td>87.3</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "In this study, the FF, PRF, SD, and ISI were fixed and set to 3.7 MHz, 1 kHz, 5 s, and 1 s, respectively, and the TBD was changed with diferent values to obtain diferent DC and $I _ { \\mathrm { s p t a } } ,$ as listed in Table 1.",
+   "n_sessions_per_subject": "For each rabbit, the BP modulation experiments included three sections: (1) animal preparation, (2) ultrasonic stimulation, and (3) BP data acquisition (as shown in Figure 1)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Paper also preliminarily screened 548 kHz and 1.05 MHz transducers ('little' and 'slight' BP response respectively) but reported no quantitative sonication parameters or BP data for those, so only the systematically studied 3.7 MHz condition is recorded as an exposure."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "100% duty cycle condition is continuous wave while 30/50/70% conditions are pulsed; both are listed since this is one exposure with a duty-cycle sweep."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Domain of the acoustic-field hydrophone measurement (water tank vs. in situ at the nerve) is not explicitly stated; recorded as free_field on the basis that it was measured with a scanning hydrophone system, but the paper does not use the word 'water' or 'free field' explicitly for this measurement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

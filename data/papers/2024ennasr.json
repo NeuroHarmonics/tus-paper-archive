@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024ennasr",
+ "doi": "10.1016/j.brs.2024.11.005",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": [
+  2,
+  4
+ ],
+ "randomised": true,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Motor-evoked potential (MEP) peak-to-peak amplitude via single-pulse TMS",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "No parameter combination produced significant excitation; 3 of 24 parameter sets (pulsed 6 W/cm2 30% DC 500 ms; pulsed 24 W/cm2 1% DC 500 ms; pulsed 6 W/cm2 70% DC 500 ms) produced significant MEP inhibition, greatest ~30% at 6 W/cm2, 30% duty cycle, 500 ms.",
+ "adverse_events": "observed",
+ "safety_notes": "A review of symptoms questionnaire [14] queried the participants on the presence of various symptoms and their severity (absent/mild/moderate/severe) scored on a scale of 1–4. This questionnaire was collected at the beginning of each visit which had LIFU/TMS application and 30 min after TMS/LIFU application to indicate any changes of from the intervention. Fig. 7 depicts all sessions in which participants received TMS or LIFU/TMS, even if they had a failed session (Table A3). If there was no change, or improvement in the participant’s symptoms, the symptoms were represented as absent. There were a few sessions in which participants had mild neck pain, sleepiness, headache, and scalp sensations. Of the 16 participants who responded to the one-month follow-up questionnaire, none of them reported any persisting or new symptoms.",
+ "exposures": [
+  {
+   "label": "Full parametric sweep of pulsed and continuous-wave LIFU to M1, concurrent with TMS",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex (M1) hand knob / FDI hotspot"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 888,
+    "isppa_w_cm2": [
+     6,
+     24
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     141.1,
+     275.3
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     1,
+     10,
+     30,
+     50,
+     70,
+     100
+    ],
+    "sonication_duration_s": [
+     0.1,
+     0.5,
+     0.07,
+     0.15
+    ],
+    "protocol_description": "Pulsed LIFU: two intensities (ISPPA 6, 24 W/cm2) x five duty cycles (1, 10, 30, 50, 70%) x two durations (100, 500 ms) at constant PRF of 1 kHz = 20 pulsed conditions. Continuous-wave (CW): two durations (70, 150 ms) at the same two intensities, cycle-matched to the 70% DC/100 ms and 30% DC/500 ms pulsed conditions respectively (4 CW conditions). TMS was time-locked to occur 50 ms before the end of LIFU stimulation for all parameter sets; 20 LIFU/TMS pulses were delivered per parameter combination with an ISI of 10 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Of the 23 people enrolled, one participant was lost to follow-up after the first session, and four participants failed to achieve an MEP of at least $7 5 0 \\mu \\mathrm { V }$ at baseline, so 18 participants proceeded through the remainder of the visits. Of the 18 healthy participants (25.6 years ± 4.4 years; range (20–38); M/F 10/8), all 18 completed the 20 pulsed conditions, while 17 also completed the continuous LIFU parameter sets. The number of parameter combinations tested per visit ranged between 4 and 17 due to various experimental limitations. While the majority of participants were able to complete all parameter combinations over two visits, four participants required three visits, and two participants required four visits (see Table A1). Causes for requiring extra sessions included greater time required to find the M1 target spot or overheating of the TMS coil, requiring longer breaks between LIFU/TMS delivery in order for the TMS coil to cool down. Additionally, 4 subjects met no-go criteria during at least one parameter set requiring a 10-min wait period (s), extending the duration of their visits and thus limiting the total number of parameters sets that could be collected.",
+   "n_sessions_per_subject": "Of the 23 people enrolled, one participant was lost to follow-up after the first session, and four participants failed to achieve an MEP of at least $7 5 0 \\mu \\mathrm { V }$ at baseline, so 18 participants proceeded through the remainder of the visits. Of the 18 healthy participants (25.6 years ± 4.4 years; range (20–38); M/F 10/8), all 18 completed the 20 pulsed conditions, while 17 also completed the continuous LIFU parameter sets. The number of parameter combinations tested per visit ranged between 4 and 17 due to various experimental limitations. While the majority of participants were able to complete all parameter combinations over two visits, four participants required three visits, and two participants required four visits (see Table A1). Causes for requiring extra sessions included greater time required to find the M1 target spot or overheating of the TMS coil, requiring longer breaks between LIFU/TMS delivery in order for the TMS coil to cool down. Additionally, 4 subjects met no-go criteria during at least one parameter set requiring a 10-min wait period (s), extending the duration of their visits and thus limiting the total number of parameters sets that could be collected.",
+   "randomised": "The order of the 24 parameters was randomized for each participant prior to data collection visits to help account for potential carry-overeffects between conditions. Parameter combinations were tested in sequence with no rest period between tests unless no-go criteria were met. Go/no-go criteria were put in place to help mitigate potential carryover effects between the parameter sets. The go/no-go criteria were as follows: If the MEP amplitudes from the previous parameter set consistently (3 out of the last 5 MEPs) fell below 100 $\\mu \\mathrm { V } ,$ a 10-min wait was implemented before proceeding to the next combination. After 10 min, 20 additional TMS pulses without LIFU at the original final stimulator output were conducted to confirm that the MEP amplitudes had been restored to baseline magnitudes. If the MEP amplitudes were not restored, another 10-min wait was implemented, and the process was repeated until the MEPs were restored or until the allotted time for the visit was exhausted (The subjects, sessions and conditions where go/nogo were used are provided in Table A2).",
+   "sham_type": "While our focus was primarily on comparing different parameter sets, incorporating an inactive sham condition could have strengthened our comparisons. To mitigate the lack of an inactive sham condition, sessions were randomly ordered to reduce potential biases in data collection and analysis.",
+   "exposures[0].fundamental_frequency_khz": "A custom-made single-element focused transducer with a center frequency of 500 kHz, a 30 mm diameter, and a 31 mm focal length was used (Fig. 2 A&B). The LIFU waveforms were generated using a twochannel 2-MHz function generator (4078B, B&K Precision Instruments, CA, USA). Channel 1 was configured to generate a 5Vp-p square wave frequency of 1 kHz waveform in burst mode triggered externally. The wave parameters of duty cycle, duration, and intensity were adjusted externally using a custom MATLAB script and were used to gate channel 2 which was set to generate a 500 kHz sine wave. Based on transducer characterization, the amplitude for channel 2 was set to either 0.21 V peak-to-peak $\\left( \\mathrm { { V p p } } \\right)$ or 0.44 Vpp, which corresponds to intensity parameters of $6 ~ { \\mathrm { W / c m } } ^ { 2 }$ or 24 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (I<sub>SPPA</sub>), respectively (as determined by empirical acoustic testing in free water). For testing continuous parameter settings, only channel 1 was used with a frequency of 500 kHz, an amplitude of either 0.21 Vpp or 0.44 Vpp, and the number of cycles set to 35,000 or 75,000. The number of cycles was determined by matching the total energy delivered between the selected continuous and pulsed conditions. This was based on the total “on-time” for the pulsed conditions of 100msec at 70 % DC and 500msec at 30 % DC, respectively. For both the pulsed and continuous conditions, the output of channel 2 was sent through a 100 W linear RF amplifier (E&I 2100L; Electronics & Innovation) before being sent to the transducer through its corresponding matching network.",
+   "exposures[0].free_field.isppa_w_cm2": "A custom-made single-element focused transducer with a center frequency of 500 kHz, a 30 mm diameter, and a 31 mm focal length was used (Fig. 2 A&B). The LIFU waveforms were generated using a twochannel 2-MHz function generator (4078B, B&K Precision Instruments, CA, USA). Channel 1 was configured to generate a 5Vp-p square wave frequency of 1 kHz waveform in burst mode triggered externally. The wave parameters of duty cycle, duration, and intensity were adjusted externally using a custom MATLAB script and were used to gate channel 2 which was set to generate a 500 kHz sine wave. Based on transducer characterization, the amplitude for channel 2 was set to either 0.21 V peak-to-peak $\\left( \\mathrm { { V p p } } \\right)$ or 0.44 Vpp, which corresponds to intensity parameters of $6 ~ { \\mathrm { W / c m } } ^ { 2 }$ or 24 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (I<sub>SPPA</sub>), respectively (as determined by empirical acoustic testing in free water). For testing continuous parameter settings, only channel 1 was used with a frequency of 500 kHz, an amplitude of either 0.21 Vpp or 0.44 Vpp, and the number of cycles set to 35,000 or 75,000. The number of cycles was determined by matching the total energy delivered between the selected continuous and pulsed conditions. This was based on the total “on-time” for the pulsed conditions of 100msec at 70 % DC and 500msec at 30 % DC, respectively. For both the pulsed and continuous conditions, the output of channel 2 was sent through a 100 W linear RF amplifier (E&I 2100L; Electronics & Innovation) before being sent to the transducer through its corresponding matching network.",
+   "exposures[0].in_situ.pressure_kpa": "Two different intensities were delivered to M1. The in vivo mean ± SD pressure estimated at the M1 for the $6 \\mathrm { w } / \\mathrm { c m } ^ { 2 }$ condition was $1 4 1 . 1 \\pm$ $6 6 . 7 \\ \\mathrm { k P a } ,$ , with a range of 75.9–354.0 kPa. The in vivo mean ± SD pressure estimated at the M1 for the $2 4 \\mathrm { { W / c m ^ { 2 } } }$ condition was $2 7 5 . 3 \\pm$ 130.2 kPa, ranging from 148.0 to 690.6 kPa. A paired t-test revealed a significant difference between the two intensity conditions (t(17) = $9 . 2 8 , \\mathrm { p } < 0 . 0 0 0 1 )$ – validating that the two conditions were separable. The $\\mathrm { m e a n } \\pm \\mathrm { S D }$ estimated skull attenuation was $6 9 . 0 \\pm 1 4 . 7$ % and ranged from 22.3 to 83.3 %. The estimated individual and average intracranial pressures for both intensities are summarized in Table 1.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The parameters tested included two different spatial peak pulse average intensities $( \\mathrm { I } _ { \\mathrm { S P P A } } ; 6 , 2 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , five duty cycles (1, 10, 30, 50, 70 %) and two durations (100, 500 msec), at a constant pulse repetition frequency of 1 kHz, resulting in a total of 20 pulsed LIFU conditions. Two continuous-wave (CW) durations (70 msec and 150 msec) were also tested at 6 and 24 $\\mathrm { W / c m ^ { 2 } \\ I _ { S P P A } } .$ , resulting in a total of 4 CW conditions. Notably, these CW durations were cycle-matched to the pulsed LIFU combinations of 70 % duty cycle for 100 msec (pulsed conditions 5, 15) and 30 % duty cycle for 500 msec (pulsed conditions 8, 18), respectively, to allow for comparison between pulsing schemes. This resulted in a total of 24 LIFU conditions tested. See Fig. 1B.",
+   "exposures[0].timing.duty_cycle_pct": "The parameters tested included two different spatial peak pulse average intensities $( \\mathrm { I } _ { \\mathrm { S P P A } } ; 6 , 2 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , five duty cycles (1, 10, 30, 50, 70 %) and two durations (100, 500 msec), at a constant pulse repetition frequency of 1 kHz, resulting in a total of 20 pulsed LIFU conditions. Two continuous-wave (CW) durations (70 msec and 150 msec) were also tested at 6 and 24 $\\mathrm { W / c m ^ { 2 } \\ I _ { S P P A } } .$ , resulting in a total of 4 CW conditions. Notably, these CW durations were cycle-matched to the pulsed LIFU combinations of 70 % duty cycle for 100 msec (pulsed conditions 5, 15) and 30 % duty cycle for 500 msec (pulsed conditions 8, 18), respectively, to allow for comparison between pulsing schemes. This resulted in a total of 24 LIFU conditions tested. See Fig. 1B.",
+   "exposures[0].timing.sonication_duration_s": "The parameters tested included two different spatial peak pulse average intensities $( \\mathrm { I } _ { \\mathrm { S P P A } } ; 6 , 2 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ , five duty cycles (1, 10, 30, 50, 70 %) and two durations (100, 500 msec), at a constant pulse repetition frequency of 1 kHz, resulting in a total of 20 pulsed LIFU conditions. Two continuous-wave (CW) durations (70 msec and 150 msec) were also tested at 6 and 24 $\\mathrm { W / c m ^ { 2 } \\ I _ { S P P A } } .$ , resulting in a total of 4 CW conditions. Notably, these CW durations were cycle-matched to the pulsed LIFU combinations of 70 % duty cycle for 100 msec (pulsed conditions 5, 15) and 30 % duty cycle for 500 msec (pulsed conditions 8, 18), respectively, to allow for comparison between pulsing schemes. This resulted in a total of 24 LIFU conditions tested. See Fig. 1B.",
+   "safety_notes": "A review of symptoms questionnaire [14] queried the participants on the presence of various symptoms and their severity (absent/mild/moderate/severe) scored on a scale of 1–4. This questionnaire was collected at the beginning of each visit which had LIFU/TMS application and 30 min after TMS/LIFU application to indicate any changes of from the intervention. Fig. 7 depicts all sessions in which participants received TMS or LIFU/TMS, even if they had a failed session (Table A3). If there was no change, or improvement in the participant’s symptoms, the symptoms were represented as absent. There were a few sessions in which participants had mild neck pain, sleepiness, headache, and scalp sensations. Of the 16 participants who responded to the one-month follow-up questionnaire, none of them reported any persisting or new symptoms.",
+   "exposures[0].free_field.pressure_kpa": "Simulations applied the parameter set yielding the highest potential thermal load and thus a conservative estimate of heating using a 70 % duty cycle (DC), 500 msec pulse duration, 24 $\\mathrm { { W / c m ^ { 2 } } }$ I<sub>SPPA</sub> (888 kPa), and 10 Hz PRF, with a 10 s ISI for 20 stimulations."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "23 participants were enrolled; 4 failed baseline MEP threshold and 1 was lost to follow-up before LIFU testing, leaving 18 who actually received LIFU; 18 recorded as the number exposed to ultrasound."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "List combines duty cycle values from the pulsed sweep (1-70%) with the continuous-wave conditions represented as 100% duty cycle; these were tested as a distinct pulsed-vs-continuous comparison at the same target/frequency."
+   },
+   {
+    "field": "exposures[0].in_situ.reported_as",
+    "reason": "Table 1 gives per-participant values with a mean +/- SD and range across the 18 subjects; mean values used per instructions."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].timing.duty_cycle_pct": "both_defensible"
+  }
+ }
+}

@@ -1,0 +1,348 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025yu",
+ "doi": "10.1109/tbme.2025.3554935",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "12-channel scalp EEG source imaging; 96-channel intracranial 'Utah' array LFP recordings in area V4; behavioural water-intake monitoring for safety",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "tFUS at PRF 3 kHz / 60% duty cycle was termed excitatory, increasing LFP amplitude and alpha/gamma power in V4; tFUS at PRF 40 Hz / 8% duty cycle was termed inhibitory, producing decreased LFP amplitude, with effect magnitude depending on sub-target (pulvinar vs thalamic reticular nucleus).",
+ "adverse_events": "none_observed",
+ "safety_notes": "Temperature at the sonication site increased by less than 0.01°C. The subject's behavior was assessed for ten days before and after tFUS sessions and showed no signs of adverse effects; average water intake during task paradigms did not change significantly.",
+ "exposures": [
+  {
+   "label": "tFUS to frontal eye field (FEF), excitatory parameters, no concurrent visual stimulus",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "frontal eye field (FEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H275 (128-element random array, driven by a Verasonics Vantage 256 system)"
+   },
+   "fundamental_frequency_khz": 700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 950.9,
+    "isppa_w_cm2": 6.99,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 3000,
+    "duty_cycle_pct": 60,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "We recorded the brain activations in response to the excitatory tFUS stimulation (PRF: 3 kHz, burst duty cycle: 60%) targeted at the FEF of the monkey brain without the concurrent presentation of visual stimuli. A butterfly plot illustrating the 12-channel scalp EEG signals averaged from 120 trials with only ultrasound stimulations (sonication duration: 400 ms), compared against 120 trials with no tFUS or visual stimulus."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "tFUS to thalamus (pulvinar; also steered toward deep pulvinar and thalamic reticular nucleus), excitatory and inhibitory parameters, with and without concurrent visual stimulus",
+   "target": {
+    "terms": [
+     "pulvinar",
+     "reticular_thalamic_nucleus"
+    ],
+    "label": "pulvinar of the thalamus (and, with axial steering, deep pulvinar / thalamic reticular nucleus, TRN)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H275 (128-element random array, driven by a Verasonics Vantage 256 system)"
+   },
+   "fundamental_frequency_khz": 700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 950.9,
+    "isppa_w_cm2": 6.99,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     3000,
+     40
+    ],
+    "duty_cycle_pct": [
+     60,
+     8
+    ],
+    "sonication_duration_s": 0.4,
+    "protocol_description": "The H275 transducer was driven by a Vantage 256 research ultrasound system to generate specific ultrasound pulse repetition frequency (PRF, 3 kHz or 40 Hz) and burst duty cycle (DC, 60% or 8%). Without visual stimuli, tFUS (PRF 3 kHz, DC 60%) was steered onto the pulvinar (120 of 240 randomized trials). With concurrent visual stimuli, the focus was further steered axially by +2.4 mm (deep pulvinar) or -2.4 mm (toward the thalamic reticular nucleus, TRN) and PRF was tuned to 3 kHz (excitatory) or 40 Hz (inhibitory), 120 trials per condition."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc. (Bothell, Washington, USA).",
+   "exposures[1].fundamental_frequency_khz": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc. (Bothell, Washington, USA).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To test the feasibility of using scalp EEG source imaging for mapping and localizing the in vivo brain responses to tFUS stimulation, we recorded the brain activations in response to the excitatory tFUS stimulation (PRF: 3 kHz, burst duty cycle: 60%) targeted at the FEF of the monkey brain without the concurrent presentation of visual stimuli following the protocol described in our previous work on the monkey subject [22].",
+   "exposures[0].timing.duty_cycle_pct": "To test the feasibility of using scalp EEG source imaging for mapping and localizing the in vivo brain responses to tFUS stimulation, we recorded the brain activations in response to the excitatory tFUS stimulation (PRF: 3 kHz, burst duty cycle: 60%) targeted at the FEF of the monkey brain without the concurrent presentation of visual stimuli following the protocol described in our previous work on the monkey subject [22].",
+   "exposures[0].timing.pulse_duration_ms": "The transcranial ultrasound temporal profiles employed a pulse repetition frequency (PRF) of 3 kHz with the burst duty cycle (DC) of 60%. The tone burst duration (TBD) was set at 0.2 ms.",
+   "exposures[0].timing.sonication_duration_s": "Fig. 2(a) presents a butterfly plot of the 12-channel scalp EEG signals averaged from 120 trials only with tFUS stimulations (sonication duration: 400 ms).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The H275 transducer was driven by a Vantage 256 research ultrasound system (Verasonics, Kirkland, WA, USA) to generate specific ultrasound pulse repetition frequency (PRF, 3 kHz or 40 Hz) and burst duty cycle (DC, 60% or 8%) (Fig. 1(c)).",
+   "exposures[1].timing.duty_cycle_pct": "The H275 transducer was driven by a Vantage 256 research ultrasound system (Verasonics, Kirkland, WA, USA) to generate specific ultrasound pulse repetition frequency (PRF, 3 kHz or 40 Hz) and burst duty cycle (DC, 60% or 8%) (Fig. 1(c)).",
+   "exposures[1].timing.sonication_duration_s": "Fig. 3(a) presents a butterfly plot of the 12-channel scalp EEG signals averaged from 120 trials with only tFUS stimulations (sonication duration: 400 ms).",
+   "exposures[0].in_situ.pressure_kpa": "The transcranial spatial peak pressure magnitude was measured as 950.9 kPa (spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } }$ $6 . 9 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ when the ultrasound pulse duration is 200 µs) with an axial focal length of 13.9 mm ( 6 dB contour, Fig. 1(d)) and a lateral focal width of 2.4 mm ( 6 dB contour, Fig. 1(e)).",
+   "exposures[0].in_situ.isppa_w_cm2": "The transcranial spatial peak pressure magnitude was measured as 950.9 kPa (spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } }$ $6 . 9 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ when the ultrasound pulse duration is 200 µs) with an axial focal length of 13.9 mm ( 6 dB contour, Fig. 1(d)) and a lateral focal width of 2.4 mm ( 6 dB contour, Fig. 1(e)).",
+   "exposures[1].in_situ.pressure_kpa": "The transcranial spatial peak pressure magnitude was measured as 950.9 kPa (spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } }$ $6 . 9 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ when the ultrasound pulse duration is 200 µs) with an axial focal length of 13.9 mm ( 6 dB contour, Fig. 1(d)) and a lateral focal width of 2.4 mm ( 6 dB contour, Fig. 1(e)).",
+   "exposures[1].in_situ.isppa_w_cm2": "The transcranial spatial peak pressure magnitude was measured as 950.9 kPa (spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } }$ $6 . 9 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ when the ultrasound pulse duration is 200 µs) with an axial focal length of 13.9 mm ( 6 dB contour, Fig. 1(d)) and a lateral focal width of 2.4 mm ( 6 dB contour, Fig. 1(e)).",
+   "n_subjects": "We conducted recordings using an electrode array implanted in the visual cortex of a rhesus macaque (Macaca mulatta), simultaneously applying transcranial focused ultrasound stimulation (tFUS).",
+   "exposures[0].device.manufacturer": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc.",
+   "exposures[0].device.model": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc.",
+   "exposures[1].device.manufacturer": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc.",
+   "exposures[1].device.model": "We employed a custom 128-element random array ultrasound transducer (H275) operating at a fundamental frequency of 700 kHz and transmitted ultrasound from a big acoustic aperture (diameter: 60 mm, F-number: 0.58), manufactured by Sonic Concepts, Inc.",
+   "exposures[1].timing.pulse_duration_ms": "The tone burst duration (TBD) was set at 0.2 ms."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "The 950.9 kPa / 6.99 W/cm2 value is a system characterization measured through an ex vivo monkey skull sample in a water tank (not the live subject's own skull), and is presented once in Methods as a general transducer/system output; applied to both exposures (FEF and thalamus) since the paper does not give separate per-target values."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "Tone burst duration (0.2 ms) is stated only for the PRF 3 kHz / DC 60% configuration (Fig. 1c caption); no pulse duration is stated for the PRF 40 Hz / DC 8% configuration, so left not_reported for this exposure which uses both configurations."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "Pairing of PRF with duty cycle (3 kHz with 60%, 40 Hz with 8%) is inferred from the order given in Methods ('PRF, 3 kHz or 40 Hz) and burst duty cycle (DC, 60% or 8%)') and confirmed by Results text describing 'excitatory 3 kHz' and 'inhibitory 40 Hz' PRF conditions, but the DC value paired with 40 Hz is not repeated in the same sentence as the PRF value in most passages."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "A separate negative-control experiment stimulated the insular cortex (no substantial V4 connections) at increased in-situ pressure (1.14 MPa) to rule out an auditory-pathway confound; this control condition is not treated as a separate exposure per the sham/control exclusion rule."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper describes multiple experiment sets (FEF-only, thalamus-only, thalamus+visual at two steered locations) but does not state a total count of distinct sessions for this single animal."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].timing.pulse_duration_ms": "second"
+  }
+ }
+}

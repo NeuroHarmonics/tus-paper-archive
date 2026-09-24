@@ -1,0 +1,211 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023shamlioghli",
+ "doi": "10.1016/j.brs.2023.07.056",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "motor evoked potential (MEP) amplitude; short-interval intracortical inhibition (SICI); intracortical facilitation (ICF); resting motor threshold (RMT); SI1mV",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "In the placebo condition, tbTUS increased MEP amplitude relative to pre-tbTUS baseline for up to 60 min post-stimulation; this facilitatory effect was reduced/eliminated by carbamazepine, nimodipine, and dextromethorphan, and by lorazepam at 30 and 60 (but not 5) minutes post-tbTUS.",
+ "adverse_events": "observed",
+ "safety_notes": "The same subject also reported mild itchiness for NDP, CBZ and DXT, particularly over the scalp area where the TUS transducer was placed. There were no unexpected side effects when administering TUS and drugs together.",
+ "exposures": [
+  {
+   "label": "theta-burst TUS (tbTUS) to left M1",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left M1 (FDI hotspot)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "custom 2-channel annular array transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 11.73,
+    "ispta_w_cm2": 1.17
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.93,
+    "ispta_w_cm2": 0.29
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "As with Zeng et al. [7], an 80s sonication with tone burst duration of 20 ms, 5Hz PRF, 10% duty cycle and 20W intensity was delivered. Sonication depth was set to 30 mm to approximate the scalp-to-cortex distance of the M1. One tbTUS delivery occurred per visit, after a 2.5 h drug/placebo wait period, at each of five study visits."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Sixteen right-handed healthy adult subjects (4 females) participated in the study, which consisted of five separate visits. Two male subjects dropped out during or after the first visit due to disregarding researcher instructions. The remaining 14 subjects had a mean age ±SD of 30.4 ± 6.3 (range 23–41) years.",
+   "n_sessions_per_subject": "Sixteen right-handed healthy adult subjects (4 females) participated in the study, which consisted of five separate visits.",
+   "randomised": "The study followed a within-subjects randomized, double-blind, placebo-controlled cross-over design. Both the subjects and the experimenter were blinded to the study drug assignment.",
+   "blinding": "The study followed a within-subjects randomized, double-blind, placebo-controlled cross-over design. Both the subjects and the experimenter were blinded to the study drug assignment.",
+   "exposures[0].fundamental_frequency_khz": "A 2-channel annular array custom ultrasound transducer (Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 500 KHz was used.",
+   "exposures[0].free_field.isppa_w_cm2": "The free water values for the depth of 30 mm were 11.73 W/cm2 for spatial peak-pulse-average intensity (ISPPA), and 1.17 $\\mathrm { { W / c m ^ { 2 } } }$ for spatial peak-time average intensity (ISPTA).",
+   "exposures[0].free_field.ispta_w_cm2": "The free water values for the depth of 30 mm were 11.73 W/cm2 for spatial peak-pulse-average intensity (ISPPA), and 1.17 $\\mathrm { { W / c m ^ { 2 } } }$ for spatial peak-time average intensity (ISPTA).",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimation of the ISPPA and ISPTA at the brain target (30 mm) were 2.93 $\\mathrm { { W / c m ^ { 2 } } }$ and $0 . 2 9 \\mathrm { \\ : W / c m ^ { 2 } }$ respectively, based on a 75% attenuation due to skull density [25], both of which fall within United States Food and Drug Administration safety standards.",
+   "exposures[0].in_situ.ispta_w_cm2": "The estimation of the ISPPA and ISPTA at the brain target (30 mm) were 2.93 $\\mathrm { { W / c m ^ { 2 } } }$ and $0 . 2 9 \\mathrm { \\ : W / c m ^ { 2 } }$ respectively, based on a 75% attenuation due to skull density [25], both of which fall within United States Food and Drug Administration safety standards.",
+   "exposures[0].timing.pulse_duration_ms": "As with Zeng et al. [7], an 80s sonication with tone burst duration of 20 ms, 5Hz PRF, 10% duty cycle and 20W intensity was delivered.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As with Zeng et al. [7], an 80s sonication with tone burst duration of 20 ms, 5Hz PRF, 10% duty cycle and 20W intensity was delivered.",
+   "exposures[0].timing.duty_cycle_pct": "As with Zeng et al. [7], an 80s sonication with tone burst duration of 20 ms, 5Hz PRF, 10% duty cycle and 20W intensity was delivered.",
+   "exposures[0].timing.sonication_duration_s": "As with Zeng et al. [7], an 80s sonication with tone burst duration of 20 ms, 5Hz PRF, 10% duty cycle and 20W intensity was delivered.",
+   "exposures[0].device.manufacturer": "A 2-channel annular array custom ultrasound transducer (Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 500 KHz was used.",
+   "exposures[0].device.model": "A 2-channel annular array custom ultrasound transducer (Sonic Concepts Inc., Bothell, Washington) with fundamental frequency of 500 KHz was used."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "16 subjects enrolled; 2 dropped out after visit 1 and are excluded from most analyses (14 analysed for most drugs, 13 for LRZ/DXT). n_subjects reported here is the enrolled total."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper calls this a 'tone burst duration' of 20 ms within an 80 s train; consistent with duty cycle (10%) / PRF (5 Hz) = 20 ms, so no arithmetic conflict, but confirming burst-rule resolution here for transparency."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Study tested drug x tbTUS only; no sham/control tbTUS condition was included (explicitly noted as a limitation)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

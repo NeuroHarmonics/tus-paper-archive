@@ -1,0 +1,309 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021kima",
+ "doi": "10.1016/j.brs.2021.01.002",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "wild-type mice (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 38,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "EMG from forepaw to confirm motor response; c-Fos immunohistochemistry to quantify neural activation",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Dual-crossed transducer stimulation of motor cortex evoked forepaw movement, and stimulation of the habenula significantly increased c-Fos-positive neurons versus off-target and no-stimulation controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Motor cortex stimulation (dual-crossed transducer)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Hagisonic Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.0,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.13,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/cm2 (~130 mW/cm2 accounting for skull attenuation effects). A separate beam-profile characterization measured a maximum intensity of 1189 mW/cm2 (~155 mW/cm2 accounting for skull attenuation), which is not necessarily the same measurement as the stated in vivo exposure."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.0
+   }
+  },
+  {
+   "label": "Habenula stimulation (dual-crossed transducer)",
+   "target": {
+    "terms": [
+     "habenula"
+    ],
+    "label": "habenula"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Hagisonic Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.0,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.13,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Using the same protocol as the cortical stimulations, neuromodulation of the habenula was conducted: center frequency of 5 MHz, duration of 0.4 s, PRF of 500 Hz, duty cycle of 50%, and intensity of 1 W/cm2 (~130 mW/cm2 accounting for skull attenuation effects)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 38 wild-type mice (C57BL/6J, 6e8 weeks old, male) were used. (For more details on surgical procedures, see Supplementary Method S1.)",
+   "exposures[0].target.label": "For a single target region in the mouse motor cortex (ML: 0.7, AP: 0.5, DV: 1), we measured the success rate of the dual-crossed transducer system at various intensities (n 4) (Supplementary Fig. S6).",
+   "exposures[1].target.label": "Then, the habenula (ML: 0.2, AP: 2.1, DV: 2.4), an important deep-brain structure that is linked to depression disorder, was targeted with our dual-crossed transducer system (n 10) [42].",
+   "exposures[0].device.manufacturer": "The dual-crossed transducer system consisted of two commercially available transducers (5 MHz, diameter 19.05 mm, focal length (F) 38.1 mm, Hagisonic Inc., Korea) and a custom-designed fixture that held the two transducers in place at a fixed angle (Supplementary Fig. S3A).",
+   "exposures[1].device.manufacturer": "The dual-crossed transducer system consisted of two commercially available transducers (5 MHz, diameter 19.05 mm, focal length (F) 38.1 mm, Hagisonic Inc., Korea) and a custom-designed fixture that held the two transducers in place at a fixed angle (Supplementary Fig. S3A).",
+   "exposures[0].fundamental_frequency_khz": "The dual-crossed transducer system consisted of two commercially available transducers (5 MHz, diameter 19.05 mm, focal length (F) 38.1 mm, Hagisonic Inc., Korea) and a custom-designed fixture that held the two transducers in place at a fixed angle (Supplementary Fig. S3A).",
+   "exposures[1].fundamental_frequency_khz": "The dual-crossed transducer system consisted of two commercially available transducers (5 MHz, diameter 19.05 mm, focal length (F) 38.1 mm, Hagisonic Inc., Korea) and a custom-designed fixture that held the two transducers in place at a fixed angle (Supplementary Fig. S3A).",
+   "exposures[0].free_field.isppa_w_cm2": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[1].free_field.isppa_w_cm2": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[0].in_situ.isppa_w_cm2": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[1].in_situ.isppa_w_cm2": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[1].timing.duty_cycle_pct": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[0].timing.sonication_duration_s": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31].",
+   "exposures[1].timing.sonication_duration_s": "The stimulation parameters were center frequency of 5 MHz, duration of 0.4 s, pulse repetition frequency (PRF) of 500 Hz, duty cycle of 50%, and intensity of 1 W/ cm2 (~130 mW/cm2 accounting for skull attenuation effects) (Supplementary Fig. S3B) [31]."
+  },
+  "flags": [
+   {
+    "field": "sham_type",
+    "reason": "Controls for habenula c-Fos comparison were off-target stimulation (active_control_site) and a 'no stimulation' arm that does not map cleanly to a vocabulary sham type; recorded as 'other'."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Paper states 'intensity' without specifying spatial-peak pulse-average vs temporal-average; recorded as Isppa by convention. A separate beam-profile measurement elsewhere in the paper reports 1189 mW/cm2 free field / 155 mW/cm2 in situ, which may or may not be the same quantity as the 1 W/cm2 stated stimulation parameter."
+   },
+   {
+    "field": "timing.pulse_duration_ms",
+    "reason": "Only PRF (500 Hz) and duty cycle (50%) are given; pulse duration would require arithmetic and is not stated directly, so left not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "first",
+   "exposures[0].in_situ.isppa_w_cm2": "first",
+   "exposures[1].free_field.isppa_w_cm2": "first",
+   "exposures[1].in_situ.isppa_w_cm2": "first"
+  }
+ }
+}

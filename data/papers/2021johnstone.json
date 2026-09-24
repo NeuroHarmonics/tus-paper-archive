@@ -1,0 +1,225 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021johnstone",
+ "doi": "10.1016/j.brs.2021.08.015",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "ramped_pulses",
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Trial-by-trial perceptual report (mouse click) of whether the TUS stimulation was heard",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Study assessed audibility/detectability of TUS pulses, not neuromodulatory brain effects. Ramping (>=1 ms) and audio masking each reduced perception in some participants but the effects were not additive; unramped pulsed stimulation was audible to almost all participants.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS over the inion (Experiments I-IV, pooled)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "positioned over the inion"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115-2AA"
+   },
+   "fundamental_frequency_khz": 270,
+   "free_field": {
+    "pressure_kpa": 700,
+    "isppa_w_cm2": 16,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 230,
+    "isppa_w_cm2": 1.7,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     500,
+     250,
+     125
+    ],
+    "duty_cycle_pct": [
+     50
+    ],
+    "sonication_duration_s": [
+     0.3,
+     0.15
+    ],
+    "protocol_description": "Four experiments manipulated pulse ramping, PRF and continuous-vs-pulsed stimulation to test audibility. Expt I (n=7): 300 ms stimulus, 50% duty cycle, 500 Hz or 250 Hz PRF, with 0, 0.5 or 1 ms ramps applied to the start/end of each pulse (pulse on-time adjusted to keep time-averaged intensity constant). Expt II (n=7): as Expt I but 125 Hz PRF with 0, 1 or 2 ms ramps. Expt III (n=6): continuous 150 ms stimulation with or without a 20 ms ramp. Expt IV (n=6): active and sham pulses masked with an intermittent 1 s square-wave audio mask matching the PRF, played over headphones."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "16 healthy participants (5 female, mean age 32, range 25e46) with normal hearing, took part in one or more experiments across multiple days.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven at 270kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700kPa (pulse average intensity of 16 W/cm2) and a focal distance of 43mm.",
+   "exposures[0].free_field.pressure_kpa": "The transducer was driven at 270kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700kPa (pulse average intensity of 16 W/cm2) and a focal distance of 43mm.",
+   "exposures[0].free_field.isppa_w_cm2": "The transducer was driven at 270kHz by a 2-channel TPO (Sonic Concepts) with the output power and element phase adjusted to give a focal pressure in water of 700kPa (pulse average intensity of 16 W/cm2) and a focal distance of 43mm.",
+   "exposures[0].in_situ.pressure_kpa": "The average insertion loss of these driving parameters due to the skull was experimentally measured to be 9.8dB [8], giving an approximate focal pressure and pulse average intensity in the brain of 230kPa and 1.7 W/cm2.",
+   "exposures[0].in_situ.isppa_w_cm2": "The average insertion loss of these driving parameters due to the skull was experimentally measured to be 9.8dB [8], giving an approximate focal pressure and pulse average intensity in the brain of 230kPa and 1.7 W/cm2.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In experiment I, participants (n 7) experienced active stimulation conditions with a 300 ms stimulus, at 50% duty cycle, with either 500Hz (as per [9]) or 250Hz PRF.",
+   "exposures[0].timing.duty_cycle_pct": "In experiment I, participants (n 7) experienced active stimulation conditions with a 300 ms stimulus, at 50% duty cycle, with either 500Hz (as per [9]) or 250Hz PRF.",
+   "exposures[0].timing.sonication_duration_s": "In experiment I, participants (n 7) experienced active stimulation conditions with a 300 ms stimulus, at 50% duty cycle, with either 500Hz (as per [9]) or 250Hz PRF.",
+   "exposures[0].device.manufacturer": "TUS was delivered using a 2-element spherically focused annular array transducer (H115-2AA, Sonic Concepts) with a nominal outer aperture diameter and radius of curvature of 64mm.",
+   "exposures[0].device.model": "TUS was delivered using a 2-element spherically focused annular array transducer (H115-2AA, Sonic Concepts) with a nominal outer aperture diameter and radius of curvature of 64mm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target region is not explicitly named in this short communication; inferred as primary visual cortex from the inion-based transducer positioning and the cited companion paper (Gimeno et al., ref [8]) describing 270 kHz stimulation of primary visual cortex by the same group."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only PRF and duty cycle are stated for the pulsed experiments; individual pulse duration is not stated and was not computed (per extraction rule against deriving one timing number from another)."
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Four distinct experiments (I-IV) with different PRF, ramp duration and waveform were combined into one exposure (same target/frequency) with list-valued timing fields, per the target-times-frequency exposure rule; see protocol_description for per-experiment detail."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Paper states stimulation was 'randomised and double-blind' with sham trials but does not describe how the sham was generated, beyond thanking Sonic Concepts for 'technical modifications to the TPO that allowed ramping and sham conditions'."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Participants reported audition 'on every trial using a mouse click'; exact timing relative to stimulus onset/offset is not detailed, classified as online."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Participants 'took part in one or more experiments across multiple days' but the paper does not state a specific number of sessions per subject."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Short communication (methodological/auditory-confound study), not a neuromodulation efficacy study; direction_of_effect is therefore not_assessed. Free-field pressure/intensity (700 kPa, 16 W/cm2) and derated in-brain estimates (230 kPa, 1.7 W/cm2, via 9.8 dB insertion loss) are constant across all four experiments; only timing parameters varied by experiment.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

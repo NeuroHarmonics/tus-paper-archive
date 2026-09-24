@@ -1,0 +1,192 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017lee",
+ "doi": "10.1371/journal.pone.0178476",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Manual finger-tapping response (touch sensor) reporting the side of the elicited tactile sensation, used to decode CBI/BBI performance",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS stimulation of the hand primary somatosensory cortex (SI) reliably elicited tactile sensation in the contralateral hand, reported via finger tapping with 98.0 ± 3.1% CBI accuracy across subjects.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Participants stayed for 1 h post-sonication for assessment; no abnormal findings were revealed across all subjects. A two-month follow-up telephone interview found none reported any issues. The sonication procedure did not show any adverse effects such as discomforts or mental changes across the subjects.",
+ "exposures": [
+  {
+   "label": "FUS stimulation of left/right hand primary somatosensory cortex (SI) for CBI",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "left/right hand somatosensory area (SI); local maximum of the activated area posterior to the central sulcus within the postcentral gyrus"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran, PA",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 210,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 35.0,
+    "ispta_w_cm2": 17.5
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     3.5,
+     4.4
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "FUS actuations were triggered by the transmitted signal from the BCI segment (SD = 500 ms; ISI, inter-stimulation-interval, = 7 s; TBD = 1 ms; PRF = 500 Hz; Isppa = 35.0 W/cm2, per Fig 3B). Prior to the BBI session, FUS sonication (< 50 times) was administered to each side of the SI to confirm elicitation of tactile sensation before proceeding; subjects reported hand tactile sensation by pressing thumb against index finger."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Six healthy volunteers (age = 28.2 ± 9.5; mean ± s.d., range 23–45, one female, named as ‘CB1’ through ‘CB6’ herein), free from clinical history of central/peripheral nerve diseases, participated in the FUS-based CBI segment of the experiment, and gave written consent prior to the study participation.",
+   "n_sessions_per_subject": "Three separate sessions of BBI were conducted while each consisted of 20 task trials.",
+   "exposures[0].fundamental_frequency_khz": "Two air-backed, single-element 210 kHz FUS transducers (Ultran, PA; outer diameter of 30 mm and focal distance of 25 mm) were used to deliver the acoustic energy to the left/right hand SI of the brain (Fig 3A).",
+   "exposures[0].free_field.isppa_w_cm2": "The incident intensity at the FUS focus had a spatial-peak pulse-average AI $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ of 35 W/ cm<sup>2</sup>, resulting in a spatial peak temporal-average AI $\\left( \\mathrm { { I } _ { \\mathrm { { s p t a } } } } \\right)$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The incident intensity at the FUS focus had a spatial-peak pulse-average AI $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ of 35 W/ cm<sup>2</sup>, resulting in a spatial peak temporal-average AI $\\left( \\mathrm { { I } _ { \\mathrm { { s p t a } } } } \\right)$ of 17.5 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on the 50% duty cycle and the rate of acoustic transmission (20–25%) to the intended targets of the SI [16], the energy level delivered to the targeted brain areas was estimated to be $3 . 5 { - } 4 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } }$ .",
+   "exposures[0].timing.pulse_duration_ms": "For the FUS stimulation of the SI, we adapted the following sonication parameters that were used in our previous studies of the brain stimulation in human SI [16]: a tone-burst-duration (TBD) of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e., duty cycle of 50%), and a sonication duration (SD) of 500 ms (Fig 3B).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For the FUS stimulation of the SI, we adapted the following sonication parameters that were used in our previous studies of the brain stimulation in human SI [16]: a tone-burst-duration (TBD) of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e., duty cycle of 50%), and a sonication duration (SD) of 500 ms (Fig 3B).",
+   "exposures[0].timing.duty_cycle_pct": "For the FUS stimulation of the SI, we adapted the following sonication parameters that were used in our previous studies of the brain stimulation in human SI [16]: a tone-burst-duration (TBD) of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e., duty cycle of 50%), and a sonication duration (SD) of 500 ms (Fig 3B).",
+   "exposures[0].timing.sonication_duration_s": "For the FUS stimulation of the SI, we adapted the following sonication parameters that were used in our previous studies of the brain stimulation in human SI [16]: a tone-burst-duration (TBD) of 1 ms with a pulse repetition frequency (PRF) of 500 Hz (i.e., duty cycle of 50%), and a sonication duration (SD) of 500 ms (Fig 3B)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.reported_as",
+    "reason": "The in-situ Ispta range (3.5-4.4 W/cm2) reflects uncertainty in the assumed acoustic transmission rate (20-25%) through the skull, not variability across subjects; 'mean_or_range_across_subjects' is used as the closest available vocabulary term."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper discusses (in Discussion) that 2 of 6 subjects reported hearing a 'beeping' sound on the side opposite the sonication, and speculates this may relate to higher Isppa than prior studies, but no explicit auditory-masking or other control procedure is described as having been implemented."
+   },
+   {
+    "field": "randomised",
+    "reason": "This is a single-arm CBI demonstration (no sham/control condition or randomised group allocation); only the left/right target order in the sender's BCI task was randomised."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

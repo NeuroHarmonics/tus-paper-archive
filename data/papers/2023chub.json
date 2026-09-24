@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023chub",
+ "doi": "10.3390/ijms24032578",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Ninety-four male Sprague-Dawley rats (350–400 g; BioLASCO, Taipei, Taiwan) were used in the experiments.",
+   "randomised": "All animals were randomly assigned into groups for testing the effects of tFUS.",
+   "anaesthesia": "All animals were initially anesthetized with Zoletil (65 mg/kg; Vibac, Carros, France) and Rompun (10 mg/kg; Bayer, Leverkusen, Germany) and then mounted on a stereotaxic apparatus (Stoelting, Wood Dale, IL, USA).",
+   "safety_notes": "Quantification analysis demonstrated no significant change in GFAP immunoreactivity after $\\mathrm { I } _ { \\mathrm { S P T A } } = 5 0 \\mathrm { m W } / \\mathrm { { c m } } ^ { 2 }$ sonication compared with group 1 treatment (sham; $\\mathfrak { t } = 1 . 0 6 6 , p = 0 . 3 2 8 )$ (Figure 4B).",
+   "exposures[0].fundamental_frequency_khz": "A self-manufactured FUS transducer (fundamental frequency = 0.7 MHz) was used.",
+   "exposures[0].timing.duty_cycle_pct": "The duty cycle was set at 8% (pulse repetition frequency = 100 Hz; burst length = 0.8 ms), which produced weak exposure intensities (I<sub>SPTA</sub> from 0.014 mW/cm<sup>2</sup> to $1 2 . 1 5 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The duty cycle was set at 8% (pulse repetition frequency = 100 Hz; burst length = 0.8 ms), which produced weak exposure intensities (I<sub>SPTA</sub> from 0.014 mW/cm<sup>2</sup> to $1 2 . 1 5 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].timing.pulse_duration_ms": "The duty cycle was set at 8% (pulse repetition frequency = 100 Hz; burst length = 0.8 ms), which produced weak exposure intensities (I<sub>SPTA</sub> from 0.014 mW/cm<sup>2</sup> to $1 2 . 1 5 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].timing.sonication_duration_s": "The total sonication duration was 5 min.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "tFUS exposure level was set from 0 mechanical index (MI) to 0.08 MI in groups 2 to 5. The duty cycle was set at 8% (pulse repetition frequency = 100 Hz; burst length = 0.8 ms), which produced weak exposure intensities (I<sub>SPTA</sub> from 0.014 mW/cm<sup>2</sup> to $1 2 . 1 5 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The paper states a single total (94 rats) for the whole study; this includes the MEP dose-response groups (n=15/group per Fig. S1), the ISPTA=50 mW/cm2 GFAP safety cohort, and animals used only as a source of embryos for the in vitro primary-neuron experiments, which were not themselves exposed to tFUS. The breakdown exposed-vs-not is not fully reconciled in the main text."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper argues (Discussion) that using pulsed mode and low PRF 'eliminated' the confounding auditory effect, but this is a post-hoc argument, not a masking/behavioural auditory control condition actually implemented; classified as other."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Domain (free-field vs in-brain) of the stated ISPTA values is not specified by the paper; recorded as unspecified_domain. Values converted from stated mW/cm2 to W/cm2."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 94,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular",
+  "cellular_imaging"
+ ],
+ "readout_other": "TMS-evoked motor-evoked potentials (MEPs); GFAP, c-Fos and GAD-65 immunostaining; Fluo-4 calcium imaging in primary cortical neurons",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Weak tFUS (ISPTA 0.338-12.15 mW/cm2) decreased MEP amplitude for up to 30 min in a dose-dependent manner; the lowest intensity tested (0.014 mW/cm2) had no effect. Decreased c-Fos and increased GAD-65 expression indicated suppression of cortical activity and increased inhibitory interneuron activity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "GFAP immunohistochemistry showed no significant astrogliosis or difference from sham after ISPTA=50 mW/cm2 sonication, suggesting the tFUS intensities used did not damage brain tissue.",
+ "exposures": [
+  {
+   "label": "Weak tFUS intensity sweep to left primary motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     1.4e-05,
+     0.000338,
+     0.003038,
+     0.01215,
+     0.05
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.8,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 8,
+    "sonication_duration_s": 300,
+    "protocol_description": "MEPs were recorded for 10 min before tFUS as baseline, tFUS was delivered for a total sonication duration of 5 min at one of five mechanical-index/ISPTA levels (group 1 sham; groups 2-5: MI 0.003-0.081, ISPTA 0.014-12.15 mW/cm2), and MEP recording continued for 30 min afterward to assess post-tFUS effects. A separate safety cohort received ISPTA=50 mW/cm2 tFUS for histological (GFAP) analysis."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 8.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ]
+}

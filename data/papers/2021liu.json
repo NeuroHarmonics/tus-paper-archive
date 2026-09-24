@@ -1,0 +1,227 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021liu",
+ "doi": "10.1016/j.ultrasmedbio.2021.01.025",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "somatosensory evoked potentials (SEP) via 64-channel EEG and electrophysiological source imaging (ESI); tactile vibration frequency discrimination task (percentage of responses correct, PRC)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS at UPRF 300 Hz increased early SEP components (N30, P100-N170) and somatosensory source profile amplitude at S1, and improved vibration frequency discrimination accuracy (PRC), interpreted as excitatory neuromodulation rather than the inhibitory effect reported by prior work.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to primary finger somatosensory cortex, UPRF 300 Hz",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary finger somatosensory cortical area (S1)"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Blatek Industries, Inc.",
+    "model": "AT31529"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 780.4,
+    "isppa_w_cm2": 5.64,
+    "ispta_w_cm2": 0.33828
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 286.0,
+    "isppa_w_cm2": 1.1,
+    "ispta_w_cm2": 0.06713
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 300,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Pulsed US (100 cycles per pulse at 0.5 MHz fundamental frequency) was delivered to the finger representation area of S1 at 100 ms before the onset of each vibration stimulus, with each sonication lasting 500 ms at a UPRF of 300 Hz. A sham US session used active acoustic transmission but with the transducer physically decoupled from the scalp by 4-6 cm, serving as both sham and auditory/EMI confound control. Session order (sham vs. UPRF 300 Hz) was randomized."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field",
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine healthy participants were recruited in this experiment (four females and five males, mean age: $3 5 . 7 7 \\pm 1 4 . 0 6 \\ : \\mathrm { y }$ . The study was reviewed and approved by the institutional review board at Carnegie Mellon University. Informed consent was obtained from all participants in accordance with the WORLD Medical Association Declaration of Helsinki.",
+   "n_sessions_per_subject": "The sensory task was repeated in two different sessions: sham US and ultrasound pulse repetition frequency (UPRF) 300 Hz.",
+   "exposures[0].fundamental_frequency_khz": "\fIn this study, the US setup used a fundamental frequency of 0.5 MHz and cycles per pulse of 100. Each sonication lasted 500 ms with a UPRF of 300 Hz. The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain. The axial view of the tFUS pressure field is provided in Figure 2e, which is also co-registered with an intersectional view as indicated in Figure 2d of a human skull model (Spitzer and Whitlock 1998). This pressure estimation was based on 3-D US scanning using a needle hydrophone (HNR-0500, Onda Corp., Sunnyvale, CA, USA) in the presence of a hydrated real human skull sample (OK-14472, Skulls Unlimited International, Inc., Oklahoma City, OK, USA).",
+   "exposures[0].in_situ.pressure_kpa": "\fIn this study, the US setup used a fundamental frequency of 0.5 MHz and cycles per pulse of 100. Each sonication lasted 500 ms with a UPRF of 300 Hz. The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain. The axial view of the tFUS pressure field is provided in Figure 2e, which is also co-registered with an intersectional view as indicated in Figure 2d of a human skull model (Spitzer and Whitlock 1998). This pressure estimation was based on 3-D US scanning using a needle hydrophone (HNR-0500, Onda Corp., Sunnyvale, CA, USA) in the presence of a hydrated real human skull sample (OK-14472, Skulls Unlimited International, Inc., Oklahoma City, OK, USA).",
+   "exposures[0].in_situ.isppa_w_cm2": "\fIn this study, the US setup used a fundamental frequency of 0.5 MHz and cycles per pulse of 100. Each sonication lasted 500 ms with a UPRF of 300 Hz. The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain. The axial view of the tFUS pressure field is provided in Figure 2e, which is also co-registered with an intersectional view as indicated in Figure 2d of a human skull model (Spitzer and Whitlock 1998). This pressure estimation was based on 3-D US scanning using a needle hydrophone (HNR-0500, Onda Corp., Sunnyvale, CA, USA) in the presence of a hydrated real human skull sample (OK-14472, Skulls Unlimited International, Inc., Oklahoma City, OK, USA).",
+   "exposures[0].in_situ.ispta_w_cm2": "\fIn this study, the US setup used a fundamental frequency of 0.5 MHz and cycles per pulse of 100. Each sonication lasted 500 ms with a UPRF of 300 Hz. The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain. The axial view of the tFUS pressure field is provided in Figure 2e, which is also co-registered with an intersectional view as indicated in Figure 2d of a human skull model (Spitzer and Whitlock 1998). This pressure estimation was based on 3-D US scanning using a needle hydrophone (HNR-0500, Onda Corp., Sunnyvale, CA, USA) in the presence of a hydrated real human skull sample (OK-14472, Skulls Unlimited International, Inc., Oklahoma City, OK, USA).",
+   "exposures[0].timing.pulse_duration_ms": "\fIn this study, the US setup used a fundamental frequency of 0.5 MHz and cycles per pulse of 100. Each sonication lasted 500 ms with a UPRF of 300 Hz. The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain. The axial view of the tFUS pressure field is provided in Figure 2e, which is also co-registered with an intersectional view as indicated in Figure 2d of a human skull model (Spitzer and Whitlock 1998). This pressure estimation was based on 3-D US scanning using a needle hydrophone (HNR-0500, Onda Corp., Sunnyvale, CA, USA) in the presence of a hydrated real human skull sample (OK-14472, Skulls Unlimited International, Inc., Oklahoma City, OK, USA).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As illustrated in the experimental event sequence (bottom ofFig. 1), pulsed US stimulations were delivered to the finger representation area of S1 at 100 ms before the onset of each vibration stimulus to the fingers. Each sonication lasted for 500 ms with a UPRF of 300 Hz practiced in the session (denoted as “UPRF 300 Hz” condition). In addition, a sham US session was also conducted with active acoustic transmission, but the US is physically decoupled to the scalp by 4 6 cm (denoted as “sham US” condition). The sham condition had active acoustic transmission controls for confounding factors such as audible sound generated from the UPRF and electromagnetic interference. The order of the sessions/conditions was also randomized when presented to the participant. The control of event sequences, such as the timing of vibration stimuli, US triggering and the visual interface, was programmed in Python (Version 3.7.1, Python Software Foundation, Wilmington, DE, USA) with Psychopy (Version 3.0.4, University ofNottingham, Nottingham, UK)",
+   "exposures[0].timing.sonication_duration_s": "As illustrated in the experimental event sequence (bottom ofFig. 1), pulsed US stimulations were delivered to the finger representation area of S1 at 100 ms before the onset of each vibration stimulus to the fingers. Each sonication lasted for 500 ms with a UPRF of 300 Hz practiced in the session (denoted as “UPRF 300 Hz” condition). In addition, a sham US session was also conducted with active acoustic transmission, but the US is physically decoupled to the scalp by 4 6 cm (denoted as “sham US” condition). The sham condition had active acoustic transmission controls for confounding factors such as audible sound generated from the UPRF and electromagnetic interference. The order of the sessions/conditions was also randomized when presented to the participant. The control of event sequences, such as the timing of vibration stimuli, US triggering and the visual interface, was programmed in Python (Version 3.7.1, Python Software Foundation, Wilmington, DE, USA) with Psychopy (Version 3.0.4, University ofNottingham, Nottingham, UK)",
+   "exposures[0].device.manufacturer": "A single-element focused transducer (AT31529, Blatek Industries, Inc., State College, PA, USA) with an element diameter of 25.4 mm and a focal length of 38.1 mm was used in this study.",
+   "exposures[0].device.model": "A single-element focused transducer (AT31529, Blatek Industries, Inc., State College, PA, USA) with an element diameter of 25.4 mm and a focal length of 38.1 mm was used in this study.",
+   "exposures[0].free_field.pressure_kpa": "The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain.",
+   "exposures[0].free_field.isppa_w_cm2": "The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain.",
+   "exposures[0].free_field.ispta_w_cm2": "The spatial peak US pressure applied to the scalp was measured as 780.4 kPa (Fig. 2b, 2c, spatial-peak pulse-average intensity, I : 5.64 W/cm<sup>2</sup>, spatial-peak temporalaverage intensity, $I _ { \\mathrm { S P T A } } \\colon 3 3 8 . 2 8 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ , with an estimated US pressure of 286.0 kPa $( \\mathrm { I } _ { \\mathrm { S P P A } } ; \\ 1 . 1 0 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ $\\mathrm { I _ { S P T A } \\colon 6 7 . 1 3 \\ m W / c m ^ { 2 } ) }$ arriving at the targeted cortical brain."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "pulse duration (0.2 ms) computed from the paper's own stated cycles-per-pulse (100) divided by fundamental frequency (0.5 MHz), a unit conversion sanctioned for this field."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "the 780.4 kPa value is described as 'applied to the scalp' (measured with a real skull sample present, not in free water alone, and not explicitly said to be in the brain), so its domain is ambiguous; placed in unspecified_domain rather than free_field or in_situ."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "duty cycle not explicitly stated by the paper (only cycles-per-pulse and UPRF given); not computed."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

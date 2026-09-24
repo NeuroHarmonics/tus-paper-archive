@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018yang",
+ "doi": "10.1038/s41598-018-26287-7",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "cynomolgus macaque (Macaca fascicularis)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "BOLD fMRI at 7T; MR thermometry (proton resonance frequency shift)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS blocks elicited BOLD activation increases (interpreted as neural excitation) at the targeted area 3a/3b and in downstream touch-network regions, with responses generally stronger and faster-rising than those evoked by tactile stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": "MR thermometry showed a zero-mean temperature change (0.00 +/- 0.15 C) in the sonicated brain ROI during ultrasound blocks, with a maximum increase of 0.5 C across all blocks, consistent with bioheat estimates at the power used.",
+ "exposures": [
+  {
+   "label": "FUS to areas 3a/3b (S1) targeted via prior tactile fMRI mapping",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "areas 3a/3b, primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 935,
+    "isppa_w_cm2": 29.5,
+    "ispta_w_cm2": 1.34
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 543,
+    "isppa_w_cm2": 9.9,
+    "ispta_w_cm2": 0.452
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.252,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "FUS pulses were delivered in a block-based scheme identical to the tactile stimuli, in seven 30 sec FUS on/off cycles. During an “on” block, a 250 kHz, 300 msec pulse was emitted at 0.333 Hz (i.e. one 300 ms pulse every 3 s), with the procedure resulting in 10 FUS bursts per “on” block; each 300 msec pulse itself consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.4,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Two adult male macaque monkeys (M. fascicularis) were studied; each animal was scanned three times (a total of six sessions).",
+   "n_sessions_per_subject": "Two adult male macaque monkeys (M. fascicularis) were studied; each animal was scanned three times (a total of six sessions).",
+   "exposures[0].fundamental_frequency_khz": "During an “on” block, a 250 kHz, 300 msec pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115, Sonic Concepts, Bothell, WA) coupled via a custom Fomblin-filled cone (Fomblin Y LVAC 06/6, Solvay, Mt. Pleasant, TN).",
+   "exposures[0].free_field.pressure_kpa": "The highest free field peak neg ative pressure (PNP) used for neuromodulation was estimated to be 935 kPa which corresponds to a mechanical index (MI) of 1.87, a spatial peak pulse average $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ of $2 9 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].free_field.isppa_w_cm2": "The highest free field peak neg ative pressure (PNP) used for neuromodulation was estimated to be 935 kPa which corresponds to a mechanical index (MI) of 1.87, a spatial peak pulse average $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ of $2 9 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].free_field.ispta_w_cm2": "1.34 W/cm<sup>2</sup>. We chose this pressure as an upper bound to elicit a maximal efect while remaining below the MI limit for body imaging (1.9) with ultrasound, while noting that these standards were established for short pulses and should not necessarily be considered as safety metrics for neuromodulation.",
+   "exposures[0].in_situ.pressure_kpa": "we estimate ultrasound values in the brain during neuromodulation to be a PNP of 543 kPa, an MI of 1.08, an $\\mathrm { I } _ { \\mathsf { s p p a } } \\mathrm { o f } 9 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ and an $\\mathrm { { I _ { s p t a } } }$ of 0.452 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.isppa_w_cm2": "we estimate ultrasound values in the brain during neuromodulation to be a PNP of 543 kPa, an MI of 1.08, an $\\mathrm { I } _ { \\mathsf { s p p a } } \\mathrm { o f } 9 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ and an $\\mathrm { { I _ { s p t a } } }$ of 0.452 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "we estimate ultrasound values in the brain during neuromodulation to be a PNP of 543 kPa, an MI of 1.08, an $\\mathrm { I } _ { \\mathsf { s p p a } } \\mathrm { o f } 9 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ and an $\\mathrm { { I _ { s p t a } } }$ of 0.452 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "A single 300 msec pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 4E for FUS pulse design).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A single 300 msec pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 4E for FUS pulse design).",
+   "exposures[0].timing.duty_cycle_pct": "A single 300 msec pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 4E for FUS pulse design).",
+   "exposures[0].timing.sonication_duration_s": "During an “on” block, a 250 kHz, 300 msec pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115, Sonic Concepts, Bothell, WA) coupled via a custom Fomblin-filled cone (Fomblin Y LVAC 06/6, Solvay, Mt. Pleasant, TN).",
+   "exposures[0].device.manufacturer": "During an “on” block, a 250 kHz, 300 msec pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115, Sonic Concepts, Bothell, WA) coupled via a custom Fomblin-filled cone (Fomblin Y LVAC 06/6, Solvay, Mt.",
+   "exposures[0].device.model": "During an “on” block, a 250 kHz, 300 msec pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115, Sonic Concepts, Bothell, WA) coupled via a custom Fomblin-filled cone (Fomblin Y LVAC 06/6, Solvay, Mt."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated directly in ms; computed from '63-cycle bursts' at the 250 kHz fundamental frequency (63/250 kHz = 0.252 ms), consistent with the stated 2 kHz PRF and 50% duty cycle (0.5/2000 Hz = 0.25 ms)."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "The paper calls the 300 ms train a 'pulse' and its 63-cycle sub-elements 'bursts', the reverse of this archive's usual burst/pulse terminology; recorded per the paper's own wording."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper does not discuss auditory confounds or controls for the audible click of FUS pulsing."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

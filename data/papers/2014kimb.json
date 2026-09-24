@@ -1,0 +1,311 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2014kimb",
+ "doi": "10.1097/wnr.0000000000000118",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  17
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "pet",
+  "behaviour"
+ ],
+ "readout_other": "18F-FDG PET standardised uptake value (SUV) mapping of the sonicated brain region; tail-movement response latency measured with an external piezoelectric motion sensor",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS sonication of the thalamus produced a focal increase in glucose uptake (PET) smaller than the acoustic focus, and FUS sonication of the tail motor area elicited tail movement with a mean onset latency of 171+-63 ms across the tested duty cycles and tone-burst durations.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The acoustic intensity used for the PET experiment (3 W/cm2 Ispta) was reduced from a previously used level (4.5 W/cm2 Ispta) specifically to comply with the IEC upper limit for ultrasound physiotherapy equipment; no histological or other tissue-damage assessment was reported.",
+ "exposures": [
+  {
+   "label": "Unilateral thalamus, 350 kHz, fixed pulsed parameters (PET/metabolic mapping experiment)",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "unilateral thalamic area"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 3
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Sonication began immediately after 18F-FDG injection and continued for 40 min, using repeated 300 ms trains (0.5 ms TBD, 1 kHz PRF) with 2 s inter-stimulus intervals; the sonicated hemisphere (left/right) was randomised and balanced across animals. PET scanning for glucose-uptake mapping was performed immediately after sonication ended."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  },
+  {
+   "label": "Tail motor cortex, 350 kHz, pulsed parameter sweep (tone-burst duration x duty cycle), motor-response-latency experiment",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "specific brain area for tail movement (2 mm posterior to the Bregma along the midline)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     4.5,
+     3.5
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.25,
+     0.5,
+     1,
+     2,
+     3,
+     5
+    ],
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     30,
+     50,
+     70
+    ],
+    "sonication_duration_s": 0.3,
+    "protocol_description": "The same fixed parameters as the PET experiment (0.5 ms TBD, 1 kHz PRF, 300 ms SD) were first used briefly at a higher intensity (4.5 W/cm2 Ispta) to localise a responsive area; the acoustic intensity was then reduced to the minimum needed to elicit tail movement (3.5+-1.5 W/cm2 Ispta) while systematically varying tone-burst duration (0.25-5 ms) across three duty-cycle groups (30/50/70%, separate animals per group); the parameter set for each session was randomised and balanced across animals, and response latency was averaged over up to six sonication events per condition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Male Sprague–Dawley rats (n = 17) were anesthetized with an intraperitoneal injection of a ketamine/xylazine mixture of 80 : 10 mg/kg.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Immediately after the $^ { 1 8 } \\mathrm { F - F D G }$ injection, the sonication commenced and continued for 40 min. The same stimulatory sonication parameters (0.5 ms TBD, 1 kHz PRF, 300 ms SD, 2 s of interstimulus intervals) that elicited tail movement in rats [15] were adopted, although a lower AI $( 3 \\mathrm { { W / c m } ^ { 2 } / _ { s p t a } ; }$ compared with $4 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\bar { I } _ { \\mathrm { s p t a } }$ in the study by Kim et al. [15]) was used to comply with the upper limit of ultrasound physiotherapy equipment set by the International Electrotechnical Commission (IEC) [16].",
+   "exposures[0].timing.pulse_duration_ms": "Immediately after the $^ { 1 8 } \\mathrm { F - F D G }$ injection, the sonication commenced and continued for 40 min. The same stimulatory sonication parameters (0.5 ms TBD, 1 kHz PRF, 300 ms SD, 2 s of interstimulus intervals) that elicited tail movement in rats [15] were adopted, although a lower AI $( 3 \\mathrm { { W / c m } ^ { 2 } / _ { s p t a } ; }$ compared with $4 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\bar { I } _ { \\mathrm { s p t a } }$ in the study by Kim et al. [15]) was used to comply with the upper limit of ultrasound physiotherapy equipment set by the International Electrotechnical Commission (IEC) [16].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Immediately after the $^ { 1 8 } \\mathrm { F - F D G }$ injection, the sonication commenced and continued for 40 min. The same stimulatory sonication parameters (0.5 ms TBD, 1 kHz PRF, 300 ms SD, 2 s of interstimulus intervals) that elicited tail movement in rats [15] were adopted, although a lower AI $( 3 \\mathrm { { W / c m } ^ { 2 } / _ { s p t a } ; }$ compared with $4 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\bar { I } _ { \\mathrm { s p t a } }$ in the study by Kim et al. [15]) was used to comply with the upper limit of ultrasound physiotherapy equipment set by the International Electrotechnical Commission (IEC) [16].",
+   "exposures[0].timing.sonication_duration_s": "Immediately after the $^ { 1 8 } \\mathrm { F - F D G }$ injection, the sonication commenced and continued for 40 min. The same stimulatory sonication parameters (0.5 ms TBD, 1 kHz PRF, 300 ms SD, 2 s of interstimulus intervals) that elicited tail movement in rats [15] were adopted, although a lower AI $( 3 \\mathrm { { W / c m } ^ { 2 } / _ { s p t a } ; }$ compared with $4 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\bar { I } _ { \\mathrm { s p t a } }$ in the study by Kim et al. [15]) was used to comply with the upper limit of ultrasound physiotherapy equipment set by the International Electrotechnical Commission (IEC) [16].",
+   "exposures[1].timing.pulse_duration_ms": "while varying the TBDs (0.25, 0.5, 1, 2, 3, and 5 ms) at three different DCs (n = 9, 287±36 g for 30% DC; n = 9, 278±23 g for 50% DC; $n = 5 , 2 9 4 { \\pm } 2 1 \\mathrm { g }$ for 70% DC).",
+   "exposures[1].timing.duty_cycle_pct": "while varying the TBDs (0.25, 0.5, 1, 2, 3, and 5 ms) at three different DCs (n = 9, 287±36 g for 30% DC; n = 9, 278±23 g for 50% DC; $n = 5 , 2 9 4 { \\pm } 2 1 \\mathrm { g }$ for 70% DC).",
+   "exposures[1].timing.sonication_duration_s": "The same set of sonication parameters (350 kHz FF, 0.5 ms TBD, 1 kHz PRF, 300 ms SD) as the PET experiment was initially used, although an increased AI $( 4 . { \\overset { \\cdot } { 5 } } \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ was used briefly to elicit definite tail movement in the rats [15].",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "The same set of sonication parameters (350 kHz FF, 0.5 ms TBD, 1 kHz PRF, 300 ms SD) as the PET experiment was initially used, although an increased AI $( 4 . { \\overset { \\cdot } { 5 } } \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ was used briefly to elicit definite tail movement in the rats [15].",
+   "exposures[0].fundamental_frequency_khz": "A linear power amplifier (240L; ENI Inc., Rochester, New York, USA) amplified the electrical signals and transmitted the signal to an air-backed, single-element FUS transducer (spherical segmented in shape, 6 cm in diameter, 7 cm in radius of curvature, 350 kHz FF).",
+   "exposures[1].fundamental_frequency_khz": "The same set of sonication parameters (350 kHz FF, 0.5 ms TBD, 1 kHz PRF, 300 ms SD) as the PET experiment was initially used, although an increased AI $( 4 . { \\overset { \\cdot } { 5 } } \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ was used briefly to elicit definite tail movement in the rats [15].",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The same set of sonication parameters (350 kHz FF, 0.5 ms TBD, 1 kHz PRF, 300 ms SD) as the PET experiment was initially used, although an increased AI $( 4 . { \\overset { \\cdot } { 5 } } \\mathrm { W } / \\mathrm { c m } ^ { 2 } I _ { \\mathrm { s p t a } } )$ was used briefly to elicit definite tail movement in the rats [15]."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports two separate cohorts: n=7 for the PET experiment ('Male Sprague-Dawley rats (n = 7, 279+-15 g) were anesthetized with isoflurane...') and n=17 for the motor-delay experiment (quoted); no combined total is given, so both group sizes are listed. Only the n=17 sentence is quoted above due to the single-quote-per-field format; the n=7 value is quoted verbatim in the paper's PET-experiment methods paragraph."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Domain (free-field vs in-situ/derated) of the reported acoustic intensity is not stated in this paper; placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Value 4.5 W/cm2 Ispta was a brief initial calibration intensity and 3.5+-1.5 W/cm2 Ispta the subsequently used minimum threshold for the TBD/DC sweep; domain not stated so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is defined elsewhere in the paper as the product of TBD and PRF, which would make it computable (0.5 ms x 1 kHz = 50%) for this exposure, but no explicit duty-cycle percentage is stated for the PET experiment's parameters, so it is left not_reported per the no-arithmetic rule."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is stated only for the initial brief calibration condition (1 kHz), not for the actual tone-burst-duration/duty-cycle sweep used to measure response latency (Table 1), so it is left not_reported for the sweep."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].fundamental_frequency_khz": "second",
+   "exposures[1].fundamental_frequency_khz": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second"
+  }
+ }
+}

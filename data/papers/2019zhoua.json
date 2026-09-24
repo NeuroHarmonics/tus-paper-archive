@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019zhoua",
+ "doi": "10.1109/tbme.2019.2899631",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "open field test; pole test; striatal T-SOD and GSH-PX assays; c-Fos immunohistochemistry; HE and Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIPUS of motor cortex increased c-Fos+ neurons in motor cortex, improved rearing number (OFT) and locomotor activity (pole test), and increased striatal antioxidant enzymes (T-SOD, GSH-PX) in MPTP-treated mice compared with sham-LIPUS+MPTP controls.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE and Nissl staining showed no acute or long-term tissue damage or hemorrhage from LIPUS; peak skull temperature elevation was less than 0.2C during 40 min stimulation (theoretical estimate <0.02C).",
+ "exposures": [
+  {
+   "label": "LIPUS stimulation of motor cortex via wearable transducer",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "motor cortex (M1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-built wearable single-element focused transducer (PZT-5H/epoxy 1-3 composite)"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 151,
+    "isppa_w_cm2": 0.76,
+    "ispta_w_cm2": 0.076
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 6,
+    "protocol_description": "LIPUS was delivered to awake, freely-moving mice via a wearable transducer fixed to the skull with a collimator, for 40 min/day from day 1 to day 7 after MPTP injection, with an inter-stimulus-interval of 10 s between 6-s trains."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "mice were randomly divided into 4 groups (n = 8 per group): control, MPTP, sham-LIPUS+MPTP and LIPUS+MPTP group.",
+   "n_sessions_per_subject": "For LIPUS+MPTP group, 7 days of LIPUS (800 kHz, 10% duty cycle, 100-Hz pulse repetition frequency, 40 min/day) is delivered to the motor cortex.",
+   "randomised": "mice were randomly divided into 4 groups (n = 8 per group): control, MPTP, sham-LIPUS+MPTP and LIPUS+MPTP group.",
+   "exposures[0].fundamental_frequency_khz": "For LIPUS+MPTP group, 7 days of LIPUS (800 kHz, 10% duty cycle, 100-Hz pulse repetition frequency, 40 min/day) is delivered to the motor cortex.",
+   "exposures[0].timing.duty_cycle_pct": "For LIPUS+MPTP group, 7 days of LIPUS (800 kHz, 10% duty cycle, 100-Hz pulse repetition frequency, 40 min/day) is delivered to the motor cortex.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For LIPUS+MPTP group, 7 days of LIPUS (800 kHz, 10% duty cycle, 100-Hz pulse repetition frequency, 40 min/day) is delivered to the motor cortex.",
+   "exposures[0].timing.pulse_duration_ms": "Fig. 3. Illustration of experimental system. (a) Transcranial ultrasound stimulation system for free moving mouse. (b) Ultrasound stimulus waveforms, i.e., 100 Hz PRF, 1 ms TBD, 6 s SD, 10% DC and 10 s ISI.",
+   "exposures[0].timing.sonication_duration_s": "Fig. 3. Illustration of experimental system. (a) Transcranial ultrasound stimulation system for free moving mouse. (b) Ultrasound stimulus waveforms, i.e., 100 Hz PRF, 1 ms TBD, 6 s SD, 10% DC and 10 s ISI.",
+   "exposures[0].in_situ.isppa_w_cm2": "In our experiment, $\\mathrm { { I _ { s p p a } } }$ was $7 6 0 \\ \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ after passing mouse skull.",
+   "exposures[0].in_situ.pressure_kpa": "Both HE and Nissl staining and temperature measurement of skull showed that ultrasound parameters in this study $( { \\mathrm { T B D } } = 1 \\ { \\mathrm { m s } } , { \\mathrm { P R F } } = 1 0 0 { \\mathrm { H z } } , { \\mathrm { S D } } = 6 { \\mathrm { s } } .$ , 40 min exposure, 151 kPa, mechanical index $( \\mathbf { M I } ) = 0 . 1$ , spatial peak time average intensity $\\mathrm { ( I _ { s p t a } ) } = 7 6 \\mathrm { m W / c m ^ { 2 } } )$ did not cause tissue damage $( \\Delta \\mathrm { T } < 0 . 0 2 ~ ^ { \\circ } \\mathrm { C } )$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "Both HE and Nissl staining and temperature measurement of skull showed that ultrasound parameters in this study $( { \\mathrm { T B D } } = 1 \\ { \\mathrm { m s } } , { \\mathrm { P R F } } = 1 0 0 { \\mathrm { H z } } , { \\mathrm { S D } } = 6 { \\mathrm { s } } .$ , 40 min exposure, 151 kPa, mechanical index $( \\mathbf { M I } ) = 0 . 1$ , spatial peak time average intensity $\\mathrm { ( I _ { s p t a } ) } = 7 6 \\mathrm { m W / c m ^ { 2 } } )$ did not cause tissue damage $( \\Delta \\mathrm { T } < 0 . 0 2 ~ ^ { \\circ } \\mathrm { C } )$ ."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n_subjects reflects the primary behavioural LIPUS+MPTP group (n=8); additional ultrasound-exposed cohorts used for c-Fos immunohistochemistry (n=3) and histological safety testing (up to 12 mice) are not included in this total."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice were anaesthetised for the initial stereotaxic transducer-mounting surgery but stimulated awake and freely moving thereafter; recorded as 'both'."
+   },
+   {
+    "field": "exposures[0].free_field.*",
+    "reason": "Only the post-skull (in_situ) intensity/pressure values are explicitly stated as numbers; the free-field (no-skull) values are described only as an ~11% relative decrease, not given as absolute numbers."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

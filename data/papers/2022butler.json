@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022butler",
+ "doi": "10.1016/j.brs.2022.08.022",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg"
+ ],
+ "readout_other": "visual motion coherence detection task (accuracy, reaction time); event-related potentials (ERP)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS to hMT+ improved motion-detection accuracy and reduced response time on correct trials compared with sham and control-site (FFA) stimulation, and modulated (increased) the amplitude of a motion-specific ERP component.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No side effects of stimulation were reported by any participant. Examination of T1-weighted, T2-weighted and susceptibility weighted imaging (SWI) MRI scans by an experienced Consultant Neuroradiologist (FS) revealed no difference in pre- and post-stimulation images for any of the 13 scanned participants.",
+ "exposures": [
+  {
+   "label": "TUS to human middle temporal complex (hMT+)",
+   "target": {
+    "terms": [
+     "extrastriate_visual_cortex"
+    ],
+    "label": "human middle temporal complex (hMT+, also known as V5)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc",
+    "model": "H-107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 440,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "A stimulation trial comprised a 300 ms burst applied at a 1 kHz pulse repetition frequency (PRF) and a 50% burst duty cycle (BDC). The main experiment was divided into three runs each of 90 trials and was run twice, once with TUS targeted at hMT+ and once at the control site (FFA), the order counterbalanced across participants; a maximum of 250 ultrasound stimulation bursts per brain site was imposed as a safety limit."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "16 participants (10 females, 6 males) took part in the experiment (mean age: 26; range 20e51). All gave written consent and were given an honorarium for participating, in compliance with procedures approved by the University of Oxford Medical Sciences Interdivisional Research Ethics Committee. All had normal vision and reported that they were in good health with no history of neurological disease.",
+   "n_sessions_per_subject": "The main experiment was divided into three runs each of 90 trials. For each trial, motion coherence was randomised to be at the mean, ±0.25 SD or ±0.50 SD of the 70% accuracy threshold determined for that hemifield in the preceding ‘threshold’ run. This variability was kept tight around the threshold due to pilot work suggesting that the TUS effect was not detectable if the trial was too easy or too difficult. The total number of trials that could be delivered to each participant was limited by our safety constraints (see Ultrasound Targeting Protocol above). 10 trials in each run (30 in total) were static trials. Otherwise, the trial procedure was identical to the ‘threshold’ session. The main experiment was run twice, once with TUS targeted at hMT and once with it targeted at FFA, the order being counterbalanced across participants.",
+   "sham_type": "The main experiment was divided into three runs each of 90 trials. For each trial, motion coherence was randomised to be at the mean, ±0.25 SD or ±0.50 SD of the 70% accuracy threshold determined for that hemifield in the preceding ‘threshold’ run. This variability was kept tight around the threshold due to pilot work suggesting that the TUS effect was not detectable if the trial was too easy or too difficult. The total number of trials that could be delivered to each participant was limited by our safety constraints (see Ultrasound Targeting Protocol above). 10 trials in each run (30 in total) were static trials. Otherwise, the trial procedure was identical to the ‘threshold’ session. The main experiment was run twice, once with TUS targeted at hMT and once with it targeted at FFA, the order being counterbalanced across participants.",
+   "auditory_control": "Auditory masking signals were played through earphones, inserted into the auditory canal, that were driven by the earphone jack on the computer. The masking signal was a 1 kHz square wave with a duration of 700 ms which was created in Matlab 2019b and used the in-built playsound function.",
+   "adverse_events": "No side effects of stimulation were reported by any participant. Examination of T1-weighted, T2-weighted and susceptibility weighted imaging (SWI) MRI scans by an experienced Consultant",
+   "safety_notes": "Neuroradiologist (FS) revealed no difference in pre- and poststimulation images for any of the 13 scanned participants (Supplementary Fig. 8).",
+   "exposures[0].device.family": "Sonications were performed using a 500 kHz single-element geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) US transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA). Focal pressure calibration of the transducer was completed using a needle hydrophone (model HNA-400, ONDA, Sunnydale, CA, USA) up to a peak output amplifier voltage of 100V which corresponded to a maximum peak positive freefield pressure of \\~3.5 MPa. Ten repeat measurements were taken at each voltage step and the results were highly repeatable. In the range of amplifier voltages used in this study (up to 60V), the relationship between amplifier voltage and peak pressure was linear (Supplementary Figs. 3a and 3b).",
+   "exposures[0].fundamental_frequency_khz": "Sonications were performed using a 500 kHz single-element geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) US transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA). Focal pressure calibration of the transducer was completed using a needle hydrophone (model HNA-400, ONDA, Sunnydale, CA, USA) up to a peak output amplifier voltage of 100V which corresponded to a maximum peak positive freefield pressure of \\~3.5 MPa. Ten repeat measurements were taken at each voltage step and the results were highly repeatable. In the range of amplifier voltages used in this study (up to 60V), the relationship between amplifier voltage and peak pressure was linear (Supplementary Figs. 3a and 3b).",
+   "exposures[0].in_situ.method": "Thermal simulations were also performed using the k-Wave toolbox. The simulations solved the Pennes bio-heat transfer equation [37], whereby the input heating rate was calculated from the acoustic field by assuming a local plane wave [38]. Test simulations were used to determine that a timestep of300 ms, matching the length of the applied US burst, led to a stable numerical solution [29]. Tissue-specific thermal properties were assigned as given in Table 1, and blood perfusion properties were defined as: blood perfusion rate, $\\mathbf { w } = 0 . 0 8 / s ;$ blood density, $\\rho _ { \\mathsf { b } } = 1 0 3 0 ~ \\mathrm { k g } / \\mathrm { m } ^ { 3 }$ ; blood specific heat capacity, $c _ { \\mathrm { p , b } } = 3 6 2 0 \\mathrm { J / ( k g K ) }$ ; and arterial temperature, $\\mathrm { T _ { a } } = 3 7 ~ ^ { \\circ } \\mathrm { C } .$ Simulations were run for a total of 200 ultrasound stimulation trials at an inter-stimulation interval of 2.4 s (Supplementary Fig. 1). During the behavioural experiment, actual ISIs (cooling period) ranged between 3 s and 5.4 s for stimulation trials and there were randomly interleaved sham trials. The predicted thermal fields were therefore expected to be overestimated. The pressure amplitude of the ultrasound was then set to ensure the modelled pressure and temperature fields satisfied safety criteria. The following safety criteria, concordant with FDA guidelines [31] and previous human TUS studies [22], were set: i) maximum peak pressure in brain or CSF of 0.6 MPa; ii) spatial peak, temporal averaged intensity $\\mathrm { ( I _ { S P T A } ) < 7 2 0 \\ m w / c m ^ { 2 } ; }$ iii) maximum of 250 ultrasound stimulation bursts per brain site; iv) temperature rise ${ < } 3 ~ ^ { \\circ } \\mathbb { C }$ in skull bone and; v) temperature rise ${ < } 1 ~ ^ { \\circ } \\mathrm { C }$ in brain tissue. Modelling predicted a group mean pressure at hMT of $0 . 4 4 \\pm \\ : 0 . 1 2$ MPa during hMT stimulation and $0 . 1 1 \\pm \\ : 0 . 0 8$ MPa during control site stimulation (Fig. 1b and c, Supplementary Table 1, Supplementary Figs. 2a and 2b).",
+   "exposures[0].in_situ.reported_as": "Thermal simulations were also performed using the k-Wave toolbox. The simulations solved the Pennes bio-heat transfer equation [37], whereby the input heating rate was calculated from the acoustic field by assuming a local plane wave [38]. Test simulations were used to determine that a timestep of300 ms, matching the length of the applied US burst, led to a stable numerical solution [29]. Tissue-specific thermal properties were assigned as given in Table 1, and blood perfusion properties were defined as: blood perfusion rate, $\\mathbf { w } = 0 . 0 8 / s ;$ blood density, $\\rho _ { \\mathsf { b } } = 1 0 3 0 ~ \\mathrm { k g } / \\mathrm { m } ^ { 3 }$ ; blood specific heat capacity, $c _ { \\mathrm { p , b } } = 3 6 2 0 \\mathrm { J / ( k g K ) }$ ; and arterial temperature, $\\mathrm { T _ { a } } = 3 7 ~ ^ { \\circ } \\mathrm { C } .$ Simulations were run for a total of 200 ultrasound stimulation trials at an inter-stimulation interval of 2.4 s (Supplementary Fig. 1). During the behavioural experiment, actual ISIs (cooling period) ranged between 3 s and 5.4 s for stimulation trials and there were randomly interleaved sham trials. The predicted thermal fields were therefore expected to be overestimated. The pressure amplitude of the ultrasound was then set to ensure the modelled pressure and temperature fields satisfied safety criteria. The following safety criteria, concordant with FDA guidelines [31] and previous human TUS studies [22], were set: i) maximum peak pressure in brain or CSF of 0.6 MPa; ii) spatial peak, temporal averaged intensity $\\mathrm { ( I _ { S P T A } ) < 7 2 0 \\ m w / c m ^ { 2 } ; }$ iii) maximum of 250 ultrasound stimulation bursts per brain site; iv) temperature rise ${ < } 3 ~ ^ { \\circ } \\mathbb { C }$ in skull bone and; v) temperature rise ${ < } 1 ~ ^ { \\circ } \\mathrm { C }$ in brain tissue. Modelling predicted a group mean pressure at hMT of $0 . 4 4 \\pm \\ : 0 . 1 2$ MPa during hMT stimulation and $0 . 1 1 \\pm \\ : 0 . 0 8$ MPa during control site stimulation (Fig. 1b and c, Supplementary Table 1, Supplementary Figs. 2a and 2b).",
+   "exposures[0].in_situ.pressure_kpa": "Thermal simulations were also performed using the k-Wave toolbox. The simulations solved the Pennes bio-heat transfer equation [37], whereby the input heating rate was calculated from the acoustic field by assuming a local plane wave [38]. Test simulations were used to determine that a timestep of300 ms, matching the length of the applied US burst, led to a stable numerical solution [29]. Tissue-specific thermal properties were assigned as given in Table 1, and blood perfusion properties were defined as: blood perfusion rate, $\\mathbf { w } = 0 . 0 8 / s ;$ blood density, $\\rho _ { \\mathsf { b } } = 1 0 3 0 ~ \\mathrm { k g } / \\mathrm { m } ^ { 3 }$ ; blood specific heat capacity, $c _ { \\mathrm { p , b } } = 3 6 2 0 \\mathrm { J / ( k g K ) }$ ; and arterial temperature, $\\mathrm { T _ { a } } = 3 7 ~ ^ { \\circ } \\mathrm { C } .$ Simulations were run for a total of 200 ultrasound stimulation trials at an inter-stimulation interval of 2.4 s (Supplementary Fig. 1). During the behavioural experiment, actual ISIs (cooling period) ranged between 3 s and 5.4 s for stimulation trials and there were randomly interleaved sham trials. The predicted thermal fields were therefore expected to be overestimated. The pressure amplitude of the ultrasound was then set to ensure the modelled pressure and temperature fields satisfied safety criteria. The following safety criteria, concordant with FDA guidelines [31] and previous human TUS studies [22], were set: i) maximum peak pressure in brain or CSF of 0.6 MPa; ii) spatial peak, temporal averaged intensity $\\mathrm { ( I _ { S P T A } ) < 7 2 0 \\ m w / c m ^ { 2 } ; }$ iii) maximum of 250 ultrasound stimulation bursts per brain site; iv) temperature rise ${ < } 3 ~ ^ { \\circ } \\mathbb { C }$ in skull bone and; v) temperature rise ${ < } 1 ~ ^ { \\circ } \\mathrm { C }$ in brain tissue. Modelling predicted a group mean pressure at hMT of $0 . 4 4 \\pm \\ : 0 . 1 2$ MPa during hMT stimulation and $0 . 1 1 \\pm \\ : 0 . 0 8$ MPa during control site stimulation (Fig. 1b and c, Supplementary Table 1, Supplementary Figs. 2a and 2b).",
+   "exposures[0].timing.pulse_duration_ms": "Fig. 1. | TUS experimental setup and methodology overview. a, Summary of US modelling pipeline. Structural and functional MRI scans informed participant-specific tissue segmentation and hMT /control site localisation. A numerical point source was propagated transcranially from this site to a spherical receiver corresponding to a sphere with radius equal to the focal length of the transducer. Visual inspection of the phase field over the surface determined transducer placement to refocus to the target which was verified by forward simulations. b, Representative simulated US field for a representative participant targeting hMT overlaid onto the segmented tissue map through an on-axis vertical plane relative to the US transducer; orientation relative to the skull is shown in the top right-hand corner. The black circular marker indicates the target (hMT ). In simulation space, each voxel has its tissue type specified by a coding system. Only the US field in CSF and brain is kept visible here. The US field in other tissues is set to 0 for clarity. For additional pressure field maps for targeting hMT and the control site see Supplementary Figs. 2a and 2b c, Modelled target pressures at hMT when targeting hMT and control site for all participants. d, Schematic of the experimental setup: a 64-electrode EEG cap, with a cut-out over the posterior right hemisphere for US transducer coupling, was fitted to the head. Transducer positioning was guided by the Brainsight neuronavigational system which utilised an optical tracking camera, and adjusted through a custom-built arm. The position was manually updated throughout all tasks to ensure correct alignment as informed by the Brainsight system which tracked the position of the participant's head and the transducer through reflective silver optical trackers. Coupling of the transducer to the scalp was achieved using a polyurethane membrane expanded through the addition of degassed water to adjust its depth, and US gel. A set of earphones played an audio masking tone mimicking the US burst sequence. e, Each TUS trial comprised of 0.5 ms pulses of 500 kHz US at a 1 kHz PRF (50% duty cycle) with a 300 ms burst length. The amplitude was adjusted to deliver a modelled peak positive pressure at the target as close to 0.6 MPa as possible, without exceeding that value elsewhere in the brain or CSF. The audio mask was a 1 kHz square wave that started approximately 110 ms before TUS onset and lasted 700 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A stimulation trial comprised a 300 ms burst applied at a 1 kHz pulse repetition frequency (PRF) and a 50% burst duty cycle (BDC) (Fig. 1e). The stimulation waveform was generated from an arbitrary waveform generator (Handyscope HS5, TiePie, WL Sneek, The Netherlands), amplified by a 55 dB broadband amplifier (1140LA, E&I, Rochester, NY, USA), and connected to the transducer via a matching network.",
+   "exposures[0].timing.duty_cycle_pct": "A stimulation trial comprised a 300 ms burst applied at a 1 kHz pulse repetition frequency (PRF) and a 50% burst duty cycle (BDC) (Fig. 1e). The stimulation waveform was generated from an arbitrary waveform generator (Handyscope HS5, TiePie, WL Sneek, The Netherlands), amplified by a 55 dB broadband amplifier (1140LA, E&I, Rochester, NY, USA), and connected to the transducer via a matching network.",
+   "exposures[0].timing.sonication_duration_s": "A stimulation trial comprised a 300 ms burst applied at a 1 kHz pulse repetition frequency (PRF) and a 50% burst duty cycle (BDC) (Fig. 1e). The stimulation waveform was generated from an arbitrary waveform generator (Handyscope HS5, TiePie, WL Sneek, The Netherlands), amplified by a 55 dB broadband amplifier (1140LA, E&I, Rochester, NY, USA), and connected to the transducer via a matching network.",
+   "exposures[0].device.manufacturer": "Sonications were performed using a 500 kHz single-element geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) US transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA). Focal pressure calibration of the transducer was completed using a needle hydrophone (model HNA-400, ONDA, Sunnydale, CA, USA) up to a peak output amplifier voltage of 100V which corresponded to a maximum peak positive freefield pressure of \\~3.5 MPa. Ten repeat measurements were taken at each voltage step and the results were highly repeatable. In the range of amplifier voltages used in this study (up to 60V), the relationship between amplifier voltage and peak pressure was linear (Supplementary Figs. 3a and 3b).",
+   "exposures[0].device.model": "Sonications were performed using a 500 kHz single-element geometrically-focused (64 mm aperture, 63.1 mm radius of curvature) US transducer (H-107, Sonic Concepts Inc, Bothell, WA, USA). Focal pressure calibration of the transducer was completed using a needle hydrophone (model HNA-400, ONDA, Sunnydale, CA, USA) up to a peak output amplifier voltage of 100V which corresponded to a maximum peak positive freefield pressure of \\~3.5 MPa. Ten repeat measurements were taken at each voltage step and the results were highly repeatable. In the range of amplifier voltages used in this study (up to 60V), the relationship between amplifier voltage and peak pressure was linear (Supplementary Figs. 3a and 3b)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "The ~3.5 MPa value is the transducer's calibrated maximum free-field output capability at 100V, not necessarily the pressure delivered during the experiment (amplifier voltages used in the study were up to 60V)."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper does not use the word 'blind' explicitly; coded as single-blind based on the described auditory-masking design, which the stimulation-detection task confirmed prevented participants from distinguishing stimulation from sham trials."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Design includes both a genuine inactive/no-output sham (sham trials, no TUS delivered) and an active control site (FFA received real TUS), so both sham_type categories are recorded; per the exposures rule, the FFA control-site stimulation is not given its own exposure entry."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].timing.pulse_duration_ms": "first"
+  }
+ }
+}

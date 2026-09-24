@@ -1,0 +1,222 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013hu",
+ "doi": "10.1016/j.ultrasmedbio.2012.12.003",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "mouse (Neuro-2a neuroblastoma cell line)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Time-lapse phase-contrast video microscopy of neurite length/retraction, cell body shape (shrinkage/rounding) and cell body displacement",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "During ultrasound exposure, neurite-bearing cells showed neurite retraction and cell body shrinkage/displacement (a repulsive/inhibitory-like effect on neurite morphology), but over the following 100 min neurite-bearing cells regrew their neurites and neurite-free cells sprouted new processes, leading the authors to interpret ultrasound as ultimately having a stimulatory influence on neuronal growth dynamics despite acting as a transient repulsive cue during exposure.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "1 MHz pulsed ultrasound exposure of differentiated Neuro-2a cells",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "differentiated Neuro-2a (N2a) neuroblastoma cells"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Wuxi Beisheng Technology",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": [
+     130,
+     400,
+     840
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.028,
+     0.234,
+     0.266,
+     1.168
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.02,
+     0.1
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     2500
+    ],
+    "duty_cycle_pct": [
+     1,
+     5
+    ],
+    "sonication_duration_s": [
+     300,
+     600
+    ],
+    "protocol_description": "Cell dishes were exposed to 1-MHz pulsed ultrasound at a 45-degree incidence angle for 10 min per acoustic setting (main experiments) or 5 min (ion-channel/calcium mechanism experiments), using three peak rarefactional pressures (0.13, 0.40, 0.84 MPa), pulse durations of 20 or 100 cycles and PRFs of 500 or 2500 Hz, giving duty cycles of 1% or 5% and SPTA intensities between 0.028 and 1.168 W/cm2; imaging was recorded from the start of exposure to 100 min after the end of exposure."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "As illustrated in Figure 1, the platform sends ultrasound pulses through a piston transducer with a center frequency of 1 MHz and diameter of 25.4 mm (Wuxi Beisheng Technology, Wuxi, Jiangsu, China).",
+   "exposures[0].timing.pulse_duration_ms": "With these values, the spatial-peak, time-averaged (SPTA) intensity $( I _ { \\mathrm { S P T A } } )$ was estimated for different PDs (20 or 100 cycles) and pulse repetition frequency (PRF) values (500 or 2500 Hz).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "With these values, the spatial-peak, time-averaged (SPTA) intensity $( I _ { \\mathrm { S P T A } } )$ was estimated for different PDs (20 or 100 cycles) and pulse repetition frequency (PRF) values (500 or 2500 Hz).",
+   "exposures[0].timing.duty_cycle_pct": "where r and c are the density and acoustic speed in $3 7 ^ { \\circ } \\mathbf { C }$ water (993 $\\mathrm { k g } / \\mathrm { m } ^ { 3 }$ and 1520 m/s), respectively; also, d denotes duty cycle (1% or 5% in this work), and it can be estimated from finding the product between PD and PRF $( N _ { c y c l e }$ and $f _ { o }$ respectively denote number of cycles per pulse and ultrasound frequency).",
+   "exposures[0].timing.sonication_duration_s": "Neurite retraction and cell body shrinkage were found in neuronal cells over a 10-min exposure period with 1.168 W/cm<sup>2</sup> spatial-peak, time-averaged intensity (based on 0.84 MPa peak acoustic pressure, 100-cycle pulse duration, and 500-Hz pulse repetition frequency).",
+   "exposures[0].free_field.pressure_kpa": "Three different $P _ { \\mathrm { m a x } }$ levels were used in this study: 0.13, 0.40, and 0.84 MPa (achieved by adjusting the input electrical voltage on the waveform generator).",
+   "exposures[0].free_field.ispta_w_cm2": "The $I _ { \\mathrm { S P T A } }$ range used in our experiments was calculated to be between 0.028–1.168 W/cm<sup>2</sup> according to the following well-established formula that assumes planewave propagation (Halliwell 2010):",
+   "exposures[0].device.manufacturer": "As illustrated in Figure 1, the platform sends ultrasound pulses through a piston transducer with a center frequency of 1 MHz and diameter of 25.4 mm (Wuxi Beisheng Technology, Wuxi, Jiangsu, China).",
+   "n_subjects": "Each analysis group comprised 250 cells, and this was repeated for four different cell groups $( N = 4 )$ ."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports N=4 independent cell-culture groups of 250 cells per acoustic condition, but many different acoustic conditions (intensity, PD/PRF, mechanism-blocking) were each tested with their own N=4 groups; no single study-wide total number of culture replicates is given."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not explicitly stated; some cell groups received a single exposure while at least one group (Fig. 4) was sonicated sequentially at two intensities in the same session, so a single session count could not be determined."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Figure 5 legend refers to a 'sham control' but the Methods do not describe how the sham/no-ultrasound control condition was implemented."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Most experiments used a 10-min exposure; a shorter 5-min exposure duration was used specifically for the stretch-activated channel/calcium mechanism experiments (Fig. 7)."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "0.028 and 1.168 W/cm2 are the stated overall range; 0.234 and 0.266 W/cm2 are additional specific SPTA values used in Figure 5b/4 for comparing pressure vs. PRF/PD contributions."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "This is an in vitro dish exposure with no skull or tissue path; in_situ fields are set to null per protocol even though the paper separately characterizes an 'in situ reflected pressure' as part of acoustic field calibration (a reflection artifact check, not a reported delivered dose)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.ispta_w_cm2": "first",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

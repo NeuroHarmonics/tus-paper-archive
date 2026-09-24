@@ -1,0 +1,329 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026lin",
+ "doi": "10.1002/mds.70095",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep",
+  "clinical_scale"
+ ],
+ "readout_other": "MDS-UPDRS-III; TMS measures (resting motor threshold, stimulation intensity to elicit 1 mV MEP, MEP amplitude, short-interval intracortical inhibition, intracortical facilitation)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Bilateral GPi region tbTUS reduced MDS-UPDRS-III/bradykinesia scores and increased the stimulation intensity needed for 1 mV MEP (suggesting reduced motor cortical excitability), while bilateral M1 tbTUS increased MEP amplitude (increased excitability) without changing clinical scores; dual-site tbTUS changed neither.",
+ "adverse_events": "observed",
+ "safety_notes": "Three of 13 participants reported headache during or after the study visits. One participant reported mild or mild to moderate headaches lasting for 2–3 days after all three tbTUS visits. Two participants experienced a mild headache during the real GPi/sham M1 tbTUS visit, which resolved within 1 day.",
+ "exposures": [
+  {
+   "label": "Theta burst TUS (tbTUS) of primary motor cortex (M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "motor cortex (M1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "custom two-element annular array ultrasound transducer (64 mm diameter, 500 kHz)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 20,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 120,
+    "protocol_description": "Bilateral M1 theta burst TUS delivered to the motor hot spot determined by TMS, at a targeted depth of 30 mm. Sham used identical settings with ISPPA set to 0 W/cm2. White noise was played through earbuds during sonication to mask auditory cues."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Theta burst TUS (tbTUS) of internal globus pallidus (GPi) region",
+   "target": {
+    "terms": [
+     "globus_pallidus_internus"
+    ],
+    "label": "internal globus pallidus (GPi) region"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS CTX-500 (four-element annular array)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     2.83,
+     5.33
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 120,
+    "protocol_description": "Bilateral GPi-region theta burst TUS targeted via BabelBrain acoustic/thermal simulation and Brainsight neuronavigation to MNI coordinates x,y,z = 20,8,4 (individualized depth). Acoustic field simulation showed the sonicated volume also covered the external globus pallidus and putamen, so the target is referred to as the 'GPi region'. Sham used identical settings with ISPPA set to 0 W/cm2; white noise was played through earbuds during sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "We recruited 15 participants. One participant dropped out because of slight head tightness that developed 1–2 weeks after the first TUS visit. Another participant dropped out because he could not tolerate the TMS procedures. Thirteen participants completed the study.",
+   "n_sessions_per_subject": "Participants underwent three sessions in separate visits in random order at least 1 week apart.",
+   "randomised": "Participants underwent three sessions in separate visits in random order at least 1 week apart.",
+   "blinding": "MDS-UPDRS-III assessment was video recorded and scored by two certified neurologists. One performed on-site evaluations, while the second, blinded to study assignment and the timing of the videos, scored MDS-UPDRS-III from videos presented in random order after all visits.",
+   "sham_type": "The settings of sham sonication were identical to those of real sonication, except ISPPA was set to 0 W/cm<sup>2</sup>.",
+   "auditory_control": "To minimize auditory stimulation of TUS, white noise was applied through earbuds to the participants during sonication.",
+   "exposures[0].fundamental_frequency_khz": "We used a custom two-element annular array ultrasound transducer (64 mm diameter, 500 kHz; Sonic Concepts Inc., Bothell, WA, USA) for M1 sonication.",
+   "exposures[0].free_field.isppa_w_cm2": "The sonication parameters were set as theta burst TUS (tbTUS) as in previous studies: spatial-peak pulse average intensity (ISPPA) of 20 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and 30 mm depth for 120 s.",
+   "exposures[0].timing.pulse_duration_ms": "The sonication parameters were set as theta burst TUS (tbTUS) as in previous studies: spatial-peak pulse average intensity (ISPPA) of 20 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and 30 mm depth for 120 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The sonication parameters were set as theta burst TUS (tbTUS) as in previous studies: spatial-peak pulse average intensity (ISPPA) of 20 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and 30 mm depth for 120 s.",
+   "exposures[0].timing.duty_cycle_pct": "The sonication parameters were set as theta burst TUS (tbTUS) as in previous studies: spatial-peak pulse average intensity (ISPPA) of 20 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and 30 mm depth for 120 s.",
+   "exposures[0].timing.sonication_duration_s": "The sonication parameters were set as theta burst TUS (tbTUS) as in previous studies: spatial-peak pulse average intensity (ISPPA) of 20 $\\mathrm { { w } } / { \\mathrm { { c m } } ^ { 2 } }$ in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and 30 mm depth for 120 s.",
+   "exposures[1].fundamental_frequency_khz": "We used a four-element annular array ultrasound transducer at fundamental frequency of 500 kHz (NeuroFUS CTX-500; Sonic Concepts).",
+   "exposures[1].free_field.isppa_w_cm2": "The parameters of tbTUS were ISPPA of 30 W/cm<sup>2</sup> in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and individualized depth for 120 s.",
+   "exposures[1].in_situ.isppa_w_cm2": "The estimated ISPPA at the GPi target ranged from 2.83 to 5.33 W/cm<sup>2</sup> in the participants (Table 1).",
+   "exposures[1].timing.pulse_duration_ms": "The parameters of tbTUS were ISPPA of 30 W/cm<sup>2</sup> in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and individualized depth for 120 s.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The parameters of tbTUS were ISPPA of 30 W/cm<sup>2</sup> in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and individualized depth for 120 s.",
+   "exposures[1].timing.duty_cycle_pct": "The parameters of tbTUS were ISPPA of 30 W/cm<sup>2</sup> in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and individualized depth for 120 s.",
+   "exposures[1].timing.sonication_duration_s": "The parameters of tbTUS were ISPPA of 30 W/cm<sup>2</sup> in water with 10% duty cycle, 5 Hz pulse repetition frequency, 20 ms pulse duration, and individualized depth for 120 s.",
+   "exposures[0].device.manufacturer": "We used a custom two-element annular array ultrasound transducer (64 mm diameter, 500 kHz; Sonic Concepts Inc., Bothell, WA, USA) for M1 sonication.",
+   "exposures[0].device.model": "We used a custom two-element annular array ultrasound transducer (64 mm diameter, 500 kHz; Sonic Concepts Inc., Bothell, WA, USA) for M1 sonication.",
+   "exposures[1].device.manufacturer": "We used a custom two-element annular array ultrasound transducer (64 mm diameter, 500 kHz; Sonic Concepts Inc., Bothell, WA, USA) for M1 sonication.",
+   "exposures[1].device.model": "We used a four-element annular array ultrasound transducer at fundamental frequency of 500 kHz (NeuroFUS CTX-500; Sonic Concepts)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "15 participants were enrolled/recruited but only 13 completed the study and were analysed; enrolled figure (15) is reported here per instructions."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the offline video-based MDS-UPDRS-III rater is explicitly stated as blinded; blinding of participants to real vs sham sonication is not explicitly described."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "Acoustic field simulation showed the sonicated volume also covered the external globus pallidus and putamen, so effects attributed to 'GPi tbTUS' may partly reflect neighbouring structures."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

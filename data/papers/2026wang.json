@@ -1,0 +1,182 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wang",
+ "doi": "10.1002/cns.70786",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8,
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Open field test (OFT), forced swim test (FST), tail suspension test (TST); Western blotting, immunofluorescence, and qPCR for P2X4R, IBA1, IL-1beta/IL-6/TNF-alpha, BDNF/TrkB, CaMKII/CREB phosphorylation, Bax/Bcl-2; Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS reduced LPS-induced depression-like behaviour and hippocampal neuroinflammation and apoptosis while increasing BDNF/TrkB signalling; the study assessed molecular/behavioural outcomes rather than directly measuring the direction of neuronal excitability change.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to hippocampus in LPS-induced depression model (LIPUS, IVM, and KN-93 co-treatment groups)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampal region"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 1800,
+    "protocol_description": "LIPUS was delivered via a transducer coupled to a custom PMMA collimator (3 mm tip diameter) filled with degassed deionized water and fixed over the targeted cranial region; ultrasonic probe simulation showed stronger intensity at a 3 mm depth, corresponding to the hippocampus. LIPUS was applied 30 min/day; the number of treatment days is not explicitly stated in the Methods but the co-administered LPS/IVM/KN-93 regimens ran for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "LIPUS stimulation was delivered using an ultrasound transducer operating at 800 kHz, coupled with a custom-fabricated polymethyl methacrylate (PMMA) collimator, which was fixed over the targeted cranial region of the mouse.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Based on previously published studies [25, 29], the ultrasound parameters were set as follows: pulse repetition frequency of 100 Hz, duty cycle of 10%, and total stimulation duration of 30 min per session.",
+   "exposures[0].timing.duty_cycle_pct": "Based on previously published studies [25, 29], the ultrasound parameters were set as follows: pulse repetition frequency of 100 Hz, duty cycle of 10%, and total stimulation duration of 30 min per session.",
+   "exposures[0].timing.sonication_duration_s": "Based on previously published studies [25, 29], the ultrasound parameters were set as follows: pulse repetition frequency of 100 Hz, duty cycle of 10%, and total stimulation duration of 30 min per session.",
+   "n_subjects": "The experiment is divided into two parts. The first part consists of three groups: Control group, LPS group, and LPS+ LIPUS group (hereafter referred to as the LIPUS group). The second part includes LPS group, LIPUS group, LPS +LIPUS + IVM group (hereafter referred to as the IVM group), and LPS + LIPUS + KN-93 group (hereafter referred to as the KN-93 group). Each group contains 8 samples (n = 8).",
+   "blinding": "All data were collected and analyzed in a blind manner."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "the paper states each experimental group (including Control, LPS, LIPUS, IVM, KN-93 across two experiment parts) contains n=8, but never gives a single total number of animals exposed to ultrasound; group sizes for the LIPUS-receiving arms (part-1 LIPUS group and part-2 LIPUS, IVM, KN-93 groups) are listed rather than summed, and it is unclear whether the 'LIPUS group' in part 2 is the same cohort reused from part 1 or a separate n=8 cohort."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "LIPUS is stated to be applied '30 min/day' but the total number of treatment days is not explicitly stated in the Methods; the co-administered LPS/IVM/KN-93 dosing regimens ran for 7 days, which may or may not match the LIPUS treatment schedule."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "the paper does not state whether animals were awake or anaesthetised during LIPUS delivery (anaesthesia is mentioned only for terminal tissue collection procedures)."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "the ultrasound transducer manufacturer/model is not named in the main text (only 'an ultrasound transducer operating at 800 kHz' with a custom-fabricated collimator)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "pulse duration is not explicitly stated; only PRF (100 Hz) and duty cycle (10%) are given, from which pulse duration could be computed (1 ms) but this was not done per instructions."
+   },
+   {
+    "field": "sham_type",
+    "reason": "the LPS-only group serves as the disease comparator but there is no explicit sham-ultrasound (inactive transducer) arm described, so sham_type is set to 'none'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

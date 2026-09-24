@@ -1,0 +1,240 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025ramachandran",
+ "doi": "10.1088/1741-2552/adbb1f",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": null,
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Time-locked increases in RSU firing rate during tFUS, sensitive to PRF and duty cycle; FSU showed delayed-onset increases in firing rate rather than time-locked responses.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "S1 tFUS, PRF and duty-cycle sweep",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "S1 (primary somatosensory cortex)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H276"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 114,
+    "isppa_w_cm2": 0.0790238,
+    "ispta_w_cm2": [
+     0.0006,
+     0.00603,
+     0.03013,
+     0.06026,
+     0.09039
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.04,
+     0.2,
+     0.4
+    ],
+    "pulse_repetition_frequency_hz": [
+     30,
+     300,
+     1500,
+     3000,
+     4500
+    ],
+    "duty_cycle_pct": [
+     6,
+     30,
+     60
+    ],
+    "sonication_duration_s": 0.067,
+    "protocol_description": "Trials of 67 ms ultrasound duration were delivered every 2.5 s (10% jitter), 505 trials per parameter combination. PRF was swept (30, 300, 1500, 3000, 4500 Hz) at a fixed 200 microsecond tone-burst duration (TBD); PRF was then held at 1500 Hz while TBD was swept (40, 200, 400 microseconds), giving duty cycles of 6%, 30%, and 60%. A sham condition delivered the 1500 Hz PRF stimulus off-target toward the front of the skull."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "15 adult male Wistar rats were used in this study, each weighing approximately 250 g.",
+   "randomised": "Parameters were recorded in a random order in each animal.",
+   "sham_type": "We then implanted 5 more rats with chronic electrodes for head fixation, and at 7 months of age completed both awake and anesthetized recordings using 30 Hz and 1500 Hz PRF stimulation with 200 µs TBD, as well as a sham condition at 1500 Hz PRF with the ultrasound beam directed off target towards the front of the skull.",
+   "auditory_control": "The sham condition allowed us to confirm that the activation we observed was not due to any auditory confound from off-target activation or skull conduction from the transducer.",
+   "readouts": "Recordings were taken using the TDT Neurophysiology Workstation (24 kHz sampling frequency, Tucker-David Technologies, Alachua, FL,",
+   "readout_timing": "We observed cell type specific responses to varying PRF and DC in the awake setting as well as the anesthetized setting, with time locked responses observed in RSU and delayed responses in FSU.",
+   "anaesthesia": "We observed cell type specific responses to varying PRF and DC in the awake setting as well as the anesthetized setting, with time locked responses observed in RSU and delayed responses in FSU.",
+   "exposures[0].target.label": "attached to the transducer before experiments. The collimator and transducer were aligned with the targeted brain region, and the Verasonics system was used to steer the ultrasound beam’s depth through the collimator and into the brain at S1 (coordinates $X = 0 , Y = 0 , Z = 3 5 ,$ relative to the center of the transducer’s spherical cap).",
+   "exposures[0].device.model": "Ultrasound was delivered from our 128-element random array ultrasound transducer H276 from $( f _ { 0 } { \\mathrm { : } }$",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency of 1500 kHz on the bottom left is pulsed, at a variety of frequencies called the ‘pulse repetition frequency’ (PRF) and with varying tone burst durations (TBD).",
+   "exposures[0].in_situ.pressure_kpa": "We determined that an input voltage of 15 V resulted in a measured peak-to-peak ultrasound pressure of 114 kPa in the targeted region after penetrating the skull and silicone layer while using parameters of 1500 Hz PRF, a $^ { 6 7 }$ ms pulse duration (PD), and a 200 µs tone-burst duration (TBD) (figures 2(A) and (B)).",
+   "exposures[0].in_situ.isppa_w_cm2": "The measured $I _ { \\mathrm { S P T A } }$ result was 23.7071 mW $\\mathrm { c m } ^ { - 2 } { } .$ , and the $I _ { \\mathrm { S P P A } }$ is 79.0238 mW $\\mathrm { c m } ^ { - 2 }$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on our ex vivo measurement ofpeak-to-peak pressure, we calculated that the PRF conditions must have an $I _ { \\mathrm { S P T A } }$ of 0.6 mW $\\mathrm { c m } ^ { - 2 }$ 6.03 mW $\\mathrm { c m } ^ { - 2 }$ , 30.13 mW $\\mathrm { c m } ^ { - 2 }$ , 60.26 mW $\\mathrm { c m } ^ { - 2 }$ and 90.39 mW $\\mathrm { c m } ^ { - 2 }$ respectively by calculating the pulse intensity integral $ { \\operatorname { P I I } } =  { \\int } \\frac {  { p ^ { 2 } } ( t ) } { Z _ { 0 } }$ dt and then multiplying by the different values for PRF.",
+   "exposures[0].timing.pulse_duration_ms": "We then held PRF constant at 1500 Hz and tested TBD of 40 $\\mu \\mathbf { S } ,$ 200 $\\mu s$ and 400 $\\mu \\mathbf { S } ,$ resulting in DCs of 6%, 30% and 60%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We tested 10 rats implanted with chronic electrodes and trained for head fixation, taking recordings of stimulation at the 5 PRF levels previously used by our group, 30 Hz, 300 H, 1500 Hz, 3000 Hz, and 4500 Hz, while using a TBD of200 µs, in our awake model and then in the same 10 rats under anesthesia in order to confirm that the results under anesthesia within our model were similar to previous acute studies [18, 34] (figure 2(C)).",
+   "exposures[0].timing.duty_cycle_pct": "We then held PRF constant at 1500 Hz and tested TBD of 40 $\\mu \\mathbf { S } ,$ 200 $\\mu s$ and 400 $\\mu \\mathbf { S } ,$ resulting in DCs of 6%, 30% and 60%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "A train of these pulses is delivered for 67 ms, the ultrasound duration, in each trial.",
+   "exposures[0].device.manufacturer": "1.5 MHz, 3 dB focal size: 1.36 mm axially, 0.46 mm laterally), customized and manufactured by Sonic Concepts, Inc. (Bothell, WA, USA) (supplementary figure 2(A)). The transducer has a radius of acoustic aperture of 8.5 mm, and a 15 mm diameter of acoustic exit plane. Elements were arranged in a random distribution with 1 mm pitch (supplementary figure"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "ISPTA values across PRF conditions were calculated from a single measured peak-to-peak pressure via a pulse-intensity-integral formula, not independently measured for each PRF; the calculated value for 1500 Hz (30.13 mW/cm2) differs from the value the paper separately reports as directly measured for the same nominal condition (23.7071 mW/cm2, quoted under isppa_w_cm2)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Source text reads '300 H' where '300 Hz' is clearly intended (likely OCR/typesetting error); recorded as 300 Hz."
+   },
+   {
+    "field": "randomised",
+    "reason": "The paper states parameters were tested in random order within each animal (a within-subject design), not that subjects were randomised to groups; recorded as true but this may not map cleanly onto the randomised-groups sense of the field."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Sham used real ultrasound delivered off-target rather than a named auditory-masking method; classified as 'other' since it does not match a listed auditory_control category."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Recordings occurred across multiple ages/months (PRF tests, anesthesia tests, DC tests) with 2-3 recordings per head-fixation session, but paper does not state a single total number of sessions per subject."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "first"
+  }
+ }
+}

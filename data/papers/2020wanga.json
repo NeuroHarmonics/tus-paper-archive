@@ -1,0 +1,192 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020wanga",
+ "doi": "10.1002/mds.27952",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": null,
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS to the STN significantly decreased beta-band LFP power in motor cortex and significantly weakened beta/high-gamma and beta/ripple phase-amplitude coupling, compared to before TUS and to the PD+Sham group.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS targeting STN in MPTP-treated (parkinsonian) mice",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "STN"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus America, Inc.",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 390,
+    "isppa_w_cm2": 5.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "The ultrasound parameters fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) were 500 kHz, 1 kHz, 5%, and 50 ms, respectively. The interstimulus interval was 1 second, and the total stimulation time was 5 minutes. In the PD + TUS group, we continuously recorded LFPs for 5 minutes and then stimulated the STN by TUS for 5 minutes (LFPs were not recorded during stimulation); finally, we recorded LFPs for another 5 minutes."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.05
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Mice were randomly divided into four groups: the healthy group $( \\mathsf { N } = 6 ) ;$ the PD group $( \\Nu = 6 ) ;$ the ${ \\mathsf { P D } } + { \\mathsf { T U S } }$ group $( \\mathsf { N } = 1 1 ) ;$ and the PD + Sham group $( \\ N = 6 ) .$",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound parameters fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) were 500 kHz, 1 kHz, 5%, and 50 ms, respectively.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Maximum ultrasound pressure was 0.39 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 5.1 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Maximum ultrasound pressure was 0.39 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ was 5.1 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound parameters fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) were 500 kHz, 1 kHz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound parameters fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) were 500 kHz, 1 kHz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound parameters fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) were 500 kHz, 1 kHz, 5%, and 50 ms, respectively.",
+   "exposures[0].device.manufacturer": "19 A focused ultrasound transducer (V301-SU; focus, diameter: 25.4 mm, radius of curvature: 40 mm; Olympus America, Inc., Chelmsford, MA) was connected to the mouse’s head by a conical collimator filled with ultrasound coupling gel.",
+   "exposures[0].device.model": "19 A focused ultrasound transducer (V301-SU; focus, diameter: 25.4 mm, radius of curvature: 40 mm; Olympus America, Inc., Chelmsford, MA) was connected to the mouse’s head by a conical collimator filled with ultrasound coupling gel.",
+   "n_sessions_per_subject": "In the ${ \\mathsf { P D } } + { \\mathsf { T U S } }$ group, we continuously recorded LFPs for 5 minutes and then stimulated the STN by TUS for 5 minutes (LFPs were not recorded during stimulation); finally, we recorded LFPs for another 5 minutes."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the 0.39 MPa / 5.1 W/cm2 field measurement (by needle hydrophone) was made in free field/water or in situ; domain left unspecified."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "N=11 is the PD+TUS group size (the only group receiving active TUS); healthy, PD, and PD+Sham groups (N=6 each, total 77 mice used study-wide across this and related work) were not counted."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

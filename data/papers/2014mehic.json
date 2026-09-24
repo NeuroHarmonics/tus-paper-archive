@@ -1,0 +1,455 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2014mehic",
+ "doi": "10.1371/journal.pone.0086939",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  6,
+  3,
+  5,
+  5,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Video-scored ordinal (0-3) motor-movement robustness/success-rate scale; hematoxylin-eosin and cresyl-violet brain histology",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Planar, FUS and mFU ultrasound each evoked motor movements (tail, paw, whisker) whose robustness scaled with temporal-average intensity, consistent with excitatory neuromodulation; no inhibitory effects were reported.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological analysis (H&E, cresyl violet) after UNMOD trials showed no observable brain damage.",
+ "exposures": [
+  {
+   "label": "Planar (Ultran) ultrasound, midline sweep (500 kHz)",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "midline positions A (caudal), B (mid-sagittal), and C (rostral)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GS500-D13"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.15,
+     5.25
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 200,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval, applied in a rostral-to-caudal sweep along the skull midline at three stable positions (A, B, C) 3 mm apart. One ultrasound trial consisted of ten applications of this protocol, completed in approximately 10 s; trials at the three positions were separated by ~5 min. A separate series of trials at position B varied ISPTA from 0.15 to 5.25 W/cm2 by changing peak pressure while keeping the temporal pattern fixed."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30000.0
+   }
+  },
+  {
+   "label": "Focused ultrasound (FUS), single 2 MHz carrier, parietal grid",
+   "target": {
+    "terms": [
+     "parietal_lobe"
+    ],
+    "label": "six 3x3 mm regions spanning bregma to lambda, emphasising the parietal region (54-square grid, 1 mm resolution)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-148"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 200,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "The focused UNMOD (FUS) protocol was designed to overlap the planar protocol's temporal structure (88 bursts, PRF 1.5 kHz, each burst as stated 200 ms, within a 1-s interval); both elements of the dual-element transducer were driven at 2 MHz. One trial consisted of ten applications completed in ~10 s. The transducer was moved in 1-mm steps through a 54-square grid (six 3x3 mm regions) spanning bregma to lambda; FUS was applied by equalising the carrier frequencies of the two elements."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30000.0
+   }
+  },
+  {
+   "label": "Modulated focused ultrasound (mFU), 500 kHz difference frequency, parietal grid",
+   "target": {
+    "terms": [
+     "parietal_lobe"
+    ],
+    "label": "six 3x3 mm regions spanning bregma to lambda, emphasising the parietal region (54-square grid, 1 mm resolution)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-148"
+   },
+   "fundamental_frequency_khz": [
+    1750,
+    2250
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.1,
+     5.0
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 200,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "One element of the focused transducer was driven at 1.75 MHz and the other at 2.25 MHz, producing a difference (modulation) frequency of 500 kHz at the focus; otherwise the mFU parameters mimicked the planar protocol (88 bursts, PRF 1.5 kHz, each burst as stated 200 ms, in a 1-s interval; one trial = ten applications in ~10 s). In a separate intensity-sweep experiment, mFU intensity was decreased from a suprathreshold level by reducing the number or duration of pulses; motor responses were induced until reaching 1 W/cm2 ISPTA."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "unresolvable",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30000.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[0].free_field.ispta_w_cm2": "Another series of trials at position B (the mid-sagittal region) were conducted with $\\mathrm { I _ { S P T A } }$ varied from 0.15 to 5.25 $\\mathrm { W / c m ^ { 2 } }$ by changing only the peak pressure and maintaining the temporal pattern.",
+   "exposures[0].timing.pulse_duration_ms": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[0].timing.sonication_duration_s": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[1].fundamental_frequency_khz": "During the focused ultrasound for UNMOD studies each element of the transducer was driven at 2 MHz.",
+   "exposures[1].timing.pulse_duration_ms": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[1].timing.sonication_duration_s": "For both ultrasound methods, one trial consisted of ten applications of this ultrasound protocol and was completed in approximately 10 s.",
+   "exposures[2].fundamental_frequency_khz": "To study the effects of mFU – the vibroacoustography technique – one element of the focused transducer was driven at 1.75 MHz and the other at 2.25 MHz, producing a",
+   "exposures[2].free_field.ispta_w_cm2": "Induction of a variety of motor functions varied by intensity (0.1– 5.0 I ), and by the inclusion or exclusion of the low-frequency temporal modulation of the high-frequency carrier wave.",
+   "exposures[2].timing.pulse_duration_ms": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "88 bursts of 500-kHz ultrasound, each of length 200 ms, at a pulse repetition frequency of 1.5 kHz in a 1-s interval.",
+   "exposures[2].timing.sonication_duration_s": "For both ultrasound methods, one trial consisted of ten applications of this ultrasound protocol and was completed in approximately 10 s.",
+   "n_subjects": "Some of the five mice for each of the FUS and mFU trials showed minimal induced activity while others showed substantial induced activity under each mFU and FUS protocol (Fig. 10).",
+   "exposures[0].device.manufacturer": "A pulsed, single-frequency UNMOD protocol using a planar piston transducer (Ultran Group, Ultran GS500-D13, State College, PA, U.S.; Fig.",
+   "exposures[0].device.model": "A pulsed, single-frequency UNMOD protocol using a planar piston transducer (Ultran Group, Ultran GS500-D13, State College, PA, U.S.; Fig.",
+   "exposures[1].device.manufacturer": "A dual element, coaxial, confocal and circular transducer and associated matching networks (H-148, Sonic Concepts, Woodinville, WA, U.S.) with a filled, central opening were used (Fig.",
+   "exposures[1].device.model": "A dual element, coaxial, confocal and circular transducer and associated matching networks (H-148, Sonic Concepts, Woodinville, WA, U.S.) with a filled, central opening were used (Fig.",
+   "exposures[2].device.manufacturer": "A dual element, coaxial, confocal and circular transducer and associated matching networks (H-148, Sonic Concepts, Woodinville, WA, U.S.) with a filled, central opening were used (Fig.",
+   "exposures[2].device.model": "A dual element, coaxial, confocal and circular transducer and associated matching networks (H-148, Sonic Concepts, Woodinville, WA, U.S.) with a filled, central opening were used (Fig."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states 88 bursts at a PRF of 1.5 kHz (period 0.67 ms) each lasting 200 ms; these are dimensionally inconsistent (a 200 ms pulse cannot repeat at 1.5 kHz within a 1-s interval), likely a units typo (e.g. 200 microseconds) in the source; recorded as stated ('200 ms')."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "Same burst-timing arithmetic inconsistency as the planar protocol, which this FUS protocol was designed to mimic; recorded as stated."
+   },
+   {
+    "field": "exposures[2].timing.pulse_duration_ms",
+    "reason": "Same burst-timing arithmetic inconsistency as the planar protocol, which the mFU parameters mimicked; recorded as stated."
+   },
+   {
+    "field": "exposures[1].free_field.ispta_w_cm2",
+    "reason": "Unit label is garbled in the source ('varied by intensity (0.1-5.0 I )'), missing the ISPTA subscript; value is inferred to be W/cm2 ISPTA given the paper's consistent use of ISPTA elsewhere, and the sentence describes both mFU and FUS jointly."
+   },
+   {
+    "field": "exposures[2].free_field.ispta_w_cm2",
+    "reason": "Unit label is garbled in the source ('varied by intensity (0.1-5.0 I )'), missing the ISPTA subscript; value is inferred to be W/cm2 ISPTA given the paper's consistent use of ISPTA elsewhere. A separate sentence states motor responses were induced 'until reaching 1 W/cm2' as mFU intensity was reduced in a dedicated three-mouse experiment."
+   },
+   {
+    "field": "exposures[2].fundamental_frequency_khz",
+    "reason": "mFU's 500 kHz is the vibro-acoustography 'difference frequency' produced by two transducer elements driven at 1.75 MHz and 2.25 MHz, not a single literal carrier frequency; recorded as the paper's own stated effective/fundamental frequency for mFU."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports several independent group sizes across sub-experiments without ever stating a study-wide total: 3 mice (planar intensity sweep), 6 mice (planar spatial sweep), 3 mice (mFU variable-intensity), 5 mFU mice and 5 FUS mice (separate cohorts), 3 mice (mFU & FUS applied to the same animals). It is not stated whether any of these cohorts overlap. Note also that the Figure 10 legend states 'ten mFU and ten FUS mice', which conflicts with the main text's statement of five mice per group for that experiment; the main-text value (5 and 5) was used per the rule that figures alone do not count."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "disagree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[2].fundamental_frequency_khz": "second",
+   "exposures[2].free_field.ispta_w_cm2": "unresolvable"
+  }
+ }
+}

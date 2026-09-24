@@ -1,0 +1,159 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1981borrelli",
+ "doi": "10.1121/1.385791",
+ "model_system": [
+  "other_vertebrate"
+ ],
+ "species": "cat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "Transmission electron microscopy of chemical synapses in exposed brain gray matter",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is an ultrastructural damage study, not a study of excitatory/inhibitory modulation: ultrasound produced early, direct morphological damage to chemical synapses (decreased and clumped synaptic vesicles, debris, swelling of synaptic elements, widened synaptic cleft), which the authors propose explains the immediate irreversible functional effects of ultrasound on CNS tissue.",
+ "adverse_events": "observed",
+ "safety_notes": "Synapses in the exposed hemisphere showed dose- and time-dependent ultrastructural damage (decreased and clumped synaptic vesicles, reduced electron density, swollen pre- and post-synaptic elements, amorphous debris, and a synaptic cleft width increased 10%-25%), considered to explain the irreversible interruption of CNS function seen after ultrasonic exposure.",
+ "exposures": [
+  {
+   "label": "Focused ultrasound exposure of subcortical gray matter",
+   "target": {
+    "terms": [
+     "subcortical"
+    ],
+    "label": "subcortical gray matter"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 300
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.5,
+     3
+    ],
+    "protocol_description": "The exposure conditions involved delivering a temporally rectangular envelope of 1 MHz ultrasound at 300 W/cm2 to the selected sites for exposure times ranging from 0.5 to 3 s. Three regions of each brain are selected for exposure with each successive exposure being made in opposite hemispheres, and the corresponding sites in the brain hemisphere not receiving the ultrasonic exposure are sham irradiated. Post-exposure sacrifice time is varied from immediately following up to 15 min after the exposure to record the evolution of the observed altered morphology."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The exposure conditions involved delivering a temporally rectangular envelope of 1 MHz ultrasound at 300 W/cm •' to the selected sites for exposure times ranging from 0.5 to 3 s.",
+   "exposures[0].in_situ.ispta_w_cm2": "These EM studies employed lesser intensities and much longer exposure times than those used in the present study where the tissue is irradiated with a focused sound beam of SPTA intensity of 300 W/cm • for exposure times of 0.5 to 3 s.",
+   "exposures[0].timing.sonication_duration_s": "These EM studies employed lesser intensities and much longer exposure times than those used in the present study where the tissue is irradiated with a focused sound beam of SPTA intensity of 300 W/cm • for exposure times of 0.5 to 3 s."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Text states 'the tissue is irradiated with a focused sound beam of SPTA intensity of 300 W/cm^2'; classified as in_situ because the paper describes this as the dose delivered to the tissue itself (bone flap removed, dura intact, saline-filled headpan), though whether this is a measured or calibrated value is not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper describes exposing three regions of 'each brain' with contralateral sham but never states the total number of cats used."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Specific exposed nuclei are not named; the paper refers only to 'subcortical gray matter' for the exposed/sham tissue examined."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

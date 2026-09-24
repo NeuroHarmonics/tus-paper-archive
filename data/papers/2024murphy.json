@@ -1,0 +1,755 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024murphy",
+ "doi": "10.1016/j.neuron.2024.07.002",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "behaviour",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Fiber photometry of GCaMP6s calcium signals; machine-vision tracking of head motion, walking, and stretch-attend posture; rotarod task; thermocouple brain temperature recording; rhodamine B dextran blood-volume fluorescence and ultrafast power Doppler cerebral blood volume imaging; corticosterone ELISA; mass cytometry immune profiling",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Lower PRFs (down to 2.5 Hz) with higher duty cycle/intensity drove excitation, while ~20 Hz PRF with lower duty cycle and prolonged duration drove post-stimulus inhibition, across CMT, DMH, LC and BNST; optimized excitatory vs inhibitory waveforms produced opposite behavioral (head-motion) effects at the same CMT target.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Repeated DMH stimulation (10 stimulations, 3-min interval) did not change blood corticosterone or peripheral immune responses, supporting the safety of repeated FUS brain stimulation to deep-brain targets.",
+ "exposures": [
+  {
+   "label": "CMT (CAMKII+) PRF / temporal-compression / intensity coordinate-descent optimization",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "central medial thalamus (CMT)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS mountable ring transducer"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.3,
+     7.4
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     2.5,
+     40
+    ],
+    "duty_cycle_pct": [
+     20,
+     2.5
+    ],
+    "sonication_duration_s": [
+     5,
+     40
+    ],
+    "protocol_description": "Ultrasound was pulsed with 5 different PRFs ranging from 2.5 to 40 Hz while maintaining a fixed pulse train duty cycle of 20%, an intensity of 3.7 W/cm2, and a pulse train of 5 s, with largest excitation at 2.5 Hz and significant post-stimulus inhibition at 20 Hz. With a PRF of 2.5 Hz selected for excitation and 20 Hz for inhibition, the duration of pulsing was incrementally increased while duty cycle decreased so total power delivery was held constant (maximal excitation at 5 s, 20% duty cycle; greatest inhibition at 40 s, 2.5% duty cycle). Spatial-peak intensity was then incrementally increased from 0.3 to 7.4 W/cm2 (peak excitation at 5.4 W/cm2; significant post-stimulus inhibition only at 3.7 W/cm2). Each parameter combination was trialed 7 times in randomized order for each animal with a 3-min interval between the beginning of each trial."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  },
+  {
+   "label": "DMH (DLX+/GABAergic) PRF / compression optimization and suboptimal-protocol comparison",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "dorsomedial hypothalamus (DMH)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS mountable ring transducer"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     2.5,
+     40
+    ],
+    "duty_cycle_pct": [
+     2.5,
+     20
+    ],
+    "sonication_duration_s": [
+     5,
+     40
+    ],
+    "protocol_description": "In examining compression, the DMH responded maximally at 10-s, 10% D.C. compression. To examine whether the optimizations had bearing on behavior, the DMH was also stimulated with the same intensity and duty cycle but with a suboptimal PRF of 20 Hz, which produced less activation and eliminated significant walking induction. Blood volume was also measured following optimized stimulation (2.5 Hz, 10 s, 10% D.C.) of the DMH, LC, and BNST."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LC (TH+/noradrenergic) compression optimization",
+   "target": {
+    "terms": [
+     "locus_coeruleus"
+    ],
+    "label": "locus coeruleus (LC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS mountable ring transducer"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     2.5,
+     40
+    ],
+    "duty_cycle_pct": [
+     2.5,
+     20
+    ],
+    "sonication_duration_s": [
+     5,
+     40
+    ],
+    "protocol_description": "In examining compression, LC neurons showed greatest excitation at 5-s 20% duty cycle (D.C.), matching the optimal CMT waveform. For the separate blood-volume assay, LC was instead stimulated with the 'optimized' protocol shared across regions (2.5 Hz, 10 s, 10% D.C.) used for DMH, LC and BNST."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "BNST (GABAergic) PRF / compression examination",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "bed nucleus of the stria terminalis (BNST)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS mountable ring transducer"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     2.5,
+     40
+    ],
+    "duty_cycle_pct": [
+     2.5,
+     20
+    ],
+    "sonication_duration_s": [
+     5,
+     40
+    ],
+    "protocol_description": "BNST neurons did not show activation at any PRF but did undergo a significant decrease during the post-stimulus period at 20 Hz stimulation, similar to the CMT. BNST neurons did not show significant suppression at any compression of the 20 Hz protocol and were not passed onto the intensity step of examination. Blood volume was measured following optimized stimulation (2.5 Hz, 10 s, 10% D.C.) of the DMH, LC, and BNST."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LH (hypocretin) stimulation for walking/SAP comparison with DMH",
+   "target": {
+    "terms": [
+     "lateral_hypothalamus"
+    ],
+    "label": "lateral hypothalamus (LH)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS mountable ring transducer"
+   },
+   "fundamental_frequency_khz": 550,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "The focus was positioned onto the LH while recording hypocretin neuron activity and behavior in Hcrt-cre animals; LH stimulation increased walking only during FUS stimulation and produced extended stretch-attend posture, in contrast to DMH stimulation. No PRF, duty cycle, duration or intensity values specific to LH stimulation are given in the main text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "CMT targeting during ultrafast power-Doppler cerebral blood volume imaging",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "central medial thalamus (CMT)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H204"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 767,
+    "isppa_w_cm2": 18.89,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 80,
+    "pulse_repetition_frequency_hz": 2.5,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 5,
+    "protocol_description": "Experiments (n = 5 mice) consisted of 4 trials with a 25 s baseline, 5 s sonication and a 155 s cooldown period. FUS (pressure = 0.767 MPa, intensity = 18.89 W/cm2, pulse duration = 80 ms, duty cycle = 20%) was delivered to the CMT at 3 mm posterior to the center of the natural focus, confocally imaged with power-Doppler; the same stimulus is described elsewhere as 2.5 Hz, 5 s, 20% D.C., 18.9 W/cm2."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "To deliver FUS to the target area, we used a mountable ring transducer developed for freely behaving animals (Figure 1B)<sup>16</sup> at an operating frequency of 550 kHz, which is well within the frequency range used in human clinical applications.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Finally, we optimized power by incrementally increasing the spatial peak intensity from 0.3 to 7.4 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was pulsed with 5 different PRFs ranging from 2.5 to 40 Hz while maintaining a fixed pulse train duty cycle of 20%, an intensity of 3.7 W/cm<sup>2</sup>, and a pulse train of 5 s.",
+   "exposures[0].timing.duty_cycle_pct": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[0].timing.sonication_duration_s": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound delivery was performed as described previously, using a 550 kHz operating frequency (Figure S1) with the parameters described in Table S1.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Ultrasound was pulsed with 5 different PRFs ranging from 2.5 to 40 Hz while maintaining a fixed pulse train duty cycle of 20%, an intensity of 3.7 W/cm<sup>2</sup>, and a pulse train of 5 s.",
+   "exposures[1].timing.duty_cycle_pct": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[1].timing.sonication_duration_s": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[2].fundamental_frequency_khz": "Ultrasound delivery was performed as described previously, using a 550 kHz operating frequency (Figure S1) with the parameters described in Table S1.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Ultrasound was pulsed with 5 different PRFs ranging from 2.5 to 40 Hz while maintaining a fixed pulse train duty cycle of 20%, an intensity of 3.7 W/cm<sup>2</sup>, and a pulse train of 5 s.",
+   "exposures[2].timing.duty_cycle_pct": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[2].timing.sonication_duration_s": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[3].fundamental_frequency_khz": "Ultrasound delivery was performed as described previously, using a 550 kHz operating frequency (Figure S1) with the parameters described in Table S1.",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "Ultrasound was pulsed with 5 different PRFs ranging from 2.5 to 40 Hz while maintaining a fixed pulse train duty cycle of 20%, an intensity of 3.7 W/cm<sup>2</sup>, and a pulse train of 5 s.",
+   "exposures[3].timing.duty_cycle_pct": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[3].timing.sonication_duration_s": "We found that compression enhanced excitation of the 2.5 Hz excitatory parameter (Figure 1F, maximal excitation at 5 s, 20% duty cycle), whereas decreasing compression with the 20 Hz pulsing led to the greatest inhibition (Figure 1G, 40 s 2.5% duty cycle).",
+   "exposures[4].fundamental_frequency_khz": "Ultrasound delivery was performed as described previously, using a 550 kHz operating frequency (Figure S1) with the parameters described in Table S1.",
+   "exposures[5].fundamental_frequency_khz": "A single element 500 kHz transducer (H204, Sonic Concepts, Bothell, WA, USA) with a 15 MHz linear array (L22-14vXLF, Vermon, S.A., Tours, France) confocally aligned with the annular opening of the FUS transducer was positioned above the cranial window using a 3D-motorized positioning system (BiSlide; Velmex, Bloomfield, NY, USA).",
+   "exposures[5].free_field.pressure_kpa": "FUS (pressure = 0.767 MPa, intensity = 18.89 W/cm<sup>2</sup>, pulse duration = 80 ms, duty cycle = 20%) was delivered to the CMT at 3 mm posterior to the center of the natural focus. Pressure and intensity of the FUS transducer were calibrated prior to the experiments using an HGL 0200 hydrophone (Onda Corporation, Sunnyvale, CA, USA) in degassed water.",
+   "exposures[5].free_field.isppa_w_cm2": "FUS (pressure = 0.767 MPa, intensity = 18.89 W/cm<sup>2</sup>, pulse duration = 80 ms, duty cycle = 20%) was delivered to the CMT at 3 mm posterior to the center of the natural focus. Pressure and intensity of the FUS transducer were calibrated prior to the experiments using an HGL 0200 hydrophone (Onda Corporation, Sunnyvale, CA, USA) in degassed water.",
+   "exposures[5].timing.pulse_duration_ms": "FUS (pressure = 0.767 MPa, intensity = 18.89 W/cm<sup>2</sup>, pulse duration = 80 ms, duty cycle = 20%) was delivered to the CMT at 3 mm posterior to the center of the natural focus.",
+   "exposures[5].timing.duty_cycle_pct": "FUS (pressure = 0.767 MPa, intensity = 18.89 W/cm<sup>2</sup>, pulse duration = 80 ms, duty cycle = 20%) was delivered to the CMT at 3 mm posterior to the center of the natural focus.",
+   "exposures[5].timing.pulse_repetition_frequency_hz": "(E) Representative time series of changes in cerebral blood volume (DCBV) relative to a 5 s FUS stimulation (2.5 Hz, 5 s, 20% D.C., 18.9 W/cm<sup>2</sup>)",
+   "exposures[5].timing.sonication_duration_s": "Experiments (n = 5 mice) consisted of 4 trials with a 25 s baseline, 5 s sonication and a 155 s cooldown period.",
+   "randomised": "For parametric examinations, each combination was trialed 7 times in randomized order for each animal with a 3-min interval between the beginning of each trial.",
+   "adverse_events": "Despite the large changes in neural activity, behavior, and even vascular responses, we did not observe changes in blood corticosterone levels (Figure S8A)<sup>79</sup> or peripheral immune responses (Figures S8B–S8J) following repeated DMH stimulation (10 stimulations, 3-min interval).",
+   "safety_notes": "Thus, behavioral and neurovascular effects were due to neuromodulation rather than non-specific consequences of FUS stimulation and supports the safety of repeated FUS brain stimulation to deep-brain targets, including the hypothalamus.",
+   "species": "For experiments wild type and transgenic male and female adult mice (Mus musculus) between 8 and 40 weeks of age, which were group housed in plexiglass chambers at constant temperature of 22 ± 1C and 40–60% humidity, under a normal circadian light–dark cycle (lights-off 7 a.m., lights-on at 7 p.m.).",
+   "exposures[5].device.manufacturer": "A single element 500 kHz transducer (H204, Sonic Concepts, Bothell, WA, USA) with a 15 MHz linear array (L22-14vXLF, Vermon, S.A., Tours, France) confocally aligned with the annular opening of the FUS transducer was",
+   "exposures[5].device.model": "A single element 500 kHz transducer (H204, Sonic Concepts, Bothell, WA, USA) with a 15 MHz linear array (L22-14vXLF, Vermon, S.A., Tours, France) confocally aligned with the annular opening of the FUS transducer was"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper gives PRF and duty cycle for the main PhoCUS experiments but never states pulse duration numerically; burst rule cannot be resolved from the main text alone."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "List combines the 20% value used for the 2.5 Hz excitatory optimum and the 2.5% value used for the 20 Hz inhibitory optimum; these are not simultaneous settings."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "List combines the 5 s excitatory optimum and 40 s inhibitory optimum durations, which apply to different (2.5 Hz vs 20 Hz) protocols, not a single simultaneous sweep endpoint."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper does not state whether the 0.3-7.4 W/cm2 intensity range is a free-field or in-situ value; domain is unspecified."
+   },
+   {
+    "field": "exposures[2].timing.duty_cycle_pct",
+    "reason": "LC's own compression optimum (5 s, 20% D.C.) differs from the shared 'optimized' protocol (2.5 Hz, 10 s, 10% D.C.) later applied to LC in the blood-volume assay; both values are listed."
+   },
+   {
+    "field": "exposures[4].timing.waveform",
+    "reason": "No numeric stimulation parameters (PRF, duty cycle, duration, intensity) for LH stimulation are stated in the main text; only that the DMH paradigm/apparatus was repositioned to the LH."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports many overlapping, experiment-specific group sizes (e.g., n = 9, 7, 8, 6, 7, 5, 5-6, 3-5 mice across different assays and targets) but never a total number of animals used in the study."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Parameter combinations were each trialed 7 times per animal with a 3-min inter-trial interval, but the paper does not clearly state whether this constitutes one session or multiple sessions per animal."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The central medial thalamus (CMT) does not map exactly to any listed thalamic nucleus; classified at the parent 'thalamus' level."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "The dorsomedial hypothalamus (DMH) is not among the listed hypothalamic subnuclei; classified at the parent 'hypothalamus' level."
+   },
+   {
+    "field": "exposures[3].target.terms",
+    "reason": "The bed nucleus of the stria terminalis (BNST) has no matching target id; classified as 'other'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree",
+   "exposures[4].fundamental_frequency_khz": "agree",
+   "exposures[4].free_field.pressure_kpa": "agree",
+   "exposures[4].free_field.isppa_w_cm2": "agree",
+   "exposures[4].free_field.ispta_w_cm2": "agree",
+   "exposures[4].in_situ.pressure_kpa": "agree",
+   "exposures[4].in_situ.isppa_w_cm2": "agree",
+   "exposures[4].in_situ.ispta_w_cm2": "agree",
+   "exposures[4].unspecified_domain.pressure_kpa": "agree",
+   "exposures[4].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[4].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[4].timing.pulse_duration_ms": "agree",
+   "exposures[4].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[4].timing.duty_cycle_pct": "agree",
+   "exposures[4].timing.sonication_duration_s": "agree",
+   "exposures[5].fundamental_frequency_khz": "agree",
+   "exposures[5].free_field.pressure_kpa": "agree",
+   "exposures[5].free_field.isppa_w_cm2": "agree",
+   "exposures[5].free_field.ispta_w_cm2": "agree",
+   "exposures[5].in_situ.pressure_kpa": "agree",
+   "exposures[5].in_situ.isppa_w_cm2": "agree",
+   "exposures[5].in_situ.ispta_w_cm2": "agree",
+   "exposures[5].unspecified_domain.pressure_kpa": "agree",
+   "exposures[5].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[5].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[5].timing.pulse_duration_ms": "agree",
+   "exposures[5].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[5].timing.duty_cycle_pct": "agree",
+   "exposures[5].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[1].timing.duty_cycle_pct": "second",
+   "exposures[1].timing.sonication_duration_s": "second",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[2].timing.duty_cycle_pct": "second",
+   "exposures[2].timing.sonication_duration_s": "second",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[3].timing.duty_cycle_pct": "second",
+   "exposures[3].timing.sonication_duration_s": "second"
+  }
+ }
+}

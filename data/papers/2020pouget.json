@@ -1,0 +1,385 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020pouget",
+ "doi": "10.3389/fphys.2020.01042",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "cynomolgus and rhesus macaque (Macaca fascicularis, Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "antisaccade task: saccade latency and error rate",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "rTUS to FEF/SEF significantly reduced ipsilateral antisaccade latencies (facilitation) relative to no-rTUS trials, with a modest increase in ipsilateral error rate; the effect was sustained for roughly 18-31 min and was absent when the transducer targeted control regions (V1/M1).",
+ "adverse_events": "none_observed",
+ "safety_notes": "No discomfort (muscle twitching) was observed during ultrasonic neurostimulation, in contrast to that observed during rTMS sessions. Thermal simulations estimated the highest thermal increase (1.53C) in the skull itself, with a maximal thermal increase at the geometrical focus of less than 0.1C.",
+ "exposures": [
+  {
+   "label": "rTUS to frontal eye field (FEF)",
+   "target": {
+    "terms": [
+     "frontal_eye_field"
+    ],
+    "label": "frontal eye field (FEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept, Bothell, WA, United States",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 320,
+   "free_field": {
+    "pressure_kpa": 760,
+    "isppa_w_cm2": 19,
+    "ispta_w_cm2": 5.7
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 440,
+    "isppa_w_cm2": 6.5,
+    "ispta_w_cm2": 1.9
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 20,
+    "protocol_description": "Each experimental session contained one practice block followed by 7 blocks of 100 antisaccades (50 each side, randomly distributed); rTUS (20-s train) was delivered only after the first (pre-rTUS) block, and saccade behaviour was compared across the six subsequent post-rTUS blocks versus matched no-rTUS sessions. The pulse duration was 30 ms with a 1 ms rise/fall time to avoid abrupt pressure changes that generate brief white noise."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "rTUS to supplementary eye field (SEF)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "supplementary eye field (SEF)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept, Bothell, WA, United States",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 320,
+   "free_field": {
+    "pressure_kpa": 760,
+    "isppa_w_cm2": 19,
+    "ispta_w_cm2": 5.7
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 440,
+    "isppa_w_cm2": 6.5,
+    "ispta_w_cm2": 1.9
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed"
+    ],
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 20,
+    "protocol_description": "Same protocol as the FEF exposure (7 blocks of 100 antisaccades, rTUS 20-s train delivered after block 1) but with the transducer targeting the SEF (monkey G) instead of the FEF (monkeys L and S)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Data were collected from three captive-born male macaques (one Macaca fascicularis; monkey G, 8 kg; two Macaca mulatta; monkey L and monkey S, 13, and 8.5 kg, respectively).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound frequency was set to 320 kHz. The pulse duration was 30 ms with a rise and fall time set to 1 ms to avoid abrupt changes in pressure that generate brief white noise. The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[0].free_field.pressure_kpa": "The amplifier gain was set to deliver an output voltage $\\mathrm { V _ { o u t } } \\ = \\ 1 7 3 \\ \\mathrm { V }$ peak-topeak, corresponding to a pressure amplitude of 0.76 MPa in water (calibrated with an in-house heterodyne interferometer; Constans et al., 2017).",
+   "exposures[0].free_field.isppa_w_cm2": "The equivalent mechanical index (MI) value was 1.3 with an intensity spatial peak pulse average (ISPPA) of 19 W/cm<sup>2</sup> in free water.",
+   "exposures[0].free_field.ispta_w_cm2": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[0].in_situ.pressure_kpa": "The transmission of the pressure through the degassed primate skull was assessed at seven diferent points arbitrarily chosen on the skull. The transmission ratio was found to be 58 ± 8% (standard deviation). The in-situ pressure delivered to the monkey brain transcranially was subsequently estimated at $0 . 4 4 \\pm 0 . 0 6 \\mathrm { M P a }$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "These values were attenuated to $\\mathrm { M I } = 0 . 8 \\pm 0 . 1$ and $\\mathrm { I S P P A } = 6 . 5 \\pm 1 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , respectively inside the primate skull.",
+   "exposures[0].in_situ.ispta_w_cm2": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound frequency was set to 320 kHz. The pulse duration was 30 ms with a rise and fall time set to 1 ms to avoid abrupt changes in pressure that generate brief white noise. The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[0].timing.duty_cycle_pct": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[0].timing.sonication_duration_s": "The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[1].fundamental_frequency_khz": "The ultrasound frequency was set to 320 kHz. The pulse duration was 30 ms with a rise and fall time set to 1 ms to avoid abrupt changes in pressure that generate brief white noise. The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[1].free_field.pressure_kpa": "The amplifier gain was set to deliver an output voltage $\\mathrm { V _ { o u t } } \\ = \\ 1 7 3 \\ \\mathrm { V }$ peak-topeak, corresponding to a pressure amplitude of 0.76 MPa in water (calibrated with an in-house heterodyne interferometer; Constans et al., 2017).",
+   "exposures[1].free_field.isppa_w_cm2": "The equivalent mechanical index (MI) value was 1.3 with an intensity spatial peak pulse average (ISPPA) of 19 W/cm<sup>2</sup> in free water.",
+   "exposures[1].free_field.ispta_w_cm2": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[1].in_situ.pressure_kpa": "The transmission of the pressure through the degassed primate skull was assessed at seven diferent points arbitrarily chosen on the skull. The transmission ratio was found to be 58 ± 8% (standard deviation). The in-situ pressure delivered to the monkey brain transcranially was subsequently estimated at $0 . 4 4 \\pm 0 . 0 6 \\mathrm { M P a }$ .",
+   "exposures[1].in_situ.isppa_w_cm2": "These values were attenuated to $\\mathrm { M I } = 0 . 8 \\pm 0 . 1$ and $\\mathrm { I S P P A } = 6 . 5 \\pm 1 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , respectively inside the primate skull.",
+   "exposures[1].in_situ.ispta_w_cm2": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[1].timing.pulse_duration_ms": "The ultrasound frequency was set to 320 kHz. The pulse duration was 30 ms with a rise and fall time set to 1 ms to avoid abrupt changes in pressure that generate brief white noise. The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[1].timing.duty_cycle_pct": "Taking into account the pulse duration and PRF (respectively, 30 ms and 10 Hz, corresponding to a 30% duty cycle) during the neuro-stimulation sequence, the intensity spatial peak time average (ISPTA) was estimated to be $5 . 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ in free water and 1.9 W/cm<sup>2</sup> inside the primate skull.",
+   "exposures[1].timing.sonication_duration_s": "The pulse repetition frequency was set to 10 Hz and the total sonication time was 20 s.",
+   "exposures[0].device.manufacturer": "We used a single element focused ultrasound transducer (H115, Sonic Concept, Bothell, WA, United States; central frequency 250 kHz, diameter 64 mm, FD# 1) in the current experiment.",
+   "exposures[0].device.model": "We used a single element focused ultrasound transducer (H115, Sonic Concept, Bothell, WA, United States; central frequency 250 kHz, diameter 64 mm, FD# 1) in the current experiment.",
+   "exposures[1].device.manufacturer": "We used a single element focused ultrasound transducer (H115, Sonic Concept, Bothell, WA, United States; central frequency 250 kHz, diameter 64 mm, FD# 1) in the current experiment.",
+   "exposures[1].device.model": "We used a single element focused ultrasound transducer (H115, Sonic Concept, Bothell, WA, United States; central frequency 250 kHz, diameter 64 mm, FD# 1) in the current experiment.",
+   "n_sessions_per_subject": "In this study, animals performed a total of 40 sessions (10 stimulated sessions “rTUS” and 10 non-stimulated sessions “norTUS” in the regions of interest “ROIs” and in the control regions)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The paper also reports a separate, higher, k-Wave-simulation-based in-situ estimate for the FEF target (Isppa 21.2 W/cm2, Ispta 6.4 W/cm2, from a whole-head CT-based finite-element model), which conflicts with the skull-transmission-measurement-based estimate used here (Isppa 6.5+/-1.8 W/cm2, Ispta 1.9 W/cm2, tied explicitly to the applied 30% duty cycle); the measurement-based value was used as it is directly linked to the delivered protocol."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control conditions comprised both no-rTUS sessions with the transducer placed but inactive (inactive_transducer) and active rTUS delivered to control brain regions (V1 or M1; active_control_site); the control-region exposures are not given separate exposure entries since the paper treats them as behavioural controls rather than a primary study target."
+   },
+   {
+    "field": "target",
+    "reason": "'Supplementary eye field (SEF)' has no exact match in the target vocabulary (it is distinct from supplementary_motor_area); coded as 'other' with the paper's own label retained."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper states a total of 40 sessions (20 in ROI + 20 in control areas) across all three monkeys combined but does not give a clear per-subject session count."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

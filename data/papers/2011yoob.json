@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2011yoob",
+ "doi": "10.1097/wnr.0b013e32834b2957",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 13,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "none",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Time to increased respiratory rate, rapid/irregular respiration, whisker movement, eye-blink response to air puff, hind-paw pinch response, and initiation of voluntary movement following ketamine/xylazine anesthesia; rectal temperature and respiratory rate",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to the thalamus (at Isppa=6 W/cm2, Ispta=300 mW/cm2) significantly reduced time to hind-paw pinch response (~55 vs ~67 min) and to voluntary movement (69.8+/-9 vs 88.2+/-12.9 min) compared to a no-sonication control session, indicating faster emergence from anesthesia; the paper notes that in prior studies a lower intensity (Isppa=3.3 W/cm2) with the same pulse parameters had instead produced suppressive effects on cortical excitability.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The acoustic intensity and MI used were sufficiently below FDA diagnostic imaging limits (MI=1.9, Ispta=720 mW/cm2), and all animals showed normal behavior and weight gain (~50%) after sonication.",
+ "exposures": [
+  {
+   "label": "Pulsed FUS to thalamus (anesthesia emergence experiment)",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "thalamus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Sonomo, Korea",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 490,
+    "isppa_w_cm2": 6,
+    "ispta_w_cm2": 0.3
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1200,
+    "protocol_description": "For sonication parameters, tone burst duration of 0.5 ms and pulse repetition frequency of 100 Hz were used. Sonication began 40 min after the onset of anesthesia and was maintained for 20 min."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Two of a total of 17 Sprague-Dawley rats were used to survey the timing of typical physiological responses emerging from anesthesia. All other animals underwent two sessions of anesthesia, separated by 6.2 ± 2.4 days allowing recovery from anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "An air-backed, spherical segment ultrasound transducer operating at a frequency of 650 KHz was used.",
+   "exposures[0].in_situ.pressure_kpa": "The peak negative pressure to the brain tissue was approximately 490 kPa, with associated mechanical index (MI) of 0.61.",
+   "exposures[0].in_situ.isppa_w_cm2": "A preliminary test on three animals (data not shown) had shown reduction in time to emergence, but with a higher intensity, Isppa 0f 6 W/cm2, corresponding to a spatial peak temporal average intensity, Ispta = 300 mW/cm2.",
+   "exposures[0].in_situ.ispta_w_cm2": "A preliminary test on three animals (data not shown) had shown reduction in time to emergence, but with a higher intensity, Isppa 0f 6 W/cm2, corresponding to a spatial peak temporal average intensity, Ispta = 300 mW/cm2.",
+   "exposures[0].timing.pulse_duration_ms": "For sonication parameters, tone burst duration of 0.5 ms and pulse repetition frequency of 100 Hz were used.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For sonication parameters, tone burst duration of 0.5 ms and pulse repetition frequency of 100 Hz were used.",
+   "exposures[0].timing.sonication_duration_s": "Sonication began 40 min after the onset of anesthesia and was maintained for 20 min.",
+   "n_sessions_per_subject": "In one of the two sessions, the animal was subjected to the sonication condition denoted ‘FUS’; the session without sonication was denoted ‘control’ condition.",
+   "exposures[0].device.manufacturer": "The animal was then positioned on a temperature-regulated heated pad (T-pump, Gaymar, New York, USA) and was placed in a prone position under the sonication apparatus (Sonomo, Korea; Fig."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "17 rats were enrolled total (2 used only for a pilot timing survey); of the remaining 15, 2 were excluded (atypical hyperventilation n=1, incomplete anesthetic induction n=1). Statistical tests report df=12, consistent with n=13 analysed; n_subjects set to 13 (the analysed cohort) rather than 17 (total enrolled)."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The text describes 6 W/cm2 Isppa (490 kPa, MI 0.61) as the parameters of an earlier 'preliminary test on three animals'; it is not stated in an entirely unambiguous single sentence that this is exactly the same protocol used for the main n=13 anesthesia-emergence cohort, though the surrounding text and use of the same tone-burst duration/PRF strongly implies it."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Classified as 'excitatory' because sonication accelerated emergence/arousal from anesthesia, but the paper explicitly discusses that a lower intensity with identical pulse timing previously produced a suppressive effect on cortical excitability in other studies -- direction is parameter (intensity) dependent."
+   },
+   {
+    "field": "blinding",
+    "reason": "Set to 'none' based on the Discussion statement about 'the use of less subjective and nonblinded assessment of the anesthetic states', implying the physiological/behavioural scoring was not blinded."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Study design is a within-animal crossover (FUS vs. no-sonication control session, order randomised and counter-balanced). The higher-intensity protocol (Isppa=6 W/cm2) used in the reported main comparison was first identified in an unreported preliminary 3-animal test; a previously published lower-intensity protocol (Isppa=3.3 W/cm2, same 0.5 ms/100 Hz timing) is mentioned for context but was not itself tested in this paper's main dataset.",
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

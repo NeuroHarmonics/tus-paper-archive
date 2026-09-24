@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2015moore",
+ "doi": "10.1016/j.neulet.2015.07.024",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Thy1-ChR2, nNOS-ChR2 transgenic and non-transgenic control lines)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  14,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Local field potential (LFP) recordings in motor cortex via chronic tungsten electrode, evoked by ultrasound and optogenetic (ChR2) stimulation of somatosensory barrel cortex",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of somatosensory barrel cortex evoked a negative LFP deflection in motor cortex (indicative of depolarization) similar in polarity/timing to optogenetic activation of cortical pyramidal (excitatory) neurons, but 10- to 20-fold smaller in amplitude; the evoked response required living tissue and did not attenuate over a 10-min stimulation period.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of somatosensory barrel cortex",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory barrel cortex"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GS350-D19"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.214,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 42.8,
+    "sonication_duration_s": 0.01,
+    "protocol_description": "A TTL trigger triggered waveform generator 1 to undergo a square wave train of 10 ms duration (the ultrasound stimulus train). During each 10 ms stimulus train, waveform generator 1 produced twenty square pulsed waves (each of 0.5 ms duration) with a 50% duty cycle (2.0 kHz repetition), and at the onset of each of these 20 pulses waveform generator 2 triggered the transducer to emit 75 acoustic cycles at 350 kHz (~0.214 ms per ultrasound event). Stimulation events (10 ms stimulus trains) were delivered at 7 Hz throughout the duration of the ten-minute recordings; craniotomy-based transdural stimulation was delivered to the somatosensory barrel cortex with LFP recorded in monosynaptically-connected motor cortex."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 42.8,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Fig. 2. Evoked responses (mean SEM) to optogenetic stimuli in Thy1-ChR2 transgenic $( \\mathsf { A } ; n = 4 ) ,$ optogenetic stimuli in nNOS-ChR2 transgenic (B; n = 5) and ultrasound stimuli across all genotypes of mice studied $( \\mathsf { C } ; n = 1 4 ) .$ . Time zero is the time of stimulus onset. P values are the effect of time on potential. Inset in B shows equivalent optogenetic stimulation data from mice not expressing ChR2 (n = 5).",
+   "exposures[0].fundamental_frequency_khz": "We used a gas matrix piezoelectric-based contact/immersion transducer from the Ultran Group (State College, PA, USA; model # GS350-D19). This planar transducer’s active diameter was 19 mm and its nominal frequency was 350 kHz.",
+   "exposures[0].timing.pulse_duration_ms": "At the onset of each of these 20 square pulsed waves, waveform generator 2 triggered the transducer to undergo 75 acoustic cycles at an acoustic frequency of 350 kHz (yielding an ultrasound event duration of approximately 0.214 ms).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "During each 10 ms stimulus train, waveform generator 1 produced twenty 5 $\\mathsf { V } _ { \\mathsf { p p } }$ square pulsed waves (each of 0.5 ms duration) with a 50% duty cycle, yielding a square pulsed wave repetition frequency of 2.0 kHz.",
+   "exposures[0].timing.duty_cycle_pct": "The duty cycle for these 350 kHz ultrasound events was thus (0.214 ms)/(0.5 ms) 100%= 42.8%.",
+   "exposures[0].timing.sonication_duration_s": "The TTL generator square pulsed wave triggered waveform generator 1 to undergo a square wave train of 10 ms duration.",
+   "exposures[0].device.manufacturer": "We used a gas matrix piezoelectric-based contact/immersion transducer from the Ultran Group (State College, PA, USA; model # GS350-D19).",
+   "exposures[0].device.model": "We used a gas matrix piezoelectric-based contact/immersion transducer from the Ultran Group (State College, PA, USA; model # GS350-D19).",
+   "n_sessions_per_subject": "Each mouse was subjected to a 10-min recording of ultrasound stimulation and a 10-min recording of optogenetic stimulation."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Experiment 1 (n=14: 4 Thy1-ChR2 + 5 nNOS-ChR2 + 5 non-ChR2) and Experiment 2 (a separate cohort of 8 Thy1-ChR2 mice) are distinct cohorts; totals are listed rather than summed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Acoustic intensity was explicitly not measured in this study; the 0.07-0.23 W/cm2 figure is a citation of a prior study's reported value for the same transducer/configuration ('acoustic intensity...is reported as...'), not a measurement made here. Midpoint of the cited range recorded; domain (free field vs in situ) not specified."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

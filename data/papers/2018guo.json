@@ -1,0 +1,522 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018guo",
+ "doi": "10.1016/j.neuron.2018.04.036",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "Hartley guinea pig (Cavia porcellus)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "32-site multi-site electrode arrays (NeuroNexus) recording local field potentials and multiunit spike activity from A1, SC1, and the central nucleus of the inferior colliculus (ICC); post-stimulus time histograms (PSTHs)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US elicited robust local field potential and multiunit spike activation in A1 and SC1 across cortical/subcortical sites, but bilateral transection of the auditory nerves or removal of cochlear fluids eliminated nearly all US-induced activity, indicating the excitatory responses were mediated indirectly through a cochlear/auditory pathway rather than by direct neural activation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "A1 (auditory cortex) pulsed US parameter sweep",
+   "target": {
+    "terms": [
+     "primary_auditory_cortex"
+    ],
+    "label": "A1"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "Custom model 071-02-SN01"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": [
+     25,
+     2000
+    ],
+    "isppa_w_cm2": 0.02,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     0.1,
+     10
+    ],
+    "pulse_repetition_frequency_hz": [
+     10,
+     16000
+    ],
+    "duty_cycle_pct": [
+     0.2,
+     60
+    ],
+    "sonication_duration_s": [
+     0.5,
+     6
+    ],
+    "protocol_description": "US transducer coupled directly to the exposed A1 surface (craniotomy, no skull) via agarose. Single-pulse US (0.1-10 ms) and multiple-pulse US (PRF, pulse duration, pressure, number of pulses [3-360], duty cycle, and trial duration all varied; see Tables S1-S2, not available in the provided text) were tested. Representative examples used repeatedly: 220 kHz, 100 kPa, 0.1 or 10 ms pulse duration, single pulse, 500 ms trial duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "SC1 (somatosensory cortex) pulsed US parameter sweep",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "SC1"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "Custom model 071-02-SN01"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": [
+     50,
+     400
+    ],
+    "isppa_w_cm2": 0.08,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     10
+    ],
+    "pulse_repetition_frequency_hz": [
+     1000,
+     2000,
+     4000,
+     8000,
+     16000
+    ],
+    "duty_cycle_pct": [
+     0.2,
+     60
+    ],
+    "sonication_duration_s": 0.02,
+    "protocol_description": "US transducer coupled directly to exposed SC1 via agarose (craniotomy, no skull). Representative parameter set used repeatedly: 200 kPa, 1 kHz PRF, 0.5 ms pulse duration, 20 pulses, 6 s trial duration; additional sweeps varied trial duration (1, 3, 6 s) and PRF (1, 2, 4, 8, 16 kHz plus a 10 ms single pulse) while other parameters were held constant (see Table S3, not available in the provided text)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Visual cortex (VC) stimulation eliciting cross-modal SC1 activation",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "exposed visual cortex (VC)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "Custom model 071-02-SN01"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": 400,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 6,
+    "protocol_description": "US (400 kPa, 1 kHz PRF, 2.5 ms pulse duration, 20 pulses, 6 s trial duration) applied to the exposed visual cortex elicited activity in SC1 recorded ~10 mm away, used to test whether US-induced cortical activation was spatially specific to the stimulated region."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 250.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "species": "For this study, experiments were performed on young female Hartley guinea pigs (4-8 weeks, 350–580 g, Elm Hill Breeding Labs, Chelmsford, MA) in accordance with policies of the University of Minnesota Institutional Animal Care and Use Committee.",
+   "anaesthesia": "Each animal was anesthetized with an intramuscular injection of a mixture of ketamine (40 mg/kg; VetaKet, NDC 59399-114-10, Akorn, Lake Forest, IL) and xylazine (10 mg/kg; XylaMed, ANADA 200-529, Bimeda, Le Sueur, MN) with supplements every 45–60 min to maintain an areflexive state.",
+   "n_subjects": "On average, 60.3% of SC1 recording sites were activated per animal (n = 7 animals) with US stimulation (200 kPa, 1 kHz PRF, 0.5 ms PD, 20 pulses, 6 s TD).",
+   "exposures[0].timing.pulse_duration_ms": "Single pulse US ranging from 0.1 ms to 10 ms was used as suggested by previous studies by King et al. showing that continuous waves of different lengths can effectively elicit motor responses in mice (King et al., 2013, 2014).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[0].timing.duty_cycle_pct": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[0].timing.sonication_duration_s": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[0].free_field.pressure_kpa": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[0].free_field.isppa_w_cm2": "Our study revealed that US is able to activate A1 with spatialpeak pulse-average acoustic intensities (ISPPA) as low as 20 mW/cm2 ( 25 kPa for the 220 kHz transducer), which are lower than what has been previously published for brain activation (Bystritsky and Korb, 2015; Bystritsky et al., 2011; Tufail et al., 2010).",
+   "exposures[1].timing.pulse_duration_ms": "Single pulse US ranging from 0.1 ms to 10 ms was used as suggested by previous studies by King et al. showing that continuous waves of different lengths can effectively elicit motor responses in mice (King et al., 2013, 2014).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "we specifically tested US paradigms with different TDs of 1, 3, and 6 s and PRFs of 1, 2, 4, 8, and 16 kHz (in addition to a single pulse) while keeping other parameters unchanged.",
+   "exposures[1].timing.duty_cycle_pct": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[1].timing.sonication_duration_s": "The pressure in response to US sonication (220 kHz transducer) of SC1 with a 20 ms pulse train (400 kPa, 500 s PD, 1 kHz PRF, 20 pulses) was recorded, which was one parameter used for the SC1 experiments.",
+   "exposures[1].free_field.pressure_kpa": "Multiple pulse US with different combinations of PRFs (10 Hz to 16 kHz), PDs (0.1 to 2.5 ms), pressures (25 KPa to 2 MPa), number of pulses per trial (3 to 360), duty cycles (0.2% to 60%), and TDs (0.5 to 6 s) were also tested on A1 or SC1.",
+   "exposures[1].free_field.isppa_w_cm2": "We confirmed that US can activate SC1 with a wide range of parameters with intensities as low as 80 mw/cm2 ISPPA ( 50 kPa for the 220 kHz transducer), which is on the same order of magnitude as previous studies (Lee et al., 2015; Mehic et al., 2014; Tufail et al., 2010; Ye et al., 2016; Yoo et al., 2011).",
+   "exposures[2].fundamental_frequency_khz": "One US transducer at 220 kHz (Custom model 071-02-SN01, Sonic Concepts, Bothell, WA) was used in all experiments, which was fitted with a 3D-printed focusing cone with a point diameter of 3 mm.",
+   "exposures[2].timing.pulse_duration_ms": "(A–C) Locations of recording electrodes in SC1 that exhibited activity (red dots; white dots exhibited no activity) in response to US stimulation (400 kPa, 1 kHz PRF, 2.5 ms PD, 20 pulses, 6 s TD) of the exposed visual cortex (A; plus sign is location of visual cortex, VC), electrical stimulation (ES) of the left shoulder (B), and ES of the left foot (C).",
+   "exposures[0].fundamental_frequency_khz": "One US transducer at 220 kHz (Custom model 071-02-SN01, Sonic Concepts, Bothell, WA) was used in all experiments, which was fitted with a 3D-printed focusing cone with a point diameter of 3 mm.",
+   "exposures[1].fundamental_frequency_khz": "One US transducer at 220 kHz (Custom model 071-02-SN01, Sonic Concepts, Bothell, WA) was used in all experiments, which was fitted with a 3D-printed focusing cone with a point diameter of 3 mm.",
+   "exposures[2].free_field.pressure_kpa": "(A–C) Locations of recording electrodes in SC1 that exhibited activity (red dots; white dots exhibited no activity) in response to US stimulation (400 kPa, 1 kHz PRF, 2.5 ms PD, 20 pulses, 6 s TD) of the exposed visual cortex (A; plus sign is location of visual cortex, VC), electrical stimulation (ES) of the left shoulder (B), and ES of the left foot (C).",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "(A–C) Locations of recording electrodes in SC1 that exhibited activity (red dots; white dots exhibited no activity) in response to US stimulation (400 kPa, 1 kHz PRF, 2.5 ms PD, 20 pulses, 6 s TD) of the exposed visual cortex (A; plus sign is location of visual cortex, VC), electrical stimulation (ES) of the left shoulder (B), and ES of the left foot (C).",
+   "exposures[2].timing.sonication_duration_s": "(A–C) Locations of recording electrodes in SC1 that exhibited activity (red dots; white dots exhibited no activity) in response to US stimulation (400 kPa, 1 kHz PRF, 2.5 ms PD, 20 pulses, 6 s TD) of the exposed visual cortex (A; plus sign is location of visual cortex, VC), electrical stimulation (ES) of the left shoulder (B), and ES of the left foot (C).",
+   "exposures[0].device.manufacturer": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis",
+   "exposures[0].device.model": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis",
+   "exposures[1].device.manufacturer": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis",
+   "exposures[1].device.model": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis",
+   "exposures[2].device.manufacturer": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis",
+   "exposures[2].device.model": "OpenEx Suite Tucker-Davis Technologies RRID: SCR_016230 Rhinoceros 4.0 Robert McNeel &amp; Associates RRID:SCR_014339 Other Ultrasound transducer Sonic Concepts Custom model 071-02-SN01 RF amplifier Electronics &amp; Innovation 2200L Signal generator Keysight Technologies 33512B BioAmp processor Tucker-Davis"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Value combines the single-pulse experiments (0.1-10 ms PD) with A1; a separate general statement gives 0.1-2.5 ms PD for multi-pulse trials on A1 or SC1 combined, not separated per target."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF range (10 Hz-16 kHz) is given in aggregate for A1 and SC1 combined sweep ('tested on A1 or SC1'), not separated per target in the main text; supplemental Tables S1-S3 (not available in provided text) likely give per-target values."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle range (0.2-60%) is an aggregate figure for A1 and SC1 combined, not separated per target."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "'TD' (trial duration) may represent the total trial/recording window rather than the active sonication train length implied by number-of-pulses x PRF in some multi-pulse conditions (e.g., 20 pulses at 1 kHz PRF spans ~20 ms, yet TD is reported as up to 6 s); relationship not reconcilable from stated parameters. Range also aggregates A1 and SC1 sweeps."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Range (25 kPa-2 MPa) aggregates A1 and SC1 combined sweep from the Experiment Design paragraph, not separated per target."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle range (0.2-60%) is an aggregate figure for A1 and SC1 combined, not separated per target."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Range (25 kPa-2 MPa) aggregates A1 and SC1 combined sweep; explicit SC1 example values found in text were 50, 200 and 400 kPa."
+   },
+   {
+    "field": "exposures[2].timing.pulse_duration_ms",
+    "reason": "Quote provided is the closest available complete sentence; the specific parameter set for the visual-cortex exposure (400 kPa, 1 kHz PRF, 2.5 ms PD, 20 pulses, 6 s TD) is stated in the Figure 6 legend, reproduced in protocol_description. Note the stated 2.5 ms pulse duration exceeds the 1 ms period implied by a 1 kHz PRF, an internal inconsistency in the source."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Different sub-experiments in this study report different, likely overlapping, animal-group sizes (e.g., n=2 for combined A1/ICC recording, n=7 for overall SC1 activation percentage, n=4 for TD/PRF and visual-cortex experiments, n=3 for nerve transection, n=3 for cochlear fluid removal); the paper does not state a single total number of distinct animals used in the study."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Craniotomy exposed the brain directly (no intact skull) in this preparation; paper does not separately report in-situ (post-skull) values distinct from the free-field water-tank calibration, so left not_reported rather than assumed equal."
+   },
+   {
+    "field": "exposures[1].in_situ.method",
+    "reason": "Craniotomy exposed the brain directly (no intact skull) in this preparation; paper does not separately report in-situ (post-skull) values distinct from the free-field water-tank calibration, so left not_reported rather than assumed equal."
+   },
+   {
+    "field": "exposures[2].in_situ.method",
+    "reason": "Craniotomy exposed the brain directly (no intact skull) in this preparation; paper does not separately report in-situ (post-skull) values distinct from the free-field water-tank calibration, so left not_reported rather than assumed equal."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "disagree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "first",
+   "exposures[1].free_field.pressure_kpa": "first",
+   "exposures[1].timing.pulse_duration_ms": "first",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "first",
+   "exposures[1].timing.sonication_duration_s": "neither"
+  }
+ }
+}

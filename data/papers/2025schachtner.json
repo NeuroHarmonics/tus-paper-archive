@@ -1,0 +1,200 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025schachtner",
+ "doi": "10.3389/fpsyt.2025.1451828",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 11,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "clinical_scale"
+ ],
+ "readout_other": "Beck Depression Inventory-II (BDI-II); Hamilton Depression Rating Scale (HDRS); Perseverative Thinking Questionnaire (PTQ); World Health Organization Quality of Life Scale (WHOQOL-BREF); Columbia Suicide Severity Rating Scale (CSSRS); post-session sensation questionnaire",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Functional connectivity was not measured in this study; the authors hypothesize (but did not test) that the low PRF (10 Hz) and low acoustic frequency (400 kHz) parameters used promoted an inhibitory effect on DMN connectivity.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events were reported; participants reported mild, transient sensations (mean ratings below 2.2 on a 10-point scale), with pain/tension attributed to headset tightness rather than the ultrasound itself; SWI imaging showed no treatment-related microhemorrhages.",
+ "exposures": [
+  {
+   "label": "amPFC tFUS for depression",
+   "target": {
+    "terms": [
+     "anterior_prefrontal_cortex"
+    ],
+    "label": "left anterior-medial prefrontal cortex (amPFC)"
+   },
+   "device": {
+    "family": "openwater",
+    "manufacturer": "Openwater",
+    "model": "custom Neuromodulation device, 128-element ultrasound array"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 820,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.67
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "Participants completed up to three weeks of transcranial ultrasound (up to 11 sessions total: 5 sessions in week 1, then, for those not meeting early-remission criteria, 3 sessions per week for two more weeks), each session lasting ten minutes, targeting the left amPFC via electronically-steered beam-forming with a multi-foci radial pattern of five sub-foci."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "From among 386 individuals initially contacted, 247 completed the initial pre-screen web-based survey. Eighty-six potential participants completed a phone screen to confirm responses on the pre-screen survey related to eligibility, and 35 completed the SCID for DSM-5 to confirm a diagnosis of current depression and an absence of mania/psychosis. Twenty participants were enrolled in the study",
+   "n_sessions_per_subject": "Participants completed up to three weeks of transcranial ultrasound (11 sessions) targeting the anterior medial prefrontal cortex; ten minutes per session.",
+   "randomised": "A critical limitation is that this study was an open-label unblinded trial with a relatively small sample size and, as such, the present study was not able to assess the causal role of tFUS targeting the amPFC in depression treatment.",
+   "blinding": "A critical limitation is that this study was an open-label unblinded trial with a relatively small sample size and, as such, the present study was not able to assess the causal role of tFUS targeting the amPFC in depression treatment.",
+   "adverse_events": "No serious adverse events were reported. Reported sensations (itching, heat/burning, tingling, vibrating/pulsing, sound, tension, and pain) are presented in Table 2; for aversive sensations, the modal and median endorsement was 0 (no sensation). All means were below 2.2 on the 10-point scale.",
+   "direction_of_effect": "Although the direct immediate impact of tFUS on functional connectivity was not assessed in the present study, it is hypothesized that the tFUS parameters used in this open-label case series (pulse repetition rate = 10Hz, acoustic frequency = 400kHz) promoted an inhibitory effect on brain connectivity.",
+   "exposures[0].target.label": "Localite Neuronavigation Software (TMS Navigator 3.3 adapted for ultrasound device) and hardware registered the position of the probe with respect to the patient’s structural MRI, providing information to develop a novel electronically-steered, stereotactic tFUS treatment plan to the personalized target for each participant’s left anterior-medial prefrontal cortex [amPFC; MNI Coordinates -5, 45, -3 (10, 33, 34)].",
+   "exposures[0].device.family": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].fundamental_frequency_khz": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].unspecified_domain.pressure_kpa": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].timing.pulse_duration_ms": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa.",
+   "exposures[0].timing.sonication_duration_s": "Participants completed up to three weeks of transcranial ultrasound (11 sessions) targeting the anterior medial prefrontal cortex; ten minutes per session.",
+   "exposures[0].device.manufacturer": "tFUS was delivered using a custom Neuromodulation device (32) consisting of 128 element ultrasound array (Openwater) with the steerable ultrasound beam having the following parameters: acoustic frequency = 400 kHz, pulse duration = 5 ms, pulse repetition rate (PRR) = 10 Hz, a maximal spatial peak/temporal average acoustic intensity = 670 mW/cm<sup>2</sup>, peak negative pressure 820 kPa."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The protocol allowed early termination after 5 sessions (week 1) if remission criteria were met, so not all participants completed all 11 sessions; recorded 11 as the designed maximum stated in the abstract/methods."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The paper's own target name is 'anterior-medial prefrontal cortex (amPFC)'; mapped to 'anterior_prefrontal_cortex' (frontopolar/BA10, closest listed term given the anterior MNI y-coordinate of 45) rather than 'ventromedial_prefrontal_cortex', though the paper's wording ('medial prefrontal') could also support the latter; flagged for review."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated as a percentage in the text (only pulse duration = 5 ms and PRR = 10 Hz are given); left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Peak negative pressure (820 kPa) and spatial-peak/temporal-average intensity (670 mW/cm2) are given without stating whether they are free-field (water) or in-situ (skull-corrected) values; recorded as unspecified_domain."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Functional connectivity/DMN modulation was not measured in this study; the inhibitory direction is the authors' hypothesis based on stimulation parameters, not a measured outcome."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

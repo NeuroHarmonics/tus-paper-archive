@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021yang",
+ "doi": "10.1016/j.brs.2021.01.006",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "cynomolgus macaque (Macaca fascicularis)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "BOLD fMRI of touch circuit (target and 5 off-target ROIs); MR-acoustic radiation force imaging (MR-ARFI) for FUS beam localisation",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Concurrent med-FUS suppressed tactile-evoked BOLD activation at the target (area 3a/3b) and at all five off-target regions, while med-FUS alone (at rest, without tactile stimulation) directly excited neurons at the target and elicited BOLD activation in interconnected off-target regions; effects were state-dependent (active vs resting cortex).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Medium-amplitude FUS (med-FUS) to somatosensory areas 3a/3b",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "areas 3a/3b of primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Bothell, WA",
+    "model": "H115"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 425,
+    "isppa_w_cm2": 6.0,
+    "ispta_w_cm2": 0.0271
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 247,
+    "isppa_w_cm2": 2.0,
+    "ispta_w_cm2": 0.0091
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.252,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "During fMRI acquisition, FUS pulses were delivered in a block design of seven 30 s FUS on/off cycles matched to the tactile stimulation blocks. During an 'on' block, a 300 ms pulse was emitted at 0.333 Hz (i.e. one 300 ms pulse every 3 s), giving 10 FUS bursts per on block. Each 300 ms pulse itself consisted of 63-cycle tone bursts repeated at 2 kHz (50% duty cycle). Tactile alone, tactile+med-FUS, and med-FUS alone conditions were interleaved within each fMRI run."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.4,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Two adult female macaque monkeys (M. fascicularis) were underwent six MRI experiments (three for each monkey).",
+   "n_sessions_per_subject": "Two adult female macaque monkeys (M. fascicularis) were underwent six MRI experiments (three for each monkey).",
+   "exposures[0].fundamental_frequency_khz": "During an “on” block, a 250 kHz, 300 ms pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115 diameter 64 mm ROC 63.2 mm, Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% D O that had been at undisturbed for 24 h to allow large bubbles to float out of solution.",
+   "exposures[0].timing.sonication_duration_s": "During an “on” block, a 250 kHz, 300 ms pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115 diameter 64 mm ROC 63.2 mm, Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% D O that had been at undisturbed for 24 h to allow large bubbles to float out of solution.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A single 300 ms pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 1 for FUS pulse design).",
+   "exposures[0].timing.duty_cycle_pct": "A single 300 ms pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 1 for FUS pulse design).",
+   "exposures[0].timing.pulse_duration_ms": "A single 300 ms pulse consisted of 63-cycle bursts repeated at 2 kHz (50% duty cycle–see Fig. 1 for FUS pulse design).",
+   "exposures[0].free_field.pressure_kpa": "The free field peak negative pressure at the spatial focus during this pulse was 425 kPa, which is about 45% of the 935 kPa pulses used in our previous study [23].",
+   "exposures[0].free_field.ispta_w_cm2": "The free field spatial peak temporal average intensity $( \\mathrm { I } _ { \\mathsf { S p t a } } )$ was 27.1 mW/cm<sup>2</sup> and the free field spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathsf { S p p a } } )$ was $6 . 0 \\mathsf { W } / \\mathsf { c m } ^ { \\wedge } 2$ .",
+   "exposures[0].free_field.isppa_w_cm2": "The free field spatial peak temporal average intensity $( \\mathrm { I } _ { \\mathsf { S p t a } } )$ was 27.1 mW/cm<sup>2</sup> and the free field spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathsf { S p p a } } )$ was $6 . 0 \\mathsf { W } / \\mathsf { c m } ^ { \\wedge } 2$ .",
+   "exposures[0].in_situ.pressure_kpa": "At 250 kHz we estimate 58% transmission through a macaque skull yielding a PNP of 247 kPa, an $\\mathrm { { I } _ { \\mathrm { { S p t a } } } }$ of 9.1 mW/cm^2, and an $\\mathrm { { I _ { { s p p a } } } }$ of 2.0 W/cm^2.",
+   "exposures[0].in_situ.ispta_w_cm2": "At 250 kHz we estimate 58% transmission through a macaque skull yielding a PNP of 247 kPa, an $\\mathrm { { I } _ { \\mathrm { { S p t a } } } }$ of 9.1 mW/cm^2, and an $\\mathrm { { I _ { { s p p a } } } }$ of 2.0 W/cm^2.",
+   "exposures[0].in_situ.isppa_w_cm2": "At 250 kHz we estimate 58% transmission through a macaque skull yielding a PNP of 247 kPa, an $\\mathrm { { I } _ { \\mathrm { { S p t a } } } }$ of 9.1 mW/cm^2, and an $\\mathrm { { I _ { { s p p a } } } }$ of 2.0 W/cm^2.",
+   "exposures[0].device.manufacturer": "an “on” block, a 250 kHz, 300 ms pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115 diameter 64 mm ROC 63.2 mm, Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% D O that had been at undisturbed for 24 h to allow large bubbles to float out of solution.",
+   "exposures[0].device.model": "an “on” block, a 250 kHz, 300 ms pulse was emitted at 0.333 Hz from a spherically focused MR-compatible transducer (H115 diameter 64 mm ROC 63.2 mm, Sonic Concepts, Bothell, WA) coupled via a custom water cone filled with 80% D O that had been at undisturbed for 24 h to allow large bubbles to float out of solution."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration (0.252 ms) computed from the stated 63-cycle burst at 250 kHz (cycles ÷ fundamental frequency), as explicitly permitted for this synonym of pulse duration."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "The 0.333 Hz repetition rate of the 300 ms pulses within each 30 s on-block is a train-repetition interval, not the internal PRF field, and is described in protocol_description rather than the PRF field."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham or inactive-FUS control condition is described; comparisons are between tactile-alone, med-FUS-alone and tactile+med-FUS conditions."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019qiu",
+ "doi": "10.1016/j.isci.2019.10.037",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (HEK293T); mouse (primary cortical neurons; CLU199 hippocampal cell line)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "ratiometric/Cal-590 Ca2+ imaging; immunofluorescence c-Fos counting; Western blot (p-CaMKII, p-CREB, c-Fos); qRT-PCR",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound increased Ca2+ influx via Piezo1 in transfected HEK293T cells and in primary cortical neurons (dose-dependent), increased nuclear c-Fos in neurons, and increased p-CaMKII, p-CREB and c-Fos in CLU199 cells; effects were reduced by the Piezo1 blocker GsMTx-4 or by Piezo1 knockdown.",
+ "adverse_events": null,
+ "safety_notes": "Temperature was monitored during ultrasound treatment and no obvious elevation was observed (data not shown).",
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of Piezo1-expressing HEK293T cells, primary cortical neurons, and CLU199 hippocampal cells",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "other"
+    ],
+    "label": "primary mouse cortical neurons; HEK293T cells (heterologous Piezo1/TRPC1/TRPV4 expression); CLU199 mouse hippocampal cell line"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "I7-0012-P-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     100,
+     500
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Each stimulus was composed of 200 tone burst pulses at a center frequency of 500 kHz with a duty cycle of 40% at a pulse repetition frequency (PRF) of 1 kHz. The output intensity was limited to 0.1-0.5 MPa, with an interval of 10 s between pulses. For Western blot/c-Fos experiments, CLU199 cells or primary neurons were treated with ultrasound at 0.1, 0.3 or 0.5 MPa for 20 min inside a humidified incubator; calcium imaging used single stimuli, e.g. 0.3 MPa for primary neurons and 0.1-0.3 MPa for HEK293T cells."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The ultrasound stimulation system consisted of a commercial transducer (I7-0012-P-SU, Olympus), two function generators, and a power amplifier (Electronics and Innovation, A075) (as depicted in Figs 1D and 2D) to produce 200 tone burst pulses at a center frequency of 500 kHz and a repetition frequency of 1 kHz with a duty cycle of 40%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation system consisted of a commercial transducer (I7-0012-P-SU, Olympus), two function generators, and a power amplifier (Electronics and Innovation, A075) (as depicted in Figs 1D and 2D) to produce 200 tone burst pulses at a center frequency of 500 kHz and a repetition frequency of 1 kHz with a duty cycle of 40%.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound stimulation system consisted of a commercial transducer (I7-0012-P-SU, Olympus), two function generators, and a power amplifier (Electronics and Innovation, A075) (as depicted in Figs 1D and 2D) to produce 200 tone burst pulses at a center frequency of 500 kHz and a repetition frequency of 1 kHz with a duty cycle of 40%.",
+   "exposures[0].device.manufacturer": "The ultrasound stimulation system consisted of a commercial transducer (I7-0012-P-SU, Olympus), two function generators, and a power amplifier (Electronics and Innovation, A075) (as depicted in Figs 1D and 2D) to produce 200 tone burst pulses at a",
+   "exposures[0].device.model": "The ultrasound stimulation system consisted of a commercial transducer (I7-0012-P-SU, Olympus), two function generators, and a power amplifier (Electronics and Innovation, A075) (as depicted in Figs 1D and 2D) to produce 200 tone burst pulses at a",
+   "exposures[0].free_field.pressure_kpa": "The output intensity was limited to 0.1 - 0.5 MPa, with an interval of 10 seconds between pulses."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states 200 tone burst pulses at PRF 1 kHz with 40% duty cycle but does not explicitly state the duration of a single pulse or of the whole sonication train in ms/s; pulse duration could be derived as duty cycle/PRF (0.4 ms) but this was not computed per protocol and is left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The total duration of one 200-pulse stimulus (implied ~200 ms from pulse count and PRF) is not explicitly stated in the text; left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Acoustic pressure measured by hydrophone at the culture dish; paper does not describe this as a free-field/water-tank or in-situ tissue value (cells are directly exposed with no intervening skull/tissue), so placed in unspecified_domain."
+   },
+   {
+    "field": "target",
+    "reason": "Three distinct cell/tissue types (primary cortical neurons, HEK293T with various transfected channels, and CLU199 cell line) were all stimulated with the same 500 kHz protocol; combined into a single exposure entry rather than splitting by cell type since parameters are identical."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports numbers of independent experiments/cells per figure (e.g., n=3-15) but no single total count of cultures or replicates exposed to ultrasound across the study; recorded as not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

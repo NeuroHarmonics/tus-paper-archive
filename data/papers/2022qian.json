@@ -1,0 +1,297 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022qian",
+ "doi": "10.34133/2022/9829316",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans and RCS strains)",
+ "conditions": [
+  "healthy",
+  "retinal_degeneration"
+ ],
+ "condition_other": "retinal degeneration (Royal College of Surgeons rat model of retinitis pigmentosa)",
+ "n_subjects": 26,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "multiunit neural recordings (32- and 56-channel MEA) from superior colliculus and visual cortex; retinal histology (H&E) for safety assessment",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation of the retina evoked spike activity in the superior colliculus and visual cortex comparable to light-evoked responses in normal-sighted rats, and restored evoked responses in blind RCS rats where light stimulation failed; response amplitude and duration increased with US intensity and duration.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histology of stimulated retinas from normal-sighted and retinal degenerative rats showed the retina structure remained intact with no obvious changes in retinal architecture even after 2 hours of US stimulation.",
+ "exposures": [
+  {
+   "label": "Retinal US stimulation, 3.1 MHz spherically focused transducer (parametric study)",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "custom (USC Dept. of Biomedical Engineering)",
+    "model": "custom 3.1 MHz spherically focused single-element transducer (DL-47 piezo, Del-Piezo Specialties)"
+   },
+   "fundamental_frequency_khz": 3100,
+   "free_field": {
+    "pressure_kpa": [
+     1290,
+     3370
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     100,
+     30,
+     50,
+     70
+    ],
+    "sonication_duration_s": [
+     0.001,
+     0.2
+    ],
+    "protocol_description": "The default US sequence was a continuous wave at 100% duty cycle with a 6-second frame interval between stimulations to allow full neuronal recovery. Driving voltage (hence free-field NPP, 1.29-3.37 MPa) and US duration (stated as 1-200 ms in Results, 50-200 ms in Methods) were each swept to assess their effect on evoked SC/VC responses; pulsed-mode sequences with 30%, 50%, or 70% duty cycle were also compared against the continuous mode at matched time-averaged energy. Temporal resolution was assessed with 10-ms, 2.83 MPa NPP stimuli delivered at frame rates of 1, 2, 5, and 10 Hz over 20-second trains. Prior to each stimulation series, the beam was directed away from the eye as an off-target control."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Static letter-pattern generation, 4.4 MHz helical transducer",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina (letter-pattern generation)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "custom (USC Dept. of Biomedical Engineering)",
+    "model": "custom 4.4 MHz helical transducer (1-3 composite DL-48, Del-Piezo Specialties)"
+   },
+   "fundamental_frequency_khz": 4400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "A single-element helical transducer (4.4 MHz, 4 mm outer/2 mm inner diameter, 10 mm focal length, 1.2 mm vertical separation) was used to generate a static acoustic beam pattern in the shape of the letter 'C' on the retina, matched to the hydrophone-measured water-condition field pattern, and MEA recordings in SC confirmed a corresponding response pattern."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The custom-build US transducer has a central frequency of 3.1 MHz with a focal depth of 10 mm.",
+   "exposures[0].free_field.pressure_kpa": "To conform with the US Food and Drug Administration (FDA) recommendation on maximal MI of 1.9, which corresponds to an NPP of 3.35 MPa at 3.1 MHz, we varied the driving voltage of the US transducer from 200 mV (which is 1.29 MPa in NPP) to 600 mV (which is 3.37 MPa in NPP) with an interval of 50 mV.",
+   "exposures[0].timing.sonication_duration_s": "In addition, the US duration from 1 ms to 200 ms was explored, in which the results were shown in Figure 3(b).",
+   "exposures[0].timing.duty_cycle_pct": "To compare the continuous tone burst mode with pulse mode, we designed four diferent stimulation sequences, including one for continuous tone burst mode and three for pulse mode with 30%, 50%, and 70% duty cycle, respectively.",
+   "exposures[1].fundamental_frequency_khz": "With respect to the pattern generation experiment, a single-element helical transducer with a center frequency of 4.4 MHz was designed and fabricated.",
+   "n_subjects": "A total of 26 rats (male and around six months old) were investigated, including 10 normally sighted Long-Evan (LE) rats and 16 RD Royal College of Surgeon (RCS) blind rats.",
+   "exposures[0].device.manufacturer": "1 Department of Biomedical Engineering, University of Southern California, Los Angeles, CA 90089, USA",
+   "exposures[0].device.model": "The neuron activities induced by the customized spherically focused 3.1 MHz ultrasound transducer have shown both good spatial resolution of 250 μm and temporal resolution of 5 Hz in the rat visual centers.",
+   "exposures[1].device.manufacturer": "1 Department of Biomedical Engineering, University of Southern California, Los Angeles, CA 90089, USA",
+   "exposures[1].device.model": "An additional customized 4.4 MHz helical transducer was further implemented to generate a static stimulation pattern of letter forms.",
+   "exposures[1].timing.duty_cycle_pct": "Unless specified otherwise, the default US sequences used in this study were continuous waves with 100% duty cycle and a frame interval of 6 seconds."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Results text states US duration was explored 'from 1 ms to 200 ms', while the Methods section states 'a test ranging from 50 ms to 200 ms with an interval of 50 ms'; the Results range was recorded here and the discrepancy is flagged."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Default sequence was continuous wave (100% duty cycle), but the study also compared pulsed sequences at 30/50/70% duty cycle without stating pulse duration or PRF for these; recorded as a list of waveform types."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF was not stated numerically for the pulsed-mode duty-cycle comparison conditions."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "26 rats were investigated in total across all sub-experiments; not all were necessarily exposed to identical parameters (see Supplementary Table 1 for the breakdown, not available in the extracted text)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].timing.duty_cycle_pct": "second"
+  }
+ }
+}

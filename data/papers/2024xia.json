@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024xia",
+ "doi": "10.1113/jp285139",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Motor-evoked potentials (MEP), interhemispheric inhibition (IHI), short-interval intracortical inhibition (SICI) and intracortical facilitation (ICF) measured with single- and paired-pulse TMS",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Left M1 tbTUS increased ipsilateral (left) M1 excitability (excitatory) but decreased contralateral (right) M1 excitability, increased left-to-right short-interval interhemispheric inhibition and increased right M1 intracortical facilitation (inhibitory/remote effect).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Left M1 tbTUS",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left M1"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "H246"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 11.73,
+    "ispta_w_cm2": 1.17
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.93,
+    "ispta_w_cm2": 0.29
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "tbTUS consisted of an 80 s train of 20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty right-handed subjects were recruited in this study (aged 29.1  8.1 years, 8 female). None of the participants was taking medications known to afect brain excitability or had a history of neurological or psychiatric disorders.",
+   "n_sessions_per_subject": "The experimental procedure is shown in Fig. 1. All subjects participated in two study visits for real and sham tbTUS at least 7 days apart, with the order counterbalanced across subjects. Each visit lasted around 2.5–3 h. During both real and sham tbTUS, 80 s of white Gaussian noise was delivered to participants through earphones to mask the auditory stimulus from the transducer, and the volume was set as high as the participants could tolerate (Zeng et al., 2022). After each tbTUS session, the participants were asked if they heard anything else beside the white noise. Before and after tbTUS of the left M1, the M1 excitability, left to right and right to left IHI, and the right SICI/ICF were measured.",
+   "exposures[0].fundamental_frequency_khz": "The tbTUS parameters and the transducer used were the same as in our previous studies (Samuel et al., 2022; Zeng et al., 2022). Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz;",
+   "exposures[0].free_field.isppa_w_cm2": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].free_field.ispta_w_cm2": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].in_situ.isppa_w_cm2": "Ultrasound intensities were measured in free water. The free water values for the depth of 30 mm were 11.73 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for $I _ { \\mathrm { S P P A } } ,$ and 1.17 W/cm<sup>2</sup> $I _ { \\mathrm { S P T A } }$ The estimated I and I at the brain target (30 mm) were 2.93 W/cm<sup>2</sup> and 0.29 W/cm<sup>2</sup> respectively, based on the assumption of 75% attenuation due the skull (Fomenko et al., 2020; Mueller et al., 2017), both of which fall within United States Food and Drug Administration safety standards (Shamli Oghli et al., 2023). Approximately 2 cm of ultrasound gel (Wavelength MP Blue Multi-Purpose Ultrasound Gel, Sabel Med, Oldsmar, FL, USA) was applied to the transducer before it was placed onto the scalp. The layer of gel was visually inspected, and any air bubbles were burst using a probe (Shamli Oghli et al., 2023). The transducer was manually placed over the hotspot identified by TMS. The lateral and vertical dimensions of acoustic beam cross-sections measured at the full width at half-maximum intensity were 5.8 and 5.6 mm, which makes the TUS able to spatially target the motor cortex. The acoustic field in the axial direction, perpendicular to the transducer face, showed a near-field peak at 12 mm and a far-field peak at 33 mm (close to the focal length of 30 mm) (Zeng et al., 2022).",
+   "exposures[0].in_situ.ispta_w_cm2": "Ultrasound intensities were measured in free water. The free water values for the depth of 30 mm were 11.73 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for $I _ { \\mathrm { S P P A } } ,$ and 1.17 W/cm<sup>2</sup> $I _ { \\mathrm { S P T A } }$ The estimated I and I at the brain target (30 mm) were 2.93 W/cm<sup>2</sup> and 0.29 W/cm<sup>2</sup> respectively, based on the assumption of 75% attenuation due the skull (Fomenko et al., 2020; Mueller et al., 2017), both of which fall within United States Food and Drug Administration safety standards (Shamli Oghli et al., 2023). Approximately 2 cm of ultrasound gel (Wavelength MP Blue Multi-Purpose Ultrasound Gel, Sabel Med, Oldsmar, FL, USA) was applied to the transducer before it was placed onto the scalp. The layer of gel was visually inspected, and any air bubbles were burst using a probe (Shamli Oghli et al., 2023). The transducer was manually placed over the hotspot identified by TMS. The lateral and vertical dimensions of acoustic beam cross-sections measured at the full width at half-maximum intensity were 5.8 and 5.6 mm, which makes the TUS able to spatially target the motor cortex. The acoustic field in the axial direction, perpendicular to the transducer face, showed a near-field peak at 12 mm and a far-field peak at 33 mm (close to the focal length of 30 mm) (Zeng et al., 2022).",
+   "exposures[0].timing.pulse_duration_ms": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].timing.duty_cycle_pct": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].timing.sonication_duration_s": "diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.) were used. tbTUS consisted ofan 80 s train of20 ms ultrasound bursts repeated every 200 ms, with a total of 400 bursts. The sonication depth was set at 30 mm, power was set at 20 W, with 5 Hz pulse repetition frequency and 10% duty cycle. The parameters of the sham tbTUS were the same as the real tbTUS, but the transducer was flipped such that the inactive face of the transducer was in contact with the scalp, and ultrasonic energy was directed away from the head. The ultrasound beam pressure was measured using a fibre-optic hydrophone (Onda HGL-0400, Sunnyvale, CA, USA) in a measurement tank (Acertara Acoustic Laboratories, Longmont, CO, USA). The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity (I ), and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].device.manufacturer": "Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz;",
+   "exposures[0].device.model": "Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz;"
+  },
+  "flags": [
+   {
+    "field": "randomised",
+    "reason": "Paper states order was counterbalanced across subjects but does not explicitly state randomisation method"
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper does not explicitly report on adverse events beyond confirming no participant heard anything besides the masking noise"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

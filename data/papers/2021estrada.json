@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021estrada",
+ "doi": "10.1126/sciadv.abi5464",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J-Tg(Thy1-GCaMP6f))",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 21,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "wide-field epifluorescence calcium imaging (GCaMP6f); functional connectivity analysis; DAPI, TUNEL, Fluoro-Jade C, c-Fos, CD68, GFAP/podocalyxin immunohistochemistry",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Fluorescence dips reflected a local thermal effect, not neural activity; functional connectivity was unchanged after 20 sonications at 3 MPa (sequence 1) but decreased after a higher-pressure sonication (3.9 MPa) to n=3 mice, associated with blood-brain-barrier disruption; higher pressures also triggered cortical spreading depolarization.",
+ "adverse_events": "observed",
+ "safety_notes": "No signs of brain damage were found for 3-MPa focal pressures (sequence 1); at higher pressures histology showed enhanced IgG immunolabeling, perivascular microglia and astrocytic gliosis indicating blood-brain-barrier disruption and local inflammation, and cortical spreading depolarization was triggered.",
+ "exposures": [
+  {
+   "label": "Transcranial FUS to mouse cortex (sequences 1-3)",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "cortical locations (mouse cortex)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     3000,
+     4800
+    ],
+    "isppa_w_cm2": [
+     284,
+     724
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.1,
+     0.15,
+     0.3
+    ],
+    "protocol_description": "Continuous transcranial sonication delivered sequentially to cortical locations. Sequence 1: 150 ms, 3 MPa, delivered 250 times across 12 mice (0% CSD probability). Sequence 2: 100-300 ms, 3-3.9 MPa, delivered 23 times across 10 mice (8.7% CSD probability). Sequence 3: 150 ms, 4.8 MPa, delivered 5 times across 3 mice (100% CSD probability). Two mice received 150-ms pulses delivered sequentially every 11 s to two cortical locations 1 mm apart; 19 other mice received the sequences in Table 1 under isoflurane anesthesia."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty one GCaMP6f mice [C57BL/6J-Tg(Thy1-GCaMP6f) GP5.17Dkim/J, the Jackson Laboratory, USA] were used for this study (13 female and 8 male). The mouse head was immobilized using a custom stereotactic frame (Narishige International Limited, London, UK). Blood oxygen saturation, heart rate, and mouse body temperature were continuously monitored (PhysioSuite, Kent Scientific, Torrington, CT, USA), and the body temperature was kept within physiological range with a heating pad. The hair on the mouse head was first trimmed and then removed using shaving cream to ensure optimal ultrasound coupling. Seven mice were imaged after scalp removal because of skin pigmentation. The mice were subcutaneously injected with buprenorphine (0.1 mg/kg) 30 min before scalp removal. A 40% dilution of phosphate-buffered saline in ultrasound gel (Aquasonic Clear, Parker Laboratories Inc., Fairfield, NJ, USA) was deposited on mouse’s scalp and brought into contact with the transparent membrane of the water tank to ensure unobstructed delivery of light and ultrasound into the mouse brain.",
+   "anaesthesia": "Robust generation of focal fluorescence dips was observed in response to continuous (150-ms duration) transcranial sonication of cortical locations in GCaMP6f-expressing mice (Fig. 2A) under ketamine-xylazine anesthesia. The dips were highly localized in time (Fig. 2, B and F) and space (Fig. 2, D and E) around the ultrasound focal points for an estimated transcranial pressure of 3 MPa. The background resting state calcium oscillations due to the brain activity under anesthesia (Fig. 2B) make the detection of single fluorescence dips difficult. However, resting state cancelation (RSC) can improve the signal-to-noise ratio (SNR) owing to the high degree of interhemisphere correlation (Fig. 2C). The different locations were targeted sequentially (Fig. 2F) using the precise three-dimensional beam-forming capabilities of the spherical ultrasound array. The two spots do not manifest the same fluorescence dip intensity, presumably due to the skull’s curvature and inhomogeneities. This constitutes a well-known limitation of transcranial FUS delivery, now made evident by simultaneous fluorescence imaging. We then used green fluorescent protein (GFP)–expressing bacteria to vali date the appearance of focal fluorescence dip in controlled in vitro environment and better understand the origin and characteristics of this effect (fig. S1). GCaMP-family indicators are constructed from circularly permuted GFPs, so this fairly simple experiment was designed to test for induced responses outside the context of neuronal calcium dynamics. We observed similar fluorescence dips, which also displayed transient phenomena with similar relaxation times (Fig.  2,  G  to  H). This suggests a FUS-triggered thermal process unrelated to calcium dynamics. GFP exhibits negative dependence of fluorescence brightness on temperature, following an approximately −0.9%/°C slope (23). The negative fluorescence change $\\Delta \\mathrm { F _ { U S } }$ also increases with the ultrasound intensity (Fig. 2I).",
+   "direction_notes": "In contrast, when delivering a more intense (3.9 MPa) yet shorter (100 ms) sonications into $n = 3$ mice under 1.2% isoflurane anesthesia, we identified negative functional connectivity changes of up to 2  across a substantial part of the brain network affecting mostly the primary somatosensory (SSp) cortex (Fig. 4H). Upon correction for multiple testing (green color scale), we found an interhemispheric connectivity decrease between SSpbfd-R and MOp-L, RSP-L $( P < 0 . 0 5 )$ . Consistently, histological stainings revealed enhanced immunoglobulin G (IgG) immunolabeling around a pial vessel at the focal site, suggesting compromised blood-brain barrier (n = 4 mice; Fig. 4I); (perivascular) microglia and astrocytic gliosis provided further evidence for the blood-brain barrier disruption and local inflammation triggered by the FUS stimulus (figs. S3 and S4). These complementary pieces of evidence suggest that intense FUStriggered phenomena can induce plastic cellular- and network-level effects, prompting a further exploration of network-wide events triggered by increasingly intense sonication pulses.",
+   "safety_notes": "We report on the first implementation of bidirectional hybrid FLUS system incorporating a high-frequency spherical-phased array for high-precision sonication and a fiberscope-based system for widefield fluorescence imaging of the whole murine cortex. The system was capable of observing, fully noninvasively, previously undocumented effects of medium-intensity FUS delivery into the mouse brain. Fluorescence imaging revealed well-defined dips, confined in time and space to the FUS delivery points, arguably produced by a local temperature increase, which is unrelated to neuronal activity. This was further confirmed by observing the same dips also in GFP-loaded bacteria (Fig. 2G). The decrease of fluorescence brightness with temperature can be attributed to dynamic quenching (33). This well-known effect is related to absorption of the excited state’s energy of the fluorophore via collisions with surrounding molecules, which does not lead to fluorescence emission. The dips were accurately predicted by a thermal model taking into account the GCaMP6f fluorescence brightness dependence on temperature. The latter was assessed without applying ultrasound by directly measuring temperature in a mouse brain slice (Fig. 3A). No signs of brain damage were found for 3-MPa focal pressures (sequence 1).",
+   "exposures[0].fundamental_frequency_khz": "Simultaneous FUS and wide-field fluorescence imaging (Fig. 1A) is accomplished by combining a wide-angle 512-element spherical ultrasound array with a fiberscopic insert (24) consisting of 100,000 single mode fibers for delivering the excitation light and collecting fluorescence emission (see Materials and Methods). The ultrasound focus can be flexibly steered across an effective range of 6 mm in all three dimensions (25), while the entire mouse cortex (12-mm FOV) can be simultaneously imaged in the fluorescence mode (Fig. 1B). We first characterized how the transcranial FUS delivery is affected by the mouse skull (Fig. 1C). For this, the ultrasound intensity in the focal region was measured by a calibrated 75-m-diameter hydrophone (Precision Acoustics, UK) with and without the presence of an excised mouse skull sample. At 3 MHz, the skull insertion loss reaches 6 dB, thus effectively reducing the free field pressure at the focus by 50% when operating transcranially. The focal spot is shifted by less than 100 m, and its size increases by 11% because of the skull-induced distortions (Fig. 1D and E), effects that have previously been reported for human MRgFUS (14). In agreement with previous results, the full width at half maximum of the focal region remains below 400 m (Fig. 1E) (25), thus providing an unmatched spatial specificity for studying the FUS effects in vivo.",
+   "exposures[0].in_situ.pressure_kpa": "Table 1. Acoustic parameters for ultrasound emissions and CSD occurrence. The pressure was measured using a hydrophone through an excised mouse skull. Thermal constants used to calculate the temperature increase and the ultrasound properties were adopted from (27). An ultrasound absorption of 16 Np/m was used for the mouse brain, within the upper bound of 21 Np/m extrapolated from the measured attenuation from a mouse brain slice using acoustic microscopy. Some mice were sonicated with more than one sequence.",
+   "exposures[0].in_situ.isppa_w_cm2": "\fThe present study was focused on relatively high ultrasound pressures between 3 and 5 MPa, i.e., I in the 280 to 730 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ range. In contrast to MRI, the time resolution of fluorescence imaging is determined by the fluorescence lifetime in the nanosecond range (38). Thus, FLUS opens the possibility for fast fluorescence imaging of physical effects of short ultrasound pulses, used, e.g., to guide light through scattering medium (39) or monitor shock wave therapy (40), while monitoring their effect on the much slower neural responses through calcium imaging. In addition, lower pressures could also be investigated to study more subtle neuromodulatory effects, so far not directly observed using wide-field fluorescence (12, 13). In this scenario, the FLUS system would be particularly useful not only for monitoring the neuronal responses but also for assessing or mitigating any adverse effects, such as irreversible changes of fluorescence due to temperature or CSD.",
+   "exposures[0].timing.sonication_duration_s": "Robust generation of focal fluorescence dips was observed in response to continuous (150-ms duration) transcranial sonication of cortical locations in GCaMP6f-expressing mice (Fig. 2A) under ketamine-xylazine anesthesia. The dips were highly localized in time (Fig. 2, B and F) and space (Fig. 2, D and E) around the ultrasound focal points for an estimated transcranial pressure of 3 MPa. The background resting state calcium oscillations due to the brain activity under anesthesia (Fig. 2B) make the detection of single fluorescence dips difficult. However, resting state cancelation (RSC) can improve the signal-to-noise ratio (SNR) owing to the high degree of interhemisphere correlation (Fig. 2C). The different locations were targeted sequentially (Fig. 2F) using the precise three-dimensional beam-forming capabilities of the spherical ultrasound array. The two spots do not manifest the same fluorescence dip intensity, presumably due to the skull’s curvature and inhomogeneities. This constitutes a well-known limitation of transcranial FUS delivery, now made evident by simultaneous fluorescence imaging. We then used green fluorescent protein (GFP)–expressing bacteria to vali date the appearance of focal fluorescence dip in controlled in vitro environment and better understand the origin and characteristics of this effect (fig. S1). GCaMP-family indicators are constructed from circularly permuted GFPs, so this fairly simple experiment was designed to test for induced responses outside the context of neuronal calcium dynamics. We observed similar fluorescence dips, which also displayed transient phenomena with similar relaxation times (Fig.  2,  G  to  H). This suggests a FUS-triggered thermal process unrelated to calcium dynamics. GFP exhibits negative dependence of fluorescence brightness on temperature, following an approximately −0.9%/°C slope (23). The negative fluorescence change $\\Delta \\mathrm { F _ { U S } }$ also increases with the ultrasound intensity (Fig. 2I).",
+   "exposures[0].device.manufacturer": "The FUS delivery subsystem consists of a wide-angle spherical ultrasound array (Imasonic, France) featuring 512 transducer elements driven by a custom-designed multichannel electronics with a maximum digital temporal resolution of 5.5 ns (Falkenstein Mikrosysteme GmbH, Germany). The array was immersed in deionized water and coupled to the sample using a thin plastic membrane that is transparent to both light and ultrasound (Fig. 1A). A personal computer (PC) controlled the FUS emission by means of a graphical user interface implemented in MATLAB (2020, MathWorks Inc., Natick, USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Table 1 pairs pulse duration with pressure across three sequences (150ms/3MPa; 100-300ms/3-3.9MPa; 150ms/4.8MPa); flattening into lists loses this pairing and the CSD-probability association; consult Table 1 directly."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressure/intensity were measured with a hydrophone through an excised skull sample; treated here as in_situ though it is an ex vivo skull measurement rather than an in vivo measurement."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Not clearly stated how many separate sonication sessions each individual mouse received."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "This is a bioeffects/thermal characterization study rather than a neuromodulation study; excitatory/inhibitory classification does not map cleanly."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "both_defensible"
+  }
+ }
+}

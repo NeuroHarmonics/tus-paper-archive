@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019darrow",
+ "doi": "10.1016/j.brs.2019.07.015",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "epidural somatosensory evoked potentials (SSEP, peak-to-peak P1-P2 amplitude) evoked by tibial nerve stimulation; H&E histology of brain tissue",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "tFUS to the contralateral VPL thalamus reversibly suppressed SSEP amplitude in an intensity-dependent, sigmoidal manner correlated with local temperature rise (~2C); suppression was independent of duty cycle or peak pressure when ISPTA was held constant, and ultrasound to the ipsilateral VPL had no effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No animals showed chronic behavioral effects, and H&E histology of brains after repeated ultrasound exposures across a range of intensities showed no pathological effects.",
+ "exposures": [
+  {
+   "label": "tFUS to contralateral VPL thalamus during tibial nerve SSEP",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "ventral posterolateral (VPL) nucleus of the thalamus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "64-element dual-mode ultrasound array (DMUA)"
+   },
+   "fundamental_frequency_khz": 3200,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     20,
+     88
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": [
+     5,
+     70
+    ],
+    "sonication_duration_s": 30,
+    "protocol_description": "Experimental epochs consisted of 120 s of baseline SSEP followed by 150 s of SSEP during ultrasound stimulation, which was followed by a 60 s washout period. Ultrasound was delivered for 30 s followed by 10 sequential periods of 50 SSEP windows. Measurements were made using a 3.2 MHz carrier frequency, 50 kHz modulation frequency, and pulse-repetition frequency of 500 Hz (waveform in Appendix A); amplitude and duty cycle were varied independently, and various modulation frequencies were also tested at two intensities (see Appendix A)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "In accordance with a UMN-approved IACUC protocol, Sprague-Dawley (obtained from Charles River Laboratories) rats (n 15) between 250 g and 350 g were anesthetized with a ketamine (40e90 mg/kg) and xylazine (5e10 mg/kg) delivered IP until complete suppression of motor response to deep toe pinch.",
+   "exposures[0].fundamental_frequency_khz": "Measurements were made using a 3.2 MHz carrier frequency, 50 kHz modulation frequency, and pulse-repetition frequency of 500 Hz (waveform in Appendix A).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Measurements were made using a 3.2 MHz carrier frequency, 50 kHz modulation frequency, and pulse-repetition frequency of 500 Hz (waveform in Appendix A).",
+   "exposures[0].timing.duty_cycle_pct": "The effect of FUS at a constant I was relatively unchanged for duty cycles from 5% to 70% (Fig. 5).",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was delivered for 30 s followed by 10 sequential periods of 50 SSEP windows.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Nearcomplete suppression was achieved at an I of 88 W/cm<sup>2</sup> (Fig. 4a).",
+   "adverse_events": "No animals showed chronic behavioral effects.",
+   "safety_notes": "No pathological effects of the delivered ultrasound were found (Fig. A6).",
+   "exposures[0].device.model": "A 64-element DMUA transducer was used for transcranial imaging and delivery of tFUS neuromodulation."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity values (88 W/cm2 near-complete suppression; 20 W/cm2 held constant during duty-cycle sweep) are described only as 'I', consistent with I_SPTA used elsewhere in the paper, but the domain (free-field water calibration vs. skull-derated in-brain value) is not explicitly stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The paper reports carrier frequency, a separate 50 kHz modulation frequency, and a 500 Hz pulse-repetition frequency, plus a duty-cycle range (5-70%), but never states pulse duration directly, so the burst rule could not be resolved; both the modulation frequency and duty-cycle range are recorded in protocol_description instead."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Ipsilateral VPL stimulation (real ultrasound, no effect) is used as the anatomical control condition; classified as active_control_site."
+   },
+   {
+    "field": "provenance.notes",
+    "reason": "A sentence states 'Suppression of the SSEP saturated at around 15 dB W/cm2', which mixes incompatible units (dB and W/cm2), apparently an OCR/typesetting error; this value was not extracted into a numeric field."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

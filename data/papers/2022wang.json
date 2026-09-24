@@ -1,0 +1,166 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022wang",
+ "doi": "10.1007/s10072-022-05906-2",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": "post-stroke cognitive impairment (PSCI)",
+ "n_subjects": 30,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "clinical_scale",
+  "other"
+ ],
+ "readout_other": "P300 event-related potential (latency and amplitude); Mini-Mental State Exam (MMSE); Montreal Cognitive Assessment (MoCA); Modified Barthel Index (MBI); serum brain-derived neurotrophic factor (BDNF, ELISA)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Active TUS combined with cognitive rehabilitation produced greater improvements than sham-TUS plus rehabilitation in MMSE, MBI, MoCA sub-scores, P300 amplitude (increased) and latency (shortened), and serum BDNF (increased).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Active TUS to bilateral forehead combined with cognitive rehabilitation",
+   "target": {
+    "terms": [
+     "frontal_lobe"
+    ],
+    "label": "forehead (five probes, dual-channel device)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Shengxiang Technology",
+    "model": "838B-M-C-II"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.75,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1200,
+    "protocol_description": "Five probes with a diameter of 2 cm were placed on the forehead of each participant (dual-channel 838B-M-C-II; Shengxiang Technology). Treatment was given for 20 min once per day, for 5 days over 6 weeks, at a sound intensity of 1.75 W/cm2 in the active-TUS group; the sham-control group received sham-TUS (stimulation stopped after the first 30 s)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 60 patients were included in the present study, with 30 patients in each of the two groups.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Five probes with a diameter of 2 cm were placed on the forehead of each participant (dual-channel 838B-M-C-II; Shengxiang Technology, Shenzhen, China). The treatment time and frequency were 20 min once per day, which lasted for 5 days over 6 weeks, and the sound intensity of the active-TUS group was 1.75 w/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Five probes with a diameter of 2 cm were placed on the forehead of each participant (dual-channel 838B-M-C-II; Shengxiang Technology, Shenzhen, China). The treatment time and frequency were 20 min once per day, which lasted for 5 days over 6 weeks, and the sound intensity of the active-TUS group was 1.75 w/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "The ultrasound frequency is not stated anywhere in the paper."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "The paper states only a generic 'sound intensity' of 1.75 W/cm2 without specifying whether this is ISPTA or ISPPA, or the measurement domain (free-field vs in-situ)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The paper states treatment was given 'once per day, which lasted for 5 days over 6 weeks' - the total number of sessions is not explicitly stated and would require multiplying 5 days/week by 6 weeks, which was not done here."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The sham mechanism is only described as stimulation being 'stopped' after the first 30 s, without stating whether the transducer output was truly inactive, damped, or otherwise; classified as 'other'."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Direction of effect is inferred from clinical/cognitive and biomarker (BDNF, P300) improvements rather than from a direct measure of neuronal excitability."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

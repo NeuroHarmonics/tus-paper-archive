@@ -1,0 +1,176 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023chuc",
+ "doi": "10.34133/research.0130",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].unspecified_domain.pressure_kpa": "In addition, according to the stimulus pulse train, acoustic pressure (0.3 MPa), and duty cycle (Fig. 1D), we also calculated that $I _ { s p p a }$ and $I _ { s p t a }$ were 3 and 1.2 W/cm , respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "In addition, according to the stimulus pulse train, acoustic pressure (0.3 MPa), and duty cycle (Fig. 1D), we also calculated that $I _ { s p p a }$ and $I _ { s p t a }$ were 3 and 1.2 W/cm , respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "In addition, according to the stimulus pulse train, acoustic pressure (0.3 MPa), and duty cycle (Fig. 1D), we also calculated that $I _ { s p p a }$ and $I _ { s p t a }$ were 3 and 1.2 W/cm , respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We used a pulse repetition frequency (PRF) of 1 kHz and an interval of the pulse train of 200 ms, so the repetition frequency of the corresponding train was 5 Hz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Main text (Materials and Methods refers entirely to Supplementary Materials) reports only per-experiment group sizes (n=8/group for behaviour, n=4/group for most histology/immunofluorescence, n=5/group for RNA-seq) across up to 6 groups (WT+Sham, AD+Sham, AD+TUS, AD+TMAS, AD+TUS+GsM, AD+TMAS+GsM); no single total number of animals used in the study is stated."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Fundamental/carrier frequency of the TUS/TMAS system is not stated anywhere in the accessible main text; it may appear only in the supplementary Fig. 1D schematic or Supplementary Materials (not available)."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Classified as other_patterned because the text describes a nested structure (1 kHz PRF pulses grouped into trains repeated every 200 ms/5 Hz) that does not clearly match 'pulsed' (simple PRF), 'theta_burst' (paper does not call it this), or 'continuous'; pulse duration and duty cycle needed to fully characterise the burst are not stated in the main text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "An 'AD + Sham' condition is used throughout the study but its mechanism (e.g., inactive transducer, sham TUS/TMAS device) is not described in the accessible main text."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Whether mice were anaesthetised during TUS/TMAS delivery is not stated in the accessible main text (Methods are in Supplementary Materials)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "5xFAD mice (Alzheimer's disease model) and wild-type littermates",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cellular_imaging",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Novel object recognition, Y-maze, and Morris water maze tests; in vivo hippocampal perforant-path-to-dentate-gyrus field potential recordings (LTP/DEP, gamma power, phase-amplitude coupling); Golgi-Cox staining; ELISA; immunofluorescence/immunohistochemistry (Piezo1, Iba-1, CD68, CD86/CD206); RT-qPCR; RNA-seq; Western blot; cerebral blood flow monitoring",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TMAS (and TUS) increased hippocampal long-term potentiation (LTP) and reduced depotentiation (DEP) after theta-burst stimulation in 5xFAD mice, with TMAS producing larger effects than TUS alone; effects were blocked by the Piezo1 antagonist GsMTx-4.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS/TMAS acoustic exposure to hippocampus (5xFAD mice)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 300,
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": 1.2
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "TMAS combines TUS with a static magnetic field to generate a magneto-acoustic electric field; both TUS and TMAS groups received the same acoustic drive targeted at the hippocampus. The pulse train used a pulse repetition frequency (PRF) of 1 kHz with a pulse-train interval of 200 ms, giving an outer train-repetition frequency of 5 Hz. The stimulation-area schematic, pulse duration, duty cycle and total treatment duration/course are shown only in a supplementary figure (Fig. 1D) and Supplementary Materials, not in the accessible main text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

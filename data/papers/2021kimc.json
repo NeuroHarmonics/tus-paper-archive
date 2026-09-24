@@ -1,0 +1,344 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021kimc",
+ "doi": "10.1038/s41598-021-98920-x",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "sheep (Polypay ewes)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Telemetry EMG from bilateral gastrocnemii; treadmill gait/step counting; H&E, VAF-toluidine blue, GFAP and caspase-3 histology",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Short (200-ms, 70% DC) excitatory sonication of M1 or thalamus increased contralateral EMG amplitude, while prolonged (1-min, 5% DC) suppressive sonication of the same targets decreased contralateral EMG amplitude; effects were reversible.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No sign of brain tissue damage was found on H&E, VAF-toluidine blue, GFAP or caspase-3 histology, and no abnormal behavior was observed during or after sonication sessions.",
+ "exposures": [
+  {
+   "label": "Excitatory and suppressive sonication of M1",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "unilateral primary motor cortex (M1)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-D40-FL57-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     5.2,
+     20.5,
+     1.5,
+     4.7,
+     5.3,
+     13.7
+    ],
+    "ispta_w_cm2": [
+     3.6,
+     14.4,
+     0.1,
+     0.2,
+     0.3,
+     0.7
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     70,
+     5
+    ],
+    "sonication_duration_s": [
+     0.2,
+     60
+    ],
+    "protocol_description": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC. Excitatory sonication was given at Isppa of 5.2 W/cm2 (N=6 sheep; 3.6 W/cm2 Ispta) or 20.5 W/cm2 (N=4; 14.4 W/cm2 Ispta); suppressive sonication was given at Isppa of 1.5 (N=1; 0.1 W/cm2 Ispta), 4.7 (N=2; 0.2 W/cm2 Ispta), 5.3 (N=6; 0.3 W/cm2 Ispta) or 13.7 W/cm2 (N=1; 0.7 W/cm2 Ispta). Excitatory sonication was delivered at intervals of 5 s while the sheep stayed still; suppressive sonication was delivered for one minute while the sheep walked on a treadmill."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Excitatory and suppressive sonication of thalamus",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "corresponding thalamic area"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-D40-FL57-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     5.2,
+     20.5,
+     1.5,
+     4.7,
+     5.3,
+     13.7
+    ],
+    "ispta_w_cm2": [
+     3.6,
+     14.4,
+     0.1,
+     0.2,
+     0.3,
+     0.7
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     70,
+     5
+    ],
+    "sonication_duration_s": [
+     0.2,
+     60
+    ],
+    "protocol_description": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC. The same in situ intensity levels used for M1 sonication (Isppa 5.2/20.5 W/cm2 excitatory; 1.5/4.7/5.3/13.7 W/cm2 suppressive) applied across the excitatory/suppressive thalamic sessions."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Only ewes (Polypay; age = 24.5 ± 5.3  weeks; weight = 43.9 ± 5.4  kg, mean ± s.d., N= 10) were used because males may grow scurs that can excessively attenuate/distort sonication.",
+   "randomised": "We evaluated the bimodal neuromodulatory efects of ultrasound to the left M1 and thalamus across three experimental conditions (on-/of-target FUS, and without sonication – 'no-FUS') across multiple sessions (120 FUS sessions with the time gap of 3.1 ± 2.7 days, mean ± s.d.). The order of the experimental conditions was randomized and balanced across the animals.",
+   "exposures[0].target.label": "We examined the neuromodulatory efects of FUS in unanesthetized sheep by developing a custom-fit headgear capable of reproducibly placing an acoustic focus on the unilateral motor cortex (M1) and corresponding thalamic area.",
+   "exposures[1].target.label": "We examined the neuromodulatory efects of FUS in unanesthetized sheep by developing a custom-fit headgear capable of reproducibly placing an acoustic focus on the unilateral motor cortex (M1) and corresponding thalamic area.",
+   "exposures[0].device.manufacturer": "Actuation of FUS transducer and EMG data acquisition. A single-element FUS transducer (GPS200- D40-FL57-MR, Ultran Group, State College, PA) with a focal length of 30 mm from its exit plane was operated at a fundamental frequency of 250 kHz.",
+   "exposures[1].device.manufacturer": "Actuation of FUS transducer and EMG data acquisition. A single-element FUS transducer (GPS200- D40-FL57-MR, Ultran Group, State College, PA) with a focal length of 30 mm from its exit plane was operated at a fundamental frequency of 250 kHz.",
+   "exposures[0].fundamental_frequency_khz": "A single-element FUS transducer (the focal length was 30 mm from the exit plane) was operated at a fundamental frequency of 250 kHz, whereby its focal dimension was 13 mm in length and 3 mm in diameter, with estimated ellipsoidal volume of 0.06 mL (measured at 90%-maximum of the intensity; Fig. 1g).",
+   "exposures[1].fundamental_frequency_khz": "A single-element FUS transducer (the focal length was 30 mm from the exit plane) was operated at a fundamental frequency of 250 kHz, whereby its focal dimension was 13 mm in length and 3 mm in diameter, with estimated ellipsoidal volume of 0.06 mL (measured at 90%-maximum of the intensity; Fig. 1g).",
+   "exposures[0].in_situ.method": "The in situ spatial-peak pulse-average intensity (Isppa) was estimated using an intensity transmission level of 25.6% derived from skull transmission at 250 kHz.",
+   "exposures[1].in_situ.method": "The in situ spatial-peak pulse-average intensity (Isppa) was estimated using an intensity transmission level of 25.6% derived from skull transmission at 250 kHz.",
+   "exposures[0].timing.pulse_duration_ms": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[1].timing.pulse_duration_ms": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[0].timing.duty_cycle_pct": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[1].timing.duty_cycle_pct": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[0].timing.sonication_duration_s": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[1].timing.sonication_duration_s": "In detail, for the excitatory sonication, 200-ms sonication duration, 0.5-ms tone-burst duration (TBD), and 70% duty cycle (DC) were used. For the suppressive sonication, 1-min sonication was given using 0.5-ms TBD and 5% DC.",
+   "exposures[0].in_situ.isppa_w_cm2": "As a result, excitatory sonication was given at Isppa of 5.2 W/cm2 (N= 6 sheep; corresponding to 3.6 W/cm2 spatial-peak temporal-average intensity, Ispta) or 20.5 W/cm2 (N= 4; 14.4 W/cm2 Ispta). Suppressive sonication was given at Isppa of 1.5 (N= 1; corresponding to 0.1 W/cm2 Ispta), 4.7 (N= 2; 0.2 W/ cm2 Ispta), 5.3 (N=6; 0.3 W/cm2 Ispta) or 13.7 W/cm2 (N=1; 0.7 W/cm2 Ispta).",
+   "exposures[1].in_situ.isppa_w_cm2": "As a result, excitatory sonication was given at Isppa of 5.2 W/cm2 (N= 6 sheep; corresponding to 3.6 W/cm2 spatial-peak temporal-average intensity, Ispta) or 20.5 W/cm2 (N= 4; 14.4 W/cm2 Ispta). Suppressive sonication was given at Isppa of 1.5 (N= 1; corresponding to 0.1 W/cm2 Ispta), 4.7 (N= 2; 0.2 W/ cm2 Ispta), 5.3 (N=6; 0.3 W/cm2 Ispta) or 13.7 W/cm2 (N=1; 0.7 W/cm2 Ispta).",
+   "exposures[0].in_situ.ispta_w_cm2": "As a result, excitatory sonication was given at Isppa of 5.2 W/cm2 (N= 6 sheep; corresponding to 3.6 W/cm2 spatial-peak temporal-average intensity, Ispta) or 20.5 W/cm2 (N= 4; 14.4 W/cm2 Ispta). Suppressive sonication was given at Isppa of 1.5 (N= 1; corresponding to 0.1 W/cm2 Ispta), 4.7 (N= 2; 0.2 W/ cm2 Ispta), 5.3 (N=6; 0.3 W/cm2 Ispta) or 13.7 W/cm2 (N=1; 0.7 W/cm2 Ispta).",
+   "exposures[1].in_situ.ispta_w_cm2": "As a result, excitatory sonication was given at Isppa of 5.2 W/cm2 (N= 6 sheep; corresponding to 3.6 W/cm2 spatial-peak temporal-average intensity, Ispta) or 20.5 W/cm2 (N= 4; 14.4 W/cm2 Ispta). Suppressive sonication was given at Isppa of 1.5 (N= 1; corresponding to 0.1 W/cm2 Ispta), 4.7 (N= 2; 0.2 W/ cm2 Ispta), 5.3 (N=6; 0.3 W/cm2 Ispta) or 13.7 W/cm2 (N=1; 0.7 W/cm2 Ispta)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensity list combines both excitatory (5.2, 20.5 W/cm2) and suppressive (1.5, 4.7, 5.3, 13.7 W/cm2) sonication values, each used in different sheep subsets (N given per value in the source quote); array order does not align positionally with duty_cycle_pct/sonication_duration_s arrays. Full correspondence is given in protocol_description."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "Same intensity values as reported for M1 are assumed to also apply to thalamic sonication since the paper describes a single shared sonication protocol per animal across both targets; not explicitly re-stated per target."
+   },
+   {
+    "field": "timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is not stated numerically in the main text for either excitatory or suppressive sonication; only duty cycle and tone-burst duration are given, and PRF would require arithmetic to derive."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021lu",
+ "doi": "10.1109/tuffc.2020.3005670",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans and RCS)",
+ "conditions": [
+  "healthy",
+  "retinal_degeneration"
+ ],
+ "condition_other": "retinal degeneration / blindness (RCS blind rat model)",
+ "n_subjects": 17,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "visual cortex (VC) evoked potentials via tungsten needle electrode; light-evoked potentials for comparison",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS evoked VC potentials comparable to light-evoked responses; blind (RCS) rats showed significantly stronger responses than normal (LE) rats, and pulsed waveforms with PRF > 100 Hz additionally evoked long-duration low-frequency responses.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS to visual cortex, continuous and pulsed waveform groups",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex (VC), area 17"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 3740,
+    "isppa_w_cm2": 115.8,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": [
+     1,
+     0.5,
+     1,
+     2,
+     5
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     500,
+     333.3,
+     200,
+     100
+    ],
+    "duty_cycle_pct": [
+     25,
+     33.3,
+     40,
+     50
+    ],
+    "sonication_duration_s": [
+     0.002,
+     0.015,
+     0.03
+    ],
+    "protocol_description": "Three waveform groups were tested at the same amplitude: group 1, a single 15-ms continuous wave (CW) tone burst following a 6-s rest; group 2, two 2-ms CW tone bursts 20 ms apart, following a 6-s rest; group 3, pulsed waves with five PRF/pulse-width combinations (500 Hz/1 ms, 500 Hz/0.5 ms, 333.3 Hz/1 ms, 200 Hz/2 ms, 100 Hz/5 ms pulse), each delivered for 30 ms following a 6-s rest. During control recordings the transducer was aimed away from the brain with ultrasound still on."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "17 rats were studied. Six of them were normally sighted Long-Evan (LE) rats, and 11 were RD Royal College of Surgeon (RCS) blind rats.",
+   "exposures[0].fundamental_frequency_khz": "A self-designed 0.5-MHz transducer was used to stimulate the VC, with a center frequency of 0.5 MHz, 23-mm focal length, a f-number of 0.7 for a minimized focal area.",
+   "exposures[0].free_field.pressure_kpa": "The measured focused ultrasound pressure in free field had a peak-to-peak amplitude of 3.74 MPa, the intensity I<sub>SPPA</sub> was 115.8 W/cm<sup>2</sup>, the mechanical index (MI) was 2.6.",
+   "exposures[0].free_field.isppa_w_cm2": "The measured focused ultrasound pressure in free field had a peak-to-peak amplitude of 3.74 MPa, the intensity I<sub>SPPA</sub> was 115.8 W/cm<sup>2</sup>, the mechanical index (MI) was 2.6.",
+   "exposures[0].timing.pulse_duration_ms": "3) Pulsed waves (PWs) with high pulse repetition frequency (PRF) were used in group 3. Five sets of parameters were used: 500-Hz PRF with 1-ms pulse, 500 Hz with 0.5-ms pulse, 333.3-Hz PRF with 1-ms pulse, 200-Hz PRF with 2-ms pulse, and 100-Hz PRF with 5-ms pulse. All stimulations were conducted for 30 ms following a rest of 6 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "3) Pulsed waves (PWs) with high pulse repetition frequency (PRF) were used in group 3. Five sets of parameters were used: 500-Hz PRF with 1-ms pulse, 500 Hz with 0.5-ms pulse, 333.3-Hz PRF with 1-ms pulse, 200-Hz PRF with 2-ms pulse, and 100-Hz PRF with 5-ms pulse. All stimulations were conducted for 30 ms following a rest of 6 s.",
+   "exposures[0].timing.duty_cycle_pct": "(a) 1-ms pulse in every 2 ms (500 PRF and 50% DC). (b) 0.5-ms pulse in every 2 ms (500 PRF and 25% DC). (c) 1-ms pulse in every 3 ms (333.3 PRF and 33.3% DC). (d) 2-ms pulse in every 5 ms (200 PRF and 40% DC). (e) 5-ms pulse in every 10 ms (100 PRF and 50% DC).",
+   "exposures[0].timing.sonication_duration_s": "1) A 15-ms-long continuous wave (CW) following a rest of 6 s. 2) Two 2-ms-long CWs following a rest of 6 s. The interval between two waves was 20 ms. 3) Pulsed waves (PWs) with high pulse repetition frequency (PRF) were used in group 3. Five sets of parameters were used: 500-Hz PRF with 1-ms pulse, 500 Hz with 0.5-ms pulse, 333.3-Hz PRF with 1-ms pulse, 200-Hz PRF with 2-ms pulse, and 100-Hz PRF with 5-ms pulse. All stimulations were conducted for 30 ms following a rest of 6 s."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "the single target/frequency exposure combines continuous-wave (groups 1-2: 15 ms and 2x2 ms tone bursts) and pulsed (group 3: five PRF/pulse-width combinations) sub-protocols, per the one-exposure-per-target-frequency rule; pulse_duration_ms/PRF/duty_cycle_pct lists reflect only the pulsed (group 3) sub-protocol, while sonication_duration_s lists durations from all three groups."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "reported as a peak-to-peak amplitude (3.74 MPa), not a peak-negative or peak-positive pressure; recorded as stated."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "the paper only estimates skull transmission loss qualitatively, citing an external reference for a 0.5-0.7 transmission factor to argue the mechanical index would remain within FDA limits after skull attenuation; no in-brain pressure/intensity value in kPa or W/cm2 is given by this study itself."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "the paper describes a separate control experiment stimulating the auditory cortex directly (finding no VC response) rather than a standard masking/sham auditory control for the main experiment."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "the paper describes one continuous recording procedure (baseline, light stimulation, ultrasound stimulation, control recording) per animal but never explicitly states a session count."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ }
+}

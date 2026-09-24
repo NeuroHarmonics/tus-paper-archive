@@ -1,0 +1,208 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024mesik",
+ "doi": "10.1523/jneurosci.0784-23.2024",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (VGluT2-Cre; cFosTRAP2; Ai14)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  4,
+  4,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Whole-cell voltage-clamp recording of LED-evoked Sr2+-desynchronized mEPSCs in V1 layer 4 neurons; cFosTRAP2-driven tdTomato immunohistochemistry; IBA-1 immunostaining for microglial activation",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU stimulation of dLGN produced NMDAR-dependent long-term depression (~15% reduction in LED-evoked Sr2+-mEPSC amplitude) of thalamocortical synaptic strength onto V1 layer 4 neurons, measured at least 4 weeks after stimulation, without evidence of acute cFos-detectable neuronal activation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No tissue damage was observed by visual inspection of tissue integrity and DAPI-stained images, and no significant difference in IBA-1-positive microglial density, distribution, or intensity was found between LIFU-stimulated and control hemispheres.",
+ "exposures": [
+  {
+   "label": "LIFU stimulation of dorsal lateral geniculate nucleus (dLGN)",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "visual thalamus (dorsal lateral geniculate nucleus, dLGN)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Benthowave Instruments Inc.",
+    "model": "BII-7651H/500IMTS"
+   },
+   "fundamental_frequency_khz": 590,
+   "free_field": {
+    "pressure_kpa": 270,
+    "isppa_w_cm2": 2.4,
+    "ispta_w_cm2": [
+     0.099,
+     0.1095
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.0847,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 4.24,
+    "sonication_duration_s": 3600,
+    "protocol_description": "The first function generator set the pulse repetition frequency of 500 Hz and triggered the second function generator to send a tone burst of 50 pulses or a tone burst duration of 0.0847 msec. Each mouse was subjected to unilateral LIFU stimulation targeting left or right dLGN using these parameters for a total duration of 1 h under isoflurane anesthesia. For a group of mice, the NMDAR antagonist D-CPP (10 mg/kg, i.p.) was injected 10-20 min prior to the LIFU stimulation to test the role of NMDARs."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 4.235,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "we found that the strength of dLGN inputs to V1 L4 in the LIFU stimulated hemisphere, quantified as the average amplitude of LED-evoked Sr2+-mEPSCs, was significantly depressed compared to that recorded in the control hemisphere (CTL: 12.7 ± 0.65 pA, n = 11 cells; LIFU: 10.7 ± 0.51 pA, n = 21 cells; 4 mice; two-tailed unpaired t test with Welch’s correction: t = 2.372, p = 0.0268; Fig. 2D).",
+   "n_sessions_per_subject": "Each mouse was subjected to unilateral LIFU stimulation targeting left or right dLGN using these parameters for a total duration of 1 h under isoflurane anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "LIFU stimulation parameters used in this study are the following: waveform center frequency = 0.59 MHz, peak intensity = 2.4 W/cm2, time average intensity (ISPTA) = 99-109.5 mW/cm2, pulse repetition frequency (PRF) = 500 Hz, cycles per pulse = 50 (at a duty cycle of 4.24%), peak pressure = 270 kPa, MI = 0.35–0.37, and volts out = 25–30 V.",
+   "exposures[0].free_field.pressure_kpa": "LIFU stimulation parameters used in this study are the following: waveform center frequency = 0.59 MHz, peak intensity = 2.4 W/cm2, time average intensity (ISPTA) = 99-109.5 mW/cm2, pulse repetition frequency (PRF) = 500 Hz, cycles per pulse = 50 (at a duty cycle of 4.24%), peak pressure = 270 kPa, MI = 0.35–0.37, and volts out = 25–30 V.",
+   "exposures[0].free_field.isppa_w_cm2": "LIFU stimulation parameters used in this study are the following: waveform center frequency = 0.59 MHz, peak intensity = 2.4 W/cm2, time average intensity (ISPTA) = 99-109.5 mW/cm2, pulse repetition frequency (PRF) = 500 Hz, cycles per pulse = 50 (at a duty cycle of 4.24%), peak pressure = 270 kPa, MI = 0.35–0.37, and volts out = 25–30 V.",
+   "exposures[0].free_field.ispta_w_cm2": "LIFU stimulation parameters used in this study are the following: waveform center frequency = 0.59 MHz, peak intensity = 2.4 W/cm2, time average intensity (ISPTA) = 99-109.5 mW/cm2, pulse repetition frequency (PRF) = 500 Hz, cycles per pulse = 50 (at a duty cycle of 4.24%), peak pressure = 270 kPa, MI = 0.35–0.37, and volts out = 25–30 V.",
+   "exposures[0].timing.pulse_duration_ms": "the first function generator (Agilent model #33510B) set the pulse repetition frequency of 500 Hz and triggered the second function generator (Tektronix model #AFG3021B) to send a tone burst of50 pulses or a tone burst duration of 0.0847 msec.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "the first function generator (Agilent model #33510B) set the pulse repetition frequency of 500 Hz and triggered the second function generator (Tektronix model #AFG3021B) to send a tone burst of50 pulses or a tone burst duration of 0.0847 msec.",
+   "exposures[0].timing.duty_cycle_pct": "LIFU stimulation parameters used in this study are the following: waveform center frequency = 0.59 MHz, peak intensity = 2.4 W/cm2, time average intensity (ISPTA) = 99-109.5 mW/cm2, pulse repetition frequency (PRF) = 500 Hz, cycles per pulse = 50 (at a duty cycle of 4.24%), peak pressure = 270 kPa, MI = 0.35–0.37, and volts out = 25–30 V.",
+   "exposures[0].timing.sonication_duration_s": "Each mouse was subjected to unilateral LIFU stimulation targeting left or right dLGN using these parameters for a total duration of 1 h under isoflurane anesthesia.",
+   "exposures[0].device.model": "The LIFU stimulation device used was developed by the Johns Hopkins Applied Physics Laboratory (JHU/APL) and utilized a single-element focused ultrasound transducer with a center frequency of 0.5 MHz (BII-7651H/500IMTS, Benthowave Instruments Inc.) fitted with an individually tailored acoustic waveguide.",
+   "adverse_events": "we did not observe tissue damage due to LIFU stimulation from visual inspection of the tissue integrity and DAPI-stained images, we proceeded to examine this further by staining for IBA-1",
+   "exposures[0].device.manufacturer": "The LIFU stimulation device used was developed by the Johns Hopkins Applied Physics Laboratory (JHU/APL) and utilized a single-element focused ultrasound transducer with a center frequency of 0.5 MHz (BII-7651H/500IMTS, Benthowave Instruments Inc.) fitted with an individually tailored acoustic waveguide."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports separate group sizes for distinct sub-experiments (4 mice for LTD electrophysiology, 4 mice for the CPP/NMDAR-block experiment, 5 mice for cFosTRAP2/IBA-1 histology) without stating a combined total; values listed rather than summed."
+   },
+   {
+    "field": "exposures[0].device.model",
+    "reason": "Design frequency of the transducer is stated as 0.5 MHz, but acceptance testing showed 0.59 MHz gave optimal power efficiency and was used for all procedures; both values appear in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

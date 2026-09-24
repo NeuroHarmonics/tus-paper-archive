@@ -1,0 +1,180 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022kima",
+ "doi": "10.1016/j.ultrasmedbio.2021.11.006",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Two 1.25 MHz in-house manufactured focused transducers were used for the experiment.",
+   "exposures[0].free_field.pressure_kpa": "For the tube measurement, as the input voltage increased to approximately 18.9 times that of the firstorder acoustic pressure measurement experiment shown in Figure 8, the expected acoustic pressure at the focal point exerted by the two focused transducers is 2.8 MPa.",
+   "exposures[0].free_field.isppa_w_cm2": "The intensity used in the experiment was approximately 370 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and because it is a continuous wave, both $I _ { \\mathrm { s p p a } }$ and $I _ { \\mathrm { s p t a } }$ have the same value.",
+   "exposures[0].free_field.ispta_w_cm2": "The intensity used in the experiment was approximately 370 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and because it is a continuous wave, both $I _ { \\mathrm { s p p a } }$ and $I _ { \\mathrm { s p t a } }$ have the same value.",
+   "exposures[0].timing.pulse_duration_ms": "A sine wave burst signal was used as the input signal, with a frequency of 1.25 MHz, 20 burst cycles and a burst period of 10 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A sine wave burst signal was used as the input signal, with a frequency of 1.25 MHz, 20 burst cycles and a burst period of 10 ms.",
+   "exposures[0].device.model": "As illustrated in Figure 2(a), the transducer has a cylindrical shape with 74-mm diameter and 25.4-mm height; the curved piezoceramic has a spherical shape with 76.2- mm outer diameter and 72.2-mm inner diameter, which yields a 36.1-mm radius of curvature (ROC) and an Fnumber of 1."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "No biological subject was used in this bench characterization study; n_subjects is recorded as 0 rather than not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "neither"
+  }
+ },
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": null,
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "Not applicable: this is a bench-top acoustic/radiation-force characterization study in a water tank and glass tube; no living tissue, cells, or animal was used.",
+ "n_subjects": null,
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "none_reported"
+ ],
+ "readout_other": null,
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This is an engineering/physics paper characterizing acoustic radiation force and time-averaged second-order pressure produced by a standing wave from two facing transducers, compared to a single focused transducer, in water and a glass-tube phantom. No biological tissue was sonicated and no neuromodulatory effect was assessed.",
+ "adverse_events": null,
+ "safety_notes": "The paper computes MI (2.5) and Isppa/Ispta (~370 W/cm2, continuous wave) for the maximum bench output used to drive the glass-tube measurement and notes these exceed FDA safety limits (MI<1.9, Ispta<190 W/cm2); it states these levels were used only because live tissue was not involved, and that power/duty cycle would need to be reduced for future in vivo use.",
+ "exposures": [
+  {
+   "label": "Standing-wave (patterned interference radiation force) bench characterization using two facing 1.25 MHz transducers in a water tank and glass tube",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "water tank / glass tube (no biological tissue; acoustic bench characterization only)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "in-house manufactured focused transducers, 74 mm diameter, 25.4 mm height, 36.1 mm radius of curvature, F-number 1"
+   },
+   "fundamental_frequency_khz": 1250,
+   "free_field": {
+    "pressure_kpa": [
+     148,
+     2800
+    ],
+    "isppa_w_cm2": 370,
+    "ispta_w_cm2": 370
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": 0.016,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Two experimental stages used different waveforms at 1.25 MHz: (1) pressure-field mapping (yielding the 148 kPa peak standing-wave pressure recorded above) used a sine-wave burst signal of 20 cycles with a 10 ms burst period (input voltages 1.9/1.79 Vpp on the two transducers); (2) time-averaged second-order pressure (radiation force) measurement via a glass tube used continuous-wave drive, increased to a maximum output of 2.8 MPa (from which the 370 W/cm2 intensity and MI of 2.5 above are derived). A separate simulation (not an experimental exposure) modelled a single transducer driven to 1 MPa at the focus for comparison. No biological tissue was present in any stage."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.16
+   }
+  }
+ ]
+}

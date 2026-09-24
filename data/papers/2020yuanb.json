@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020yuanb",
+ "doi": "10.1109/tnsre.2020.2978865",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "wire hanging test, open field test, forced swimming test",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "TUS improved wire-hanging, open-field, and forced-swimming behavioral scores in the PD+TUS group relative to PD+Sham from day 4 onward, with no direct neurophysiological measure of excitation/inhibition reported.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Authors estimated the maximum temperature rise from ultrasound to be far below the threshold for thermal bioeffects, based on the maximum intensity and pulse duration used.",
+ "exposures": [
+  {
+   "label": "PD+TUS group, single stimulation protocol",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "brain tissue without motor cortex; the subthalamic nucleus (STN) is one of nuclei in brain tissue covered by the ultrasound spot"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 390,
+    "isppa_w_cm2": 5.1,
+    "ispta_w_cm2": 0.255
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "The interstimulus interval was 1 s, and the total stimulation time was 5 minutes for each stimulus. TUS was performed in the PD mice daily for 2 weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.05
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The mice were divided randomly into four groups: healthy $( \\mathrm { N } = 6 )$ , PD (N 8), PD Sham (N 8) and PD TUS $( \\Nu = 8 )$ .",
+   "n_sessions_per_subject": "The TUS was performed in the PD mice daily for 2 weeks.",
+   "randomised": "The mice were divided randomly into four groups: healthy $( \\mathrm { N } = 6 )$ , PD (N 8), PD Sham (N 8) and PD TUS $( \\Nu = 8 )$ .",
+   "exposures[0].fundamental_frequency_khz": "As shown in Figure 1(D), the ultrasound parameters, fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC) and stimulation duration (SD), were 500 kHz, 1 kHz, 5% and 50 ms, respectively.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The maximum ultrasound pressure was 0.39 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I _ { s p t a } } }$ were 5.1 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 0.255 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The maximum ultrasound pressure was 0.39 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I _ { s p t a } } }$ were 5.1 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 0.255 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The maximum ultrasound pressure was 0.39 MPa, and the corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I _ { s p t a } } }$ were 5.1 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 0.255 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As shown in Figure 1(D), the ultrasound parameters, fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC) and stimulation duration (SD), were 500 kHz, 1 kHz, 5% and 50 ms, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "As shown in Figure 1(D), the ultrasound parameters, fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC) and stimulation duration (SD), were 500 kHz, 1 kHz, 5% and 50 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "As shown in Figure 1(D), the ultrasound parameters, fundamental frequency (FF), pulsed repetition frequency (PRF), duty cycle (DC) and stimulation duration (SD), were 500 kHz, 1 kHz, 5% and 50 ms, respectively.",
+   "exposures[0].device.manufacturer": "The pulsed signal was generated by a function generator (AFG3022C, Tektronix, USA) and amplified by an amplifier (E&I240L, ENI Inc., USA) to drive a focused ultrasound transducer (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA) to generate the ultrasound wave.",
+   "exposures[0].device.model": "The pulsed signal was generated by a function generator (AFG3022C, Tektronix, USA) and amplified by an amplifier (E&I240L, ENI Inc., USA) to drive a focused ultrasound transducer (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA) to generate the ultrasound wave."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target",
+    "reason": "Exact stimulation target is not given with stereotaxic coordinates; paper only states brain tissue excluding motor cortex, with STN noted as one nucleus covered by the ultrasound spot."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper does not state whether the measured pressure/intensity was measured in free field/water or in situ; hydrophone measurement setup relative to the animal is not specified."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper gives a separate 'stimulation duration (SD)' of 50 ms and a PRF/duty cycle but never states a distinct pulse duration; not computed per protocol (would be 0.05 ms from duty/PRF)."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Only behavioral outcomes were assessed; no neurophysiological measure of excitatory/inhibitory direction was reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

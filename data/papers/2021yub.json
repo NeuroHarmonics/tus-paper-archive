@@ -1,0 +1,220 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021yub",
+ "doi": "10.1109/tbme.2020.3030892",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": null,
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS significantly increased the MRCP source profile amplitude (MSPA) relative to sham ultrasound, and a higher ultrasound pulse repetition frequency (UPRF 3000 Hz) enhanced the MSPA more than a lower UPRF (300 Hz).",
+ "adverse_events": "observed",
+ "safety_notes": "No adverse symptoms (headache, neck pain, dental pain, nausea, dizziness, anxiety, abnormal muscle contractions) were reported on questionnaire; however 7 of 15 subjects reported scalp tingling sensation only during the UPRF 3000 Hz session.",
+ "exposures": [
+  {
+   "label": "tFUS to primary leg motor cortex, UPRF 300 Hz and 3000 Hz",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary leg motor cortical area"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Blatek Industries, Inc.",
+    "model": "AT31529"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 809.2,
+    "isppa_w_cm2": 5.9,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 288.3,
+    "isppa_w_cm2": 1.17,
+    "ispta_w_cm2": 0.70258
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     300,
+     3000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Ultrasound was triggered by the onset of the voluntary foot-pedaling motion signal (detected by an accelerometer) and delivered as a single 500-ms sonication per trial; about 120 trials of right foot pedaling were conducted per session, with subjects initiating pedaling roughly every 3-5 seconds. Two UPRF conditions (300 Hz and 3000 Hz) plus a sham condition were tested in three sessions in random order. In the sham condition the transducer was physically detached from the scalp by 4-6 cm while still transmitting at UPRF 3000 Hz."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field",
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fifteen healthy human subjects were recruited in this experiment (5 females and 10 males, mean age of all participants:",
+   "exposures[0].fundamental_frequency_khz": "As illustrated in Fig. 2(a), this study used a UFF of 0.5 MHz, CPP number of 100. Each sonication lasted for 500 ms with two levels of UPRF, i.e., 300 and 3000 Hz practiced in two sessions",
+   "exposures[0].timing.pulse_duration_ms": "As illustrated in Fig. 2(a), this study used a UFF of 0.5 MHz, CPP number of 100. Each sonication lasted for 500 ms with two levels of UPRF, i.e., 300 and 3000 Hz practiced in two sessions",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As illustrated in Fig. 2(a), this study used a UFF of 0.5 MHz, CPP number of 100. Each sonication lasted for 500 ms with two levels of UPRF, i.e., 300 and 3000 Hz practiced in two sessions",
+   "exposures[0].timing.sonication_duration_s": "As illustrated in Fig. 2(a), this study used a UFF of 0.5 MHz, CPP number of 100. Each sonication lasted for 500 ms with two levels of UPRF, i.e., 300 and 3000 Hz practiced in two sessions",
+   "exposures[0].free_field.pressure_kpa": "The ultrasound spatial peak pressure applied to the scalp was measured as 809.2 kPa [shown in Fig. 2(b)–(c), spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } } \\colon 5 . 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$ , with an estimated ultrasound pressure of 288.3 kPa [Fig. 2(d), I : $1 . 1 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial-peak temporal-average intensity $\\mathrm { I _ { S P T A } } { : } 7 0 2 . 5 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at $\\mathrm { U P R F } = 3 0 0 0 \\mathrm { H z } ]$ arriving at the targeted cortical brain with an acoustic insertion loss of 8.96 dB.",
+   "exposures[0].free_field.isppa_w_cm2": "The ultrasound spatial peak pressure applied to the scalp was measured as 809.2 kPa [shown in Fig. 2(b)–(c), spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } } \\colon 5 . 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$ , with an estimated ultrasound pressure of 288.3 kPa [Fig. 2(d), I : $1 . 1 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial-peak temporal-average intensity $\\mathrm { I _ { S P T A } } { : } 7 0 2 . 5 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at $\\mathrm { U P R F } = 3 0 0 0 \\mathrm { H z } ]$ arriving at the targeted cortical brain with an acoustic insertion loss of 8.96 dB.",
+   "exposures[0].in_situ.pressure_kpa": "The ultrasound spatial peak pressure applied to the scalp was measured as 809.2 kPa [shown in Fig. 2(b)–(c), spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } } \\colon 5 . 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$ , with an estimated ultrasound pressure of 288.3 kPa [Fig. 2(d), I : $1 . 1 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial-peak temporal-average intensity $\\mathrm { I _ { S P T A } } { : } 7 0 2 . 5 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at $\\mathrm { U P R F } = 3 0 0 0 \\mathrm { H z } ]$ arriving at the targeted cortical brain with an acoustic insertion loss of 8.96 dB.",
+   "exposures[0].in_situ.isppa_w_cm2": "The ultrasound spatial peak pressure applied to the scalp was measured as 809.2 kPa [shown in Fig. 2(b)–(c), spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } } \\colon 5 . 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$ , with an estimated ultrasound pressure of 288.3 kPa [Fig. 2(d), I : $1 . 1 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial-peak temporal-average intensity $\\mathrm { I _ { S P T A } } { : } 7 0 2 . 5 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at $\\mathrm { U P R F } = 3 0 0 0 \\mathrm { H z } ]$ arriving at the targeted cortical brain with an acoustic insertion loss of 8.96 dB.",
+   "exposures[0].in_situ.ispta_w_cm2": "The ultrasound spatial peak pressure applied to the scalp was measured as 809.2 kPa [shown in Fig. 2(b)–(c), spatial-peak pulse-average intensity $\\mathrm { I _ { S P P A } } \\colon 5 . 9 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$ , with an estimated ultrasound pressure of 288.3 kPa [Fig. 2(d), I : $1 . 1 7 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ spatial-peak temporal-average intensity $\\mathrm { I _ { S P T A } } { : } 7 0 2 . 5 8 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at $\\mathrm { U P R F } = 3 0 0 0 \\mathrm { H z } ]$ arriving at the targeted cortical brain with an acoustic insertion loss of 8.96 dB.",
+   "n_sessions_per_subject": "As illustrated in Fig. 2(a), this study used a UFF of 0.5 MHz, CPP number of 100. Each sonication lasted for 500 ms with two levels of UPRF, i.e., 300 and 3000 Hz practiced in two sessions (denoted $\\mathrm { a s \\ ^ { * } U P R F \\ 3 0 0 \\ H z ^ { , * } }$ and “UPRF 3000 $\\mathrm { H z } ^ { \\prime \\prime }$ , respectively).",
+   "exposures[0].device.manufacturer": "A customized single-element focused ultrasound transducer with electrically insulated housing and an acoustic aperture diameter of 25.4 mm and a nominal focal distance of 38 mm (AT31529, Blatek Industries, Inc., USA) was used in this study.",
+   "exposures[0].device.model": "A customized single-element focused ultrasound transducer with electrically insulated housing and an acoustic aperture diameter of 25.4 mm and a nominal focal distance of 38 mm (AT31529, Blatek Industries, Inc., USA) was used in this study."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Computed from stated cycles-per-pulse (100) divided by fundamental frequency (0.5 MHz), a sanctioned unit conversion, not stated directly as a duration in ms."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Text states this ISPTA value specifically 'at UPRF=3000 Hz'; it is unclear whether the same value applies to the 300 Hz condition."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham condition kept the transducer transmitting but physically detached the acoustic aperture 4-6 cm from the scalp, rather than powering it off; classified as inactive_transducer by analogy but the exact mechanism differs from a simple power-off sham."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper states 'No adverse symptoms have been reported' on questionnaire, but separately reports scalp tingling sensation in 7/15 subjects during the UPRF 3000 Hz session; coded as observed given this sensation was reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

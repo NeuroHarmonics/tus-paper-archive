@@ -1,0 +1,349 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025phan",
+ "doi": "10.1038/s41467-025-66980-6",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6J and transgenic lines); primary spinal astrocyte cultures from mouse pups",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cellular_imaging"
+ ],
+ "readout_other": "Von Frey paw-withdrawal threshold; CatWalk gait analysis; perforated and whole-cell patch-clamp electrophysiology; fiber photometry; FSCV-adjacent FACS for intracellular BDNF; RNA-seq transcriptomics; TUNEL apoptosis assay; electron microscopy",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Low-intensity cTBUS (<3 W/cm2, e.g. 0.77 W/cm2) suppressed spinal dorsal-horn c-Fos activation, AMPAR-mediated sEPSC amplitude and astrogliosis, and alleviated mechanical allodynia; high-intensity HI-cTBUS (77 W/cm2) instead increased c-Fos activation and abolished analgesia (as did 3.4/10.8 W/cm2 in the behavioural intensity screen), showing an intensity-dependent, non-monotonic (low-intensity inhibitory / high-intensity excitatory) effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "TUNEL assays and in situ hybridization confirmed no increase in apoptotic cell death in spinal tissue following LI-cTBUS exposure; temperature monitoring confirmed no appreciable temperature increases at therapeutic intensities.",
+ "exposures": [
+  {
+   "label": "In vivo LI-cTBUS/USCS to lumbar-sacral spinal cord (partial sciatic nerve crush injury and spared nerve injury models)",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord",
+     "spinal_dorsal_horn"
+    ],
+    "label": "lumbar-sacral region of the spinal cord (dorsal horn)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H217 (0.5 MHz focused single-element, 33.0 mm diameter, 63.2 mm radius of curvature)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.77,
+     0.88,
+     3.4,
+     10.8,
+     77
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "theta_burst"
+    ],
+    "pulse_duration_ms": [
+     1,
+     3
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     100,
+     200
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "Ultrasound-based spinal cord stimulation (USCS): bursts of 500 Hz (5 pulses, 1 ms pulse duration, 500 kHz centre frequency) with a 40 Hz (25 ms) train pattern, totalling 800 pulses. Continuous theta-burst ultrasound stimulation (cTBUS-100Hz/200Hz): bursts of 100 Hz or 200 Hz (4 pulses, 3 ms pulse duration, 500 kHz centre frequency) with a 5 Hz theta train pattern, totalling 800 pulses (~40 s train). Delivered once daily for 10 consecutive days (PCI model, from day 17 post-injury) or day 6-10 post-injury (SNI model) through intact skin to the lumbar-sacral spinal cord under 2% isoflurane anaesthesia. Additional variants: intensity screening for cTBUS-200Hz (0.77, 0.88, 3.4, 10.8 W/cm2), pulse-count screening (400, 800, 1200, 1600 pulses), a high-intensity comparison (HI-cTBUS, 77 W/cm2) for c-Fos immunohistochemistry, and a re-induction series (a second 4-day stimulation block after relapse)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "In vitro LI-cTBUS to primary spinal astrocyte cultures",
+   "target": {
+    "terms": [
+     "cultured_glia"
+    ],
+    "label": "primary spinal cord astrocyte cultures"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU (0.5 MHz single-element, 25 mm diameter)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     2.4,
+     2.8
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "Continuous theta-burst ultrasound protocol (cTBUS-200 Hz: 200 Hz bursts repeated at a 5 Hz train frequency), delivered to primary spinal astrocyte cultures via an Olympus V301-SU transducer positioned directly above the culture slide, at 2.4 or 2.8 W/cm2, 40 s per session, once daily for three consecutive days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "Ultrasound stimulation was applied daily for 10 days consecutively to the lumbar-sacral region through intact skin on day 17 post-sciatic nerve injury, which presents the persistent and chronic manifestation of tactile allodynia (Fig. 1a).",
+   "exposures[0].fundamental_frequency_khz": "In the in vivo experiments, we used the H217 transducer (0.5 MHz, focused single-element, effective diameter 33.0 mm × radius of curvature 63.2 mm) from Sonic Concepts, Inc., USA. The output intensity was set at 0.77 W/cm<sup>2</sup>. In contrast, for the in vitro cell culture experiments, we used the Olympus V301-SU transducer (0.5 MHz, singleelement, effective diameter 25 mm) due to experimental constraints. Based on the low-intensity (<3 W/cm<sup>2</sup>) threshold observed for the analgesic effect in the in vivo study, we applied cTBUS-200 Hz stimulation using the Olympus transducer in the in vitro experiments. For this purpose, we selected a minimum stimulation value of 500 mVrms and a maximum stimulation value of 990 mVrms, corresponding to output intensities of 2.4 and 2.8 W/cm<sup>2</sup>, respectively. Notably, both of these stimulation intensities are lower than the $3 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ intensity observed in the in vivo experiments.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "To assess whether this effect was intensity-dependent, we increased the stimulation intensity of cTBUS-200 Hz to 3.4 or 10.8 W/cm². This abolished the analgesic benefit, indicating that excessive energy delivery disrupts the therapeutic effect (Fig. 1d and Supplementary Fig. 1g, h). We also varied stimulation duration and found that 800 pulses produced more durable analgesia than 400, 1200, or 1600 pulses, suggesting that longer stimulation does not linearly translate to better outcomes (Supplementary Fig. 1i).",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound-based spinal cord stimulation (USCS) protocol involved bursts of 500 Hz (5 pulses) with a 40 Hz (25 ms) train pattern, totaling 800 pulses. The ultrasound pulses used in this protocol had a center frequency of 500 kHz with continuous cycles over a 1 ms pulse duration. The continuous theta-burst ultrasound stimulation-200 Hz (cTBUS-200 Hz) consisted of bursts of 200 Hz (4 pulses) with a 5 Hz (theta) train pattern. Similarly, the cTBUS-100 Hz included bursts of 100 Hz (4 pulses) with a 5 Hz (theta) train pattern. Both cTBUS-100 Hz and 200 Hz protocols encompassed a total of 800 pulses. The ultrasound pulses used in these protocols had a center frequency of",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound-based spinal cord stimulation (USCS) protocol involved bursts of 500 Hz (5 pulses) with a 40 Hz (25 ms) train pattern, totaling 800 pulses. The ultrasound pulses used in this protocol had a center frequency of 500 kHz with continuous cycles over a 1 ms pulse duration. The continuous theta-burst ultrasound stimulation-200 Hz (cTBUS-200 Hz) consisted of bursts of 200 Hz (4 pulses) with a 5 Hz (theta) train pattern. Similarly, the cTBUS-100 Hz included bursts of 100 Hz (4 pulses) with a 5 Hz (theta) train pattern. Both cTBUS-100 Hz and 200 Hz protocols encompassed a total of 800 pulses. The ultrasound pulses used in these protocols had a center frequency of",
+   "exposures[0].timing.sonication_duration_s": "500 kHz and were characterized by continuous cycles over a 3 ms pulse duration.",
+   "exposures[1].fundamental_frequency_khz": "In vitro ultrasound stimulation for primary spinal astrocytes was used with a continuous theta-burst ultrasound protocol (cTBUS-200 Hz), consisting of 200 Hz bursts repeated at a 5 Hz train frequency. Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood. Two stimulation intensities were employed: 2.4 and 2.8 W/cm²—both below the in vivo therapeutic threshold (<3 W/cm²). Each stimulation session lasted 40 s and was administered once daily for three consecutive days. Immediately following stimulation, culture dishes were returned to a $3 7 ^ { \\circ } \\mathbf { C } , 5 \\% \\mathbf { C } \\mathbf { O } _ { 2 }$ incubator to minimize environmental stress.",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "In vitro ultrasound stimulation for primary spinal astrocytes was used with a continuous theta-burst ultrasound protocol (cTBUS-200 Hz), consisting of 200 Hz bursts repeated at a 5 Hz train frequency. Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood. Two stimulation intensities were employed: 2.4 and 2.8 W/cm²—both below the in vivo therapeutic threshold (<3 W/cm²). Each stimulation session lasted 40 s and was administered once daily for three consecutive days. Immediately following stimulation, culture dishes were returned to a $3 7 ^ { \\circ } \\mathbf { C } , 5 \\% \\mathbf { C } \\mathbf { O } _ { 2 }$ incubator to minimize environmental stress.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "In vitro ultrasound stimulation for primary spinal astrocytes was used with a continuous theta-burst ultrasound protocol (cTBUS-200 Hz), consisting of 200 Hz bursts repeated at a 5 Hz train frequency. Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood. Two stimulation intensities were employed: 2.4 and 2.8 W/cm²—both below the in vivo therapeutic threshold (<3 W/cm²). Each stimulation session lasted 40 s and was administered once daily for three consecutive days. Immediately following stimulation, culture dishes were returned to a $3 7 ^ { \\circ } \\mathbf { C } , 5 \\% \\mathbf { C } \\mathbf { O } _ { 2 }$ incubator to minimize environmental stress.",
+   "exposures[1].timing.sonication_duration_s": "In vitro ultrasound stimulation for primary spinal astrocytes was used with a continuous theta-burst ultrasound protocol (cTBUS-200 Hz), consisting of 200 Hz bursts repeated at a 5 Hz train frequency. Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood. Two stimulation intensities were employed: 2.4 and 2.8 W/cm²—both below the in vivo therapeutic threshold (<3 W/cm²). Each stimulation session lasted 40 s and was administered once daily for three consecutive days. Immediately following stimulation, culture dishes were returned to a $3 7 ^ { \\circ } \\mathbf { C } , 5 \\% \\mathbf { C } \\mathbf { O } _ { 2 }$ incubator to minimize environmental stress.",
+   "adverse_events": "To ensure the safety of LI-cTBUS stimulation and exclude potential cellular stress or thermal damage, we conducted a series of safety assessments. TUNEL assays and in situ hybridization confirmed no increase in apoptotic cell death in spinal tissue following LI-cTBUS exposure (Supplementary Fig. 3a and b). Temperature monitoring confirmed that LI-cTBUS did not induce appreciable temperature increases at therapeutic intensities (Supplementary Fig. 3c). Ultrasound beam profiling further validated efficient penetration and accurate targeting through the vertebral column (Supplementary Fig. 3d).",
+   "exposures[1].device.manufacturer": "Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood.",
+   "exposures[1].device.model": "Ultrasound was delivered using an Olympus V301-SU transducer (500 kHz, single-element, 25 mm diameter), positioned directly above the culture slide within a sterile laminar flow hood.",
+   "exposures[0].device.manufacturer": "In the in vivo experiments, we used the H217 transducer (0.5 MHz, focused single-element, effective diameter 33.0 mm × radius of curvature 63.2 mm) from Sonic Concepts, Inc., USA. The output intensity was set at 0.77 W/cm<sup>2</sup>. In contrast, for the in vitro cell culture experiments, we used the Olympus V301-SU transducer (0.5 MHz, singleelement, effective diameter 25 mm) due to experimental constraints. Based on the low-intensity (<3 W/cm<sup>2</sup>) threshold observed for the analgesic effect in the in vivo study, we applied cTBUS-200 Hz stimulation using the Olympus transducer in the in vitro experiments. For this purpose, we selected a minimum stimulation value of 500 mVrms and a maximum stimulation value of 990 mVrms, corresponding to output intensities of 2.4 and 2.8 W/cm<sup>2</sup>, respectively. Notably, both of these stimulation intensities are lower than the $3 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ intensity observed in the in vivo experiments.",
+   "exposures[0].device.model": "The acoustic beam profile of the H217 transducer (Sonic Concepts, Inc., USA) was measured by scanning the peak negative pressure at every 100 μm points with a motorized stage-mounted needle hydrophone (NH1000, Precision Acoustics, UK).",
+   "exposures[1].timing.pulse_duration_ms": "500 kHz and were characterized by continuous cycles over a 3 ms pulse duration."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "USCS is a nested burst pattern (5 pulses at 500 Hz forming a burst, bursts repeated at 40 Hz) mimicking clinical burst spinal cord stimulation; it is not a simple continuous/pulsed/theta pattern, so mapped to other_patterned. cTBUS-100/200Hz are explicitly named theta-burst by the authors."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Nested burst structure: value taken as the within-burst pulse rate (500 Hz for USCS, 100 or 200 Hz for cTBUS-100/200), not the outer train/theta repetition rate (40 Hz for USCS, 5 Hz theta for cTBUS); an alternative reading could treat the outer rate as the PRF."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not explicitly stated by the authors for any of the three in vivo patterns; could be computed from pulse duration and PRF but that arithmetic is avoided per instructions."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "40 s total train duration is stated explicitly elsewhere for LI-cTBUS (single-pulse vs LI-cTBUS 40 s calcium-imaging comparison) and is consistent with 800 pulses / 4 pulses-per-burst at a 5 Hz train; the USCS protocol's total train duration is not explicitly stated and is not included in this value."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "0.77 W/cm2 is the default/baseline intensity for most in vivo experiments; 0.88, 3.4 and 10.8 W/cm2 are from the cTBUS-200Hz intensity screen; 77 W/cm2 is the high-intensity (HI-cTBUS) comparison condition used for the c-Fos immunohistochemistry experiment, not for the main behavioural dataset."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "In vitro cTBUS-200Hz protocol is stated to reuse the same burst pattern as in vivo, but the paper does not explicitly restate the 3 ms pulse duration for the in vitro experiments, so left not_reported rather than assumed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Study comprises many small sub-experiments (N=3-13 mice each, both PCI and SNI models, plus in vitro cultures); no single total number of animals used across the whole study is stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No device-off or inactive-transducer sham is described for the main behavioural experiments; comparator groups are untreated PCI/SNI mice or sham-operated (surgical sham) controls rather than an ultrasound sham."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[1].timing.pulse_duration_ms": "second"
+  }
+ }
+}

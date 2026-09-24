@@ -1,0 +1,517 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026bendig",
+ "doi": "10.1038/s41598-026-62583-3",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  22,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "transcranial functional ultrasound imaging (fUSI) / power Doppler imaging of cerebral blood volume (CBV); H&E histology for safety assessment; thermocouple temperature measurement",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Transcranial FUS produced widespread, mostly cortical, positive (increased) CBV responses that scaled with pressure; cranial-window FUS produced both positive and, at higher frequency, significant negative CBV correlations, and the authors attribute much of the transcranial response to skull-mediated thermal effects rather than direct neuromodulation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "We found no signs of structural changes or blood cell extravasations in H&E staining in n = 2 mice that were sacrificed 24 h following FUS with the highest pressure used for transcranial FUS (center frequency = 1.68 MHz, PNP = 2.6 MPa, Supplementary Figure 5 c/d).",
+ "exposures": [
+  {
+   "label": "Transcranial FUS, 1.68 MHz (H-204)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex",
+     "hippocampus",
+     "thalamus"
+    ],
+    "label": "transcranial/cranial-window sonication along midline or ±1 mm ML; sonicated structures (somatosensory cortex, hippocampus, thalamus) depended on the AP imaging plane"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc, Bothell, WA, USA (transducer); Vermon S.A., Tours, France (imaging array); Verasonics Inc. (Vantage 256 system)",
+    "model": "H-204 / H-215 single-element annular transducer with L22-14vXLF imaging array"
+   },
+   "fundamental_frequency_khz": 1680,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     800,
+     2600
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     1.9,
+     20.06
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 150,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 64,
+    "sonication_duration_s": 20,
+    "protocol_description": "A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. Each 20-s FUS block consisted of a 150-ms burst delivered at ~1 Hz (H-204) or ~2 Hz (H-215) (\"sonication frequency\"), amplitude-modulated by a 1-kHz half-sine envelope corresponding to an energy-equivalent duty cycle of 64%; this nested burst/AM structure does not reduce to a single PRF-duty-cycle pair."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 15.0,
+    "duty_cycle_mismatch": true
+   }
+  },
+  {
+   "label": "Cranial-window FUS, 1.68 MHz (H-204, non-derated)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex",
+     "hippocampus",
+     "thalamus"
+    ],
+    "label": "transcranial/cranial-window sonication along midline or ±1 mm ML; sonicated structures (somatosensory cortex, hippocampus, thalamus) depended on the AP imaging plane"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc, Bothell, WA, USA (transducer); Vermon S.A., Tours, France (imaging array); Verasonics Inc. (Vantage 256 system)",
+    "model": "H-204 / H-215 single-element annular transducer with L22-14vXLF imaging array"
+   },
+   "fundamental_frequency_khz": 1680,
+   "free_field": {
+    "pressure_kpa": [
+     700,
+     2800
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     1.45,
+     23.27
+    ]
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 150,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 64,
+    "sonication_duration_s": 20,
+    "protocol_description": "A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. Each 20-s FUS block consisted of a 150-ms burst delivered at ~1 Hz (H-204) or ~2 Hz (H-215) (\"sonication frequency\"), amplitude-modulated by a 1-kHz half-sine envelope corresponding to an energy-equivalent duty cycle of 64%; this nested burst/AM structure does not reduce to a single PRF-duty-cycle pair."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 15.0,
+    "duty_cycle_mismatch": true
+   }
+  },
+  {
+   "label": "Cranial-window FUS, 4 MHz (H-215, derated brain tissue)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex",
+     "hippocampus",
+     "thalamus"
+    ],
+    "label": "transcranial/cranial-window sonication along midline or ±1 mm ML; sonicated structures (somatosensory cortex, hippocampus, thalamus) depended on the AP imaging plane"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc, Bothell, WA, USA (transducer); Vermon S.A., Tours, France (imaging array); Verasonics Inc. (Vantage 256 system)",
+    "model": "H-204 / H-215 single-element annular transducer with L22-14vXLF imaging array"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     960,
+     2230
+    ],
+    "isppa_w_cm2": [
+     31.18,
+     168.23
+    ],
+    "ispta_w_cm2": [
+     2.99,
+     16.15
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 150,
+    "pulse_repetition_frequency_hz": 2,
+    "duty_cycle_pct": 64,
+    "sonication_duration_s": 20,
+    "protocol_description": "A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. Each 20-s FUS block consisted of a 150-ms burst delivered at ~1 Hz (H-204) or ~2 Hz (H-215) (\"sonication frequency\"), amplitude-modulated by a 1-kHz half-sine envelope corresponding to an energy-equivalent duty cycle of 64%; this nested burst/AM structure does not reduce to a single PRF-duty-cycle pair."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The experiments and procedures presented in this study were performed in accordance with the Columbia University Institutional Animal Care and Use Committee. Young male wild-type mice between 8 to 12 weeks of age (C57BL/6, n = 22) were used for transcranial experiments in this study. Animals To assess possible effects of the skull, a subgroup of mice between 8 to 20 weeks of age (C57BL/6, n = 5) was implanted with a chronic cranial window covered by a polymethyl pentene membrane as described by Brunner et al [31].",
+   "exposures[0].fundamental_frequency_khz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[1].fundamental_frequency_khz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[2].fundamental_frequency_khz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[0].in_situ.pressure_kpa": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[2].in_situ.pressure_kpa": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[0].in_situ.ispta_w_cm2": "2.99 - 16.15  $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>31.18 - 168.23 W/cm² (Derated: brain tissue, Cranial window, H215)  $\\mathrm { { I _ { s p t a } } }$  (Pulse train): 1.90 - 20.06 W/cm² (Derated: skull, transcranial, H204) 1.45 - 23.27 W/cm² (Non-derated, Cranial window, H204) (Derated: brain tissue, Cranial window, H215)",
+   "exposures[2].in_situ.isppa_w_cm2": "2.99 - 16.15  $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>31.18 - 168.23 W/cm² (Derated: brain tissue, Cranial window, H215)  $\\mathrm { { I _ { s p t a } } }$  (Pulse train): 1.90 - 20.06 W/cm² (Derated: skull, transcranial, H204) 1.45 - 23.27 W/cm² (Non-derated, Cranial window, H204) (Derated: brain tissue, Cranial window, H215)",
+   "exposures[0].timing.pulse_duration_ms": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[1].timing.pulse_duration_ms": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[2].timing.pulse_duration_ms": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)",
+   "exposures[0].timing.duty_cycle_pct": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[1].timing.duty_cycle_pct": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[2].timing.duty_cycle_pct": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[0].timing.sonication_duration_s": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[1].timing.sonication_duration_s": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[2].timing.sonication_duration_s": "The amplitude modulation was based on a sine wave (half cycle) and the energy deposited in the tissue was equal to a duty cycle of 64% (Supplementary Figure 1). A block design was implemented consisting of a 60 s baseline imaging block followed by four 20 s FUS blocks with intervals randomized between 60 and 90 s. During the FUS blocks (20 s), the function generator output was triggered by a programmable research ultrasound system (Vantage 256, Verasonics, Kirkland, WA) immediately after each image acquisition at a frequency of approximately 1 Hz (20 pulses in total).",
+   "exposures[0].device.manufacturer": "We used single-element spherical segment annular focused ultrasound transducers (H-204 and H-215, Sonic Concepts Inc, Bothell, WA, USA) that were confocally aligned with an ultrasound imaging array (L22-14vXLF, Vermon S.A., Tours, France).",
+   "exposures[1].device.manufacturer": "We used single-element spherical segment annular focused ultrasound transducers (H-204 and H-215, Sonic Concepts Inc, Bothell, WA, USA) that were confocally aligned with an ultrasound imaging array (L22-14vXLF, Vermon S.A., Tours, France).",
+   "exposures[2].device.manufacturer": "We used single-element spherical segment annular focused ultrasound transducers (H-204 and H-215, Sonic Concepts Inc, Bothell, WA, USA) that were confocally aligned with an ultrasound imaging array (L22-14vXLF, Vermon S.A., Tours, France).",
+   "exposures[0].device.model": "FUS ESS Focal Size (-6 dB) H-204: 0.8 mm (lateral), 8 mm (axial) H-215: 0.3 mm (lateral), 2 mm (axial) 1 Acoustic Parameters Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V",
+   "exposures[1].device.model": "FUS ESS Focal Size (-6 dB) H-204: 0.8 mm (lateral), 8 mm (axial) H-215: 0.3 mm (lateral), 2 mm (axial) 1 Acoustic Parameters Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V",
+   "exposures[2].device.model": "FUS ESS Focal Size (-6 dB) H-204: 0.8 mm (lateral), 8 mm (axial) H-215: 0.3 mm (lateral), 2 mm (axial) 1 Acoustic Parameters Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V",
+   "exposures[1].free_field.pressure_kpa": "<tr><td>Acoustic Parameters</td><td>Carrier Frequency: H-204: 1.68 MHz (3rd Harmonic) H-215: 4 MHz V Amplitude Modulation Freq: 1 kHz Burst Duration: 150 ms Sonication Frequency: H-204: 1 Hz H-215: 2 Hz Peak Negative Pressures: 0.8 - 2.6 MPa (Derated: skull, transcranial, H204) 0.7 - 2.8 MPa (Non-derated, Cranial window, H204) 0.96 - 2.23 MPa (Derated: brain tissue, Cranial window, H215)</td></tr>",
+   "exposures[1].free_field.ispta_w_cm2": "<tr><td>2.99 - 16.15  $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>31.18 - 168.23 W/cm² (Derated: brain tissue, Cranial window, H215)  $\\mathrm { { I _ { s p t a } } }$  (Pulse train): 1.90 - 20.06 W/cm² (Derated: skull, transcranial, H204) 1.45 - 23.27 W/cm² (Non-derated, Cranial window, H204) (Derated: brain tissue, Cranial window, H215)</td></tr>",
+   "exposures[2].in_situ.ispta_w_cm2": "<tr><td>2.99 - 16.15  $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td>31.18 - 168.23 W/cm² (Derated: brain tissue, Cranial window, H215)  $\\mathrm { { I _ { s p t a } } }$  (Pulse train): 1.90 - 20.06 W/cm² (Derated: skull, transcranial, H204) 1.45 - 23.27 W/cm² (Non-derated, Cranial window, H204) (Derated: brain tissue, Cranial window, H215)</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper gives separate mouse counts for transcranial (n=22) and cranial-window (n=5) cohorts; unclear whether the cranial-window subgroup overlaps with the transcranial cohort (different age ranges given), so totals are not summed."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "The Isppa row in Table 1 is garbled in the source text/table conversion (a numeric range appears with no clear skull/transcranial vs cranial-window label attached); left not_reported rather than guessing the attribution."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "Same Table 1 formatting/garbling issue as above; the non-derated cranial-window H204 Isppa value could not be unambiguously identified."
+   },
+   {
+    "field": "exposures[2].in_situ.ispta_w_cm2",
+    "reason": "Table 1 lists the Ispta label for 'Derated: brain tissue, Cranial window, H215' but the corresponding numeric value appears to be missing/garbled in the source table."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "The paper states an energy-equivalent duty cycle of 64% arising from a 1-kHz amplitude-modulated sine envelope within each 150-ms burst; this differs conceptually from the classic PRF x pulse-duration duty cycle and does not arithmetically reconcile with the ~1 Hz (H-204) / ~2 Hz (H-215) burst repetition rate mentioned elsewhere -- recorded as stated but flagged as an unusual/nested definition."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "FUS focal position and imaging plane varied across animals (AP -0.2 to -2.0 mm from Bregma); the exact sonicated structure was not fixed and multiple candidate regions (somatosensory cortex, hippocampus, thalamus) are named as possibilities depending on plane."
+   },
+   {
+    "field": "exposures[1].device.family",
+    "reason": "No single named commercial neuromodulation device family fits; classified as commercial_other reflecting the combination of a Sonic Concepts transducer with a Vermon imaging array driven by a Verasonics research system."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[2].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

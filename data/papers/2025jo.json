@@ -1,0 +1,328 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025jo",
+ "doi": "10.1016/j.brs.2025.04.008",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 61,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site",
+  "other"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "extracellular single-/multi-unit and LFP recording via silicon probe with Kilosort spike sorting and FSU/RSU classification; c-Fos immunohistochemistry co-stained with vGLUT1 (glutamatergic) and GABA (GABAergic) markers",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFUS of either the LP or V1 significantly increased V1 single-unit firing rates and brain-wide c-Fos activation across the LP-V1 circuit relative to sham/control; PRFs of 3 kHz and 1 kHz most effectively increased firing of FSU, RSU1 and RSU2 units and preferentially activated glutamatergic (vGLUT1+) rather than GABAergic neurons, with region- and PRF-dependent selectivity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Mechanical index (0.55) and thermal dose (0.04 CEM) were below the MI cavitation threshold (1.9) and thermal dose threshold (1 CEM); a thermocouple/brain-phantom test showed an instantaneous peak temperature change of ~1.27C during the stimulation protocol, and H&E-stained brain sections showed no structural damage post-stimulation.",
+ "exposures": [
+  {
+   "label": "LIFUS of the lateral posterior thalamic nucleus (LP), recording from V1 (LP-V1 group)",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "lateral posterior nucleus of the thalamus (LP)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Hagisonic Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": 1240,
+    "isppa_w_cm2": 51.25,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     3000,
+     1000,
+     80
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50% duty cycle. The first function generator was controlled using a custom MATLAB program to generate 20-min stimulation sessions with an inter-stimulation interval (ISI) of 10 s. Three different PRF conditions of 3 kHz, 1 kHz, and 80 Hz were applied in a random sequence, each lasting 20 min. Sham conditions included SHAM-AG (air gap between collimator and brain), SHAM-OT (off-target transcranial site, to check bone-conduction auditory activation), and SHAM-PS (direct stimulation of the probe shank, to check vibration-induced activation)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "LIFUS of the primary visual cortex (V1), recording from V1 (V1-V1 group)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "primary visual cortex (V1)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Hagisonic Inc.",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": 1240,
+    "isppa_w_cm2": 51.25,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     3000,
+     1000,
+     80
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50% duty cycle. The first function generator was controlled using a custom MATLAB program to generate 20-min stimulation sessions with an inter-stimulation interval (ISI) of 10 s. Three different PRF conditions of 3 kHz, 1 kHz, and 80 Hz were applied in a random sequence, each lasting 20 min. Sham conditions included SHAM-AG (air gap between collimator and brain), SHAM-OT (off-target transcranial site, to check bone-conduction auditory activation), and SHAM-PS (direct stimulation of the probe shank, to check vibration-induced activation)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "All animals and procedures used in the in vivo experiments were approved by the Institutional Animal Care and Use Committee (IACUC) at the Korea Advanced Institute of Science and Technology (KA2024- 083-v1). A total of 61 male C57BL/6J and C57BL/6N mice (8–12 weeks old) were used in this study.",
+   "n_sessions_per_subject": "For the PRF parameters, three different PRF conditions of 3 kHz, 1 kHz, and 80 Hz were applied in a random sequence, each lasting 20 min.",
+   "randomised": "For the PRF parameters, three different PRF conditions of 3 kHz, 1 kHz, and 80 Hz were applied in a random sequence, each lasting 20 min.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was conducted using a focused ultrasound transducer (5 MHz, diameter = 24 mm, radius of curvature (ROC) = 38.1 mm; Hagisonic Inc., Korea) equipped with a 3D-printed collimator filled with degassed water and sealed with silicon elastomer (Kwik-Cast, World Precision Instruments, USA).",
+   "exposures[0].free_field.pressure_kpa": "The resultant peak pressure and I<sub>SPPA</sub> were determined to be 51.25 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 1.24 MPa, respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "The resultant peak pressure and I<sub>SPPA</sub> were determined to be 51.25 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 1.24 MPa, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[1].fundamental_frequency_khz": "Ultrasound stimulation was conducted using a focused ultrasound transducer (5 MHz, diameter = 24 mm, radius of curvature (ROC) = 38.1 mm; Hagisonic Inc., Korea) equipped with a 3D-printed collimator filled with degassed water and sealed with silicon elastomer (Kwik-Cast, World Precision Instruments, USA).",
+   "exposures[1].free_field.pressure_kpa": "The resultant peak pressure and I<sub>SPPA</sub> were determined to be 51.25 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 1.24 MPa, respectively.",
+   "exposures[1].free_field.isppa_w_cm2": "The resultant peak pressure and I<sub>SPPA</sub> were determined to be 51.25 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and 1.24 MPa, respectively.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[1].timing.duty_cycle_pct": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[1].timing.sonication_duration_s": "The first function generator delivered a square wave at PRFs of 3 kHz, 1 kHz, and 80 Hz, corresponding to 3000 cycles, 1000 cycles, and 80 cycles for a total pulse train of 1 s, all at a 50 % duty cycle.",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was conducted using a focused ultrasound transducer (5 MHz, diameter = 24 mm, radius of curvature (ROC) = 38.1 mm; Hagisonic Inc., Korea) equipped with a 3D-printed collimator filled with degassed water and sealed with silicon elastomer (Kwik-Cast, World Precision Instruments, USA).",
+   "exposures[1].device.manufacturer": "Ultrasound stimulation was conducted using a focused ultrasound transducer (5 MHz, diameter = 24 mm, radius of curvature (ROC) = 38.1 mm; Hagisonic Inc., Korea) equipped with a 3D-printed collimator filled with degassed water and sealed with silicon elastomer (Kwik-Cast, World Precision Instruments, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "61 is the total mice used across the whole study (electrophysiology, c-Fos IHC, neurotransmitter co-staining, and sham/control groups); not all received active ultrasound. Primary electrophysiology cohorts were n=12 (LP-V1 group) and n=8 (V1-V1 group), reported in separate sentences."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The paper's target is the 'lateral posterior nucleus (LP) of the thalamus'; no exact match exists in the target vocabulary (closest concepts are pulvinar or posterior_thalamic_nucleus), so the parent term 'thalamus' is used."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "SHAM-OT (ultrasound aimed transcranially at an off-target site) was used specifically to test for bone-conduction auditory confounds, but does not match any listed auditory_control vocabulary term exactly; classified as other."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Duty cycle (50%) and PRF (3/1 kHz/80 Hz) are stated but individual pulse width in ms is not stated by the paper; left not_reported rather than computed."
+   },
+   {
+    "field": "exposures[1].timing.pulse_duration_ms",
+    "reason": "Same as exposures[0]: pulse width not explicitly stated."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Craniotomy removed the skull over the target for the actual in vivo experiments, but the paper does not explicitly relabel the hydrophone-measured free-field values as in-situ brain values for this preparation."
+   },
+   {
+    "field": "exposures[1].in_situ.method",
+    "reason": "Same as exposures[0]."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

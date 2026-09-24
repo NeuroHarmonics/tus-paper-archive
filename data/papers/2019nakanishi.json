@@ -1,0 +1,166 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019nakanishi",
+ "doi": "10.3390/electronics9010024",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "The number of subjects was 10.",
+   "n_sessions_per_subject": "The number of subjects was 10. Each subject underwent ten measurements, and the order of the three stimuli was changed for each measurement.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound stimuli for 240 s were produced by filtering audible elements from high resolution sounds.",
+   "exposures[0].device.manufacturer": "For presenting the ultrasound stimulation to the experiment subjects, the following general-purpose instruments that can deal with high resolution sounds were used: the amplifier was DS-DAC-10, produced by KORG Inc., and its frequency range was 10 Hz–40 kHz with ±1 dB precision; the speaker was GX-70HD ii, produced by ONKYO Corp. Japan, and its frequency range was 48 Hz–100 kHz.",
+   "exposures[0].device.model": "experiment subjects, the following general-purpose instruments that can deal with high resolution sounds were used: the amplifier was DS-DAC-10, produced by KORG Inc., and its frequency range was 10 Hz–40 kHz with ±1 dB precision; the speaker was GX-70HD ii, produced by ONKYO Corp."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "An earlier confirmatory experiment in the same paper (Section 2) used 5 different subjects; n_subjects here reflects the larger, primary verification experiment (10 subjects) described in Section 3 onward."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Stimuli were broadband high-resolution audio recordings with ultrasonic content above 20 kHz rather than a single carrier frequency; no discrete kHz value is stated."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "This is airborne/air-conducted sound presented via loudspeaker to the ear, not a transducer-based transcranial or bone-conducted ultrasound exposure; no target id in the vocabulary matches, so 'other' was used."
+   },
+   {
+    "field": "randomised",
+    "reason": "Section 2.1 explicitly states stimulus presentation order was NOT random; Section 3's description ('the order... was changed for each measurement') does not explicitly say random, so randomised was left not_reported rather than assumed true or false."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ },
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 10,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "log power spectrum (alpha/beta band) and nonlinear chaos-based features (maximum Lyapunov index, sample entropy, permutation entropy) of scalp EEG; SVM-based verification (equal error rate, EER)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Alpha-band EEG power tended to increase (rather than decrease or stay unchanged) around 20 s after the start of inaudible (>20 kHz) ultrasonic stimulus presentation, and personal (familiar) ultrasonic stimuli evoked more individually distinctive EEG responses than unrelated or common ultrasonic stimuli.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Inaudible (>20 kHz) ultrasonic components of airborne audio stimuli",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "brain/auditory system, via air-conducted inaudible high-frequency sound presented through a loudspeaker"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "KORG Inc. (amplifier); ONKYO Corp. (speaker)",
+    "model": "DS-DAC-10 amplifier; GX-70HD II speaker"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     30,
+     240
+    ],
+    "protocol_description": "High-resolution audio (96 kHz sampling, 24-bit) containing ultrasonic components above 20 kHz was presented through a loudspeaker; in the first experiment (5 subjects) both-audible-and-ultrasound (BOT), audible-only (AUD) and ultrasound-only (ULT) stimuli were each presented for 240 s with 120 s silent intervals between. In the second experiment (10 subjects), a personal ultrasonic stimulus (P), an unrelated ultrasound (U) and a common ultrasound (C) were each presented for 30 s with 120 s silent intervals, repeated over 10 measurements per subject; sound level was adjusted to approximately 70 dB near the ear."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

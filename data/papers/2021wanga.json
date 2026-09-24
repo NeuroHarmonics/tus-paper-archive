@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021wanga",
+ "doi": "10.1016/j.neuroimage.2021.118441",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6, male)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 78,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Extracellular single/multi-unit spike recording and local field potential (LFP) recording in hippocampal CA1",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS increased spike firing rate and LFP power in hippocampal CA1 across anesthesia, awake, and running states, with the magnitude of the increase strongly dependent on behavioral state (largest under anesthesia, smallest during running); firing rate increased linearly with ultrasound intensity in all states.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to hippocampal CA1 under anesthesia, awake, and running behavioral states (Experiments A-D)",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "hippocampal CA1"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V323-SU (focused ultrasound transducer)"
+   },
+   "fundamental_frequency_khz": 2250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     150,
+     300,
+     450,
+     600,
+     750
+    ],
+    "isppa_w_cm2": [
+     0.75,
+     3,
+     6.75,
+     12,
+     18.75
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "16 trials were averaged per animal. Ultrasound intensity was fixed at 0.45 MPa for Experiments A (single-parameter neural activity, N=27 across 3 behavioral-state groups) and C (sleep, N=3); Experiment B (N=30) swept intensity across 0.15, 0.3, 0.45, 0.6 and 0.75 MPa to relate firing rate to intensity across states; Experiment D (N=18) repeated the single-parameter stimulation in chemically deafened mice to test for auditory confounds. The interval between TUS deliveries was 10 s within each recording session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Seventy-eight C57BL/6 mice were used in these experiments (all male; body weight, 20–25 g; Beijing Vital River Laboratory Animal Technology Co., Ltd. China).",
+   "randomised": "27 mice were randomly divided into three groups (anesthesia group [N=9], awake group [N=9], and running group [N=9]) for evaluating neural activities induced by TUS with a single ultrasound parameter.",
+   "exposures[0].fundamental_frequency_khz": "In each trial, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 2.25 MHz, 400 ms, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In each trial, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 2.25 MHz, 400 ms, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "In each trial, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 2.25 MHz, 400 ms, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "In each trial, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 2.25 MHz, 400 ms, 1 kHz, and 50%, respectively.",
+   "exposures[0].device.manufacturer": "The pulsed signal generated by two arbitrarily connected function generators (AFG3022C, Tektronix, USA) was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to a focused ultrasound transducer (V323-SU, Olympus, USA).",
+   "exposures[0].device.model": "The pulsed signal generated by two arbitrarily connected function generators (AFG3022C, Tektronix, USA) was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to a focused ultrasound transducer (V323-SU, Olympus, USA).",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound intensities were 0.15, 0.3, 0.45, 0.6, and 0.75 MPa, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The corresponding spatial-peak and pulse-average intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ values were 0.75 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } { \\mathrm { : } }$ , 3 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , 6.75 W/cm<sup>2</sup>, 12 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 } { \\mathrm { : } }$ and 18.75 $\\mathrm { { W / c m ^ { 2 } } }$ respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only 'stimulation duration' (400 ms, the train length), PRF (1 kHz) and duty cycle (50%) are stated; individual pulse width within the train is not stated in words and was not computed from duty cycle/PRF."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "The five intensity levels (0.15-0.75 MPa) were measured 'under the skull' with a needle hydrophone per the methods (in situ, via direct measurement), and are listed together as a single exposure per the instruction to record within-target parameter sweeps as lists rather than separate exposures."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper describes 16 trials averaged per experiment but does not state how many separate sessions each individual mouse underwent."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

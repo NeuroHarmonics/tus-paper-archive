@@ -1,0 +1,139 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025zhu",
+ "doi": "10.1016/j.jneumeth.2025.110431",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "emg_mep"
+ ],
+ "readout_other": "sEMG decomposition into motor unit action potential trains (MUAP amplitude, number, firing rate) via morphological template-matching and iterative stripping; transfer entropy between EEG and MUAP/sEMG features",
+ "readout_timing": "not_reported",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "The paper repeatedly refers to EEG signals being recorded 'with tFUS' but never describes an ultrasound on/off, sham, or dose comparison; no isolated effect of ultrasound stimulation on any outcome is reported or assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS stimulation (device, target, and dose not specified)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "not_reported"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "The paper states that EEG and sEMG were recorded from nine healthy participants performing a grasping task at 15% and 30% MVC, and repeatedly describes analysing 'synchronous EEG signals with tFUS', e.g. 'tFUS functions by delivering low-intensity ultrasound waves through the skull and focusing them on a specific, deep brain region to non-invasively modulate neuronal activity.' However, no tFUS device, target coordinates, frequency, intensity, timing parameters, or delivery schedule relative to the recording are given anywhere in the methods."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {}
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 9 healthy subjects $( 7$ males and 2 females, aged $( 2 2 \\pm 3 )$ years) participated in the experiment.",
+   "exposures[0].timing.protocol_description": "tFUS functions by delivering low-intensity ultrasound waves through the skull and focusing them on a specific, deep brain region to non-invasively modulate neuronal activity."
+  },
+  "flags": [
+   {
+    "field": "exposures[0]",
+    "reason": "The paper's title, abstract, and body repeatedly invoke tFUS as though it were used to generate or modulate the recorded EEG signal, but no device, target, frequency, intensity, or stimulation timing is ever specified, and no ultrasound on/off or sham comparison is reported. It is unclear whether any ultrasound stimulation was actually delivered to participants or whether 'tFUS' is used loosely/incorrectly throughout the text; scope for inclusion in this archive should be re-checked."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Cannot determine whether any putative tFUS was delivered before, during, or after the EEG/sEMG recording described."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "No comparison condition (sham, no-ultrasound, or dose-response) is described, so no causal effect of ultrasound can be assessed from this text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

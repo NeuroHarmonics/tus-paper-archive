@@ -1,0 +1,244 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023webb",
+ "doi": "10.1016/j.brs.2023.04.012",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  79,
+  45
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg",
+  "other_mri"
+ ],
+ "readout_other": "two-target visual discrimination choice task; intracranial EEG (alpha/beta/gamma power) from screws over occipital cortex; MR thermometry for target validation; gadolinium-enhanced T1/T2 MRI for blood-brain barrier/edema safety assessment",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Sonication of the left/right LGN induced a contralateral (rightward/leftward) bias in choice behaviour lasting up to 15 minutes, accompanied by increased gamma and decreased alpha/beta activity over visual cortex relative to sham; the contralateral bias suggests the ultrasound excited the stimulated circuit.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Subjects showed stable or increasing visual-discrimination accuracy over 8 months of near-daily stimulation, and gadolinium-enhanced T1/T2 MRI showed no evidence of blood-brain barrier disruption or edema in the sonicated LGN.",
+ "exposures": [
+  {
+   "label": "Sonication of left/right lateral geniculate nucleus (LGN) with varying pressure/intensity/duty cycle/PRF",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "left or right lateral geniculate nucleus (LGN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Doppler Electronic Technologies",
+    "model": "256-element ultrasound transducer array (Remus phased-array system)"
+   },
+   "fundamental_frequency_khz": 480,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     500,
+     700,
+     1000,
+     1400
+    ],
+    "isppa_w_cm2": [
+     8,
+     14,
+     31,
+     59,
+     64
+    ],
+    "ispta_w_cm2": [
+     1,
+     2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": [
+     0.6,
+     1.2,
+     4.8
+    ],
+    "duty_cycle_pct": [
+     1.8,
+     3.6,
+     14.4
+    ],
+    "sonication_duration_s": 30,
+    "protocol_description": "Each neuromodulation sonication lasted 30 s and consisted of a train of 30 ms pulses at 480 kHz, delivered into left or right LGN interleaved across sessions (left LGN sonicated in 55 sessions: 35 in subject B, 20 in subject E; right LGN in 55 sessions: 36 in B, 19 in E), with sham (unfocused, randomized-phase) sonications also collected; behavioural/EEG effects were analysed in the five-minute windows following sonication offset. In a separate anatomical safety test, the left LGN was insonated for 1 minute total duration (1.5 MPa, 30 ms pulse duration, 10% duty cycle) immediately followed by gadolinium contrast injection."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Four male macaque monkeys (macaca mulatta, subjects B, E, C, and H, ages 5, 7, 8, and 8 years and weight 12.0, 9.5, 13.5, and 10.0 kg respectively) participated in the study. Subjects B and E participated in the behavioral and neural studies. Subjects C and H were used to obtain the anatomical safety data. All procedures were conducted as approved by the Institutional Animal Care and Use Committee of the University of Utah.",
+   "exposures[0].fundamental_frequency_khz": "All neuromodulation stimuli had a center frequency of 480 kHz. Each sonication lasted 30 seconds and consisted of a train of 30 ms pulses. The individual parameters of the waveform are provided in Table 1 and Table 2.",
+   "exposures[0].timing.pulse_duration_ms": "All neuromodulation stimuli had a center frequency of 480 kHz. Each sonication lasted 30 seconds and consisted of a train of 30 ms pulses. The individual parameters of the waveform are provided in Table 1 and Table 2.",
+   "exposures[0].timing.sonication_duration_s": "All neuromodulation stimuli had a center frequency of 480 kHz. Each sonication lasted 30 seconds and consisted of a train of 30 ms pulses. The individual parameters of the waveform are provided in Table 1 and Table 2.",
+   "exposures[0].in_situ.pressure_kpa": "Averaged across the two subjects, the estimated pressure at focus was 46% of the free field value (estimated using MR thermometry according to the methods outlined in [20]). Thus, the values given in Table 1 and Table 2 assume that the in-situ intensity is de-rated by a factor of 21% relative to the free-field intensity.",
+   "exposures[0].in_situ.isppa_w_cm2": "Averaged across the two subjects, the estimated pressure at focus was 46% of the free field value (estimated using MR thermometry according to the methods outlined in [20]). Thus, the values given in Table 1 and Table 2 assume that the in-situ intensity is de-rated by a factor of 21% relative to the free-field intensity.",
+   "exposures[0].in_situ.ispta_w_cm2": "Averaged across the two subjects, the estimated pressure at focus was 46% of the free field value (estimated using MR thermometry according to the methods outlined in [20]). Thus, the values given in Table 1 and Table 2 assume that the in-situ intensity is de-rated by a factor of 21% relative to the free-field intensity.",
+   "exposures[0].in_situ.method": "Averaged across the two subjects, the estimated pressure at focus was 46% of the free field value (estimated using MR thermometry according to the methods outlined in [20]). Thus, the values given in Table 1 and Table 2 assume that the in-situ intensity is de-rated by a factor of 21% relative to the free-field intensity.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td>Name</td><td> $I _ { \\mathrm { S P T A } }$ </td><td> $I _ { \\mathrm { S P P A } }$ </td><td>P</td><td>DC</td><td>PRF</td><td>PD</td><td>MI</td><td>Left</td><td>Right</td><td>Sham</td><td>Scan</td></tr><tr><td>E1</td><td>1</td><td>59</td><td>1.4</td><td>1.8</td><td>0.6</td><td>30</td><td>2</td><td>9</td><td>8</td><td>0</td><td>Yes</td></tr><tr><td>E2</td><td>2</td><td>14</td><td>0.7</td><td>14.4</td><td>4.8</td><td>30</td><td>1</td><td>4</td><td>6</td><td>0</td><td>Yes</td></tr><tr><td>E3</td><td>2</td><td>64</td><td>1.4</td><td>3.6</td><td>1.2</td><td>30</td><td>2.1</td><td>7</td><td>5</td><td>6</td><td>No</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td>Name</td><td> $I _ { \\mathrm { S P T A } }$ </td><td> $I _ { \\mathrm { S P P A } }$ </td><td>P</td><td>DC</td><td>PRF</td><td>PD</td><td>MI</td><td>Left</td><td>Right</td><td>Sham</td><td>Scan</td></tr><tr><td>E1</td><td>1</td><td>59</td><td>1.4</td><td>1.8</td><td>0.6</td><td>30</td><td>2</td><td>9</td><td>8</td><td>0</td><td>Yes</td></tr><tr><td>E2</td><td>2</td><td>14</td><td>0.7</td><td>14.4</td><td>4.8</td><td>30</td><td>1</td><td>4</td><td>6</td><td>0</td><td>Yes</td></tr><tr><td>E3</td><td>2</td><td>64</td><td>1.4</td><td>3.6</td><td>1.2</td><td>30</td><td>2.1</td><td>7</td><td>5</td><td>6</td><td>No</td></tr></table>",
+   "exposures[0].device.manufacturer": "The frame houses a 256-element ultrasound transducer array (Doppler Electronic Technologies, Guangzhou, China [20]).",
+   "exposures[0].device.model": "The frame houses a 256-element ultrasound transducer array (Doppler Electronic Technologies, Guangzhou, China [20]).",
+   "n_sessions_per_subject": "Including sham sonications, a total of 79 sessions in subject B and 45 sessions in subject E were collected."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Text is internally inconsistent: it states the estimated pressure at focus was 46% of the free-field value, then states the Table 1/2 values 'assume that the in-situ intensity is de-rated by a factor of 21%' relative to free field; these two derating factors (46% vs 21%) do not match."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Total sessions differed substantially by subject (a total of 79 sessions in subject B and 45 sessions in subject E, including sham), so no single n_sessions_per_subject value applies."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Values pooled from Table 1 (subject B) and Table 2 (subject E) parameter sweeps across multiple named stimulation settings (B1-B5, E1-E3); the pairing between individual PRF/duty-cycle/pressure/intensity combinations per named setting is lost when each field is listed independently."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Values pooled from Table 1 and Table 2; see note on pulse_repetition_frequency_hz regarding loss of per-setting pairing."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The active sham delivered the same acoustic energy but with randomized element phases (unfocused beam) rather than powering off, blocking or moving the transducer, so it does not cleanly match a listed sham_type category."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The paper controls for auditory/vestibular confounds via post-offset-only analysis windows, hemisphere-specific effects, and an active (unfocused) sham rather than any of the listed auditory_control categories."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

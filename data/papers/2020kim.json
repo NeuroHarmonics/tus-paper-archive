@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020kim",
+ "doi": "10.1088/1741-2552/ab6be6",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The ultrasonic imaging transducer with a broadband frequency spectrum of 5–12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) was integrated with 3.1 MHz, single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA).",
+   "exposures[0].unspecified_domain.pressure_kpa": "10 Hz, 40 Hz, 100 Hz, 250 Hz, and 500 Hz were used with peak negative pressure of 11.8 MPa, PD of 1 ms, and total sonication time of 2 s. For example, the PRF determines the cooling duration between pulses with all other parameters kept identical, which enabled to adjust the maximum temperature elevation (Murray etal 2000, Constans etal 2018, Yi etal 2018).",
+   "exposures[0].timing.pulse_duration_ms": "10 Hz, 40 Hz, 100 Hz, 250 Hz, and 500 Hz were used with peak negative pressure of 11.8 MPa, PD of 1 ms, and total sonication time of 2 s. For example, the PRF determines the cooling duration between pulses with all other parameters kept identical, which enabled to adjust the maximum temperature elevation (Murray etal 2000, Constans etal 2018, Yi etal 2018).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To control thermal effects, six different PRF values of 1 Hz,",
+   "exposures[0].timing.sonication_duration_s": "10 Hz, 40 Hz, 100 Hz, 250 Hz, and 500 Hz were used with peak negative pressure of 11.8 MPa, PD of 1 ms, and total sonication time of 2 s. For example, the PRF determines the cooling duration between pulses with all other parameters kept identical, which enabled to adjust the maximum temperature elevation (Murray etal 2000, Constans etal 2018, Yi etal 2018).",
+   "exposures[0].device.manufacturer": "The ultrasonic imaging transducer with a broadband frequency spectrum of 5–12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) was integrated with 3.1 MHz, single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA).",
+   "exposures[0].device.model": "The ultrasonic imaging transducer with a broadband frequency spectrum of 5–12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) was integrated with 3.1 MHz, single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports n in terms of 'mice legs' used per PRF group (n=35 total used mice legs across the 6 PRF conditions), not a distinct count of animals; some animals may have contributed more than one leg."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the histological readers were reported as blinded ('read by pathologists who were blinded between the negative and positive control group'); the main EMG/PRF experiment itself was not described as randomised or blinded."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain (free-field water tank vs in situ) is not explicitly stated for the 11.8 MPa peak negative pressure value, though the transducer's focal dimensions were characterised via hydrophone in a water tank; placed in unspecified_domain rather than assumed free_field."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated directly by the paper; could be computed from pulse duration and PRF but this would be arithmetic not stated by the authors."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular"
+ ],
+ "readout_other": "electromyography (EMG) of gastrocnemius muscle: onset/peak latency and area under the curve (AUC); H&E and TUNEL histology of sciatic nerve and muscle",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Low PRF FUS (1-40 Hz, temperature rise <=11.5C) facilitated electrically evoked motor neuronal responses (decreased latency without loss of AUC), while high PRF FUS (>=100 Hz, temperature rise >=15.1C) suppressed electrically evoked EMG responses (decreased latency and AUC), matching thermally-mediated inhibition produced by an alternative heating source.",
+ "adverse_events": "observed",
+ "safety_notes": "PRF <=100 Hz (temperature elevation 3.7-15.1C) was histologically safe (no damage, no TUNEL-positive cells); PRF of 250-500 Hz produced macrophage/neutrophil infiltration and early vacuolation of nerve fibers, and PRF of 500 Hz produced irreversible EMG changes considered unsafe modulation.",
+ "exposures": [
+  {
+   "label": "FUS to distal sciatic nerve, varying PRF",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "distal sciatic nerve (mouse hind limb)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H-108"
+   },
+   "fundamental_frequency_khz": 3100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 11800,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": [
+     1,
+     10,
+     40,
+     100,
+     250,
+     500
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 2,
+    "protocol_description": "To control thermal effects, six different PRF values of 1 Hz, 10 Hz, 40 Hz, 100 Hz, 250 Hz, and 500 Hz were used with peak negative pressure of 11.8 MPa, PD of 1 ms, and total sonication time of 2 s, so that PRF alone determined the cooling duration between pulses and the resulting temperature elevation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

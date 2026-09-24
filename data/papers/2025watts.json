@@ -1,0 +1,319 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025watts",
+ "doi": "10.1016/j.brs.2025.08.014",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "Han Wistar rat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "none",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Quantitative TMT-based proteomics and phospho-proteomics (LC-MS/MS); serine-threonine kinase (STK) PamChip kinome activity assay; extracellular field electrophysiology (input-output fEPSP/fibre volley recordings; LTP with high-frequency electrical stimulation) in CA1 stratum radiatum",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound stimulation increased basal CA3-to-CA1 synaptic transmission (input-output slope) and enhanced the magnitude of subsequently induced LTP, both in vitro and in vivo/ex vivo; effect on LTP enhancement (but not basal transmission) was blocked by Akt inhibitors (AZD5363, MK-2206), indicating an Akt-dependent metaplastic mechanism.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No significant temperature change was measured at the site of the slice/under the transducer during 40 s ultrasound stimulation in either the 200 kHz or 1 MHz in vitro setups (P=0.93 and P=0.49 respectively).",
+ "exposures": [
+  {
+   "label": "In vitro hippocampal slice stimulation, 200 kHz unfocused transducer",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "acute hippocampal slice (CA1 stratum radiatum / Schaffer collateral-CA1 circuit)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Farnell",
+    "model": "MCUSD25P200B10.7RS-30C"
+   },
+   "fundamental_frequency_khz": 200,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.34,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "Acute hippocampal slices (400 µm) were placed directly beneath a 200 kHz centre-frequency planar unfocused transducer submerged in a Petri dish of aCSF. Sham stimulation followed the same procedure but the function generator was not activated. A 5 Hz PRF stimulus was chosen based on previous evidence that this pulsing frequency induces sustained off-line neuromodulatory effects."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  },
+  {
+   "label": "1 MHz focused transducer stimulation of hippocampus (in vivo transcranial and later in vitro slice alignment experiments)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "dorsal hippocampus (in vivo, transcranial) / hippocampal slice (in vitro, aligned with in vivo paradigm)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Precision Acoustics Ltd.",
+    "model": "TXH-1-75"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 140,
+    "isppa_w_cm2": [
+     0.44,
+     1.35
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 45,
+    "isppa_w_cm2": 0.14,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "A 1 MHz focused transducer was used for later in vivo and in vitro experiments, delivering the same 5 Hz PRF, 100 ms pulse length, 40 s total duration protocol. In vivo, ultrasound was delivered transcranially to the left and then right dorsal hippocampus of anaesthetised rats in the same session; free-field Isppa was 0.44 W/cm2, estimated as 0.14 W/cm2 at the rat hippocampus, with an estimated in situ pressure of ~45 kPa determined by quantifying ultrasound transmission through excised rat skull ex vivo. Later in vitro slice experiments used the same 1 MHz transducer at a free-field Isppa of 1.35 W/cm2, with a predicted acoustic pressure at the slice of ~140 kPa measured in a water tank (no skull)."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "We subsequently delivered the ultrasound stimuli in sequence to the right and left hippocampus of anaesthetised adult rats in vivo, alternating the order between experiments (N = 6 active ultrasound stimulation animals, $\\mathrm { ~ N ~ } = \\mathrm { ~ 6 ~ }$ sham stimulation animals).",
+   "blinding": "Experimenters were not blinded during recording or analysis.",
+   "sham_type": "Sham stimulation across all experiments followed the same procedures, but the function generator was not activated and thus no ultrasound generated.",
+   "adverse_events": "During initial characterisation, we found that our intended sonication stimulus (pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s; Fig. 1B), with a broad ultrasound exposure area that covered the entirety of the hippocampal slice (Fig. 1C), caused no measurable change in temperature at the site of the slice (dish periphery: 0.04 ± 0.23 ◦C vs. under transducer: $0 . 0 8 \\ ^ { \\circ } { \\bf C } \\pm \\ 0 . 2 6 \\ ^ { \\circ } { \\bf C } , \\ { \\bf N } = 5$ stimulations; $P = 0 . 9 3 ;$ Fig. 1D and E).",
+   "exposures[0].fundamental_frequency_khz": "For the initial in vitro experiments, an unfocused transducer (MCUSD25P200B10.7RS-30C, Farnell, U.K.), with a centre frequency of 200 kHz, was used to generate the ultrasound stimulus. For the later in vivo and in vitro experiments, a focused transducer with a centre frequency of 1 MHz (TXH-1-75, Precision Acoustics Ltd., Dorchester, UK) was used. The excitation signal used to drive the transducer was generated using an arbitrary function generator (AFG3022B, Tektronix, USA) with the output signal amplified by a radio frequency (RF) amplifier (25A250, Amplifier Research, USA). The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[0].free_field.isppa_w_cm2": "For the initial in vitro experiments, an unfocused transducer (MCUSD25P200B10.7RS-30C, Farnell, U.K.), with a centre frequency of 200 kHz, was used to generate the ultrasound stimulus. For the later in vivo and in vitro experiments, a focused transducer with a centre frequency of 1 MHz (TXH-1-75, Precision Acoustics Ltd., Dorchester, UK) was used. The excitation signal used to drive the transducer was generated using an arbitrary function generator (AFG3022B, Tektronix, USA) with the output signal amplified by a radio frequency (RF) amplifier (25A250, Amplifier Research, USA). The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[0].timing.pulse_duration_ms": "For the initial in vitro experiments, an unfocused transducer (MCUSD25P200B10.7RS-30C, Farnell, U.K.), with a centre frequency of 200 kHz, was used to generate the ultrasound stimulus. For the later in vivo and in vitro experiments, a focused transducer with a centre frequency of 1 MHz (TXH-1-75, Precision Acoustics Ltd., Dorchester, UK) was used. The excitation signal used to drive the transducer was generated using an arbitrary function generator (AFG3022B, Tektronix, USA) with the output signal amplified by a radio frequency (RF) amplifier (25A250, Amplifier Research, USA). The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We began by determining the effects of 5 Hz PRF ultrasound stimulation on the hippocampal neuronal proteome. Hippocampal slices (400 μm) were individually placed directly beneath a 200 kHz centrefrequency, planar ultrasound transducer (Fig. 1A).",
+   "exposures[0].timing.sonication_duration_s": "We prepared acute hippocampal slices from rats (N = 6 animals), and exposed tissue to 40 s of either active or sham ultrasound stimulation (N = 6 slices per condition, paired from each animal).",
+   "exposures[1].fundamental_frequency_khz": "For the initial in vitro experiments, an unfocused transducer (MCUSD25P200B10.7RS-30C, Farnell, U.K.), with a centre frequency of 200 kHz, was used to generate the ultrasound stimulus. For the later in vivo and in vitro experiments, a focused transducer with a centre frequency of 1 MHz (TXH-1-75, Precision Acoustics Ltd., Dorchester, UK) was used.",
+   "exposures[1].free_field.isppa_w_cm2": "The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[1].in_situ.pressure_kpa": "We determined an estimated acoustic pressure at the target hippocampus of approximately 45 kPa, determined by quantifying ultrasound transmission through rat skull ex vivo (Fig. 4C).",
+   "exposures[1].in_situ.isppa_w_cm2": "The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[1].timing.pulse_duration_ms": "The stimulus parameters were: fundamental frequency = 200 kHz/1 MHz, pulse length = 100 ms, pulse repetition interval = 200 ms, total duration = 40 s and free field spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 0 . 3 4 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for initial in vitro experiments, 0.44 $\\mathrm { { W / c m ^ { 2 } } }$ for in vivo experiments (estimated as 0.14 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the rat hippocampus), and $1 . 3 5 \\mathrm { W / c m ^ { 2 } }$ for later in vitro experiments.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "We anaesthetised adult Han Wistar rats (Fig. 4A), and delivered the same 5 Hz PRF sonication protocol used for the above-described in vitro experiments (Fig. 1B).",
+   "exposures[1].timing.sonication_duration_s": "We subsequently delivered the ultrasound stimuli in sequence to the right and left hippocampus of anaesthetised adult rats in vivo, alternating the order between experiments (N = 6 active ultrasound stimulation animals, $\\mathrm { ~ N ~ } = \\mathrm { ~ 6 ~ }$ sham stimulation animals).",
+   "exposures[1].free_field.pressure_kpa": "We measured a predicted acoustic intensity at the slice of approximately 140 kPa (Fig. 6B).",
+   "exposures[1].device.manufacturer": "The future of transcranial ultrasound as a precision brain interface.",
+   "n_subjects": "We subsequently delivered the ultrasound stimuli in sequence to the right and left hippocampus of anaesthetised adult rats in vivo, alternating the order between experiments (N = 6 active ultrasound stimulation animals, $\\mathrm { ~ N ~ } = \\mathrm { ~ 6 ~ }$ sham stimulation animals)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Multiple sub-experiments used different animal cohorts (N=6-8 animals per assay: proteomics, kinome, electrophysiology, LTP, in vivo, pharmacology); no single overall total number of subjects is stated."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "This exposure merges two different experiment types at the same target and frequency (in vivo transcranial 0.44 W/cm2 and later in vitro slice 1.35 W/cm2) into a list, per the target x frequency exposure rule; domains and measurement contexts (skull vs water tank) differ."
+   },
+   {
+    "field": "exposures[1].in_situ.isppa_w_cm2",
+    "reason": "In situ Isppa of 0.14 W/cm2 is described as 'estimated'; method of estimation (derating vs ex-vivo skull transmission measurement) is not fully disambiguated in the text."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "The 140 kPa pressure value for the later in vitro slice experiment (Fig. 6B) was reported as a pressure rather than intensity and is described as 'predicted'; placed in free_field.pressure_kpa is omitted here since no matching Isppa was reported for that same measurement, described only in protocol_description."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated as a percentage; only pulse length (100 ms) and pulse repetition interval (200 ms) are given."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

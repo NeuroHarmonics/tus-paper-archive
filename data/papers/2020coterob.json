@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020coterob",
+ "doi": "10.1186/s42234-020-00056-2",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "white blood cell, neutrophil and lymphocyte counts (Hemavet 950 hematology analyzer) in lymph nodes, liver, spleen and lymphatic fluid",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound neurostimulation directly above the popliteal lymph node produced similar increases in white blood cell counts in the targeted popliteal lymph node and liver as direct electrical sciatic nerve stimulation, though effects on the spleen and contralateral lymph node were attenuated compared with electrical stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasound neurostimulation directly above the popliteal lymph node",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "popliteal lymph node (surrounding neural tissue)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H106"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 830,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.13636,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 27,
+    "sonication_duration_s": 60,
+    "protocol_description": "An ultrasound stimulus was applied directly above the popliteal lymph node using the peripheral pFUS device, with total duration of a single stimulus not surpassing a single 1-min pulse; WBC/neutrophil/lymphocyte counts were compared with and without (sham CTRL) this stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 27.272,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "with and without (sham CTRL) an ultrasound-induced nerve stimulation directly above the popliteal lymph node. N = 6.",
+   "anaesthesia": "For ultrasound stimulation, animals were anesthetized with 2–4% isoflurane and laid on a water circulating warming pad to prevent hyperthermia during the procedure.",
+   "exposures[0].fundamental_frequency_khz": "We tested whether focused, noninvasive stimulation of neural tissue directly within and around the popliteal LN also results in changes in WBC counts. After delivery of ultrasound neurostimulation (1.1 MHz acoustic frequency, 0.5 ms pulse repetition period, 0.27 duty cycle, 136.36 us pulse length, 0.83 MPa peak positive pressure)",
+   "exposures[0].timing.pulse_duration_ms": "We tested whether focused, noninvasive stimulation of neural tissue directly within and around the popliteal LN also results in changes in WBC counts. After delivery of ultrasound neurostimulation (1.1 MHz acoustic frequency, 0.5 ms pulse repetition period, 0.27 duty cycle, 136.36 us pulse length, 0.83 MPa peak positive pressure)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We tested whether focused, noninvasive stimulation of neural tissue directly within and around the popliteal LN also results in changes in WBC counts. After delivery of ultrasound neurostimulation (1.1 MHz acoustic frequency, 0.5 ms pulse repetition period, 0.27 duty cycle, 136.36 us pulse length, 0.83 MPa peak positive pressure)",
+   "exposures[0].timing.duty_cycle_pct": "We tested whether focused, noninvasive stimulation of neural tissue directly within and around the popliteal LN also results in changes in WBC counts. After delivery of ultrasound neurostimulation (1.1 MHz acoustic frequency, 0.5 ms pulse repetition period, 0.27 duty cycle, 136.36 us pulse length, 0.83 MPa peak positive pressure)",
+   "exposures[0].timing.sonication_duration_s": "An U/S stimulus was then applied with total duration of a single stimulus not surpassing a single 1 min pulse.",
+   "exposures[0].unspecified_domain.pressure_kpa": "We tested whether focused, noninvasive stimulation of neural tissue directly within and around the popliteal LN also results in changes in WBC counts. After delivery of ultrasound neurostimulation (1.1 MHz acoustic frequency, 0.5 ms pulse repetition period, 0.27 duty cycle, 136.36 us pulse length, 0.83 MPa peak positive pressure)",
+   "exposures[0].device.manufacturer": "The system consists of a 1.1 MHz, high intensity focused ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350 L) and a function generator (Agilent",
+   "exposures[0].device.model": "The system consists of a 1.1 MHz, high intensity focused ultrasound (HIFU) transducer (Sonic Concepts H106), a matching network (Sonic Concepts), an RF power amplifier (ENI 350 L) and a function generator (Agilent",
+   "n_sessions_per_subject": "An U/S stimulus was then applied with total duration of a single stimulus not surpassing a single 1 min pulse."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "the target is neural tissue in and around the popliteal lymph node, not a listed nervous-system structure; classified as 'other' with target.label describing the site."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "methods state total duration of a single stimulus 'not surpassing a single 1 min pulse', an upper bound rather than a precisely stated exposure duration; recorded as 60 s (the stated maximum) and flagged."
+   },
+   {
+    "field": "sham_type",
+    "reason": "figure legend describes a 'sham CTRL' condition (no ultrasound) but the mechanism (inactive transducer vs. simple omission) is not described; classified as 'other'."
+   },
+   {
+    "field": "unspecified_domain.pressure_kpa",
+    "reason": "domain (free field vs in situ) for the 0.83 MPa peak positive pressure is not stated by the paper; recorded as unspecified_domain."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "first",
+   "exposures[0].unspecified_domain.pressure_kpa": "first"
+  }
+ }
+}

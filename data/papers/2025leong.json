@@ -1,0 +1,238 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025leong",
+ "doi": "10.1038/s41467-025-67518-6",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (wild-type Long-Evans; P23H transgenic model of retinitis pigmentosa)",
+ "conditions": [
+  "healthy",
+  "retinal_degeneration"
+ ],
+ "condition_other": "P23H rats model autosomal dominant retinitis pigmentosa (photoreceptor degeneration)",
+ "n_subjects": [
+  4,
+  4,
+  7
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Functional ultrasound imaging (fUSI) of relative cerebral blood volume in the contralateral superior colliculus; multi-electrode array (MEA) recordings of retinal ganglion cell firing; eye fundus imaging and optical coherence tomography (OCT) of the retina; immunohistochemistry (rods/cones, microglia, Müller glia).",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Photoacoustic stimulation predominantly increased retinal ganglion cell firing (92-93% of responding cells showed increased activity in both LE and P23H retinae) and produced increased relative cerebral blood volume (activation) in the contralateral superior colliculus, similar in amplitude and extent to visible-light stimulation of the retina.",
+ "adverse_events": "observed",
+ "safety_notes": "No retinal tearing or major inflammation was observed on OCT/fundus imaging after implantation. Local photoreceptor degeneration and reduced retinal thickness developed above the implant in LE rats (attributed to mechanical detachment from the RPE by the implant, not to acoustic stimulation), and activated microglia (and, in LE rats, Müller glia) were observed at the implantation site. Retinal thickness above the implant remained stable for up to 4 months in P23H rats. Local temperature increases at the film surface were below 1°C; estimated mechanical indices were below 0.03 (PDMS/CS/PDMS) and 0.1 (PDMS-CNT), within FDA ophthalmic ultrasound safety guidelines.",
+ "exposures": [
+  {
+   "label": "Photoacoustic stimulation of the retina (ex vivo RGC recordings in LE and P23H rat retinae; in vivo implanted LE/P23H rat retina with cSC readout)",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "retina (retinal ganglion cells / mechanosensitive retinal cells), via subretinal photoacoustic film"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "PDMS/CS/PDMS and PDMS-CNT photoacoustic films (candle-soot/carbon-nanotube composite), driven by a 1030-nm pulsed laser"
+   },
+   "fundamental_frequency_khz": 42200,
+   "free_field": {
+    "pressure_kpa": 146.2,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     120,
+     50,
+     150
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     6e-05,
+     0.0009
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3.6e-05,
+    "pulse_repetition_frequency_hz": [
+     1900,
+     3500,
+     6100
+    ],
+    "duty_cycle_pct": 0.025,
+    "sonication_duration_s": [
+     0.005,
+     0.03,
+     2
+    ],
+    "protocol_description": "Ultrasound is generated photoacoustically: each ~4.2-ns, 1030-nm laser pulse is converted by the film into a single ~36-ns ultrasound pulse. Ex vivo: laser pulses delivered at frep=1.9 kHz (or 3.5 kHz) in a single burst of duration db=10 ms (standard) or swept db=5-30 ms per stimulation site. In vivo: the 1030-nm laser delivered eight 125-ms bursts during a 2-s train, repeated every 15 s, for 15 stimulations per recording (frep=6.1 kHz within each burst). Ex vivo pulse energy 10 µJ; in vivo laser power density 0.29±0.06 W/mm2 (PDMS/CS/PDMS) or 0.39±0.12 W/mm2 (PDMS-CNT)."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "N = 8 adult (9-10 mo) P23H rats were successfully implanted and used for biocompatibility studies. N = 7 adult Long-Evans rats were successfully implanted at 8 weeks of age and used for photoacoustic stimulation.",
+   "exposures[0].fundamental_frequency_khz": "PA signals were found to have a central frequency of 42.2 MHz and -6 dB bandwidth ranging from 29.6 to 59.9 MHz. This central frequency is an intrinsic property of the film, since the ultrasound frequency of a photoacoustic device is determined by the effective absorption depth of light.",
+   "exposures[0].free_field.pressure_kpa": "Upon excitation with 4.2-ns laser pulses at 7 µJ per pulse, the PDMS/CS/PDMS film emitted ultrasound pulses with a peak-to-peak pressure of 146.2 kPa measured 0.9 mm away (Fig. 1c).",
+   "exposures[0].in_situ.pressure_kpa": "The estimated peak-to-peak acoustic pressures at the surface of the implants were 0.05 MPa and 0.15 MPa for PDMS/CS/PDMS and PDMS-CNT implants, respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "We showed that an acoustic pressure of 0.05 MPa was sufficient to elicit responses in the superior colliculus, which is two orders of magnitude lower than the pressure thresholds previously reported for in vivo transducer-based ultrasound retinal stimulation<sup>9</sup>. Pressure thresholds of photoacoustic stimulation correspond to mechanical indexes (MI) below 0.03 (PDMS/CS/PDMS film) and 0.1 (PDMS-CNT film) and spatial peak temporal average intensities $( \\mathsf { I } _ { \\mathsf { S P T A } } )$ below 0.06 and 0.9 mW.cm<sup>-</sup>², respectively (Supplementary Table T1).",
+   "exposures[0].timing.pulse_duration_ms": "Each laser pulse is converted by the PA film into an acoustic wave with a duration $\\mathsf { d } _ { \\mathsf { U S } } = 3 6$ ns.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We further investigated RGC responses to photoacoustic stimulation using different laser repetition rates (10 µJ per pulse, $\\mathsf { f } _ { \\mathsf { r e p 1 } } = 1 . 9$ kHz with $\\mathsf { P } _ { 1 } = 0 . 2 7 \\mathsf { m w } . \\mathsf { m m } ^ { - 2 }$ and $\\mathsf { f } _ { \\mathsf { r e p 2 } } = 3 . 5$ kHz with $\\mathsf { P } _ { 2 } = 0 . 5 2 \\mathsf { m w } . \\mathsf { m m } ^ { - 2 }$ ) and burst durations $( \\mathsf { d } _ { \\mathsf { b } } = 5 \\cdot 3 0 ~ \\mathsf { m s } )$ .",
+   "exposures[0].timing.duty_cycle_pct": "Since the applied acoustic pressures are below safety thresholds and the acoustic waves are applied at 0.025% duty cycle,. Thus limited or no aversive effects are to be expected on the RPE and choroid.",
+   "exposures[0].timing.sonication_duration_s": "We further investigated RGC responses to photoacoustic stimulation using different laser repetition rates (10 µJ per pulse, $\\mathsf { f } _ { \\mathsf { r e p 1 } } = 1 . 9$ kHz with $\\mathsf { P } _ { 1 } = 0 . 2 7 \\mathsf { m w } . \\mathsf { m m } ^ { - 2 }$ and $\\mathsf { f } _ { \\mathsf { r e p 2 } } = 3 . 5$ kHz with $\\mathsf { P } _ { 2 } = 0 . 5 2 \\mathsf { m w } . \\mathsf { m m } ^ { - 2 }$ ) and burst durations $( \\mathsf { d } _ { \\mathsf { b } } = 5 \\cdot 3 0 ~ \\mathsf { m s } )$ .",
+   "exposures[0].device.model": "A 1030-nm pulsed laser is delivered to the back of the eye onto the retina, illuminating the subretinally-implanted flexible photoacoustic (PA) film."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "The paper reports separate group sizes for different sub-experiments rather than one grand total: ex vivo LE retinae n=4 rats, ex vivo P23H retinae n=4 rats, in vivo biocompatibility P23H n=8, in vivo photoacoustic-stimulation LE n=7. These are not necessarily non-overlapping and are given as a list rather than summed."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "Ultrasound is generated photoacoustically (laser-driven film), not by a conventional piezoelectric transducer; 'fundamental frequency' is the intrinsic acoustic centre frequency of the film (42.2 MHz) rather than a driven electrical frequency, and 'pulse duration'/'PRF'/'duty cycle' map onto the single ~36-ns photoacoustic pulse and laser repetition rate rather than a conventional TUS tone-burst; recorded with a flag given the unusual mapping onto the standard TUS timing fields."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Combines the ex vivo swept burst-duration range (db=5-30 ms) with the very different in vivo train structure (eight 125-ms bursts within a 2-s train, repeated 15 times); these come from different experiments and are listed together for one target/frequency per the exposure-grouping rule."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "146.2 kPa is a hydrophone characterisation value at a non-stimulation laser condition (7 µJ/pulse, measured 0.9 mm from the film) and its measurement medium (water vs. tissue) is not explicitly stated; placed in free_field as the best-available characterisation value, distinct from the in-situ (at-target) stimulation pressures (0.05-0.15 MPa) reported elsewhere."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "ISPTA values (below 0.06 and 0.9 mW/cm2) are stated as upper bounds ('below'), not exact values."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Controls used were stimulus-matched but non-photoacoustic (direct 1030-nm laser on the retina without the film; continuous 595-nm laser light on the retina), which does not match any listed sham_type category cleanly; coded as 'other'."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Effects observed (photoreceptor thinning, microglial activation) are attributed by the authors to mechanical implantation rather than to the acoustic/photoacoustic stimulation itself."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Ultrasound in this study is generated by a laser-driven photoacoustic film rather than a conventional electrically-driven transducer; standard TUS timing/domain fields are populated on a best-effort basis (see flags).",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.sonication_duration_s": "both_defensible"
+  }
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023choi",
+ "doi": "10.1016/j.brs.2023.09.004",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "C57BL/6J mice (8 M, 8 F; 14–24 g) (JAX000664; The Jackson Laboratory, ME, USA) were used in this study.",
+   "n_sessions_per_subject": "The experiment was conducted over a maximum of 13 sonication sessions per mouse.",
+   "exposures[0].fundamental_frequency_khz": "For TUS, a single-element (2.54 cm diameter) 500 kHz immersion transducer (V301-SU; Olympus, MA, USA) was placed on a 3-D printed translucent resin conical waveguide with a water outlet and inlet.",
+   "exposures[0].free_field.pressure_kpa": "The experimental data shows that the threshold for ABR lies between $\\mathtt { p } _ { \\mathrm { r m s } } = 0 . 0 8 5$ and 0.13 MPa for rectangular waveforms, which correspond to peak pressures 0.12 and 0.18 MPa respectively.",
+   "exposures[0].timing.sonication_duration_s": "All signals were 80 ms long with 5 s intervals (Figs. 2 and 3).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The 10 ms power of experimental ABR from 40 to 50 ms for 0.5, 1.5, 8, and 16 kHz were 0.092, 0.0070, 0.0043, and 0.0039 $\\mu \\mathrm { V } ^ { 2 }$ .",
+   "exposures[0].timing.duty_cycle_pct": "PRF modulation with rectangular pulses at 50% DC (Fig. 3A–C) and sinusoidally smoothed pulses at 100% DC (Fig. 3D–F) were studied.",
+   "exposures[0].device.manufacturer": "For TUS, a single-element (2.54 cm diameter) 500 kHz immersion transducer (V301-SU; Olympus, MA, USA) was placed on a 3-D printed translucent resin conical waveguide with a water outlet and inlet.",
+   "exposures[0].device.model": "For TUS, a single-element (2.54 cm diameter) 500 kHz immersion transducer (V301-SU; Olympus, MA, USA) was placed on a 3-D printed translucent resin conical waveguide with a water outlet and inlet."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Paper lists 19 modulation conditions across 4 waveform categories (rectangular CW amplitude sweep, smoothed-ramp CW, pulsed rectangular PRF sweep, pulsed sinusoidal PRF sweep); only the rectangular-envelope amplitude sweep (4 values, quotable together) is recorded numerically here. Ramp durations, the smoothed-waveform amplitudes (Eq. 4), and the sinusoidal PRF sweep (0.13-16 kHz) are described only in protocol_description because no single contiguous sentence states them together."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle differs by waveform sub-type: 50% for the pulsed rectangular condition (recorded) vs 100% for the pulsed sinusoidal condition (see protocol_description); no single quotable value covers both."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Individual pulse duration for the pulsed rectangular/sinusoidal waveforms could be derived from PRF and duty cycle but is not itself stated in the text; left not_reported per the burst rule rather than computed."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "This study is itself a characterisation of the TUS-evoked auditory confound (ABR); no masking or other auditory control condition was used, only parametric variation of the TUS waveform."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 13,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Auditory brainstem response (ABR) recorded via subdermal EEG needle electrodes",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Study characterised unintended auditory brainstem responses (ABR) evoked by TUS of sensorimotor cortex, not the neuromodulatory effect on the target; ABR amplitude increased with pressure amplitude, decreased with envelope smoothing (longer ramps), and depended on PRF and duty cycle.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS parameter sweep to right sensorimotor cortex (ABR characterisation)",
+   "target": {
+    "terms": [
+     "sensorimotor_cortex"
+    ],
+    "label": "right sensorimotor cortical region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     120,
+     180,
+     240,
+     310,
+     480,
+     560
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     130,
+     250,
+     500,
+     1500,
+     8000,
+     16000
+    ],
+    "duty_cycle_pct": [
+     50,
+     100
+    ],
+    "sonication_duration_s": 0.08,
+    "protocol_description": "All TUS signals were 80 ms long with 5 s intervals between sonications. Nineteen modulation conditions were tested in four groups: (1) rectangular-envelope continuous waves at four pressure amplitudes (prms 0.085-0.22 MPa); (2) continuous waves with a smoothed (Tukey-windowed) onset/offset ramp of 2-40 ms at constant prms=0.17 MPa; (3) pulsed rectangular waveforms at 50% duty cycle with PRF varied 0.5-16 kHz at constant prms=0.17 MPa; (4) pulsed sinusoidally-smoothed waveforms (100% duty cycle, double-sideband) with a 12 ms overall ramp and sinusoidal PRF varied 0.13-16 kHz at constant prms=0.17 MPa. Eight mice received 260 repetitions of 14 waveforms, and two further groups of four mice each received 260 repetitions of 4 other waveforms."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ]
+}

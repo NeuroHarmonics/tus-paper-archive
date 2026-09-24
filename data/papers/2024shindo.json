@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024shindo",
+ "doi": "10.1007/s10396-024-01461-9",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (HUVEC and cerebrovascular endothelial cell lines)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "Real-time qRT-PCR of VEGFA, FGF2, and eNOS mRNA expression",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "This in vitro dose-finding study examined ultrasound effects on angiogenic/eNOS gene expression rather than neural excitatory or inhibitory activity. VEGF and eNOS mRNA were significantly upregulated at sound pressures of 0.05-0.5 MPa (and FGF2 at 0.5 MPa) with a 20% duty cycle at 0.5 MHz, with loss of effect at pressures above 1.08 MPa.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "In vitro LIPUS dose-finding irradiation of cultured vascular endothelial cells (HUVEC; final validation in cerebrovascular endothelial cells)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "cultured vascular endothelial cells (HUVEC and cerebrovascular endothelial cells) irradiated through an agar phantom gel"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    1000,
+    1875
+   ],
+   "free_field": {
+    "pressure_kpa": [
+     1300,
+     900
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     50,
+     100,
+     150,
+     250,
+     500,
+     1080,
+     2200
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 3125,
+    "duty_cycle_pct": [
+     1,
+     5,
+     10,
+     20,
+     40
+    ],
+    "sonication_duration_s": 1200,
+    "protocol_description": "Cultured HUVEC were exposed to LIPUS through an agar phantom gel at frequency 0.5, 1.0, or 1.875 MHz; duty cycle 1, 5, 10, 20, or 40%; and amplitude 0.05-2.2 MPa, for 20 min (n=12 per condition), with pulse repetition rate (period) fixed at 320 microseconds. Based on this dose-response mapping (optimal duty cycle up to 20% at 0.5 MHz; effective sound pressure range 0.05-0.5 MPa), a final validation experiment in cerebrovascular endothelial cells compared two candidate human treatment conditions: (1) sound pressure just below the probe of 1.3 MPa (tissue amplitude 0.15 MPa) with duty cycle 5%, and (2) sound pressure just below the probe of 0.9 MPa (tissue amplitude 0.1 MPa) with duty cycle 10%; condition 1 produced significantly greater VEGF mRNA upregulation and was selected as the final human treatment condition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "They were exposed to LIPUS under the following irradiation conditions (frequency: 0.5, 1.0, and 1.875 MHz; duty cycle: 1, 5, 10, 20, and 40%; amplitude: 0.05, 0.1, 0.15, 0.25, 0.5, 1.08, and 2.2 MPa) for 20 min (n = 12 each).",
+   "exposures[0].timing.duty_cycle_pct": "They were exposed to LIPUS under the following irradiation conditions (frequency: 0.5, 1.0, and 1.875 MHz; duty cycle: 1, 5, 10, 20, and 40%; amplitude: 0.05, 0.1, 0.15, 0.25, 0.5, 1.08, and 2.2 MPa) for 20 min (n = 12 each).",
+   "exposures[0].unspecified_domain.pressure_kpa": "They were exposed to LIPUS under the following irradiation conditions (frequency: 0.5, 1.0, and 1.875 MHz; duty cycle: 1, 5, 10, 20, and 40%; amplitude: 0.05, 0.1, 0.15, 0.25, 0.5, 1.08, and 2.2 MPa) for 20 min (n = 12 each).",
+   "exposures[0].timing.sonication_duration_s": "They were exposed to LIPUS under the following irradiation conditions (frequency: 0.5, 1.0, and 1.875 MHz; duty cycle: 1, 5, 10, 20, and 40%; amplitude: 0.05, 0.1, 0.15, 0.25, 0.5, 1.08, and 2.2 MPa) for 20 min (n = 12 each).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse repetition rate (PRT) was fixed at 320 μs to comply with previous reports [2, 3] and safety standards [16].",
+   "exposures[0].free_field.pressure_kpa": "Therefore, the following two treatment conditions were compared for VEGF mRNA expression using cerebrovascular endothelial cells: (1) sound pressure just below the probe of 1.3 MPa (tissue amplitude 0.15 MPa) and each duty cycle 5%; (2) sound pressure just below the probe of 0.9 MPa (tissue amplitude 0.1 MPa) and each duty cycle 10%.",
+   "n_subjects": "They were exposed to LIPUS under the following irradiation conditions (frequency: 0.5, 1.0, and 1.875 MHz; duty cycle: 1, 5, 10, 20, and 40%; amplitude: 0.05, 0.1, 0.15, 0.25, 0.5, 1.08, and 2.2 MPa) for 20 min (n = 12 each)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Converted directly from the stated pulse repetition period (PRT = 320 microseconds, i.e. 1/320us = 3125 Hz); the paper itself calls this value 'pulse repetition rate' but states it as a time period rather than a frequency."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports n=12 cultures per condition across many frequency/duty-cycle/pressure combinations plus a separate final validation experiment; no single total subject/culture count is stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "A non-irradiated control condition is implied ('fold of control' mRNA expression) but the paper does not describe how the control dishes were prepared (e.g., transducer present but off)."
+   },
+   {
+    "field": "conditions",
+    "reason": "The cells irradiated (HUVEC, cerebrovascular endothelial cells) are normal (non-diseased) cultures; 'alzheimers_disease' reflects the paper's stated therapeutic target application rather than a disease model of the cells themselves."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "The manufacturer/model of the specific ultrasound probes used for the cell irradiation experiments (0.5/1.0/1.875 MHz) is not stated; only the probe used for the separate human intracranial sound-field design (Honda Electronics) is named."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Cultured vascular endothelial cells do not correspond to any anatomical brain/nerve target in the controlled vocabulary."
+   }
+  ],
+  "human_edited": false,
+  "notes": "This paper also measured ultrasound transmittance through 20 ex vivo human temporal bones (frequency 0.5 and 1.0 MHz) to characterize skull attenuation; this is a physical/acoustic characterization without a biological readout and was not recorded as a separate exposure.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

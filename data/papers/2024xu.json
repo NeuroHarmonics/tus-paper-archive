@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024xu",
+ "doi": "10.1109/tbme.2024.3401136",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  9,
+  10,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "EMG success rate and peak time of motor response; c-Fos immunofluorescence for neuronal activity; RT-PCR for Piezo1/Piezo2 mRNA expression; H&E, Nissl and TUNEL staining for safety",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "tFUS stimulation of the motor cortex evoked motor responses (EMG) and increased c-Fos expression; Piezo1 and Piezo2 knockdown reduced (but did not abolish) the success rate of evoked motor responses and prolonged response latency, indicating Piezo channels mediate but are not solely required for the excitatory tFUS effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E, Nissl, and TUNEL staining showed no significant tissue damage, decrease in Nissl bodies, or apoptosis (no TUNEL-positive cells) following tFUS stimulation in Piezo knockdown or control mice.",
+ "exposures": [
+  {
+   "label": "tFUS to cerebral motor cortex (M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "cerebral motor cortex (M1)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Chongqing Haifu Medical Technology",
+    "model": "single-element concave transducer (100 mm aperture, 80 mm focal length)"
+   },
+   "fundamental_frequency_khz": 620,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 570,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Ultrasound neurostimulation parameters were prepared using a previously described protocol: Ultrasound pulse duration was 2 ms, pulse repetition frequency (PRF) was 250 Hz, and total sonication duration (SD) was 400 ms. Twenty ultrasound stimulations were performed for each condition. For c-Fos immunofluorescence, ultrasound was targeted to stimulate the cerebral motor cortex for 30 min at an interval of 9 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fig. 3. Success rates of motor response evoked by transcranial focused ultrasound (tFUS) stimulation. (a) Histogram comparison before and after GFP Control virus injection. (b) Histogram comparison in the control group, Piezo1 knockdown (Piezo1\\_KD) group, and Piezo2 knockdown (Piezo2\\_KD) group after virus injection. (c) The stacked bars chart showed the proportion of success rates within different groups. Values are presented as mean one standard deviation. Sample sizes: control group (n = 9), Piezo1\\_KD group (n = 10), Piezo2\\_KD group (n = 11). Significance was evaluated using the independent sample t-test $( * p < 0 . 0 5 , * * p < 0 . 0 1 , * * * p < 0 . 0 0 1 ; \\mathbb { N } . \\mathbb { S } . = \\mathsf { n o t } \\mathsf { s i g n i f i c a n t } ) .$",
+   "exposures[0].fundamental_frequency_khz": "Pulsed sonication was generated using a 620 kHz singleelement concave transducer with an aperture of 100 mm and a focal length of 80 mm (Chongqing Haifu Medical Technology, Chongqing, China). As is shown in Fig. 1(a), the ultrasound transmission signals were generated using a dual-channel arbitrary waveform generator (DG5027, RIGOL Inc., Beijing,",
+   "exposures[0].in_situ.pressure_kpa": "\fChina) and subsequently amplified with a power amplifier (150A100D, AR FR/Microwave Instrumentation, Souderton, USA). Ultrasound neurostimulation parameters were prepared using a previously described protocol [46]: Ultrasound pulse duration was 2 ms, pulse repetition frequency (PRF) was 250 Hz, and total sonication duration (SD) was 400 ms. The schematic diagram of the pulsation pattern of the ultrasonic stimulation experiment is shown in Fig. 1(c). Acoustic pressure distribution was characterized via a needle hydrophone (0.5 mm diameter; Precision Acoustics Ltd, Dorchester, U.K.) in degassed water and the intracranial peak rarefactional pressure was 0.57 MPa (focal position of FUS on M1 area). The FUS transducer has a focal size with a Full Width at Half Maximum (FWHM) of 4.6 mm along the axial axis and 1.4 mm along the lateral axis. Additionally, an ultrasound collimator was utilized to position the focal center of the ultrasound at the location of the mouse cerebral motor cortex previously injected with the virus.",
+   "exposures[0].timing.pulse_duration_ms": "\fChina) and subsequently amplified with a power amplifier (150A100D, AR FR/Microwave Instrumentation, Souderton, USA). Ultrasound neurostimulation parameters were prepared using a previously described protocol [46]: Ultrasound pulse duration was 2 ms, pulse repetition frequency (PRF) was 250 Hz, and total sonication duration (SD) was 400 ms. The schematic diagram of the pulsation pattern of the ultrasonic stimulation experiment is shown in Fig. 1(c). Acoustic pressure distribution was characterized via a needle hydrophone (0.5 mm diameter; Precision Acoustics Ltd, Dorchester, U.K.) in degassed water and the intracranial peak rarefactional pressure was 0.57 MPa (focal position of FUS on M1 area). The FUS transducer has a focal size with a Full Width at Half Maximum (FWHM) of 4.6 mm along the axial axis and 1.4 mm along the lateral axis. Additionally, an ultrasound collimator was utilized to position the focal center of the ultrasound at the location of the mouse cerebral motor cortex previously injected with the virus.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "\fChina) and subsequently amplified with a power amplifier (150A100D, AR FR/Microwave Instrumentation, Souderton, USA). Ultrasound neurostimulation parameters were prepared using a previously described protocol [46]: Ultrasound pulse duration was 2 ms, pulse repetition frequency (PRF) was 250 Hz, and total sonication duration (SD) was 400 ms. The schematic diagram of the pulsation pattern of the ultrasonic stimulation experiment is shown in Fig. 1(c). Acoustic pressure distribution was characterized via a needle hydrophone (0.5 mm diameter; Precision Acoustics Ltd, Dorchester, U.K.) in degassed water and the intracranial peak rarefactional pressure was 0.57 MPa (focal position of FUS on M1 area). The FUS transducer has a focal size with a Full Width at Half Maximum (FWHM) of 4.6 mm along the axial axis and 1.4 mm along the lateral axis. Additionally, an ultrasound collimator was utilized to position the focal center of the ultrasound at the location of the mouse cerebral motor cortex previously injected with the virus.",
+   "exposures[0].timing.sonication_duration_s": "\fChina) and subsequently amplified with a power amplifier (150A100D, AR FR/Microwave Instrumentation, Souderton, USA). Ultrasound neurostimulation parameters were prepared using a previously described protocol [46]: Ultrasound pulse duration was 2 ms, pulse repetition frequency (PRF) was 250 Hz, and total sonication duration (SD) was 400 ms. The schematic diagram of the pulsation pattern of the ultrasonic stimulation experiment is shown in Fig. 1(c). Acoustic pressure distribution was characterized via a needle hydrophone (0.5 mm diameter; Precision Acoustics Ltd, Dorchester, U.K.) in degassed water and the intracranial peak rarefactional pressure was 0.57 MPa (focal position of FUS on M1 area). The FUS transducer has a focal size with a Full Width at Half Maximum (FWHM) of 4.6 mm along the axial axis and 1.4 mm along the lateral axis. Additionally, an ultrasound collimator was utilized to position the focal center of the ultrasound at the location of the mouse cerebral motor cortex previously injected with the virus.",
+   "exposures[0].device.manufacturer": "Pulsed sonication was generated using a 620 kHz singleelement concave transducer with an aperture of 100 mm and a focal length of 80 mm (Chongqing Haifu Medical Technology, Chongqing, China).",
+   "exposures[0].device.model": "Pulsed sonication was generated using a 620 kHz singleelement concave transducer with an aperture of 100 mm and a focal length of 80 mm (Chongqing Haifu Medical Technology, Chongqing, China)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "78 mice total were purchased but only subsets were used per experiment; the clearest enumerated group sizes exposed to tFUS for the main EMG comparison (control/Piezo1_KD/Piezo2_KD) are reported as a list; other analyses (c-Fos, safety staining) used smaller overlapping subsets of n=5"
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressure was measured with a hydrophone in degassed water but reported as the 'intracranial peak rarefactional pressure', so the exact derivation (measurement vs derating/simulation) is unclear"
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not explicitly stated in the text; could be computed as pulse_duration x PRF but this was not done since it was not stated by the paper"
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane anaesthesia is described for the stereotaxic virus injection, but the anaesthesia state during the tFUS/EMG recording session itself is not explicitly stated"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

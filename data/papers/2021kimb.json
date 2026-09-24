@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021kimb",
+ "doi": "10.1016/j.ultrasmedbio.2021.04.030",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J wild-type)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  6,
+  6,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site",
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "emg_mep"
+ ],
+ "readout_other": "High-resolution laser Doppler imaging of hind-paw blood flow (vasodilation); EMG at the gastrocnemius muscle used to confirm absence of motor neuronal response",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS at the distal sciatic nerve elicited a neurogenic axon reflex (increased blood flow / vasodilation) at the hind paw without activating the motor neuronal response measured by EMG.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS stimulation of the distal sciatic nerve",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "distal sciatic nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "H-108"
+   },
+   "fundamental_frequency_khz": 3100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1960,
+    "isppa_w_cm2": 71,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     180,
+     600
+    ],
+    "protocol_description": "FUS with a peak positive/negative pressure of 1.96/1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice). In addition, FUS with a total sonication time of 3 min (n = 2 hindlimbs of mice) was separately conducted, producing a similar blood-flow pattern. Based on a previous study, short-/high-intensity FUS (Isppa 6-610 W/cm2) was applied to activate motor neurons for a targeting procedure, and long-/low-intensity FUS (Isppa = 71 W/cm2, MI = 1.1) was applied to activate sensory neurons for the neurogenic-inflammation experiments; full pulse timing for the high-intensity targeting sonication is not given in this paper."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Control experiments were performed to rule out other potential sources of electric charges affecting blood flow measurements. The acute flare reaction from FUS was compared with those obtained from three control experiments: (i) deactivating the FUS driving system without changing the rest of the experimental setup (n = 7 hind limbs of mice); (ii) applying 20-dB attenuated FUS under different driving conditions (driving the transducer outside its frequency bandwidth, center frequency of 3.1 Hz with PRF of 0.1 Hz) without modifying the rest of the experimental setup (n = 6 hind limbs of mice) to investigate the effect of potential sources of electromagnetic noise on blood flow measurement while activating FUS driving system; and (3) applying off-target FUS 2.5 mm away from the nerve with the same experimental setup (n = 6 hindlimbs of mice). In addition, FUS with a total sonication time of 3 min (n = 2 hindlimbs of mice) and electrical stimulation (S48 stimulator, Grass Technologies, West Warwick, RI, USA) with a custom-built electrical stimulation wire were separately conducted.",
+   "exposures[0].target.label": "FUS with a peak positive/negative pressure of 1.96/ 1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice) after precisely finding and locating the targeted distal sciatic nerve (Kim et al. 2020).",
+   "exposures[0].device.manufacturer": "The imaging transducer with a frequency spectrum of 5 12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) connected to a Vantage 128 research platform (Verasonics, Kirkland, WA, USA) was coaligned with a 3.1-MHz single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA).",
+   "exposures[0].fundamental_frequency_khz": "The imaging transducer with a frequency spectrum of 5 12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) connected to a Vantage 128 research platform (Verasonics, Kirkland, WA, USA) was coaligned with a 3.1-MHz single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA).",
+   "exposures[0].unspecified_domain.pressure_kpa": "FUS with a peak positive/negative pressure of 1.96/ 1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice) after precisely finding and locating the targeted distal sciatic nerve (Kim et al. 2020).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "We determined the feasibility of using FUS to directly activate peripheral neuronal activity underlying either sensory afferent or motor efferent fibers by adjusting FUS parameters at the same targeted nerve region. Based on our previous study (Kim et al. 2020), we applied short-/high-intensity FUS (ISPPA 6 610 W/cm2) to activate motor neurons innervating muscle activity for the targeting procedure and long-/low-intensity FUS (ISPPA = 71 W/cm2) to activate sensory neurons for the neurogenic inflammation.",
+   "exposures[0].timing.pulse_duration_ms": "FUS with a peak positive/negative pressure of 1.96/ 1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice) after precisely finding and locating the targeted distal sciatic nerve (Kim et al. 2020).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS with a peak positive/negative pressure of 1.96/ 1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice) after precisely finding and locating the targeted distal sciatic nerve (Kim et al. 2020).",
+   "exposures[0].timing.sonication_duration_s": "FUS with a peak positive/negative pressure of 1.96/ 1.95 MPa, pulse duration of 1 ms, PRF of 100 Hz, and total sonication time of 10 min was applied to the distal sciatic nerve to elicit an acute flare reaction (n = 8 hind limbs of mice) after precisely finding and locating the targeted distal sciatic nerve (Kim et al. 2020).",
+   "exposures[0].device.model": "The imaging transducer with a frequency spectrum of 5 12 MHz (P12-5, ATL/Philips, Bothell, WA, USA) connected to a Vantage 128 research platform (Verasonics, Kirkland, WA, USA) was coaligned with a 3.1-MHz single-element FUS transducer (H-108, Sonic Concepts, Inc., Bothell, WA, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Total 'exposed to ultrasound' is not stated; group sizes for FUS conditions (on-target 10 min n=8, off-target n=6, 20-dB attenuated 'noise' condition n=6, FUS 3-min n=2) are listed rather than summed. Units are 'hind limbs of mice', which may not equal distinct animals."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Domain (free field vs in situ) of the 1.96/1.95 MPa peak positive/negative pressure is not stated; recorded as unspecified_domain. Value given as separate positive/negative peaks; the positive peak (1.96 MPa) is recorded."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Domain of the Isppa=71 W/cm2 value is not stated by the paper; recorded as unspecified_domain. A separate high-intensity regime (Isppa 6-610 W/cm2) used for a targeting procedure (from a prior study) is described only qualitatively here without matching pulse timing, so it is not included as a numeric field value."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

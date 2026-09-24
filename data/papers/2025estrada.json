@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025estrada",
+ "doi": "10.1038/s41551-025-01449-x",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J-Tg(Thy1-GCaMP6f) GP5.17Dkim/J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Widefield fluorescence calcium imaging (GCaMP6f) via fibrescope; volumetric optoacoustic tomography used for target localization",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS and holographic TUS (hTUS) produced dose-dependent increases in cortical calcium (GCaMP6f) fluorescence at the sonicated site, indicating excitatory activation; hTUS achieved comparable excitation at substantially lower peak pressures than single-focus TUS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS and holographic TUS (hTUS) stimulation of mouse somatosensory cortex",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex— lower limb region"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic SaS",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     900,
+     1100,
+     1200,
+     2300,
+     2500,
+     2800
+    ],
+    "isppa_w_cm2": [
+     20,
+     131
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.15,
+    "protocol_description": "The right hemisphere was sonicated 20 times at 10 s intervals with continuous 150 ms US pulses (20<ISPPA<131 W/cm2). Beam steering delivered the same 150 ms pulses to different cortical loci with a 30 s total stimulation period (10 s between foci) repeated 10 times. hTUS delivered the same 150 ms, 3 MHz pulses simultaneously to 2-3 foci (170 elements/focus for a triangle, 102 elements/focus for a pentagon) arranged at 0.5-1 mm radius."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 10 GCaMP6f mice (C57BL/6J-Tg(Thy1-GCaMP6f) GP5.17Dkim/J, The Jackson Laboratory) were used for this study (4 female, 6 male).",
+   "exposures[0].fundamental_frequency_khz": "The mice were sonicated under isoflurane anaesthesia (3% v/v for induction, 1.2% v/v for maintenance) with 150 ms duration pulses at 3 MHz delivered sequentially every 10 s a total of 20 times.",
+   "exposures[0].timing.sonication_duration_s": "The mice were sonicated under isoflurane anaesthesia (3% v/v for induction, 1.2% v/v for maintenance) with 150 ms duration pulses at 3 MHz delivered sequentially every 10 s a total of 20 times.",
+   "exposures[0].in_situ.pressure_kpa": "Although minor crosstalk up to 40% is observed in the time traces, the peak activation occurs at the targeted location with a pressure of 2.8 MPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "The right hemisphere was sonicated 20 times at 10 s intervals with continuous 150 ms US pulses $( 2 0 < I _ { \\mathrm { { S P P A } } } < 1 3 1 \\mathrm { { W c m } ^ { - 2 } ; I _ { \\mathrm { { S P P A } } } }$ is the intensity at the spatial peak pulse averaged).",
+   "exposures[0].device.manufacturer": "1a) distributed over a spherical surface encompassing 150° (Imasonic SaS)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0]",
+    "reason": "Single-focus TUS and holographic TUS (hTUS) are combined into one exposure because both target the same site (mouse somatosensory cortex) at the same frequency (3 MHz), per the target x frequency rule, even though the two conditions use markedly different device configurations (single vs. simultaneous multi-focus beams) and pressure ranges (~2.3-2.8 MPa for TUS vs ~0.9-1.2 MPa for hTUS)."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "List combines activation-threshold pressures reported across the single-focus TUS (2.5, 2.8 MPa) and hTUS (0.9, 1.1, 1.2 MPa) experiments, described as 'delivered in mouse cortex'/'at the targeted location'; the paper does not use the words 'free field' or 'in situ' for these specific values, so the domain assignment is inferred from context."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "ISPPA range (20-131 W/cm2) is given for the initial S1 dose-response experiment as the intensity of pulses sonicating the right hemisphere; domain (in-brain) inferred from context rather than stated explicitly."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper states the parameters 'have previously been shown to cause no brain damage or other irreversible effects', citing a prior publication (ref. 29) rather than presenting a safety assessment from this study; recorded as not_reported rather than none_observed."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each mouse underwent 20 repeated sonications at 10 s intervals within what appears to be a single continuous imaging session, but the paper never states a number of sessions per animal."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "first",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible"
+  }
+ }
+}

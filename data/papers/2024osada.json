@@ -1,0 +1,639 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024osada",
+ "doi": "10.1038/s41467-024-54564-9",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  20,
+  20,
+  20
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "Stop-signal reaction time (SSRT) in the stop-signal task; resting-state and task fMRI; diffusion MRI probabilistic tractography (used for target identification, not as a pre/post-TUS outcome)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS was applied to induce sustained suppression of the targeted region. TUS to the daINS significantly increased SSRT (impaired response inhibition), while TUS to the control vaINS did not. TUS to the vpIFC or aIFC abolished the transient spTMS-induced SSRT prolongation normally elicited in their downstream target (aIFC or vpIFC, respectively), consistent with functional suppression of the TUS-targeted region.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The subjects in this study reported no adverse effects after the TUS experiments.",
+ "exposures": [
+  {
+   "label": "TUS to dorsal anterior insula (daINS) for sustained suppression",
+   "target": {
+    "terms": [
+     "anterior_insula"
+    ],
+    "label": "dorsal anterior insula (daINS)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS CTX-500"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30.0,
+    "ispta_w_cm2": 10.0
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     15.2,
+     13.5
+    ],
+    "ispta_w_cm2": [
+     4.5,
+     4.1
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region. TUS was applied once to induce sustained suppression, and the stop-signal task (or spTMS-combined stop-signal task) was performed before and after TUS (e.g., three runs before and five runs after TUS in the daINS/vaINS experiment) to assess behavioral disruption."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  },
+  {
+   "label": "TUS to ventral anterior insula (vaINS) as control target",
+   "target": {
+    "terms": [
+     "anterior_insula"
+    ],
+    "label": "ventral anterior insula (vaINS)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS CTX-500"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30.0,
+    "ispta_w_cm2": 10.0
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.3,
+    "ispta_w_cm2": 4.3
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region. TUS was applied once to induce sustained suppression, and the stop-signal task (or spTMS-combined stop-signal task) was performed before and after TUS (e.g., three runs before and five runs after TUS in the daINS/vaINS experiment) to assess behavioral disruption."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  },
+  {
+   "label": "TUS to ventral posterior inferior frontal cortex (vpIFC) for sustained suppression",
+   "target": {
+    "terms": [
+     "inferior_frontal_gyrus"
+    ],
+    "label": "ventral posterior inferior frontal cortex (vpIFC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS CTX-500"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30.0,
+    "ispta_w_cm2": 10.0
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 12.1,
+    "ispta_w_cm2": 3.6
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region. TUS was applied once to induce sustained suppression, and the stop-signal task (or spTMS-combined stop-signal task) was performed before and after TUS (e.g., three runs before and five runs after TUS in the daINS/vaINS experiment) to assess behavioral disruption."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  },
+  {
+   "label": "TUS to anterior inferior frontal cortex (aIFC) for sustained suppression",
+   "target": {
+    "terms": [
+     "inferior_frontal_gyrus"
+    ],
+    "label": "anterior inferior frontal cortex (aIFC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS CTX-500"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30.0,
+    "ispta_w_cm2": 10.0
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 13.7,
+    "ispta_w_cm2": 4.1
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region. TUS was applied once to induce sustained suppression, and the stop-signal task (or spTMS-combined stop-signal task) was performed before and after TUS (e.g., three runs before and five runs after TUS in the daINS/vaINS experiment) to assess behavioral disruption."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Fifty healthy right-handed subjects (23 men and 27 women, age: 23.4 ± 6.6 years [mean ± SD]) participated in the functional MRI (fMRI) experiment. Twenty healthy right-handed subjects (8 men and 12 women, age: 22.0 ± 3.5 years) participated in the TUS experiments to the daINS/vaINS. Twenty healthy right-handed subjects (7 men and 13 women, age: 21.5 ± 1.2 years) participated in the spTMS experiments to the aIFC. Twenty healthy right-handed subjects (11 men and 9 women, age: 22.6 ± 4.4 years) participated in experiments of TUS to the daINS and spTMS to the vpIFC/aIFC. Twenty healthy right-handed subjects (11 men and 9 women, age: 21.4 ± 0.7 years) participated in experi ments of TUS to the vpIFC/aIFC and spTMS to the aIFC/vpIFC.",
+   "adverse_events": "The subjects in this study reported no adverse effects after the TUS experiments.",
+   "exposures[0].fundamental_frequency_khz": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[0].free_field.isppa_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[0].free_field.ispta_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "Intensity fields and temperature increase after sonication were mapped for each sonication condition (estimated intracranial intensities: I = 15.2 ± 1.7 W/cm<sup>2</sup> [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 5 { \\pm } 0 . 5 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, and I = 14.3 ± 3.9 W/cm<sup>2</sup> and $I _ { \\mathrm { S P T A } } { = } 4 . 3 \\pm 1 . 2 \\mathrm { W / c m } ^ { 2 }$ for TUS to the vaINS; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, and $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the vaINS).",
+   "exposures[0].in_situ.ispta_w_cm2": "Intensity fields and temperature increase after sonication were mapped for each sonication condition (estimated intracranial intensities: I = 15.2 ± 1.7 W/cm<sup>2</sup> [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 5 { \\pm } 0 . 5 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, and I = 14.3 ± 3.9 W/cm<sup>2</sup> and $I _ { \\mathrm { S P T A } } { = } 4 . 3 \\pm 1 . 2 \\mathrm { W / c m } ^ { 2 }$ for TUS to the vaINS; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, and $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the vaINS).",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[1].fundamental_frequency_khz": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[1].free_field.isppa_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[1].free_field.ispta_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[1].in_situ.isppa_w_cm2": "Intensity fields and temperature increase after sonication were mapped for each sonication condition (estimated intracranial intensities: I = 15.2 ± 1.7 W/cm<sup>2</sup> [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 5 { \\pm } 0 . 5 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, and I = 14.3 ± 3.9 W/cm<sup>2</sup> and $I _ { \\mathrm { S P T A } } { = } 4 . 3 \\pm 1 . 2 \\mathrm { W / c m } ^ { 2 }$ for TUS to the vaINS; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, and $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the vaINS).",
+   "exposures[1].in_situ.ispta_w_cm2": "Intensity fields and temperature increase after sonication were mapped for each sonication condition (estimated intracranial intensities: I = 15.2 ± 1.7 W/cm<sup>2</sup> [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 5 { \\pm } 0 . 5 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, and I = 14.3 ± 3.9 W/cm<sup>2</sup> and $I _ { \\mathrm { S P T A } } { = } 4 . 3 \\pm 1 . 2 \\mathrm { W / c m } ^ { 2 }$ for TUS to the vaINS; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, and $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 \\ ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the vaINS).",
+   "exposures[1].timing.pulse_duration_ms": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[1].timing.sonication_duration_s": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[2].fundamental_frequency_khz": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[2].free_field.isppa_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[2].free_field.ispta_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[2].in_situ.isppa_w_cm2": "Ultrasound intensity fields and temperature increase after sonication were also simulated (estimated intracranial intensities: $I _ { \\mathrm { S P P A } } { = } 1 3 . 5 { \\pm } 1 . 8 \\mathrm { W / c m } ^ { 2 }$ [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 6 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, $I _ { \\mathrm { S P P A } } { = } 1 2 . 1 { \\pm } 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 3 . 6 \\pm 0 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for TUS to the vpIFC, and $I _ { \\mathrm { S P P A } } { = } 1 3 . 7 \\pm 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 8 \\mathrm { W / c m } ^ { 2 }$ for TUS to the aIFC; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, $0 . 3 { \\pm } 0 . 2 ^ { \\circ } \\mathrm { C }$ [brain] and 0.5 ± 0.3 °C [skull] for TUS to the vpIFC, and 0.5 ± 0.2 °C [brain] and $0 . 8 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the aIFC).",
+   "exposures[2].in_situ.ispta_w_cm2": "Ultrasound intensity fields and temperature increase after sonication were also simulated (estimated intracranial intensities: $I _ { \\mathrm { S P P A } } { = } 1 3 . 5 { \\pm } 1 . 8 \\mathrm { W / c m } ^ { 2 }$ [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 6 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, $I _ { \\mathrm { S P P A } } { = } 1 2 . 1 { \\pm } 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 3 . 6 \\pm 0 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for TUS to the vpIFC, and $I _ { \\mathrm { S P P A } } { = } 1 3 . 7 \\pm 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 8 \\mathrm { W / c m } ^ { 2 }$ for TUS to the aIFC; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, $0 . 3 { \\pm } 0 . 2 ^ { \\circ } \\mathrm { C }$ [brain] and 0.5 ± 0.3 °C [skull] for TUS to the vpIFC, and 0.5 ± 0.2 °C [brain] and $0 . 8 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the aIFC).",
+   "exposures[2].timing.pulse_duration_ms": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[2].timing.sonication_duration_s": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[3].fundamental_frequency_khz": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[3].free_field.isppa_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[3].free_field.ispta_w_cm2": "The spatial-peak pulse-average intensity in water (free field) was $I _ { \\mathrm { S P P A } } { = } 3 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (for spatial-peak temporal-average intensity, $I _ { \\mathrm { S P T A } } { = } 1 0 . 0 \\mathsf { W } / \\mathsf { c m } ^ { 2 } )$ .",
+   "exposures[3].in_situ.isppa_w_cm2": "Ultrasound intensity fields and temperature increase after sonication were also simulated (estimated intracranial intensities: $I _ { \\mathrm { S P P A } } { = } 1 3 . 5 { \\pm } 1 . 8 \\mathrm { W / c m } ^ { 2 }$ [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 6 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, $I _ { \\mathrm { S P P A } } { = } 1 2 . 1 { \\pm } 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 3 . 6 \\pm 0 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for TUS to the vpIFC, and $I _ { \\mathrm { S P P A } } { = } 1 3 . 7 \\pm 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 8 \\mathrm { W / c m } ^ { 2 }$ for TUS to the aIFC; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, $0 . 3 { \\pm } 0 . 2 ^ { \\circ } \\mathrm { C }$ [brain] and 0.5 ± 0.3 °C [skull] for TUS to the vpIFC, and 0.5 ± 0.2 °C [brain] and $0 . 8 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the aIFC).",
+   "exposures[3].in_situ.ispta_w_cm2": "Ultrasound intensity fields and temperature increase after sonication were also simulated (estimated intracranial intensities: $I _ { \\mathrm { S P P A } } { = } 1 3 . 5 { \\pm } 1 . 8 \\mathrm { W / c m } ^ { 2 }$ [mean ± SD] and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 6 \\mathrm { W / c m } ^ { 2 }$ for TUS to the daINS, $I _ { \\mathrm { S P P A } } { = } 1 2 . 1 { \\pm } 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 3 . 6 \\pm 0 . 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ for TUS to the vpIFC, and $I _ { \\mathrm { S P P A } } { = } 1 3 . 7 \\pm 2 . 6 \\mathrm { W / c m } ^ { 2 }$ and $I _ { \\mathrm { S P T A } } { = } 4 . 1 { \\pm } 0 . 8 \\mathrm { W / c m } ^ { 2 }$ for TUS to the aIFC; estimated temperature increase: $0 . 2 \\pm 0 . 1 ^ { \\circ } \\mathrm { C }$ [brain] and $0 . 4 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the daINS, $0 . 3 { \\pm } 0 . 2 ^ { \\circ } \\mathrm { C }$ [brain] and 0.5 ± 0.3 °C [skull] for TUS to the vpIFC, and 0.5 ± 0.2 °C [brain] and $0 . 8 \\pm 0 . 2 ^ { \\circ } \\mathrm { C }$ [skull] for TUS to the aIFC).",
+   "exposures[3].timing.pulse_duration_ms": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[3].timing.sonication_duration_s": "The ultrasound stimulation consisted of 30 ms pulse repeated every 100 ms, and the total sonication lasted for 40 s, which is known to induce sustained suppression of the target region.",
+   "exposures[0].device.manufacturer": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[0].device.model": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[1].device.manufacturer": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[1].device.model": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[2].device.manufacturer": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[2].device.model": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[3].device.manufacturer": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm.",
+   "exposures[3].device.model": "A four-element annular array TUS transducer (NeuroFUS CTX-500, Brainbox Ltd, Cardiff, UK), coupled with a programmable radiofrequency amplifier (Transducer Power Output System, TPO-203, Brainbox Ltd, Cardiff, UK), was used with a fundamental frequency of 500 kHz and diameter of 60 mm."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (10 Hz) was derived from the stated inter-pulse period ('repeated every 100 ms'), a unit conversion rather than a directly stated PRF value."
+   },
+   {
+    "field": "exposures[*].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not explicitly stated; computing it from the 30 ms pulse / 100 ms period would require arithmetic the paper does not perform, so left not_reported."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Two different simulated intracranial intensity estimates for TUS to the daINS are given in different sub-experiments (15.2±1.7 W/cm2 in the daINS/vaINS behavioral experiment; 13.5±1.8 W/cm2 in the combined TUS-daINS+spTMS experiment); both are listed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Paper reports separate cohorts of 20 subjects for the daINS/vaINS TUS experiment, the TUS-daINS+spTMS-vpIFC/aIFC experiment, and the TUS-vpIFC/aIFC+spTMS experiment; it does not state whether these cohorts overlap or a total unique subject count exposed to TUS, so the three group sizes are listed rather than summed."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Paper does not explicitly state how many separate sessions (e.g., whether daINS and vaINS, or vpIFC and aIFC, TUS conditions were delivered on the same day or different sessions) each subject underwent."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The dorsal anterior insula (daINS) has no distinct id in the vocabulary (only 'anterior_insula' and 'posterior_insula' are listed); classified as anterior_insula."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "The ventral anterior insula (vaINS) has no distinct id in the vocabulary; classified as anterior_insula, distinguished by label."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "first",
+   "exposures[0].in_situ.ispta_w_cm2": "first"
+  }
+ }
+}

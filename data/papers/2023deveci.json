@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023deveci",
+ "doi": "10.1007/s12035-022-03130-9",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Experimental group (EG): 16 rats were brain stimulated for the following 10 days (36th–45th days) for 30 min each.",
+   "n_sessions_per_subject": "Experimental group (EG): 16 rats were brain stimulated for the following 10 days (36th–45th days) for 30 min each.",
+   "exposures[0].fundamental_frequency_khz": "Given the transmittance eficiency issue discussed above, we designed our transducer to have a frequency of operation centered at 2.4 MHz.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "We adjusted the ultrasound parameters as follows: the pulse repetition frequency (PRF): 250 kHz, duty cycle: %50, sonification duration: 300 msn, delay: 1700 msn, Isppa (spatial-peak, pulse-average intensity): 4.06 W/cm<sup>2</sup>, Ispta (spatial-peak temporal-average intensity): 305 mW/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "We adjusted the ultrasound parameters as follows: the pulse repetition frequency (PRF): 250 kHz, duty cycle: %50, sonification duration: 300 msn, delay: 1700 msn, Isppa (spatial-peak, pulse-average intensity): 4.06 W/cm<sup>2</sup>, Ispta (spatial-peak temporal-average intensity): 305 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We adjusted the ultrasound parameters as follows: the pulse repetition frequency (PRF): 250 kHz, duty cycle: %50, sonification duration: 300 msn, delay: 1700 msn, Isppa (spatial-peak, pulse-average intensity): 4.06 W/cm<sup>2</sup>, Ispta (spatial-peak temporal-average intensity): 305 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.duty_cycle_pct": "We adjusted the ultrasound parameters as follows: the pulse repetition frequency (PRF): 250 kHz, duty cycle: %50, sonification duration: 300 msn, delay: 1700 msn, Isppa (spatial-peak, pulse-average intensity): 4.06 W/cm<sup>2</sup>, Ispta (spatial-peak temporal-average intensity): 305 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "We adjusted the ultrasound parameters as follows: the pulse repetition frequency (PRF): 250 kHz, duty cycle: %50, sonification duration: 300 msn, delay: 1700 msn, Isppa (spatial-peak, pulse-average intensity): 4.06 W/cm<sup>2</sup>, Ispta (spatial-peak temporal-average intensity): 305 mW/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "The manufactured arrays (Imasonic SAS, France) were tested using an XYZ-scanning stage and a hydrophone (ONDA Corp.",
+   "exposures[0].device.model": "B 3  dB (acoustic intensity is within 50% of the peak) beam patterns for (a) 3 mm aperture at 2.4 MHz, (b) 6 mm aperture at 2.4 MHz, (c) 3 mm aperture at 5 MHz, and (d) 6 mm aperture at"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is stated as '250 kHz', an unusually high value for a pulse repetition frequency (typically Hz-range in tFUS protocols); recorded literally as stated rather than corrected, since the units cannot be verified from the text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "The two tFUS-exposed subgroups received different numbers of real-stimulation sessions (STS: 10 days; LTS: 50 days), so both values are recorded as a list rather than a single number."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n_subjects (16) is the combined Experimental Group (STS+LTS) that received real LIFU stimulation at some point; the Sham Group (n=8) never received active stimulation and is excluded."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "high alcohol-preferring (iP) rat",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  10,
+  50
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "mRNA microarray (Affymetrix Rat Genome 230 2.0 Array); miRNA qPCR array and real-time PCR validation; anti-MAP2 and anti-JNK1 immunohistochemistry; TUNEL apoptosis assay",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIFU targeted to NAc altered mRNA (454 genes in STS, 382 in LTS vs sham) and miRNA expression (both up- and down-regulated), with more pronounced/different changes after long-term (50-day) vs short-term (10-day) stimulation; this reflects molecular/gene-expression change rather than a measured excitatory or inhibitory shift in neural activity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No positive cells were seen in the NAc region using anti-JNK1 immunohistochemistry and TUNEL, and no significant differences in anti-MAP2 staining density were found between groups, indicating LIFU did not cause tissue damage or apoptosis.",
+ "exposures": [
+  {
+   "label": "LIFU to bilateral nucleus accumbens (NAc) in high alcohol-preferring rats",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "nucleus accumbens (NAc), bilateral"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic SAS, France",
+    "model": "custom 10-element 1D array (2.4 MHz, dual simultaneous NAc targeting)"
+   },
+   "fundamental_frequency_khz": 2400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 4.06,
+    "ispta_w_cm2": 0.305
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 250000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Rats were anesthetized and received daily 30-min sessions (EG: 10 or 50 days depending on subgroup; sham group 50 days). Ultrasound parameters: PRF 250 kHz, duty cycle 50%, sonification duration 300 ms, delay 1700 ms, Isppa 4.06 W/cm2, Ispta 305 mW/cm2. STS received 10 days of real LIFU followed by 40 days of sham; LTS received 50 days of real LIFU; the sham group received 50 days of sham stimulation (kept in the device without stimulation)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.002
+   }
+  }
+ ]
+}

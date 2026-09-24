@@ -1,0 +1,223 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023yoo",
+ "doi": "10.1038/s41598-023-39640-2",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 46,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "eeg_meg",
+  "autonomic_physiology"
+ ],
+ "readout_other": "Fluorescence tracer (ovalbumin, FITC-dextran) distribution imaging in fixed brain sections, dorsal/lateral brain surface, and cervical lymph nodes; EEG; heart rate, respiratory rate, SpO2; numerical simulation of acoustic propagation and brain temperature from rat skull CT",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "Sonication did not elicit EEG peaks distinguishable from control (no evidence of neuronal excitation/brain stimulation), while it non-thermally enhanced transport and lymphatic clearance of intracortically injected interstitial solute tracers (a non-neuromodulatory effect).",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological analysis (H&E, caspase-3, VAF-toluidine blue, GFAP) of sonicated brain regions after a 1-h exposure and 1-week survival showed no tissue damage, apoptosis, ischemic damage or glial infiltration; EEG showed no sonication-evoked neural activation; a 30-min wait after tracer injection prevented the intracranial haemorrhaging previously seen with shorter wait times.",
+ "exposures": [
+  {
+   "label": "Pulsed FUS to intracortical tracer injection site",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "rat cerebral cortex at the intracortical tracer injection site (3 mm lateral, 1 mm caudal to bregma, 2 mm deep)"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 200,
+   "free_field": {
+    "pressure_kpa": 770,
+    "isppa_w_cm2": 5,
+    "ispta_w_cm2": 0.5
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 679.6,
+    "isppa_w_cm2": 4.4,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": [
+     1800,
+     3600
+    ],
+    "protocol_description": "FUS was delivered stereotactically to the intracortical tracer injection site 30 min after needle withdrawal, for 30 min in the tracer-transport experiment (ovalbumin and FITC-dextran, n=7/group FUS+ and FUS-) or for 60 min in the lymphatic-clearance experiment (ovalbumin only, n=8/group FUS+ and FUS-)."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field",
+     "intensity_pressure_inconsistent_in_situ"
+    ],
+    "not_reported": [
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Sprague–Dawley (SD) rats (all male, n = 46) were socially housed (two rats/cage) under a 12 h/12 h light/dark cycle (lights on at 7 AM, of at 7 PM) and were allowed access to food and water ad libitum.",
+   "exposures[0].fundamental_frequency_khz": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].timing.pulse_duration_ms": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].timing.duty_cycle_pct": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].free_field.isppa_w_cm2": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].free_field.ispta_w_cm2": "FUS, operating at 200 kHz, was then stereotactically delivered to the injection site 30 min after needle withdrawal in a pulsed manner (100 ms pulse duration (PD) and 1 Hz pulse repetition frequency (PRF)) for 30 min at a spatial-peak pulse-average intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } )$ of 5 W/cm<sup>2</sup> (10% duty cycle, 500 mW/cm<sup>2</sup> spatial-peak temporalaverage intensity— $- \\mathrm { I } _ { \\mathrm { S P T A } } )$ (the pulsing scheme was illustrated in Fig. 1b).",
+   "exposures[0].free_field.pressure_kpa": "The pressure at the focus, measured in degassed water, was 770 kPa (peak-to-peak amplitude) with a corresponding Mechanical Index (MI) of 0.86, which was much lower than the regulatory limit value of 1.9 that is currently defined for diagnostic ultrasound imaging of organs in the absence of gas-bodies in adults<sup>31</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Upon 30 min wait time after needle retraction, FUS was delivered to the injection site for 1 h to allow for clearance of OA from the brain to the cLNs $( \\mathrm { F U S } + , \\mathrm { n } = 8 $ , illustrated in Fig. 2A, with routes of solute drainage to the cLNs).",
+   "exposures[0].in_situ.pressure_kpa": "In addition to the geometric focal area found at the injection site $( \\mathrm { I } _ { \\mathrm { { S P P A } } } 4 . 4 \\pm 0 . \\bar { 2 } \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ peak-to-peak pressure of $6 7 9 . 6 \\pm 2 3 . 1$ kPa, shown in Fig. 4c-i), we identified additional local maxima of intensity at the skull surface facing the incident FUS waves $( \\mathrm { I } _ { \\mathrm { { S P P A } } } 4 . 5 \\pm 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ;$ , peak-to-peak pressure of 698.1 ± 61.9 kPa, in Fig. 4c-ii) and at the brain tissue interfacing the skull base $( \\mathrm { I } _ { \\mathrm { S P P A } } 4 . \\bar { 7 } \\pm 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ peak-to-peak pressure of $7 2 2 . 2 \\pm \\bar { 5 } 7 . 1 \\mathrm { k P a }$ , in Fig. 4c-iii, simulation results shown in Supplementary Fig. S5).",
+   "exposures[0].in_situ.isppa_w_cm2": "In addition to the geometric focal area found at the injection site $( \\mathrm { I } _ { \\mathrm { { S P P A } } } 4 . 4 \\pm 0 . \\bar { 2 } \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$ peak-to-peak pressure of $6 7 9 . 6 \\pm 2 3 . 1$ kPa, shown in Fig. 4c-i), we identified additional local maxima of intensity at the skull surface facing the incident FUS waves $( \\mathrm { I } _ { \\mathrm { { S P P A } } } 4 . 5 \\pm 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ;$ , peak-to-peak pressure of 698.1 ± 61.9 kPa, in Fig. 4c-ii) and at the brain tissue interfacing the skull base $( \\mathrm { I } _ { \\mathrm { S P P A } } 4 . \\bar { 7 } \\pm 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ peak-to-peak pressure of $7 2 2 . 2 \\pm \\bar { 5 } 7 . 1 \\mathrm { k P a }$ , in Fig. 4c-iii, simulation results shown in Supplementary Fig. S5).",
+   "exposures[0].device.manufacturer": "A FUS transducer (Ultran Group), operating at a 200 kHz fundamental frequency, was actuated by a sinusoidal electrical waveform from a function generator (Keysight) connected to a 40-Watt linear power amplifier (Electronics and Innovations).",
+   "n_sessions_per_subject": "Then, FUS was stereotactically delivered to the injection site in a pulsed manner for 30 min (n = 7 in each group)."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each rat appears to undergo a single acute, terminal sonication session, but the paper never explicitly states a number of sessions per animal."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "30 min (1800 s) was used in the tracer-transport experiment and 60 min (3600 s) in the lymphatic-clearance experiment; both are recorded as a list for this single target/frequency exposure."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Numerical simulation reports in-situ ISPPA and peak-to-peak pressure at the injection site but not an in-situ ISPTA value."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The exact mechanism of the FUS- control condition (e.g., whether the transducer was positioned but left inactive) is not explicitly described; inactive_transducer is inferred from 'the same procedure without receiving sonication'."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

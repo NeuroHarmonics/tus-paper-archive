@@ -1,0 +1,172 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2013mcclintic",
+ "doi": "10.1111/j.1526-4637.2012.01510.x",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  2,
+  5
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Paw-flick withdrawal response; localization of the neuroma confirmed by von Frey mechanical stimulation",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Intense focused ultrasound of sufficient strength applied to the neuroma caused the rat to flick its paw, while the same iFU applied to nearby control tissue did not.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "iFU stimulation of the tibial neuroma vs. nearby control tissue",
+   "target": {
+    "terms": [
+     "tibial_nerve",
+     "nerve_injury_site"
+    ],
+    "label": "the rat's neuroma"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 343
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Beginning at 150 W/cm2, we applied 100-millisecond bursts of iFU to the neuroma while increasing the intensity in steps of 10-30% until the rat flicked its paw after application of iFU. The device focus was positioned 2 mm below the skin at the site of successful mechanical (von Frey) localization of the neuroma; the same intensity was then applied to a control site approximately 1 cm away."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "We successfully created a neuroma responsive to mechanical testing in eight out of eight rats.",
+   "exposures[0].target.label": "we first applied intense focused ultrasound (2 MHz, with individual pulses of 0.1 second in duration) to the rat’s neuroma while the rat was under light anesthesia.",
+   "exposures[0].fundamental_frequency_khz": "We applied iFU with this device using a single 2 MHz ultrasound burst lasting 0.1 second.",
+   "exposures[0].device.manufacturer": "Figure 3a shows the ultrasound device used for this study: a single-element focused transducer (Sonic Concepts, Bothell, WA, USA) on which a plastic removable cone was mounted, as described in detail in Mesiwala et al. [20].",
+   "exposures[0].free_field.ispta_w_cm2": "We found both a mechanical and iFU threshold values for 21 of those tests: 5.7 +/- 2.2 g and 343 +/- 77 W/cm<sup>2</sup>, respectively (Figure 5b).",
+   "exposures[0].timing.sonication_duration_s": "We applied iFU with this device using a single 2 MHz ultrasound burst lasting 0.1 second.",
+   "direction_notes": "Results. Intense focused ultrasound of sufficient strength (I<sub>SATA</sub> of 600 +/- 160 W/cm<sup>2</sup>) applied to the",
+   "n_sessions_per_subject": "during which time each rat underwent two to five tests"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Abstract reports a mean iFU threshold intensity of 600 +/- 160 W/cm2, but the Results section reports 343 +/- 77 W/cm2 for the subset of 21 tests with both mechanical and iFU thresholds found; both explicit values are listed here and the discrepancy should be checked against the source."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "The paper reports intensity as I_SATA (spatially averaged, temporally averaged), which does not exactly match either the isppa (spatial-peak pulse-average) or ispta (spatial-peak temporal-average) schema fields; recorded here under ispta_w_cm2 as the closest match."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Surgery to create a neuroma was performed on 15 rats, but only 8 rats were reported as being tested with iFU in the Results section (plus 4 additional rats used in an earlier, separately described pilot study); n_subjects reflects only the 8 rats in the formal iFU test dataset."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024baek",
+ "doi": "10.52662/nf.2023.00094",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "Three mice were used in each group; the control group and the ultrasound group.",
+   "exposures[0].fundamental_frequency_khz": "FUS parameters were as follows: 515 kHz fundamental frequency, 50% DC, 1 kHz PRF, 0.2 millisecond TBD, 300 milliseconds sonication duration, and 2 seconds inter-stimulus interval [2,22].",
+   "exposures[0].timing.pulse_duration_ms": "FUS parameters were as follows: 515 kHz fundamental frequency, 50% DC, 1 kHz PRF, 0.2 millisecond TBD, 300 milliseconds sonication duration, and 2 seconds inter-stimulus interval [2,22].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS parameters were as follows: 515 kHz fundamental frequency, 50% DC, 1 kHz PRF, 0.2 millisecond TBD, 300 milliseconds sonication duration, and 2 seconds inter-stimulus interval [2,22].",
+   "exposures[0].timing.duty_cycle_pct": "FUS parameters were as follows: 515 kHz fundamental frequency, 50% DC, 1 kHz PRF, 0.2 millisecond TBD, 300 milliseconds sonication duration, and 2 seconds inter-stimulus interval [2,22].",
+   "exposures[0].timing.sonication_duration_s": "FUS parameters were as follows: 515 kHz fundamental frequency, 50% DC, 1 kHz PRF, 0.2 millisecond TBD, 300 milliseconds sonication duration, and 2 seconds inter-stimulus interval [2,22].",
+   "exposures[0].device.manufacturer": "The FUS device consisted of a 515 kHz single-element spherically focused H-107MR transducer (Sonic Concept Inc.), two waveform generators (33220A and 33500B; Agilent), and a radiofrequency power amplifier (240 L; ENI Inc.).",
+   "exposures[0].device.model": "The FUS device consisted of a 515 kHz single-element spherically focused H-107MR transducer (Sonic Concept Inc.), two waveform generators (33220A and 33500B; Agilent), and a radiofrequency power amplifier (240 L; ENI Inc.).",
+   "n_sessions_per_subject": "The LFP was measured 10 minutes before FUS modulation, 10 minutes during modulation, and 10 minutes after modulation in each group."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Stated duty cycle (50%) and PRF (1 kHz) imply a 0.5 ms pulse duration, but the paper states TBD = 0.2 ms (20% duty cycle at that PRF); values are recorded as stated without correction."
+   },
+   {
+    "field": "sham_type",
+    "reason": "A 'control group (without FUS modulation)' is mentioned but the mechanism (e.g., transducer present/absent, powered off) is not described."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Abstract/methods state 6 mice were sonicated, but the methods also describe 4 groups of 3 mice (control + pre/during/post-treatment), which is not fully reconcilable with n=6; recorded as explicitly stated in the abstract/methods opening sentence."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ },
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Neuropixel local field potential recording (theta 4-8 Hz, gamma 30-50 Hz bands); c-fos immunohistochemistry",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Theta oscillation power increased significantly during and after FUS sonication compared with before; gamma oscillations were unchanged; cortical/hippocampal c-fos expression increased after FUS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Hippocampal FUS with mPFC LFP recording",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "right dorsal hippocampus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept Inc.",
+    "model": "H-107MR"
+   },
+   "fundamental_frequency_khz": 515,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "FUS parameters were 515 kHz fundamental frequency, 50% duty cycle, 1 kHz PRF, 0.2 ms tone-burst duration (TBD), 300 ms sonication duration, and 2 s inter-stimulus interval. LFP was measured 10 minutes before, 10 minutes during, and 10 minutes after FUS modulation in each group."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,216 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026tsuchiyagaito",
+ "doi": "10.1038/s41386-025-02252-7",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 21,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "autonomic_physiology",
+  "clinical_scale"
+ ],
+ "readout_other": "Resting-state fMRI seed-to-whole-brain connectivity (right thalamus seed); Brief State Rumination Inventory (BSRI); Positive and Negative Affect Schedule (PANAS-X); continuous ECG-derived heart rate variability (SDNN, LF/HF ratio); Columbia Suicide Severity Rating Scale and MADRS as safety/severity measures",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Active LIFU of the ALIC produced a large decrease ('functional disconnection') in resting-state connectivity between the right thalamus and reciprocally connected orbitofrontal/ventromedial prefrontal/cingulate cortices compared with sham, consistent with LIFU-induced suppression of axonal conduction via mechanosensitive K+ channels; active LIFU also blunted the sham-session increase in cardiac sympathovagal balance and increased positive affect (PANAS-X Joviality).",
+ "adverse_events": "none_observed",
+ "safety_notes": "There were no no focal neurological changes or any damage on clinical neuroimaging (data not shown). Participants also did not report adverse events when specifically questioned.",
+ "exposures": [
+  {
+   "label": "Active LIFU of right ALIC (0.5 MHz theta-burst pattern)",
+   "target": {
+    "terms": [
+     "internal_capsule"
+    ],
+    "label": "anterior limb of the internal capsule (ALIC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro (CTX-500 transducer)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 9.06,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.26,
+    "ispta_w_cm2": 0.22
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "A single 80-s train of 20-ms ultrasound bursts (0.5 MHz), repeated every 200 ms (400 bursts total, 10% duty cycle), delivered once to the individually tractography-defined right ALIC target per session; total free-field energy 9.06 W/cm2 ISPPA, corresponding to estimated tissue values of 2.26 W/cm2 ISPPA and 0.22 W/cm2 ISPTA assuming 75% attenuation from scalp and bone transmission."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-18"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-one outpatients with major depressive disorder and varying intensities of repetitive negative thinking (RNT) were enrolled.",
+   "n_sessions_per_subject": "Given that the intervention was a single application, whether and how these findings replicate with repeated LIFU administrations remain unknown.",
+   "exposures[0].fundamental_frequency_khz": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].free_field.isppa_w_cm2": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].in_situ.isppa_w_cm2": "These proposed stimulation parameters [37] result in estimated tissue values for $I _ { \\mathsf { S P P A } } { = } 2 . 2 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $\\bar { I } _ { \\mathsf { S P T A } } = 0 . 2 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ , considering 75% attenuation due to scalp and bone transmission [38].",
+   "exposures[0].in_situ.ispta_w_cm2": "These proposed stimulation parameters [37] result in estimated tissue values for $I _ { \\mathsf { S P P A } } { = } 2 . 2 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $\\bar { I } _ { \\mathsf { S P T A } } = 0 . 2 2 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ , considering 75% attenuation due to scalp and bone transmission [38].",
+   "exposures[0].timing.pulse_duration_ms": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].timing.duty_cycle_pct": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].timing.sonication_duration_s": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm<sup>2</sup> ISPPA.",
+   "exposures[0].device.manufacturer": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm 2 ISPPA.",
+   "exposures[0].device.model": "We used a NeuroFUS Pro device (SonicConcepts Inc), using an 80-s train of 20-ms bursts of ultrasound (0.5 MHz with a CTX-500 transducer), repeated every 200 milliseconds (for a total of 400 bursts), which represents a 10% duty cycle, and a total energy of 9.06 W/cm 2 ISPPA."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Count of 2 sessions (one active, one sham) is inferred from the cross-over design description rather than a stated integer."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF (5 Hz) is derived from the stated repetition period ('repeated every 200 milliseconds'); not stated as a Hz value directly in this paper (contrast with the cited source protocol, Zeng et al. 2022, which does state 'PRF of 5Hz' explicitly for the same pattern)."
+   },
+   {
+    "field": "conditions",
+    "reason": "Sample includes substantial psychiatric comorbidity (generalized anxiety disorder 33%, social anxiety disorder 43%, panic disorder 33%, PTSD 24%); primary enrollment diagnosis and target symptom was major depressive disorder, so conditions is recorded as depression only."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Classified as 'both': fMRI/BSRI/PANAS-X were measured offline (before/after sonication) while continuous ECG for heart-rate-variability analysis spanned before, during, and after the 80-s sonication."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper does not describe any specific auditory-masking or confound-control procedure for the LIFU sonication."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Single active exposure (right ALIC, 0.5 MHz theta-burst pattern identical to Zeng et al. 2022's tbTUS protocol); sham (sound-absorbing Sorbothane pad on the transducer) is captured via sham_type, not as a separate exposure.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

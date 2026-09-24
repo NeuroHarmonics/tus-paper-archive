@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024wangc",
+ "doi": "10.1109/tnsre.2024.3378976",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Sucrose preference test; tail suspension test; forced swim test; novelty-suppressed feeding test; open field test; elevated plus maze; social interaction test; in vivo fiber photometry dopamine sensor (GRAB-DA); c-Fos and tyrosine hydroxylase immunofluorescence; hematoxylin-eosin staining",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS targeting VTA increased c-Fos+ neurons (>4-fold vs sham), increased mPFC dopamine release during stimulation and during reward/struggle behavior, protected VTA dopaminergic (TH+) neurons, and rescued CRS-induced anhedonia and despair-like behavior relative to sham-stimulated CRS mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS targeting ventral tegmental area (VTA)",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "ventral tegmental area (VTA)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V318"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.15
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.09
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "150-cycle tone bursts with a 1.6-s stimulation interval; the transducer was affixed above the mouse head at 30 degrees to the skull surface targeting the VTA; FUS was performed for 15 min each day for 10 days under isoflurane anesthesia."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 45.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5",
+   "date": "2026-09-21"
+  },
+  "source_quotes": {
+   "n_subjects": "(A) Paradigms of CRS and US exposure of mice. (B) An illustration of the ultrasound temporal profile used in mice. (C) One transverse (X–Y plane) and sagittal (X–Z plane) scans of ultrasound pressure distribution. (D) Representative images of mouse VTA regions treated with or without LIFUS, stained for c-Fos expression. All scale bars in this panel represent 100 um. (E) Counts of nuclear c-Fos per slice imaged. N for LIFUS groups = 6 slices from 3 mice and for Sham-LIFUS groups = 6 slices from 3 mice. (F) The z-score of sucrose preference index of the three-group mice. (G) The total drinking consumption of mice during SPT. (H) Immobility time of the three-group mice in the TST. (I) Immobility time of the three-group mice in the FST. (J) The z-score of latency to feed in the NFT. (K) The weight changes of the three-group mice during the whole experiment. (L) In-take food consumption in the home cage for 5 minutes. n = 14 (control [CON]); n = 14 (chronic restraint stress [CRS]); n = 16 (restraint stress with ultrasound stimulation [CRS+US]). \\* p < $0 . 0 5 ; \\mathrm { ~ } ^ { * * } \\mathrm { ~ p } < 0 . 0 1 ; \\mathrm { ~ } ^ { * * * } \\mathrm { ~ p } < 0 . 0 0 1$",
+   "n_sessions_per_subject": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "randomised": "Put the mouse into a 50-ml centrifuge tube, which owned several ventilators distributed on the bottle body. Animals can keep free breathing, but cannot move a step. The mouse is bound for 4 hours every day during the waking time to ensure that each mouse is bound for the same time. While the CRS group mice were restrained, the CON group mice were deprived of food and water. After a 4-week continuous restraint, the modeling mice were randomly divided into the non-FUS group (CRS group) and the FUS group (CRS+FUS group).",
+   "exposures[0].free_field.ispta_w_cm2": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "exposures[0].in_situ.ispta_w_cm2": "To evaluate the transcranial attenuation of ultra-sound, we fixed the collimator with a fresh mouse skull covered with dental cement at the same angle as that for real stimulation as described above. A signal was generated by a 150-cycle pulse of 0.5 MHz ultrasound. The acoustic intensity field was measured in a degassed water tank by a calibrated hydrophone (NH4000, Precision acoustics, Dorchester, United Kingdom). To determine the output acoustic distribution on X-Y and X-Z planes, the hydrophone was placed at the focal zone of ultrasound and was scanned every 1 mm. The calculation showed the decay ratio was about 40%, thus the $\\mathrm { { I _ { s p t a } } }$ delivering to the targeted region-VTA was around 90 mW/cm<sup>2</sup>.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator. The FUS parameters applied to chronic stimulation were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 150 cycles, 0.3-ms tone burst duration, 0.2-s sonication duration, 1.6-s stimulation interval, and 150 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ spatial peak temporal average intensity (Ispta). A custom-made, cone-shaped plastic housing was combined with the ultrasound transducer and filled with degassed water for transmitting acoustic waves. During the FUS stimulation, mice were anesthetized by isoflurane and positioned on a stereotaxic apparatus. The ultrasound transducer was affixed above the mouse head at an angle of 30°to the surface of the skull (60°to the coronal plane) so that the focal zone of the transducer targeted the VTA region. The FUS procedure was performed for 15 min each day for 10 days. Mice in CON and CRS groups were anesthetized by isoflurane and experienced sham stimulation. They were applied with ultrasound gel over the scalp but placed 5 cm away from the ultrasound transducer so that there was no ultrasound stimulation in these sham groups.",
+   "exposures[0].device.manufacturer": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator.",
+   "exposures[0].device.model": "The ultrasound stimulation system consists of two function generators (DG4162 and DG822, RIGOL, China), a customdesigned radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper reports pulse repetition frequency (1.5 kHz) and tone-burst duration (0.3 ms) separately but never states a duty cycle percentage; not computed per protocol."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice were anesthetized with isoflurane during FUS delivery but awake during behavioral testing, hence coded as both."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}
