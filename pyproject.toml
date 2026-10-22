@@ -10,3 +10,7 @@ dependencies = [
 
 [tool.ruff]
 line-length = 100
+
+[tool.uv]
+# eMudhra CA key compromise (Oct 2026): older certifi trusts the emSign ECC Root CA - G3
+constraint-dependencies = ["certifi>=2026.10.19"]
