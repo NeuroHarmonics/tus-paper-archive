@@ -132,6 +132,7 @@ def main() -> int:
     n_flags = 0
     # Journals, with spellings merged ("PLoS ONE", "The Journal of ..."); preprints have none.
     journals, journal_names = Counter(), defaultdict(Counter)
+    n_human_papers = 0
     # Subjects summed by unit over papers stating a number; a swept/list n is summed. Reported alongside
     # how many papers state no n, so the total is never read as complete.
     subjects = {"participant": 0, "animal": 0, "preparation": 0, "culture": 0}
@@ -150,6 +151,7 @@ def main() -> int:
             "doi": rec["doi"], "record_class": man.get("record_class"),
         }
         per_year[man.get("year")] += 1
+        n_human_papers += bool({"human_healthy", "human_patient"} & set(rec["model_system"]))
         if biblio["journal"] and not PREPRINT_DOI.match(rec["doi"]):
             jk = re.sub(r"^the ", "", biblio["journal"].casefold()).replace("&", "and")
             journals[jk] += 1
@@ -244,7 +246,8 @@ def main() -> int:
         "generated": generated, "version": version, "schema_version": "1.0", "n_papers": len(files), "n_exposures": len(rows), "rows": rows,
     }, ensure_ascii=False) + "\n")
     (out / "stats.json").write_text(json.dumps({
-        "generated": generated, "version": version, "n_papers": len(files), "n_exposures": len(rows), "n_flags": n_flags,
+        "generated": generated, "version": version, "n_papers": len(files), "n_human_papers": n_human_papers,
+        "n_exposures": len(rows), "n_flags": n_flags,
         "subjects": {"by_unit": subjects, "papers_by_unit": dict(subjects_papers), "papers_not_reported": subjects_not_reported},
         "papers_per_year": sorted(((y, n) for y, n in per_year.items() if y), key=lambda x: x[0]),
         "reportability": {leaf: {"not_reported": nr, "applicable": ap_, "share_reported": round(1 - nr / ap_, 3) if ap_ else None}
