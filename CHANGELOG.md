@@ -4,7 +4,7 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 
 ## 2026.10.0 (October 2026)
 
-833 papers (502 in v2026.09.0). 168 new, 180 historical, 0 corrected, 17 removed, 2874 candidates screened.
+833 papers (502 in v2026.09.0). 164 new, 179 historical, 8 preprints replaced by their published version, 1 renamed, 0 corrected, 8 removed, 2874 candidates screened.
 
 **New papers**
 
@@ -64,7 +64,6 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - Laugesen et al. (2026). No group-level changes in corticospinal excitability following low-intensity theta-burst ultrasound stimulation of the primary motor hand area. https://doi.org/10.64898/2026.01.06.697894
 - Bano et al. (2026). Noninvasive Focused Ultrasound as a Safe Modulator of Calcium-Dependent Neurochemical Signalling in Primary Cortical Cultures, Neurochemical Research. https://doi.org/10.1007/s11064-026-04676-z
 - Tsunoda et al. (2026). Noninvasive Suppression of Responses to Threat Using Focused Ultrasonic Waves, The Journal of Neuroscience. https://doi.org/10.1523/jneurosci.0776-25.2025
-- Huang et al. (2026). Parameter specific modulation of neuronal firing and extracellular action potential dynamics by transcranial focused ultrasound stimulation in rat motor cortex, Brain Stimulation. https://doi.org/10.1016/j.brs.2026.103145
 - Zhang et al. (2026). Parameter-Specific Effects of Low-Intensity Transcranial Focused Ultrasound Stimulation on Depression-Like Behaviors in a CUMS Mouse Model, Neuropsychiatric Disease and Treatment. https://doi.org/10.2147/ndt.s586583
 - Lea-Banks et al. (2026). Parametric optimization of transcranial focused ultrasound neuromodulation of the periaqueductal grey for blood pressure reduction, Brain Stimulation. https://doi.org/10.1016/j.brs.2026.103146
 - Xie et al. (2026). Phase-locked closed-loop ultrasound stimulation of hippocampal slow gamma modulates CA3-CA1 coherence and improves spatial memory in APP/PS1 mice, Journal of Neural Engineering. https://doi.org/10.1088/1741-2552/aeb075
@@ -96,7 +95,6 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - Agostino et al. (2026). Transcranial ultrasound stimulation of the medial frontal cortex transiently improves performance by modulating conflict monitoring dynamics. https://doi.org/10.64898/2026.08.06.743260
 - Qi et al. (2026). Transcranial ultrasound stimulation of the right globus pallidus interna in schizophrenia: A randomized, sham-controlled pilot study, npj Acoustics. https://doi.org/10.1038/s44384-026-00076-3
 - Fairbanks et al. (2026). Transcranial ultrasound stimulation of the subthalamic nucleus modulates cognitive function in humans, Scientific Reports. https://doi.org/10.1038/s41598-026-65207-y
-- Falcon-Caro et al. (2026). Transcutaneous Auricular Vagus Nerve Stimulation for Working Memory Enhancement: A Comparative Study of Electrical and Ultrasound Stimulation, Neuromodulation: Technology at the Neural Interface. https://doi.org/10.1016/j.neurom.2026.08.004
 - Zhang et al. (2026). Ultrasound enhances glymphatic-associated solute transport via Piezo1-related mechanotransduction in 5xFAD mice, Journal of Cerebral Blood Flow & Metabolism. https://doi.org/10.1177/0271678x261470064
 - Grewal et al. (2026). Ultrasound modulates microglial activity and reduces neuroinflammation in a parameter-dependent manner, npj Acoustics. https://doi.org/10.1038/s44384-026-00047-8
 - Koutsoumpari et al. (2026). Ultrasound neuromodulation reveals distinct roles of the dorsal anterior cingulate cortex and anterior insula in learning, PLOS Biology. https://doi.org/10.1371/journal.pbio.3003767
@@ -105,7 +103,6 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - He et al. (2025). A clinical case report on transcranial low-intensity focused ultrasound neuromodulation for central post-stroke pain, Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2025.1686623
 - Fong et al. (2025). A double-blind replication attempt of offline 5Hz-rTUS-induced corticospinal excitability, Imaging Neuroscience. https://doi.org/10.1162/imag.a.1046
 - Nestor et al. (2025). A pilot safety and tolerability study of scanning ultrasound as a neuromodulation therapy in Alzheimer’s disease, Brain Communications. https://doi.org/10.1093/braincomms/fcaf445
-- Yang et al. (2025). A region-specific brain dysfunction underlies cognitive impairment in long COVID brain fog, arXiv. https://doi.org/10.48550/arxiv.2511.14188
 - Pu et al. (2025). A wearable spiral ultrasound patch for focused ultrasound peripheral neuromodulation of diabetic neuropathic pain, Cell Reports Physical Science. https://doi.org/10.1016/j.xcrp.2025.102684
 - Wang et al. (2025). An Exploration of the Electrocorticogram Signatures Evoked by Ultrasound Thalamus Stimulation Under Isoflurane Anesthesia in Rats, IEEE Transactions on Biomedical Engineering. https://doi.org/10.1109/tbme.2025.3555648
 - Kim et al. (2025). Analgesic effect of simultaneously targeting multiple pain processing brain circuits in an aged humanized mouse model of chronic pain by transcranial focused ultrasound, APL Bioengineering. https://doi.org/10.1063/5.0236108
@@ -136,7 +133,6 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - Pang et al. (2025). Low-Intensity Transcranial Ultrasound Stimulation Inhibits Epileptic Seizures in Motor Cortex by Modulating Hippocampus Neural Activity, IEEE Transactions on Neural Systems and Rehabilitation Engineering. https://doi.org/10.1109/tnsre.2025.3525516
 - Yang et al. (2025). Low-Intensity Transcranial Ultrasound Stimulation Modulates the Excitability of Motor Cortical Neural Activity by Stimulating the Cerebellum, IEEE Transactions on Neural Systems and Rehabilitation Engineering. https://doi.org/10.1109/tnsre.2025.3601110
 - Song et al. (2025). Low-Intensity Transcranial Ultrasound Stimulation Promotes Recovery in Blood Flow and Movement Following Prolonged Anesthesia, IEEE Transactions on Neural Systems and Rehabilitation Engineering. https://doi.org/10.1109/tnsre.2025.3575456
-- Badawe et al. (2025). Low-Intensity ultrasound for controlled excitation and suppression in rat sciatic nerve, Scientific Reports. https://doi.org/10.1038/s41598-025-16407-5
 - Luo et al. (2025). Low-intensity focused ultrasound stimulation on the hippocampus improved CSDS-induced neuroinflammation through the Notch1 signaling pathway, Journal of Affective Disorders. https://doi.org/10.1016/j.jad.2025.119793
 - Jenkins et al. (2025). Low-intensity transcranial focused ultrasound of the amygdala modulates neural activation during emotion processing, Frontiers in Neuroimaging. https://doi.org/10.3389/fnimg.2025.1580623
 - Meng et al. (2025). Low-intensity transcranial ultrasound stimulation promotes the extinction of fear memory through the BDNF-TrkB signaling pathway, NeuroImage. https://doi.org/10.1016/j.neuroimage.2025.121441
@@ -207,7 +203,6 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - Acquaticci et al. (2019). A polydimethylsiloxane-based axicon lens for focused ultrasonic brain stimulation techniques, Acoustical Science and Technology. https://doi.org/10.1250/ast.40.116
 - Cui et al. (2019). Enhanced neuronal activity in mouse motor cortex with microbubbles’ oscillations by transcranial focused ultrasound stimulation, Ultrasonics Sonochemistry. https://doi.org/10.1016/j.ultsonch.2019.104745
 - Deveci et al. (2019). The effects of focused ultrasound pulsation of nucleus accumbens in opioid-dependent rats, Psychiatry and Clinical Psychopharmacology. https://doi.org/10.1080/24750573.2019.1631942
-- Fouragnan et al. (2019). The macaque anterior cingulate cortex translates counterfactual choice value into actual behavioral change, Nature Neuroscience. https://doi.org/10.1038/s41593-019-0375-6
 - Jin et al. (2019). Development of multi-layer lateral-mode ultrasound needle transducer for brain stimulation in mice, IEEE Transactions on Biomedical Engineering. https://doi.org/10.1109/tbme.2019.2953295
 - Kim et al. (2019). Non-invasive measurement of hemodynamic change during 8 MHz transcranial focused ultrasound stimulation using near-infrared spectroscopy, BMC Neuroscience. https://doi.org/10.1186/s12868-019-0493-9
 - Li et al. (2019). Protective effects of low-intensity pulsed ultrasound on aluminum overload-induced cerebral damage through epigenetic regulation of brain-derived neurotrophic factor expression, Bioscience Reports. https://doi.org/10.1042/bsr20181185
@@ -360,23 +355,29 @@ Releases are calendar-versioned, YYYY.MM.N, and tagged vYYYY.MM.N. Each entry li
 - Zhao et al. (2024). Transcranial Ultrasound Stimulation Improves Memory Performance of Parkinsonian Mice, IEEE Transactions on Neural Systems and Rehabilitation Engineering. https://doi.org/10.1109/tnsre.2024.3378109
 - Zhou et al. (2024). Holographic Ultrasound Modulates Neural Activity in a 1-Methyl-4-Phenyl-1,2,3,6-Tetrahydropyridine-Induced Mouse Model of Parkinson’s Disease, Research. https://doi.org/10.34133/research.0516
 
+**Preprints replaced by their published version**
+
+- Fouragnan et al. (2018). The macaque anterior cingulate cortex translates counterfactual choice value into actual behavioral change. https://doi.org/10.1101/336917; now held as 2019fouragnan (https://doi.org/10.1038/s41593-019-0375-6)
+- Cotero et al. (2021). Focused Ultrasound Modulation of Hepatic Neural Plexus Restores Glucose Homeostasis in Diabetes. https://doi.org/10.1101/2021.04.16.440207; now held as 2022cotero (https://doi.org/10.1038/s41551-022-00870-w)
+- Riis et al. (2022). Controlled delivery of ultrasound through the head for effective and safe therapies of the brain. https://doi.org/10.1101/2022.12.16.520788; now held as 2024riisa (https://doi.org/10.1038/s44172-023-00146-4)
+- Strohman et al. (2023). Non-invasive modulation of the human dorsal anterior cingulate attenuates acute pain perception and homeostatic cardiovascular responses. https://doi.org/10.1101/2023.06.30.547251; now held as 2024strohmanb (https://doi.org/10.1523/jneurosci.1011-23.2023)
+- Badawe et al. (2024). Modulating Peripheral Neural Activity: Prolonged Low-Intensity Ultrasound for Controlled Excitation and Suppression in Rat Sciatic Nerve. https://doi.org/10.1101/2024.12.26.630403; now held as 2025badawe (https://doi.org/10.1038/s41598-025-16407-5)
+- Brunet et al. (2024). Single cell RNA-sequencing reveals GINIP-expressing neurons as the main targets of focused ultrasound. https://doi.org/10.1101/2024.07.17.604026; now held as 2026brunet (https://doi.org/10.1038/s41598-025-34579-y)
+- Falcon-Caro et al. (2026). Transcutaneous auricular Vagus nerve stimulation for working memory enhancement: A comparative study of electrical and ultrasound stimulation. https://doi.org/10.64898/2026.03.06.710106; now held as 2026falconcaroa (https://doi.org/10.1016/j.neurom.2026.08.004)
+- Huang et al. (2026). Parameter Specific Modulation of Neuronal Firing and Extracellular Action Potential Dynamics by Transcranial Focused Ultrasound Stimulation in Rat Motor Cortex. https://doi.org/10.2139/ssrn.6360139; now held as 2026huangb (https://doi.org/10.1016/j.brs.2026.103145)
+
+**Citekeys changed**
+
+- 2025anon is now 2025yang
+
 **Removed after a scope ruling**
 
 - Wu & Jen (2006). GABA-mediated echo duration selectivity of inferior collicular neurons of Eptesicus fuscus, determined with single pulses and pulse–echo pairs, Journal of Comparative Physiology A. https://doi.org/10.1007/s00359-006-0133-6
 - Du et al. (2007). Ultrasonic evoked responses in rat cochlear nucleus, Brain Research. https://doi.org/10.1016/j.brainres.2007.07.049
-- Fouragnan et al. (2018). The macaque anterior cingulate cortex translates counterfactual choice value into actual behavioral change. https://doi.org/10.1101/336917
 - Lacroix & Ozkan (2019). Multiplexing Focused Ultrasound Stimulation with Fluorescence Microscopy, Journal of Visualized Experiments. https://doi.org/10.3791/58781
-- Cotero et al. (2021). Focused Ultrasound Modulation of Hepatic Neural Plexus Restores Glucose Homeostasis in Diabetes. https://doi.org/10.1101/2021.04.16.440207
-- Riis et al. (2022). Controlled delivery of ultrasound through the head for effective and safe therapies of the brain. https://doi.org/10.1101/2022.12.16.520788
-- Strohman et al. (2023). Non-invasive modulation of the human dorsal anterior cingulate attenuates acute pain perception and homeostatic cardiovascular responses. https://doi.org/10.1101/2023.06.30.547251
-- Badawe et al. (2024). Modulating Peripheral Neural Activity: Prolonged Low-Intensity Ultrasound for Controlled Excitation and Suppression in Rat Sciatic Nerve. https://doi.org/10.1101/2024.12.26.630403
-- Brunet et al. (2024). Single cell RNA-sequencing reveals GINIP-expressing neurons as the main targets of focused ultrasound. https://doi.org/10.1101/2024.07.17.604026
 - Horii et al. (2024). The cochlear hook region detects harmonics beyond the canonical hearing range. https://doi.org/10.1101/2024.04.14.589450
 - Ren et al. (2024). Transcriptomic Alterations in the Hippocampus and Prefrontal Cortex of Chronic Unpredictable Stress Rats Induced by Low-Intensity Pulsed Ultrasound.. https://doi.org/10.21203/rs.3.rs-3775894/v1
--  (2025). A region-specific brain dysfunction underlies cognitive impairment in long COVID brain fog, arXiv (Cornell University). https://doi.org/10.48550/arxiv.2511.14188
 - Cooper et al. (2026). Rapid cognitive-emotional responses to ultrasonic neuromodulation of anterior cingulate cortex in pain and depression. https://doi.org/10.21203/rs.3.rs-10503490/v1
-- Falcon-Caro et al. (2026). Transcutaneous auricular Vagus nerve stimulation for working memory enhancement: A comparative study of electrical and ultrasound stimulation. https://doi.org/10.64898/2026.03.06.710106
-- Huang et al. (2026). Parameter Specific Modulation of Neuronal Firing and Extracellular Action Potential Dynamics by Transcranial Focused Ultrasound Stimulation in Rat Motor Cortex. https://doi.org/10.2139/ssrn.6360139
 - Legon et al. (2026). Causal Modulation of Brain–Body Habituation Dynamics Implicates Salience Network Mechanisms in Anxiety. https://doi.org/10.64898/2026.01.05.26343461
 - Webler et al. (2026). Focal brain stimulation sites that modify autonomic arousal map to a convergent brain circuit and potential therapeutic target. https://doi.org/10.64898/2026.01.08.698446
 

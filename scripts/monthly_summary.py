@@ -7,6 +7,8 @@ latest release tag and HEAD) and reports:
   new papers        added to the manifest, published in the release year or the year before
   historical papers added to the manifest, published earlier
   corrected records data/papers files that exist at both refs and differ outside `derived`
+  merged preprints  dropped from the manifest because a held published version absorbed them
+  renamed           still held under a new citekey (an identity correction)
   removed papers    dropped from the manifest (scope rulings)
   screened          screening verdicts added
 
@@ -69,7 +71,24 @@ def collect(since: str, until: str, new_from_year: int) -> dict:
     man_a = (show_json(since, "data/manifest.json") or {}).get("papers", {})
     man_b = (show_json(until, "data/manifest.json") or {}).get("papers", {})
     added = sorted(set(man_b) - set(man_a))
-    removed = sorted(set(man_a) - set(man_b))
+    gone = sorted(set(man_a) - set(man_b))
+    # A record that leaves the manifest is not necessarily removed: a preprint merged into its
+    # published version and a record whose citekey changed are both still held.
+    held_b = {(p.get("doi") or "").lower(): ck for ck, p in man_b.items()}
+    preprint_of = {o["doi"].lower(): ck for ck, p in man_b.items()
+                   for o in [p.get("preprint") or {}] + (p.get("other_preprints") or []) if o.get("doi")}
+    merged, renamed, removed = [], [], []
+    for ck in gone:
+        d = (man_a[ck].get("doi") or "").lower()
+        if d in held_b:
+            renamed.append((ck, held_b[d]))
+        elif d in preprint_of:
+            merged.append((man_a[ck], preprint_of[d]))
+        else:
+            removed.append(man_a[ck])
+    # A published version that absorbed a held preprint is not a new paper.
+    absorbed = {ck for _, ck in merged} | {ck for _, ck in renamed}
+    added = [c for c in added if c not in absorbed]
     new = [man_b[c] for c in added if (man_b[c].get("year") or 0) >= new_from_year]
     historical = [man_b[c] for c in added if (man_b[c].get("year") or 0) < new_from_year]
 
@@ -85,7 +104,8 @@ def collect(since: str, until: str, new_from_year: int) -> dict:
 
     return {
         "since": since, "until": until,
-        "new": new, "historical": historical, "removed": [man_a[c] for c in removed], "corrected": corrected,
+        "new": new, "historical": historical, "merged": [(p, man_b[ck]) for p, ck in merged],
+        "renamed": renamed, "removed": removed, "corrected": corrected,
         "n_papers": len(man_b), "n_papers_before": len(man_a),
         "screened": max(0, count_verdicts(until) - count_verdicts(since)),
     }
@@ -98,11 +118,16 @@ def line_for(p: dict) -> str:
 
 def render_markdown(s: dict, version: str, month: str) -> str:
     out = [f"## {version} ({month})", ""]
-    out.append(f"{s['n_papers']} papers ({s['n_papers_before']} in {s['since']}). {len(s['new'])} new, {len(s['historical'])} historical, {len(s['corrected'])} corrected, {len(s['removed'])} removed, {s['screened']} candidates screened.")
+    out.append(f"{s['n_papers']} papers ({s['n_papers_before']} in {s['since']}). {len(s['new'])} new, {len(s['historical'])} historical, {len(s['merged'])} preprints replaced by their published version, {len(s['renamed'])} renamed, {len(s['corrected'])} corrected, {len(s['removed'])} removed, {s['screened']} candidates screened.")
     if s["new"]:
         out += ["", "**New papers**", ""] + [f"- {line_for(p)}" for p in sorted(s["new"], key=lambda p: (-(p.get("year") or 0), p.get("title") or ""))]
     if s["historical"]:
         out += ["", "**Historical papers added**", ""] + [f"- {line_for(p)}" for p in sorted(s["historical"], key=lambda p: (p.get("year") or 0))]
+    if s["merged"]:
+        out += ["", "**Preprints replaced by their published version**", ""] + [
+            f"- {line_for(pre)}; now held as {vor['citekey']} (https://doi.org/{vor.get('doi')})" for pre, vor in s["merged"]]
+    if s["renamed"]:
+        out += ["", "**Citekeys changed**", ""] + [f"- {a} is now {b}" for a, b in s["renamed"]]
     if s["removed"]:
         out += ["", "**Removed after a scope ruling**", ""] + [f"- {line_for(p)}" for p in s["removed"]]
     if s["corrected"]:
