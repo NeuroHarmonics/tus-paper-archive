@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025song",
+ "doi": "10.1007/s11517-025-03290-5",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 30,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "local field potential in S1 (relative LFP power); laser speckle contrast imaging (relative CBF)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Relative LFP power rose after TUS in the hyperoxia and normoxia groups (not significant for group interaction); rCBF fell in hypoxia and rose in hyperoxia and normoxia. Baseline neural activity was positively related to the neural response and baseline CBF and LFP were negatively related to the CBF response.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS at S1 under hypoxia, hyperoxia and normoxia",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "S1"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V318-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 8.69,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "5 min of stimulation consisting of 1-s sonications (tone burst duration 0.4 ms, PRF 1.5 kHz) with an interstimulus interval of 4 s, delivered through a 3-mm plexiglass collimator."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Adult male Sprague-Dwaley rats $( n = 3 0 , 2 9 0 { - } 3 6 0 \\mathrm { g }$ , SLAC Laboratory Animal Co.Ltd., Shanghai, China) were equally and randomly assigned to the three groups: Hypoxia, Hyperoxia, and Normoxia",
+   "exposures[0].fundamental_frequency_khz": "The transducer was operated at 500 kHz frequency",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The rats received 5 min ultrasound stimulation with the following parameters (Fig. 1c): frequency = 500 kHz, interstimulus interval $( \\mathrm { I S I } ) ~ = ~ 4 ~ \\mathrm { s } ,$ spatial-peak pulse-average intensity $\\operatorname { ( I _ { S P P A } ) } = 8 . 6 9 \\ W / c m ^ { 2 }$ , pulse repeated frequency $( \\mathrm { P R F } ) = 1 . 5$ kHz, sonication duration $( \\mathrm { S D } ) = 1 \\ \\mathrm { s } ,$ , and tone burst duration (TBD) = 0.4 ms",
+   "exposures[0].timing.pulse_duration_ms": "The rats received 5 min ultrasound stimulation with the following parameters (Fig. 1c): frequency = 500 kHz, interstimulus interval $( \\mathrm { I S I } ) ~ = ~ 4 ~ \\mathrm { s } ,$ spatial-peak pulse-average intensity $\\operatorname { ( I _ { S P P A } ) } = 8 . 6 9 \\ W / c m ^ { 2 }$ , pulse repeated frequency $( \\mathrm { P R F } ) = 1 . 5$ kHz, sonication duration $( \\mathrm { S D } ) = 1 \\ \\mathrm { s } ,$ , and tone burst duration (TBD) = 0.4 ms",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The rats received 5 min ultrasound stimulation with the following parameters (Fig. 1c): frequency = 500 kHz, interstimulus interval $( \\mathrm { I S I } ) ~ = ~ 4 ~ \\mathrm { s } ,$ spatial-peak pulse-average intensity $\\operatorname { ( I _ { S P P A } ) } = 8 . 6 9 \\ W / c m ^ { 2 }$ , pulse repeated frequency $( \\mathrm { P R F } ) = 1 . 5$ kHz, sonication duration $( \\mathrm { S D } ) = 1 \\ \\mathrm { s } ,$ , and tone burst duration (TBD) = 0.4 ms",
+   "exposures[0].timing.sonication_duration_s": "The rats received 5 min ultrasound stimulation with the following parameters (Fig. 1c): frequency = 500 kHz, interstimulus interval $( \\mathrm { I S I } ) ~ = ~ 4 ~ \\mathrm { s } ,$ spatial-peak pulse-average intensity $\\operatorname { ( I _ { S P P A } ) } = 8 . 6 9 \\ W / c m ^ { 2 }$ , pulse repeated frequency $( \\mathrm { P R F } ) = 1 . 5$ kHz, sonication duration $( \\mathrm { S D } ) = 1 \\ \\mathrm { s } ,$ , and tone burst duration (TBD) = 0.4 ms",
+   "exposures[0].device.model": "The ultrasound stimulation module included an immersion-type focused ultrasound transducer (V318-SU, Olympus NDT, Waltham, USA) driven by a customized signal generator",
+   "exposures[0].device.manufacturer": "The ultrasound stimulation module included an immersion-type focused ultrasound transducer (V318-SU, Olympus NDT, Waltham, USA) driven by a customized signal generator",
+   "n_sessions_per_subject": "Immediately following 5 min TUS at S1 regions, a third 20-s block of LFP-LSCI recording (Post-TUS) was operated."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "30 rats enrolled; 6 were used in a preliminary experiment and 24 (8 per group) in the formal experiment."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "A single 5-min TUS session per rat is implied by the protocol but the number of sessions is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa given without stating the medium; a hydrophone measured the field with the collimator attached."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is mentioned but its value is not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: TBD 0.4 ms taken as the pulse; sonication duration (SD) 1 s is the train; 'ISI = 4 s' interpretation as gap between sonications is assumed from the protocol."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Nested structure: 1-s sonications repeated across a 5-min session with a 4-s ISI."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Hypoxia, hyperoxia and normoxia were used to change baseline state; all three groups received the same TUS.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

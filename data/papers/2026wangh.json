@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wangh",
+ "doi": "10.1109/tnsre.2026.3664390",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8,
+  6,
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "hippocampal LFP (PLV, coherence, theta-gamma PAC); Y-maze spontaneous alternation; novel object recognition; Morris water maze",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "5 Hz sinusoidal AM-TUS enhanced theta PLV, coherence and theta-gamma PAC and improved spatial learning and memory after 14 days; 5 Hz pulsed AM-TUS had negligible effects on network measures; 40 and 80 Hz were less effective.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Sinusoidal and pulsed AM-TUS, hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "mouse hippocampus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Institute of Acoustics, Chinese Academy of Sciences",
+    "model": "0.5M-D20-F20"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 380,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.3
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 1,
+    "protocol_description": "Base sequence of 500 kHz carrier, 1 kHz PRF and 40% duty cycle, amplitude-modulated by a low-frequency sine (envelope 5, 40 or 80 Hz) or gated by a 5 Hz square wave with 64% duty cycle (pulsed AM-TUS). 150 sessions each with 1 s duration and 3 s interval (about 10 min per hemisphere daily for 14 days in the behavioural cohort); 5 Hz, 40 Hz and 80 Hz envelope protocols separated by 7-day washouts in the electrophysiology cohort."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-four mice were used for electrophysiological experiments and randomly assigned to three groups (n = 8 per group): sham, sinusoidal AM-TUS, and pulsed AM-TUS.",
+   "n_sessions_per_subject": "the left and right hippocampi were stimulated for 10 minutes each per day for 14 consecutive days",
+   "exposures[0].fundamental_frequency_khz": "with a central frequency of 500 kHz",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "a basic ultrasound sequence of 500 kHz fundamental frequency, 1 kHz pulse repetition frequency, and 40% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "a basic ultrasound sequence of 500 kHz fundamental frequency, 1 kHz pulse repetition frequency, and 40% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "Both the sinusoidal AM-TUS and pulsed AM-TUS sequences consisted of 150 sessions, each with a 3-s interval and 1-s duration (Fig. 1B).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "We herein applied a spatial-peak temporal-average intensity of 300 mW/cm",
+   "exposures[0].unspecified_domain.pressure_kpa": "corresponding to a peak acoustic pressure of 0.38 MPa for sinusoidal AM-TUS",
+   "exposures[0].device.manufacturer": "a focused ultrasound transducer (0.5M-D20-F20, Institute of Acoustics, Chinese Academy of Sciences, China)",
+   "exposures[0].device.model": "a focused ultrasound transducer (0.5M-D20-F20, Institute of Acoustics, Chinese Academy of Sciences, China)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Two separate cohorts of 24 mice each (electrophysiology and behaviour); sham mice are included in the 48."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "14 days applies to the behavioural cohort; the electrophysiology cohort received single sessions per protocol (5, 40, 80 Hz) separated by 7-day washouts."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; only 1 kHz PRF and 40% duty cycle of the base sequence are given."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "40% is the base-sequence duty cycle before low-frequency amplitude modulation; pulsed AM-TUS adds a further 64% gating."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity and pressure are given without stating water or in situ; Ispta 300 mW/cm2 recorded as 0.3 W/cm2. Pressure is stated for sinusoidal AM-TUS."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Amplitude-modulated carrier, so other_patterned."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Envelope frequencies 5, 40 and 80 Hz are listed in the protocol description, not as exposures."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

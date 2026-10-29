@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026monti",
+ "doi": "10.64898/2026.05.26.26354167",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "disorders_of_consciousness",
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "eeg_meg",
+  "pet"
+ ],
+ "readout_other": "CRS-R; resting EEG delta/beta ratio; 18F-FDG PET SUV; polysomnography (Dreem 2 headband); Disability Rating Scale",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Maximum CRS-R total score and EEG delta/beta ratio increased after tFUS, and glucose metabolism decreased bilaterally in thalamus and frontal, temporal and parietal cortices; authors describe a convergent inhibitory signature.",
+ "adverse_events": "observed",
+ "safety_notes": "No severe adverse events; two events during the stay (urinary tract infection, hypotension) were judged unrelated to the intervention by an independent medical monitor.",
+ "exposures": [
+  {
+   "label": "Left central thalamus tFUS",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "left central thalamus"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix Corp",
+    "model": "BX Pulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.72,
+    "ispta_w_cm2": 14.4
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Sonication was administered in 20 blocks of 30 s, with 30 s rest intervals in between, for a total of 10 minutes of (non-continuous) cumulative sonication, at a PRF of 100 Hz and a pulse width of 0.5 ms. Single session; transducers with 55 mm or 65 mm focal depth chosen per patient."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "The average $\\mathrm { C R S - R } _ { \\operatorname* { m a x } }$ across the full enrolled population at baseline (N=16) was 10.25 (SD = 2.49).",
+   "n_sessions_per_subject": "Methods Sixteen adult patients (44% Female; Age, M=37.81, SD=15.97) with a chronic DOC (Time Since Injury, M=3.39, SD=1.94 years) secondary to severe brain injury (TBI 44%, non-TBI 56%) underwent a 10-day inpatient, longitudinal, single-arm, open-label protocol. tFUS was delivered in a single session targeting the left central thalamus.",
+   "exposures[0].fundamental_frequency_khz": "tFUS was delivered with a Brainsonix BX Pulsar 1002 device, operating at a fundamental frequency of 650 kHz, with a 61 mm curvature diameter piezoelectric element, a radial focus of approximately 0.25 cm and a longitudinal focal spread of \\~1.25 cm.<sup>50</sup> To accommodate patientspecific neuroanatomy (e.g., degree of ventricular enlargement), transducers with different focal depths were employed (55 mm and 65 mm focal depth transducers) as determined by measuring, on a T1-weighted MRI, the distance from the thalamic target to the exterior portion of the temporal bone at its thinnest position.",
+   "exposures[0].device.manufacturer": "tFUS was delivered with a Brainsonix BX Pulsar 1002 device, operating at a fundamental frequency of 650 kHz, with a 61 mm curvature diameter piezoelectric element, a radial focus of approximately 0.25 cm and a longitudinal focal spread of \\~1.25 cm.<sup>50</sup> To accommodate patientspecific neuroanatomy (e.g., degree of ventricular enlargement), transducers with different focal depths were employed (55 mm and 65 mm focal depth transducers) as determined by measuring, on a T1-weighted MRI, the distance from the thalamic target to the exterior portion of the temporal bone at its thinnest position.",
+   "exposures[0].device.model": "tFUS was delivered with a Brainsonix BX Pulsar 1002 device, operating at a fundamental frequency of 650 kHz, with a 61 mm curvature diameter piezoelectric element, a radial focus of approximately 0.25 cm and a longitudinal focal spread of \\~1.25 cm.<sup>50</sup> To accommodate patientspecific neuroanatomy (e.g., degree of ventricular enlargement), transducers with different focal depths were employed (55 mm and 65 mm focal depth transducers) as determined by measuring, on a T1-weighted MRI, the distance from the thalamic target to the exterior portion of the temporal bone at its thinnest position.",
+   "exposures[0].timing.pulse_duration_ms": "Each period of sonication was delivered at a pulse repetition frequency of 100 Hz, a pulse width of 0.5 ms, and thus a 5% duty cycle.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each period of sonication was delivered at a pulse repetition frequency of 100 Hz, a pulse width of 0.5 ms, and thus a 5% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "Each period of sonication was delivered at a pulse repetition frequency of 100 Hz, a pulse width of 0.5 ms, and thus a 5% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "Sonication was administered in 20 blocks of 30 s, with 30 s rest intervals in between, for a total of 10 minutes of (non-continuous) cumulative sonication.",
+   "exposures[0].in_situ.isppa_w_cm2": "This parametrization, which matches that used in prior work,<sup>30,35-37</sup> has been shown to shorten time-to-awakening following general anesthesia in preclinical models<sup>28</sup> and is believed to be suppressive of cortical excitability<sup>27,51</sup> as reflected by the modulation of extracellular GABA concentrations.<sup>26</sup> With a derated spatial peak temporal average intensity (I<sub>SPTA</sub>) of 14.4 W/cm<sup>2</sup> and a derated spatial peak pulse average intensity (I<sub>SPPA</sub>) of 0.72 W/cm<sup>2</sup>, the applied sonication falls within the FDA safety envelope.<sup>52</sup>",
+   "exposures[0].in_situ.ispta_w_cm2": "This parametrization, which matches that used in prior work,<sup>30,35-37</sup> has been shown to shorten time-to-awakening following general anesthesia in preclinical models<sup>28</sup> and is believed to be suppressive of cortical excitability<sup>27,51</sup> as reflected by the modulation of extracellular GABA concentrations.<sup>26</sup> With a derated spatial peak temporal average intensity (I<sub>SPTA</sub>) of 14.4 W/cm<sup>2</sup> and a derated spatial peak pulse average intensity (I<sub>SPPA</sub>) of 0.72 W/cm<sup>2</sup>, the applied sonication falls within the FDA safety envelope.<sup>52</sup>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Derated ISPTA (14.4 W/cm2) is larger than derated ISPPA (0.72 W/cm2), which is impossible for a 5% duty cycle; the two values look swapped. Recorded as written."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "See ISPTA flag: values appear swapped in the source. The text says 'derated' without giving the method or skull model."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "16 enrolled; one withdrawn before tFUS and one after, so 15 or 14 sonicated and analysed counts vary by outcome (N=11 to 15). Enrolled count given."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Single sonication session within a 10-day inpatient protocol."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "30 s is the length of each sonication block; 20 blocks with 30 s rest, 10 min cumulative sonication."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducers of two focal depths (55 and 65 mm) were used depending on anatomy; frequency stated as 650 kHz."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

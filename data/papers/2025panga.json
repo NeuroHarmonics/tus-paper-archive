@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025panga",
+ "doi": "10.1109/tnsre.2025.3525516",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "LFP in hippocampal CA3 and M1 (power, phase-amplitude coupling, cross-correlation); H&E staining",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "TUS of the hippocampus reduced theta-band amplitude and power, phase-amplitude coupling and hippocampus-M1 correlation of LFPs in penicillin-induced epileptic mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining indicated TUS caused no damage to brain tissue (Supplementary Figure 1).",
+ "exposures": [
+  {
+   "label": "TUS of hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 330,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 900,
+    "protocol_description": "Fundamental frequency 1 MHz, PRF 500 Hz, duty cycle 50%, pulse duration 1 ms, inter-stimulus interval 1 ms, total stimulation duration 15 min, 0.33 MPa, applied 40 min after penicillin injection. Sham: power amplifier turned off."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Mice were randomized into the TUS group and the sham group, with 10 mice in each group.",
+   "exposures[0].fundamental_frequency_khz": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].timing.pulse_duration_ms": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].timing.duty_cycle_pct": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].timing.sonication_duration_s": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].unspecified_domain.pressure_kpa": "For the TUS group, the ultrasound parameters of fundamental frequency, pulse repetition frequency, duty cycle, pulse duration, inter-stimulus interval, total stimulation duration and ultrasound pressure were 1 MHz, 500 Hz, 50%, 1 ms, 1 ms, 15 min and 0.33 MPa, respectively (Fig. 1(d-e)).",
+   "exposures[0].device.manufacturer": "In TUS system, the power amplifier (E&I240L, ENI Inc., USA) amplifies the signal from the function generator (AFG3022C, Tektronix, USA) and transmits it to the ultrasound transducer (V302-SU, Olympus, USA) to generate ultrasound waves.",
+   "exposures[0].device.model": "In TUS system, the power amplifier (E&I240L, ENI Inc., USA) amplifies the signal from the function generator (AFG3022C, Tektronix, USA) and transmits it to the ultrasound transducer (V302-SU, Olympus, USA) to generate ultrasound waves."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure 0.33 MPa stated without saying whether free-field or in situ."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper states 'total stimulation duration' of 15 min; recorded as 900 s."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only group sizes given (10 TUS, 10 sham); recorded as list."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

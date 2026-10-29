@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019acquaticci",
+ "doi": "10.1250/ast.40.116",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (CF-1)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Visually observed evoked muscle movements (tail, hindlimb, forelimb)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Axicon-lens tFUS of the mouse motor cortex evoked movement in a specific body segment (tail at the mapped site); US intensity was raised until a movement threshold was seen.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Normal behaviour observed in all animals after sonication; intensity stated to be below FDA imaging limits.",
+ "exposures": [
+  {
+   "label": "Axicon-lens tFUS of mouse motor cortex",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex (area related to the control of tail motility)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Prototype built in-house with a Steminc piezo-disc element",
+    "model": "tFUS-axicon transducer, 445 kHz, epoxy/PDMS axicon lens"
+   },
+   "fundamental_frequency_khz": 445,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.036
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 100,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Motor cortex stimulated every 3 s with a train of low-intensity tFUS pulses (PD 0.36 ms, PRF 1 kHz); intensity was gradually increased at each site until movement was detected. Number of pulses per train (stimulus duration) not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "To conduct tFUS stimulation of intact motor cortex, CF-1 mice (n ¼ 3) were anesthetized with ketamine (80 mg/kg i.p.)/Xylazine (10 mg/kg i.p.).",
+   "exposures[0].fundamental_frequency_khz": "A prototype tFUS-axicon transducer operating at a frequency of 445 kHz was fabricated.",
+   "exposures[0].timing.pulse_duration_ms": "For sonication parameters, pulse duration (PD) of 0.36 ms and PRF of 1 kHz were used.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For sonication parameters, pulse duration (PD) of 0.36 ms and PRF of 1 kHz were used.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Our findings support that low-intensity sonication with a small peak pressure amplitude (0.1 MPa) does not cause the bloodbrain barrier to be disrupted or cavitation.",
+   "exposures[0].device.manufacturer": "A prototype tFUS-axicon transducer was built following the specifications summarized in Table 2.",
+   "exposures[0].device.model": "A prototype tFUS-axicon transducer was built following the specifications summarized in Table 2.",
+   "exposures[0].free_field.ispta_w_cm2": "The motor cortex of mice was stimulated every 3 s with a low-intensity train of tFUS pulses having a spatial peak temporal average intensity (Ispta) of 36 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ ."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "36 mW/cm2 converted to 0.036 W/cm2; domain not stated (radiant-force power meter; skull effect ignored); also used for mapping at threshold, so may not apply to all conditions."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.1 MPa given as 'small peak pressure amplitude' in the discussion; domain not stated and not obviously consistent with 36 mW/cm2 Ispta."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Stimulus duration and number of pulses are not given."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Transducer built in-house; manufacturer field describes the build, piezo element from Steminc."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

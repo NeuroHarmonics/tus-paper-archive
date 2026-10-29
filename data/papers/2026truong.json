@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026truong",
+ "doi": "10.1109/tnsre.2025.3640964",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 18,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "autonomic_physiology",
+  "other",
+  "histology_molecular"
+ ],
+ "readout_other": "genioglossus EMG; pulse oximetry; 33 MHz needle-transducer M-mode tongue displacement; H&E and HIF-1alpha IHC; tissue temperature",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIPUS of the hypoglossal nerve increased phasic and tonic genioglossus EMG with intensity, increased tongue displacement and oxygen saturation; effects vanished after nerve transection.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and HIF-1alpha staining showed no tissue damage; temperature during stimulation rose from 28.27 C baseline to 30.83 C at 5 min.",
+ "exposures": [
+  {
+   "label": "LIPUS to hypoglossal nerve (US1 to US3)",
+   "target": {
+    "terms": [
+     "peripheral_nerve"
+    ],
+    "label": "hypoglossal nerve (HN)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, Waltham, MA, USA",
+    "model": "A314S"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.354,
+     0.51,
+     0.667
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     15,
+     60
+    ],
+    "protocol_description": "Tone burst of 500 us, 50% duty cycle, PRF 1 kHz, applied at Ispta 354, 510 and 667 mW/cm2 (US1-US3) for 15-60 s until a response was observed, within non-stimulation, stimulation and post-stimulation phases."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 18 genetically unmodified C57BL/6 mice aged 4–12 weeks were subjected to the previously described stimulation protocol.",
+   "exposures[0].fundamental_frequency_khz": "A 1-MHz ultrasound transducer was applied to the cervical region of anesthetized mice to deliver acoustic stimulation.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "LIPUS stimulation was applied to HN at spatial peak temporal average intensities of 354 mW/cm<sup>2</sup> (US1), 510 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ (US2), and 667 mW/cm<sup>2</sup> (US3) for 15–60 s until a response was observed.",
+   "exposures[0].timing.pulse_duration_ms": "An excitation signal was identified as a tone burst with a duration of 500 $\\mu \\mathrm { s } ,$ a duty cycle of 50%, and a pulse repetition frequency of 1 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "An excitation signal was identified as a tone burst with a duration of 500 $\\mu \\mathrm { s } ,$ a duty cycle of 50%, and a pulse repetition frequency of 1 kHz.",
+   "exposures[0].timing.duty_cycle_pct": "An excitation signal was identified as a tone burst with a duration of 500 $\\mu \\mathrm { s } ,$ a duty cycle of 50%, and a pulse repetition frequency of 1 kHz.",
+   "exposures[0].timing.sonication_duration_s": "LIPUS stimulation was applied to HN at spatial peak temporal average intensities of 354 mW/cm<sup>2</sup> (US1), 510 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ (US2), and 667 mW/cm<sup>2</sup> (US3) for 15–60 s until a response was observed.",
+   "exposures[0].device.model": "Ultrasound excitation signals were generated using a function generator (AFG 3022B; Tektronix, Irving, TX, USA) connected through a radiofrequency power amplifier (25A250A; Amplifier Research, Souderton, PA, USA) to a 1-MHz single-element transducer (A314S, focal length = 80 mm, focus zone = 10 mm; Olympus, Waltham, MA, USA) for stimulation.",
+   "exposures[0].device.manufacturer": "Ultrasound excitation signals were generated using a function generator (AFG 3022B; Tektronix, Irving, TX, USA) connected through a radiofrequency power amplifier (25A250A; Amplifier Research, Souderton, PA, USA) to a 1-MHz single-element transducer (A314S, focal length = 80 mm, focus zone = 10 mm; Olympus, Waltham, MA, USA) for stimulation."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta values given without stating domain; hydrophone measurement in front of the transducer is described but not tied to these values"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15-60 s 'until a response was observed'; the paper also notes up to 5 min continuous stimulation for temperature tests"
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Hypoglossal nerve has no specific target id; mapped to peripheral_nerve"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "18 mice aged 4-12 weeks stated; per-experiment numbers not given (at least three animals)"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

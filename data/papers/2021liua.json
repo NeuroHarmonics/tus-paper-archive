@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021liua",
+ "doi": "10.3389/fnagi.2021.656430",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Local field potentials in five nuclei (multitaper spectrum, S-transform time-frequency analysis, relative band power)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "At PRF 500 Hz and 1 kHz, intensities above about 12 mW/cm2 ISPTA produced high-amplitude auto-rhythmic LFP activity with increased gamma power; at PRF 1.5 kHz no auto-rhythm appeared and slow (delta, theta) power increased, with other bands suppressed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "VLTUS, three PRF groups",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex",
+     "primary_motor_cortex",
+     "habenula",
+     "CA1",
+     "hippocampus"
+    ],
+    "label": "five nuclei: SI, CA1, CA2, LHb, and MI"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.036,
+     0.044,
+     0.06,
+     0.082
+    ],
+    "ispta_w_cm2": [
+     0.0072,
+     0.0256
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.4,
+     0.2,
+     0.134
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     1000,
+     1500
+    ],
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Fixed 500 kHz and 20% duty cycle; three trial groups with PRF 500 Hz (200 cycles per pulse), 1 kHz (100 cycles per pulse) and 1.5 kHz (67 cycles per pulse), with amplifier gain increased across trials to raise intensity. Stimulation duration is not stated; LFP power was compared over 10 s before and after stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Two adult Sprague–Dawley rats (male: 270–310 g) were purchased",
+   "exposures[0].fundamental_frequency_khz": "The FF and DC of the ultrasound were 500 kHz and 20% respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The FF and DC of the ultrasound were 500 kHz and 20% respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Three PRFs (500 Hz, 1,000 Hz, and 1,500) were used in this study.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<tr><td>ISPPA (W/cm²)</td><td>ISPTA (mW/cm²)</td><td>PRF = 500 HzNC/p = 200</td><td>PRF = 1 kHzNC/p = 100</td><td>PRF = 1.5 kHzNC/p = 67</td></tr><tr><td>0.036</td><td>7.2</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0.044</td><td>8.8</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0.06</td><td>12</td><td>1</td><td>2</td><td>0</td></tr><tr><td>0.082</td><td>16.4</td><td>5</td><td>3</td><td>0</td></tr>",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The range of I<sub>SPTA</sub> was from 7.2 to 25.6 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td>ISPPA (W/cm²)</td><td>ISPTA (mW/cm²)</td><td>PRF = 500 HzNC/p = 200</td><td>PRF = 1 kHzNC/p = 100</td><td>PRF = 1.5 kHzNC/p = 67</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Table 1 lists ISPPA only up to 0.082 W/cm2 (ISPTA 16.4 mW/cm2) while the text reports ISPTA up to 25.6 mW/cm2; the upper ISPPA limit is therefore probably understated. The paper does not say whether the values are before or after the 83.9% skull attenuation."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated in ms; only cycles per pulse (200, 100, 67) are given in Table 1."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Stimulation duration (SD) appears in a figure schematic but its value is not stated in the text."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Stimulation was applied from the occipital side (6.5 mm lateral of midline, 4 mm posterior of bregma) with a collimator and a plane transducer; LFP was recorded in S1, M1, LHb, CA1 and CA2. The recorded nuclei are listed as the target; CA2 mapped to hippocampus."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Two rats, each repeated three times per parameter set."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No transducer maker or model is named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

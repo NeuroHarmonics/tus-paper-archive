@@ -20,6 +20,22 @@ fields, and the preprint DOI is retained on the record.
 
   uv run scripts/link_preprints.py            # report
   uv run scripts/link_preprints.py --apply    # merge into data/manifest.json
+  uv run scripts/link_preprints.py --apply --confirm <preprint DOI> ...   # merge proposed pairs too
+  uv run scripts/link_preprints.py --find-published
+  uv run scripts/link_preprints.py --similar
+
+--similar finds the pairs no metadata links: a held preprint and a held paper that
+share most authors and much of their title and abstract. A journal often retitles
+the paper, so neither Crossref, bioRxiv nor a title match connects the two; five
+such pairs were published in v2026.09.0. Two papers by one group can look alike,
+so each pair is read before it is merged with --confirm PREPRINT=PUBLISHED.
+
+Merging needs both halves held. --find-published looks for the half we do not
+hold: for each preprint record it asks Crossref afresh (the cache is as old as
+the record) for `is-preprint-of`, then searches journal articles by title and
+first author. A version of record found this way is to be obtained and filed
+into candidates/; once identified and renamed, the run above merges it. Run it
+at every update: the preprint is filed once and nothing else looks again.
 """
 
 from __future__ import annotations
@@ -27,8 +43,11 @@ from __future__ import annotations
 import argparse
 import difflib
 import sys
+import time
 
-from common import DATA, LIBRARY, normalise_title, read_json, write_json
+import httpx
+
+from common import DATA, LIBRARY, MAILTO, normalise_title, read_json, write_json
 
 TITLE_SIM = 0.85   # fallback proposals only
 YEAR_WINDOW = 3
@@ -65,15 +84,93 @@ def is_preprint_record(rec: dict) -> bool:
                                             "10.31234/", "10.2139/"))
 
 
+def find_published(papers: dict) -> int:
+    """Report a version of record for each preprint record that has one."""
+    held = {(p.get("doi") or "").lower() for p in papers.values()}
+    found = 0
+    with httpx.Client(timeout=40, headers={"User-Agent": f"tus-paper-archive/1.0 (mailto:{MAILTO})"}) as c:
+        for ck, p in sorted(papers.items()):
+            if not is_preprint_record(p):
+                continue
+            hits: dict[str, str] = {}
+            # An HTTP error is reported, never read as "not published".
+            try:
+                r = c.get(f"https://api.crossref.org/works/{p['doi']}")
+                if r.status_code != 404:
+                    r.raise_for_status()
+                    rel = r.json()["message"].get("relation") or {}
+                    for item in rel.get("is-preprint-of", []) or []:
+                        if (vid := (item.get("id") or "").lower()).startswith("10."):
+                            hits[vid] = "crossref_relation"
+                r = c.get("https://api.crossref.org/works", params={
+                    "rows": 5, "filter": "type:journal-article",
+                    "query.bibliographic": p.get("title") or "", "query.author": first_author(p)})
+                r.raise_for_status()
+                for w in r.json()["message"].get("items", []):
+                    sim = difflib.SequenceMatcher(None, normalise_title(p.get("title")),
+                                                  normalise_title((w.get("title") or [""])[0])).ratio()
+                    fams = [(a.get("family") or "").lower() for a in w.get("author", [])]
+                    if sim >= TITLE_SIM and first_author(p) and first_author(p) in fams:
+                        hits.setdefault(w["DOI"].lower(), f"title_sim={sim:.2f}+first_author")
+            except (httpx.HTTPError, ValueError, KeyError) as e:
+                print(f"  {ck}: lookup failed ({type(e).__name__}); not checked")
+                continue
+            for vor, why in hits.items():
+                found += 1
+                print(f"  {ck:16} {p['doi']}\n    -> {vor}  [{why}]{'  (held)' if vor in held else ''}")
+            time.sleep(0.3)
+    print(f"\n{found} published versions found")
+    return 0
+
+
+def similar_pairs(papers: dict) -> int:
+    """Held preprints that resemble another held paper by authors and text."""
+    from acquire import _cosine, _surname, _words
+
+    def text(ck, p):
+        ab = read_json(DATA / "abstracts" / f"{ck}.json", {}) or {}
+        return _words(f"{p.get('title') or ''} {ab.get('text') or ''}")
+    info = {ck: ({_surname(a.get("family")) for a in (p.get("authors") or [])}, text(ck, p))
+            for ck, p in papers.items()}
+    n = 0
+    for ck, p in sorted(papers.items()):
+        if not is_preprint_record(p):
+            continue
+        a, w = info[ck]
+        for other, (b, v) in info.items():
+            if other == ck or not a or not b:
+                continue
+            ov = len(a & b) / min(len(a), len(b))
+            sim = _cosine(w, v)
+            if ov >= 0.6 and sim >= 0.45:
+                n += 1
+                print(f"  {ck:20} ~ {other:20} authors {ov:.2f}  text {sim:.2f}\n"
+                      f"      {(p.get('title') or '')[:70]}\n      {(papers[other].get('title') or '')[:70]}")
+    print(f"\n{n} pairs to read")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--confirm", nargs="+", default=[], metavar="PREPRINT_DOI[=PUBLISHED_DOI]",
+                    help="treat these proposed pairs as confirmed, after a person has looked; "
+                         "PREPRINT=PUBLISHED names a pair the title test never proposes, as when "
+                         "the journal retitled the paper")
+    ap.add_argument("--similar", action="store_true",
+                    help="report held preprints that resemble another held paper")
+    ap.add_argument("--find-published", action="store_true",
+                    help="look up a version of record for every preprint record")
     args = ap.parse_args()
 
     man = read_json(DATA / "manifest.json")
     if not man:
         sys.exit("Run scripts/rename.py first.")
     papers = man["papers"]
+    if args.find_published:
+        return find_published(papers)
+    if args.similar:
+        return similar_pairs(papers)
     cache = read_json(DATA / "crossref-cache.json", {}) or {}
 
     by_doi = {p["doi"]: (ck, p) for ck, p in papers.items() if p.get("doi")}
@@ -85,6 +182,13 @@ def main() -> int:
     for pre_doi, vor_doi in link.items():
         if pre_doi in by_doi and vor_doi in by_doi and pre_doi != vor_doi:
             confirmed.append((pre_doi, vor_doi, "crossref_relation"))
+
+    # A pair a person has named outright, both halves held.
+    for item in args.confirm:
+        if "=" in item:
+            pre_, vor_ = (x.strip().lower() for x in item.split("=", 1))
+            if pre_ in by_doi and vor_ in by_doi and (pre_, vor_) not in {(p, v) for p, v, _ in confirmed}:
+                confirmed.append((pre_, vor_, "confirmed_by_hand"))
 
     # 3. Fallback proposals, for review only.
     seen = {p for p, _, _ in confirmed} | {v for _, v, _ in confirmed}
@@ -124,7 +228,10 @@ def main() -> int:
                 confirmed.append((pre["doi"], vor["doi"],
                                   f"identical_authors+title_sim={sim:.2f}"))
             else:
-                proposed.append((pre["doi"], vor["doi"], f"title_sim={sim:.2f}"))
+                if pre["doi"].lower() in {d.lower() for d in args.confirm}:
+                    confirmed.append((pre["doi"], vor["doi"], f"confirmed_by_hand+title_sim={sim:.2f}"))
+                else:
+                    proposed.append((pre["doi"], vor["doi"], f"title_sim={sim:.2f}"))
 
     print(f"confirmed preprint pairs (Crossref relation): {len(confirmed)}")
     for p, v, _ in confirmed:
@@ -144,11 +251,18 @@ def main() -> int:
     for pre_doi, vor_doi, how in confirmed:
         pre_ck, pre = by_doi[pre_doi]
         vor_ck, vor = by_doi[vor_doi]
-        vor["preprint"] = {
+        link_ = {
             "doi": pre_doi, "year": pre.get("year"),
             "title": pre.get("title"), "linked_by": how,
             "pdf": pre.get("files", {}).get("pdf"),
         }
+        # A paper can have more than one preprint (bioRxiv and Research Square, say).
+        # Overwriting the first link would leave its DOI looking unheld, and the next
+        # rename.py would file that preprint again as a paper of its own.
+        if vor.get("preprint") and vor["preprint"].get("doi") != pre_doi:
+            vor.setdefault("other_preprints", []).append(link_)
+        else:
+            vor["preprint"] = link_
         # Keep the preprint PDF as an alternate rather than discarding it: the
         # preprint sometimes carries methods detail the published version cuts.
         vor.setdefault("files", {}).setdefault("alternates", []).append(

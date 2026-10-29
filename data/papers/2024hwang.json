@@ -1,0 +1,252 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024hwang",
+ "doi": "10.1007/s13534-023-00314-7",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  6
+ ],
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Multielectrode array spike rate, burst number and burst duration (MC_Rack); bicuculline (25 uM GABA-A antagonist) condition",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Spike rate and burst number increased with acoustic intensity (significant at the higher levels) and were highest at 50% duty cycle; the response largely disappeared with bicuculline, with a decrease at the highest level.",
+ "adverse_events": null,
+ "safety_notes": "Mechanical index kept below 1.9 (highest 1.1); temperature change under 0.1 C; no neuronal death observed after exposure.",
+ "exposures": [
+  {
+   "label": "0.5 MHz sonication of primary hippocampal neurons on MEA, intensity/duty cycle/duration/PRF sweeps",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "primary hippocampal neurons cultured on microelectrode arrays"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "TKS Corp. (Busan, Republic of Korea)",
+    "model": "custom-made water-immersion 10 x 10 mm square ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     60,
+     240,
+     340,
+     490,
+     780
+    ],
+    "isppa_w_cm2": [
+     0.11,
+     1.45,
+     3.26,
+     7.66,
+     17.38
+    ],
+    "ispta_w_cm2": [
+     0.06,
+     0.15,
+     0.72,
+     1.3,
+     1.63,
+     3.83,
+     8.7
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     10,
+     100,
+     500,
+     1000,
+     2000
+    ],
+    "duty_cycle_pct": [
+     10,
+     50,
+     90
+    ],
+    "sonication_duration_s": [
+     20,
+     60,
+     120
+    ],
+    "protocol_description": "One minute baseline recording, then ultrasound for 20 s (except in the duration experiment), then one minute of recording; each parameter varied with the others fixed at level 2 intensity (level 1-5 in the intensity sweep), 50% duty cycle, 1 kHz PRF and 20 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "3–6 MEAs were used for analysis for each parameter",
+   "exposures[0].fundamental_frequency_khz": "Electrical pulses with the fundamental frequency of 0.5 MHz were generated",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We examined five levels of acoustic intensity (levels 1–5), three duty cycles (10, 50, and 90%), three sonication durations (20, 60, and 120 s), and five PRFs (10, 100, 500, 1000, and 2000",
+   "exposures[0].timing.duty_cycle_pct": "We examined five levels of acoustic intensity (levels 1–5), three duty cycles (10, 50, and 90%), three sonication durations (20, 60, and 120 s), and five PRFs (10, 100, 500, 1000, and 2000",
+   "exposures[0].timing.sonication_duration_s": "We examined five levels of acoustic intensity (levels 1–5), three duty cycles (10, 50, and 90%), three sonication durations (20, 60, and 120 s), and five PRFs (10, 100, 500, 1000, and 2000",
+   "exposures[0].device.manufacturer": "A custom-made water-immersion $1 0 \\times 1 0 { \\cdot } \\mathrm { m m }$ square ultrasound transducer (TKS Corp., Busan, Republic of Korea) was used for experiments",
+   "exposures[0].device.model": "A custom-made water-immersion $1 0 \\times 1 0 { \\cdot } \\mathrm { m m }$ square ultrasound transducer (TKS Corp., Busan, Republic of Korea) was used for experiments",
+   "exposures[0].free_field.pressure_kpa": "At 3-mm distance, the pressures were measured as 0.06, 0.24, 0.34, 0.49, and 0.78 MPa for the level 1 to 5 (Fig. 3).",
+   "exposures[0].free_field.isppa_w_cm2": "<table><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Output (V)</td><td rowspan=\"2\">Pressure (MPa)</td><td rowspan=\"2\">Mechani- cal index</td><td rowspan=\"2\"> $\\mathrm { I } _ { \\mathrm { S P P A } } \\mathrm { ( W / c m ^ { 2 } ) }$   $( \\mathrm { { I } _ { { S P T A } } , }$   $\\mathrm { D C } = 1 0 0 \\% )$ </td><td colspan=\"3\"> $\\mathrm { I } _ { \\mathrm { S P T A } } \\mathrm { ( W / c m } ^ { 2 } \\mathrm { ) }$ </td></tr><tr><td> $\\mathrm { D C } = 1 0 \\%$ </td><td> $\\mathrm { D C } = 5 0 \\%$ </td><td>DC=90%</td></tr><tr><td>Level 1</td><td>44.4</td><td>0.06</td><td>0.09</td><td>0.11</td><td>0.01</td><td>0.06</td><td>0.10</td></tr><tr><td>Level 2</td><td>176.8</td><td>0.24</td><td>0.34</td><td>1.45</td><td>0.15</td><td>0.72</td><td>1.30</td></tr><tr><td>Level 3</td><td>250.6</td><td>0.34</td><td>0.14</td><td>3.26</td><td>0.33</td><td>1.63</td><td>2.93</td></tr><tr><td>Level 4</td><td>371.9</td><td>0.49</td><td>0.69</td><td>7.66</td><td>0.77</td><td>3.83</td><td>6.84</td></tr><tr><td>Level 5</td><td>574.1</td><td>0.78</td><td>1.10</td><td>17.38</td><td>1.74</td><td>8.70</td><td>15.64</td></tr></table>",
+   "exposures[0].free_field.ispta_w_cm2": "<table><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Output (V)</td><td rowspan=\"2\">Pressure (MPa)</td><td rowspan=\"2\">Mechani- cal index</td><td rowspan=\"2\"> $\\mathrm { I } _ { \\mathrm { S P P A } } \\mathrm { ( W / c m ^ { 2 } ) }$   $( \\mathrm { { I } _ { { S P T A } } , }$   $\\mathrm { D C } = 1 0 0 \\% )$ </td><td colspan=\"3\"> $\\mathrm { I } _ { \\mathrm { S P T A } } \\mathrm { ( W / c m } ^ { 2 } \\mathrm { ) }$ </td></tr><tr><td> $\\mathrm { D C } = 1 0 \\%$ </td><td> $\\mathrm { D C } = 5 0 \\%$ </td><td>DC=90%</td></tr><tr><td>Level 1</td><td>44.4</td><td>0.06</td><td>0.09</td><td>0.11</td><td>0.01</td><td>0.06</td><td>0.10</td></tr><tr><td>Level 2</td><td>176.8</td><td>0.24</td><td>0.34</td><td>1.45</td><td>0.15</td><td>0.72</td><td>1.30</td></tr><tr><td>Level 3</td><td>250.6</td><td>0.34</td><td>0.14</td><td>3.26</td><td>0.33</td><td>1.63</td><td>2.93</td></tr><tr><td>Level 4</td><td>371.9</td><td>0.49</td><td>0.69</td><td>7.66</td><td>0.77</td><td>3.83</td><td>6.84</td></tr><tr><td>Level 5</td><td>574.1</td><td>0.78</td><td>1.10</td><td>17.38</td><td>1.74</td><td>8.70</td><td>15.64</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only a range of MEAs per parameter is stated (3-6); no total number of cultures or animals. Recorded as the range."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressures were measured by hydrophone at the MEA surface through Parafilm in culture medium, 3 mm from the transducer, but the paper never says free field or water, so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Table 1 gives ISPTA at DC 10, 50 and 90 % for five levels; the list records the DC = 50 % column (the intensity sweep used 50 % DC). Other columns not recorded."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Table 1 values; ISPPA calculated by the authors from hydrophone pressure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration never stated numerically, only 50 % DC at 1 kHz PRF as the base condition; not computed."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Intensity, DC, duration and PRF swept one at a time with others fixed; Table 1 mechanical index for level 3 (0.14) looks inconsistent with the other rows (possible typo), not recorded."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer described as custom-made by TKS Corp.; classed other_manufacturer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

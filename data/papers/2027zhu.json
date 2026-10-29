@@ -1,0 +1,225 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2027zhu",
+ "doi": "10.1016/j.ultras.2026.108294",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy",
+  "anxiety",
+  "depression",
+  "systemic_inflammation"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  6,
+  5,
+  5,
+  5,
+  9,
+  9,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "fibre photometry of GCaMP7s calcium signals; elevated plus maze; tail suspension test; open field test; bulk RNA-seq of mPFC",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "aVNS increased calcium activity in mPFC, PirC, dHipp, BLA, vHIP, VTA and DRN; repeated aVNS improved anxiety-like and depressive-like behaviour in LPS and chronic restraint stress mice and partially reversed mPFC transcriptional changes.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Passive cavitation detection showed no detectable cavitation in water; focal-zone temperature rise stayed below 1 C during 15 min stimulation (4 mice); no histology of the nerve was done.",
+ "exposures": [
+  {
+   "label": "aVNS to left cervical vagus nerve",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "left cervical VN region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "NDT, USA",
+    "model": "IBP0106 SF-1.75 in focused transducer with custom collimator"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 3000,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.36526
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1,
+    "protocol_description": "1 s sonication followed by a 9 s inter-stimulus interval; 15 min of aVNS in LPS mice; 7 consecutive days of aVNS in chronic restraint stress mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Based on this characterization, the stimulation protocol used in subsequent experiments was defined as follows: fundamental frequency (FF), 1 MHz; sonication duration (SD), 1 s; inter-stimulus interval (ISI), 9 s; pulse repetition frequency (PRF), 100 Hz; tone-burst duration (TBD), 0.5 ms; duty cycle (DC), 10%; and acoustic pressure (AP), 3 MPa (Fig. 1C).",
+   "exposures[0].timing.pulse_duration_ms": "Based on this characterization, the stimulation protocol used in subsequent experiments was defined as follows: fundamental frequency (FF), 1 MHz; sonication duration (SD), 1 s; inter-stimulus interval (ISI), 9 s; pulse repetition frequency (PRF), 100 Hz; tone-burst duration (TBD), 0.5 ms; duty cycle (DC), 10%; and acoustic pressure (AP), 3 MPa (Fig. 1C).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Based on this characterization, the stimulation protocol used in subsequent experiments was defined as follows: fundamental frequency (FF), 1 MHz; sonication duration (SD), 1 s; inter-stimulus interval (ISI), 9 s; pulse repetition frequency (PRF), 100 Hz; tone-burst duration (TBD), 0.5 ms; duty cycle (DC), 10%; and acoustic pressure (AP), 3 MPa (Fig. 1C).",
+   "exposures[0].timing.sonication_duration_s": "Based on this characterization, the stimulation protocol used in subsequent experiments was defined as follows: fundamental frequency (FF), 1 MHz; sonication duration (SD), 1 s; inter-stimulus interval (ISI), 9 s; pulse repetition frequency (PRF), 100 Hz; tone-burst duration (TBD), 0.5 ms; duty cycle (DC), 10%; and acoustic pressure (AP), 3 MPa (Fig. 1C).",
+   "exposures[0].timing.duty_cycle_pct": "The pulsed aVNS protocol was defined as follows: fundamental frequency = 1 MHz, sonication duration = 1 s, inter-stimulus interval = 9 s, pulse repetition frequency = 100 Hz, tone-burst duration = 0.5 ms, duty cycle = 5 %, and acoustic pressure = 3 MPa.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Based on this characterization, the stimulation protocol used in subsequent experiments was defined as follows: fundamental frequency (FF), 1 MHz; sonication duration (SD), 1 s; inter-stimulus interval (ISI), 9 s; pulse repetition frequency (PRF), 100 Hz; tone-burst duration (TBD), 0.5 ms; duty cycle (DC), 10%; and acoustic pressure (AP), 3 MPa (Fig. 1C).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "In comparison, the present study used 1 MHz ultrasound, 3 MPa AP, 100 Hz PRF, 0.5 ms TBD, 5% DC, 1 s SD, and 9 s ISI, with a calculated $\\mathrm { { I } } _ { \\mathsf { s p t a } }$ of 365.26",
+   "exposures[0].device.model": "which drove a focused ultrasonic transducer (IBP0106 SF-1.75 in; focus diameter 25 mm; radius of curvature 40 mm; NDT, USA)",
+   "exposures[0].device.manufacturer": "which drove a focused ultrasonic transducer (IBP0106 SF-1.75 in; focus diameter 25 mm; radius of curvature 40 mm; NDT, USA)",
+   "n_subjects": "(b-e) mean post-stimulus time histograms (psths) of δf/f calcium signals in the mpfc $( \\mathbf { b } , \\mathbf { n } { } = 7 { \\mathrm { ~ m i c e } } )$ , PirC $( \\mathsf { C } , \\mathsf { n } = 6 \\mathrm { m i c e } )$ , dHipp $( \\mathrm { D } , \\mathrm { n } = 5 \\mathrm { m i c e } )$ , and BLA $( \\mathrm { E } , \\mathrm { n } = 5$ mice) during aVNS.",
+   "n_sessions_per_subject": "After CRS exposure, mice received aVNS or sham stimulation for 7 consecutive days."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Abstract, PCD methods and Discussion state 5% duty cycle; Section 2.2 states 10%. 0.5 ms x 100 Hz = 5%; recorded 5."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes vary by experiment (n = 5-7 per photometry region, n = 9 per behavioural group, n = 3 per RNA-seq group); no total stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "3 MPa stated as acoustic pressure without domain; hydrophone mapping was in water but the pressure is not explicitly attributed to it."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity described as 'calculated' Ispta of 365.26 mW/cm2; domain not stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Varies by experiment (single 15 min session in LPS, 7 days in CRS); not a single number."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

@@ -59,9 +59,11 @@ def first_family(rec: dict, cache: dict | None = None) -> str | None:
                    if a.get("family") or a.get("name")]
     fam = authors[0].get("family") if authors else None
     if not fam:
-        # Last resort: the corpus's own "YYYY - Surname - Title.pdf" convention.
-        m = re.match(r"^\d{4} - ([A-Za-z][A-Za-z'\-]+)", rec.get("file", "") or "")
-        fam = m.group(1) if m else None
+        # Last resort: the name the file already carries, in the old "YYYY - Surname - Title.pdf"
+        # convention or the current "YYYY_Surname_Title.pdf" one. An arXiv paper has no Crossref
+        # record, and without this its correctly named PDF was renamed to "Unknown".
+        m = re.match(r"^\d{4}(?: - |_)([A-Za-z][A-Za-z'\-]+)", rec.get("file", "") or "")
+        fam = m.group(1) if m and m.group(1) not in ("Unknown", "Anon") else None
     return fam
 
 
@@ -189,7 +191,9 @@ def main() -> int:
                     break
         if rec is None:
             continue
-        want = f"{stem_for(rec, cache)}.pdf"
+        # The surname fallback reads the file's current name, not the download
+        # name ingest.json recorded: a paper filed correctly by hand must keep it.
+        want = f"{stem_for({**rec, 'file': pdf.name}, cache)}.pdf"
         if want != pdf.name and not (OUT_OF_SCOPE / want).exists():
             oos_renames.append((pdf, OUT_OF_SCOPE / want))
 
@@ -200,12 +204,17 @@ def main() -> int:
     # carrying identical content. The manifest records that the duplicate
     # existed, so nothing is lost.
     kept_dois = {p["doi"] for p in papers.values() if p.get("doi")}
-    # A merged preprint's DOI is no longer a manifest key, but the paper IS
-    # held -- its PDF sits in files.alternates. Its duplicate is redundant too.
-    kept_dois |= {p["preprint"]["doi"] for p in papers.values()
-                  if (p.get("preprint") or {}).get("doi")}
+    # A merged preprint's DOI is no longer a manifest key, but its PDF belongs in
+    # library/ under the name files.alternates gives it. A copy parked here is
+    # redundant only once that file exists; until then it IS that file, and is
+    # filed rather than deleted. Deleting it on the DOI alone lost five preprints
+    # on 2026-10-27.
+    alternate_of = {p["preprint"]["doi"]: p["preprint"].get("pdf") for p in papers.values()
+                    if (p.get("preprint") or {}).get("doi")}
+    alternate_of |= {o["doi"]: o.get("pdf") for p in papers.values()
+                     for o in p.get("other_preprints") or [] if o.get("doi")}
     kept_hashes = {sha16(p) for p in LIBRARY.glob("*.pdf")}
-    dup_delete, dup_keep = [], []
+    dup_delete, dup_keep, dup_file = [], [], []
     for pdf in sorted(DUPES.glob("*.pdf")):
         rec = next((r for r in ingest.values() if r.get("file") == pdf.name), None)
         doi = rec.get("doi") if rec else None
@@ -213,7 +222,11 @@ def main() -> int:
             # Moved here by an earlier run, so ingest.json no longer keys it by
             # this filename. Read the DOI off the PDF itself.
             doi = doi_from_pdf(pdf)
-        redundant = (doi in kept_dois) if doi else (sha16(pdf) in kept_hashes)
+        alt = alternate_of.get(doi)
+        if alt and not (LIBRARY / alt).exists():
+            dup_file.append((pdf, LIBRARY / alt))
+            continue
+        redundant = (doi in kept_dois or doi in alternate_of) if doi else (sha16(pdf) in kept_hashes)
         (dup_delete if redundant else dup_keep).append(pdf)
 
     # ---- report -------------------------------------------------------------
@@ -222,7 +235,8 @@ def main() -> int:
     print(f"out-of-scope renames  {len(oos_renames)} of "
           f"{len(list(OUT_OF_SCOPE.glob('*.pdf')))}")
     print(f"duplicates            {len(dup_delete)} redundant (the paper is in the "
-          f"library), {len(dup_keep)} unresolved")
+          f"library), {len(dup_file)} preprints to file as alternates, "
+          f"{len(dup_keep)} unresolved")
     if dup_keep:
         print("  unresolved -- no matching DOI in the library. Check before deleting:")
         for p in dup_keep[:10]:
@@ -241,9 +255,10 @@ def main() -> int:
     # citekey; once filed, the citekey IS the name.
     n_text = 0
     for ck, (src, dst) in text_map.items():
-        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
-            if src != dst and src.exists():
-                src.unlink()          # stale hash duplicate of an up-to-date file
+        # A paper's existing text is never replaced: the source is an ingest record picked by DOI,
+        # which can be a preprint's or a parked duplicate's (2026huangb, 2025schachtner). A source
+        # left behind goes in the orphan sweep below.
+        if src == dst or dst.exists():
             continue
         shutil.move(str(src), str(dst))
         n_text += 1
@@ -285,6 +300,8 @@ def main() -> int:
 
     for src, dst in oos_renames:
         shutil.move(str(src), str(dst))
+    for src, dst in dup_file:
+        shutil.move(str(src), str(dst))
     n_del = 0
     if not args.keep_duplicates:
         for p in dup_delete:
@@ -301,7 +318,8 @@ def main() -> int:
 
     print(f"\nrenamed {n_text} text files to <citekey>{TEXT_SUFFIX}; removed {len(orphans)} orphaned files")
     print(f"renamed {len(oos_renames)} out-of-scope PDFs to the library convention")
-    print(f"deleted {n_del} byte-identical duplicates"
+    print(f"filed {len(dup_file)} parked preprints as alternates; "
+          f"deleted {n_del} duplicates of papers held"
           f"{f'; {len(dup_keep)} variants kept for review' if dup_keep else ''}")
     return 0
 

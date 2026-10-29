@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021webb",
+ "doi": "10.1101/2021.05.05.442844",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 39,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "visual choice task (left/right saccade choice), eye tracking",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Pulsed stimuli at 10% duty cycle produced an ipsilateral choice bias, read as inhibition; continuous stimuli produced a contralateral bias, read as excitation.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The subject showed no signs of discomfort; discrimination accuracy increased over 39 sessions, taken as behavioural evidence of no harm.",
+ "exposures": [
+  {
+   "label": "Left and right LGN, 650 kHz, 10%, 50% and 100% duty",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "left and right lateral geniculate nucleus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Doppler Electronic Technologies, Guangzhou, China",
+    "model": "custom 256 element transducer"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 2400,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     650,
+     770
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": [
+     10,
+     50,
+     100
+    ],
+    "sonication_duration_s": 0.3,
+    "protocol_description": "A 300 ms stimulus was delivered 150 ms before fixation point offset, into the left or right LGN every 6-14 s, side randomised, interspersed with no-ultrasound trials. Stimuli were either continuous (100% duty) or pulsed at 10% duty with a 500 Hz PRF; a 50% duty condition is mentioned in the supplement without PRF."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "One subject participated in this study (male macaca mulatta, age 6 years, weight 8 kg).",
+   "n_sessions_per_subject": "We delivered the ultrasound into the deep brain targets repeatedly, over 39 sessions.",
+   "exposures[0].fundamental_frequency_khz": "All stimuli used 650 kHz.",
+   "exposures[0].free_field.pressure_kpa": "Using the same input voltage, the free field pressure–measured using a hydrophone–is 2.4 MPa at the location of the left and right LGN.",
+   "exposures[0].in_situ.pressure_kpa": "The peak focal pressure (estimated from the thermometry data) was 770 and 650 kPa in the right and left LGN respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulsed stimulus (10% duty) used a 500 Hz pulse repetition frequency.",
+   "exposures[0].timing.duty_cycle_pct": "Relative to sonication of the right LGN, sonication of the left LGN induces a leftward bias for a 10% duty stimulus and a rightward bias for a 50 and 100% duty stimulus.",
+   "exposures[0].timing.sonication_duration_s": "In an ultrasound trial, a 300 ms stimulus was delivered 150 ms before the fixation point offset.",
+   "exposures[0].device.manufacturer": "Our custom, 256 element transducer (Doppler Electronic Technologies, Guangzhou, China) can produce focal pressures greater than 3 MPa at its 650 kHz center frequency.",
+   "exposures[0].device.model": "Our custom, 256 element transducer (Doppler Electronic Technologies, Guangzhou, China) can produce focal pressures greater than 3 MPa at its 650 kHz center frequency."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressure at target was estimated from MR thermometry (heating of the focus), recorded here as method measurement. The figure legend gives 750 kPa; the Methods give 770 kPa (right LGN) and 650 kPa (left LGN)."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Hydrophone free-field pressure at the same input voltage; the paper does not state whether the waveform was pulsed or continuous for this measurement."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50% duty appears only in the supplementary figure legend; PRF and pulse duration are stated only for the 10% condition."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; the paper gives only duty cycle and PRF."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No auditory control was run; the authors argue from the left/right and waveform specificity of the effect that an auditory artefact is unlikely."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Trials without ultrasound were randomly interspersed within sessions; there was no separate sham arm."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Custom transducer credited to Doppler Electronic Technologies; driven by a Verasonics system (named in the Software section)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second"
+  }
+ }
+}

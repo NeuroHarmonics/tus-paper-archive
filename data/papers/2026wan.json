@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wan",
+ "doi": "10.1523/jneurosci.2329-25.2026",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "cortical LFP (wPLI functional connectivity, graph theory); gait analysis; TTC infarct staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "After 7 days of TUS, gait indices recovered faster than sham and cortical network connectivity shifted toward the healthy pattern; effect persisted to Day 14 and weakened by Day 21.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Mechanical index calculated as about 0.19 and theoretical temperature rise about 0.0008 C; no adverse-event assessment reported.",
+ "exposures": [
+  {
+   "label": "TUS of infarct area",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "infarct area"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU (nonfocused; driven by TUNSS-1)"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 186,
+    "isppa_w_cm2": 1.15,
+    "ispta_w_cm2": 0.057
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "FF 1 MHz; PRF 1 Hz; pulse train duration 5 min; DC 5%; PD 50 ms; interstimulus interval 5 min; stimulation once daily for 15 min, for 7 consecutive days starting on Day 1 after stroke."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The animals were randomly divided into three groups (N= 11 per group): poststroke ultrasound stimulation group (stroke + TUS), poststroke sham stimulation group (stroke + sham), and normal mouse group.",
+   "n_sessions_per_subject": "mice were subjected to either TUS intervention or sham stimulation intervention for $7$ consecutive days starting from Day 1 (D1)",
+   "exposures[0].fundamental_frequency_khz": "The ultrasonic stimulation parameters were set as follows: FF, 1 MHz; PRF, 1 Hz; PTD, 5 min; DC, 5%; PD, 50 ms; ISI, 5 min; and stimulation once daily for 15 min.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasonic stimulation parameters were set as follows: FF, 1 MHz; PRF, 1 Hz; PTD, 5 min; DC, 5%; PD, 50 ms; ISI, 5 min; and stimulation once daily for 15 min.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasonic stimulation parameters were set as follows: FF, 1 MHz; PRF, 1 Hz; PTD, 5 min; DC, 5%; PD, 50 ms; ISI, 5 min; and stimulation once daily for 15 min.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasonic stimulation parameters were set as follows: FF, 1 MHz; PRF, 1 Hz; PTD, 5 min; DC, 5%; PD, 50 ms; ISI, 5 min; and stimulation once daily for 15 min.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasonic stimulation parameters were set as follows: FF, 1 MHz; PRF, 1 Hz; PTD, 5 min; DC, 5%; PD, 50 ms; ISI, 5 min; and stimulation once daily for 15 min.",
+   "exposures[0].in_situ.pressure_kpa": "The maximum acoustic pressure measured behind the skull was 0.186 MPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ and spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ were calculated as 1.15 W/cm² and 0.057 W/cm², respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "the spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ and spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ were calculated as 1.15 W/cm² and 0.057 W/cm², respectively.",
+   "exposures[0].device.manufacturer": "used to drive a nonfocused ultrasound transducer (V301-SU, Olympus)",
+   "exposures[0].device.model": "used to drive a nonfocused ultrasound transducer (V301-SU, Olympus)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Target is described only as the infarct area (distal MCA occlusion, right hemisphere); cortex term chosen by inference from the model."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "33 mice in three groups of 11; 11 received TUS (stroke + TUS group)."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressure measured with a hydrophone behind the skull; the Discussion says ex vivo skull. Isppa and Ispta were calculated by the authors from it."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Pulse train 5 min with 5 min ISI within a 15 min daily session; PRF 1 Hz with PD 50 ms gives 5 % as stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation mechanism not described; normal group received no stimulation."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "TUNSS-1 is the driving device; transducer maker is Olympus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

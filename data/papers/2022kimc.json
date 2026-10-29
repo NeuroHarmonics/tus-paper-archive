@@ -1,0 +1,347 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022kimc",
+ "doi": "10.1109/tnsre.2022.3148877",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (ICR)",
+ "conditions": [
+  "healthy",
+  "essential_tremor"
+ ],
+ "condition_other": null,
+ "n_subjects": 50,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "hindlimb EMG (AUC) evoked by motor cortex electrical stimulation; tremor EMG; somatosensory evoked potentials; H&E histology",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Sonication at T12 inhibited the evoked hindlimb motor response and suppressed harmaline-induced tremor; sonication at L3 at 2.2 MPa facilitated it. Ascending SSEPs were unaffected.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E histology showed no hemorrhage or neuronal damage; thermocouple temperature rise after 2 min of sonication was 3.5, 1.6 and 0.6 degrees for 2.2, 1.4 and 0.8 MPa.",
+ "exposures": [
+  {
+   "label": "T12 trans-spinal FUS",
+   "target": {
+    "terms": [
+     "thoracic_spinal_cord"
+    ],
+    "label": "T12 vertebra / spinal cord location"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "in-house single-element 3 MHz PZT-4 transducer, 6 mm diameter, 3D-printed lens, 10 mm radius of curvature"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": [
+     800,
+     1400,
+     2200
+    ],
+    "isppa_w_cm2": [
+     9.9,
+     28,
+     76
+    ],
+    "ispta_w_cm2": [
+     4.95,
+     14,
+     38
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Pulse train of 200 ms, 0.5 ms tone bursts at 1 kHz PRF, delivered 1 s before each electrical cortical stimulation, interstimulus interval 2 s; sessions of 100 trials separated by 5 min. For the tremor model, 1 min baseline, 1 min tsFUS at 1.4 MPa on T12, 1 min rest."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  },
+  {
+   "label": "L3 trans-spinal FUS",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "L3 vertebra"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "in-house single-element 3 MHz PZT-4 transducer, 6 mm diameter, 3D-printed lens, 10 mm radius of curvature"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": [
+     1400,
+     2200
+    ],
+    "isppa_w_cm2": [
+     28,
+     76
+    ],
+    "ispta_w_cm2": [
+     14,
+     38
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Pulse train of 200 ms, 0.5 ms tone bursts at 1 kHz PRF, delivered 1 s before each electrical cortical stimulation, interstimulus interval 2 s; sessions of 100 trials separated by 5 min. For the tremor model, 1 min baseline, 1 min tsFUS at 1.4 MPa on T12, 1 min rest."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "A total number of mice in this study was 50 $( \\mathbf { n } = 2 0 $ descending, n  10 ascending, $\\mathrm { ~ n ~ } = \\ 1 0$ tremors, $\\mathrm { ~ n ~ } = \\ 5$ histology, ${ \\mathrm { ~ n ~ } } = ~ 5$ supplementary)",
+   "exposures[0].fundamental_frequency_khz": "3 MHz PZT-4 ceramics with a diameter of 6 mm",
+   "exposures[0].timing.pulse_duration_ms": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[0].timing.sonication_duration_s": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[1].fundamental_frequency_khz": "3 MHz PZT-4 ceramics with a diameter of 6 mm",
+   "exposures[1].timing.pulse_duration_ms": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[1].timing.sonication_duration_s": "as a pulse train lasting for 200 ms with 0.5 ms of tone-burst duration and pulse repetition frequency (PRF) of 1 kHz",
+   "exposures[0].free_field.pressure_kpa": "Three acoustic pressures (2.2, 1.4, and 0.8 MPa in peak negative pressure) were administered on T12 spinal cord location, and two pressures (2.2 and 1.4 MPa) for L3 vertebra.",
+   "exposures[0].free_field.isppa_w_cm2": "<tr><td rowspan=5 colspan=1>Descendingpathwaymodulation</td><td rowspan=3 colspan=1>T12</td><td rowspan=1 colspan=1>0.8</td><td rowspan=1 colspan=1>9.9</td><td rowspan=1 colspan=1>4.95</td><td rowspan=1 colspan=1>0.46</td></tr><tr><td rowspan=1 colspan=1>1.4</td><td rowspan=1 colspan=1>28</td><td rowspan=1 colspan=1>14</td><td rowspan=1 colspan=1>0.8</td></tr><tr><td rowspan=1 colspan=1>2.2</td><td rowspan=1 colspan=1>76</td><td rowspan=1 colspan=1>38</td><td rowspan=1 colspan=1>1.27</td></tr>",
+   "exposures[0].free_field.ispta_w_cm2": "<tr><td rowspan=5 colspan=1>Descendingpathwaymodulation</td><td rowspan=3 colspan=1>T12</td><td rowspan=1 colspan=1>0.8</td><td rowspan=1 colspan=1>9.9</td><td rowspan=1 colspan=1>4.95</td><td rowspan=1 colspan=1>0.46</td></tr><tr><td rowspan=1 colspan=1>1.4</td><td rowspan=1 colspan=1>28</td><td rowspan=1 colspan=1>14</td><td rowspan=1 colspan=1>0.8</td></tr><tr><td rowspan=1 colspan=1>2.2</td><td rowspan=1 colspan=1>76</td><td rowspan=1 colspan=1>38</td><td rowspan=1 colspan=1>1.27</td></tr>",
+   "exposures[1].free_field.pressure_kpa": "Three acoustic pressures (2.2, 1.4, and 0.8 MPa in peak negative pressure) were administered on T12 spinal cord location, and two pressures (2.2 and 1.4 MPa) for L3 vertebra.",
+   "exposures[1].free_field.isppa_w_cm2": "<tr><td rowspan=2 colspan=1>L3</td><td rowspan=1 colspan=1>1.4</td><td rowspan=1 colspan=1>28</td><td rowspan=1 colspan=1>14</td><td rowspan=1 colspan=1>0.8</td></tr><tr><td rowspan=1 colspan=1>2.2</td><td rowspan=1 colspan=1>76</td><td rowspan=1 colspan=1>38</td><td rowspan=1 colspan=1>1.27</td></tr>",
+   "exposures[1].free_field.ispta_w_cm2": "<tr><td rowspan=2 colspan=1>L3</td><td rowspan=1 colspan=1>1.4</td><td rowspan=1 colspan=1>28</td><td rowspan=1 colspan=1>14</td><td rowspan=1 colspan=1>0.8</td></tr><tr><td rowspan=1 colspan=1>2.2</td><td rowspan=1 colspan=1>76</td><td rowspan=1 colspan=1>38</td><td rowspan=1 colspan=1>1.27</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressures are peak negative pressure in MPa; paper says pressure profiles were measured in free water but does not say the Table I values are free-field, so kept unspecified."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated; not computed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "50 mice split across descending (20), ascending (10), tremor (10), histology (5) and supplementary (5) experiments."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Table I intensity values are not labelled with a domain."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham group; baseline and recovery periods within animal served as control; histology compared with untreated mice."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Varies by group (two or three sessions in the descending experiments)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.pressure_kpa": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026kitaharaa",
+ "doi": "10.1016/j.heares.2026.109740",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects",
+  "control_experiment"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "invasive_electrophysiology",
+  "other"
+ ],
+ "readout_other": "Auditory brainstem responses (ABR); laminar LFP, CSD and multiunit activity in auditory cortex; acoustic emission sensor on skull",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Tapered-envelope ultrasound evoked laminar LFP and multiunit responses in auditory cortex while reducing or abolishing ABRs; responses persisted in ototoxically deafened mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Measured ISPTA was compared with the FDA-recommended limit; no adverse-event assessment described.",
+ "exposures": [
+  {
+   "label": "Continuous-wave 500 kHz bursts with 0, 20 or 50 % tapered window, left auditory cortex",
+   "target": {
+    "terms": [
+     "auditory_cortex"
+    ],
+    "label": "left auditory cortex (AC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU planar transducer with custom-made waveguide"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 67,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.152
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.0005,
+     0.001,
+     0.005,
+     0.01,
+     0.02
+    ],
+    "protocol_description": "Single continuous-wave bursts of 0.5, 1, 5, 10 or 20 ms with sinusoidal onset/offset windows totalling 0, 20 or 50 % of the duration (15 combinations). Repetitive pulsed stimulation was deliberately not used. Intertrial interval not stated for ultrasound; 512 repetitions per condition for MUA."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Sixteen C57BL/6J mice (nine males and seven females; Japan SLC, Japan; 6–10 weeks old) were used.",
+   "exposures[0].fundamental_frequency_khz": "the transducer was excited at the fundamental frequency of 0.5 MHz and driven by input voltage amplitudes ranging from 0.5 to 250 V (1.0 to 500 Vpp).",
+   "exposures[0].device.manufacturer": "An ultrasound transducer (V301-SU; Olympus, USA) attached to a custom-made waveguide",
+   "exposures[0].device.model": "An ultrasound transducer (V301-SU; Olympus, USA) attached to a custom-made waveguide",
+   "exposures[0].free_field.pressure_kpa": "a constant ultrasound intensity (67 kPa; I<sub>SPTA</sub> $= 1 5 2 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ was applied at the waveguide surface",
+   "exposures[0].free_field.ispta_w_cm2": "a constant ultrasound intensity (67 kPa; I<sub>SPTA</sub> $= 1 5 2 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ was applied at the waveguide surface",
+   "exposures[0].timing.sonication_duration_s": "For the stimulation, the duration of the CW stimuli was 0.5, 1.0, 5.0, 10, or 20 ms"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "67 kPa is at the waveguide surface; 32.2 kPa was measured 8 mm from the waveguide surface (where brain lies); four pressures 32.2-218 kPa were piloted. Hydrophone in water tank."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "152 mW/cm2 converted to 0.152 W/cm2; tied to 67 kPa at waveguide surface."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Continuous wave with amplitude-tapered onset/offset (window); classed continuous as each stimulus is one uninterrupted burst, but envelope shaping is the independent variable."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "16 normal-hearing mice; 4 further mice were ototoxically deafened and it is unclear whether these are part of the 16. Analysed n varies (5, 4, 3)."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Skull attenuation stated to be negligible and ignored; no in situ values."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham was 0 V input to the transducer (0 kPa-driven stimulation)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "first",
+   "exposures[0].free_field.ispta_w_cm2": "first"
+  }
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019zhouc",
+ "doi": "10.3389/fnins.2019.01342",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL)",
+ "conditions": [
+  "healthy",
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  6,
+  6,
+  4,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "elevated plus-maze, open field, Morris water maze; in vivo hippocampal (dentate gyrus) fEPSP recording of LTP and depotentiation",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Both TMAS (ultrasound plus 0.2 T static field) and ultrasound alone (TUS) improved hippocampal LTP in MPTP mice and might improve water-maze performance relative to sham; TMAS performed better than TUS. Behavioural group sizes were 3 or 4 per group.",
+ "adverse_events": "none_observed",
+ "safety_notes": "PD mice were in good physical and mental state during the 10 days of treatment and showed no obvious discomfort after TMAS and TUS.",
+ "exposures": [
+  {
+   "label": "TUS (and TMAS with 0.2 T magnet) to substantia nigra, 1 MHz, daily for 10 days",
+   "target": {
+    "terms": [
+     "substantia_nigra"
+    ],
+    "label": "substantia nigra of the mouse brain"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "IOA-AC, China",
+    "model": "FP-1M"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 3000,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.06
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "1 MHz pulses with a stated pulse duration of \"200 µm\" (unit as printed, apparently a typo for a time unit) at 1 Hz PRF; 2 min per session containing 120 pulses, once daily for 10 days. The TMAS arm used the same ultrasound within a 0.2 T static magnetic field; the TUS arm removed the magnet. Mice were under 1% isoflurane."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.02
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The frequency of the US stimulated signal was 1 MHz.",
+   "exposures[0].in_situ.pressure_kpa": "The intracranial US pressure $P _ { \\mathrm { i n } }$ was approximately 3 MPa, and the spatial-peak temporal-average intensity $\\mathrm { { I _ { s p t a } } }$ was approximately 60 mW/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "The intracranial US pressure $P _ { \\mathrm { i n } }$ was approximately 3 MPa, and the spatial-peak temporal-average intensity $\\mathrm { { I _ { s p t a } } }$ was approximately 60 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse duration (PD) was 200 µm with 1 Hz PRF.",
+   "exposures[0].timing.sonication_duration_s": "The duration of stimulation was set to 2 min and contained 120 pulses.",
+   "n_subjects": "After 10 days of treatment, the 18 PD $( n = 6$ in each group) mice were subjected to in vivo electrophysiological experiments. And the other 12 PD mice $( n = 4$ in each group) were subjected to the MWM test to assess the spatial learning and memory abilities.",
+   "n_sessions_per_subject": "All the mice received TMAS, TUS, or sham stimulation once each day for consecutive 10 days.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse duration (PD) was 200 µm with 1 Hz PRF."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text says pulse duration was \"200 µm\" at 1 Hz PRF; unit is not a time unit (likely microseconds), so not recorded."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Stated intracranial pressure of about 3 MPa looks implausible next to an Ispta of about 60 mW/cm2; recorded as printed."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Ispta given as 60 mW/cm2, converted to W/cm2."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Healthy n=9 and PD n=30 are group totals including sham mice; the paper gives no total, and only TMAS and TUS arms (not sham) received ultrasound."
+   },
+   {
+    "field": "exposures[0]",
+    "reason": "Paper is chiefly about magneto-acoustic stimulation; only the TUS arm (magnet removed) is pure ultrasound, and the TMAS arm shares the same ultrasound parameters. Recorded as one exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

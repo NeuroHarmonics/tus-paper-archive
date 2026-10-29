@@ -13,6 +13,7 @@ Defaults to a dry run. Nothing moves without --apply.
 from __future__ import annotations
 
 import argparse
+import filecmp
 import json
 import re
 import shutil
@@ -23,8 +24,8 @@ from pathlib import Path
 from common import (
     load_screening,  # noqa: F401
     normalise_title,
-    CANDIDATES, DATA, LIBRARY, citekey_base, paper_stem, read_json, surname_slug,
-    write_json,
+    CANDIDATES, DATA, LIBRARY, assign_citekeys, citekey_base, paper_stem, read_json,
+    released_manifest, surname_slug, write_json,
 )
 
 DUPES = LIBRARY / "_duplicates"
@@ -41,6 +42,20 @@ def first_author(rec: dict) -> str:
         return surname_slug(a[0]["family"]) or "anon"
     m = re.match(r"^(?:\d{4} - )?([A-Za-z][A-Za-z'\-]+)", rec.get("file", ""))
     return surname_slug(m.group(1)) if m else "anon"
+
+
+def park(src: Path) -> None:
+    """Move an excluded file into library/_out_of_scope/ without replacing a different file of
+    the same name (a preprint and its published version share one); it takes _2, _3."""
+    dst = OUT_OF_SCOPE / src.name
+    n = 2
+    while dst.exists():
+        if filecmp.cmp(src, dst, shallow=False):
+            src.unlink()
+            return
+        dst = OUT_OF_SCOPE / f"{src.stem}_{n}{src.suffix}"
+        n += 1
+    shutil.move(str(src), str(dst))
 
 
 def file_quality(name: str) -> tuple[int, int]:
@@ -110,6 +125,8 @@ def main() -> int:
     # record, and must not come back as a paper of its own), and the alternates list itself.
     prior = {p["doi"].lower(): p for p in (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).values() if p.get("doi")}
     merged_preprints = {p["preprint"]["doi"].lower(): d for d, p in prior.items() if p.get("preprint", {}).get("doi")}
+    merged_preprints |= {o["doi"].lower(): d for d, p in prior.items()
+                         for o in p.get("other_preprints") or [] if o.get("doi")}
 
     included, excluded, unresolved_verdicts = {}, [], []
     for doi, files in by_doi.items():
@@ -165,27 +182,12 @@ def main() -> int:
     # A citekey already in the manifest is never changed: it names a record in data/papers, an
     # abstract file and a site URL. On 2026-09-21 a newcomer sharing year+surname re-lettered ten
     # existing papers (2021cain -> 2021cainb, and 2021wangb was handed to a different paper), which
-    # orphaned their records. Now existing keys are kept and a newcomer takes the first unused letter.
-    existing = {(p.get("doi") or "").lower(): ck
-                for ck, p in (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).items() if p.get("doi")}
-    citekey: dict[str, str] = {}
-    for base, dois in groups.items():
-        taken = set()
-        for doi in dois:
-            if doi.lower() in existing and existing[doi.lower()].startswith(base):
-                citekey[doi] = existing[doi.lower()]
-                taken.add(citekey[doi])
-        newcomers = sorted(d for d in dois if d not in citekey)
-        if len(dois) == 1 and newcomers:
-            citekey[newcomers[0]] = base
-            continue
-        for doi in newcomers:
-            for i in range(26):
-                cand = f"{base}{chr(ord('a') + i)}"
-                if cand not in taken and (cand != base):
-                    citekey[doi] = cand
-                    taken.add(cand)
-                    break
+    # orphaned their records. assign_citekeys keeps existing keys and gives a newcomer a free letter.
+    def key_map(papers: dict) -> dict[str, str]:
+        return {p["doi"].lower(): ck for ck, p in papers.items() if p.get("doi")}
+    citekey = assign_citekeys(
+        groups, key_map(released_manifest()),
+        key_map((read_json(DATA / "manifest.json", {}) or {}).get("papers", {})))
 
     # --- supplementary attachment --------------------------------------------
     # Match "2024 - Bancel - Supplementary.pdf" to its parent by the
@@ -225,15 +227,29 @@ def main() -> int:
         ck = citekey[doi]
         author = (rec.get("authors") or [{}])[0].get("family") or first_author(rec)
         stem = paper_stem(rec.get("year"), author, rec.get("title"))
+        # A merged preprint, kept as an alternate, can hold this stem; the paper then keeps its own
+        # filename rather than being pointed at the preprint (2026falconcaroa, 2026gaob).
+        alts = set((((prior.get(doi.lower()) or {}).get("files") or {}).get("alternates")) or [])
+        if f"{stem}.pdf" in alts:
+            own = next((f for f in files if f not in alts and (LIBRARY / f).exists()), None)
+            if own:
+                stem = Path(own).stem
         if stem in seen_names:                       # extremely unlikely; stay safe
             stem = f"{stem}_{ck[-1]}"
         seen_names[stem] = doi
         stem_for[doi] = stem
 
+        # The file already filed under this name is the paper, whatever file_quality says; a stale
+        # ingest record outranked it and parked 2020wangc's PDF as its own duplicate. A duplicate
+        # whose file exists nowhere is a stale record.
+        if f"{stem}.pdf" in files:
+            files = [f"{stem}.pdf"] + [f for f in files if f != f"{stem}.pdf"]
         plan.append({"kind": "paper", "citekey": ck, "doi": doi,
                      "src": files[0], "dst": f"{stem}.pdf",
                      "record_class": v.get("record_class")})
         for dup in files[1:]:
+            if not any((d / dup).exists() for d in (CANDIDATES, LIBRARY, DUPES)):
+                continue
             plan.append({"kind": "duplicate", "citekey": ck, "doi": doi,
                          "src": dup, "dst": f"_duplicates/{dup}"})
         for sname, pdoi in parent_of.items():
@@ -318,7 +334,7 @@ def main() -> int:
             for base in (CANDIDATES, LIBRARY):
                 src = base / f
                 if src.exists():
-                    shutil.move(str(src), str(OUT_OF_SCOPE / f))
+                    park(src)
                     parked += 1
                     break
             else:
@@ -327,14 +343,13 @@ def main() -> int:
                 # manifest is the only record of where it went.
                 prev_name = prev_filed.get(e["doi"])
                 if prev_name and (LIBRARY / prev_name).exists():
-                    shutil.move(str(LIBRARY / prev_name),
-                                str(OUT_OF_SCOPE / prev_name))
+                    park(LIBRARY / prev_name)
                     parked += 1
 
     # Supplementary files whose parent was excluded follow their parent.
     for sname, pdoi in parent_of.items():
         if pdoi not in included and (CANDIDATES / sname).exists():
-            shutil.move(str(CANDIDATES / sname), str(OUT_OF_SCOPE / sname))
+            park(CANDIDATES / sname)
             parked += 1
 
     # The exclusion ledger is APPEND-ONLY. Once a paper's PDF moves to
@@ -342,8 +357,8 @@ def main() -> int:
     # of ingest.json on the next run -- overwriting the ledger from this run's
     # verdicts alone would silently erase every prior exclusion, and the monthly
     # sweep would then re-add all of them.
-    prior = (read_json(DATA / "excluded.json", {}) or {}).get("papers", [])
-    by_doi_excl = {p["doi"]: p for p in prior}
+    prior_excl = (read_json(DATA / "excluded.json", {}) or {}).get("papers", [])
+    by_doi_excl = {p["doi"]: p for p in prior_excl}
     by_doi_excl.update({p["doi"]: p for p in excluded})   # this run wins on conflict
     write_json(DATA / "excluded.json", {
         "note": "Screened out under INCLUSION.md. Append-only: retained so later "
@@ -351,7 +366,7 @@ def main() -> int:
         "count": len(by_doi_excl),
         "papers": sorted(by_doi_excl.values(), key=lambda x: x["doi"]),
     })
-    print(f"exclusion ledger: {len(prior)} prior + {len(excluded)} this run "
+    print(f"exclusion ledger: {len(prior_excl)} prior + {len(excluded)} this run "
           f"= {len(by_doi_excl)} total")
     write_json(DATA / "manifest.json", {
         "note": "One entry per included paper: citekey, identity, scope class, files.",
@@ -368,9 +383,11 @@ def main() -> int:
                 "screening": {"verdict": v["verdict"], "criterion": v.get("criterion"),
                               "reason": v.get("reason"),
                               "screened_by": "paper-screener/haiku",
-                              "bar_version": "INCLUSION.md 1.0"},
+                              "bar_version": "INCLUSION.md 1.1"},
                 "erratum_of": [u["doi"] for u in rec.get("update_to", [])] or None,
                 **({"preprint": prior[doi.lower()]["preprint"]} if prior.get(doi.lower(), {}).get("preprint") else {}),
+                **({"other_preprints": prior[doi.lower()]["other_preprints"]}
+                   if prior.get(doi.lower(), {}).get("other_preprints") else {}),
                 "files": {
                     **({"alternates": prior[doi.lower()]["files"]["alternates"]}
                        if prior.get(doi.lower(), {}).get("files", {}).get("alternates") else {}),

@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wuc",
+ "doi": "10.64898/2026.07.07.26357338",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "fmri",
+  "behaviour"
+ ],
+ "readout_other": "pursuit-tracking task; resting-state EEG power and phase-locking value; resting-state fMRI (ReHo, ALFF, seed connectivity)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Single-arm. Beta power at CP3 fell during tFUS and recovered after, theta PLV rose in frontoparietal pairs, pursuit-tracking error fell after a single session, and fMRI showed reduced contralesional motor hyperactivity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Participants were interviewed about adverse effects; no adverse reactions were reported. Thermal simulation predicted a maximum rise of 0.2 C.",
+ "exposures": [
+  {
+   "label": "Ipsilesional VLp thalamus tFUS (two 12-min sessions)",
+   "target": {
+    "terms": [
+     "ventral_lateral_nucleus"
+    ],
+    "label": "ipsilesional ventral lateral posterior (VLp) thalamus"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS TPO and DPX-500 transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 8,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "PRF 1000 Hz, duty cycle 20%, sonication duration 0.5 s, inter-stimulus interval 1 s; 480 pulse trains over 12 minutes. Two 12-minute sessions at least one hour apart, the second followed by resting-state fMRI."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Given the small sample size $( N = 6 )$ , all correlation analyses should be interpreted with caution, as they are susceptible to the influence of individual data points.",
+   "n_sessions_per_subject": "Subsequently, a second 12-minute tFUS session (tFUS-only) was conducted, immediately followed by a 10-minute resting-state fMRI scan.",
+   "exposures[0].fundamental_frequency_khz": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz.",
+   "exposures[0].timing.duty_cycle_pct": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz.",
+   "exposures[0].timing.sonication_duration_s": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz.",
+   "exposures[0].in_situ.isppa_w_cm2": "The intensity simulation estimated an in situ intensity of 8 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at the target, while the thermal simulation predicted a maximum temperature rise of $0 . 2 ~ ^ { \\circ } \\mathrm { C } ,$ , confirming the safety of the acoustic exposure.",
+   "exposures[0].device.manufacturer": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz.",
+   "exposures[0].device.model": "We used the NeuroFUS TPO and DPX-500 transducer (Brainbox Ltd., Cardiff, UK), a four-element ultrasound transducer with a central frequency of 500 kHz."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated in the text; left not_reported."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Stated as 'maintained at 8 W/cm2' and estimated by individualised BabelBrain simulation; method recorded as simulation."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Single-arm design without sham; authors acknowledge this."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Two 12-min tFUS sessions on the same day-block after a baseline visit; session 1 with EEG, session 2 with fMRI."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

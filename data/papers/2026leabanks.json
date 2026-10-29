@@ -1,0 +1,375 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026leabanks",
+ "doi": "10.1016/j.brs.2026.103146",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "blood pressure reduction (hypertension-relevant); rats not stated to be hypertensive",
+ "n_subjects": 90,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Tail-cuff systolic/diastolic BP; plasma angiotensin II, renin-1, beta-endorphin, neurotensin (ELISA/bead panel); cFos/Gad67/NeuN immunofluorescence; H&E; TUNEL; hydrophone harmonic (cavitation) analysis",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "PAG sonication lowered systolic and diastolic BP (about 25 mmHg, up to 24 h) with a non-monotonic dependence on intensity; motor cortex sonication did not. Colocalised cFos-Gad67 neurons increased in ipsilateral PAG while total cFos-NeuN cells were lower than controls.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and TUNEL histology across the 12 schemes showed no morphological differences or increased apoptosis versus untreated controls; harmonic analysis showed no cavitation.",
+ "exposures": [
+  {
+   "label": "PAG sonication, pressure/pulse length/duration sweep",
+   "target": {
+    "terms": [
+     "periaqueductal_gray"
+    ],
+    "label": "periaqueductal grey (PAG)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "FUS Instruments",
+    "model": "RK50 (prototype)"
+   },
+   "fundamental_frequency_khz": [
+    540,
+    531
+   ],
+   "free_field": {
+    "pressure_kpa": [
+     275,
+     550,
+     1100,
+     1650,
+     2100
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.7,
+     4.5
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     1,
+     10,
+     100
+    ],
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": [
+     1,
+     10
+    ],
+    "sonication_duration_s": [
+     300,
+     600,
+     1200
+    ],
+    "protocol_description": "PRF 1 Hz throughout. Sequential sweep of peak pressure (0-2.1 MPa, 10 ms pulses, 10 min), pulse length (0, 1, 10, 100 ms at 1.65 MPa, 10 min) and sonication duration (0, 5, 10, 20 min at 1.65 MPa, 10 ms); each rat sonicated once. Cohort 4 used 531 kHz."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Motor cortex (M1) active control sonication",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "motor cortex (M1)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "FUS Instruments",
+    "model": "RK50 (prototype)"
+   },
+   "fundamental_frequency_khz": 540,
+   "free_field": {
+    "pressure_kpa": [
+     550,
+     2100
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "M1 used as active control under light anaesthesia (1.5 % isoflurane); BP recorded during FUS, 0.55-2.1 MPa, 10 ms pulse length, 10 min, 1 Hz PRF."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "90 male and female Wistar rats (Charles River Laboratories, Wilmington, MA, USA), weighing 295 ± 16 g (males) and $2 1 4 \\pm 8 ~ \\mathrm { g }$ (females) on the day of sonication, were used to assess ultrasound-induced changes in BP in 4 experimental cohorts",
+   "n_sessions_per_subject": "Each animal was exposed to FUS once and did not receive repeated stimulation.",
+   "exposures[0].fundamental_frequency_khz": "<tr><td>3</td><td>540</td><td>1.65</td><td>100</td><td>10</td><td>Awake</td><td>PAG</td><td>3F) 6 (3M/</td></tr><tr><td>4</td><td>531</td>",
+   "exposures[0].device.manufacturer": "The transducer and drive system are a prototype of the RK50 (FUS Instruments, Dallas, USA)",
+   "exposures[0].device.model": "The transducer and drive system are a prototype of the RK50 (FUS Instruments, Dallas, USA)",
+   "exposures[0].free_field.pressure_kpa": "<tr><td>2</td><td>540</td><td>0.275</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>6 (3M/ 3F)</td></tr><tr><td>2</td><td>540</td><td>0.55</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>6 (3M/ 3F)</td></tr><tr><td>2</td><td>540</td><td>1.1</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>6 (3M/ 3F)</td></tr><tr><td>2</td><td>540</td><td>1.65</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>6 (3M/ 3F)</td></tr><tr><td>2</td><td>540</td><td>2.1</td><td>10</td><td>10</td><td>Awake</td>",
+   "exposures[0].free_field.ispta_w_cm2": "at the highest pressure (2.1 MPa; 1% DC; 0.7 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ ISPTA) and $5 . 3 ^ { \\circ } \\mathrm { C }$ at the longest pulse (100 ms; 10% DC; 4.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ ISPTA)",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td>3</td><td>540</td><td>1.65</td><td>1</td><td>10</td><td>Awake</td><td>PAG</td><td>3F) 6 (3M/</td></tr><tr><td>3</td><td>540</td><td>1.65</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>3F) 6 (3M/</td></tr><tr><td>3</td><td>540</td><td>1.65</td><td>100</td><td>10</td><td>Awake</td><td>PAG</td>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For all sonications, ultrasound was delivered with a 1 Hz pulse repetition frequency.",
+   "exposures[0].timing.duty_cycle_pct": "at the highest pressure (2.1 MPa; 1% DC; 0.7 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ ISPTA) and $5 . 3 ^ { \\circ } \\mathrm { C }$ at the longest pulse (100 ms; 10% DC; 4.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ ISPTA)",
+   "exposures[0].timing.sonication_duration_s": "<tr><td>4</td><td>531</td><td>1.65</td><td>10</td><td>5</td><td>Awake</td><td>PAG</td><td>3F) 6 (3M/</td></tr><tr><td>4</td><td>531</td><td>1.65</td><td>10</td><td>10</td><td>Awake</td><td>PAG</td><td>3F) 6 (3M/</td></tr><tr><td>4</td><td>531</td><td>1.65</td><td>10</td><td>20</td><td>Awake</td><td>PAG</td>",
+   "exposures[1].fundamental_frequency_khz": "<tr><td>1</td><td>540</td><td>0.55 – 2.1</td><td>10</td><td>10</td><td>Anesthetized</td><td>M1</td>",
+   "exposures[1].device.manufacturer": "The transducer and drive system are a prototype of the RK50 (FUS Instruments, Dallas, USA)",
+   "exposures[1].device.model": "The transducer and drive system are a prototype of the RK50 (FUS Instruments, Dallas, USA)",
+   "exposures[1].free_field.pressure_kpa": "<tr><td>1</td><td>540</td><td>0.55 – 2.1</td><td>10</td><td>10</td><td>Anesthetized</td><td>M1</td>",
+   "exposures[1].timing.pulse_duration_ms": "<tr><td>1</td><td>540</td><td>0.55 – 2.1</td><td>10</td><td>10</td><td>Anesthetized</td><td>M1</td>",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "For all sonications, ultrasound was delivered with a 1 Hz pulse repetition frequency.",
+   "exposures[1].timing.sonication_duration_s": "<tr><td>1</td><td>540</td><td>0.55 – 2.1</td><td>10</td><td>10</td><td>Anesthetized</td><td>M1</td>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Peak pressures stated as measured in water; converted from MPa. Table gives 0.275-2.1 MPa in cohort 2; 0.55-2.1 MPa range in cohort 1."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Cohort 4 used 531 kHz, all others 540 kHz; listed as one exposure."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is only stated in the discussion for 10 ms pulses (1 %) and 100 ms pulses (10 %); 1 ms pulses not stated."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Only two ISPTA values are stated in the discussion (0.7 W/cm2 at 2.1 MPa/1 % DC; 4.5 W/cm2 at 100 ms/10 % DC); other values are readable only from figures; text also gives minima 454 and 735 mW/cm2."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "0 ms pulse length and 0 MPa / 0 min conditions are controls and were excluded from the lists."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Table gives minutes; converted to seconds (5, 10, 20 min)."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated for the M1 condition."
+   },
+   {
+    "field": "sham_type",
+    "reason": "0 MPa condition is assumed to be device-on with no output; the paper does not describe how it was produced. M1 used as active control."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "90 rats across four cohorts; cohort sizes in Table 1 vary and some rows overlap."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Mixed neuronal findings; classified from description of BP lowering and GABAergic cFos increase."
+   },
+   {
+    "field": "conditions",
+    "reason": "Wistar rats not described as hypertensive or normotensive in this paper."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "disagree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].fundamental_frequency_khz": "both_defensible"
+  }
+ }
+}

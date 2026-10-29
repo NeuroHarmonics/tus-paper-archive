@@ -1,0 +1,194 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "circadian rhythm disruption (chronic jet lag model)",
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "TSE PhenoMaster locomotor activity; open field; plasma melatonin and cortisol ELISA; c-Fos immunofluorescence; HE, TUNEL, Nissl",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFU to the SCN increased c-Fos in SCN, SPZ and DMH and reduced circadian phase difference, anxiety-like behaviour, melatonin and cortisol in jet-lagged mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE, TUNEL and Nissl staining showed no tissue damage after stimulation.",
+ "schema_version": "1.0",
+ "citekey": "2025wangb",
+ "doi": "10.1109/tnsre.2025.3626143",
+ "exposures": [
+  {
+   "label": "LIFU to SCN",
+   "target": {
+    "terms": [
+     "suprachiasmatic_nucleus"
+    ],
+    "label": "the suprachiasmatic nucleus (SCN)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 350,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 430,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Total stimulation 10 minutes, pulse trains every 5 s; each train 200 ms with 2 ms tone bursts at PRF 250 Hz (4 ms period); daily in the morning for three consecutive days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "They were randomly divided into wild type (WT; normal mice without any treatment), chronic jet lag (CJL; model group), and US-stimulated SCN (US-SCN; LIFU-treated CJL mice) (n=8 per group).",
+   "n_sessions_per_subject": "Starting on Day 0, the US-SCN group received LIFU stimulation targeting the SCN in the morning for three consecutive days.",
+   "exposures[0].fundamental_frequency_khz": "In this study, the US was delivered using a 1 MHz miniaturized focused transducer made of PZT-4, with a diameter of approximately 19mm.",
+   "exposures[0].timing.pulse_duration_ms": "Each pulse train comprised a sonication duration of 200 ms, with individual pulses exhibiting a toneburst duration (TBD) of 2 ms and a pulse repetition frequency of 250 Hz, corresponding to a pulse repetition period (PRP) of 4 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Each pulse train comprised a sonication duration of 200 ms, with individual pulses exhibiting a toneburst duration (TBD) of 2 ms and a pulse repetition frequency of 250 Hz, corresponding to a pulse repetition period (PRP) of 4 ms.",
+   "exposures[0].timing.sonication_duration_s": "Each pulse train comprised a sonication duration of 200 ms, with individual pulses exhibiting a toneburst duration (TBD) of 2 ms and a pulse repetition frequency of 250 Hz, corresponding to a pulse repetition period (PRP) of 4 ms.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The transducer was positioned transcranially, generating a peak acoustic pressure of 0.43 MPa at the skull surface.",
+   "exposures[0].in_situ.pressure_kpa": "The transducer was positioned transcranially, generating a peak acoustic pressure of 0.43 MPa at the skull surface. After accounting for an estimated 18% transcranial attenuation, the efective intracranial pressure at the target site was approximately 0.35 MPa."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n=8 per group for three groups; only the US-SCN group (8) was sonicated, the safety-assessment cohort size is not stated."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.43 MPa described as peak acoustic pressure at the skull surface; domain not otherwise stated."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.35 MPa obtained by the authors from an estimated 18% transcranial attenuation (derating), not measured."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No transducer maker named; only PZT-4 material, 19 mm diameter."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Whether mice were awake or anaesthetised during sonication is not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible"
+  }
+ }
+}

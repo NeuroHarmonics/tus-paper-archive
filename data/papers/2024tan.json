@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024tan",
+ "doi": "10.1109/tnsre.2024.3395641",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8,
+  8,
+  8,
+  8,
+  8,
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "open field, novel object recognition and Morris water maze; in vivo LTP and LFP oscillations (PP-DG); western blot (SYP, PSD-95, NR2A, NR2B, GABAAR)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "TMAS at both intensities and TUS at 5 W/cm2 improved memory and increased synaptic proteins; TMAS raised LTP and gamma-band measures more than TUS. TUS at 3 W/cm2 reduced SYP, NR2A, NR2B and GABAAR levels relative to sham.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Open-field test showed no anxiety-like effect of stimulation.",
+ "exposures": [
+  {
+   "label": "Hippocampus, TUS and TMAS (0.3 T magnet) at 3 and 5 W/cm2",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "IOA-AC, China",
+    "model": "FP-1M"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     210,
+     270
+    ],
+    "isppa_w_cm2": [
+     3,
+     5
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "100 Hz pulse repetition frequency and 5% duty cycle, 5 minutes of sonication per mouse, daily for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-four hours after the last stimulation, 8 mice in each group were subjected to in vivo local field potential (LFP) recording, longterm potentiation (LTP) induction from the perforant pathway (PP) to the dentate gyrus (DG) and western blot assay, and the other 8 mice were subjected to the open field test (OFT), the novel object recognition test (NOR) and the Morris water maze test (MWM), as shown in Fig.1(e).",
+   "n_sessions_per_subject": "The stimulation period consisted of 7 days.",
+   "exposures[0].fundamental_frequency_khz": "As shown in Fig. 1(b), the TUS stimulation system was conducted by a focused ultrasound transducer (FP-1M, IOA-AC, China) with 1 MHz center frequency",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Intensity was set at 3 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ for TUS\\_I and TMAS\\_I, and $5 ~ { \\mathrm { W / c m } ^ { 2 } }$ for TUS\\_II and TMAS\\_II, with a 100 Hz pulse repetition frequency and 5% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "Intensity was set at 3 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ for TUS\\_I and TMAS\\_I, and $5 ~ { \\mathrm { W / c m } ^ { 2 } }$ for TUS\\_II and TMAS\\_II, with a 100 Hz pulse repetition frequency and 5% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "Each mouse received 5 minutes of sonication.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Intensity was set at 3 $\\mathrm { w } / \\mathrm { c m } ^ { 2 }$ for TUS\\_I and TMAS\\_I, and $5 ~ { \\mathrm { W / c m } ^ { 2 } }$ for TUS\\_II and TMAS\\_II, with a 100 Hz pulse repetition frequency and 5% duty cycle.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Our results showed that increasing the ultrasound intensity from $3 \\mathrm { w } / \\mathrm { c m } ^ { 2 }$ (ultrasound pressure: 0.21 Mpa) to $5 \\mathrm { w } / \\mathrm { c m } ^ { 2 }$ (ultrasound pressure: 0.27 Mpa)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity stated only as 3 and 5 W/cm2; the type (spatial-peak pulse-average or other) and domain are not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.21 and 0.27 MPa are given in the Discussion as the ultrasound pressures for 3 and 5 W/cm2; domain not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham group not described."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated in text."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Target given as hippocampus in text; the dentate gyrus recording site is stated but the sonication target is shown only in Fig. 1(d)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024choia",
+ "doi": "10.1002/advs.202302404",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  5,
+  5,
+  5,
+  5,
+  6,
+  6,
+  6,
+  6,
+  6,
+  5,
+  5,
+  5,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "cerebral_haemodynamics",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "Epileptic spike counts and EEG spectral power; 530 nm reflectance CBV; c-Fos, GAD65, Iba1, GFAP immunohistochemistry; microdialysis GABA and glutamate by LC-MS/MS",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Repeated 40 s bursts at 0.25 MPa with 40 s intervals suppressed PTZ-induced epileptiform activity; shortening the interval to 20 s, or following with the 1 MPa 0.25 s sequence (hybrid), worsened it.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Nissl staining after TXH_0.25_30 and TXL_40_40 showed no damage to the rat brain.",
+ "exposures": [
+  {
+   "label": "rtFUS to right anterior thalamic nucleus (TXH_0.25_30, TXL_40_40, TXL_10_50, TXL_20_40, TXL_40_20, TX_HYBRID)",
+   "target": {
+    "terms": [
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "right anterior thalamic nucleus (ATN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Del Piezo Specialties LLC (PZT element supplier)",
+    "model": "690 kHz single-element ring transducer (PZT DL-47), 10/31 mm inner/outer diameter"
+   },
+   "fundamental_frequency_khz": 690,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     250,
+     1000
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.25,
+     10,
+     20,
+     40
+    ],
+    "protocol_description": "Two families of repeated sonication: TXL, six repetitions of a 0.25 MPa burst of 10, 20 or 40 s with 50, 40, 40 or 20 s intervals; and TXH, eleven repetitions of a 1 MPa, 0.25 s burst with 30 s intervals (50% duty cycle, 100 Hz PRF, 5 ms bursts of 3450 cycles). TX_HYBRID is TXL_40_40 then TXH_0.25_30 after a 3 min rest."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "For the EEG, eight rats were chosen for the nonstimulated PTZ+/tFUS-control (PTZ-control) group, and five rats were chosen for each stimulated experimental group. IHC was performed within the EEG group for five rats in each of the PTZ-control and stimulated experimental groups, and five additional rats were evaluated as the PTZ-/tFUS-control (normal control) group. For wide-field optical imaging, six rats each from the PTZ control, normal control, and stimulated experimental groups were evaluated. For the microdialysis, eight rats were chosen for PTZ-control, and five rats were chosen for each group of TXL\\_40\\_40, TXL\\_40\\_20 and TX\\_Hybrid.",
+   "exposures[0].fundamental_frequency_khz": "690 kHz single-element ring transducer",
+   "exposures[0].unspecified_domain.pressure_kpa": "one with a low-pressure (0.25 MPa) consecutive burst train (TXL sequences), and the other with shorter, high-pressure (1.0 MPa) bursts (TXH sequence) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.duty_cycle_pct": "one with a low-pressure (0.25 MPa) consecutive burst train (TXL sequences), and the other with shorter, high-pressure (1.0 MPa) bursts (TXH sequence) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "one with a low-pressure (0.25 MPa) consecutive burst train (TXL sequences), and the other with shorter, high-pressure (1.0 MPa) bursts (TXH sequence) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.pulse_duration_ms": "transmitted a 5 ms, 3450 cycle, 690 kHz burst to secure a 50% duty cycle",
+   "exposures[0].timing.sonication_duration_s": "TXH\\_0.25\\_30 is a sequence repeating eleven times of 1 MPa, 0.25 s bursts with 30 s intervals. TXL\\_40\\_40 is a sequence repeating six times of0.25 MPa, 40 s bursts with 40 s intervals. TXL\\_10\\_50 is a sequence repeating six times of 0.25 MPa, 10 s bursts with 50 s intervals. TXL\\_20\\_40 is a sequence repeating six times of 0.25 MPa, 20 s bursts with 40 s intervals.",
+   "exposures[0].device.model": "A lead zirconate titanate (Del Piezo Specialties LLC., DL-47) 690 kHz single-element ring transducer"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Fifty-nine rats stated for the experiments; microdialysis used twenty additional rats per the Methods, so overlap is unclear."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.25 MPa and 1 MPa given without stating water or in-brain."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "TXH is stated as 50% duty at 100 Hz PRF (pulsed); TXL is called a 'consecutive burst train' with no internal gating stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "5 ms, duty cycle 50% and PRF 100 Hz are stated for the TXH sequence only; not applicable as stated to TXL."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "List of burst lengths across sequences: 0.25 s (TXH), 10, 20, 40 s (TXL)."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer is described as fabricated, with a PZT element from Del Piezo Specialties; recorded as custom_built."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

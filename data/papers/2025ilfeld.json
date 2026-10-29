@@ -1,0 +1,179 @@
+{
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "behaviour"
+ ],
+ "readout_other": "Dynamic numeric rating scale for knee pain; Brief Pain Inventory; WOMAC; light-touch sensation; quadriceps strength (Oxford scale)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Mean dynamic NRS fell in all groups including sham; the 225 W/cm2 group reported larger reductions than the 150 W/cm2 group, but the authors state no conclusions can be drawn with n=7.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No device-related cutaneous irritation, systemic side effects or other adverse events; sensation and quadriceps strength were not decreased.",
+ "exposures": [
+  {
+   "label": "Single 15 s sonication of the infrapatellar branch of the saphenous nerve at 150 or 225 W/cm2",
+   "target": {
+    "terms": [
+     "saphenous_nerve"
+    ],
+    "label": "infrapatellar branch of the saphenous nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Pegasus Neurotechnology, Melbourne, Victoria, Australia",
+    "model": "Resonance (driven by a signal generator and power amplifier, Model H-107, Sonic Concepts)"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     150,
+     225
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 2200,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 15,
+    "protocol_description": "Participants received one 15 s focused ultrasound (or sham) treatment after which the transducer was removed; intensity was scaled for overlying fat and muscle attenuation. Cohorts were 0 (sham), 150 or 225 W/cm2 spatial-peak temporal-average, randomised 1:2:2."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "source_quotes": {
+   "n_sessions_per_subject": "Participants underwent focused ultrasound (or sham) treatment for 15 seconds (pulse duration) with a peak acoustic pressure of 2.2 MPa, after which the transducer was removed.",
+   "n_subjects": "Due to the limited sample size ${ \\bf { \\dot { n } } } = 7$ with 5 receiving active treatment), no conclusions may be drawn regarding effectiveness or safety; but this firstin-humans use of low-intensity focused ultrasound to treat pain does suggest that continuing study is warranted.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Participants underwent focused ultrasound (or sham) treatment for 15 seconds (pulse duration) with a peak acoustic pressure of 2.2 MPa, after which the transducer was removed.",
+   "exposures[0].timing.sonication_duration_s": "Participants underwent focused ultrasound (or sham) treatment for 15 seconds (pulse duration) with a peak acoustic pressure of 2.2 MPa, after which the transducer was removed.",
+   "exposures[0].in_situ.ispta_w_cm2": "It remains unknown if the doses used in the current study (150 and 225 $\\mathrm { W } / { \\mathrm { c m } } ^ { 2 }$ for 15 seconds) were adequate and/or optimal."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The paper calls the 15 s a 'pulse duration'; recorded as sonication duration, pulse duration left not_reported."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Spatial-peak temporal-average intensity given as 150 and 225 W/cm2 (18 W, 27 W); the text says it was scaled for attenuation but does not say whether it applies in water or at the nerve."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "The device is Pegasus Resonance; the Sonic Concepts H-107 is named in the sentence as the driver but the transducer maker is not stated explicitly."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "No frequency is stated in the text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham is 0 W/cm2 treatment; how it was produced is not described."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Peripheral nerve target, not brain."
+   }
+  ],
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ },
+ "schema_version": "1.0",
+ "citekey": "2025ilfeld",
+ "doi": "10.1002/jum.16706"
+}

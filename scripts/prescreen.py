@@ -116,7 +116,11 @@ NEURAL = re.compile(
 COMPONENT = re.compile(
     r"^(video|table|image|datasheet|data_sheet|presentation|audio|figure)_"
     r"|^reviewer #\d|^author response for\b|^elife assessment\b"
-    r"|^supplementary (material|data|information)\b", re.I)
+    r"|^supplementary (material|data|information|file)\b", re.I)
+
+# The same by DOI: a supplementary file (ACS, PLOS, Frontiers append .s001) or a whole Wiley issue.
+COMPONENT_DOI = re.compile(r"\.s\d{3}$", re.I)
+ISSUE_DOI = re.compile(r"^10\.1002/[a-z]+\.(v\d+\.\d+|\d{4}\.\d+\.issue-\d+)$", re.I)
 
 
 # Repositories that hold data rather than papers. OSF is excluded from this list
@@ -164,7 +168,10 @@ SUPPLEMENT_TITLE = re.compile(r"^(\d{1,4}[A-Z]?[.:]\s|P\d{1,4}[.:]?\s|[A-Z]{1,3}
 
 # Rule 8. Grey literature.
 OSF_PROJECT_DOI = re.compile(r"^10\.(17605|31225)/", re.I)
-THESIS_DOI = re.compile(r"^10\.(25365/thesis|34973|5167/uzh|3929/ethz|17863/cam|25560|14279|18452|6100|32657)/?", re.I)
+# JoVE demonstrates a protocol, not the first report of an exposure (E3).
+JOVE_DOI = re.compile(r"^10\.3791/", re.I)
+# 70675 is theses.fr (ABES), which registers nothing but French doctoral theses.
+THESIS_DOI = re.compile(r"^10\.(25365/thesis|34973|5167/uzh|3929/ethz|17863/cam|25560|14279|18452|6100|32657|70675)/?", re.I)
 THESIS_VENUE = re.compile(r"repository|\bthesis\b|\btheses\b|dissertation|proquest|circle \(university", re.I)
 
 # Rule 9. Supplement abstracts without a number.
@@ -199,12 +206,12 @@ def main() -> int:
         title = v.get("title") or ""
         abstract = v.get("abstract") or ""
         # Rule 6: a component record is not the publication.
-        if COMPONENT.match(title):
+        if COMPONENT.match(title) or COMPONENT_DOI.search(doi) or ISSUE_DOI.match(doi):
             out.append({
                 "doi": doi, "verdict": "not_relevant", "record_class": "other",
                 "criterion": "E7",
                 "reason": ("A component record (supplementary video, reviewer "
-                           "report, author response), not the article. It carries "
+                           "report, author response, whole issue), not the article. It carries "
                            "the article's abstract, so it reads as relevant; the "
                            "article is what belongs in the archive."),
                 "resolved_by": "prescreen", "under_current_criteria": True,
@@ -220,6 +227,13 @@ def main() -> int:
                 "doi": doi, "verdict": "not_relevant", "record_class": "other", "criterion": "E7",
                 "reason": ("An OSF registration, preregistration, project page or foundation project report, "
                            "not a publication."),
+                "resolved_by": "prescreen", "under_current_criteria": True,
+            })
+            continue
+        if JOVE_DOI.match(doi):
+            out.append({
+                "doi": doi, "verdict": "not_relevant", "record_class": "methods_tool", "criterion": "E3",
+                "reason": "A JoVE methods article: it demonstrates a protocol rather than giving the first report of an exposure.",
                 "resolved_by": "prescreen", "under_current_criteria": True,
             })
             continue

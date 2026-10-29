@@ -1,0 +1,180 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022zhou",
+ "doi": "10.1109/tuffc.2021.3120750",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "nematode (Caenorhabditis elegans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging"
+ ],
+ "readout_other": "reversal behaviour (proportion reversing); GCaMP5.0 calcium imaging of ALM and PLM neurons",
+ "readout_timing": "online",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound evoked reversal behaviour in 85% of wild-type worms, reduced in mec-4 (30%) and mec-6 (10%) mutants; ALM and PLM neurons showed increased GCaMP5.0 fluorescence.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Cavitation was checked by LDV frequency scan (no harmonics or wideband noise); temperature rise described as small but not quantified.",
+ "exposures": [
+  {
+   "label": "27.4 MHz SAW device, single 6.4 ms pulse, C. elegans on agar",
+   "target": {
+    "terms": [
+     "c_elegans_neurons"
+    ],
+    "label": "ALM and PLM neurons expressing MEC-4 and MEC-6 ion channels"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "interdigital transducer (IDT) surface acoustic wave device on 128 deg YX-LiNbO3 substrate"
+   },
+   "fundamental_frequency_khz": 27400,
+   "free_field": {
+    "pressure_kpa": 3000,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0064,
+    "protocol_description": "Worms moved freely on the agar surface for 5 min and were then stimulated with a single-pulse ultrasound (input electronic power: 5 W, pulse duration: 6.4 ms). Twenty worms per group."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty C. elegans were used in each group, and the proportion of C. elegans that exhibits reversal behavior under ultrasound stimulation was analyzed based on the video.",
+   "exposures[0].fundamental_frequency_khz": "The resonant frequency of the IDTs was 27.4 MHz, measured by a network analyzer (ZVA40, Rohde and Schwarz, Muenchen, Germany)",
+   "exposures[0].timing.sonication_duration_s": "then was stimulated with a single-pulse ultrasound (input electronic power: 5 W, pulse duration: 6.4 ms)",
+   "exposures[0].device.manufacturer": "The IDTs were fabricated by a standard microelectromechanical technology",
+   "exposures[0].device.model": "The IDTs were fabricated by a standard microelectromechanical technology",
+   "exposures[0].free_field.pressure_kpa": "In the experiment, when the input electronic power was 5 W, the maximum vibration amplitude of agar plate was 11 nm and the corresponding acoustic pressure calculated by (1) was approximately 3 MPa."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only group sizes given: 20 per behavioural group (6 genotypes), ALM n=9, PLM n=8; no total. The 20 appears in the figure legend as spaced digits."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Approximately 3 MPa calculated from LDV vibration amplitude on the agar surface at 5 W input; the paper does not label the domain."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Single 6.4 ms pulse treated as one continuous burst; 6.4 ms is stated as 'pulse duration'."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "IDT fabricated by MEMS technology; builder not named, so recorded as custom_built."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

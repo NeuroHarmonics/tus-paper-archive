@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023hesselink",
+ "doi": "10.1088/1361-6560/acda0c",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 32,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "other"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "EMG of left gluteus maximus and video scoring of motor responses; contact-microphone skull vibration amplitude",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS evoked motor responses in about 70% of stimulations, versus 14% for sham and 6-23% for piezoelectric skull vibrations; randomised PRF gave similar response rates to fixed PRF.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Two of 32 mice were sacrificed prematurely because of anaesthetic complications.",
+ "exposures": [
+  {
+   "label": "FUS to right motor cortex, PRF varied",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "motor cortex (M1), 1.78 mm right, 0.80 mm anterior, 1.33 mm ventral to bregma"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "FUS Instruments",
+    "model": "RK-50"
+   },
+   "fundamental_frequency_khz": 476.5,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 12.6,
+    "ispta_w_cm2": 3.97
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "other_patterned"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     420,
+     4200
+    ],
+    "duty_cycle_pct": 31.5,
+    "sonication_duration_s": 0.08,
+    "protocol_description": "80 ms stimulations at 31.5% duty cycle, PRF fixed at 1.5 kHz, randomised about 1.5 kHz (0.42 to 4.2 kHz), or fixed at 0.54 or 2.52 kHz in five animals; five stimulations per treatment under light isoflurane (0.2%). Pulse duration varies with PRF at constant duty cycle."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Based on these estimations, thirty-two (32) C57Bl/6 mice between 8 and 16 weeks ofage were used for this study.",
+   "exposures[0].fundamental_frequency_khz": "The transducer was driven with a 476.5 kHz signal, 1.5 kHz PRF and 31.5% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "The transducer was driven with a 476.5 kHz signal, 1.5 kHz PRF and 31.5% duty cycle.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS was delivered with PRF values ranging from 0.42 to 4.2 kHz in ten logarithmic intervals.",
+   "exposures[0].timing.sonication_duration_s": "Pulsed FUS was delivered with 80 ms stimulations.",
+   "exposures[0].free_field.isppa_w_cm2": "FUS exposure had a duty cycle of31.5%, with a spatial peakpulse average intensity $( I _ { \\mathrm { s p p a } } ,$ water-conditions) of12.6 W cm<sup>−2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "With the prescribed duty cycle, this translated to a spatial peak-time average intensity $( I _ { \\mathrm { s p t a } } ) \\mathrm { o f } 3 . 9 7 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$",
+   "exposures[0].device.manufacturer": "LIFU was delivered using a bench-top (figure 2), stereotactic-guided ultrasound platform for small animal experimentation (RK-50, FUS Instruments, Toronto, ON, Canada).",
+   "exposures[0].device.model": "LIFU was delivered using a bench-top (figure 2), stereotactic-guided ultrasound platform for small animal experimentation (RK-50, FUS Instruments, Toronto, ON, Canada)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is a sweep of ten logarithmic steps from 0.42 to 4.2 kHz for the vibration objective, 1.5 kHz fixed or random for the motor trials, plus 0.54 and 2.52 kHz in five animals; recorded as the range."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Ispta 3.97 W/cm2 is stated as derived from Isppa and the 31.5% duty cycle, not measured separately."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "32 mice were used; two were sacrificed prematurely, 30 contributed motor data; 19 and 15 mice for the vibration objectives."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham: no power supplied to the transducer. Also a piezoelectric actuator and air-puff comparison, which are not exposures."
+   },
+   {
+    "field": "randomised",
+    "reason": "Condition order was pseudo-random within groupings."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

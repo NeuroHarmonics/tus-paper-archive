@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020nguyen",
+ "doi": "10.1101/2020.11.26.400580",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long Evans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 28,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "other"
+ ],
+ "readout_other": "multi-unit activity classified as putative excitatory and inhibitory neurons; LFP theta power; thermocouple brain temperature",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Low intensity AM-tFUS reduced firing of putative inhibitory interneurons and theta power; intermediate intensity had no effect; high intensity increased firing of putative excitatory neurons and theta power.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Brain temperature rise at the target limited to about 0.2 C at the highest intensity (thermocouple, n=8).",
+ "exposures": [
+  {
+   "label": "AM-tFUS to right hippocampus (low, intermediate, high intensity)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "right hippocampus"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran",
+    "model": "KS25-2 immersion transducer"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     1.6,
+     3.2,
+     6.4
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 180,
+    "protocol_description": "Continuous 2.0 MHz carrier amplitude modulated at 40 Hz (100% AM depth), three-minute sonications, recorded two minutes before and five minutes after; low, intermediate and high intensity delivered in fixed order with 20 min to 1 h between; sham before active at each intensity."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Data were obtained from 28 (electrophysiology: 𝑛 = 20, thermometry: $n = 8 )$",
+   "exposures[0].fundamental_frequency_khz": "(AM frequency 40 Hz, 100% AM depth, carrier frequency 2.0 MHz, sinusoidal)",
+   "exposures[0].timing.sonication_duration_s": "multi-unit activity (MUA) and local field potentials (LFP) from the rat hippocampus before, during, and after three-minutes of AM-tFUS",
+   "exposures[0].device.manufacturer": "The amplifier provided the drive voltage into the ultrasonic transducer (Ultran KS25-2 immersion transducer, 2 MHz, 6.25 mm active diameter).",
+   "exposures[0].device.model": "The amplifier provided the drive voltage into the ultrasonic transducer (Ultran KS25-2 immersion transducer, 2 MHz, 6.25 mm active diameter).",
+   "exposures[0].in_situ.ispta_w_cm2": "Aft<sub>er</sub> t<sub>a</sub>ki<sub>ng</sub> i<sub>n</sub>t<sub>o accoun</sub>t th<sub>e</sub> AM <sub>na</sub>t<sub>ure o</sub>f th<sub>e wave</sub>f<sub>orm,</sub> th<sub>ese va</sub>l<sub>ues are re</sub>d<sub>uce</sub>d t<sub>o</sub> 1<sub>.</sub>6<sub>,</sub> 3<sub>.</sub>2<sub>,</sub> <sub>a</sub>nd $6 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ <sub>,</sub> <sub>y</sub>i<sub>e</sub>ldi<sub>ng</sub> th<sub>e</sub> fi<sub>na</sub>l i<sub>n</sub>t<sub>ens</sub>it<sub>y</sub> <sub>va</sub>l<sub>ues</sub> <sub>repor</sub>t<sub>e</sub>d i<sub>n</sub> th<sub>e</sub> <sub>ma</sub>i<sub>n</sub> t<sub>ex</sub>t<sub>.</sub>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta was set from calibration in water with a model skull between transducer and hydrophone (skull gives 2/3 of free-field pressure); continuous-wave values 2.5, 5.0 and 10.0 W/cm2 traversing the skull were reduced for the AM waveform to 1.6, 3.2 and 6.4 W/cm2. Domain not stated in those words, so placed in unspecified_domain."
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Amplitude-modulated continuous carrier, not a pulse train; no PRF or pulse duration."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "28 rats: electrophysiology n=20, thermometry n=8 (separate follow-up experiment)."
+   },
+   {
+    "field": "randomised",
+    "reason": "Order of intensities fixed for all animals and sham always preceded active."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each rat received three intensities, each in sham and active configurations, in one preparation; number of sessions not stated."
+   },
+   {
+    "field": "doi",
+    "reason": "bioRxiv preprint version."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "both_defensible"
+  }
+ }
+}

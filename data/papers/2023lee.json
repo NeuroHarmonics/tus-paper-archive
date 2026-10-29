@@ -1,0 +1,325 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023lee",
+ "doi": "10.1016/j.brs.2023.08.002",
+ "model_system": [
+  "in_vitro_cell",
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J cultured cells; C57BL6N and TRPA1 knockout mice in vivo)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  4,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Fluo-4 AM calcium imaging; iGluSnFR glutamate imaging; whole-cell patch clamp; tail-movement score and latency; c-Fos immunohistochemistry; TUNEL",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Ultrasound evoked astrocytic calcium rises and glutamate release with indirect neuronal calcium responses in vitro (blocked by TRPA1 antagonist), and tail movement and c-Fos increases in mouse motor cortex in vivo.",
+ "adverse_events": "observed",
+ "safety_notes": "TUNEL-positive damage to neurons and astrocytes and bleeding traces were seen only at the 0.62 MPa (supra-watt) condition, not at 0.15 MPa.",
+ "exposures": [
+  {
+   "label": "Ultrasonocoverslip in vitro stimulation of cultured astrocytes and neuron-astrocyte coculture",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "cultured_glia"
+    ],
+    "label": "cultured cortical astrocytes and neuron-astrocyte coculture"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "Ultrasonocoverslip (PVDF-TrFE transducer integrated on a glass coverslip)"
+   },
+   "fundamental_frequency_khz": 6000,
+   "free_field": {
+    "pressure_kpa": [
+     50,
+     150
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.04,
+     0.372
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.333,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.05,
+     0.5
+    ],
+    "protocol_description": "The fundamental pulse sequence used a train of 333 μs long 6 MHz bursts with PRF of 1.5 kHz; 'pulse length' (total sonication) was varied by changing the number of bursts, e.g. 750 bursts for a 500 ms transmission. Frequency was also varied from 5 to 10 MHz at 0.15 MPa and 0.5 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 49.95
+   }
+  },
+  {
+   "label": "750 kHz transcranial stimulation of mouse motor cortex (tail movement)",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "a motor cortical region ... to the best position where the tail movement was mostly elicited"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-made 750 kHz PZT concave transducer (DL-61HD), 31 mm diameter, 23 mm focal distance"
+   },
+   "fundamental_frequency_khz": 750,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     70,
+     620
+    ],
+    "isppa_w_cm2": 12.32,
+    "ispta_w_cm2": [
+     0.08,
+     6.16
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Pulse length of 0.5 s at pressures between 0.07 and 0.62 MPa measured under a mouse skull piece; the acoustic parameters are given only in Fig. 6b, so PRF and duty cycle are not available in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "(wild-type n = 4 and TRPA1 KO $\\mathfrak { n } = 5 ,$",
+   "exposures[0].fundamental_frequency_khz": "we chose a 6 MHz frequency, similar to that in a previous report",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound waveforms were generated by repeating 333 μs long 6 MHz bursts with the pulse repetition frequency (PRF) of 1.5 kHz (Fig. 2c)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental pulse sequence for ultrasound stimulation used a train of 333 μs long 6 MHz bursts with PRF of 1.5 kHz (Fig. 2c)",
+   "exposures[0].timing.sonication_duration_s": "during the ultrasound stimulation period (0.05–0.5 s)",
+   "exposures[1].fundamental_frequency_khz": "A custom-made 750 kHz ultrasonic transducer was used for sonication during the experiments.",
+   "exposures[1].in_situ.pressure_kpa": "The range of applied acoustic pressure measured under a mouse skull piece was between 0.07 MPa and 0.62 MPa with the same pulse length of 0.5 s.",
+   "exposures[1].timing.sonication_duration_s": "The range of applied acoustic pressure measured under a mouse skull piece was between 0.07 MPa and 0.62 MPa with the same pulse length of 0.5 s.",
+   "exposures[0].free_field.pressure_kpa": "The acoustic pressure was obtained from Ultrasonocoverslip by applying up to $1 3 0 \\mathrm { V _ { p p } } ,$ a maximum reliable voltage level to produce acoustic signals with repetitive stimulations; it ranged from 0.05 MPa to 0.15 MPa at the lower end within the bandwidth corresponding from 0.04 to 0.372 W/ ${ \\mathrm { c m } } ^ { 2 } \\left( { \\mathrm { F i g . ~ } } { \\mathrm { S 3 } } \\right)$",
+   "exposures[0].free_field.ispta_w_cm2": "The acoustic pressure was obtained from Ultrasonocoverslip by applying up to $1 3 0 \\mathrm { V _ { p p } } ,$ a maximum reliable voltage level to produce acoustic signals with repetitive stimulations; it ranged from 0.05 MPa to 0.15 MPa at the lower end within the bandwidth corresponding from 0.04 to 0.372 W/ ${ \\mathrm { c m } } ^ { 2 } \\left( { \\mathrm { F i g . ~ } } { \\mathrm { S 3 } } \\right)$",
+   "exposures[1].in_situ.isppa_w_cm2": "Considering safety issues in brain stimulation, this finding was important because the supra-watt-intensity ultrasound stimulation caused microbleeding, which led to brain cell death, as confirmed by the TUNEL staining results (Fig. S8, Fig. 6j), and the exposure in which we indicated microbleeding with $\\mathrm { I } _ { \\mathrm { s p p a } } = 1 2 . 3 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I _ { \\mathrm { { s p t a } } } } = 6 . 1 6 \\mathrm { W } /$ $\\mathrm { c m } ^ { 2 }$ exceeds Food and Drug Administrator (FDA) safety guidelines [36] limiting the spatial-peak-time-average intensity $\\mathrm { ( I _ { \\mathrm { s p t a } } ) }$ to 0.72 W/cm<sup>2</sup>.",
+   "exposures[1].in_situ.ispta_w_cm2": "(e) Measured latency of mouse tail movement as a function of acoustic pressure between wild-type and TRPA1 KO mice (wild-type $\\mathfrak { n } = 4$ and TRPA1 $\\mathrm { K O } \\ \\mathbf { n } = 5 ,$ Mann-Whitney U test, two-tailed, 0.07 MPa = 0.08 W/cm<sup>2</sup>, $0 . 6 2 \\mathrm { \\ M P a } = 6 . 1 6 \\mathrm { \\ W } / \\mathrm { c m ^ { 2 } } ) .$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Frequency was swept from 5 to 10 MHz at 0.15 MPa and 0.5 s; 6 MHz recorded as the main frequency."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Hydrophone-measured pressure 1 mm above the transducer (0.05-0.15 MPa across experiments, 0.11 MPa also used); medium not stated, so recorded as unspecified. Range read from a figure caption."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated; only 333 us bursts at 1.5 kHz PRF."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse length varied 0.05-0.5 s (0.1, 0.25, 0.5 s in figures); range from the patch-clamp methods sentence."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "Pressure range is across a sweep and is the stated 'measured under a mouse skull piece' range."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta values 0.08 and 6.16 W/cm2 taken from a figure caption linked to 0.07 and 0.62 MPa; domain not stated. Isppa 12.32 W/cm2 given only for the highest pressure."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "'Pulse length' of 0.5 s read as the sonication duration; PRF and duty cycle only in Fig. 6b."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes for the behaviour experiment (wild type 4, TRPA1 KO 5); c-Fos and TUNEL groups had n = 3. In vitro cultures not counted."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

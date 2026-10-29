@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026martin",
+ "doi": "10.64898/2026.10.17.759605",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  3
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other_mri"
+ ],
+ "readout_other": "Progressive-ratio and FR3 operant responding for oral fentanyl/sucrose; MR-ARFI displacement at the focus",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "MRgLIFU of bilateral NAc under three sonication schemes did not change progressive-ratio responding for fentanyl/sucrose at 4 or 24 h, versus anesthesia-only controls.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "MRgLIFU to bilateral NAc, Schemes 1-3",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "nucleus accumbens (NAc), bilateral"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Image Guided Therapy (IGT), Pessac, France",
+    "model": "MR-compatible 1.5 MHz FUS system, 8-element annular array"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     2000,
+     900
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     6.3,
+     7.6
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     5,
+     300
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     1
+    ],
+    "duty_cycle_pct": [
+     50,
+     30
+    ],
+    "sonication_duration_s": [
+     900,
+     600,
+     1200
+    ],
+    "protocol_description": "Scheme 1: 500 ms bursts repeated every 5000 ms, containing 5 ms pulses at 100 Hz, for 15 min at 2.0 MPa. Schemes 2 and 3: 300 ms pulses at 1 Hz (30% duty cycle) with no burst structure, for 10 or 20 min at 0.9 MPa. Repeated rounds, up to three per rat, one week or more apart."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "equipped with an MR-compatible 1.5 MHz FUS system (Image Guided Therapy or IGT, Pessac, France).",
+   "exposures[0].device.manufacturer": "equipped with an MR-compatible 1.5 MHz FUS system (Image Guided Therapy or IGT, Pessac, France).",
+   "exposures[0].device.model": "The setup included an 8-element annular array transducer for focused sonication",
+   "exposures[0].unspecified_domain.pressure_kpa": "<td rowspan=1 colspan=1>Acoustic Pressure</td><td rowspan=1 colspan=1>2.0 MPa</td><td rowspan=1 colspan=1>0.9 MPa</td><td rowspan=1 colspan=1>0.9 MPa</td></tr>",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "<td rowspan=1 colspan=1>Intensity $( \\$ 1_ { s p t a } )$ </td><td rowspan=1 colspan=1>6.3 W/cm²</td><td rowspan=1 colspan=1>7.6 W/cm²</td><td rowspan=1 colspan=1>7.6 W/cm²</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "<td rowspan=1 colspan=1>Pulse Duration</td><td rowspan=1 colspan=1>5 ms</td><td rowspan=1 colspan=1>300 ms</td><td rowspan=1 colspan=1>300 ms</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<td rowspan=1 colspan=1>Pulse Repetition Freq.</td><td rowspan=1 colspan=1>100 Hz</td><td rowspan=1 colspan=1>1Hz</td><td rowspan=1 colspan=1>1 Hz</td></tr>",
+   "exposures[0].timing.duty_cycle_pct": "In this study, we employed three sonication schemes to investigate their impact on fentanyl motivation: a Burst Mode (Scheme 1), utilizing 500 ms bursts of sub-pulses (50% duty cycle, 100 Hz PRF) delivered every 5 seconds, a Continuous Mode (Scheme 2), consisting of 300 ms pulses at a 1 Hz repetition frequency for 10 min., and a similar but longer Continuous Mode using 20 min. sonication duration (Scheme 3).",
+   "exposures[0].timing.sonication_duration_s": "<td rowspan=1 colspan=1>Sonication Duration</td><td rowspan=1 colspan=1>15 minutes</td><td rowspan=1 colspan=1>10 minutes</td><td rowspan=1 colspan=1>20 minutes</td></tr>",
+   "n_sessions_per_subject": "3) We tested whether repeated MRg-LIFU-NAc, up to 3 sessions, in some of these rats have cumulative effects on opioid motivation;"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "List is [Scheme 1, Schemes 2 and 3]; Scheme 1 is nested (5 ms pulses at 100 Hz inside 500 ms bursts every 5 s), so the 5% duty cycle is overall; the Discussion calls it 50% duty within bursts."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Table lists 'Acoustic Pressure' 2.0 and 0.9 MPa (text: 'target acoustic pressure'); domain not stated. Converted from MPa."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Order Scheme 1 (15 min), Scheme 2 (10 min), Scheme 3 (20 min), converted from minutes."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham was anesthesia-only (duration matched), no transducer procedure described."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Order Scheme 1, Schemes 2 and 3; table typography garbled."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "N=76 across three cohorts, of which a subset (N=14) also received muscimol/baclofen cannula work; some rats excluded for training failure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

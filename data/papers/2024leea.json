@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024leea",
+ "doi": "10.1016/j.brs.2024.03.013",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  9,
+  11,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound",
+  "masking_sound"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "c-Fos immunohistochemistry (Fos-positive/DAPI ratio); freezing during fear extinction and retention (ANY-maze); open field distance travelled",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Fos expression rose in the infralimbic cortex but not adjacent regions after tFUS, and tFUS during extinction reduced freezing in extinction and retention, including after short-interval conditioning; open field activity was unchanged.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Authors report no discernible startle or sudden movements during open field sonication and no unusual behaviour during extinction; no histological damage assessment described.",
+ "exposures": [
+  {
+   "label": "tFUS to the infralimbic cortex (5 MHz head-mounted stimulator)",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "the infralimbic subdivision of the prefrontal cortex (IL)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Piezoelements, China (PZT disk); head-mounted stimulator fabricated in-house",
+    "model": "head-mounted ultrasound stimulator (HMUS), PZT H4P85000"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.53,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 30,
+    "protocol_description": "Pulsed sine waves (0.5 ms pulses at 1 kHz PRF) gated into bursts of 0.5 s with a 4.5 s inter-burst interval, total sonication 30 s per stimulation; applied concurrently with the CS during extinction (8 trials, or 20 in the immediate extinction experiment)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "To investigate the effect of tFUS stimulation, two groups of rats $( \\mathrm { t F U S : ~ n } = 1 1 ; \\mathrm { S H A M : ~ n } = 1 1 )$ underwent fear conditioning, where 5 pairings of the CS and US were presented.",
+   "exposures[0].fundamental_frequency_khz": "Pulsed sine waves, with a resonant frequency of 5 MHz and a pulse duration (PD) of 0.5 m s, were repeated at a pulse repetition frequency (PRF) of 1 kHz and gated within square waves.",
+   "exposures[0].timing.pulse_duration_ms": "Pulsed sine waves, with a resonant frequency of 5 MHz and a pulse duration (PD) of 0.5 m s, were repeated at a pulse repetition frequency (PRF) of 1 kHz and gated within square waves.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulsed sine waves, with a resonant frequency of 5 MHz and a pulse duration (PD) of 0.5 m s, were repeated at a pulse repetition frequency (PRF) of 1 kHz and gated within square waves.",
+   "exposures[0].timing.sonication_duration_s": "Each burst had a burst duration (BD) of 0.5 s and an inter-burst interval (IBI) of 4.5 s. The total sonication duration (SD) for one stimulation was 30 s",
+   "exposures[0].in_situ.isppa_w_cm2": "A full width at half maximum (FWHM) beam size of $0 . 4 3 ~ \\mathrm { m m } ^ { 3 }$ and a focal length of 1.8 mm were observed with a spatial peak pulse average intensity (I<sub>SPPA</sub>) of 1.53 W/ $\\mathrm { c m } ^ { 2 }$ at the focus, which was measured with an ex vivo rat skull (Fig. 1E).",
+   "exposures[0].device.manufacturer": "A head-mounted ultrasound stimulator (HMUS) was fabricated by embedding a lead zirconate titanate (PZT; H4P85000, Piezoelements, China) piezoelectric disk",
+   "exposures[0].device.model": "A head-mounted ultrasound stimulator (HMUS) was fabricated by embedding a lead zirconate titanate (PZT; H4P85000, Piezoelements, China) piezoelectric disk"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "61 rats across Experiments 1-3 (17, 22, 22 analysed groups); some rats were also used in the open field test."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensity measured in a soybean oil tank through an ex vivo rat skull; classed in_situ measurement. No pressure or ISPTA given."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Total sonication duration of 30 s is built from 0.5 s bursts every 5 s (burst = a 0.5 s train of 0.5 ms pulses at 1 kHz); duty cycle not stated, not computed."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; nested burst structure."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the Fos cell counting is stated to be done by an experimenter blinded to condition; recorded as single."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Sham reversed the PZT to control for auditory confounding; masking by the tone CS argued in the discussion; no direct measurement."
+   },
+   {
+    "field": "conditions",
+    "reason": "Healthy rats given fear conditioning and extinction (model of anxiety/PTSD therapy), no disease induced."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Stimulation on the extinction day (and an open field test two weeks later); total sessions not stated as a single number."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Head-mounted transducer assembled in-house from a PZT disk (Piezoelements, China) and a 3D-printed lens."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023cain",
+ "doi": "10.1101/2023.07.13.23292523",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "disorders_of_consciousness"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "CRS-R total score and CRS-R index; BOLD fMRI during sonication; psychophysiological interaction connectivity; resting-state connectivity",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Behavioural responsiveness (CRS-R) increased linearly over the two sessions; BOLD signal was reduced in one ipsilateral temporal cluster during sonication, and connectivity of the targeted thalamus increased with three cortical clusters.",
+ "adverse_events": "observed",
+ "safety_notes": "One adverse event (a respiratory infection) was judged unrelated to LIFU; no change in vital parameters during sonication.",
+ "exposures": [
+  {
+   "label": "Thalamic LIFU in chronic DOC",
+   "target": {
+    "terms": [
+     "centromedian_nucleus",
+     "thalamus"
+    ],
+    "label": "central thalamus (caudal CL nucleus and CM-PF complex), preferentially left"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "single-element transducer, 71.5mm curvature"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.39,
+    "ispta_w_cm2": 0.71973
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Ten 30-second on blocks separated by 30 s off periods, delivered inside the MRI. Two sessions one week apart (one patient received one), each with CRS-R assessments before and after."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "This convenience sample included 10 chronic DOC patients (see Table 1; DOC at entry, 6 male, mean: age = 39.1, time since injury [TSI] = 56.75 months, 4/6 anoxic/traumatic injury) referred to the study by longterm care facilities and private households following the persistence of DOC past the 1-year post-injury period.",
+   "n_sessions_per_subject": "A second, identical, cycle of LIFU and assesssments were performed in all but one subject (C5; excluded due to infection).",
+   "exposures[0].fundamental_frequency_khz": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC),",
+   "exposures[0].timing.pulse_duration_ms": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC),",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC),",
+   "exposures[0].timing.duty_cycle_pct": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC),",
+   "exposures[0].timing.sonication_duration_s": "Once appropriate transducer placement was confirmed visually (see below), ultrasound was delivered inside the MRI for a total of ten 30-second on blocks, separated by 30s off periods (see Figure 1).",
+   "exposures[0].in_situ.isppa_w_cm2": "5% duty cycle (DC), and $1 4 . 3 9 \\frac { W } { c m ^ { 2 } }$ I<sub>SPPA.3</sub> $/ \\ 7 1 9 . 7 3 { \\frac { m W } { c m ^ { 2 } } } \\mathrm { I } _ { \\mathrm { S P T A } . 3 . ; } \\ ^ { \\ast \\ast } . 3 ^ { \\ast }$ denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].in_situ.ispta_w_cm2": "5% duty cycle (DC), and $1 4 . 3 9 \\frac { W } { c m ^ { 2 } }$ I<sub>SPPA.3</sub> $/ \\ 7 1 9 . 7 3 { \\frac { m W } { c m ^ { 2 } } } \\mathrm { I } _ { \\mathrm { S P T A } . 3 . ; } \\ ^ { \\ast \\ast } . 3 ^ { \\ast }$ denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].device.manufacturer": "The LIFU waveform was emitted from a single-element transducer (Brainsonix; 71.5mm curvature) positioned, using MR-guidance, such that its theoretical focus (55mm from its surface) lay over the intended thalamic target.",
+   "exposures[0].device.model": "The LIFU waveform was emitted from a single-element transducer (Brainsonix; 71.5mm curvature) positioned, using MR-guidance, such that its theoretical focus (55mm from its surface) lay over the intended thalamic target."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Paper gives 719.73 mW/cm2; recorded as 0.71973 W/cm2 (unit conversion)."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensities are tissue-derated at 0.3 dB/cm-MHz (no skull term stated); quote carries LaTeX."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Nine patients received two sessions, C5 received one."
+   },
+   {
+    "field": "randomised",
+    "reason": "Single-arm open-label study; recorded as not randomised and unblinded from the design, not from an explicit statement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

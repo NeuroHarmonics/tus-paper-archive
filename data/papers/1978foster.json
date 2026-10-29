@@ -1,0 +1,174 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1978foster",
+ "doi": "10.1121/1.381829",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "cat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "round-window recording of cochlear microphonic and N1 auditory-nerve response",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Pulsed 5 MHz ultrasound applied to the dura evoked auditory-nerve (N1) responses and cochlear microphonics in all cats, attributed to radiation-pressure transients heard via bone conduction.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Brain tissue was reported as not observably heated with pulses under 70 microseconds.",
+ "exposures": [
+  {
+   "label": "5 MHz pulses against dura over temporal cortex",
+   "target": {
+    "terms": [
+     "temporal_lobe"
+    ],
+    "label": "dura over the right temporal cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "in-house (0.6-cm PZT disk); one experiment used Panametrics",
+    "model": "0.6-cm-diam 5-MHz lead zirconate titanate disk in plastic tube"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.01,
+     0.07
+    ],
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Brief 5-MHz pulses of 10-70 microseconds (about 30 W/cm2 peak) repeated at 10 per second, 200-4000 responses averaged; stimulus series bracketed by tone-pip or click comparison series. Pulse width was varied at constant amplitude."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Auditory-nerve responses were elicited by ultrasound in each of the six cats tested.",
+   "exposures[0].fundamental_frequency_khz": "In this study, we measured auditory responses in cats produced by brief pulses of 5- MHz ultrasonic energy from a transducer placed against the dura mater.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The averaged round-window response in one cat to a 5-MHz, 68-μs ultrasound pulse, of 30 $\\scriptstyle { \\mathbf { W } } / \\cos ^ { 2 }$ peak intensity applied to the dura over the right temporal cortex, is shown in Fig. 1.",
+   "exposures[0].timing.pulse_duration_ms": "These pulses are somewhat longer (10-70μs) and more intense",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "followed by a series of ultrasonic pulses (also at $1 0 \\ { \\mathsf { s } } ^ { - 1 } )$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Peak intensity of about 30 W/cm2 at the dura; domain not stated; power measured by radiation balance in one setup (about 20% error)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse width varied between 10 and 70 microseconds across stimuli; recorded as range."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Each stimulus is a single brief pulse; no train duration stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Home-made transducer; one experiment used a Panametrics immersion transducer that was reported as inadequate."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "The study is about auditory responses; comparisons with tones and a cat with broken malleus used as tests of the route, not as a control."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

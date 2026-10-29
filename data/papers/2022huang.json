@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022huang",
+ "doi": "10.18632/aging.204290",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  30,
+  30,
+  30,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "mNSS; balance beam test; brain water content; western blot, qRT-PCR, immunofluorescence and immunohistochemistry for OX-A, OXR1, NF-kB, NLRP3, TNF-a, IL-1b, IL-18; H&E and Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIFUS to the hypothalamus after TBI reduced tissue damage, brain water content, neurological deficit scores and pro-inflammatory cytokines, and increased OX-A and OXR1; the OXR1 antagonist SB334867 reversed the anti-inflammatory effect. No neural activity was measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFUS to the hypothalamus after traumatic brain injury",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "hypothalamus region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 0.5,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.518
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Fundamental frequency stated as 500 Hz, on-break ratio 5 %, PRF 250 Hz, total ultrasonic duration 400 ms. Each rat was stimulated for 30 min a day for three consecutive days, starting 20 min after TBI."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The rats were randomly divided into four groups: sham operation with dimethyl sulfoxide (DMSO) (sham group, n=30, 268.5±10.7 g), TBI with DMSO and sham LIFUS (TBI group, n=30, 266.4±12.3 g), TBI with DMSO and LIFUS (TBI+LIFUS group, n=30, 271.5±11.7 g), and TBI with SB334867, DMSO, and LIFUS (TBI+LIFUS+SB334867 group, n=12, 267.9±12.8 g).",
+   "n_sessions_per_subject": "Each rat was stimulated for 30 min in a day for three consecutive days.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasonic wave frequency was set to 500 Hz (the fundamental frequency penetrated the skull best in the frequency range of 440 to 700 KHz [27]), on-break ratio was 5%, pulse repetition frequency (PRF) was 250 Hz, and total ultrasonic duration was 400 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasonic wave frequency was set to 500 Hz (the fundamental frequency penetrated the skull best in the frequency range of 440 to 700 KHz [27]), on-break ratio was 5%, pulse repetition frequency (PRF) was 250 Hz, and total ultrasonic duration was 400 ms.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasonic wave frequency was set to 500 Hz (the fundamental frequency penetrated the skull best in the frequency range of 440 to 700 KHz [27]), on-break ratio was 5%, pulse repetition frequency (PRF) was 250 Hz, and total ultrasonic duration was 400 ms.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasonic wave frequency was set to 500 Hz (the fundamental frequency penetrated the skull best in the frequency range of 440 to 700 KHz [27]), on-break ratio was 5%, pulse repetition frequency (PRF) was 250 Hz, and total ultrasonic duration was 400 ms.",
+   "exposures[0].free_field.ispta_w_cm2": "The spatialpeak temporal-average intensity in degassed water was 518 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ measured using a hydrophone (HNR-1000, Acoustics Lt, Dorchester, United Kingdom).",
+   "exposures[0].device.manufacturer": "The ultrasonic pulse signal generated by the ultrasound generator (NTK-UNS-01 system, Jiangxi Brain Regulation, China) was transmitted to the ultrasonic transducer (V301-SU; Olympus, Japan).",
+   "exposures[0].device.model": "The ultrasonic pulse signal generated by the ultrasound generator (NTK-UNS-01 system, Jiangxi Brain Regulation, China) was transmitted to the ultrasonic transducer (V301-SU; Olympus, Japan)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Text says 'set to 500 Hz' but the same sentence cites a 440 to 700 KHz skull-penetration range, so kHz was probably meant. Recorded as stated (0.5 kHz)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; DC/PRF would give 0.2 ms but it is not computed here."
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Duty cycle is called an 'on-break ratio'; 400 ms is the 'total ultrasonic duration' of one sonication, repeated for 30 min a day; the nested structure is not fully described."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only group sizes are stated (sham 30, TBI 30, TBI+LIFUS 30, TBI+LIFUS+SB334867 12); only the last two groups received active ultrasound; per-assay n is 6."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "TBI induced and drug injected under ether anaesthesia; the anaesthetic state during LIFUS is not stated explicitly."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the neurobehavioural testers are stated to be blinded."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Reported as 518 mW/cm2 in degassed water; recorded as 0.518 W/cm2. Hydrophone-measured through no skull."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham LIFUS: probe placed on head without starting the machine; a separate sham-operation group also exists."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

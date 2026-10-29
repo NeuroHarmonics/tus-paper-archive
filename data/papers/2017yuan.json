@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2017yuan",
+ "doi": "10.3389/fnins.2017.00562",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 13,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri"
+ ],
+ "readout_other": "diffusion-weighted MRI, apparent diffusion coefficient",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Mean ADC fell 4.9% after TUS in the TUS group (13 rats), significant in 6 of 8 ROIs; sham-surgery group (6 rats, no TUS) unchanged.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Maximum temperature rise estimated analytically at about 1e-4 degC; no tissue assessment reported.",
+ "exposures": [
+  {
+   "label": "Transcranial US to whole rat head, 800 kHz",
+   "target": {
+    "terms": [
+     "striatum",
+     "midbrain"
+    ],
+    "label": "caudate putamen region and middle brain motor-related region"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Dukang Medical Devices",
+    "model": "DK-102T"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.2,
+    "ispta_w_cm2": 0.12
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 300,
+    "protocol_description": "'The ultrasound duration and the interstimulus interval were 10 and 100 ms, respectively', applied for 5 min through the skull with an unfocused transducer 2 mm above the gel-coated skull. Whether 10 ms is the pulse or a train, and the PRF, are not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "We also found that the mean ADC values of 13 rats were decreased by TUS,",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency of ultrasound was 800 kHz.",
+   "exposures[0].timing.sonication_duration_s": "The rat was stimulated by low-intensity transcranial ultrasound for 5 min.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The spatialpeak and pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ was ${ \\sim } 1 . 2 ~ \\mathrm { W / c m } ^ { 2 }$ (Kim et al., 2014).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The corresponding spatial-peak temporal-average intensity $( \\mathrm { { I } _ { \\mathrm { { s p t a } } } ) }$ was calculated as previously reported and found to be ${ \\sim } 0 . 1 \\dot { 2 } \\ \\mathrm { W }",
+   "exposures[0].device.manufacturer": "A commercial ultrasonic brain stimulator (DK-102T, Dukang Medical Devices, CO., LTD, Shijiazhuang, China) was used for TUS in the experiment.",
+   "exposures[0].device.model": "A commercial ultrasonic brain stimulator (DK-102T, Dukang Medical Devices, CO., LTD, Shijiazhuang, China) was used for TUS in the experiment.",
+   "n_sessions_per_subject": "The rat was stimulated by low-intensity transcranial ultrasound for 5 min.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound duration and the interstimulus interval were 10 and 100 ms, respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule unresolved: 'ultrasound duration 10 ms and interstimulus interval 100 ms'; no PRF or duty cycle stated. Left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Not stated; a 100 ms interstimulus interval is mentioned but not converted."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity cited from Kim et al 2014 as approximately 1.2 W/cm2; medium not stated; Ispta 0.12 'calculated as previously reported'."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "19 rats in total, of which 13 received TUS and 6 were sham surgery; text elsewhere says n=6 for TUS pre/post means (inconsistent)."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Unfocused transducer over the rat head; ADC measured in caudate putamen and midbrain motor-related ROIs, which are not strictly the sonication target."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

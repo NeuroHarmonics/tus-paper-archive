@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025aubier",
+ "doi": "10.1101/2025.07.02.662731",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (ReNcell VM immortalized neural progenitors)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Ca2+ fluorescence microscopy; passive cavitation detection; mitochondrial viability fluorescence",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Single 400 us pulses elicited Ca2+ responses in human neural cells: dispersed (cavitation-driven) below about 5 MHz and focal, propagating responses at 5.19 and 8.14 MHz.",
+ "adverse_events": null,
+ "safety_notes": "Mitochondrial viability over 10 min after 8.14 MHz single-pulse FUS did not differ from sham (p = 0.235).",
+ "exposures": [
+  {
+   "label": "Single 400 us pulse FUS at 0.73-8.14 MHz on human neural cell culture",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "in vitro human neural cells (2D network)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "homemade single-element spherical ceramic transducer (C-21, Fuji Ceramics Corp.), 15 mm diameter and focal length"
+   },
+   "fundamental_frequency_khz": [
+    730,
+    2230,
+    5190,
+    8140
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     780,
+     7780,
+     8790,
+     9300
+    ],
+    "isppa_w_cm2": [
+     180,
+     4210,
+     6890,
+     7170
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.0004,
+    "protocol_description": "Single 400 us pulse (amplitude-modulated continuous sinusoid) at 0.73, 2.23, 5.19 or 8.14 MHz, triggered 10 s after the start of fluorescence recording; pressure escalated to find the minimum threshold at each frequency."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "FUS stimulations were performed using a homemade single-element prototype consisting of a spherical ceramic transducer (C-21, Fuji Ceramics Corp.) with a diameter and focal length of 15 mm, embedded using resin (Stycast 2850FT, Loctite) in a SLS 3D-printed nylon casing (PA12, Xometry Europe). A function generator (Tektronix AFG1062, Tektronix Inc.) and a 50 dB power amplifier (Kalmus 150 RF, Amplifier Research Modular RF) were used to drive the transducer at its fundamental frequency $( f _ { 1 } = 0 . 7 3$ MHz) or at its higher harmonics $( f _ { 3 } =$ 2.23 MHz, $f _ { 7 } = 5 . 1 9$ MHz and $f _ { 1 1 } = 8 . 1 4 \\ : \\mathrm { M H z } )$ .",
+   "exposures[0].timing.sonication_duration_s": "The duration of the pulse was defined by amplitude-modulation with a 400 µs square-wave pulse.",
+   "exposures[0].unspecified_domain.pressure_kpa": "<tr><td> $p _ { \\mathtt { s p r } } [ \\mathrm { M P a } ]$ </td><td> $0 . 7 8 \\pm 0 . 3 1$ </td><td> $7 . 7 8 \\pm 3 . 6 4$ </td><td> $8 . 7 9 \\pm 2 . 1 0$ </td><td> $9 . 3 0 \\pm 1 . 3 0$ </td></tr>",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<tr><td> $I _ { \\mathrm { s p p a } } \\ [ \\mathrm { k W } . \\mathrm { c m } ^ { - 2 } ]$ </td><td> $0 . 1 8 \\pm 0 . 1 1$ </td><td> $4 . 2 1 \\pm 3 . 9 1$ </td><td> $6 . 8 9 \\pm 3 . 2 6$ </td><td> $7 . 1 7 \\pm 2 . 0 8$ </td></tr>",
+   "exposures[0].device.model": "FUS stimulations were performed using a homemade single-element prototype consisting of a spherical ceramic transducer (C-21, Fuji Ceramics Corp.)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Spatial-peak RMS pressure p_spr from numerical simulation of the dish (Table 1), MPa converted to kPa; RMS rather than peak amplitude; values are medians with IQR/2 across trials at threshold-level drive."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Table 1 gives Isppa in kW/cm2 (0.18, 4.21, 6.89, 7.17), converted to W/cm2; simulated, linear model, not measured."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "400 us single pulse, recorded as 0.0004 s."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "One transducer driven at fundamental and harmonics; frequencies from the transducer impedance measurement."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Number of cultures or dishes not stated; only 78% success over 18 trials at 8.14 MHz."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation is mentioned for the viability controls but its mechanism is not described."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Neural progenitor-derived culture containing neurons and glia; cultured_neurons chosen."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

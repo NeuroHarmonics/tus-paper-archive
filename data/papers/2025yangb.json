@@ -1,0 +1,219 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6; C57BL/6J-Tg Thy1-GCaMP6f)",
+ "conditions": [
+  "healthy",
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  27,
+  17,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging",
+  "behaviour"
+ ],
+ "readout_other": "cerebellar and M1 LFP; two-photon Ca2+ imaging of M1 pyramidal neurons; TreadScan gait analysis",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Cerebellar TUS increased LFP amplitude/power in cerebellum and M1 and M1 neuronal calcium activity, scaling with pressure and duty cycle; 7 days of TUS improved gait in MCAO mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "schema_version": "1.0",
+ "citekey": "2025yangb",
+ "doi": "10.1109/tnsre.2025.3601110",
+ "exposures": [
+  {
+   "label": "Cerebellar (dentate nucleus) TUS, sweep of pressure and duty cycle",
+   "target": {
+    "terms": [
+     "deep_cerebellar_nuclei"
+    ],
+    "label": "the dentate nucleus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     50,
+     100,
+     200,
+     400,
+     600
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     5,
+     10,
+     20,
+     40,
+     60
+    ],
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Pressure sweep (0.05-0.6 MPa at 40% duty cycle) and duty cycle sweep (5-60% at 0.4 MPa); 8 stimulations per parameter at 20 s intervals. Stroke experiment: 0.4 MPa, 40% duty cycle, 30 minutes daily for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-seven C57BL/6 mice were used in experiments to record LFP from the cerebellum and the motor cortex under TUS of the cerebellum. Seventeen C57BL/6J-Tg (Thy1-GCaMP6f) transgenic mice (all male, weighing 22-25g, Jackson Laboratory) were used to observe $\\mathrm { C a } ^ { 2 + }$ fluorescence intensity of pyramidal neurons in M1 under TUS of the cerebellum. Forty C57BL/6 mice were used for TUS of the cerebellum on ischemic stroke experiments (ten mice in normal group, ten mice in normal + ultrasound stimulation (Normal+TUS) group, ten mice in ischemic stroke (MCAO) group, ten mice in ischemic stroke + ultrasound stimulation (MCAO+TUS) group).",
+   "n_sessions_per_subject": "And we used the above ultrasonic parameters to stimulate for 30 minutes at the same time every day for a total of 7 days.",
+   "exposures[0].fundamental_frequency_khz": "Group A: different ultrasound intensities, the sound pressures of 0.05MPa, 0.1 MPa, 0.2 MPa, 0.4 MPa, 0.6 MPa were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, duty cycle: 40%); Group B: different duty cycles, the duty cycles of 5%, 10%, 20%, 40%, 60% were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, sound pressure: 0.4MPa).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Group A: different ultrasound intensities, the sound pressures of 0.05MPa, 0.1 MPa, 0.2 MPa, 0.4 MPa, 0.6 MPa were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, duty cycle: 40%); Group B: different duty cycles, the duty cycles of 5%, 10%, 20%, 40%, 60% were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, sound pressure: 0.4MPa).",
+   "exposures[0].timing.duty_cycle_pct": "Group A: different ultrasound intensities, the sound pressures of 0.05MPa, 0.1 MPa, 0.2 MPa, 0.4 MPa, 0.6 MPa were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, duty cycle: 40%); Group B: different duty cycles, the duty cycles of 5%, 10%, 20%, 40%, 60% were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, sound pressure: 0.4MPa).",
+   "exposures[0].timing.sonication_duration_s": "Group A: different ultrasound intensities, the sound pressures of 0.05MPa, 0.1 MPa, 0.2 MPa, 0.4 MPa, 0.6 MPa were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, duty cycle: 40%); Group B: different duty cycles, the duty cycles of 5%, 10%, 20%, 40%, 60% were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, sound pressure: 0.4MPa).",
+   "exposures[0].unspecified_domain.pressure_kpa": "Group A: different ultrasound intensities, the sound pressures of 0.05MPa, 0.1 MPa, 0.2 MPa, 0.4 MPa, 0.6 MPa were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, duty cycle: 40%); Group B: different duty cycles, the duty cycles of 5%, 10%, 20%, 40%, 60% were selected respectively, and other ultrasound parameters were fixed (fundamental frequency: 1MHz, stimulation duration: 200ms, pulse repetition frequency: 1kHz, sound pressure: 0.4MPa).",
+   "exposures[0].device.model": "The signal is amplified by a power amplifier (E&I240L, ENI Inc., USA) and converted into ultrasound waves by a focused ultrasound transducer (V302- SU, focus, diameter: 25.4 mm, Olympus, USA).",
+   "exposures[0].device.manufacturer": "The signal is amplified by a power amplifier (E&I240L, ENI Inc., USA) and converted into ultrasound waves by a focused ultrasound transducer (V302- SU, focus, diameter: 25.4 mm, Olympus, USA)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes by experiment (27 LFP, 17 GCaMP, 40 stroke of which 20 were not sonicated); analyses report N=14 and N=10, inconsistent with these counts."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "7 daily sessions applies to the stroke experiment only; other experiments were single sessions."
+   },
+   {
+    "field": "provenance.sham",
+    "reason": "Sham groups are referred to in supplementary figures (S1-S4) but how sham was produced is not described in the main text."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressures given as sound pressure in MPa; domain not stated. Paper acknowledges skull attenuation as a limitation."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Separate experiment aimed TUS at ears and nose of mice and recorded no cerebellar or M1 response (Fig S5); authors note auditory effects cannot be excluded."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

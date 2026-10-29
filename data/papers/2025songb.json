@@ -1,0 +1,170 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025songb",
+ "doi": "10.1186/s42234-025-00170-z",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  5,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey threshold (dynamic aesthesiometer); Iba1 immunohistochemistry; CD86 flow cytometry of spinal microglia",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Early tsFUS after sciatic CCI was associated with recovery of von Frey threshold and fewer total and activated (CD86+) microglia ipsilateral to injury versus sham stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": "No formal histological safety evaluation; a pilot test in a healthy rat showed no sign of tissue damage with the same protocol; animals were monitored daily for posture changes.",
+ "exposures": [
+  {
+   "label": "tsFUS at L5 spinal segment",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "L5 segment level of the spinal cord"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 180,
+    "protocol_description": "tsFUS delivered for 3 min daily on days 4, 5 and 6 after CCI under isoflurane; sham stimulation in controls."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In a behavioral cohort (N = 6 tsFUS, N = 6 sham), von Frey threshold (VFT) testing was conducted 1 day before CCI (baseline), and at 4, 7, 9, 16 and 23 days after CCI. Some animals were sacrificed for immunohistochemistry (IHC: N = 5 for sham CCI, CCI + tsFUS sham, and CCI + tsFUS) or flow cytometry (FC: N = 5 for sham CCI, N = 4 for CCI + tsFUS sham and CCI + tsFUS), on day 6 after CCI.",
+   "n_sessions_per_subject": "The FUS pulse repetition frequency (PRF) was set to 2 kHz, and the duty cycle was set to 40%. tsFUS treatment was delivered for three minutes daily for three consecutive days Fig. 1.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FUS pulse repetition frequency (PRF) was set to 2 kHz, and the duty cycle was set to 40%. tsFUS treatment was delivered for three minutes daily for three consecutive days Fig. 1.",
+   "exposures[0].timing.duty_cycle_pct": "The FUS pulse repetition frequency (PRF) was set to 2 kHz, and the duty cycle was set to 40%. tsFUS treatment was delivered for three minutes daily for three consecutive days Fig. 1.",
+   "exposures[0].timing.sonication_duration_s": "The treated region (L5 spinal segment), which is between T13 and L1 of the rat spinal vertebra, was marked and stimulated for 3 min daily for 3 days."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "40 rats include sham CCI and CCI + sham-tsFUS animals; group sizes in cohorts are 4-6."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Carrier frequency, pressure and device not stated; refers to a previous paper."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "3 min per daily session recorded as 180 s."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Abstract says vFT increased; Fig. 2 legend says tsFUS animals show reduced VFT; direction in the text is recovery of threshold."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

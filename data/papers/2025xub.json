@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025xub",
+ "doi": "10.1016/j.bbi.2025.03.027",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57BL/6JNifdc); mouse BV2 and N2a cell lines",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "post-cardiac arrest brain injury (potassium chloride-induced cardiac arrest and CPR)",
+ "n_subjects": [
+  25,
+  25
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "cellular_imaging",
+  "clinical_scale"
+ ],
+ "readout_other": "24-h survival; neurological deficit score; open field, beam walking, tail suspension, grip strength and inclined plane tests; HE staining; c-Fos immunostaining; Western blot; proteomics; Fluo-4 calcium imaging",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LITUS after CPR increased 24-h survival and neurological recovery, increased c-Fos expression in cortex and amygdala, and reduced IL-1beta, IL-6 and TNF-alpha; effects were abolished by the Piezo1 antagonist GsMTx4.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LITUS 500 kHz after CPR (mice) and after OGD/R (cells)",
+   "target": {
+    "terms": [
+     "brain",
+     "cultured_glia"
+    ],
+    "label": "The transducer was positioned above the wire between the eye and ear."
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 300,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "0.3 MPa, 200 tone bursts, 500 kHz, PRF 1 kHz, duty cycle 40 %, sonication duration 300 ms, pulse width 400 us; stimulation interval 10 s, total stimulation 40 min starting 10 min after ROSC. In vitro, the US group received immediate US for 40 min after OGD/R."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 40.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "exposures[0].timing.pulse_duration_ms": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "exposures[0].timing.duty_cycle_pct": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "exposures[0].timing.sonication_duration_s": "The transducer was positioned above the wire between the eye and ear. The mice were then stimulated with 0.3 MPa ultrasound, consisting of 200 tone bursts with a fundamental frequency 500 kHz, pulse repetition frequency of 1 kHz, duty cycle of 40 %, sonication duration of 300 ms, pulse width of 400 μs.",
+   "n_subjects": "The mice were allocated to four groups at random: the sham group $( n = 1 0 )$ , in which mice underwent catheterized only; the CPR group (n $= 2 5 ) ,$ , which experienced CA followed by CPR; the CPR + LITUS group $( n = 2 5 )$ , which were exposed to conditions similar to the CPR group, except for LITUS exposure for 40 min; and the CPR + LITUS + GsMTx4 (GsM, an antagonist of Piezo1, Med Chem Express, HY-P1410, Shanghai, China) group (n = 25), where intracerebroventricular (ICV) injection of GsM was performed 48 h prior to the experiment, while all other procedures were identical to the CPR + LITUS group.",
+   "n_sessions_per_subject": "After ROSC 10 min, ultrasonic gel was immediately applied to the mouse head to promote acoustic coupling (Supplemental Fig. S1C, D)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "200 tone bursts at 1 kHz PRF would last 200 ms, not the stated 300 ms; text recorded as written."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.3 MPa stated without saying whether free field or in situ; converted from MPa."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target described only as position of transducer between eye and ear; BV2 microglia cells received US in vitro with parameters not separately restated, so cultured_glia added to one exposure."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes given for four groups (sham 10, CPR 25, CPR+LITUS 25, CPR+LITUS+GsM 25); sham and CPR groups were not sonicated. Figure legends report n=8 per group."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Driving electronics named (Rigol generator, Aigtek amplifier) but transducer maker not named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

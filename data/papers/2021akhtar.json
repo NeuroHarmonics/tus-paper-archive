@@ -1,0 +1,192 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021akhtar",
+ "doi": "10.1113/ep088848",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "inflammatory bowel disease (DSS colitis)",
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 12,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "Disease activity index, stool consistency, gross bleeding; colon length; H&E histology score; cytokine array",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "FUS to the celiac plexus improved stool consistency and bleeding scores, preserved colon length and normalised cytokine levels in DSS rats; neural activity was not measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS to celiac plexus, once or twice daily",
+   "target": {
+    "terms": [
+     "nerve_plexus",
+     "ganglion"
+    ],
+    "label": "celiac plexus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom made 2.5 MHz, FUS transducer"
+   },
+   "fundamental_frequency_khz": 2500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.12,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "3 min of FUS once or twice daily (twice daily sessions about 6 h apart) for 12 days, bursts of 300 carrier cycles (first 120 us ON, 199.88 ms OFF) repeated at 5 Hz, drive amplitude 300 mV peak-to-peak from the function generator. Mock FUS used the same procedure with the equipment turned off."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.06
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Once or twice daily, 3 min of FUS was applied to the target area with a carrier frequency of 2.5 MHz",
+   "exposures[0].timing.sonication_duration_s": "Once or twice daily, 3 min of FUS was applied to the target area with a carrier frequency of 2.5 MHz",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was delivered as bursts repeated at 5 Hz with each burst comprising 300 carrier cycles.",
+   "exposures[0].timing.pulse_duration_ms": "each burst was repeated at 200 ms intervals within which the first 120 μs was ON",
+   "exposures[0].device.model": "a custom made 2.5 MHz, FUS transducer",
+   "sham_type": "the RF power amplifier, function generator and transducer were turned off",
+   "blinding": "while the histopathological tissue was scored by three blinded lab personnel",
+   "n_sessions_per_subject": "Similar improvements were seen in animals in the low dose DSS group, who received FUS only once daily for 12 days."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "60 rats in the main groups plus an additional 20 rats in recovery experiments; sample sizes per analysis vary with exclusions; not all received FUS"
+   },
+   {
+    "field": "blinding",
+    "reason": "DAI and stool scoring by unblinded personnel; histology scored by three blinded personnel; recorded as single"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "120 us converted to 0.12 ms; burst of 300 cycles equals the ON period so burst is the pulse"
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "No pressure or intensity reported, only a 300 mV drive amplitude"
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Celiac plexus (celiac ganglion and superior mesenteric plexus) mapped to nerve_plexus and ganglion"
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Once or twice daily for 12 days depending on group; not a single number"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

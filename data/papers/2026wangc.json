@@ -1,0 +1,224 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wangc",
+ "doi": "10.1186/s13195-026-02211-4",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (5xFAD transgenic; C57BL/6J wild-type littermates)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "Hippocampal DG/PP LFP power, PLV, coherence, theta-gamma PAC; Y-maze; novel object recognition; Morris water maze",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "5 Hz AM-FUS reduced elevated theta power, increased high-gamma power, restored PP-DG synchrony and improved learning and memory in 5xFAD mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "5 Hz sinusoidal AM-FUS to hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus",
+     "dentate_gyrus"
+    ],
+    "label": "hippocampus (DG and perforant pathway)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Institute of Acoustics, Chinese Academy of Sciences",
+    "model": "0.5 M-D20-F20"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 380,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.3
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 180,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.0683
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 1,
+    "protocol_description": "500 kHz carrier, 1 kHz PRF, 40% duty cycle, mixed with a 2.5 Hz sine wave giving an effective 5 Hz envelope; 150 trials each 1 s with a 3-s interval; daily 20-min session for 14 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": ", China). The 5xFAD mice were randomly assigned into two groups (n = 8 per group): one group received sham stimulation (AD sham), and another",
+   "n_sessions_per_subject": "equently, a 14-day ultrasound stimulation protocol was initiated, during which mice in the AD AM-FUS group received a daily 20-min session of 5 Hz sinusoidal AM-FUS on hippocampus, while those in the AD sham and WT groups un",
+   "exposures[0].fundamental_frequency_khz": "d ultrasound transducer (0.5 M-D20-F20, Institute of Acoustics, Chinese Academy of Sciences, China) with a central frequency of 500 kHz, three function generators (AFG3252, Tektronix, USA), an analog multiplier (AD834, ADI, USA), and a",
+   "exposures[0].device.manufacturer": "ists of a focused ultrasound transducer (0.5 M-D20-F20, Institute of Acoustics, Chinese Academy of Sciences, China) with a central frequency of 500 kHz, three function generators (AFG3252, Tektronix, USA), an analog multiplier (",
+   "exposures[0].device.model": "ists of a focused ultrasound transducer (0.5 M-D20-F20, Institute of Acoustics, Chinese Academy of Sciences, China) with a central frequency of 500 kHz, three function generators (AFG3252, Tektronix, USA), an analog multiplier (",
+   "exposures[0].free_field.pressure_kpa": "is study, the free-field peak negative pressure was set to 0.38 MPa, corresponding to a spatialpeak temporal-average intensity of $3 0 0 \\mathrm { \\ m W / c m } ^ { 2 }$ . Based on our empirical ex vivo skull transmis",
+   "exposures[0].free_field.ispta_w_cm2": "is study, the free-field peak negative pressure was set to 0.38 MPa, corresponding to a spatialpeak temporal-average intensity of $3 0 0 \\mathrm { \\ m W / c m } ^ { 2 }$ . Based on our empirical ex vivo skull transmis",
+   "exposures[0].in_situ.pressure_kpa": "f 47.73%, the intracranial in situ peak negative pressure was estimated to be approximately 0.18 MPa, corresponding to an in situ spatial-peak temporal-average intensity of $6 8 . 3 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ and a transcranial mechanical index $\\left( M I _ { t c } \\right)$ of 0.26.",
+   "exposures[0].in_situ.ispta_w_cm2": "f 47.73%, the intracranial in situ peak negative pressure was estimated to be approximately 0.18 MPa, corresponding to an in situ spatial-peak temporal-average intensity of $6 8 . 3 \\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ and a transcranial mechanical index $\\left( M I _ { t c } \\right)$ of 0.26.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "quence of 500 kHz fundamental frequency, 1 kHz pulse repetition frequency, and 40% duty cycle. Function",
+   "exposures[0].timing.duty_cycle_pct": "quence of 500 kHz fundamental frequency, 1 kHz pulse repetition frequency, and 40% duty cycle. Function",
+   "exposures[0].timing.sonication_duration_s": "of 5 Hz. The sequences consisted of 150 trials, each with a 1-s duration and a 3-s interval, as shown in Fig. 1C. For the AD sham a"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only the 8 AD AM-FUS mice were sonicated; 16 5xFAD plus 8 WT mice purchased, sham and WT groups had amplifier off"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; carrier is 1 kHz PRF at 40% duty cycle under a 2.5 Hz sinusoidal envelope (effective 5 Hz); not computed"
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Amplitude-modulated carrier (sinusoidal envelope) classed as other_patterned"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "1-s sonications repeated in 150 trials with 3-s intervals; 20-min daily session"
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Quoted as 300 mW/cm2; converted to W/cm2"
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Derated with an ex vivo skull transmission coefficient of 47.73%; peak negative pressure"
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia during stimulation not stated; isoflurane only for electrode surgery"
+   },
+   {
+    "field": "readouts",
+    "reason": "Behavioural tests after 14 days, LFP on days 1, 7, 14 and acute pre/during/post"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

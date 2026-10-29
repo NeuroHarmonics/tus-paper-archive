@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022choi",
+ "doi": "10.1101/2022.04.30.490021",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  5,
+  5,
+  5,
+  5,
+  5,
+  3,
+  3,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "cortical screw EEG (epileptic spike counts, power spectral density); c-Fos, GAD65, Iba1, GFAP immunohistochemistry; wide-field optical imaging of cerebral blood volume",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Long (40 s) bursts at long intervals suppressed PTZ-induced epileptiform activity; short (10 s) bursts, short intervals (20 s), or high-pressure short bursts produced rebound excitation after sonication.",
+ "adverse_events": "observed",
+ "safety_notes": "Some sequences (TX1, TX6) worsened epileptiform activity and raised Iba1 and GFAP counts relative to PTZ controls; Nissl staining showed no damage after TX3 and TX5 in the supplementary figure.",
+ "exposures": [
+  {
+   "label": "Right anterior thalamic nuclei, 690 kHz, sequences TX1 to TX6",
+   "target": {
+    "terms": [
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "right anterior thalamic nuclei (ATN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "DeL Piezo Specialties LLC. (PZT element)",
+    "model": "690 kHz single-element ring transducer (DL-47 PZT), fabricated in-house"
+   },
+   "fundamental_frequency_khz": 690,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     250,
+     1000
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.25,
+     10,
+     20,
+     40
+    ],
+    "protocol_description": "Pulses of a 5 ms, 3,450-cycle, 690 kHz burst at 100 Hz (50% duty). TX1 to TX4: low pressure (0.25 MPa), six bursts of 10 s (TX1), 20 s (TX2) or 40 s (TX3, TX4) with burst intervals of 50, 40, 40 and 20 s. TX5: 1.0 MPa, 250 ms bursts every 30 s for 5 min. TX6: TX3 followed by TX5 after a 3 min rest."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "For EEG, eight rats were chosen for the non-stimulated PTZ+/tFUS- control (PTZ-control) group, and five rats were chosen for each stimulated experimental group.",
+   "exposures[0].fundamental_frequency_khz": "A lead zirconate titanate (DeL Piezo Specialties LLC., DL-47) 690 kHz single-element ring transducer with inner and outer diameters of 10 and 31 mm, respectively, was fabricated with a focal distance of 45 mm and bandwidth of 25%.",
+   "exposures[0].unspecified_domain.pressure_kpa": "To simplify the ultrasonic conditions and mimic electrical stimulations generating rebound excitations, the stimuli were classified into two types: one with low pressure (0.25 MPa) consecutive burst train (TX1-TX4 in Fig. 2A) and the other with high pressure (1.0 MPa) with shorter bursts (TX5 in Fig. 2A) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To simplify the ultrasonic conditions and mimic electrical stimulations generating rebound excitations, the stimuli were classified into two types: one with low pressure (0.25 MPa) consecutive burst train (TX1-TX4 in Fig. 2A) and the other with high pressure (1.0 MPa) with shorter bursts (TX5 in Fig. 2A) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.duty_cycle_pct": "To simplify the ultrasonic conditions and mimic electrical stimulations generating rebound excitations, the stimuli were classified into two types: one with low pressure (0.25 MPa) consecutive burst train (TX1-TX4 in Fig. 2A) and the other with high pressure (1.0 MPa) with shorter bursts (TX5 in Fig. 2A) with a 50% duty cycle of 100 Hz pulse repetition frequency.",
+   "exposures[0].timing.pulse_duration_ms": "The first function generator (Tektronix, AFG3252) sent out a pulse train of 100 Hz, and the connected second function generator (Agilent, 33250A) transmitted a 5-ms, 3,450-cycle, 690-kHz burst to secure a 50% duty cycle (Fig. 2B).",
+   "exposures[0].timing.sonication_duration_s": "The modulation effects were explored by changing the duration of each low-pressure burst to 10 (TX1), 20 (TX2), and 40 (TX3 and TX4) s. The number of bursts was six for each stimulation condition, and the burst intervals for sequences from TX1 to TX4 were 50, 40, 40, and $2 0 \\ s ,$ respectively. A high-pressure burst train (TX5) was transmitted for 5 min during which the length of the burst was 250 ms with a transmit interval of 30 s.",
+   "exposures[0].device.manufacturer": "A lead zirconate titanate (DeL Piezo Specialties LLC., DL-47) 690 kHz single-element ring transducer with inner and outer diameters of 10 and 31 mm, respectively, was fabricated with a focal distance of 45 mm and bandwidth of 25%.",
+   "exposures[0].device.model": "A lead zirconate titanate (DeL Piezo Specialties LLC., DL-47) 690 kHz single-element ring transducer with inner and outer diameters of 10 and 31 mm, respectively, was fabricated with a focal distance of 45 mm and bandwidth of 25%."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "59 rats were used in total including PTZ-only and normal controls and separate cohorts for EEG, histology and optical imaging; the number exposed to ultrasound is not stated as one total."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.25 MPa for TX1 to TX4 and 1.0 MPa for TX5; the paper does not say whether these are free-field or in-brain values."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule resolved by arithmetic: the 5 ms burst at 100 Hz gives the stated 50% duty cycle, so 5 ms is the pulse and the 10 to 40 s bursts are trains."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "10, 20 and 40 s trains for TX1 to TX4; TX5 uses 250 ms bursts, described in the protocol text only."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target stated as right ATN from stereotactic coordinates; the beam focus is 4.7 mm long axially."
+   },
+   {
+    "field": "sham_type",
+    "reason": "PTZ-injected rats without tFUS (PTZ-control) and normal controls; no sham device condition."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

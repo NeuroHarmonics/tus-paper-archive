@@ -1,0 +1,218 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025cheng",
+ "doi": "10.3389/fpsyt.2025.1606300",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "autism spectrum disorder",
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 20,
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "CARS; ABC; ATEC; SRS; RBS-R; resting-state fNIRS functional connectivity",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Scale scores for autism symptoms fell over four weeks and resting-state fNIRS functional connectivity increased; the authors describe the protocol as previously inhibitory for MEP amplitudes.",
+ "adverse_events": "none_observed",
+ "safety_notes": "The boy completed every session and reported no discomfort such as headache, fatigue or muscle twitching.",
+ "exposures": [
+  {
+   "label": "tFUS to left DLPFC",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "left dorsolateral prefrontal cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GreenValley BrainTech Medical Technology Corporation",
+    "model": "Ultrasound Neurostimulation System"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 28.37,
+    "ispta_w_cm2": 0.11347
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 400,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": 1.6,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Pulse width T1 = 400, pulse repetition period T2 = 25 ms (PRF 40 Hz), burst duration T3 = 500 ms, burst period T4 = 2 s, duty cycle 1.6%; 30 minutes per session on each weekday for four weeks (20 sessions)."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 1600.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "We describe the application of transcranial focused ultrasound to the left dorsolateral prefrontal cortex in a boy with ASD, which was applied for 30 minutes each consecutive weekday for four weeks (20 sessions in total).",
+   "n_sessions_per_subject": "We describe the application of transcranial focused ultrasound to the left dorsolateral prefrontal cortex in a boy with ASD, which was applied for 30 minutes each consecutive weekday for four weeks (20 sessions in total).",
+   "exposures[0].fundamental_frequency_khz": "This transducer had a center frequency of 0.5 MHz, a diameter of 4.8 mm, and a focal length of approximately 24 mm,",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].timing.sonication_duration_s": "The ultrasonic parameters (T1 = 400 ms, T2 = 25 ms, T3 = 500 ms, T4 = 2 s, PRF = 40 Hz, DC = 1.6%, ISPTA = 113.47mw/cm<sup>2</sup>, ISPPA = 28.37w/cm<sup>2</sup>)",
+   "exposures[0].device.manufacturer": "Transcranial ultrasonic waveforms were generated using an Ultrasound Neurostimulation System (GreenValley BrainTech Medical Technology Corporation)",
+   "exposures[0].device.model": "Transcranial ultrasonic waveforms were generated using an Ultrasound Neurostimulation System (GreenValley BrainTech Medical Technology Corporation)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse width T1 stated as 400 ms alongside T2 = 25 ms and DC 1.6% (T1/T2); the unit is probably a typo (microseconds); recorded as written."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Burst duration T3 = 500 ms repeating every T4 = 2 s for 30 min; recorded the 0.5 s burst; nested structure."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Stated as 113.47 mW/cm2, converted to 0.11347 W/cm2; domain not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "ISPPA 28.37 W/cm2 given without stating the domain."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker is not named; the stimulation system maker is GreenValley BrainTech."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Case report of one boy; the authors mention three further participants in an ongoing trial."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Authors say the protocol inhibited MEP amplitudes in TMS testing; the paper does not report excitation or inhibition for this participant."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

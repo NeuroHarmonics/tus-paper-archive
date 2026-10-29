@@ -1,0 +1,177 @@
+{
+ "schema_version": "1.0",
+ "citekey": "1981halle",
+ "doi": "10.1093/ptj/61.3.345",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other"
+ ],
+ "readout_other": "antidromic sensory nerve conduction latency (Teca EMG recorder); subcutaneous temperature by thermistor",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Conduction latency of the superficial radial nerve shortened with a 1.2 C rise in subcutaneous temperature, equally for ultrasound and infrared; no mechanical effect of ultrasound was identified.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Continuous 1 MHz ultrasound to forearm over superficial radial nerve",
+   "target": {
+    "terms": [
+     "peripheral_nerve"
+    ],
+    "label": "superficial terminal branch of the radial nerve"
+   },
+   "device": {
+    "family": "mettler",
+    "manufacturer": "Mettler Electronic Corp, Anaheim, CA",
+    "model": "Ultrasound Model ME 702"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.0,
+    "ispta_w_cm2": 1.0
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     300,
+     1200
+    ],
+    "protocol_description": "Ultrasound applied in circular motion with a 2-cm sound head until subcutaneous temperature rose 1.2 C, interrupted after each 0.3 C rise to record latency. Treatment lasted 5 to 20 minutes (mean 13.2 minutes). Infrared comparison given in a separate session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten healthy adults were exposed to ultrasound and infrared on separate treatment sessions",
+   "n_sessions_per_subject": "Group A received ultrasound during the first session and infrared during the second session.",
+   "exposures[0].fundamental_frequency_khz": "at a frequency of 1 MHz continuous wave",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "using 1 $. 0 \\ \\mathbf { W } / \\mathbf { c m } ^ { 2 }$ at a frequency of 1 MHz continuous wave",
+   "exposures[0].timing.sonication_duration_s": "The duration of the ultrasound treatments varied from 5 to 20 minutes",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Ultrasound was administered to the forearm between the stimulating and recording electrodes in a circular fashion using 1 $. 0 \\ \\mathbf { W } / \\mathbf { c m } ^ { 2 }$ at a frequency of 1 MHz continuous wave."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "1.0 W/cm2 is a clinical dial intensity; the paper does not say whether it is spatial-peak or spatial-average or temporal-average; placed under ispta as continuous wave."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Duration varied with rate of temperature rise; recorded as stated range."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Peripheral nerve stimulated percutaneously in forearm, not brain."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Latency fell with heating in both ultrasound and infrared conditions; authors attribute this to heat, not a specific ultrasound effect."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Infrared heating was used as a comparison modality; there was no sham ultrasound."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

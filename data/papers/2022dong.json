@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022dong",
+ "doi": "10.1088/1741-2552/aca799",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "hippocampal LFP theta amplitude and power",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Theta amplitude and absolute power increased after TUS while relative power decreased; the relative change depended on trial number and stimulation duration under peak stimulation only.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Closed-loop TUS at theta peak, trough or random phase",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 180,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": [
+     0.02,
+     0.06
+    ],
+    "protocol_description": "Ultrasound triggered at the predicted peak, trough or a random phase of the hippocampal theta rhythm; PRF 1 kHz, DC 30%, stimulation duration 20-60 ms, 1-6 stimulation trials (SD 50 ms for the trial experiments, six trials for the duration experiments). Experiments repeated 16 times per setting with 5 s intervals and 15 min between settings."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.3
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of25 C57BL mice were used in the experiment, (body weights 20–25 g, Beijing Vital River Laboratory Animal Technology Co., Ltd, China, peak stimulation: $N = 7 ;$ trough stimulation: $N = 7 ;$ random stimulation: $N = 6 ;$ deaf mouse group: $N = 5 )",
+   "exposures[0].fundamental_frequency_khz": "An FF of 500 kHz was chosen to obtain deeper penetration.",
+   "exposures[0].unspecified_domain.pressure_kpa": "A sound pressure of 0.18 MPa and DC of 30% were chosen to the reduce the thermal effect of TUS in the brain tissue.",
+   "exposures[0].timing.duty_cycle_pct": "A sound pressure of 0.18 MPa and DC of 30% were chosen to the reduce the thermal effect of TUS in the brain tissue.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The PRF and range of SD were 1 kHz and 20–60 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The PRF and range of SD were 1 kHz and 20–60 ms, respectively.",
+   "exposures[0].device.manufacturer": "The pulse signal from the second signal generator was amplified using a linear power amplifier and transmitted to an ultrasound transducer (V301-SU, Olympus, USA)",
+   "exposures[0].device.model": "The pulse signal from the second signal generator was amplified using a linear power amplifier and transmitted to an ultrasound transducer (V301-SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper says 'sound pressure of 0.18 MPa' without stating whether water or in-brain; recorded as unspecified. Intensity is mentioned as a setting but no value is given."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated (DC 30% and PRF 1 kHz given); left not_reported per no-arithmetic rule."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Closed-loop phase-locked stimulation; number of stimulation trials (1-6) per theta peak/trough and stimulation duration (20-60 ms) varied. Paper text also says the transducer was aligned to the motor cortex in one sentence, inconsistent with the hippocampal target."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Hippocampus coordinates given (2 mm right, 2 mm posterior of bregma); section 2.4 mentions aligning to the motor cortex, likely a copy-over."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

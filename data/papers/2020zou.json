@@ -1,0 +1,297 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020zou",
+ "doi": "10.1016/j.isci.2020.101066",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (rhesus monkey)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "other_mri"
+ ],
+ "readout_other": "video-EEG/ECoG seizure counts, duration and inter-seizure interval; T2-weighted MRI; skull-surface thermal infrared imaging",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Penicillin-induced seizures were fewer after 15 min of ultrasound than after sham (total count over 7 h 75.75 vs 129.1); seizure duration and inter-seizure interval changes had p = 0.0544.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Skull-surface temperature rise was about 0.3 C and T2-weighted MRI showed no tissue damage or bleeding.",
+ "exposures": [
+  {
+   "label": "800 kHz transducer, 15 min",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "right hand movement area"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "IMASONIC",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 1740,
+    "isppa_w_cm2": 119.78,
+    "ispta_w_cm2": 1.43171
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Low-intensity pulsed ultrasound (PRF 500 Hz, duty cycle 36%) was delivered for 15 minutes, 30 minutes after penicillin injection, to the right hand movement area; the animals were fixed on a primate chair for 7 hours afterwards with video-EEG. Sessions were separated by 14-day intervals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.72
+   }
+  },
+  {
+   "label": "750 kHz transducer (comparison)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "right hand movement area"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 750,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "A 750 kHz Sonic Concepts transducer was compared with the 800 kHz transducer for parameter selection (Figure 2A); no separate parameters are stated for it."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "source_quotes": {
+   "n_subjects": "First, there were only two animals used in our study;",
+   "exposures[0].fundamental_frequency_khz": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[1].fundamental_frequency_khz": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[0].device.manufacturer": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[0].device.model": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[1].device.manufacturer": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[1].device.model": "Two ultrasound transducers with fundamental frequencies of 800 kHz (IMASONIC, Voray sur l'Ognon, France) and 750 kHz (Sonic Concepts, Woodinville, CA) were used to stimulate the epileptic monkeys.",
+   "exposures[0].in_situ.pressure_kpa": "These trials allowed us to estimate the acoustic pressure at 1.74 MPa in the brains of the monkeys.",
+   "exposures[0].in_situ.isppa_w_cm2": "The corresponding intensity spatial peak pulse average (I<sub>SPPA</sub>) was 119.78 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "By taking into account a minimum 5 s pause between each ultrasonic pulse, we also estimated the corresponding spatial peak time average intensity (I<sub>SPTA</sub>) at less than 1431.71 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We found that ultrasound stimulation at a frequency of 800 kHz, a pulse repetition frequency (PRF) of 500 Hz, a duty cycle of 36%, and an acoustic pressure of 1.74 MPa reduced the number of seizures compared with ultrasound stimulation at a frequency of 750 kHz (Figure 2A).",
+   "exposures[0].timing.duty_cycle_pct": "We found that ultrasound stimulation at a frequency of 800 kHz, a pulse repetition frequency (PRF) of 500 Hz, a duty cycle of 36%, and an acoustic pressure of 1.74 MPa reduced the number of seizures compared with ultrasound stimulation at a frequency of 750 kHz (Figure 2A).",
+   "exposures[0].timing.sonication_duration_s": "The frequency was set to 500 Hz, and the pulse duration was set to 100 ms using a first function generator, with rise and fall times set to 1 ms using a second generator (AFG3101, Tektronix) connected to the amplitude modulation entry of the first generator."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Methods give 'pulse duration 100 ms' with PRF 500 Hz and duty cycle 36%; these are mutually inconsistent (36%/500 Hz would be 0.72 ms). Recorded as stated."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper says pressure was estimated in the brains from skull transmission measured on ex vivo skulls; also says 'pressure amplitude at the focus was 1.74 MPa'. Method labelled measurement (through skull) but could be derating."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Paper gives 'less than 1431.71 mW/cm2' (upper bound), converted to 1.43171 W/cm2."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Two monkeys; figure legends give n = 8 (sessions/trials)."
+   },
+   {
+    "field": "exposures[1]",
+    "reason": "750 kHz transducer was used only for parameter selection; no timing or pressure stated for it. Frequency text is 750 kHz."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation described only as a control group; mechanism not stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Stimulation delivered under isoflurane; anaesthesia removed after 15 min and video-EEG continued for 7 h."
+   }
+  ],
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

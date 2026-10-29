@@ -1,0 +1,234 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023wangd",
+ "doi": "10.1088/1741-2552/acb014",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar Kyoto; spontaneously hypertensive rat, SHR; Sprague-Dawley)",
+ "conditions": [
+  "other",
+  "healthy"
+ ],
+ "condition_other": "ADHD (spontaneously hypertensive rat model; WKY and SD rats as controls)",
+ "n_subjects": [
+  6,
+  6,
+  6,
+  6,
+  6,
+  6,
+  3,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "open-field test; modified Y-maze; Y-maze spontaneous alternation; DNMTP T-maze; spikes and LFP (16-channel electrode); Western blot for DAT and BDNF",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "In SHR rats TUS improved cognitive behaviour, raised neuronal firing rate and altered LFP band power and entropy, and increased BDNF by about 30%; WKY rats showed some changes too.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to prefrontal cortex, 2 weeks daily",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "prefrontal cortex (1.25 mm left and right, 4.5 mm from bregma)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 530,
+    "isppa_w_cm2": 9.36,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "500 kHz, PRF 1 Hz, duty cycle 5%, stimulation duration 50 ms; stimulation performed continuously for 2 weeks for 15 min each time."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "As shown in figure 1(b), the ultrasound signals were a fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of 500 kHz, 1 Hz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As shown in figure 1(b), the ultrasound signals were a fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of 500 kHz, 1 Hz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "As shown in figure 1(b), the ultrasound signals were a fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of 500 kHz, 1 Hz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "As shown in figure 1(b), the ultrasound signals were a fundamental frequency, pulse repetition frequency, duty cycle, and stimulation duration of 500 kHz, 1 Hz, 5%, and 50 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound stimulation was performed continuously for 2 weeks for 15 min each time.",
+   "exposures[0].device.model": "to drive an ultrasound transducer (V301-SU, Olympus, USA)",
+   "exposures[0].device.manufacturer": "to drive an ultrasound transducer (V301-SU, Olympus, USA)",
+   "n_subjects": "<tr><td>TUS</td><td>Wistar Kyoto rats (n = 6) Spontaneously</td><td>Wistar Kyoto rats (n = 6) Spontaneously</td><td>Wistar Kyoto rats (n = 3) Spontaneously</td></tr>",
+   "n_sessions_per_subject": "The current found that after 14 consecutive days of ultrasound stimulation, the neural activity of SHR rats still had significant changes on the 21st day, indicating the persistence of the therapeutic effect.",
+   "exposures[0].free_field.pressure_kpa": "The maximum ultrasound pressure was 0.53 MPa, and the corresponding spatial peak and pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ values were 9.36 W $\\mathrm { c m } ^ { - 2 } { } .$ , respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "The maximum ultrasound pressure was 0.53 MPa, and the corresponding spatial peak and pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ values were 9.36 W $\\mathrm { c m } ^ { - 2 } { } .$ , respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper calls the 50 ms value the 'stimulation duration'; recorded as the pulse duration because it equals duty cycle / PRF (5% of 1 s)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15 min converted to 900 s; paper states 15 min per daily session."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Hydrophone measurement 5 mm below the collimator; medium and skull path not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "90 rats (30 per strain) are stated in total, split into TUS and control groups; the number exposed is not stated, so not computed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Source text garbles the Isppa unit and the sentence ends with 'respectively'; value read as 9.36 W/cm2."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane described for electrode surgery only; state during TUS and recording not stated."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Three deaf rats per group were stimulated and EEG power compared (supplementary figure)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

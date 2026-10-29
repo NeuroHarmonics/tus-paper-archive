@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zhou",
+ "doi": "10.34133/research.0516",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "parkinsons_disease",
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  14
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "pole test; rotarod; c-Fos and TH immunohistochemistry; Western blot; electron microscopy of PSD",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Holographic US of the bilateral dorsal striatum increased c-Fos-positive cells in the DS (not in M1) and improved pole and rotarod performance and TH-positive neuron counts in MPTP mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Mechanical index 0.5 and Ispta 180 mW/cm2 below FDA limits; H&E and Nissl staining showed no tissue damage or neural loss in healthy mice.",
+ "exposures": [
+  {
+   "label": "Holographic US to bilateral dorsal striatum",
+   "target": {
+    "terms": [
+     "dorsal_striatum"
+    ],
+    "label": "bilateral dorsal striatum (DS)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "holographic lens transducer, PZT-8 ceramic (Siansonic)"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.18
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 1,
+    "protocol_description": "3 MHz, PRF 500 Hz, DC 20%, tone-burst duration 0.4 ms, sonication duration 1 s, interstimulus interval 4 s; 30 min (c-Fos) or 20 min per day for 10 days (treatment)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "0 0 1$ , mean ± SEM; one-way ANOVA with Bonferroni’s post hoc, n = 12 for group I, n = 13 for group II, n = 14 for group III in the pole test; one-way ANOVA with Tukey’s post hoc, n = 9 for group I, n = 10 for group II, n = 10 for group II in the rotarod test.",
+   "exposures[0].fundamental_frequency_khz": "The pulse parameters were as follows: FF 3 MHz, PRF 500 Hz, DC 20%, TBD 0.4 ms, SD 1 s, ISI 4 s.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse parameters were as follows: FF 3 MHz, PRF 500 Hz, DC 20%, TBD 0.4 ms, SD 1 s, ISI 4 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse parameters were as follows: FF 3 MHz, PRF 500 Hz, DC 20%, TBD 0.4 ms, SD 1 s, ISI 4 s.",
+   "exposures[0].timing.duty_cycle_pct": "The pulse parameters were as follows: FF 3 MHz, PRF 500 Hz, DC 20%, TBD 0.4 ms, SD 1 s, ISI 4 s.",
+   "exposures[0].timing.sonication_duration_s": "The pulse parameters were as follows: FF 3 MHz, PRF 500 Hz, DC 20%, TBD 0.4 ms, SD 1 s, ISI 4 s.",
+   "exposures[0].in_situ.ispta_w_cm2": "In experimental measurement, $I _ { \\mathrm { { s p t a } } }$ after passing the mouse skull was 180 mW/cm<sup>2</sup>.",
+   "n_sessions_per_subject": "Holographic US was delivered to the bilateral DS (Fig. S1E) daily for 10 d.",
+   "exposures[0].device.model": "We chose PZT-8 ceramic (a resonant frequency of 3 MHz, Siansonic)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes differ by experiment: US group n=5 (c-Fos) and n=14 (pole test); rotarod n=10; unilateral-stimulation group size not stated. Listed [5,14]; total not stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "10 daily sessions in the treatment experiment; the c-Fos experiment was a single session."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Ispta measured by hydrophone after passing the mouse skull; written 180 mW/cm2, converted to 0.18 W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Per-day session was 20 min (30 min for c-Fos); the paper states SD as 1 s with ISI 4 s."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No auditory control during the experiment; PRF of 500 Hz chosen below mouse hearing range and prior deaf-mouse work cited."
+   },
+   {
+    "field": "blinding",
+    "reason": "Double blinding stated only for cell counting of immunostaining."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Maker not named; transducer assembled by the authors from PZT-8 ceramic."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

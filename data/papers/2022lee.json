@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022lee",
+ "doi": "10.1111/epi.17105",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "other_mri",
+  "other"
+ ],
+ "readout_other": "SEEG spectral power; seizure frequency; interictal epileptiform discharges; post-FUS MRI",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Most patients showed increased SEEG band power during sonication followed by decreases after; two patients had fewer seizures within 3 days and one had more subclinical seizures. No consistent relationship with seizure control.",
+ "adverse_events": "observed",
+ "safety_notes": "One patient had scalp heating halting treatment after 260 s (completed on repeat after 1 h); one patient had transient naming and memory impairment resolving within 3 weeks; post-FUS MRI showed no lesion or edema.",
+ "exposures": [
+  {
+   "label": "FUS to the seizure onset zone (SEEG-guided), patient-specific target",
+   "target": {
+    "terms": [
+     "temporal_lobe",
+     "premotor_cortex",
+     "frontal_lobe",
+     "hippocampus",
+     "insular_cortex",
+     "anterior_cingulate_cortex"
+    ],
+    "label": "seizure onset zone (SOZ)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NaviFUS Corporation",
+    "model": "neuronavigation-guided multichannel hemispheric phased array FUS system"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 2.8
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 600,
+    "protocol_description": "Burst-tone low-intensity FUS: PRF 100 Hz, burst length 3 ms, duty cycle 30%, total exposure time 10 min with SEEG recording before, during and after. Patient 2 had two sessions (first stopped at 260 s, repeat 600 s)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 30.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Six patients met the eligibility criteria and completed FUS treatment",
+   "exposures[0].in_situ.ispta_w_cm2": "the ceiling level of transcranial spatial-peak temporal-average intensity is requested to be $< 2 . 8 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 } ,$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "pulse repetition frequency = 100 Hz, burst length/focus exposure = 3 ms, duty cycle = 30%)",
+   "exposures[0].timing.pulse_duration_ms": "pulse repetition frequency = 100 Hz, burst length/focus exposure = 3 ms, duty cycle = 30%)",
+   "exposures[0].timing.duty_cycle_pct": "pulse repetition frequency = 100 Hz, burst length/focus exposure = 3 ms, duty cycle = 30%)",
+   "exposures[0].timing.sonication_duration_s": "Total exposure time was 10 min"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "2.8 W/cm2 is a requested ceiling of transcranial Ispta, set via the device planning tool; how in situ values were obtained is not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Total exposure time 10 min is recorded as sonication duration; any on/off nesting within it is not described."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Frequency is not stated anywhere in the paper."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Targets differ per patient: fusiform gyrus, premotor gyrus, frontal operculum, hippocampus body, insula superior border, anterior cingulate gyrus; combined into one exposure because frequency is unreported."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "One session per patient except Patient 2 (two)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

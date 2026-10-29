@@ -1,0 +1,572 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024songb",
+ "doi": "10.1016/j.neurom.2023.04.476",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 35,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular",
+  "autonomic_physiology"
+ ],
+ "readout_other": "H-reflex and M-wave EMG; flexor reflex windup; hot plate withdrawal latency; NeuN immunostaining; subcutaneous temperature",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "tsFUS at the MN segment with PRF 2 kHz suppressed the H-reflex, flexor-reflex C-fibre windup and increased hot-plate withdrawal latency; at PRF 100 Hz the H-reflex showed a moderate increase. T10 and Sa targets had no effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No neuronal loss on NeuN staining 7 days after tsFUS; no signs of discomfort, vocalisation, pain or stress observed in anaesthetised or awake rats; subcutaneous temperature rise measured.",
+ "exposures": [
+  {
+   "label": "tsFUS at the sciatic motoneuron segment (MN, vertebra T13)",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "the segment at which the SN motor neurons are located (MN)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1480,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     2000,
+     100
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 60,
+    "protocol_description": "tsFUS in burst mode (1.1 MHz sine wave) delivered for 1 minute, with PRF 2 kHz (interburst interval 500 us) or 100 Hz at 40% duty cycle; reflexes and hot plate tested before, during and after tsFUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tsFUS at the sciatic nerve DRG (SN DRG, vertebra L5)",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "the dorsal root ganglion of the SN (SN DRG)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     2000,
+     100
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 60,
+    "protocol_description": "tsFUS in burst mode (1.1 MHz sine wave) delivered for 1 minute, with PRF 2 kHz (interburst interval 500 us) or 100 Hz at 40% duty cycle; reflexes and hot plate tested before, during and after tsFUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tsFUS at spinal segment T10",
+   "target": {
+    "terms": [
+     "thoracic_spinal_cord"
+    ],
+    "label": "T10 segment"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     2000,
+     100
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 60,
+    "protocol_description": "tsFUS in burst mode (1.1 MHz sine wave) delivered for 1 minute, with PRF 2 kHz (interburst interval 500 us) or 100 Hz at 40% duty cycle; reflexes and hot plate tested before, during and after tsFUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "tsFUS at emergence of the sural nerve (Sa, vertebra S2)",
+   "target": {
+    "terms": [
+     "spinal_cord"
+    ],
+    "label": "emergence of the sural nerve (Sa)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": [
+     2000,
+     100
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 60,
+    "protocol_description": "tsFUS in burst mode (1.1 MHz sine wave) delivered for 1 minute, with PRF 2 kHz (interburst interval 500 us) or 100 Hz at 40% duty cycle; reflexes and hot plate tested before, during and after tsFUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The effects of tsFUS on the spinal circuit were examined in 35 Sprague-Dawley rats (250–450 g). In some rats, in which more than one tsFUS sessions were tested, we allowed a period of at least three days between each experiment to minimize any carryover effects (Table 1). Different tsFUS parameters were tested in each session; we waited approximately 15 minutes after testing another parameter. All experiments were approved by the Institutional Animal Care and Use Committee of the Feinstein Institute.",
+   "exposures[0].unspecified_domain.pressure_kpa": "A pressure of 3.0 MPa could potentially produce lesions; therefore, in all subsequent experiments, tsFUS was delivered at 1.48 MPa pressure level.",
+   "exposures[0].fundamental_frequency_khz": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[0].timing.duty_cycle_pct": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[0].timing.pulse_duration_ms": "tsFUS was tested in a burst mode (200 μs duration at different interburst intervals",
+   "exposures[0].timing.sonication_duration_s": "tsFUS was delivered for 1 minute",
+   "exposures[0].device.model": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[0].device.manufacturer": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[1].fundamental_frequency_khz": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[1].timing.duty_cycle_pct": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[1].timing.pulse_duration_ms": "tsFUS was tested in a burst mode (200 μs duration at different interburst intervals",
+   "exposures[1].timing.sonication_duration_s": "tsFUS was delivered for 1 minute",
+   "exposures[1].device.model": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[1].device.manufacturer": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[2].fundamental_frequency_khz": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[2].timing.duty_cycle_pct": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[2].timing.pulse_duration_ms": "tsFUS was tested in a burst mode (200 μs duration at different interburst intervals",
+   "exposures[2].timing.sonication_duration_s": "tsFUS was delivered for 1 minute",
+   "exposures[2].device.model": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[2].device.manufacturer": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[3].fundamental_frequency_khz": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[3].timing.duty_cycle_pct": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "FUS PRF was set to 2 kHz (or 100 Hz), and the duty cycle was set to 40%.",
+   "exposures[3].timing.pulse_duration_ms": "tsFUS was tested in a burst mode (200 μs duration at different interburst intervals",
+   "exposures[3].timing.sonication_duration_s": "tsFUS was delivered for 1 minute",
+   "exposures[3].device.model": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)",
+   "exposures[3].device.manufacturer": "The tsFUS system comprises a 1.1 MHz single element FUS transducer (H102, Sonic Concepts Inc, Bothell, WA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "1.48 MPa given for all subsequent experiments; voltage-to-pressure calibration was in degassed water, but the paper does not say 1.48 MPa is a free-field value."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Earlier experiments used 'different pressure levels' not stated per condition; pressure not reported for DRG, T10 and Sa exposures."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration (200 us burst) is from the Fig. 1 legend, stated for burst mode 'at different interburst intervals'; with PRF 100 Hz and 40% duty cycle 200 us would not give 40%, so it may not apply to the 100 Hz condition."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF 2 kHz and 100 Hz both used; PRF 100 kHz also appears once in the text (likely a typo for 100 Hz)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "35 rats in total; some rats had several sessions with different parameters, and group sizes vary across experiments."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation is mentioned for the hot plate test and histology (sham-treated animals) but how it was produced is not described."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Spinal levels mapped by the authors to vertebrae (MN segment T13, DRG L5, T10 at T9, Sa at S2); term choice is an interpretation."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible"
+  }
+ }
+}

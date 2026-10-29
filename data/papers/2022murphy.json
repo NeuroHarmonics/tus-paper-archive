@@ -1,0 +1,588 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022murphy",
+ "doi": "10.1073/pnas.2206828119",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Mus musculus)",
+ "conditions": [
+  "healthy",
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  6,
+  8,
+  5,
+  3,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "pet",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "fiber photometry (GCaMP6s, jRGECO1a) of CaMKII, PV, VGAT and TH cells; [18F]FDG PET; hippocampal LFP epileptiform spike rate and HFO amplitude",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Continuous 200 ms pulses raised activity of both CaMKII and PV cells in hippocampus; the 900 Hz protocol raised PV (inhibitory) activity while suppressing CaMKII activity, reduced hippocampal FDG uptake and suppressed epileptiform spikes in kainate mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermocouple measurements with the 900 Hz protocol: +0.23 +/- 0.15 C at the focus and +1.2 +/- 0.53 C at the skull (absolute maximum).",
+ "exposures": [
+  {
+   "label": "Hippocampus (CA1 photometry, PET, and contralateral hippocampus in kainate epilepsy)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Thorlabs (piezoelectric ring element, part PA44LE)",
+    "model": "PhoCUS (Photometry Coupled focused Ultrasound System)"
+   },
+   "fundamental_frequency_khz": 623,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 4.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     900,
+     1
+    ],
+    "duty_cycle_pct": [
+     20,
+     8
+    ],
+    "sonication_duration_s": [
+     0.2,
+     5,
+     10,
+     15
+    ],
+    "protocol_description": "Shuffled 200 ms continuous-wave pulses of varying pressure once every 30 s; a 900 Hz protocol (5 s, 20 % duty cycle, 4.5 W/cm2 ISPPA) delivered every 3 min for 30 min in PET and in the kainate model; a 1 Hz control protocol (5 s, 8 % duty cycle) in PET."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Ventral tegmental area",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "ventral tegmental area (VTA)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Thorlabs (piezoelectric ring element, part PA44LE)",
+    "model": "PhoCUS (Photometry Coupled focused Ultrasound System)"
+   },
+   "fundamental_frequency_khz": 623,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 4.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 900,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 5,
+    "protocol_description": "The same 900 Hz protocol (5 s, 20 % duty cycle, 4.5 W/cm2 ISPPA) as in the hippocampus, applied while monitoring VGAT+ and TH+ neurons."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2222
+   }
+  },
+  {
+   "label": "Centromedial thalamus (on-target and 3 mm dorsal off-target)",
+   "target": {
+    "terms": [
+     "centromedian_nucleus"
+    ],
+    "label": "centromedial nucleus of the thalamus (CMT)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Thorlabs (piezoelectric ring element, part PA44LE)",
+    "model": "PhoCUS (Photometry Coupled focused Ultrasound System)"
+   },
+   "fundamental_frequency_khz": 623,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 4.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "continuous",
+     "pulsed"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 900,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": [
+     0.2,
+     5
+    ],
+    "protocol_description": "200 ms continuous-wave pulses delivered on-target or to cortex and skull 3 mm dorsal (off-target); the 900 Hz protocol (5 s, 20 % duty cycle, 4.5 W/cm2 ISPPA) was applied to CaMKII+ CMT neurons."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2222
+   }
+  },
+  {
+   "label": "Midbrain locomotor region",
+   "target": {
+    "terms": [
+     "midbrain"
+    ],
+    "label": "midbrain locomotor region"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Thorlabs (piezoelectric ring element, part PA44LE)",
+    "model": "PhoCUS (Photometry Coupled focused Ultrasound System)"
+   },
+   "fundamental_frequency_khz": 623,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "200 ms continuous-wave pulses of varying intensity delivered in shuffled order to CaMKII+ neurons; intensity values are shown only in figures."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Using a scanning hydrophone, we characterized the ultrasound focus of the transducer coupled to an explanted skull and found the device had a structural resonance at 623 kHz, which we used as the device operating frequency (Fig. 1B).",
+   "exposures[0].device.manufacturer": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[0].device.model": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[1].fundamental_frequency_khz": "Using a scanning hydrophone, we characterized the ultrasound focus of the transducer coupled to an explanted skull and found the device had a structural resonance at 623 kHz, which we used as the device operating frequency (Fig. 1B).",
+   "exposures[1].device.manufacturer": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[1].device.model": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[2].fundamental_frequency_khz": "Using a scanning hydrophone, we characterized the ultrasound focus of the transducer coupled to an explanted skull and found the device had a structural resonance at 623 kHz, which we used as the device operating frequency (Fig. 1B).",
+   "exposures[2].device.manufacturer": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[2].device.model": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[3].fundamental_frequency_khz": "Using a scanning hydrophone, we characterized the ultrasound focus of the transducer coupled to an explanted skull and found the device had a structural resonance at 623 kHz, which we used as the device operating frequency (Fig. 1B).",
+   "exposures[3].device.manufacturer": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[3].device.model": "The piezoelectric ring stack transducer was obtained from Thorlabs (part PA44LE) and has a thickness of 2 mm and an 8.3 mm outer diameter (O.D.), and the inner diameter (I.D.) was gently sanded to ∼3 mm with an arc shaped Dremel tool such that the fiber photometry sleeve",
+   "exposures[0].in_situ.isppa_w_cm2": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We also performed PET imaging $\\left( n = 3 \\right)$ according to a protocol matched to the 900 Hz delivery (once every 3 min for 30 min) with a 1 Hz stimulus (5 s, 8% D.C., 4.5 $\\mathbb { W } / { \\mathrm { c m } } ^ { 2 }$ ISPPA) and did not observe any significant increases in FDG uptake anywhere in the brain.",
+   "exposures[0].timing.sonication_duration_s": "A 900 Hz, 0.2 D.C., 4.5 W/cm<sup>2</sup> ISPPA ultrasound protocol was delivered to the brain for 5-, 10-, or 15-s periods every 3 min, repeating at least three times per stimulation duration.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[1].timing.duty_cycle_pct": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[1].timing.sonication_duration_s": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[2].timing.duty_cycle_pct": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "exposures[3].timing.sonication_duration_s": "(F) Representative experiment where 200 ms continuous wave pulses of varying intensity are delivered to CAMKII+ neurons of the midbrain locomotor region in shuffled order and averaged across trials.",
+   "exposures[0].timing.duty_cycle_pct": "We also performed PET imaging $\\left( n = 3 \\right)$ according to a protocol matched to the 900 Hz delivery (once every 3 min for 30 min) with a 1 Hz stimulus (5 s, 8% D.C., 4.5 $\\mathbb { W } / { \\mathrm { c m } } ^ { 2 }$ ISPPA) and did not observe any significant increases in FDG uptake anywhere in the brain.",
+   "exposures[2].timing.sonication_duration_s": "A pulse repetition of 900 Hz (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA) increased activity of hippocampal inhibitory neurons while suppressing activity of excitatory neurons, demonstrating existence of a bidirectional stimulation protocol (Fig. 3A).",
+   "n_subjects": "(A) Mean cell type change in CAMKII+ and PV+ fluorescence from 5 s of 900 Hz ultrasound pulse train with quantification of fluorescence during the stimulus (Q1) and post-stimulus period (Q2) (n = 8 animals, one-sample t test, $\\# P < 0 . 0 5 , \\# \\# P < 0 . 0 1 ;$ ; unpaired t test, $^ { \\star } P < 0 . 0 5 , ^ { \\star \\star } P < 0 . 0 1 ) .$",
+   "exposures[1].in_situ.isppa_w_cm2": "To examine whether local temperature changes may play a role in the neural activity changes observed with the 900 Hz protocol (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA), we implanted a thermocouple attached to the tip of the optical fiber and found that temperature increased slightly at the focus after stimulation $( + 0 . 2 3 \\overset { ^ { . } } { \\pm } 0 . 1 5 ^ { \\circ } \\mathrm { C }$ absolute maximum, SI Appendix, Fig. S3).",
+   "exposures[2].in_situ.isppa_w_cm2": "To examine whether local temperature changes may play a role in the neural activity changes observed with the 900 Hz protocol (5 s, 20% D.C., 4.5 W/cm<sup>2</sup> ISPPA), we implanted a thermocouple attached to the tip of the optical fiber and found that temperature increased slightly at the focus after stimulation $( + 0 . 2 3 \\overset { ^ { . } } { \\pm } 0 . 1 5 ^ { \\circ } \\mathrm { C }$ absolute maximum, SI Appendix, Fig. S3)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes vary by experiment (n = 5 to 8, PET n = 5 and n = 3, epilepsy n = 5) and animals may be shared across experiments; no total is stated."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "0.62 MPa peak negative pressure and 12.3 W/cm2 ISPPA were measured through an explanted skull at 220 peak volts (device characterisation), not for the 4.5 W/cm2 protocol."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "The 4.5 W/cm2 ISPPA of the 900 Hz protocol is not said to be in water or in situ; the Methods describe ISPPA derived from hydrophone pressure through a skull with an assumed brain impedance, but do not tie that to this value."
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Pulse duration is not stated; DC/PRF is not computed. Waveform mixes continuous 200 ms pulses and a 900 Hz pulsed protocol (and a 1 Hz, 8 % protocol in PET). The PRF and duty-cycle lists cover the pulsed protocols only. Quote for the lists is the 1 Hz sentence; the 900 Hz / 20 % values are in the sentence quoted for exposures[1]."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "200 ms from the continuous-wave experiment and 5 s from the 900 Hz and 1 Hz protocols."
+   },
+   {
+    "field": "exposures[2].timing",
+    "reason": "Target stated as the centromedial nucleus of the thalamus (CMT); mapped to centromedian_nucleus as nearest term. Fig. 3 caption labels the CMT panel as VTA but the text assigns it to CMT."
+   },
+   {
+    "field": "exposures[3].timing",
+    "reason": "Intensities given only in figure; no numeric pressure or intensity in text for these pulses."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Piezoelectric ring from Thorlabs assembled in-house with balsa and magnesium layers; driving electronics (Agilent 33210A, ENI 2100L amplifier) do not set the family."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Off-target stimulation 3 mm dorsal in CMT; PET compared stimulated with unstimulated hemisphere and with a 1 Hz protocol; no powered-off arm."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Off-target (cortex/skull) stimulation response was 55 % of on-target, used to argue audible sound is not substantial; no masking."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Photometry online; PET FDG uptake over 30 min stimulation with scan afterwards; LFP spikes analysed after stimulation."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "1 Hz protocol in PET gave no significant FDG increase; 900 Hz is the main protocol."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "disagree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree",
+   "exposures[3].fundamental_frequency_khz": "agree",
+   "exposures[3].free_field.pressure_kpa": "agree",
+   "exposures[3].free_field.isppa_w_cm2": "agree",
+   "exposures[3].free_field.ispta_w_cm2": "agree",
+   "exposures[3].in_situ.pressure_kpa": "agree",
+   "exposures[3].in_situ.isppa_w_cm2": "agree",
+   "exposures[3].in_situ.ispta_w_cm2": "agree",
+   "exposures[3].unspecified_domain.pressure_kpa": "agree",
+   "exposures[3].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[3].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[3].timing.pulse_duration_ms": "agree",
+   "exposures[3].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[3].timing.duty_cycle_pct": "agree",
+   "exposures[3].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].timing.sonication_duration_s": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[2].in_situ.isppa_w_cm2": "second",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

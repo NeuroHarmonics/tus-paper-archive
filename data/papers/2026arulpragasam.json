@@ -1,0 +1,381 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026arulpragasam",
+ "doi": "10.64898/2026.09.18.26363360",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "clinical_scale"
+ ],
+ "readout_other": "BOLD-fMRI during sonication; ASL perfusion; resting-state connectivity; MADRS, IDS-SR, GAD-7, PCL-5, CGI; SAFTEE adverse events; neuropsychological battery",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Amygdala FUS changed perfusion (greater than S1 control and hippocampus), BOLD in vmPFC and rACC, and lowered right BLA connectivity with sensorimotor regions; symptom improvement did not differ between conditions.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events or MRI-detectable injury; more AEs after amygdala than S1 sonication (2.50 vs 1.11 events/exposure); one participant had protocol-defined worsening of depressive symptoms after amygdala FUS, resolving within 1 month.",
+ "exposures": [
+  {
+   "label": "Right amygdala FUS",
+   "target": {
+    "terms": [
+     "amygdala"
+    ],
+    "label": "right amygdala"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "Pulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 18.84,
+    "ispta_w_cm2": 0.9379
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 610,
+    "isppa_w_cm2": 14.39,
+    "ispta_w_cm2": 0.7195
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 30,
+    "protocol_description": "Each session included two applications of ten 30 s sonications (30 s on/off) separated by a brief break (<5 min), delivered inside the MRI bore; PRF 10 Hz, pulse width 5 ms."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  },
+  {
+   "label": "Left S1 FUS (active control)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "left primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "Pulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 18.84,
+    "ispta_w_cm2": 0.9379
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 610,
+    "isppa_w_cm2": 14.39,
+    "ispta_w_cm2": 0.7195
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 30,
+    "protocol_description": "Each session included two applications of ten 30 s sonications (30 s on/off) separated by a brief break (<5 min), delivered inside the MRI bore; PRF 10 Hz, pulse width 5 ms."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "The 10 participants ranged in age from 33 to 69 years (mean=47, SD=13)",
+   "n_sessions_per_subject": "Participants received two in-scanner FUS sessions in a randomized, single-blind crossover design",
+   "exposures[0].fundamental_frequency_khz": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[0].timing.pulse_duration_ms": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[0].timing.sonication_duration_s": "Each session included two applications of ten sonications (30s on/off) separated by a brief break (<5min).",
+   "exposures[0].in_situ.isppa_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[0].in_situ.ispta_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[0].in_situ.pressure_kpa": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[0].device.model": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[0].device.manufacturer": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[1].fundamental_frequency_khz": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[1].timing.pulse_duration_ms": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[1].timing.sonication_duration_s": "Each session included two applications of ten sonications (30s on/off) separated by a brief break (<5min).",
+   "exposures[1].in_situ.isppa_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[1].in_situ.ispta_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[1].in_situ.pressure_kpa": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[1].device.model": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[1].device.manufacturer": "FUS was delivered using the Brainsonix Pulsar 1002 (Brainsonix, CA), an MRI-compatible, single-element 65mm transducer (fundamental frequency 650kHz; PRF 10Hz; pulse-width 5ms; hydrophone-measured peak focal depth 60.0mm, -6dB edges at 46.9mm and 77.0mm, 4mm focal width).",
+   "exposures[0].free_field.isppa_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[0].free_field.ispta_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[1].free_field.isppa_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76).",
+   "exposures[1].free_field.ispta_w_cm2": "Device output was set at a Spatial-Peak Temporal Intensity (I<sub>SPTA</sub>) of 937.9 mW/cm2, and Spatial-Peak Pulse-Average Intensity (I<sub>SPPA</sub>) of 18.84 W/cm2, derated (0.3dB/cm/MHz) to intensities of I<sub>SPTA.3</sub>=719.5mW/cm<sup>2</sup> and I<sub>SPPA.3</sub>=14.39 W/cm<sup>2</sup> (peak negative pressure of 0.61 MPa and a mechanical index of 0.76)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "15 consented; 10 participants completed the trial and 9 completed both sessions. Recorded 10."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; not computed."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Sentence gives 0.61 MPa and MI 0.76 after the derated intensities; assumed to belong to the derated values."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Device output intensities before derating; domain (water or other) is not stated."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Derating at 0.3 dB/cm/MHz, not measurement or simulation."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "Same device parameters stated once for all FUS; applied to the S1 control exposure as well."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No masking used; auditory cortex BOLD activation was examined post hoc."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "'30s on/off' read as 30 s sonications alternating with 30 s rest (BOLD blocks of 30 s)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "disagree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[1].free_field.isppa_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

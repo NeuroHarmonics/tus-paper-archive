@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023gong",
+ "doi": "10.3390/bioengineering10050577",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging"
+ ],
+ "readout_other": "tungsten microelectrode recording; fiber photometry of jGCaMP8m calcium signal; comparison with flash light stimulation of the eye",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US to the visual cortex evoked neuronal spiking and calcium responses with shorter latency than flash light stimulation; longer US evoked longer responses.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "3.6 MHz ring transducer to rat visual cortex, 30 ms and 60 ms stimulation",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex (VC)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3600,
+   "free_field": {
+    "pressure_kpa": 3600,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     0.03,
+     0.06
+    ],
+    "protocol_description": "3.6 MHz sine wave in burst mode, stimulation time 30 ms (cycle = 107 k) and 60 ms (cycle = 214 k), interval 5 s; the methods also mention a '250 ms Burst cycle' for the field measurements. Light stimulation (flash <1 ms) delivered for comparison."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Long-Evans (LE) rats (n = 10) were used for this study.",
+   "exposures[0].fundamental_frequency_khz": "A 3.6 MHz ring transducer with a focal depth of 23 mm was used for this experiment.",
+   "exposures[0].free_field.pressure_kpa": "The peak-to-peak amplitude of the focused ultrasound pressure, as measured in the free field, was 3.6 MPa",
+   "exposures[0].timing.sonication_duration_s": "stimulation time 30 ms (cycle = 107 k) and 60ms (cyc"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Peak-to-peak 3.6 MPa (MI 2.6) in free field; skull transmission 0.5-0.6 and MI 1.3-1.6 through skull given but no in situ pressure value."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Source text is garbled by overlapping OCR; 30 ms and 60 ms single bursts per trial, treated as continuous. '250 ms Burst cycle' in field-measurement methods not reconciled."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No transducer maker or builder named ('PZT ring transducer')."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Only control is transducer and electrodes placed in water to check for electrical and vibration artefact; no sham US arm in vivo."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Authors argue against auditory route from latency and V1-restricted GCaMP expression; no control experiment or masking."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Methods describe a cranial window over the visual cortex while results say non-invasive through the skull; skull-in-path hydrophone measurements were made."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

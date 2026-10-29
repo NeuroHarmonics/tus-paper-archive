@@ -1,0 +1,219 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026fairbanks",
+ "doi": "10.1038/s41598-026-65207-y",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 28,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Stroop task (Stroop effect, response time, accuracy); finger-tapping frequency by accelerometer",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Stroop effect decreased after TUS versus sham (43.87 vs 54.55 ms, p = 0.05), significant in the multifocal group only; no effect on finger tapping or accuracy. Protocol was expected to be inhibitory.",
+ "adverse_events": "observed",
+ "safety_notes": "Questionnaire after each session: minimal mild side effects (jaw muscle tightness most common), no significant TUS versus sham differences; simulated brain temperature rise 0.2-0.61 °C.",
+ "exposures": [
+  {
+   "label": "STN TUS (unifocal and multifocal)",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "subthalamic nucleus (STN)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H317 128-element phased array transducer"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     49.82,
+     44.0
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 10,
+    "ispta_w_cm2": 1
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": [
+     120,
+     30
+    ],
+    "protocol_description": "Unifocal: one focus for 120 s; multifocal: electronic steering through 7 foci for 30 s each (210 s total); 10% duty cycle, 100 Hz PRF, 25% ramping (12.5% up and down) within each burst; delivered once per session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 1.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "28 participants underwent TUS or sham stimulation",
+   "n_sessions_per_subject": "One session consisted of real ultrasound delivery (TUS session), and the other involved no energy delivery (sham session).",
+   "exposures[0].device.manufacturer": "A 128-element phased array transducer (H317, Sonic Concepts, WA, USA) operating at 250 kHz was used.",
+   "exposures[0].device.model": "A 128-element phased array transducer (H317, Sonic Concepts, WA, USA) operating at 250 kHz was used.",
+   "exposures[0].fundamental_frequency_khz": "The unifocal condition delivered ultrasound to 1 focal spot at a fundamental frequency of 250 kHz for 120 s using a 10% duty cycle, 100 Hz PRF, I<sub>SPPA</sub> of 10 W/cm<sup>2</sup>, and I<sub>SPTA</sub> of 1 W/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The unifocal condition delivered ultrasound to 1 focal spot at a fundamental frequency of 250 kHz for 120 s using a 10% duty cycle, 100 Hz PRF, I<sub>SPPA</sub> of 10 W/cm<sup>2</sup>, and I<sub>SPTA</sub> of 1 W/cm<sup>2</sup>.",
+   "exposures[0].timing.duty_cycle_pct": "The unifocal condition delivered ultrasound to 1 focal spot at a fundamental frequency of 250 kHz for 120 s using a 10% duty cycle, 100 Hz PRF, I<sub>SPPA</sub> of 10 W/cm<sup>2</sup>, and I<sub>SPTA</sub> of 1 W/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Multifocal TUS used electronic steering to cycle through 7 focal spots for 30 s each (total duration = 210 s)",
+   "exposures[0].in_situ.isppa_w_cm2": "The unifocal condition delivered ultrasound to 1 focal spot at a fundamental frequency of 250 kHz for 120 s using a 10% duty cycle, 100 Hz PRF, I<sub>SPPA</sub> of 10 W/cm<sup>2</sup>, and I<sub>SPTA</sub> of 1 W/cm<sup>2</sup>.",
+   "exposures[0].in_situ.ispta_w_cm2": "The unifocal condition delivered ultrasound to 1 focal spot at a fundamental frequency of 250 kHz for 120 s using a 10% duty cycle, 100 Hz PRF, I<sub>SPPA</sub> of 10 W/cm<sup>2</sup>, and I<sub>SPTA</sub> of 1 W/cm<sup>2</sup>.",
+   "exposures[0].free_field.isppa_w_cm2": "in water was 49.82 ( 14.17) W/cm<sup>2</sup> and 44.0 ( 8.89) W/cm<sup>2</sup> for unifocal and multifocal groups, respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse (burst) duration not stated; only duty cycle 10% and PRF 100 Hz given; not computed."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Unifocal 120 s; multifocal 30 s at each of 7 foci (210 s total); listed as [120, 30]."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Mean Isppa in water for unifocal (49.82) and multifocal (44.0) groups, varying with individual insertion loss."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Target in situ Isppa 10 W/cm2 and Ispta 1 W/cm2 from BabelBrain planning (simulation), constant across participants."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Only calibration maximum (0.98 MPa) stated for the transducer, not an exposure pressure; not recorded."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Unifocal and multifocal groups at the left STN combined into one exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

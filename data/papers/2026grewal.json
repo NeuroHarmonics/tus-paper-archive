@@ -1,0 +1,342 @@
+{
+ "model_system": [
+  "in_vitro_cell",
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6; BV2 murine microglial cell line)",
+ "conditions": [
+  "systemic_inflammation"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "ELISA (TNF-alpha, IL-1beta, IL-6, IL-4); RT-qPCR; LDH assay; Iba1 and CD68 immunostaining; thermocouple temperature",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Ultrasound reduced pro-inflammatory cytokines in LPS-treated BV2 cells in a frequency-dependent way (strongest at 2 and 0.5 MHz) and reduced hippocampal TNF-alpha and Iba1 optical density in LPS mice 4 h after treatment.",
+ "adverse_events": "not_reported",
+ "safety_notes": "In vitro temperature rise below 2 C except 2.1 C at 0.5 MHz, 0.4 MPa, 60 min; LDH release reduced; k-Wave simulation gave skull temperature rise about 0.013 C for the in vivo parameters.",
+ "exposures": [
+  {
+   "label": "BV2 microglia in vitro, 0.5/1/2 MHz",
+   "target": {
+    "terms": [
+     "cultured_glia"
+    ],
+    "label": "BV2 microglial cell line"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Precision Acoustics",
+    "model": "unfocused piezoelectric transducers, 0.5 MHz (44 mm), 1 MHz (23 mm), 2 MHz (23 mm)"
+   },
+   "fundamental_frequency_khz": [
+    500,
+    1000,
+    2000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     100,
+     200,
+     400
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": [
+     300,
+     1800,
+     3600
+    ],
+    "protocol_description": "Single treatment of LPS-treated BV2 cells at 3 frequencies, 3 peak-to-peak pressures and 3 durations (5, 30, 60 min), duty cycle 20% and PRF 1 kHz; supernatant collected 24 h later."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  },
+  {
+   "label": "Whole-brain sonication of LPS mice, 0.5 MHz",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole mouse brain"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 6,
+    "protocol_description": "6 s sonication at each point of a grid (8.52 x 14.98 mm) covering the whole brain, 200 microsecond pulses at 1 kHz; a single treatment on day 7, brains collected 4 h later."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2026grewal",
+ "doi": "10.1038/s44384-026-00047-8",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "This study was designed as a pilot study and all animals were randomly divided into three groups: (i) saline <sub>n</sub> = 3, (ii) LPS <sub>n</sub> = 4 and (iii) LPS + ultrasound <sub>n</sub> = 4.",
+   "n_sessions_per_subject": "Mice received daily intraperitoneal injections of LPS or saline for 7 consecutive days to induce neuroinflammation and activate microglia (Fig. 5A)<sup>27</sup>. On day 7, mice in the LPS + Ultrasound group received a single whole-brain ultrasound treatment, whereas the saline and LPS-only groups underwent sham treatments.",
+   "exposures[0].fundamental_frequency_khz": "In particular, the group consisted of 9 sub-groups based on the required combinations of centre frequency (0.5, 1, 2 MHz), acoustic peakto-peak pressure (0.1, 0.2, 0.4 MPa) and treatment duration (5, 30, 60 min).",
+   "exposures[0].unspecified_domain.pressure_kpa": "In particular, the group consisted of 9 sub-groups based on the required combinations of centre frequency (0.5, 1, 2 MHz), acoustic peakto-peak pressure (0.1, 0.2, 0.4 MPa) and treatment duration (5, 30, 60 min).",
+   "exposures[0].timing.sonication_duration_s": "In particular, the group consisted of 9 sub-groups based on the required combinations of centre frequency (0.5, 1, 2 MHz), acoustic peakto-peak pressure (0.1, 0.2, 0.4 MPa) and treatment duration (5, 30, 60 min).",
+   "exposures[0].timing.duty_cycle_pct": "Duty cycle and pulse repetition frequency were kept constant at 20% and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Duty cycle and pulse repetition frequency were kept constant at 20% and 1 kHz, respectively.",
+   "exposures[0].device.model": "A custom in vitro ultrasound system was used to perform the ultrasound treatment of BV2 cells<sup>58</sup>. Three piezoelectric unfocused transducers with centre frequencies of 0.5 MHz (44 mm diameter), 1 MHz (23 mm diameter) and 2 MHz (23 mm diameter) were used for the study (Precision Acoustics, UK).",
+   "exposures[0].device.manufacturer": "A custom in vitro ultrasound system was used to perform the ultrasound treatment of BV2 cells<sup>58</sup>. Three piezoelectric unfocused transducers with centre frequencies of 0.5 MHz (44 mm diameter), 1 MHz (23 mm diameter) and 2 MHz (23 mm diameter) were used for the study (Precision Acoustics, UK).",
+   "exposures[1].fundamental_frequency_khz": "The parameters used were 0.5 MHz centre frequency, 0.2 MPa acoustic pressure, 1 kHz pulse repetition frequency, 200 μs pulse length, and 6 s sonication duration for each targeted point within a grid (8.52 mm × 14.98 mm) to cover the entire brain of the mouse (Fig. 7C).",
+   "exposures[1].free_field.pressure_kpa": "To estimate potential temperature increases in our in vivo experiments, we simulated the propagation pathway ofour ultrasound pulses using a k-Wave MATLAB toolbox<sup>59</sup>. The anatomical skull geometry ofa mouse was derived from a publicly available micro-CT murine skull, voxelised and rescaled to match the simulation grid resolution of 0.231 mm, corresponding to 13 points per wavelength at 0.5 MHz<sup>60</sup>. The Courant–Friedrichs–Lewy number was set to 0.1 and the parameters of the simulations were set to 0.5 MHz centre frequency, 0.2 MPa pressure at the acoustic focus in water, 200 μs pulse length, 1 kHz pulse repetition frequency, and 6 s sonication duration.",
+   "exposures[1].timing.pulse_duration_ms": "The parameters used were 0.5 MHz centre frequency, 0.2 MPa acoustic pressure, 1 kHz pulse repetition frequency, 200 μs pulse length, and 6 s sonication duration for each targeted point within a grid (8.52 mm × 14.98 mm) to cover the entire brain of the mouse (Fig. 7C).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The parameters used were 0.5 MHz centre frequency, 0.2 MPa acoustic pressure, 1 kHz pulse repetition frequency, 200 μs pulse length, and 6 s sonication duration for each targeted point within a grid (8.52 mm × 14.98 mm) to cover the entire brain of the mouse (Fig. 7C).",
+   "exposures[1].timing.sonication_duration_s": "The parameters used were 0.5 MHz centre frequency, 0.2 MPa acoustic pressure, 1 kHz pulse repetition frequency, 200 μs pulse length, and 6 s sonication duration for each targeted point within a grid (8.52 mm × 14.98 mm) to cover the entire brain of the mouse (Fig. 7C).",
+   "exposures[1].timing.duty_cycle_pct": "This heat source was passed to the k-Wave thermal solver and used to simulate heating over a 6 s sonication period with a duty cycle of 20%, corresponding to 200 μs pulses at 1 kHz pulse repetition frequency.",
+   "exposures[1].device.model": "active diameter: 22.60 mm, part number: H-107; Sonic Concepts, Bothwell, WA, USA) was used to emit the ultrasound (Fig. 7B).",
+   "exposures[1].device.manufacturer": "active diameter: 22.60 mm, part number: H-107; Sonic Concepts, Bothwell, WA, USA) was used to emit the ultrasound (Fig. 7B)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Mice: saline 3, LPS 4, LPS + ultrasound 4 (11 total, stated as 'Eleven'); in vitro n = 3 wells per condition. Only 4 mice received ultrasound."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Stated as peak-to-peak pressure 0.1, 0.2, 0.4 MPa; domain not stated (in vitro device). Intensities only in Supplementary Table S1."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated for in vitro exposure; not computed from duty cycle and PRF."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Durations 5, 30, 60 min converted to seconds; a full factorial of 3 frequencies x 3 pressures x 3 durations is one exposure with lists."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "0.2 MPa quoted from the acoustic simulation methods (pressure at focus in water); in vivo methods state 0.2 MPa acoustic pressure without domain."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle stated in the thermal simulation methods as 20%, matching the in vivo parameters."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "Whole brain covered by raster of a focused beam over an 8.52 x 14.98 mm grid, 6 s per point."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Outcomes are cytokines and microglial morphology, not neural excitability."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026scotta",
+ "doi": "10.64898/2026.07.29.741617",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "two-interval forced-choice TUS detection task with QUEST+ adaptive masker level",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "No neuromodulatory effect was assessed; the study measured detectability of TUS auditory costimulation under white-noise and spectrum-tuned maskers.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Masker level capped at 91 dB(A) based on NIOSH sound exposure guidelines.",
+ "exposures": [
+  {
+   "label": "500 kHz TUS, 487.5 Hz PRF, beam steered to 70 mm, placed above left ear",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "placement above the left ear with a 10-degree angled gel pad"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFus CTX-500 with TPO-203"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 68,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.287,
+    "pulse_repetition_frequency_hz": 487.5,
+    "duty_cycle_pct": 14,
+    "sonication_duration_s": 0.96,
+    "protocol_description": "Each trial had two 960 ms intervals separated by 50 ms; TUS (487.5 Hz PRF, 14% duty cycle) occurred in one of the two intervals, and the participant reported which. 125 trials per masker condition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 13.991,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty neurotypical participants aged 18-55 (mean=33), 11F, 9M, were recruited from the community to participate in the study. All participants completed informed consent under a protocol approved by the Stanford University Institutional Review Board.",
+   "n_sessions_per_subject": "\fbetween 1 and 38.9. Participants completed 125 trials per auditory mask condition, leading to a total of 350 trials. All participants were subject to 5-10 practice trials during which no mask was played, allowing them to form an understanding of the sounds and sensations associated with TUS exposure. Participants practiced until they correctly responded to at least three consecutive no-mask practice trials. Then, they were subject to 5-10 more practice trials with masking sounds played over headphones. The experiment took approximately 45 minutes.",
+   "exposures[0].fundamental_frequency_khz": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].timing.pulse_duration_ms": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].timing.duty_cycle_pct": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].timing.sonication_duration_s": "Participants were positioned in a brain stimulation experiment chair (Rogue Research, Inc.), and their hair was prepared with ultrasound gel above the left ear following published best practices (Murphy et al. 2025). We did not use neuronavigation to position the transducer for this experiment, though the placement above the left ear with a 10-degree angled gel pad was an approximate match to the location used in our ongoing focused ultrasound experiments of the visual thalamus (lateral geniculate nucleus). The earphones were placed on the participant’s ears bilaterally. Participants were then instructed on and practiced the task. The temporal sequence of a task trial is illustrated in Figure 2. In each trial, the ultrasound pulses could occur in one of two short (960ms) intervals, with each interval separated by 50ms of mask-only (that is, two-interval forced-choice). During each trial, either the white noise mask or the tuned mask was played. The order of masking conditions was pseudo-randomised per-participant. After the second interval, participants had 1.2 seconds to press a button on a keypad (either button 1 or button 2) to report whether the TUS occurred during the first or second interval. Following each trial, the level of the mask was updated with a QUEST+ Bayesian adaptive algorithm (Watson 2017). There was a separate QUEST+ staircase initiated for each masker condition. The QUEST+ algorithm was set to search for the threshold and slope of the psychometric function underlying the 2IFC detection of TUS, which we assumed to be a standard Weibull function. The lower asymptote was fixed to 50% (2IFC guess rate), and the lapse rate to 2%. The possible mask level values and possible threshold values were set to the 15 calibrated loudness levels specified earlier, and the possible slope values were 12 geometrically spaced values",
+   "exposures[0].device.model": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration =",
+   "exposures[0].device.manufacturer": "TUS was administered using a 500KHz 4-channel transducer (NeuroFus CTX-500) with a TPO-203 4-channel drive system. The parameters used were always: ${ \\mathsf { P R F } } = 4 8 7 . 5 \\mathsf { H z }$ spatial peak pulse average intensity $( \\mathsf { I } _ { \\mathsf { S P P A } } ) = 6 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ duty cycle = 14%, pulse duration ="
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Abstract states 10% duty cycle; Methods and Figure 2 state 14%. Methods value recorded (also consistent with 0.287 ms x 487.5 Hz)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Methods give 'pulse train = 0.960ms' (apparent unit typo); the 960 ms TUS interval per trial is recorded as the sonication duration."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "68 W/cm2 spatial peak pulse average intensity; paper does not say whether free-field or in situ."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "No anatomical target; transducer placed above left ear without neuronavigation, 70 mm beam steering; paper says placement approximates their LGN experiments."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Paper names 'NeuroFus CTX-500' with TPO-203 drive system."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible"
+  }
+ }
+}

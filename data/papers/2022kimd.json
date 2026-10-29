@@ -1,0 +1,321 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022kimd",
+ "doi": "10.1371/journal.pone.0278865",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "sheep (Polypay)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 5,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "hind limb EMG (gastrocnemius); H&E, VAF-toluidine blue, GFAP and caspase-3 histology; post-sonication behavioural monitoring",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "0.5 and 1 ms pulse durations increased EMG amplitude in the hind limb contralateral to sonication compared with no-FUS; 2 ms did not; response rates did not differ across pulse durations.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No abnormal behaviour during survival; H&E, VAF-toluidine blue, GFAP and caspase-3 histology at 24 h and 1 month showed no tissue damage.",
+ "exposures": [
+  {
+   "label": "M1 stimulation, three pulse durations",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 5.2,
+    "ispta_w_cm2": 3.6
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     1400,
+     700,
+     350
+    ],
+    "duty_cycle_pct": 70,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "200 ms stimuli at 70% duty cycle with pulse durations 0.5, 1 and 2 ms (PRF 1,400, 700, 350 Hz respectively), randomised with no-FUS trials at 4.8 s intervals; 50 trials per parameter per session, 5 sessions per animal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Thalamic stimulation, three pulse durations",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "thalamus"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "GPS200-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 5.2,
+    "ispta_w_cm2": 3.6
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.5,
+     1,
+     2
+    ],
+    "pulse_repetition_frequency_hz": [
+     1400,
+     700,
+     350
+    ],
+    "duty_cycle_pct": 70,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "200 ms stimuli at 70% duty cycle with pulse durations 0.5, 1 and 2 ms (PRF 1,400, 700, 350 Hz respectively), randomised with no-FUS trials at 4.8 s intervals; 50 trials per parameter per session, 5 sessions per animal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "operating at a fundamental frequency of 250 kHz",
+   "exposures[0].in_situ.isppa_w_cm2": "applied using three different PDs (0.5, 1, and 2 ms) at in situ spatial-peak pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $5 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (corresponding spatial-peak temporal-average intensity, $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ of $3 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].in_situ.ispta_w_cm2": "applied using three different PDs (0.5, 1, and 2 ms) at in situ spatial-peak pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $5 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (corresponding spatial-peak temporal-average intensity, $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ of $3 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].timing.pulse_duration_ms": "four different stimulation parameters, having three PDs (0.5, 1, and 2 ms)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "the PRF was adjusted to 1,400, 700, and 350 Hz for 0.5, 1, and 2-ms PDs, respectively",
+   "exposures[0].timing.duty_cycle_pct": "We used 70% DC and a 200 ms sonication duration (SD) per stimulation trial",
+   "exposures[0].timing.sonication_duration_s": "We used 70% DC and a 200 ms sonication duration (SD) per stimulation trial",
+   "exposures[1].fundamental_frequency_khz": "operating at a fundamental frequency of 250 kHz",
+   "exposures[1].in_situ.isppa_w_cm2": "applied using three different PDs (0.5, 1, and 2 ms) at in situ spatial-peak pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $5 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (corresponding spatial-peak temporal-average intensity, $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ of $3 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[1].in_situ.ispta_w_cm2": "applied using three different PDs (0.5, 1, and 2 ms) at in situ spatial-peak pulse-average intensity $\\mathrm { ( I _ { s p p a } ) }$ of $5 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (corresponding spatial-peak temporal-average intensity, $\\mathrm { { I } } _ { \\mathrm { { s p t a } } } ,$ of $3 . 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[1].timing.pulse_duration_ms": "four different stimulation parameters, having three PDs (0.5, 1, and 2 ms)",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "the PRF was adjusted to 1,400, 700, and 350 Hz for 0.5, 1, and 2-ms PDs, respectively",
+   "exposures[1].timing.duty_cycle_pct": "We used 70% DC and a 200 ms sonication duration (SD) per stimulation trial",
+   "exposures[1].timing.sonication_duration_s": "We used 70% DC and a 200 ms sonication duration (SD) per stimulation trial",
+   "n_subjects": "Only female sheep (n = 8, Polypay",
+   "n_sessions_per_subject": "Brain stimulation was performed over multiple sessions (5 sessions per animal)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "In situ Isppa estimated with a 25.6% intensity transmission derived from ovine skull in a previous study; free-field intensity not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No-FUS trials were interleaved randomly; how they were produced is not described."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper notes auditory confounds were not controlled and need future study; only short-latency EMG (<25 ms) was excluded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration, PRF vary together to keep 70% duty cycle; lists are aligned (0.5/1400, 1/700, 2/350)."
+   },
+   {
+    "field": "exposures[1].target",
+    "reason": "Thalamic target not specified further than thalamus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhong",
+ "doi": "10.1088/1741-2552/ac1d5c",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  36,
+  4,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "EEG power spectral density and seizure duration; survival over 72 h; c-Fos immunofluorescence; HE and Nissl staining",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Closed-loop hippocampal stimulation reduced EEG power and seizure duration (by 10.73 %) and raised survival of early epileptic mice from 67.57 % (sham) to the UDBS group's rate; seizure number did not differ significantly. c-Fos expression in hippocampus was higher after UDBS.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE and Nissl staining in 3 sham and 3 UDBS mice showed no cytoclasis, tissue damage or haemorrhage and no difference in cell or neuron counts.",
+ "exposures": [
+  {
+   "label": "Closed-loop ultrasound deep brain stimulation of the hippocampus, triggered by detected seizures",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.09,
+    "ispta_w_cm2": 0.43636
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "When a seizure lasting more than 10 s was detected the system stimulated the hippocampus for 10 min while EEG was recorded until 20 min after stimulation. Fig. 2(c) parameters: PRF 1 kHz, TBD 0.4 ms, DC 40 %, FF 800 kHz, ISI 3.6 s; the sonication duration per train is not given in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 40.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In the UDBS group (n = 36), 4 mice that died within 12 h, and then no others died.",
+   "exposures[0].fundamental_frequency_khz": "(c) The UDBS parameters used in the study (PRF = 1 kHz, TBD = 0.4 ms, DC = 40%, FF = 800 kHz, ISI = 3.6 s).",
+   "exposures[0].timing.pulse_duration_ms": "(c) The UDBS parameters used in the study (PRF = 1 kHz, TBD = 0.4 ms, DC = 40%, FF = 800 kHz, ISI = 3.6 s).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "(c) The UDBS parameters used in the study (PRF = 1 kHz, TBD = 0.4 ms, DC = 40%, FF = 800 kHz, ISI = 3.6 s).",
+   "exposures[0].timing.duty_cycle_pct": "(c) The UDBS parameters used in the study (PRF = 1 kHz, TBD = 0.4 ms, DC = 40%, FF = 800 kHz, ISI = 3.6 s).",
+   "exposures[0].in_situ.isppa_w_cm2": "I<sub>sppa</sub>, $I _ { \\mathrm { s p t a } } ,$ and MI were 1.09 W $\\mathrm { c m } ^ { - 2 }$ , 436.36 mW $\\mathrm { c m } ^ { - 2 }$ and 0.21, respectively after passing through the fresh skull.",
+   "exposures[0].in_situ.ispta_w_cm2": "I<sub>sppa</sub>, $I _ { \\mathrm { s p t a } } ,$ and MI were 1.09 W $\\mathrm { c m } ^ { - 2 }$ , 436.36 mW $\\mathrm { c m } ^ { - 2 }$ and 0.21, respectively after passing through the fresh skull.",
+   "exposures[0].device.family": "The ultrasound stimulation system is composed of a 100 W power amplifier (2100L, Electronics & Innovation Ltd, Rochester, NY, USA) and a dual channel waveform generator (DG4162, Rigol, China) to generate the ultrasound waves."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Text gives 10 min of stimulation per detected seizure and an ISI of 3.6 s; the length of one uninterrupted train (SD) is only in Fig. 2(c), so left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration given as TBD in the Fig. 2 caption; 0.4 ms is consistent with DC/PRF (40 % / 1 kHz). Not computed by the extractor."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Intensities are stated to be 'after passing through the fresh skull' with a hydrophone in a water tank; classed as in_situ (measurement). No pressure value is given, only 18 % attenuation and MI 0.21."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Reported as 436.36 mW cm-2; recorded as 0.43636 W/cm2."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "UDBS group n = 36 in the survival experiment; separate mice (4 for c-Fos, 3 for HE/Nissl) were also sonicated; sham n = 37. Enrolled and analysed counts for EEG are n = 8."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Survival rate in UDBS group is given as 88.89 % in the abstract and 89.89 % in the results text."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the EEG, c-Fos and histology analysers are stated to be blinded; no statement about blinding of the stimulation arms."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham for c-Fos experiment is power turned off; sham for the closed-loop arm is not described separately."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "No transducer maker or model named; only the amplifier (Electronics & Innovation 2100L) and generator (Rigol DG4162)."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Surgery under isoflurane; stimulation and EEG in free-moving, awake mice."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

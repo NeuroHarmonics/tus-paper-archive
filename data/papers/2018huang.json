@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018huang",
+ "doi": "10.1109/tbme.2017.2713647",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57/B6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "Somatosensory evoked potentials (median nerve stimulation) recorded with flexible epidermal electrodes and epidural electrodes",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "SSEP peak-to-peak amplitude dropped immediately after sonication, proportionally to dose (40% at 1.2 J, 68% at 3 J, 77% at 9 J), with incomplete recovery at higher doses; sham had no effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Authors state the RMS pressure per pulse is approximately one half the value reported to elicit histological evidence of mild brain trauma.",
+ "exposures": [
+  {
+   "label": "Focused ultrasound perturbation of frontal lobe (40, 100 or 300 pulses)",
+   "target": {
+    "terms": [
+     "frontal_lobe"
+    ],
+    "label": "the frontal lobe"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H102"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 85,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 4000,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Pulse train of 1.1 MHz sinusoidal pulses, each of duration 10 ms, followed by an off time of 200 ms; 40, 100 or 300 pulses per animal."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The ultrasound dose consisted of a pulse train of 1.1 MHz sinusoidal pulses, each of duration of 10 ms, followed by an off time of 200 ms",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound dose consisted of a pulse train of 1.1 MHz sinusoidal pulses, each of duration of 10 ms, followed by an off time of 200 ms",
+   "n_subjects": "Out of the 14 animals exposed to focused ultrasound, four animals were exposed to 40 pulses (0.03 J/pulse at our sonication settings), five animals to 100 pulses and five to 300 pulses.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The peak-to-peak driving voltage was approximately 450 V, yielding approximately 19 MPa peak positive pressure and 4 MPa peak negative at the focus.",
+   "exposures[0].in_situ.isppa_w_cm2": "and the intensity approximately 85 $\\mathrm { { W / c m ^ { 2 } } }$",
+   "exposures[0].device.model": "A ring-geometry ultrasound transducer (H102, Sonic Concepts, Bothell, WA) was housed in a water-filled nosecone",
+   "exposures[0].device.manufacturer": "A ring-geometry ultrasound transducer (H102, Sonic Concepts, Bothell, WA) was housed in a water-filled nosecone"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF and duty cycle not stated; only 10 ms pulses with a 200 ms off time."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Only pulse counts (40/100/300) given; no total duration."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "19 MPa peak positive pressure at the focus (converted to kPa); domain (water vs head) not clearly stated."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensity of about 85 W/cm2 computed from simulated RMS pressure 1.6 MPa by plane-wave relation, just inside the skull; paper does not label it as pulse-average, and the figure does not obviously match 1.6 MPa RMS."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Simulated RMS pressure of 1.6 MPa given, not a peak pressure, so not entered."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

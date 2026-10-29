@@ -144,6 +144,9 @@ def check(record: dict, validator, manifest: dict, strip: bool) -> tuple[list[st
         problems.append("identity: citekey not in manifest")
     elif (man.get("doi") or "").lower() != (record.get("doi") or "").lower():
         problems.append(f"identity: doi {record.get('doi')} != manifest {man.get('doi')}")
+    elif not man.get("authors") or re.fullmatch(r"(\d{4}|nd)anon[a-z]?", ck):
+        # an anonymous primary study does not exist; this is a failed lookup
+        problems.append("identity: manifest has no authors")
 
     # 2. three-way discipline
     ms = set(record["model_system"])

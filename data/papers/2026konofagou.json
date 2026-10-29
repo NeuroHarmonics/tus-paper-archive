@@ -1,0 +1,314 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026konofagou",
+ "doi": "10.21203/rs.3.rs-9173358/v1",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  1,
+  1,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "emg_mep",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Functional ultrasound CBV imaging; EMG (CMAP); DeepLabCut hindpaw tracking; displacement imaging; open field test; doublecortin immunofluorescence; H&E staining",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "A single 80 ms pulse at 1.69 to 3.39 MPa in ketamine/xylazine anaesthetised mice evoked dose-dependent ipsilateral CBV increases and hindlimb, toe and tail motor responses, with no response at 0 MPa or 0.5 mm off target. Bilateral hippocampal sonication was followed three weeks later by more time in the open-field centre than sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining after 3.39 MPa sonication (n = 1 animal) showed no brain damage; a 1.72 C temperature rise was measured for a 10-pulse train.",
+ "exposures": [
+  {
+   "label": "4 MHz DgFUS of thalamus and somatosensory cortex (cranial window, motor responses)",
+   "target": {
+    "terms": [
+     "thalamus",
+     "somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex and thalamus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-215"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     1690,
+     2540,
+     3390
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 80,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 10,
+    "protocol_description": "Continuous FUS pulses with a pulse duration of 80 ms (320k cycles, 4 MHz) and a sonication duration of 10 s at a pulse repetition frequency of 1 Hz; pressure 0 (sham) to 3.39 MPa, all stated as derated. FUS was manually scanned over the cranial window until motor activation was seen."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 8.0
+   }
+  },
+  {
+   "label": "Transcranial fUS-guided FUS of bilateral hippocampus (FUS-N)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "bilateral hippocampus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": 1900,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 150,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "FUS was applied for 2 minutes (1 Hz PRF, 1.9 MPa pressure, and 150 ms pulse duration) with a total of 120 FUS pulses delivered per bilateral target. Transducer and frequency are not stated for this arm."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 15.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "In the study, a total of 22 wild-type mice $( \\mathrm { n } = 6 ;$ fUS imaging with FUS for motor response experiment, n = 1: H&E histological evaluation, n = 1: temperature measurement, and for behavioral and connectivity experiments; n = 5: FUS-N, n = 5: FUS-BBBO, n = 4: sham) were used.",
+   "exposures[0].fundamental_frequency_khz": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was used to generate FUS",
+   "exposures[0].device.manufacturer": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was used to generate FUS",
+   "exposures[0].device.model": "The single-element 4 MHz FUS transducer (H-215; Sonic Concepts, Bothell, WA, USA) was used to generate FUS",
+   "exposures[0].in_situ.pressure_kpa": "stimulations) at 1.69, 2.54, and 3.39 MPa, respectively",
+   "exposures[0].timing.pulse_duration_ms": "continuous FUS pulses with a pulse duration of 80 ms",
+   "exposures[0].timing.sonication_duration_s": "a sonication duration of 10 s at a pulse repetition frequency (PRF) of 1 Hz",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "a sonication duration of 10 s at a pulse repetition frequency (PRF) of 1 Hz",
+   "exposures[1].timing.pulse_duration_ms": "FUS was applied for 2 minutes (1 Hz PRF, 1.9 MPa pressure, and 150 ms pulse duration)",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "FUS was applied for 2 minutes (1 Hz PRF, 1.9 MPa pressure, and 150 ms pulse duration)",
+   "exposures[1].timing.sonication_duration_s": "FUS was applied for 2 minutes (1 Hz PRF, 1.9 MPa pressure, and 150 ms pulse duration)",
+   "exposures[1].in_situ.pressure_kpa": "We sonicated bilateral hippocampus $( \\mathrm { M L } \\colon \\pm ~ 2 . 5 $ , AP: - 2.5, DV: 2 mm) and FUS was applied for 2 minutes (1 Hz PRF, 1.9 MPa pressure, and 150 ms pulse duration) with a total of 120 FUS pulses delivered per each bilateral target."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Paper states all pressures were derated but not the derating method or whether to tissue; recorded as in_situ derating. Pressure levels 1.69, 2.54, 3.39 MPa read from the latency sentence; 1.54 MPa also named as threshold; intensity only in a figure table."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper calls the 80 ms pulse continuous (320k cycles at 4 MHz) repeated at 1 Hz for 10 s; recorded as pulsed. Duty cycle not stated."
+   },
+   {
+    "field": "exposures[1].fundamental_frequency_khz",
+    "reason": "Frequency and transducer for the hippocampal FUS-N arm are not stated in the text."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "Domain of the 1.9 MPa not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "22 is the stated total of mice and includes FUS-BBBO (5) and sham (4) animals and one histology and one temperature animal; the FUS-BBBO arm (microbubbles) is not recorded as an exposure."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No masking; the paper argues non-auditory origin from latency, lateralisation and a 0.5 mm off-target control, classified here as control_experiment."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham (0 MPa) in motor experiments and sham mice in the behavioural arm; mechanism not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

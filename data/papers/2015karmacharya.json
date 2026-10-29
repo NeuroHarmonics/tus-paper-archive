@@ -1,0 +1,271 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2015karmacharya",
+ "doi": "10.1111/nan.12182",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "cytotoxic brain oedema (OGD or glutamate in slices; acute water intoxication in vivo)",
+ "n_subjects": 9,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "Tissue water content; intracranial pressure; neurologic deficit score; survival; AQP4 immunohistochemistry and immunoblot",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIUS reduced brain water content and intracranial pressure and increased survival in the water-intoxication model, and reduced water content in OGD and glutamate slices when applied before the insult; no neural activity was measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Hippocampal slices, LIUS 20 min",
+   "target": {
+    "terms": [
+     "brain_slice"
+    ],
+    "label": "hippocampal slices taken in 60 mm dishes"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "self-manufactured apparatus"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.03,
+     0.05,
+     0.1,
+     0.2
+    ]
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Continuous-wave 1 MHz ultrasound at 30, 50, 100 or 200 mW/cm2 for 20 min, applied to slices in 60 mm culture dishes placed on the transducer probes, before or after (pre-US/post-US groups) oxygen-glucose deprivation or glutamate treatment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  },
+  {
+   "label": "Rat craniotomy site, LIUS 10 min",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "craniotomy site"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "self-manufactured apparatus"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.05,
+     0.1,
+     0.2
+    ]
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 600,
+    "protocol_description": "Continuous-wave 1 MHz ultrasound at 50, 100 or 200 mW/cm2 for 10 min applied to the craniotomy site on the ipsilateral brain 10 min after intraperitoneal water injection."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "was fixed at 1 MHz for all experiments",
+   "exposures[0].timing.sonication_duration_s": "at an intensity of 30, 50, 100 or 200 mW/cm<sup>2</sup> for20 min",
+   "exposures[1].fundamental_frequency_khz": "was fixed at 1 MHz for all experiments",
+   "exposures[1].timing.sonication_duration_s": "50,100or200 mW/cm<sup>2</sup> for 10 min",
+   "n_subjects": "The rats in the WI + US group showed the increased survival (55%, n = 9)",
+   "sham_type": "The unstimulated control groups were also placed on the transducer probes without applying the ultrasound.",
+   "n_sessions_per_subject": "The rats were divided into three groups: (i) sham-control group (Sham) was subjected to craniotomy alone, (ii) WI group was administrated with water intraperitoneally to induce brain oedema, and (iii) LIUS-treated group (WI + US) was stimulated with LIUS on the ipsilateral brain 10 min after water injection.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The hippocampal slices, taken in 60 mm dishes were placed on the ultrasound transducer probes and stimulated with ultrasound at an intensity of 30, 50, 100 or 200 mW/cm<sup>2</sup> for20 min(Figure 1B).",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "In the acutewaterintoxicationmodelof rats,LIUSwasappliedonthe craniotomysiteatanintensityof 50,100or200 mW/cm<sup>2</sup> for 10 min (Figure 1C)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only the survival cohort (WI + US, n = 9) states a number of animals exposed; total animals exposed not given; slice groups are 8-10 slices"
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Intensity (30-200 mW/cm2) is stated but not as Isppa or Ispta and no domain is given; not placed in a field, see protocol_description"
+   },
+   {
+    "field": "exposures[1].unspecified_domain",
+    "reason": "Intensity (50-200 mW/cm2) is stated but not as Isppa or Ispta and no domain is given; not placed in a field, see protocol_description"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "20 min converted to 1200 s; 10 min to 600 s for the in vivo exposure"
+   },
+   {
+    "field": "conditions",
+    "reason": "Brain oedema is not in the condition vocabulary; recorded as other"
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Rats were anaesthetised for surgery and ICP recording; anaesthesia during sonication not stated"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "n_sessions_per_subject": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

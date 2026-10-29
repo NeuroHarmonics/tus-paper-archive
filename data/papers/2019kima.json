@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019kima",
+ "doi": "10.1186/s12868-019-0493-9",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Continuous-wave NIRS (HbO, RHb, THb)",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Transient HbO increase and RHb decrease during 8 MHz tFUS of somatosensory cortex but not sham; amplitude increased with intensity.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Mice observed for 24 h after the experiment with no apparent behavioural change; temperature rise estimated below 0.01 C.",
+ "exposures": [
+  {
+   "label": "8 MHz tFUS of somatosensory cortex, two intensities",
+   "target": {
+    "terms": [
+     "somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 8000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.468,
+     1.077
+    ]
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.056,
+     0.129
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.0625,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 9,
+    "sonication_duration_s": 5,
+    "protocol_description": "Each trial: 5 s stimulation of ten pulse trains at 2 Hz, each train of 300 pulses of 500 cycles at 8 MHz with PRF 1500 Hz; trial 17 s, one trial per minute, 25 trials per condition (two intensities plus sham), randomly shuffled."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 9.375,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Cerebral hemodynamic changes were calculated from the NIRS signals obtained from 10 mice using the modified Beer–Lambert Law [16].",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound stimulation was achieved using a focused single element ultrasound transducer with a focal distance of 19 mm, and 8 MHz fundamental frequency.",
+   "exposures[0].free_field.ispta_w_cm2": "The stimulation paradigms were selected in a way to keep the same pulse repetition frequency (PRF) of 1500  Hz and duty cycle of 9% but with diferent acoustic intensities (as measured in water, $\\mathrm { I } _ { \\mathrm { S P T A } } )$ of 1077 and 468 mW/ $\\mathrm { c m } ^ { 2 } .$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "After passing through the skull, the acoustic intensities of the stimulation $( \\mathrm { I } _ { \\mathrm { S P T A } } = 1 2 9$ and 56 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ were also lower than the guidelines for ultrasound imaging $( \\mathrm { I } _ { \\mathrm { S P T A } } { = } 7 2 0 \\ \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The stimulation paradigms were selected in a way to keep the same pulse repetition frequency (PRF) of 1500  Hz and duty cycle of 9% but with diferent acoustic intensities (as measured in water, $\\mathrm { I } _ { \\mathrm { S P T A } } )$ of 1077 and 468 mW/ $\\mathrm { c m } ^ { 2 } .$ .",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation paradigms were selected in a way to keep the same pulse repetition frequency (PRF) of 1500  Hz and duty cycle of 9% but with diferent acoustic intensities (as measured in water, $\\mathrm { I } _ { \\mathrm { S P T A } } )$ of 1077 and 468 mW/ $\\mathrm { c m } ^ { 2 } .$ .",
+   "exposures[0].timing.sonication_duration_s": "Each acquisition trial lasts for a total of 17  s including 5  s of stimulation containing ten ultrasound pulse trains with a repetition rate of 2  Hz.",
+   "n_sessions_per_subject": "All animals received three diferent stimulation conditions, including sham, within a single acquisition experiment.",
+   "exposures[0].timing.pulse_duration_ms": "Fig. 1 The ultrasound stimulation scheme. The beam profile for the 8 MHz transducer in the a lateral and b axial planes. c The 5 s stimulation consists of 10 pulse trains, each containing 300 pulses of 500 cycles of 8 MHz ultrasound with a PRF of 1500 Hz"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse is 500 cycles at 8 MHz (Fig. 1 legend) but no duration in ms is stated."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Skull-transmitted Ispta of 129 and 56 mW/cm2 given in the discussion; paper reports 12% transmitted power through an excised skull, so values may derive from that measurement."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Nested structure: 5 s stimulation of ten trains at 2 Hz, each 300 pulses at 1500 Hz."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Animals were isoflurane-anaesthetised for fixation then given at least 30 min to recover before acquisition; recorded as awake."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Values for the two active conditions (468 and 1077 mW/cm2) recorded as a list."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

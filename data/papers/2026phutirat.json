@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026phutirat",
+ "doi": "10.3390/brainsci16070757",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (5XFAD, C57BL/6)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  3,
+  5
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Abeta plaque, microglia and eNOS histology; ECoG",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Younger mice (3 days) showed more microglia co-localised with Abeta and fewer large plaques; older mice (5 days) showed no change in Abeta but decreased extra-neuronal and increased intra-neuronal eNOS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Combined 40 Hz / 6 kHz FUS protocol, left hippocampus",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "left hippocampus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "ATL Ultrasound, Philips Medical",
+    "model": "P42 diagnostic ultrasound probe (Verasonics Vantage V-1 driver)"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 90,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 40,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 3600,
+    "protocol_description": "2 MHz carrier pulsed 40 times/s, each 5 ms pulse containing 30 bursts of 400 us delivered at 6 kHz; one hour per day for three days (younger) or five days (older)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "We (sham-)treated three anesthetized younger 5XFAD mice with FUS applied simultaneously to each hemisphere of their brains (Figure 1A), though more in the left than right hemisphere as described below, for one hour per day, for two days.",
+   "n_sessions_per_subject": "Using a diagnostic ultrasound probe, we applied our combined FUS protocol primarily to the left hippocampus of anesthetized 5XFAD mice, for an hour a day, for three days for younger mice and for five days for older mice.",
+   "exposures[0].fundamental_frequency_khz": "This protocol used a carrier frequency of 2 MHz, pulsed 40 times/s (40 Hz PRF), each lasting for 5 ms.",
+   "exposures[0].free_field.isppa_w_cm2": "The spatial peak pulse average (Isppa) was 90 W/cm<sup>2</sup> (less than half the value used by Bobola et al. [21] and below the diagnostic ultrasound limit on Isppa), as measured in water at a distance where it would overlap with the hippocampus (Figure 1B).",
+   "exposures[0].timing.pulse_duration_ms": "This protocol used a carrier frequency of 2 MHz, pulsed 40 times/s (40 Hz PRF), each lasting for 5 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "This protocol used a carrier frequency of 2 MHz, pulsed 40 times/s (40 Hz PRF), each lasting for 5 ms.",
+   "exposures[0].timing.sonication_duration_s": "Each session lasted one hour.",
+   "exposures[0].device.model": "We used a Vantage™ V-1 Research Ultrasound System (Verasonics Inc.; Kirkland, WA, USA) with a P42 diagnostic ultrasound probe (ATL Ultrasound, Philips Medical; Bothell, WA, USA).",
+   "exposures[0].device.manufacturer": "We used a Vantage™ V-1 Research Ultrasound System (Verasonics Inc.; Kirkland, WA, USA) with a P42 diagnostic ultrasound probe (ATL Ultrasound, Philips Medical; Bothell, WA, USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Nested structure: 5 ms pulses each containing 30 bursts of 400 us at 6 kHz; duty cycle not stated"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Total not stated; n=3 per group for four groups (sham and FUS, younger and older) per text"
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "FUS applied to both hemispheres, more to the left; histology on left"
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Younger 3 days, older 5 days; details of final day differ"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zhang",
+ "doi": "10.3390/bioengineering11020174",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Long-Evans)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Functional ultrasound power Doppler CBV imaging (L22-14v, Verasonics); multi-electrode array recording in visual cortex",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Ultrasound stimulation of the eye evoked EEG responses in visual cortex (larger at 90 Vpp than 30 Vpp) but produced no significant response in visual cortex or LGN on fUS activation maps or CBV.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Ultrasound stimulation of the rat eye/retina",
+   "target": {
+    "terms": [
+     "retina"
+    ],
+    "label": "rats' eyeballs; retinas"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Stimulation at two output voltages, 30 Vpp and 90 Vpp, for a 50 ms duration with a 1 s interval; fUS imaging used 90 Vpp with the same parameters. A hydrophone test used a 3.5 MHz sine wave in burst mode with 20 cycles."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "imaging was performed on five male Long-Evan (LE) rats. To record light stimulation activities in the visual system, a full-field strobe flash using a Grass Photic stimulator (Grass Instrument Co., W. Warwick, RI, USA) was placed 8 cm away from the eye to deliver light stimulation. A Verasonics system(Vantage 256, Seattle, WA, USA) was synchronized with the Grass Photic stimulator using a trigger out function. The light stimulation protocol used in this experiment included two white light stimulation (no filters used) groups and three multi-color stimulation (filters used) groups. For the first white light stimulation group, the light stimuli were delivered to both eyes, while in the second group, only the left eye received the stimulation. For the multi-color stimulation groups, blue (wavelength of 460 nm), yellow (wavelength of 570 nm), or red (wavelength of 650 nm) filters were placed in front of the light source, allowing the rats to receive specific wavelengths of light stimulation in both eyes.",
+   "exposures[0].fundamental_frequency_khz": "A 3.5 MHz transducer with a focal depth of 8 mm was used for ultrasound retinal stimulation. The sound field distribution of the stimulation transducer was simulated with COMSOL Multiphysics software, version 6.1, shown in Figure 1b. The transverse profiles of the transducer were measured with a needle hydrophone (HGL-0400, ONDA,",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound stimulation was administered to the rats’ eyeballs at two output voltages, 30 Vpp and 90 Vpp, for a 50 ms duration with a 1 s interval.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulation was administered to the rats’ eyeballs at two output voltages, 30 Vpp and 90 Vpp, for a 50 ms duration with a 1 s interval."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Five rats stated for the comparative light/ultrasound imaging experiment; number for the EEG experiment not stated (10 trials)."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Unclear whether the 50 ms stimulus is a single burst or a train; the 20-cycle burst is mentioned only for hydrophone characterisation."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Author contributions say a co-author fabricated the stimulation transducer; no maker named."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Only output voltages (30 and 90 Vpp) given; a hydrophone profile is in Fig. 1c but no pressure value is in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

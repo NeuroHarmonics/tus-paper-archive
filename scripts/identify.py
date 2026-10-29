@@ -37,7 +37,7 @@ def _clean_text(s):
 from common import (  # noqa: F401
     compact_title,
     CANDIDATES, DATA, DOI_RE, LIBRARY, MAILTO, TEXT, TEXT_INDEX, text_path,
-    clean_doi, normalise_title, read_json, write_json,
+    clean_doi, datacite, normalise_title, read_json, write_json,
 )
 
 CROSSREF = "https://api.crossref.org/works/{doi}"
@@ -178,8 +178,8 @@ def record_from_crossref(msg: dict) -> dict:
     issued = (msg.get("issued") or {}).get("date-parts") or [[None]]
     year = issued[0][0] if issued and issued[0] else None
     # Some records date only the online-first version; published-print is truer
-    # to how the paper is cited.
-    for alt in ("published-print", "published"):
+    # to how the paper is cited. A dissertation carries only its approval date.
+    for alt in ("published-print", "published", "approved"):
         parts = (msg.get(alt) or {}).get("date-parts") or []
         if parts and parts[0] and parts[0][0]:
             year = parts[0][0]
@@ -439,11 +439,15 @@ def main() -> int:
             if not proj_:
                 # arXiv, Zenodo and Dryad DOIs are registered with DataCite, not
                 # Crossref, so a Crossref lookup returns nothing for them. The
-                # sweep already holds the title and year -- that is the record.
+                # sweep holds the title and year but no authors, and a record
+                # without authors is filed as "anon"; DataCite has them.
+                dc_ = datacite(doi_) or {}
                 cand_ = sweep.get(doi_) or {}
-                if cand_.get("title"):
-                    proj_ = {k: cand_.get(k) for k in ("title", "year", "journal")
-                             if cand_.get(k)}
+                proj_ = {k: dc_.get(k) or cand_.get(k)
+                         for k in ("title", "year", "journal", "authors")
+                         if dc_.get(k) or cand_.get(k)}
+                if not proj_.get("title"):
+                    proj_ = None
             if proj_:
                 rec_ = {"file": name, "text_key": files[name]["text_key"],
                         "status": "resolved", "doi_source": "acquire_fetch_log",
@@ -478,6 +482,8 @@ def main() -> int:
                          "given": a.get("given")}
                         for a in (msg_.get("author") or [])
                         if a.get("family") or a.get("name")]
+                if not auth:
+                    auth = (datacite(rec_["doi"]) or {}).get("authors") or []
                 if auth:
                     rec_["authors"] = auth
                 if not rec_.get("year"):

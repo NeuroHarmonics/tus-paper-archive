@@ -1,0 +1,212 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023wu",
+ "doi": "10.1088/1741-2552/acdea9",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "depression",
+  "anxiety"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "sucrose preference test; tail suspension test; elevated plus-maze; LC-MS monoamines; BDNF western blot; c-Fos and H&E staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "DRN stimulation increased c-Fos-positive cells in DRN and improved CORT-induced depression-like behaviours and open-arm entry frequency; 5-HT rose non-significantly and NE fell.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining showed no damage or hemorrhage in the DRN; calculated temperature rise about 0.02 degC.",
+ "exposures": [
+  {
+   "label": "TUS of dorsal raphe nucleus, 30 min daily for 3 weeks",
+   "target": {
+    "terms": [
+     "raphe_nuclei"
+    ],
+    "label": "dorsal lateral nucleus (DRN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "homemade miniature power ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": 315,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 283,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.42,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "1 s stimulation duration with 1 s inter-stimulus interval, repeated for 30 min daily from week 4 to week 6 in freely behaving mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "After that, depression mice models were established successfully and were divided into CORT (n = 8, figure 1) and CORT + TUS (n = 8) groups according to the sucrose preference index (SPI).",
+   "exposures[0].fundamental_frequency_khz": "The stimulation parameters were 1.1 MHz fundamental frequency (FF), 1000 Hz pulsed repetition frequency (PRF), 0.5 ms tone burst duration (TBD), 1 s stimulation duration (SD), 1 s inter-stimulus interval (ISI), and 50% duty cycle (DC).",
+   "exposures[0].timing.pulse_duration_ms": "The stimulation parameters were 1.1 MHz fundamental frequency (FF), 1000 Hz pulsed repetition frequency (PRF), 0.5 ms tone burst duration (TBD), 1 s stimulation duration (SD), 1 s inter-stimulus interval (ISI), and 50% duty cycle (DC).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The stimulation parameters were 1.1 MHz fundamental frequency (FF), 1000 Hz pulsed repetition frequency (PRF), 0.5 ms tone burst duration (TBD), 1 s stimulation duration (SD), 1 s inter-stimulus interval (ISI), and 50% duty cycle (DC).",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation parameters were 1.1 MHz fundamental frequency (FF), 1000 Hz pulsed repetition frequency (PRF), 0.5 ms tone burst duration (TBD), 1 s stimulation duration (SD), 1 s inter-stimulus interval (ISI), and 50% duty cycle (DC).",
+   "exposures[0].timing.sonication_duration_s": "The stimulation parameters were 1.1 MHz fundamental frequency (FF), 1000 Hz pulsed repetition frequency (PRF), 0.5 ms tone burst duration (TBD), 1 s stimulation duration (SD), 1 s inter-stimulus interval (ISI), and 50% duty cycle (DC).",
+   "exposures[0].free_field.pressure_kpa": "In addition, the peak acoustic pressure without a mouse skull and with a skull was 315 kPa and 283 kPa, respectively. The corresponding spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was 2.42 W cm−<sup>2</sup>.",
+   "exposures[0].in_situ.pressure_kpa": "In addition, the peak acoustic pressure without a mouse skull and with a skull was 315 kPa and 283 kPa, respectively. The corresponding spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was 2.42 W cm−<sup>2</sup>.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The corresponding spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ was 2.42 W cm−<sup>2</sup>.",
+   "exposures[0].device.model": "transmitted to a homemade miniature power ultrasound transducer (weight:1.25 g, diameter: 5 mm)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "24 = Vehicle 8 + Cort 16 (8 CORT, 8 CORT+TUS); separate c-Fos (n=3 TUS) and other cohorts also exist; only 8 behavioural mice received TUS."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa given without stating domain; follows the with/without-skull pressures."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Pressure with skull measured by hydrophone through a mouse skull; treated as in_situ measurement."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper says aural effects should be checked in future research; no control used."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Abstract calls the target the 'dorsal lateral nucleus (DRN)' while the rest of the text says dorsal raphe nucleus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

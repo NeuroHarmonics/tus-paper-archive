@@ -1,0 +1,311 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023zhenga",
+ "doi": "10.1002/adhm.202300430",
+ "model_system": [
+  "in_vitro_cell",
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley); mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 4,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Oregon Green BAPTA-1 calcium imaging; local field potential and spike recording through mFOE electrodes; NeuN, Iba1, GFAP immunohistochemistry",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Optoacoustic bursts of 50 ms or longer evoked calcium transients in cultured neurons, and evoked LFP responses in mouse hippocampus; 5 ms bursts evoked none.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Mechanical index of 2.3 MPa waves calculated as 0.2; surface temperature rise about 1 degC; histology compared foreign body response with a silica fiber.",
+ "exposures": [
+  {
+   "label": "Optoacoustic stimulation of cultured rat cortical neurons",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "rat cortical neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "multifunctional fiber-based optoacoustic emitter (mFOE)"
+   },
+   "fundamental_frequency_khz": 12500,
+   "free_field": {
+    "pressure_kpa": 2300,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": 8e-05,
+    "pulse_repetition_frequency_hz": 1700,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.005,
+     0.05,
+     0.1,
+     0.2
+    ],
+    "protocol_description": "1030 nm, 3 ns laser pulses at 1.7 kHz delivered in bursts of 5, 50, 100 or 200 ms (41.8 uJ per pulse); 5 bursts at 1 s intervals in the reproducibility test. Acoustic pulse width about 0.08 us (single laser pulse); only 50 ms or longer evoked calcium responses."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.014
+   }
+  },
+  {
+   "label": "Optoacoustic stimulation of mouse hippocampus with implanted mFOE",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "multifunctional fiber-based optoacoustic emitter (mFOE)"
+   },
+   "fundamental_frequency_khz": 12500,
+   "free_field": {
+    "pressure_kpa": 2300,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": 8e-05,
+    "pulse_repetition_frequency_hz": 1700,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.05,
+    "protocol_description": "50 ms bursts of 1030 nm, 3 ns laser pulses (41.8 uJ, 1.7 kHz repetition rate) delivered at 1 Hz during a 5 second treatment period, at 3 days, 7 days, 2 weeks and 1 month after implantation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.014
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The frequency spectrum shows the broadband characteristic oftypical optoacoustic waves,<sup>[41]</sup> and the peak frequencies are around 12.5 MHz (Figure 1g).",
+   "exposures[0].free_field.pressure_kpa": "The energy oflaser pulse was 41.8 μJ, corresponding to a peak-to-peak pressure of 2.3 MPa generated.",
+   "exposures[0].timing.pulse_duration_ms": "The acoustic pulse with a width of approximately0.08 μs was generated by a single laser pulse as shown in Figure 1f.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To perform the optoacoustic stimulation, mFOE was placed approximately50 μm above the in-focus target neurons (Figure 2a) by a micromanipulator under the microscope. 1030 nm 3 ns pulsed laser with a repetition rate of1.7 kHz was delivered to the mFOE through an optical fiber.",
+   "exposures[0].timing.sonication_duration_s": "Next, to investigate the threshold ofmFOE stimulation, we varied the stimulation duration from 5, 50, 100, to 200 ms on neurons in diferent cultures (N = 15) under the same laser pulse energy of41.8 μJ and the same repetition rate of1.7 kHz. mFOE stimulation with duration of5 ms did not evoked any observable fluorescence change (n.s., $\\mathsf { p } > 0 . 0 5 )$ (Figure 2g).",
+   "exposures[0].device.model": "Here, we developed a multifunctional fiber-based optoacoustic emitter (mFOE) as a miniaturized bidirectional brain interface performing simultaneously neural stimulation and electrical recording ofthe neural activities.",
+   "exposures[1].fundamental_frequency_khz": "The frequency spectrum shows the broadband characteristic oftypical optoacoustic waves,<sup>[41]</sup> and the peak frequencies are around 12.5 MHz (Figure 1g).",
+   "exposures[1].free_field.pressure_kpa": "The energy oflaser pulse was 41.8 μJ, corresponding to a peak-to-peak pressure of 2.3 MPa generated.",
+   "exposures[1].timing.pulse_duration_ms": "The acoustic pulse with a width of approximately0.08 μs was generated by a single laser pulse as shown in Figure 1f.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "For each laser train: 50 ms burst ofpulses, pulse energy of41.8 μJ, laser repetition rate of 1.7 kHz. g) Part of the filtered spontaneous activity containing two separable group of spikes recorded by mFOE electrode at one month after implantation. h) Principal-components analysis (PCA) ofthe two group ofspikes. i,j) Waveform oftwo group ofspikes in (h). k) Local field potentia (LFP) recorded by mFOE one month after implantation with an alternating anesthesia level (0.5–3% v/v isoflurane). l–n) diferent LFP responses induced by varying the concentration ofisoflurane: l corresponds to the initial stage (0.5% ofisoflurane level); m corresponds to the burst/suppression transition stage (after increasing the isoflurane level to 3%); n corresponds to the suppression stage (the isoflurane level was maintained at 3% and took efect).",
+   "exposures[1].timing.sonication_duration_s": "Based on the threshold of optoacoustic stimulation obtained in in vitro studies, 50 ms bursts of laser pulses with a pulse energy of41.8 μJ were delivered to the mFOE at 1Hz during the 5 second treatment period.",
+   "exposures[1].device.model": "Here, we developed a multifunctional fiber-based optoacoustic emitter (mFOE) as a miniaturized bidirectional brain interface performing simultaneously neural stimulation and electrical recording ofthe neural activities.",
+   "n_subjects": "Experimentally, we implanted the mFOE into the hippocampus of mice $( \\mathrm { N } = 5 )$ .",
+   "n_sessions_per_subject": "The amplitude of LFP response varied at four time points."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Broadband optoacoustic pulse; 12.5 MHz is the stated peak of the spectrum, recorded as the frequency"
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Peak-to-peak pressure (2.3 MPa) measured by hydrophone in water at 41.8 uJ; 1.0 and 1.6 MPa at lower energies; not peak negative"
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "Water measurement carried over by the paper's reported pulse energy (41.8 uJ), not measured in tissue"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Acoustic pulse width about 0.08 us given in us; laser pulse is 3 ns; duty cycle not stated"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Burst durations 5, 50, 100, 200 ms swept"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "5 mice implanted for stimulation; cultures counted as N = 15 stimulation events; separate mice for histology and controls"
+   },
+   {
+    "field": "sham_type",
+    "reason": "Laser-only control with fiber lacking optoacoustic coating, plus a dead-brain control"
+   }
+  ],
+  "human_edited": false,
+  "notes": "Optoacoustic (fiber laser) rather than transducer ultrasound; two exposures by target.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

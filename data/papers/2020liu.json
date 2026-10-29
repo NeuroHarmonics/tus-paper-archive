@@ -1,0 +1,208 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020liu",
+ "doi": "10.1016/j.mri.2019.06.013",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  10,
+  10,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "readout-segmented EPI diffusion-weighted MRI, relative ADC; TTC, BDNF immunostaining, H&E and Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Neuroprotective outcome: LIPUS started 0.5 h after dMCAO reduced the early fall in rADC and raised final rADC and BDNF staining; 1, 3 and 6 h gave smaller effects and 9 h none. Neuronal excitation or inhibition was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS after dMCAO (0.5, 1, 3, 6 or 9 h post-occlusion)",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "transcranial ultrasound (target not stated)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Dukang Medical Devices, Co., Ltd.",
+    "model": "DK-102T"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.6,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Total stimulation duration 10 min with 200 trials; each trial a 400 ms stimulation (SD) of 0.5 ms tone bursts at a 1 kHz PRF. Unfocused transducer of 3.5 cm2 area. Stimulation delivered once, at 0.5, 1, 3, 6 or 9 h after dMCAO, depending on group."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Sixty SD rats (male, 3 months old, and weighing 250 ± 10 g; Beijing Vital River Laboratory Animal Technology Co., Ltd., Beijing, China) were divided randomly into six groups (n = 10) and a permanent model of distal middle cerebral artery occlusion (dMCAO) was established.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound fundamental frequency (FF) and pulse-repetition frequency (PRF) were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound fundamental frequency (FF) and pulse-repetition frequency (PRF) were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) parameters were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) parameters were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound pressure was measured by a calibrated needle-type hydrophone (HNR500, Onda, Sunnyvale, CA, USA) and the spatial peak and pulseaverage intensity (Isppa) was $2 . 6 \\mathrm { W / c m } ^ { 2 } \\ : [ 1 2 ]$",
+   "exposures[0].device.manufacturer": "A commercial ultrasonic brain stimulator (DK-102T, Dukang Medical Devices, Co., Ltd., Shijiazhuang, China) was used for transcranial ultrasound (TUS) in the experiment.",
+   "exposures[0].device.model": "A commercial ultrasonic brain stimulator (DK-102T, Dukang Medical Devices, Co., Ltd., Shijiazhuang, China) was used for transcranial ultrasound (TUS) in the experiment.",
+   "n_sessions_per_subject": "The rats were stimulated with ultrasound for 10 min in the LIPUS groups at 0.5 h, 1 h, 3 h, 6 h, and 9 h after dMCAO (denoted as the LIPUS group (0.5 h), LIPUS group (1 h), LIPUS group (3 h), LIPUS group (6 h), LIPUS group (9 h), and Control group without ultrasound stimulation)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Six groups of n=10; the Control group (10 rats) received no ultrasound, so exposed animals number 50. The stated total of 60 is recorded."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Paper never names the sonicated brain region; unfocused transducer on the shaved head, infarct in right cortex."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Resolved the burst rule from the stated TBD of 0.5 ms (SD 400 ms is the stimulus train); duty cycle not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa from a needle hydrophone; the paper does not say whether this is free field or through skull."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the MRI radiologists are stated to be blinded to group; no blinding of treatment delivery is described."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "MRI at 0.5 h, 1 h then hourly to 12 h after dMCAO; timing relative to sonication not described precisely."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

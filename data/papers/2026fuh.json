@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026fuh",
+ "doi": "10.1016/j.ultras.2025.107844",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 30,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "ADAS-cog-11; MMSE; CDR-SB; NPI-Q; T2*/FLAIR/gadolinium MRI safety; transcranial Doppler",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "No neural activity measured; MMSE higher than placebo at 24 weeks (p<0.05) and ADAS-cog change 0.5 vs 5.0 at 52 weeks (p=0.237, not significant).",
+ "adverse_events": "none_observed",
+ "safety_notes": "No serious clinical or radiographic adverse events; MRI (T2*, FLAIR, gadolinium-enhanced) showed no haemorrhage or BBB disruption; TCD velocities and labs unremarkable; all recorded AEs judged unrelated.",
+ "exposures": [
+  {
+   "label": "Bilateral transtemporal TUS, 30 sessions",
+   "target": {
+    "terms": [
+     "temporal_lobe"
+    ],
+    "label": "the temporal lobes through the transtemporal windows"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "National Yang Ming Chiao Tung University",
+    "model": "NeuroSound TUS with two fixed 1 MHz transducers"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 300,
+    "protocol_description": "About 15 min per day delivered as three 5-min sessions with 5-min rests, five days a week for six weeks (30 sessions); placebo had the transducer on the scalp with output disabled."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "33.3 % (2/6) in the TUS group",
+   "n_sessions_per_subject": "a total of 30 planned treatment sessions",
+   "exposures[0].device.manufacturer": "The transcranial ultrasound was produced using NeuroSound TUS (National Yang Ming Chiao Tung University, Taipei, Taiwan) and the accompanying bilateral head-frame with two fixed 1 MHz ultrasonic transducers, which enabled simultaneous stimulation of the temporal lobes through the transtemporal windows",
+   "exposures[0].device.model": "The transcranial ultrasound was produced using NeuroSound TUS (National Yang Ming Chiao Tung University, Taipei, Taiwan) and the accompanying bilateral head-frame with two fixed 1 MHz ultrasonic transducers, which enabled simultaneous stimulation of the temporal lobes through the transtemporal windows",
+   "exposures[0].fundamental_frequency_khz": "The transcranial ultrasound was produced using NeuroSound TUS (National Yang Ming Chiao Tung University, Taipei, Taiwan) and the accompanying bilateral head-frame with two fixed 1 MHz ultrasonic transducers, which enabled simultaneous stimulation of the temporal lobes through the transtemporal windows",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "TUS was applied at a spatial-peak temporal-average intensity $\\mathrm { ( I _ { S P T A } ) }$ of 500",
+   "exposures[0].timing.pulse_duration_ms": "2-ms burst lengths at a 20 % duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "2-ms burst lengths at a 20 % duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "2-ms burst lengths at a 20 % duty cycle and a repetition frequency of 100 Hz.",
+   "exposures[0].timing.sonication_duration_s": "divided into three sessions of 5 min each"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "9 patients randomised (6 TUS, 3 placebo); n_subjects is the 6 who received ultrasound. The total of 6 is stated only in the Fig. 4 legend and text (six TUS)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper says '2-ms burst lengths'; 20 % duty cycle at 100 Hz gives 2 ms, so burst is read as the pulse (resolved by arithmetic)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15 min/day delivered as three 5-min sessions with 5-min rests; 300 s is the length of one 5-min session (5 min x 60)."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Transducers are described as unfocused / wearable LIPUS over the transtemporal windows; target is stated only as the temporal lobes."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta given as 500 mW/cm2 (recorded as 0.5 W/cm2) without stating the domain."
+   },
+   {
+    "field": "provenance",
+    "reason": "Paper states the cohort was previously reported (volume changes) by Huang et al. 2025; possible reanalysis of an already-reported exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

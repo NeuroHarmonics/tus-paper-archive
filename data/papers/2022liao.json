@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022liao",
+ "doi": "10.3389/fncel.2022.882127",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "spinal cord injury (T10 transection) with spasticity",
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "mechanical threshold (THMS); BBB score; H-reflex frequency-dependent depression; soleus EMG; KCC2 western blot and immunofluorescence",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFU activated spinal neurocircuits (EMG recruitment) and after 4 weeks reduced spasticity measures and raised KCC2 expression versus LIFU- rats.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU+ lumbar spinal cord stimulation after SCI",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "lumbar spinal cords"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "DOBO, China",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 650,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 800,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Sine pulse LIFU to the spinal cord once a day, 20 min each time, starting 1 week after SCI for a total of 4 weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.625
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "group (n = 10), where all the rats received SCI and LIFU treatment, as shown in Figure 1A.",
+   "exposures[0].fundamental_frequency_khz": "The LIFU parameters were as follows: sine pulse, frequency = 4 MHz, pulse repetition rate (PRF) = 0.8 kHz, radiation intensity (RI) = 0.65 MPa, and duty cycle (DC) = 50%.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The LIFU parameters were as follows: sine pulse, frequency = 4 MHz, pulse repetition rate (PRF) = 0.8 kHz, radiation intensity (RI) = 0.65 MPa, and duty cycle (DC) = 50%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIFU parameters were as follows: sine pulse, frequency = 4 MHz, pulse repetition rate (PRF) = 0.8 kHz, radiation intensity (RI) = 0.65 MPa, and duty cycle (DC) = 50%.",
+   "exposures[0].timing.duty_cycle_pct": "The LIFU parameters were as follows: sine pulse, frequency = 4 MHz, pulse repetition rate (PRF) = 0.8 kHz, radiation intensity (RI) = 0.65 MPa, and duty cycle (DC) = 50%.",
+   "exposures[0].timing.sonication_duration_s": "LIFU treatment was started 1 week after SCI, once a day, 20 min each time, for a total of 4 weeks.",
+   "exposures[0].device.manufacturer": "The ultrasound system included a signal generator (DG4202, RIGOL, China), a power amplifier (Dahan Radio Studio, China), and an ultrasonic probe (DOBO, China)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "30 rats enrolled in three groups of 10; only the LIFU+ group (n = 10) received ultrasound output (LIFU- had the amplifier off); n_subjects gives the exposed group."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Reported as 'radiation intensity (RI) = 0.65 MPa', a pressure value labelled as intensity; domain not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "20 min per session converted to 1200 s; sessions daily for 4 weeks."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; left not_reported."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

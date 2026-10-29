@@ -1,0 +1,177 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025lic",
+ "doi": "10.1109/tbme.2024.3486748",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 8,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "evoked EPSP slope in CA1 (field recording)",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "EPSP amplitude and slope decreased during ultrasound stimulation; EPSP slope at the end of the first stimulation block was significantly lower than baseline and the inter-stimulus interval.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "IPIS-mode TUS over hippocampal slice",
+   "target": {
+    "terms": [
+     "dentate_gyrus",
+     "brain_slice"
+    ],
+    "label": "DG area of the hippocampus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom multi-mode stimulator with concave self-focusing PZT-4 transducer and impedance matching module"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 450,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "IPIS mode: FF = 500 kHz, FV = 70 V, 50 000 fundamental waves per pulse, PRT = 200 ms, 300 pulses per stimulus group, SRT = 20 min, 2 stimulus groups."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "One hippocampal slice was obtained from 8 different rats.",
+   "exposures[0].fundamental_frequency_khz": "The TUS stimulation protocol used the IPIS mode with the following parameters: FF = 500 kHz, FV = 70 V, $\\mathrm { N _ { F } } = 5 0 0 0 0$ , PRT = 200 ms, $\\mathrm { N } _ { \\mathrm { P } } ~ = ~ 3 0 0 .$ , SRT = 20 min, $\\mathrm { N _ { S } } \\ = \\ 2 .$ .",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The TUS stimulation protocol used the IPIS mode with the following parameters: FF = 500 kHz, FV = 70 V, $\\mathrm { N _ { F } } = 5 0 0 0 0$ , PRT = 200 ms, $\\mathrm { N } _ { \\mathrm { P } } ~ = ~ 3 0 0 .$ , SRT = 20 min, $\\mathrm { N _ { S } } \\ = \\ 2 .$ .",
+   "exposures[0].unspecified_domain.pressure_kpa": "The peak negative pressure value was 0.45 MPa.",
+   "exposures[0].timing.pulse_duration_ms": "The experimental procedures are as follows. After the isolated brain slices were incubated in an incubator for 40 minutes, the electrophysiological activity of the brain slices gradually recovered. At this time, the stimulating electrode and the recording electrode were inserted into the hippocampal CA3 area and CA1 area pyramidal cell layer, respectively. Electrical pulses of 0.1 ms duration were delivered every 20 s. The stimulation current was gradually increased until excitatory postsynaptic potentials (EPSP) reached their maximum and remained stable. The standard stimulus intensity in the experiment was set to the intensity at which EPSP amplitude of 40% of the maximum EPSP amplitude was obtained [33]. Then the ultrasound transducer with collimator was fixed in the DG area of the hippocampus, and ultrasound gel was used for coupling. The TUS stimulation protocol used the IPIS mode with the following parameters: FF = 500 kHz, FV = 70 V, $\\mathrm { N _ { F } } = 5 0 0 0 0$ , PRT = 200 ms, $\\mathrm { N } _ { \\mathrm { P } } ~ = ~ 3 0 0 .$ , SRT = 20 min, $\\mathrm { N _ { S } } \\ = \\ 2 .$ . Fig. 8(a) shows the three-dimensional acoustic field distribution of the ultrasound transducer with a collimator. Fig. 8(b) and (c) plot the axial and lateral one-dimensional acoustic field distribution. The 3 dB acoustic pressure levels were 3.785 mm and 2.043 mm, respectively. The peak negative pressure value was 0.45 MPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Peak negative pressure of 0.45 MPa is given for the transducer with collimator used in the slice experiment; medium of the measurement not stated, so placed in unspecified_domain (paper measures acoustic fields in a water tank elsewhere). Peak negative pressure, not peak pressure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF derived from the stated pulse repetition time PRT = 200 ms (unit conversion, 5 Hz)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse is 50 000 fundamental cycles at 500 kHz; pulse duration in ms is not stated, so left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Protocol: 300 pulses per stimulus group, SRT = 20 min, 2 stimulus groups; duration of one train not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Transducer fixed over DG; EPSP recorded in CA1 (Fig. 8 legend says CA3 region); mapped to dentate_gyrus."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

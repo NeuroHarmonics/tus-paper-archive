@@ -1,0 +1,229 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026qi",
+ "doi": "10.1038/s44384-026-00076-3",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "schizophrenia"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "clinical_scale"
+ ],
+ "readout_other": "DESA; AHRS; MoCA; SAFTEE; C-SSRS (fMRI collected but not analysable)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Delusion experience scores (DESA) fell more after TUS than sham (p = 0.002); AHRS and MoCA did not differ. Neural direction was not assessed because the fMRI data were uninterpretable.",
+ "adverse_events": "observed",
+ "safety_notes": "No serious adverse events; mild transient effects (fatigue, headache, GI discomfort, increased delusions or hallucinations) occurred after both TUS and sham, assessed with SAFTEE.",
+ "exposures": [
+  {
+   "label": "Right GPi TUS (350 kHz)",
+   "target": {
+    "terms": [
+     "globus_pallidus_internus"
+    ],
+    "label": "right globus pallidus interna (GPi)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-made single-element fixed-depth 350 kHz transducer with plano-concave Delrin lens (STEMiNC SMD85T6R111 element)"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": 1340,
+    "isppa_w_cm2": 60.1,
+    "ispta_w_cm2": 3
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": 7.9,
+    "ispta_w_cm2": 0.4
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "0.5 ms rectangular pulses at a 100 Hz PRF (10 ms pulse repetition interval, 5% duty cycle); the 10-min protocol consisted of ten cycles of 30 s on and 30 s off. One TUS and one sham session one week apart."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "The participants (N = 10) had a mean age of 37.5 years (SD = 9.8).",
+   "n_sessions_per_subject": "Participants were blindly randomized and underwent one active TUS and one sham session in random order, separated by one week.",
+   "exposures[0].fundamental_frequency_khz": "The piezoelectric crystal (SMD85T6R111, 350 kHz, STEMiNC, Davenport, FL, USA) was bonded to a plano-concave acoustic lens, which was machined from Delrin to provide a 44 mm spherical radius and an 85 mm aperture diameter.",
+   "exposures[0].free_field.pressure_kpa": "At the output level, the system produced a $P _ { \\mathrm { s p } }$ of 1.34 MPa, corresponding to a free water spatial peak pulse averaged intensity (Isppa) of 60.1 W/cm². A total of eight empirical experiments across two human skull specimens captured the ultrasound pressure transmission through the temporal suture.",
+   "exposures[0].free_field.isppa_w_cm2": "At the output level, the system produced a $P _ { \\mathrm { s p } }$ of 1.34 MPa, corresponding to a free water spatial peak pulse averaged intensity (Isppa) of 60.1 W/cm². A total of eight empirical experiments across two human skull specimens captured the ultrasound pressure transmission through the temporal suture.",
+   "exposures[0].free_field.ispta_w_cm2": "Free-water measurements at $2 3 ^ { \\circ } \\mathrm { C }$ yielded a spatial peak pressure of 1.34 MPa, an $I _ { \\mathrm { s p p a - w } }$ of 60.1 W/ cm<sup>2</sup><sub>,</sub> and an $I _ { \\mathrm { s p t a - w } } { \\mathrm { o f } } 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } .$",
+   "exposures[0].in_situ.pressure_kpa": "In situ estimated pressure was recovered from the derated intensity assuming an in-brain acoustic impedance of $Z _ { \\mathrm { b r a i n } } = 1 . 6 2 \\mathrm { M R a y l ^ { 3 0 } }$ , resulting in a peak in situ pressure amplitude of 0.5 MPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "Subsequent derating using standard brain tissue attenuation models $( I _ { \\mathrm { G P i } } = \\overline { { I } } _ { w } \\cdot T _ { \\mathrm { s k u l l } } ^ { 2 } \\cdot 1 0 ^ { \\alpha \\cdot f \\cdot d / 1 0 } [ \\mathrm { W / c m ^ { 2 } } ] )$ yielded estimated in situ values of $I _ { \\mathrm { s p p a - G P i } }$ of 7.9 W/cm<sup>2</sup> and $I _ { \\mathrm { s p t a - G P i } } \\mathrm { o f } 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } .$",
+   "exposures[0].in_situ.ispta_w_cm2": "Subsequent derating using standard brain tissue attenuation models $( I _ { \\mathrm { G P i } } = \\overline { { I } } _ { w } \\cdot T _ { \\mathrm { s k u l l } } ^ { 2 } \\cdot 1 0 ^ { \\alpha \\cdot f \\cdot d / 1 0 } [ \\mathrm { W / c m ^ { 2 } } ] )$ yielded estimated in situ values of $I _ { \\mathrm { s p p a - G P i } }$ of 7.9 W/cm<sup>2</sup> and $I _ { \\mathrm { s p t a - G P i } } \\mathrm { o f } 0 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } .$",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound pulse was transmitted in 0.5 ms rectangular pulses.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse repetition frequency (PRF) was set to 100 Hz, corresponding to a pulse repetition interval of10 ms and a 5% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "The pulse repetition frequency (PRF) was set to 100 Hz, corresponding to a pulse repetition interval of10 ms and a 5% duty cycle.",
+   "exposures[0].timing.sonication_duration_s": "The 10- min sonication protocol consisted of ten cycles of 30-s-on and 30-s-off sonication.",
+   "exposures[0].device.model": "The piezoelectric crystal (SMD85T6R111, 350 kHz, STEMiNC, Davenport, FL, USA) was bonded to a plano-concave acoustic lens, which was machined from Delrin to provide a 44 mm spherical radius and an 85 mm aperture diameter."
+  },
+  "flags": [
+   {
+    "field": "blinding",
+    "reason": "Participants and all team members except the bioengineer were blinded, but the authors state the study should not be considered fully double-blinded and 6 of 10 guessed the condition correctly."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "In situ values are derived by derating free-water output with a maximum skull transmission coefficient (upper bound) and a brain attenuation of 0.5 dB/cm/MHz over 6 cm; the abstract and results also give an estimated through-skull Ispta range of 0.29-0.4 W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Ten cycles of 30 s on and 30 s off over 10 min; 30 s is the length of each uninterrupted train."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Free-water Ispta (3 W/cm2) is read from LaTeX-garbled text."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "One active and one sham session, one week apart; 2 total sessions."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Custom single-element transducer fabricated by the authors around a STEMiNC piezo element; no commercial transducer maker named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

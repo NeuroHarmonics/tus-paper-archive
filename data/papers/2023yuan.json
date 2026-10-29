@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023yuan",
+ "doi": "10.1016/j.neuroimage.2023.119979",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "optical intrinsic signal imaging of cerebral blood oxygenation; LFP; neurovascular coupling",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "With simultaneous forepaw electrical stimulation, TUS at 50% duty cycle enhanced the blood-oxygenation signal and reduced evoked-potential time-frequency power; 5% duty cycle and a 1 s delayed TUS had little effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Estimated maximum temperature rise from the stated intensity and duration was about 6e-3 C.",
+ "exposures": [
+  {
+   "label": "TUS combined with forepaw electrical stimulation (modes 2 and 3)",
+   "target": {
+    "terms": [
+     "somatosensory_cortex"
+    ],
+    "label": "mouse sensory cortex"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 550,
+    "isppa_w_cm2": 10.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     50,
+     5
+    ],
+    "sonication_duration_s": [
+     0.3,
+     0.6,
+     0.9
+    ],
+    "protocol_description": "500 kHz, PRF 1 kHz, 300 ms stimulation, duty cycle 50% or 5%, delivered simultaneously with forepaw electrical stimulation (mode 2) or lagging it by 1 s (mode 3); extra groups used 600 and 900 ms durations at 5%."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twelve C57BL/6 wild-type mice were used in the experiments",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound fundamental frequency, pulsed repetition frequency, and stimulation duration were 500 kHz, 1 kHz, 300 ms, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound fundamental frequency, pulsed repetition frequency, and stimulation duration were 500 kHz, 1 kHz, 300 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "In our study, the maximum ultrasound intensity $( \\mathrm { { I } _ { \\mathrm { { s p p a } } } ) }$ was $1 0 . 1 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , and the maximum stimulation duration was 0.3 s. Therefore, the maximum temperature enhancement induced by TUS was ${ \\sim } 6 . 1 \\times 1 0 ^ { - 3 } \\ { ^ \\circ } ,$ which is far below the temperature threshold predicted to induce tangible thermal bioefects. We evaluated the efect of diferent stimulation durations on the modulation efect, we added two groups with stimulation durations of 600 ms and 900 ms (n = 5) in mode 2 (5%).",
+   "exposures[0].timing.duty_cycle_pct": "The duty cycle was 50% and 5%.",
+   "exposures[0].unspecified_domain.pressure_kpa": "In the experiment with diferent modes, the maximum ultrasound pressure was 0.55 MPa, and the corresponding $\\mathrm { { I } _ { \\mathrm { { s p p a } } } }$ was $1 0 . 1 ~ \\mathrm { W / c m ^ { 2 } }$",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "In the experiment with diferent modes, the maximum ultrasound pressure was 0.55 MPa, and the corresponding $\\mathrm { { I } _ { \\mathrm { { s p p a } } } }$ was $1 0 . 1 ~ \\mathrm { W / c m ^ { 2 } }$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Maximum pressure 0.55 MPa and Isppa 10.1 W/cm2 given without stating medium or skull path."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle 50% and 5% are separate groups; 50% mode also used with a 1 s delay."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper says it did not target specific brain regions; stimulated the sensory cortex region identified by forepaw stimulation, coordinates AP -3.8, ML 2.5."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Two additional groups (n = 5) used 600 and 900 ms in mode 2 (5%); only 300 ms recorded."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Transducer not described; refers to a previous study's setup."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

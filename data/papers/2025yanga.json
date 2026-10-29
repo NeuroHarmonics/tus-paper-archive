@@ -1,0 +1,222 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025yanga",
+ "doi": "10.1016/j.brainres.2025.149813",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  10,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS-evoked MEP amplitude, latency and motor threshold recorded from brachioradialis",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Only the low-intensity (0.11 W/cm2 Ispta) low-duty-cycle burst-mode group showed a significant MEP amplitude increase (median 6.86 %, p = 0.037); the other three LIFU groups showed no significant change; latency and motor threshold unchanged.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Furthermore, the absence of immediate or delayed adverse effects in the rats receiving LIFU in our study further suggests that the parameters used are likely within a safe range.",
+ "exposures": [
+  {
+   "label": "LIFU 500 kHz, high-duty-cycle pulsed and low-duty-cycle burst-mode, 0.11 and 0.21 W/cm2 Ispta",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex responsible for the forelimb"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H 104"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.23,
+     0.42,
+     1.51,
+     2.82
+    ],
+    "ispta_w_cm2": [
+     0.11,
+     0.21
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": [
+     50,
+     7.5
+    ],
+    "sonication_duration_s": 600,
+    "protocol_description": "Two modes for 10 min each: continuous pulsing at PRF 250 Hz, 2 ms pulses, 50 % DC; or burst mode with 300-ms pulse trains every 2 s (PRF 250 Hz, 2 ms pulses, 50 % intra-train DC, total DC 7.5 %). MEPs measured about 5 min before and after."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The study included 50 rats, divided into five groups: control, highduty cycle pulsed ultrasound at low intensity, high-duty cycle pulsed ultrasound at high intensity, low-duty cycle burst-mode pulsed ultrasound at low intensity, high-duty cycle burst-mode pulsed ultrasound at high intensity (n = 10 per group).",
+   "n_sessions_per_subject": "MEP measurements were taken approximately five minutes after the LIFU session. Each experiment lasted between 35 and 40 min.",
+   "exposures[0].fundamental_frequency_khz": "LIFU was generated using a focused, single-element transducer (Model H 104, Sonic Concepts, WA, USA) with a 64.0 mm active diameter and a 500 kHz fundamental frequency.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Two levels of spatial peak temporal average intensity $\\mathrm { ( I _ { \\mathrm { s p t a } } ) }$ were applied: a lower intensity of 0.11 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and a higher intensity of 0.21 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , in both high-duty cycle pulsed ultrasound and low-duty cycle burst-mode pulsed ultrasound protocols.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<tr><td>2</td><td>High-duty cycle, pulsed</td><td>0.11</td><td>0.23</td><td>50</td><td>10</td><td>500</td><td>66</td></tr><tr><td>3</td><td>High-duty cycle, pulsed</td><td>0.21</td><td>0.42</td><td>50</td><td>10</td><td>500</td><td>126</td></tr><tr><td>4</td><td>Low-duty cycle, burst-mode pulsed</td><td>0.11</td><td>1.51</td><td>7.5</td><td>10</td><td>500</td><td>66</td></tr><tr><td>5</td><td>Low-duty cycle, burst-mode pulsed</td><td>0.21</td><td>2.82</td><td>7.5</td><td>10</td><td>500</td><td>126</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "Two stimulation protocols were applied, both delivering the same total acoustic energy but differing in temporal structure. The first protocol employed a high-duty cycle pulsed ultrasound condition with a PRF of 250 Hz, a pulse duration of 2 ms, and a 50 % duty cycle (DC) (Fig. 1e).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Two stimulation protocols were applied, both delivering the same total acoustic energy but differing in temporal structure. The first protocol employed a high-duty cycle pulsed ultrasound condition with a PRF of 250 Hz, a pulse duration of 2 ms, and a 50 % duty cycle (DC) (Fig. 1e).",
+   "exposures[0].timing.duty_cycle_pct": "Two stimulation protocols were applied, both delivering the same total acoustic energy but differing in temporal structure. The first protocol employed a high-duty cycle pulsed ultrasound condition with a PRF of 250 Hz, a pulse duration of 2 ms, and a 50 % duty cycle (DC) (Fig. 1e). The second protocol used a low-duty cycle burst-mode pulsed ultrasound, consisting of 300-millisecond pulse trains delivered every 2 s. Within each train, pulses were delivered at a PRF of 250 Hz with a 2-millisecond pulse duration and a 50 % intra-train DC, resulting in a total DC of 7.5 %",
+   "exposures[0].timing.sonication_duration_s": "Each sonication session lasted 10 min.",
+   "exposures[0].device.manufacturer": "LIFU was generated using a focused, single-element transducer (Model H 104, Sonic Concepts, WA, USA) with a 64.0 mm active diameter and a 500 kHz fundamental frequency.",
+   "exposures[0].device.model": "LIFU was generated using a focused, single-element transducer (Model H 104, Sonic Concepts, WA, USA) with a 64.0 mm active diameter and a 500 kHz fundamental frequency."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "50 rats in five groups of 10; the 10 controls received no ultrasound, so 40 were sonicated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa values are read from Table 1 rows 2 to 5 (0.23, 0.42, 1.51, 2.82); domain not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Total session is 10 min; in burst mode the train is 300 ms every 2 s. Recorded the session length."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Burst-mode total DC 7.5 % arises from 300 ms train every 2 s at 50 % intra-train DC; both values stated in text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.sonication_duration_s": "first"
+  }
+ }
+}

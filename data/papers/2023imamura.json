@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023imamura",
+ "doi": "10.3389/fnins.2023.1211608",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "systemic_inflammation"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "autonomic_physiology",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "vagus nerve action potentials; hippocampal LFP and c-Fos; macrophage alpha7nAChR immunoreactivity; plasma IL-1beta ELISA; hippocampal proteomics; survival; Nanotag body temperature and locomotor activity; ECG",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "VNS evoked vagal action potentials and raised hippocampal c-Fos in control mice; in LPS mice it restored alpha7nAChR expression, IL-1beta, 10 Hz hippocampal activity pattern and improved survival when given at 18 h.",
+ "adverse_events": "none_observed",
+ "safety_notes": "ECG and skin/body temperature showed no harmful effects of VNS; heart rate was slower after VNS.",
+ "exposures": [
+  {
+   "label": "Ultrasound VNS (bilateral cervical vagus)",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "bilateral cervical vagal nerve (VN) of the mice"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "ITO",
+    "model": "US-731"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Commercial therapy ultrasound applied sequentially to both sides of the neck for 20 min at 3.0 W/cm2 and 50% duty, under deep anaesthesia, at 3 h or 18 h (or 36 h) after LPS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Next, we  tested whether ultrasound VNS at 1 MHz evokes action potentials (APs),",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation was performed on the cervix of mice, with an intensity of 3.0 W/cm<sup>2</sup> and duty of 50% for 20 min.",
+   "exposures[0].timing.sonication_duration_s": "The stimulation was performed on the cervix of mice, with an intensity of 3.0 W/cm<sup>2</sup> and duty of 50% for 20 min.",
+   "exposures[0].device.manufacturer": "We used commercial ultrasound therapy (US-731, ITO, Kawaguchi, Saitama, Japan).",
+   "exposures[0].device.model": "We used commercial ultrasound therapy (US-731, ITO, Kawaguchi, Saitama, Japan)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "1 MHz is stated for the ultrasound VNS used to evoke vagal action potentials; the frequency of the US-731 therapy device is not stated. A 300 kHz device was used only for characterisation."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper gives 'an intensity of 3.0 W/cm2' with no metric (Isppa or Ispta) or domain; left empty."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "163 mice were used across all experiments, including non-sonicated controls; 10 died and were excluded."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty 50% stated without PRF or pulse duration."
+   },
+   {
+    "field": "blinding",
+    "reason": "Some experiments used a blinded second experimenter; not all."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "disagree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].fundamental_frequency_khz": "both_defensible"
+  }
+ }
+}

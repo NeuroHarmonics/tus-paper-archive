@@ -7,7 +7,7 @@ needs only Node; served at neuroharmonics.com/tus-archive/data/):
 
   index.json              one row per exposure, flattened for the table and facets; abstracts in
   papers/<citekey>.json   the full record + bibliography + abstract, for the paper page
-  stats.json              papers per year, reportability per field, composition counts
+  stats.json              papers per year, reportability per field, composition and journal counts
   targets.json            the target vocabulary, for the tree facet
   tus-paper-archive-v1.json    the bulk download: all records + bibliography, NO abstracts
 
@@ -28,7 +28,7 @@ import subprocess
 import sys
 from collections import Counter, defaultdict
 
-from common import DATA, WEBSITE_DATA_REL, read_json, website_repo
+from common import DATA, PREPRINT_DOI, WEBSITE_DATA_REL, read_json, website_repo
 from validate import NUMERIC_LEAVES, get_path
 
 ROOT = DATA.parent
@@ -130,6 +130,8 @@ def main() -> int:
     comp = {"model_system": Counter(), "readouts": Counter(), "conditions": Counter(), "device_family": Counter(),
             "target_top": Counter(), "waveform": Counter(), "direction_of_effect": Counter(), "sham_type": Counter()}
     n_flags = 0
+    # Journals, with spellings merged ("PLoS ONE", "The Journal of ..."); preprints have none.
+    journals, journal_names = Counter(), defaultdict(Counter)
     # Subjects summed by unit over papers stating a number; a swept/list n is summed. Reported alongside
     # how many papers state no n, so the total is never read as complete.
     subjects = {"participant": 0, "animal": 0, "preparation": 0, "culture": 0}
@@ -148,6 +150,10 @@ def main() -> int:
             "doi": rec["doi"], "record_class": man.get("record_class"),
         }
         per_year[man.get("year")] += 1
+        if biblio["journal"] and not PREPRINT_DOI.match(rec["doi"]):
+            jk = re.sub(r"^the ", "", biblio["journal"].casefold()).replace("&", "and")
+            journals[jk] += 1
+            journal_names[jk][biblio["journal"]] += 1
         n_flags += len(rec["provenance"]["flags"])
         n_subj = rec["n_subjects"]
         if n_subj == "not_reported":
@@ -228,6 +234,10 @@ def main() -> int:
                 "status": d.get("field_status", {}),
             })
 
+    ranked = journals.most_common()
+    cut = ranked[min(9, len(ranked) - 1)][1] if ranked else 0   # top ten, with ties at tenth kept
+    top_journals = [(journal_names[k].most_common(1)[0][0], n) for k, n in ranked if n >= cut]
+
     generated = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     version = read_version()
     (out / "index.json").write_text(json.dumps({
@@ -240,6 +250,7 @@ def main() -> int:
         "reportability": {leaf: {"not_reported": nr, "applicable": ap_, "share_reported": round(1 - nr / ap_, 3) if ap_ else None}
                           for leaf, (nr, ap_) in sorted(nr_counts.items())},
         "composition": {k: sorted(c.items(), key=lambda x: -x[1]) for k, c in comp.items()},
+        "top_journals": top_journals,
     }, ensure_ascii=False, indent=1) + "\n")
     (out / "targets.json").write_text(json.dumps(targets, ensure_ascii=False) + "\n")
     (out / "tus-paper-archive-v1.json").write_text(json.dumps({

@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025casagrande",
+ "doi": "10.1080/10717544.2025.2577826",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Balb/c)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  12,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "cytokines and neurotrophins in prefrontal cortex and hippocampus; liver histology; behavioural tests",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS alleviated cognitive impairment and inflammatory markers in the beta-amyloid mouse model; neuronal excitability was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to the skull, with or without Cur-AuNPs",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "the central region of the skull"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Imbramed Company, Brazil",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.8,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 360,
+    "protocol_description": "Unfocused collimated physiotherapy-type transducer moved in circular motions over the skull with saline/Carbopol gel under isoflurane; intensity 0.8 W/cm2 (type of intensity not stated); 6 min per animal per session for 17 days (every 24 h per one passage, every 48 h per another); sham animals were anaesthetised only."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "We used 60 male Balb/c mice (90 days old, weighing between 30 and 45 g), kept under standard 12-hour light/dark cycle conditions and with access to food and drinking water ad libitum (except on the days when the behavioral tests were performed, which required food rationing) and randomly distributed into five experimental groups (n = 12).",
+   "exposures[0].fundamental_frequency_khz": "One day after the procedure, they were treated for 17 days with LIPUS (1.0 MHz, 0.8 W/cm²) and CUR-AuNPs (25 μg/mL) intranasally divided according to their treatments.",
+   "exposures[0].timing.pulse_duration_ms": "sine wave, 50% duty cycle; pulse width, 5 ms; and pulse repetition frequency, 100 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "sine wave, 50% duty cycle; pulse width, 5 ms; and pulse repetition frequency, 100 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "sine wave, 50% duty cycle; pulse width, 5 ms; and pulse repetition frequency, 100 Hz.",
+   "exposures[0].timing.sonication_duration_s": "Therapy was applied every 24 hours, at the same time, for 6 minutes per animal, over a period of 2 weeks.",
+   "exposures[0].device.manufacturer": "using a LIPUS equipment (Imbramed Company, Brazil)",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The wave-inducing equipment was in direct contact with the conductive Carbopol gel and the mouse skull and used the following parameters: intensity, $0 . 8 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 } ;$ center frequency, $1 . 0 \\mathsf { M H z } \\pm 1 0 \\% ;$ sine wave, 50% duty cycle; pulse width, 5 ms; and pulse repetition frequency, 100 Hz."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Total of 60 mice in five groups of 12; only the LIPUS groups (groups 3 and 5) were sonicated, number exposed not stated as a total."
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Intensity 0.8 W/cm2 is stated without saying whether Isppa or Ispta or domain; left null."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Schedule is inconsistent: 'every 24 hours ... over 2 weeks' versus 'every 48 hours' over 17 days."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control animals were only anaesthetised (no transducer application described); coded other."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Text also describes '6-minute pulses'; 6 min per animal per session recorded as 360 s."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Unfocused skull-level treatment; no brain target stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026meijer",
+ "doi": "10.1126/sciadv.aea8233",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 50,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "sound_only",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "ramped_pulses",
+  "sound_only_sham",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "behaviour"
+ ],
+ "readout_other": "Phasic skin conductance responses; retrospective threat probability, valence and arousal ratings",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Amygdala-TUS slowed early threat acquisition, accelerated early extinction and raised retrospective threat-probability overestimation versus sham; hippocampus-TUS did not differ from sham.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Estimated exposure said to adhere to ITRUSST recommendations (safety metrics in table S1); adverse events not described in the text.",
+ "exposures": [
+  {
+   "label": "Amygdala-TUS (experiment I)",
+   "target": {
+    "terms": [
+     "basolateral_amygdala"
+    ],
+    "label": "bilateral amygdala"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro (TPO-203-035 / TPO-105-010 with CTX-250-001 / CTX-250-026)"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 1240,
+    "isppa_w_cm2": 40,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 90,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulses of 90-ms duration, ramped with a Tukey shape on pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train of 1000 ms, delivered bilaterally and interleaved between the two transducers; TUS began 200 ms before CS onset on each active trial during the 120-trial acquisition phase only."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 45.0
+   }
+  },
+  {
+   "label": "Hippocampus-TUS (experiment II)",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "posterior hippocampus"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro (TPO-203-035 / TPO-105-010 with CTX-250-001 / CTX-250-026)"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 1240,
+    "isppa_w_cm2": 40,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 90,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulses of 90-ms duration, ramped with a Tukey shape on pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train of 1000 ms, delivered bilaterally and interleaved between the two transducers; TUS began 200 ms before CS onset on each active trial during the 120-trial acquisition phase only."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 45.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 50 participants (n = 25 per experiment) were included in the final analysis (experiment I: $M _ { \\mathrm { a g e } } = 2 4 .",
+   "n_sessions_per_subject": "Session 2 was conducted on a separate day in a dedicated noninvasive brain stimulation laboratory, where participants received the TUS intervention during Pavlovian threat conditioning along with physiological measurements.",
+   "exposures[0].fundamental_frequency_khz": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK).",
+   "exposures[0].free_field.isppa_w_cm2": "Ultrasound was delivered at a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ in free water of 40 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at a focal depth of 61.5 mm (Fig. 2B).",
+   "exposures[0].free_field.pressure_kpa": "The spatial peak pressure (white square; max. pressure = 1.24 MPa; Isppa = $3 8 .",
+   "exposures[0].timing.pulse_duration_ms": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[0].timing.sonication_duration_s": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[0].device.model": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK).",
+   "exposures[0].device.manufacturer": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK).",
+   "exposures[1].fundamental_frequency_khz": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK).",
+   "exposures[1].free_field.isppa_w_cm2": "Ultrasound was delivered at a spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ in free water of 40 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ at a focal depth of 61.5 mm (Fig. 2B).",
+   "exposures[1].free_field.pressure_kpa": "The spatial peak pressure (white square; max. pressure = 1.24 MPa; Isppa = $3 8 .",
+   "exposures[1].timing.pulse_duration_ms": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[1].timing.sonication_duration_s": "The pulsing protocol used pulses of 90-ms duration, ramped with Tukey shape on the pressure over 30 ms on/off, repeated at 5 Hz for a total pulse train duration of 1000 ms (Fig. 2B and table S1).",
+   "exposures[1].device.model": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK).",
+   "exposures[1].device.manufacturer": "TUS was delivered using two four-element piezoelectric ultrasound transducers (fundamental frequency, 250 kHz; aperture diameter = 64 mm), driven by a NeuroFUS Pro system (TPO-203-035 for CTX-250-001 and TPO-105-010 for CTX-250-026, Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardif, UK)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Text gives 40 W/cm2 in free water; Fig. 2B legend gives Isppa = 38.43 W/cm2 for a single transducer."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "1.24 MPa is read from the Fig. 2B legend (single-transducer hydrophone measurement)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated in the main text (safety metrics are in table S1, not in the text); bilateral interleaved protocol."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "Text gives 40 W/cm2 in free water; Fig. 2B legend gives Isppa = 38.43 W/cm2 for a single transducer."
+   },
+   {
+    "field": "exposures[1].free_field.pressure_kpa",
+    "reason": "1.24 MPa is read from the Fig. 2B legend (single-transducer hydrophone measurement)."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated in the main text (safety metrics are in table S1, not in the text); bilateral interleaved protocol."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "50 analysed (25 per experiment); one participant per experiment was excluded after enrolment (target 26 per experiment), so enrolled count is implied but not stated outright."
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper says 'partially double-blinded': participants blinded to stimulation and target, investigators blinded to stimulation condition only."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham trials were auditory matching stimulus only, within participant; hippocampus-TUS served as active control site in a separate experiment."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

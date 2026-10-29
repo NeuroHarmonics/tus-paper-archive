@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026bano",
+ "doi": "10.1007/s11064-026-04676-z",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "other"
+ ],
+ "readout_other": "MTS viability assay; Bradford total protein; Trypan Blue morphology; Fluo-3 AM calcium imaging with KCl challenge",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Calcium responsiveness (AUC of F/F0 with KCl challenge) was higher 24 h after 10 V FUS than control; viability, protein and morphology were unchanged. Calcium imaging was done at 10 V only.",
+ "adverse_events": null,
+ "safety_notes": "Viability (MTS), total protein and Trypan Blue morphology showed no significant damage at 5 V or 10 V.",
+ "exposures": [
+  {
+   "label": "FUS 5 V and 10 V drive, 10 min",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "primary cortical neurons (DIV14)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom immersion-type 300 kHz transducer driven by A-M Systems model 4100 isolated High-Power stimulator"
+   },
+   "fundamental_frequency_khz": 300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 500,
+    "pulse_repetition_frequency_hz": 0.05,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "30 train bursts of 0.5 s every 20 s (10 min total); each burst is a 300 kHz monophasic pulse train with pulse duration half of the event period (150,000 pulses per burst). Drive amplitude +5 V or +10 V; no acoustic calibration was performed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 2.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "using at least three independent primary neuronal preparations (n = 3)",
+   "exposures[0].fundamental_frequency_khz": "the FUS group was subjected to FUS at +5 V and +10 V for 10 min using a 300 kHz custom immersion-type transducer",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td>Train burst duration</td><td>0.5 s</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<tr><td>Train burst period</td><td>20 s</td></tr>",
+   "exposures[0].timing.sonication_duration_s": "the FUS group was subjected to FUS at +5 V and +10 V for 10 min using a 300 kHz custom immersion-type transducer",
+   "exposures[0].device.model": "the FUS group was subjected to FUS at +5 V and +10 V for 10 min using a 300 kHz custom immersion-type transducer compatible with the A-M Systems 4100 High-Power Stimulator",
+   "exposures[0].device.manufacturer": "the FUS group was subjected to FUS at +5 V and +10 V for 10 min using a 300 kHz custom immersion-type transducer compatible with the A-M Systems 4100 High-Power Stimulator"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: the 0.5 s 'train burst' is the gated unit repeated every 20 s, so recorded as pulse duration; within it the carrier is a 300 kHz monophasic square wave with pulse duration half the event period."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Converted from the stated 20 s train burst period (1/20 s)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; not computed."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Paper states direct acoustic pressure or intensity calibration was not performed; drive voltage only."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer described only as custom immersion-type; maker not named, so classed as custom_built."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n = 3 refers to independent culture preparations; MTS used 5 biological replicates."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

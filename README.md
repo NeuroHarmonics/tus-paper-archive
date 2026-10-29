@@ -46,7 +46,7 @@ The pipeline is a set of Python scripts, one per job, with language models used 
 
 **Finding papers.** `scripts/sweep.py` harvests candidates in two ways: boolean queries over Europe PMC and PubMed, accounting for the field's fragemented terminology (TUS, tFUS, LIFU, ultrasonic neuromodulation), and citation chaining from the reviews and consensus documents in `data/key-documents.json`. OpenAlex is available but off by default because its free quota is small. Crossref is used for known-item lookup only. Candidates without an abstract are filled from Europe PMC, PubMed, OpenAlex and Crossref. No papers are screened on title alone.
 
-**Screening.** `scripts/prescreen.py` applies the exclusions that don't need a judgement call: conference output, grey literature, supplement abstracts and decision letters. The remaining candidates are screened by a language model in year-stratified batches against the inclusion criteria, which returns one verdict per paper naming the criterion that failed. `scripts/check_verdicts.py` compares each verdict file against its batch and rejects any that are incomplete or refer to papers not in the batch. A verdict of `unspecified` means the model could not settle all four conditions from the abstract; those are listed for a person to decide. Every verdict is recorded in `data/screening.jsonl`, one row per DOI; a later verdict for the same paper replaces the earlier one and keeps it in the row's history.
+**Screening.** `scripts/prescreen.py` applies the exclusions that don't need a judgement call: conference output, grey literature, supplement abstracts and decision letters. The remaining candidates are screened by a language model in year-stratified batches against the inclusion criteria, which returns one verdict per paper naming the criterion that failed. `scripts/check_verdicts.py` compares each verdict file against its batch and rejects any that are incomplete or refer to papers not in the batch. A verdict of `unspecified` means the model could not settle all four conditions from the abstract; those papers are read a second time by a stronger model with the full abstract and any open-access full text (`scripts/build_second_read.py`), and what that read cannot settle is listed for a person. The same step re-reads a random sample of the first model's exclusions, which measures how often it excludes a paper it should not have. Every verdict is recorded in `data/screening.jsonl`, one row per DOI; a later verdict for the same paper replaces the earlier one and keeps it in the row's history.
 
 **Obtaining papers.** `scripts/acquire.py` fetches what is legitimately open access, using the location Unpaywall reports, and writes everything else to a want-list for retrieval through institutional access. No attempt is made to bypass a paywall; an HTTP 403 from a publisher is treated as an access restriction.
 
@@ -92,6 +92,7 @@ uv run scripts/enrich_abstracts.py --apply      # fill missing abstracts
 uv run scripts/prescreen.py --apply --crossref  # deterministic decisions
 uv run scripts/build_batches.py --out <dir>     # screening batches
 uv run scripts/check_verdicts.py --batches <dir> --verdicts <scratch>/verdicts_wN_*.json --apply
+uv run scripts/build_second_read.py --out <dir>  # unspecified and title-only papers, for a stronger second read
 uv run scripts/build_decisions.py               # data/needs-decision.md
 uv run scripts/acquire.py                       # want-list; --fetch also downloads open-access PDFs
 
@@ -101,6 +102,7 @@ uv run scripts/identify.py                      # DOI -> Crossref -> data/ingest
 uv run scripts/build_candidate_batch.py --out <dir>   # screen hand-added PDFs
 uv run scripts/rename.py --apply                # apply verdicts, deduplicate, assign citekeys, file
 uv run scripts/fetch_paper_abstracts.py         # data/abstracts/
+uv run scripts/link_preprints.py --find-published   # published versions of held preprints
 
 # extract
 uv run scripts/build_prompt.py                  # docs/extraction-prompt.md
@@ -115,6 +117,9 @@ uv run scripts/vocab_report.py
 uv run scripts/build_site.py --out <dir>        # site data files; without --out, into the website checkout
 uv run scripts/release.py --apply               # VERSION, CHANGELOG.md, commit, tag
 uv run scripts/monthly_summary.py               # what changed since the last tag
+
+# a folder of papers outside the archive
+uv run scripts/prep_folder.py <dir> --apply     # year-first names, Markdown in <dir>/text/
 ```
 
 The procedures for running a screening or extraction wave, the conventions, and the operating rules are in [docs/operations.md](docs/operations.md).

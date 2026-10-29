@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026tsuchiyagaitoa",
+ "doi": "10.64898/2026.09.02.748985",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 35,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "Resting-state fMRI right-thalamus seed connectivity; DTI probabilistic tractography",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "One sonication increased right-thalamus to left-thalamus connectivity; three sonications decreased connectivity with right dorsolateral prefrontal cortex.",
+ "adverse_events": "observed",
+ "safety_notes": "Transient scalp pressure discomfort in most participants; one vasovagal-type episode 15 min after 3-LIFU; no thermal sensations or pain syndromes.",
+ "exposures": [
+  {
+   "label": "1-LIFU and 3-LIFU to right thalamo-prefrontal white matter tracts",
+   "target": {
+    "terms": [
+     "white_matter"
+    ],
+    "label": "individually modeled right thalamo-prefrontal white matter tracts"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 9.06,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.26,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "Theta-burst pattern of 400 20-ms pulses delivered every 180 ms, 10% duty cycle, 80 s total. 1-LIFU = one epoch; 3-LIFU = three consecutive epochs separated by two 30-s intervals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Methods: In this preregistered, double-blind, randomized study, 35 healthy adults underwent LIFU targeting (80 s, 10% duty cycle, estimated ISPPA 2.26 W/cm<sup>2</sup>, 0.5 MHz, in a θ-burst pattern) of individually modeled right thalamo-prefrontal white matter tracts under two dose conditions: one and three consecutive sonications. Dose-dependent changes in resting-state functional connectivity were examined during a 30-minute poststimulation period in 31 participants.",
+   "n_sessions_per_subject": "y design. Each participant completed three visits: a baseline visit (V0) without LIFU stimulation and two LIFU visits (Visits 1 and 2) in randomized order. Participants received one LIFU epoch (1-LIFU) at one visit and three consecutive epochs (3-LIFU) at the other (Figure 1, panel B). At all visits, participants underwent MRI scanning as describe",
+   "exposures[0].fundamental_frequency_khz": "Methods: In this preregistered, double-blind, randomized study, 35 healthy adults underwent LIFU targeting (80 s, 10% duty cycle, estimated ISPPA 2.26 W/cm<sup>2</sup>, 0.5 MHz, in a θ-burst pattern) of individually modeled right thalamo-prefrontal white matter tracts under two dose conditions: one and three consecutive sonications. Dose-dependent changes in resting-state functional connectivity were examined during a 30-minute poststimulation period in 31 participants.",
+   "exposures[0].free_field.isppa_w_cm2": "0 s (32). The free-field spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 9.06 W/cm<sup>2</sup>, producing an estimated tissue-level intensity of 2.26 W/cm<sup>2</sup>. Consistent with the US Food and Drug Administration's nonsignificant risk determi",
+   "exposures[0].in_situ.isppa_w_cm2": "0 s (32). The free-field spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 9.06 W/cm<sup>2</sup>, producing an estimated tissue-level intensity of 2.26 W/cm<sup>2</sup>. Consistent with the US Food and Drug Administration's nonsignificant risk determi",
+   "exposures[0].timing.pulse_duration_ms": "Briefly, stimulation consisted of a θ-burst pattern of 400 20-ms pulses delivered every 180 ms, representing a 10% duty cycle and a total stimulation duration of 80 s (32). The free-field spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 9.06 W/cm<sup>2</sup>, producing an estimated tissue-level intensity of 2.26 W/cm<s",
+   "exposures[0].timing.duty_cycle_pct": "Briefly, stimulation consisted of a θ-burst pattern of 400 20-ms pulses delivered every 180 ms, representing a 10% duty cycle and a total stimulation duration of 80 s (32). The free-field spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 9.06 W/cm<sup>2</sup>, producing an estimated tissue-level intensity of 2.26 W/cm<s",
+   "exposures[0].timing.sonication_duration_s": "Briefly, stimulation consisted of a θ-burst pattern of 400 20-ms pulses delivered every 180 ms, representing a 10% duty cycle and a total stimulation duration of 80 s (32). The free-field spatial-peak pulse-average intensity (I<sub>SPPA</sub>) was 9.06 W/cm<sup>2</sup>, producing an estimated tissue-level intensity of 2.26 W/cm<s"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "35 enrolled; 31 participants and 80 sessions analysed; enrolled number given"
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Text says 400 20-ms pulses every 180 ms with 10% duty cycle and 80 s; no PRF stated and the arithmetic does not close, so not recorded"
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Tissue-level estimate of 2.26 W/cm2 given without saying how it was obtained"
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "No transducer or system named in the main text"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "One 80 s sonication per epoch; 1-LIFU = one epoch, 3-LIFU = three epochs separated by 30 s"
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham; comparison is one versus three sonications plus a no-LIFU baseline visit"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

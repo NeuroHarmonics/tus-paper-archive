@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026mahoney",
+ "doi": "10.1037/pha0000793",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "clinical_scale",
+  "other_mri",
+  "other"
+ ],
+ "readout_other": "Cue-induced craving visual analog scale; urine toxicology (GC-MS); HAM-D; C-SSRS; SHAPS; Neuro-QOL; safety MRI",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Cue-induced methamphetamine craving fell by about 75% after the first active block and was 0/10 after later blocks and at all follow-ups to day 90; no neural readout of direction.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No unexpected or FUS-procedure-related adverse events through day 90; safety MRIs showed no edema or hemorrhage.",
+ "exposures": [
+  {
+   "label": "Bilateral NAc FUS, four 5-min active blocks",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "bilateral nucleus accumbens"
+   },
+   "device": {
+    "family": "insightec",
+    "manufacturer": "Insightec",
+    "model": "ExAblate Neuro Type 2"
+   },
+   "fundamental_frequency_khz": 220,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 2000,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 0.333,
+    "duty_cycle_pct": 3.3,
+    "sonication_duration_s": 300,
+    "protocol_description": "Four 5-min (300 s) blocks of active FUS (eight subspots alternated; 70-100 W; duty cycle 3.3% per subspot; 100 repetitions; repetition time 3 s; pulse duration 100 ms) to bilateral NAc, 20 min of active FUS in total, after one 5-min zero-energy block."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3.33,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "As this case report includes a single participant with MUD, these findings could not be statistically quantified and these results must be replicated in larger randomized, sham-controlled trials before definitive conclusions regarding the utility of FUS for MUD can be made.",
+   "n_sessions_per_subject": "The participant received a 20-min session of low-intensity FUS (220 kHz) neuromodulation and completed follow-up visits 1-, 7-, 30-, 60-, and 90-days postprocedure.",
+   "exposures[0].fundamental_frequency_khz": "The Insightec ExAblate Neuro Type 2 magnetic resonance imaging (MRI)-guided, ultrasound platform for neuromodulation operates at a primary frequency of 220 kHz and is a hemispherical array consisting of 1,024 elements with a peak negative pressure estimated at 2 MPa when operated at a 100 W power setting.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The Insightec ExAblate Neuro Type 2 magnetic resonance imaging (MRI)-guided, ultrasound platform for neuromodulation operates at a primary frequency of 220 kHz and is a hemispherical array consisting of 1,024 elements with a peak negative pressure estimated at 2 MPa when operated at a 100 W power setting.",
+   "exposures[0].timing.pulse_duration_ms": "Next, four 5-min (300 s) blocks of active FUS (eight subspots alternated with the following parameters: 70–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; repetition time = 3 s; pulse duration = 100 ms) were delivered to the bilateral NAc (total of 20-min of active FUS).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Next, four 5-min (300 s) blocks of active FUS (eight subspots alternated with the following parameters: 70–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; repetition time = 3 s; pulse duration = 100 ms) were delivered to the bilateral NAc (total of 20-min of active FUS).",
+   "exposures[0].timing.duty_cycle_pct": "Next, four 5-min (300 s) blocks of active FUS (eight subspots alternated with the following parameters: 70–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; repetition time = 3 s; pulse duration = 100 ms) were delivered to the bilateral NAc (total of 20-min of active FUS).",
+   "exposures[0].timing.sonication_duration_s": "Next, four 5-min (300 s) blocks of active FUS (eight subspots alternated with the following parameters: 70–100 W therapeutic energy; duty cycle = 3.3% per subspot; 100 repetitions; repetition time = 3 s; pulse duration = 100 ms) were delivered to the bilateral NAc (total of 20-min of active FUS).",
+   "exposures[0].device.manufacturer": "The Insightec ExAblate Neuro Type 2 magnetic resonance imaging (MRI)-guided, ultrasound platform for neuromodulation operates at a primary frequency of 220 kHz and is a hemispherical array consisting of 1,024 elements with a peak negative pressure estimated at 2 MPa when operated at a 100 W power setting.",
+   "exposures[0].device.model": "The Insightec ExAblate Neuro Type 2 magnetic resonance imaging (MRI)-guided, ultrasound platform for neuromodulation operates at a primary frequency of 220 kHz and is a hemispherical array consisting of 1,024 elements with a peak negative pressure estimated at 2 MPa when operated at a 100 W power setting."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper gives a repetition time of 3 s, recorded as 0.333 Hz (unit conversion); PRF not stated directly. Duty cycle is stated 'per subspot' with eight subspots alternated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "2 MPa is an estimate at 100 W; the paper does not say whether it is free-field or in situ."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Each 5-min block of 100 repetitions at 3 s; 20 min of active FUS in total; 70-100 W varied across blocks."
+   },
+   {
+    "field": "blinding",
+    "reason": "Participant was not told the order of zero-energy and active blocks; no blinding of investigators described. Recorded as single."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,231 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026estrada",
+ "doi": "10.1016/j.brs.2025.11.005",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "volumetric multispectral optoacoustic tomography (HbO, HbR, HbT)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "hTUS evoked brain-wide hemodynamic responses (HbO, HbR, HbT) that extended beyond the focus; lower pressure produced a weaker or slower response. Neuronal excitation or inhibition was not measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Holographic TUS to somatosensory cortex",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic, France",
+    "model": "512-channel spherically focused matrix array (POTUS)"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     900,
+     1200
+    ],
+    "isppa_w_cm2": [
+     27,
+     48
+    ],
+    "ispta_w_cm2": [
+     11,
+     19
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     50,
+     100
+    ],
+    "pulse_repetition_frequency_hz": [
+     4,
+     8
+    ],
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 15.2,
+    "protocol_description": "During the 15.2 s of the TUS stimulation, 100 ms US pulses at 3 MHz are repeated at 4 Hz (40% duty cycle); pulse duration was also reduced to 50 ms. Five stimulations spaced by 40 s were delivered."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Pelleted food (3437PXL15, CARGILL) and water were provided ad-libitum. A total of 3 female C57BL/6J mice were employed for this study.",
+   "exposures[0].fundamental_frequency_khz": "The light is distributed over a large (\\~1 cm<sup>2</sup>) area on the mouse head to yield a maximum fluence of 10 ${ \\mathrm { m J / c m } } ^ { 2 } ,$ well below the maximum permissible exposure limit in the NIR spectrum (>20 mJ/cm<sup>2</sup>) [37]. The laser is tuned to five different wavelengths (730, 755, 780, 800, and 850 nm) on a per pulse basis at a pulse repetition rate of 100 Hz (Fig. 1B). During the 15.2 s of the TUS stimulation, the 100 ms duration US pulses at 3 MHz carrier frequency are repeated at 4 Hz (40 % duty cycle).",
+   "exposures[0].in_situ.pressure_kpa": "A two-dimensional scan of the hydrophone perpendicular to the radiation axis (Fig. 1C) portrays the pressure distribution, in good agreement with the prediction of a linear model calculated using Field II [38]. Transcranial pressure is measured using a mouse skull, as described elsewhere [23]. A peak pressure of 1.2 MPa $( \\mathrm { I } _ { \\mathrm { S P P A } } = 4 8 \\mathrm { \\ W / c m ^ { 2 } } )$ and $0 . 9 \\ \\mathrm { M P a } \\ ( \\mathrm { I } _ { \\mathrm { S P P A } } = 2 7 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was estimated in the mouse brain using the previously measured 6 dB skull insertion loss at 3 MHz [23]. Thus, the highest pressure yields mechanical index of 0.7.",
+   "exposures[0].in_situ.isppa_w_cm2": "A two-dimensional scan of the hydrophone perpendicular to the radiation axis (Fig. 1C) portrays the pressure distribution, in good agreement with the prediction of a linear model calculated using Field II [38]. Transcranial pressure is measured using a mouse skull, as described elsewhere [23]. A peak pressure of 1.2 MPa $( \\mathrm { I } _ { \\mathrm { S P P A } } = 4 8 \\mathrm { \\ W / c m ^ { 2 } } )$ and $0 . 9 \\ \\mathrm { M P a } \\ ( \\mathrm { I } _ { \\mathrm { S P P A } } = 2 7 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$ was estimated in the mouse brain using the previously measured 6 dB skull insertion loss at 3 MHz [23]. Thus, the highest pressure yields mechanical index of 0.7.",
+   "exposures[0].timing.pulse_duration_ms": "In addition, we varied the peak pressure between 1.2 and 0.9 MPa and the US pulse duration between 100 and 50 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "It is important to clarify how our approach compares to previous studies where concerns have been raised about potential auditory confounds in TUS experiments [47,48] First, we used longer sonication durations (50–100 ms per pulse), which differ significantly from the 1.5 kHz envelope used in Ref. [47]. As a result, our pulse repetition frequency (4–8 Hz) lies outside the mouse hearing range [49]. Second, the compact ultrasound focus size in our system is specifically tailored for precise targeting in the mouse brain.",
+   "exposures[0].timing.duty_cycle_pct": "The light is distributed over a large (\\~1 cm<sup>2</sup>) area on the mouse head to yield a maximum fluence of 10 ${ \\mathrm { m J / c m } } ^ { 2 } ,$ well below the maximum permissible exposure limit in the NIR spectrum (>20 mJ/cm<sup>2</sup>) [37]. The laser is tuned to five different wavelengths (730, 755, 780, 800, and 850 nm) on a per pulse basis at a pulse repetition rate of 100 Hz (Fig. 1B). During the 15.2 s of the TUS stimulation, the 100 ms duration US pulses at 3 MHz carrier frequency are repeated at 4 Hz (40 % duty cycle).",
+   "exposures[0].timing.sonication_duration_s": "The light is distributed over a large (\\~1 cm<sup>2</sup>) area on the mouse head to yield a maximum fluence of 10 ${ \\mathrm { m J / c m } } ^ { 2 } ,$ well below the maximum permissible exposure limit in the NIR spectrum (>20 mJ/cm<sup>2</sup>) [37]. The laser is tuned to five different wavelengths (730, 755, 780, 800, and 850 nm) on a per pulse basis at a pulse repetition rate of 100 Hz (Fig. 1B). During the 15.2 s of the TUS stimulation, the 100 ms duration US pulses at 3 MHz carrier frequency are repeated at 4 Hz (40 % duty cycle).",
+   "exposures[0].device.manufacturer": "The parallelized optoacoustic imaging and transcranial ultrasound (POTUS) is performed by a 512 channels matrix array (Fig. 1A) arranged on a spherical surface covering 150◦ [23,34] (Imasonic, France).",
+   "exposures[0].device.model": "The parallelized optoacoustic imaging and transcranial ultrasound (POTUS) is performed by a 512 channels matrix array (Fig. 1A) arranged on a spherical surface covering 150◦ [23,34] (Imasonic, France).",
+   "exposures[0].in_situ.ispta_w_cm2": "The 1.2 MPa; 100 ms and 1.2 MPa; 50 ms stimulations yield $\\mathrm { I } _ { \\mathrm { S P T A } } = 1 9 \\mathrm { W / c m ^ { 2 } } ;$ , while 0.9 MPa; 50 ms stimulation yields $\\mathrm { I } _ { \\mathrm { S P T A } } = 1 1 \\ \\mathrm { W / c m ^ { 2 } }$"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Peak pressures 1.2 and 0.9 MPa (Isppa 48 and 27 W/cm2) are derated from free-field using a 6 dB skull insertion loss; the paper's 'peak pressure' is not stated as free-field separately."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta (19 and 11 W/cm2) is given in a figure legend without a domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Methods give 4 Hz for 100 ms pulses; the discussion gives 4-8 Hz, so 8 Hz presumably applies to 50 ms pulses at the same duty cycle (not stated directly)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Abstract says 15 s; methods say 15.2 s."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "No auditory control during the experiment; the discussion argues from prior work and from absence of auditory cortex hemodynamic signal, and says controls are future work."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Custom 512-element array from Imasonic; driven by Falkenstein Mikrosysteme electronics."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

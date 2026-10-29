@@ -1,0 +1,215 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zou",
+ "doi": "10.1109/tuffc.2021.3079628",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  7,
+  10,
+  5,
+  5,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "seizure latency (video); elevated plus maze; Western blotting (Bcl-2, Bax, TNF-a, IL-1b, JNK pathway); c-Fos immunohistochemistry; H&E and Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "LIPUS prolonged seizure latency (6 vs 7 days), improved EPM anxiety-like behaviour and reduced apoptosis and inflammation markers in kainic acid epileptic mice, while c-Fos expression increased in cortex, CA1 and CA3.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and Nissl staining showed no bleeding or tissue damage seven days after stimulation.",
+ "exposures": [
+  {
+   "label": "LIPUS of left cortex and hippocampus, PRF 1 kHz and 10 Hz",
+   "target": {
+    "terms": [
+     "cerebral_cortex",
+     "hippocampus",
+     "CA1",
+     "CA3"
+    ],
+    "label": "left cortex and hippocampus (including CA1 and CA3)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "in-house (Shenzhen Institutes of Advanced Technology)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3600,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 612,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.3787
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     10,
+     1000
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "PRF 1 kHz (or 10 Hz), duty cycle 50%, burst duration (BD) 1 s, interstimulus interval 4 s (text) for 30 min/day for seven consecutive days; the Fig. 1 legend gives ISI = 3 s. Behavioural tests and c-Fos used the 1-kHz PRF only."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "29 mice (Control: $n = 1 1$ , Sham: $n = 8 ,$ and 1-kHz PRF: $n ~ = ~ 1 0 )$ were used for behavioral testing.",
+   "n_sessions_per_subject": "for 30 min/day with a continuous treatment for seven-day",
+   "exposures[0].fundamental_frequency_khz": "A 3.6-MHz focused transducer (diameter: 12 mm) was manufactured by our lab",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulus waveforms: fundamental frequency $( \\mathsf { F F } ) = 3 . 6$ MHz, pulse repetition frequency $( \\mathsf { P R F } ) = 1 0$ Hz (10-Hz PRF)/1 kHz (1-kHz PRF)",
+   "exposures[0].timing.duty_cycle_pct": "Based on our previous study, it was found that ultrasound stimulation with a PRF of 1 kHz, duty cycle (DC) of 50%, burst duration (BD) of 1 s, and interstimulus interval (ISI) of 4 s for 30 min/day with a continuous treatment for seven-day 1-kHz PRF (PRF 1 kHz) had a neuroprotective effect in the PD model [16].",
+   "exposures[0].timing.sonication_duration_s": "Based on our previous study, it was found that ultrasound stimulation with a PRF of 1 kHz, duty cycle (DC) of 50%, burst duration (BD) of 1 s, and interstimulus interval (ISI) of 4 s for 30 min/day with a continuous treatment for seven-day 1-kHz PRF (PRF 1 kHz) had a neuroprotective effect in the PD model [16].",
+   "exposures[0].unspecified_domain.pressure_kpa": "the negative peak acoustic pressure (0.612 MPa) caused by ultrasound stimulation",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Both the mechanical index (MI  0.32) and the spatial-peak temporal-average intensity $\\mathrm { ( I s p t a = 3 7 8 . 7 0 ~ m W / c m ^ { 2 } ) }$ were well below",
+   "exposures[0].device.manufacturer": "A 3.6-MHz focused transducer (diameter: 12 mm) was manufactured by our lab",
+   "exposures[0].device.model": "A 3.6-MHz focused transducer (diameter: 12 mm) was manufactured by our lab",
+   "exposures[0].target.label": "was mounted on the skull with the center of the collimator facing the left cortex and hippocampus (AP: 2.0 mm and ML: 1.8 mm), including CA1 and CA3."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "'Burst duration' of 1 s is the train; pulse duration not stated (DC 50% at 1 kHz would imply 0.5 ms but not computed)"
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Text gives ISI 4 s; Fig. 1 legend states ISI = 3 s"
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.612 MPa described as negative peak acoustic pressure in the safety discussion; domain not stated (Fig. 1d shows about 65% skull attenuation)"
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "378.70 mW/cm2 converted to W/cm2; domain not stated"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "76 mice total, split across several assays with different group sizes and a no-KA control group"
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Fig. 1 legend also lists 3.6 MHz fundamental frequency"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

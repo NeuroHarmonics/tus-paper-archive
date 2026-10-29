@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021lee",
+ "doi": "10.1109/tuffc.2020.3014183",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site",
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "Wong-Baker thermal pain rating; ultrasound displacement imaging of the median nerve",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "In one subject, FUS on the median nerve lowered thermal pain ratings by 0.9643 units versus sham without significance (p = 0.0547); off-target ratings were about 1 higher than on-target.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS on the median nerve, forearm",
+   "target": {
+    "terms": [
+     "median_nerve"
+    ],
+    "label": "median nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "SonicConcepts, Bothell, WA, USA",
+    "model": "four element, 1.1-MHz FUS transducer (driven by Verasonics Vantage)"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     5600,
+     7900
+    ],
+    "isppa_w_cm2": 29.4,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.005,
+    "protocol_description": "A 5-ms FUS pulse built from 70 consecutive 71-microsecond bursts without interval between bursts (a 17-microsecond gap between bursts from electronics; the authors call it a pseudo-CW push), delivered concurrently with a 2-s heat stimulus; 7 FUS pulses per subject for displacement."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "All human subjects (n 5) were recruited acquired in accordance with the 2013 Declaration of Helsinki.",
+   "exposures[0].device.manufacturer": "The other 128 elements were connected to an RF matching box for a four element, 1.1-MHz FUS transducer (SonicConcepts, Bothell, WA, USA).",
+   "exposures[0].device.model": "The other 128 elements were connected to an RF matching box for a four element, 1.1-MHz FUS transducer (SonicConcepts, Bothell, WA, USA).",
+   "exposures[0].fundamental_frequency_khz": "The other 128 elements were connected to an RF matching box for a four element, 1.1-MHz FUS transducer (SonicConcepts, Bothell, WA, USA).",
+   "exposures[0].in_situ.pressure_kpa": "Varying levels of displacement for the five subjects were measured using a 5-ms FUS pulse (5.6- and 7.9-MPa peak rarefactional pressure).",
+   "exposures[0].in_situ.isppa_w_cm2": "Derated peak negative pressures used in phantoms were under 10.9-MPa peak negative pressure $( \\mathrm { M I } = 1 0 . 1 $ $7 2 . 3  { \\mathrm { ~ \\textrm ~ { ~ ~ } ~ } }  { \\mathrm { W / c m ^ { 2 } } }  { I _ { \\mathrm { S P P A } } } )$ and under 7.9 MPa (MI 7.5, $2 9 . 4 \\ \\mathrm { W / c m ^ { 2 } } \\ I _ { \\mathrm { S P P A } } )$ in humans.",
+   "exposures[0].timing.sonication_duration_s": "Therefore, to generate an image at 41 mm from the transducer face (aperture of 9.94 mm), the TOF (71 μs) sets the extended FUS burst to be an integer multiple of the TOF. To reach a burst pulse duration of 5 ms, matching pulse durations seen in previous PNS neuromodulation studies, 70 bursts of ultrasound without interval between pulse trains were transmitted during the FUS push."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensity text garbled by OCR (MI 7.5, 29.4 W/cm2 Isppa) and the MI value looks inconsistent with 7.9 MPa at 1.1 MHz; recorded as printed."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Derated 'under 7.9 MPa' is an upper bound for humans; 7.9 MPa converted to 7900 kPa."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "5.6 and 7.9 MPa peak rarefactional pressures given without domain."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Gapless 5-ms burst with 17-us gaps; authors call it pseudo-CW; classified continuous."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n = 5 for displacement targeting; neuromodulation (pain rating) in a single subject (n = 1)."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulations were 'no FUS and off target FUS'; no-FUS mechanism not described."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "5 ms converted to 0.005 s."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

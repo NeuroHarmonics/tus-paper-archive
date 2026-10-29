@@ -1,0 +1,232 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024leeb",
+ "doi": "10.1109/tbme.2024.3352025",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy",
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  2,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "behaviour"
+ ],
+ "readout_other": "Functional ultrasound CBV imaging of S1HL (40 MHz), resting-state functional connectivity, von Frey testing, paw motion video analysis",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "FUS to the sciatic nerve evoked paw movement and increased CBV in contralateral hind-limb S1; in spared nerve injury mice FUS stabilised the CBV rise to repeated electrical stimulation, a trend that did not reach significance.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS to the sciatic nerve (3.1 MHz)",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "the sciatic nerve"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 9570,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 3.2,
+    "ispta_w_cm2": 0.0032
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": [
+     1,
+     10
+    ],
+    "duty_cycle_pct": [
+     0.1,
+     1
+    ],
+    "sonication_duration_s": 10,
+    "protocol_description": "One 1 ms FUS pulse per muscle activation; wild-type mice received a train of 5 pulses at 1 Hz, neuropathic pain mice a 10 Hz train for 10 s delivered during paired electrical paw stimulation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "For experiments with wild-type mice: n = 10 total (n = 2 whisker stimulation, n = 3 electric paw stimulation, n = 3 FUS stimulation, n = 2 FUS + electrical stimulation).",
+   "exposures[0].fundamental_frequency_khz": "FUS was performed using a 3.1 MHz focused transducer.",
+   "exposures[0].in_situ.pressure_kpa": "To elicit a compound muscle activation, one single 1 ms, 9.57 MPa derated rarefactional pressure FUS pulse was delivered to the sciatic nerve non-invasively.",
+   "exposures[0].timing.pulse_duration_ms": "To elicit a compound muscle activation, one single 1 ms, 9.57 MPa derated rarefactional pressure FUS pulse was delivered to the sciatic nerve non-invasively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Once positioning was sufficient to elicit robust and continuous neuromodulation, a train of 5 pulses using the previously defined parameters at 1 Hz was used during the fUS imaging experiments (Supplemental Video S4). For neuropathic pain mice, PRF was increased to 10 Hz and the sonication duration to 10 s (0.1% DC effective).",
+   "exposures[0].timing.duty_cycle_pct": "FUS sonication parameters (9.57 MPa (derated), 10 Hz, 10 seconds, 1% DC)",
+   "exposures[0].timing.sonication_duration_s": "Once positioning was sufficient to elicit robust and continuous neuromodulation, a train of 5 pulses using the previously defined parameters at 1 Hz was used during the fUS imaging experiments (Supplemental Video S4). For neuropathic pain mice, PRF was increased to 10 Hz and the sonication duration to 10 s (0.1% DC effective).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The maximum I , I , and mechanical index used in the study were 3.2 mW/cm2, 3.2 W/cm2, and 5.65, respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The maximum I , I , and mechanical index used in the study were 3.2 mW/cm2, 3.2 W/cm2, and 5.65, respectively."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Wild-type (10) and SNI (9) group totals given separately; some wild-type mice received only whisker or electrical stimulation, and not all SNI mice were sonicated, so the list is not the number exposed to FUS."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Described as a derated rarefactional pressure; derating method and medium not stated, so recorded as in_situ derating."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Subscripts lost in the text extraction (I , I); order assumed ISPTA 3.2 mW/cm2 then ISPPA 3.2 W/cm2; values look inconsistent with 9.57 MPa, so treat with caution."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Stated as 3.2 mW/cm2; converted to 0.0032 W/cm2. Subscripts lost in the text."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Paper gives 0.1% DC (wild-type, and also '0.1% DC effective' for the 10 Hz protocol in Methods) and 1% DC for the 10 Hz, 10 s protocol in Results; 10 Hz x 1 ms would be 1%. Recorded as the two stated values."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "10 s applies to the neuropathic pain protocol; the wild-type protocol is a train of 5 pulses at 1 Hz with no duration stated."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Single 1 ms pulses; wild-type train of 5 pulses at 1 Hz, neuropathic pain mice 10 Hz for 10 s."
+   },
+   {
+    "field": "sham_type",
+    "reason": "FUS-sham groups are described only as groups without FUS; mechanism not given."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No transducer maker named; only a 3.1 MHz focused transducer, with an Agilent function generator and E&I amplifier."
+   },
+   {
+    "field": "conditions",
+    "reason": "Healthy wild-type mice plus spared nerve injury (neuropathic pain) mice."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

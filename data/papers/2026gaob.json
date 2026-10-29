@@ -1,0 +1,249 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026gaob",
+ "doi": "10.1016/j.brs.2026.103151",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar, Hsd:WI)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 34,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "tactile-evoked potentials; multi-unit activity in S1 and POm with optogenetic tagging",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "High PRF, high duty cycle and high pressure (3 kHz, 60%, 163 kPa) increased the tactile-evoked N22 and POm RSU response; low PRF, low duty cycle and low pressure (30 Hz, 0.6%, 98 kPa) decreased it.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Temperature rise was measured during 500 consecutive tFUS trials (Table 1).",
+ "exposures": [
+  {
+   "label": "tFUS to S1 during hind-paw vibration",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc., Bothell, WA, USA",
+    "model": "H276 128-element random array; driven by Verasonics Vantage 128"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     98,
+     163
+    ],
+    "isppa_w_cm2": [
+     0.1092,
+     0.18163
+    ],
+    "ispta_w_cm2": [
+     0.00066,
+     0.00109,
+     0.03276,
+     0.05449,
+     0.06552,
+     0.10898
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     30,
+     3000,
+     1500
+    ],
+    "duty_cycle_pct": [
+     0.6,
+     60,
+     30
+    ],
+    "sonication_duration_s": [
+     0.067,
+     0.1
+    ],
+    "protocol_description": "Inter-sonication interval 2.5 s with 10% jitter; ultrasound duration 100 ms with tactile stimulation or 67 ms tFUS only; 250 trials per recording with tactile stimulation, 500 tFUS only; 30 Hz/0.6% and 3 kHz/60% each at low and high pressure, randomised order."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "neither",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Vibration-tactile stimulation reliably evoked responses in both S1 and POm, as evidenced by clear tactile-evoked potentials (TEPs; Fig. 2A, N = 34 rats).",
+   "exposures[0].fundamental_frequency_khz": "The customized 128-element random array ultrasound transducer H276 (f<sub>0</sub>: 1.5 MHz, -3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts, Inc., Bothell, WA, USA) was used.",
+   "exposures[0].in_situ.pressure_kpa": "To mimic the in-vivo experimental setup, a rat skull sample was placed in degassed water, with the transducer placed vertically over the skull and the hydrophone measuring the ultrasound pressure beneath the skull. The peak-to-peak in-situ ultrasound pressure magnitude with beam steering was 98 kPa for the low-pressure level (Fig. 1C) and 163 kPa for the high-pressure level (Fig. 1D) and spatial-peak temporal average (I<sub>SPTA</sub>) was 32.76 $\\mathrm { \\ m W / c m ^ { 2 } }$ and 54.49 $\\mathrm { \\ m W / c m ^ { 2 } }$ respectively with 1500 Hz PRF, 30% DC and 67 ms UD. All tFUS parameters used in this study are summarized in Table 1.",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td>tFUS conditionsb</td><td>Pressure</td><td>ISPTA (mW/ cm²)</td><td>ISPPA (mW/ cm2)</td><td>MI</td><td>Temperature rise (°C)</td></tr><tr><td>PRF 30Hz DC 0.6%</td><td>98 kPa</td><td>0.66</td><td>109.2</td><td>0.08</td><td> $0 . 0 8 \\pm 0 . 0 3$ </td></tr><tr><td>PRF 30Hz DC 0.6%</td><td>163 kPa</td><td>1.09</td><td>181.63</td><td>0.16</td><td> $0 . 0 4 \\pm 0 . 0 2$ </td></tr><tr><td>PRF 30Hz DC 60%</td><td>98 kPa</td><td>65.52</td><td>109.2</td><td>0.08</td><td> $0 . 2 9 \\pm 0 . 0 6$ </td></tr><tr><td>PRF 1500Hz DC 30%</td><td>98 kPa</td><td>32.76</td><td>109.2</td><td>0.08</td><td> $0 . 1 3 \\pm 0 . 1 0$ </td></tr><tr><td>PRF 1500Hz DC 30%</td><td>163 kPa</td><td>54.49</td><td>181.63</td><td>0.16</td><td> $0 . 1 7 \\pm 0 . 1 0$ </td></tr><tr><td>PRF 3000Hz DC 60%</td><td>98 kPa</td><td>65.52</td><td>109.2</td><td>0.08</td><td> $0 . 0 9 \\pm 0 . 0 3$ </td></tr><tr><td>PRF 3000Hz DC 60%</td><td>163 kPa</td><td>108.98</td><td>181.63</td><td>0.16</td><td> $0 . 2 6 \\pm 0 . 0 4$ </td></tr><tr><td>PRF 3000Hz DC 0.6%</td><td>98 kPa</td><td>0.66</td><td>109.2</td><td>0.08</td><td> $- 0 . 0 2 \\pm 0 . 0 6$ </td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The inter-sonication interval (ISI) was set at 2.5s with 10% jitter to avoid neuronal adaptation to fixed ISI. Ultrasound duration (UD) was set at 100 ms with vibration stimulation or 67 ms for tFUS only. Pulse repetitive frequency (PRF) and duty cycle (DC) tested in this study were 30Hz PRF with 0.6% DC and 3kHz PRF with 60% DC. Pulse duration (PD) were calculated by PRF\\*DC. (C-D) Ex-vivo hydrophone peak-to-peak pressure amplitude z-axis (upper) and y-axis (bottom) scan at the estimated targeted brain region with low pressure (C, \\~98 kPa) and high pressure (D, \\~163 kPa).",
+   "exposures[0].timing.duty_cycle_pct": "The inter-sonication interval (ISI) was set at 2.5s with 10% jitter to avoid neuronal adaptation to fixed ISI. Ultrasound duration (UD) was set at 100 ms with vibration stimulation or 67 ms for tFUS only. Pulse repetitive frequency (PRF) and duty cycle (DC) tested in this study were 30Hz PRF with 0.6% DC and 3kHz PRF with 60% DC. Pulse duration (PD) were calculated by PRF\\*DC. (C-D) Ex-vivo hydrophone peak-to-peak pressure amplitude z-axis (upper) and y-axis (bottom) scan at the estimated targeted brain region with low pressure (C, \\~98 kPa) and high pressure (D, \\~163 kPa).",
+   "exposures[0].timing.sonication_duration_s": "The inter-sonication interval (ISI) was set at 2.5s with 10% jitter to avoid neuronal adaptation to fixed ISI. Ultrasound duration (UD) was set at 100 ms with vibration stimulation or 67 ms for tFUS only.",
+   "exposures[0].device.manufacturer": "The customized 128-element random array ultrasound transducer H276 (f<sub>0</sub>: 1.5 MHz, -3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts, Inc., Bothell, WA, USA) was used.",
+   "exposures[0].device.model": "The customized 128-element random array ultrasound transducer H276 (f<sub>0</sub>: 1.5 MHz, -3 dB axial specificity: 1.36 mm and lateral specificity: 0.46 mm, manufactured by Sonic Concepts, Inc., Bothell, WA, USA) was used.",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td>tFUS conditionsb</td><td>Pressure</td><td>ISPTA (mW/ cm²)</td><td>ISPPA (mW/ cm2)</td><td>MI</td><td>Temperature rise (°C)</td></tr><tr><td>PRF 30Hz DC 0.6%</td><td>98 kPa</td><td>0.66</td><td>109.2</td><td>0.08</td><td> $0 . 0 8 \\pm 0 . 0 3$ </td></tr><tr><td>PRF 30Hz DC 0.6%</td><td>163 kPa</td><td>1.09</td><td>181.63</td><td>0.16</td><td> $0 . 0 4 \\pm 0 . 0 2$ </td></tr><tr><td>PRF 30Hz DC 60%</td><td>98 kPa</td><td>65.52</td><td>109.2</td><td>0.08</td><td> $0 . 2 9 \\pm 0 . 0 6$ </td></tr><tr><td>PRF 1500Hz DC 30%</td><td>98 kPa</td><td>32.76</td><td>109.2</td><td>0.08</td><td> $0 . 1 3 \\pm 0 . 1 0$ </td></tr><tr><td>PRF 1500Hz DC 30%</td><td>163 kPa</td><td>54.49</td><td>181.63</td><td>0.16</td><td> $0 . 1 7 \\pm 0 . 1 0$ </td></tr><tr><td>PRF 3000Hz DC 60%</td><td>98 kPa</td><td>65.52</td><td>109.2</td><td>0.08</td><td> $0 . 0 9 \\pm 0 . 0 3$ </td></tr><tr><td>PRF 3000Hz DC 60%</td><td>163 kPa</td><td>108.98</td><td>181.63</td><td>0.16</td><td> $0 . 2 6 \\pm 0 . 0 4$ </td></tr><tr><td>PRF 3000Hz DC 0.6%</td><td>98 kPa</td><td>0.66</td><td>109.2</td><td>0.08</td><td> $- 0 . 0 2 \\pm 0 . 0 6$ </td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Peak-to-peak pressure measured with a hydrophone beneath an ex vivo rat skull in water, not in the brain of the experimental animals; pressures 98 and 163 kPa."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "The text gives Ispta 32.76 and 54.49 mW/cm2 for the 1500 Hz, 30% DC condition only; the table lists other values by condition. Converted from mW/cm2 to W/cm2."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa (109.2 and 181.63 mW/cm2) is taken from Table 1 with no domain stated; converted to W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Figure legend says pulse duration was calculated from PRF and DC; no value stated, so not recorded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Text and Table 1 also include a 30 Hz/60% and 3 kHz/0.6% condition, and 1500 Hz/30% appears in Table 1 and the in situ sentence; list is of PRFs seen."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "100 ms with vibration; 67 ms for tFUS only."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham ultrasound; tactile stimulation alone served as the comparison within the same animals."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Discussion argues auditory confound is unlikely citing prior work; no control in this study."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "N = 34 rats for tactile responses; virus groups N = 10, 12, 12 (sum 34). Not all rats received every tFUS condition."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "neither",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "first",
+   "exposures[0].timing.duty_cycle_pct": "first"
+  }
+ }
+}

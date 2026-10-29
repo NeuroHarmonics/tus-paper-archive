@@ -1,0 +1,233 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025lee",
+ "doi": "10.1088/1741-2552/ade7ae",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 22,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "whole-cell patch clamp (action potential firing rate, membrane potential)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Inhibition (hyperpolarisation, reduced firing) in 30% of cells, most pronounced at 60 Vpp, 35 kcycles/pulse, 100 Hz PRF (60% success); excitation in 15% of cells, e.g. 120 Vpp, 50 kcycles/pulse, 20 Hz PRF, associated with larger temperature rises and also seen with the FUS-blocking control.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "SFAT FUS to CA1 pyramidal neurons in hippocampal slices",
+   "target": {
+    "terms": [
+     "CA1",
+     "brain_slice"
+    ],
+    "label": "pyramidal neuron in hippocampus CA1"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "MEMS self-focusing acoustic transducer (SFAT), 127 um PZT, 15 Fresnel rings"
+   },
+   "fundamental_frequency_khz": 18400,
+   "free_field": {
+    "pressure_kpa": [
+     160,
+     262,
+     524
+    ],
+    "isppa_w_cm2": [
+     0.94,
+     2.11,
+     8.44
+    ],
+    "ispta_w_cm2": [
+     0.001,
+     1.031
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.27,
+     3.53
+    ],
+    "pulse_repetition_frequency_hz": [
+     1,
+     200
+    ],
+    "duty_cycle_pct": [
+     0.54,
+     50.8
+    ],
+    "sonication_duration_s": 30,
+    "protocol_description": "FUS applied to the patched neuron for 30 s, followed by a 2 min rest; PRF, cycles per pulse (5k to 65k) and voltage (40, 60, 120 Vpp) swept; up to 15 stimuli per neuron; 39 parameter sets."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "<table><tr><td>Device type</td><td>Inhibition</td><td>Excitation</td><td>No response</td><td>Total events</td><td>Number of tissues (m)</td><td>Number of animals (n)</td></tr><tr><td>Total</td><td>99 (30%)</td><td>48 (15%)</td><td>176 (55%)</td><td>323</td><td>78</td><td>29</td></tr><tr><td>Active device</td><td>92 (33%)</td><td>42 (15%)</td><td>147 (52%)</td><td>281</td><td>67</td><td>22</td></tr><tr><td>FUS-blocking control device</td><td>7 (16%)</td><td>6 (14%)</td><td>29 (70%)</td><td>42</td><td>11</td><td>7</td></tr></table>",
+   "exposures[0].fundamental_frequency_khz": "With the SFAT operating at 18.4 MHz, we have successfully carried out 323 whole-cell patch clamp experiments on pyramidal neurons in the CA1 region of hippocampal slices from Sprague Dawley rats with a variety of pulsed FUS parameters such as peak-topeak voltage, PRF, and pulse duration or the number of cycles per pulse.",
+   "exposures[0].free_field.isppa_w_cm2": "To investigate PRF dependency, the inhibition rate is calculated with the different PRF values of5, 20, 50, and 100 Hz, while the number of cycles per pulse fixed at 5 k, 20 k, 35 k, 45 k, and 65 k, corresponding to the pulse duration of0.27, 1.09, 1.90, 2.45, and 3.53 ms, respectively. For each PRF, the inhibition rate is averaged across all tested numbers ofcycles, and the average rates, along with their minimum and maximum ranges, are plotted in figure 6(a). This analysis is performed at three different voltage levels (40, 60, and $1 2 0 V _ { \\mathrm { p p } } \\ \\mathrm { o r } \\ I _ { \\mathrm { S A P A } } = 0 . 9 4 , 2 . 1 1 , 8 . 4 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 } )$ with the results shown in separate panels in figure 6(a). The top panel presents the overall average inhibition rate across all voltage levels. For example, the first bar in the top plot represents the average inhibition rate at PRF = 5 Hz, where the number of cycles is swept from 5 k to 65 k across all voltage conditions. At PRF = 5 Hz, the averaged inhibition rate across all pulse durations was 13.16% (10 inhibited cases out of 76 total trials), while the maximum inhibition rate of 28.57% (2 out of 7) and the minimum rate of 7.69% (1 out of 13) were observed at 45 k and 35 k cycles, respectively. These maximum and minimum values are represented by the error bars in each bar plot.",
+   "exposures[0].free_field.ispta_w_cm2": "Using equation (4), I<sub>SPTA</sub> values are computed to span from 1 to 1031 mW $\\mathrm { c m } ^ { - 2 } .$ The ultrasound stimulation parameters are mostly within the FDA safety guidelines for ultrasound in biomedical application $( I _ { \\mathrm { S P P A } } ~ < 1 9 0 ~ \\mathrm { W } ~ \\mathrm { c m } ^ { - 2 }$ and $I _ { \\mathrm { S P T A } } < 7 2 0 \\mathrm { ~ m W ~ c m } ^ { - 2 } )$ [45], although current FDA approval applies mostly to ablative procedures like pallidotomy, not neuromodulation.",
+   "exposures[0].free_field.pressure_kpa": "<table><tr><td>Peak to peak voltage amplitude  $( V _ { \\mathrm { p p } } )$ </td><td>Spatial average Pulsed average acoustic intensity, ISAPA  $( W \\mathrm { c m } ^ { - 2 } )$ </td><td>Spatial average Pulsed average acoustic intensity,  $I _ { \\mathrm { S A P A } }$  (kPa)</td><td>Pulse repetitive</td><td>Number of</td><td>Duty cycle</td><td>Spatial average time aver- age acoustic intensity, ISATA  $\\mathrm { ( m W ~ c m } ^ { - 2 } \\mathrm { ) }$ </td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>frequency (Hz) 20</td><td>cycles per pulse 5000–65 000</td><td>(%) 0.54-7.07</td><td>5.09–66.22</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>20</td><td>5000–65 000</td><td>0.54-7.07</td><td>13.45-174.86</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>20</td><td>5000-65 000</td><td>0.54-7.07</td><td>42.10–547.36</td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>330</td><td>30 000</td><td>50.80</td><td>504.30</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>120</td><td>30 000</td><td>19.56</td><td>499.25</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>40</td><td>30 000</td><td>6.52</td><td>505.25</td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>10-200</td><td>45 000</td><td>2.45-48.91</td><td>22.92–458.45</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>5-200</td><td>45 000</td><td>1.22-48.91</td><td>25.78–1031.52</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>5-50</td><td>45 000</td><td>1.22-12.23</td><td>94.74–947.35</td></tr></table>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In our experiments, various PRFs are tested, ranging from 1 Hz to 200 Hz, with the number of cycles per pulse varying between 5 k and 65 k cycles per pulse.",
+   "exposures[0].timing.pulse_duration_ms": "To investigate PRF dependency, the inhibition rate is calculated with the different PRF values of5, 20, 50, and 100 Hz, while the number of cycles per pulse fixed at 5 k, 20 k, 35 k, 45 k, and 65 k, corresponding to the pulse duration of0.27, 1.09, 1.90, 2.45, and 3.53 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The FUS stimulation with varying parameters is applied to the patched neuron for 30 s, followed by a 2 min resting period that allows cells to recover from any potential thermal effects induced by the ultrasound.",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td>Peak to peak voltage amplitude  $( V _ { \\mathrm { p p } } )$ </td><td>Spatial average Pulsed average acoustic intensity, ISAPA  $( W \\mathrm { c m } ^ { - 2 } )$ </td><td>Spatial average Pulsed average acoustic intensity,  $I _ { \\mathrm { S A P A } }$  (kPa)</td><td>Pulse repetitive</td><td>Number of</td><td>Duty cycle</td><td>Spatial average time aver- age acoustic intensity, ISATA  $\\mathrm { ( m W ~ c m } ^ { - 2 } \\mathrm { ) }$ </td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>frequency (Hz) 20</td><td>cycles per pulse 5000–65 000</td><td>(%) 0.54-7.07</td><td>5.09–66.22</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>20</td><td>5000–65 000</td><td>0.54-7.07</td><td>13.45-174.86</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>20</td><td>5000-65 000</td><td>0.54-7.07</td><td>42.10–547.36</td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>330</td><td>30 000</td><td>50.80</td><td>504.30</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>120</td><td>30 000</td><td>19.56</td><td>499.25</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>40</td><td>30 000</td><td>6.52</td><td>505.25</td></tr><tr><td>40</td><td>0.94</td><td>160</td><td>10-200</td><td>45 000</td><td>2.45-48.91</td><td>22.92–458.45</td></tr><tr><td>60</td><td>2.11</td><td>262</td><td>5-200</td><td>45 000</td><td>1.22-48.91</td><td>25.78–1031.52</td></tr><tr><td>120</td><td>8.44</td><td>524</td><td>5-50</td><td>45 000</td><td>1.22-12.23</td><td>94.74–947.35</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensities are spatial-average pulse-average (ISAPA), not spatial-peak, because the hydrophone was larger than the focus. Text gives 0.44, 2.11, 8.44 W/cm2 for 40, 60, 120 Vpp but Table 2 gives 0.94 W/cm2 for 40 Vpp; recorded the text list. Measurements made on a longer-focal-length SFAT in a water tank."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Only the 40 Vpp pressure (0.16 MPa) is stated in text; Table 2 has a column headed ISAPA (kPa) listing 160, 262, 524 for 40, 60, 120 Vpp. Value recorded is for the lowest voltage only."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "ISATA (spatial-average time-average) range of 1 to 1031 mW/cm2 over all parameter sets, called ISPTA in this sentence."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycles are given per row in Table 2 (0.54 to 50.80 percent across sweeps); no single quotable range, so left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse durations stated for 5k to 65k cycles per pulse (0.27 to 3.53 ms); table cycle counts range up to 65 000."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Text says 1-200 Hz; Table 2 lists 5-200 Hz at some voltages."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "30 s of FUS followed by a 2 min rest; up to 15 stimuli per cell."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "29 animals, 78 slices, 323 experimental events; 22 animals for active devices and 7 for FUS-blocking control."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Both inhibition (30%) and excitation (15%) observed; excitation likely thermal (similar rate in the FUS-blocking control)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].timing.duty_cycle_pct": "second"
+  }
+ }
+}

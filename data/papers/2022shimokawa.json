@@ -1,0 +1,212 @@
+{
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  5,
+  11
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": [
+  1,
+  6
+ ],
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "other_mri"
+ ],
+ "readout_other": "ADAS-J cog (primary); CDR sum of boxes; NPIQ-J; J-ZBI; WMS-R; MMSE-J; FAQ; safety MRI",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Worsening of ADAS-J cog tended to be suppressed in the LIPUS group versus placebo at week 72, not statistically significant (P = 0.257).",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse events or abnormal MRI findings in the roll-in or RCT trials; MRI at 12 weeks (roll-in) and 72 weeks (RCT).",
+ "exposures": [
+  {
+   "label": "Whole-brain LIPUS via bilateral temporal bones",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "whole brain through the bilateral temporal bones"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": [
+     150,
+     190
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     500,
+     1000,
+     1300
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.064,
+    "pulse_repetition_frequency_hz": 781,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1200,
+    "protocol_description": "LIPUS 20 min, 3 times with a 5 min interval each time; one session is therapy every other day for 3 days; 32 cycles per pulse, duty cycle 5%, PRF 781 Hz (interval 1.28 msec). RCT: 6 sessions at 3-month intervals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 4.998,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2022shimokawa",
+ "doi": "10.1620/tjem.2022.j078",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In the RCT trial, where 22 patients were initially enrolled (11 in each group), 3 in the placebo group withdrew the consent, and thus 11 in the LIPUS group and 8 in the placebo group received the blinded procedure (Fig. 2, Table 1).",
+   "n_sessions_per_subject": "The LIPUS therapy was performed for one session in the roll-in trial, and 6 sessions in the RCT trial with 3-month intervals for 1.5 years.",
+   "exposures[0].fundamental_frequency_khz": "In the RCT trial, the conditions of the LIPUS therapy were as follows; frequency 0.5MHz, intensity 1.3MPa, wave number 32, duty cycle 5%, and pulse repetitive frequency (PRF) 781Hz with an interval of 1.28 msec",
+   "exposures[0].unspecified_domain.pressure_kpa": "In the roll-in trial, the LIPUS therapy was performed for one session during admission under increasing condition of intensity from 0.5 MPa in one subject, 1.0 MPa in 2 subjects, and 1.3 MPa in 2 subjects",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In the RCT trial, the conditions of the LIPUS therapy were as follows; frequency 0.5MHz, intensity 1.3MPa, wave number 32, duty cycle 5%, and pulse repetitive frequency (PRF) 781Hz with an interval of 1.28 msec",
+   "exposures[0].timing.duty_cycle_pct": "In the RCT trial, the conditions of the LIPUS therapy were as follows; frequency 0.5MHz, intensity 1.3MPa, wave number 32, duty cycle 5%, and pulse repetitive frequency (PRF) 781Hz with an interval of 1.28 msec",
+   "exposures[0].timing.sonication_duration_s": "The LIPUS therapy was performed for 20 min 3 times with an interval of 5 min each time.",
+   "exposures[0].in_situ.pressure_kpa": "Briefly, this probe was set to have an Ispta of 0.15-0.19 MPa at the deepest part (hippocampus; depth of about 8 cm).",
+   "exposures[0].timing.pulse_duration_ms": "In the RCT trial, the conditions of the LIPUS therapy were as follows; frequency 0.5MHz, intensity 1.3MPa, wave number 32, duty cycle 5%, and pulse repetitive frequency (PRF) 781Hz with an interval of 1.28 msec (Fig. 1) (Eguchi et al. 2018)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Roll-in trial N = 5 and RCT enrolled N = 22 (19 analysed); total exposed not stated, group sizes listed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Roll-in escalated 0.5, 1.0, 1.3 MPa; RCT used 1.3 MPa. Domain not stated (the probe design text discusses Ispta values in MPa below the skull and at depth, not used here)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse described as 32 cycles at 0.5 MHz; a pulse duration in ms is not stated, so left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "20 min x 3 with 5 min intervals; unclear whether each 20 min is one uninterrupted train. The abstract also says 'one hour 3 times a week as one session'."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Convex diffusion-type probe developed by the group; maker not named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

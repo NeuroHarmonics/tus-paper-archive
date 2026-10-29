@@ -1,0 +1,229 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026ratz",
+ "doi": "10.64898/2026.09.10.750612",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "fiber photometry of GRABDA2m dopamine sensor in nucleus accumbens; ED1 and GFAP immunohistochemistry; Evans Blue BBB opening for targeting",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Stimulation of the VTA at 10% duty cycle and 2.5 s sonication produced a significant post-stimulation increase in nucleus accumbens dopamine versus sham; 2.5% and 5% duty cycles produced no significant increase.",
+ "adverse_events": "observed",
+ "safety_notes": "Superficial cortical damage from the skull screws fixing the chip was seen; no inflammation or tissue damage at the VTA target; temperature rise of the device below 1 C at 10% duty cycle (about 6 C at 50%) in bench testing.",
+ "exposures": [
+  {
+   "label": "epidural eFUS to VTA (parameter sets p1-p5 analysed in detail)",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "the left VTA"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "eFUS device (CMOS ASIC with integrated 2D PZT array)"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     260,
+     574
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.025,
+     0.05,
+     0.1,
+     0.2,
+     0.5
+    ],
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     2.5,
+     5,
+     10,
+     20,
+     50
+    ],
+    "sonication_duration_s": [
+     10,
+     5,
+     2.5,
+     1,
+     0.5
+    ],
+    "protocol_description": "Twelve parameter sets were tested; five (p1 to p5) analysed in detail all at PRF 1 kHz with DC 2.5, 5, 10, 20, 50% and SD 10, 5, 2.5, 1, 0.5 s. Each trial had a 30 s baseline, a sonication, and an inter-stimulus interval of at least 45 s, repeated 3 times per site."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Four male Sprague Dawley rats (Janvier Labs, France), aged 12 weeks were used in the study.",
+   "exposures[0].fundamental_frequency_khz": "The eFUS chips utilized in this study were designed for a fundamental frequency of 4 MHz, but individual characterization showed peak pressures varying between 3.7 and 4.0 MHz.",
+   "exposures[0].in_situ.pressure_kpa": "The parameters varied in pulse width (PW; 25 µs to 80.000 µs), pulse repetition frequency (PRF; 0.0025 kHz to 1.5 kHz), and duty cycle (DC; 2.5% to 50%), while the voltage was kept constant at 20 V and the peak pressure ranged between 0.26 and 0.574 MPa.",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td rowspan=1 colspan=1>p1</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>2.5</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>32.1</td></tr><tr><td rowspan=1 colspan=1>p2</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>31.1</td></tr><tr><td rowspan=1 colspan=1>p3</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>2.5</td><td rowspan=1 colspan=1>33.6</td></tr><tr><td rowspan=1 colspan=1>p4</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>35.1</td></tr><tr><td rowspan=1 colspan=1>p5</td><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>35.6</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Five parameter combinations (p1, PRF 1kHz, DC 2.5%, SD 10s; p2, PRF 1kHz, DC 5%, SD 5.0s; p3, PRF 1kHz, DC 10%, SD 2.5s; p4, PRF 1kHz, DC 20%, SD 1.0s; p5, PRF 1kHz, DC 50%, SD 0.5s) have been selected for detailed analysis.",
+   "exposures[0].timing.duty_cycle_pct": "Five parameter combinations (p1, PRF 1kHz, DC 2.5%, SD 10s; p2, PRF 1kHz, DC 5%, SD 5.0s; p3, PRF 1kHz, DC 10%, SD 2.5s; p4, PRF 1kHz, DC 20%, SD 1.0s; p5, PRF 1kHz, DC 50%, SD 0.5s) have been selected for detailed analysis.",
+   "exposures[0].timing.sonication_duration_s": "Five parameter combinations (p1, PRF 1kHz, DC 2.5%, SD 10s; p2, PRF 1kHz, DC 5%, SD 5.0s; p3, PRF 1kHz, DC 10%, SD 2.5s; p4, PRF 1kHz, DC 20%, SD 1.0s; p5, PRF 1kHz, DC 50%, SD 0.5s) have been selected for detailed analysis.",
+   "exposures[0].device.model": "The eFUS device comprises a $5 \\times 5 ~ \\mathsf { m m } ^ { 2 }$ CMOS ASIC fabricated in a 180-nm BCD process and a directly integrated two-dimensional PZT transducer array."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Four rats stated; one was excluded for misalignment and two further animals were used separately for BBB-opening targeting checks"
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.26 to 0.574 MPa is stated for all in vivo sets; intro says peak focal pressures were derived assuming 0.8 dB/cm/MHz brain attenuation from water measurements, so the domain is inferred as derated"
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Water-tank pressures are shown only as derated estimates or in figures; no free-field value for the in vivo exposures is given in the main text"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse width '25 µs to 80.000 µs' (European decimal separator, taken as 80 ms) is the range across all twelve sets, not only p1-p5"
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF 0.0025 to 1.5 kHz across twelve sets; p1-p5 all at 1 kHz"
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Range 2.5 to 50% across all sets"
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Designed 4 MHz; individual devices peaked between 3.7 and 4.0 MHz"
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper states there was no correction for a possible auditory confounder"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[0].timing.duty_cycle_pct": "disagree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.pulse_duration_ms": "second",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[0].timing.duty_cycle_pct": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018fisher",
+ "doi": "10.1088/1741-2552/aaaee1",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J; Thy1-GCaMP6f)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  4,
+  6,
+  2,
+  2
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "voltage-sensitive dye and GCaMP6f wide-field imaging; GFAP immunostaining; Evans blue extravasation",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "FUS preceding forelimb stimulation shortened onset latency by 3.0 ms at 0.69 W/cm2 (not at 3.5 W/cm2) and increased solidity and circularity of the Ca2+ response; FUS alone evoked no response.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No differential GFAP expression 24 h after sonication and no Evans blue extravasation at the neuromodulation intensity.",
+ "exposures": [
+  {
+   "label": "FUS to mouse forelimb S1, 510 kHz",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "forelimb's representation on primary somatosensory cortex"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "custom 16-element ring array (modified H-205B), TPO-106 driver"
+   },
+   "fundamental_frequency_khz": 510,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 170,
+    "isppa_w_cm2": [
+     0.69,
+     3.5
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "A 1 s burst of pulsed FUS (500 us pulses at 510 kHz, 1 kHz repetition rate) ending 200 ms before electrical forelimb stimulation and optical recording of 0.5 s; trials separated by 30 s. Pressure of 0.17 MPa given for the 0.69 W/cm2 condition."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Focused ultrasound was delivered by a custom transducer, shown in figure 2, that consisted of 16 elements aligned in a ring-shaped geometry, optimized at 510kHz (modified version of H-205B, Sonic Concepts, Inc., Bothell, WA).",
+   "exposures[0].timing.pulse_duration_ms": "For neuromodulation experiments, sonication consisted of a 1 s burst of pulsed FUS of focal intensity $I _ { \\mathrm { s p p a } } = 0 . 6 9 \\textrm { W c m } ^ { - 2 }$ (peak pressure at the focus 0.17MPa) wherein 500 µs pulses at center frequency 510kHz were delivered at a repetition rate of 1kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For neuromodulation experiments, sonication consisted of a 1 s burst of pulsed FUS of focal intensity $I _ { \\mathrm { s p p a } } = 0 . 6 9 \\textrm { W c m } ^ { - 2 }$ (peak pressure at the focus 0.17MPa) wherein 500 µs pulses at center frequency 510kHz were delivered at a repetition rate of 1kHz.",
+   "exposures[0].timing.sonication_duration_s": "For neuromodulation experiments, sonication consisted of a 1 s burst of pulsed FUS of focal intensity $I _ { \\mathrm { s p p a } } = 0 . 6 9 \\textrm { W c m } ^ { - 2 }$ (peak pressure at the focus 0.17MPa) wherein 500 µs pulses at center frequency 510kHz were delivered at a repetition rate of 1kHz.",
+   "exposures[0].unspecified_domain.pressure_kpa": "For neuromodulation experiments, sonication consisted of a 1 s burst of pulsed FUS of focal intensity $I _ { \\mathrm { s p p a } } = 0 . 6 9 \\textrm { W c m } ^ { - 2 }$ (peak pressure at the focus 0.17MPa) wherein 500 µs pulses at center frequency 510kHz were delivered at a repetition rate of 1kHz.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "We did not observe a significant reduction in response latency at a modestly higher FUS intensity $( I _ { \\mathrm { s p p a } } = 3 . 5 \\ \\mathrm { W } \\ \\mathrm { c m } ^ { - 2 }$ , versus 0.69 W $\\mathrm { c m } ^ { - 2 } )$ , although the sample size was smaller",
+   "exposures[0].device.manufacturer": "Focused ultrasound was delivered by a custom transducer, shown in figure 2, that consisted of 16 elements aligned in a ring-shaped geometry, optimized at 510kHz (modified version of H-205B, Sonic Concepts, Inc., Bothell, WA).",
+   "exposures[0].device.model": "Focused ultrasound was delivered by a custom transducer, shown in figure 2, that consisted of 16 elements aligned in a ring-shaped geometry, optimized at 510kHz (modified version of H-205B, Sonic Concepts, Inc., Bothell, WA).",
+   "n_subjects": "Peak fractional fluorescence normalized to baseline signals for all experiments (n = 7 for 0.69 W cm $^ { - 2 } , n = 4$ for 3.5 W cm $^ { - 2 } ) ,$ .",
+   "n_sessions_per_subject": "Additionally, the experiments presented here were terminal; VSD imaging can be utilized for chronic imaging applications (Slovin et  al 2002) and future longitudinal imaging studies could elucidate whether spatiotemporal alterations following repeated, brief FUS doses lead to persisting alterations."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes vary by experiment (n=7 and n=4 VSD, n=6 Ca2+, n=2 Evans blue) and no total is given; not_reported."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.17 MPa 'peak pressure at the focus' characterised with a hydrophone by the manufacturer; medium not stated, so kept unspecified."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; 500 us pulses at 1 kHz given."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Custom ring array described as a modified Sonic Concepts H-205B with a Sonic Concepts TPO-106 driver; family assigned by transducer maker."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

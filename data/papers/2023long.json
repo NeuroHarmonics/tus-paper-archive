@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023long",
+ "doi": "10.1016/j.ultras.2022.106887",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "nematode (Caenorhabditis elegans, N2 wild type and mutants)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "worm centre-of-mass tracking; response probability, crawling speed and acceleration",
+ "readout_timing": "both",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Amplitude-modulated ultrasound evoked reversal behaviour, strongest at modulation frequencies around 1 kHz; the unmodulated carrier did not, and mec-4 mutants responded weakly.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Agar temperature was monitored by thermocouple and stayed near 18.85 C in a single-R run; a thermotaxis-deficient mutant responded like wild type.",
+ "exposures": [
+  {
+   "label": "8.8 MHz surface-acoustic-wave stimulation with single and double amplitude modulation",
+   "target": {
+    "terms": [
+     "c_elegans_neurons"
+    ],
+    "label": "C. elegans moving on an agar slice (whole body exposed)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "interdigital transducer on 128-degree Y-X LiNbO3 (SAW device), 8.80 MHz central frequency"
+   },
+   "fundamental_frequency_khz": 8800,
+   "free_field": {
+    "pressure_kpa": 500,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "other_patterned"
+    ],
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     50,
+     100,
+     1000,
+     10000,
+     100000,
+     311000
+    ],
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "The 8.80 MHz carrier was amplitude modulated by rectangular or sinusoidal envelopes at modulation frequencies of 0.05 to 311 kHz (single-AM), or by two envelopes (double-AM, second at 1.00 kHz). Each worm received ten 200-ms exposures at 1-min intervals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "By loading surface acoustic waves (SAWs) onto free-moving worms on an agar surface, a carrier wave with a frequency of 8.80 MHz is selected.",
+   "exposures[0].timing.duty_cycle_pct": "The final signal sequence is equivalent to a pulsed signal of DC = 50 %",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<tr><td> $f _ { \\mathrm { m 1 } } \\left( \\mathrm { k H z } \\right)$ </td><td>0.05, 0.10, 1.00, 10.00, 100.00, 311.00</td><td>0.05, 100.00, 311.00</td></tr>",
+   "exposures[0].timing.sonication_duration_s": "Every nematode is subjected to 200-ms ultrasonic exposures ten times at an interval of 1 min.",
+   "exposures[0].free_field.pressure_kpa": "The effective acoustic pressure in the agar is estimated as about $p _ { e } = 0 . 5 \\pm 0 . 1 \\ \\mathrm { M P a }$ wherep<sub>e</sub> $= \\sqrt { 2 } \\pi \\rho _ { 0 } c _ { 0 } f _ { c } x _ { a } ,$ ρ<sub>0</sub> and $c _ { 0 }$ are the density and speed of sound in water, respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure is a rough estimate in agar derived from laser-vibrometer substrate displacement assuming water properties; the authors call it only a rough estimation. Domain not clearly free-field or in situ."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Values are the modulation frequencies fm1 (Table 1), listed as the PRF equivalent for rectangular modulation; for sinusoidal modulation there are no discrete pulses."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50 % applies to the single rectangular (single-R) protocol only; sinusoidal and double-AM have different envelopes."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; protocol is amplitude modulation of a carrier."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Worm numbers appear only in figure brackets, not in text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023seo",
+ "doi": "10.1016/j.medengphy.2023.104023",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (rhesus monkey)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "camcorder recording of induced tail, digit, mouth and tongue movement",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Tail, finger, thumb, jaw, lower lip and tongue movements were induced depending on focus position (200 um steps); response delay averaged 12 s.",
+ "adverse_events": "not_reported",
+ "safety_notes": "A 2D Pennes bioheat simulation gave a temperature rise of about 0.5 C at the focus after 60 s; no in vivo safety assessment is described.",
+ "exposures": [
+  {
+   "label": "Phased-array UNMOD of monkey motor cortex (tail, hand, mouth areas)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex areas related to tail, hand, and mouth"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonics, France",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 600,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.84
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.42
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 60,
+    "protocol_description": "Each stimulation was 1 min at a 5% duty factor and 100 Hz PRF; the focus was electronically steered in 200 um steps around reference points, with stimulation off for about 1 min between points."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The induction of high-resolution UNMOD was conducted on two subjects.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasonic parameters were I<sub>SPTA</sub> of 840 mW/cm , pulse repetition frequency of 100 Hz, and a 5% duty factor at 600 kHz.",
+   "exposures[0].free_field.ispta_w_cm2": "The ultrasound was sonicated for 1 min for each stimulation with an $\\mathrm { ( I _ { S P T A } ) }$ value of 840 $\\mathrm { { m W / c m ^ { 2 } } } ;$ , a 5% duty factor, and a 100-Hz PRF.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound was sonicated for 1 min for each stimulation with an $\\mathrm { ( I _ { S P T A } ) }$ value of 840 $\\mathrm { { m W / c m ^ { 2 } } } ;$ , a 5% duty factor, and a 100-Hz PRF.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound was sonicated for 1 min for each stimulation with an $\\mathrm { ( I _ { S P T A } ) }$ value of 840 $\\mathrm { { m W / c m ^ { 2 } } } ;$ , a 5% duty factor, and a 100-Hz PRF.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound was sonicated for 1 min for each stimulation with an $\\mathrm { ( I _ { S P T A } ) }$ value of 840 $\\mathrm { { m W / c m ^ { 2 } } } ;$ , a 5% duty factor, and a 100-Hz PRF.",
+   "exposures[0].device.manufacturer": "The transducer was professionally manufactured according to the design (Imasonics, France).",
+   "exposures[0].in_situ.ispta_w_cm2": "According to 2D simulation based on Pennes’s bioheat transfer equation [49,50] and tissue parameters given in references [51–53] with 420 mW/cm<sup>2</sup> intensity at focus, local temperature could increase close to 0.5 ◦C during extended sonication as can be seen in Fig. 4."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Paper says the intensity used was obtained from the basic calibration in water, so placed in free_field; the abstract prints the unit as 'mW/cm' without the square."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; not computed from duty factor and PRF."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Two subjects for tail experiments and two for digit-level experiments; assumed here to be the same animals only in the sense of 'two subjects' stated; not confirmed."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "A thermal simulation used 420 mW/cm2 at the focus, apparently after skull attenuation, but the paper does not state the domain; not recorded."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

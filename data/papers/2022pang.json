@@ -1,0 +1,336 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022pang",
+ "doi": "10.1109/tnsre.2022.3188516",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  48,
+  18
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "infrared thermal imaging of skin temperature; c-Fos immunofluorescence",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "UDBS of the POA reduced body temperature (up to about 0.84 C at 15 min) while UDBS of the DMH increased it (about 1.16 C at 10 min); c-Fos expression increased at both sites.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Cavitation and heating judged unlikely from MI and thermocouple measurements; no adverse events discussed.",
+ "exposures": [
+  {
+   "label": "POA stimulation",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "preoptic area of the anterior hypothalamus (POA)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Siansonic, Beijing",
+    "model": "PZT-8 focused transducer"
+   },
+   "fundamental_frequency_khz": 3740.0,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     388,
+     514,
+     751,
+     981
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": [
+     10,
+     30,
+     50
+    ],
+    "sonication_duration_s": 2,
+    "protocol_description": "Sonication duration 2 s and inter-stimulus interval 2 s repeated for a total time (TT) of 10-30 min, with PRF, duty cycle, total time and acoustic pressure varied across groups (Table I). Pulse duration is not stated. POA: PRF 500 Hz, DC 10/30/50%, TT 10/15/20/30 min; DMH: PRF 10 Hz or 500 Hz, DC 30/50%, TT 10 min."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "DMH stimulation",
+   "target": {
+    "terms": [
+     "hypothalamus"
+    ],
+    "label": "dorsomedial hypothalamus (DMH)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Siansonic, Beijing",
+    "model": "PZT-8 focused transducer"
+   },
+   "fundamental_frequency_khz": 3740,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 751,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     10,
+     500
+    ],
+    "duty_cycle_pct": [
+     30,
+     50
+    ],
+    "sonication_duration_s": 2,
+    "protocol_description": "Sonication duration 2 s and inter-stimulus interval 2 s repeated for a total time (TT) of 10-30 min, with PRF, duty cycle, total time and acoustic pressure varied across groups (Table I). Pulse duration is not stated. POA: PRF 500 Hz, DC 10/30/50%, TT 10/15/20/30 min; DMH: PRF 10 Hz or 500 Hz, DC 30/50%, TT 10 min."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "All animals were randomized into the POA-UDBS (n 48), DMH-DBS (n 18) and sham (n  5) groups. Nineteen of 90 mice (sham, n 9; POA-UDBS, n 4; DMH-UDBS, n 6) were used for immunofluorescence analyses.",
+   "exposures[0].fundamental_frequency_khz": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used.",
+   "exposures[0].timing.sonication_duration_s": "Except for the total time (TT), pulse repetition frequency (PRF), duty cycle (DC) and negative acoustic pressure (AP, with skull), all the listed UDBS parameters remained constant, including fundamental frequency (3.74 MHz), sonication duration (SD, 2s), and inter-stimulus interval (ISI, 2s).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[0].device.manufacturer": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used.",
+   "exposures[0].device.model": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used.",
+   "exposures[1].fundamental_frequency_khz": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used.",
+   "exposures[1].timing.sonication_duration_s": "Except for the total time (TT), pulse repetition frequency (PRF), duty cycle (DC) and negative acoustic pressure (AP, with skull), all the listed UDBS parameters remained constant, including fundamental frequency (3.74 MHz), sonication duration (SD, 2s), and inter-stimulus interval (ISI, 2s).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[1].timing.duty_cycle_pct": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[1].in_situ.pressure_kpa": "<table><tr><td rowspan=\"2\"> $\\mathrm { N o . }$ </td><td colspan=\"4\">Parameters</td></tr><tr><td>PRF (Hz)</td><td>DC (%)</td><td>TT (min)</td><td>AP (kPa, with skull)</td></tr><tr><td>1</td><td>500</td><td>50</td><td>10</td><td>751</td></tr><tr><td>2</td><td>500</td><td>30</td><td>10</td><td>751</td></tr><tr><td>3</td><td>500</td><td>10</td><td>10</td><td>751</td></tr><tr><td>4</td><td>500</td><td>30</td><td>20</td><td>751</td></tr><tr><td>5</td><td>500</td><td>30</td><td>30</td><td>751</td></tr><tr><td>6</td><td>500</td><td>30</td><td>15</td><td>388</td></tr><tr><td>7</td><td>500</td><td>30</td><td>15</td><td>514</td></tr><tr><td>8</td><td>500</td><td>30</td><td>15</td><td>981</td></tr><tr><td>9</td><td>10</td><td>30</td><td>10</td><td>751</td></tr></table>",
+   "exposures[1].device.manufacturer": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used.",
+   "exposures[1].device.model": "A focused transducer (PZT-8, Siansonic, Beijing, China) with a fundamental frequency (FF) of 3.74 MHz and a diameter of 18 mm was used."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes (POA 48, DMH 18, sham 5) do not sum to 90 and the immunofluorescence subgroup sizes (sham 9, POA 4, DMH 6) disagree with the c-Fos results (sham n=4 and 5); 90 recorded as stated total."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Table I labels pressure 'AP (kPa, with skull)'; the text says negative pressure was measured by hydrophone with and without skull. Treated as in situ measurement; not stated whether peak negative or other."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "Fig. 3B shows DMH at PRF 500 Hz (DC 30, 50%) and 10 Hz; Table I does not say which rows were DMH, so DMH parameter lists come from the Results text."
+   },
+   {
+    "field": "exposures[1].in_situ.pressure_kpa",
+    "reason": "751 kPa for the DMH is from Fig. 4 legend and Table I; table does not label target."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; not computed from PRF and duty cycle."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane used only for collimator mounting; stimulation was in free-moving mice."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Sonication duration (SD) 2 s with 2 s ISI repeated for total time of 10-30 min."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

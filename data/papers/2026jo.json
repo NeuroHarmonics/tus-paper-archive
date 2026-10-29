@@ -1,0 +1,224 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026jo",
+ "doi": "10.1155/ane/1538313",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 12,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "pet",
+  "other_mri",
+  "clinical_scale"
+ ],
+ "readout_other": "18F-florbetaben amyloid PET; contrast-enhanced MRI T1 mapping for putative glymphatic activity; DCE-MRI BBB permeability; neuropsychological tests",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Cognitive scores improved and amyloid deposition decreased mainly in APOE4 carriers after 4 weeks of LIUS; putative glymphatic activity increased in cortex but not after multiple-comparison correction.",
+ "adverse_events": "none_observed",
+ "safety_notes": "All 10 patients completed the 4-week treatment and no significant adverse events were seen on clinical assessment; no significant changes in BBB integrity, microbleeds or brain volume.",
+ "exposures": [
+  {
+   "label": "LIUS, four unfocused transducers",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "posterior fontanelle and lateral area of the head (unfocused transducers)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Deepson Bio",
+    "model": "Neuclare"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": 390,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 280,
+    "isppa_w_cm2": 2.6,
+    "ispta_w_cm2": 0.26
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 1800,
+    "protocol_description": "Pulse duration 100 ms at 1 Hz PRF; 30 min of sonication per session, three sessions per week for 4 weeks, four unfocused transducers positioned in pairs on the front and sides of the head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Overall, 10 individuals (five males, mean age: 69.0 years) were enrolled at our institution from September 2022 to December 2022 (Table 1 and Figure 1 [17]).",
+   "n_sessions_per_subject": "LIUS sessions were performed three times per week for 4 weeks, with each session comprising 30 min of sonication (i.e., pulse train duration of 30 min).",
+   "exposures[0].fundamental_frequency_khz": "The LIUS device (Neuclare; Deepson Bio) comprised four separate unfocused singleelement transducers at a basic frequency of 250 kHz.",
+   "exposures[0].timing.sonication_duration_s": "LIUS sessions were performed three times per week for 4 weeks, with each session comprising 30 min of sonication (i.e., pulse train duration of 30 min).",
+   "exposures[0].free_field.pressure_kpa": "The peak acoustic pressure measured in free water was 0.39 MPa, located 50 mm away from the center of the transducer along the axial direction.",
+   "exposures[0].timing.pulse_duration_ms": "Pulse duration of 100 ms and pulse repetition frequency of 1 Hz (i.e., 10% duty cycle) were used.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulse duration of 100 ms and pulse repetition frequency of 1 Hz (i.e., 10% duty cycle) were used.",
+   "exposures[0].timing.duty_cycle_pct": "Pulse duration of 100 ms and pulse repetition frequency of 1 Hz (i.e., 10% duty cycle) were used.",
+   "exposures[0].in_situ.pressure_kpa": "The average in situ peak pressure of the four transducers was 0.28 MPa, representing a 27% attenuation compared with free water (Figure S1).",
+   "exposures[0].in_situ.isppa_w_cm2": "According to the simulation results, the expected in situ intensity of spatial–peak pulse average (Isppa), intensity of spatial–peak temporal average (Ispta), and mechanical index (MI) were 2.6, 0.26, and $0 . { \\overset { \\smile } { 5 } } 6 \\operatorname { W } { \\cdot } { \\mathrm { c m } } ^ {  { 2 } \\ - 1 }$ , respectively",
+   "exposures[0].in_situ.ispta_w_cm2": "According to the simulation results, the expected in situ intensity of spatial–peak pulse average (Isppa), intensity of spatial–peak temporal average (Ispta), and mechanical index (MI) were 2.6, 0.26, and $0 . { \\overset { \\smile } { 5 } } 6 \\operatorname { W } { \\cdot } { \\mathrm { c m } } ^ {  { 2 } \\ - 1 }$ , respectively",
+   "exposures[0].device.manufacturer": "The LIUS device (Neuclare; Deepson Bio) comprised four separate unfocused singleelement transducers at a basic frequency of 250 kHz.",
+   "exposures[0].device.model": "The LIUS device (Neuclare; Deepson Bio) comprised four separate unfocused singleelement transducers at a basic frequency of 250 kHz."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Twelve is three sessions per week for 4 weeks, my arithmetic; the paper does not state the total."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensity units garbled in the extraction (W cm-2 -1); values 2.6 and 0.26 read in order Isppa, Ispta, MI."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "No free-field intensity given."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Unfocused multi-transducer whole-head exposure; no focal target."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Single-arm pilot, no control group."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "both_defensible",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second"
+  }
+ }
+}

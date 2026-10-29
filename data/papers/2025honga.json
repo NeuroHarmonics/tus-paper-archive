@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025honga",
+ "doi": "10.1109/tuffc.2024.3525143",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (SOD1 G93A transgenic, B6SJL background; wild-type littermates)",
+ "conditions": [
+  "other",
+  "healthy"
+ ],
+ "condition_other": "amyotrophic lateral sclerosis (SOD1 G93A model)",
+ "n_subjects": [
+  16,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "other_mri"
+ ],
+ "readout_other": "rotarod; grip strength; open field; shear wave elastography of gastrocnemius; H&E/GAF muscle staining; Nissl; c-Fos and microglia immunofluorescence; onset and lifespan",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Motor cortex LIPUS increased c-Fos-positive cells (about 240% of sham) in WT mice; in SOD1 G93A mice it delayed disease onset (10.7%), extended lifespan (6.7%) and improved motor performance.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and Nissl staining showed no damage or hemorrhage in the motor cortex after 30-min LIPUS.",
+ "exposures": [
+  {
+   "label": "LIPUS to left motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "wearable single-element focused PZT-8 transducer"
+   },
+   "fundamental_frequency_khz": 800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 319,
+    "isppa_w_cm2": 3.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 6,
+    "protocol_description": "PRF 100 Hz, duty cycle 10%, stimulation time 6 s, tone-burst length 1 ms; 20 min per session every other day, three sessions per week for four weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The above mice were randomly allocated into three groups: WT-sham (WT, $n = 1 2 )$ , sham–LIPUS + TG (sham–LIPUS, $n = 1 6 )$ , and LIPUS + TG (LIPUS, n = 16).",
+   "exposures[0].fundamental_frequency_khz": "A wearable transducer with a single-element focus (PZT-8, Beijing, China) functioning at a fundamental frequency of 800 kHz was employed",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was applied with a pulse repetition rate of 100 Hz, a duty cycle of 10%, a stimulation time of 6 s, and a tone-burst length of 1 ms [Fig.",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound was applied with a pulse repetition rate of 100 Hz, a duty cycle of 10%, a stimulation time of 6 s, and a tone-burst length of 1 ms [Fig.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was applied with a pulse repetition rate of 100 Hz, a duty cycle of 10%, a stimulation time of 6 s, and a tone-burst length of 1 ms [Fig.",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was applied with a pulse repetition rate of 100 Hz, a duty cycle of 10%, a stimulation time of 6 s, and a tone-burst length of 1 ms [Fig.",
+   "exposures[0].in_situ.pressure_kpa": "Upon traversing the mouse’s skull, the negative peak acoustic pressure measured 0.319 MPa, corresponding to a spatial peak pulse-average intensity (Isppa) of $3 . 5 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "Upon traversing the mouse’s skull, the negative peak acoustic pressure measured 0.319 MPa, corresponding to a spatial peak pulse-average intensity (Isppa) of $3 . 5 \\ \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ .",
+   "exposures[0].device.model": "A wearable transducer with a single-element focus (PZT-8, Beijing, China) functioning at a fundamental frequency of 800 kHz was employed"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "LIPUS group n = 16 (SOD1 G93A); WT c-Fos experiment n = 4 per group (Fig. 2 legend); total not stated."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Negative peak acoustic pressure 0.319 MPa measured by hydrophone after the mouse skull (Fig. 1); peak negative rather than amplitude."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Stated as 'stimulation time of 6 s' within 20-min sessions with an interstimulus interval shown in Fig. 1(b) only."
+   },
+   {
+    "field": "conditions",
+    "reason": "ALS has no vocabulary entry; recorded as other. Healthy WT mice used for c-Fos experiment."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer described only as PZT-8, Beijing, China; recorded as custom_built."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham mice wore the transducer without ultrasound treatment."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

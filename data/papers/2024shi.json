@@ -1,0 +1,492 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024shi",
+ "doi": "10.1038/s44172-024-00269-2",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "mouse (C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed",
+  "sound_only"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "two-photon Ca2+ imaging (GCaMP6s); LFP via 16-channel microelectrode array; GFAP, Iba-1, NeuN staining 6 months after exposure",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "40 kHz ultrasound through gel coupling increased Ca2+ signals and LFP (high-gamma) in somatosensory and auditory cortex in a tone-burst-duration-dependent way under isoflurane; responses were absent in brain slices and abolished by ketamine; no response without acoustic coupling.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No glial reaction or neuronal damage vs sham 6 months after a single 10% 500 us exposure; no immediate cell death or prolonged activation during imaging; authors state this is not a comprehensive safety assessment. Intracranial temperature rise under 1 degC in cadavers.",
+ "exposures": [
+  {
+   "label": "40 kHz in vivo, somatosensory and auditory cortex",
+   "target": {
+    "terms": [
+     "somatosensory_cortex",
+     "auditory_cortex"
+    ],
+    "label": "the somatosensory (SC) and auditory (AC) cortices"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Steiner & Martins, Inc.",
+    "model": "SMBLTD45F40H"
+   },
+   "fundamental_frequency_khz": 40,
+   "free_field": {
+    "pressure_kpa": [
+     235,
+     300
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     5,
+     250
+    ],
+    "pulse_repetition_frequency_hz": [
+     200,
+     20,
+     0.4,
+     1000,
+     100,
+     2
+    ],
+    "duty_cycle_pct": [
+     10,
+     50,
+     100
+    ],
+    "sonication_duration_s": 20,
+    "protocol_description": "Seven 40 kHz paradigms (TBD 500 us, 5 ms or 250 ms at 10% or 50% duty cycle, plus CW), delivered in random order per imaging region: 60 s baseline, 20 s ultrasound, 60 s post, 5 min between exposures. Planar-wave transducer with coupling cone against the temporal side of the head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "40 kHz in brain slices",
+   "target": {
+    "terms": [
+     "brain_slice"
+    ],
+    "label": "brain slices obtained from thy1-GCaMP6s mice"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Steiner & Martins, Inc.",
+    "model": "SMBLTD45F40H"
+   },
+   "fundamental_frequency_khz": 40,
+   "free_field": {
+    "pressure_kpa": 300,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     5,
+     250,
+     500
+    ],
+    "pulse_repetition_frequency_hz": [
+     0.4,
+     2,
+     20,
+     100,
+     200,
+     1000
+    ],
+    "duty_cycle_pct": [
+     10,
+     50,
+     100
+    ],
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Brain slice (Thy1-GCaMP6s, somatosensory cortex): in vivo parameters first, then 50% duty cycle with 500 ms burst and CW; no responses. Exposure duration per trial not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "500 kHz in brain slices (positive control)",
+   "target": {
+    "terms": [
+     "brain_slice"
+    ],
+    "label": "brain slices obtained from thy1-GCaMP6s mice"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept",
+    "model": "H107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     300,
+     500
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "500 kHz in brain slices: 100 ms bursts, 50% DC, 5 bursts, total exposure 500 ms (Fig. 4 legend mentions a 1-s exposure); 300 kPa and 500 kPa; PRF not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "<tr><td>Carrying frequency</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td></tr>",
+   "exposures[0].free_field.pressure_kpa": "<tr><td>Peak-to-peak pressure (in water)</td><td>235 kPa</td><td>300 kPa</td><td>300 kPa</td><td>235 kPa</td><td>300 kPa</td><td>300 kPa</td><td>300 kPa</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td>Tone burst duration</td><td>500 μs</td><td>5ms</td><td>250 ms</td><td>500 μs</td><td>5ms</td><td>250 ms</td><td>Continuous wave (CW)</td></tr>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<tr><td>Pulse repetition frequency</td><td>200 Hz</td><td>20 Hz</td><td>0.4 Hz</td><td>1000 Hz</td><td>100 Hz</td><td>2Hz</td><td>N/A</td></tr>",
+   "exposures[0].timing.duty_cycle_pct": "<tr><td>Duty cycle</td><td>10%</td><td>10%</td><td>10%</td><td>50%</td><td>50%</td><td>50%</td><td>100%</td></tr>",
+   "exposures[0].timing.sonication_duration_s": "For each ultrasound exposure trial, we acquired 60 s of baseline, 20 s of ultrasound exposure, and 60 s of post-exposure",
+   "exposures[0].device.model": "a bolt clamped Langevin 40 kHz transducer (SMBLTD45F40H, Steiner & Martins, Inc., USA)",
+   "exposures[0].device.manufacturer": "a bolt clamped Langevin 40 kHz transducer (SMBLTD45F40H, Steiner & Martins, Inc., USA)",
+   "exposures[1].fundamental_frequency_khz": "<tr><td>Carrying frequency</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td><td>40 kHz</td></tr>",
+   "exposures[1].timing.duty_cycle_pct": "<tr><td>Duty cycle</td><td>10%</td><td>10%</td><td>10%</td><td>50%</td><td>50%</td><td>50%</td><td>100%</td></tr>",
+   "exposures[1].device.model": "a bolt clamped Langevin 40 kHz transducer (SMBLTD45F40H, Steiner & Martins, Inc., USA)",
+   "exposures[1].device.manufacturer": "a bolt clamped Langevin 40 kHz transducer (SMBLTD45F40H, Steiner & Martins, Inc., USA)",
+   "exposures[2].fundamental_frequency_khz": "500 kHz ring-geometry transducer (H107, Sonic Concept)",
+   "exposures[2].free_field.pressure_kpa": "The success rate and response amplitude increased when the pressure was raised to 500 kPa",
+   "exposures[2].timing.pulse_duration_ms": "At the same pressure of300 kPa and with a total exposure duration of500 ms (100 ms burst duration, 50% DC, 5 bursts)",
+   "exposures[2].timing.duty_cycle_pct": "At the same pressure of300 kPa and with a total exposure duration of500 ms (100 ms burst duration, 50% DC, 5 bursts)",
+   "exposures[2].timing.sonication_duration_s": "For the 500 kHz condition, with only 1-s exposure, a single indication line is shown.",
+   "exposures[2].device.model": "500 kHz ring-geometry transducer (H107, Sonic Concept)",
+   "exposures[2].device.manufacturer": "500 kHz ring-geometry transducer (H107, Sonic Concept)",
+   "exposures[1].free_field.pressure_kpa": "In vitro brain slice experiments show no neural responses to 300 kPa 40 kHz ultrasound, implying indirect network effects.",
+   "exposures[1].timing.pulse_duration_ms": "Given the observed correlation between $\\mathrm { C a } ^ { 2 + }$ response and TBD, we further increased the TBD to 50% duty cycle 500 ms and even CW.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "<tr><td>Pulse repetition frequency</td><td>200 Hz</td><td>20 Hz</td><td>0.4 Hz</td><td>1000 Hz</td><td>100 Hz</td><td>2Hz</td><td>N/A</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Table 1 gives peak-to-peak pressure 'in water' (235 kPa for 500 us bursts, 300 kPa otherwise); the paper states pressures are peak-to-peak unless noted."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF is paired with TBD and duty cycle in Table 1 (200, 20, 0.4 Hz at 10%; 1000, 100, 2 Hz at 50%); CW has none."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Animal and trial numbers appear only in figure panels and legends, no total is stated in the text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "A sham control was delivered in random order but its mechanism is not described; decoupling the transducer (no gel) and 12 kHz audible sound were separate comparison conditions (sound is not ultrasound and is not recorded as an exposure)."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "300 kPa is the in-water maximum of the 40 kHz transducer; the paper does not state where the pressure was specified for the slice setup."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "Slice paradigms: in vivo parameters, then 50% DC with a 500 ms burst and CW; the 10% value is inferred from 'parameters employed in in vivo experiments' and is not separately stated for slices."
+   },
+   {
+    "field": "exposures[2].timing.sonication_duration_s",
+    "reason": "Text says total exposure 500 ms; Fig. 4 legend mentions only a 1-s exposure for the 500 kHz condition."
+   },
+   {
+    "field": "exposures[2].timing.pulse_duration_ms",
+    "reason": "Burst rule: '100 ms burst duration, 50% DC, 5 bursts' read as 100 ms pulses within a 500 ms total exposure."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Maker named is Steiner & Martins (Langevin transducer); not in the closed list, so other_manufacturer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "disagree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "disagree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "agree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[1].unspecified_domain.pressure_kpa": "second",
+   "exposures[1].timing.pulse_duration_ms": "second",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "second",
+   "exposures[2].timing.sonication_duration_s": "second"
+  }
+ }
+}

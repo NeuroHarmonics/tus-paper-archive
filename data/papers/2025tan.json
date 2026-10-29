@@ -1,0 +1,170 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025tan",
+ "doi": "10.3389/fnhum.2024.1509432",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "four-channel ECoG; running RMS (5-55 Hz) after a 0.1 s blinking light",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "tDUS plus blinking light increased ECoG activity relative to light alone; the tDUS-only cohort showed no change during tDUS but reduced activity after cessation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "transcranial diagnostic ultrasound (tDUS)",
+   "target": {
+    "terms": [
+     "visual_cortex",
+     "somatosensory_cortex"
+    ],
+    "label": "left visual and right somatosensory cortices"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Sonosite",
+    "model": "P21x5–1 scan head deployed by a Sonosite MicroMaxx"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "not_reported",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 600,
+    "protocol_description": "tDUS delivered during Trial 2 only, a 10 min period paired (US+Light cohort) or not (US-only cohort) with a 0.1 s light flash every 10 s; ultrasound parameters are listed only in Supplementary Table S1."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Fourteen C57BL/6 mice (Jackson Laboratories, Farmington CT) were randomly assigned into two cohorts (n = 7), one to receive periodic blinking light stimulation with tDUS (the ‘US+Light’ cohort), the other to receive periodic blinking light stimulation without tDUS (the ‘Light-only’ cohort).",
+   "exposures[0].device.manufacturer": "To deliver the ultrasound as described below, we used a P21x5–1 scan head deployed by a Sonosite MicroMaxx using the same device and settings as used by McClintic et al.",
+   "exposures[0].device.model": "To deliver the ultrasound as described below, we used a P21x5–1 scan head deployed by a Sonosite MicroMaxx using the same device and settings as used by McClintic et al.",
+   "exposures[0].timing.sonication_duration_s": "Trial 2 then followed, consisting of (sham) tDUS paired with the same light exposure paradigm as in Trial 1 (10 min of exposure to 0.1 s light stimulus every 10 s, for approximately 60 events).",
+   "n_sessions_per_subject": "After the titration step, we performed three separate trials that together we define as one experiment as illustrated in Figure 2."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Seven mice in the US+Light cohort and six in the US-only cohort were sonicated; the 7 Light-only mice received no ultrasound."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "All acoustic parameters are in Supplementary Table S1, not in the main text; recorded as not_reported."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "10 min of exposure in Trial 2 is stated for the light paradigm paired with tDUS; the text does not separately state the tDUS duration."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Sonosite is not a listed family; set to other_manufacturer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

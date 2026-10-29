@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022ji",
+ "doi": "10.1088/1741-2552/aca8cd",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (spontaneously hypertensive rat)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "hypertension (spontaneously hypertensive rats)",
+ "n_subjects": [
+  17,
+  12
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "blood pressure, heart rate, respiration rate, heart rate variability, systolic BP variability, baroreflex sensitivity; H&E staining of vagus nerve",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Left vagus nerve FUS lowered blood pressure and respiration rate, reduced normalised low-frequency HRV power and LF/HF ratio (sympathetic inhibition) and raised normalised high-frequency HRV power (parasympathetic activation) versus controls; effects persisted about 30 min after FUS.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E histology of the sonicated vagus nerve showed normal histology without necrosis or inflammatory response.",
+ "exposures": [
+  {
+   "label": "FUS of the left cervical vagus nerve",
+   "target": {
+    "terms": [
+     "vagus_nerve"
+    ],
+    "label": "left vagus nerve"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 18,
+    "ispta_w_cm2": 0.6
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 1,
+    "protocol_description": "100 Hz PRF, 20% duty cycle, 2 ms tone burst, 1 s sonication, inter-stimulation interval of 6 s; each trial had 10 min baseline, 15 min ultrasound stimulation and 30 min recovery. Control-sham: transducer placed on the nerve with FUS off; Control-FUS: FUS to the left upper leg."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "In order to evaluate the effects on autonomic function by FUS of the vagus nerve, Fifty 12-week-old spontaneously hypertensive rats (SHRs, all male, body weight 284  54 g) were randomly divided into three groups: Control-sham (n = 21), Control-FUS (n = 12), and FUS (n = 17) group.",
+   "exposures[0].fundamental_frequency_khz": "a fundamental frequency of 3.7 MHz",
+   "exposures[0].free_field.isppa_w_cm2": "The pulsed ultrasound generates spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 18 W $\\mathrm { c m } ^ { - 2 }$ and spatial-peak time-average intensity $( I _ { \\mathrm { s p t a } } )$ of 0.6 W $\\mathrm { c m } ^ { - 2 }$ , which was measured by a 3D acoustic scanning system (UMS3®, Precision Acoustics, Dorchester, UK) equipped with a calibrated needle-type hydrophone (HNP-0400®, Onda, Sunnyvale, CA, USA) in degassed water",
+   "exposures[0].free_field.ispta_w_cm2": "The pulsed ultrasound generates spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ of 18 W $\\mathrm { c m } ^ { - 2 }$ and spatial-peak time-average intensity $( I _ { \\mathrm { s p t a } } )$ of 0.6 W $\\mathrm { c m } ^ { - 2 }$ , which was measured by a 3D acoustic scanning system (UMS3®, Precision Acoustics, Dorchester, UK) equipped with a calibrated needle-type hydrophone (HNP-0400®, Onda, Sunnyvale, CA, USA) in degassed water",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The stimulation pulse sequence was set as 100 Hz of pulse repetition frequency, 20% of duty cycle (DC), 2 ms of tone burst duration, 1 s of sonication duration, and inter-stimulation interval of6 s",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation pulse sequence was set as 100 Hz of pulse repetition frequency, 20% of duty cycle (DC), 2 ms of tone burst duration, 1 s of sonication duration, and inter-stimulation interval of6 s",
+   "exposures[0].timing.pulse_duration_ms": "The stimulation pulse sequence was set as 100 Hz of pulse repetition frequency, 20% of duty cycle (DC), 2 ms of tone burst duration, 1 s of sonication duration, and inter-stimulation interval of6 s",
+   "exposures[0].timing.sonication_duration_s": "The stimulation pulse sequence was set as 100 Hz of pulse repetition frequency, 20% of duty cycle (DC), 2 ms of tone burst duration, 1 s of sonication duration, and inter-stimulation interval of6 s"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "50 rats were allocated to three groups; 21 (Control-sham) received no ultrasound, 12 received FUS at the leg and 17 at the vagus nerve. Value is enrolled total."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Stated Ispta 0.6 W/cm2 is not what 20% duty cycle times 18 W/cm2 would give; the 1 s on / 6 s interval pattern may explain it. Recorded as stated."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper states the control groups were meant to exclude auditory and non-target confounds; no dedicated auditory control (masking, deafening) is described."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker not named; described only by frequency, diameter and focal length; refers to a previous paper."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Trials are counted per group (25, 25, 15 trials) and not per rat."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

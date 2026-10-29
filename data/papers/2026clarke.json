@@ -1,0 +1,215 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026clarke",
+ "doi": "10.1038/s41467-026-72934-3",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 33,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "sound_only"
+ ],
+ "auditory_control": [
+  "sound_only_sham",
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "pain intensity NRS (0-100) during cold gel stimulus; seed-based and ICA resting-state fMRI connectivity; MEGA-PRESS MRS GABA and Glx",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "No main effect on pain ratings at any single time point; a greater reduction in pain from T1 to T2 under active TUS, increased dACC connectivity with SMA, premotor cortex and anterior insula, decreased with PAG; no significant MRS change.",
+ "adverse_events": "observed",
+ "safety_notes": "Symptom questionnaire after each session; mild symptoms (e.g. headache, tingling, sleepiness, dizziness) reported after both active and sham, one moderate sleepiness; none severe.",
+ "exposures": [
+  {
+   "label": "Multi-focal TUS to dACC (3 sites)",
+   "target": {
+    "terms": [
+     "dorsal_anterior_cingulate_cortex"
+    ],
+    "label": "dorsal anterior cingulate cortex (dACC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS TPO system and CTX-500-4 four-element annular transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 54,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.7,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "10 Hz-patterned protocol with 10% duty cycle, pulse duration 10 ms, pulsed every 100 ms, applied for 80 s at each of three dACC targets sequentially (4 min in total), A to C order."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Therefore, 33 participants completed the study",
+   "n_sessions_per_subject": "a Participants completed three sessions; in the first session, T1-weighted and PETRA scans were acquired for neuronavigation and acoustic planning, then in sessions 2 and 3, they received either active TUS to the dACC or sham, followed by completing fMRI and MRS scans.",
+   "exposures[0].device.manufacturer": "The NeuroFUS transducer power output (TPO) system and CTX-500- 4 transducer (Brainbox Ltd., Cardiff, UK)",
+   "exposures[0].device.model": "The NeuroFUS transducer power output (TPO) system and CTX-500- 4 transducer (Brainbox Ltd., Cardiff, UK)",
+   "exposures[0].fundamental_frequency_khz": "Repetitive TUS followed a 10 Hz-patterned protocol with a 10% duty cycle (fundamental frequency = 500 KHz, pulse duration = 10 ms, pulsed every 100 ms), applied for 80 s at each target sequentially (4 min in total)",
+   "exposures[0].timing.pulse_duration_ms": "Repetitive TUS followed a 10 Hz-patterned protocol with a 10% duty cycle (fundamental frequency = 500 KHz, pulse duration = 10 ms, pulsed every 100 ms), applied for 80 s at each target sequentially (4 min in total)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Repetitive TUS followed a 10 Hz-patterned protocol with a 10% duty cycle (fundamental frequency = 500 KHz, pulse duration = 10 ms, pulsed every 100 ms), applied for 80 s at each target sequentially (4 min in total)",
+   "exposures[0].timing.duty_cycle_pct": "Repetitive TUS followed a 10 Hz-patterned protocol with a 10% duty cycle (fundamental frequency = 500 KHz, pulse duration = 10 ms, pulsed every 100 ms), applied for 80 s at each target sequentially (4 min in total)",
+   "exposures[0].timing.sonication_duration_s": "Repetitive TUS followed a 10 Hz-patterned protocol with a 10% duty cycle (fundamental frequency = 500 KHz, pulse duration = 10 ms, pulsed every 100 ms), applied for 80 s at each target sequentially (4 min in total)",
+   "exposures[0].free_field.isppa_w_cm2": "The I<sub>SPPA</sub> in water was maintained at $5 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ across participants",
+   "exposures[0].in_situ.isppa_w_cm2": "with a mean ISPPA in the dACC of 3.7 ± 1.7w/ cm<sup>2</sup> across all participants"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "35 recruited, 33 completed, 32 in behavioural data, 29 fMRI, 23 MRS; 33 recorded as exposed (two excluded after the first, imaging-only visit)."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Mean simulated Isppa in dACC across participants (k-Plan post-stimulation simulation); recorded as mean, SD in quote."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "In situ pressure shown only in Fig. 1c; not stated in text."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF taken from '10 Hz-patterned' and 'pulsed every 100 ms'."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham delivered as matched sound via bone-conduction headphones with same placement; whether the transducer was powered off is not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Three sites within dACC (MNI -3,37,12; -3,33,17; -3,28,22) listed as one exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

@@ -4,7 +4,8 @@
 Abstracts are published on paper pages and in the search index (decision of 2026-09-18), with the
 source recorded so a takedown is one edit. They are kept out of the bulk dataset download.
 
-Order: Europe PMC by DOI, then the local Crossref cache, then PubMed by DOI. Papers with no
+Order: Europe PMC by DOI, then the local Crossref cache, then PubMed by DOI, then DataCite
+(arXiv, Zenodo and OSF DOIs are not in Crossref). Papers with no
 abstract anywhere (mostly pre-2000) get text: null so the miss is recorded and not retried
 every run unless --retry-missing.
 
@@ -25,7 +26,7 @@ import xml.etree.ElementTree as ET
 
 import httpx
 
-from common import DATA, read_json
+from common import DATA, datacite, read_json
 
 OUT = DATA / "abstracts"
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
@@ -88,14 +89,15 @@ def main() -> int:
         todo = todo[: args.limit]
     print(f"{len(todo)} papers to fetch", file=sys.stderr)
 
-    got = {"europepmc": 0, "crossref": 0, "pubmed": 0, "none": 0}
+    got = {"europepmc": 0, "crossref": 0, "pubmed": 0, "datacite": 0, "none": 0}
     with httpx.Client(timeout=40, follow_redirects=True,
                       headers={"User-Agent": f"tus-paper-archive/1.0 (mailto:{MAILTO})"}) as client:
         for n, (ck, doi) in enumerate(todo, 1):
             text = source = source_id = None
             for name, fn in (("europepmc", lambda: from_epmc(doi, client)),
                              ("crossref", lambda: (clean((cache_by_doi.get(doi.lower()) or {}).get("abstract")), doi)),
-                             ("pubmed", lambda: from_pubmed(doi, client))):
+                             ("pubmed", lambda: from_pubmed(doi, client)),
+                             ("datacite", lambda: (clean((datacite(doi) or {}).get("abstract")), doi))):
                 try:
                     text, source_id = fn()
                 except (httpx.HTTPError, ET.ParseError, ValueError) as e:

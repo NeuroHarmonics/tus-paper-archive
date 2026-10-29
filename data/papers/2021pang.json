@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021pang",
+ "doi": "10.1109/tuffc.2020.2968479",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "aging (aged female mice)",
+ "n_subjects": [
+  14,
+  15
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "grip strength; rotarod; Morris water maze; novel object recognition; Y maze; Western blotting (Bcl-2, Bax, Iba1, TNF-a, IL-1b, NMDAR2B); H&E staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "US2 (10 Hz PRF) group improved grip strength and movement/learning in some tests; Bax and TNF-a decreased after TUS; no long-lasting effect in the third behavioural tests and Y-maze time in novel arm was lower for US1 than sham.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining showed no tissue damage or hemorrhaging in the hypothalamus; skull temperature rise measured by infrared imager.",
+ "exposures": [
+  {
+   "label": "US1 (PRF 1 kHz) and US2 (PRF 10 Hz), hypothalamus",
+   "target": {
+    "terms": [
+     "ventromedial_hypothalamus"
+    ],
+    "label": "ventromedial hypothalamic nucleus (VHM)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NdtXducer (Northborough, MA, USA)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 130,
+    "isppa_w_cm2": 5.4,
+    "ispta_w_cm2": 0.54
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.1,
+     10
+    ],
+    "pulse_repetition_frequency_hz": [
+     1000,
+     10
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 1,
+    "protocol_description": "US1: 100-us pulse of 100 cycles at 1 MHz, PRF 1 kHz; US2: 10-ms pulse of 10 000 cycles, PRF 10 Hz; sonication duration 1 s, interstimulus interval 5 s. Delivered 15 min/day for 14 days in each of two FUS sessions."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 44 BALB/c mice (all female, born in November 2017, Beijing Vital River Laboratory Animal Technology Co., Ltd., Beijing, China) were divided into three groups: two US groups $[ ( \\mathrm { U S } 1 ; n = 1 4 $ , US2: $n = 1 5 )$ and a sham group $( n = 1 5 ) ]$ .",
+   "exposures[0].fundamental_frequency_khz": "with a fundamental frequency (FF) of 1 MHz and a diameter of 25 mm was used",
+   "exposures[0].timing.pulse_duration_ms": "1) a 100-μs ultrasound pulse containing 100 acoustic cycles of 1 MHz at a pulse repetition frequency (PRF) of 1 kHz, sonication duration (SD) of 1 s, and interstimulus interval of 5 s (US1) and 2) a 10-ms ultrasound pulse containing 10 000 acoustic cycles of 1 MHz at a PRF of 10 Hz, SD of 1 s, and interstimulus interval of $5 \\mathrm { ~ s ~ } ( \\mathrm { U } \\mathrm { S } 2 )$",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "1) a 100-μs ultrasound pulse containing 100 acoustic cycles of 1 MHz at a pulse repetition frequency (PRF) of 1 kHz, sonication duration (SD) of 1 s, and interstimulus interval of 5 s (US1) and 2) a 10-ms ultrasound pulse containing 10 000 acoustic cycles of 1 MHz at a PRF of 10 Hz, SD of 1 s, and interstimulus interval of $5 \\mathrm { ~ s ~ } ( \\mathrm { U } \\mathrm { S } 2 )$",
+   "exposures[0].timing.sonication_duration_s": "1) a 100-μs ultrasound pulse containing 100 acoustic cycles of 1 MHz at a pulse repetition frequency (PRF) of 1 kHz, sonication duration (SD) of 1 s, and interstimulus interval of 5 s (US1) and 2) a 10-ms ultrasound pulse containing 10 000 acoustic cycles of 1 MHz at a PRF of 10 Hz, SD of 1 s, and interstimulus interval of $5 \\mathrm { ~ s ~ } ( \\mathrm { U } \\mathrm { S } 2 )$",
+   "exposures[0].timing.duty_cycle_pct": "pulse repetition frequency of 1 kHz (US1) or 10 Hz (US2), duty cycle of 10%, and acoustic pressure of 0.13 MPa",
+   "exposures[0].unspecified_domain.pressure_kpa": "pulse repetition frequency of 1 kHz (US1) or 10 Hz (US2), duty cycle of 10%, and acoustic pressure of 0.13 MPa",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Both pulses had a spatial-peak pulse average $( I _ { \\mathrm { s p p a } } )$ of $5 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ , spatialpeak temporal average $( I _ { \\mathrm { s p t a } } )$ of 540 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ , and acoustic pressure of 0.13 MPa.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Both pulses had a spatial-peak pulse average $( I _ { \\mathrm { s p p a } } )$ of $5 . 4 ~ \\mathrm { W / c m ^ { 2 } }$ , spatialpeak temporal average $( I _ { \\mathrm { s p t a } } )$ of 540 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ , and acoustic pressure of 0.13 MPa.",
+   "exposures[0].device.manufacturer": "A focused transducer (NdtXducer, Northborough, MA, USA) with a fundamental frequency (FF) of 1 MHz and a diameter of 25 mm was used.",
+   "exposures[0].device.model": "A focused transducer (NdtXducer, Northborough, MA, USA) with a fundamental frequency (FF) of 1 MHz and a diameter of 25 mm was used.",
+   "exposures[0].target.label": "The stimulation region was the ventromedial hypothalamic nucleus (VHM) shown in Fig. 1(b).",
+   "randomised": "Mice were randomly divided into three groups: Sham, US1, and US2.",
+   "n_sessions_per_subject": "As shown in Fig. 1(a), the experimental process was divided into five parts, comprising two sessions of focused ultrasound stimulation (FUS) and three sets of behavioral tests; each FUS session lasted for 15 min/day for 14 days."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.13 MPa given without stating domain; hydrophone calibration mentioned, with and without skull distributions in Fig. 1(d) only; kind of pressure (peak negative vs peak) not stated"
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Paper writes ventromedial hypothalamic nucleus abbreviated VHM; mapped to ventromedial_hypothalamus"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "44 mice total; fewer analysed per assay (group sizes in figure legends vary, e.g. n=3 to 15)"
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle 10% stated for both PRFs; 100 us x 1 kHz and 10 ms x 10 Hz are consistent but not computed here"
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "NdtXducer named as transducer source without a parent manufacturer; assigned other_manufacturer"
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Two FUS sessions of 14 daily 15-min treatments each; session count not summed to a total number of days"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

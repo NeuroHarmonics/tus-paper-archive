@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023sua",
+ "doi": "10.1093/cercor/bhac370",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Thy1-GCaMP6f transgenic)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "other"
+ ],
+ "readout_other": "widefield GCaMP6f calcium fluorescence imaging; intrinsic signal optical imaging of HbO, HbR, HbT",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS increased neuronal calcium oscillation intensity and HbO/HbT and decreased HbR in the visual cortex; calcium peak value, peak time and duration increased with stimulation duration.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of mouse visual cortex, stimulation duration 0.3-0.7 s",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "mouse visual cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V323-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 450,
+    "isppa_w_cm2": 6.75,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": [
+     0.3,
+     0.7
+    ],
+    "protocol_description": "500 kHz, 1 kHz PRF, 10% duty cycle; stimulation duration 0.4 s in the main protocol and varied from 0.3 to 0.7 s in 0.1 s steps; one stimulus every 10 s; 8 trials averaged, repeated after 30 min."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Adult Thy1-GCaMP6f transgenic mice were used in the experiments (total, n 15; normal hearing mice, n 9; deaf male mice, n 6; body weight, 20–25 g; age, 10–12 weeks; Jackson Laboratory)",
+   "exposures[0].fundamental_frequency_khz": "In the ultrasound system, the fundamental frequency, pulsed repetition frequency, and duty cycle were 500 kHz, 0.4 s, 1 kHz, and 10%, respectively (Fig. 1b)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In the ultrasound system, the fundamental frequency, pulsed repetition frequency, and duty cycle were 500 kHz, 0.4 s, 1 kHz, and 10%, respectively (Fig. 1b)",
+   "exposures[0].timing.duty_cycle_pct": "In the ultrasound system, the fundamental frequency, pulsed repetition frequency, and duty cycle were 500 kHz, 0.4 s, 1 kHz, and 10%, respectively (Fig. 1b)",
+   "exposures[0].timing.sonication_duration_s": "To compare the effects of different stimulus durations, SDs were varied with an interval of 0.1 s (0.3–0.7 s)",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound intensity was 0.45 MPa, and the corresponding spatial peak and pulse-average intensity (I ) values were 6.75 W/cm<sup>2</sup>, respectively",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound intensity was 0.45 MPa, and the corresponding spatial peak and pulse-average intensity (I ) values were 6.75 W/cm<sup>2</sup>, respectively",
+   "exposures[0].device.model": "An ultrasound transducer (V323-SU, Olympus, USA)",
+   "exposures[0].device.manufacturer": "An ultrasound transducer (V323-SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "15 total: 9 normal-hearing, 6 chemically deafened."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Range 0.3-0.7 s recorded as stated; text says 0.4 s as the standard duration."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.45 MPa and Isppa 6.75 W/cm2; hydrophone measurement 'under the skull' is mentioned but pressure domain not explicitly assigned."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; duty cycle and PRF given, but not computed here."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible"
+  }
+ }
+}

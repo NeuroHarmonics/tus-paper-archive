@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020lia",
+ "doi": "10.1109/tbme.2020.2975279",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (spontaneously hypertensive rat; Wistar-Kyoto)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "hypertension (spontaneously hypertensive rats)",
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "tail-cuff blood pressure and heart rate; plasma EPI, NE, ANGII ELISA; c-fos immunofluorescence; HE and TUNEL staining; thermocouple brain temperature",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US stimulation of the vlPAG enhanced c-fos density in vlPAG and CVLM and reduced SBP, HR and plasma EPI, NE and ANGII in SHRs; sham site had no effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE and TUNEL staining showed no tissue damage or apoptosis after 1 h of stimulation; thermocouple temperature stayed 33.8-33.9 C at 0.4 MPa pulsed.",
+ "exposures": [
+  {
+   "label": "LIFU to vlPAG",
+   "target": {
+    "terms": [
+     "periaqueductal_gray"
+    ],
+    "label": "ventrolateral periaqueductal gray (vlPAG)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 620,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 400,
+    "isppa_w_cm2": 5.13,
+    "ispta_w_cm2": 2.56
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.2,
+    "protocol_description": "2 ms burst duration at 250 Hz PRF, sonication duration 200 ms, inter-stimulation interval 5 s. Total treatment time 20 min every day for one week."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "We randomly divided 32 rats into 4 groups: WKY, Control, LIFU, and Sham (n = 8 per group).",
+   "exposures[0].fundamental_frequency_khz": "The pulses were generated using a two-channel function generator (DG5072, Beijing RIGOL Technology Co., Ltd.; Beijing, P. R. China) and amplified by a radio frequency (RF) amplifier (25A250A, AR Europe; Bothell, WA, USA) before being sent to drive a focused transducer (diameter = 10 cm, radius-of-curvature = 8 cm, center frequency = 620 kilohertz (kHz)).",
+   "exposures[0].timing.pulse_duration_ms": "Fig. 2(a) depicts the method used to construct LIFU into the intact rat brain and Fig. 2(b) depicts the stimulation pulse sequence which consisted of 2 ms time of burst duration (TBD) with a 250 Hz pulse repetition frequency (PRF), total sonication duration (SD) of 200 ms and inter-stimulation interval (ISI) of 5 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Fig. 2(a) depicts the method used to construct LIFU into the intact rat brain and Fig. 2(b) depicts the stimulation pulse sequence which consisted of 2 ms time of burst duration (TBD) with a 250 Hz pulse repetition frequency (PRF), total sonication duration (SD) of 200 ms and inter-stimulation interval (ISI) of 5 s.",
+   "exposures[0].timing.sonication_duration_s": "Fig. 2(a) depicts the method used to construct LIFU into the intact rat brain and Fig. 2(b) depicts the stimulation pulse sequence which consisted of 2 ms time of burst duration (TBD) with a 250 Hz pulse repetition frequency (PRF), total sonication duration (SD) of 200 ms and inter-stimulation interval (ISI) of 5 s.",
+   "exposures[0].in_situ.pressure_kpa": "The pulsed ultrasound (US) waveforms presented peak rarefactional pressure (pr) of 0.4 MPa (with the rat skull), pulse intensity integrals (PII) of 10.27 mJ/cm<sup>2</sup>, spatial-peak pulse-average intensities $\\left( \\mathrm { I } _ { \\mathrm { S P P A } } \\right)$ of $5 . 1 3 ~ \\mathrm { W / c m ^ { 2 } }$ , and spatial-peak temporal-average intensities $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ of $2 . 5 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ . The US focused at 5.8 mm depth from the skull.",
+   "exposures[0].in_situ.isppa_w_cm2": "The pulsed ultrasound (US) waveforms presented peak rarefactional pressure (pr) of 0.4 MPa (with the rat skull), pulse intensity integrals (PII) of 10.27 mJ/cm<sup>2</sup>, spatial-peak pulse-average intensities $\\left( \\mathrm { I } _ { \\mathrm { S P P A } } \\right)$ of $5 . 1 3 ~ \\mathrm { W / c m ^ { 2 } }$ , and spatial-peak temporal-average intensities $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ of $2 . 5 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ . The US focused at 5.8 mm depth from the skull.",
+   "exposures[0].in_situ.ispta_w_cm2": "The pulsed ultrasound (US) waveforms presented peak rarefactional pressure (pr) of 0.4 MPa (with the rat skull), pulse intensity integrals (PII) of 10.27 mJ/cm<sup>2</sup>, spatial-peak pulse-average intensities $\\left( \\mathrm { I } _ { \\mathrm { S P P A } } \\right)$ of $5 . 1 3 ~ \\mathrm { W / c m ^ { 2 } }$ , and spatial-peak temporal-average intensities $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ of $2 . 5 6 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ . The US focused at 5.8 mm depth from the skull.",
+   "n_sessions_per_subject": "The total treatment time was 20 min every day for one week."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "32 rats in four groups of 8; only the LIFU and Sham groups (8 each) received ultrasound in the BP experiment, with separate smaller cohorts for c-fos and histology."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Peak rarefactional pressure 0.4 MPa measured with a rat skull in degassed water; recorded as in_situ measurement."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham SHRs sonicated below the motor cortex (real ultrasound, different site); Control SHRs and WKY rats unexposed."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "No transducer maker named."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane during stimulation; BP measured in conscious rats."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "both_defensible",
+   "exposures[0].in_situ.ispta_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

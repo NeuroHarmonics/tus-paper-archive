@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022heimbuch",
+ "doi": "10.1371/journal.pone.0267268",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "surface EMG of first dorsal interosseous during tonic contraction; TMS-evoked MEP area before and after tUS; cortical silent period (TMS trials)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No change in FDI EMG during tUS of M1 hand area, and no change in TMS-evoked MEP size one minute after tUS exposure; no correlation between estimated cumulative exposure and excitability change.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Intensities were described as within safe levels (maximum mechanical index 0.8); adverse events are not reported.",
+ "exposures": [
+  {
+   "label": "Left M1 hand area, 500 kHz, 300 and 500 ms bursts",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "hand area of M1 (M1hand)"
+   },
+   "device": {
+    "family": "blatek",
+    "manufacturer": "Blatek Industries, Inc., State College, PA",
+    "model": "500-kHz focused piezoelectric transducer (3 cm face width, 3 cm focal point)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     1130,
+     1400
+    ],
+    "isppa_w_cm2": 15.48,
+    "ispta_w_cm2": 5.57
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.9,
+    "ispta_w_cm2": 1.4
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": [
+     0.3,
+     0.5
+    ],
+    "protocol_description": "Single bursts of 300 ms (75% of trials) or 500 ms, each made of pulses repeated at 1 kHz with 36% duty cycle, delivered at the TMS hotspot and two neighbouring targets; 20 trials per condition with a 10 +/- 2 s jittered interval, during tonic FDI contraction."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 3600.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "A subset of Experiment 1 participants (n = 10; mean: 25.9 years) participated in Experiment 2 (n = 8; mean: 26.75 years).",
+   "exposures[0].fundamental_frequency_khz": "The tUS device used was a 500-kHz focused piezoelectric transducer (Blatek Industries, Inc., State College, PA).",
+   "exposures[0].device.manufacturer": "The tUS device used was a 500-kHz focused piezoelectric transducer (Blatek Industries, Inc., State College, PA).",
+   "exposures[0].device.model": "The tUS device used was a 500-kHz focused piezoelectric transducer (Blatek Industries, Inc., State College, PA).",
+   "exposures[0].free_field.pressure_kpa": "$P _ { w a t e r , r e a l }$ was 1.40 MPa for all subjects except one (sbj11), whose $P _ { w a t e r , r e a l }$ was 1.13 MPa due to the lower waveform generator setting used for that session (user error).",
+   "exposures[0].free_field.isppa_w_cm2": "Transducer output was set to produce an intensity of $1 5 . 4 8 \\mathrm { W / c m } ^ { 2 }$ in degassed water (spatial peak, pulse average; $\\mathrm { I _ { \\mathrm { { s p p a } } } ) } ;$ spatial peak, temporal average $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { : 5 . 5 7 } \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].free_field.ispta_w_cm2": "Transducer output was set to produce an intensity of $1 5 . 4 8 \\mathrm { W / c m } ^ { 2 }$ in degassed water (spatial peak, pulse average; $\\mathrm { I _ { \\mathrm { { s p p a } } } ) } ;$ spatial peak, temporal average $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { : 5 . 5 7 } \\mathrm { W } / \\mathrm { c m } ^ { 2 }$",
+   "exposures[0].in_situ.isppa_w_cm2": "Using previously measured attenuation of a 500-kHz ultrasound through human skull (-12 dB to -16 dB) [47], these parameters produce an estimated intracranial $\\mathrm { { I _ { s p p a } } }$ of $3 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\left( \\mathrm { I } _ { \\mathrm { s p t a } } = 1 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "Using previously measured attenuation of a 500-kHz ultrasound through human skull (-12 dB to -16 dB) [47], these parameters produce an estimated intracranial $\\mathrm { { I _ { s p p a } } }$ of $3 . 9 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\left( \\mathrm { I } _ { \\mathrm { s p t a } } = 1 . 4 \\mathrm { W } / \\mathrm { c m } ^ { 2 } \\right)$ .",
+   "exposures[0].timing.pulse_duration_ms": "The burst consisted of short, 36-ms pulses of ultrasound (i.e. pulse length = 36 ms) repeated every 1 ms (i.e pulse repetition frequency = 1000 Hz).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The burst consisted of short, 36-ms pulses of ultrasound (i.e. pulse length = 36 ms) repeated every 1 ms (i.e pulse repetition frequency = 1000 Hz).",
+   "exposures[0].timing.duty_cycle_pct": "tUS bursts were pulsed with a 1-kHz pulse repetition frequency and a duty cycle of 36% (Fig 1).",
+   "exposures[0].timing.sonication_duration_s": "Each burst lasted either 300 or 500 ms (tUS on for 108 or 180 ms total)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "The paper states pulse length = 36 ms repeated every 1 ms (Fig 1), which is inconsistent with 1 kHz PRF and 36% duty cycle (0.36 ms); recorded as written."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "1.40 MPa in water for all subjects except one session at 1.13 MPa; the water-measured value is the temporal-maximum pressure at the focus."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intracranial intensities estimated by the authors by applying a 12 to 16 dB skull attenuation from earlier work (derating), not from the subject-specific simulations; simulated in-brain pressures are given only in figures and supplementary tables."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Three trajectories per participant (best TMS hotspot, 2nd and 3rd best); the exposure is recorded once at M1 hand."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "10 participants in Experiment 1; 8 of them also took part in Experiment 2."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Each trial is a single 300 or 500 ms burst of which the device is on for 108 or 180 ms."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second"
+  }
+ }
+}
