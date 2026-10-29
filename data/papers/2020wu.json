@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020wu",
+ "doi": "10.1016/j.brainresbull.2020.05.006",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Diffusion-weighted MRI rADC; neurobehavioural score; Nissl staining; Na+-K+-ATPase activity",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LITUS after ET-1 induced ischaemia reduced the fall in rADC, improved neurobehavioural scores and reduced neuronal damage; strongest when applied 30 min after ischaemia. Neural excitability was not measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LITUS at 30, 120 or 240 min after ET-1",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "the injured cortical areas"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, Japan",
+    "model": "V301-SU unfocused transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.6,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Pulsed 500 kHz ultrasound, tone-burst duration 0.5 ms at PRF 1 kHz, stimulation duration 400 ms per train; total stimulation duration 10 min. Delivered through a 10 mm conical collimator at 30, 120 or 240 min after ET-1 injection."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Fifty SD rats were randomly allocated to <sup>fi</sup>ve groups (n = 10 per group).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound fundamental frequency (FF) and pulsed repetition frequency (PRF) were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound fundamental frequency (FF) and pulsed repetition frequency (PRF) were 500 kHz and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) were 400 ms and 0.5 ms, respectively",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) were 400 ms and 0.5 ms, respectively",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "the spatial peak and pulse-average intensity (Isppa) was 2.6",
+   "exposures[0].device.manufacturer": "transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan)",
+   "exposures[0].device.model": "transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan)",
+   "randomised": "Fifty SD rats were randomly allocated to",
+   "blinding": "The tests were conducted using double-blind conditions.",
+   "sham_type": "Rats in the ET-1 group did not undergo any ultrasonic treatment.",
+   "n_sessions_per_subject": "After occlusion of the middle cerebral artery for 30 min, 120 min, or 240 min, LITUS stimulation was used, respectively, in the following groups of rats, LIPUS group (30 min), LITUS group (120 min), and LITUS group (240 min)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "400 ms is the stated stimulation duration (train); total stimulation was 10 min, described in protocol_description"
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa measured with a calibrated hydrophone but the paper does not say it was in water, so placed in unspecified domain"
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated"
+   },
+   {
+    "field": "sham_type",
+    "reason": "ET-1 group and saline control received no ultrasound; whether a transducer was placed is not stated"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Fifty rats in five groups of 10; only three groups received LITUS"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

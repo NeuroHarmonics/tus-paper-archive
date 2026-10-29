@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025badawe",
+ "doi": "10.1038/s41598-025-16407-5",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "EMG Vpp and AUC in gastrocnemius during electrical nerve stimulation; thermocouple temperature; H&E histology",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Lower cumulative energy (short SD, low DC) enhanced electrically evoked EMG; higher cumulative energy (long SD, high DC) suppressed it; effects persisted about 5 min.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Maximum temperature rise 0.34 C at 120 s and 80% DC; H&E showed no inflammation, necrosis or degeneration.",
+ "exposures": [
+  {
+   "label": "Sciatic nerve sonication with varied SD and DC",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "rat sciatic nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Mana Instruments",
+    "model": "E0525-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     460,
+     720
+    ],
+    "isppa_w_cm2": [
+     1.4,
+     3.39
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.25,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     30,
+     50,
+     80
+    ],
+    "sonication_duration_s": [
+     30,
+     60,
+     90,
+     120
+    ],
+    "protocol_description": "Pulses of 125 cycles (tone burst duration 250 microseconds) at 500 kHz; duty cycle varied by altering the burst period; sonication duration 30, 60, 90 or 120 s delivered concurrently with 2 Hz electrical stimulation, followed by 5 min of electrical stimulation alone; 15 min break between trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty male Sprague-Dawley rats, weighing 270–480 g, were obtained from the Animal care facility at AUB.",
+   "exposures[0].fundamental_frequency_khz": "received ultrasonic pulses at a frequency of 500 kHz, number of cycles (CPP) = 125, and tone burst duration (TBD) = 250 µs.",
+   "exposures[0].timing.pulse_duration_ms": "received ultrasonic pulses at a frequency of 500 kHz, number of cycles (CPP) = 125, and tone burst duration (TBD) = 250 µs.",
+   "exposures[0].timing.duty_cycle_pct": "The sonication duration was varied between 30, 60, 90, and 120 s. The duty cycle was varied between 30%, 50%, and 80% by altering the burst period.",
+   "exposures[0].timing.sonication_duration_s": "The sonication duration was varied between 30, 60, 90, and 120 s. The duty cycle was varied between 30%, 50%, and 80% by altering the burst period.",
+   "exposures[0].free_field.pressure_kpa": "Two intensities were considered, 1.4 W/cm² and 3.39 W/cm², with respective peak negative pressures of 0.46 MPa and 0.72 MPa.",
+   "exposures[0].free_field.isppa_w_cm2": "Two intensities were considered, 1.4 W/cm² and 3.39 W/cm², with respective peak negative pressures of 0.46 MPa and 0.72 MPa.",
+   "exposures[0].device.manufacturer": "A single-element unfocused ultrasound transducer (Mana Instruments E0525-SU)",
+   "exposures[0].device.model": "A single-element unfocused ultrasound transducer (Mana Instruments E0525-SU)",
+   "n_sessions_per_subject": "Each rat underwent three trials, maintaining a consistent sonication duration while altering the DC in each trial."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Peak negative pressures 0.46 and 0.72 MPa; measured with a hydrophone in degassed water at the cone tip, so placed in free_field."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF not stated; duty cycle was varied by altering the burst period."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Tone burst duration of 250 microseconds converted to 0.25 ms."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "Only ISPPA stated; the text also gives a cumulative energy in J/cm2 and a thermal index."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each rat underwent three trials per sonication duration; total sessions per rat not stated clearly."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Region A (electrical stimulation only) serves as within-animal baseline; no sham sonication described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

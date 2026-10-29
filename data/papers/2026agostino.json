@@ -1,0 +1,377 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026agostino",
+ "doi": "10.64898/2026.08.06.743260",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 19,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "unfocused_or_detuned",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "Eriksen flanker task (accuracy, RT); stimulus-locked N2 and ERN; drift-diffusion modelling",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "aMCC-TUS and PCC-TUS both raised accuracy early in the task (about 17-27 min after TUS); aMCC-TUS reduced the incongruence effect on N2; no effect on ERN or reaction time.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Post-session simulations showed temperature below 38 C and CEM43 below 0.002 in the brain; no participant-reported adverse events described.",
+ "exposures": [
+  {
+   "label": "aMCC TUS",
+   "target": {
+    "terms": [
+     "cingulate_cortex"
+    ],
+    "label": "anterior midcingulate cortex (aMCC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS PRO with CTX-250-32 transducer"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     452.83,
+     487.9
+    ],
+    "isppa_w_cm2": [
+     7.01,
+     8.05
+    ],
+    "ispta_w_cm2": [
+     1.04,
+     1.2
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "5 Hz rTUS protocol: pulse length 20 ms (plus 10 ms Tukey ramping), pulse repetition period 200 ms, total duration 120 s, delivered once per session before the EEG flanker task (about 17 min later); sham was the same protocol for 2 s over aMCC."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  },
+  {
+   "label": "PCC TUS (active control)",
+   "target": {
+    "terms": [
+     "posterior_cingulate_cortex"
+    ],
+    "label": "posterior cingulate cortex (PCC)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS PRO with CTX-250-32 transducer"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     468.44,
+     476.16
+    ],
+    "isppa_w_cm2": [
+     7.5,
+     7.68
+    ],
+    "ispta_w_cm2": [
+     1.36,
+     1.39
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 120,
+    "protocol_description": "5 Hz rTUS protocol: pulse length 20 ms (plus 10 ms Tukey ramping), pulse repetition period 200 ms, total duration 120 s, delivered once per session before the EEG flanker task (about 17 min later); sham was the same protocol for 2 s over aMCC."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Nineteen participants (mean age=26 years, SD± 2.57, six women, one left handed man)",
+   "n_sessions_per_subject": "Participants were invited to three TUS sessions",
+   "exposures[0].fundamental_frequency_khz": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[0].timing.pulse_duration_ms": "Specifically, we used a pulse length of 20 ms (plus 10 ms Tukey ramping), pulse repetition period of 200 ms, total duration of 120 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Participants were invited to three TUS sessions, in which they received the 5Hz rTUS protocol for 120s targeting the aMCC or the PCC",
+   "exposures[0].timing.sonication_duration_s": "Participants were invited to three TUS sessions, in which they received the 5Hz rTUS protocol for 120s targeting the aMCC or the PCC",
+   "exposures[0].free_field.isppa_w_cm2": "The target ISPPA in water was kept constant at 30 W/cm2 for each participant",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td rowspan=1 colspan=1>Ipa (W/cm2)</td><td rowspan=1 colspan=1>8.05 (1.96)</td><td rowspan=1 colspan=1>7.01 (± 2.34)</td><td rowspan=1 colspan=1>7.5 (±2.28)</td><td rowspan=1 colspan=1>7.68 (± 1.97)</td></tr>",
+   "exposures[0].device.model": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[0].device.manufacturer": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[1].fundamental_frequency_khz": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[1].timing.pulse_duration_ms": "Specifically, we used a pulse length of 20 ms (plus 10 ms Tukey ramping), pulse repetition period of 200 ms, total duration of 120 s.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Participants were invited to three TUS sessions, in which they received the 5Hz rTUS protocol for 120s targeting the aMCC or the PCC",
+   "exposures[1].timing.sonication_duration_s": "Participants were invited to three TUS sessions, in which they received the 5Hz rTUS protocol for 120s targeting the aMCC or the PCC",
+   "exposures[1].free_field.isppa_w_cm2": "The target ISPPA in water was kept constant at 30 W/cm2 for each participant",
+   "exposures[1].in_situ.isppa_w_cm2": "<tr><td rowspan=1 colspan=1>Ipa (W/cm2)</td><td rowspan=1 colspan=1>8.05 (1.96)</td><td rowspan=1 colspan=1>7.01 (± 2.34)</td><td rowspan=1 colspan=1>7.5 (±2.28)</td><td rowspan=1 colspan=1>7.68 (± 1.97)</td></tr>",
+   "exposures[1].device.model": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[1].device.manufacturer": "The equipment used in this study was the NeuroFUS PRO system (Brainbox Ltd., Cardiff, UK) with a four-element ultrasound transducer (CTX-250-32, 64 mm diameter, Sonic Concepts Inc., Bothell, WA, USA) and a fundamental frequency of 250 kHz.",
+   "exposures[0].in_situ.pressure_kpa": "<tr><td rowspan=1 colspan=1>Ptp target (kPA)</td><td rowspan=1 colspan=1>487.9 (± 62.33)</td><td rowspan=1 colspan=1>452.83 (± 75.40)</td><td rowspan=1 colspan=1>468.44(± 77.19)</td><td rowspan=1 colspan=1>476.16 (± 63.26)</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td rowspan=1 colspan=1>Ispta (W/cm2)</td><td rowspan=1 colspan=1>1.04 (± 0.17)</td><td rowspan=1 colspan=1>1.20 (± 0.52)</td><td rowspan=1 colspan=1>1.36 (± 0.24)</td><td rowspan=1 colspan=1>1.39 (± 0.39)</td></tr>",
+   "exposures[1].in_situ.pressure_kpa": "<tr><td rowspan=1 colspan=1>Ptp target (kPA)</td><td rowspan=1 colspan=1>487.9 (± 62.33)</td><td rowspan=1 colspan=1>452.83 (± 75.40)</td><td rowspan=1 colspan=1>468.44(± 77.19)</td><td rowspan=1 colspan=1>476.16 (± 63.26)</td></tr>",
+   "exposures[1].in_situ.ispta_w_cm2": "<tr><td rowspan=1 colspan=1>Ispta (W/cm2)</td><td rowspan=1 colspan=1>1.04 (± 0.17)</td><td rowspan=1 colspan=1>1.20 (± 0.52)</td><td rowspan=1 colspan=1>1.36 (± 0.24)</td><td rowspan=1 colspan=1>1.39 (± 0.39)</td></tr>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "7.56 W/cm2 is an average across all stimulation conditions (aMCC and PCC, both hemispheres) from simulation; Table 1 lists per-target values, some under 'Ipa' and 'Isppa' rows that disagree, so the pooled text value is used for both exposures."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "From '5Hz rTUS protocol' and 200 ms pulse repetition period."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; not computed."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham was 2 s of the same protocol aimed at aMCC (minimal dose), so it is real output; PCC is an active control site."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Sham of 2 s was delivered so participants experienced the auditory confound similarly to verum; coded as matched_device_sound."
+   },
+   {
+    "field": "randomised",
+    "reason": "Order of sessions not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "disagree",
+   "exposures[1].in_situ.ispta_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[1].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.isppa_w_cm2": "second",
+   "exposures[1].in_situ.ispta_w_cm2": "second"
+  }
+ }
+}

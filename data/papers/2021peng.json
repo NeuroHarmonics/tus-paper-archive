@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021peng",
+ "doi": "10.1016/j.brainresbull.2021.07.028",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague Dawley)",
+ "conditions": [
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  15,
+  15
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "ADC and FA from 3.0 T DWI/DTI; neurological function score; Nissl staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LITUS alone and LITUS combined with Baicalin reduced ADC, neurological score and Nissl body loss and raised FA relative to untreated TBI; the combination was better than LITUS alone. Neuroprotective aim; excitation or inhibition not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LITUS group (and L-B group)",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "the brain damage area of the TBI rats"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.2,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Stimulation duration 400 ms and tone-burst duration 0.5 ms at 1 kHz PRF; the probe was placed on the brain damage area for 10 min, first immediately after TBI and then every 24 h at the same time point, a total of 10 times."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The SD rats were randomly divided into Sham control group (n = 15), TBI group (n = 15), LITUS group (n = 15), Baicalin group (n = 15), L-B group (n = 15).",
+   "n_sessions_per_subject": "The couplant was applied to the brain damage area of the TBI rats, the ultrasonic probe was placed in the brain damage area to be stimulated for 10 min, and then stimulated every 24 h at the same time point, a total of 10 times.",
+   "exposures[0].fundamental_frequency_khz": "The average intensity of stimulating pulse was $1 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the ultrasound fundamental frequency and pulse repetition frequency were 500 kHz and 1 kHz respectively, and the stimulation duration and tone-burst duration were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The average intensity of stimulating pulse was $1 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the ultrasound fundamental frequency and pulse repetition frequency were 500 kHz and 1 kHz respectively, and the stimulation duration and tone-burst duration were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The average intensity of stimulating pulse was $1 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the ultrasound fundamental frequency and pulse repetition frequency were 500 kHz and 1 kHz respectively, and the stimulation duration and tone-burst duration were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The average intensity of stimulating pulse was $1 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the ultrasound fundamental frequency and pulse repetition frequency were 500 kHz and 1 kHz respectively, and the stimulation duration and tone-burst duration were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The average intensity of stimulating pulse was $1 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ , the ultrasound fundamental frequency and pulse repetition frequency were 500 kHz and 1 kHz respectively, and the stimulation duration and tone-burst duration were 400 ms and 0.5 ms, respectively.",
+   "exposures[0].device.model": "The ultrasonic stimulation device, two function generators (AFG3022C; Tektronix, United States) were used to produce pulse signals, which were enlarged by power amplifier (E & I240 L; ENI Inc., United States) and conveying to ultrasonic transducer (V301-SU; Olympus, Japan).",
+   "exposures[0].device.manufacturer": "The ultrasonic stimulation device, two function generators (AFG3022C; Tektronix, United States) were used to produce pulse signals, which were enlarged by power amplifier (E & I240 L; ENI Inc., United States) and conveying to ultrasonic transducer (V301-SU; Olympus, Japan)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper gives only an 'average intensity of stimulating pulse'; the intensity type and domain are not stated. Placed as isppa in unspecified_domain by reading 'of stimulating pulse'."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "The paper states a stimulation duration of 400 ms but also that the probe was applied for 10 min per session; recorded as stated 400 ms (0.4 s). Duty cycle not stated."
+   },
+   {
+    "field": "blinding",
+    "reason": "'Double-blind principle' is stated for the neurological function scoring only; blinding of the treatment is not described."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Rats were anaesthetised for TBI surgery and MRI; anaesthetic state during the ultrasound sessions is not stated."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Olympus named for the transducer V301-SU (Olympus, Japan)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

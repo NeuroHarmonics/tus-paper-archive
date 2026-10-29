@@ -1,0 +1,209 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025songa",
+ "doi": "10.1109/tnsre.2025.3575456",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "laser speckle contrast imaging of cortical blood flow; time to first movement and full movement (righting reflex); H&E staining",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "5 min TUS to CA1 immediately after 120 min isoflurane anaesthesia accelerated recovery of cortical blood flow and shortened time to first movement; TUS during prolonged anaesthesia did not accelerate recovery.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining showed no signs of microhemorrhage, edema, or cell necrosis in exposed areas; theoretical temperature rise estimated below 0.01 C.",
+ "exposures": [
+  {
+   "label": "TUS of CA1",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V318-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 5.72,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 5.95,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 60,
+    "sonication_duration_s": 1,
+    "protocol_description": "1 s sonications with 4 s inter-stimulus interval, delivered for 5 min to CA1; given after (main experiment) or during isoflurane anaesthesia, or after 60 min anaesthesia in a short-anaesthesia comparison."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "For mice in the US group, a 5-min ultrasound stimulation was applied to the CA1 region (ML: −2 mm, AP: 2 mm).",
+   "exposures[0].fundamental_frequency_khz": "We therefore employed a 500 kHz frequency that provides a trade-off between spatial resolution and skull attenuation.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The acoustic intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } = 5 . 9 5 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) .$ , ISI (4 s), and SD (1 s) were established based on our previous investigations [32], [33], which could enhance neurovascular responses without inducing significant thermal elevation in brain tissue.",
+   "exposures[0].in_situ.isppa_w_cm2": "Besides, the in-situ measured $\\mathrm { I _ { S P P A } }$ was 5.72 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ (supplementary Fig.",
+   "exposures[0].timing.sonication_duration_s": "The acoustic intensity $( \\mathrm { I } _ { \\mathrm { S P P A } } = 5 . 9 5 ~ \\mathrm { W } / \\mathrm { c m } ^ { 2 } ) .$ , ISI (4 s), and SD (1 s) were established based on our previous investigations [32], [33], which could enhance neurovascular responses without inducing significant thermal elevation in brain tissue.",
+   "exposures[0].timing.duty_cycle_pct": "Other parameters including $\\Delta C = 6 0 \\%$ and $\\mathrm { P R F } = 1 . 5$ kHz were selected in accordance with established literature [34], which indicates that higher DC and PRF values contribute to excitatory neurovascular responses to ultrasound stimulation.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Other parameters including $\\Delta C = 6 0 \\%$ and $\\mathrm { P R F } = 1 . 5$ kHz were selected in accordance with established literature [34], which indicates that higher DC and PRF values contribute to excitatory neurovascular responses to ultrasound stimulation.",
+   "exposures[0].device.manufacturer": "The TUS module featured an immersion-type focused ultrasound transducer (V318-SU, Olympus NDT, Waltham, USA), which was operated by a custom-built TUS system.",
+   "exposures[0].device.model": "The TUS module featured an immersion-type focused ultrasound transducer (V318-SU, Olympus NDT, Waltham, USA), which was operated by a custom-built TUS system."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle appears as 'DC = 60%' with OCR corruption ('\\Delta C = 6 0 \\%'); likely OCR error."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "58 mice across four experiments including Control and Sham groups and a preliminary experiment; sonicated subset is smaller."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "5.95 W/cm2 stated in the parameters paragraph without domain; measurement in water and through skull described afterwards."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Transcranial measurement through a mouse skull with collimator, 5.72 W/cm2 (supplementary Fig. S1a)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; protocol has 1 s SD, PRF 1.5 kHz, DC 60%."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Main experiment: TUS after isoflurane ceased; second experiment: TUS during isoflurane anaesthesia."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

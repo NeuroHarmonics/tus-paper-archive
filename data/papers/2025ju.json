@@ -1,0 +1,165 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025ju",
+ "doi": "10.1021/acssensors.5c00258",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "not_reported",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "on-chip microelectrode firing frequency, platinum resistor temperature, Ca2+ and ROS imaging, viability",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "US1 and US2 reduced epileptic neuron firing frequency and temperature oscillation; US3 and US4 had no therapeutic effect.",
+ "adverse_events": null,
+ "safety_notes": "LIPUS parameters US1-US4 showed no apoptosis, necrosis or cytoskeletal disruption in normal neurons.",
+ "exposures": [
+  {
+   "label": "On-chip LIPUS (US1-US4) on epileptic cultured neurons",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "on-chip epileptic neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "interdigital transducer (IDT) microelectrode and platinum resistor array chip"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 30,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 300,
+    "protocol_description": "Four LIPUS parameter sets (US1-US4, listed in supplementary Table S1) were applied to Mg2+-free epileptic neuron cultures on a surface acoustic wave chip; 1 MHz, 30 kPa and 30% duty cycle is the parameter set the abstract reports as suppressing discharges; US2 was applied for 5 min in the heating test."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Further, using an on-chip epileptic neuronal model, it was found that ultrasound with parameters of 1 MHz frequency, 30 kPa pressure, and 30% duty cycle efectively suppressed neuronal epileptiform discharges.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Further, using an on-chip epileptic neuronal model, it was found that ultrasound with parameters of 1 MHz frequency, 30 kPa pressure, and 30% duty cycle efectively suppressed neuronal epileptiform discharges.",
+   "exposures[0].timing.duty_cycle_pct": "Further, using an on-chip epileptic neuronal model, it was found that ultrasound with parameters of 1 MHz frequency, 30 kPa pressure, and 30% duty cycle efectively suppressed neuronal epileptiform discharges.",
+   "exposures[0].timing.sonication_duration_s": "US2 (most efective parameter) induced a $0 . 2 ~ ^ { \\circ } \\mathrm { C }$ temperature rise during 5 min application (Figure 2E)."
+  },
+  "flags": [
+   {
+    "field": "species",
+    "reason": "Species of the cultured neurons not stated in the main text."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Abstract gives 1 MHz, 30 kPa, 30% duty cycle; full US1-US4 parameters are in a supplementary table not in the text."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Only a 5 min application for US2 in the heating test is mentioned; protocol otherwise in supplement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026zhenga",
+ "doi": "10.1371/journal.pone.0348030",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 10,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Fugl-Meyer Assessment; Modified Barthel Index; Brunnstrom stages; resting-state fNIRS (fALFF, functional connectivity)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Both LIFU and rTMS groups improved on FMA and MBI with no between-group difference post-intervention; change-from-baseline FMA gains were larger with LIFU; prefrontal fALFF increased in the LIFU group.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Vital signs monitored before and after each session; no stimulation-related adverse events were observed in either group.",
+ "exposures": [
+  {
+   "label": "LIFU over ipsilesional M1 plus standard rehabilitation",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "ipsilesional primary motor cortex"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Beijing Ruoao Medical Technology Co., Ltd.",
+    "model": "FUT56067"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 10.2,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.4,
+    "ispta_w_cm2": 0.68
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 1,
+    "protocol_description": "Sonication in 1-s trains with an inter-stimulus interval of 0.2 s; 20 minutes per session, five days per week for two weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "with either LIFU (n=25) or rTMS (n=25) targeting the ipsilesional primary motor cortex",
+   "n_sessions_per_subject": "five days per week for two weeks (10 sessions total)",
+   "exposures[0].fundamental_frequency_khz": "fundamental frequency 0.5 MHz, focal distance 50mm",
+   "exposures[0].free_field.isppa_w_cm2": "spatial-peak pulse-average intensity (ISPPA) of 10.2 W/cm<sup>2</sup> (free-field)",
+   "exposures[0].in_situ.isppa_w_cm2": "The derated ISPPA and ISPTA were estimated to be 3.4 W/cm<sup>2</sup> and 0.68 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "The derated ISPPA and ISPTA were estimated to be 3.4 W/cm<sup>2</sup> and 0.68 W/cm<sup>2</sup>, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "pulse duration of 0.2 ms, and pulse repetition period of 1ms (pulse repetition frequency of 1 kHz; duty cycle of 20%)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "pulse duration of 0.2 ms, and pulse repetition period of 1ms (pulse repetition frequency of 1 kHz; duty cycle of 20%)",
+   "exposures[0].timing.duty_cycle_pct": "pulse duration of 0.2 ms, and pulse repetition period of 1ms (pulse repetition frequency of 1 kHz; duty cycle of 20%)",
+   "exposures[0].timing.sonication_duration_s": "Sonication was delivered in 1-s trains with an inter-stimulus interval of 0.2 s.",
+   "exposures[0].device.manufacturer": "single-element transcranial focused ultrasound system (Model FUT56067, Beijing Ruoao Medical Technology Co., Ltd.;",
+   "exposures[0].device.model": "single-element transcranial focused ultrasound system (Model FUT56067, Beijing Ruoao Medical Technology Co., Ltd.;"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Secondary analysis of a three-arm RCT; 25 randomised to LIFU (43 of 50 across both arms completed); rTMS arm not an ultrasound exposure."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "In situ values are estimated from literature attenuation models, not simulated or measured; recorded as derating."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Train 1 s with 0.2 s interval; 20-min session; total pulses not stated."
+   },
+   {
+    "field": "provenance",
+    "reason": "Paper is a secondary analysis of a registered RCT; unclear whether the LIFU exposure data were reported in an earlier paper; included here as the paper reports full exposure and outcomes."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

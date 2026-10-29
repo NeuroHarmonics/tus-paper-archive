@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024feng",
+ "doi": "10.1016/j.ultrasmedbio.2024.06.014",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "Conditioned place preference, open-field test, elevated plus maze; UPLC-MS/MS of DA, 5-HT, glutamate; HE staining, TEM, cleaved caspase-3 IHC, western blot",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "Ultrasound alone (H + U) produced no significant change in conditioned place preference, anxiety-like behaviour or NAc neurotransmitter levels; the effects the paper reports are from the microbubble arm, which is not recorded.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE staining showed no abnormality in the H + U group; no deaths or gait abnormalities. Erythrocyte extravasation, neuropil vacuolation and synapse loss were confined to the microbubble arm.",
+ "exposures": [
+  {
+   "label": "Focused ultrasound to left NAc (H + U group, ultrasound only)",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "left NAc"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+    "model": "portable ultrasound stimulation system with 2 MHz focused transducer"
+   },
+   "fundamental_frequency_khz": 2000,
+   "free_field": {
+    "pressure_kpa": 1340,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000000,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "2 MHz fundamental, 1.34 MPa peak-negative pressure, PRF stated as 1 MHz, 5% duty cycle, 15 min per day over 2 days under 1.5% isoflurane, with 0.2 mL saline given intravenously during stimulation. Only this ultrasound-only arm is recorded; the H + U + MBs arm received SonoVue microbubbles and fails condition D."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.0001
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "exposures[0].free_field.pressure_kpa": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "exposures[0].timing.duty_cycle_pct": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "exposures[0].timing.sonication_duration_s": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "n_sessions_per_subject": "a fundamental frequency of 2 MHz, a peak-negative pressure (PNP) of 1.34 MPa, a pulse repetition frequency (PRF) of 1 MHz, a 5% duty cycle, applied for 15 min/d over 2 d.",
+   "n_subjects": "dared to enter the central area to explore everywhere $( n = 1 0$ per group).",
+   "exposures[0].device.manufacturer": "Ultrasonic neurostimulators were purchased from Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF stated as '1 MHz' (equal to 1,000,000 Hz) alongside 5% duty cycle; likely a typo for kHz or Hz. Recorded as written, converted to Hz. Pulse duration cannot be resolved."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "1.34 MPa PNP; hydrophone measurement in degassed water without derating is described for the sound field data, so placed in free_field."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n = 10 per group for behaviour, listed for the two ultrasound groups; n = 4 for HE and n = 6 for neurotransmitters, so animals analysed differ by assay."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer bought from SIAT as an ultrasonic neurostimulator; recorded as other_manufacturer."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15 min per day recorded as 900 s."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Judged out of scope: the aim is to damage the NAc using microbubbles (condition D, E4); the H+U arm without microbubbles is stimulation, but the paper's treatment arm is the microbubble group.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

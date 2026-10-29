@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022leea",
+ "doi": "10.1117/1.nph.9.3.032203",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (Gad2-GCaMP6-tdTomato)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "two-photon calcium imaging (GCaMP6f/tdTomato) of Gad2-positive interneurons",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "A subset of inhibitory interneurons showed an increase in calcium signal during 10 s stimulation; integrated activation increased sigmoidally with stimulation duration (1 to 20 s) and was significant for stimulation longer than 10 s.",
+ "adverse_events": "not_reported",
+ "safety_notes": "No significant temperature rise (<0.1 C) was measured with a tissue phantom at the focus during increasing stimulation periods.",
+ "exposures": [
+  {
+   "label": "Acousto-optic window (implanted transparent PVDF-TrFE transducer) on somatosensory cortex",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "acousto-optic window (AOW)"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 35,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     1,
+     20
+    ],
+    "protocol_description": "10 MHz, PRF 1.5 kHz, duty cycle 50 %, with 'pulse length' of 1 to 20 s (Fig. 3b); stimulation periods of 1, 5, 10 and 20 s were compared. The transducer sat directly on the cortex after open craniotomy."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.3333
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "(c) The integrated neuronal activation in response to varying stimulation periods from 1 to 20 s (n 34, 17, 84, and 48 neurons for 1, 5, 10, and 20 s, respectively; green dot: mean, whisker: SEM, acquired from three mice).",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound parameters used were as follows: frequency, 10 MHz; duty cycle, 50%; acoustic pressure, 0.035 MPa; and stimulation duration, 1 to 20 s.",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound parameters used were as follows: frequency, 10 MHz; duty cycle, 50%; acoustic pressure, 0.035 MPa; and stimulation duration, 1 to 20 s.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound parameters used were as follows: frequency, 10 MHz; duty cycle, 50%; acoustic pressure, 0.035 MPa; and stimulation duration, 1 to 20 s.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound parameters used were as follows: frequency, 10 MHz; duty cycle, 50%; acoustic pressure, 0.035 MPa; and stimulation duration, 1 to 20 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Frequency, PRF, duty cycle, and pulse length are 10 MHz, 1.5 kHz, 50%, and 1 to 20 s, respectively.",
+   "exposures[0].device.model": "Here, we propose a solution to this technical challenge by introducing an optically transparent acoustic transducer, termed the acousto-optic window (AOW)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "'Pulse length' in the Fig. 3b caption is 1 to 20 s, i.e. the stimulation train, not the individual pulse. Individual pulse duration is not stated (DC/PRF would be about 0.33 ms; not computed)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Abstract gives 0.035 MPa 'corresponding to 10 mW/cm2' without saying which intensity metric; the stated pressure is not tied to water or tissue. 10 mW/cm2 was not recorded. Hydrophone measurements in water (e.g. 0.11 MPa axial maximum at 60 Vpp, 3 cycles) used different drive settings."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Three mice stated for the stimulation-duration experiment; total number of mice used for Fig. 4b not given."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer fabricated by the authors (PVDF-TrFE and ITO on a coverslip); the transducer is implanted on the cortex after craniotomy, not transcranial."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "10 MHz recorded as 10000 kHz; pulse-echo centre frequency of the device was 24 MHz, with the 10 MHz being the lowest usable -6 dB frequency."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

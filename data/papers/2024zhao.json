@@ -1,0 +1,216 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024zhao",
+ "doi": "10.1109/tnsre.2024.3378109",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6; C57BL/6J-TgN alpha-synuclein A53T)",
+ "conditions": [
+  "parkinsons_disease",
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "novel object recognition; CA1 LFP, spikes",
+ "readout_timing": "not_reported",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "TUS of CA1 increased novel object exploration, relative LFP power in theta and gamma bands and theta-gamma coupling in PD and normal mice from day 4; effects returned toward baseline by day 14.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE staining showed no damage except minor damage at the electrode implantation site.",
+ "exposures": [
+  {
+   "label": "CA1 stimulation, 1 MHz",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region (hippocampus)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU focused probe"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 510,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "Fundamental frequency 1 MHz, 50000 cycles per pulse, PRF 1 Hz, duty cycle 5%, stimulation duration (SD) 50 ms. Each stimulation lasted 5 minutes then paused 5 minutes, 3 cycles in total (25 minutes), once daily for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Twelve healthy wild-type mice (C57BL/6, all male, 10 months old, Beijing Vital River Laboratory Animal Technology Co., Ltd.) were used. Six C57BL/6J-TgN (α- synuclein A53T) ZLFILAS mice (all male, 10 months old; Beijing Huafukang Co., Ltd.) were included in the experiment.",
+   "n_sessions_per_subject": "The stimulation lasted for 7 days [25].",
+   "exposures[0].fundamental_frequency_khz": "The main parameters of the output ultrasound were the fundamental frequency=1 MHz, fundamental cycle number $\\mathrm { N C / p { = } } 5 0 0 0 0 .$ , pulse repetition frequency=1 Hz, duty cycle=5%, and stimulation time (stimulation duration [SD])=50 ms, and maximum sound pressure=0.51 MPa.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The main parameters of the output ultrasound were the fundamental frequency=1 MHz, fundamental cycle number $\\mathrm { N C / p { = } } 5 0 0 0 0 .$ , pulse repetition frequency=1 Hz, duty cycle=5%, and stimulation time (stimulation duration [SD])=50 ms, and maximum sound pressure=0.51 MPa.",
+   "exposures[0].timing.pulse_duration_ms": "The main parameters of the output ultrasound were the fundamental frequency=1 MHz, fundamental cycle number $\\mathrm { N C / p { = } } 5 0 0 0 0 .$ , pulse repetition frequency=1 Hz, duty cycle=5%, and stimulation time (stimulation duration [SD])=50 ms, and maximum sound pressure=0.51 MPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The main parameters of the output ultrasound were the fundamental frequency=1 MHz, fundamental cycle number $\\mathrm { N C / p { = } } 5 0 0 0 0 .$ , pulse repetition frequency=1 Hz, duty cycle=5%, and stimulation time (stimulation duration [SD])=50 ms, and maximum sound pressure=0.51 MPa.",
+   "exposures[0].timing.duty_cycle_pct": "The main parameters of the output ultrasound were the fundamental frequency=1 MHz, fundamental cycle number $\\mathrm { N C / p { = } } 5 0 0 0 0 .$ , pulse repetition frequency=1 Hz, duty cycle=5%, and stimulation time (stimulation duration [SD])=50 ms, and maximum sound pressure=0.51 MPa.",
+   "exposures[0].timing.sonication_duration_s": "Each stimulation lasted 5 minutes and then paused for 5 minutes, for a total of 3 cycles of 25 minutes.",
+   "exposures[0].device.manufacturer": "then amplified by a focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, curvature radius: 40 mm, Olympus, USA) into ultrasound for stimulation.",
+   "exposures[0].device.model": "then amplified by a focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, curvature radius: 40 mm, Olympus, USA) into ultrasound for stimulation."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper gives 'stimulation duration (SD)=50 ms' with 50000 cycles at 1 MHz, PRF 1 Hz and duty cycle 5%; taken as the pulse duration because 5%/1 Hz = 50 ms (resolved by arithmetic)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Value 300 s is the 5-minute stimulation block (3 blocks separated by 5-minute pauses), converted from the text."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "'Maximum sound pressure' 0.51 MPa given without stating the domain; a COMSOL simulation is mentioned separately."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "12 wild-type and 6 transgenic mice are stated; non-stimulated normal controls exist, so the number actually sonicated is not stated; group sizes of 6 per group are used in the results."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "Whether LFP and behaviour were recorded during or after sonication on test days is not stated in the text."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Effects are on memory and LFP power; direction in terms of excitation or inhibition is not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Non-stimulated normal mice served as the comparison group; no sham device arm described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

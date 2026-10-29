@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026cheni",
+ "doi": "10.3390/ijms27198498",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  9,
+  9,
+  9
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "open-field locomotor activity; modified Bederson neurological deficit score; rotarod; H&E; TTC; immunohistochemistry (FNDC5, BDNF, 8-OHdG); Western blot; TUNEL",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS preconditioning plus post-stroke LIPUS, alone or with aerobic exercise, improved neurological and rotarod outcomes and histopathology in MCAO mice and raised FNDC5 and BDNF; neuronal excitability was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS 1 MHz to lateral motor cortex, pre- and post-MCAO",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "lateral motor cortex (M1/M2 region)"
+   },
+   "device": {
+    "family": "mettler",
+    "manufacturer": "Mettler Electronics",
+    "model": "ME740"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.1
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1200,
+    "protocol_description": "20 min per day for three consecutive days before MCAO, then daily for 14 days starting on postoperative day 3; non-focused collimated beam, ERA 1 cm2; output power 50%."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "divided into 7 groups (sham, sham + LIPUS, sham + exercise, MCAO, MCAO + LIPUS, MCAO + exercise, and MCAO + LIPUS + exercise; 9 mice/group)",
+   "exposures[0].fundamental_frequency_khz": "LI-PUS parameters were as follows: center frequency: 1.0 MHz; output power: 50%; exposure duration: 20 min; intensity (ISPTA): 100 mW/cm<sup>2</sup>. The pulse repetition frequency (PRF) was 100 Hz.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "LI-PUS parameters were as follows: center frequency: 1.0 MHz; output power: 50%; exposure duration: 20 min; intensity (ISPTA): 100 mW/cm<sup>2</sup>. The pulse repetition frequency (PRF) was 100 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "LI-PUS parameters were as follows: center frequency: 1.0 MHz; output power: 50%; exposure duration: 20 min; intensity (ISPTA): 100 mW/cm<sup>2</sup>. The pulse repetition frequency (PRF) was 100 Hz.",
+   "exposures[0].timing.sonication_duration_s": "LI-PUS parameters were as follows: center frequency: 1.0 MHz; output power: 50%; exposure duration: 20 min; intensity (ISPTA): 100 mW/cm<sup>2</sup>. The pulse repetition frequency (PRF) was 100 Hz.",
+   "exposures[0].timing.duty_cycle_pct": "intensity with a 50% duty cycle to the target cerebrovascular region for 20 min per day",
+   "exposures[0].device.family": "LIPUS, delivered by a 1.0 MHz ultrasound generator (ME740; Mettler Electronics, Anaheim, CA, USA)",
+   "exposures[0].device.manufacturer": "LIPUS, delivered by a 1.0 MHz ultrasound generator (ME740; Mettler Electronics, Anaheim, CA, USA)",
+   "exposures[0].device.model": "LIPUS, delivered by a 1.0 MHz ultrasound generator (ME740; Mettler Electronics, Anaheim, CA, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Seven groups of 9 mice; only the three LIPUS-containing groups were sonicated (listed as group sizes); total not stated."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle 50% from Results text; Methods list 'output power: 50%'."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "20 min exposure converted to 1200 s per daily session."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "100 mW/cm2 ISPTA converted to 0.1 W/cm2; domain not stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia stated for MCAO surgery only; not stated for LIPUS delivery."
+   },
+   {
+    "field": "blinding",
+    "reason": "Behavioural and histology assessors blinded; those delivering interventions were not."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Results text describes the target as the 'target cerebrovascular region'; Methods give lateral motor cortex coordinates."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham-operated mice and untreated MCAO group received no LIPUS."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

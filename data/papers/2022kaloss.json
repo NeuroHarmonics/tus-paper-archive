@@ -1,0 +1,208 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (CD1)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  3,
+  4,
+  11
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular"
+ ],
+ "readout_other": "Nissl infarct volume; IgG deposition; CD31 microvessel diameter; vessel painting of pial collaterals",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Neuroprotection (reduced infarct volume and IgG deposition) was reported after LIFU compared with mock treatment; neuronal excitation or inhibition was not assessed.",
+ "adverse_events": "observed",
+ "safety_notes": "At 3.5 MPa peak negative pressure mortality and hemorrhage occurred; no mortality or hemorrhage at 1.8 MPa and none at 2.0 MPa.",
+ "exposures": [
+  {
+   "label": "LIFU after pMCAO, 1.1 MHz, 30 min",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "cerebral vasculature, including the MCA-ACA pial collateral niche (left parietal bone 4 mm rostral of bregma and 2 mm lateral of midline)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-101"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     1800,
+     2000,
+     3500
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulsed LIFU: sonication duration 300 ms delivered every 3 s (ISI = 3 s) for 600 stimulations, a total of 30 min, starting immediately after pMCAO."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2022kaloss",
+ "doi": "10.34133/2022/9864910",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Based on the results of the pilot study, eleven adult, male CD1 mice were subjected to the LIFU treatment at a peak negative pressure of -2 MPa.",
+   "n_sessions_per_subject": "Transcranial FUS was performed immediately following pMCAO procedures for 30 minutes as detailed below.",
+   "exposures[0].fundamental_frequency_khz": "transmitted to a 1.1 MHz single ele ment focused ultrasound transducer with estimated focal dimensions of 10.21 mm in length and 1.37 mm in diameter (H-101, Sonic Concepts, Inc., Bothell, WA, USA)",
+   "exposures[0].unspecified_domain.pressure_kpa": "Mice were treated with LIFU at a peak negative pressure of either -1.8 MPa, -2.0 MPa, or -3.5 MPa and PRF = 1 kHz, SD = 300 ms, ISI = 3 s, and TBD = 0:5 ms for 30 minutes.",
+   "exposures[0].timing.pulse_duration_ms": "A pulse repetition frequency (PRF) of 1 kHz, duty cycle (DC) per pulse of 50%, sonication duration (SD) of 300 ms, and tone-burst duration (TBD) of 0.5 ms were used in all experiments.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "A pulse repetition frequency (PRF) of 1 kHz, duty cycle (DC) per pulse of 50%, sonication duration (SD) of 300 ms, and tone-burst duration (TBD) of 0.5 ms were used in all experiments.",
+   "exposures[0].timing.duty_cycle_pct": "A pulse repetition frequency (PRF) of 1 kHz, duty cycle (DC) per pulse of 50%, sonication duration (SD) of 300 ms, and tone-burst duration (TBD) of 0.5 ms were used in all experiments.",
+   "exposures[0].timing.sonication_duration_s": "A pulse repetition frequency (PRF) of 1 kHz, duty cycle (DC) per pulse of 50%, sonication duration (SD) of 300 ms, and tone-burst duration (TBD) of 0.5 ms were used in all experiments.",
+   "exposures[0].device.model": "transmitted to a 1.1 MHz single ele ment focused ultrasound transducer with estimated focal dimensions of 10.21 mm in length and 1.37 mm in diameter (H-101, Sonic Concepts, Inc., Bothell, WA, USA)",
+   "exposures[0].device.manufacturer": "transmitted to a 1.1 MHz single ele ment focused ultrasound transducer with estimated focal dimensions of 10.21 mm in length and 1.37 mm in diameter (H-101, Sonic Concepts, Inc., Bothell, WA, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only fourteen (safety pilot) and 23 (final study) mice stated; not all were sonicated (some untreated or mock), so the number exposed is not stated as a total."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Peak negative pressures 1.8, 2.0 and 3.5 MPa; focal pressures measured by hydrophone before experiments but the paper does not say water or through skull, so placed in unspecified domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Tone-burst duration 0.5 ms stated; consistent with 50% DC at 1 kHz PRF (burst rule resolved by stated TBD)."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Transducer placed over parietal bone; target is cerebral vasculature/MCA territory, term chosen loosely."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -5,8 +5,10 @@ from __future__ import annotations
 import json
 import os
 import re
+import subprocess
 import unicodedata
 from pathlib import Path
+from string import ascii_lowercase
 
 ROOT = Path(__file__).resolve().parent.parent
 CANDIDATES = ROOT / "candidates"
@@ -61,6 +63,32 @@ DOI_RE = re.compile(r"\b(10\.\d{4,9}/[-._;()/:a-zA-Z0-9]+)")
 DOI_BLOCKLIST = (
     "10.1016/j.brs.0000",  # placeholder seen in some Elsevier proofs
 )
+
+
+def datacite(doi: str) -> dict | None:
+    """Title, year, authors and abstract for a DOI registered with DataCite.
+
+    arXiv, Zenodo and OSF DOIs are not in Crossref, so a Crossref lookup returns
+    nothing and the paper loses its authors: 2025anon was filed that way. DataCite
+    is key-free. Returns None on any failure; the callers already treat a missing
+    record as "not found" and try elsewhere.
+    """
+    import httpx
+
+    try:
+        r = httpx.get(f"https://api.datacite.org/dois/{doi}", timeout=30,
+                      headers={"User-Agent": f"tus-paper-archive/1.0 (mailto:{MAILTO})"})
+        r.raise_for_status()
+        a = r.json()["data"]["attributes"]
+    except (httpx.HTTPError, ValueError, KeyError):
+        return None
+    authors = [{"family": c.get("familyName") or c.get("name"), "given": c.get("givenName")}
+               for c in a.get("creators") or [] if c.get("familyName") or c.get("name")]
+    abstract = next((d.get("description") for d in a.get("descriptions") or []
+                     if d.get("descriptionType") == "Abstract"), None)
+    return {"title": (a.get("titles") or [{}])[0].get("title"),
+            "year": a.get("publicationYear"), "journal": a.get("publisher"),
+            "authors": authors, "abstract": abstract}
 
 
 def read_json(path: Path, default=None):
@@ -192,6 +220,78 @@ def citekey_base(year, surname: str | None) -> str:
     return f"{year or 'nd'}{surname_slug(surname or '') or 'anon'}"
 
 
+# Preprint servers. A preprint whose published version is held or listed must not be fetched twice,
+# and a preprint has no journal to count.
+PREPRINT_DOI = re.compile(
+    r"^10\.(1101|64898|21203|2139|48550|31234|20944|36227|22541)/|^10\.2196/preprints\.", re.I)
+
+
+def released_manifest() -> dict[str, dict]:
+    """The manifest papers of the most recent release tag, or {} if there is none. A released
+    citekey is public, so it decides which paper owns a key."""
+    try:
+        tags = subprocess.run(["git", "-C", str(ROOT), "tag", "--list", "v*", "--sort=-creatordate"],
+                              capture_output=True, text=True, check=True).stdout.split()
+        if not tags:
+            return {}
+        out = subprocess.run(["git", "-C", str(ROOT), "show", f"{tags[0]}:data/manifest.json"],
+                             capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    return json.loads(out).get("papers", {})
+
+
+def assign_citekeys(groups: dict[str, list[str]], released: dict[str, str],
+                    working: dict[str, str]) -> dict[str, str]:
+    """Citekeys from citekey_base groups ({base: [doi, ...]}); `released` and `working` map
+    lowercased DOI -> key. A paper keeps its own key (base, or base plus one letter), the released
+    one first. A newcomer takes its bare base when alone, else the first free letter in DOI order.
+
+    Every released key is reserved, even after its paper is excluded or merged, and a suffix that
+    spells another group's base is skipped: the eighth 2026 Chen paper had taken 2026cheng from a
+    released Cheng paper."""
+    bases = set(groups)
+    citekey: dict[str, str] = {}
+    taken: set[str] = set(released.values())
+
+    def own(key: str | None, base: str, crossing_ok: bool = False) -> bool:
+        return bool(key) and (key == base or (key[:-1] == base and key[-1] in ascii_lowercase
+                                               and (crossing_ok or key not in bases)))
+
+    # Released keys first (even one that spells another base), then bare, then suffixed.
+    kept = []
+    for base, dois in groups.items():
+        for doi in dois:
+            r, w = released.get(doi.lower()), working.get(doi.lower())
+            if own(r, base, crossing_ok=True):
+                kept.append((0, r, doi))
+            elif own(w, base):
+                kept.append((1 if w == base else 2, w, doi))
+    claimed = set()
+    for _, key, doi in sorted(kept):
+        if key not in claimed:
+            citekey[doi] = key
+            claimed.add(key)
+            taken.add(key)
+
+    for base, dois in sorted(groups.items()):
+        newcomers = sorted(d for d in dois if d not in citekey)
+        if not newcomers:
+            continue
+        if len(dois) == 1 and base not in taken:
+            citekey[newcomers[0]] = base
+            taken.add(base)
+            continue
+        for doi in newcomers:
+            key = next((f"{base}{c}" for c in ascii_lowercase
+                        if f"{base}{c}" not in taken and f"{base}{c}" not in bases), None)
+            if key is None:
+                raise SystemExit(f"citekey: no free suffix letter left for {base} ({doi})")
+            citekey[doi] = key
+            taken.add(key)
+    return citekey
+
+
 # --- conference output -------------------------------------------------------
 # All conference output is out (E8), for a clean boundary.
 # Abstracts were already out under E8; this extends it to full proceedings papers,
@@ -205,6 +305,7 @@ def citekey_base(year, surname: str | None) -> str:
 _CONF_DOI = re.compile(
     r"^10\.1109/(embc|iembs|ius|ultsym|uffc|smc|ner|bhi|embs|mems|isbi)"
     r"|^10\.1145/"          # ACM
+    r"|^10\.1115/(dmd|imece|detc|sbc|ipack|icone)"  # ASME conference series; ASME journals are 10.1115/1.*
     r"|^10\.1117/12\."      # SPIE proceedings; SPIE JOURNALS are 10.1117/1.*
     r"|^10\.32470/ccn",      # CCN
     re.I)
@@ -273,6 +374,10 @@ def record_screening(rows, run: str, ledger: dict[str, dict] | None = None, writ
         new = {k: v for k, v in r.items() if k != "history"}
         new["doi"] = doi
         new["run"] = run
+        # E9 is a reversible scope ruling: build_parked.py lists every row that carries this,
+        # and a verdict file never does, so a re-screen would otherwise drop it from the list.
+        if new.get("criterion") == "E9":
+            new.setdefault("parked_class", "neural_regeneration")
         old = ledger.get(doi)
         if old is not None:
             hist = old.get("history", [])

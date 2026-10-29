@@ -1,0 +1,200 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 40,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "Electrical impedance tomography; modified neurologic severity score; rotarod test; TTC infarct staining; BDNF western blot",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "tFUS after MCAO lowered ipsilateral and whole-brain impedance, improved mNSS from day 3, and reduced infarct volume; rotarod, weight and BDNF changes were not significant versus MCAO.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS of ischemic right hemisphere",
+   "target": {
+    "terms": [
+     "hemisphere_unspecified"
+    ],
+    "label": "right hemisphere of the brain (the same side as the occluded hemisphere)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences",
+    "model": "single crystal focused ultrasonic transducer, 3 cm diameter"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.4505
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulse width 500 us, pulse interval 1 ms, stimulation duration 300 ms, stimulation interval 3 s, applied for 20 minutes daily for 3 consecutive days starting 24 h after MCAO."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2026guo",
+ "doi": "10.4103/nrr.nrr-d-24-00128",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Seventy-six rats were used in this experiment, with 40 randomly assigned to the experimental group and 36 to the control group.",
+   "n_sessions_per_subject": "In the MCAO + tFUS group, tFUS was administered daily for 3 consecutive days after surgery.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound parameters used were as follows: fundamental frequency of 1 MHz, average spatial peak time intensity (Ispta) of 450.5 mW/cm<sup>2</sup>, pulse width of 500 μs, pulse interval of 1 millisecond, stimulation duration of 300 milliseconds, and stimulation interval of 3 seconds.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound parameters used were as follows: fundamental frequency of 1 MHz, average spatial peak time intensity (Ispta) of 450.5 mW/cm<sup>2</sup>, pulse width of 500 μs, pulse interval of 1 millisecond, stimulation duration of 300 milliseconds, and stimulation interval of 3 seconds.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound parameters used were as follows: fundamental frequency of 1 MHz, average spatial peak time intensity (Ispta) of 450.5 mW/cm<sup>2</sup>, pulse width of 500 μs, pulse interval of 1 millisecond, stimulation duration of 300 milliseconds, and stimulation interval of 3 seconds.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound parameters used were as follows: fundamental frequency of 1 MHz, average spatial peak time intensity (Ispta) of 450.5 mW/cm<sup>2</sup>, pulse width of 500 μs, pulse interval of 1 millisecond, stimulation duration of 300 milliseconds, and stimulation interval of 3 seconds.",
+   "exposures[0].device.manufacturer": "Ultrasound pulses were transmited using a single crystal focused ultrasonic transducer with a diameter of 3 cm (Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences) (Figure 3C)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "76 rats enrolled (40 experimental, 36 control); sample sizes per outcome vary (n = 16/18, 6, 4/5, 3, 11/5)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper gives pulse width 500 microseconds and pulse interval 1 ms; unclear whether interval is off-time or period, so PRF and duty cycle not derived."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Stated stimulation duration 300 ms with a 3 s stimulation interval; total 20 min per day."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta 450.5 mW/cm2 converted to 0.4505 W/cm2; domain not stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer from Shenzhen Institute of Advanced Technology, a research institute; classed custom_built."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is the right (ipsilateral to MCAO) hemisphere; no specific structure."
+   },
+   {
+    "field": "sham_type",
+    "reason": "MCAO control received same procedures without tFUS; how (device off or not) not described."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Rats anaesthetised with isoflurane for tFUS; behavioural testing state not stated."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Outcomes were impedance, behaviour, infarct volume and BDNF, not neural excitability."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,220 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026mirg",
+ "doi": "10.1038/s44384-025-00037-2",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Laser speckle contrast imaging (% change in CBF) and intrinsic optical signal imaging (change in OD, total haemoglobin)",
+ "readout_timing": "online",
+ "anaesthesia": "both",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Ultrasound increased CBF and total haemoglobin in somatosensory cortex, scaling with pulse train duration and pressure; no consistent dependence on pulse duration or PRF. Neural activity was not recorded.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermal effects assessed by calculation (maximum tissue rise 0.03 C; transducer surface rise 1.3 C).",
+ "exposures": [
+  {
+   "label": "Transparent ultrasound transducer cranial window over somatosensory cortex, 12 MHz",
+   "target": {
+    "terms": [
+     "somatosensory_cortex"
+    ],
+    "label": "somatosensory cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "In-house lithium niobate transparent ultrasound transducer (TUT), 3 x 3 mm"
+   },
+   "fundamental_frequency_khz": 12000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": [
+     230.8,
+     486.2
+    ],
+    "isppa_w_cm2": 4.9,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.1,
+     0.5
+    ],
+    "pulse_repetition_frequency_hz": [
+     100,
+     1000
+    ],
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": [
+     0.025,
+     0.25
+    ],
+    "protocol_description": "Seven trials per recording, 30 s apart; main protocol PRF 1000 Hz, pulse duration 500 us, PNP 486.2 kPa, pulse train duration 250 ms. Pulse train duration varied 25-250 ms, PNP 230.8-486.2 kPa, pulse duration 100-500 us and PRF 100-1000 Hz one at a time."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "three C57BL/6 J mice (male, 2–6 months old, Jackson Laboratory, Bar Harbor, ME, USA)",
+   "exposures[0].fundamental_frequency_khz": "we fixed the ultrasonic stimulation frequency at 12 MHz for this study.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "we examined changes in PRF from 100 to 1000 Hz",
+   "exposures[0].timing.pulse_duration_ms": "When varying PD from 100 to 500 μs at PRF: 1000 Hz, PTD: 250 ms, and PNP: 486.",
+   "exposures[0].timing.sonication_duration_s": "increasing PTD from 25 to 250 ms",
+   "exposures[0].device.model": "A key aspect of our study is the use of a custom-made TUT",
+   "exposures[0].device.manufacturer": "A key aspect of our study is the use of a custom-made TUT",
+   "exposures[0].in_situ.pressure_kpa": "Similarly, in Fig. 3g–l, we examined the effect of increasing PNP from 230.8 to 486.2 kPa at PRF: 1000 Hz, $\\operatorname { P D } \\colon 5 0 0 \\mu s ,$ and PTD: 250 ms.",
+   "exposures[0].in_situ.isppa_w_cm2": "The maximum $\\mathrm { I _ { S P P A } }$ was 4.9 W/cm<sup>2</sup>, and the maximum MI was 0.12."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Peak negative pressure measured by hydrophone in water through a thinned skull and derated 30% for cyanoacrylate glue; domain not clearly stated, so placed in unspecified. Text also gives 496.1 kPa in the PRF sweep, probably a typo for 486.2."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Maximum ISPPA only, calculated for mouse brain tissue properties."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Sweep range converted from 100-500 us; values read from text, full parameter table is supplementary."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated in the main text."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse train duration swept 25-250 ms, converted to s."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Three mice for the parameter study; Fig. 2 shows one mouse (n=7 trials)."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Main experiments in awake head-fixed mice; an isoflurane comparison is in supplementary material."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham ultrasound with the same parameters delivered over the frontal bone, plus a 1 kHz auditory stimulus; shown in supplementary figure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

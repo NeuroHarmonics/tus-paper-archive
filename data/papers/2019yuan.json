@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019yuan",
+ "doi": "10.1093/cercor/bhy187",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "local field potential ripple band (160-200 Hz); laser speckle contrast imaging of cerebral blood flow",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LFP amplitude and ripple-band power increased during ultrasound stimulation and relative CBF increased; no change in sham.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to visual cortex",
+   "target": {
+    "terms": [
+     "visual_cortex"
+    ],
+    "label": "visual cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "FF 500 kHz, PRF 1 kHz, SD 400 ms and DC 40%. Unfocused transducer coupled to the skull through a conical collimator."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The ripple signal induced by ultrasound stimulation (n = 12) can be seen.",
+   "exposures[0].fundamental_frequency_khz": "The FF, PRF, SD, and DC of the ultrasound were 500 kHz, 1 kHz, 400 ms, and 40%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FF, PRF, SD, and DC of the ultrasound were 500 kHz, 1 kHz, 400 ms, and 40%, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The FF, PRF, SD, and DC of the ultrasound were 500 kHz, 1 kHz, 400 ms, and 40%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The FF, PRF, SD, and DC of the ultrasound were 500 kHz, 1 kHz, 400 ms, and 40%, respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The AI (1.1 W/cm<sup>2</sup>) was indicated by I<sub>sppa</sub>, which was calculated by the ultrasound pressure measured by a calibrated needle-type hydrophone (HNR500, Onda, Sunnyvale, CA, USA).",
+   "exposures[0].device.model": "The pulsed signal from the second generator was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU, Olympus, Japan).",
+   "exposures[0].device.manufacturer": "The pulsed signal from the second generator was amplified by a linear power amplifier (E&I240L, ENI Inc., USA) and transmitted to an unfocused ultrasound transducer (V301-SU, Olympus, Japan)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "19 mice used; LIPUS n=12 and sham n=7 reported in Results."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: pulse duration not stated; duty cycle 40% and PRF 1 kHz are given, SD 400 ms is the train. Left not_reported."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa calculated from hydrophone-measured pressure; medium not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham group never described."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target described only as visual cortex."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,365 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019verhagen",
+ "doi": "10.7554/elife.40541",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "resting-state fMRI connectivity fingerprints; T1w MRI for oedema; Nissl and H&E histology",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "After 40 s of TUS, the stimulated area (SMA or FPC) changed its connectivity selectively: stronger coupling with closely connected areas, weaker with others; unstimulated site was largely unaffected. Non-specific meningeal signal changes also occurred.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No oedema on T1w MRI, no tissue burn at postmortem, and no neuronal alteration or haemorrhage on histology after pre-SMA TUS; simulated skull heating 2.9 C.",
+ "exposures": [
+  {
+   "label": "SMA TUS",
+   "target": {
+    "terms": [
+     "supplementary_motor_area"
+    ],
+    "label": "SMA"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept, Bothell, WA, USA",
+    "model": "H115-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": [
+     1170,
+     1350
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 880,
+    "isppa_w_cm2": 24.1,
+    "ispta_w_cm2": 7.2
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "30 ms bursts of 250 kHz ultrasound generated every 100 ms for 40 s, a single train over the midline targeting both hemispheres; fMRI began after the train ended."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  },
+  {
+   "label": "FPC TUS",
+   "target": {
+    "terms": [
+     "anterior_prefrontal_cortex"
+    ],
+    "label": "FPC"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concept, Bothell, WA, USA",
+    "model": "H115-MR"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": [
+     1170,
+     1350
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 1010,
+    "isppa_w_cm2": 31.7,
+    "ispta_w_cm2": 9.5
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 30,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "30 ms bursts of 250 kHz ultrasound generated every 100 ms for 40 s, a single train over the midline targeting both hemispheres; fMRI began after the train ended."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 30.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "For this study, six healthy male macaques (Macaca mulatta, NCBITaxon:9544) were stimulated with transcranial focused ultrasound and scanned to acquire resting state functional magnetic resonance images (rs-fMRI) and anatomical MR images.",
+   "exposures[0].fundamental_frequency_khz": "The resonance frequency of the ultrasonic wave was set at 250 kHz with 30 ms bursts of ultrasound generated every 100 ms, controlled through a digital function generator (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[0].timing.pulse_duration_ms": "The resonance frequency of the ultrasonic wave was set at 250 kHz with 30 ms bursts of ultrasound generated every 100 ms, controlled through a digital function generator (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "This is something that we have avoided in our work with macaques: we pulse modulated the 250 kHz ultrasound wave at 10 Hz: as such we ensured that the frequency of both the ultrasound wave and its modulating envelope are well outside of the macaque hearing range.",
+   "exposures[0].timing.sonication_duration_s": "The stimulation lasted for 40 s. A 75-Watt amplifier (75A250A, Amplifier Research, Souderton, PA) was used to deliver the required power to the transducer. A TiePie probe (Handyscope HS5, TiePie engineering, Sneek, The Netherlands) connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was kept constant throughout the stimulation. Voltage values per session ranged from 130 to 142 V, corresponding to 1.17 to 1.35 MPa as measured in water with an in house heterodyne interferometer (Constans et al., 2017). Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively). Each of the areas targeted in experiments 1–4 lie close to the midline. Therefore, we applied a single train over the midline stimulating the target region in both hemispheres simultaneously.",
+   "exposures[0].free_field.pressure_kpa": "Voltage values per session ranged from 130 to 142 V, corresponding to 1.17 to 1.35 MPa as measured in water with an in house heterodyne interferometer (Constans et al., 2017).",
+   "exposures[0].in_situ.pressure_kpa": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[0].in_situ.isppa_w_cm2": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[0].in_situ.ispta_w_cm2": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[0].device.manufacturer": "A single element ultrasound transducer (H115-MR, diameter 64 mm, Sonic Concept, Bothell, WA, USA)",
+   "exposures[0].device.model": "A single element ultrasound transducer (H115-MR, diameter 64 mm, Sonic Concept, Bothell, WA, USA)",
+   "exposures[1].fundamental_frequency_khz": "The resonance frequency of the ultrasonic wave was set at 250 kHz with 30 ms bursts of ultrasound generated every 100 ms, controlled through a digital function generator (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[1].timing.pulse_duration_ms": "The resonance frequency of the ultrasonic wave was set at 250 kHz with 30 ms bursts of ultrasound generated every 100 ms, controlled through a digital function generator (Handyscope HS5, TiePie engineering, Sneek, The Netherlands).",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "This is something that we have avoided in our work with macaques: we pulse modulated the 250 kHz ultrasound wave at 10 Hz: as such we ensured that the frequency of both the ultrasound wave and its modulating envelope are well outside of the macaque hearing range.",
+   "exposures[1].timing.sonication_duration_s": "The stimulation lasted for 40 s. A 75-Watt amplifier (75A250A, Amplifier Research, Souderton, PA) was used to deliver the required power to the transducer. A TiePie probe (Handyscope HS5, TiePie engineering, Sneek, The Netherlands) connected to an oscilloscope was used to monitor the voltage delivered. The recorded peak-to-peak voltage was kept constant throughout the stimulation. Voltage values per session ranged from 130 to 142 V, corresponding to 1.17 to 1.35 MPa as measured in water with an in house heterodyne interferometer (Constans et al., 2017). Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively). Each of the areas targeted in experiments 1–4 lie close to the midline. Therefore, we applied a single train over the midline stimulating the target region in both hemispheres simultaneously.",
+   "exposures[1].free_field.pressure_kpa": "Voltage values per session ranged from 130 to 142 V, corresponding to 1.17 to 1.35 MPa as measured in water with an in house heterodyne interferometer (Constans et al., 2017).",
+   "exposures[1].in_situ.pressure_kpa": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[1].in_situ.isppa_w_cm2": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[1].in_situ.ispta_w_cm2": "Based on numerical simulations (see Acoustic and thermal modelling below for more details), the maximum peak pressure $( \\mathsf { P } _ { \\mathsf { m a x } } )$ and $\\boldsymbol { \\vert } _ { \\mathsf { s p p a } }$ at the acoustic focus point were estimated to be 0.88 MPa and 24.1 W/cm<sup>2</sup> for the SMA target, and 1.01 MPa and $3 1 . 7 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for the FPC target $( \\mathsf { I } _ { \\mathsf { s p t a } } ; 7 . 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ and $9 . 5 ~ \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for SMA and FPC, respectively).",
+   "exposures[1].device.manufacturer": "A single element ultrasound transducer (H115-MR, diameter 64 mm, Sonic Concept, Bothell, WA, USA)",
+   "exposures[1].device.model": "A single element ultrasound transducer (H115-MR, diameter 64 mm, Sonic Concept, Bothell, WA, USA)",
+   "n_sessions_per_subject": "We acquired one MRI session per monkey per condition: in total we performed three sessions per animal across experiments 1 and 2, and one session per animal in experiment 3."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Six macaques received TUS in experiments 1-3 (3 in SMA/FPC within-subject, 3 in FPC replication); three further animals received pre-SMA TUS for histology (experiment 4) and are not counted."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated; 30 ms every 100 ms is given as bursts and interval."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF of 10 Hz stated in the discussion; methods give a burst every 100 ms."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper chose 250 kHz carrier and 10 Hz modulation to stay outside macaque hearing range and checked A1 coupling; no sound-masking or sham sound."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Range 1.17-1.35 MPa across sessions as measured in water; also 1.2 MPa at 130 V in simulation section."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Simulated using a macaque CT; single transducer train over midline targets both hemispheres."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control state had all procedures except TUS; other-site TUS also served as a control."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Experiment 4 stimulated pre-SMA (coordinates given) for histology in three further animals; it is not listed as a separate exposure.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

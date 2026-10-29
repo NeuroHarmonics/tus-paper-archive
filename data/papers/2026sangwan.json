@@ -1,0 +1,209 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026sangwan",
+ "doi": "10.1213/ane.0000000000008386",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "acute postoperative incisional pain (rat hindpaw incision model)",
+ "n_subjects": 19,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Randall-Selitto mechanical withdrawal threshold; modified Hargreaves thermal latency; hindpaw flexion and extension scores",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Higher total acoustic energy to the sciatic nerve produced progressively greater inhibition; lower energies preferentially inhibited Adelta/C nociceptive behaviours, higher energies inhibited behaviours mediated by all fibre types.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "FUS1 to FUS5 parameter sets to the sciatic nerve",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "the sciatic nerve 1 cm proximal to its trifurcation"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Sonele Inc",
+    "model": "1.5 MHz FUS transducer (co-aligned with 50 MHz diagnostic transducer, Capistrano Lab)"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     4040,
+     4140,
+     5500,
+     5550,
+     6100
+    ],
+    "isppa_w_cm2": [
+     530,
+     556,
+     986,
+     1000,
+     1210
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": 100,
+    "sonication_duration_s": [
+     45,
+     53,
+     60
+    ],
+    "protocol_description": "Five illustrative parameter sets (FUS1 to FUS5) of increasing total energy at 100% duty cycle, 45 to 60 s sonication to the sciatic nerve under general anaesthesia before hindpaw incision; pressure, duty cycle and duration were systematically adjusted iteratively."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "test results from 19 animals assigned to five representative FUS+HPI parameter groups (Table; FUS 1–5, Total Energy [J/cm<sup>2</sup>]: 29,600, 31,800, 44,400, 60,000, and 72,500) spanning progressively increasing total acoustic energy exposures are presented.",
+   "exposures[0].fundamental_frequency_khz": "Diagnostic ultrasound (dUS; 50 MHz, Capistrano Lab) and FUS (1.5 MHz, Sonele Inc)",
+   "exposures[0].device.model": "Diagnostic ultrasound (dUS; 50 MHz, Capistrano Lab) and FUS (1.5 MHz, Sonele Inc)",
+   "exposures[0].device.manufacturer": "Diagnostic ultrasound (dUS; 50 MHz, Capistrano Lab) and FUS (1.5 MHz, Sonele Inc)",
+   "exposures[0].unspecified_domain.pressure_kpa": "<tr><td>FUS1+HPI (intervention)</td><td>4</td><td>4.14 (0.11)</td><td>100</td><td>53 (2.9)</td><td>556 (28)</td><td>29,600 (713)</td></tr><tr><td>FUS2+HPI (intervention)</td><td>3</td><td>4.04</td><td>100</td><td>60</td><td>530</td><td>31,800</td></tr><tr><td>FUS3+HPI (intervention)</td><td>4</td><td>5.50 (0.28)</td><td>100</td><td>45</td><td>986 (104)</td><td>44,400 (4661)</td></tr><tr><td>FUS4+HPI (intervention)</td><td>4</td><td>5.55</td><td>100</td><td>60</td><td>1000</td><td>60,000</td></tr><tr><td>FUS5+HPI (intervention)</td><td>4</td><td>6.10</td><td>100</td><td>60</td><td>1210</td><td>72,500</td></tr>",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "<tr><td>FUS1+HPI (intervention)</td><td>4</td><td>4.14 (0.11)</td><td>100</td><td>53 (2.9)</td><td>556 (28)</td><td>29,600 (713)</td></tr><tr><td>FUS2+HPI (intervention)</td><td>3</td><td>4.04</td><td>100</td><td>60</td><td>530</td><td>31,800</td></tr><tr><td>FUS3+HPI (intervention)</td><td>4</td><td>5.50 (0.28)</td><td>100</td><td>45</td><td>986 (104)</td><td>44,400 (4661)</td></tr><tr><td>FUS4+HPI (intervention)</td><td>4</td><td>5.55</td><td>100</td><td>60</td><td>1000</td><td>60,000</td></tr><tr><td>FUS5+HPI (intervention)</td><td>4</td><td>6.10</td><td>100</td><td>60</td><td>1210</td><td>72,500</td></tr>",
+   "exposures[0].timing.sonication_duration_s": "<tr><td>FUS1+HPI (intervention)</td><td>4</td><td>4.14 (0.11)</td><td>100</td><td>53 (2.9)</td><td>556 (28)</td><td>29,600 (713)</td></tr><tr><td>FUS2+HPI (intervention)</td><td>3</td><td>4.04</td><td>100</td><td>60</td><td>530</td><td>31,800</td></tr><tr><td>FUS3+HPI (intervention)</td><td>4</td><td>5.50 (0.28)</td><td>100</td><td>45</td><td>986 (104)</td><td>44,400 (4661)</td></tr><tr><td>FUS4+HPI (intervention)</td><td>4</td><td>5.55</td><td>100</td><td>60</td><td>1000</td><td>60,000</td></tr><tr><td>FUS5+HPI (intervention)</td><td>4</td><td>6.10</td><td>100</td><td>60</td><td>1210</td><td>72,500</td></tr>",
+   "exposures[0].timing.duty_cycle_pct": "Duty cycle was fixed at 100% for all FUS applications."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "130 rats used during the iterative process; only 19 animals in five FUS groups (plus 6 HPI-only) are shown in the table. Whether all 130 were sonicated is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure and Isppa given in the table without saying whether free-field or in situ; FUS1 and FUS3 values are means (SD) of values that varied among applications."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Durations listed are the distinct values across the five illustrative sets (FUS1 mean 53 s, FUS3 45 s); the 130-animal iterative set may have used others."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Duty cycle stated as 100% for all applications; waveform recorded as continuous on that basis, PRF and pulse duration not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Table footnote says total energy = Isppa x duty cycle x duration while the Methods say Isppa x duration; irrelevant at 100% duty cycle."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

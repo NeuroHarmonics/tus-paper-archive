@@ -48,14 +48,18 @@ def main() -> int:
     for cls, rows in sorted(by_class.items()):
         L += [f"## {cls.replace('_', ' ')}  ({len(rows)} papers)", ""]
         if cls == "neural_regeneration":
-            L += ["**Excluded under E9**: the endpoint is tissue repaired or grown, not neural activity changed. "
-                  "The reasoning: if regeneration is not a mechanism for primary ultrasound "
-                  "neuromodulation, it does not belong, and at roughly 158 sweep candidates it "
-                  "is large enough to reshape the archive if admitted.", "",
+            L += ["**Excluded under E9**: the stated purpose of the exposure is to make neural tissue "
+                  "grow or regrow, or the preparation is a cut, crushed or conduit-bridged nerve, a "
+                  "spinal cord lesion or a stem cell culture. The reasoning: regeneration is a "
+                  "different field from ultrasonic neuromodulation, with its own conduits, scaffolds "
+                  "and growth assays, and at roughly 158 sweep candidates it is large enough to "
+                  "reshape the archive if admitted. Protective and disease-modifying aims are not "
+                  "E9 (INCLUSION.md 1.1); 20 papers once parked here were re-screened in on "
+                  "2026-10-26.", "",
                   "Papers that *look* like this class but were read and kept: "
                   "`10.1016/0301-5629(90)90008-z` (axon excitability), "
                   "`10.1016/j.apmr.2004.12.035` (spinal nociceptive modulation), "
-                  "`10.1002/jnr.70079` (FUS nerve blockade). All three measure activity.", ""]
+                  "`10.1002/jnr.70079` (FUS nerve blockade).", ""]
         for doi, v in sorted(rows, key=lambda kv: kv[0]):
             meta = held.get(doi) or cands.get(doi) or excl.get(doi) or {}
             title = meta.get("title") or "(title not held locally)"

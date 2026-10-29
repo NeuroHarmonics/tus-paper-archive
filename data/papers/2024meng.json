@@ -1,0 +1,331 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024meng",
+ "doi": "10.1109/tnsre.2024.3351312",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J; BKS-Lepr db/db; POMC-CreER::Ai14; NPY-CreER::Ai14)",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "obesity (leptin-receptor knockout db/db mice; high-fat diet)",
+ "n_subjects": [
+  8,
+  7,
+  8,
+  13,
+  9,
+  6,
+  6,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  2,
+  10,
+  33,
+  14
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "invasive_electrophysiology",
+  "other"
+ ],
+ "readout_other": "food intake; body weight; serum glucose and lipids (ELISA); c-Fos immunofluorescence in ARC with POMC/NPY colocalisation; whole-cell current-clamp of POMC and NPY neurons in slices",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "ARC stimulation at PRF 500 Hz, DC 50% increased c-Fos and POMC neuron firing and reduced food intake and body weight gain; the 1.5 kHz, 10% set and V1 stimulation did not change food intake.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Authors state no negative effects were observed in mice and that UDBS did not cause motor or mental disorders (Fig. S5).",
+ "exposures": [
+  {
+   "label": "ARC (hypothalamus), 3.8 MHz",
+   "target": {
+    "terms": [
+     "arcuate_nucleus"
+    ],
+    "label": "hypothalamus, especially the arcuate nucleus"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 586,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     1,
+     0.067
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     1500
+    ],
+    "duty_cycle_pct": [
+     50,
+     10
+    ],
+    "sonication_duration_s": 1,
+    "protocol_description": "Two parameter sets in the acute experiment: PRF 500 Hz, DC 50%, TBD 1 ms; and PRF 1.5 kHz, DC 10%, TBD 0.067 ms; sonication duration 1 s, inter-stimulus interval 2 s (5 s in the HFD and transgenic experiments, PRF 500 Hz set only). Acute sessions 15 min; subacute 1 h/day for 2 days; db/db mice 15 min/day for 10 days then 33 days of 15 min/day; HFD mice 15 min every 2 days, 14 times."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "V1 control site, 3.8 MHz",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex (V1)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3800,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 586,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "V1 control: TBD 1 ms and PRF 500 Hz (the 50% duty cycle set), 15 min, same sonication duration, interval and pressure as the acute ARC experiment; only this set was tested at V1."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Mice received ultrasound stimulation in ARC (n = 8) or V1 (n = 7) for 15 min, followed by measurement of food intake every 30 min for 2 h.",
+   "exposures[0].fundamental_frequency_khz": "The focus ultrasound transducer with a fundamental frequency of 3.8 MHz is attached to the collimator",
+   "exposures[0].unspecified_domain.pressure_kpa": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[0].timing.pulse_duration_ms": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[0].timing.duty_cycle_pct": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[0].timing.sonication_duration_s": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[1].fundamental_frequency_khz": "The focus ultrasound transducer with a fundamental frequency of 3.8 MHz is attached to the collimator",
+   "exposures[1].unspecified_domain.pressure_kpa": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[1].timing.pulse_duration_ms": "no significant change in food intake was observed for ultrasound stimulation with TBD of 1 ms and PRF of 500 Hz on V1",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "no significant change in food intake was observed for ultrasound stimulation with TBD of 1 ms and PRF of 500 Hz on V1",
+   "exposures[1].timing.duty_cycle_pct": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[1].timing.sonication_duration_s": "Two ultrasound parameters were used in the acute experiment: pulse repetition frequency (PRF) of 500 Hz, duty cycle (DC) of 50%, tone burst duration (TBD) of 1 ms; and PRF of 1.5 kHz, DC of 10%, TBD of 0.067 ms, with sonication duration (SD) of 1 s, inter-stimulus intervals (ISI) of 2 s, and acoustic pressure of 586 kPa.",
+   "exposures[0].device.model": "a wearable transducer (frequency: 3.8 MHz, 2 g weight) and the suitable collimators with different apertures were designed and fabricated for freely moving mice",
+   "exposures[0].device.manufacturer": "a wearable transducer (frequency: 3.8 MHz, 2 g weight) and the suitable collimators with different apertures were designed and fabricated for freely moving mice",
+   "exposures[1].device.model": "a wearable transducer (frequency: 3.8 MHz, 2 g weight) and the suitable collimators with different apertures were designed and fabricated for freely moving mice",
+   "exposures[1].device.manufacturer": "a wearable transducer (frequency: 3.8 MHz, 2 g weight) and the suitable collimators with different apertures were designed and fabricated for freely moving mice",
+   "n_sessions_per_subject": "The stimulation period lasted 33 days (15 min/d) starting from Day 63."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "586 kPa is called 'acoustic pressure'; a hydrophone measured inside the skull and the paper reports 54% skull attenuation at 3.8 MHz, but does not say whether 586 kPa is free-field or in the brain."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes differ per experiment (acute ARC 8, V1 7, subacute 8, db/db 13 per group, HFD 9) and animal reuse is unclear; only the acute groups are listed."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "The paper states TBD 1 ms and PRF 500 Hz for V1; the 50% duty cycle is taken from the acute parameter set that applied to V1."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: TBD 1 ms with PRF 500 Hz and DC 50% is consistent (1 ms x 500 Hz = 50%); TBD is the pulse."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham: ultrasound output abolished (inactive transducer); V1 stimulation acts as an active control site."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "neither"
+  }
+ }
+}

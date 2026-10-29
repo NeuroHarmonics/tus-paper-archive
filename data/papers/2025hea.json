@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025hea",
+ "doi": "10.3389/fnins.2025.1686623",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke",
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 7,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "fmri",
+  "eeg_meg",
+  "other"
+ ],
+ "readout_other": "VAS, LANSS, SF-MPQ, HAMA, HAMD; BOLD-fMRI ROI signal; EEG; EMG nerve conduction",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Single patient with central post-stroke pain: pain, anxiety and depression scores fell after the 7 sessions and the abnormal BOLD ROI signal had normalised at day 150; no neural direction of effect was assessed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No treatment-emergent adverse events reported, but EEG at the end of the last session showed epileptiform discharges during photic stimulation, absent at 2-month follow-up.",
+ "exposures": [
+  {
+   "label": "tLIFU to cingulum bundle ROI1 (left, healthy side)",
+   "target": {
+    "terms": [
+     "cingulum_bundle"
+    ],
+    "label": "cingulum bundle"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GreenValley BrainTech Medical Technology Corporation",
+    "model": "single-element focused ultrasonic transducer F0050A03"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 830,
+    "isppa_w_cm2": 0.00537,
+    "ispta_w_cm2": 0.05373
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": 1,
+    "sonication_duration_s": 1200,
+    "protocol_description": "The therapeutic session lasted 20 min and was administered once daily for 7 consecutive days; focus aligned to the target by optical navigation and monitored in real time."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.05
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "We present the case of a 66-year-old man who developed generalized cutaneous pain at rest 6 months after cerebral infarction, predominantly on the hemiplegic side (the left side).",
+   "n_sessions_per_subject": "The therapeutic session lasted 20 min and was administered once daily for 7 consecutive days.",
+   "exposures[0].fundamental_frequency_khz": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].unspecified_domain.pressure_kpa": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].timing.duty_cycle_pct": "the fundamental frequency was 0.5 MHz, the peak-to-peak acoustic pressure was 0.83 MPa, the ISPTA was 53.73 mW/cm<sup>2</sup>, the ISPPA was 5.37 mW/cm<sup>2</sup>, the pulse repetition frequency (PRF) was 200 Hz, and the DC was 1%.",
+   "exposures[0].timing.sonication_duration_s": "The therapeutic session lasted 20 min and was administered once daily for 7 consecutive days.",
+   "exposures[0].device.manufacturer": "The first neuromodulation via the tLIFU system (GreenValley BrainTech Medical Technology Corporation) with a single-element focused ultrasonic transducer (F0050A03)",
+   "exposures[0].device.model": "The first neuromodulation via the tLIFU system (GreenValley BrainTech Medical Technology Corporation) with a single-element focused ultrasonic transducer (F0050A03)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Text gives ISPPA as 5.37 mW/cm2 and ISPTA as 53.73 mW/cm2; with a 1% duty cycle these look mutually inconsistent (the same paper cites 28.37 W/cm2 for a previous study). Recorded as stated, converted from mW/cm2; possible unit typo."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Stated as peak-to-peak acoustic pressure 0.83 MPa; domain not stated; recorded as 830 kPa without conversion to peak negative."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Only the 20 min session length is stated; whether it was one continuous train is not stated, and no pulse duration is given."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Single-patient case report."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is an fMRI-defined ROI the authors say is consistent with the cingulum bundle, close to the left ACC."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

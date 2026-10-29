@@ -1,0 +1,341 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024menga",
+ "doi": "10.1109/tuffc.2024.3383027",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed",
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects",
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "arousal behaviour score and righting reflex under isoflurane; c-Fos immunofluorescence in target and A1; auditory brainstem response; FDTD elastic wave simulation of skull propagation",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US of VTA or M1 raised arousal scores and c-Fos+ counts in the target, also in cochlea-ablated mice; the uncoupled (no gel) group did not show arousal, although A1 c-Fos rose in intact mice in that group.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Primary motor cortex (M1)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "self-designed ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 3700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 592,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulse repetition frequency 500 kHz (as written), pulse duration 1 ms, duty cycle 50%, sonication duration 1 s, interstimulus interval 2 s; stimulation delivered until righting reflex or for up to 30 min under 0.7%-0.8% isoflurane."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50000.0,
+    "duty_cycle_mismatch": true
+   }
+  },
+  {
+   "label": "Ventral tegmental area (VTA)",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "VTA"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "self-designed ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 3700,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 592,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 500000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulse repetition frequency 500 kHz (as written), pulse duration 1 ms, duty cycle 50%, sonication duration 1 s, interstimulus interval 2 s; stimulation delivered until righting reflex or for up to 30 min under 0.7%-0.8% isoflurane."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50000.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Behavioral scores (left) and righting proportions (right) of US, Sham, US–deaf, deaf–Sham, and uncoupled groups (mean ± SEM, n = 7",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency of the ultrasound transducer was 3.7 MHz, and acoustic pressure was 592 kPa.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The fundamental frequency of the ultrasound transducer was 3.7 MHz, and acoustic pressure was 592 kPa.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[0].timing.duty_cycle_pct": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[0].timing.sonication_duration_s": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[0].device.model": "The ultrasound neuromodulation system consisted of a signal generator (DG4162, Rigol, China), a 100-W power amplifier (2100L, EI, USA), and a self-designed ultrasound transducer.",
+   "exposures[1].fundamental_frequency_khz": "The fundamental frequency of the ultrasound transducer was 3.7 MHz, and acoustic pressure was 592 kPa.",
+   "exposures[1].unspecified_domain.pressure_kpa": "The fundamental frequency of the ultrasound transducer was 3.7 MHz, and acoustic pressure was 592 kPa.",
+   "exposures[1].timing.pulse_duration_ms": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[1].timing.duty_cycle_pct": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[1].timing.sonication_duration_s": "The pulse repetition frequency was 500 kHz, pulse duration was 1 ms, duty cycle was 50%, sonication duration was 1 s, and interstimulus interval was 2 s.",
+   "exposures[1].device.model": "The ultrasound neuromodulation system consisted of a signal generator (DG4162, Rigol, China), a 100-W power amplifier (2100L, EI, USA), and a self-designed ultrasound transducer."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states PRF as 500 kHz, which is inconsistent with a 1 ms pulse at 50% duty cycle (would be 500 Hz); recorded as written (500 kHz = 500000 Hz), probable typo."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "Same PRF 500 kHz typo as exposure 0; recorded as written."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Total not stated. Five groups of n = 7 per target (VTA and M1 experiments); immunofluorescence used n = 6 per group; whether the same animals were used is not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham mechanism not described. 'Uncoupled' group (no coupling gel between transducer and skull) acts as a blocked-transducer control."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "'acoustic pressure was 592 kPa' with no domain stated."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.pressure_kpa",
+    "reason": "'acoustic pressure was 592 kPa' with no domain stated."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Skull shear-wave simulation reported only intensity ratios (focus vs transducer surface, A1 vs focus), no absolute pressure or intensity."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Transducer described as self-designed; no maker or model given beyond that."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  }
+ }
+}

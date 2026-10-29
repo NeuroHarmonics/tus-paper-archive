@@ -30,6 +30,13 @@ with MinerU() as m:                    # starts one service and reuses it
 
 Filenames, page counts and images are handled inside `to_markdown()`; see the operational notes. The only archive-specific import is `common.DOI_BLOCKLIST`.
 
+For a folder of papers in another project, `scripts/prep_folder.py` does both jobs: it renames each PDF to the archive's year-first convention from its DOI and Crossref, and writes the Markdown to a `text/` subfolder beside the PDFs. A DOI is accepted only when its Crossref title appears in the PDF, and a PDF without one keeps its name. Nothing is written into the archive.
+
+```bash
+uv run scripts/prep_folder.py ~/path/to/papers          # preview the renames
+uv run scripts/prep_folder.py ~/path/to/papers --apply  # rename, then extract into papers/text/
+```
+
 ## What the Markdown contains
 
 The Markdown is assembled by `pdf_markdown.render()` from MinerU's `_content_list.json`, not copied from the `.md` file MinerU writes, because three things are needed that the file does not give:

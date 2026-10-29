@@ -1,0 +1,225 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025tang",
+ "doi": "10.1038/s41467-025-60181-x",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": false,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "somatosensory evoked potentials (P27-N20 complex) at C3, CP1, P3 and CP5 elicited by median nerve electrical stimulation; post-session questionnaire",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "tFUS delivered 100 ms before median nerve stimulation suppressed the short-latency P27-N20 complex of the SEP relative to sham, in a single session and across sessions on days 1, 7 and 28.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Subjects reported no discomfort, heating or abnormal sensations; some reported auditory chirping at trial onset that subsided within seconds. Thermal increase measured at a human skull was below 2 degC.",
+ "exposures": [
+  {
+   "label": "SFAT-ACFAL (MiniUlTra) 650 kHz tFUS at left S1 (CP3)",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "left S1"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "SFAT-ACFAL / MiniUlTra self-focusing air-cavity Fresnel lens transducer, driven by an IGT BBBoq system"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 1660,
+    "isppa_w_cm2": 23.1,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.36,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Pulses of 360 us ON and 640 us OFF at a PRF of 1 kHz for 500 ms, 500 ms ON and 500 ms OFF, starting 100 ms before median nerve stimulation; 3-min trials of 120 epochs, four trial types per block, five blocks per session."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "throughout 28 days (Fig. 5a) to investigate the efficacy of neuromo dulation using our MiniUlTra device (bioadhesive hydrogel incorpo rated) on healthy volunteers (n = 8)",
+   "n_sessions_per_subject": "Particularly, SEP suppression via tFUS tests were conducted in 3 sessions (Days 1, 7, and 28)",
+   "exposures[0].fundamental_frequency_khz": "To determine the efficacy in SEP suppression of our miniaturized transducer, we first applied commercially available ultrasound gel coupled between the SFAT-ACFAL with the scalp at the 10–20 EEG electrode site CP3. 650 kHz tFUS beams were pulsated to the target region $\\left( n = 5 \\right)$ with a pulse of $3 6 0 \\mu \\mathrm { s }$ ON and $6 4 0 \\mu \\mathrm { s }$ OFF at a pulse repetition frequency (PRF) of 1 kHz for 500 ms",
+   "exposures[0].timing.pulse_duration_ms": "To determine the efficacy in SEP suppression of our miniaturized transducer, we first applied commercially available ultrasound gel coupled between the SFAT-ACFAL with the scalp at the 10–20 EEG electrode site CP3. 650 kHz tFUS beams were pulsated to the target region $\\left( n = 5 \\right)$ with a pulse of $3 6 0 \\mu \\mathrm { s }$ ON and $6 4 0 \\mu \\mathrm { s }$ OFF at a pulse repetition frequency (PRF) of 1 kHz for 500 ms",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To determine the efficacy in SEP suppression of our miniaturized transducer, we first applied commercially available ultrasound gel coupled between the SFAT-ACFAL with the scalp at the 10–20 EEG electrode site CP3. 650 kHz tFUS beams were pulsated to the target region $\\left( n = 5 \\right)$ with a pulse of $3 6 0 \\mu \\mathrm { s }$ ON and $6 4 0 \\mu \\mathrm { s }$ OFF at a pulse repetition frequency (PRF) of 1 kHz for 500 ms",
+   "exposures[0].timing.duty_cycle_pct": "All tFUS stimulation parameters used on the S1 cortex located at CP3 through 10–20 montage localization were maintained in brief exposures (3 min per trial, 120 pulses per trial, 360 µs ON 640 µs OFF, 0.5 ms pulse duration, 1 Hz PRF), with total duty cycle of each trial at 36%. This led to negligible measured temperature increase (< 0.2 °C) at the base of a human skull where the S1 cortex is expected (Supplementary Figs. 2 and 3)",
+   "exposures[0].timing.sonication_duration_s": "To determine the efficacy in SEP suppression of our miniaturized transducer, we first applied commercially available ultrasound gel coupled between the SFAT-ACFAL with the scalp at the 10–20 EEG electrode site CP3. 650 kHz tFUS beams were pulsated to the target region $\\left( n = 5 \\right)$ with a pulse of $3 6 0 \\mu \\mathrm { s }$ ON and $6 4 0 \\mu \\mathrm { s }$ OFF at a pulse repetition frequency (PRF) of 1 kHz for 500 ms",
+   "exposures[0].device.model": "Thus, we developed a custom miniaturized 650 kHz ultrasound transducer (similar size to standard electroencephalographic (EEG) electrode leads, OD = 18 mm) with microfabrication techniques to create a self-focusing acoustic transducer (SFAT) using ACFAL coupled with a highly adhesive and conformable bioadhesive hydrogel for long-term applications",
+   "exposures[0].free_field.pressure_kpa": "As such, all stimulation paradigms performed in healthy volunteers using our device were performed at 23.1 W/cm<sup>2</sup> (1.66 MPa), to necessitate sufficient acoustic intensity threshold in suppression of sensory evoked potentials<sup>56</sup>.",
+   "exposures[0].free_field.isppa_w_cm2": "As such, all stimulation paradigms performed in healthy volunteers using our device were performed at 23.1 W/cm<sup>2</sup> (1.66 MPa), to necessitate sufficient acoustic intensity threshold in suppression of sensory evoked potentials<sup>56</sup>."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Two groups of 8 healthy volunteers (7 male 1 female; 8 male) are described for the acute and the long-term experiments; whether they overlap is not stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "3 sessions (days 1, 7, 28) in the long-term experiment; the acute experiment's session count is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "23.1 W/cm2 (1.66 MPa) is stated for the volunteer paradigms; the paper characterised the free-field output but does not say this value is free field or through skull."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "1.66 MPa converted to 1660 kPa; domain not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Discussion states '0.5 ms pulse duration, 1 Hz PRF' while Methods give 360 us ON at 1 kHz PRF and a 500-ms ON / 500-ms OFF gating; Methods values recorded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Inconsistent PRF (1 kHz in Methods, 1 Hz in Discussion)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "500 ms ON / 500 ms OFF gating of the 1 kHz pulse train; 120 pulses per 3-min trial."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Post-hoc questionnaire asked subjects which trials were FUS; 5 of 8 reported being unaware. No control during the experiment."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper states tFUS and sham conditions were not randomised across subjects."
+   }
+  ],
+  "human_edited": false,
+  "notes": "The paper is primarily a device and hydrogel study; human exposures are in the SEP experiments.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

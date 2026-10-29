@@ -1,0 +1,487 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024caina",
+ "doi": "10.31234/osf.io/3bzg6",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "autonomic_physiology"
+ ],
+ "readout_other": "self-reported meditative depth and intensity; POMS, TMS, NADA, EDI, MEDI, BSQ questionnaires; heart rate, HRV and respiration rate",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "In the pilot cohort, caudate stimulation was reported to increase meditative depth and HRV and reduce heart rate compared with sham; PCC mainly changed subjective intensity. Preliminary, not tested with the planned analysis.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Safety argued from simulated in-situ intensities and prior literature; no adverse event reporting in the pilot cohort is given.",
+ "exposures": [
+  {
+   "label": "PCC",
+   "target": {
+    "terms": [
+     "posterior_cingulate_cortex"
+    ],
+    "label": "PCC"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "single-element transducers with depths of 80mm, 65mm, and 35mm"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": 1.5
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.937,
+    "ispta_w_cm2": 0.147
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 10,
+    "protocol_description": "12 minutes of stimulation beginning after minute 12 of a 60-minute meditation, delivered in 10-second on-off blocks; for the bilateral targets 6 minutes to each hemisphere sequentially (PCC is a single transducer for 12 minutes)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Bilateral caudate",
+   "target": {
+    "terms": [
+     "caudate_nucleus"
+    ],
+    "label": "bilateral heads of the caudate"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "single-element transducers with depths of 80mm, 65mm, and 35mm"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": 1.5
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.304,
+    "ispta_w_cm2": 0.115
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 10,
+    "protocol_description": "12 minutes of stimulation beginning after minute 12 of a 60-minute meditation, delivered in 10-second on-off blocks; for the bilateral targets 6 minutes to each hemisphere sequentially."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "Bilateral anterior insula",
+   "target": {
+    "terms": [
+     "anterior_insula"
+    ],
+    "label": "bilateral, anterior ventral insula"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix",
+    "model": "single-element transducers with depths of 80mm, 65mm, and 35mm"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 30,
+    "ispta_w_cm2": 1.5
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 3.804,
+    "ispta_w_cm2": 0.19
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 10,
+    "protocol_description": "12 minutes of stimulation beginning after minute 12 of a 60-minute meditation, delivered in 10-second on-off blocks; for the bilateral targets 6 minutes to each hemisphere sequentially."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The full procedure described in the methods was conducted in n=10 pilot subjects",
+   "n_sessions_per_subject": "Here, we will compare the effects of focused ultrasound stimulation applied to each of these three targets during a one-hour long Vipassana meditation to a sham stimulation condition, for a total of four sessions.",
+   "exposures[0].fundamental_frequency_khz": "Here, a fundamental frequency of 0.65 Mhz was chosen",
+   "exposures[0].free_field.isppa_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[0].free_field.ispta_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td>Est. PCC In Situ 2.937</td><td>0.147</td><td>0.339</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td>Est. PCC In Situ 2.937</td><td>0.147</td><td>0.339</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[0].timing.duty_cycle_pct": "As we aim to inhibit our target regions in this study, a low, 5% duty cycle has been chosen.",
+   "exposures[0].timing.sonication_duration_s": "Subjects will be provided with the information that, following minute 12 of their meditation, the ultrasound device will be activated for a 12-minute period (10-second on-off blocks).",
+   "exposures[0].device.manufacturer": "FUS will be administered using single-element ultrasound transducers (Brainsonix) with depths of 80mm, 65mm, and 35mm.",
+   "exposures[1].fundamental_frequency_khz": "Here, a fundamental frequency of 0.65 Mhz was chosen",
+   "exposures[1].free_field.isppa_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[1].free_field.ispta_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[1].in_situ.isppa_w_cm2": "<tr><td>Est. Caudate In Situ 2.304</td><td>0.115</td><td>0.301</td></tr>",
+   "exposures[1].in_situ.ispta_w_cm2": "<tr><td>Est. Caudate In Situ 2.304</td><td>0.115</td><td>0.301</td></tr>",
+   "exposures[1].timing.pulse_duration_ms": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[1].timing.duty_cycle_pct": "As we aim to inhibit our target regions in this study, a low, 5% duty cycle has been chosen.",
+   "exposures[1].timing.sonication_duration_s": "Subjects will be provided with the information that, following minute 12 of their meditation, the ultrasound device will be activated for a 12-minute period (10-second on-off blocks).",
+   "exposures[1].device.manufacturer": "FUS will be administered using single-element ultrasound transducers (Brainsonix) with depths of 80mm, 65mm, and 35mm.",
+   "exposures[2].fundamental_frequency_khz": "Here, a fundamental frequency of 0.65 Mhz was chosen",
+   "exposures[2].free_field.isppa_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[2].free_field.ispta_w_cm2": "The intensities utilized in the current study are 30 W/cm<sup>2</sup> $\\mathrm { { I _ { s p p a } } }$ and 1.5 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } \\mathrm { I } _ { \\mathrm { s p t a } } .$",
+   "exposures[2].in_situ.isppa_w_cm2": "<tr><td>Est. Insula In Situ 3.804</td><td>0.190</td><td>0.386</td></tr>",
+   "exposures[2].in_situ.ispta_w_cm2": "<tr><td>Est. Insula In Situ 3.804</td><td>0.190</td><td>0.386</td></tr>",
+   "exposures[2].timing.pulse_duration_ms": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "This is accomplished with a 100Hz pulse repetition frequency (PRF) and pulse widths (PW) of 0.5ms.",
+   "exposures[2].timing.duty_cycle_pct": "As we aim to inhibit our target regions in this study, a low, 5% duty cycle has been chosen.",
+   "exposures[2].timing.sonication_duration_s": "Subjects will be provided with the information that, following minute 12 of their meditation, the ultrasound device will be activated for a 12-minute period (10-second on-off blocks).",
+   "exposures[2].device.manufacturer": "FUS will be administered using single-element ultrasound transducers (Brainsonix) with depths of 80mm, 65mm, and 35mm."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Pre-registration with preliminary pilot data from 10 participants; planned sample is 36."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Proposed intensities and the 2.1116 MPa simulation source pressure are not explicitly labelled as water or free field; Table 3 caption compares to FDA limits in a free medium, so placed in free_field."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "10-second on-off blocks over 12 minutes; the on and off durations are inferred from the text '10-second on-off blocks' and '10 continuous seconds'."
+   },
+   {
+    "field": "exposures[0].in_situ",
+    "reason": "Simulated in-situ intensity from a single Visible Human CT skull model, planning phase estimate."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse width of 0.5 ms stated with 5% duty cycle and 100 Hz PRF."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "disagree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree",
+   "exposures[2].fundamental_frequency_khz": "agree",
+   "exposures[2].free_field.pressure_kpa": "disagree",
+   "exposures[2].free_field.isppa_w_cm2": "agree",
+   "exposures[2].free_field.ispta_w_cm2": "agree",
+   "exposures[2].in_situ.pressure_kpa": "agree",
+   "exposures[2].in_situ.isppa_w_cm2": "agree",
+   "exposures[2].in_situ.ispta_w_cm2": "agree",
+   "exposures[2].unspecified_domain.pressure_kpa": "agree",
+   "exposures[2].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[2].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[2].timing.pulse_duration_ms": "agree",
+   "exposures[2].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[2].timing.duty_cycle_pct": "agree",
+   "exposures[2].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[1].free_field.pressure_kpa": "second",
+   "exposures[2].free_field.pressure_kpa": "second"
+  }
+ }
+}

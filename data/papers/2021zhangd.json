@@ -1,0 +1,201 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021zhangd",
+ "doi": "10.3390/mi12081001",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8,
+  1,
+  1
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "32-channel EEG, power spectral density, phase lag index and network metrics; H&E staining",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Both pulsed-wave and continuous-wave sonication reduced EEG power spectral density and brain network connection strength in KA-treated rats, with no difference between modes.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No obvious adverse reaction was observed in rats over 24 h; H&E sections showed no tissue damage or immune cell infiltration.",
+ "exposures": [
+  {
+   "label": "pulsed-wave and continuous-wave sonication",
+   "target": {
+    "terms": [
+     "other"
+    ],
+    "label": "ultrasound stimulation region"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Goworld",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 657,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 40,
+    "protocol_description": "Pulsed wave: 0.5 MHz, 150 cycles per pulse, PRF 1.5 kHz; continuous wave: 0.5 MHz. Both were applied for 40 s after 60 s of epileptic EEG, followed by 60 s of recording."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 45.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Two rats received LIPUS and LICUS, respectively, and one rat received no operations.",
+   "exposures[0].fundamental_frequency_khz": "We used immersion-type US transducers with a 0.5 MHz center frequency (35 mm focal depth, 20 mm in diameter; Goworld, Guangdong, China) to produce ultrasound waveforms.",
+   "exposures[0].device.manufacturer": "We used immersion-type US transducers with a 0.5 MHz center frequency (35 mm focal depth, 20 mm in diameter; Goworld, Guangdong, China) to produce ultrasound waveforms.",
+   "exposures[0].timing.pulse_duration_ms": "As shown in Figure 1, the Af, c.p.p, and PRF of pulsed ultrasound were 0.5 MHz, 150, and 1.5 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "As shown in Figure 1, the Af, c.p.p, and PRF of pulsed ultrasound were 0.5 MHz, 150, and 1.5 kHz, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation time of these two modes was 40 s.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The maximum ultrasound pressure of both pulsed and continuous ultrasound was 0.657 MPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; 0.3 ms derived from 150 cycles per pulse at 0.5 MHz (cycles per pulse divided by frequency). Pulsed wave only."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Maximum pressure 0.657 MPa for both modes, measured with a hydrophone; the paper does not say whether this is free field or through skull."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "27 rats in total, of which 24 were assigned to groups of 8 and 3 were used for histology (two sonicated, one untouched). The group descriptions are internally confusing (two different 'control' groups)."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "The stimulation site is given only as coordinates (ML 3 mm, AP -4.5 mm, DV 3 mm); no region is named."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane is described for electrode surgery; anaesthetic state during sonication is not stated."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Two modes (pulsed and continuous) at the same target and frequency are recorded as one exposure."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither"
+  }
+ }
+}

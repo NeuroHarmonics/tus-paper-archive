@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024rodriguezmeana",
+ "doi": "10.3389/fneur.2024.1346412",
+ "model_system": [
+  "rodent",
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley); mouse (Balb/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  22,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "CMAP and CNAP recording; Sciatic Functional Index (walking track); toluidine blue semithin sections; RT97 and Iba1 immunostaining",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No reliable evoked nerve or muscle action potentials under any FUS condition (skin, exposed sciatic nerve, plantar skin; also mouse and ex vivo). Direct nerve exposure reduced electrically evoked responses and caused axonal degeneration, worst at 0.25 MHz.",
+ "adverse_events": "observed",
+ "safety_notes": "Skin irritation at 0.25 and 0.5 MHz, withdrawal responses at the paw, functional loss and nerve fibre degeneration after direct nerve exposure, most severe at 0.25 MHz (SFI -63 +/- 3).",
+ "exposures": [
+  {
+   "label": "Sciatic nerve (through skin, exposed nerve) and hindpaw, five transducer frequencies",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H115, H107, H102 (H107 and H102 also at 3rd harmonic)"
+   },
+   "fundamental_frequency_khz": [
+    250,
+    500,
+    1120,
+    1630,
+    3580
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     100,
+     5000
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     1,
+     10,
+     50,
+     100,
+     200
+    ],
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "5 sequences of 1, 3 or 10 pulses of 1, 10, 50, 100 or 200 ms with an interstimulus interval of 100 ms; intersequence interval 1 s; pressure stepped 0, 1.25, 2.5, 3.75 and 5 MPa on each sequence."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-two Sprague–Dawley 12-week-old rats (10 male and 12 female) and 4 Balb/c 10-week-old (2 male and 2 female) mice were used.",
+   "n_sessions_per_subject": "The full protocol for one FUS frequency was applied to each rat during one session.",
+   "exposures[0].fundamental_frequency_khz": "<td rowspan=1 colspan=1>Center frequency (MHz)</td><td rowspan=1 colspan=1>0.25</td><td rowspan=1 colspan=1>0.5</td><td rowspan=1 colspan=1>1.12</td><td rowspan=1 colspan=1>1.63</td><td rowspan=1 colspan=1>3.58</td>",
+   "exposures[0].unspecified_domain.pressure_kpa": "However, when muscle and nerve activity was recorded in response to pulsed FUS stimulation at 0.25, 0.5, 1.12, 1.63 and 3.58 MHz, using parameters ranging from 1 to 10 pulses of 1 to 200 ms and 0.1 to 5 MPa",
+   "exposures[0].timing.pulse_duration_ms": "5 sequences of 1, 3 or 10 pulses of 1, 10, 50, 100 or 200 ms duration, with an interstimulus interval of 100 ms."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "22 rats and 4 mice stated; total not stated separately and one ex vivo experiment used a rat that may be among the 22."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Five frequencies (H115 0.25, H107 0.5, H102 1.12 MHz and 3rd harmonics 1.63 and 3.58 MHz) recorded as a list in one exposure; focal depth and parameters otherwise shared."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure range 0.1-5 MPa described as 'effective pressure'; transducers were calibrated in water under free-field conditions but the paper does not say the stated pressures are free-field values. Range also read from Table 1."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Only an interstimulus interval of 100 ms between pulses is given; PRF, duty cycle and sonication duration are not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No FUS sham; electrical stimulation used as a control for recording and nerve function."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible"
+  }
+ }
+}

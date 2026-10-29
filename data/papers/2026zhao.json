@@ -1,0 +1,316 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026zhao",
+ "doi": "10.2147/jpr.s617919",
+ "model_system": [
+  "rodent",
+  "in_vitro_cell"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "emg_mep",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey; hot plate; sciatic CMAP electromyography; DRG patch-clamp; RNA-seq; ELISA; immunofluorescence",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU to the injured sciatic nerve raised mechanical and thermal pain thresholds in CCI rats, reduced CMAP amplitude (nerve excitability) and suppressed inward sodium currents in cultured DRG neurons.",
+ "adverse_events": "observed",
+ "safety_notes": "Skin burns were observed in early experiments when the irradiation duration was prolonged; no additional damage to deeper tissues was detected beyond the original injury.",
+ "exposures": [
+  {
+   "label": "LIFU to CCI sciatic nerve (transcutaneous) and exposed nerve for EMG",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Chongqing Haifu",
+    "model": "SY23WX002 FU probe"
+   },
+   "fundamental_frequency_khz": 3745,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 750,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 0.5,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": [
+     60,
+     180
+    ],
+    "protocol_description": "Transcutaneous stimulation for 3 min at 0.5 Hz PRF, 5% duty cycle (Figure 1 legend states 4 min); for EMG the exposed nerve was irradiated for 1 min with the same parameters. Frequency of treatment sessions not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 100.0
+   }
+  },
+  {
+   "label": "LIFU to cultured DRG neurons",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion_culture"
+    ],
+    "label": "primary DRG neurons"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 0.05,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 30,
+    "protocol_description": "Cultured neurons exposed for 30 s at 1 Hz PRF, 20% duty cycle; recorded immediately or after 1 h or 2 h incubation."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 200.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Results: Compared with the CCI group, rats in the CCI + LIFU group showed significantly increased mechanical and thermal pain thresholds (n = 7, P < 0.05), with no difference between Sham and Normal groups.",
+   "exposures[0].fundamental_frequency_khz": "applied for 3 min with a center frequency of 3.745 MHz, pulse repetition frequency of 0.5 Hz, acoustic pressure of 0.75 MPa, and duty cycle of 5%",
+   "exposures[0].unspecified_domain.pressure_kpa": "applied for 3 min with a center frequency of 3.745 MHz, pulse repetition frequency of 0.5 Hz, acoustic pressure of 0.75 MPa, and duty cycle of 5%",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "applied for 3 min with a center frequency of 3.745 MHz, pulse repetition frequency of 0.5 Hz, acoustic pressure of 0.75 MPa, and duty cycle of 5%",
+   "exposures[0].timing.duty_cycle_pct": "applied for 3 min with a center frequency of 3.745 MHz, pulse repetition frequency of 0.5 Hz, acoustic pressure of 0.75 MPa, and duty cycle of 5%",
+   "exposures[0].timing.sonication_duration_s": "Based on previously reported parameters,<sup>16</sup> ultrasound stimulation was applied for 3 min with a center frequency of 3.745 MHz, pulse repetition frequency of 0.5 Hz, acoustic pressure of 0.75 MPa, and duty cycle of 5%.",
+   "exposures[1].fundamental_frequency_khz": "neurons were exposed to FU stimulation with a transducer center frequency of 1 MHz, acoustic intensity of 0.05 W/cm<sup>2</sup>, pulse repetition frequency of 1 Hz, and duty cycle of 20% for 30s",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "neurons were exposed to FU stimulation with a transducer center frequency of 1 MHz, acoustic intensity of 0.05 W/cm<sup>2</sup>, pulse repetition frequency of 1 Hz, and duty cycle of 20% for 30s",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "neurons were exposed to FU stimulation with a transducer center frequency of 1 MHz, acoustic intensity of 0.05 W/cm<sup>2</sup>, pulse repetition frequency of 1 Hz, and duty cycle of 20% for 30s",
+   "exposures[1].timing.duty_cycle_pct": "neurons were exposed to FU stimulation with a transducer center frequency of 1 MHz, acoustic intensity of 0.05 W/cm<sup>2</sup>, pulse repetition frequency of 1 Hz, and duty cycle of 20% for 30s",
+   "exposures[1].timing.sonication_duration_s": "neurons were exposed to FU stimulation with a transducer center frequency of 1 MHz, acoustic intensity of 0.05 W/cm<sup>2</sup>, pulse repetition frequency of 1 Hz, and duty cycle of 20% for 30s",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered using an FU probe (SY23WX002; Chongqing Haifu, China)",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered using an FU probe (SY23WX002; Chongqing Haifu, China)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "n=7 per group for behaviour; n=5 for EMG/patch clamp and n=4 for ELISA; total rats exposed not stated (60 rats purchased)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Methods say 3 min; Figure 1 legend says 4 min; EMG exposure was 1 min."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.75 MPa given as acoustic pressure without stating domain."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.isppa_w_cm2",
+    "reason": "Given as acoustic intensity without stating metric (isppa vs ispta) or domain; placed in isppa."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; at 0.5 Hz PRF and 5% DC the pulse would be 100 ms but not computed."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia during LIFU stimulation not stated (isoflurane used for surgery and terminal procedures)."
+   },
+   {
+    "field": "exposures[1].device",
+    "reason": "Device for patch-clamp culture exposure not named separately."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.sonication_duration_s": "second",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "both_defensible"
+  }
+ }
+}

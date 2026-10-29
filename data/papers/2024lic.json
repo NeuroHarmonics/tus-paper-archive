@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024lic",
+ "doi": "10.1093/cercor/bhae413",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (APP/PS1 transgenic; C57BL/6 wild-type)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "optical intrinsic signal imaging (HbR); LFP theta/gamma relative power and sample entropy; neurovascular coupling by Pearson correlation",
+ "readout_timing": "online",
+ "anaesthesia": "both",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "TUS before forepaw stimulation increased the HbR response peak and shortened its peak time in AD mice toward healthy values, and lowered theta relative power and neurovascular coupling strength.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to left hippocampus in APP/PS1 mice",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 310,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "Stimulation duration 50 ms at PRF 1 kHz and 30% duty cycle, timed by a LABVIEW program with 30 s forepaw electrical stimulation trials, 16 trials per mouse."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.3
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "20 weeks, 25 g, Beijing Huafukang Biotechnology Co., Ltd) were randomly divided into 3 groups: the AD-FES group (n 8), AD-TUS <sup>group</sup> <sup>(n</sup> = <sup>8),</sup> <sup>and</sup> <sup>AD-TUSFES</sup> <sup>group</sup> <sup>(n</sup> = <sup>8).</sup>",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency (FF), pulse repetition frequency (PRF), stimulation duration (SD), and duty cycle (DC) of the ultrasound signal are 500 kHz, 1 kHz, 50 ms, and 30%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency (FF), pulse repetition frequency (PRF), stimulation duration (SD), and duty cycle (DC) of the ultrasound signal are 500 kHz, 1 kHz, 50 ms, and 30%, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency (FF), pulse repetition frequency (PRF), stimulation duration (SD), and duty cycle (DC) of the ultrasound signal are 500 kHz, 1 kHz, 50 ms, and 30%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The fundamental frequency (FF), pulse repetition frequency (PRF), stimulation duration (SD), and duty cycle (DC) of the ultrasound signal are 500 kHz, 1 kHz, 50 ms, and 30%, respectively.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The maximum ultrasound pressure is 0.31 MPa.",
+   "exposures[0].device.model": "drives the connected focused ultrasound transducer (V301- SU, Olympus, USA)",
+   "exposures[0].device.manufacturer": "drives the connected focused ultrasound transducer (V301- SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "16 = AD-TUS (8) + AD-TUS+FES (8) received TUS; 8 wild-type FES-only and 8 AD-FES mice were not sonicated. Group-size text is garbled by extraction."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; 'stimulation duration 50 ms' is taken as the sonication duration."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "SD 50 ms with PRF 1 kHz and DC 30% gives 50 pulses of 0.3 ms by arithmetic; burst rule not resolved from text alone."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "'Maximum ultrasound pressure 0.31 MPa'; domain not stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane for surgery; recordings and TUS in awake restrained mice."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

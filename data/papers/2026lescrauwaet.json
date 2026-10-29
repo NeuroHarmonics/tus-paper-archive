@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026lescrauwaet",
+ "doi": "10.1038/s41386-026-02576-y",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 14,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "cellular_imaging",
+  "pet"
+ ],
+ "readout_other": "Fibre photometry of LC GCaMP6s Ca2+ and GRAB-NE2m norepinephrine in LC and hippocampus; [18F]FDG PET; tail suspension positive control",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Five-second trains raised LC calcium and gave a biphasic hippocampal NE change (initial rise then transient decrease) and reduced whole-brain FDG uptake with increased brown adipose tissue uptake; 30 s trains added a sustained secondary NE increase.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LC-targeted TUS (ON target) with OFF-target control 3 mm dorsal; intensity sweep and PRF/duration sweep",
+   "target": {
+    "terms": [
+     "locus_coeruleus"
+    ],
+    "label": "locus coeruleus (LC)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "PhoCUS single-element ring transducer"
+   },
+   "fundamental_frequency_khz": 515,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.06,
+     2.55
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 80,
+    "pulse_repetition_frequency_hz": [
+     0.5,
+     1,
+     2,
+     2.5
+    ],
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": [
+     5,
+     30
+    ],
+    "protocol_description": "Main protocol: 515 kHz, 0.65 W/cm2 Isppa, 20% DC, 2.5 Hz PRF, 5 s pulse train repeated 15 times with a 3 min stimulus onset asynchrony. Sweeps: five intensities from 0.06 to 2.55 W/cm2 at 20% DC, 2.5 Hz, 5 s; and 30 s trains at 0.5, 1 and 2 Hz PRF with the duty cycle adjusted to keep pulses at 80 ms and Isppa 0.65 W/cm2."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Experiments were conducted in 8 weeks old C57BL6/6 J mice (n = 14; 7/ 7 M/F, Janvier, France)",
+   "exposures[0].fundamental_frequency_khz": "515 kHz fundamental frequency, 0.65 W/cm<sup>2</sup> spatial peak pulse-average intensity (Isppa), 20% duty cycle (DC), 2.5 Hz pulse repetition frequency (PRF), 5 s pulse train duration (PTD)",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "5 levels of ultrasound intensity, ranging between 0.06 and 2.55 W/cm<sup>2</sup>",
+   "exposures[0].timing.duty_cycle_pct": "515 kHz fundamental frequency, 0.65 W/cm<sup>2</sup> spatial peak pulse-average intensity (Isppa), 20% duty cycle (DC), 2.5 Hz pulse repetition frequency (PRF), 5 s pulse train duration (PTD)",
+   "exposures[0].timing.sonication_duration_s": "515 kHz fundamental frequency, 0.65 W/cm<sup>2</sup> spatial peak pulse-average intensity (Isppa), 20% duty cycle (DC), 2.5 Hz pulse repetition frequency (PRF), 5 s pulse train duration (PTD)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "three different PRFs were tested: 0.5, 1, and 2 Hz",
+   "exposures[0].timing.pulse_duration_ms": "with the DC adjusted per PRF to keep the pulse duration at 80 ms",
+   "exposures[0].device.model": "a single-element ring transducer, the PhoCUS (photometrycoupled ultrasonic stimulation) device"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Sweep recorded as [min, max]; the main protocol 0.65 W/cm2 and a 1.43 W/cm2 level fall between them. Domain not stated (calibrated in water with an implanted skull in the path)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "20% applies to the 2.5 Hz protocol; in the 30 s PRF sweep the duty cycle was adjusted per PRF and the values are not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "List combines 2.5 Hz (main protocol) with 0.5, 1 and 2 Hz (sweep); quote covers the sweep sentence."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "80 ms stated for the PRF sweep; equals 20% of the 400 ms period of the main protocol (not stated directly)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "5 s main protocol, 30 s in the PRF sweep; quote is the main protocol sentence."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker not named; custom matching network built by the authors, transducer origin only cited."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Authors state an auditory contribution cannot be excluded and no deafening or masking was used."
+   },
+   {
+    "field": "sham_type",
+    "reason": "OFF-target condition 3 mm dorsal still delivered about 61% of ON-target intensity at the LC."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

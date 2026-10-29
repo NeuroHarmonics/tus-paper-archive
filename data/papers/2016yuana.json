@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2016yuana",
+ "doi": "10.1097/wnr.0000000000000572",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "hippocampal LFP, phase-amplitude coupling of gamma",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "During FUS, gamma amplitude locked to delta, theta and alpha phases and phase-amplitude coupling were greater than in the pre-FUS control.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "2.5 MHz FUS to hippocampal CA1",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 of the rat hippocampus"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "focused transducer driven by USB-UT350T transmitter card (US Ultratek)"
+   },
+   "fundamental_frequency_khz": 2500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 9.8,
+    "ispta_w_cm2": 0.00784
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.0016,
+    "pulse_repetition_frequency_hz": 500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.16,
+    "protocol_description": "Pulses of four cycles at 500 Hz pulse repetition rate, each stimulus consisting of 80 ultrasound pulses; stimulation duration 160 ms and pulse duration 1.6 microseconds."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.08
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of five Sprague–Dawley rats (male, 3-month old)",
+   "exposures[0].fundamental_frequency_khz": "which had a central frequency of 2.5 MHz, a bandwidth of 50%",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The spatial-peak pulseaverage intensity of the ultrasound, measured using an ultrasonic sound power measuring instrument (YP0511F; Hangzhou Success Ultrasonic Power Technology Co. Ltd, Hangzhou, China), was 9.8 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The corresponding spatial-peak temporal-average intensity was 7.84 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "The duration of the ultrasound stimulation and the pulse duration were 160 ms and 1.6 μs, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In the experiment, the pulse repetition rate of the ultrasound was 500 Hz.",
+   "exposures[0].timing.sonication_duration_s": "The duration of the ultrasound stimulation and the pulse duration were 160 ms and 1.6 μs, respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity measured with an ultrasonic power measuring instrument; medium and whether skull in path not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper gives 7.84 mW/cm2; converted to W/cm2 as 0.00784 (unit conversion only)."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states 1.6 microseconds; recorded as 0.0016 ms."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; not computed."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Authors compared LFP before and during ultrasound emission with the transducer moved relative to the brain, concluding transducer sound had no effect; treated as a control experiment."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Pre-FUS recording served as the control; no sham arm."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Outcome is changes in gamma coupling, not clearly excitatory or inhibitory."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

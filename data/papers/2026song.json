@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026song",
+ "doi": "10.1016/j.ultrasmedbio.2026.06.011",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "sheep (Merino)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  5
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "histology_molecular",
+  "behaviour"
+ ],
+ "readout_other": "Evans blue extravasation; H&E and VAF-TOLB staining; Modified Glasgow Coma Scale; skull thermocouple heating",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Safety study only; no neuromodulatory effect was assessed.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No tissue damage, BBB opening, haemorrhage or MRI abnormality; no pain signs in sheep #R1; ex vivo skull heating peaked at 2.3 C; transcranial MI estimated 1.95 at maximum, slightly above the ITRUSST 1.9 threshold.",
+ "exposures": [
+  {
+   "label": "Scanning ultrasound (SUS) of the sheep brain",
+   "target": {
+    "terms": [
+     "brain"
+    ],
+    "label": "across the brain"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-117"
+   },
+   "fundamental_frequency_khz": 286,
+   "free_field": {
+    "pressure_kpa": 2600,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 900,
+    "isppa_w_cm2": 37.5,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 6,
+    "protocol_description": "Each spot sonicated for 6 s (10 ms pulses at 10 Hz) in a stepwise scanning mode over up to 50 spots on a 6 x 6 mm grid; some spots sonicated three times (12 and 18 s); sheep #R1 had five sessions 2-4 weeks apart."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "This study was approved by the Animal Ethics Committee of the Queensland University of Technology (Approval #2024-3630- 20828) and rati<sup>fi</sup>ed by The University of Queensland, involving four 1.5- to 3-y-old female Merino sheep (average age: 2.45 y, average weight: 54.9 kg).",
+   "exposures[0].fundamental_frequency_khz": "A 64 mm diameter concave transducer (H-117, Sonic Concepts Inc., USA) was driven at 286 kHz by an arbitrary waveform generator (AFG31022, Tektronix Inc., USA) via a radio-frequency ampli<sup>fi</sup>er (240L, Electronics and Innovation, LTD., USA) and an impedance matching network supplied with the transducer.",
+   "exposures[0].free_field.pressure_kpa": "The PNP in free <sup>fi</sup>eld was then increased from 0.7 to 2.6 MPa to achieve an acoustic radiation force in sheep comparable to the one that in mice had achieved restorative bioeffects [3].",
+   "exposures[0].in_situ.pressure_kpa": "Factoring in 64 ± 5.8% skull attenuation measured from 13 spots of three sheep skulls (#N1−2 and a pilot experiment [data not shown]), a derated PNP of 0.9 ± 0.05 MPa with a maximum of 1.04 MPa was expected to be delivered into sheep brains.",
+   "exposures[0].timing.pulse_duration_ms": "The 10 ms pulse length, 10 Hz pulse repetition frequency and 6-s sonication duration parameters were maintained.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The 10 ms pulse length, 10 Hz pulse repetition frequency and 6-s sonication duration parameters were maintained.",
+   "exposures[0].timing.sonication_duration_s": "The 10 ms pulse length, 10 Hz pulse repetition frequency and 6-s sonication duration parameters were maintained.",
+   "exposures[0].device.model": "A 64 mm diameter concave transducer (H-117, Sonic Concepts Inc., USA) was driven at 286 kHz by an arbitrary waveform generator (AFG31022, Tektronix Inc., USA) via a radio-frequency ampli<sup>fi</sup>er (240L, Electronics and Innovation, LTD., USA) and an impedance matching network supplied with the transducer.",
+   "exposures[0].device.manufacturer": "A 64 mm diameter concave transducer (H-117, Sonic Concepts Inc., USA) was driven at 286 kHz by an arbitrary waveform generator (AFG31022, Tektronix Inc., USA) via a radio-frequency ampli<sup>fi</sup>er (240L, Electronics and Innovation, LTD., USA) and an impedance matching network supplied with the transducer.",
+   "n_sessions_per_subject": "(a) Three sheep in the non-recovery group (#N1−3) received scanning ultrasound (SUS) treatments in one session and were euthanized after Evans blue injection.",
+   "exposures[0].in_situ.isppa_w_cm2": "The maximal spatial-peak pulse-average intensity $( I _ { \\mathrm { s p p a } } )$ and mechanical index (MI) were calculated as 37.5 W/cm<sup>2</sup> and 1.95, respectively."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Three sheep had one session; sheep #R1 had five sessions over 12 weeks, so no single value applies."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Maximal Isppa of 37.5 W/cm2 is stated as calculated, without saying free field or in situ."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Derated PNP 0.9 +/- 0.05 MPa (maximum 1.04 MPa) from 64 +/- 5.8% skull attenuation; recorded as the mean."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Up to 50 spots scanned across the sheep brain; no named anatomical target."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

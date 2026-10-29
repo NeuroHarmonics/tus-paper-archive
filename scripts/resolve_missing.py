@@ -23,7 +23,7 @@ from pathlib import Path
 
 import httpx
 
-from common import DATA, MAILTO, read_json, write_json
+from common import DATA, MAILTO, clean_doi, datacite, read_json, write_json
 from identify import (
     Crossref, crossref_record_problems, record_from_crossref, title_agreement,
 )
@@ -283,6 +283,21 @@ def main() -> int:
             rec["year"] = rec.get("year") or item.get("year")
             rec["journal"] = rec.get("journal") or item.get("journal")
             rec["doi"] = rec.get("doi")
+            # An arXiv or other DataCite-registered DOI is not in Crossref, so "not in
+            # Crossref" is not "no DOI": keep an agent's DOI that DataCite confirms.
+            agent_doi = clean_doi(item.get("doi") or "")
+            if not rec["doi"] and agent_doi and (dc := datacite(agent_doi)):
+                rec["doi"] = agent_doi
+                rec["title"] = rec.get("title") or dc.get("title")
+                rec["year"] = rec.get("year") or dc.get("year")
+                rec["journal"] = rec.get("journal") or dc.get("journal")
+                rec["authors"] = rec.get("authors") or dc.get("authors")
+                rec["doi_source"] = "agent_doi_datacite"
+                rec["status"] = "resolved"
+                rec["flags"] = sorted(set(rec.get("flags", []) + ["resolved_via_datacite"]))
+                stats["by_doi"] += 1
+                print(f"  OK   [datacite] {fname[:50]}")
+                continue
             rec["status"] = "resolved_no_doi"
             rec["doi_source"] = "agent_transcription"
             rec["flags"] = sorted(set(rec.get("flags", []) + ["no_crossref_record"]))

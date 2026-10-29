@@ -1,0 +1,167 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022weinreb",
+ "doi": "10.1016/j.brs.2022.05.004",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 78,
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Fluo-4 and GCaMP calcium imaging; propidium iodide membrane integrity assay",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "A single pulse evoked calcium responses in about 20% of pharmacologically disconnected neurons; the response was abolished by TTX and was larger at 0.65-0.67 MPa than at 0.35 MPa.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Single short pulses to cultures",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "dissociated rat hippocampal neural cultures"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     350,
+     1320
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     4e-06,
+     0.04
+    ],
+    "protocol_description": "Cultures were exposed to a single ultrasound pulse per stimulation (4 ms or 40 ms; 0.35 to 1.32 MPa peak pressure) with calcium images acquired for 5 s before and 10 s after; repeated stimulations were separated by recovery periods."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "We used single pulses, a fundamental frequency of 500 kHz, peak pressures of 0.35e1.32 MPa, and durations of 4 ms-40 ms.",
+   "exposures[0].free_field.pressure_kpa": "We used single pulses, a fundamental frequency of 500 kHz, peak pressures of 0.35e1.32 MPa, and durations of 4 ms-40 ms.",
+   "exposures[0].timing.sonication_duration_s": "We used single pulses, a fundamental frequency of 500 kHz, peak pressures of 0.35e1.32 MPa, and durations of 4 ms-40 ms.",
+   "n_subjects": "There were typically \\~200 generally active cells within the FOV (191.4 ± 10.2, mean ± SEM, n<sup>c</sup> 78)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper says a 2-cycle pulse at 500 kHz corresponds to '4 ms'; 2 cycles at 500 kHz is 4 microseconds, so the unit may be a typo. Recorded as written (4 ms and 40 ms)."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Peak pressures of 0.35 to 1.32 MPa; the text says output was verified with a hydrophone in a large water tank. Other text gives 0.65, 0.67 MPa for the higher pressure."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "78 is the number of cultures (n^c) in the generally-active-cell count; the equals sign was lost in conversion. Total cultures across experiments is not stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker and model not given in the main text (methods are in the supplementary)."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Single short pulses, one per stimulation; recorded as continuous per the single-burst rule."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

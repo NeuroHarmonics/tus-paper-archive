@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024fana",
+ "doi": "10.1007/s12264-024-01186-2",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "Whole-cell patch clamp (sAP, sEPSC, L-type Ca2+ currents); Fura-2 Ca2+ imaging; western blot, RT-qPCR, p-CREB immunofluorescence",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "15 min of 1 MHz LIPUS raised spontaneous action potential and sEPSC frequency and amplitude for more than 10 min, and increased cytosolic Ca2+ via L-type channels.",
+ "adverse_events": null,
+ "safety_notes": "Axon length was reduced after 200 mW/cm2 (15 min every 12 h for 48 h) but not after 50 or 100 mW/cm2.",
+ "exposures": [
+  {
+   "label": "LIPUS 1 MHz, 15 min, cultured hippocampal neurons",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "cultured hippocampal neurons"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.05,
+     0.1,
+     0.2
+    ]
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 300,
+    "pulse_repetition_frequency_hz": 0.3,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 900,
+    "protocol_description": "1 MHz tone bursts of 300 ms at PRF 0.3 Hz (10% duty cycle) for 15 min; 100 mW/cm2 ISPTA used for the electrophysiology and imaging work. For expression and morphology experiments, 15 min every 12 h for 1 or 2 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 9.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "1 MHz (center frequency) plane piezoelectric transducers",
+   "exposures[0].timing.pulse_duration_ms": "tone burst duration = 300 ms",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "pulse repetition frequency (PRF) = 0.3 Hz",
+   "exposures[0].timing.duty_cycle_pct": "duty cycle (DC) = 10%",
+   "exposures[0].timing.sonication_duration_s": "a 25-mm transducer (#1) was placed at the bottom of the Petri dish (35 mm) to generate 15-min of stimulation at room temperature",
+   "exposures[0].free_field.ispta_w_cm2": "To determine the optimal parameter for hippocampal neuron modulation, we applied LIPUS intensities $( I _ { \\mathrm { S P T A } } )$ of 50, 100, and 200 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ for 15 min every 12 h in 12–13 DIV primary neurons (Fig. 2A)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Text states PRF 0.3 Hz; the Figure 1 legend states 0.33 Hz."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "ISPTA 50, 100, 200 mW/cm2 converted to W/cm2; the figure says intensities were measured with a hydrophone, but the text does not tie the stated ISPTA values to a water or in-situ domain."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15 min of stimulation recorded as 900 s."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducers described as 1 MHz plane piezoelectric transducers driven by a home-designed generator; no transducer maker named."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Cultures from 1 to 2 day old rats; number of animals or cultures not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

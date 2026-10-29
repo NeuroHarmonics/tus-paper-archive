@@ -1,0 +1,193 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024ma",
+ "doi": "10.1109/tbme.2023.3342012",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6,
+  6,
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "in vivo fEPSP recording in dentate gyrus: LTP (theta burst), depotentiation (low frequency stimulation), paired-pulse ratio",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "0.15 MPa TUS inhibited LTP and DEP whereas 0.3 MPa TUS promoted them; TMAS promoted LTP, DEP and PPR more than TUS, with the coupled electric field amplitude having the larger effect. Static magnetic field alone had no significant effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Hippocampus, TUS 0.15/0.3 MPa and TMAS (static field 0.1/0.2 T, coupled field 0.2/0.4 V/m); separate magnet-only groups",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "hippocampal region (center: Anterior-Posterior (AP) 3 mm, Medial-Lateral (ML) 2.4 mm)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     150,
+     300
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 300,
+    "protocol_description": "Ultrasonic pulse with a main frequency of 1 MHz, repetition frequency of 1 kHz and duty cycle of 10%, each stimulation lasting 5 minutes, once a day for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Forty-eight male mice (24 2.50 g, 6–8 weeks old) were randomized into 6 mice in each group for a total of 8 groups.",
+   "n_sessions_per_subject": "Mice were stimulated once a day for 5 min and continuously stimulated for 7 days.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound excitation signal used in the experiment was the ultrasonic pulse with a main frequency of1 MHz, a repetition frequency of1KHz, and a duty cycle of 10%, and each stimulation time lasts for 5 minutes",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound excitation signal used in the experiment was the ultrasonic pulse with a main frequency of1 MHz, a repetition frequency of1KHz, and a duty cycle of 10%, and each stimulation time lasts for 5 minutes",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound excitation signal used in the experiment was the ultrasonic pulse with a main frequency of1 MHz, a repetition frequency of1KHz, and a duty cycle of 10%, and each stimulation time lasts for 5 minutes",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound excitation signal used in the experiment was the ultrasonic pulse with a main frequency of1 MHz, a repetition frequency of1KHz, and a duty cycle of 10%, and each stimulation time lasts for 5 minutes",
+   "exposures[0].unspecified_domain.pressure_kpa": "According to the formula of $\\mathrm { P s p t p = U L / M I }$ , where UL was the maximum instantaneous value of the measured output voltage, ML was the sensitivity of the hydrophone—the calculated Psptp = 0.15 MPa and 0.3 MPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Psptp 0.15 and 0.3 MPa measured with a needle hydrophone 'placed at the stimulus target' before stimulation; whether in water or through skull is not stated, so recorded as unspecified domain."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control group is described only as 'control'; how it was handled (anaesthesia, coupling, no stimulation) is not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; shown only in Fig. 1(d). Not computed from duty cycle and PRF."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Text reads '24 2.50 g' (garbled weight); 48 mice in 8 groups of 6 are stated."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Transducer maker and model not named; only function generator and power amplifier are named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible"
+  }
+ }
+}

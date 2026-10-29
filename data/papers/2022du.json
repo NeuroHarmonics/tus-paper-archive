@@ -1,0 +1,194 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022du",
+ "doi": "10.3389/fncom.2022.923247",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "DWI/ADC map first-order features (RESOLVE); GFAP immunohistochemistry",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "ADC values ipsilateral to trauma peaked lower in the LIPUS group than the TBI group at 24 h and were lower and closer to sham at 7 d; interpreted as neuroprotection.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS to injured cortex",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "designated region in the injured cortical areas"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 2.6,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Unfocused transducer with conical collimator (10 mm) and coupling gel; total stimulation duration 10 min, once per day for 7 days, started immediately after CCI. Stimulation duration 400 ms, tone-burst duration 0.5 ms, PRF 1 kHz."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Traumatic brain injury models were developed by performing a craniocerebral injury (CCI) operation. The rats were randomly divided into three groups (15 rats/group): the TBI group, LIPUS treatment group, and sham operation control group (sham group). Rats in the TBI group underwent only the CCI operation, and those in the sham group underwent scalp incision and skull drilling without CCI operation. Rats in the LIPUS group underwent CCI surgery followed by LIPUS treatment.",
+   "n_sessions_per_subject": "LIPUS was administered immediately to the rats and the rats were treated with LIPUS stimulation once per day for 7 d.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound fundamental frequency (FF) and pulsed repetition frequency (PRF) were 500 and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The ultrasound fundamental frequency (FF) and pulsed repetition frequency (PRF) were 500 and 1 kHz, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) were 400 and 0.5 ms, respectively (Li et al., 2017).",
+   "exposures[0].timing.sonication_duration_s": "The ultrasound stimulation duration (SD) and tone-burst duration (TBD) were 400 and 0.5 ms, respectively (Li et al., 2017).",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound pressure was measured using a calibrated needle-type hydrophone (HNR500; Onda, United States), and the spatial peak and pulse-average intensity (Isppa) was 2.6 W/cm2.",
+   "exposures[0].device.model": "The pulsed signal from the second generator was amplified using a linear power amplifier (E&I240 L; ENI Inc., United States) and transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan).",
+   "exposures[0].device.manufacturer": "The pulsed signal from the second generator was amplified using a linear power amplifier (E&I240 L; ENI Inc., United States) and transmitted to an unfocused ultrasound transducer (V301-SU; Olympus, Japan)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa measured with a needle hydrophone, but the paper does not say water or free field; kept unspecified."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated; not computed."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "400 ms 'stimulation duration' per train, with total stimulation 10 min; read as the train length."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "45 rats enrolled in total (sham 15, TBI 15, LIPUS 15); only the 15 LIPUS rats received ultrasound."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only GFAP scoring was by blinded observers; no overall blinding statement."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

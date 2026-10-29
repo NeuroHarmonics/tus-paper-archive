@@ -1,0 +1,220 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025meng",
+ "doi": "10.1016/j.neuroimage.2025.121441",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6; C57BL/6J-Tg Thy1-GCaMP6f; Thy1-YFP-H)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "auditory fear conditioning (fear memory extinction; PTSD-related)",
+ "n_subjects": [
+  6,
+  6,
+  12,
+  6,
+  6,
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "none"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular"
+ ],
+ "readout_other": "freezing time; two-photon calcium imaging and dendritic spine imaging; Western blot and qPCR (BDNF, TrkB)",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS of the frontal association cortex promoted fear extinction, increased dendritic spine formation and pyramidal neuron calcium activity and raised BDNF and TrkB expression; TrkB blockade with ANA-12 weakened these effects.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of FrA",
+   "target": {
+    "terms": [
+     "prefrontal_cortex"
+    ],
+    "label": "FrA"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": 8.6,
+    "ispta_w_cm2": 0.43
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "Each session consisted of 5 min of stimulation followed by a 5-minute pause, repeated for a total of three 25-minute groups; 30 min of TUS applied once before fear extinction (D2); sham with signal source output switched off."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The mice were divided into two groups (Sham group and TUS group, 12 animals in each group).",
+   "exposures[0].fundamental_frequency_khz": "We installed a cone-shaped collimator (3D printed, resin material) filled with ultrasound coupling liquid in the tube between the output end of the ultrasound probe and the mouse head to connect the ultrasound transducer and stimulation target. The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms.",
+   "exposures[0].timing.pulse_duration_ms": "We installed a cone-shaped collimator (3D printed, resin material) filled with ultrasound coupling liquid in the tube between the output end of the ultrasound probe and the mouse head to connect the ultrasound transducer and stimulation target. The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We installed a cone-shaped collimator (3D printed, resin material) filled with ultrasound coupling liquid in the tube between the output end of the ultrasound probe and the mouse head to connect the ultrasound transducer and stimulation target. The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms.",
+   "exposures[0].timing.duty_cycle_pct": "We installed a cone-shaped collimator (3D printed, resin material) filled with ultrasound coupling liquid in the tube between the output end of the ultrasound probe and the mouse head to connect the ultrasound transducer and stimulation target. The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms.",
+   "exposures[0].timing.sonication_duration_s": "The stimulation was centered on the FrA. Each session consisted of 5 min of stimulation followed by a 5-minute pause, repeated for a total of three 25-minute groups.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms. The ultrasonic pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity (Isppa) and spatial peak time average (Ispta) values were 8.6 and 0.43 $\\mathrm { { w } / \\mathrm { { c m } ^ { 2 } } }$ , respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms. The ultrasonic pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity (Isppa) and spatial peak time average (Ispta) values were 8.6 and 0.43 $\\mathrm { { w } / \\mathrm { { c m } ^ { 2 } } }$ , respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency FF = 1 MHz, number of fundamental cycles $\\Nu \\mathrm { C } / p \\ : = \\ : 5 0 , 0 0 0$ , pulse repetition frequency $\\mathrm { P R F } = 1$ Hz, duty cycle $\\mathrm { D C } = 5 \\% $ , and stimulation time $\\mathrm { S D } = 5 0$ ms. The ultrasonic pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity (Isppa) and spatial peak time average (Ispta) values were 8.6 and 0.43 $\\mathrm { { w } / \\mathrm { { c m } ^ { 2 } } }$ , respectively.",
+   "n_sessions_per_subject": "On the following day (D2), both the TUS and Sham groups received 30 min of TUS stimulation."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states NC/p = 50,000 cycles at 1 MHz and 'stimulation time SD = 50 ms' with PRF 1 Hz and DC 5 %; recorded 50 ms as the pulse duration (matches DC/PRF) but the paper does not label it a pulse duration."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Taken from '5 min of stimulation' followed by a 5 min pause, repeated to a 25-minute total; the structure within the 5 min is not described beyond PRF 1 Hz."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure and intensities stated without saying where they apply (COMSOL simulation of the field is mentioned)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Number of TUS sessions per animal not clearly stated."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Paper lists lack of active control at a non-target site and possible auditory confounds as a limitation; no auditory control was done."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice awake during imaging; state during TUS not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

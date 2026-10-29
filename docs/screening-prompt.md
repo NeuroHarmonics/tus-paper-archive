@@ -37,7 +37,7 @@ Each object MUST have exactly these keys:
                    conference_abstract | methods_tool | simulation_only |
                    case_report | letter_commentary | consensus_guideline |
                    erratum | protocol | book | other
-  "criterion"    - "E1".."E8" for an exclusion, null when relevant
+  "criterion"    - "E1".."E9" for an exclusion, null when relevant
   "reason"       - one sentence naming the condition or exclusion that decided it
   "resolved_by"  - "agent"
   "under_current_criteria" - true
@@ -52,12 +52,19 @@ The test is: did the authors report an ORIGINAL ultrasound exposure delivered to
 NEURAL TISSUE with the INTENT of modulating its function? All four must hold. If
 you cannot decide, return "unspecified": never guess.
 
-E9 in particular: ultrasound whose intended effect is REPAIR is out. Regeneration,
-remyelination, proliferation, differentiation, neurite outgrowth, nerve conduits,
-recovery from injury. The line is the ENDPOINT, not the disease: axon counts,
-myelin thickness or functional recovery is out; firing rate, excitability, evoked
-potentials, BOLD, behaviour under stimulation or a channel response is in,
-whatever the study hopes to treat.
+E9 in particular: the line is the PURPOSE of the exposure, not the endpoint. Out
+under E9 only when the stated aim is to make tissue grow or regrow (regeneration,
+remyelination, neurogenesis, proliferation, differentiation, neurite outgrowth),
+or the preparation is a transected, crushed or conduit-bridged nerve, a spinal
+cord lesion, or a stem or progenitor cell culture. Protective, anti-inflammatory
+and disease-modifying aims are IN, whatever the endpoints: infarct volume, amyloid,
+glial markers and behaviour all count. Glia are neural tissue.
+
+Condition A: a reanalysis of an exposure already reported in another paper, or a
+pooled report of published exposures, is E3. A paper that adds participants or
+sessions is a new exposure. A research letter reporting the authors' own exposure is
+an original report; only a letter commenting on others' work is E3. A JoVE article is E3.
+Dissertations and theses, repository copies of published articles and data deposits are E7.
 
 Reply with one line: count and the relevant/not_relevant/unspecified split.
 ```

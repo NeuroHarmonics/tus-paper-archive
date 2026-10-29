@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022anderson",
+ "doi": "10.1136/rapm-2021-103115",
+ "model_system": [
+  "ex_vivo_tissue"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  26,
+  7,
+  7
+ ],
+ "subject_unit": "preparation",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "compound action potential parameters (amplitude, AUC, latencies, rate of rise, half peak width); nerve temperature; H&E, Luxol Fast Blue, Masson's Trichrome, Bielschowsky histology",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Increasing HIFU pressure decreased CAP amplitude, area under the curve and rate of rise until amplitude reached zero; nerve temperature rose by over 60 C above baseline at peak.",
+ "adverse_events": null,
+ "safety_notes": "At the highest HIFU pressures (high HIFU arm) myelin sheaths were expanded by clear spaces and fibres not identifiable on histology; control and low HIFU nerves looked normal.",
+ "exposures": [
+  {
+   "label": "HIFU of ex vivo rat sciatic nerve in a bath",
+   "target": {
+    "terms": [
+     "excised_nerve",
+     "sciatic_nerve"
+    ],
+    "label": "ex vivo rat sciatic nerve"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1470,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     1300,
+     2870
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     52.0,
+     255.5
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 25,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 15,
+    "protocol_description": "Pulse train of 25 ms on and 25 ms off (duty cycle 50%) applied for 15 s; HIFU reapplied every 2 min at pressures increasing in 0.11 MPa increments from 1.30 MPa until the CAP amplitude fell to zero; CAPs recorded 30 and 90 s after the start of each application."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten nerves from six rats (100% male, mean weight 545 g) were used for bupivacaine experiments; ten nerves from six rats (100% male, mean weight 558 g) were used for ropivacaine experiments, and 26 nerves from 18 rats (77% male, mean weight 518 g, mean nerve diameter 1.8 mm) were used for HIFU experiments (table 1).",
+   "exposures[0].fundamental_frequency_khz": "A HIFU transducer (100 mm radius of curvature) with a resonant frequency of 1.47 megahertz was used.",
+   "exposures[0].timing.pulse_duration_ms": "A pulse train (each pulse was on for a duration of 25 ms, followed by an off period of 25 ms, for a duty cycle of 50%) was applied for 15 s.",
+   "exposures[0].timing.duty_cycle_pct": "A pulse train (each pulse was on for a duration of 25 ms, followed by an off period of 25 ms, for a duty cycle of 50%) was applied for 15 s.",
+   "exposures[0].timing.sonication_duration_s": "A pulse train (each pulse was on for a duration of 25 ms, followed by an off period of 25 ms, for a duty cycle of 50%) was applied for 15 s.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "HIFU pressures used ranged from 1.30 to 2.87 MPa, corresponding to spatial peak temporal average intensities (Ispta) of 52.0 to 255.5 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.pressure_kpa": "HIFU pressures used ranged from 1.30 to 2.87 MPa, corresponding to spatial peak temporal average intensities (Ispta) of 52.0 to 255.5 W/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Initial pressure stated as peak-to-peak (1.30 MPa); the 1.30 to 2.87 MPa range is not labelled as peak-to-peak or peak negative; paper says pressures were measured during transducer calibration with a fiber optic hydrophone"
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta given as corresponding to pressures; paper says intensities are estimates based on assumed nerve acoustic impedance"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "HIFU experiments used 26 nerves from 18 rats; a separate histology cohort of 20 nerves from 10 rats included 'low HIFU' and 'high HIFU' arms; recorded 26 preparations"
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF not stated; only 25 ms on / 25 ms off given"
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker not named; hydrophone (Precision Acoustics) is not the transducer"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

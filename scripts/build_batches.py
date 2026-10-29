@@ -126,7 +126,8 @@ def main() -> int:
         if (v.get("journal") or "") in ("Figshare",
                                         "Zenodo (CERN European Organization for Nuclear Research)"):
             continue
-        if not TUS_LIKE.search((v["title"] + " " + v["abstract"])[:1200]):
+        # The whole abstract, as release.py counts it; a 1,200-character cut hid 176 candidates.
+        if not TUS_LIKE.search(v["title"] + " " + v["abstract"]):
             if not (args.all_topics and only_years and (v.get("year") or 0) in only_years):
                 not_tus_like += 1
                 continue

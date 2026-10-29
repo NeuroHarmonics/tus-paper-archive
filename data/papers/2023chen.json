@@ -1,0 +1,187 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  93,
+  93
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "laser speckle contrast imaging CBF; cortical width index; adhesive removal test; gelatin-carbon black ink perfusion; CD31 immunofluorescence; TMT proteomics; western blot (ROCK1, p-MLC2)",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS after dMCAO increased CBF, reduced brain swelling, improved functional recovery and vascular remodeling and reduced ROCK1/p-MLC2; neuronal excitation or inhibition was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIPUS after dMCAO (and in sham-operated mice)",
+   "target": {
+    "terms": [
+     "brain"
+    ],
+    "label": "the top of the head of mice"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 530,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "LIPUS applied at 0.5 h after dMCAO and subsequently daily for a stimulation time of 30 min until the mouse was sacrificed; fundamental frequency 1 MHz, stimulation duration 5 min, PRF 1 Hz, duty cycle 5%."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "pulse_duration_implied_ms": 50.0
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2023chen",
+ "doi": "10.1093/cercor/bhad330",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 372 mice were divided into 4 groups following the principle of randomization (random number): Sham group (n 93); Sham LIPUS group (n 93); dMCAO group (n 93); and dMCAO LIPUS group (n 93).",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 1 MHz, 5 min, 1 Hz, and 5%, respectively. The ultrasound pressure was 0.53 MPa and corresponding spatial peak.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 1 MHz, 5 min, 1 Hz, and 5%, respectively. The ultrasound pressure was 0.53 MPa and corresponding spatial peak.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 1 MHz, 5 min, 1 Hz, and 5%, respectively. The ultrasound pressure was 0.53 MPa and corresponding spatial peak.",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 1 MHz, 5 min, 1 Hz, and 5%, respectively. The ultrasound pressure was 0.53 MPa and corresponding spatial peak.",
+   "exposures[0].timing.sonication_duration_s": "The fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle were 1 MHz, 5 min, 1 Hz, and 5%, respectively. The ultrasound pressure was 0.53 MPa and corresponding spatial peak."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Four groups of 93 (n value printed as 'n 93', equals sign missing); LIPUS-treated groups are Sham LIPUS and dMCAO LIPUS; total exposed not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Text says 'stimulation time of 30 min' daily and also 'stimulation duration ... 5 min'; the 5 min value is recorded, conflict unresolved."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "'The ultrasound pressure was 0.53 MPa and corresponding spatial peak'; domain and pressure type not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Transducer placed on the top of the head; no specific brain region named."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control group received no ultrasound stimulation; whether transducer was placed is not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

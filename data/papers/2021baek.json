@@ -1,0 +1,224 @@
+{
+ "adverse_events": "none_observed",
+ "anaesthesia": "anaesthetised",
+ "auditory_control": [
+  "not_reported"
+ ],
+ "blinding": "not_reported",
+ "citekey": "2021baek",
+ "condition_other": null,
+ "conditions": [
+  "healthy"
+ ],
+ "direction_notes": "FUS evoked tail EMG and tail movements; 0.3 s sonications gave short-latency EMG, 15 s sonications (with heating) gave short- and long-latency EMG, with higher response rates at the same Isppa.",
+ "direction_of_effect": "excitatory",
+ "doi": "10.1088/1361-6560/ac08b1",
+ "exposures": [
+  {
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Wuxi Lanhui Electronic",
+    "model": "TAPMM25 W"
+   },
+   "free_field": {
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported",
+    "pressure_kpa": "not_reported"
+   },
+   "fundamental_frequency_khz": 1000,
+   "in_situ": {
+    "isppa_w_cm2": [
+     4.1,
+     7.8,
+     14.0,
+     22.7
+    ],
+    "ispta_w_cm2": [
+     2.0,
+     3.9,
+     7.0,
+     11.3
+    ],
+    "method": "derating",
+    "pressure_kpa": "not_reported",
+    "reported_as": "single_value"
+   },
+   "label": "Deep cerebellar nucleus, mechanical (0.3 s) and mechanothermal (15 s) groups",
+   "target": {
+    "label": "cerebellar deep nuclei (DCN)",
+    "terms": [
+     "deep_cerebellar_nuclei"
+    ]
+   },
+   "timing": {
+    "duty_cycle_pct": 50,
+    "protocol_description": "Mechanical group: 0.3 s sonications every 5 s, 10 repeats per intensity. Mechanothermal group: same pulsing but 15 s sonications with 80 s inter-stimulus interval, 5 repeats per intensity; intensity order randomised within each mouse.",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 10,
+    "sonication_duration_s": [
+     0.3,
+     15
+    ],
+    "waveform": "pulsed"
+   },
+   "unspecified_domain": {
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null,
+    "pressure_kpa": null
+   }
+  }
+ ],
+ "model_system": [
+  "rodent"
+ ],
+ "n_sessions_per_subject": "not_reported",
+ "n_subjects": [
+  31,
+  8,
+  12
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "date": "2026-10-27",
+   "model": "claude-sonnet-5-5"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes of separate experiments (31 behaviour/EMG, 8 MR thermometry, 12 safety); total not stated and overlap not stated."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Isppa calculated as P^2/2rho c with 14% skull attenuation (derating by authors); pressure values themselves not given."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Ispta values read from Table 1 ('Isppa/Ispta'); domain presumed same as Isppa."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text says 'pulse length = 50 ms'; with PRF 10 Hz and DC 50% this is consistent. Applies to both groups."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Field was calibrated in water with a hydrophone but no pressure values are stated in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "source_quotes": {
+   "exposures[0].device.manufacturer": "A single-element FUS transducer (TAPMM25 W, Wuxi Lanhui Electronic, Jiangsu, China)",
+   "exposures[0].device.model": "A single-element FUS transducer (TAPMM25 W, Wuxi Lanhui Electronic, Jiangsu, China)",
+   "exposures[0].fundamental_frequency_khz": "A single-element FUS transducer (TAPMM25 W, Wuxi Lanhui Electronic, Jiangsu, China) with a center frequency of1 MHz, an active aperture size of20 mm, and a focal length of14 mm was used for the FUS stimulation.",
+   "exposures[0].in_situ.isppa_w_cm2": "The maximum temperature rise of the mechanothermal group was $0 . 6 ^ { \\circ } \\mathrm { C } \\pm 0 . 2 ^ { \\circ } \\mathrm { C } , 1 . 2 ^ { \\circ } \\mathrm { C } \\pm 0 . 4 ^ { \\circ } \\mathrm { C } , 1 . 9 ^ { \\circ } \\mathrm { C } \\pm 0 . 5 ^ { \\circ } \\mathrm { C } ,$ , and $3 . 3 ^ { \\circ } \\mathrm { C } \\pm 0 . 9 ^ { \\circ } \\mathrm { C }$ for $I _ { \\mathrm { s p p a } }$ equals 4.1, 7.8, 14.0, and 22.7 W cm<sup>−2</sup>, respectively (figure 2(d)).",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td></td><td colspan=\"3\">Mechanical group</td><td></td><td></td><td></td></tr><tr><td> $I _ { \\mathrm { s p p a } } / I _ { \\mathrm { s p t a } } ( \\mathrm { W c m } ^ { - 2 } )$ </td><td>Latency (ms)</td><td>Amplitude (a.u.)</td><td>Success rate (%)</td><td></td><td></td><td></td></tr><tr><td> $4 . 1 / 2 . 0$ </td><td> $5 0 . 4 \\pm 5 . 0$ </td><td> $7 . 2 \\pm 0 . 8$ </td><td> $2 0 . 0 \\pm 2 0 . 0$ </td><td></td><td></td><td></td></tr><tr><td> $7 . 8 / 3 . 9$ </td><td> $1 0 6 . 6 \\pm 5 6 . 5$ </td><td> $1 2 . 9 \\pm 2 . 5$ </td><td> $4 0 . 0 \\pm 1 5 . 9$ </td><td></td><td></td><td></td></tr><tr><td> $1 4 . 0 / 7 . 0$ </td><td> $6 1 . 3 \\pm 1 4 . 9$ </td><td> $1 9 . 4 \\pm 3 . 2$ </td><td> $6 4 . 4 \\pm 1 1 . 5$ </td><td></td><td></td><td></td></tr><tr><td> $2 2 . 7 / 1 1 . 3$ </td><td> $3 4 . 4 \\pm 7 . 7$ </td><td> $3 4 . 1 \\pm 7 . 5$ </td><td> $9 4 . 0 \\pm 2 . 4$ </td><td></td><td></td><td></td></tr><tr><td></td><td>Short-latency EMG</td><td></td><td colspan=\"4\">Mechanothermal group</td></tr><tr><td> $I _ { \\mathrm { s p p a } } / I _ { \\mathrm { s p t a } } ( \\mathrm { W c m } ^ { - 2 } )$ </td><td>Latency (ms)</td><td>Amplitude (a.u.)</td><td>Success rate (%)</td><td>Latency (s)</td><td>Long-latency EMG Amplitude (a.u.)</td><td>Success rate (%)</td></tr><tr><td> $4 . 1 / 2 . 0$ </td><td> $2 1 7 \\pm 0 . 1$ </td><td> $1 1 . 5 \\pm 4 . 5$ </td><td> $5 . 0 \\pm 5 . 0$ </td><td> $8 . 7 \\pm 1 . 9$ </td><td> $1 7 . 5 \\pm 4 . 8$ </td><td> $8 0 . 0 \\pm 9 . 3$ </td></tr><tr><td> $7 . 8 / 3 . 9$ </td><td> $1 4 8 4 \\pm 0 . 9$ </td><td> $3 8 . 4 \\pm 1 6 . 8$ </td><td> $3 0 . 0 \\pm 1 2 . 7$ </td><td> $1 3 . 0 \\pm 2 . 8$ </td><td> $4 7 . 4 \\pm 1 1 . 5$ </td><td>100.0</td></tr><tr><td> $1 4 . 0 / 7 . 0$ </td><td> $2 7 0 \\pm 0 . 1$ </td><td> $6 2 . 9 \\pm 3 2 . 4$ </td><td> $3 6 . 0 \\pm 1 4 . 4$ </td><td> $1 0 . 9 \\pm 2 . 6$ </td><td> $6 9 . 7 \\pm 1 6 . 2$ </td><td>100.0</td></tr><tr><td> $2 2 . 7 / 1 1 . 3$ </td><td> $3 4 7 \\pm 0 . 2$ </td><td> $4 9 . 6 \\pm 1 4 . 2$ </td><td> $3 0 . 0 \\pm 9 . 5$ </td><td> $9 . 1 \\pm 1 . 9$ </td><td> $7 6 . 1 \\pm 1 4 . 5$ </td><td>100.0</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "The parameters used by the mechanical group parameters were: duty cycle = 50%, pulse-repetition frequency = 10 Hz, pulse length = 50 ms, duration ofeach stimulus = 0.3 s, inter-stimulus duration = 5 s, and 10 repeated stimulations at each intensity level.",
+   "exposures[0].timing.pulse_duration_ms": "The parameters used by the mechanical group parameters were: duty cycle = 50%, pulse-repetition frequency = 10 Hz, pulse length = 50 ms, duration ofeach stimulus = 0.3 s, inter-stimulus duration = 5 s, and 10 repeated stimulations at each intensity level.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The parameters used by the mechanical group parameters were: duty cycle = 50%, pulse-repetition frequency = 10 Hz, pulse length = 50 ms, duration ofeach stimulus = 0.3 s, inter-stimulus duration = 5 s, and 10 repeated stimulations at each intensity level.",
+   "exposures[0].timing.sonication_duration_s": "One group was subjected to short-duration FUS stimulation (0.3 s) that induced mechanical effects (mechanical group). The other group underwent long-duration FUS stimulation (15 s)",
+   "n_subjects": "A total of 31 mice were randomly divided into two groups"
+  },
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "randomised": true,
+ "readout_other": "tail EMG and tail movement; MR thermometry at 4.7 T; H&E, NeuN, GFAP and Iba1 staining",
+ "readout_timing": "online",
+ "readouts": [
+  "emg_mep",
+  "behaviour",
+  "other_mri",
+  "histology_molecular"
+ ],
+ "safety_notes": "Histology (H&E, NeuN, GFAP, Iba1) in 12 additional mice at 4.1-22.7 W/cm2 showed no tissue damage; MR thermometry measured temperature rise.",
+ "schema_version": "1.0",
+ "sham_type": [
+  "none"
+ ],
+ "species": "mouse (C57BL/6)",
+ "subject_unit": "animal"
+}

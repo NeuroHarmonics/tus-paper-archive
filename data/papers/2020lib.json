@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020lib",
+ "doi": "10.1109/tmi.2020.3019087",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "rhesus macaque (Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "BOLD EPI with SPM analysis; MR-ARFI; MR thermometry; SNR, g-factor and tSNR",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Preliminary demonstration: the BOLD time course at the posterior cingulate target increased with stimulation and gradually fell to the unstimulated level; no statistics on neural direction.",
+ "adverse_events": "not_reported",
+ "safety_notes": "MR thermometry showed a mean temperature rise of 0.01 C in the ROI with a maximum of 0.2233 C.",
+ "exposures": [
+  {
+   "label": "FUS to posterior cingulate cortex",
+   "target": {
+    "terms": [
+     "posterior_cingulate_cortex"
+    ],
+    "label": "posterior cingulate cortex (PCC)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-designed, homemade MRI-compatible single crystal-based ultrasound transducer"
+   },
+   "fundamental_frequency_khz": 300,
+   "free_field": {
+    "pressure_kpa": 758,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 1,
+    "protocol_description": "Sine wave, 300 kHz, PRF 200 Hz, pulse duty cycle 10%, stimulus duration 1 s and stimulus duty cycle 50%. Each fMRI stimulation lasted 30 seconds with a 10-second pause after each."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In this in vivo study, four male rhesus monkeys (Macaca mulatta; 7 years old, 20 kg; 7 years old, 8.4 kg; 5 years old, 6.6 kg; and 5 years old, 6.4 kg) were used following protocols approved by the Animal Care and Use Committees at the Shenzhen Institute of Advanced Technology (SIAT), Chinese Academy of Sciences (CAS), China.",
+   "exposures[0].fundamental_frequency_khz": "To simulate the in vivo situation, the output power was based on the setting used in prior neuromodulation studies and included the following custom-design, homemade function generator parameters: sine wave output, frequency 300 kHz, electrical power 35 W, pulse repetition frequency = 200 Hz, pulse duty cycle = 10 %, stimulus duration 1 s, and stimulus duty cycle 50%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "To simulate the in vivo situation, the output power was based on the setting used in prior neuromodulation studies and included the following custom-design, homemade function generator parameters: sine wave output, frequency 300 kHz, electrical power 35 W, pulse repetition frequency = 200 Hz, pulse duty cycle = 10 %, stimulus duration 1 s, and stimulus duty cycle 50%.",
+   "exposures[0].timing.duty_cycle_pct": "To simulate the in vivo situation, the output power was based on the setting used in prior neuromodulation studies and included the following custom-design, homemade function generator parameters: sine wave output, frequency 300 kHz, electrical power 35 W, pulse repetition frequency = 200 Hz, pulse duty cycle = 10 %, stimulus duration 1 s, and stimulus duty cycle 50%.",
+   "exposures[0].timing.sonication_duration_s": "To simulate the in vivo situation, the output power was based on the setting used in prior neuromodulation studies and included the following custom-design, homemade function generator parameters: sine wave output, frequency 300 kHz, electrical power 35 W, pulse repetition frequency = 200 Hz, pulse duty cycle = 10 %, stimulus duration 1 s, and stimulus duty cycle 50%.",
+   "exposures[0].free_field.pressure_kpa": "The ultrasound transducer had a 3.9 mm 3.9 mm 23.7 mm cigar-shaped focal spot (at 3 dB size) and 51.4 mm focal depth in free acoustic fields with 758 kPa peak acoustic pressure as shown in Fig. 5.",
+   "exposures[0].device.model": "2) The MRI-Compatible Ultrasound Device: The ultrasound device included a custom-designed, homemade MRI-compatible ultrasound transducer [42], various replaceable frames, and two types of water bladders."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Four monkeys used in the study; the paper does not say how many received the PCC neuromodulation session."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Protocol does not fit four numbers: stimulus duration 1 s with 50% stimulus duty cycle, within 30 s stimulation periods; 1 s recorded."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "758 kPa measured in free field with the peak acoustic pressure settings; the neuromodulation sentence does not restate pressure."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; not computed."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "BOLD increase only; shown in a figure, a technical demonstration."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Homemade transducer; manufacturer not named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025fong",
+ "doi": "10.1162/imag.a.1046",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS MEP amplitude, SICI, ICF, resting motor threshold in FDI, APB and ADM",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No significant effect of 5 Hz-rTUS versus sham on MEP amplitude, SICI, ICF or rMT; post-hoc simulations showed the focus was outside the M1 hand area in most participants.",
+ "adverse_events": "none_observed",
+ "safety_notes": "None of the participants reported discomfort or adverse effects; simulated mechanical index about 0.26 and maximum temperature rise about 0.22 C.",
+ "exposures": [
+  {
+   "label": "5 Hz-rTUS to left M1 (TMS-hotspot based)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1)"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS TPO with CTX-500-025 four-element annular array"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 10,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 1.2,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "theta_burst",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 80,
+    "protocol_description": "80-s train of 20-ms ultrasound pulses repeated every 200 ms (PRF 5 Hz; 10% duty cycle), 400 pulses; TMS measures at baseline, 5, 30 and 60 min after sonication."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "We studied 15 healthy right-handed individuals",
+   "n_sessions_per_subject": "Participants attended two sessions (1  week apart) with either 5 Hz-rTUS or sham-TUS, in counterbalanced order across participants (Fig. 1A-C).",
+   "exposures[0].fundamental_frequency_khz": "four-element 500 kHz annular array piezoelectric transducer",
+   "exposures[0].free_field.isppa_w_cm2": "was set to 10 W/cm<sup>2</sup> (Table 1), similar to the original work",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td>Present study</td><td>CTX500-025†</td><td>3.71 W*</td><td> $1 0 . 0 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td><td> $2 . 5 0 ^ { \\star \\star } \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ </td><td> $1 . 2 0 \\pm 0 . 4 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ </td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "80-s train of 20-ms ultrasound pulses repeated every 200 ms (PRF 5 Hz; 10% duty cycle), for a total of 400 pulses",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "80-s train of 20-ms ultrasound pulses repeated every 200 ms (PRF 5 Hz; 10% duty cycle), for a total of 400 pulses",
+   "exposures[0].timing.duty_cycle_pct": "80-s train of 20-ms ultrasound pulses repeated every 200 ms (PRF 5 Hz; 10% duty cycle), for a total of 400 pulses",
+   "exposures[0].timing.sonication_duration_s": "80-s train of 20-ms ultrasound pulses repeated every 200 ms (PRF 5 Hz; 10% duty cycle), for a total of 400 pulses",
+   "exposures[0].device.manufacturer": "was delivered using the NeuroFUS system (manufacturer: Sonic Concepts Inc., Bothell, WA, USA; supplier/support: Brainbox Ltd., Cardiff, UK)",
+   "exposures[0].device.model": "(CTX-500-025, Sonic Concepts Inc., Bothell, WA, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Paper says 5 Hz-rTUS is 'also referred to as theta-burst TUS (tbTUS)' but the protocol is a single-level 5 Hz pulse train; could equally be 'pulsed'."
+   },
+   {
+    "field": "sham_type",
+    "reason": "A sham session is delivered (double-blind, TPO display hidden) but how sham output was produced is not described in the text."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Mean of per-participant k-Plan simulations (1.20 +/- 0.43 W/cm2); the estimated 2.5 W/cm2 from 75% attenuation is not recorded here."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Isppa in free water is described as 'set to' 10 W/cm2 via the TPO; Table 1 labels it free-water Isppa."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

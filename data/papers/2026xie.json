@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026xie",
+ "doi": "10.1088/1741-2552/aeb075",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley); mouse (APP/PS1 double transgenic; C57BL/6 wild type)",
+ "conditions": [
+  "healthy",
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8,
+  8,
+  6,
+  6,
+  6,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "CA1/CA3 LFP, spike sorting and spike-field coherence; Y-maze spontaneous alternation; novel object location",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Acute: peak-phase and random-phase stimulation raised slow gamma power and cross-frequency coupling; peak-phase also raised CA3-CA1 coherence. After 14 days, behaviour was unchanged in normal rats but improved in APP/PS1 mice with peak-phase stimulation, with increased CA1 power and CA3-CA1 coherence.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Phase-locked closed-loop ultrasound to CA3 (peak, trough, random phase)",
+   "target": {
+    "terms": [
+     "CA3"
+    ],
+    "label": "hippocampal CA3 region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Corporation, USA",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "other_patterned",
+    "pulse_duration_ms": 10,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Pulses triggered on detection of a target phase of CA3 slow gamma (30-45 Hz): peak, trough or random phase. Acute experiment: 1, 2, 3 or 4 stimuli per second or all detected events. Chronic (rats and APP/PS1 mice): within each 1 s detection window one 10 ms pulse is triggered, 1 s interval between windows, 15 min per day for two weeks. Acoustic parameters are shown only in a figure."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Thirty-two SD rats were randomly divided into peak stimulation, trough stimulation, random stimulation, and sham stimulation groups (N=8 per group).",
+   "n_sessions_per_subject": "Approach.",
+   "exposures[0].fundamental_frequency_khz": "A needle hydrophone was used to measure the acoustic field distribution of the ultrasound transducer (V302-SU, 1 MHz, Olympus Corporation, USA). maps.",
+   "exposures[0].device.manufacturer": "A needle hydrophone was used to measure the acoustic field distribution of the ultrasound transducer (V302-SU, 1 MHz, Olympus Corporation, USA). maps.",
+   "exposures[0].device.model": "A needle hydrophone was used to measure the acoustic field distribution of the ultrasound transducer (V302-SU, 1 MHz, Olympus Corporation, USA). maps.",
+   "exposures[0].timing.pulse_duration_ms": "\fExperiment 2: Modulatory effects of slow gamma phase-locked closedloop ultrasound stimulation on spatial memory in SD rats."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "1 MHz appears only as the rating of the transducer (V302-SU) in the hydrophone sentence; the actual fundamental frequency used is in Figure 3(G), not in text. Reader should verify."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Sentence is ambiguous whether V302-SU is the stimulating transducer; taken as such."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes by species: 62 SD rats, 15 APP/PS1 mice and 5 wild-type mice; the wild-type mice and some rats were not sonicated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "10 ms pulse stated for Experiments 2 and 3; Experiment 1 pulses not described in text."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "No pressure or intensity values in the text; field mapped by hydrophone but only normalised, in figures."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Experiment 1 anaesthetised rats (isoflurane at surgery; acute stimulation in anaesthetised rats); behaviour in awake animals."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "neither",
+   "n_sessions_per_subject": "first"
+  }
+ }
+}

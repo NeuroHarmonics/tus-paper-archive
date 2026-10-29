@@ -1,0 +1,239 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026xu",
+ "doi": "10.1186/s10194-026-02549-y",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 28,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 2,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "behaviour",
+  "eeg_meg"
+ ],
+ "readout_other": "heat and pressure pain thresholds; contact heat-evoked potentials; pain-evoked time-frequency power; resting-state EEG connectivity; PANAS; SAM",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Real versus sham tFUS raised heat and pressure pain thresholds, prolonged CHEP P2 latency, reduced heat pain-evoked alpha power and attenuated beta-band resting-state connectivity.",
+ "adverse_events": "observed",
+ "safety_notes": "At least one adverse event in 13/28 after real vs 6/28 after sham; all mild or moderate, mostly drowsiness, resolved by 24 h; no serious events. Thermal and MI estimated by BabelBrain simulation in one participant.",
+ "exposures": [
+  {
+   "label": "Right M1 tFUS, 15 min, real vs sham crossover",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "right M1 hand area"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Beijing RuAo Medical Technology Co., Ltd.",
+    "model": "tFUS-R02"
+   },
+   "fundamental_frequency_khz": 554.03,
+   "free_field": {
+    "pressure_kpa": 346.4,
+    "isppa_w_cm2": 8.11,
+    "ispta_w_cm2": 0.406
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 129,
+    "isppa_w_cm2": 0.511,
+    "ispta_w_cm2": 0.0255
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Generator output 8 W, PRF 100 Hz, duty cycle 5%, pulse duration 500 us; each 500 ms sonication followed by a 10 s interval, 86 sonications over the 15 min intervention. One session per condition, at least one week apart."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 28 healthy volunteers were recruited through poster or social media.",
+   "n_sessions_per_subject": "Methods This randomized, sham-controlled crossover study included 28 healthy adults, who completed a total of 56 experimental sessions.",
+   "exposures[0].fundamental_frequency_khz": "The acoustic energy was generated by a single-element focused transducer with a measured acoustic output frequency of 554.03 kHz.",
+   "exposures[0].device.manufacturer": "The acoustic energy was generated by a single-element focused transducer with a measured acoustic output frequency of 554.03 kHz.",
+   "exposures[0].device.model": "The acoustic energy was generated by a single-element focused transducer with a measured acoustic output frequency of 554.03 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For the real condition, the generator output was set to 8 W, with a pulse repetition frequency of 100 Hz, a duty cycle of 5%, and a pulse duration of 500 µs.",
+   "exposures[0].timing.duty_cycle_pct": "For the real condition, the generator output was set to 8 W, with a pulse repetition frequency of 100 Hz, a duty cycle of 5%, and a pulse duration of 500 µs.",
+   "exposures[0].timing.pulse_duration_ms": "For the real condition, the generator output was set to 8 W, with a pulse repetition frequency of 100 Hz, a duty cycle of 5%, and a pulse duration of 500 µs.",
+   "exposures[0].timing.sonication_duration_s": "Each sonication lasted 500 ms and was followed by a 10-s interval without sonication, with a total of 86 sonications delivered over the 15-min intervention period [24, 28]. At this setting, the measured free-field spatialpeak pulse-average intensity (ISPPA) and spatial-peak temporal-average intensity (ISPTA) were 8.11 W/cm² and 0.406 W/cm², respectively.",
+   "exposures[0].free_field.pressure_kpa": "Free-field beam profiles obtained at the 1-W generator setting in the transverse and longitudinal planes are shown in Fig. 1B and C. At the experimental 8-W generator setting, the RMS acoustic pressure, the free-field ISPPA, ISPTA, and MI were 0.3464 MPa, 8.11 W/cm², 0.406 W/cm², and 0.545, respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "Free-field beam profiles obtained at the 1-W generator setting in the transverse and longitudinal planes are shown in Fig. 1B and C. At the experimental 8-W generator setting, the RMS acoustic pressure, the free-field ISPPA, ISPTA, and MI were 0.3464 MPa, 8.11 W/cm², 0.406 W/cm², and 0.545, respectively.",
+   "exposures[0].free_field.ispta_w_cm2": "Free-field beam profiles obtained at the 1-W generator setting in the transverse and longitudinal planes are shown in Fig. 1B and C. At the experimental 8-W generator setting, the RMS acoustic pressure, the free-field ISPPA, ISPTA, and MI were 0.3464 MPa, 8.11 W/cm², 0.406 W/cm², and 0.545, respectively.",
+   "exposures[0].in_situ.isppa_w_cm2": "Using the measured free-field ISPPA of 8.11 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ as the input, the estimated maximum intracranial and target ISPPA values were 0.630 and 0.511 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } ;$ , respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "The corresponding ISPTA values, averaged over each 500-ms sonication using the 5% pulse duty cycle and excluding the subsequent 10-s of period, were 0.0315 and 0.0255 $\\mathrm { W } / \\mathrm { c m } ^ { 2 } .$ . The estimated MI at the target was 0.174, whereas the maximum intracranial MI was 0.193.",
+   "exposures[0].in_situ.pressure_kpa": "Nevertheless, our estimated target peak rarefactional pressure of approximately 129 kPa, calculated from the target MI and acoustic frequency, was close to the mean modeled target pressures reported by Ennasr et al"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Paper gives RMS acoustic pressure 0.3464 MPa at the 8 W setting; converted to kPa only, and it is an RMS value."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Target ISPPA from a CT-informed BabelBrain simulation in one representative participant; 0.511 at target, 0.630 maximum intracranial."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "In-situ pressure shown only in a figure colour bar (kPa)."
+   },
+   {
+    "field": "blinding",
+    "reason": "Registered as double-blind; participants and outcome assessors blinded, stimulation operator aware of condition."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Pain threshold and EEG changes; no single direction of cortical excitability stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Maker named is Beijing RuAo Medical Technology, not in the vocabulary list."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second"
+  }
+ }
+}

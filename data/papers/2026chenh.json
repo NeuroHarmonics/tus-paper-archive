@@ -1,0 +1,216 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chenh",
+ "doi": "10.3724/j.pibb.2025.0503",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 48,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "tactile localization accuracy (perceptual consistency rate); self-reported sensation types",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Active S1 stimulation evoked contralateral hand tactile sensations localised above chance (0.613 vs 0.5); in Experiment 2 consistency exceeded chance at 400 and 1000 ms sonication durations but not at 200, 600 or 800 ms.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Experimenter asked about scalp sensations at the midpoint and end of the session; temperature measurements reported to confirm heating within safe limits.",
+ "exposures": [
+  {
+   "label": "Bilateral S1 tFUS, five sonication durations",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "left and right S1, with MNI coordinates of (-60, -31, 52) and (60, -31, 52)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "transducer CO.5MD-1R50-048; stimulator GCBT-1-A001 (Zhongke Lvgu Inc.)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 892,
+    "isppa_w_cm2": 6.63,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+     1.0
+    ],
+    "protocol_description": "Pulse width 0.2 ms, pulse repetition period 1 ms (PRF 1 kHz); Experiment 2 states DC 50% and PD 10 ms with five sonication durations (200-1000 ms), 10 trials per duration per side, 6 s inter-stimulus interval."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_unspecified_domain"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 20.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 48 healthy participants were recruited for this study",
+   "exposures[0].fundamental_frequency_khz": "operating at a frequency of 500 kHz",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ISPPA was 6.63 W/cm², the MI was 1.2, and the DC was 50%, producing a peak rarefactional pressure of 0.892 MPa.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ISPPA was 6.63 W/cm², the MI was 1.2, and the DC was 50%, producing a peak rarefactional pressure of 0.892 MPa.",
+   "exposures[0].timing.duty_cycle_pct": "The ISPPA was 6.63 W/cm², the MI was 1.2, and the DC was 50%, producing a peak rarefactional pressure of 0.892 MPa.",
+   "exposures[0].timing.pulse_duration_ms": "The pulse width of a single ultrasound pulse was 0.2 ms, with a pulse repetition period of 1 ms, corresponding to a PRF of 1 kHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse width of a single ultrasound pulse was 0.2 ms, with a pulse repetition period of 1 ms, corresponding to a PRF of 1 kHz.",
+   "exposures[0].timing.sonication_duration_s": "The pulse duration (PD) was set to 10 ms, and the SD included five conditions: 200, 400, 600, 800 and 1 000 ms.",
+   "exposures[0].device.model": "The FUS was generated by a transducer (model CO.5MD-1R50-048)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states pulse width 0.2 ms with 1 kHz PRF, but also DC 50% (which would imply 0.5 ms) and 'pulse duration (PD) 10 ms' in the ultrasound setup; values are mutually inconsistent, recorded as stated (0.2 ms)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50% duty cycle conflicts with 0.2 ms pulse width at 1 kHz PRF."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Peak rarefactional pressure 0.892 MPa and Isppa 6.63 W/cm2 given without stating water or in situ."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Durations given in ms (200-1000) converted to s; five-level sweep."
+   },
+   {
+    "field": "randomised",
+    "reason": "Stimulation order randomised in Experiment 1a; Experiment 2 used predefined counterbalanced order; participant allocation not randomised."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker not named; only stimulator maker (Zhongke Lvgu Inc.) given."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Experiment 2 sham probe emitted no ultrasound; Experiment 1b sham stimulation not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

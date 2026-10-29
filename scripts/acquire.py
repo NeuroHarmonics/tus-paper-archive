@@ -31,9 +31,10 @@ import httpx
 
 from common import (
     load_screening,
-    CANDIDATES, DATA, MAILTO, compact_title, normalise_title, read_json,
+    CANDIDATES, DATA, MAILTO, PREPRINT_DOI, compact_title, is_conference, normalise_title, read_json,
     surname_slug, write_json,
 )
+from prescreen import JOVE_DOI, OSF_PROJECT_DOI
 
 UNPAYWALL = "https://api.unpaywall.org/v2/{doi}"
 BATCH = 100  # want-list is worked in batches of this size
@@ -61,7 +62,72 @@ ACCESS_LABEL = {
         ("open access", "Free to read - the link resolves to a landing page rather "
                         "than a direct PDF."),
     "http_404": ("dead link", "The open-access link 404s. Try the DOI."),
+    "to_screen": ("fetch to screen", "No abstract anywhere, so it cannot be screened "
+                                     "until its full text is held."),
 }
+
+
+_STOP = set("the a an of in on and for with to by from using via as at is are its into "
+            "we our this that were was be".split())
+
+
+def _words(text: str | None) -> dict[str, int]:
+    out: dict[str, int] = {}
+    for w in re.findall(r"[a-z]{3,}", (text or "").lower()):
+        if w not in _STOP:
+            out[w] = out.get(w, 0) + 1
+    return out
+
+
+def _cosine(a: dict[str, int], b: dict[str, int]) -> float:
+    num = sum(v * b[k] for k, v in a.items() if k in b)
+    den = (sum(v * v for v in a.values()) * sum(v * v for v in b.values())) ** 0.5
+    return num / den if den else 0.0
+
+
+def _surname(name: str | None) -> str:
+    return re.sub(r"[^a-z]", "", (name or "").split(",")[0].strip().split(" ")[-1].lower())
+
+
+def preprint_identity(client: httpx.Client, doi: str) -> dict:
+    """Published version, authors and abstract of a preprint, from the server that holds it.
+
+    bioRxiv and medRxiv record the published DOI themselves; Crossref carries
+    is-preprint-of for Research Square, SSRN and some others. An HTTP error is
+    returned as {"error": ...}, never read as "not published".
+    """
+    out: dict = {"published": None, "how": None, "authors": set(), "text": ""}
+    if (m_ := re.match(r"^10\.2196/preprints\.(\d+)$", doi)):
+        # JMIR gives a preprint and its article the same number and no Crossref link.
+        out["published"], out["how"] = f"10.2196/{m_.group(1)}", "JMIR numbering"
+    try:
+        if doi.startswith(("10.1101/", "10.64898/")):
+            for server in ("biorxiv", "medrxiv"):
+                r = client.get(f"https://api.biorxiv.org/details/{server}/{doi}")
+                r.raise_for_status()
+                coll = r.json().get("collection") or []
+                if coll:
+                    x = coll[-1]
+                    out["authors"] = {_surname(a) for a in x.get("authors", "").split(";") if a.strip()}
+                    out["text"] = f"{x.get('title', '')} {x.get('abstract', '')}"
+                    pub = [c.get("published") for c in coll if c.get("published") not in (None, "", "NA")]
+                    if pub:
+                        out["published"], out["how"] = pub[-1].lower(), f"{server} records it"
+                    break
+        r = client.get(f"https://api.crossref.org/works/{doi}")
+        if r.status_code == 200:
+            m = r.json()["message"]
+            if not out["authors"]:
+                out["authors"] = {_surname(a.get("family")) for a in m.get("author", []) if a.get("family")}
+                out["text"] = f"{(m.get('title') or [''])[0]} {re.sub(r'<[^>]+>', ' ', m.get('abstract') or '')}"
+            for it in (m.get("relation") or {}).get("is-preprint-of", []) or []:
+                if not out["published"] and (it.get("id") or "").lower().startswith("10."):
+                    out["published"], out["how"] = it["id"].lower(), "Crossref is-preprint-of"
+        elif r.status_code != 404:
+            out["error"] = f"Crossref HTTP {r.status_code}"
+    except (httpx.HTTPError, ValueError, KeyError) as e:
+        out["error"] = type(e).__name__
+    return out
 
 
 def write_wanted_html(rows: list[dict]) -> None:
@@ -74,9 +140,19 @@ def write_wanted_html(rows: list[dict]) -> None:
     def esc(s) -> str:
         return html.escape(str(s if s is not None else ""), quote=True)
 
-    batches: dict[int, list[tuple[int, dict]]] = {}
-    for i, r in enumerate(rows):
-        batches.setdefault(i // BATCH + 1, []).append((i + 1, r))
+    # Two sections: a screened-relevant paper becomes a record once fetched; a fetch-to-screen
+    # paper has no verdict yet.
+    relevant = [r for r in rows if r.get("access") != "to_screen"]
+    to_screen = [r for r in rows if r.get("access") == "to_screen"]
+    sections = [
+        (f"Screened relevant, not held ({len(relevant)})",
+         "Each passed the inclusion bar on its abstract and becomes a record once its PDF is in candidates/.",
+         relevant),
+        (f"Fetch to screen ({len(to_screen)})",
+         "Not yet judged: no abstract exists anywhere, so the full text decides whether each is in. "
+         "Many will turn out to be out of scope.",
+         to_screen),
+    ]
 
     counts: dict[str, int] = {}
     for r in rows:
@@ -87,7 +163,7 @@ def write_wanted_html(rows: list[dict]) -> None:
 
     parts = [f"""<!doctype html>
 <meta charset="utf-8">
-<title>TUS want-list ({len(rows)} papers)</title>
+<title>TUS want-list ({len(relevant)} relevant, {len(to_screen)} to screen)</title>
 <style>
  :root {{ --bg:#fff; --fg:#1a1a1a; --mut:#666; --line:#e4e4e7; --acc:#1d4ed8;
           --ok:#047857; --okbg:#ecfdf5; --warn:#92400e; --warnbg:#fffbeb;
@@ -120,7 +196,7 @@ def write_wanted_html(rows: list[dict]) -> None:
  .note {{ background:var(--warnbg); color:var(--warn); padding:.75rem 1rem;
           border-radius:6px; font-size:.85rem; margin:1rem 0 0; }}
 </style>
-<h1>TUS want-list &mdash; {len(rows)} papers</h1>
+<h1>TUS want-list &mdash; {len(relevant)} relevant, {len(to_screen)} to screen</h1>
 <p class="sub">{esc(summary)}. Ranked by citations per year, so the most-used papers come first.
 Ticks are remembered in this browser.</p>
 <p class="note"><strong>Green &ldquo;open access&rdquo; rows are free to read.</strong>
@@ -128,9 +204,13 @@ The automated fetcher got a 403 because the publisher blocks bots &mdash; the li
 normally for you. Drop what you collect into <code>candidates/</code> and re-run the ingest.</p>
 """]
 
-    for b, items in sorted(batches.items()):
-        parts.append(f"<h2>Batch {b} &mdash; {len(items)} papers</h2>\n<ol>")
-        for rank, r in items:
+    rank = 0
+    for heading, blurb, group in sections:
+        if not group:
+            continue
+        parts.append(f"<h2>{esc(heading)}</h2>\n<p class=\"sub\">{esc(blurb)}</p>\n<ol>")
+        for r in group:
+            rank += 1
             acc = r.get("access", "paywalled")
             label, _ = ACCESS_LABEL.get(acc, ("needs login", ""))
             cls = {"open access": "t-open", "dead link": "t-dead"}.get(label, "t-login")
@@ -143,6 +223,8 @@ normally for you. Drop what you collect into <code>candidates/</code> and re-run
                 bits.append(f"{esc(r['cited_by'])} cites")
             if r.get("record_class") and r["record_class"] != "primary_study":
                 bits.append(esc(r["record_class"].replace("_", " ")))
+            if r.get("check"):
+                bits.append(f'<strong>{esc(r["check"])}</strong>')
             parts.append(
                 f'<li data-doi="{esc(r["doi"])}">'
                 f'<input type="checkbox">'
@@ -170,7 +252,7 @@ normally for you. Drop what you collect into <code>candidates/</code> and re-run
 </script>""")
 
     (DATA / "wanted.html").write_text("\n".join(parts), encoding="utf-8")
-    print(f"wrote data/wanted.html (clickable, {len(batches)} batches)")
+    print(f"wrote data/wanted.html ({len(relevant)} relevant, {len(to_screen)} to screen)")
 
 
 # Record classes that INCLUSION.md excludes outright, without a judgement call: E3 removes
@@ -265,6 +347,16 @@ def main() -> int:
     held |= {p["doi"] for p in
              (read_json(DATA / "excluded.json", {}) or {}).get("papers", [])
              if p.get("doi")}
+    # Also held: preprints merged into a published version, and identified PDFs in candidates/.
+    held |= {o["doi"].lower() for p in
+             (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).values()
+             for o in [p.get("preprint") or {}] + (p.get("other_preprints") or []) if o.get("doi")}
+    in_hand = {(r.get("doi") or "").lower()
+               for name, r in ((read_json(DATA / "ingest.json", {}) or {}).get("records") or {}).items()
+               if r.get("doi") and (CANDIDATES / name).exists()}
+    held |= in_hand
+    if in_hand:
+        print(f"skipping {len(in_hand)} already in candidates/, waiting to be screened and filed")
 
     # Also exclude by TITLE. DOI dedup alone leaves a preprint, a versioned
     # record or a re-deposit on the want-list even though we hold the paper --
@@ -276,7 +368,10 @@ def main() -> int:
         for p in (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).values()
         if p.get("title")
     }
+    man_doi = {ck: p_.get("doi") for ck, p_ in
+               (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).items()}
     dupe_of_held = {}
+    vor_of_held_preprint: dict[str, str] = {}
     for d, v in verdicts.items():
         if v["verdict"] != "relevant" or d in held or d not in cands:
             continue
@@ -285,6 +380,11 @@ def main() -> int:
             continue
         m = difflib.get_close_matches(nt, list(held_titles), n=1, cutoff=0.90)
         if m:
+            # Held as a preprint and this is the published version: that is the one we
+            # want, so it stays on the list and replaces the preprint when it arrives.
+            if PREPRINT_DOI.match(held_titles[m[0]] or "") and not PREPRINT_DOI.match(d):
+                vor_of_held_preprint[d] = held_titles[m[0]]
+                continue
             dupe_of_held[d] = held_titles[m[0]]
 
     off_bar: dict[str, tuple[str, str]] = {}
@@ -304,12 +404,73 @@ def main() -> int:
         if WILEY_COVER_DOI.match(doi):
             covers.append(doi)
             return False
+        # Rules the prescreen applies to undecided candidates, re-applied to verdicts that
+        # predate them: an OSF registration or foundation project report is not a
+        # publication (E7), and conference output is out as a class (E8).
+        if JOVE_DOI.match(doi):
+            off_bar[doi] = ("JoVE methods article", "E3")
+            return False
+        if OSF_PROJECT_DOI.match(doi):
+            off_bar[doi] = ("grey literature", "E7")
+            return False
+        if is_conference(doi, (cands.get(doi) or {}).get("journal")):
+            off_bar[doi] = ("conference output", "E8")
+            return False
         return True
 
     relevant = {d: v for d, v in verdicts.items()
                 if v["verdict"] == "relevant" and d in cands
                 and d not in held and d not in dupe_of_held
                 and passes_current_bar(d, v)}
+    # Preprints: is the paper already held, or on this list, under its published DOI?
+    # Followed links are acted on; a resemblance to a held paper (shared authors, a
+    # similar abstract) only drops the entry when it is near-certain, and otherwise
+    # marks it to be checked, because two papers by one group can look alike.
+    held_text = {}
+    for ck, p_ in (read_json(DATA / "manifest.json", {}) or {}).get("papers", {}).items():
+        ab_ = read_json(DATA / "abstracts" / f"{ck}.json", {}) or {}
+        held_text[ck] = ({_surname(a.get("family")) for a in (p_.get("authors") or [])},
+                         _words(f"{p_.get('title') or ''} {ab_.get('text') or ''}"))
+    preprint_client = httpx.Client(timeout=40, follow_redirects=True,
+                                   headers={"User-Agent": f"tus-paper-archive/0.1 (mailto:{MAILTO})"})
+    preprint_note: dict[str, str] = {d: f"published version of held preprint {p}: fetch to replace it"
+                                     for d, p in vor_of_held_preprint.items()}
+    listed_as_vor = 0
+    for d in sorted(d for d in relevant if PREPRINT_DOI.match(d)):
+        info = preprint_identity(preprint_client, d)
+        time.sleep(0.1)
+        vor = info["published"]
+        if vor and (vor in held or vor in dupe_of_held):
+            dupe_of_held[d] = vor
+            continue
+        if vor and vor in relevant:
+            dupe_of_held[d] = vor
+            listed_as_vor += 1
+            continue
+        if vor and not is_conference(vor) and (verdicts.get(vor) or {}).get("verdict") != "not_relevant":
+            preprint_note[d] = f"published as {vor}: fetch that version"
+        elif vor and (verdicts.get(vor) or {}).get("verdict") == "not_relevant":
+            preprint_note[d] = f"published as {vor}, which was excluded ({verdicts[vor].get('criterion')}): fetch it to settle scope"
+        best = None
+        words = _words(info["text"])
+        for ck, (ha, hw) in held_text.items():
+            ov = len(info["authors"] & ha) / max(1, min(len(info["authors"]), len(ha))) if info["authors"] and ha else 0.0
+            sim = _cosine(words, hw)
+            if ov >= 0.8 and sim >= 0.6:
+                best = ("held", ck)
+                break
+            if ov >= 0.5 and sim >= 0.4 and not best:
+                best = ("similar", ck)
+        if best and best[0] == "held":
+            dupe_of_held[d] = man_doi.get(best[1], best[1])
+        elif best:
+            preprint_note.setdefault(d, f"check first: same authors as held {best[1]}")
+        if info.get("error"):
+            preprint_note.setdefault(d, f"published-version lookup failed ({info['error']})")
+    relevant = {d: v for d, v in relevant.items() if d not in dupe_of_held}
+    if listed_as_vor:
+        print(f"dropping {listed_as_vor} preprints whose published version is on the list")
+
     if off_bar:
         print(f"dropping {len(off_bar)} screened before the current criteria whose "
               f"record class the current bar excludes outright:")
@@ -352,9 +513,18 @@ def main() -> int:
             "reason": v.get("reason"), "criterion": v.get("criterion"),
             "oa_pdf_url": pdf, "license": lic,
             "publisher_url": c.get("publisher_url") or f"https://doi.org/{doi}",
+            "check": preprint_note.get(doi),
         }
         (open_rows if pdf else paywalled).append(row)
 
+    # Rank by citations per year since publication, so a person with limited time
+    # fetches the most-used papers first. The rank used to come from a ranking.json
+    # beside the verdict files, which went when the verdicts moved into the ledger.
+    this_year = time.gmtime().tm_year
+    by_use = sorted(open_rows + paywalled, key=lambda r: -(r["cited_by"] or 0)
+                    / max(1, this_year - (r["year"] or this_year) + 1))
+    for i, r in enumerate(by_use, 1):
+        r["rank"] = i
     open_rows.sort(key=lambda r: r["rank"])
     paywalled.sort(key=lambda r: r["rank"])
     for r in paywalled:
@@ -386,7 +556,7 @@ def main() -> int:
             w = csv.writer(fh)
             w.writerow(["batch", "rank", "doi", "title", "year", "journal",
                         "cited_by", "record_class", "access", "publisher_url",
-                        "link", "why_included"])
+                        "link", "why_included", "check"])
             for i, r in enumerate(rows):
                 url = r["publisher_url"]
                 w.writerow([i // BATCH + 1, i + 1, r["doi"], r["title"], r["year"],
@@ -394,12 +564,31 @@ def main() -> int:
                             r.get("access", "paywalled"), url,
                             # Renders as a clickable link in Excel and Numbers.
                             f'=HYPERLINK("{url}","open")',
-                            r["reason"]])
+                            r["reason"], r.get("check") or ""])
         print(f"wrote data/wanted.csv ({len(rows)} papers, "
               f"{(len(rows) + BATCH - 1) // BATCH} batches of {BATCH})")
         write_wanted_html(rows)
 
-    write_wanted(paywalled + known_bad)
+    # A paper with no abstract anywhere can never be screened relevant, so it would
+    # never reach this list. data/fetch-to-screen.json names those whose titles make
+    # them worth fetching; each is screened from its full text once it arrives, and
+    # drops off here as soon as it is held or decided.
+    to_screen = []
+    for d, e in ((read_json(DATA / "fetch-to-screen.json", {}) or {}).get("papers") or {}).items():
+        if d in held or (verdicts.get(d) or {}).get("verdict") in ("relevant", "not_relevant"):
+            continue
+        c = cands.get(d) or {}
+        to_screen.append({
+            "doi": d, "title": c.get("title") or e.get("title"),
+            "year": c.get("year") or e.get("year"), "journal": c.get("journal") or e.get("journal"),
+            "cited_by": None, "record_class": None, "reason": e.get("why"), "criterion": None,
+            "publisher_url": c.get("publisher_url") or f"https://doi.org/{d}",
+            "access": "to_screen", "rank": len(by_use) + len(to_screen) + 1,
+        })
+    if to_screen:
+        print(f"  fetch to screen (no abstract): {len(to_screen)}")
+
+    write_wanted(paywalled + known_bad + to_screen)
 
     if unspecified:
         with (DATA / "needs-decision.csv").open("w", newline="", encoding="utf-8") as fh:
@@ -483,7 +672,7 @@ def main() -> int:
     if fetched:
         write_json(DATA / "fetched-files.json", fetched)
         print(f"adding {len(unfetched)} unfetched open-access papers to the want-list")
-        write_wanted(paywalled + known_bad + unfetched)
+        write_wanted(paywalled + known_bad + unfetched + to_screen)
 
     print("Next: uv run scripts/extract_text.py && uv run scripts/identify.py")
     return 0

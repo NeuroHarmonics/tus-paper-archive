@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024jung",
+ "doi": "10.1101/2024.11.13.24317114",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": false,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale"
+ ],
+ "readout_other": "Fugl-Meyer Assessment; Nottingham Sensory Assessment; Modified Barthel Index; Berg Balance Scale; Box and Block; ARAT; finger grip",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Both patients improved on FMA upper extremity, kinaesthetic sensation, stereognosis and MBI after contralesional M1 stimulation intended to be inhibitory; single-group pilot with no control.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Adverse event evaluations (stroke exacerbation, seizure, headache, neurological symptoms) at each session and at 3 weeks; no adverse event in either participant.",
+ "exposures": [
+  {
+   "label": "tFUS to contralesional M1 hand knob",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "central sulcus 'knob' area within the primary motor cortex (M1) contralateral to the lesion site"
+   },
+   "device": {
+    "family": "neurosona",
+    "manufacturer": "Neurosona Co., Ltd.",
+    "model": "NS-US200 with E40 transducer"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 3,
+    "ispta_w_cm2": 1.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Treatment given three times a week; total treatment duration 1200 seconds without a sonication interval (20 minutes)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "This study was a single-group prospective pilot study with two stroke patients.",
+   "exposures[0].fundamental_frequency_khz": "The in situ mechanical index (MI) was maintained at 0.6, the fundamental frequency was 250 kHz, and the spatial peak temporal-average acoustic intensity (I ) was 1.5 W/cm².",
+   "exposures[0].timing.pulse_duration_ms": "We set the low-intensity focused ultrasound parameters with a repetition frequency (PRF) of 100 Hz and an acoustic intensity at focus (AIF) of 3 W/cm². The Tone Burst Duration (TBD) of the stimulation parameters was 0.5 msec, with a duty cycle of 5%. The total treatment duration was 1200 seconds without a sonication interval. The in situ mechanical index (MI) was maintained at 0.6, the fundamental frequency was 250 kHz, and the spatial peak temporal-average acoustic intensity (I ) was 1.5 W/cm².",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "We set the low-intensity focused ultrasound parameters with a repetition frequency (PRF) of 100 Hz and an acoustic intensity at focus (AIF) of 3 W/cm². The Tone Burst Duration (TBD) of the stimulation parameters was 0.5 msec, with a duty cycle of 5%. The total treatment duration was 1200 seconds without a sonication interval. The in situ mechanical index (MI) was maintained at 0.6, the fundamental frequency was 250 kHz, and the spatial peak temporal-average acoustic intensity (I ) was 1.5 W/cm².",
+   "exposures[0].timing.duty_cycle_pct": "We set the low-intensity focused ultrasound parameters with a repetition frequency (PRF) of 100 Hz and an acoustic intensity at focus (AIF) of 3 W/cm². The Tone Burst Duration (TBD) of the stimulation parameters was 0.5 msec, with a duty cycle of 5%. The total treatment duration was 1200 seconds without a sonication interval. The in situ mechanical index (MI) was maintained at 0.6, the fundamental frequency was 250 kHz, and the spatial peak temporal-average acoustic intensity (I ) was 1.5 W/cm².",
+   "exposures[0].timing.sonication_duration_s": "The total treatment duration was 1200 seconds without a sonication interval.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "We set the low-intensity focused ultrasound parameters with a repetition frequency (PRF) of 100 Hz and an acoustic intensity at focus (AIF) of 3 W/cm².",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The in situ mechanical index (MI) was maintained at 0.6, the fundamental frequency was 250 kHz, and the spatial peak temporal-average acoustic intensity (I ) was 1.5 W/cm².",
+   "exposures[0].device.manufacturer": "This therapeutic focused ultrasound stimulation (FUS) system, NS-US200 device (Neurosona Co., Ltd., Seoul, Korea)",
+   "exposures[0].device.model": "The therapeutic FUS device used in this clinical trial was administered three times a week. The two selected patients participated in the FUS experiment, using the NS-US200 device with a transducer (E40)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "'Acoustic intensity at focus (AIF) 3 W/cm2' given with no domain; recorded as Isppa on that reading."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta symbol is missing in the text ('(I )'); read as spatial peak temporal-average intensity per the preceding words. Paper also states in situ MI 0.6."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Three sessions per week; total number of sessions not stated."
+   },
+   {
+    "field": "blinding",
+    "reason": "Single-group pilot; blinding not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

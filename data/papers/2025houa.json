@@ -1,0 +1,261 @@
+{
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 62,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 4,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "TMS-evoked MEP amplitude in FDI, ADM and biceps brachii; MEP latency",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "MEP amplitudes were suppressed by active relative to sham SCUS at 10 W/cm2 and 1000 Hz PRF regardless of duty cycle; no significant effect at 2.5 W/cm2 or 500 Hz PRF; no modulation of biceps brachii MEPs.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Safety was assessed by acoustic and thermal simulation on three CT datasets (peak temperature rise about 1.3 C, MI below 1.9); no participant-level adverse event reporting.",
+ "exposures": [
+  {
+   "label": "SCUS to C8 spinal cord, 500 kHz, 2.5 and 10 W/cm2 ISPPA",
+   "target": {
+    "terms": [
+     "cervical_spinal_cord"
+    ],
+    "label": "C8 spinal cord"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc., US",
+    "model": "DPX-500-4CH four-element annular array, driven by a four-channel TPO"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": [
+     280,
+     550
+    ],
+    "isppa_w_cm2": [
+     2.5,
+     10
+    ],
+    "ispta_w_cm2": [
+     0.01,
+     0.04,
+     0.05,
+     0.14
+    ]
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     130,
+     250
+    ],
+    "isppa_w_cm2": [
+     0.53,
+     2.12
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.1,
+     0.2,
+     0.3,
+     0.6
+    ],
+    "pulse_repetition_frequency_hz": [
+     500,
+     1000
+    ],
+    "duty_cycle_pct": [
+     10,
+     30
+    ],
+    "sonication_duration_s": 0.5,
+    "protocol_description": "A 500 ms SCUS pulse train was applied to the C8 spinal segment, with a single TMS pulse delivered 100 ms before the end of the train; 15 active and 15 sham trials per session in randomised order, 10 s interstimulus interval. Four DC/PRF combinations (10 %/500 Hz, 30 %/500 Hz, 10 %/1000 Hz, 30 %/1000 Hz), one per session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "source_quotes": {
+   "n_subjects": "Methods: Two experiments were conducted involving 62 healthy adult participants.",
+   "n_sessions_per_subject": "Each participant within these intensity groups completed four experimental sessions, each testing a unique parameter combination (10 % DC/500 Hz PRF; 30 % DC/500 Hz PRF; 10 % DC/1000 Hz PRF; 30 % DC/1000 Hz PRF).",
+   "exposures[0].fundamental_frequency_khz": "A custom four-element annular array ultrasound transducer DPX-500-4CH (Sonic Concepts Inc., US) operating at a fundamental frequency of 500 kHz was utilized.",
+   "exposures[0].device.manufacturer": "A custom four-element annular array ultrasound transducer DPX-500-4CH (Sonic Concepts Inc., US) operating at a fundamental frequency of 500 kHz was utilized.",
+   "exposures[0].device.model": "A custom four-element annular array ultrasound transducer DPX-500-4CH (Sonic Concepts Inc., US) operating at a fundamental frequency of 500 kHz was utilized.",
+   "exposures[0].free_field.pressure_kpa": "At a target I<sub>SPPA</sub> of 10 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , the maximum pressure at the focus was 0.55 MPa, with a mechanical index (MI) of 0.78 and a spatial-peak timeaverage intensity (I<sub>SPTA</sub>) of $0 . 1 4 ~ \\mathrm { W / c m ^ { 2 } }$ prior to transmission through the spinal cord (Fig. 2C).",
+   "exposures[0].free_field.isppa_w_cm2": "The parameters for SCUS included two spatial-peak pulse-average intensities (I<sub>SPPA</sub>: 2.5 and $1 0 { \\mathrm { ~ W / c m } } ^ { 2 } ) ,$ two duty cycles (DCs: 10 % and 30 %), two pulse repetition frequencies (PRFs: 500 and 1000 Hz), four pulse durations (PDs: 0.1, 0.2, 0.3, and 0.6 ms), and one sonication duration (500 ms), as illustrated in Fig. 1B.",
+   "exposures[0].free_field.ispta_w_cm2": "<tr><td rowspan=\"4\">Low intensity</td><td>2.5</td><td>0.01</td><td>0.2</td><td>10</td><td>500</td></tr><tr><td></td><td>0.01</td><td>0.1</td><td>10</td><td>1000</td></tr><tr><td>0.04</td><td></td><td>0.6</td><td>30</td><td>500</td></tr><tr><td></td><td>0.04</td><td>0.3</td><td>30</td><td>1000</td></tr><tr><td rowspan=\"4\">High intensity</td><td>10</td><td>0.05</td><td>0.2</td><td>10</td><td>500</td></tr><tr><td></td><td>0.05</td><td>0.1</td><td>10</td><td>1000</td></tr><tr><td></td><td>0.14</td><td>0.6</td><td>30</td><td>500</td></tr><tr><td>0.14</td><td></td><td>0.3</td><td>30</td><td>1000</td></tr></table>",
+   "exposures[0].in_situ.pressure_kpa": "In the 10 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ condition, the average pressure at the C8 spinal cord across the above three representative individuals was estimated to be $0 . 2 5 \\pm 0 . 0 4 \\mathrm { M P a } .$ , with a range of 0.22–0.29 MPa. The I<sub>SPPA</sub> rose to $2 . 1 2 \\pm 0 . 6 6 ~ \\mathrm { W / c m ^ { 2 } }$ (range: $1 . 5 7 { - 2 . 8 5 } \\mathrm { ~ W / c m ^ { 2 } ) }$ , and the MI reached 0.85 ± 0.24 (range: 0.60–1.08). In the $2 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ condition, the pressure at the C8 spinal cord was $0 . 1 3 \\pm 0 . 0 2 \\mathrm { M P a }$ , with a range of $0 . 1 1 \\mathrm { - } 0 . 1 5$ MPa.",
+   "exposures[0].in_situ.isppa_w_cm2": "The I<sub>SPPA</sub> rose to $2 . 1 2 \\pm 0 . 6 6 ~ \\mathrm { W / c m ^ { 2 } }$ (range: $1 . 5 7 { - 2 . 8 5 } \\mathrm { ~ W / c m ^ { 2 } ) }$ , and the MI reached 0.85 ± 0.24 (range: 0.60–1.08). In the $2 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ condition, the pressure at the C8 spinal cord was $0 . 1 3 \\pm 0 . 0 2 \\mathrm { M P a }$ , with a range of $0 . 1 1 \\mathrm { - } 0 . 1 5$ MPa. The corresponding I<sub>SPPA</sub> was $0 . 5 3 ~ \\pm ~ 0 . 1 6$ $\\mathrm { { W / c m ^ { 2 } } }$ (range: $0 . 3 9 { - } 0 . 7 1 \\ \\mathrm { W / c m ^ { 2 } } )$",
+   "exposures[0].timing.pulse_duration_ms": "The parameters for SCUS included two spatial-peak pulse-average intensities (I<sub>SPPA</sub>: 2.5 and $1 0 { \\mathrm { ~ W / c m } } ^ { 2 } ) ,$ two duty cycles (DCs: 10 % and 30 %), two pulse repetition frequencies (PRFs: 500 and 1000 Hz), four pulse durations (PDs: 0.1, 0.2, 0.3, and 0.6 ms), and one sonication duration (500 ms), as illustrated in Fig. 1B.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The parameters for SCUS included two spatial-peak pulse-average intensities (I<sub>SPPA</sub>: 2.5 and $1 0 { \\mathrm { ~ W / c m } } ^ { 2 } ) ,$ two duty cycles (DCs: 10 % and 30 %), two pulse repetition frequencies (PRFs: 500 and 1000 Hz), four pulse durations (PDs: 0.1, 0.2, 0.3, and 0.6 ms), and one sonication duration (500 ms), as illustrated in Fig. 1B.",
+   "exposures[0].timing.duty_cycle_pct": "The parameters for SCUS included two spatial-peak pulse-average intensities (I<sub>SPPA</sub>: 2.5 and $1 0 { \\mathrm { ~ W / c m } } ^ { 2 } ) ,$ two duty cycles (DCs: 10 % and 30 %), two pulse repetition frequencies (PRFs: 500 and 1000 Hz), four pulse durations (PDs: 0.1, 0.2, 0.3, and 0.6 ms), and one sonication duration (500 ms), as illustrated in Fig. 1B.",
+   "exposures[0].timing.sonication_duration_s": "The parameters for SCUS included two spatial-peak pulse-average intensities (I<sub>SPPA</sub>: 2.5 and $1 0 { \\mathrm { ~ W / c m } } ^ { 2 } ) ,$ two duty cycles (DCs: 10 % and 30 %), two pulse repetition frequencies (PRFs: 500 and 1000 Hz), four pulse durations (PDs: 0.1, 0.2, 0.3, and 0.6 ms), and one sonication duration (500 ms), as illustrated in Fig. 1B."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "0.55 and 0.28 MPa are simulated focal pressures in a free-water field for the 10 and 2.5 W/cm2 conditions, recorded as a list; two separate sentences carry the two values."
+   },
+   {
+    "field": "exposures[0].free_field.ispta_w_cm2",
+    "reason": "ISPTA values 0.01, 0.04, 0.05, 0.14 W/cm2 read from the parameter table (header 'in water'); the quote is the whole table."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Simulated mean pressure at C8 in three CT datasets for 2.5 and 10 W/cm2 conditions (0.13 and 0.25 MPa), recorded as a two-element list of the two conditions rather than a range; ISPPA likewise 0.53 and 2.12 W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse durations 0.1-0.6 ms listed as four values tied to DC/PRF combinations; stated in the text and table, not computed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "62 participants over two experiments; Experiment 2 is given as N=26 in the abstract but as 16 per arm (N=10 for biceps) in Methods."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Four sessions per participant in Experiment 1 only; Experiment 2 session count not stated."
+   },
+   {
+    "field": "blinding",
+    "reason": "Gaussian noise was said to maintain blinding but the paper does not state a blinding level."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Spinal cord target; the paper is on spinal cord ultrasound stimulation with TMS over M1 as the readout."
+   }
+  ],
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ },
+ "schema_version": "1.0",
+ "citekey": "2025houa",
+ "doi": "10.1016/j.brs.2025.05.134"
+}

@@ -1,0 +1,182 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023schafer",
+ "doi": "10.1109/tuffc.2023.3322963",
+ "model_system": [
+  "invertebrate"
+ ],
+ "species": "fruit fly (Drosophila melanogaster)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "deafened_subjects",
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "SLEAP deep-learning tracking of T2/T3 leg movements",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "Ultrasound evoked leg movement in flies that were still and suppressed movement in flies that were already moving; responses were variable across trials.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No comprehensive histology; light microscopy of the brain surface before and after exposure showed no visual change; output calculated to preclude thermal or cavitation effects.",
+ "exposures": [
+  {
+   "label": "96 kHz miniature microtip source over the Drosophila central brain",
+   "target": {
+    "terms": [
+     "drosophila_neurons"
+    ],
+    "label": "the center of the right hemisphere of the central brain"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "modified dental ultrasonic descaler (Langevin stack) with 100 um ceramic wire-bonder microtip"
+   },
+   "fundamental_frequency_khz": 96,
+   "free_field": {
+    "pressure_kpa": 14,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 5,
+    "protocol_description": "Tone bursts at 96 kHz, 1 kHz pulse repetition rate, duty cycle varied (30-80 %) with 50 % most consistent, delivered for 5 s inside a 15-s recording; 4-8 trials per fly with 8 min recovery. Bursts were always longer than 30 cycles because the source is resonant."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Proof-of-concept experiments were conducted with the US exposure system, stimulating the fly brain at 96 kHz, 1-kHz pulse-repetition frequency (PRF), 50% duty cycle, with an estimated pressure level of 14 kPa.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Proof-of-concept experiments were conducted with the US exposure system, stimulating the fly brain at 96 kHz, 1-kHz pulse-repetition frequency (PRF), 50% duty cycle, with an estimated pressure level of 14 kPa.",
+   "exposures[0].timing.duty_cycle_pct": "Proof-of-concept experiments were conducted with the US exposure system, stimulating the fly brain at 96 kHz, 1-kHz pulse-repetition frequency (PRF), 50% duty cycle, with an estimated pressure level of 14 kPa.",
+   "exposures[0].timing.sonication_duration_s": "Fly behavior was captured for a total period of 15 s with 5 s before and after a 5-s US stimulation.",
+   "exposures[0].free_field.pressure_kpa": "Proof-of-concept experiments were conducted with the US exposure system, stimulating the fly brain at 96 kHz, 1-kHz pulse-repetition frequency (PRF), 50% duty cycle, with an estimated pressure level of 14 kPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "'Estimated pressure level of 14 kPa' with no statement of domain; calibration used an air-backed hydrophone at 100 um from the tip and a monopole calculation gave 20 kPa."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle varied between 30-80 % (methods) or 20-80 % (discussion); 50 % is the proof-of-concept value recorded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only 'representative examples from six flies' and 4-8 trials per fly are given; total not stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Flies were cold-anaesthetised for preparation then head-fixed and behaving during sonication; recorded as awake."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "both_defensible",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

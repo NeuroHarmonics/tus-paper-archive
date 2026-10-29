@@ -1,0 +1,190 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026azadian",
+ "doi": "10.1038/s41587-025-02866-8",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6NCrl)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "histology_molecular",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "red blood cell counts in CSF and deep cervical lymph nodes; immunohistochemistry (IBA1, GFAP, Fluoro-Jade C, CD68, GAL-3, P2RY12, AQP4); spatial transcriptomics; corner turn test; grip strength; brain water content; survival",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Ultrasound debris clearance (UDC) increased red blood cell clearance to deep cervical lymph nodes, reduced neuroinflammation markers and neuronal degeneration, and improved behaviour and survival after intracerebral hemorrhage; neuronal excitation or inhibition was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Intracranial temperature measured with a thermocouple (peak change -0.5 +/- 0.2 C); k-Wave simulation indicated no substantive parenchymal heating; protocol stated to satisfy FDA guidelines (MI 0.9).",
+ "exposures": [
+  {
+   "label": "UDC 250 kHz pulsed FUS, whole brain, SAH and ICH mouse models",
+   "target": {
+    "terms": [
+     "whole_brain_or_unfocused"
+    ],
+    "label": "applied transcranially throughout the brain"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "single_value",
+    "pressure_kpa": 450,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 5,
+    "duty_cycle_pct": 25,
+    "sonication_duration_s": 600,
+    "protocol_description": "Pulsed protocol, 50-ms pulse width, 250 ms pulse cycle time, 10 min per session, three sessions 24-48 h apart; sham was ultrasound power off. An earlier 650 kHz continuous protocol is mentioned only as prior work."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 25.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "FUS (250-kHz center frequency, 0.45-MPa peak in situ negative pressure, 50-ms pulse width, 25% duty cycle for 10 min via a 250-kHz center frequency",
+   "exposures[0].in_situ.pressure_kpa": "FUS (250-kHz center frequency, 0.45-MPa peak in situ negative pressure, 50-ms pulse width, 25% duty cycle for 10 min via a 250-kHz center frequency",
+   "exposures[0].timing.pulse_duration_ms": "FUS (250-kHz center frequency, 0.45-MPa peak in situ negative pressure, 50-ms pulse width, 25% duty cycle for 10 min via a 250-kHz center frequency",
+   "exposures[0].timing.duty_cycle_pct": "FUS (250-kHz center frequency, 0.45-MPa peak in situ negative pressure, 50-ms pulse width, 25% duty cycle for 10 min via a 250-kHz center frequency",
+   "exposures[0].timing.sonication_duration_s": "FUS (250-kHz center frequency, 0.45-MPa peak in situ negative pressure, 50-ms pulse width, 25% duty cycle for 10 min via a 250-kHz center frequency",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "0.45 MPa estimated peak in situ negative pressure, 25% duty cycle, 5 Hz PRF, 10",
+   "n_sessions_per_subject": "Mode: Pulsed (50-ms width) Frequency: 250 kHz Pulse cycle time: 250 ms Duration: 10 min Target PNP: 0.45 MPa Application: 3 sessions, 24–48 h apart"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Pressure is called 'peak in situ negative pressure' and 'estimated'; k-Wave simulation of the skull profile is shown but the paper does not say whether the 0.45 MPa value was simulated, derated or measured."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF of 5 Hz stated only in an Extended Data figure legend; main text gives 250 ms pulse cycle time."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Three sessions stated only in a figure panel text for the SAH/ICH experiments."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes vary by experiment (n=4, 6, 8 and others); no total stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer maker not named (250 kHz, 70- or 100-mm aperture, f=1.0)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "10 min per session converted to 600 s."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

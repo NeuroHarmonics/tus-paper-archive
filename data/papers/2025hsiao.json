@@ -1,0 +1,225 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025hsiao",
+ "doi": "10.1111/cns.70451",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy",
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  7,
+  6,
+  6,
+  6,
+  4,
+  3,
+  3
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  3,
+  7
+ ],
+ "randomised": true,
+ "blinding": "none",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "CSF tracer (BSA-Alexa Fluor 647) influx by macroscopic imaging and brain sections",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIFU at M1 increased CSF tracer influx in healthy mice; daily contralesional LIFU restored the stroke-reduced CSF influx on both sides. Neuronal excitability was not assessed.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFU at M1 (ipsilesional, contralesional or central cerebrum)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "M1 cortex of the brain"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-104"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 2,
+    "pulse_repetition_frequency_hz": 250000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulse train of 300 ms (2 ms pulses, 50% pulse-train duty cycle) every 2 s for a total of 10 min; the paper states an overall duty cycle of 7.5%. In the stroke experiments LIFU was applied daily for up to seven days to ipsilesional M1, contralesional M1 or central cerebrum."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50000.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].timing.pulse_duration_ms": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].timing.duty_cycle_pct": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].timing.sonication_duration_s": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].device.model": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "exposures[0].device.manufacturer": "Transcranial LIFU was applied through a commercial focused ultrasound transducer (H-104, Sonic Concepts, USA) placed at the M1 cortex of the brain (1 mm posterior and 3.5 mm lateral to the bregma) using the following parameters: center frequency = 0.5 MHz, pulse repetition frequency (PRF) = 250 kHz, pulse train  duration = 300 ms, pulse duration = 2 ms, duty cycle of pulse train = 50%, interstimulation interval = 2 s, and spatial peak temporal average intensities $( \\mathrm { I } _ { \\mathrm { s p t a } } ) { = } 0 . 5 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ total pulse train repetition duration = 10 min. These parameters were chosen based on previous LIFU neuromodulation studies [21].",
+   "n_subjects": "Day 1: Control (n = 5), PT (n = 5), PT-LIFU (n = 6); Day 3: Control (n = 6), PT (n = 5), PT-LIFU (n = 6); Day 7: Control (n = 4), PT (n = 5), PT-LIFU (n = 6).",
+   "n_sessions_per_subject": "Based on the finding that only contralesional LIFU restored the ipsilesional CSF influx, LIFU was applied to the contralesional side for one, three, or seven consecutive days following stroke induction."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Paper states PRF = 250 kHz; with a 2 ms pulse at 50% this looks like a typo for 250 Hz. Recorded as written (250000 Hz)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50% is the duty cycle within the pulse train; the paper gives an overall duty cycle of 7.5% in the Discussion."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse train duration 300 ms recorded; total repetition duration 10 min."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only per-experiment group sizes are given across many figures; no total."
+   },
+   {
+    "field": "blinding",
+    "reason": "Experimenter could not be blinded to group."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity domain not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

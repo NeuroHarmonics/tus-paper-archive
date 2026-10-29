@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025chenb",
+ "doi": "10.1126/sciadv.adz1309",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J); mouse (athymic nude, Foxn1nu)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "fmri",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "concurrent BOLD fMRI and multispectral optoacoustic tomography (HbO, HbR, HbT)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "hTUS evoked negative BOLD signals in the RSC together with increased HbT, HbO and HbR (HbR rising more than HbO); the BOLD response appeared only above about 0.4 MPa.",
+ "adverse_events": "none_observed",
+ "safety_notes": "High-resolution anatomical MRI of three mice showed no visible tissue damage or abnormalities in the RSC 10 days after the hTUS experiments; body temperature was monitored.",
+ "exposures": [
+  {
+   "label": "Holographic (multifocal) TUS of right RSC, concurrent fMRI and OAT",
+   "target": {
+    "terms": [
+     "retrosplenial_cortex"
+    ],
+    "label": "right RSC of the mouse brain"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "512-element spherical array transducer (OMRITUS system)"
+   },
+   "fundamental_frequency_khz": 3000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     300,
+     400,
+     520
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 100,
+    "pulse_repetition_frequency_hz": 4,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": [
+     8,
+     20
+    ],
+    "protocol_description": "A 100-ms ultrasound pulse at 3 MHz delivered at 4 Hz for 8 s (22 s interstimulation interval, 6 epochs) or 20 s (60 s interval, 5 epochs); pressure levels of 0, 0.3, 0.4 and 0.52 MPa were applied; three foci were sonicated simultaneously (holographic)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 40.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Eight C57BL/6J mice (Charles River Laboratories, Germany, 6 to 10 weeks) and six athymic female nude mice (Foxn1<sup>nu</sup>, Charles River Laboratories, Germany, 6 to 10 weeks) were used in this study.",
+   "exposures[0].fundamental_frequency_khz": "center frequency of 3 MHz, emission duration of 100 ms, duty cycle of 40%, pulse repetition frequency (PRF) of 4 Hz, pressure of 0.52 MPa, stimulation duration of 8 or 20 s",
+   "exposures[0].in_situ.pressure_kpa": "To further validate the negative BOLD signals that were evoked by TUS, we applied varying pressure levels of 0, 0.3, 0.4, and 0.52 MPa (table S1 and Materials and Methods).",
+   "exposures[0].timing.pulse_duration_ms": "center frequency of 3 MHz, emission duration of 100 ms, duty cycle of 40%, pulse repetition frequency (PRF) of 4 Hz, pressure of 0.52 MPa, stimulation duration of 8 or 20 s",
+   "exposures[0].timing.duty_cycle_pct": "center frequency of 3 MHz, emission duration of 100 ms, duty cycle of 40%, pulse repetition frequency (PRF) of 4 Hz, pressure of 0.52 MPa, stimulation duration of 8 or 20 s",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "center frequency of 3 MHz, emission duration of 100 ms, duty cycle of 40%, pulse repetition frequency (PRF) of 4 Hz, pressure of 0.52 MPa, stimulation duration of 8 or 20 s",
+   "exposures[0].timing.sonication_duration_s": "center frequency of 3 MHz, emission duration of 100 ms, duty cycle of 40%, pulse repetition frequency (PRF) of 4 Hz, pressure of 0.52 MPa, stimulation duration of 8 or 20 s",
+   "exposures[0].device.model": "wide-angle 512-element spherical transducer array enables dual-modal fMRI-OAT imaging simultaneously with TUS emission"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.52 MPa is the focal pressure measured through an excised mouse skull; other levels (0.3, 0.4, text; 0.41 in Fig. 3 legend) are named in the protocol description only and the domain of those is not stated."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "14 = 8 C57BL/6J + 6 nude mice 'used in this study'; not all were necessarily sonicated (group analyses use n = 6); postmortem controls were also run."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham arm; control sonications were delivered with the same parameters after euthanasia, plus 0 MPa rest-state scans."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Auditory/visual cortex BOLD was inspected within the same fMRI data; no separate auditory control."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Array maker is not named; DAQ credited to Falkenstein Mikrosysteme and described as customized."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper calls the 100 ms an 'emission duration'/'pulse duration'; with 4 Hz PRF and 40% duty cycle it is consistent as the pulse. Not resolved by arithmetic."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "second"
+  }
+ }
+}

@@ -35,7 +35,10 @@ def set_at(rec: dict, path: str, value) -> None:
 
 def settle(rec: dict) -> None:
     """Two consequences a ruling has for the rest of its exposure. An in_situ block whose three
-    numbers are all null does not apply, so its method and reported_as are null too. An exposure
+    numbers are all null does not apply, so its method and reported_as are null too; one whose
+    numbers are none of them null applies, so a null method or reported_as is a silence and
+    becomes not_reported (a ruling for the second read can turn a block the first read held
+    inapplicable into one that applies but is unreported). An exposure
     recorded as continuous wave that now carries a PRF, a pulse duration or a duty cycle other than
     100 is pulsed by the archive's definition."""
     for i, ex in enumerate(rec["exposures"]):
@@ -43,6 +46,10 @@ def settle(rec: dict) -> None:
         if all(s[l] is None for l in ("pressure_kpa", "isppa_w_cm2", "ispta_w_cm2")):
             s["method"] = None
             s["reported_as"] = None
+        elif all(s[l] is not None for l in ("pressure_kpa", "isppa_w_cm2", "ispta_w_cm2")):
+            for l in ("method", "reported_as"):
+                if s[l] is None:
+                    s[l] = "not_reported"
         t = ex["timing"]
         wf = t["waveform"]
         cw = wf == "continuous" or wf == ["continuous"]

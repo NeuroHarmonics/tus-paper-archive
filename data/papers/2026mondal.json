@@ -1,0 +1,205 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026mondal",
+ "doi": "10.1016/j.brs.2026.103190",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (cHAP, crossed high alcohol preferring)",
+ "conditions": [
+  "substance_use_disorder"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 6,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "Two-bottle choice ethanol and water intake; blood alcohol concentration (Analox AM1)",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "No neural readout. Treated mice reduced ethanol intake (about 51% mean reduction) and increased water intake versus sham, which increased ethanol intake.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermal safety evaluation of repeated LIFU listed as future work; no adverse events described.",
+ "exposures": [
+  {
+   "label": "USg-LIFU of the VTA in cHAP mice",
+   "target": {
+    "terms": [
+     "ventral_tegmental_area"
+    ],
+    "label": "ventral tegmental area (VTA)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H101"
+   },
+   "fundamental_frequency_khz": 1300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.168,
+    "ispta_w_cm2": 0.084
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 15,
+    "protocol_description": "Pulsed sonication with pulse duration 0.5 ms and PRF 1 kHz (50% duty cycle), 15 s per session, six sessions on alternating days (days 15 to 25), delivered after UT-FEM guided mechanical alignment under isoflurane."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In-vivo neuromodulatory effects were tested in cHAP mice (n = 10) that underwent six USg-LIFU sessions targeting the VTA on alternating days and compared with sham controls (n = 5).",
+   "n_sessions_per_subject": "Following baseline assessment, mice entered the intervention phase, spanned Days 15 through 25, during which six image-guided LIFU therapy sessions were delivered on alternate days.",
+   "exposures[0].fundamental_frequency_khz": "For in-vivo neuromodulation, the LIFU subsystem consists of a single-element focused ultrasound transducer (SEFUST) (H101; Sonic Concepts; centre frequency of 1.3 MHz; 70 mm aperture; 51 mm focal length) with a pulser-receiver and power amplifier.",
+   "exposures[0].timing.pulse_duration_ms": "In accordance with the International Transcranial Ultrasonic Stimulation Safety and Standards (ITRUSST) reporting guidelines [34], the pulsed sonication protocol consisted of a pulse duration (PD) of 0.5 ms and a pulse repetition frequency (PRF) of 1 kHz, resulting in a duty cycle of 50%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In accordance with the International Transcranial Ultrasonic Stimulation Safety and Standards (ITRUSST) reporting guidelines [34], the pulsed sonication protocol consisted of a pulse duration (PD) of 0.5 ms and a pulse repetition frequency (PRF) of 1 kHz, resulting in a duty cycle of 50%.",
+   "exposures[0].timing.duty_cycle_pct": "In accordance with the International Transcranial Ultrasonic Stimulation Safety and Standards (ITRUSST) reporting guidelines [34], the pulsed sonication protocol consisted of a pulse duration (PD) of 0.5 ms and a pulse repetition frequency (PRF) of 1 kHz, resulting in a duty cycle of 50%.",
+   "exposures[0].timing.sonication_duration_s": "Stimulation was delivered for 15- second per session on alternating days during the intervention period.",
+   "exposures[0].in_situ.isppa_w_cm2": "This yielded an estimated in-situ spatial peak pulse average intensity (I<sub>SPPA</sub>) of 0.168 W/cm<sup>2</sup> and a spatial peak temporal average intensity (I<sub>SPTA</sub>) of 0.084 W/cm<sup>2</sup> [35].",
+   "exposures[0].in_situ.ispta_w_cm2": "This yielded an estimated in-situ spatial peak pulse average intensity (I<sub>SPPA</sub>) of 0.168 W/cm<sup>2</sup> and a spatial peak temporal average intensity (I<sub>SPTA</sub>) of 0.084 W/cm<sup>2</sup> [35].",
+   "exposures[0].device.model": "For in-vivo neuromodulation, the LIFU subsystem consists of a single-element focused ultrasound transducer (SEFUST) (H101; Sonic Concepts; centre frequency of 1.3 MHz; 70 mm aperture; 51 mm focal length) with a pulser-receiver and power amplifier.",
+   "exposures[0].device.manufacturer": "For in-vivo neuromodulation, the LIFU subsystem consists of a single-element focused ultrasound transducer (SEFUST) (H101; Sonic Concepts; centre frequency of 1.3 MHz; 70 mm aperture; 51 mm focal length) with a pulser-receiver and power amplifier."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Paper calls the intensities 'estimated in-situ' (citing ref 35) without saying whether simulated, derated or measured."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "No pressure reported; intensities only."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham mice had handling, anaesthesia, positioning and coupling but no LIFU; how the no-output condition was produced is not described."
+   },
+   {
+    "field": "exposures[0].label",
+    "reason": "An ex vivo HIFU lesion experiment and 2D FEM simulations are also reported but give no stimulation parameters and are not recorded as exposures."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

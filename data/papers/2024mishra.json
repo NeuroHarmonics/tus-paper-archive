@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024mishra",
+ "doi": "10.1093/braincomms/fcaf062",
+ "model_system": [
+  "nonhuman_primate"
+ ],
+ "species": "macaque (Macaca fascicularis; Macaca mulatta)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 4,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  1,
+  1,
+  2
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "BOLD fMRI during nociceptive heat stimulation; psychophysiological interaction effective connectivity; MR-ARFI beam mapping",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "FUS to thalamic VPL suppressed the heat-evoked BOLD response and reduced thalamocortical effective connectivity strength and inter-ROI correlation; the number of connected cortical regions fell from 19 to 15.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Thermal index for cranial bone calculated as 5.6; thermal simulation estimated a 0.25 C skull temperature rise during the 16 s block.",
+ "exposures": [
+  {
+   "label": "Thalamic VPL nucleus with heat stimulation (heat + FUS blocks)",
+   "target": {
+    "terms": [
+     "ventral_posterolateral_nucleus"
+    ],
+    "label": "thalamic ventroposterior lateral nucleus"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic (Besancon, France)",
+    "model": "custom-designed, MR-compatible, 128-element transducer"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     761.75,
+     902.74
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Trains of 650 kHz pulses, 500 ms pulse train duration, PRF 1 kHz, pulse duration 0.5 ms; the train is repeated at 0.5 Hz for 16 s, followed by 30 s rest, each condition repeated seven times; pulses ramped (50 us)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Four adult macaque monkeys (two female Macaca fascicularis and two male Macaca mulatta; average $\\tt a g e = 1 0 \\pm 3$ years; average weight = 7.5 ± 2.5 kg) participated in five MRI and FUS neuromodulation experimental sessions.",
+   "n_sessions_per_subject": "Three animals underwent one session each, and one animal underwent two sessions.",
+   "exposures[0].fundamental_frequency_khz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses,<sup>26</sup> 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz and pulse duration of 0.5 ms.",
+   "exposures[0].timing.pulse_duration_ms": "The FUS stimulation blocks consisted of trains of 650 kHz pulses,<sup>26</sup> 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz and pulse duration of 0.5 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FUS stimulation blocks consisted of trains of 650 kHz pulses,<sup>26</sup> 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz and pulse duration of 0.5 ms.",
+   "exposures[0].timing.duty_cycle_pct": "A 128-channel FUS array delivered 650 kHz pulsed US with a fast PRF of 1 kHz with a 50% duty cycle for 500 ms and a slow PRF of 0.5 Hz for 16 s.",
+   "exposures[0].timing.sonication_duration_s": "The FUS stimulation blocks consisted of trains of 650 kHz pulses,<sup>26</sup> 500 ms pulse train duration, pulse repetition frequency (PRF) of 1 kHz and pulse duration of 0.5 ms.",
+   "exposures[0].in_situ.pressure_kpa": "The in vivo peak negative pressures were estimated to be between 761.75 and 902.74 kPa based on simulations"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "50% is the within-train duty cycle (Fig. 1E legend); the text also gives a duty cycle of 12.5% over the 16 s block (time-averaged power calculation)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "16 s is the block length; each 500 ms train is repeated at 0.5 Hz within the block."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Simulation range of 761.75-902.74 kPa peak negative pressure differs from the stated target in vivo pressure of 550 kPa (free-field value derated by an assumed 39% transmission); only the simulated range is recorded."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Three animals had one session, one animal two sessions; recorded as a list."
+   },
+   {
+    "field": "randomised",
+    "reason": "Only the order of heat, FUS and heat + FUS blocks within runs is stated to be a randomized sequence; no group allocation."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Heat-only blocks serve as the no-FUS comparison within the same runs; no sham sonication."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "both_defensible",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

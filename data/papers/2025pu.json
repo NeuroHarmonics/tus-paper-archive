@@ -1,0 +1,230 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025pu",
+ "doi": "10.1016/j.xcrp.2025.102684",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain",
+  "other"
+ ],
+ "condition_other": "diabetic neuropathic pain (streptozotocin diabetic foot ulcer model)",
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  14
+ ],
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Von Frey paw withdrawal threshold; hot-plate paw withdrawal latency; sciatic nerve compound action potential conduction velocity; H&E staining of sciatic nerve; wound closure; PC12 live/dead staining",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "After 14 daily sessions the multiple-treatment group had higher paw withdrawal threshold and latency than the sham and control groups; nerve conduction velocity was higher than in the multiple-sham group but lower than in the untreated control group. A single session had no significant effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining of sciatic nerve showed no apparent damage and PC12 cell viability was unchanged after up to 30 min of exposure; skin temperature on a human forearm rose 0.3 to 0.4 degC over 5 min.",
+ "exposures": [
+  {
+   "label": "w-SUP 1.5 MHz pulsed thermal stimulation of the sciatic nerve",
+   "target": {
+    "terms": [
+     "sciatic_nerve"
+    ],
+    "label": "sciatic nerve"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "wearable spiral ultrasound patch (w-SUP), 41-element PZT-4 phyllotaxis array, driven via Verasonics Vantage HIFU system and a Keysight 33500B generator with AF Instrumentation 100A400A amplifier"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": 450,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.357,
+    "ispta_w_cm2": 0.277
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.0133,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 80,
+    "sonication_duration_s": 300,
+    "protocol_description": "Waveform generator set at 1.5 MHz, 600 mVpp, 20 burst cycles and an 80% duty cycle, with the amplifier at 80% gain; a 5-min session once a day, single session on day 1 for the ST group and daily from day 1 to day 14 for the MT group."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Male Sprague-Dawley rats (n = 30) were randomly assigned into five groups, including control group (n = 6), ST group (n = 6), SS group (n = 6), MT group (n = 6), and MS group (n = 6)",
+   "n_sessions_per_subject": "The treatment protocols for the single-treatment (ST) and multiple-treatment (MT) groups are shown in Figure S10. In the ST group, DNP was quantified on day 0 and day 1, with the w-SUP treatment administered on day 1. In the multiple-treatment group (MT), DNP was quantified on day 0, day 7, and day 14, with the w-SUP treatments administered daily from day 1 to day 14.",
+   "exposures[0].fundamental_frequency_khz": "The ultrasound patch was electrically connected to a waveform generator (33500B; Keysight, USA), set at a frequency of 1.5 MHz, an amplitude of 600 mVpp, 20 burst cycles, and an 80% duty cycle, along with a power amplifier (model 100A400A; AF Instrumentation, USA) set to 80% gain",
+   "exposures[0].timing.duty_cycle_pct": "The ultrasound patch was electrically connected to a waveform generator (33500B; Keysight, USA), set at a frequency of 1.5 MHz, an amplitude of 600 mVpp, 20 burst cycles, and an 80% duty cycle, along with a power amplifier (model 100A400A; AF Instrumentation, USA) set to 80% gain",
+   "exposures[0].timing.sonication_duration_s": "The rats in the ST and MT groups underwent a 5-min ultrasound stimulation session a day, while the rats in SS, MS, and control groups were not stimulated by ultrasound.",
+   "exposures[0].device.model": "In this study, we introduce a groundbreaking wearable spiral ultrasound patch specifically designed for FUS peripheral neuromodulation to alleviate DNP. This innovative, stretchable ultrasound device can reliably deliver FUS to the peripheral nerves",
+   "exposures[0].free_field.pressure_kpa": "The peak-to-peak acoustic pressures at the focal point of the w-SUP adhered to a flat plane, a 20<sup>◦</sup> curved surface, and a 40<sup>◦</sup> curved surface were 0.39 MPa, 0.45 MPa, and 0.44 MPa, respectively.",
+   "exposures[0].in_situ.isppa_w_cm2": "Additionally, the $I _ { \\mathsf { s p t a } } , I _ { \\mathsf { s p p a } } ,$ mechanical index (MI), and CEM43<sup>◦</sup>C values for 1.5 MHz pulsed stimulation (600 mVpp, 80% duty cycle, 20 cycles, and 5 min of sonication) are 277 mW/cm<sup>2</sup>, 357 mW/cm<sup>2</sup>, 0.59, and 1.35 min, respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "Additionally, the $I _ { \\mathsf { s p t a } } , I _ { \\mathsf { s p p a } } ,$ mechanical index (MI), and CEM43<sup>◦</sup>C values for 1.5 MHz pulsed stimulation (600 mVpp, 80% duty cycle, 20 cycles, and 5 min of sonication) are 277 mW/cm<sup>2</sup>, 357 mW/cm<sup>2</sup>, 0.59, and 1.35 min, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The ultrasound patch was electrically connected to a waveform generator (33500B; Keysight, USA), set at a frequency of 1.5 MHz, an amplitude of 600 mVpp, 20 burst cycles, and an 80% duty cycle, along with a power amplifier (model 100A400A; AF Instrumentation, USA) set to 80% gain."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "30 rats were enrolled in five groups of 6; only the ST and MT groups (6 each) were sonicated, so the group sizes are listed."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "ST group received one session, MT group 14 daily sessions."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa and Ispta (357 and 277 mW/cm2) are given in the Discussion without a domain; the Methods equations include an FDA attenuation factor, so the values may be derated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse structure given as 20 cycles and 80% duty cycle; no PRF or pulse duration stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "No PRF stated for the treatment sequence."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "5 min stated as minutes; converted to 300 s."
+   },
+   {
+    "field": "sham_type",
+    "reason": "SS and MS groups are described only as not stimulated by ultrasound; whether a patch was applied is not stated. A separate untreated control group existed."
+   },
+   {
+    "field": "blinding",
+    "reason": "Behaviour was video-recorded 'to ensure a blind experimental design' but blinding of the experimenters is not otherwise described."
+   },
+   {
+    "field": "model_system",
+    "reason": "PC12 cells and pork tissue were also exposed in safety and thermal tests; only the rat exposure is recorded."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Peripheral thermal neuromodulation; the in-vivo exposure targets the sciatic nerve under ultrasound guidance.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

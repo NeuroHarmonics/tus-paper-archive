@@ -1,0 +1,220 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026lina",
+ "doi": "10.1186/s12984-026-01945-4",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 5,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep",
+  "cerebral_haemodynamics",
+  "clinical_scale",
+  "other"
+ ],
+ "readout_other": "Brain CT and MMSE for safety; Fugl-Meyer, WMFT, MRC, NIHSS, Barthel, mRS; TMS MEP amplitude and resting motor threshold; fNIRS laterality index",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Bilateral trends toward increased MEP amplitude and fNIRS laterality index over 3 months, none statistically significant; motor scores (FMA, WMFT) improved in this single-arm study without sham.",
+ "adverse_events": "observed",
+ "safety_notes": "No severe adverse events; minor transient symptoms (scalp tingling, numbness, deep shooting sensation) in 5 of 10 patients; no new haemorrhage or lesions on post-treatment brain CT; MMSE stable.",
+ "exposures": [
+  {
+   "label": "tFUS to contralesional M1, five daily sessions",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "contralesional M1 upper-limb area"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "NaviFUS Corporation",
+    "model": "NaviFUS 001 (256-element phased array)"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 530,
+    "isppa_w_cm2": 9.33,
+    "ispta_w_cm2": 2.8
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": [
+     0.084,
+     0.199
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 600,
+    "protocol_description": "PRF 100 Hz, duty cycle 30%, total exposure time 10 min per session, once daily for five consecutive sessions; no pulse duration stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 3.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "In this phase I single-arm study, we recruited 10 patients with subacute (≤ 3 months) unilateral stroke.",
+   "n_sessions_per_subject": "treatment protocol consists of once daily treatment for consecutive five tFUS sessions (Fig. 1A)",
+   "exposures[0].fundamental_frequency_khz": "256-element phased array focused transducer (fundamental frequency: 500 kHz;",
+   "exposures[0].free_field.pressure_kpa": "[peak rarefactional pressure = 0.53 MPa; spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 9 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$",
+   "exposures[0].free_field.isppa_w_cm2": "[peak rarefactional pressure = 0.53 MPa; spatial peak pulse average intensity $( \\mathrm { I } _ { \\mathrm { s p p a } } ) = 9 . 3 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } ]$",
+   "exposures[0].free_field.ispta_w_cm2": "using $_ { \\mathsf { S P T A } } 2 . 8 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ in free field",
+   "exposures[0].in_situ.ispta_w_cm2": "values ranged from 0.084 to 0.199 $\\mathrm { { W / c m ^ { 2 } } }$ across all participants.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "pulse repetition frequency (PRF) = 100 Hz",
+   "exposures[0].timing.duty_cycle_pct": "duty cycle (DC) = 30%",
+   "exposures[0].timing.sonication_duration_s": "each session contained total exposure time 10 min",
+   "exposures[0].device.model": "neuronavigation-guided focused ultrasound system (NaviFUS 001, NaviFUS Corporation, Taipei, Taiwan)",
+   "exposures[0].device.manufacturer": "neuronavigation-guided focused ultrasound system (NaviFUS 001, NaviFUS Corporation, Taipei, Taiwan)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Text says the transducer was positioned over the ipsilesional motor cortex hotspot, but the targeting statement and results say contralesional (healthy) M1; contralesional recorded."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Paper gives 'total exposure time 10 min' per session; whether this was one uninterrupted train is not stated; recorded as 600 s."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Converted from 0.53 MPa."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Per-participant estimated in situ ISPTA range from skull-CT based simulation (Table 2); the abstract says <0.3 W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; left not_reported."
+   },
+   {
+    "field": "randomised",
+    "reason": "Single-arm study; the rTMS comparison group was retrospective and matched, not randomised."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

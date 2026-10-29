@@ -1,0 +1,196 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 23,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "32-channel skull EEG; 64-channel intracranial array evoked potentials; seizure count and duration; PSD, asymmetry index, phase lag index",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Corpus callosum tFUS reduced percent time in seizure, seizure count and duration and increased inter-seizure interval versus sham, with effects persisting up to 2 hours after stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "tFUS of corpus callosum",
+   "target": {
+    "terms": [
+     "corpus_callosum"
+    ],
+    "label": "corpus callosum (CC)"
+   },
+   "device": {
+    "family": "not_reported",
+    "manufacturer": "not_reported",
+    "model": "H276 128-element random array transducer; Verasonics Vantage 128"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": 127,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 20,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 2,
+    "sonication_duration_s": 3750,
+    "protocol_description": "20 ms pulses at 1 Hz (2% duty cycle) delivered continuously for ~62.5 minutes (3,750 pulses) to the corpus callosum during the condition block, followed by about 3 hours of post-stimulation recording."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 2.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2026gaoa",
+ "doi": "10.1109/tnsre.2025.3644273",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "An additional 7 rats (23 total) were included in a mechanism study.",
+   "exposures[0].fundamental_frequency_khz": "tFUS was applied using a 128-element random array transducer (H276, $f _ { 0 } = 1 . 5$ MHz) and corresponding Verasonics Vantage 128 ultrasound system [35].",
+   "exposures[0].timing.pulse_duration_ms": "The pulse duration (PD), pulse repetition frequency (PRF = 1/PRP, pulse repetition period), duty cycle (DC), and in situ pressure were set to 20 ms, 1 Hz, 2%, and ∼127 kPa, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse duration (PD), pulse repetition frequency (PRF = 1/PRP, pulse repetition period), duty cycle (DC), and in situ pressure were set to 20 ms, 1 Hz, 2%, and ∼127 kPa, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The pulse duration (PD), pulse repetition frequency (PRF = 1/PRP, pulse repetition period), duty cycle (DC), and in situ pressure were set to 20 ms, 1 Hz, 2%, and ∼127 kPa, respectively.",
+   "exposures[0].in_situ.pressure_kpa": "The pulse duration (PD), pulse repetition frequency (PRF = 1/PRP, pulse repetition period), duty cycle (DC), and in situ pressure were set to 20 ms, 1 Hz, 2%, and ∼127 kPa, respectively.",
+   "exposures[0].timing.sonication_duration_s": "A total of 3,750 pulses of stimulation (∼62.5 minutes) were applied to the CC in the experimental group.",
+   "exposures[0].device.model": "tFUS was applied using a 128-element random array transducer (H276, $f _ { 0 } = 1 . 5$ MHz) and corresponding Verasonics Vantage 128 ultrasound system [35]."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "16 rats in epilepsy study (10 tFUS, 6 sham) plus 7 in a mechanism study (23 total); total includes sham animals."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only the seizure-labelling experimenter was stated blinded to time block."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "3,750 pulses at 1 Hz (~62.5 min) converted to 3750 s; total stimulation is one hour block of pulses."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Legend states in situ pressure ~127 kPa; method of determination not described in main text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham: no stimulation applied; mechanism not described."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Maker of H276 transducer not named in the text."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

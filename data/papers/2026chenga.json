@@ -1,0 +1,232 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chenga",
+ "doi": "10.3389/fpsyt.2026.1748927",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "disorders_of_consciousness"
+ ],
+ "condition_other": null,
+ "n_subjects": 1,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 12,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "clinical_scale",
+  "eeg_meg",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "Coma Recovery Scale-Revised; Glasgow Coma Scale; resting-state fNIRS functional connectivity; resting EEG power spectra",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Single patient: CRS-R rose from 11 to 20 over 12 sessions, fNIRS functional connectivity increased and frontal delta and theta EEG power decreased; uncontrolled case report.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No change in vital parameters, no gross structural abnormalities on cranial CT, no adverse events reported.",
+ "exposures": [
+  {
+   "label": "tFUS to right central thalamus",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "right central thalamus"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GreenValley BrainTech Medical Technology Co. Ltd",
+    "model": "single-element ultrasonic probe, rectangular aperture 80mm × 45mm, focusing curvature 85mm"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": 1200,
+    "isppa_w_cm2": 12,
+    "ispta_w_cm2": 0.72
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 300,
+    "pulse_repetition_frequency_hz": 200,
+    "duty_cycle_pct": 6,
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulse duration 300 ms, pulse repetition interval 5 ms, PRF 200 Hz, duty cycle 6%; pulse trains delivered every 6 seconds with a 5-second inter-stimulation interval; 20 minutes per session, three times per week for four weeks (12 sessions). The text giving the pulse train duration is truncated in the source."
+   },
+   "derived": {
+    "checks": [
+     "pd_exceeds_period",
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6000.0,
+    "duty_cycle_mismatch": true
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Herein, we present the case of a patient with chronic DOC",
+   "n_sessions_per_subject": "20 minutes, three times per week, over a period of four weeks (12 sessions in total)",
+   "exposures[0].device.manufacturer": "singleelement ultrasonic probe (GreenValley BrainTech Medical Technology Co. Ltd.)",
+   "exposures[0].device.model": "singleelement ultrasonic probe (GreenValley BrainTech Medical Technology Co. Ltd.) with a rectangular aperture of 80mm × 45mm and a focusing curvature of 85mm",
+   "exposures[0].fundamental_frequency_khz": "operating frequency of 650kHz, a pulse duration (PD) of 300 ms, a pulse repetition interval (PRI) of 5 ms, yielding a pulse repetition frequency (PRF) of 200 Hz and a duty cycle (DC) of 6%",
+   "exposures[0].timing.pulse_duration_ms": "operating frequency of 650kHz, a pulse duration (PD) of 300 ms, a pulse repetition interval (PRI) of 5 ms, yielding a pulse repetition frequency (PRF) of 200 Hz and a duty cycle (DC) of 6%",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "operating frequency of 650kHz, a pulse duration (PD) of 300 ms, a pulse repetition interval (PRI) of 5 ms, yielding a pulse repetition frequency (PRF) of 200 Hz and a duty cycle (DC) of 6%",
+   "exposures[0].timing.duty_cycle_pct": "operating frequency of 650kHz, a pulse duration (PD) of 300 ms, a pulse repetition interval (PRI) of 5 ms, yielding a pulse repetition frequency (PRF) of 200 Hz and a duty cycle (DC) of 6%",
+   "exposures[0].free_field.pressure_kpa": "The incident peak-to-peak pressure amplitude at the focal point measured 1.2MPa, resulting in a spatial-peak pulse-average acoustic intensity (Isppa) of 12W/cm<sup>2</sup>, a spatial-peak time-average acoustic intensity (Ispta) of 720mW/ cm<sup>2</sup>, a mechanical index (MI) of 0.74 and a cranial thermal index (TIC) of 1.6.",
+   "exposures[0].free_field.isppa_w_cm2": "The incident peak-to-peak pressure amplitude at the focal point measured 1.2MPa, resulting in a spatial-peak pulse-average acoustic intensity (Isppa) of 12W/cm<sup>2</sup>, a spatial-peak time-average acoustic intensity (Ispta) of 720mW/ cm<sup>2</sup>, a mechanical index (MI) of 0.74 and a cranial thermal index (TIC) of 1.6.",
+   "exposures[0].free_field.ispta_w_cm2": "The incident peak-to-peak pressure amplitude at the focal point measured 1.2MPa, resulting in a spatial-peak pulse-average acoustic intensity (Isppa) of 12W/cm<sup>2</sup>, a spatial-peak time-average acoustic intensity (Ispta) of 720mW/ cm<sup>2</sup>, a mechanical index (MI) of 0.74 and a cranial thermal index (TIC) of 1.6.",
+   "exposures[0].timing.sonication_duration_s": "The pulse train duration (PTD) was set to 1"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text states pulse duration 300 ms with a 5 ms pulse repetition interval and 6% duty cycle; these are mutually inconsistent (300 ms exceeds the 5 ms interval). Recorded as written; possibly 300 microseconds."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse train duration sentence is truncated in the source text ('was set to 1'); not recorded."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure described as incident peak-to-peak amplitude at the focal point; domain not stated explicitly (free-field estimate per figure text), so placed in unspecified_domain. Peak-to-peak 1.2 MPa converted to 1200 kPa."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Maker named only as GreenValley BrainTech; recorded as other_manufacturer."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Single-case report; quote does not contain a numeral."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is the 'central thalamus'; mapped to thalamus."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

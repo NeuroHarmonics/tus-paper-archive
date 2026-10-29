@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wangf",
+ "doi": "10.1113/jp290803",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 15,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "masking_sound"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "paired-pulse TMS interhemispheric inhibition (SIHI 10 ms, LIHI 40 ms ISI); MEP amplitude in FDI",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Online right M1 TUS reduced long-latency IHI (higher LIHI ratio) versus sham but not short-latency IHI, and left M1 excitability was unchanged; sonicated M1 MEPs were reduced versus baseline but not significantly versus sham.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Online right M1 TUS (500 ms, with TMS conditioning pulse at 490 ms)",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "right M1"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts Inc.",
+    "model": "custom two-element annular array H246; TPO201-80 driver"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 11.73,
+    "ispta_w_cm2": 1.17
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 2.93,
+    "ispta_w_cm2": 0.29
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "Sonication depth 30 mm, 20 W, 1000 Hz PRF, 10% duty cycle and 500 ms duration; a TMS conditioning pulse was delivered 10 ms before the end of sonication (SIHI) or TS at end or 30 ms after; 5 s intertrial interval."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "in_situ.pressure_kpa",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.1
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The mean age of the remaining 15 subjects was 27.20 5.55 years (six males, nine females, all right-handed).",
+   "exposures[0].fundamental_frequency_khz": "Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz; diameter: 38 mm; thickness: 10 mm)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The sonication depth was set at 30 mm, and the power was set at 20 W, with 1000 Hz pulse repetition frequency, 10% duty cycle and 500 ms duration",
+   "exposures[0].timing.duty_cycle_pct": "The sonication depth was set at 30 mm, and the power was set at 20 W, with 1000 Hz pulse repetition frequency, 10% duty cycle and 500 ms duration",
+   "exposures[0].timing.sonication_duration_s": "The sonication depth was set at 30 mm, and the power was set at 20 W, with 1000 Hz pulse repetition frequency, 10% duty cycle and 500 ms duration",
+   "exposures[0].free_field.isppa_w_cm2": "The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity $\\left( I _ { \\mathrm { S P P A } } \\right)$ , and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].free_field.ispta_w_cm2": "The free water values for the depth of30 mm were 11.73 W/cm<sup>2</sup> for spatial peak pulse average intensity $\\left( I _ { \\mathrm { S P P A } } \\right)$ , and 1.17 W/cm<sup>2</sup> for spatial peak time average intensity (I<sub>SPTA</sub>).",
+   "exposures[0].in_situ.isppa_w_cm2": "The estimated $I _ { \\mathrm { S P P A } }$ and $I _ { \\mathrm { S P T A } }$ at the brain target (30 mm) were 2.93 W/cm<sup>2</sup> and 0.29 W/cm<sup>2</sup>, respectively,",
+   "exposures[0].in_situ.ispta_w_cm2": "The estimated $I _ { \\mathrm { S P P A } }$ and $I _ { \\mathrm { S P T A } }$ at the brain target (30 mm) were 2.93 W/cm<sup>2</sup> and 0.29 W/cm<sup>2</sup>, respectively,",
+   "exposures[0].device.model": "Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz; diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.)",
+   "exposures[0].device.manufacturer": "Briefly, a custom two-element annular array ultrasound transducer (H246, Sonic Concepts Inc., Bothell, WA, USA; fundamental frequency: 0.5 MHz; diameter: 38 mm; thickness: 10 mm) and a programmable radio-frequency amplifier (Transducer Power Output System TPO201-80, Sonic Concepts Inc.)",
+   "n_sessions_per_subject": "The study visit lasted 2.5–3 h."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "In situ values are estimated by assuming 75% skull attenuation (derating), not measured through skull."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "18 recruited, 3 withdrawn for high TMS motor threshold; 15 analysed and recorded."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Experiments 1-3 are described within a 2.5-3 h visit; number of sessions across experiments not clearly stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated (duty cycle and PRF given only)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first",
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

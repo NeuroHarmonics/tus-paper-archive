@@ -1,0 +1,212 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (5xFAD, B6SJL)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 15,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "Y-maze spontaneous alternation; novel object recognition; Congo red amyloid plaque counts; H&E",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Weekly hippocampal tUS preserved spatial and recognition memory and reduced amyloid plaque density by more than 40% versus sham in 5xFAD mice.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and VAF staining showed no structural abnormalities, damage or ischemic injury; vital signs monitored during sonication.",
+ "schema_version": "1.0",
+ "citekey": "2025yooa",
+ "doi": "10.1371/journal.pone.0336114",
+ "exposures": [
+  {
+   "label": "Hippocampal tUS, 30 min weekly",
+   "target": {
+    "terms": [
+     "hippocampus"
+    ],
+    "label": "the hippocampal region"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group",
+    "model": "WS100-0.5-P38"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": 770,
+    "isppa_w_cm2": 20,
+    "ispta_w_cm2": 3
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 75,
+    "pulse_repetition_frequency_hz": 2,
+    "duty_cycle_pct": 15,
+    "sonication_duration_s": 1800,
+    "protocol_description": "Pulsed, 75 ms pulse duration, 2 Hz PRF, 30 minutes per session under isoflurane, weekly for 15 weeks from 11 weeks of age; sham group had zero acoustic output."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 15.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "After an acclimation period of at least three days upon arrival, the mice were randomly assigned to either the group that receive sonication (tUS+) or the one that receives sham tUS (tUS-, n= 6 each group).",
+   "n_sessions_per_subject": "Weekly tUS sessions continued until 6 months of age (15 sessions total)",
+   "exposures[0].fundamental_frequency_khz": "A 400kHz transducer (WS100-0.5-P38, Ultran Group, State College, PA, USA)",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound was applied in a pulsed manner, with a pulse duration (PD) of 75ms and 2 Hz pulse repetition frequency (PRF) at spatial peak pulse average intensity $( | _ { \\mathsf { s p p A } } )$ of 20 W/cm<sup>2</sup> for 30 minutes.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound was applied in a pulsed manner, with a pulse duration (PD) of 75ms and 2 Hz pulse repetition frequency (PRF) at spatial peak pulse average intensity $( | _ { \\mathsf { s p p A } } )$ of 20 W/cm<sup>2</sup> for 30 minutes.",
+   "exposures[0].timing.duty_cycle_pct": "Considering 15% duty cycle, spatial peak temporal average intensity $[ \\mathsf { I } _ { \\mathsf { S P T A } } ]$ was 3 W/cm<sup>2</sup>",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was applied in a pulsed manner, with a pulse duration (PD) of 75ms and 2 Hz pulse repetition frequency (PRF) at spatial peak pulse average intensity $( | _ { \\mathsf { s p p A } } )$ of 20 W/cm<sup>2</sup> for 30 minutes.",
+   "exposures[0].free_field.isppa_w_cm2": "Ultrasound was applied in a pulsed manner, with a pulse duration (PD) of 75ms and 2 Hz pulse repetition frequency (PRF) at spatial peak pulse average intensity $( | _ { \\mathsf { s p p A } } )$ of 20 W/cm<sup>2</sup> for 30 minutes.",
+   "exposures[0].free_field.ispta_w_cm2": "Considering 15% duty cycle, spatial peak temporal average intensity $[ \\mathsf { I } _ { \\mathsf { S P T A } } ]$ was 3 W/cm<sup>2</sup>",
+   "exposures[0].free_field.pressure_kpa": "The maximum rarefactional pressure was 770 kPa",
+   "exposures[0].device.model": "A 400kHz transducer (WS100-0.5-P38, Ultran Group, State College, PA, USA)",
+   "exposures[0].device.manufacturer": "A 400kHz transducer (WS100-0.5-P38, Ultran Group, State College, PA, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "12 mice total, 6 per group; only the 6 in the tUS+ group were sonicated."
+   },
+   {
+    "field": "blinding",
+    "reason": "Behavioural and histology raters were blinded to condition; sonication itself could not be blinded as far as stated."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "770 kPa is the maximum rarefactional pressure; field mapped in degassed water tank."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensities stated without explicit domain; assigned to free field because the pressure field was calibrated in a degassed water tank."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle of 15% stated as 'Considering 15% duty cycle'; 75 ms x 2 Hz agrees."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

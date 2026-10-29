@@ -1,0 +1,180 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chene",
+ "doi": "10.1007/s12264-025-01457-6",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cellular_imaging"
+ ],
+ "readout_other": "Whole-cell patch clamp (sAP, iAP, sEPSC, mEPSC); Fura-2 cytosolic Ca2+ imaging",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "About two-thirds of neurons increased sAP firing and sEPSC frequency with continuous SAW US (immediate or delayed responders); the rest did not respond. Effects depended on extracellular Ca2+ and L-type channels; no change at 400 mW/cm2.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "SAW ultrasound chip, cultured rat hippocampal neurons, 7.65, 11.87 and 15.88 MHz",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "cultured hippocampal neurons"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "SAW US neuromodulation chip, interdigital transducers on LiTaO3"
+   },
+   "fundamental_frequency_khz": [
+    7650,
+    11870,
+    15880
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.025,
+     0.4
+    ]
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": [
+     60,
+     120
+    ],
+    "protocol_description": "Continuous standing SAW US; 60-s sessions at 120-s intervals at increasing Ispta (0, 25, 50, 100, 400 mW/cm2) for each frequency; later experiments used 2-min stimulation at 100 mW/cm2 within a 20-min recording."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "To investigate the efect of US stimulation on neural excitability with high temporal resolution, we designed and fabricated three SAW US neuromodulation chips based on the work of Lin et al. [9] using lithium tantalate $( \\mathrm { L i T a O } _ { 3 } )$ wafers with resonant frequencies of 7.65, 11.87, and 15.88 MHz.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "We applied US stimulation at increasing $I _ { S P T A }$ ranging from 25 to 400 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ at each of the three selected frequencies (Fig. 2A).",
+   "exposures[0].timing.sonication_duration_s": "Subsequently, we applied a series of 60-s continuous US stimulation sessions at 120-s intervals (Fig. 2A).",
+   "exposures[0].device.model": "To investigate the efect of US stimulation on neural excitability with high temporal resolution, we designed and fabricated three SAW US neuromodulation chips based on the work of Lin et al. [9] using lithium tantalate $( \\mathrm { L i T a O } _ { 3 } )$ wafers with resonant frequencies of 7.65, 11.87, and 15.88 MHz."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta measured by laser Doppler velocimetry on the chip, in mW/cm2 (0 to 400); converted to W/cm2; domain not a water or in-situ statement."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "38 is the number of neurons recorded in the temporal-dynamics experiment; other experiments use different n. No total culture count given."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "60 s used in the frequency/intensity sweep; later experiments used 2-min stimulation."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Measured resonant frequencies 7.65, 11.87, 15.88 MHz (design 8, 12, 16 MHz)."
+   },
+   {
+    "field": "exposures[0].device",
+    "reason": "Chips designed and fabricated by the authors; surface acoustic wave rather than bulk transducer."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

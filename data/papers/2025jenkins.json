@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025jenkins",
+ "doi": "10.3389/fnimg.2025.1580623",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "behaviour"
+ ],
+ "readout_other": "Emotional Face Assessment Task (EFAT) BOLD ROI estimates (amygdala, fusiform, thalamus); task accuracy and reaction time",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Left and right amygdala activation to fearful/angry faces vs shapes decreased from pre to post sonication; fusiform gyrus and thalamus did not change.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Follow-up phone call and side-effect questionnaire; 'No serious adverse events were reported by any participants.' Estimated thermal dose 0.18 CEM43 over the session.",
+ "exposures": [
+  {
+   "label": "LIFU of left amygdala",
+   "target": {
+    "terms": [
+     "amygdala"
+    ],
+    "label": "left amygdala"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix",
+    "model": "Pulsar 1002 LIFU pulsation system with a 65 mm transducer"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.72
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "30-s trains of 650 kHz sonication at PRF 10 Hz with 30-s rest periods, 10 cycles over 10 min; pulse width 5 ms, duty cycle 5%."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "in a cohort of 10 healthy individuals.",
+   "n_sessions_per_subject": "In succession, participants completed a pre-LIFU baseline fMRI, received 10- min of LIFU neuromodulation, and then repeated the baseline fMRI.",
+   "exposures[0].fundamental_frequency_khz": "Once positioned, the LIFU transducer delivered 30-s trains of 650 KHz sonication at a pulse repetition frequency (prf) of 10 Hz with 30-s rest periods between sonication, for a total of 10 cycles over 10 min, with a spatial peak temporal average (ISPTA) of sonication was 720 mW/cm<sup>2</sup>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Once positioned, the LIFU transducer delivered 30-s trains of 650 KHz sonication at a pulse repetition frequency (prf) of 10 Hz with 30-s rest periods between sonication, for a total of 10 cycles over 10 min, with a spatial peak temporal average (ISPTA) of sonication was 720 mW/cm<sup>2</sup>",
+   "exposures[0].timing.sonication_duration_s": "Once positioned, the LIFU transducer delivered 30-s trains of 650 KHz sonication at a pulse repetition frequency (prf) of 10 Hz with 30-s rest periods between sonication, for a total of 10 cycles over 10 min, with a spatial peak temporal average (ISPTA) of sonication was 720 mW/cm<sup>2</sup>",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Once positioned, the LIFU transducer delivered 30-s trains of 650 KHz sonication at a pulse repetition frequency (prf) of 10 Hz with 30-s rest periods between sonication, for a total of 10 cycles over 10 min, with a spatial peak temporal average (ISPTA) of sonication was 720 mW/cm<sup>2</sup>",
+   "exposures[0].timing.pulse_duration_ms": "The stimulation was pulsed with a pulse width of 5 ms. The duty cycle was 5%.",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation was pulsed with a pulse width of 5 ms. The duty cycle was 5%.",
+   "exposures[0].device.manufacturer": "The MR-guided sonication treatment was administered using the BrainSonix Pulsar 1002 LIFU pulsation system with a 65 mm transducer",
+   "exposures[0].device.model": "The MR-guided sonication treatment was administered using the BrainSonix Pulsar 1002 LIFU pulsation system with a 65 mm transducer"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Stated as 720 mW/cm2 (converted to 0.72 W/cm2); domain not stated. No pressure or Isppa reported (MI 1.7 stated)."
+   },
+   {
+    "field": "adverse_events",
+    "reason": "Paper says no serious adverse events; milder events are not explicitly excluded."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Single-session pre/post design inferred from the procedure description; not stated as a number."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "15 enrolled, 10 included in analysis; the paper's abstract and methods give 10."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Open-label single-arm; non-target regions used as controls, no sham."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "first"
+  }
+ }
+}

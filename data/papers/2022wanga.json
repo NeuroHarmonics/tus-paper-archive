@@ -1,0 +1,200 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022wanga",
+ "doi": "10.1093/cercor/bhac037",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": 17,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 31,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging",
+  "histology_molecular",
+  "other"
+ ],
+ "readout_other": "social preference-avoidance and social interaction tests; elevated plus maze; sucrose preference; fiber photometry GCaMP6m calcium imaging of mPFC excitatory neurons; Iba1 immunostaining; western blot (TLR4, NF-kB, TNF-alpha, BDNF, NR2B, PSD95); serum corticosterone ELISA",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Acute LIFUS raised mPFC excitatory neuron GCaMP fluorescence during sonication; chronic LIFUS (with stress exposure) gradually reduced social avoidance, enhanced neuronal responses during social interaction and reduced microglial activation and TLR4/NF-kB expression.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "chronic LIFUS to mPFC (PrL) in socially defeated mice",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "medial prefrontal cortex (mPFC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V318"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.015
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.1,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "0.5 MHz, 1.5 kHz PRF, 50 cycles (0.1 ms tone burst), 0.5 s sonication duration, 2 s interstimulation interval, Ispta 15 mW/cm2; 15 min per day under isoflurane, delivered 5 h after stress exposure on the first 10 days and continued for 3 further weeks. Sham: transducer 5 cm from the head."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 15.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "(ii) mice were exposed to SDS, followed by LIFUS stimulation (FUS group, n 17)",
+   "n_sessions_per_subject": "The mice in the SDS group received daily LIFUS stimulation (see Section 2.6), 15 min per day, for 31 days (10 days 3 weeks)",
+   "exposures[0].fundamental_frequency_khz": "The LIFUS parameters applied to chronic stimulation (Fig. 1C) were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 50 cycles, 0.1 ms tone burst duration, 0.5-s sonication duration, 2-s interstimulation interval, and 15 mW/cm<sup>2</sup> spatial peak temporal average intensity (Ispta).",
+   "exposures[0].timing.pulse_duration_ms": "The LIFUS parameters applied to chronic stimulation (Fig. 1C) were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 50 cycles, 0.1 ms tone burst duration, 0.5-s sonication duration, 2-s interstimulation interval, and 15 mW/cm<sup>2</sup> spatial peak temporal average intensity (Ispta).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIFUS parameters applied to chronic stimulation (Fig. 1C) were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 50 cycles, 0.1 ms tone burst duration, 0.5-s sonication duration, 2-s interstimulation interval, and 15 mW/cm<sup>2</sup> spatial peak temporal average intensity (Ispta).",
+   "exposures[0].timing.sonication_duration_s": "The LIFUS parameters applied to chronic stimulation (Fig. 1C) were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 50 cycles, 0.1 ms tone burst duration, 0.5-s sonication duration, 2-s interstimulation interval, and 15 mW/cm<sup>2</sup> spatial peak temporal average intensity (Ispta).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The LIFUS parameters applied to chronic stimulation (Fig. 1C) were as follows: 0.5 MHz center frequency, 1.5 kHz pulse repetition frequency, 50 cycles, 0.1 ms tone burst duration, 0.5-s sonication duration, 2-s interstimulation interval, and 15 mW/cm<sup>2</sup> spatial peak temporal average intensity (Ispta).",
+   "exposures[0].device.manufacturer": "The LIFUS system consists of 2 function generators (DG4162 and DG822, RIGOL, China), a custom-designed radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator.",
+   "exposures[0].device.model": "The LIFUS system consists of 2 function generators (DG4162 and DG822, RIGOL, China), a custom-designed radio frequency amplifier (SWA400A, North Star, China), a 0.5 MHz single-element immersion transducer (V318, Olympus, USA), and a custom-designed acoustic collimator."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Only the FUS group (n = 17) received ultrasound; 62 C57BL/6J mice were used in total including controls, and some analyses use subsets (e.g. n = 4 per group for photometry)."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Text says LIFUS was daily for 31 days written as '10 days + 3 weeks' (symbol lost in extraction); 31 recorded as stated."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "15 mW/cm2 converted to W/cm2; domain not stated (attenuation through skull to about 47.76% was measured separately, no in-situ value given)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Acute photometry during-LIFUS recordings are described over a 13-min stimulation period; the 0.5 s per-sonication value from the chronic parameters is recorded."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "Target described as the PrL area of the mPFC, mapped to ventromedial_prefrontal_cortex via the mPFC synonym."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

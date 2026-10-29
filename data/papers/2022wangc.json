@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022wangc",
+ "doi": "10.3389/fnagi.2022.814560",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "vascular_dementia"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 14,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "delayed nonmatch-to-sample task; step-down task; novel object recognition; elevated plus maze; laser speckle contrast imaging of CBF; HE, Nissl and Golgi-Cox staining; western blot (TLR4, NF-kB, IL-6, JNK, SYP, NR2B, PSD95, CaMKII)",
+ "readout_timing": "offline",
+ "anaesthesia": "both",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Neural excitability was not recorded; LIFUS improved working memory in VD rats, increased vascular branches and synaptic proteins and reduced TLR4/NF-kB pathway proteins and IL-6.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Body weight and elevated plus maze anxiety-like behaviour did not differ among groups; authors conclude no weight loss or anxiety-like behaviour was induced.",
+ "exposures": [
+  {
+   "label": "LIFUS to bilateral mPFC in VD rats",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "bilateral mPFC"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, Tokyo, Japan",
+    "model": "V318"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.5
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 0.5,
+    "protocol_description": "0.5 MHz, PRF 2.0 kHz, 150 cycles (0.3 ms tone burst), 0.5 s sonication duration, 2 s interstimulus interval, Ispta 500 mW/cm2; 10 min per side per day to bilateral mPFC under 1% isoflurane, daily for 14 days starting 2 weeks after BCCAO."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Then, the survival rats were randomly divided into two subgroups, VD group (VD model rats without LIFUS, n = 6) and VD + LIFUS group (VD model rats with LIFUS treatment, n = 6).",
+   "n_sessions_per_subject": "VD + LIFUS group was treated by LIFUS daily for 14 days starting after 2 weeks’ recovery",
+   "exposures[0].fundamental_frequency_khz": "The LIFUS parameters used in this study were as follows (shown in Figure 1B): center frequency = 0.5 MHz; pulse repetition frequency (PRF) = 2.0 kHz; the number of cycles = 150 (0.3 ms tone burst duration, TBD); the sonication duration (SD) = 0.5 s; the interstimulus interval (ISI) = 2 s, and the spatial peak temporal average intensity (I<sub>spta</sub>) = 500 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "The LIFUS parameters used in this study were as follows (shown in Figure 1B): center frequency = 0.5 MHz; pulse repetition frequency (PRF) = 2.0 kHz; the number of cycles = 150 (0.3 ms tone burst duration, TBD); the sonication duration (SD) = 0.5 s; the interstimulus interval (ISI) = 2 s, and the spatial peak temporal average intensity (I<sub>spta</sub>) = 500 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The LIFUS parameters used in this study were as follows (shown in Figure 1B): center frequency = 0.5 MHz; pulse repetition frequency (PRF) = 2.0 kHz; the number of cycles = 150 (0.3 ms tone burst duration, TBD); the sonication duration (SD) = 0.5 s; the interstimulus interval (ISI) = 2 s, and the spatial peak temporal average intensity (I<sub>spta</sub>) = 500 mW/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "The LIFUS parameters used in this study were as follows (shown in Figure 1B): center frequency = 0.5 MHz; pulse repetition frequency (PRF) = 2.0 kHz; the number of cycles = 150 (0.3 ms tone burst duration, TBD); the sonication duration (SD) = 0.5 s; the interstimulus interval (ISI) = 2 s, and the spatial peak temporal average intensity (I<sub>spta</sub>) = 500 mW/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The LIFUS parameters used in this study were as follows (shown in Figure 1B): center frequency = 0.5 MHz; pulse repetition frequency (PRF) = 2.0 kHz; the number of cycles = 150 (0.3 ms tone burst duration, TBD); the sonication duration (SD) = 0.5 s; the interstimulus interval (ISI) = 2 s, and the spatial peak temporal average intensity (I<sub>spta</sub>) = 500 mW/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "The LIFUS system consists of (1) two function generators (DG4162 and DG822, RIGOL, Beijing, China), (2) a customdesigned radio frequency amplifier (SWA400A, North Star, Shijia zhuang, China), (3) a 0.5MHz single element immersion transducer (V318, Olympus, Tokyo, Japan), and (4) a customdesigned acoustic collimator (Zhang et al., 2019).",
+   "exposures[0].device.model": "The LIFUS system consists of (1) two function generators (DG4162 and DG822, RIGOL, Beijing, China), (2) a customdesigned radio frequency amplifier (SWA400A, North Star, Shijia zhuang, China), (3) a 0.5MHz single element immersion transducer (V318, Olympus, Tokyo, Japan), and (4) a customdesigned acoustic collimator (Zhang et al., 2019)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes: CON 8, VD 6, VD+LIFUS 6; n = 6 is the LIFUS group. Some figure legends give VD n = 5 for behaviour."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle is not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "500 mW/cm2 converted to W/cm2; domain not stated."
+   },
+   {
+    "field": "sham_type",
+    "reason": "CON and VD groups 'underwent the same procedures including anesthesia but without LIFUS'; how sham was produced is not described."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Transducer is an Olympus V318 0.5 MHz immersion transducer; location given as Tokyo, Japan."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

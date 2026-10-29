@@ -1,0 +1,222 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023liua",
+ "doi": "10.1186/s12868-023-00817-0",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour"
+ ],
+ "readout_other": "LFP power and entropy in motor cortex; EMG; time to emergence from propofol anaesthesia",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "TUS shortened time to emergence from propofol anaesthesia (20.3 min vs 32 min sham) and changed LFP band power (lower at 1-4 and 13-30 Hz, higher at 55-200 Hz) and entropy relative to sham 20 min after TUS.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS group, motor cortex",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": 510,
+    "isppa_w_cm2": 8.67,
+    "ispta_w_cm2": 0.43
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 300,
+    "protocol_description": "Stimulation duration, PRF and duty cycle were set as 50 ms, 1 Hz and 5%; the total time for each stimulation was 5 min. The TUS group was stimulated after propofol administration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Mice were randomly divided into two groups: the Sham group (n = 6) and the TUS group (n = 6).",
+   "n_sessions_per_subject": "Twenty-four hours after the surgery, the LFPs and EMG signals were recorded before the administration of propofol. Then, 70  mg/kg propofol (Diprivan, Aspen Pharma Trading Limited, Ireland) was administered by intraperitoneal injection, and the mice in the TUS group were stimulated with low-intensity TUS in the motor cortex after the administration of propofol.",
+   "exposures[0].fundamental_frequency_khz": "An unfocused ultrasound transducer with a fundamental frequency of 500  kHz (V301-SU, Olympus, USA) was used in our experiment",
+   "exposures[0].timing.pulse_duration_ms": "The stimulation duration, pulse repetition frequency and duty cycle were set as 50 ms, 1  Hz, and 5%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The stimulation duration, pulse repetition frequency and duty cycle were set as 50 ms, 1  Hz, and 5%, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The stimulation duration, pulse repetition frequency and duty cycle were set as 50 ms, 1  Hz, and 5%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The total time for each stimulation was 5 min.",
+   "exposures[0].device.manufacturer": "An unfocused ultrasound transducer with a fundamental frequency of 500  kHz (V301-SU, Olympus, USA) was used in our experiment",
+   "exposures[0].device.model": "An unfocused ultrasound transducer with a fundamental frequency of 500  kHz (V301-SU, Olympus, USA) was used in our experiment",
+   "exposures[0].in_situ.pressure_kpa": "The ultrasound pressure under the skull measured by a calibrated needle-type hydrophone (HNR500; Onda, USA) in the water tank was 0.51 MPa, and its corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I } _ { \\mathrm { { s p t a } } } }$ were $8 . 6 7 ~ \\mathrm { W / c m ^ { 2 } }$ and 0.43 $\\mathbb { W } / { \\mathrm { c m } } ^ { 2 } .$ .",
+   "exposures[0].in_situ.isppa_w_cm2": "The ultrasound pressure under the skull measured by a calibrated needle-type hydrophone (HNR500; Onda, USA) in the water tank was 0.51 MPa, and its corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I } _ { \\mathrm { { s p t a } } } }$ were $8 . 6 7 ~ \\mathrm { W / c m ^ { 2 } }$ and 0.43 $\\mathbb { W } / { \\mathrm { c m } } ^ { 2 } .$ .",
+   "exposures[0].in_situ.ispta_w_cm2": "The ultrasound pressure under the skull measured by a calibrated needle-type hydrophone (HNR500; Onda, USA) in the water tank was 0.51 MPa, and its corresponding $\\mathrm { { I _ { s p p a } } }$ and $\\mathrm { { I } _ { \\mathrm { { s p t a } } } }$ were $8 . 6 7 ~ \\mathrm { W / c m ^ { 2 } }$ and 0.43 $\\mathbb { W } / { \\mathrm { c m } } ^ { 2 } .$ ."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper calls 50 ms the 'stimulation duration'; with PRF 1 Hz and duty cycle 5% it is consistent with the pulse duration, so recorded as pulse duration (burst rule resolved by arithmetic)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure 'under the skull' measured by hydrophone 'in the water tank': domain not clear, so placed in unspecified_domain. Transducer is unfocused."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Per-pulse 'stimulation duration' 50 ms vs 5 min total stimulation time; 300 s recorded as the train length."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham group is never described."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Figure 7 legend gives n = 12 for the TUS group, inconsistent with 6 per group elsewhere."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "n_sessions_per_subject": "first",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

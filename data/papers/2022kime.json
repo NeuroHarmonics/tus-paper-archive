@@ -1,0 +1,200 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022kime",
+ "doi": "10.3389/fnins.2022.1011699",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg"
+ ],
+ "readout_other": "EEG power spectral density by band",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "All four conditions changed EEG band power versus baseline; uni- and bilateral stimulation differed significantly in some bands, with no clear single direction.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Uni- and bilateral LIPUS of motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "right and left primary motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "In-house built (PZT from Steiner & Martins Inc.)",
+    "model": "SMD07T02R412WL (PZT element)"
+   },
+   "fundamental_frequency_khz": 380,
+   "free_field": {
+    "pressure_kpa": 481,
+    "isppa_w_cm2": 2.3,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     1000,
+     100
+    ],
+    "duty_cycle_pct": [
+     50,
+     5
+    ],
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Sonication duration 300 ms, inter-stimulus interval 2 s, 200 trials per condition; conditions 1 kHz PRF with 50% DC or 100 Hz PRF with 5% DC applied unilaterally to the right M1 or bilaterally in combination."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine Sprague-Dawley rats (7–10 weeks old male, 220–280 g) were used for this study.",
+   "exposures[0].fundamental_frequency_khz": "All stimulation conditions were performed with a central frequency of 380 kHz, SD of 300 ms, inter-stimulus interval (ISI) of 2 s, and spatialpeak pulse-average intensity (I<sub>SPPA</sub>) of 2.3 W/cm<sup>2</sup>, as shown in Figure 2.",
+   "exposures[0].timing.sonication_duration_s": "All stimulation conditions were performed with a central frequency of 380 kHz, SD of 300 ms, inter-stimulus interval (ISI) of 2 s, and spatialpeak pulse-average intensity (I<sub>SPPA</sub>) of 2.3 W/cm<sup>2</sup>, as shown in Figure 2.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The right primary motor (M1) cortex was selected to evaluate the efect of unilateral LIPUS stimulation with one of two sonication schemes: 1 kHz PRF and 50% DC (stimulation condition #1), 100 Hz PRF and 5% DC (stimulation condition #4).",
+   "exposures[0].timing.duty_cycle_pct": "The right primary motor (M1) cortex was selected to evaluate the efect of unilateral LIPUS stimulation with one of two sonication schemes: 1 kHz PRF and 50% DC (stimulation condition #1), 100 Hz PRF and 5% DC (stimulation condition #4).",
+   "exposures[0].free_field.pressure_kpa": "The highest pressure was observed around 2 mm from the transducer surface with peak-to-peak pressure of 481 kPa $( \\mathrm { I } _ { \\mathit { S P P A } } = 2 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].free_field.isppa_w_cm2": "The highest pressure was observed around 2 mm from the transducer surface with peak-to-peak pressure of 481 kPa $( \\mathrm { I } _ { \\mathit { S P P A } } = 2 . 3 \\mathrm { W } / \\mathrm { c m } ^ { 2 } )$",
+   "exposures[0].device.manufacturer": "The ultrasound transducers were designed based on PZT-4 ceramics with a resonance frequency of 380 kHz and a diameter of 7 mm (SMD07T02R412WL, Steiner & Martins Inc., Davenport, FL, USA).",
+   "exposures[0].device.model": "The ultrasound transducers were designed based on PZT-4 ceramics with a resonance frequency of 380 kHz and a diameter of 7 mm (SMD07T02R412WL, Steiner & Martins Inc., Davenport, FL, USA)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Value is peak-to-peak pressure (481 kPa) measured in free water; a 10% loss through the rat skull is stated but not applied."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; DC and PRF stated for two protocols; left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Four conditions: unilateral 1 kHz/50%, unilateral 100 Hz/5%, bilateral mixed, bilateral 1 kHz/50%; both motor cortices are one target at the same frequency so a single exposure with listed PRF and DC."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducers built in-house from Steiner & Martins PZT-4 elements."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

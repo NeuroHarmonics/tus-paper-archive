@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022yuan",
+ "doi": "10.1088/1741-2552/ac7893",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "deafened_subjects"
+ ],
+ "readouts": [
+  "emg_mep",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "EMG mean absolute value; LFP peak value",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "EMG mean absolute value and LFP peak value evoked by TUS increased with ultrasound intensity; a fuzzy controller adjusted intensity to track target EMG/LFP values.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Mechanical index and temperature rise are given only in supplementary table S1.",
+ "exposures": [
+  {
+   "label": "closed-loop TUS of mouse motor cortex, 500 kHz",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "mouse motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     210,
+     780
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Stimulation duration 400 ms, PRF 1 kHz, duty cycle 50%, stimulation interval 10 s; ultrasound intensity adjusted stimulus by stimulus by a fuzzy, PID or immune feedback controller using EMG or LFP feedback."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty C57BL male mice were used in the experiments (body weights 20–25 g, Beijing Vital River Laboratory Animal Technology Co., Ltd China).",
+   "exposures[0].fundamental_frequency_khz": "The waveform generator generates a signal with a fundamental frequency of 500 kHz, pulse repetition frequency of 1 kHz, stimulation duration of 400 ms, duty cycle of 50%, and stimulation interval of 10 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The waveform generator generates a signal with a fundamental frequency of 500 kHz, pulse repetition frequency of 1 kHz, stimulation duration of 400 ms, duty cycle of 50%, and stimulation interval of 10 s.",
+   "exposures[0].timing.duty_cycle_pct": "The waveform generator generates a signal with a fundamental frequency of 500 kHz, pulse repetition frequency of 1 kHz, stimulation duration of 400 ms, duty cycle of 50%, and stimulation interval of 10 s.",
+   "exposures[0].timing.sonication_duration_s": "The waveform generator generates a signal with a fundamental frequency of 500 kHz, pulse repetition frequency of 1 kHz, stimulation duration of 400 ms, duty cycle of 50%, and stimulation interval of 10 s.",
+   "exposures[0].unspecified_domain.pressure_kpa": "(corresponding to the sound pressure value from 0.21 to 0.78 MPa)",
+   "exposures[0].device.model": "an ultrasound transducer (V301-SU, Olympus, USA)",
+   "exposures[0].device.manufacturer": "an ultrasound transducer (V301-SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: DC 50% / PRF 1 kHz implies 0.5 ms pulses, so the 400 ms 'stimulation duration' is the train; pulse duration not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure range is tied to generator voltage (350-750 mVpp) and described as sound pressure; domain not stated (hydrophone field map in a water tank was also described)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "20 mice used for the open-loop and model experiments; 10 of them in closed-loop runs, plus six additional chemically deafened mice."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa and Ispta are given only in supplementary table S1, not in the main text."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham or control sonication arm; controllers (fuzzy, PID, immune) are compared."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

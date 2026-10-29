@@ -1,0 +1,202 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2012kima",
+ "doi": "10.1002/ima.22020",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "Tail movement recorded with a piezoelectric pulse transducer",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Sonication of the motor area elicited tail movements synchronised with the 2-s sonication intervals in all animals.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "350 kHz pulsed FUS to rat motor cortex (tail area) with image-guided navigation",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "the motor area of the rat brain"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "SensMed",
+    "model": "Sonomo"
+   },
+   "fundamental_frequency_khz": 350,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": 500,
+    "isppa_w_cm2": 9.1,
+    "ispta_w_cm2": 4.5
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Pulse-repetition frequency of 1 kHz, tone-burst duration of 0.5 ms, sonication duration of 300 ms and a sonication interval of 2 s, delivered to the site about 2 mm posterior to bregma on the midline."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "For the neuromodulatory experiment, the rat $( n = 3 , 2 7 2 - 3 5 9 \\mathrm { ~ g ) }$ was anesthetized with an intraperitoneal injection of a ketamine/ xylazine mixture of 80:10 mg/kg.",
+   "exposures[0].fundamental_frequency_khz": "The single element FUS transducer used in this study was air-backed and of a segmented sphere shape (6 cm in diameter, 7 cm in ROC), operating in 350 kHz in fundamental frequency.",
+   "exposures[0].in_situ.pressure_kpa": "Considering the ultrasound attenuation factor (-87%) through the rodent skull in situ (Kinoshita et al., 2006), the resulting $I _ { \\mathrm { s p p a } }$ was 9.1 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and the corresponding mechanical index (MI) was 0.9 (where peak negative pressure was 0.5 MPa).",
+   "exposures[0].in_situ.isppa_w_cm2": "Considering the ultrasound attenuation factor (-87%) through the rodent skull in situ (Kinoshita et al., 2006), the resulting $I _ { \\mathrm { s p p a } }$ was 9.1 $\\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and the corresponding mechanical index (MI) was 0.9 (where peak negative pressure was 0.5 MPa).",
+   "exposures[0].in_situ.ispta_w_cm2": "The equivalent spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ was calculated as 4.5 $\\mathrm { { W / c m } } ^ { 2 }$ with 50% of duty factor.",
+   "exposures[0].timing.pulse_duration_ms": "The bursts of pulsed waves were generated by two successive function generators (33210A, Agilent, Santa Clara, CA) at the pulse-repetition frequency of 1 kHz, toneburst duration of 0.5 ms, sonication duration of 300 ms, and sonication interval of 2 s, and transmitted to the transducer through a linear power amplifier (240L, ENI Inc., Rochester, NY).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The bursts of pulsed waves were generated by two successive function generators (33210A, Agilent, Santa Clara, CA) at the pulse-repetition frequency of 1 kHz, toneburst duration of 0.5 ms, sonication duration of 300 ms, and sonication interval of 2 s, and transmitted to the transducer through a linear power amplifier (240L, ENI Inc., Rochester, NY).",
+   "exposures[0].timing.duty_cycle_pct": "The equivalent spatial-peak temporal-average intensity $( I _ { \\mathrm { s p t a } } )$ was calculated as 4.5 $\\mathrm { { W / c m } } ^ { 2 }$ with 50% of duty factor.",
+   "exposures[0].timing.sonication_duration_s": "The bursts of pulsed waves were generated by two successive function generators (33210A, Agilent, Santa Clara, CA) at the pulse-repetition frequency of 1 kHz, toneburst duration of 0.5 ms, sonication duration of 300 ms, and sonication interval of 2 s, and transmitted to the transducer through a linear power amplifier (240L, ENI Inc., Rochester, NY).",
+   "exposures[0].device.manufacturer": "The FUS focus generated by the segmented-sphere piezoelectric ultrasound transducer (Sonomo, SensMed, Framingham, MA) is located along the center axis away from the inner surface of the transducer, as defined by the inner radius-of-curvature (ROC), according to the manufacturing specification (7 cm).",
+   "exposures[0].device.model": "The FUS focus generated by the segmented-sphere piezoelectric ultrasound transducer (Sonomo, SensMed, Framingham, MA) is located along the center axis away from the inner surface of the transducer, as defined by the inner radius-of-curvature (ROC), according to the manufacturing specification (7 cm)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Values stated after applying an assumed 87% rodent skull attenuation from the literature (derating by the authors); free-field values for the in vivo exposure are not given."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "SensMed is not a listed family; recorded as other_manufacturer. Quote names the transducer as Sonomo, SensMed."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Recorded in ms in the paper (300 ms), converted to 0.3 s."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

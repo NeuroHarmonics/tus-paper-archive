@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024wangd",
+ "doi": "10.1016/j.neuroimage.2024.120841",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley; spontaneously hypertensive; Wistar Kyoto)",
+ "conditions": [
+  "healthy",
+  "other"
+ ],
+ "condition_other": "ADHD (spontaneously hypertensive rat model)",
+ "n_subjects": [
+  8,
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "13-channel cortical EEG with phase transfer entropy network analysis; Y-maze spontaneous alternation and distance",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "In SHR (ADHD model) rats, 7 days of prefrontal TUS increased Y-maze spontaneous alternation and reduced hyperactivity versus SHR and SHR-SHAM, and shifted theta- and beta-band cortical network measures; no net excitation or inhibition was defined.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to right prefrontal cortex for 7 days",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "The stimulation position was in the prefrontal cortex (1.25 mm right, -4.5 mm from bregma), while the specific area that ultrasound can mainly affect was the dorsolateral prefrontal cortex (DLPFC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 360,
+    "isppa_w_cm2": 4.3,
+    "ispta_w_cm2": 0.2158
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 900,
+    "protocol_description": "FF 500 kHz, PRF 1 Hz, DC 5% and stimulation duration (SD) 50 ms; total duration of each stimulation 15 min, once daily for 7 days."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "(Mean ± SEM, N = 8 in each group, $^ { * } P < 0 . 0 5 , ^ { * * } \\ P < 0 . 0 1$ , Kruskal–Wallis test and LSD multiple test, FDR correction), indicating that TUS effectively improved the hyperactive behavior of ADHD rats. The ADHD rats exhibited hyperactive behavioral abnormalities, similar to the results of previous studies (Wang et al., 2023a). To evaluate the",
+   "n_sessions_per_subject": "Ultrasound stimulation was performed for 7 days (Fig. 1F). The experiment of sham stimulation was conducted per previously established methodology (Clennell et al., 2021; Wang et al., 2020b). All procedures for the SHR-SHAM group were the same as that of the SHR-TUS group except that the power amplifier driving the ultrasound transducer of the SHR-SHAM group was turned off. Before ultrasound stimulation on day 0 and after the ultrasound stimulation on day 7, EEG acquisition and behavioral testing were performed simultaneously.",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) of the ultrasound signal were 500 kHz, 1 Hz, 5 %, and 50 ms, respectively",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) of the ultrasound signal were 500 kHz, 1 Hz, 5 %, and 50 ms, respectively",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) of the ultrasound signal were 500 kHz, 1 Hz, 5 %, and 50 ms, respectively",
+   "exposures[0].timing.pulse_duration_ms": "The fundamental frequency (FF), pulse repetition frequency (PRF), duty cycle (DC), and stimulation duration (SD) of the ultrasound signal were 500 kHz, 1 Hz, 5 %, and 50 ms, respectively",
+   "exposures[0].timing.sonication_duration_s": "The total duration of each stimulation was 15 min. Ultrasound stimulation was performed for 7 days (Fig. 1F). The experiment of sham stimulation was conducted per previously established methodology (Clennell et al., 2021; Wang et al., 2020b). All procedures for the SHR-SHAM group were the same as that of the SHR-TUS group except that the power amplifier driving the ultrasound transducer of the SHR-SHAM group was turned off. Before ultrasound stimulation on day 0 and after the ultrasound stimulation on day 7, EEG acquisition and behavioral testing were performed simultaneously.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound pressure was 0.36 MPa. The corresponding spatial-peak and pulse-average intensity values were 4.3 $\\mathrm { w } / \\mathrm { c m } ^ { - 2 }$ and the spatial-peak and time-average intensity value was 215.8 mW/cm<sup>−</sup> <sup>2</sup>. A calibrated needle-type hydrophone (Frequency range (±6 dB): 0.25–10 MHz, Nominal Sensitivity: 126 nV/Pa, HNR500, Onda, Sunnyvale, CA) was used to measure the ultrasound field distribution. The stimulation position was in the prefrontal cortex (1.25 mm right, −4.5 mm from bregma), while the specific area that ultrasound can mainly affect was the dorsolateral prefrontal cortex (DLPFC). The total duration of each stimulation was 15 min. Ultrasound stimulation was performed for 7 days (Fig. 1F). The experiment of sham stimulation was conducted per previously established methodology (Clennell et al., 2021; Wang et al., 2020b). All procedures for the SHR-SHAM group were the same as that of the SHR-TUS group except that the power amplifier driving the ultrasound transducer of the SHR-SHAM group was turned off. Before ultrasound stimulation on day 0 and after the ultrasound stimulation on day 7, EEG acquisition and behavioral testing were performed simultaneously.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The corresponding spatial-peak and pulse-average intensity values were 4.3 $\\mathrm { w } / \\mathrm { c m } ^ { - 2 }$ and the spatial-peak and time-average intensity value was 215.8 mW/cm<sup>−</sup> <sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The corresponding spatial-peak and pulse-average intensity values were 4.3 $\\mathrm { w } / \\mathrm { c m } ^ { - 2 }$ and the spatial-peak and time-average intensity value was 215.8 mW/cm<sup>−</sup> <sup>2</sup>.",
+   "exposures[0].device.manufacturer": "to drive the ultrasound transducer (V301-SU, Olympus, Center Valley, PA, USA)",
+   "exposures[0].device.model": "to drive the ultrasound transducer (V301-SU, Olympus, Center Valley, PA, USA)"
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "16 SD, 16 SHR and 16 WKY rats were used, split into control and TUS groups of 8; plus an SHR-SHAM group of N = 8 whose origin is not explained. Group sizes of the three TUS groups given; total exposed not stated."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper states stimulation duration 50 ms with PRF 1 Hz and DC 5%; 50 ms is taken as the pulse length by the burst rule (DC/PRF = 50 ms)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "15 min is the total duration of each stimulation session of 1 Hz pulses; it is not one uninterrupted train."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity unit printed as 'w/cm-2' (garbled); Ispta stated as 215.8 mW/cm-2 and converted to 0.2158 W/cm2; domain not stated."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Anaesthesia state during TUS not stated; isoflurane used for surgery only; behaviour in freely moving rats."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Separate experiment with trapezoidal (smoothed) pulses reported in Fig. S6 to test auditory effects."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Sham: power amplifier turned off in SHR-SHAM group."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

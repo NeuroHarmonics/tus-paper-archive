@@ -1,0 +1,178 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2023noureddine",
+ "doi": "10.1016/j.ultras.2022.106888",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  3,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "forelimb EMG; visual and video scoring of forelimb motor responses (success rate)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Motor cortex stimulation evoked forelimb movements and EMG; success rate rose with pressure to a peak near 385 kPa and was higher at anaesthesia washout than at 0.5 % isoflurane.",
+ "adverse_events": "not_reported",
+ "safety_notes": "No safety assessment performed; the authors argue MI and Ispta at the maximum pressure were below FDA limits.",
+ "exposures": [
+  {
+   "label": "500 kHz stimulation of left M1 in mice at 55-550 kPa",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "left primary motor cortex (M1) of the forelimbs"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic, Besançon, France",
+    "model": "single-element transducer, 500 kHz, 57.5 mm focal length, 41 mm active diameter"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     55,
+     550
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.155
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.16,
+    "protocol_description": "A single pulse of 80,000 cycles (pulse duration 160 ms) repeated every 10 s (PRF = 0.1 Hz); 3 pulses per pressure step in the anaesthesia experiment and 10 pulses 10 s apart per step in the pressure experiment. Table 1 lists the stimulation duration as 10 minutes."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "10 mice aged 4 weeks were stimulated at M1 at anesthesia washout period.",
+   "exposures[0].fundamental_frequency_khz": "central frequency of 500 kHz, focal length of 57.5 mm and an active diameter of 41 mm.",
+   "exposures[0].in_situ.pressure_kpa": "The applied peak negative acoustic pressure was varied from 55 kPa to 550 kPa with a step of 55 kPa.",
+   "exposures[0].timing.sonication_duration_s": "A pulse of 80,000 cycles forming a pulse duration of 160 ms was used",
+   "exposures[0].in_situ.ispta_w_cm2": "The maximum peak negative pressure (PNP) used in this study was 550 kPa $( \\mathrm { M I } 0 . 8 , \\mathrm { I } _ { \\mathrm { s p t a } } 1 5 5 \\mathrm { m W } / \\mathrm { c m } ^ { 2 } )$ ."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Peak negative pressure was measured behind an ex vivo mouse skull in a water tank and adjusted for 12 % skull attenuation; recorded as a measurement through skull. Range is a sweep (220-440 kPa in the anaesthesia experiment)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta 155 mW/cm2 is given only for the maximum 550 kPa; domain not stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Each trial is one 160 ms burst; paper states PRF 0.1 Hz and 'pulse duration 160 ms' (burst per trial treated as continuous per the schema rule, PRF kept in the description)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "3 mice in the anaesthesia experiment and 10 mice in the pressure experiment; unclear whether the 3 are a subset of the 10. Quote supports the 10."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated; pulse every 10 s."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

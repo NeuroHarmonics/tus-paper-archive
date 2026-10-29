@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021hellmana",
+ "doi": "10.3171/2020.9.jns202962",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "pig (Yorkshire)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  4
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey and thermal thresholds, motor and social scores; common peroneal nerve conduction velocity and SNAP amplitude; thermocouple at DRG; Fluoro-Jade and H&E staining",
+ "readout_timing": "both",
+ "anaesthesia": "both",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "A single liFUS treatment to the L5 DRG reduced mechanical allodynia for about 5 days, thermal allodynia for 24 h, and leg guarding for up to 4 weeks; nerve conduction velocity rose and SNAP amplitude fell for about 30 min.",
+ "adverse_events": "observed",
+ "safety_notes": "First-degree skin burns in 3 animals, wound breakdown and an activity-related hematoma in the first cohort; DRG temperature rise up to 12.8 C in one animal; no histological damage on Fluoro-Jade or H&E.",
+ "exposures": [
+  {
+   "label": "liFUS to L5 DRG, 25-30 W",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "L5 DRG"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Acoustic MedSystems, Inc.",
+    "model": "liFUS array / probe"
+   },
+   "fundamental_frequency_khz": 2475,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 38,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     180,
+     240
+    ],
+    "protocol_description": "Single treatment of 25-30 W for 3-4 minutes under anaesthesia with a water-cooled array; the optimal dose was 25 W, 2.475 MHz, a pulse of 38 Hz at 50% duty cycle for 3.5 minutes, raised to 28 W in larger animals."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": true
+     }
+    },
+    "pulse_duration_implied_ms": 13.1579
+   }
+  }
+ ],
+ "provenance": {
+  "source_quotes": {
+   "n_subjects": "Preliminary experiments with 8 swine established the working parameters needed for treatment.",
+   "n_sessions_per_subject": "Return to baseline motor scores lasted up to 4 weeks post-liFUS after a single treatment.",
+   "exposures[0].fundamental_frequency_khz": "Ultimately, we determined the optimal dose to be 25 W, with a frequency of 2.475 MHz and a pulse of 38 Hz at a 50% duty cycle for 3.5 minutes and a coolant rate of 26 ml/min at 17°C.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultimately, we determined the optimal dose to be 25 W, with a frequency of 2.475 MHz and a pulse of 38 Hz at a 50% duty cycle for 3.5 minutes and a coolant rate of 26 ml/min at 17°C.",
+   "exposures[0].timing.duty_cycle_pct": "Ultimately, we determined the optimal dose to be 25 W, with a frequency of 2.475 MHz and a pulse of 38 Hz at a 50% duty cycle for 3.5 minutes and a coolant rate of 26 ml/min at 17°C.",
+   "exposures[0].timing.sonication_duration_s": "The parameters ranged from 25 to 30 W for 3–4 minutes.",
+   "exposures[0].device.manufacturer": "Clif Burdette, Paul Neubauer, Emery Williams, and Goutam Ghoshal are employees of Acoustic MedSystems, Inc."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Stated as 'a pulse of 38 Hz'; taken as PRF. Frequency, PRF and duty cycle are for the optimal dose only."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Only electrical power (25-30 W) is reported; no pressure or intensity values."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Maker not named in a sentence about the device; inferred from the authors being Acoustic MedSystems employees and device development credit. The device is described as the authors' own modified array."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Two cohorts of 8 and 4 pigs; Table 1 lists only 7 of the 8 in the first cohort. No control group."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Range 3-4 min across the dose-response animals (3 min to 4 min in Tables 1 and 3)."
+   }
+  ],
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

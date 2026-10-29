@@ -1,0 +1,220 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025heb",
+ "doi": "10.1016/j.ultrasmedbio.2025.05.031",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 6,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other_mri",
+  "histology_molecular"
+ ],
+ "readout_other": "open field, CatWalk gait, beam walking; 9.4T MRI infarct and edema; ELISA and immunofluorescence for microglial polarization, angiogenesis, neurogenesis",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LITUS reduced infarct and edema and improved motor function in MCAO rats and shifted microglia from M1 to M2; neuronal excitability was not measured.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "MCAO + LITUS",
+   "target": {
+    "terms": [
+     "brain"
+    ],
+    "label": "cranium"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "GreenValley BrainTech (Shenzhen) Medical Technology Co., Ltd",
+    "model": "GVBT-1-A001"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": 930,
+    "isppa_w_cm2": 7.7,
+    "ispta_w_cm2": 0.77
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 0.462
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.2,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 1,
+    "protocol_description": "Pulsed 1 MHz, tone burst 200 us, duty cycle 20%, 1-s stimulus repeated every 2 s; 30 min daily for six consecutive days starting 24 h after MCAO."
+   },
+   "derived": {
+    "checks": [
+     "intensity_pressure_inconsistent_free_field"
+    ],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "They were randomly assigned to three groups (n = 10 per group): Control, MCAO, and MCAO + LITUS.",
+   "n_sessions_per_subject": "Daily 30- min treatments were conducted for six consecutive days",
+   "exposures[0].fundamental_frequency_khz": "The transducer, driven by an electronic control system, delivered pulsed signals at 1 MHz fundamental frequency with a tone burst duration of 200 μs, a duty cycle of 20%, administered in 1-s stimulus repeated every 2 s.",
+   "exposures[0].timing.pulse_duration_ms": "The transducer, driven by an electronic control system, delivered pulsed signals at 1 MHz fundamental frequency with a tone burst duration of 200 μs, a duty cycle of 20%, administered in 1-s stimulus repeated every 2 s.",
+   "exposures[0].timing.duty_cycle_pct": "The transducer, driven by an electronic control system, delivered pulsed signals at 1 MHz fundamental frequency with a tone burst duration of 200 μs, a duty cycle of 20%, administered in 1-s stimulus repeated every 2 s.",
+   "exposures[0].timing.sonication_duration_s": "The transducer, driven by an electronic control system, delivered pulsed signals at 1 MHz fundamental frequency with a tone burst duration of 200 μs, a duty cycle of 20%, administered in 1-s stimulus repeated every 2 s.",
+   "exposures[0].free_field.pressure_kpa": "Focal peak-to-peak pressure measured 0.93 MPa, corresponding to a spatial-peak pulse-average acoustic intensity (Isppa) and a spatial-peak time-average acoustic intensity (Ispta) of 7.70 W/cm² and 770 mW/cm², respectively.",
+   "exposures[0].free_field.isppa_w_cm2": "Focal peak-to-peak pressure measured 0.93 MPa, corresponding to a spatial-peak pulse-average acoustic intensity (Isppa) and a spatial-peak time-average acoustic intensity (Ispta) of 7.70 W/cm² and 770 mW/cm², respectively.",
+   "exposures[0].free_field.ispta_w_cm2": "Focal peak-to-peak pressure measured 0.93 MPa, corresponding to a spatial-peak pulse-average acoustic intensity (Isppa) and a spatial-peak time-average acoustic intensity (Ispta) of 7.70 W/cm² and 770 mW/cm², respectively.",
+   "exposures[0].in_situ.ispta_w_cm2": "Hydrophone measurements revealed 40% attenuation through rat skulls, yielding an effective Ispta of 462 mW/cm².",
+   "exposures[0].device.model": "Twenty-four hours after MCAO, rats in the MCAO+LITUS group received ultrasound modulation using a single-channel stimulator (GVBT-1-A001, GreenValley BrainTech (Shenzhen) Medical Technology Co., Ltd, Shenzhen, China) equipped with a planar transducer (20 mm diameter)",
+   "exposures[0].device.manufacturer": "Twenty-four hours after MCAO, rats in the MCAO+LITUS group received ultrasound modulation using a single-channel stimulator (GVBT-1-A001, GreenValley BrainTech (Shenzhen) Medical Technology Co., Ltd, Shenzhen, China) equipped with a planar transducer (20 mm diameter)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Pressure and intensity said to be 'measured' at the focus without stating water; placed in free_field on that reading."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Effective Ispta 462 mW/cm2 from hydrophone measurement of 40% attenuation through skulls; recorded as measurement."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only outcome observers were blinded for imaging quantification; recorded as single."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "No anatomical target named; transducer coupled to the cranium, focal zone at 8 mm depth."
+   },
+   {
+    "field": "sham_type",
+    "reason": "MCAO group received no ultrasound and no sham procedure is described; Control group had no surgery."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

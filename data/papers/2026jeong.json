@@ -1,0 +1,199 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026jeong",
+ "doi": "10.1088/1741-2552/ae9347",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 12,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "clinical_scale"
+ ],
+ "readout_other": "fMRI tSNR in left/right M1 during passive and active sonication; targeting off-target distance on T1w; post-session symptom questionnaire",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "Methods and workflow paper; the authors state it does not present TUS stimulation results or evaluate neuromodulatory effects. The outcome was MRI signal quality (tSNR) and targeting accuracy.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No participants reported adverse events and no sessions were terminated; post-session symptom questionnaire administered to 16 cap participants (headache 4/16 most common); simulations constrained to MI < 1.9 and temperature rise < 2 C.",
+ "exposures": [
+  {
+   "label": "Left M1 hand knob, BabelBrain-planned in-scanner TUS",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "hand knob region of the left primary motor cortex"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix Inc.",
+    "model": "BX Pulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     1.73,
+     4.08
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 90,
+    "protocol_description": "Sonication parameters applied across all participants: fundamental frequency 650 kHz, PD 1 ms, PRF 100 Hz, DC 10%, pulse train duration 90 s, 2 sonication repetitions (concurrent TUS-fMRI)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 10.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "Each device is an airbacked, single-element transducer with 61-mm aperture diameter and a spherically focused piezoelectric element operating at a fundamental frequency of 650 kHz",
+   "exposures[0].timing.pulse_duration_ms": "Simulations were performed using the following sonication parameters, applied consistently across all participants: fundamental frequency = 650 kHz, pulse duration (PD) = 1 ms, pulse repetition frequency (PRF) = 100 Hz, duty cycle $\\mathrm { ( D C ) } = 1 0 \\%$ pulse train duration (PTD) = 90 s, 2 sonication repetitions.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Simulations were performed using the following sonication parameters, applied consistently across all participants: fundamental frequency = 650 kHz, pulse duration (PD) = 1 ms, pulse repetition frequency (PRF) = 100 Hz, duty cycle $\\mathrm { ( D C ) } = 1 0 \\%$ pulse train duration (PTD) = 90 s, 2 sonication repetitions.",
+   "exposures[0].timing.duty_cycle_pct": "Simulations were performed using the following sonication parameters, applied consistently across all participants: fundamental frequency = 650 kHz, pulse duration (PD) = 1 ms, pulse repetition frequency (PRF) = 100 Hz, duty cycle $\\mathrm { ( D C ) } = 1 0 \\%$ pulse train duration (PTD) = 90 s, 2 sonication repetitions.",
+   "exposures[0].timing.sonication_duration_s": "Simulations were performed using the following sonication parameters, applied consistently across all participants: fundamental frequency = 650 kHz, pulse duration (PD) = 1 ms, pulse repetition frequency (PRF) = 100 Hz, duty cycle $\\mathrm { ( D C ) } = 1 0 \\%$ pulse train duration (PTD) = 90 s, 2 sonication repetitions.",
+   "exposures[0].in_situ.isppa_w_cm2": "The simulated I<sub>SPPA</sub> at the planned target varied across participants, rangingfrom 1.73 to 4.08 $W c m ^ { - 2 }$ $( m e a n = 3 . 5 0 \\pm 0 . 8 7 \\ W \\ c m ^ { - 2 } ;$ table S3)",
+   "n_subjects": "To assess whether active sonication introduced electromagnetic interference (EMI)-related signal degradation beyond that observed with the passive transducer, fMRI tSNR was evaluated in left and right M1 ROIs across 12 participants (Subjects 6-17) under both passive transducer and active sonication conditions.",
+   "exposures[0].device.manufacturer": "In this study, we used BX Pulsar 1002 MRIcompatible ultrasound transducers (BrainSonix Inc., Sherman Oaks, CA, USA)",
+   "exposures[0].device.model": "In this study, we used BX Pulsar 1002 MRIcompatible ultrasound transducers (BrainSonix Inc., Sherman Oaks, CA, USA)",
+   "n_sessions_per_subject": "An additional 12 participants completed one session each as part of an expanded cap evaluation, bringing the total to 17 participants across both cohorts."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "17 unique participants overall, but active sonication (tSNR analysis) stated for 12 participants (Subjects 6-17); the others only had positioning validation. Recorded 12."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Simulated Isppa after skull attenuation across participants (mean 3.50 +/- 0.87 W/cm2; range given); per-subject values only in supplementary table S3. No free-field values stated in the main text."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse train duration stated for simulation and for the concurrent TUS-fMRI acquisition; study is a methods paper with no stimulation outcomes."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

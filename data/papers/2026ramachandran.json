@@ -1,0 +1,227 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026ramachandran",
+ "doi": "10.1038/s41378-026-01391-1",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 10,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "multi-unit and single-unit spiking with ultraflexible nanoelectric thread electrodes; RSU/FSU classification",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Time-locked and delayed spiking of regular spiking units increased nonlinearly with pressure; FSUs showed delayed responses; effective PRF and duty cycle ranges shifted at 1300 kPa compared with 100 kPa.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Brain temperature measured with a fibre-optic probe in four separate rats: rises up to 2.1 C with pressure and up to 0.53 C with duty cycle; mechanical index tabulated in the supplement.",
+ "exposures": [
+  {
+   "label": "Rat S1, 1.5 MHz, pressure, duty-cycle and PRF sweeps",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "primary somatosensory cortex (S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts, Inc.",
+    "model": "customized H276 128-element random array (driven by Verasonics Vantage 128)"
+   },
+   "fundamental_frequency_khz": 1500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": [
+     100,
+     400,
+     700,
+     1000,
+     1300
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     0.004,
+     0.04,
+     0.0677,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     1,
+     10
+    ],
+    "pulse_repetition_frequency_hz": [
+     30,
+     300,
+     1500,
+     3000,
+     4500
+    ],
+    "duty_cycle_pct": [
+     0.6,
+     6,
+     30,
+     60
+    ],
+    "sonication_duration_s": 0.067,
+    "protocol_description": "505 trials per series with a 67 ms sonication every 2 s (10% trigger jitter). Pressure sweep at 1500 Hz PRF/30% DC and 30 Hz PRF/0.6% DC; duty cycle swept 0.6-60% at 1500 Hz PRF; PRF swept 30-4500 Hz at 30% DC, the last two each at 100 and 1300 kPa. Sham was ultrasound delivered off-target to the front of the skull."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Ten adult male Wistar rats weighing \\~300 g were used in this study, following a protocol approved by the Institutional Animal Care and Use Committee (IACUC) of Carnegie Mellon University.",
+   "exposures[0].fundamental_frequency_khz": "Ultrasound was delivered using a customized H276 128- element random array ultrasound transducer (f<sub>0</sub>: 1.5 MHz, -3dB focal size: 1.36 mm axially, 0.46 mm laterally) (manufactured by Sonic Concepts, Inc., Bothell, WA, USA), and driven with a Vantage 128 research ultrasound platform (Verasonics, Kirkland, WA, USA) using a DL-260 connector.",
+   "exposures[0].device.manufacturer": "Ultrasound was delivered using a customized H276 128- element random array ultrasound transducer (f<sub>0</sub>: 1.5 MHz, -3dB focal size: 1.36 mm axially, 0.46 mm laterally) (manufactured by Sonic Concepts, Inc., Bothell, WA, USA), and driven with a Vantage 128 research ultrasound platform (Verasonics, Kirkland, WA, USA) using a DL-260 connector.",
+   "exposures[0].device.model": "Ultrasound was delivered using a customized H276 128- element random array ultrasound transducer (f<sub>0</sub>: 1.5 MHz, -3dB focal size: 1.36 mm axially, 0.46 mm laterally) (manufactured by Sonic Concepts, Inc., Bothell, WA, USA), and driven with a Vantage 128 research ultrasound platform (Verasonics, Kirkland, WA, USA) using a DL-260 connector.",
+   "exposures[0].timing.pulse_duration_ms": "PRF was varied between 30, 300, 1500, 3000, and 4500 Hz, while setting the TBD to 10000, 1000, 200, 100, and 67.7 µs, maintaining a 30% DC while the PRF was changed (Fig. 3C).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "PRF was varied between 30, 300, 1500, 3000, and 4500 Hz, while setting the TBD to 10000, 1000, 200, 100, and 67.7 µs, maintaining a 30% DC while the PRF was changed (Fig. 3C).",
+   "exposures[0].timing.duty_cycle_pct": "This resulted in DCs of 0.6%, 6%, 30%, and 60%.",
+   "exposures[0].timing.sonication_duration_s": "Schematic of the ultrasound stimulation paradigms used in this study. a Parameter sets for varying acoustic pressure (100–1300 kPa) at two PRF/DC combinations: 1500 Hz with 30% DC, and 30 Hz with 0.6% DC. All trials use a 1500 kHz fundamental frequency and a 67 ms sonication duration, with stimuli delivered every 2 seconds. b Parameter sets for varying duty cycle (DC) with PRF held constant, tested at both 100 kPa and 1300 kPa. c Parameter sets for varying PRF with DC held constant at 30%, also tested at 100 kPa and 1300 kPa",
+   "exposures[0].in_situ.pressure_kpa": "Different pressure levels were delivered by altering the input voltage, resulting in a predicted delivered ultrasound peak-to-peak pressure of 100, 400, 700, 1000, and 1300 kPa."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressures are described as predicted delivered peak-to-peak pressure and as estimated through the silicone-covered skull; domain not clearly free-field or in situ, so placed in unspecified_domain. Peak-to-peak, not peak negative. Intensities appear only in the supplementary table."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "List assembled from tone-burst durations in several sentences (200 and 300 us in the pressure sweep, 4/40/200/400 us in the duty-cycle sweep, 10000/1000/200/100/67.7 us in the PRF sweep), converted to ms; the quote covers only the PRF-sweep durations."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "67 ms total ultrasound duration per trial, one trial every 2 s with 10% jitter; converted to 0.067 s."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Ten rats for electrophysiology (n = 10 per condition stated as a limitation); a separate cohort of four rats was used for temperature measurements and is not counted."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "The pressure sweep used 30% DC at 1500 Hz and 0.6% DC at 30 Hz; those values are within the listed duty cycles."
+   }
+  ],
+  "human_edited": false,
+  "notes": "Order of the five recordings within a series was random (same day); sham was off-target frontal skull stimulation.",
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second"
+  }
+ }
+}

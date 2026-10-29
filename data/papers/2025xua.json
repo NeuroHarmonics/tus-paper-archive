@@ -1,0 +1,296 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025xua",
+ "doi": "10.1007/s12264-025-01420-5",
+ "model_system": [
+  "in_vitro_cell",
+  "rodent"
+ ],
+ "species": "human (SH-SY5Y cell line); mouse (C57BL/6)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "histology_molecular",
+  "behaviour",
+  "other"
+ ],
+ "readout_other": "Patch-clamp mEPSC/sEPSC; Western blot (GPX4, alpha-synuclein); flow cytometry (iron, lipid peroxidation, Ca2+); electron microscopy; immunofluorescence; ELISA and HPLC dopamine; open field and pole test",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "US at 610 kHz and 0.2 W/cm2 increased frequency and amplitude of mEPSCs and sEPSCs, restored synaptic vesicle recycling and reduced ferroptosis markers in MPP+ cells and MPTP mice; effects were blocked by the Piezo1 inhibitor GsMTx4.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Behavioral tests were conducted one week after the final injection and again following the treatment. No unexpected adverse events occurred.",
+ "exposures": [
+  {
+   "label": "SH-SY5Y PD cell model, continuous US at 610, 746 and 1000 kHz",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "differentiated SH-SY5Y cells (MPP+ PD model)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Jiangsu Hanmei Science and Technology Co., Ltd",
+    "model": "HM-1 therapeutic device"
+   },
+   "fundamental_frequency_khz": [
+    610,
+    746,
+    1000
+   ],
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.1,
+     0.3
+    ]
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 40,
+    "protocol_description": "Continuous US applied to cells in plates for 40 s per well at three frequencies and graded intensities; optimum 610 kHz and 0.20 W/cm2."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "MPTP mice, 610 kHz 0.2 W/cm2 daily for 7 days",
+   "target": {
+    "terms": [
+     "brain"
+    ],
+    "label": "head, where US transducers were located (striatum analysed)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Jiangsu Hanmei Science and Technology Co., Ltd",
+    "model": "HM-1 therapeutic device"
+   },
+   "fundamental_frequency_khz": 610,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.2
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 900,
+    "protocol_description": "Daily 15-min US stimulation at 610 kHz and 0.2 W/cm2 for 7 days under isoflurane anaesthesia; target position on head not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_sessions_per_subject": "The daily 15-min US stimulation at 610 kHz and $0 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ lasted for 7 days.",
+   "exposures[0].fundamental_frequency_khz": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound coupling gel was used and the transducer was placed flush against the bottom of the plates. Cells were irradiated for 40 s/well.",
+   "exposures[1].fundamental_frequency_khz": "The daily 15-min US stimulation at 610 kHz and $0 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ lasted for 7 days.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "The daily 15-min US stimulation at 610 kHz and $0 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ lasted for 7 days.",
+   "exposures[1].timing.sonication_duration_s": "The daily 15-min US stimulation at 610 kHz and $0 . 2 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ lasted for 7 days.",
+   "exposures[0].device.model": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>. Sonication was produced using a commercially-available therapeutic device (HM-1, Jiangsu Hanmei Science and Technology Co., Ltd, Taizhou, China) with treatment heads 2.0 cm in diameter.",
+   "exposures[1].device.model": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>. Sonication was produced using a commercially-available therapeutic device (HM-1, Jiangsu Hanmei Science and Technology Co., Ltd, Taizhou, China) with treatment heads 2.0 cm in diameter.",
+   "exposures[0].device.manufacturer": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>. Sonication was produced using a commercially-available therapeutic device (HM-1, Jiangsu Hanmei Science and Technology Co., Ltd, Taizhou, China) with treatment heads 2.0 cm in diameter.",
+   "exposures[1].device.manufacturer": "Continuous US was applied at frequencies of 610, 746, and 1000 kHz with intensities from 0.1 to 0.3 W/cm<sup>2</sup>. Sonication was produced using a commercially-available therapeutic device (HM-1, Jiangsu Hanmei Science and Technology Co., Ltd, Taizhou, China) with treatment heads 2.0 cm in diameter."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper says only 'intensity' measured with a US power meter before sonication; whether spatial-peak temporal-average and in which medium is not stated. Results text gives 0.05 to 0.25 W/cm2 for the same sweep while Methods give 0.1 to 0.3 W/cm2."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity type and domain not stated; placed in unspecified_domain."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Forty mice in four groups of about ten; only the PD+US and PD+US+GsMTx4 groups were sonicated. Cell experiments not counted."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "Mouse sonication site not described beyond transducer on depilated head; striatal samples analysed. Target term 'brain' is a placeholder."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Continuous wave; duty cycle not stated so left null."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

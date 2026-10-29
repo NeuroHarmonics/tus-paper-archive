@@ -1,0 +1,207 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2019wang",
+ "doi": "10.3389/fnbeh.2019.00241",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "Forelimb EMG amplitude and response latency",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS induced synchronised forelimb EMG responses from motor cortex; amplitude fell with lower sound pressure and latency rose with deeper anaesthesia. TMAS (TUS plus static magnetic field) gave larger EMG and shorter latency.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS (and TMAS with static magnet) of mouse motor cortex",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "motor cortex of the mouse"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     83,
+     38,
+     21
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.2889
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.6,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "500 kHz tone bursts of TBD 0.6 ms (300 cycles) at PRF 1 kHz, NTB = 400 pulses per group repeated with period T = 4 s; each train lasted 40 s (10 EMGs collected), three trains per block with 1 min interval. The TMAS arm adds a 0.3 T surface static magnet."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 16 male C57BL/6J (21 ± 2.50 g, 7–8 weeks old) mice were randomly divided into two groups for TUS and TMAS by random number table.",
+   "exposures[0].fundamental_frequency_khz": "By referring to the relevant reference which could induce EMG signals (Tufail et al., 2010, 2011; Kubanek, 2018), and considering the safety and effectiveness of ultrasonic intensity, the ultrasonic parameters used in this experiment were as follows: f = 500 kHz, TBD = 0.6 ms, PRF = 1 kHz, NTB = 400, and period T = 4 s, as shown in Figure 2.",
+   "exposures[0].timing.pulse_duration_ms": "By referring to the relevant reference which could induce EMG signals (Tufail et al., 2010, 2011; Kubanek, 2018), and considering the safety and effectiveness of ultrasonic intensity, the ultrasonic parameters used in this experiment were as follows: f = 500 kHz, TBD = 0.6 ms, PRF = 1 kHz, NTB = 400, and period T = 4 s, as shown in Figure 2.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "By referring to the relevant reference which could induce EMG signals (Tufail et al., 2010, 2011; Kubanek, 2018), and considering the safety and effectiveness of ultrasonic intensity, the ultrasonic parameters used in this experiment were as follows: f = 500 kHz, TBD = 0.6 ms, PRF = 1 kHz, NTB = 400, and period T = 4 s, as shown in Figure 2.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Using the above ultrasonic parameters (f = 500 kHz, TBD = 0.6 ms, PRF = 1 kHz, NTB = 400, T = 4 s), the ultrasonic amplitudes were set to 3 V, 1 V, and 0.5 V, corresponding to Psptp of 83 KPa, 38 KPa, and 21 KPa, respectively.",
+   "exposures[0].device.manufacturer": "The ultrasonic transducer (V301, Olympus, Japan, planar ultrasonic transducer, center frequency 500 kHz) was collimated by a sound collimator (self-made, focal length, 2 mm) and fixed on a stereotactic frame and, by moving along three axes (accuracy 0.01 mm), located the target stimulation area of the mouse.",
+   "exposures[0].device.model": "The ultrasonic transducer (V301, Olympus, Japan, planar ultrasonic transducer, center frequency 500 kHz) was collimated by a sound collimator (self-made, focal length, 2 mm) and fixed on a stereotactic frame and, by moving along three axes (accuracy 0.01 mm), located the target stimulation area of the mouse.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Our study indicated that TMAS could enhance the neuromodulation effect of TUS under conditions of low ultrasound intensity $( \\mathrm { M I } \\ = \\ 0 . 1 2 , \\ \\mathrm { I s p t a } \\ = \\ 2 8 8 . 9 \\ \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ which meant that TMAS could modulate neural activity more effective and safe."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Psptp measured with a hydrophone 'at the stimulation target (head of the mouse)'; domain (water versus through skull) not clearly stated. Values are for 3 V, 1 V and 0.5 V drive."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Each 'train' lasts 40 s but consists of 400-pulse groups repeated every 4 s, so not one uninterrupted burst."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Not stated."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Study compares TUS with TMAS (TUS plus static magnet); both arms use the same ultrasound exposure, recorded as one exposure."
+   },
+   {
+    "field": "sham_type",
+    "reason": "No sham arm; comparison is TUS versus TMAS."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "both_defensible",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

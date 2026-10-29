@@ -1,0 +1,353 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026scott",
+ "doi": "10.64898/2026.07.30.741804",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 25,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "behaviour"
+ ],
+ "readout_other": "steady-state visual evoked potential amplitude and phase; contrast increment detection psychophysics",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "no_effect",
+ "direction_notes": "No effect of LGN or control-site TUS at any PRF on SSVEP amplitude, latency or contrast-increment detection, online or offline.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No apparent visual percepts or discomfort at the TUS site were reported; BabelBrain thermal simulation gave a maximum temperature rise of 0.5 C at the target.",
+ "exposures": [
+  {
+   "label": "LGN-TUS (70 mm depth)",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "left LGN"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro CTX-500, 4-element annular transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1400,
+    "isppa_w_cm2": 68,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": 690,
+    "isppa_w_cm2": 16.2,
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     4.875,
+     48.75,
+     487.5
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 12,
+    "protocol_description": "12 s trains at 10% duty cycle, PRF randomised trial by trial among 4.875, 48.75 and 487.5 Hz, with 5% linear ramps on the pulses at the two lower PRFs; synchronised with visual stimulus onset; eight 16-trial TUS blocks interleaved with no-TUS trials, depth 70 mm (LGN) or 30 mm (control)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Control-TUS (30 mm depth)",
+   "target": {
+    "terms": [
+     "white_matter",
+     "auditory_cortex"
+    ],
+    "label": "a more superficial control site in the auditory cortex and subcortical white matter"
+   },
+   "device": {
+    "family": "neurofus",
+    "manufacturer": "Sonic Concepts (sold by Brainbox)",
+    "model": "NeuroFUS Pro CTX-500, 4-element annular transducer"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 1400,
+    "isppa_w_cm2": 68,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     4.875,
+     48.75,
+     487.5
+    ],
+    "duty_cycle_pct": 10,
+    "sonication_duration_s": 12,
+    "protocol_description": "12 s trains at 10% duty cycle, PRF randomised trial by trial among 4.875, 48.75 and 487.5 Hz, with 5% linear ramps on the pulses at the two lower PRFs; synchronised with visual stimulus onset; eight 16-trial TUS blocks interleaved with no-TUS trials, depth 70 mm (LGN) or 30 mm (control)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Healthy participants (n=25, M=14, F=13) ages 18-55 (mean=33, range=22-58) were recruited from the research community and Stanford University paid participant pool.",
+   "exposures[0].fundamental_frequency_khz": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[0].device.manufacturer": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[0].device.model": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[0].free_field.pressure_kpa": "Free-water ultrasound spatial peak pulse averaged intensity (I<sub>SPPA</sub>) was set to 68 W/cm<sup>2</sup> (free-water acoustic pressure: 1.4 MPa)",
+   "exposures[0].free_field.isppa_w_cm2": "Free-water ultrasound spatial peak pulse averaged intensity (I<sub>SPPA</sub>) was set to 68 W/cm<sup>2</sup> (free-water acoustic pressure: 1.4 MPa)",
+   "exposures[0].timing.duty_cycle_pct": "Duty cycle (DC) was maintained at 10%. PRF was randomized on a trial-by-trial basis among 4.875 Hz, 48.75 Hz, and 487.5 Hz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Duty cycle (DC) was maintained at 10%. PRF was randomized on a trial-by-trial basis among 4.875 Hz, 48.75 Hz, and 487.5 Hz.",
+   "exposures[0].timing.sonication_duration_s": "Ultrasound was delivered in 12 second trains overlapping in time with the SSVEP eliciting stimuli. TUS was triggered by TTL pulse to start simultaneously with visual stimulus onset",
+   "exposures[1].fundamental_frequency_khz": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[1].device.manufacturer": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[1].device.model": "We used the NeuroFUS Pro CTX-500 system (supplier/support: BrainBox Ltd., Cardiff, UK; manufacturer: Sonic Concepts Inc., WA, USA) with a 500 kHz acoustic center frequency, 64mm spherical radius, 64mm aperture diameter, 4-element annular transducer.",
+   "exposures[1].free_field.pressure_kpa": "Free-water ultrasound spatial peak pulse averaged intensity (I<sub>SPPA</sub>) was set to 68 W/cm<sup>2</sup> (free-water acoustic pressure: 1.4 MPa)",
+   "exposures[1].free_field.isppa_w_cm2": "Free-water ultrasound spatial peak pulse averaged intensity (I<sub>SPPA</sub>) was set to 68 W/cm<sup>2</sup> (free-water acoustic pressure: 1.4 MPa)",
+   "exposures[1].timing.duty_cycle_pct": "Duty cycle (DC) was maintained at 10%. PRF was randomized on a trial-by-trial basis among 4.875 Hz, 48.75 Hz, and 487.5 Hz.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "Duty cycle (DC) was maintained at 10%. PRF was randomized on a trial-by-trial basis among 4.875 Hz, 48.75 Hz, and 487.5 Hz.",
+   "exposures[1].timing.sonication_duration_s": "Ultrasound was delivered in 12 second trains overlapping in time with the SSVEP eliciting stimuli. TUS was triggered by TTL pulse to start simultaneously with visual stimulus onset",
+   "exposures[0].in_situ.pressure_kpa": "Per BabelBrain simulations, the estimated in situ I<sub>SPPA</sub> was $1 6 . 2 { \\pm } 3 . 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (range 8.5-20.5), equivalent to a peak negative acoustic pressure of 0.69±0.33 MPa (range 0.5-0.78).",
+   "exposures[0].in_situ.isppa_w_cm2": "Per BabelBrain simulations, the estimated in situ I<sub>SPPA</sub> was $1 6 . 2 { \\pm } 3 . 6 \\mathsf { W } / \\mathsf { c m } ^ { 2 }$ (range 8.5-20.5), equivalent to a peak negative acoustic pressure of 0.69±0.33 MPa (range 0.5-0.78).",
+   "n_sessions_per_subject": "Participants were invited for two separate experimental sessions."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Text says n=25 and 'Twenty-five subjects were retained with 2 rejected', implying 27 enrolled; 25 recorded."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Trains stated as 12 s, but trial text also says 11 s trials and 10.667 s of TUS per 13.333 s trial."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Results give mean simulated in situ Isppa 16.2 W/cm2 (range 8.5-20.5) while the Discussion says about 8 W/cm2 on average at the target."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "0.69 +/- 0.33 MPa is a peak negative pressure, with range 0.5-0.78; the SD looks inconsistent with the range."
+   },
+   {
+    "field": "exposures[1].target.terms",
+    "reason": "Control site is described as auditory cortex and subcortical white matter at 30 mm depth; no separate dosimetry reported."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; duty cycle and PRF are given but no arithmetic done."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Mask-only no-TUS trials were also interleaved; whether the transducer was powered off is not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

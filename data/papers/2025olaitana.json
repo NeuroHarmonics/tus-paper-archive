@@ -1,0 +1,204 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025olaitana",
+ "doi": "10.1101/2025.10.26.684693",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 47,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "other",
+  "histology_molecular"
+ ],
+ "readout_other": "fast-scan cyclic voltammetry of electrically evoked dopamine in nucleus accumbens core; c-Fos, NeuN and GFAP immunofluorescence; H&E",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "8:16 Hz and 2:16 Hz PRF patterns reduced evoked NAcc dopamine release (about 58 % for 8:16 Hz in males); 5:50 Hz increased it by about 28 % in males, and 7:70 Hz increased it in females.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E staining revealed no overt cell death.",
+ "exposures": [
+  {
+   "label": "LIFU to prelimbic cortex, frequency-coupled PRF patterns",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "prelimbic cortex (PLC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus-ims",
+    "model": "XMS-310-B"
+   },
+   "fundamental_frequency_khz": 10000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     62.5,
+     35.7,
+     20,
+     14.29
+    ],
+    "pulse_repetition_frequency_hz": [
+     8,
+     2,
+     7,
+     5,
+     50
+    ],
+    "duty_cycle_pct": [
+     50,
+     12.5,
+     25,
+     10,
+     100
+    ],
+    "sonication_duration_s": 80,
+    "protocol_description": "Three successive 80 s LIFU trains separated by 30 minutes between electrically evoked dopamine measurements; PRF/duty cycle pairs 8 Hz/50 %, 2 Hz/12.5 %, 7 Hz/25 %, 5 Hz/10 %, 7 Hz/10 % and 50 Hz/100 % (gamma only). Table gives a pulse interval (PI) per pattern, not labelled as pulse duration."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "All animal procedures were conducted in compliance with the guidelines set forth by the Animal Care and Use Committee (ACUC) at the University of Virginia. A total of 37 male and 10 female Sprague Dawley rats (Charles River Laboratories, Wilmington, MA, USA), 8–10 weeks of age and weighing between 280 and 320 g, were used in this study, with five rats randomly assigned to each experimental group (sham, anatomical control, 8:16 Hz, 2:16 Hz, 7:28 Hz and 5:50 Hz groups).",
+   "exposures[0].fundamental_frequency_khz": "A 10 MHz miniature case immersion transducer (XMS-310-B; Olympus-ims, Waltham, MA) with a 2 mm element diameter and 6 mm focal length was used.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<table><tr><td rowspan=\"2\">Coupling Parameter</td><td rowspan=\"2\">Abbreviation</td><td rowspan=\"2\">PRF (Hz)</td><td rowspan=\"2\">Duty Cycle (DC)</td><td rowspan=\"2\">PRI (ms)</td><td rowspan=\"2\">PI (ms)</td><td>Expected</td></tr><tr><td>Impact</td></tr><tr><td>Theta-Beta (8:16 Hz)</td><td>BT</td><td>8</td><td>50%</td><td>125</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Delta-Beta (2:16 Hz)</td><td>BD</td><td>2</td><td>12.5%</td><td>500</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Theta-High Beta (7:28 Hz)</td><td>HBT</td><td>7</td><td>25%</td><td>142.86</td><td>35.7</td><td>Excitation</td></tr><tr><td>Theta-Gamma (5:50 Hz)</td><td>GT</td><td>5</td><td>10%</td><td>200</td><td>20</td><td>Excitation</td></tr><tr><td>Theta-High Gamma (7:70 Hz)</td><td>HGT</td><td>7</td><td>10%</td><td>142.86</td><td>14.29</td><td>Excitation</td></tr><tr><td>Gamma Only (50 Hz)</td><td></td><td>50</td><td>100%</td><td>20</td><td>0</td><td>Excitation</td></tr></table>",
+   "exposures[0].timing.duty_cycle_pct": "<table><tr><td rowspan=\"2\">Coupling Parameter</td><td rowspan=\"2\">Abbreviation</td><td rowspan=\"2\">PRF (Hz)</td><td rowspan=\"2\">Duty Cycle (DC)</td><td rowspan=\"2\">PRI (ms)</td><td rowspan=\"2\">PI (ms)</td><td>Expected</td></tr><tr><td>Impact</td></tr><tr><td>Theta-Beta (8:16 Hz)</td><td>BT</td><td>8</td><td>50%</td><td>125</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Delta-Beta (2:16 Hz)</td><td>BD</td><td>2</td><td>12.5%</td><td>500</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Theta-High Beta (7:28 Hz)</td><td>HBT</td><td>7</td><td>25%</td><td>142.86</td><td>35.7</td><td>Excitation</td></tr><tr><td>Theta-Gamma (5:50 Hz)</td><td>GT</td><td>5</td><td>10%</td><td>200</td><td>20</td><td>Excitation</td></tr><tr><td>Theta-High Gamma (7:70 Hz)</td><td>HGT</td><td>7</td><td>10%</td><td>142.86</td><td>14.29</td><td>Excitation</td></tr><tr><td>Gamma Only (50 Hz)</td><td></td><td>50</td><td>100%</td><td>20</td><td>0</td><td>Excitation</td></tr></table>",
+   "exposures[0].timing.sonication_duration_s": "The experimental arrangement—with the LIFU transducer aimed at the PLC and recording electrode in the NAcc—is described in detail in the methods section (Figure 1A). Three 80-second LIFU trains (8:16 Hz), each separated by 30 minutes, were applied between electrically stimulated dopamine release.",
+   "n_sessions_per_subject": "Representative FSCV color plots and concentration-time traces illustrate persistent augmentation of dopamine release across all three LIFU sessions (Fig. 3A).",
+   "exposures[0].timing.pulse_duration_ms": "<table><tr><td rowspan=\"2\">Coupling Parameter</td><td rowspan=\"2\">Abbreviation</td><td rowspan=\"2\">PRF (Hz)</td><td rowspan=\"2\">Duty Cycle (DC)</td><td rowspan=\"2\">PRI (ms)</td><td rowspan=\"2\">PI (ms)</td><td>Expected</td></tr><tr><td>Impact</td></tr><tr><td>Theta-Beta (8:16 Hz)</td><td>BT</td><td>8</td><td>50%</td><td>125</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Delta-Beta (2:16 Hz)</td><td>BD</td><td>2</td><td>12.5%</td><td>500</td><td>62.5</td><td>Inhibition</td></tr><tr><td>Theta-High Beta (7:28 Hz)</td><td>HBT</td><td>7</td><td>25%</td><td>142.86</td><td>35.7</td><td>Excitation</td></tr><tr><td>Theta-Gamma (5:50 Hz)</td><td>GT</td><td>5</td><td>10%</td><td>200</td><td>20</td><td>Excitation</td></tr><tr><td>Theta-High Gamma (7:70 Hz)</td><td>HGT</td><td>7</td><td>10%</td><td>142.86</td><td>14.29</td><td>Excitation</td></tr><tr><td>Gamma Only (50 Hz)</td><td></td><td>50</td><td>100%</td><td>20</td><td>0</td><td>Excitation</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Only a 'spatial average intensity of 13 W/cm2' is given; not recorded because it is not stated as Isppa or Ispta and no pressure is given."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Table 1 lists a pulse interval (PI) per pattern (e.g. 62.5 ms at 8 Hz, DC 50 %); not recorded as pulse duration."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle list holds the distinct table values: 50, 12.5, 25, 10 (two patterns) and 100 (50 Hz gamma only)."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "47 rats stated; group n in figure legends is 5 or 6."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Each animal received three trains in one experiment; session count not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "unresolvable",
+   "n_sessions_per_subject": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

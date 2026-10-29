@@ -1,0 +1,229 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021wangd",
+ "doi": "10.1109/tuffc.2020.2975001",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  14,
+  15
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "real-time place preference test; open field test; rat exposure test (freezing); H&E and Nissl staining",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LIFUS of the PAG produced place avoidance in the rtPPT, increased high-speed movement (flight) in the open field without anxiety-like changes, and increased freezing in the rat exposure test during ON periods.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and Nissl staining showed no tissue damage or hemorrhage; calculated temperature rise 0.002 C.",
+ "exposures": [
+  {
+   "label": "LIFUS of PAG, head-mounted 3.8 MHz transducer",
+   "target": {
+    "terms": [
+     "periaqueductal_gray"
+    ],
+    "label": "periaqueductal gray (PAG)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "in-house (Shenzhen Institutes of Advanced Technology)",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3800,
+   "free_field": {
+    "pressure_kpa": 136.0,
+    "isppa_w_cm2": 0.642,
+    "ispta_w_cm2": 0.321
+   },
+   "in_situ": {
+    "method": "measurement",
+    "reported_as": "single_value",
+    "pressure_kpa": 63.4,
+    "isppa_w_cm2": 0.14,
+    "ispta_w_cm2": 0.07
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "TBD 0.5 ms, PRF 1000 Hz, DC 50%; ultrasound delivered into the PAG each time the mouse crossed to the stimulation side (rtPPT), continuously over a 20-min open field session, and in 1-min OFF / 1-min ON cycles in the rat exposure test (three cycles). NTB and ISI are set on the function generator but values are not given in the text."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "A 3.8-MHz head-mounted ultrasound transducer with a small focus size",
+   "exposures[0].timing.pulse_duration_ms": "Ultrasound stimulus waveforms $( \\mathsf { P R F } = 1 0 0 0$ Hz, ${ \\mathsf { T B D } } = 0 . 5$ ms, $\\mathsf { D C } = 5 0 \\%",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Ultrasound stimulus waveforms $( \\mathsf { P R F } = 1 0 0 0$ Hz, ${ \\mathsf { T B D } } = 0 . 5$ ms, $\\mathsf { D C } = 5 0 \\%",
+   "exposures[0].timing.duty_cycle_pct": "Ultrasound stimulus waveforms $( \\mathsf { P R F } = 1 0 0 0$ Hz, ${ \\mathsf { T B D } } = 0 . 5$ ms, $\\mathsf { D C } = 5 0 \\%",
+   "exposures[0].free_field.pressure_kpa": "Fig. 1(c) displays the acoustic pressure field scanning with a peak negative pressure of 136.0 kPa [see Fig. 1(c)] and a spatial peak temporal average intensity $( I _ { \\mathrm { s p t a } } )$ of 321 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to the spatial peak pulse-averaged acoustic intensity $( I _ { \\mathrm { s p p a } } )$ of $6 4 2 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ .",
+   "exposures[0].free_field.isppa_w_cm2": "Fig. 1(c) displays the acoustic pressure field scanning with a peak negative pressure of 136.0 kPa [see Fig. 1(c)] and a spatial peak temporal average intensity $( I _ { \\mathrm { s p t a } } )$ of 321 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to the spatial peak pulse-averaged acoustic intensity $( I _ { \\mathrm { s p p a } } )$ of $6 4 2 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ .",
+   "exposures[0].free_field.ispta_w_cm2": "Fig. 1(c) displays the acoustic pressure field scanning with a peak negative pressure of 136.0 kPa [see Fig. 1(c)] and a spatial peak temporal average intensity $( I _ { \\mathrm { s p t a } } )$ of 321 $\\mathrm { m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to the spatial peak pulse-averaged acoustic intensity $( I _ { \\mathrm { s p p a } } )$ of $6 4 2 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 } )$ .",
+   "exposures[0].in_situ.pressure_kpa": "The peak negative pressure was 63.4 kPa [see Fig. 1(d)], and $I _ { \\mathrm { s p t a } }$ was $7 0 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to $I _ { \\mathrm { s p p a } }$ of 140 mW/cm<sup>2</sup>).",
+   "exposures[0].in_situ.isppa_w_cm2": "The peak negative pressure was 63.4 kPa [see Fig. 1(d)], and $I _ { \\mathrm { s p t a } }$ was $7 0 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to $I _ { \\mathrm { s p p a } }$ of 140 mW/cm<sup>2</sup>).",
+   "exposures[0].in_situ.ispta_w_cm2": "The peak negative pressure was 63.4 kPa [see Fig. 1(d)], and $I _ { \\mathrm { s p t a } }$ was $7 0 \\mathrm { \\ m W } / \\mathrm { c m } ^ { 2 }$ (corresponding to $I _ { \\mathrm { s p p a } }$ of 140 mW/cm<sup>2</sup>).",
+   "exposures[0].device.manufacturer": "was fabricated in house to precisely stimulate the free-moving mice",
+   "exposures[0].device.model": "was fabricated in house to precisely stimulate the free-moving mice",
+   "exposures[0].target.label": "according to the coordinates of the PAG: 0.0 mm lateral to the midline and 3.0 mm posterior to bregma",
+   "n_subjects": "In the OFT, mice in the LIFUS group spent a higher percentage of time moving at high speeds than mice in the sham group [sham group $( n ~ = ~ 1 3 ) \\colon 1 . 6 \\% \\pm 0 . 3 \\%$ LIFUS group $( n ~ = ~ 1 4 ) \\colon 4 . 4 \\% \\pm 0 . 6 \\% < 0 . 0 0 1$ unpaired t-test, Fig. 3(b)]."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Through-skull values were measured with a hydrophone in a water tank with an excised mouse skull in the path; treated as in_situ by measurement through skull, not measured in brain"
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Pressure given as peak negative pressure; intensities converted from mW/cm2 to W/cm2"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Stimulus train/burst duration not stated; protocol varies by assay and ISI/NTB values not in text"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration from the Fig. 1 legend (TBD = 0.5 ms), consistent with PRF 1000 Hz and DC 50%"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes only: rtPPT n=7, OFT sham 13 and LIFUS 14, RET n=15, histology 12 mice; overlap between assays unclear so no total given"
+   },
+   {
+    "field": "readouts",
+    "reason": "The paper's abstract states the transducer was held in place during behavioural tests in awake free-moving mice"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

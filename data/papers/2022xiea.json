@@ -1,0 +1,209 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "emg_mep"
+ ],
+ "readout_other": "LFP from tail motor cortex and tail EMG; time-frequency coherence (relative coherence area)",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Corticomuscular coherence between LFP and EMG increased after TUS in theta, alpha, beta and gamma bands, mainly theta and alpha within 0.4 s; effects varied with intensity and stimulation duration.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Maximum temperature rise was estimated by calculation (not measured) as about 4.8e-3 degC.",
+ "exposures": [
+  {
+   "label": "TUS of tail motor cortex, 500 kHz, Isppa and SD sweep",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "tail motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "v301-su"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     0.4,
+     0.6,
+     0.8,
+     0.95,
+     1.1
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": [
+     0.1,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.4
+    ],
+    "protocol_description": "30 trials per condition with a 4 s inter-trial interval; PRF 1 kHz, DC 50%; Isppa varied (0.4-1.1 W/cm2) at fixed SD, and SD varied (0.1-0.3 s) at Isppa 1.1 W/cm2."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.5
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2022xiea",
+ "doi": "10.1088/1741-2552/ac5c8b",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine BALB/c mice were used in the experiment (all male, body weights 20–25 g, Beijing Vital River Laboratory Animal Technology Co., Ltd, China).",
+   "exposures[0].fundamental_frequency_khz": "The FF, PRF, and DC of the ultrasound were set as 500 kHz, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The FF, PRF, and DC of the ultrasound were set as 500 kHz, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The FF, PRF, and DC of the ultrasound were set as 500 kHz, 1 kHz, and 50%, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The parameter variations of TUS were $I _ { \\mathrm { s p p a } }$ and SD, so the experimental data were divided into two groups: the group of $I _ { \\mathrm { s p p a } }$ included $0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 } , 0 . 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 } , 0 . 8 \\mathrm { W } \\mathrm { c m } ^ { - 2 } ;$ $0 . { \\dot { 9 } } 5 \\mathbf { W } \\mathbf { c m } ^ { - 2 }$ and $1 . 1 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , the group of SD included $0 . 1 s , 0 . 1 5 s , 0 . 2 s , 0 . 2 5 s .$ , and 0.3 s.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "the group of $I _ { \\mathrm { s p p a } }$ included $0 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 } , 0 . 6 \\mathrm { W } \\mathrm { c m } ^ { - 2 } , 0 . 8 \\mathrm { W } \\mathrm { c m } ^ { - 2 } ;$ $0 . { \\dot { 9 } } 5 \\mathbf { W } \\mathbf { c m } ^ { - 2 }$ and $1 . 1 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ , the group of SD included $0 . 1 s , 0 . 1 5 s , 0 . 2 s , 0 . 2 5 s .$ , and 0.3 s.",
+   "exposures[0].device.model": "Then, the signal was transmitted by an ultrasonic transducer (v301-su, Olympus, Japan).",
+   "exposures[0].device.manufacturer": "Then, the signal was transmitted by an ultrasonic transducer (v301-su, Olympus, Japan)."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Text states nine mice, but also that six were randomly selected as a sham group and nine were used in the TUS group; counts are inconsistent."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Isppa (W cm-2) given with no statement of whether water or in situ; unspecified domain."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Tone-burst duration is only shown symbolically in a figure legend; no number in text."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "SD values 0.1-0.3 s; figure 5 caption and one results sentence give SD = 0.4 s for the intensity sweep, inconsistent with the 0.1-0.3 s range."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham group 'without TUS'; mechanism not described."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

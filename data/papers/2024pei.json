@@ -1,0 +1,383 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024pei",
+ "doi": "10.1016/j.neuroimage.2024.120584",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J-Tg Thy1-GCaMP6f; D2.Cg-Tg Thy1-YFP-H)",
+ "conditions": [
+  "vascular_dementia"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  10,
+  10,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 7,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control",
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "ramped_pulses"
+ ],
+ "readouts": [
+  "behaviour",
+  "cellular_imaging",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Novel object texture discrimination; T-maze; two-photon calcium imaging of layer 5 pyramidal neurons; dendritic spine imaging; local field potential",
+ "readout_timing": "offline",
+ "anaesthesia": "not_reported",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Seven days of TUS improved memory behaviour in VD mice, increased barrel cortex pyramidal neuron calcium activity and spine formation, and reduced spine elimination; effects lasted 7 days after TUS but not 14 days, and a second TUS course after 28 days did not restore them.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS of the barrel cortex in VD mice",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "barrel cortex (BC)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU focused ultrasound probe"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": 1.33,
+    "ispta_w_cm2": 0.066
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1500,
+    "protocol_description": "50,000-cycle pulses at 1 MHz (5% duty cycle, 1 Hz PRF); stimulation daily for 7 consecutive days as three blocks of 25 min separated by 5 min breaks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "TUS of the visual cortex in VD mice (control site)",
+   "target": {
+    "terms": [
+     "primary_visual_cortex"
+    ],
+    "label": "visual cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus, USA",
+    "model": "V301-SU focused ultrasound probe"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 200,
+    "isppa_w_cm2": 1.33,
+    "ispta_w_cm2": 0.066
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1500,
+    "protocol_description": "50,000-cycle pulses at 1 MHz (5% duty cycle, 1 Hz PRF); stimulation daily for 7 consecutive days as three blocks of 25 min separated by 5 min breaks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[0].timing.pulse_duration_ms": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[0].timing.duty_cycle_pct": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[0].timing.sonication_duration_s": "Stimulation was performed at the same time every day, with breaks of 5 min, for a total of three groups of 25 min.",
+   "exposures[0].device.model": "focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA)",
+   "exposures[0].device.manufacturer": "focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA)",
+   "exposures[1].fundamental_frequency_khz": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[1].timing.pulse_duration_ms": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[1].timing.duty_cycle_pct": "The main parameters of the output ultrasonic wave were as follows: fundamental frequency = 1 MHz, number of fundamental $\\mathrm { c y c l e s } = 5 0 , 0 0 0$ , pulse repetition frequency = 1 Hz, duty cycle = $5 \\ \\% ,$ and stimulation time = 50 ms.",
+   "exposures[1].unspecified_domain.pressure_kpa": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "The ultrasound pressure was 0.2 MPa, and the corresponding spatial peak pulse average intensity $\\mathrm { ( I _ { s p p a } ) }$ and spatial peak time average $( \\mathrm { { I } } _ { \\mathrm { { s p t a } } } )$ values were $1 . 3 3 \\mathrm { W / c m ^ { 2 } }$ and 0.066 ${ \\mathsf { W } } / { \\mathsf { c m } } ^ { 2 }$ , respectively.",
+   "exposures[1].timing.sonication_duration_s": "Stimulation was performed at the same time every day, with breaks of 5 min, for a total of three groups of 25 min.",
+   "exposures[1].device.model": "focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA)",
+   "exposures[1].device.manufacturer": "focused ultrasound probe (V301-SU, focus, diameter: 25.4 mm, radius of curvature: 40 mm, Olympus, USA)",
+   "n_subjects": "These transgenic mice were divided into five groups (sham, VD, VD+TUS (visual cortex + TUS and barrel cortex + TUS), VD+Trapezoidal pulse) with 10 mice per group (five GCaMP6f and five Thy1-YFP-H).",
+   "n_sessions_per_subject": "The VD+TUS, and VD+Trapezoidal pulse groups underwent TUS stimulation for 7 consecutive days after establishing the ischemia model."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "50 mice enrolled in five groups of 10 (sham, VD, VD+TUS barrel and visual cortex, VD+trapezoidal); includes groups that received no ultrasound, and exposed total is not stated."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Seven consecutive days; each day had three 25 min blocks."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated as such; paper gives 50,000 cycles at 1 MHz and 'stimulation time = 50 ms', which with 5% DC at 1 Hz PRF matches a 50 ms pulse (resolved by arithmetic)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "'a total of three groups of 25 min' read as three 25 min blocks of repeated pulses; may alternatively mean 25 min in total."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.2 MPa given without stating water or in-brain; sound field was simulated in COMSOL but no in-brain values reported."
+   },
+   {
+    "field": "exposures[1].target",
+    "reason": "Visual cortex TUS (control site) described only in the limitations section, with the same parameters; results in a supplementary figure."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Trapezoidal-pulse VD+TUS group used to test for auditory effects, recorded as ramped_pulses."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham and VD groups received no ultrasound; visual cortex TUS served as an active control site."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice awake during imaging; state during sonication not stated."
+   },
+   {
+    "field": "readouts",
+    "reason": "Local field potential recording reported in the limitations section (supplementary figure)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,221 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025chena",
+ "doi": "10.1111/cns.70351",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (APP/PS1)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  6,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 6,
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "control_experiment"
+ ],
+ "readouts": [
+  "behaviour",
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "Morris water maze; Y-maze; CA1 LFP and spikes",
+ "readout_timing": "both",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Both 40 Hz and 200 Hz PRF TUS improved memory in APP/PS1 mice and increased CA1 gamma, ripple and SPW-R measures; effects differed by PRF and persisted days after stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS1 (40 Hz PRF) and TUS2 (200 Hz PRF) to CA1",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V302-SU"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 360,
+    "isppa_w_cm2": 4.3,
+    "ispta_w_cm2": 0.2172
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": [
+     40,
+     200
+    ],
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 10,
+    "protocol_description": "TUS1: 1 MHz, SD 10 s, PRF 40 Hz, DC 5%; TUS2: same with PRF 200 Hz. Total TUS time 1 h per day for 6 days, delivered to awake mice."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Eighteen APP/PS1 mice were randomly assigned to the AD (n = 6), AD+TUS1 (n = 6, 40 Hz ultrasound), and AD+TUS2 (n = 6, 200 Hz ultrasound) groups.",
+   "n_sessions_per_subject": "Two pulse repetition frequencies, corresponding to gamma (TUS1) and ripple (TUS2) oscillations, were applied for 1 h daily over 6 days to investigate TUS effects on neural activity and memory in AD mice (Figure S1B).",
+   "exposures[0].fundamental_frequency_khz": "TUS parameters were: TUS1: FF = 1 MHz, SD = 10 s, PRF = 40 Hz, DC = 5%; TUS2: FF = 1 MHz, SD = 10 s, PRF = 200 Hz, DC = 5%.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "TUS parameters were: TUS1: FF = 1 MHz, SD = 10 s, PRF = 40 Hz, DC = 5%; TUS2: FF = 1 MHz, SD = 10 s, PRF = 200 Hz, DC = 5%.",
+   "exposures[0].timing.duty_cycle_pct": "TUS parameters were: TUS1: FF = 1 MHz, SD = 10 s, PRF = 40 Hz, DC = 5%; TUS2: FF = 1 MHz, SD = 10 s, PRF = 200 Hz, DC = 5%.",
+   "exposures[0].timing.sonication_duration_s": "TUS parameters were: TUS1: FF = 1 MHz, SD = 10 s, PRF = 40 Hz, DC = 5%; TUS2: FF = 1 MHz, SD = 10 s, PRF = 200 Hz, DC = 5%.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The sound pressure in both TUS1 and TUS2 was 0.36 MPa, with Isppa at 4.3 W/cm [2] and Ispta at 217.2 mW/cm [2].",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The sound pressure in both TUS1 and TUS2 was 0.36 MPa, with Isppa at 4.3 W/cm [2] and Ispta at 217.2 mW/cm [2].",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The sound pressure in both TUS1 and TUS2 was 0.36 MPa, with Isppa at 4.3 W/cm [2] and Ispta at 217.2 mW/cm [2].",
+   "exposures[0].device.model": "In the TUS system, a signal from one function generator, modulated by another (AFG3022C, Tektronix, USA), was amplified by a linear RF power amplifier (E&I240L, ENI Inc., USA) and transmitted to the ultrasound transducer (V302-SU, Olympus, USA), generating ultrasound waves.",
+   "exposures[0].device.manufacturer": "In the TUS system, a signal from one function generator, modulated by another (AFG3022C, Tektronix, USA), was amplified by a linear RF power amplifier (E&I240L, ENI Inc., USA) and transmitted to the ultrasound transducer (V302-SU, Olympus, USA), generating ultrasound waves."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes only: AD+TUS1 n=6 and AD+TUS2 n=6 in each of two experiments (behaviour; behaviour plus LFP); statistics cite n = 12. Total exposed not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "0.36 MPa 'sound pressure', domain not stated; converted to kPa."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "217.2 mW/cm2 converted to W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "'SD = 10 s' interpreted as sonication duration; total TUS time 1 h."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Not stated; duty cycle and PRF given."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Untreated AD group serves as comparison; no sham sonication described."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "A separate experiment with other waveforms (Figure S10) addressed auditory confounds."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

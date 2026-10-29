@@ -1,0 +1,183 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026kop",
+ "doi": "10.64898/2026.09.27.754841",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 24,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "active_control_site"
+ ],
+ "auditory_control": [
+  "masking_sound",
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri",
+  "behaviour"
+ ],
+ "readout_other": "Concurrent TUS-fMRI (visually evoked BOLD in LGN and V1); MR-ARFI displacement; contrast decrement detection task; forced-choice blinding test",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "LGN-TUS increased visually evoked BOLD in the stimulated LGN and ipsilateral V1 relative to temporal-lobe control sonication, with the size of the effect scaling with MR-ARFI displacement but not with simulated intensity. No group-level behavioural effect.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LGN-TUS (left lateral geniculate nucleus), with temporal grey matter as active control site",
+   "target": {
+    "terms": [
+     "lateral_geniculate_nucleus"
+    ],
+    "label": "lateral geniculate nucleus of the thalamus (LGN)"
+   },
+   "device": {
+    "family": "igt_imasonic",
+    "manufacturer": "Imasonic (transducer); Image Guided Therapy (generator)",
+    "model": "64-element phased array transducer; IGT generator"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 50,
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 0.145,
+    "protocol_description": "A 145 ms continuous pulse with 7 ms linear ramping, delivered six times per 15-second block time-locked to contrast decrements (870 ms per block); TUS in 6/7 of the epochs after an unstimulated first epoch, characterised by the authors as an average PRF of 0.46 Hz. Two 10-minute scans."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Twenty-four healthy adults",
+   "n_sessions_per_subject": "The experiment was conducted in a single session.",
+   "exposures[0].fundamental_frequency_khz": "Stimulation was applied in an online approach at a fundamental frequency of 500 kHz",
+   "exposures[0].free_field.isppa_w_cm2": "a free-water spatial-peak pulse-average intensity (I ) of 50 W/cm",
+   "exposures[0].device.manufacturer": "Ultrasound stimulation was delivered using a 64-element phased array transducer (Imasonic SAS, Voray-sur-l’Ognon, France) driven by an IGT generator (Image Guided Therapy, Pessac, France)",
+   "exposures[0].device.model": "Ultrasound stimulation was delivered using a 64-element phased array transducer (Imasonic SAS, Voray-sur-l’Ognon, France) driven by an IGT generator (Image Guided Therapy, Pessac, France)",
+   "exposures[0].timing.sonication_duration_s": "a 145 ms continuous pulse with 7 ms linear ramping"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "MR-ARFI scans used a higher free-water Isppa of 75 W/cm2 with 7 ms pulses; not recorded as an exposure."
+   },
+   {
+    "field": "exposures[0].in_situ.method",
+    "reason": "Individualised k-Plan simulations were run but simulated in situ intensity values are not stated in the main text."
+   },
+   {
+    "field": "randomised",
+    "reason": "Paper says counterbalanced order and pseudorandomized blocks; no explicit random allocation statement."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Single uninterrupted 145 ms burst per trial treated as continuous; the average PRF of 0.46 Hz is given only as a description."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Masking white noise and a 4 kHz tone; blinding tested at end of session; the authors note the tone masked rather than matched the sound."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control was active TUS to left temporal grey matter plus a no-TUS baseline condition."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

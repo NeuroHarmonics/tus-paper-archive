@@ -1,0 +1,237 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022park",
+ "doi": "10.1016/j.cmpb.2022.107127",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 2,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "electrooculography (EOG) recorded anti-saccade error rate and latency",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Anti-saccade error rate fell with tFUS (about -10 %p in S1 and -16 %p in S2) with no significant change in latency; the authors interpret this as enhanced DLPFC-mediated inhibitory signalling from an excitatory effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Simulation-based acoustic and thermal safety assessment (temperature rise below 0.05 C); neither subject heard any sound or reported neurological or psychological side effects.",
+ "exposures": [
+  {
+   "label": "Left DLPFC tFUS",
+   "target": {
+    "terms": [
+     "dorsolateral_prefrontal_cortex"
+    ],
+    "label": "left DLPFC"
+   },
+   "device": {
+    "family": "ultran",
+    "manufacturer": "Ultran Group, USA",
+    "model": "GPS 200"
+   },
+   "fundamental_frequency_khz": 200,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     445,
+     452
+    ],
+    "isppa_w_cm2": [
+     6.686,
+     6.912
+    ],
+    "ispta_w_cm2": [
+     2.407,
+     2.488
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": [
+     13.7,
+     17.1
+    ],
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": 360,
+    "duty_cycle_pct": 36,
+    "sonication_duration_s": 0.5,
+    "protocol_description": "tFUS to the left DLPFC was randomly applied once in every set of four anti-saccade trials, starting 200 ms before saccade target onset and lasting 500 ms; no consecutive stimulation trials."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "first",
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 36.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "While human participants (n 2) were performing AS tasks, tFUS stimulations were randomly applied to the left DLPFC right after the fixation target disappeared.",
+   "exposures[0].timing.pulse_duration_ms": "Two function generators (Agilent 33210A, Keysight Technologies Inc., USA) and a class-A power amplifier (240L, ENI Inc., Rochester, NY) were used to drive the tFUS transducer with the following pulsing protocol: sonication duration (SD) of 500 ms, pulserepetition frequency (PRF) of 360 Hz and tone-burst duration (TBD) of 1 ms (i.e., a duty cycle of 36 %) (Fig.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Two function generators (Agilent 33210A, Keysight Technologies Inc., USA) and a class-A power amplifier (240L, ENI Inc., Rochester, NY) were used to drive the tFUS transducer with the following pulsing protocol: sonication duration (SD) of 500 ms, pulserepetition frequency (PRF) of 360 Hz and tone-burst duration (TBD) of 1 ms (i.e., a duty cycle of 36 %) (Fig.",
+   "exposures[0].timing.duty_cycle_pct": "Two function generators (Agilent 33210A, Keysight Technologies Inc., USA) and a class-A power amplifier (240L, ENI Inc., Rochester, NY) were used to drive the tFUS transducer with the following pulsing protocol: sonication duration (SD) of 500 ms, pulserepetition frequency (PRF) of 360 Hz and tone-burst duration (TBD) of 1 ms (i.e., a duty cycle of 36 %) (Fig.",
+   "exposures[0].timing.sonication_duration_s": "Two function generators (Agilent 33210A, Keysight Technologies Inc., USA) and a class-A power amplifier (240L, ENI Inc., Rochester, NY) were used to drive the tFUS transducer with the following pulsing protocol: sonication duration (SD) of 500 ms, pulserepetition frequency (PRF) of 360 Hz and tone-burst duration (TBD) of 1 ms (i.e., a duty cycle of 36 %) (Fig.",
+   "exposures[0].fundamental_frequency_khz": "A single-element bowl-shaped transducer (GPS 200, Ultran Group, USA) with a fundamental frequency (FF) of 200 kHz, an aperture size of 65 mm, a radius of curvature (ROC) of 71 mm, and an acoustic focal length of 55.2 mm was used in this study.",
+   "exposures[0].device.manufacturer": "A single-element bowl-shaped transducer (GPS 200, Ultran Group, USA) with a fundamental frequency (FF) of 200 kHz, an aperture size of 65 mm, a radius of curvature (ROC) of 71 mm, and an acoustic focal length of 55.2 mm was used in this study.",
+   "exposures[0].device.model": "A single-element bowl-shaped transducer (GPS 200, Ultran Group, USA) with a fundamental frequency (FF) of 200 kHz, an aperture size of 65 mm, a radius of curvature (ROC) of 71 mm, and an acoustic focal length of 55.2 mm was used in this study.",
+   "exposures[0].in_situ.pressure_kpa": "<tr><td>Pressure  $\\left( \\mathrm { M P a } \\right)$ </td><td>0.452</td><td>0.445</td></tr>",
+   "exposures[0].in_situ.isppa_w_cm2": "<tr><td> $\\mathrm { I } _ { \\mathrm { s p p a } } \\ \\mathrm { ( W / c m ^ { 2 } ) }$ </td><td>6.912</td><td>6.686</td></tr>",
+   "exposures[0].in_situ.ispta_w_cm2": "<tr><td> $\\mathrm { I } _ { \\mathrm { s p t a } } \\ \\mathrm { ( W / c m } ^ { 2 } \\mathrm { ) }$ </td><td>2.488</td><td>2.407</td></tr>",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "As a result, the spatial-peak pulse-average intensities $( \\mathrm { I } _ { \\mathsf { S p p a } } )$ were 13.7 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for S1 and 17.1 $\\mathsf { W } / \\mathsf { c m } ^ { 2 }$ for S2, and the corresponding mechanical indices (MI) were 1.4 and 1.6, respectively."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Text (Section 2.4) gives Isppa 13.7 and 17.1 W/cm2 and in-situ Ispta 4.9 and 6.2 W/cm2, whereas Table II simulation results give Isppa 6.912/6.686 and Ispta 2.488/2.407; Table II values recorded."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Text and Table II disagree on Ispta (see Isppa flag)."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Table II gives 0.452 and 0.445 MPa for S1 and S2; recorded as the range [445, 452] kPa across the two subjects."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Subjects were instructed to report any audible or tactile sensation during the trials; none did. Not one of the listed vocabulary terms."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Control trials were interleaved trials without stimulation; no sham sonication was described."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Abstract states n 2 (symbol lost in conversion); methods say two male subjects."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.ispta_w_cm2": "first",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second"
+  }
+ }
+}

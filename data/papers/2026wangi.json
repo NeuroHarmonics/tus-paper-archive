@@ -1,0 +1,219 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026wangi",
+ "doi": "10.1186/s40478-026-02344-5",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (B6-Tg alpha-synuclein A53T)",
+ "conditions": [
+  "parkinsons_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  10
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": [
+  1,
+  7
+ ],
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "STN and M1 LFP (theta/beta power, PAC, STN-M1 correlation); M1 single-unit firing; open field; rotarod; histology for tissue damage",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "STN-targeted TUS reduced theta and beta power and theta-beta PAC in STN and M1, lowered STN-M1 LFP correlation and M1 firing rates, and improved open-field and rotarod performance; the effect after 7 days persisted to Day 14 and weakened over time.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Histological analysis 7 days after stimulation with the same parameters showed no tissue damage in the STN or adjacent regions; temperature rise calculated as about 0.02 C.",
+ "exposures": [
+  {
+   "label": "TUS of left STN",
+   "target": {
+    "terms": [
+     "subthalamic_nucleus"
+    ],
+    "label": "left STN"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 390,
+    "isppa_w_cm2": 5.1,
+    "ispta_w_cm2": 0.255
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "500 kHz, PRF 1 kHz, duty cycle 5%, 'stimulation duration' 50 ms, total stimulation time 30 min per session, under 0.6% isoflurane. One session before testing on Day 1 (part 1) or 30 min on 7 consecutive days with testing on Days 7 and 14 (part 2)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.05
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Each group had 8 animals in the first part and 10 animals in the second part.",
+   "n_sessions_per_subject": "The experiments were divided into two parts: one with a single-day TUS and the other with a consecutive 7-day TUS.",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency, pulsed repetition frequency, duty cycle, and stimulation duration were 500  kHz, 1  kHz, 5%, and 50  ms, respectively, with a total stimulation time of 30  min per TUS session.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency, pulsed repetition frequency, duty cycle, and stimulation duration were 500  kHz, 1  kHz, 5%, and 50  ms, respectively, with a total stimulation time of 30  min per TUS session.",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency, pulsed repetition frequency, duty cycle, and stimulation duration were 500  kHz, 1  kHz, 5%, and 50  ms, respectively, with a total stimulation time of 30  min per TUS session.",
+   "exposures[0].timing.sonication_duration_s": "The fundamental frequency, pulsed repetition frequency, duty cycle, and stimulation duration were 500  kHz, 1  kHz, 5%, and 50  ms, respectively, with a total stimulation time of 30  min per TUS session.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The maximum sound pressure was 0.39 MPa, with a corresponding I<sub>sppa</sub> of 5.1",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "I<sub>sppa</sub> of 5.1 $\\bar { \\mathrm { W } } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { { s p t a } }$ of 255 mW/cm<sup>2</sup>.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "I<sub>sppa</sub> of 5.1 $\\bar { \\mathrm { W } } / \\mathrm { c m } ^ { 2 }$ and $\\mathrm { I } _ { { s p t a } }$ of 255 mW/cm<sup>2</sup>.",
+   "exposures[0].device.manufacturer": "A transducer (V301-SU, Olympus, USA) with the nominal element size of 1 inch was employed for the TUS procedure.",
+   "exposures[0].device.model": "A transducer (V301-SU, Olympus, USA) with the nominal element size of 1 inch was employed for the TUS procedure."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes of the alpha-syn + TUS group in part 1 (8) and part 2 (10); 42 WT and 132 alpha-syn mice were used overall, most not exposed to ultrasound."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "'Stimulation duration' of 50 ms is stated alongside a 1 kHz PRF and 5% duty cycle; 50 ms is incompatible with a 1 ms period, so the pulse duration is left not_reported."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "1 kHz PRF as stated, which looks inconsistent with the 50 ms 'stimulation duration'; recorded as written."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Maximum sound pressure and intensities are given without a stated domain; Ispta 255 mW/cm2 recorded as 0.255 W/cm2."
+   },
+   {
+    "field": "exposures[0].target.label",
+    "reason": "Target STN recorded as left STN; the beam was angled at 30 degrees to reach it."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "disagree"
+  },
+  "tiebreak": {
+   "exposures[0].timing.sonication_duration_s": "second"
+  }
+ }
+}

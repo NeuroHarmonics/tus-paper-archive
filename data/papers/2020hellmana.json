@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020hellmana",
+ "doi": "10.1016/j.neuroscience.2020.01.016",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "other",
+  "histology_molecular"
+ ],
+ "readout_other": "Von Frey filaments; hot plate test; common peroneal nerve sensory nerve action potential latency and amplitude; H&E and FluoroJade-B staining of L5 DRG",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "External liFUS at the L5 DRG raised mechanical and thermal nociceptive thresholds in CPNI rats at 24 h and transiently shortened SNAP latency (up to about 30 min) in both CPNI and sham-CPNI rats, with no change in SNAP amplitude.",
+ "adverse_events": "none_observed",
+ "safety_notes": "H&E and FluoroJade staining of L5 DRG 24 h after liFUS showed no pyknosis, oedema or significant neuronal degeneration.",
+ "exposures": [
+  {
+   "label": "external liFUS to L5 DRG",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "L5 dorsal root ganglion (DRG)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Acoustic Medical Systems",
+    "model": "TheraVision ultrasound system and ultrasonic therapy transducer probe"
+   },
+   "fundamental_frequency_khz": 11000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 13,
+    "pulse_repetition_frequency_hz": 38,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "liFUS was administered at 8 W for 3 min with 11 MHz pulsed at 38 Hz with a period of 90 ns, and a pulse width of 13 ms. SNAP recordings occurred concurrently with liFUS or sham treatment; behavioural testing repeated 24 h later."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 49.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "(B) The change in post-surgical VFF score 24 h after liFUS treatment shown for the four cohorts (CPNI liFUS $n = 8 ;$ CPNI shamliFUS $n = 6 ;$ sham CPNI liFUS $n = 5 ;$ sham CPNI shamliFUS $n = 4 )$ .",
+   "exposures[0].fundamental_frequency_khz": "Delivered pulsed liFUS at 8 W for 3 min with 11 MHz pulsed at 38 Hz with period of 90 ns, and pulse width of 13 ms.",
+   "exposures[0].timing.pulse_duration_ms": "Delivered pulsed liFUS at 8 W for 3 min with 11 MHz pulsed at 38 Hz with period of 90 ns, and pulse width of 13 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Delivered pulsed liFUS at 8 W for 3 min with 11 MHz pulsed at 38 Hz with period of 90 ns, and pulse width of 13 ms.",
+   "exposures[0].timing.sonication_duration_s": "Delivered pulsed liFUS at 8 W for 3 min with 11 MHz pulsed at 38 Hz with period of 90 ns, and pulse width of 13 ms.",
+   "exposures[0].device.manufacturer": "A TheraVision ultrasound system was used to drive the ultrasonic therapy transducer probe, which were both created by Acoustic Medical Systems (Savoye, IL, USA), for liFUS treatment.",
+   "exposures[0].device.model": "A TheraVision ultrasound system was used to drive the ultrasonic therapy transducer probe, which were both created by Acoustic Medical Systems (Savoye, IL, USA), for liFUS treatment."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text gives a 13 ms pulse width and a 38 Hz PRF together with a 'period of 90 ns'; the three are not mutually consistent. Recorded as written."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Total never stated; group sizes from the Fig. 3 legend (CPNI liFUS 8, CPNI shamliFUS 6, sham CPNI liFUS 5, sham CPNI shamliFUS 4). Fig. 5 legend gives 13 CPNI and 9 sham animals, and the text gives n=12 and n=8, so counts differ between places."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Paper gives power (8 W) only; no pressure or intensity."
+   },
+   {
+    "field": "exposures[0].target",
+    "reason": "DRG treated percutaneously using external landmarks; a peripheral target, not CNS."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

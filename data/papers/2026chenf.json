@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026chenf",
+ "doi": "10.1016/j.ultrasmedbio.2026.05.020",
+ "model_system": [
+  "large_animal"
+ ],
+ "species": "rabbit (New Zealand White)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 27,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Schirmer tear test (wetted length); H&E staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Tear secretion increased after AEN stimulation in all groups (change 3.5 to 8.0 mm); largest at low gain with CW or 75 % DC, smaller at high gain.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Following ultrasound stimulation of the anterior ethmoidal nerve, the target regions (speci<sup>fi</sup>cally the medial orbit and upper nasal cavity) of all subject animals were subjected to meticulous macroscopic inspection. Gross examination revealed no signs of tissue edema, erythema, or visible in<sup>fl</sup>ammatory reactions.",
+ "exposures": [
+  {
+   "label": "4 MHz focused US over the lateral nasal region targeting the anterior ethmoidal nerve",
+   "target": {
+    "terms": [
+     "peripheral_nerve"
+    ],
+    "label": "anterior ethmoidal nerve (AEN)"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "custom-designed single-element spherical focused transducer, 12 mm aperture"
+   },
+   "fundamental_frequency_khz": 4000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     0.5,
+     0.75
+    ],
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": [
+     50,
+     75,
+     100
+    ],
+    "sonication_duration_s": 30,
+    "protocol_description": "PW at PRI 1 ms with 50 % or 75 % DC (0.5 or 0.75 ms pulses), or CW; three amplifier gain levels (26, 28, 30 dB) at 0.9 Vpp input; one 30-s stimulation per animal-condition followed by Schirmer test 5 min later."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "To investigate the effects of ultrasonic AEN stimulation on tear secretion, the animals were randomly assigned to an experimental cohort (n = 27) and a control group (n = 3).",
+   "exposures[0].fundamental_frequency_khz": "The system utilized a custom-designed single-element spherical focused ultrasound transducer operating at a frequency of 4 MHz to achieve high-precision acoustic energy focusing.",
+   "exposures[0].timing.pulse_duration_ms": "With the pulse repetition interval (PRI) fixed at 1 ms, the corresponding pulse widths were 0.5 ms and 0.75 ms, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "(a) Schematic of the 1 kHz Pulse Repetition Frequency (PRF) timing, corresponding to a Pulse Repetition Interval (PRI) of 1 ms; (b) Pulsed Wave (PW) signal with a 50% duty cycle.",
+   "exposures[0].timing.duty_cycle_pct": "Speci<sup>fi</sup>cally, two distinct duty cycles (DC) were selected: 50% and 75%. With the pulse repetition interval (PRI) fixed at 1 ms, the corresponding pulse widths were 0.5 ms and 0.75 ms, respectively. Precise regulation of the DC served as a critical mechanism for controlling the average acoustic power and temperature rise transmitted to the tissue. This regulation was paramount for ensuring effective stimulation while strictly adhering to safety protocols to prevent any tissue thermal or mechanical damage. In contrast, the CW mode corresponded to a 100% duty cycle",
+   "exposures[0].timing.sonication_duration_s": "The experimental apparatus housing the transducer was positioned perpendicularly against the lateral nasal region on one side, maintaining stable contact, and ultrasound stimulation was administered for a duration of 30 s."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "30 rabbits total: 27 experimental (subgroups of about 6) and 3 sham; only the 27 were sonicated."
+   },
+   {
+    "field": "exposures[0].free_field",
+    "reason": "Hydrophone calibration was done but no pressure or intensity values are stated in the text; pressure levels are given only as amplifier gain (26, 28, 30 dB)."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Sham kept the power amplifier on 'to maintain consistent environmental noise'; no auditory control for the ultrasound itself described."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Only topical ocular anaesthesia was applied; recorded as awake."
+   },
+   {
+    "field": "conditions",
+    "reason": "No dry eye model is described; the animals appear to be normal rabbits with DED named as the clinical target."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse widths 0.5 and 0.75 ms stated for the PW modes; CW has none."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

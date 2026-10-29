@@ -1,0 +1,433 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025lopez",
+ "doi": "10.1038/s41598-025-25330-8",
+ "model_system": [
+  "rodent",
+  "large_animal"
+ ],
+ "species": "rat (Sprague-Dawley); pig (Yorkshire)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  1
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "autonomic_physiology",
+  "histology_molecular"
+ ],
+ "readout_other": "Mean arterial pressure from femoral arterial catheter; heart-rate variability (Poincare plots); H&E histology of spinal cord",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "bidirectional",
+ "direction_notes": "MAP decreased with lower thoracic stimulation (mostly 30 s periods) and increased with lumbosacral stimulation; 65% of pig stimulations produced no change in blood pressure.",
+ "adverse_events": "observed",
+ "safety_notes": "In the pig, lower-intensity stimulation left the cord intact with mild vessel dilation, while higher-intensity stimulation produced subarachnoid haemorrhage, vessel dilatation and degeneration with ablative changes. Long-term safety not explored.",
+ "exposures": [
+  {
+   "label": "Lower thoracic spinal cord (T11-T13), rat and pig",
+   "target": {
+    "terms": [
+     "thoracic_spinal_cord"
+    ],
+    "label": "lower thoracic spinal cord (T11-T13)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 180,
+    "isppa_w_cm2": 1.19,
+    "ispta_w_cm2": [
+     0.01,
+     0.06,
+     0.119,
+     0.12,
+     0.18,
+     0.24,
+     0.3,
+     0.6,
+     1.19
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": [
+     1,
+     2000
+    ],
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     1,
+     5,
+     10,
+     15,
+     20,
+     25,
+     50,
+     100
+    ],
+    "sonication_duration_s": [
+     15,
+     30,
+     60,
+     90
+    ],
+    "protocol_description": "Parameters varied per stimulation: amplitude (100-500 mVpp), stimulation period (15, 30, 60 or 90 s), duty cycle (1-100%) and pulse duration (1 or 2000 ms; listed as 0 at 100% duty cycle). Stimulation periods alternated with washout periods over several hours per rat, order randomised within each rat. The single pig received 100-500 mVpp at 1-100% duty cycle (LIFU 100-250 mVpp, 1-30%; HIFU 500 mVpp, 50-100%) at upper and lower thoracic levels."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  },
+  {
+   "label": "Lumbosacral spinal cord (L5-S1), rat",
+   "target": {
+    "terms": [
+     "lumbar_spinal_cord"
+    ],
+    "label": "lumbosacral spinal cord (L5-S1)"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-107"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": 180,
+    "isppa_w_cm2": 1.19,
+    "ispta_w_cm2": [
+     0.01,
+     0.06,
+     0.12,
+     0.18,
+     0.24,
+     0.3
+    ]
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 1,
+    "pulse_repetition_frequency_hz": "not_reported",
+    "duty_cycle_pct": [
+     1,
+     5,
+     10,
+     15,
+     20,
+     25
+    ],
+    "sonication_duration_s": [
+     30,
+     60,
+     90
+    ],
+    "protocol_description": "250 mVpp at stimulation periods of 30, 60 or 90 s with duty cycle 1-25% and 1 ms pulse duration (Table 5); stimulation periods alternated with washout periods over several hours per rat, order randomised within each rat."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_repetition_frequency_hz"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "H-107 focused ultrasound transducer (center frequency: 500 kHz)",
+   "exposures[0].device.manufacturer": "alignment of the focal point of the H-107 FUS probe with a central aperture (Sonic Concepts Inc.)",
+   "exposures[0].device.model": "alignment of the focal point of the H-107 FUS probe with a central aperture (Sonic Concepts Inc.)",
+   "exposures[0].free_field.isppa_w_cm2": "of 1.19 W/cm<sup>2</sup> and 0.26 respectively (Table 1)",
+   "exposures[0].free_field.pressure_kpa": "<td rowspan=1 colspan=1>Peak negative pressure (PNP)</td><td rowspan=1 colspan=1>-0.18 MPa</td>",
+   "exposures[0].timing.sonication_duration_s": "FUS stimulation period can span 15 to 90 s.",
+   "exposures[1].fundamental_frequency_khz": "H-107 focused ultrasound transducer (center frequency: 500 kHz)",
+   "exposures[1].device.manufacturer": "alignment of the focal point of the H-107 FUS probe with a central aperture (Sonic Concepts Inc.)",
+   "exposures[1].device.model": "alignment of the focal point of the H-107 FUS probe with a central aperture (Sonic Concepts Inc.)",
+   "exposures[1].free_field.isppa_w_cm2": "of 1.19 W/cm<sup>2</sup> and 0.26 respectively (Table 1)",
+   "exposures[1].free_field.pressure_kpa": "<td rowspan=1 colspan=1>Peak negative pressure (PNP)</td><td rowspan=1 colspan=1>-0.18 MPa</td>",
+   "exposures[1].timing.sonication_duration_s": "FUS stimulation period can span 15 to 90 s.",
+   "exposures[0].timing.duty_cycle_pct": "LIFU stimulations were classified as those with duty cycles below 50%. Only FUS stimulations at 100% duty cycle yielded",
+   "exposures[1].timing.duty_cycle_pct": "<tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.03</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>-9.75</td><td rowspan=1 colspan=1>5.14</td></tr>",
+   "exposures[0].timing.pulse_duration_ms": "<tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2000</td><td rowspan=1 colspan=1>-0.12</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>9.17</td><td rowspan=1 colspan=1>5.98</td></tr>",
+   "exposures[1].timing.pulse_duration_ms": "<tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.03</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>-9.75</td><td rowspan=1 colspan=1>5.14</td></tr>",
+   "n_subjects": "Eight female Sprague Dawley rats (11 weeks, Charles River Laboratories) and 1 male Yorkshire pig (70–75 kg, Oak Hill Genetics) were used for this study.",
+   "exposures[0].free_field.ispta_w_cm2": "<table><tr><td rowspan=1 colspan=1>Amplitude (mVpp)</td><td rowspan=1 colspan=1>Stimulation period(sec)</td><td rowspan=1 colspan=1>Duty cycle (%)</td><td rowspan=1 colspan=1>Pulse duration(msec)</td><td rowspan=1 colspan=1>Mean change in MAP(mmHg/sec)</td><td rowspan=1 colspan=1> $\\mathbf { I } _ { \\mathrm { s p t a } } ^ { } \\left( \\mathbf { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td rowspan=1 colspan=1>Mean change inMAP during FUS(mmHg)</td><td rowspan=1 colspan=1>Maximumdecreasein MAPduringFUS(mmHg)</td></tr><tr><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>-4.08</td><td rowspan=1 colspan=1>-22.37</td></tr><tr><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.00</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-1.02</td><td rowspan=1 colspan=1>-12.22</td></tr><tr><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.13</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>3.34</td><td rowspan=1 colspan=1>-12.51</td></tr><tr><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.14</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-3.30</td><td rowspan=1 colspan=1>-25.29</td></tr><tr><td rowspan=1 colspan=1>150</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.10</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-9.21</td><td rowspan=1 colspan=1>-26.53</td></tr><tr><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.53</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>1.58</td><td rowspan=1 colspan=1>-10.98</td></tr><tr><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.19</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-24.94</td><td rowspan=1 colspan=1>-34.32</td></tr><tr><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.44</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-16.77</td><td rowspan=1 colspan=1>-52.24</td></tr><tr><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.09</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-4.44</td><td rowspan=1 colspan=1>-4.45</td></tr><tr><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.37</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-32.85</td><td rowspan=1 colspan=1>-46.40</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2000</td><td rowspan=1 colspan=1>-0.12</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>9.17</td><td rowspan=1 colspan=1>5.98</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.42</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-15.42</td><td rowspan=1 colspan=1>-37.66</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.01</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-8.20</td><td rowspan=1 colspan=1>-20.98</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.18</td><td rowspan=1 colspan=1>0.119</td><td rowspan=1 colspan=1>-14.87</td><td rowspan=1 colspan=1>-38.35</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.03</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>3.82</td><td rowspan=1 colspan=1>-9.17</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.70</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>-16.12</td><td rowspan=1 colspan=1>-34.32</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.69</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>-33.28</td><td rowspan=1 colspan=1>-63.77</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-1.20</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-37.17</td><td rowspan=1 colspan=1>-50.99</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2000</td><td rowspan=1 colspan=1>-0.11</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-4.79</td><td rowspan=1 colspan=1>-8.34</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.63</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-16.36</td><td rowspan=1 colspan=1>-39.88</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.02</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-26.61</td><td rowspan=1 colspan=1>-35.43</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.28</td><td rowspan=1 colspan=1>0.12</td><td rowspan=1 colspan=1>-25.56</td><td rowspan=1 colspan=1>-25.56</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.23</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>-35.15</td><td rowspan=1 colspan=1>-39.60</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.37</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>-35.64</td><td rowspan=1 colspan=1>-35.71</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.57</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>-49.05</td><td rowspan=1 colspan=1>-52.38</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.48</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-38.69</td><td rowspan=1 colspan=1>-59.46</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>50</td><td rowspan=1 colspan=1>2000</td><td rowspan=1 colspan=1>-0.00</td><td rowspan=1 colspan=1>0.60</td><td rowspan=1 colspan=1>-4.03</td><td rowspan=1 colspan=1>-12.50</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.32</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-19.15</td><td rowspan=1 colspan=1>-44.19</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.01</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>13.55</td><td rowspan=1 colspan=1>4.86</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.08</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-16.31</td><td rowspan=1 colspan=1>-40.99</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.23</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>-20.01</td><td rowspan=1 colspan=1>-25.29</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.21</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>-20.01</td><td rowspan=1 colspan=1>-38.07</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.08</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>5.07</td><td rowspan=1 colspan=1>3.62</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1>0</td><td rowspan=1 colspan=1>-0.08</td><td rowspan=1 colspan=1>1.19</td><td rowspan=1 colspan=1>-13.69</td><td rowspan=1 colspan=1>-24.60</td></tr><tr><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.06</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>14.31</td><td rowspan=1 colspan=1>7.50</td></tr><tr><td rowspan=1 colspan=1>500</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.30</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-35.29</td><td rowspan=1 colspan=1>-35.29</td></tr></table>",
+   "exposures[1].free_field.ispta_w_cm2": "<table><tr><td rowspan=1 colspan=1>Amplitude (mVpp)</td><td rowspan=1 colspan=1>Stimulation period(sec)</td><td rowspan=1 colspan=1>Duty cycle (%)</td><td rowspan=1 colspan=1>Pulse duration(msec)</td><td rowspan=1 colspan=1>Mean change in MAP(mmHg/sec)</td><td rowspan=1 colspan=1> $\\mathbf { I } _ { \\mathrm { s p t a } } ^ { } \\left( \\mathbf { W } / \\mathrm { c m } ^ { 2 } \\right)$ </td><td rowspan=1 colspan=1>Mean change inMAP during FUS(mmHg)</td><td rowspan=1 colspan=1>Maximumincreasein MAPduringFUS(mmHg)</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.03</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>-9.75</td><td rowspan=1 colspan=1>5.14</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.00</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>7.52</td><td rowspan=1 colspan=1>57.94</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.03</td><td rowspan=1 colspan=1>0.12</td><td rowspan=1 colspan=1>7.11</td><td rowspan=1 colspan=1>38.76</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.01</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>-6.89</td><td rowspan=1 colspan=1>18.89</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.02</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>-5.42</td><td rowspan=1 colspan=1>5.28</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.14</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>-18.76</td><td rowspan=1 colspan=1>-18.76</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.09</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>6.81</td><td rowspan=1 colspan=1>43.77</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.01</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-8.09</td><td rowspan=1 colspan=1>24.59</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.03</td><td rowspan=1 colspan=1>0.12</td><td rowspan=1 colspan=1>-10.00</td><td rowspan=1 colspan=1>3.89</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.02</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>3.61</td><td rowspan=1 colspan=1>49.60</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.05</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>4.38</td><td rowspan=1 colspan=1>37.38</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>60</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>16.67</td><td rowspan=1 colspan=1>16.67</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>0.59</td><td rowspan=1 colspan=1>26.12</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.00</td><td rowspan=1 colspan=1>0.06</td><td rowspan=1 colspan=1>-9.20</td><td rowspan=1 colspan=1>6.39</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.01</td><td rowspan=1 colspan=1>0.12</td><td rowspan=1 colspan=1>0.10</td><td rowspan=1 colspan=1>39.18</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.00</td><td rowspan=1 colspan=1>0.18</td><td rowspan=1 colspan=1>10.34</td><td rowspan=1 colspan=1>25.29</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>0.01</td><td rowspan=1 colspan=1>0.24</td><td rowspan=1 colspan=1>-15.63</td><td rowspan=1 colspan=1>-5.70</td></tr><tr><td rowspan=1 colspan=1>250</td><td rowspan=1 colspan=1>90</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>-0.03</td><td rowspan=1 colspan=1>0.30</td><td rowspan=1 colspan=1>-4.10</td><td rowspan=1 colspan=1>2.09</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Table 4 lists pulse durations of 0 (100% duty cycle), 1 and 2000 ms; at 1 ms pulses the stated duty cycles imply PRFs from 10 to 500 Hz, and 2000 ms at 50% duty cycle implies 0.25 Hz. No PRF is stated; the quote shows only one row of a sweep."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF not stated anywhere; only duty cycle and pulse duration are given."
+   },
+   {
+    "field": "exposures[1].timing.pulse_repetition_frequency_hz",
+    "reason": "PRF not stated anywhere."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "List of duty cycles read from Table 4; the quote is a sentence naming only 50% and 100%."
+   },
+   {
+    "field": "exposures[1].timing.duty_cycle_pct",
+    "reason": "List of duty cycles read from Table 5; the quote is one table row only."
+   },
+   {
+    "field": "exposures[1].timing.sonication_duration_s",
+    "reason": "Table 5 rows show 30, 60 and 90 s; the quote is the table caption giving the shared 15 to 90 s span."
+   },
+   {
+    "field": "exposures[0].free_field.pressure_kpa",
+    "reason": "Table 1 gives PNP as -0.18 MPa (hydrophone scan); recorded as magnitude, 180 kPa. Amplitude setting for the hydrophone scan is not stated (Fig. 1 simulation used 250 mVpp)."
+   },
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Isppa of 1.19 W/cm2 is a transducer hydrophone-scan value (Table 1); the amplitude setting it belongs to is not stated, and the same value is the Ispta at 100% duty cycle in Table 4."
+   },
+   {
+    "field": "exposures[1].free_field.isppa_w_cm2",
+    "reason": "Same Table 1 transducer value as exposure 0; not tied to a stated amplitude. Lumbosacral runs used 250 mVpp and duty cycles of 25% or less."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta per parameter set from Table 4 (min and max); the paper does not say whether these are in water or in tissue."
+   },
+   {
+    "field": "exposures[1].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta per parameter set from Table 5 (min and max); domain not stated."
+   },
+   {
+    "field": "exposures[0].timing.waveform",
+    "reason": "Rows with duty cycle 100% are continuous; others are pulsed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "8 rats and 1 pig; the pig was thoracic only. Rats were split 4 thoracic and 4 lumbosacral."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Outcome is mean arterial pressure, not neural activity: decreased at thoracic level, increased at lumbosacral level; authors hypothesise neuronal inhibition at both."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Exposed rat spinal cord after laminectomy; pig had upper and lower thoracic laminectomies; higher-intensity pig exposures produced ablative changes."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Centre frequency 500 kHz; the probe's bandwidth is stated as 321 to 708 kHz."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "disagree",
+   "exposures[1].in_situ.pressure_kpa": "agree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second",
+   "exposures[1].free_field.ispta_w_cm2": "second",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

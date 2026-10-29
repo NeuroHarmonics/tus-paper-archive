@@ -1,0 +1,357 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026subramaniam",
+ "doi": "10.64898/2026.01.10.26343837",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "schizophrenia"
+ ],
+ "condition_other": null,
+ "n_subjects": 3,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 3,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "unfocused_or_detuned"
+ ],
+ "auditory_control": [
+  "matched_device_sound"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "Visual Analog Scale and AVHRS for hallucinations; resting-state fMRI striatal-superior temporal connectivity",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Hallucination severity and frequency fell after active LIFU to NAc and CH, and striatal-STC connectivity fell relative to baseline; no formal sham comparison was possible.",
+ "adverse_events": "none_observed",
+ "safety_notes": "No adverse events associated with stimulation; mild transient auditory sensations reported; simulated temperature rise at most 0.6 C and MI under 1.9.",
+ "exposures": [
+  {
+   "label": "LIFU to nucleus accumbens (NAc)",
+   "target": {
+    "terms": [
+     "nucleus_accumbens"
+    ],
+    "label": "nucleus accumbens (NAc)"
+   },
+   "device": {
+    "family": "attune",
+    "manufacturer": "Attune Neurosciences",
+    "model": "ATTN201"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     430,
+     650,
+     730,
+     830
+    ],
+    "isppa_w_cm2": [
+     7.72,
+     22.86
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 20,
+    "duty_cycle_pct": 6,
+    "sonication_duration_s": 40,
+    "protocol_description": "20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total). Bilateral 64-element arrays; one active session per target plus an unfocused sham session, a week apart."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6.0,
+    "duty_cycle_mismatch": false
+   }
+  },
+  {
+   "label": "LIFU to caudate head (CH)",
+   "target": {
+    "terms": [
+     "caudate_nucleus"
+    ],
+    "label": "caudate head (CH)"
+   },
+   "device": {
+    "family": "attune",
+    "manufacturer": "Attune Neurosciences",
+    "model": "ATTN201"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "simulation",
+    "reported_as": "mean_or_range_across_subjects",
+    "pressure_kpa": [
+     560,
+     600,
+     610,
+     620,
+     690
+    ],
+    "isppa_w_cm2": [
+     12.47,
+     15.77
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 3,
+    "pulse_repetition_frequency_hz": 20,
+    "duty_cycle_pct": 6,
+    "sonication_duration_s": 40,
+    "protocol_description": "20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total). Bilateral 64-element arrays; one active session per target plus an unfocused sham session, a week apart."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 6.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "rmed consent for this protocol approved by Attune Neurosciences and the IRB at UCSF prior to study enrollment. All procedures were conducted at UCSF. SZ participants (n=3) then completed this study and all clinical assessments at UCSF (Table 1 summarizes demographic and clinical characteristics).",
+   "n_sessions_per_subject": "five in-person visits. Visit 1-2 included baseline visits (diagnostic evaluation, MRI/fMRI acquisition, neurological exam and clinical assessments). Visits 3–5 each included one of the three LIFU sessions given in randomized order, spaced one week apart: (i) Active LIFU targeting NAc, (ii) Active LIFU targeting CH, and (iii) Sham control using unfocuse",
+   "exposures[0].fundamental_frequency_khz": "dinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40",
+   "exposures[0].device.manufacturer": "static focus despite lateral shifts. NAc and CH coordinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cyc",
+   "exposures[0].device.model": "static focus despite lateral shifts. NAc and CH coordinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cyc",
+   "exposures[0].in_situ.isppa_w_cm2": "Using calibrated simulations validated by through-skull measurements, we observed focal overlap at both individualized striatal targets (Fig.1a-b) (67) with target estimated spatial-peak pulseaverage intensity (ISPPA) of 7.72-22.86 W/cm² at the NAc (MNI −8, 9, −8) and 12.47-15.77 W/cm² at the CH (MNI −10, 18, 2) (Fig.1c). The UF sham condition produced no focal pressure hotspots, validating it as a credible control and had a ISPPA range of 0.03 - 0.28 W/cm² (Fig.1c). All sessi",
+   "exposures[0].timing.pulse_duration_ms": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[0].timing.duty_cycle_pct": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[0].timing.sonication_duration_s": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[1].fundamental_frequency_khz": "dinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40",
+   "exposures[1].device.manufacturer": "static focus despite lateral shifts. NAc and CH coordinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cyc",
+   "exposures[1].device.model": "static focus despite lateral shifts. NAc and CH coordinates (e.g., NAc: −8, 9, −8; CH: −10, 18, 2 in MNI space) were transformed into native anatomy. LIFU was delivered using the Attune ATTN201 system, operating at 500 kHz with bilateral 64-element transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cyc",
+   "exposures[1].in_situ.isppa_w_cm2": "mulations validated by through-skull measurements, we observed focal overlap at both individualized striatal targets (Fig.1a-b) (67) with target estimated spatial-peak pulseaverage intensity (ISPPA) of 7.72-22.86 W/cm² at the NAc (MNI −8, 9, −8) and 12.47-15.77 W/cm² at the CH (MNI −10, 18, 2) (Fig.1c). The UF sham condition produced no focal pressure hotspots, validating it as a credible control and had a ISPPA range of 0.",
+   "exposures[1].timing.pulse_duration_ms": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[1].timing.duty_cycle_pct": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[1].timing.sonication_duration_s": "transducer arrays. Session sonications were composed of 20 Hz pulse repetition frequency, 6% duty cycle (3 ms pulses, 50 ms interval), applied in 40 s on / 20 s off cycles for 30 minutes per hemisphere (60 minutes total) (Supplemental Fig. 1). Element driving voltage and resulting source pressures were fixed for all stimulations irrespective of target or anatomical differences to best equate dosing and peripheral c",
+   "exposures[0].in_situ.pressure_kpa": "<table><tr><td>Subject</td><td>Target</td><td>Target Peak TaPressure (MPa)</td><td>Tr</td><td>Pr   o) Target Peak</td><td>Prarget  Peoskh %ile (MPa)</td><td>TargettTemp OE 7 rem</td><td>Brain</td><td> thBa in</td><td>9MtB ii Bran</td><td>Head</td><td>skull</td><td>M Ioft è 50</td><td>TR Bain bra</td><td>TR Skl</td><td>TR O C)</td></tr><tr><td>SZ01</td><td>UnfLeft</td><td>0.04</td><td>0.04</td><td>0.02</td><td>0.05</td><td>0.0</td><td>0.23</td><td>0.13</td><td>0.31</td><td>0.74</td><td>0.74</td><td>0.65</td><td>0.11</td><td>0.22</td><td>0.19</td></tr><tr><td>SZ01</td><td>UnfRight</td><td>0.07</td><td>0.17</td><td>0.04</td><td>0.1</td><td>0.01</td><td>0.34</td><td>0.19</td><td>0.46</td><td>1.22</td><td>0.94</td><td>1.22</td><td>0.21</td><td>0.42</td><td>0.37</td></tr><tr><td>SZ01</td><td>NAcRight</td><td>0.43</td><td>5.6</td><td>0.24</td><td>0.57</td><td>0.08</td><td>0.63</td><td>0.35</td><td>0.84</td><td>1.28</td><td>1.28</td><td>1.27</td><td>0.36</td><td>0.61</td><td>0.5</td></tr><tr><td>SZ01</td><td>NAcLeft</td><td>0.43</td><td>5.58</td><td>0.24</td><td>0.57</td><td>0.09</td><td>0.62</td><td>0.35</td><td>0.82</td><td>1.29</td><td>1.29</td><td>1.29</td><td>0.42</td><td>0.71</td><td>0.61</td></tr><tr><td>SZ01</td><td>CaudHeadLeft</td><td>0.56</td><td>9.8</td><td>0.32</td><td>0.75</td><td>0.15</td><td>0.8</td><td>0.45</td><td>1.06</td><td>1.17</td><td>1.17</td><td>1.15</td><td>0.41</td><td>0.73</td><td>0.6</td></tr><tr><td>SZ01</td><td>CaudHeadRight</td><td>0.56</td><td>9.58</td><td>0.31</td><td>0.74</td><td>0.14</td><td>0.79</td><td>0.44</td><td>1.05</td><td>1.2</td><td>1.19</td><td>1.2</td><td>0.32</td><td>0.65</td><td>0.55</td></tr><tr><td>SZ02</td><td>NAcRight</td><td>0.65</td><td>13.14</td><td>0.37</td><td>0.87</td><td>0.19</td><td>0.93</td><td>0.52</td><td>1.23</td><td>1.45</td><td>1.45</td><td>1.3</td><td>0.41</td><td>0.69</td><td>0.56</td></tr><tr><td>SZ02</td><td>NAcLeft</td><td>0.65</td><td>13.11</td><td>0.36</td><td>0.87</td><td>0.19</td><td>0.93</td><td>0.52</td><td>1.23</td><td>1.53</td><td>1.53</td><td>1.44</td><td>0.43</td><td>0.7</td><td>0.59</td></tr><tr><td>SZ02</td><td>CaudHeadRight</td><td>0.61</td><td>11.45</td><td>0.34</td><td>0.81</td><td>0.16</td><td>0.86</td><td>0.48</td><td>1.15</td><td>1.4</td><td>1.4</td><td>1.23</td><td>0.42</td><td>0.67</td><td>0.56</td></tr><tr><td>5Z02</td><td>CaudHeadLeft</td><td>0.62</td><td>11.74</td><td>0.35</td><td>0.82</td><td>0.17</td><td>0.87</td><td>0.49</td><td>1.16</td><td>1.6</td><td>1.6</td><td>1.19</td><td>0.4</td><td>0.72</td><td>0.56</td></tr><tr><td>SZ02</td><td>UnfRight</td><td>0.09</td><td>0.27</td><td>0.05</td><td>0.12</td><td>0.01</td><td>0.58</td><td>0.33</td><td>0.78</td><td>1.26</td><td>1.26</td><td>1.23</td><td>0.28</td><td>0.44</td><td>0.4</td></tr><tr><td>SZ02</td><td>UnfLeft</td><td>0.04</td><td>0.05</td><td>0.02</td><td>0.05</td><td>0.01</td><td>0.73</td><td>0.41</td><td>0.97</td><td>1.41</td><td>1.41</td><td>1.0</td><td>0.3</td><td>0.55</td><td>0.41</td></tr><tr><td>SZ03</td><td>CaudHeadLeft</td><td>0.69</td><td>14.62</td><td>0.39</td><td>0.92</td><td>0.2</td><td>0.97</td><td>0.55</td><td>1.29</td><td>1.27</td><td>1.27</td><td>1.22</td><td>0.38</td><td>0.61</td><td>0.52</td></tr><tr><td>SZ03</td><td>CaudHeadRight</td><td>0.6</td><td>11.29</td><td>0.34</td><td>0.8</td><td>0.17</td><td>0.86</td><td>0.48</td><td>1.14</td><td>1.55</td><td>1.55</td><td>1.29</td><td>0.34</td><td>0.71</td><td>0.58</td></tr><tr><td>SZ03</td><td>UnfRight</td><td>0.06</td><td>0.11</td><td>0.03</td><td>0.08</td><td>0.01</td><td>0.58</td><td>0.32</td><td>0.77</td><td>1.04</td><td>0.91</td><td>1.04</td><td>0.16</td><td>0.42</td><td>0.36</td></tr><tr><td>5Z03</td><td>UnfLeft</td><td>0.03</td><td>0.03</td><td>0.02</td><td>0.04</td><td>0.01</td><td>0.78</td><td>0.44</td><td>1.04</td><td>0.97</td><td>0.97</td><td>0.88</td><td>0.18</td><td>0.28</td><td>0.25</td></tr><tr><td>SZ03</td><td>NAcLeft</td><td>0.83</td><td>21.47</td><td>0.47</td><td>1.11</td><td>0.3</td><td>1.19</td><td>0.66</td><td>1.58</td><td>1.2</td><td>1.2</td><td>1.2</td><td>0.32</td><td>0.66</td><td>0.58</td></tr><tr><td>SZ03</td><td>NAcRight</td><td>0.73</td><td>16.35</td><td>0.41</td><td>0.97</td><td>0.24</td><td>1.08</td><td>0.6</td><td>1.43</td><td>1.26</td><td>1.2</td><td>1.26</td><td>0.32</td><td>0.7</td><td>0.63</td></tr></table>",
+   "exposures[1].in_situ.pressure_kpa": "<table><tr><td>Subject</td><td>Target</td><td>Target Peak TaPressure (MPa)</td><td>Tr</td><td>Pr   o) Target Peak</td><td>Prarget  Peoskh %ile (MPa)</td><td>TargettTemp OE 7 rem</td><td>Brain</td><td> thBa in</td><td>9MtB ii Bran</td><td>Head</td><td>skull</td><td>M Ioft è 50</td><td>TR Bain bra</td><td>TR Skl</td><td>TR O C)</td></tr><tr><td>SZ01</td><td>UnfLeft</td><td>0.04</td><td>0.04</td><td>0.02</td><td>0.05</td><td>0.0</td><td>0.23</td><td>0.13</td><td>0.31</td><td>0.74</td><td>0.74</td><td>0.65</td><td>0.11</td><td>0.22</td><td>0.19</td></tr><tr><td>SZ01</td><td>UnfRight</td><td>0.07</td><td>0.17</td><td>0.04</td><td>0.1</td><td>0.01</td><td>0.34</td><td>0.19</td><td>0.46</td><td>1.22</td><td>0.94</td><td>1.22</td><td>0.21</td><td>0.42</td><td>0.37</td></tr><tr><td>SZ01</td><td>NAcRight</td><td>0.43</td><td>5.6</td><td>0.24</td><td>0.57</td><td>0.08</td><td>0.63</td><td>0.35</td><td>0.84</td><td>1.28</td><td>1.28</td><td>1.27</td><td>0.36</td><td>0.61</td><td>0.5</td></tr><tr><td>SZ01</td><td>NAcLeft</td><td>0.43</td><td>5.58</td><td>0.24</td><td>0.57</td><td>0.09</td><td>0.62</td><td>0.35</td><td>0.82</td><td>1.29</td><td>1.29</td><td>1.29</td><td>0.42</td><td>0.71</td><td>0.61</td></tr><tr><td>SZ01</td><td>CaudHeadLeft</td><td>0.56</td><td>9.8</td><td>0.32</td><td>0.75</td><td>0.15</td><td>0.8</td><td>0.45</td><td>1.06</td><td>1.17</td><td>1.17</td><td>1.15</td><td>0.41</td><td>0.73</td><td>0.6</td></tr><tr><td>SZ01</td><td>CaudHeadRight</td><td>0.56</td><td>9.58</td><td>0.31</td><td>0.74</td><td>0.14</td><td>0.79</td><td>0.44</td><td>1.05</td><td>1.2</td><td>1.19</td><td>1.2</td><td>0.32</td><td>0.65</td><td>0.55</td></tr><tr><td>SZ02</td><td>NAcRight</td><td>0.65</td><td>13.14</td><td>0.37</td><td>0.87</td><td>0.19</td><td>0.93</td><td>0.52</td><td>1.23</td><td>1.45</td><td>1.45</td><td>1.3</td><td>0.41</td><td>0.69</td><td>0.56</td></tr><tr><td>SZ02</td><td>NAcLeft</td><td>0.65</td><td>13.11</td><td>0.36</td><td>0.87</td><td>0.19</td><td>0.93</td><td>0.52</td><td>1.23</td><td>1.53</td><td>1.53</td><td>1.44</td><td>0.43</td><td>0.7</td><td>0.59</td></tr><tr><td>SZ02</td><td>CaudHeadRight</td><td>0.61</td><td>11.45</td><td>0.34</td><td>0.81</td><td>0.16</td><td>0.86</td><td>0.48</td><td>1.15</td><td>1.4</td><td>1.4</td><td>1.23</td><td>0.42</td><td>0.67</td><td>0.56</td></tr><tr><td>5Z02</td><td>CaudHeadLeft</td><td>0.62</td><td>11.74</td><td>0.35</td><td>0.82</td><td>0.17</td><td>0.87</td><td>0.49</td><td>1.16</td><td>1.6</td><td>1.6</td><td>1.19</td><td>0.4</td><td>0.72</td><td>0.56</td></tr><tr><td>SZ02</td><td>UnfRight</td><td>0.09</td><td>0.27</td><td>0.05</td><td>0.12</td><td>0.01</td><td>0.58</td><td>0.33</td><td>0.78</td><td>1.26</td><td>1.26</td><td>1.23</td><td>0.28</td><td>0.44</td><td>0.4</td></tr><tr><td>SZ02</td><td>UnfLeft</td><td>0.04</td><td>0.05</td><td>0.02</td><td>0.05</td><td>0.01</td><td>0.73</td><td>0.41</td><td>0.97</td><td>1.41</td><td>1.41</td><td>1.0</td><td>0.3</td><td>0.55</td><td>0.41</td></tr><tr><td>SZ03</td><td>CaudHeadLeft</td><td>0.69</td><td>14.62</td><td>0.39</td><td>0.92</td><td>0.2</td><td>0.97</td><td>0.55</td><td>1.29</td><td>1.27</td><td>1.27</td><td>1.22</td><td>0.38</td><td>0.61</td><td>0.52</td></tr><tr><td>SZ03</td><td>CaudHeadRight</td><td>0.6</td><td>11.29</td><td>0.34</td><td>0.8</td><td>0.17</td><td>0.86</td><td>0.48</td><td>1.14</td><td>1.55</td><td>1.55</td><td>1.29</td><td>0.34</td><td>0.71</td><td>0.58</td></tr><tr><td>SZ03</td><td>UnfRight</td><td>0.06</td><td>0.11</td><td>0.03</td><td>0.08</td><td>0.01</td><td>0.58</td><td>0.32</td><td>0.77</td><td>1.04</td><td>0.91</td><td>1.04</td><td>0.16</td><td>0.42</td><td>0.36</td></tr><tr><td>5Z03</td><td>UnfLeft</td><td>0.03</td><td>0.03</td><td>0.02</td><td>0.04</td><td>0.01</td><td>0.78</td><td>0.44</td><td>1.04</td><td>0.97</td><td>0.97</td><td>0.88</td><td>0.18</td><td>0.28</td><td>0.25</td></tr><tr><td>SZ03</td><td>NAcLeft</td><td>0.83</td><td>21.47</td><td>0.47</td><td>1.11</td><td>0.3</td><td>1.19</td><td>0.66</td><td>1.58</td><td>1.2</td><td>1.2</td><td>1.2</td><td>0.32</td><td>0.66</td><td>0.58</td></tr><tr><td>SZ03</td><td>NAcRight</td><td>0.73</td><td>16.35</td><td>0.41</td><td>0.97</td><td>0.24</td><td>1.08</td><td>0.6</td><td>1.43</td><td>1.26</td><td>1.2</td><td>1.26</td><td>0.32</td><td>0.7</td><td>0.63</td></tr></table>"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Table 2 lists per-subject simulated target pressures in MPa but the table text is garbled; no pressure value recorded"
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "40 s on / 20 s off cycles for 30 min per hemisphere; 40 s taken as the length of one uninterrupted train"
+   },
+   {
+    "field": "blinding",
+    "reason": "Participants blinded and none identified sham; assessor blinding not stated"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only 3 participants; one lacked post-LIFU imaging and one reported no hallucinations before sham"
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Hallucination severity and striatal-STC connectivity fell after active LIFU; neuronal direction not assessed"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree",
+   "exposures[1].fundamental_frequency_khz": "agree",
+   "exposures[1].free_field.pressure_kpa": "agree",
+   "exposures[1].free_field.isppa_w_cm2": "agree",
+   "exposures[1].free_field.ispta_w_cm2": "agree",
+   "exposures[1].in_situ.pressure_kpa": "disagree",
+   "exposures[1].in_situ.isppa_w_cm2": "agree",
+   "exposures[1].in_situ.ispta_w_cm2": "agree",
+   "exposures[1].unspecified_domain.pressure_kpa": "agree",
+   "exposures[1].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[1].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[1].timing.pulse_duration_ms": "agree",
+   "exposures[1].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[1].timing.duty_cycle_pct": "agree",
+   "exposures[1].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[1].in_situ.pressure_kpa": "second"
+  }
+ }
+}

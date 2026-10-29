@@ -1,0 +1,228 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021kime",
+ "doi": "10.1109/access.2021.3073506",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "epilepsy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "eeg_meg",
+  "histology_molecular"
+ ],
+ "readout_other": "Scalp EEG time-frequency analysis (band power, peak frequency); Nissl, Iba1, c-Fos and GAD65 staining",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "In the PTZ seizure model, LIFUS lowered delta and theta peak frequency and theta and beta band power relative to the untreated group, and histology showed less damage, lower c-Fos and higher GAD65 expression.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "LIFUS, three parameter sets (#1-#3)",
+   "target": {
+    "terms": [
+     "hippocampus",
+     "anterior_thalamic_nucleus"
+    ],
+    "label": "hippocampus and anteroventral thalamus"
+   },
+   "device": {
+    "family": "sonic_concepts",
+    "manufacturer": "Sonic Concepts",
+    "model": "H-101"
+   },
+   "fundamental_frequency_khz": 1100,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     274,
+     295,
+     310
+    ],
+    "isppa_w_cm2": [
+     2.6,
+     2.74,
+     3
+    ],
+    "ispta_w_cm2": [
+     0.13,
+     0.137,
+     0.15
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 180,
+    "protocol_description": "Three 3 min sonications (tone-burst duration 0.5 ms, pulse repetition interval 10 ms) delivered every 10 min starting 5 min after PTZ injection in the treated group; the untreated group was not sonicated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "The experimental animals (n = 23) were randomly divided into two groups: the untreated (n = 7) and treated with LIFUS groups (n = 16).",
+   "exposures[0].fundamental_frequency_khz": "A 1.1-MHz FUS transducer (H-101; Sonic Concept, Bothell, WA, USA) was used to stimulate the rat brain.",
+   "exposures[0].device.model": "A 1.1-MHz FUS transducer (H-101; Sonic Concept, Bothell, WA, USA) was used to stimulate the rat brain.",
+   "exposures[0].device.manufacturer": "A 1.1-MHz FUS transducer (H-101; Sonic Concept, Bothell, WA, USA) was used to stimulate the rat brain.",
+   "exposures[0].in_situ.pressure_kpa": "The in-situ peak negative pressures (PNP) for each sonication parameter were 0.274, 0.295, and 0.310 MPa, respectively, at the target brain area",
+   "exposures[0].in_situ.isppa_w_cm2": "<table><tr><td>Parameter set</td><td>Frequency [MHz]</td><td> $\\bf { I _ { \\mathrm { { s p p a } } } }$   $[ \\mathbf { W } / \\mathbf { c m } ^ { 2 } ]$ </td><td> $\\mathbf { I _ { \\mathrm { { s p t a } } } }$   $[ \\mathbf { m } \\dot { \\mathbf { W } } / \\mathbf { c m } ^ { 2 } ]$ </td><td>PNP [MPa]</td><td>PRI [ms]</td><td>TBD [ms]</td><td>SD [min]</td></tr><tr><td>#1</td><td>1.1</td><td>2.6</td><td>130</td><td>0.274</td><td>10</td><td>0.5</td><td>3</td></tr><tr><td>#2</td><td>1.1</td><td>2.74</td><td>137</td><td>0.295</td><td>10</td><td>0.5</td><td>3</td></tr><tr><td>#3</td><td>1.1</td><td>3</td><td>150</td><td>0.310</td><td>10</td><td>0.5</td><td>3</td></tr></table>",
+   "exposures[0].in_situ.ispta_w_cm2": "<table><tr><td>Parameter set</td><td>Frequency [MHz]</td><td> $\\bf { I _ { \\mathrm { { s p p a } } } }$   $[ \\mathbf { W } / \\mathbf { c m } ^ { 2 } ]$ </td><td> $\\mathbf { I _ { \\mathrm { { s p t a } } } }$   $[ \\mathbf { m } \\dot { \\mathbf { W } } / \\mathbf { c m } ^ { 2 } ]$ </td><td>PNP [MPa]</td><td>PRI [ms]</td><td>TBD [ms]</td><td>SD [min]</td></tr><tr><td>#1</td><td>1.1</td><td>2.6</td><td>130</td><td>0.274</td><td>10</td><td>0.5</td><td>3</td></tr><tr><td>#2</td><td>1.1</td><td>2.74</td><td>137</td><td>0.295</td><td>10</td><td>0.5</td><td>3</td></tr><tr><td>#3</td><td>1.1</td><td>3</td><td>150</td><td>0.310</td><td>10</td><td>0.5</td><td>3</td></tr></table>",
+   "exposures[0].timing.pulse_duration_ms": "The pulse repetition interval (PRI) was 10 ms, and the tone-burst duration (TBD) was 0.5 ms (i.e., the duty cycle was 5%) for every parameter set.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The pulse repetition interval (PRI) was 10 ms, and the tone-burst duration (TBD) was 0.5 ms (i.e., the duty cycle was 5%) for every parameter set.",
+   "exposures[0].timing.duty_cycle_pct": "The pulse repetition interval (PRI) was 10 ms, and the tone-burst duration (TBD) was 0.5 ms (i.e., the duty cycle was 5%) for every parameter set.",
+   "exposures[0].timing.sonication_duration_s": "The entire sonication duration (SD) was 3 min for each LIFUS."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "29 rats were stated; 25 used; 23 in the two PTZ groups (7 untreated, 16 LIFUS) plus 2 normal. Recorded the 16 sonicated animals."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Table 1 intensities are described as measured/estimated at the target brain area (NEMA method) with skull attenuation (46.5%) compensated; recorded as in_situ derating. Ispta given in mW/cm2 in the table, converted to W/cm2."
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Given as a pulse repetition interval of 10 ms, converted to 100 Hz."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is named only in the Discussion ('hippocampus and anteroventral thalamus'); the Methods say 'desired target area'."
+   },
+   {
+    "field": "sham_type",
+    "reason": "The untreated group underwent PTZ and EEG without LIFUS; the abstract calls it 'untreated (sham)'. No device-in-place sham is described."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Three 3 min sonications per animal; 180 s is the length of one train."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

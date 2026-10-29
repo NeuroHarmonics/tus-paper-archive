@@ -1,0 +1,210 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026liub",
+ "doi": "10.1186/s10194-026-02377-0",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "other"
+ ],
+ "condition_other": "migraine (nitroglycerin-induced acute migraine model)",
+ "n_subjects": [
+  9,
+  6
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "double",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey mechanical thresholds; elevated plus maze; c-Fos/Vglut2/GABA immunofluorescence; H&E; TUNEL",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "LIFU reduced NTG-induced c-Fos hyperactivation in the prelimbic mPFC, reduced activated glutamatergic and increased activated GABAergic neurons, and reversed allodynia and anxiety-like behaviour.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE and TUNEL staining of the mPFC (n = 3 per group) showed no differences in tissue morphology or apoptosis; locomotor distance was unchanged.",
+ "exposures": [
+  {
+   "label": "mPFC (PL) LIFU",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "prelimbic (PL) subdivision of the mPFC"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus Corporation of the Americas",
+    "model": "V318"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.6
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.3,
+    "pulse_repetition_frequency_hz": 2000,
+    "duty_cycle_pct": 60,
+    "sonication_duration_s": 0.05,
+    "protocol_description": "Isppa not given; Ispta 600 mW/cm2, PRF 2 kHz, sonication duration 0.05 s, inter-stimulation interval 2 s, duty cycle 60%, tone-burst duration 0.3 ms. LIFU began 20 min after NTG injection under 0.5% isoflurane; the number or total duration of stimulations is not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In contrast, thresholds in the NTG+LIFU group were significantly higher than in the NTG+SHAM group (P<0.001, n=9 mice per group).",
+   "exposures[0].fundamental_frequency_khz": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].timing.pulse_duration_ms": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].timing.duty_cycle_pct": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].timing.sonication_duration_s": "Therapeutic LIFU parameters were as follows (Fig. 1C), spatial-peak temporal-average intensity $( \\mathrm { I } _ { \\mathrm { s p t a } } ) = 6 0 0$ mW/ $\\mathrm { c m } ^ { 2 } ,$ fundamental frequency (FF) = 0.5  MHz, pulse repetition frequency (PRF) = 2  kHz, ultrasound sonication duration (SD) = 0.05  s, inter-stimulation interval (ISI) = 2 s, duty cycle (DC) = 60%, and tone-burst duration (TBD)=0.3 ms.",
+   "exposures[0].device.model": "The LIFU system comprised two function generators (RIGOL Technologies Co., Ltd., DG4162 and DG822, Beijing, China), a custom-built radio frequency power amplifier (Beijing North Star Science & Technology Co., Ltd., SWA400A, Beijing, China), a 0.5  MHz singleelement immersion transducer (Olympus Corporation of the Americas, V318, Center Valley, PA, USA), and a custom-designed acoustic collimator.",
+   "exposures[0].device.manufacturer": "The LIFU system comprised two function generators (RIGOL Technologies Co., Ltd., DG4162 and DG822, Beijing, China), a custom-built radio frequency power amplifier (Beijing North Star Science & Technology Co., Ltd., SWA400A, Beijing, China), a 0.5  MHz singleelement immersion transducer (Olympus Corporation of the Americas, V318, Center Valley, PA, USA), and a custom-designed acoustic collimator."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "9 mice per group in the behavioural cohort (NTG+LIFU); separate cohorts of 6 per group (immunofluorescence) and 3 per group (histology) were also used, total exposed not stated"
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Ispta 600 mW/cm2 stated without saying whether free field or in situ"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Tone-burst duration 0.3 ms is stated; it is consistent with duty cycle / PRF"
+   },
+   {
+    "field": "provenance.auditory_control",
+    "reason": "No auditory control used; authors argue 0.5 MHz lies outside the mouse hearing range"
+   },
+   {
+    "field": "blinding",
+    "reason": "Paper states quantitative analyses were blinded and describes the histology as double-blind; blinding level of the stimulation itself is unclear"
+   },
+   {
+    "field": "exposures[0].timing",
+    "reason": "Sham is anaesthesia and positioning without ultrasonic output; no VEH+LIFU group"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024songa",
+ "doi": "10.1016/j.isci.2024.110269",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 20,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "cerebral_haemodynamics"
+ ],
+ "readout_other": "LFP power (tungsten microelectrode); laser speckle contrast imaging of rCBF",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS increased LFP power and rCBF in the Saline group; after VPA (neural inhibition) the TUS-induced rCBF increase was not significant and the Group x Stage interaction was significant.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The text states the TUS parameters generated negligible temperature change (less than 0.02 C), citing the authors' prior study.",
+ "exposures": [
+  {
+   "label": "TUS to S1 after VPA or saline i.p.",
+   "target": {
+    "terms": [
+     "primary_somatosensory_cortex"
+    ],
+    "label": "The primary sensory cortex (S1, ML: 3 mm, AP: 0.84 mm)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus NDT",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 8.92,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": 1500,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 1,
+    "protocol_description": "5-min sonication with ISI = 4 s, sonication duration = 1 s, PRF = 1.5 kHz and tone burst duration = 0.4 ms; 20-s LFP-LSCI blocks recorded at baseline, 10 min after VPA/saline i.p., and immediately after TUS."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 60.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 20 adult male Sprague-Dawley rats (220-320 g, Slac Laboratory Animal Co.Ltd., Shanghai, China)",
+   "exposures[0].fundamental_frequency_khz": "The transducer was operated at a frequency of 500 kHz and was powered by a customized amplifier. We implemented a custom-built plexiglass acoustic collimator with a 7 mm diameter output aperture attached to the transducer to restrict the target area to the region of interest. A calibrated hydrophone (NH1000 Needle Hydrophone-1.0 mm, Precision Acoustics, UK) was employed to assess the distribution of sonic intensity with the collimator. The optical imaging modules included a 780 nm laser diode (10 mW, L780P010, Thorlabs, USA), a camera lens (Nikon AF-S VR Micro-Nikkor, 105mmf/2.8G IF-ED, Tochigi, Japan) and a CMOS camera (12bit, acA1440-220 mm, Basler, Ahrensburg, Germany), connected to computer for imaging controlling. The optica module was stabilized by holders fixed to an optical platform.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "The ultrasound intensity was approximately 8.92 W=cm<sup>2</sup>.",
+   "exposures[0].timing.pulse_duration_ms": "pulse repeated frequency (PRF) = 1.5 kHz, and tone burst duration (TBD) = 0.4 ms.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "pulse repeated frequency (PRF) = 1.5 kHz, and tone burst duration (TBD) = 0.4 ms.",
+   "exposures[0].timing.sonication_duration_s": "sonication duration (SD) = 1 s, spatial peakpulse averageintens $i t y ( I _ { s p p a } ) = 8 . 9 2 \\ \\mathsf { W } / \\mathsf { c m } ^ { 2 } .$ , pulse repeated frequency (PRF) = 1.5 kHz, and tone burst duration (TBD) = 0.4 ms. The ultrasound intensity was approximately 8.92 W=cm<sup>2</sup>. As outlined in our prior study,<sup>40</sup> the TUS parameters described above were shown to generate negligible temperature change (less than 0:02<sup>+</sup>C). The distribution of sonic intensity with the collimator (Figure S1B) was assessed using a calibrated hydrophone.",
+   "exposures[0].device.manufacturer": "the ultrasound stimulation system was equipped with an immersion-type focused ultrasound transducer (V301-SU, Olympus NDT, Waltham, USA)",
+   "exposures[0].device.model": "the ultrasound stimulation system was equipped with an immersion-type focused ultrasound transducer (V301-SU, Olympus NDT, Waltham, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Intensity stated without domain; hydrophone used to assess the field with the collimator but the 8.92 W/cm2 is not explicitly free-field."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Duty cycle not stated; not computed."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Sample size is 20 rats, 10 per group; analyses in the text use F(1,18)."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Cranial window under isoflurane 6 h before; recordings and TUS under isoflurane anaesthesia."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

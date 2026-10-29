@@ -1,0 +1,164 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2020balasubramanian",
+ "doi": "10.1038/s41598-020-58133-0",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "human (SH-SY5Y neuroblastoma cell line, retinoic-acid differentiated)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "inactive_transducer",
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cellular_imaging"
+ ],
+ "readout_other": "Fluo-8 AM calcium imaging; Eu-TTA thermal imaging; gentamicin ion-channel block",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Calcium transients rose significantly at 0.05 and 0.3 W/cm2 but not at 0.013 W/cm2; one-sided (electrode-free) chips and gentamicin abolished the response.",
+ "adverse_events": null,
+ "safety_notes": "No metal delamination or damage to the chip and no immediately notable morphological change in cells after exposure; a 1.2 W/cm2 exposure raised temperature by 0.03 C.",
+ "exposures": [
+  {
+   "label": "1.47 GHz AlN chip-scale transducer, continuous wave, 20 s, SH-SY5Y cells",
+   "target": {
+    "terms": [
+     "cultured_neurons"
+    ],
+    "label": "SH-SY5Y neuroblastoma cells differentiated with retinoic acid to a more neural phenotype"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "piezoelectric AlN thin-film transducers fabricated on double-polished silicon wafers"
+   },
+   "fundamental_frequency_khz": 1470000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": [
+     0.013,
+     0.05,
+     0.3
+    ],
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "continuous",
+    "pulse_duration_ms": null,
+    "pulse_repetition_frequency_hz": null,
+    "duty_cycle_pct": null,
+    "sonication_duration_s": 20,
+    "protocol_description": "Single 20 s continuous-wave exposure per recording: at least 10 s without stimulus, 20 s of ultrasound, then post-stimulus recording (about 50 s). Intensities of 0.013, 0.05 and 0.3 W/cm2 (range recorded as 0.013-0.3). Drive 2 V, 5 V (and 10 V for a thermal control at 1.2 W/cm2). A second exposure after a 120 s recovery was used in a recovery experiment."
+   },
+   "derived": {
+    "checks": [
+     "f0_out_of_range"
+    ],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "The 2µm AlN layer with a 2µm oxide layer between the 725µm silicon and AlN results in a thickness-mode resonance at 1.47 GHz.",
+   "exposures[0].free_field.isppa_w_cm2": "Gentamicin data corresponds to sample exposed to ion-channe blocking at $0 . 3 \\frac { W } { { c m } ^ { 2 } } . 0 . 0 1 3 , 0 . 0 5 , 0 . 3 \\frac { W ^ { e m } } { { c m } ^ { 2 } }$ correspond to intensities applied to double sided devices.",
+   "exposures[0].timing.sonication_duration_s": "One 20 s stimulus was delivered to the cells during recordings, a longer than usual stimulus time than several other studies to increase delivered energy and match the time scale of calcium ionic transients in order to capture more transients during stimulus."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].free_field.isppa_w_cm2",
+    "reason": "Intensities are the paper's estimate \"in water\" derived from interferometer displacement measured in air at the silicon-air interface; the metric (peak vs average) is not named and the authors say actual intensity at the cells is lower."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "1.47 GHz converted to 1,470,000 kHz."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Only trial and ROI counts are given (three repeated trials per intensity); no count of cultures or samples stated."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "Higher 1.2 W/cm2 exposure was used only for thermal imaging, not for the stimulation experiments."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second"
+  }
+ }
+}

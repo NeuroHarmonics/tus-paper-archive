@@ -1,0 +1,184 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2021tramontin",
+ "doi": "10.1016/j.ultrasmedbio.2021.05.007",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Wistar)",
+ "conditions": [
+  "alzheimers_disease"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "object recognition task; ELISA for BDNF, NGF-beta and cytokines; oxidative stress assays",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LIPUS prevented the object-recognition deficit and increased BDNF and NGF-beta in the hippocampus of the beta-amyloid ICV model; neuroprotective aim.",
+ "adverse_events": "not_reported",
+ "safety_notes": "The authors conclude chronic LIPUS treatment is safe, but no specific safety assessment is described.",
+ "exposures": [
+  {
+   "label": "beta-amyloid + LIPUS group",
+   "target": {
+    "terms": [
+     "brain"
+    ],
+    "label": "transcranially"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Ibramed",
+    "model": "not_reported"
+   },
+   "fundamental_frequency_khz": 3300,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.8
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 50,
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Treatment began 24 h after the beta-amyloid infusion and was given at 48-h intervals for 5 weeks (35 d), transcranially with conductive gel under isoflurane; sonication time per session is not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "disagree",
+      "tiebreak": "both_defensible",
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "The animals were randomly divided into three groups: control n = 8/group; $\\beta \\mathrm { { A } } _ { 1 - 4 2 }$ (400 pmol) ${ \\bf { n } } = 9 /$ group; and $\\beta \\mathrm { { A } } _ { 1 - 4 2 }$ (400 pmol) + LIPUS n = 6/group.",
+   "exposures[0].fundamental_frequency_khz": "For the application device, the following parameters were used: intensity of 0.8 W/cm<sup>2</sup>, central frequency of $3 . 3 \\mathrm { \\ M H z } \\pm 1 0 \\% ,$ alteration by sine wave with 50% duty cycle, pulse width of 5 ms and pulse repetition frequency of 100 Hz (Ibramed 2012).",
+   "exposures[0].timing.pulse_duration_ms": "For the application device, the following parameters were used: intensity of 0.8 W/cm<sup>2</sup>, central frequency of $3 . 3 \\mathrm { \\ M H z } \\pm 1 0 \\% ,$ alteration by sine wave with 50% duty cycle, pulse width of 5 ms and pulse repetition frequency of 100 Hz (Ibramed 2012).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "For the application device, the following parameters were used: intensity of 0.8 W/cm<sup>2</sup>, central frequency of $3 . 3 \\mathrm { \\ M H z } \\pm 1 0 \\% ,$ alteration by sine wave with 50% duty cycle, pulse width of 5 ms and pulse repetition frequency of 100 Hz (Ibramed 2012).",
+   "exposures[0].timing.duty_cycle_pct": "For the application device, the following parameters were used: intensity of 0.8 W/cm<sup>2</sup>, central frequency of $3 . 3 \\mathrm { \\ M H z } \\pm 1 0 \\% ,$ alteration by sine wave with 50% duty cycle, pulse width of 5 ms and pulse repetition frequency of 100 Hz (Ibramed 2012).",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "For the application device, the following parameters were used: intensity of 0.8 W/cm<sup>2</sup>, central frequency of $3 . 3 \\mathrm { \\ M H z } \\pm 1 0 \\% ,$ alteration by sine wave with 50% duty cycle, pulse width of 5 ms and pulse repetition frequency of 100 Hz (Ibramed 2012)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Intensity of 0.8 W/cm2 is given without type or domain; placed as ispta in unspecified_domain on the assumption of a physiotherapy-device spatial-average temporal-average specification, which the paper does not say."
+   },
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Central frequency 3.3 MHz +/- 10 percent from a commercial physiotherapy-type device (Ibramed); the field is a transcranial exposure of the whole head with a 7.0 cm2 effective radiating area, so the target is recorded as brain."
+   },
+   {
+    "field": "exposures[0].device.manufacturer",
+    "reason": "Manufacturer inferred from the citation '(Ibramed 2012)' after the parameter list; no model is named."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "N = 23 rats overall in groups of 8, 9 and 6; figure legends report n = 9, 6 and 8 inconsistently. Recorded the LIPUS group size of 6."
+   },
+   {
+    "field": "blinding",
+    "reason": "Not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].unspecified_domain.isppa_w_cm2": "both_defensible",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "both_defensible"
+  }
+ }
+}

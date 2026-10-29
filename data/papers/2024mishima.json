@@ -1,0 +1,230 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2024mishima",
+ "doi": "10.3389/fncel.2024.1361242",
+ "model_system": [
+  "in_vitro_cell"
+ ],
+ "species": "mouse (C57Bl/6J)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": "not_reported",
+ "subject_unit": "culture",
+ "n_sessions_per_subject": null,
+ "randomised": null,
+ "blinding": null,
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "whole-cell patch clamp: network firing, mEPSC, mIPSC, tonic GABA current; pharmacology (bicuculline, gabazine, AITC, HC-030031)",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "Single-shot PW or CW had no effect; repetitive PW (20 repetitions) persistently reduced spontaneous network firing via astrocytes and TRPA1-dependent increase in tonic GABA current; repetitive CW had no effect.",
+ "adverse_events": null,
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Cultured hippocampal neurons on astrocytes, 5 MHz PW and CW",
+   "target": {
+    "terms": [
+     "cultured_neurons",
+     "cultured_glia"
+    ],
+    "label": "primary cultured hippocampal cells"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "KGK",
+    "model": "5C1I"
+   },
+   "fundamental_frequency_khz": 5000,
+   "free_field": {
+    "pressure_kpa": 100,
+    "isppa_w_cm2": [
+     0.38,
+     0.7
+    ],
+    "ispta_w_cm2": 0.0192
+   },
+   "in_situ": {
+    "method": null,
+    "reported_as": null,
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": [
+     "pulsed",
+     "continuous"
+    ],
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": [
+     5,
+     100
+    ],
+    "sonication_duration_s": [
+     2,
+     0.1
+    ],
+    "protocol_description": "Pulsed wave: 0.5-ms tone burst, PRF 100 Hz, DC 5%, 2 s per sonication; continuous wave: 100 ms. Single-shot (2-s PW applied five times at 20-s intervals) versus repetitive (PW repeated 20 times at 10-s intervals, total approx. 192 s; 10 repetitions also tested)."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "This study used a 2-mm diameter, 5-MHz center frequency, immersion-type planar transducer (5C1I, KGK, Japan) for the ultrasound stimulation.",
+   "exposures[0].timing.pulse_duration_ms": "Pulsed wave: 0.5-ms tone-burst duration, 100-Hz pulse repetition frequency, 5% duty cycle, and total sonication duration of 2 s",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Pulsed wave: 0.5-ms tone-burst duration, 100-Hz pulse repetition frequency, 5% duty cycle, and total sonication duration of 2 s",
+   "exposures[0].timing.duty_cycle_pct": "we used a continuous wave with a 100% DC pattern",
+   "exposures[0].timing.sonication_duration_s": "continuous wave (CW) with a frequency of 5 MHz, presented for 100 ms",
+   "exposures[0].device.model": "This study used a 2-mm diameter, 5-MHz center frequency, immersion-type planar transducer (5C1I, KGK, Japan) for the ultrasound stimulation.",
+   "exposures[0].device.manufacturer": "This study used a 2-mm diameter, 5-MHz center frequency, immersion-type planar transducer (5C1I, KGK, Japan) for the ultrasound stimulation.",
+   "exposures[0].free_field.pressure_kpa": "Because of this, all ultrasound stimulation was performed at 100 kPa in this experiment.",
+   "exposures[0].free_field.isppa_w_cm2": "The pulse intensity integral (PII) was calculated to be 0.192 J/cm<sup>2</sup>, with a pulse average intensity $\\mathrm { ( I _ { S P P A } ) }$ of $0 . 3 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and a temporal average intensity $( \\mathrm { I } _ { \\mathrm { S P T A } } )$ of 19.2 mW/cm<sup>2</sup>.",
+   "exposures[0].free_field.ispta_w_cm2": "The pulse intensity integral (PII) was calculated to be 0.192 J/cm<sup>2</sup>, with a pulse average intensity $\\mathrm { ( I _ { S P P A } ) }$ of $0 . 3 8 \\mathrm { W } / \\mathrm { c m } ^ { 2 }$ and a temporal average intensity $( \\mathrm { I } _ { \\mathrm { S P T A } } )$ of 19.2 mW/cm<sup>2</sup>."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "Paper gives 19.2 mW/cm2; recorded as 0.0192 W/cm2 (unit conversion only)."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "0.38 W/cm2 is for the PW pattern and 0.7 W/cm2 for the CW pattern (quoted separately in the text); only the PW sentence is quoted here."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Paper says all stimulation was at 100 kPa (maximum measured 150 kPa); the transducer was calibrated in degassed water but the paper does not label the 100 kPa value as free-field."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "Group sizes are numbers of independent experiments (PW x10 n=9, PW x20 n=19, control n=25 unstimulated); no total of cultures or animals is stated."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "List is [PW 2 s, CW 100 ms]; the repetitive protocol totals about 192 s (see protocol_description)."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "List is [PW 5%, CW 100%]."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

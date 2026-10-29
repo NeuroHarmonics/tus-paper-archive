@@ -44,7 +44,7 @@ A JSON array, one object per paper, written to the given path:
     "record_class": "primary_study" | "review" | "systematic_review" | "meta_analysis"
       | "conference_abstract" | "methods_tool" | "simulation_only" | "case_report"
       | "letter_commentary" | "consensus_guideline" | "erratum" | "protocol" | "book" | "other",
-    "criterion": "E1".."E8" for an exclusion, null when relevant,
+    "criterion": "E1".."E9" for an exclusion, null when relevant,
     "reason": "one sentence naming the condition or exclusion that decided it",
     "resolved_by": "agent",
     "under_current_criteria": true
@@ -82,9 +82,16 @@ examples in `INCLUSION.md` carry precedent.
   its discussion is still in; a drug-delivery study that measures a neural readout is out.
 - Reviews, conference abstracts, books and commentaries are excluded as classes (E3, E8).
   Check the bar rather than assuming, but these are settled.
-- **E9, repair is not modulation.** Ultrasound for regeneration, remyelination,
-  proliferation, differentiation or recovery from injury is out. The line is the endpoint:
-  axon counts and functional recovery are out; excitability, firing rate and evoked
-  potentials are in, whatever the study hopes to treat.
+- **E9, growth is not modulation.** The line is the purpose of the exposure, not the
+  endpoint. A stated aim of regeneration, remyelination, neurogenesis, proliferation,
+  differentiation or neurite outgrowth is out, as is a cut, crushed or conduit-bridged
+  nerve, a spinal cord lesion or a stem cell culture. Protective, anti-inflammatory and
+  disease-modifying aims are in, whatever the endpoints. Glia are neural tissue.
+- **Reanalyses are E3.** A paper reanalysing an exposure already reported elsewhere, or
+  pooling published exposures, adds no new exposure. Added participants or sessions do.
+- **Research letters are in** when they report the authors' own exposure; only a letter
+  commenting on others' work is E3. A JoVE article is E3.
+- **Dissertations and theses are E7**, as are repository copies of published articles and
+  data deposits.
 - If an abstract looks like it belongs to a different paper than the title, say so in
   `reason` and return `unspecified`. Proceedings PDFs interleave abstracts.

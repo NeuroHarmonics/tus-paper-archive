@@ -1,0 +1,214 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2026zhanga",
+ "doi": "10.2147/ndt.s586583",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "depression"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  8,
+  8
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "other"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "sucrose preference test; forced swim test; open field test; cortical neurotransmitters by LC-MS/MS; fecal metagenomics and tryptophan metabolites; HE staining",
+ "readout_timing": "offline",
+ "anaesthesia": "awake",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Protocol 2 (PRF 1.5 kHz) increased sucrose preference, reduced FST immobility and raised cortical glutamate versus sham in CUMS mice; Protocol 1 (PRF 300 Hz) had no significant effect.",
+ "adverse_events": "none_observed",
+ "safety_notes": "HE staining after two weeks of stimulation showed no histopathological damage or hemorrhage in the prelimbic cortex (LIFUS2 protocol).",
+ "exposures": [
+  {
+   "label": "LIFUS1 (300 Hz PRF) and LIFUS2 (1.5 kHz PRF)",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "prelimbic cortex (PrL)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": [
+     0.26,
+     1.31
+    ]
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.4,
+    "pulse_repetition_frequency_hz": [
+     300,
+     1500
+    ],
+    "duty_cycle_pct": [
+     12,
+     60
+    ],
+    "sonication_duration_s": 0.4,
+    "protocol_description": "Two protocols: Protocol 1 (PRF 300 Hz, PD 400 us, DC 12%, ISPTA 0.26 W/cm2) and Protocol 2 (PRF 1.5 kHz, PD 400 us, DC 60%, ISPTA 1.31 W/cm2). Both used a sonication duration of 400 ms with 3-second inter-stimulus intervals; each stimulation session lasted 15 minutes, daily, for about two weeks."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "To evaluate the antidepressant-like effects of ultrasound stimulation with different parameters, CUMS mice were allocated into a sham stimulation group (SHAM, n=8) and two active stimulation groups with distinct parameters (LIFUS1, n=8; LIFUS2, n=8), with each group comprising 4 male and 4 female mice, and compared against a control group (CON, n=8).",
+   "exposures[0].fundamental_frequency_khz": "Protocol 1 (Fundamental Frequency (FF) = 500 kHz, Pulse Repetition Frequency (PRF) = 300 Hz, Pulse Duration (PD) = 400 μs, Duty Cycle (DC) = 12%, ISPTA=0.26 W/cm<sup>2</sup>)",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Protocol 1 (Fundamental Frequency (FF) = 500 kHz, Pulse Repetition Frequency (PRF) = 300 Hz, Pulse Duration (PD) = 400 μs, Duty Cycle (DC) = 12%, ISPTA=0.26 W/cm<sup>2</sup>)",
+   "exposures[0].timing.pulse_duration_ms": "Protocol 1 (Fundamental Frequency (FF) = 500 kHz, Pulse Repetition Frequency (PRF) = 300 Hz, Pulse Duration (PD) = 400 μs, Duty Cycle (DC) = 12%, ISPTA=0.26 W/cm<sup>2</sup>)",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Protocol 1 (Fundamental Frequency (FF) = 500 kHz, Pulse Repetition Frequency (PRF) = 300 Hz, Pulse Duration (PD) = 400 μs, Duty Cycle (DC) = 12%, ISPTA=0.26 W/cm<sup>2</sup>)",
+   "exposures[0].timing.duty_cycle_pct": "Protocol 1 (Fundamental Frequency (FF) = 500 kHz, Pulse Repetition Frequency (PRF) = 300 Hz, Pulse Duration (PD) = 400 μs, Duty Cycle (DC) = 12%, ISPTA=0.26 W/cm<sup>2</sup>)",
+   "exposures[0].timing.sonication_duration_s": "Both protocols used a sonication duration of 400 ms with 3-second inter-stimulus intervals.",
+   "exposures[0].device.manufacturer": "a power amplifier (E&I240L, ENI Inc., USA) amplifies signals from function generators (DG1022U, RIGOL TECHNOLOGIES, INC., and AFG3022C, Tektronix, USA) and transmits them to an ultrasound transducer (V301-SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Second PRF (1.5 kHz) taken from Protocol 2 text; quote given is Protocol 1 sentence; Protocol 2 is in the PRF figure legend and the same paragraph as LaTeX."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.ispta_w_cm2",
+    "reason": "ISPTA given without stating water or in-brain domain."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "n=8 per group for LIFUS1 and LIFUS2 (16 sonicated); sham group (n=8, no output) and CON/CUMS not counted; some assays had smaller n."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Sham was amplifier switched off, said to control for procedural noise and equipment sounds; no dedicated auditory control described."
+   },
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Daily 15-min sessions for 'two weeks' of stimulation; number of sessions not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Prelimbic cortex mapped to ventromedial_prefrontal_cortex (medial prefrontal)."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Behavioural improvement with PRF 1.5 kHz only; direction of neural effect not directly assessed except cortical glutamate increase."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

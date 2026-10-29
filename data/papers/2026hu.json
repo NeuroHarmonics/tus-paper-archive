@@ -1,0 +1,211 @@
+{
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6J)",
+ "conditions": [
+  "stroke"
+ ],
+ "condition_other": null,
+ "n_subjects": 5,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "no_treatment_control"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "cerebral_haemodynamics",
+  "histology_molecular"
+ ],
+ "readout_other": "Optical-resolution photoacoustic microscopy (PA intensity, vessel area fraction, vessel diameter, branch points, perfused vessel density); TTC infarct staining",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "not_assessed",
+ "direction_notes": "LITUS after photothrombotic stroke restored PA signal intensity, perfused vessel density and vessel diameter toward baseline and reduced infarct area at 24 h versus untreated PT mice.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Cortical temperature elevation below 2 C; mechanical index calculated as 1.16.",
+ "exposures": [
+  {
+   "label": "LITUS of photothrombotic lesion, left cortex",
+   "target": {
+    "terms": [
+     "cerebral_cortex"
+    ],
+    "label": "cortical target coordinates (AP = -2.0 mm, ML = -2.0 mm)"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Siansonic",
+    "model": "AQ20-1020"
+   },
+   "fundamental_frequency_khz": 1000,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1160,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": 0.45
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 20,
+    "sonication_duration_s": 0.3,
+    "protocol_description": "PRF 1 kHz, duty cycle 20%, sonication duration 300 ms; total treatment duration 10 min starting 23 min after the photothrombotic procedure."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.2
+   }
+  }
+ ],
+ "schema_version": "1.0",
+ "citekey": "2026hu",
+ "doi": "10.1364/boe.593436",
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "In the therapeutic evaluation cohort, animals were assigned to three groups: No-PT control, PT without intervention, and PT followed by LITUS treatment, with five animals per group.",
+   "exposures[0].fundamental_frequency_khz": "The TUS system consisted of a single-element focused ultrasound transducer (Siansonic, AQ20- 1020) operating at a center frequency of 1 MHz, with a focal length of 20 mm, a focal width of 2 mm, and an axial focal length of 12 mm.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The system operated at a pulse repetition frequency of 1 kHz, a duty cycle of 20%, and a sonication duration of 300 ms.",
+   "exposures[0].timing.duty_cycle_pct": "The system operated at a pulse repetition frequency of 1 kHz, a duty cycle of 20%, and a sonication duration of 300 ms.",
+   "exposures[0].timing.sonication_duration_s": "The system operated at a pulse repetition frequency of 1 kHz, a duty cycle of 20%, and a sonication duration of 300 ms.",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "The total treatment duration was 10 min, and the spatial peak temporal average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ was 450 mW/cm<sup>2</sup>. Based on the measured peak negative pressure of 1.16 MPa, the corresponding Mechanical Index (MI) was calculated to be 1.16. Local temperature-rise testing further showed that the cortical temperature elevation under the present stimulation conditions remained below $2 ^ { \\circ } \\mathrm { C } ,$ , supporting that the exposure was delivered within a low-risk acoustic and thermal window.",
+   "exposures[0].unspecified_domain.pressure_kpa": "The total treatment duration was 10 min, and the spatial peak temporal average intensity $\\left( \\mathrm { { I } _ { \\mathrm { { S P T A } } } } \\right)$ was 450 mW/cm<sup>2</sup>. Based on the measured peak negative pressure of 1.16 MPa, the corresponding Mechanical Index (MI) was calculated to be 1.16. Local temperature-rise testing further showed that the cortical temperature elevation under the present stimulation conditions remained below $2 ^ { \\circ } \\mathrm { C } ,$ , supporting that the exposure was delivered within a low-risk acoustic and thermal window.",
+   "exposures[0].device.model": "The TUS system consisted of a single-element focused ultrasound transducer (Siansonic, AQ20- 1020) operating at a center frequency of 1 MHz, with a focal length of 20 mm, a focal width of 2 mm, and an axial focal length of 12 mm.",
+   "exposures[0].device.manufacturer": "The TUS system consisted of a single-element focused ultrasound transducer (Siansonic, AQ20- 1020) operating at a center frequency of 1 MHz, with a focal length of 20 mm, a focal width of 2 mm, and an axial focal length of 12 mm."
+  },
+  "flags": [
+   {
+    "field": "n_subjects",
+    "reason": "35 mice enrolled across two cohorts; only the PT + LITUS group (five animals) received ultrasound."
+   },
+   {
+    "field": "blinding",
+    "reason": "Only image acquisition and quantitative analysis stated blinded."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Pulse duration not stated; not derived from duty cycle and PRF."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "1.16 MPa described as measured peak negative pressure; medium not stated."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target given only as stereotaxic coordinates AP -2.0, ML -2.0 mm in the left cortex."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Isoflurane stated for stroke induction; anaesthesia during LITUS not stated explicitly."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "300 ms sonication within a 10 min total treatment; inter-sonication interval not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}

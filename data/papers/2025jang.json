@@ -1,0 +1,246 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025jang",
+ "doi": "10.1038/s41467-025-66832-3",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 60,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "behaviour"
+ ],
+ "readout_other": "near-threshold visual object recognition and categorisation task; signal detection d' and criterion",
+ "readout_timing": "online",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "70% duty cycle to VA thalamus increased recognition sensitivity d'; 70% duty cycle to all four regions decreased categorisation accuracy of real images; 5% duty cycle shifted criterion c (more conservative) for VA and VP.",
+ "adverse_events": "not_reported",
+ "safety_notes": "Simulated maximal temperature rise 0.23 +/- 0.04 C; transducer noise awareness recorded (93% at 5% DC, 52% at 70% DC) and included as covariate.",
+ "exposures": [
+  {
+   "label": "LIFU to four left thalamic regions (VA, VP, DA, DP) at 70% or 5% duty cycle",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "four regions of the left thalamus, including the VA, VP, DA, and DP thalamus"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "BrainSonix Corporations",
+    "model": "BXPulsar 1002"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": [
+     197,
+     710
+    ],
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": 1.02
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": [
+     165,
+     619
+    ],
+    "isppa_w_cm2": [
+     1.03,
+     14.4
+    ],
+    "ispta_w_cm2": 0.72
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": [
+     70,
+     5
+    ],
+    "pulse_repetition_frequency_hz": 10,
+    "duty_cycle_pct": [
+     70,
+     5
+    ],
+    "sonication_duration_s": 30,
+    "protocol_description": "Pulse repetition frequency 10 Hz (100 ms period), duty cycle 70% or 5% (pulse width 70 or 5 ms), 30 s sonication alternating with 30 s off, 12 sonications per block; four LIFU-ON blocks, one per thalamic region in pseudorandomised order, one duty cycle per participant."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.isppa_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "free_field.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "free_field.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": false
+     },
+     "in_situ.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 60 participants (age: 25.9 ± 6.3 years, mean ± SD; 38 females, 22 males) participated in the current experiment.",
+   "n_sessions_per_subject": "The experiment was conducted in a single session lasting approximately two hours",
+   "exposures[0].fundamental_frequency_khz": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s;",
+   "exposures[0].timing.pulse_duration_ms": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s;",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s;",
+   "exposures[0].timing.duty_cycle_pct": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s;",
+   "exposures[0].timing.sonication_duration_s": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s;",
+   "exposures[0].in_situ.pressure_kpa": "derated spatial-peak temporal average intensity (I<sub>s ta.3</sub>): 0.72 W cm<sup>−2</sup>; derated spatial-peak pulseaverage intensity $( I _ { s p p a . 3 } ) \\colon 1 . 0 3 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (70% DC) and $1 4 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (DC 5%); non-derated incident pressure $( P _ { r . O } ) { : 1 9 7 }$ kPa (70% DC) and 710 kPa (5% DC); derated incident pressure (P ): 165 kPa (70% DC) and 619 kPa (5% DC)",
+   "exposures[0].in_situ.isppa_w_cm2": "derated spatial-peak temporal average intensity (I<sub>s ta.3</sub>): 0.72 W cm<sup>−2</sup>; derated spatial-peak pulseaverage intensity $( I _ { s p p a . 3 } ) \\colon 1 . 0 3 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (70% DC) and $1 4 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (DC 5%); non-derated incident pressure $( P _ { r . O } ) { : 1 9 7 }$ kPa (70% DC) and 710 kPa (5% DC); derated incident pressure (P ): 165 kPa (70% DC) and 619 kPa (5% DC)",
+   "exposures[0].in_situ.ispta_w_cm2": "derated spatial-peak temporal average intensity (I<sub>s ta.3</sub>): 0.72 W cm<sup>−2</sup>; derated spatial-peak pulseaverage intensity $( I _ { s p p a . 3 } ) \\colon 1 . 0 3 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (70% DC) and $1 4 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (DC 5%); non-derated incident pressure $( P _ { r . O } ) { : 1 9 7 }$ kPa (70% DC) and 710 kPa (5% DC); derated incident pressure (P ): 165 kPa (70% DC) and 619 kPa (5% DC)",
+   "exposures[0].device.manufacturer": "LIFU was administered using the BrainSonix BXPulsar 1002 System (BrainSonix Corporations, Sherman Oaks, CA, USA)",
+   "exposures[0].device.model": "LIFU was administered using the BrainSonix BXPulsar 1002 System (BrainSonix Corporations, Sherman Oaks, CA, USA)",
+   "exposures[0].free_field.pressure_kpa": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s; LIFU-ON epochs per block: 12 epochs; non-derated spatial-peak temporal average intensity $( I _ { s p t a . o } ) \\colon 1 . 0 2 { \\mathrm { W } } { \\mathrm { c m } } ^ { - 2 } ;$ derated spatial-peak temporal average intensity (I<sub>s ta.3</sub>): 0.72 W cm<sup>−2</sup>; derated spatial-peak pulseaverage intensity $( I _ { s p p a . 3 } ) \\colon 1 . 0 3 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (70% DC) and $1 4 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (DC 5%); non-derated incident pressure $( P _ { r . O } ) { : 1 9 7 }$ kPa (70% DC) and 710 kPa (5% DC); derated incident pressure (P ): 165 kPa (70% DC) and 619 kPa (5% DC).",
+   "exposures[0].free_field.ispta_w_cm2": "Sonication parameters were as follows: fundamental frequency: 650 kHz; pulse repetition frequency: 10 Hz; pulse duration: 100 ms; DC: 70% and 5% (yielding pulse width of 70 and 5 ms, respectively); sonication duration: 30 s; inter-sonication interval: 30 s; LIFU-ON epochs per block: 12 epochs; non-derated spatial-peak temporal average intensity $( I _ { s p t a . o } ) \\colon 1 . 0 2 { \\mathrm { W } } { \\mathrm { c m } } ^ { - 2 } ;$ derated spatial-peak temporal average intensity (I<sub>s ta.3</sub>): 0.72 W cm<sup>−2</sup>; derated spatial-peak pulseaverage intensity $( I _ { s p p a . 3 } ) \\colon 1 . 0 3 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (70% DC) and $1 4 . 4 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ (DC 5%); non-derated incident pressure $( P _ { r . O } ) { : 1 9 7 }$ kPa (70% DC) and 710 kPa (5% DC); derated incident pressure (P ): 165 kPa (70% DC) and 619 kPa (5% DC)."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text lists 'pulse duration: 100 ms', which matches the 10 Hz period, and separately 'pulse width of 70 and 5 ms'; the pulse width values were recorded as pulse duration (burst rule resolved from the paper's own pulse-width statement)."
+   },
+   {
+    "field": "exposures[0].in_situ.pressure_kpa",
+    "reason": "Derated (FDA method, 0.3 dB/cm/MHz) values recorded as in_situ; the paper also gives simulated in-brain pressure of 72.6 and 258.2 kPa (70% and 5% DC) from BabelBrain, not recorded here. Non-derated incident values placed in unspecified_domain because the paper does not name the medium."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "60 enrolled and randomised; 54 analysed (27 per group). Enrolled number recorded."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Four thalamic subregions (VA, VP, DA, DP) are listed as one exposure; the authors' VA is not the classical VA nucleus."
+   },
+   {
+    "field": "exposures[0].timing.duty_cycle_pct",
+    "reason": "Two duty cycles given to two separate groups; list order [70,5] matches pressure and intensity lists."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Transducer noise awareness was surveyed and used as a covariate; no masking or sham."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "disagree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "disagree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].unspecified_domain.pressure_kpa": "second",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "second"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022xie",
+ "doi": "10.3389/fnins.2022.994570",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (C57BL/6)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 16,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology"
+ ],
+ "readout_other": "hippocampal LFP theta and gamma power, sample entropy, Lempel-Ziv complexity, theta-gamma phase-amplitude coupling",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Absolute theta and gamma power rose with pressure while relative theta power fell; at 0.6-0.8 MPa trough-locked stimulation gave higher gamma absolute power, theta relative power and PAC than peak-locked stimulation.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "closed-loop theta peak- or trough-locked TUS of CA1",
+   "target": {
+    "terms": [
+     "CA1"
+    ],
+    "label": "CA1 region of the hippocampus"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 2250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": [
+     50,
+     800
+    ],
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 30,
+    "sonication_duration_s": 0.1,
+    "protocol_description": "Closed-loop stimulation triggered at the peak or trough of the hippocampal theta rhythm; stimulation duration 100 ms, PRF 1 kHz, duty cycle 30% within the stimulation, stimulation interval 3 s."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.3
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Sixteen mice (C57BL/6, male, body weight: 20–25 g, Beijing Weitong Lihua Laboratory Animal Technology Co., Ltd., China) were used in this study.",
+   "exposures[0].fundamental_frequency_khz": "In our experiment, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle within the stimulation, and stimulation interval were 2.25 MHz, 100 ms, 1 kHz, and 30%, and 3 s, respectively (Figure 1B).",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In our experiment, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle within the stimulation, and stimulation interval were 2.25 MHz, 100 ms, 1 kHz, and 30%, and 3 s, respectively (Figure 1B).",
+   "exposures[0].timing.duty_cycle_pct": "In our experiment, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle within the stimulation, and stimulation interval were 2.25 MHz, 100 ms, 1 kHz, and 30%, and 3 s, respectively (Figure 1B).",
+   "exposures[0].timing.sonication_duration_s": "In our experiment, the fundamental frequency, stimulation duration, pulsed repetition frequency, and duty cycle within the stimulation, and stimulation interval were 2.25 MHz, 100 ms, 1 kHz, and 30%, and 3 s, respectively (Figure 1B).",
+   "exposures[0].unspecified_domain.pressure_kpa": "The ultrasound pressure ranged from 0.05 to 0.8 MPa.",
+   "exposures[0].device.model": "An ultrasound transducer (V301-SU, Olympus, United States) was attached to the mouse skull",
+   "exposures[0].device.manufacturer": "An ultrasound transducer (V301-SU, Olympus, United States) was attached to the mouse skull"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Burst rule: DC 30% / PRF 1 kHz implies 0.3 ms pulses, so the 100 ms 'stimulation duration' is the train; pulse duration is not stated and was not computed."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure swept from 0.05 to 0.8 MPa; the paper does not say whether this is free-field or through the skull (the field map is described as 'under the skull')."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Auditory confounds are discussed citing earlier deaf-mouse work by the same group; no control was run in this study."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Only the 100 ms stimulation duration is given; total number of stimuli per animal is not stated."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

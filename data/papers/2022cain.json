@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022cain",
+ "doi": "10.3390/brainsci12040428",
+ "model_system": [
+  "human_patient"
+ ],
+ "species": "human",
+ "conditions": [
+  "disorders_of_consciousness",
+  "traumatic_brain_injury"
+ ],
+ "condition_other": null,
+ "n_subjects": 11,
+ "subject_unit": "participant",
+ "n_sessions_per_subject": [
+  1,
+  2
+ ],
+ "randomised": false,
+ "blinding": "none",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "fmri",
+  "clinical_scale"
+ ],
+ "readout_other": "Coma Recovery Scale-Revised (CRS-R index); BOLD fMRI during sonication; psychophysiological interaction connectivity",
+ "readout_timing": "both",
+ "anaesthesia": null,
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "BOLD signal decreased in frontal cortex and striatum during sonication; CRS-R responsiveness rose in the week after LIFU versus baseline, with no sham control.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Vital signs unchanged during LIFU; two adverse events (respiratory suppression before any LIFU; a seizure more than a week later with sepsis) were judged unrelated to LIFU.",
+ "exposures": [
+  {
+   "label": "Central thalamus LIFU, 650 kHz, 5% duty",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "central thalamus"
+   },
+   "device": {
+    "family": "brainsonix",
+    "manufacturer": "Brainsonix, Santa Monica, CA, USA",
+    "model": "single-element transducer (71.5 mm curvature)"
+   },
+   "fundamental_frequency_khz": 650,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "derating",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 14.39,
+    "ispta_w_cm2": 0.71973
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 100,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 30,
+    "protocol_description": "Ten 30 s sonication blocks on, separated by 30 s off-periods, delivered inside the MRI; one LIFU session, or two sessions one week apart in some patients."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "This study included 11 acute DOC patients (see Table 1 for details).",
+   "n_sessions_per_subject": "Four patients, who were in the care of the Ronald Reagan UCLA Medical Center for longer periods, underwent the procedure twice, with 1 week separating each LIFU administration.",
+   "exposures[0].fundamental_frequency_khz": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].in_situ.isppa_w_cm2": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].in_situ.ispta_w_cm2": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].timing.pulse_duration_ms": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].timing.duty_cycle_pct": "In each session, LIFU was applied at 100 Hz pulse repetition frequency (PRF), 0.5 ms pulse width (PW), 650 kHz carrier wave frequency, 5% duty cycle (DC), and 14.39 $\\frac { \\mathrm { ~ \\it ~ W ~ } } { \\mathrm { c m ^ { 2 } } }$ I<sub>SPPA.3</sub>/719.73 mW cm<sup>2</sup> I<sub>SPTA.3.</sub>; “0.3” denotes tissue absorption at 0.3 dB/cm-MHz.",
+   "exposures[0].timing.sonication_duration_s": "Once appropriate transducer placement was confirmed visually (see below), ultrasound was delivered inside the MRI for a total of ten 30 s blocks on, separated by 30 s off-periods (see Figure 1A).",
+   "exposures[0].device.manufacturer": "The LIFU waveform was emitted from a single-element transducer (Brainsonix, Santa Monica, CA, USA; 71.5 mm curvature) positioned, using MR-guidance, such that its theoretical focus (55 mm from its surface) lay over the intended target.",
+   "exposures[0].device.model": "The LIFU waveform was emitted from a single-element transducer (Brainsonix, Santa Monica, CA, USA; 71.5 mm curvature) positioned, using MR-guidance, such that its theoretical focus (55 mm from its surface) lay over the intended target."
+  },
+  "flags": [
+   {
+    "field": "n_sessions_per_subject",
+    "reason": "Text says a second session was possible for 27% of the sample and elsewhere says 3 patients had 2 runs; Table 1 and the Methods say four patients had two sessions."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Intensities are stated as ISPPA.3 and ISPTA.3, derated with 0.3 dB/cm-MHz tissue absorption; the paper gives 719.73 mW/cm2 for ISPTA.3, recorded as 0.71973 W/cm2. Treated as derated values; whether skull attenuation is included is not stated."
+   },
+   {
+    "field": "conditions",
+    "reason": "One patient had glioma/stroke etiology; the others traumatic brain injury (Table 1)."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "Target is the central thalamus, intended on the left; the beam is long (about 1.5 cm) and also reaches basal ganglia. Right thalamus was sonicated in some patients (Table 1)."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

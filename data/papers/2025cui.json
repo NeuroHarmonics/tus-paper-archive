@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025cui",
+ "doi": "10.1088/1741-2552/ade28f",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  7
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": true,
+ "blinding": "not_reported",
+ "sham_type": [
+  "inactive_transducer"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "emg_mep",
+  "behaviour"
+ ],
+ "readout_other": "LFP of PVT and PFC; EMG-defined loss and recovery of consciousness (duration of anesthesia)",
+ "readout_timing": "both",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "TUS of the PVT shortened propofol-anaesthesia duration (TUS1 19.86 min, TUS2 17.86 min vs sham 33.14 min) and increased [60-100 Hz] LFP power in PVT and PFC.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "TUS to paraventricular thalamus (before or after propofol)",
+   "target": {
+    "terms": [
+     "thalamus"
+    ],
+    "label": "paraventricular thalamus (PVT)"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 510,
+    "isppa_w_cm2": 8.67,
+    "ispta_w_cm2": 0.43
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 50,
+    "pulse_repetition_frequency_hz": 1,
+    "duty_cycle_pct": 5,
+    "sonication_duration_s": 1200,
+    "protocol_description": "Fundamental frequency 500 kHz, PRF 1 Hz, duty cycle 5% and stimulation duration 50 ms; total stimulation time 20 min per mouse. TUS1 was given before anaesthesia and TUS2 once loss of consciousness was confirmed."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 5.0,
+    "duty_cycle_mismatch": false
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "Mice were randomly assigned into three groups: the Sham group (mice were not administered TUS, $n = 7 )$ , the TUS1 group (mice were administered TUS prior to anesthesia, $n = 7 )$ and TUS2 group (mice were administered TUS after entering anesthesia, n = 7).",
+   "exposures[0].fundamental_frequency_khz": "The fundamental frequency, pulsed repetition frequency, duty cycle and stimulation duration were 500 kHz, 1 $. \\mathrm { H z } ,$ 5% and 50 ms, respectively.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The fundamental frequency, pulsed repetition frequency, duty cycle and stimulation duration were 500 kHz, 1 $. \\mathrm { H z } ,$ 5% and 50 ms, respectively.",
+   "exposures[0].timing.duty_cycle_pct": "The fundamental frequency, pulsed repetition frequency, duty cycle and stimulation duration were 500 kHz, 1 $. \\mathrm { H z } ,$ 5% and 50 ms, respectively.",
+   "exposures[0].timing.pulse_duration_ms": "The fundamental frequency, pulsed repetition frequency, duty cycle and stimulation duration were 500 kHz, 1 $. \\mathrm { H z } ,$ 5% and 50 ms, respectively.",
+   "exposures[0].timing.sonication_duration_s": "The total stimulation time per mice was 20 min.",
+   "exposures[0].unspecified_domain.pressure_kpa": "Besides, the ultrasound pressure at these parameters was 0.51 MPa, and the corresponding intensity of spatial-peak pulse-averaged and intensity of spatialpeak temporal-averaged intensity were $8 . 6 7 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and $0 . 4 3 \\mathrm { ~ W ~ c m } ^ { - 2 }$ .",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "Besides, the ultrasound pressure at these parameters was 0.51 MPa, and the corresponding intensity of spatial-peak pulse-averaged and intensity of spatialpeak temporal-averaged intensity were $8 . 6 7 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and $0 . 4 3 \\mathrm { ~ W ~ c m } ^ { - 2 }$ .",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "Besides, the ultrasound pressure at these parameters was 0.51 MPa, and the corresponding intensity of spatial-peak pulse-averaged and intensity of spatialpeak temporal-averaged intensity were $8 . 6 7 \\mathrm { W } \\mathrm { c m } ^ { - 2 }$ and $0 . 4 3 \\mathrm { ~ W ~ c m } ^ { - 2 }$ .",
+   "exposures[0].device.model": "The pulse signal used to generate TUS was generated using the function generator (DG2052, Rigol Technologies Co., LTD, China) and amplified using the radio frequency power amplifier (2100 l, Electronics & Innovation, Ltd, USA) before being conducted to the ultrasound transducer (V301-SU, Olympus, USA)",
+   "exposures[0].device.manufacturer": "The pulse signal used to generate TUS was generated using the function generator (DG2052, Rigol Technologies Co., LTD, China) and amplified using the radio frequency power amplifier (2100 l, Electronics & Innovation, Ltd, USA) before being conducted to the ultrasound transducer (V301-SU, Olympus, USA)"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Paper lists a 'stimulation duration' of 50 ms; with PRF 1 Hz and DC 5% this is the pulse duration (resolved by arithmetic, burst rule)."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Recorded as total stimulation time per mouse (20 min = 1200 s), as the paper gives no other train length."
+   },
+   {
+    "field": "n_subjects",
+    "reason": "21 mice in three groups of 7; exposed groups are TUS1 and TUS2 (7 each); total exposed not stated."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "Pressure 0.51 MPa 'at these parameters'; domain not stated; peak vs RMS not stated."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducer V301-SU, Olympus, USA."
+   },
+   {
+    "field": "readout_timing",
+    "reason": "TUS1 delivered before signal acquisition; TUS2 during anaesthesia with recording; timing relative to sonication not explicit."
+   },
+   {
+    "field": "exposures[0].target.terms",
+    "reason": "PVT is paraventricular thalamus; mapped to thalamus. Electrode coordinates given; TUS aimed with a collimator."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

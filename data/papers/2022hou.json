@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2022hou",
+ "doi": "10.3389/fnins.2022.893108",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 6,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": "not_reported",
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "emg_mep"
+ ],
+ "readout_other": "EMG response success rate and latency in triceps",
+ "readout_timing": "online",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Sonication of the motor cortex evoked forelimb EMG responses; success rates were (32 ± 10)%, (65 ± 8)% and (84 ± 7)% for flat, #7 and #5 transducers.",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "Half-concave miniature transducers (#5, #7.5) and flat control, mouse motor cortex",
+   "target": {
+    "terms": [
+     "primary_motor_cortex"
+    ],
+    "label": "primary motor cortex"
+   },
+   "device": {
+    "family": "custom_built",
+    "manufacturer": "not_reported",
+    "model": "half-concave dimpled pic255 single-element transducer, 5 mm diameter"
+   },
+   "fundamental_frequency_khz": 400,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": 1600,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": "not_reported",
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": 40,
+    "sonication_duration_s": 0.2,
+    "protocol_description": "Sonication parameters were PRF 1 kHz, 40% duty cycle, 200 ms per trial; 20 trials per animal. Pulse duration not stated; whether the 200 ms is the whole train is not spelled out."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.pulse_duration_ms"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "unspecified_domain.pressure_kpa": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "pulse_duration_implied_ms": 0.4
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "(N = 6, 20 trials/animal",
+   "exposures[0].fundamental_frequency_khz": "the emission acoustic fields of ultrasonic transducers with diferent structures were measured at 400 kHz",
+   "exposures[0].unspecified_domain.pressure_kpa": "sonication with sham, flat transducer, focused transducer #7.5, and #5 at 1.6 MPa",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "The sonication parameters (PRF 1 kHz, 40% duty cycle, 200 ms)",
+   "exposures[0].timing.duty_cycle_pct": "The sonication parameters (PRF 1 kHz, 40% duty cycle, 200 ms)",
+   "exposures[0].timing.sonication_duration_s": "The sonication parameters (PRF 1 kHz, 40% duty cycle, 200 ms)",
+   "exposures[0].device.model": "half-concave focused ultrasonic transducers with curvature radii of 5 mm and 7.5 mm were fabricated"
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "Abstract says transducers were characterised at their thickness resonance of 1 MHz, but the methods and acoustic measurements state 400 kHz; the stimulation frequency in the mouse experiment is not stated separately."
+   },
+   {
+    "field": "exposures[0].unspecified_domain.pressure_kpa",
+    "reason": "1.6 MPa appears only in a figure legend with no domain stated; same value reported for all transducers."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "200 ms is listed unlabelled alongside PRF and duty cycle; read as train duration (latency window is also 200 ms)."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Figure 9 legend shows a sham condition; its mechanism is not described."
+   },
+   {
+    "field": "exposures[0].device.family",
+    "reason": "Transducers fabricated in-house from pic255 ceramic; no maker of the finished transducer named."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  }
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018youn",
+ "doi": "10.1093/neuros/nyx488",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "rat (Sprague-Dawley)",
+ "conditions": [
+  "chronic_pain"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  5
+ ],
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "other"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "behaviour",
+  "histology_molecular"
+ ],
+ "readout_other": "von Frey fibres; Randall-Selitto test; hot plate test; H&E histology of L5 DRG",
+ "readout_timing": "offline",
+ "anaesthesia": "anaesthetised",
+ "direction_of_effect": "inhibitory",
+ "direction_notes": "HIFU to the L5 DRG raised mechanical and thermal thresholds in vincristine-induced neuropathy rats at 24 and 48 h versus sham; thresholds were unchanged in naive rats.",
+ "adverse_events": "observed",
+ "safety_notes": "Histology showed transient cellular swelling that largely resolved by 24-48 h and intact ganglion cells at 5 d; no obvious motor dysfunction for 7 d.",
+ "exposures": [
+  {
+   "label": "Pulsed HIFU to left L5 DRG",
+   "target": {
+    "terms": [
+     "dorsal_root_ganglion"
+    ],
+    "label": "left L5 dorsal root ganglia"
+   },
+   "device": {
+    "family": "other_manufacturer",
+    "manufacturer": "Acoustic MedSystems Inc",
+    "model": "interstitial HIFU device"
+   },
+   "fundamental_frequency_khz": "not_reported",
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.09,
+    "pulse_repetition_frequency_hz": 38,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": 180,
+    "protocol_description": "Pulsed HIFU delivered with the probe touching the DRG, 'frequency of 38 Hz, pulse width of 90 us, and amplitude of 3 W for 3 min'; acoustic output power of 3 W stated to produce a power density of 2.05 W/cm2. A 2 min dose was ineffective in a preliminary experiment."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "fundamental_frequency_khz",
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct"
+    ],
+    "field_status": {
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 0.342
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-27"
+  },
+  "source_quotes": {
+   "n_subjects": "A total of 23 rats were compared: 7 VIN HIFU rats at 3 W for 3 min, 7 VIN sham HIFU, 5 naïve HIFU at 3 W for 3 min, and 4 VIN only rats",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "it was administered at a frequency of 38 Hz, pulse width of 90 μss, and amplitude of 3 W for 3 min",
+   "exposures[0].timing.pulse_duration_ms": "it was administered at a frequency of 38 Hz, pulse width of 90 μss, and amplitude of 3 W for 3 min",
+   "exposures[0].timing.sonication_duration_s": "it was administered at a frequency of 38 Hz, pulse width of 90 μss, and amplitude of 3 W for 3 min",
+   "exposures[0].device.manufacturer": "using an interstitial HIFU device (Acoustic MedSystems Inc, Savoy, Illinois)",
+   "exposures[0].device.model": "using an interstitial HIFU device (Acoustic MedSystems Inc, Savoy, Illinois)",
+   "sham_type": "VIN underwent DRG exposure surgery but received no HIFU application",
+   "n_sessions_per_subject": "They found that 1-time unilateral focal sonication of the L5 dorsal root ganglion (DRG) resulted in increased sensory and thermal thresholds for up to 48 hours after treatment."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].fundamental_frequency_khz",
+    "reason": "The paper gives only 'a frequency of 38 Hz'; the acoustic carrier frequency is never stated"
+   },
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "38 Hz is called the frequency of administration; interpreted as PRF but the paper does not say so"
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Text reads 'pulse width of 90 us' with OCR 'μss'; 90 us converted to 0.09 ms"
+   },
+   {
+    "field": "exposures[0].unspecified_domain",
+    "reason": "Power density of 2.05 W/cm2 is stated for 3 W output without saying which intensity metric or domain; not placed in a field"
+   },
+   {
+    "field": "n_subjects",
+    "reason": "23 rats compared includes 7 sham and 4 VIN-only; HIFU-exposed groups listed as [7, 5]; a further 8 VIN HIFU rats were used in the preliminary 2 min experiment"
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham rats underwent DRG exposure surgery without HIFU; mechanism not in the vocabulary, recorded as other"
+   },
+   {
+    "field": "conditions",
+    "reason": "Vincristine-induced neuropathic pain model mapped to chronic_pain"
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second"
+  }
+ }
+}

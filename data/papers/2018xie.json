@@ -1,0 +1,198 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2018xie",
+ "doi": "10.1186/s12868-018-0462-8",
+ "model_system": [
+  "rodent"
+ ],
+ "species": "mouse (BALB/c)",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": 9,
+ "subject_unit": "animal",
+ "n_sessions_per_subject": 1,
+ "randomised": "not_reported",
+ "blinding": "not_reported",
+ "sham_type": [
+  "none"
+ ],
+ "auditory_control": [
+  "not_reported"
+ ],
+ "readouts": [
+  "invasive_electrophysiology",
+  "emg_mep"
+ ],
+ "readout_other": "Local field potential in tail motor cortex and tail EMG; mutual information and transfer entropy coupling",
+ "readout_timing": "online",
+ "anaesthesia": "awake",
+ "direction_of_effect": "excitatory",
+ "direction_notes": "Cortico-muscular coupling (mutual information and transfer entropy) increased after pTUS, and increased further with the number of tone bursts (NTB 100 to 300).",
+ "adverse_events": "not_reported",
+ "safety_notes": null,
+ "exposures": [
+  {
+   "label": "pTUS to tail motor cortex, NTB 100-300",
+   "target": {
+    "terms": [
+     "motor_cortex"
+    ],
+    "label": "tail motor cortex"
+   },
+   "device": {
+    "family": "olympus_panametrics",
+    "manufacturer": "Olympus",
+    "model": "V301-SU"
+   },
+   "fundamental_frequency_khz": 500,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "not_reported",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": 1.1,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": 1000,
+    "duty_cycle_pct": "not_reported",
+    "sonication_duration_s": "not_reported",
+    "protocol_description": "Pulsed TUS with 250 acoustic cycles per pulse (NC), PRF 1 kHz, inter-trial interval 3.6 s; the sonication duration was changed with the number of tone bursts (NTB 100, 150, 200, 250, 300). Pulse duration, duty cycle and sonication duration in time units are not stated."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa",
+     "in_situ.isppa_w_cm2",
+     "in_situ.ispta_w_cm2",
+     "timing.duty_cycle_pct",
+     "timing.sonication_duration_s"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "unspecified_domain.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": "second",
+      "flagged": true
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    },
+    "duty_cycle_computed_pct": 50.0
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "n_subjects": "Nine BALB/c mice (male, body weights \\~ 20  g, Beijing Vital River Laboratory Animal Technology Co., Ltd.",
+   "exposures[0].fundamental_frequency_khz": "The experimental system is shown in Fig.  1a, consisting of six main components: (1) two function generators (AFG3022C, Tektronix, USA), (2) a linear radio frequency power amplifier (RFA) (240L, ENI Inc., USA), (3) an unfocused ultrasound transducer (V301-SU, Olympus, Japan) with center frequency of 500  kHz and diameter of 31  mm driven by RFA, and (4) an custom conical plastic collimator (Length 50 mm, diameter 2 and 31.2 mm) filled with degassed ultrasound gel and delivering the pTUS to the cortex, (5) single-channel microelectrodes (WE50030.1B10, MicroProbe, USA) recording the LFPs and fine wire electrode recording EMG signals,(6) a dual-channel front-end amplifier (63386, A-M SYSTEMS INC., USA) that amplifying the LFPs and EMG signals, and a 16-channel neural signal processor (NSP) (Cerebus Data Acquisition System, Blackrock Microsystems, USA) converting the signals into digital signals, (7) a computer for data storage and displaying the recorded data simultaneously.",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "In this paper, the parameter setting is AI 1.10 W/cm<sup>2</sup>, NC 250, PRF 1 kHz, ITI 3.6 s.",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "In this paper, the parameter setting is AI 1.10 W/cm<sup>2</sup>, NC 250, PRF 1 kHz, ITI 3.6 s.",
+   "exposures[0].device.manufacturer": "The experimental system is shown in Fig.  1a, consisting of six main components: (1) two function generators (AFG3022C, Tektronix, USA), (2) a linear radio frequency power amplifier (RFA) (240L, ENI Inc., USA), (3) an unfocused ultrasound transducer (V301-SU, Olympus, Japan) with center frequency of 500  kHz and diameter of 31  mm driven by RFA, and (4) an custom conical plastic collimator (Length 50 mm, diameter 2 and 31.2 mm) filled with degassed ultrasound gel and delivering the pTUS to the cortex, (5) single-channel microelectrodes (WE50030.1B10, MicroProbe, USA) recording the LFPs and fine wire electrode recording EMG signals,(6) a dual-channel front-end amplifier (63386, A-M SYSTEMS INC., USA) that amplifying the LFPs and EMG signals, and a 16-channel neural signal processor (NSP) (Cerebus Data Acquisition System, Blackrock Microsystems, USA) converting the signals into digital signals, (7) a computer for data storage and displaying the recorded data simultaneously.",
+   "exposures[0].device.model": "The experimental system is shown in Fig.  1a, consisting of six main components: (1) two function generators (AFG3022C, Tektronix, USA), (2) a linear radio frequency power amplifier (RFA) (240L, ENI Inc., USA), (3) an unfocused ultrasound transducer (V301-SU, Olympus, Japan) with center frequency of 500  kHz and diameter of 31  mm driven by RFA, and (4) an custom conical plastic collimator (Length 50 mm, diameter 2 and 31.2 mm) filled with degassed ultrasound gel and delivering the pTUS to the cortex, (5) single-channel microelectrodes (WE50030.1B10, MicroProbe, USA) recording the LFPs and fine wire electrode recording EMG signals,(6) a dual-channel front-end amplifier (63386, A-M SYSTEMS INC., USA) that amplifying the LFPs and EMG signals, and a 16-channel neural signal processor (NSP) (Cerebus Data Acquisition System, Blackrock Microsystems, USA) converting the signals into digital signals, (7) a computer for data storage and displaying the recorded data simultaneously.",
+   "n_sessions_per_subject": "At the end of the experiment, mice were sacrificed with an overdose anesthetic (sodium pentobarbital, 1%, 15 mg/100 g, IP).",
+   "exposures[0].timing.pulse_duration_ms": "In this paper, the parameter setting is AI 1.10 W/cm<sup>2</sup>, NC 250, PRF 1 kHz, ITI 3.6 s."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].unspecified_domain.isppa_w_cm2",
+    "reason": "Paper gives 'acoustic intensity (AI)' 1.10 W/cm2 without saying whether spatial-peak pulse-average or temporal-average, or measured where; placed in isppa as the nearest field."
+   },
+   {
+    "field": "exposures[0].timing.pulse_duration_ms",
+    "reason": "Only 250 cycles per pulse at 500 kHz is stated; no pulse duration in time units given."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Sonication duration varies with NTB (100-300 tone bursts) but is not stated in seconds."
+   },
+   {
+    "field": "anaesthesia",
+    "reason": "Mice were anaesthetised for surgery and recorded after the anaesthesia effect was over; recorded as awake."
+   },
+   {
+    "field": "exposures[0].timing.protocol_description",
+    "reason": "'Number of tone bursts' (NTB) appears to count pulses; meaning of 'tone burst' not fully resolved."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "agree",
+   "n_sessions_per_subject": "disagree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "disagree",
+   "exposures[0].free_field.isppa_w_cm2": "disagree",
+   "exposures[0].free_field.ispta_w_cm2": "disagree",
+   "exposures[0].in_situ.pressure_kpa": "disagree",
+   "exposures[0].in_situ.isppa_w_cm2": "disagree",
+   "exposures[0].in_situ.ispta_w_cm2": "disagree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "disagree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_sessions_per_subject": "second",
+   "exposures[0].free_field.pressure_kpa": "second",
+   "exposures[0].free_field.isppa_w_cm2": "second",
+   "exposures[0].free_field.ispta_w_cm2": "second",
+   "exposures[0].in_situ.pressure_kpa": "second",
+   "exposures[0].in_situ.isppa_w_cm2": "second",
+   "exposures[0].in_situ.ispta_w_cm2": "second",
+   "exposures[0].timing.pulse_duration_ms": "second"
+  }
+ }
+}

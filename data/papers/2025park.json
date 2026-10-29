@@ -1,0 +1,227 @@
+{
+ "schema_version": "1.0",
+ "citekey": "2025park",
+ "doi": "10.1016/j.neuroimage.2025.121540",
+ "model_system": [
+  "human_healthy"
+ ],
+ "species": "human",
+ "conditions": [
+  "healthy"
+ ],
+ "condition_other": null,
+ "n_subjects": [
+  7,
+  7
+ ],
+ "subject_unit": "participant",
+ "n_sessions_per_subject": 1,
+ "randomised": true,
+ "blinding": "single",
+ "sham_type": [
+  "undescribed"
+ ],
+ "auditory_control": [
+  "post_hoc_check"
+ ],
+ "readouts": [
+  "fmri",
+  "other_mri"
+ ],
+ "readout_other": "Resting-state fMRI (GSA, ReHo, FC); diffusion MRI structure-function correspondence (R2)",
+ "readout_timing": "offline",
+ "anaesthesia": null,
+ "direction_of_effect": "mixed_or_unclear",
+ "direction_notes": "Both protocols increased structure-function coupling near the mPFC; a significant increase across the default mode network occurred only after the excitatory protocol.",
+ "adverse_events": "none_observed",
+ "safety_notes": "Skin temperature monitored and held at 35.4 C; no participants reported auditory confounding or other side effects.",
+ "exposures": [
+  {
+   "label": "Excitatory and suppressive tFUS protocols to mPFC",
+   "target": {
+    "terms": [
+     "ventromedial_prefrontal_cortex"
+    ],
+    "label": "medial prefrontal cortex (mPFC)"
+   },
+   "device": {
+    "family": "neurosona",
+    "manufacturer": "Neurosona",
+    "model": "NS-US100"
+   },
+   "fundamental_frequency_khz": 250,
+   "free_field": {
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": "not_reported",
+    "ispta_w_cm2": "not_reported"
+   },
+   "in_situ": {
+    "method": "not_reported",
+    "reported_as": "single_value",
+    "pressure_kpa": "not_reported",
+    "isppa_w_cm2": 0.75,
+    "ispta_w_cm2": [
+     0.525,
+     0.038
+    ]
+   },
+   "unspecified_domain": {
+    "pressure_kpa": null,
+    "isppa_w_cm2": null,
+    "ispta_w_cm2": null
+   },
+   "timing": {
+    "waveform": "pulsed",
+    "pulse_duration_ms": 0.5,
+    "pulse_repetition_frequency_hz": [
+     1400,
+     100
+    ],
+    "duty_cycle_pct": [
+     70,
+     5
+    ],
+    "sonication_duration_s": 0.3,
+    "protocol_description": "Excitatory: 0.5 ms pulses at 1400 Hz (70% DC) in 300 ms pulse trains (420 pulses) separated by 5 s. Suppressive: 0.5 ms pulses at 100 Hz (5% DC) in 300 ms trains (30 pulses) with no inter-train interval (continuous pulsing). Trains repeated over a 20-min session."
+   },
+   "derived": {
+    "checks": [],
+    "not_reported": [
+     "free_field.pressure_kpa",
+     "free_field.isppa_w_cm2",
+     "free_field.ispta_w_cm2",
+     "in_situ.pressure_kpa"
+    ],
+    "field_status": {
+     "fundamental_frequency_khz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "in_situ.isppa_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "in_situ.ispta_w_cm2": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.pulse_duration_ms": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.pulse_repetition_frequency_hz": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "timing.duty_cycle_pct": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": false
+     },
+     "timing.sonication_duration_s": {
+      "quote_verified": true,
+      "second_pass": "agree",
+      "tiebreak": null,
+      "flagged": true
+     },
+     "device.manufacturer": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     },
+     "device.model": {
+      "quote_verified": true,
+      "second_pass": null,
+      "tiebreak": null,
+      "flagged": false
+     }
+    }
+   }
+  }
+ ],
+ "provenance": {
+  "extracted": {
+   "by": "paper-extractor",
+   "model": "claude-sonnet-5-5",
+   "date": "2026-10-26"
+  },
+  "source_quotes": {
+   "exposures[0].fundamental_frequency_khz": "shared an operating frequency of 250 kHz, a pulse duration (PD) of 0.5 msec and a pulse train duration (PTD) of 300 msec",
+   "exposures[0].timing.pulse_duration_ms": "<td>Pulse duration (PD)</td><td>0.5 msec</td><td>0.5 msec</td>",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "<td>Pulse repetition frequency (PRF)</td><td>1400 Hz</td><td>100 Hz</td>",
+   "exposures[0].timing.duty_cycle_pct": "<td>Duty cycle (DC)</td><td>70 %</td><td>5 %</td>",
+   "exposures[0].timing.sonication_duration_s": "<td>Pulse train duration (PTD)</td><td>300 msec</td><td>300 msec</td>",
+   "exposures[0].in_situ.isppa_w_cm2": "</td><td>0.75 W/cm²</td><td>0.75 W/cm²</td>",
+   "exposures[0].in_situ.ispta_w_cm2": "525 mW/ cm²</td><td>38 mW/cm²</td>",
+   "exposures[0].device.manufacturer": "applied using an NS-US100 system (Neurosona, Seoul, Korea)",
+   "exposures[0].device.model": "applied using an NS-US100 system (Neurosona, Seoul, Korea)",
+   "n_subjects": "Of the total 21 participants with mean age of 54.4 year-old, including 9 males and 12 females, seven were assigned to each stimulation protocol: excitatory stimulation $( n = 7 ; \\mathrm { a g e } = 5 4 . 9 \\pm 6 . 5 $ years; 3 males, 4 females), suppressive stimulation $( n = 7 ; \\mathrm { ~ a g e ~ } = 5 4 . 3 \\pm 6 . 2$ years; 3 males, 4 females), and sham stimulation $( n = 7 ; \\mathrm { a g e } = 5 4 . 1 \\pm 6 . 3 $ years; 3 males, 4 females).",
+   "n_sessions_per_subject": "The DMN modulation observed in this study represents acute changes following a single session of tFUS administration."
+  },
+  "flags": [
+   {
+    "field": "exposures[0].timing.pulse_repetition_frequency_hz",
+    "reason": "Two protocols at the same target and frequency are recorded as lists in order [excitatory, suppressive]; same order for duty cycle and in situ Ispta."
+   },
+   {
+    "field": "exposures[0].timing.sonication_duration_s",
+    "reason": "Pulse train duration 300 ms; the whole session was 20 min of repeated trains."
+   },
+   {
+    "field": "exposures[0].in_situ.isppa_w_cm2",
+    "reason": "Table labels Isppa 'in situ' but the text says only 'determined based on acoustic calibration'; method of derivation not stated, so method is not_reported."
+   },
+   {
+    "field": "exposures[0].in_situ.ispta_w_cm2",
+    "reason": "Values 525 and 38 mW/cm2 converted to W/cm2; ordered [excitatory, suppressive], not a min-max range."
+   },
+   {
+    "field": "sham_type",
+    "reason": "Sham stimulation is described only as a sham tFUS group; mechanism not stated."
+   },
+   {
+    "field": "auditory_control",
+    "reason": "Participants were reported afterwards as having no auditory confounding; no control during the experiment."
+   },
+   {
+    "field": "direction_of_effect",
+    "reason": "Excitatory protocol increased structure-function correspondence in the default mode network; suppressive effect on the DMN was unclear; whole-brain activity tended to increase after excitatory and decrease after suppressive."
+   }
+  ],
+  "human_edited": false,
+  "notes": null,
+  "second_pass": {
+   "n_subjects": "disagree",
+   "n_sessions_per_subject": "agree",
+   "exposures[0].fundamental_frequency_khz": "agree",
+   "exposures[0].free_field.pressure_kpa": "agree",
+   "exposures[0].free_field.isppa_w_cm2": "agree",
+   "exposures[0].free_field.ispta_w_cm2": "agree",
+   "exposures[0].in_situ.pressure_kpa": "agree",
+   "exposures[0].in_situ.isppa_w_cm2": "agree",
+   "exposures[0].in_situ.ispta_w_cm2": "agree",
+   "exposures[0].unspecified_domain.pressure_kpa": "agree",
+   "exposures[0].unspecified_domain.isppa_w_cm2": "agree",
+   "exposures[0].unspecified_domain.ispta_w_cm2": "agree",
+   "exposures[0].timing.pulse_duration_ms": "agree",
+   "exposures[0].timing.pulse_repetition_frequency_hz": "agree",
+   "exposures[0].timing.duty_cycle_pct": "agree",
+   "exposures[0].timing.sonication_duration_s": "agree"
+  },
+  "tiebreak": {
+   "n_subjects": "second"
+  }
+ }
+}
